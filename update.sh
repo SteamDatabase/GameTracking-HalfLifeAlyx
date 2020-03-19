@@ -15,7 +15,7 @@ do
 	echo "> VPK $baseFile"
 	
 	../.support/vpktool "$file" > "$baseFile"
-done <   <(find "game/dac/maps/" -type f -name "*.vpk" -print0)
+done <   <(find "game/hlvr/maps/" -type f -name "*.vpk" -print0)
 
 FixUCS2
 
