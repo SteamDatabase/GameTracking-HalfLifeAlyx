@@ -90,6 +90,11 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72",
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -99,6 +104,11 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72",
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -108,6 +118,11 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72",
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -117,6 +132,11 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72",
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/left/input/trigger"
             }
          ]
@@ -130,6 +150,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -139,6 +163,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -148,6 +176,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -157,6 +189,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -202,6 +238,10 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -211,6 +251,10 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/left/input/grip"
             },
             {
@@ -274,6 +318,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -283,6 +331,10 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/left/input/grip"
             }
          ]
@@ -361,7 +413,8 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "force_input" : "position"
+                  "force_input" : "position",
+                  "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/left/input/joystick"
             },
@@ -413,6 +466,10 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.72"
+               },
                "path" : "/user/hand/right/input/trigger"
             },
             {

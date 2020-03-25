@@ -324,7 +324,7 @@
 			"sounds/common/null.vsnd",
 		]
 	}
-	music.a4_tanker.antlion_arena_intro = 
+	music.a4_tanker.antlion_arena_combat_intro = 
 	{
 		type = "hlvr_music_2d"
 		volume = 0.400000
@@ -476,6 +476,7 @@
 		type = "hlvr_music_2d"
 		volume = 0.350000
 		use_combat_music_convar = 1.000000
+		track = "overdub"
 		restart_start = 0
 		restart_time = 38.400000
 		presence_adjust = 500.000000
