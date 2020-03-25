@@ -37,6 +37,7 @@
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
+ D;=	B
  H3E H3E
  Hc)H
  Hc9H
@@ -74,7 +75,7 @@
 "2BRbr
 "[BINARY BLOB]"
 "e?<<<<<<l?
-"pA3Q
+"pA3Q(L
 # Positions
 # Texture Coords
 # Triangles
@@ -121,6 +122,7 @@ $Ib?s
 ( 8PX
 (8HXhx
 (;s |
+(?m*q
 (A_A^
 (A_A^_^][
 (D$ A
@@ -269,6 +271,7 @@ $Ib?s
 ,<L\l|
 ,HR>O
 ,I<%w
+,K-n4
 ,t0D9J0v*L
 ,|%)v
 -1080
@@ -654,7 +657,7 @@ $Ib?s
 1<.	/>:
 1DBlend
 1eaB@
-200321043419Z0#
+200324195614Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -772,6 +775,7 @@ $Ib?s
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ?@En[vP
+?AppendFormattedComment@CMiniDumpComment@@QEAAXPEBDZZ
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
@@ -1139,40 +1143,40 @@ CUtlMemoryPoolBase: Cannot specify 0 elements to grow each time!
 CUtlMemoryPoolBase::CUtlMemoryPoolBase
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int,class CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int>,int> >::NewNode
-CVr::CreateRenderModel(9779): 
-CVr::DisableMotionSmoothingForThisFrame(3532): 
+CVr::CreateRenderModel(9780): 
+CVr::DisableMotionSmoothingForThisFrame(3533): 
 CVr::GetOutputDevice not supported for this rendersystem API.
-CVr::MarkGamePhase(5316): 
-CVr::MarkGamePhase(5323): 
-CVr::PollHMDStateForRenderThread(5404): 
-CVr::PollHMDStateForRenderThread(5416): 
-CVr::PollHMDStateForRenderThread(5440): 
-CVr::PreShutdown(1251): 
-CVr::SampleAxisControllerState(4556): ERROR! Unknown controller axis type %d!
+CVr::MarkGamePhase(5317): 
+CVr::MarkGamePhase(5324): 
+CVr::PollHMDStateForRenderThread(5405): 
+CVr::PollHMDStateForRenderThread(5417): 
+CVr::PollHMDStateForRenderThread(5441): 
+CVr::PreShutdown(1252): 
+CVr::SampleAxisControllerState(4557): ERROR! Unknown controller axis type %d!
 CVr::SetDashBoardUserToggleEnabled: 
-CVr::SetOverlayTexture(10978): 
-CVr::SetSkyboxOverride(2372): 
-CVr::UpdateGhostCorrectionTexture(1105): 
+CVr::SetOverlayTexture(10979): 
+CVr::SetSkyboxOverride(2373): 
+CVr::UpdateGhostCorrectionTexture(1106): 
 CVrReconstructionRenderer
-CVrReconstructionRenderer::Render(7306): VR - Destroying old VB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7313): VR - Destroying old IB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7334): VR - Destroying old IB for reconstruction!
-CVrReconstructionRenderer::Render(7474): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
-CVrReconstructionRenderer::Render(7483): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7307): VR - Destroying old VB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7314): VR - Destroying old IB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7335): VR - Destroying old IB for reconstruction!
+CVrReconstructionRenderer::Render(7475): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7484): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
 CVrReconstructionRendererIB
 CVrReconstructionRendererVB
 CVrStencilRenderer
-CVrStencilRenderer::Render(6357): VR - Destroying old VB for Stenciling!
-CVrStencilRenderer::Render(6402): VR - Error! VB handle is invalid in CVrStencilRenderer!
+CVrStencilRenderer::Render(6358): VR - Destroying old VB for Stenciling!
+CVrStencilRenderer::Render(6403): VR - Error! VB handle is invalid in CVrStencilRenderer!
 CVrStencilRendererVB
 CVrSubviewStencilRenderer
-CVrSubviewStencilRenderer::Render(6546): VR - Destroying old VB for SubviewStenciling!
-CVrSubviewStencilRenderer::Render(6888): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
+CVrSubviewStencilRenderer::Render(6547): VR - Destroying old VB for SubviewStenciling!
+CVrSubviewStencilRenderer::Render(6889): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
 CVrSubviewStencilRendererVB
 CVrWarpRenderer
-CVrWarpRenderer::Render(7069): VR - Destroying old IB for warping!
-CVrWarpRenderer::Render(7147): VR - Error! VB handle is invalid in CVrWarpRenderer!
-CVrWarpRenderer::Render(7156): VR - Error! IB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7070): VR - Destroying old IB for warping!
+CVrWarpRenderer::Render(7148): VR - Error! VB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7157): VR - Error! IB handle is invalid in CVrWarpRenderer!
 CVrWarpRendererIB
 CVrWarpRendererVB
 CWD>~3
@@ -1437,37 +1441,42 @@ D24S8
 D24X4S4
 D24X8
 D24X8_SHADOW
-D8-"N
-D8-#8
-D8-49
-D8-=:
-D8->O
-D8-M4
-D8-M=
-D8-O>
-D8-Q;
-D8-Q<
-D8-TA
-D8-UD
-D8-VC
-D8-VF
-D8-WE
-D8-X@
-D8-Z5
-D8-ZB
-D8-\?
-D8-_G
-D8-_M
-D8-f3
-D8-hI
-D8-hL
-D8-iH
-D8-j6
-D8-jJ
-D8-l7
-D8-lK
-D8-uM
-D8-uN
+D8-	M
+D8-	R
+D8- E
+D8- Y
+D8-"Z
+D8-(\
+D8-)F
+D8--^
+D8-:G
+D8-GH
+D8-RL
+D8-TI
+D8-WB
+D8-WJ
+D8-Z]
+D8-^O
+D8-_R
+D8-_]
+D8-`Q
+D8-`T
+D8-aK
+D8-aS
+D8-bN
+D8-bU
+D8-dC
+D8-fM
+D8-gP
+D8-mD
+D8-oV
+D8-q^
+D8-rW
+D8-tX
+D8-uZ
+D8-vE
+D8-vY
+D8-x[
 D82u&H
 D8M@t
 D8M@t^
@@ -1486,7 +1495,9 @@ D8o(t4
 D8sAt
 D8t$Ht
 D8|$Pt
+D9-T$
 D90u	9X
+D9=#%
 D9B,t
 D9G$s5
 D9J,w
@@ -1498,7 +1509,6 @@ D9oh~dI
 D9x(uiE
 D9{(u
 D9|$ 
-D;%24
 D;D$(|
 D;D$(}:J
 D;D$8|
@@ -1756,7 +1766,7 @@ H+\$h+
 H+\$hIc<$H
 H0F08
 H3\$HH
-H9-+Q
+H95{<	
 H97t<
 H98u	H
 H99u{
@@ -2323,6 +2333,8 @@ StartLoop
 Stats:
 StatsService_001
 SteamAudio001
+SteamVR HMD: %s %s %s (%.0fHz)
+SteamVR Version: %s
 SteamVR failed initialization with error code %s: "%s"
 SteamVR initialization failed!
 SteamVR initialized!
@@ -2371,6 +2383,7 @@ T$pLc
 T$pLi
 T$pfA
 T$pfD
+TCd(u
 TEST INCREASE vr_fidelity_level %d. Last frames = %.2fms, %.2fms, %.2fms
 TUUUU
 TargetOversubscriptionFactor
@@ -2470,7 +2483,7 @@ UpdateProcThreadAttribute
 Use: vr_dump_render_model <obj_filename> <tga_filename>
 UserInfoChangeService_001
 V0;Ct~ZH
-V0H9-[Z
+V0H9-[j
 V6E>`"(5
 VAVAWH
 VApplication001
@@ -2671,7 +2684,7 @@ XA_A^A\_^[
 XL$tL
 X|$ A
 X|$8E
-X|(h=
+X|(xM
 Y$D;R
 Y0t>H
 Y>kX>M
@@ -2720,7 +2733,7 @@ Zod(^?
 \$8A+
 \$8Hc
 \$<A;
-\$@@8=}W
+\$@@8=
 \$@E3
 \$@H+
 \$@H;
@@ -2976,6 +2989,7 @@ fffffff
 file exists
 file too large
 filename too long
+fjH!H=
 force
 frame
 friction
@@ -3081,7 +3095,6 @@ l$`C9,
 l$`E9j
 l$`E;j
 l$hM;
-lL}R]
 last_sniff
 length
 lighthouse
@@ -3092,6 +3105,7 @@ loop_break_on_flashlight
 loop_in_action
 looping
 m0k0$
+m6UHo
 m8L9c
 m_Bone
 m_ChainData
@@ -3281,6 +3295,7 @@ multiplayer_break
 n D9e
 n03>Pu
 n??5^?
+nD8-oB
 nG fA
 nGDfA
 nTries < 10000000
@@ -3512,7 +3527,7 @@ t0@87t+
 t0D8;t+
 t4McF
 t5;_`}
-t9H9=F
+t9H9=
 t:LcM
 t;A9;
 tCHcP
@@ -3532,7 +3547,7 @@ text file busy
 texturescale
 tier0.dll
 timed out
-tj95*
+tj95*,
 tlLcA
 tlMcH
 too many files open

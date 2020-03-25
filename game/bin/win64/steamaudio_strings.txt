@@ -18,6 +18,7 @@
 "pA3Q
 #jJ^A
 #~@iDi
+%.3f, 
 %i %i %i %i
 %s: string format requested %d chars
 &YA1D
@@ -69,6 +70,7 @@
 )|$@L
 )|$`H
 )|$pD
++'?Nbp?#
 +A$Hc
 +B$Hc
 +C$Hc
@@ -177,7 +179,7 @@
 141022000000Z
 181004000000Z
 1DBlend
-200321043210Z0#
+200324232759Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -216,7 +218,6 @@
 9T$ ~
 9_p~$
 :Hc{h;{xu
-:cqtF
 ;A ~W
 ;D$0u
 ;D$@@
@@ -231,6 +232,7 @@
 <no failure reason set>
 <null>
 <unconnected>
+<{?j^
 =j&fA
 >IYfA
 ?5zlO
@@ -238,6 +240,7 @@
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
+?B`e>o
 ?Check@CThreadEvent@@QEAA_NXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -251,13 +254,13 @@
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
+?Zd[?
 ?invalid_hitbox
 ?vmdlkeys0
 @.data
 @.tls
 @81u/H
-@85 ,
-@85z,
+@85Z9
 @A]A\^
 @A^A]A\
 @A^A]A\^]
@@ -285,7 +288,6 @@
 @USWH
 @UVWATAUAVAWH
 @UVWATAUH
-@UVWAVH
 @UVWH
 @UWAWH
 @VAVAWH
@@ -346,7 +348,6 @@ A^A]A\_]
 A^A]^]
 A^A]_^[]
 A^_^[]
-A^_^]
 A_A]A\^]
 A_A]]
 A_A^A\_^[]
@@ -607,28 +608,13 @@ D$pHK8
 D$pL;
 D$x*>
 D8*u A
-D8- n
-D8-"}
-D8-0o
-D8-9p
-D8-Jq
-D8-Wr
-D8-bv
-D8-ds
-D8-gl
-D8-gt
-D8-ny
-D8-o|
-D8-p{
-D8-p~
-D8-qu
-D8-q}
-D8-rx
-D8-tm
-D8-vw
-D8-wz
-D8-}n
-D8=X-
+D8-*~
+D8-Gy
+D8-Tz
+D8-]{
+D8-f|
+D8-s}
+D8=8:
 D9pXt$H
 D9pXt8L9w
 D9pXu
@@ -688,7 +674,9 @@ GSFailure
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
+Generate Halton Sequence for a given order and number of samples.
 Generated %d probes with %.2f spacing and %.2f height.
+Generating Halton Sequence of %d order for %d samples.
 GenericGameData
 GetCPUInformation
 GetCurrentProcessId
@@ -886,6 +874,7 @@ Probes: Filesystem not initialized.
 Probes: Mising baked reverb data - %s.
 Probes: Reverb needs to be baked before Path baking.
 PropertyEditorSystem_001
+Q8?B`e>
 QueryPerformanceCounter
 QueuedLoaderVersion001
 RaiseException
@@ -1041,6 +1030,7 @@ Unexpected end of file
 Unrecognized flag name '%s'
 Unrecognized type '%d'
 Unresolved object reference '%s'
+Usage: snd_steamaudio_halton_sequence <order> <numsamples>.
 Usage: snd_steamaudio_hrtf_mixphasetype <0|1|2>.
 Usage: snd_steamaudio_pathing_findalternate <0|1>.
 Usage: snd_steamaudio_pathing_fullprobevalidation <0|1>.
@@ -1072,7 +1062,6 @@ VMDLLIB001
 VMaterialSystem2_001
 VMediaFoundation001
 VNewAsyncFileSystem001
-VNv+C
 VP4003
 VPhysX Interface ResourceMgr v0.1
 VPhysics2_Handle_Interface_001
@@ -1147,6 +1136,7 @@ X UVWH
 \$8fD
 \$@Hc
 \$HE3
+\?X94?%
 \content\
 \game\
 _V_SetExtension
@@ -1155,6 +1145,7 @@ _V_strncpy
 __oldschema_object_name
 __temp_unserialization_member__
 _class
+_tL}`
 _test_conversion_counter
 `.rdata
 `A_A^A]A\_[]
@@ -1353,6 +1344,7 @@ iplSetReverbTimeOverridesForConvolutionEffect
 iplSetValue
 iplSimulatePaths
 is_debris
+j<?L7	?1
 k HcKX;
 k0i0$
 k@_aH
@@ -1594,6 +1586,7 @@ shH9s(t
 shapeType
 snd_steamaudio_ambisonics_order
 snd_steamaudio_enable_pathing
+snd_steamaudio_halton_sequence
 snd_steamaudio_hrtf_mixphasetype
 snd_steamaudio_hybrid_reverb_enable_overrides
 snd_steamaudio_hybrid_reverb_override_affects_convolution

@@ -467,12 +467,12 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 %s allocation count overflow( %llu >= %llu )
 %s/%s's viewport (%d,%d - %d,%d) extends outside of the framebuffer (%d,%d)
 %s: string format requested %d chars
-%|R6,
 &#GameUI_Disconnect_InvalidMessageError
 &#GameUI_Disconnect_NoPeerGroupHandlers
 &#GameUI_Disconnect_PureServer_Mismatch
 &#GameUI_Disconnect_RemoteProblem_Other
 &#GameUI_ServerRejectInvalidReservation
+&4jFJ
 &6FVfv
 &?PPPPPPP?
 &NETWORK_DISCONNECT_BAD_SERVER_PASSWORD
@@ -514,8 +514,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (-)5"
 (-`t"
 (-cL#
-(5F]#
 (5PZ"
+(5V_#
 (5ih!
 (8HXhx
 (;QPt
@@ -825,7 +825,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ...<truncated>...
 ..om?
 .00cfg
-.5'B	
+.5d?	
+.5wE	
 .>N^n~
 .>PJ;I:qE>
 .?AU_Crt_new_delete@std@@
@@ -1193,7 +1194,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 061110000000Z
-0=","
 0><[cZUg^>
 0A;n4|
 0A\_]
@@ -1267,7 +1267,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 1eaB@
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200321043213Z0#
+200325010013Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -1776,7 +1776,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @UAVH
 @UAWH
 @USATAWH
-@USAUAWH
 @USAVH
 @USVATAUAWH
 @USVWATAUAVAWH
@@ -1945,7 +1944,6 @@ AIWalkable
 AK>(v
 AL9BLu
 ALfA;
-AN	mh
 ANIMATION_PROCESSING_CLIENT_INTERPOLATION
 ANIMATION_PROCESSING_CLIENT_PREDICTION
 ANIMATION_PROCESSING_CLIENT_RENDER
@@ -2025,7 +2023,6 @@ A_A]A\[]
 A_A]A\^[]
 A_A]A\^]
 A_A]A\_^[]
-A_A][]
 A_A]]
 A_A]^[]
 A_A]_]
@@ -2125,6 +2122,7 @@ Annotation
 AoProxyManifest
 April
 AssertMsg_ConditionFailed
+Assertion Failed in function %s():
 AssetBrowserSystem_001
 AssetGridWidget_ClearLayer
 AssetPreviewSystem_001
@@ -2515,6 +2513,8 @@ CUtlSymbolTableLargeBase
 CUtlVector
 CVConCommandMessageScene::MessageData
 CVH9W0
+CVolumetricFog::SetupConstantBuffer
+CVolumetricFogClipmapRenderer::Render
 CWD>~3
 CXHc8H
 C_INIT_AddVectorToVector
@@ -2818,19 +2818,23 @@ D$PD9
 D$PE3
 D$PE8h
 D$PE9HH~3
+D$PF9
 D$PH+
 D$PH;
 D$PH;F
 D$PHc
 D$PI;
 D$PIcMH3
+D$PK)
 D$PL9r@tDH
 D$PL;
 D$PL;D$Xu
+D$PZC
 D$PfA
 D$Pk@_aH
 D$Pmp
 D$Pu=3
+D$P~m
 D$X;F
 D$XA+
 D$XD8p
@@ -2879,6 +2883,8 @@ D$pH;GHu
 D$pHK8
 D$pL;
 D$pM;
+D$pRU
+D$pff
 D$tfE
 D$x*>
 D$xE+
@@ -2907,41 +2913,38 @@ D7HE3
 D8%((!
 D8&t!
 D8&t4H
-D8-"k
-D8-#j
-D8-$X
-D8-$l
-D8-&m
-D8-,o
-D8--Y
-D8-1q
-D8->Z
-D8-K[
-D8-V_
-D8-X\
-D8-[U
-D8-[]
-D8-^p
-D8-bb
-D8-ce
-D8-dd
-D8-dg
-D8-e^
-D8-ef
-D8-fa
-D8-fh
-D8-hV
-D8-j`
-D8-kc
-D8-qW
-D8-si
-D8-uq
-D8-vj
-D8-xk
-D8-ym
-D8-zX
-D8-zl
-D8-|n
+D8-	m
+D8-	n
+D8-%Y
+D8-+Z
+D8-.S
+D8-0]
+D8-8[
+D8-;T
+D8-;\
+D8-=^
+D8-=c
+D8->a
+D8-?`
+D8-@f
+D8-Ab
+D8-Ae
+D8-C_
+D8-DU
+D8-Fd
+D8-Ig
+D8-Jn
+D8-Ol
+D8-Ri
+D8-Sh
+D8-TV
+D8-Tj
+D8-Vk
+D8-\m
+D8-]W
+D8-ao
+D8-nX
+D8-{Y
 D82u&H
 D8={m
 D8=}n
@@ -3409,8 +3412,8 @@ H92u,
 H97t<
 H9;uAA
 H9;v#H
-H9=*z
-H9==J
+H9=Zx
+H9=mH
 H9A u
 H9Ahs
 H9C s(H
@@ -4250,6 +4253,7 @@ PF_TYPE_PARTICLE_AGE_NORMALIZED
 PF_TYPE_RANDOM_UNIFORM
 PH;0tUH
 PI;\$ u
+PIvwS
 PLACEHOLDER_VALUE
 POSIX
 PVEC_TYPE_LITERAL
@@ -4322,7 +4326,6 @@ Q LcI
 Q(9Q0A
 Q0HcAP
 Q5rHg,>
-Q7eZ;
 Q8L;P
 Q?33s?
 QAngle
@@ -5103,7 +5106,8 @@ X0~zM
 X360_DST16
 X360_DST24
 X360_DST24F
-X5^-"
+X5 u!
+X5n/"
 XA]A\^[
 XA^A]A\^][
 XA^A]A\_][
@@ -5120,8 +5124,8 @@ Xt$ Ic
 Xt$$H
 Xt$TH
 Y0HcR
-Y5#Y#
-Y="j!
+Y57[#
+Y=6l!
 Y>kX>M
 YD$@f
 YD$pA
@@ -5187,7 +5191,7 @@ Zod(^?
 \$<A;
 \$<E3
 \$@9=
-\$@@8=]Z	
+\$@@8=
 \$@E3
 \$@H;
 \$@Hc
@@ -5993,6 +5997,7 @@ m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 m_boneSetupMask
 m_boneTransforms
+m_constantBufferData.m_nNumFogVolumeBoundingBoxes[0] <= 128
 m_decodeOps
 m_decodedAnims
 m_displayText
@@ -6270,6 +6275,9 @@ nD$4f
 nD$8f
 nD$<f
 nD$PH
+nDispatchX <= c_nClipmapDimension
+nDispatchY <= c_nClipmapDimension
+nDispatchZ <= c_nClipmapDimension
 nIndex < m_RenderTargets.Count()
 nIndex == pList->m_nNumObjects - 1
 nL$$A
@@ -6697,6 +6705,7 @@ sunshadowdummy
 sunshadows
 suppress
 surface_prop
+svf:Af
 swift_prefix
 syntax
 s|fff
@@ -6869,7 +6878,7 @@ t7HcG A
 t8Hc/;o
 t8HcA
 t8HcG M
-t9H9=f7
+t9H9=
 t9Hc\$pE
 t9IcA
 t:HcA
@@ -7156,7 +7165,6 @@ zY;>u:m
 { HcC8
 {8HcCP
 {YIN?
-{wf',@-
 |#tAM
 |$ A;
 |$ ATAUAVAWD

@@ -322,6 +322,18 @@
                   "sub_mode" : "click"
                },
                "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/move/in/continuousturn"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "60"
+               },
+               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       },
