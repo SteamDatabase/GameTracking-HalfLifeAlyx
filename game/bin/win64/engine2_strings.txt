@@ -296,7 +296,7 @@
  CServerSideClientBase::SendSignonData
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;5y
+ D;=-
  Driver %s (vendorid %x, deviceid %x DXSupport Level %d)
  File log saved to %s
  H3E H3E
@@ -987,8 +987,6 @@ $tI(knN
 (*%s*), 
 (*MARK) must have an argument
 (*VERB) not recognized
-(-"U	
-(-8U	
 (8HXhx
 (9{ |
 (;^ |
@@ -2845,11 +2843,11 @@ $tI(knN
 .xdata
 .xdata$x
 /2GG>!B
-/5[A"
+/5D+	
+/5J7	
 /=$!6
-/=>8	
-/=ZG	
-/=\G	
+/=v:	
+/=x:	
 />58d%
 /?O_o
 /@Hv	
@@ -2978,7 +2976,6 @@ $tI(knN
 127.0.0.1
 131022120000Z
 141022000000Z
-14:09:14
 180.0
 181004000000Z
 1<.	/>:
@@ -2989,9 +2986,9 @@ $tI(knN
 1H;>u>I
 1H;>u?I
 1I9p 
+1W']Bv3
 1eaB@
 1sAL"
-1u^zNi"
 1wsHp
 2 - bottom-left
 2 - resize down
@@ -3004,10 +3001,11 @@ $tI(knN
 2$.CGameInfo.CDotaGameInfo.CPlayerInfo
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 200000
-200320211135Z0#
+200321045722Z0#
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 211007120000Z0M1
 211110000000Z0b1
+21:53:25
 2333333
 241022000000Z0G1
 255 255 255 255
@@ -3025,7 +3023,6 @@ $tI(knN
 3>fvw
 3A8A#
 3EgA#
-3KW4gqQ@
 4 - no pin
 456789:;<=
 4HA;x
@@ -3111,7 +3108,6 @@ $tI(knN
 92~$3
 92~2L
 93~(H
-95|'P
 98~+H
 99C }
 99~-H
@@ -3127,7 +3123,8 @@ $tI(knN
 9:u)H
 9:u.H
 9;~1f
-9=?TC
+9=/SC
+9=wTC
 9>powf
 9A9G0u!D;
 9A@vkD8y4
@@ -3571,15 +3568,17 @@ $tI(knN
 @09D$0
 @8(tNH
 @8(uX@8kTt/H
-@8-^d 
+@8->c 
 @80t>
 @80u#H
 @81t)@8q
 @81u/H
 @84:u
-@85l[
-@85oS"
-@8=caD
+@85BV)
+@85KR"
+@85OT"
+@85kZ
+@8=S`D
 @8iht
 @8kKt
 @8kLt\H
@@ -4413,14 +4412,11 @@ BxHcxP
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 C 9~ ~7H
 C @8-
-C @8-?d 
-C @8-w
 C @85
-C @858
-C @85<
-C @85=S"
-C @85M[
-C @85y
+C @854
+C @85H
+C @85g
+C @85}R"
 C H+C
 C L9s0u
 C$u	H
@@ -4838,6 +4834,7 @@ CLoopTypeBase::GenerateServiceDependencies
 CLoopTypeClientServerService
 CMOV 
 CMaterialSystem2AppSystemDict::AddRenderSystem
+CMaterialSystem2AppSystemDict::SetupMaterialSystem
 CMemAllocSystemInitialize
 CMotionTransform
 CMsgIPCAddress
@@ -5948,16 +5945,13 @@ D24X8
 D24X8_SHADOW
 D8 t{H
 D8$8u
-D8%8TB
-D8%=TB
-D8%iCC
-D8%{DC
+D8%(SB
+D8%-SB
 D8&t!
 D8&t4H
 D8't)
 D8,3u
 D8,8u
-D8-:	
 D82u&H
 D83t	E3
 D83t	H
@@ -5965,6 +5959,7 @@ D840u
 D84;u
 D88Ht!
 D88Hte
+D8= W)
 D8?tRf
 D8?tnH
 D8C0I
@@ -6017,7 +6012,6 @@ D9	~sE
 D9	~uE
 D9&t\I
 D9&~MH
-D9-p	
 D9.~NH
 D90u	9X
 D97t0D
@@ -6085,7 +6079,7 @@ D9{(u
 D9|$ 
 D9|$PH
 D9|$`
-D;-R)
+D;-.(
 D;B }
 D;BDI
 D;C }JH
@@ -6721,6 +6715,7 @@ Failed to find "VTResume()" in "vtuneapi.dll".
 Failed to get requested UGC id %llu. Result %d
 Failed to init steam in anonymous mode?
 Failed to initialize video!
+Failed to load or init SteamVR!
 Failed to load rendersystemvulkan.dll.  Likely missing Vulkan loader (vulkan-1.dll) that is installed by drivers supporting Vulkan.  Falling back to DX9.
 Failed to map from %s to content-path
 Failed to open %s
@@ -7190,14 +7185,14 @@ H92u&
 H92u'
 H92u,
 H93tEH
-H95A!J
-H95n!J
+H95#`&
+H95/!J
+H95a!J
 H97t<
 H98u	H
 H99u{
 H9;uAA
-H9=BQ
-H9=Y$;
+H9=I#;
 H9A u
 H9A(s
 H9A0u
@@ -7344,7 +7339,7 @@ HasField
 HasGameUI
 HasModAppSystems
 Hc+;k
-Hc-o(
+Hc-O'
 Hc.;n
 Hc/;o
 Hc2;r
@@ -8085,7 +8080,7 @@ L93t)H
 L93u_
 L93uc
 L9;uv
-L9={,L
+L9==VP
 L9B s
 L9J s
 L9Spt
@@ -8209,7 +8204,6 @@ LayoutFileChanged
 Lc	E3
 Lc2G9
 Lc3D;s
-Lc5 18
 Lc7D;w
 Lc;D;{
 Lc>D;~
@@ -8372,7 +8366,7 @@ M D;M
 M H1E
 M#A0I
 M#~0I
-M(f95
+M(f95|x
 M98t^M
 M99tIM
 M9f(u
@@ -8434,7 +8428,6 @@ MapValueRef::GetStringValue
 MapValueRef::GetUInt32Value
 MapValueRef::GetUInt64Value
 MapValueRef::type MapValueRef is not initialized.
-Mar  7 2020
 Mar 20 2020
 March
 Marked tick %u in '%s'
@@ -10221,6 +10214,7 @@ System Memory:
 System/lock
 System/network
 SystemTimeToFileTime
+T!8|UkXr
 T$ +G$D
 T$ A3
 T$ A;
@@ -10333,7 +10327,8 @@ T$tD;
 T$xE3
 T$xH;
 T$xHc
-T%H+	
+T%d!	
+T=A7	
 TACPH
 TADIH
 TATPL
@@ -11197,18 +11192,17 @@ X UWATAUAVH
 X UWAWH
 X VWAVH
 X!t5~
-X%b 	
 X(D9y(
-X-<k	
-X-Fw	
-X-Yi	
-X-sX	
-X-|w	
+X-3W	
+X-<v	
+X-iW	
+X-j1	
+X-j;	
+X-~t	
 X360_DST16
 X360_DST24
 X360_DST24F
-X5j%?
-X5~~E
+X5z%?
 XA\^H
 XA]A\
 XA]A\^[
@@ -11228,15 +11222,13 @@ X|$ A
 X|$8E
 X|(X@>
 Y$D;R
-Y%K_D
-Y-8:	
-Y-N0	
-Y-m:	
+Y%[_D
+Y--9	
+Y-x.	
 Y0HcR
 Y0LcQ\M
 Y0t>H
-Y5/~E
-Y5s{E
+Y5?~E
 Y>kX>M
 Y@fA;
 YD$@f
@@ -11444,8 +11436,8 @@ Zpm"U
 \$xfE+
 \$xu#H
 \$|Ic
-\%j2	
-\%j<	
+\%*1	
+\%*;	
 \%lld.vpk
 \C not allowed in lookbehind assertion
 \P{Ll}
@@ -11471,7 +11463,9 @@ Zpm"U
 \p{Xwd}
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
-]=SZ2
+]5h[3
+]5~M/
+]=3Y2
 ]>)2X
 ]pfff
 ^<V7w
@@ -11714,6 +11708,7 @@ avg_loss_out
 avg_packets_in
 avg_packets_out
 avisound 
+b*n^r
 b?^Cy
 bPayloadEncrypted
 bUpdate
@@ -12422,9 +12417,9 @@ extra interior spaces removed from keyword
 ex|U>
 f!C"3
 f9*u	H
-f9- D<
+f9-oB<
 f93t,
-f95Yy
+f95Ix
 f9<Au
 f9s t
 f9~2t[D
@@ -12830,7 +12825,6 @@ invert_orientation
 io error
 ip@8ih
 ipaddress
-ir }(S
 is a directory
 is running without a known mod!
 is unreliable memory or other hardware.  The 1007 assertion
@@ -13663,7 +13657,6 @@ numbers out of order in {} quantifier
 numframes,
 numsegments
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
-o%Ty 
 o@L9d+ t+LcwhD;wxu	H
 oD$ H
 oD$ fH
@@ -14879,7 +14872,7 @@ t8HcG,
 t8HcL$8H
 t9D80t4H
 t9D89t4H
-t9H9=
+t9H9=&
 t9HcC(A
 t9HcG0
 t9IcA
@@ -15143,7 +15136,7 @@ type.googleapis.com/
 type.googleprod.com/
 t}E9&txL
 u	9w$
-u	@8=E,$
+u	@8=u*$
 u	HcB
 u D9~
 u!!D$(H
@@ -15548,6 +15541,7 @@ xaL;Q
 xafff
 xdigit
 xeHcG
+xi;=z#
 xpxxxx
 xuJE3
 xuidReserve

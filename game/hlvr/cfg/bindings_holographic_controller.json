@@ -75,15 +75,6 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/dev/in/togglemenu"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
                      "output" : "/actions/dev/in/menudismiss"
                   }
                },
@@ -98,6 +89,15 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/dev/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/application_menu"
             }
          ]
       },
@@ -329,6 +329,15 @@
                   "sub_mode" : "touch"
                },
                "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/move/in/adjustheight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trackpad"
             }
          ]
       },
@@ -377,6 +386,32 @@
                },
                "mode" : "joystick",
                "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "scroll" : {
+                     "output" : "/actions/scroll/in/scroll"
+                  }
+               },
+               "mode" : "scroll",
+               "parameters" : {
+                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
+                  "discrete_scroll_joystick_ratefactor" : "4"
+               },
+               "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {
+                  "scroll" : {
+                     "output" : "/actions/scroll/in/scroll"
+                  }
+               },
+               "mode" : "scroll",
+               "parameters" : {
+                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
+                  "discrete_scroll_joystick_ratefactor" : "4"
+               },
+               "path" : "/user/hand/right/input/joystick"
             }
          ]
       },

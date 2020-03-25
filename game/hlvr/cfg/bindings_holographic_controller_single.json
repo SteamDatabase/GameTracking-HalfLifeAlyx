@@ -213,6 +213,20 @@
                },
                "mode" : "joystick",
                "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs": {
+                  "scroll": {
+                     "output": "/actions/scroll/in/scroll"
+                  }
+               },
+               "mode": "scroll",
+               "parameters": {
+                  "discrete_scroll_joystick_deadzone_vertical": "0.25",
+                  "discrete_scroll_joystick_ratefactor": "4",
+                  "scroll_mode": "discrete"
+               },
+               "path": "/user/hand/right/input/joystick"
             }
          ]
       },

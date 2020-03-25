@@ -232,6 +232,8 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  D8'tZL
+ D;5	AT
+ D;=)_T
  Done.
  ERROR: 
  Encountered errors:
@@ -602,20 +604,21 @@ $~aA;F
 ("%s")
 ($key_name)
 ($key_value)
-(%GrX
-(%ThX
-(%U6l
-(%X:X
+(%$mX
+(%(?X
+(%L`<
+(%U;l
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
+(%hdX
+(%t5X
 ('8PW
 (*%s*), 
-(-%+r
-(5@"X
-(5cGX
+(53LX
+(5sqX
 (8HXhx
 (;^ |
 (A]A\
@@ -1406,7 +1409,7 @@ $~aA;F
 -vwatch_disabled
 -vwatch_locking
 -width
-.%(-`
+.%h2`
 .%s%s
 ... Building '%s'
 ...done
@@ -2887,7 +2890,7 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5K.K
+/5k3K
 /7w$M
 /84_>
 /=$!6
@@ -2991,7 +2994,6 @@ $~aA;F
 0H9t$@t
 0Hc1H
 0Hc3H
-0Hc5\
 0Hc7;w
 0Hc7L
 0Hc9H
@@ -3030,7 +3032,6 @@ $~aA;F
 1280x720
 131022120000Z
 141022000000Z
-14:04:22
 16-byte data pool
 181004000000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
@@ -3045,9 +3046,10 @@ $~aA;F
 1u1;S
 1usD;C
 1wsHp
-200320210628Z0#
+200321044809Z0#
 211007120000Z0M1
 211110000000Z0b1
+21:47:05
 241022000000Z0G1
 255 255 255 255
 281022120000Z0r1
@@ -3096,7 +3098,6 @@ $~aA;F
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4u8Hc
 5@8|$"t.9|
-5NnP$i
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
 64 283 0
@@ -3324,6 +3325,7 @@ $~aA;F
 9k@~dH
 9kP~0H
 9l>Lt
+9lh&!o
 9o@~^H
 9oP~2E3
 9oP~3E3
@@ -3517,7 +3519,6 @@ $~aA;F
 <2L9g
 <7uUH
 <8bunz8
-<8e)%p
 <:t`</t
 <;CL}_Ic
 <;_P~/H
@@ -3724,9 +3725,14 @@ $~aA;F
 @80u#H
 @81u/H
 @83t)
-@85?R
+@85$2W
+@850Z
+@85JU
+@85wvW
 @89tDI
-@8=]gj
+@8=1+
+@8=;h
+@8=}lj
 @8iHt
 @8kut~L
 @8k|t"HcK
@@ -5213,6 +5219,7 @@ CMapWorld CUtlMemoryPool
 CMapWorldLayer
 CMapWorldLayer CUtlMemoryPool
 CMaterialSystem2AppSystemDict::AddRenderSystem
+CMaterialSystem2AppSystemDict::SetupMaterialSystem
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
 CModelHelper::UpdateMaterialOverride
@@ -6438,16 +6445,16 @@ D8&t4H
 D8't(Ic
 D8't)
 D8*u A
-D8-NaT
 D80t.
 D82u&H
 D84;u
-D85D^
+D85K\
 D88Ht!
 D88Hte
 D8:u7H
 D8<;u
-D8=`f
+D8=@8
+D8=Og
 D8?tnH
 D8D$)t)f
 D8D$9t
@@ -6515,6 +6522,7 @@ D9&~;
 D9'u$H
 D9+~#
 D9,2H
+D9-tAT
 D9.ue
 D9/~ML
 D90u	9X
@@ -6522,6 +6530,7 @@ D91~YH
 D97tuD
 D98Ht;H
 D98tT
+D9=CBT
 D9A t
 D9A ~
 D9B,t
@@ -6589,12 +6598,10 @@ D9{(u
 D9|$ 
 D9|$x}
 D9|5Lt
-D:-@	i
-D:5isq
-D;%5CT
+D:5Yzq
+D:5z{q
 D;09F0t5A
 D;8}aH
-D;=<{]
 D;B s
 D;BLu
 D;C }
@@ -7593,6 +7600,7 @@ Failed to load FGD file '%s'.
 Failed to load asset config file: '%s'
 Failed to load file "%s"
 Failed to load map "%s"!
+Failed to load or init SteamVR!
 Failed to load rendersystemvulkan.dll.  Likely missing Vulkan loader (vulkan-1.dll) that is installed by drivers supporting Vulkan.  Falling back to DX9.
 Failed to load required extra system "%s" from %s in %s.dll
 Failed to load scripted entity classes
@@ -7994,12 +8002,10 @@ H0Hc\$p3
 H3\$HH
 H9(t{A
 H9+uHH
-H9-N>V
-H9-|%l
-H95;nP
-H95KyY
-H95Vt
-H95{cT
+H9-|*l
+H95+~Y
+H956z
+H95vy
 H97t<
 H98t%H
 H98tPA
@@ -8008,11 +8014,11 @@ H98t|A
 H98u	H
 H99u0H
 H99u{
-H9=		
-H9=fK
-H9=iDQ
-H9=vT
-H9=~U
+H9=6J
+H9=9CQ
+H9=FS
+H9=NT
+H9=SJ
 H9A u
 H9A(s
 H9A(u
@@ -8219,6 +8225,7 @@ Hc7A+
 Hc;;{
 Hc;HcK
 Hc<0H
+Hc=uQ
 Hc>;~
 Hc>Hc
 HcA$H
@@ -9092,7 +9099,6 @@ L$$D;
 L$$E+
 L$$Ic
 L$$Ik
-L$%)8
 L$&@8t$&t0@8q
 L$(8T$(u
 L$(A+
@@ -9326,12 +9332,12 @@ L2DHc
 L80Hc3+
 L9(uP
 L9*u&
-L9-0K
-L9-nwV
+L9-`G
 L91uAH
 L93u_
 L93uc
 L9<8u7
+L9=!Z
 L9Ahs
 L9B A
 L9B@A
@@ -9831,7 +9837,6 @@ MapNode
 MapPoint
 MapViewOfFile
 MapVisibilityV001RESOURCE_TYPE_COMPILER_002
-Mar  7 2020
 Mar 20 2020
 March
 MaskedAreas
@@ -9866,7 +9871,6 @@ MaxPolicyElementKey
 MaxSampleValue
 Maximum Size Scale
 Maximum supported image dimension is %u pixels
-MbP?H
 Mbp?333333
 Mc$$A
 Mc&E;f
@@ -10902,7 +10906,6 @@ SNAN)
 SNRtu
 SOURCE2_NO_BUNDLES
 SOURCE2_USE_BUNDLES
-SQF"ZA
 SSAOBias
 SSAORadius
 SSAOStrength
@@ -11404,6 +11407,8 @@ T$xI9
 T$xL9#t
 T$xLc
 T$xff
+T5A	N
+T=:	N
 TADIt	
 TADIu
 TADIu.
@@ -12172,16 +12177,16 @@ Visible Map Errors
 VolumetricFog
 Vwatch Retrieval of synchronization handle through app signal pipe failed with error code %d
 W!t/H
-W%N@`
+W%D	`
 W0]7H
 W0]7L
-W5G*`
-W5\2o
+W5\>o
+W5k]x
 W8HcH
-W=;=`
-W=D<`
-W=qN`
+W=UF`
+W=\D[
 W=vmdlkeys0
+W={B`
 WARNING: Could not fit padded images for "%s" - alpha crop forced on - dual sequences will not work
 WARNING: Could not fit padded images for "%s" - sequence images may experience color bleeding
 WARNING: FGD Bad input/output type '%s'
@@ -12291,15 +12296,15 @@ X E9z
 X HcE
 X UWAVH
 X!t5~
-X%K`<
-X%vYx
+X%6[x
+X%{GV
 X(D9y(
+X-	a<
+X-N[x
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X59{?
-X=c`<
 XA;6|
 XA;w@
 XA\^][
@@ -12362,23 +12367,24 @@ X|$ A
 X|$8E
 X|$xA
 Y$D;R
-Y%{x?
-Y-L,=
-Y-SGV
-Y-lS?
-Y-wFm
+Y%&dL
+Y%EP`
+Y%Wx?
+Y%Y,=
+Y-!_9
+Y-3LV
+Y-_x?
+Y-wKm
 Y0t>H
-Y5	/K
-Y5?z?
-Y5A-9
-Y5A{?
-Y5KdH
-Y5T9`
-Y5g>`
-Y5hSh
-Y=+4`
-Y=,y%
-Y=ZJ`
+Y5)4K
+Y5*.K
+Y5<E\
+Y5a|?
+Y5kU?
+Y5q09
+Y=OC`
+Y=S>`
+Y=k9`
 Y>kX>M
 Y@D;Z@u
 YCbCrCoefficients
@@ -12641,9 +12647,10 @@ Zpm"U
 \$xff
 \$xu+M
 \$xv.
-\%<)`
 \%lld.vpk
+\%|.`
 \/HcD$0
+\56N?
 \D$8H
 \D$8L
 \D$Hf
@@ -12669,8 +12676,8 @@ Zpm"U
 ]-?Z8
 ]09]@|EH
 ]0;S s[I
-]5Ri5
 ]8A;u8~
+]=]~P
 ]>)2X
 ]@fff
 ]A_A^A]A\_^[
@@ -13507,7 +13514,7 @@ d$(A;
 d$(E3
 d$(Hc
 d$(fI
-d$)u	D:%
+d$)u	D:%yyq
 d$,H9D$P
 d$0A+
 d$0E3
@@ -13707,7 +13714,7 @@ e A_A^A]A\]
 e A_A^A]A\_^]
 e _^]
 e(A_A^A]A\_^[]
-e)u	D:%U
+e)u	D:%e
 e+000
 e0A_A^A]A\]
 e0A_A^A]A\_^]
@@ -13716,7 +13723,6 @@ e8A_A^A]A\_^[]
 e8u~f
 e@A_A^A]A\]
 e@A_A^]
-eEzX!
 eHA_A^A]A\_^[]
 eLK(w
 ePA_A^A]A\_^]
@@ -16536,7 +16542,7 @@ t	IcH I
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=$eq
+t!@:=
 t!D93t
 t!D:%
 t!H9t$@
@@ -16992,7 +16998,7 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=&DX
+t9H9=
 t9fff
 t:D9s
 t:LcM
@@ -17567,7 +17573,7 @@ tuA;U
 tuD;AhsoI
 turn_rate
 tvHcE
-tvL9%6
+tvL9%
 tvLcK
 twH;^XtH3
 twistJoints
@@ -17589,13 +17595,14 @@ u	8Fp
 u	9w$
 u	@8,
 u	@8=
-u	@:-
-u	@:-asq
+u	@:-Qzq
+u	@:-r{q
 u	D:%
-u	D:%8	i
-u	D:%u
-u	D:-.Ik
-u	D:5%
+u	D:%H
+u	D:%e
+u	D:%|9r
+u	D:-.Nk
+u	D:5
 u D8p
 u IcH
 u f;N
@@ -18023,7 +18030,7 @@ x$H9-
 x&;+}"H
 x&E;B
 x'D;'}"H
-x'L9=y
+x'L9=
 x'fff
 x(/u$H
 x)A;M

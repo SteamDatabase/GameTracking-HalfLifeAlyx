@@ -11,10 +11,6 @@
     %u iterated blocks
     %u unfinished blocks
   (H/V): 
-  -nohmd      Renders through the VR code paths without using the HMD's tracking or display
-  -scale [x]  Available with either -vrdebug or -nohmd. Will scale window by float amount (0.5 is half width & height)
-  -vr         Enable VR (can be automatically enabled if launched from Steam in VR mode)
-  -vrdebug    Renders to the primary monitor, but still uses the HMD's tracking if available
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  'L>[
@@ -41,7 +37,6 @@
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;=)@
  H3E H3E
  Hc)H
  Hc9H
@@ -289,7 +284,6 @@ $Ib?s
 -noaq
 -noautofidelity
 -nohackstartup
--nohmd
 -nomultiview
 -sse2
 -sse3
@@ -303,11 +297,7 @@ $Ib?s
 -vr_minigames_transition
 -vr_recommended_height
 -vr_recommended_width
--vrcompdebug
--vrdebug
 -vrdev
--vrperftest
--vrperftesthmd
 -width
 . Pixels per eye after stencil mask: 
 . Renderer now requires 
@@ -664,7 +654,7 @@ $Ib?s
 1<.	/>:
 1DBlend
 1eaB@
-200320205838Z0#
+200321043419Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -683,7 +673,6 @@ $Ib?s
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
-4jIp2
 5@8|$"t.9|
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 700WP
@@ -1150,40 +1139,40 @@ CUtlMemoryPoolBase: Cannot specify 0 elements to grow each time!
 CUtlMemoryPoolBase::CUtlMemoryPoolBase
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int,class CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int>,int> >::NewNode
-CVr::CreateRenderModel(9769): 
-CVr::DisableMotionSmoothingForThisFrame(3525): 
+CVr::CreateRenderModel(9779): 
+CVr::DisableMotionSmoothingForThisFrame(3532): 
 CVr::GetOutputDevice not supported for this rendersystem API.
-CVr::MarkGamePhase(5309): 
 CVr::MarkGamePhase(5316): 
-CVr::PollHMDStateForRenderThread(5397): 
-CVr::PollHMDStateForRenderThread(5409): 
-CVr::PollHMDStateForRenderThread(5433): 
-CVr::PreShutdown(1247): 
-CVr::SampleAxisControllerState(4549): ERROR! Unknown controller axis type %d!
+CVr::MarkGamePhase(5323): 
+CVr::PollHMDStateForRenderThread(5404): 
+CVr::PollHMDStateForRenderThread(5416): 
+CVr::PollHMDStateForRenderThread(5440): 
+CVr::PreShutdown(1251): 
+CVr::SampleAxisControllerState(4556): ERROR! Unknown controller axis type %d!
 CVr::SetDashBoardUserToggleEnabled: 
-CVr::SetOverlayTexture(10968): 
-CVr::SetSkyboxOverride(2365): 
+CVr::SetOverlayTexture(10978): 
+CVr::SetSkyboxOverride(2372): 
 CVr::UpdateGhostCorrectionTexture(1105): 
 CVrReconstructionRenderer
-CVrReconstructionRenderer::Render(7296): VR - Destroying old VB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7303): VR - Destroying old IB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7324): VR - Destroying old IB for reconstruction!
-CVrReconstructionRenderer::Render(7464): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
-CVrReconstructionRenderer::Render(7473): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7306): VR - Destroying old VB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7313): VR - Destroying old IB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7334): VR - Destroying old IB for reconstruction!
+CVrReconstructionRenderer::Render(7474): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7483): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
 CVrReconstructionRendererIB
 CVrReconstructionRendererVB
 CVrStencilRenderer
-CVrStencilRenderer::Render(6347): VR - Destroying old VB for Stenciling!
-CVrStencilRenderer::Render(6392): VR - Error! VB handle is invalid in CVrStencilRenderer!
+CVrStencilRenderer::Render(6357): VR - Destroying old VB for Stenciling!
+CVrStencilRenderer::Render(6402): VR - Error! VB handle is invalid in CVrStencilRenderer!
 CVrStencilRendererVB
 CVrSubviewStencilRenderer
-CVrSubviewStencilRenderer::Render(6536): VR - Destroying old VB for SubviewStenciling!
-CVrSubviewStencilRenderer::Render(6878): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
+CVrSubviewStencilRenderer::Render(6546): VR - Destroying old VB for SubviewStenciling!
+CVrSubviewStencilRenderer::Render(6888): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
 CVrSubviewStencilRendererVB
 CVrWarpRenderer
-CVrWarpRenderer::Render(7059): VR - Destroying old IB for warping!
-CVrWarpRenderer::Render(7137): VR - Error! VB handle is invalid in CVrWarpRenderer!
-CVrWarpRenderer::Render(7146): VR - Error! IB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7069): VR - Destroying old IB for warping!
+CVrWarpRenderer::Render(7147): VR - Error! VB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7156): VR - Error! IB handle is invalid in CVrWarpRenderer!
 CVrWarpRendererIB
 CVrWarpRendererVB
 CWD>~3
@@ -1448,39 +1437,37 @@ D24S8
 D24X4S4
 D24X8
 D24X8_SHADOW
-D8-$J
-D8-'C
-D8-'K
-D8-)M
-D8-)R
-D8-*P
-D8-+O
-D8-,U
-D8--Q
-D8--T
-D8-/N
-D8-0D
-D8-2S
-D8-5V
-D8-6]
-D8-;[
-D8->X
-D8-?W
-D8-@E
-D8-@Y
-D8-BZ
-D8-H\
-D8-IF
-D8-M^
-D8-ZG
-D8-gH
-D8-o]
-D8-rL
-D8-tI
-D8-wB
-D8-wJ
-D8-z]
-D8-~O
+D8-"N
+D8-#8
+D8-49
+D8-=:
+D8->O
+D8-M4
+D8-M=
+D8-O>
+D8-Q;
+D8-Q<
+D8-TA
+D8-UD
+D8-VC
+D8-VF
+D8-WE
+D8-X@
+D8-Z5
+D8-ZB
+D8-\?
+D8-_G
+D8-_M
+D8-f3
+D8-hI
+D8-hL
+D8-iH
+D8-j6
+D8-jJ
+D8-l7
+D8-lK
+D8-uM
+D8-uN
 D82u&H
 D8M@t
 D8M@t^
@@ -1499,9 +1486,7 @@ D8o(t4
 D8sAt
 D8t$Ht
 D8|$Pt
-D9-x"
 D90u	9X
-D9=G#
 D9B,t
 D9G$s5
 D9J,w
@@ -1513,6 +1498,7 @@ D9oh~dI
 D9x(uiE
 D9{(u
 D9|$ 
+D;%24
 D;D$(|
 D;D$(}:J
 D;D$8|
@@ -1669,7 +1655,6 @@ GAMEROOT
 GCUtlString::FormatV
 GPU Memory
 GPU: 
-GQ1K !
 Game CPU time
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1771,12 +1756,10 @@ H+\$h+
 H+\$hIc<$H
 H0F08
 H3\$HH
-H9-Sg
-H95k;	
+H9-+Q
 H97t<
 H98u	H
 H99u{
-H9=lv
 H9A u
 H9A(s
 H9BhuTH
@@ -2487,7 +2470,7 @@ UpdateProcThreadAttribute
 Use: vr_dump_render_model <obj_filename> <tga_filename>
 UserInfoChangeService_001
 V0;Ct~ZH
-V0H9-
+V0H9-[Z
 V6E>`"(5
 VAVAWH
 VApplication001
@@ -2521,7 +2504,6 @@ VR - Error calling g_pVr->GenerateWarpMeshVbAndIb()!
 VR - Error! %s!
 VR - GPU( %5.2f )
 VR - IdentifyApplicaton steam.app.450390 AFTER VR Init
-VR - IdentifyApplicaton steam.app.450390 BEFORE VR Init
 VR - Warning! SteamVR failed initialization with error code %s: "%s"!
 VR - vr_test_nonblocking_hmd_input available
 VR GPU Compositor benchmark data not available.
@@ -2621,7 +2603,6 @@ VertexUVPosColorNormalAndTangent_t
 Vertical split full resolution.
 Viewport Left Eye:  
 Viewport Right Eye: 
-Virtual reality command line args:
 VirtualAlloc
 VirtualFree
 VirtualProtect
@@ -2690,7 +2671,7 @@ XA_A^A\_^[
 XL$tL
 X|$ A
 X|$8E
-X|(hM
+X|(h=
 Y$D;R
 Y0t>H
 Y>kX>M
@@ -2739,7 +2720,7 @@ Zod(^?
 \$8A+
 \$8Hc
 \$<A;
-\$@@8=
+\$@@8=}W
 \$@E3
 \$@H+
 \$@H;
@@ -2875,7 +2856,6 @@ broken promise
 burst_randomize
 burst_scale
 button%d
-bx8td
 c [1>H'
 c(>\,
 c0&>`
@@ -3101,6 +3081,7 @@ l$`C9,
 l$`E9j
 l$`E;j
 l$hM;
+lL}R]
 last_sniff
 length
 lighthouse
@@ -3465,8 +3446,6 @@ switchState
 system
 system.HeadsetView
 system.desktop.1
-t	D8=
-t	D8=k
 t	H9s
 t	L9c
 t D8o(u
@@ -3533,7 +3512,7 @@ t0@87t+
 t0D8;t+
 t4McF
 t5;_`}
-t9H9=
+t9H9=F
 t:LcM
 t;A9;
 tCHcP
@@ -3553,6 +3532,7 @@ text file busy
 texturescale
 tier0.dll
 timed out
+tj95*
 tlLcA
 tlMcH
 too many files open
@@ -3842,7 +3822,6 @@ zY;>u:m
 ~(HcNDI
 ~*9y0
 ~*9yP
-~.u^c
 ~QLc]
 ~]Lc]
 ~`8A!t
