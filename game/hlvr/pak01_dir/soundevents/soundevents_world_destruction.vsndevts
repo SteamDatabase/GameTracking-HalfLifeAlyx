@@ -1,0 +1,1894 @@
+{
+	Destruction_A4.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 3000.000000
+		occlusion_scale = 0.100000
+		mixgroup = "LoudEvents"
+	}
+	Destruction_A4.Shrapnel_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+	}
+	Destruction_A4.Wall_Ion_Blasted = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_A4.Wall_Ion_Blasted_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_A4.Wall_Ion_Blasted_Explo"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_A4.Wall_Ion_Blasted_Debris"
+		use_03 = 1.000000
+		soundevent_04 = "Destruction_A4.Wall_Ion_Blasted_Flavor"
+		use_04 = 1.000000
+	}
+	Destruction_A4.Wall_Ion_Blasted_Core = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/wall/core.vsnd",
+		]
+	}
+	Destruction_A4.Wall_Ion_Blasted_Explo = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/wall/explo.vsnd",
+		]
+	}
+	Destruction_A4.Wall_Ion_Blasted_Debris = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/wall/debris.vsnd",
+		]
+	}
+	Destruction_A4.Wall_Ion_Blasted_Flavor = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/wall/flavor.vsnd",
+		]
+	}
+	Destruction_A4.Strider_Fall = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/strider_fall.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Wall = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_A4.Headbutt_Wall_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_A4.Headbutt_Wall_Crack"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_A4.Headbutt_Wall_Debris"
+		use_03 = 1.000000
+		soundevent_04 = "Destruction_A4.Headbutt_Wall_Explo"
+		use_04 = 1.000000
+	}
+	Destruction_A4.Headbutt_Wall_Core = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/core.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Wall_Crack = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/crack.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Wall_Debris = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/debris.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Wall_Explo = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/explo.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Left_A = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_left_a.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Left_B = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_left_b.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Left_C_01 = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_left_c_01.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Left_C_02 = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		volume = 0.600000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_left_c_02.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Player_A = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_player_a.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Shrapnel_Player_B = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/shrapnel_player_b.vsnd",
+		]
+	}
+	Destruction_A4.Headbutt_Detail_Door_Frame = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 400.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/headbutt/detail_frame.vsnd",
+		]
+	}
+	Destruction_A4.Swipe = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_A4.Swipe_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_A4.Swipe_Crack"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_A4.Swipe_Debris"
+		use_03 = 1.000000
+		soundevent_04 = "Destruction_A4.Swipe_Explo"
+		use_04 = 1.000000
+	}
+	Destruction_A4.Swipe_Core = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/core.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Crack = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/crack.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Debris = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/debris.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Explo = 
+	{
+		base = "Destruction_A4.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/explo.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Shrapnel_Left = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/shrapnel_left.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Shrapnel_Left_Roll = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/shrapnel_left_roll.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Shrapnel_Right_A_01 = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/shrapnel_right_a_01.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Shrapnel_Right_A_02 = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		volume = 0.600000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/shrapnel_right_a_02.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Shrapnel_Right_B = 
+	{
+		base = "Destruction_A4.Shrapnel_Base"
+		volume = 0.600000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/shrapnel_right_b.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Detail_Bathtub = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/detail_bathtub.vsnd",
+		]
+	}
+	Destruction_A4.Swipe_Detail_Rock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/swipe/detail_rock.vsnd",
+		]
+	}
+	Destruction_Smokestack.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 2000.000000
+		volume_falloff_max = 6000.000000
+		occlusion_scale = 0.100000
+		use_named_send = "loud"
+		mixgroup = "LoudEvents"
+	}
+	Destruction_Smokestack.Foreshadow = 
+	{
+		base = "Destruction_Smokestack.Base"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/foreshadow.vsnd",
+		]
+	}
+	Destruction_Smokestack.Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_Smokestack.Start_Explo"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_Smokestack.Start_Flavor"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_Smokestack.Start_Rumble"
+		use_03 = 1.000000
+	}
+	Destruction_Smokestack.Start_Explo = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/start_explo.vsnd",
+		]
+	}
+	Destruction_Smokestack.Start_Flavor = 
+	{
+		base = "Destruction_Smokestack.Base"
+		volume = 0.900000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/start_flavor.vsnd",
+		]
+	}
+	Destruction_Smokestack.Start_Rumble = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/start_rumble.vsnd",
+		]
+	}
+	Destruction_Smokestack.Burst = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_Smokestack.Burst_Creak"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_Smokestack.Burst_Crumble"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_Smokestack.Burst_Explo"
+		use_03 = 1.000000
+		soundevent_04 = "Destruction_Smokestack.Burst_Flavor"
+		use_04 = 1.000000
+	}
+	Destruction_Smokestack.Burst_Creak = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/burst_creak.vsnd",
+		]
+	}
+	Destruction_Smokestack.Burst_Crumble = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/burst_crumble.vsnd",
+		]
+	}
+	Destruction_Smokestack.Burst_Explo = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/burst_explo.vsnd",
+		]
+	}
+	Destruction_Smokestack.Burst_Flavor = 
+	{
+		base = "Destruction_Smokestack.Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/burst_flavor.vsnd",
+		]
+	}
+	Destruction_Smokestack.Impact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_Smokestack.Impact_Crumble"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_Smokestack.Impact_Explo"
+		use_02 = 1.000000
+		soundevent_03 = "Destruction_Smokestack.Impact_Flavor"
+		use_03 = 1.000000
+		soundevent_04 = "Destruction_Smokestack.Impact_Rumble"
+		use_04 = 1.000000
+	}
+	Destruction_Smokestack.Impact_Crumble = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_crumble.vsnd",
+		]
+	}
+	Destruction_Smokestack.Impact_Explo = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_explo.vsnd",
+		]
+	}
+	Destruction_Smokestack.Impact_Flavor = 
+	{
+		base = "Destruction_Smokestack.Base"
+		volume = 0.900000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_flavor.vsnd",
+		]
+	}
+	Destruction_Smokestack.Impact_Rumble = 
+	{
+		base = "Destruction_Smokestack.Base"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_rumble.vsnd",
+		]
+	}
+	Destruction_Smokestack.Stack_Impact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_Smokestack.Stack_Impact_Boom"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_Smokestack.Stack_Impact_Detail"
+		use_02 = 1.000000
+	}
+	Destruction_Smokestack.Stack_Impact_Boom = 
+	{
+		type = "src1_2d"
+		volume = 1.200000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_stack_behind_train_boom.vsnd",
+		]
+	}
+	Destruction_Smokestack.Stack_Impact_Detail = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/impact_stack_behind_train_detail.vsnd",
+		]
+	}
+	Destruction_Smokestack.Post_Teleport_Settling = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/smokestack/post_teleport_debris.vsnd",
+		]
+	}
+	Destruction_Brickwall.Smash = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Destruction_Brickwall.Smash_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Destruction_Brickwall.Smash_Layer"
+		use_02 = 1.000000
+	}
+	Destruction_Brickwall.Smash_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/destroy_01.vsnd",
+			"sounds/world/destruction/brickwall/destroy_02.vsnd",
+			"sounds/world/destruction/brickwall/destroy_03.vsnd",
+		]
+	}
+	Destruction_Brickwall.Smash_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/destroy_layer_01.vsnd",
+			"sounds/world/destruction/brickwall/destroy_layer_02.vsnd",
+			"sounds/world/destruction/brickwall/destroy_layer_03.vsnd",
+		]
+	}
+	Destruction_Brickwall.Knock_Switch_Level_2 = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Destruction_Brickwall.Knock_High"
+		soundevent_02 = "Destruction_Brickwall.Hit"
+	}
+	Destruction_Brickwall.Knock_Switch_Level_3 = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Destruction_Brickwall.Knock_Highest"
+		soundevent_02 = "Destruction_Brickwall.Hit_Hard"
+	}
+	Destruction_Brickwall.Bash_Soft = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/bash_soft_01.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_02.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_03.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_04.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_05.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_06.vsnd",
+			"sounds/world/destruction/brickwall/bash_soft_07.vsnd",
+		]
+	}
+	Destruction_Brickwall.Bash_Medium = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/bash_medium_01.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_02.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_03.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_04.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_05.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_06.vsnd",
+			"sounds/world/destruction/brickwall/bash_medium_07.vsnd",
+		]
+	}
+	Destruction_Brickwall.Bash_Hard = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/bash_hard_01.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_02.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_03.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_04.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_05.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_06.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_07.vsnd",
+			"sounds/world/destruction/brickwall/bash_hard_08.vsnd",
+		]
+	}
+	Destruction_Brickwall.Zombie_Scratch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/zombie_scratch_01.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_02.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_03.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_04.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_05.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_06.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_07.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_08.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_09.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_10.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_11.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_12.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_13.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_14.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_15.vsnd",
+		]
+	}
+	Destruction_Concrete_Large.Crack = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/concrete_crumble/large_crack_01.vsnd",
+		]
+	}
+	Destruction_Concrete_Large.Impact = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/concrete_crumble/large_impact_01.vsnd",
+		]
+	}
+	Destruction_Concrete_Large.Tumble = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/concrete_crumble/large_impact_01.vsnd",
+		]
+	}
+	Destruction_Concrete_Medium.Crack = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/concrete_crumble/medium_crack_01.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_crack_02.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_crack_03.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_crack_04.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_crack_05.vsnd",
+		]
+	}
+	Destruction_Concrete_Medium.Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/concrete_crumble/medium_impact_01.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_impact_02.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_impact_03.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_impact_04.vsnd",
+			"sounds/world/destruction/concrete_crumble/medium_impact_05.vsnd",
+		]
+	}
+	PostStrider.DebrisBridgeDestruct = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PostStrider.DebrisBridgeDestruct_L"
+		soundevent_02 = "PostStrider.DebrisBridgeDestruct_R"
+		soundevent_03 = "PostStrider.DebrisBridgeDestruct_LS"
+		soundevent_04 = "PostStrider.DebrisBridgeDestruct_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	PostStrider.DebrisBridgeDestruct_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_destruct_01_l.vsnd",
+		]
+		mixgroup = "World"
+		radius = 250.000000
+		volume_falloff_min = 500
+		volume_falloff_max = 500
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 2.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.800000
+		ambient_ducking_pct = 0.800000
+		use_named_send = "main"
+		rotation_angle = 180
+		soundname_string = "LEFT"
+	}
+	PostStrider.DebrisBridgeDestruct_R = 
+	{
+		base = "PostStrider.DebrisBridgeDestruct_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_destruct_01_r.vsnd",
+		]
+		rotation_angle = 90.000000
+		soundname_string = "RIGHT"
+	}
+	PostStrider.DebrisBridgeDestruct_LS = 
+	{
+		base = "PostStrider.DebrisBridgeDestruct_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_destruct_01_ls.vsnd",
+		]
+		rotation_angle = 270
+		soundname_string = "LEFT_SURR"
+	}
+	PostStrider.DebrisBridgeDestruct_RS = 
+	{
+		base = "PostStrider.DebrisBridgeDestruct_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_destruct_01_rs.vsnd",
+		]
+		rotation_angle = 0
+		soundname_string = "RIGHT_SURR"
+	}
+	PostStrider.DebrisBridgeImpact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PostStrider.DebrisBridgeImpact_L"
+		soundevent_02 = "PostStrider.DebrisBridgeImpact_R"
+		soundevent_03 = "PostStrider.DebrisBridgeImpact_LS"
+		soundevent_04 = "PostStrider.DebrisBridgeImpact_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	PostStrider.DebrisBridgeImpact_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_impact_01_l.vsnd",
+		]
+		mixgroup = "World"
+		radius = 250.000000
+		volume_falloff_min = 500
+		volume_falloff_max = 500
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 4.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.800000
+		ambient_ducking_pct = 0.800000
+		use_named_send = "main"
+		enable_debug_radius = 0
+		debug_radius_max = 300
+		rotation_angle = 180
+		soundname_string = "LEFT"
+	}
+	PostStrider.DebrisBridgeImpact_R = 
+	{
+		base = "PostStrider.DebrisBridgeImpact_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_impact_01_r.vsnd",
+		]
+		rotation_angle = 90.000000
+		soundname_string = "RIGHT"
+	}
+	PostStrider.DebrisBridgeImpact_LS = 
+	{
+		base = "PostStrider.DebrisBridgeImpact_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_impact_01_ls.vsnd",
+		]
+		rotation_angle = 270
+		soundname_string = "LEFT_SURR"
+	}
+	PostStrider.DebrisBridgeImpact_RS = 
+	{
+		base = "PostStrider.DebrisBridgeImpact_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_bridge_impact_01_rs.vsnd",
+		]
+		rotation_angle = 0
+		soundname_string = "RIGHT_SURR"
+	}
+	PostStrider.DebrisBegin = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PostStrider.DebrisBegin_L"
+		soundevent_02 = "PostStrider.DebrisBegin_R"
+		soundevent_03 = "PostStrider.DebrisBegin_LS"
+		soundevent_04 = "PostStrider.DebrisBegin_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	PostStrider.DebrisBegin_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_begin_01_l.vsnd",
+		]
+		mixgroup = "World"
+		radius = 250.000000
+		volume_falloff_min = 500
+		volume_falloff_max = 500
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.800000
+		ambient_ducking_pct = 0.800000
+		enable_debug_radius = 0
+		debug_radius_max = 250
+		use_named_send = "main"
+		rotation_angle = 180
+		soundname_string = "LEFT"
+	}
+	PostStrider.DebrisBegin_R = 
+	{
+		base = "PostStrider.DebrisBegin_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_begin_01_r.vsnd",
+		]
+		rotation_angle = 90.000000
+		soundname_string = "RIGHT"
+	}
+	PostStrider.DebrisBegin_LS = 
+	{
+		base = "PostStrider.DebrisBegin_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_begin_01_ls.vsnd",
+		]
+		rotation_angle = 270
+		soundname_string = "LEFT_SURR"
+	}
+	PostStrider.DebrisBegin_RS = 
+	{
+		base = "PostStrider.DebrisBegin_L"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_begin_01_rs.vsnd",
+		]
+		rotation_angle = 0
+		soundname_string = "RIGHT_SURR"
+	}
+	PostStrider.DebrisBeamLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PostStrider.DebrisBeamLp01"
+		soundevent_02 = "PostStrider.DebrisBeamLp02"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	PostStrider.DebrisBeamLp01 = 
+	{
+		type = "hlvr_ambient_position_on_line"
+		volume = 0.800000
+		volume_fade_in = 3
+		volume_fade_out = 17
+		volume_falloff_min = 700.000000
+		volume_falloff_max = 2500.000000
+		volume_filter_amount = 0.400000
+		mixgroup = "World"
+		use_hrtf = 1.000000
+		position = 
+		[
+			1090.010000,
+			678,
+			822.205000,
+		]
+		position_02 = 
+		[
+			1090.010000,
+			678,
+			1450.210000,
+		]
+		spread_min = 450
+		spread_max = 1100
+		use_named_send = "main"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_beam_lp_01.vsnd",
+		]
+	}
+	PostStrider.DebrisBeamLp02 = 
+	{
+		base = "PostStrider.DebrisBeamLp01"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_beam_lp_02.vsnd",
+		]
+	}
+	PostStrider.DebrisBeamLpEndMulti = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PostStrider.DebrisBeamLp03"
+		soundevent_02 = "PostStrider.DebrisBeamLp04"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	PostStrider.DebrisBeamLp03 = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 700.000000
+		volume_falloff_max = 2500.000000
+		volume = 0.800000
+		volume_fade_in = 3
+		volume_fade_out = 8
+		volume_filter_amount = 0.400000
+		mixgroup = "World"
+		use_hrtf = 1.000000
+		spread_min = 450
+		spread_max = 1100
+		use_named_send = "main"
+		enable_debug_radius = 0
+	}
+	PostStrider.DebrisBeamLp04 = 
+	{
+		base = "PostStrider.DebrisBeamLp03"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/a4_strider/post_combat_debris/world_post_strider_debris_beam_lp_02.vsnd",
+		]
+		enable_debug_radius = 0
+		debug_radius_max = 500
+	}
+	PostStrider.DebrisBeamLpEnd = 
+	{
+		type = "hlvr_animate_soundevent"
+		animation_time_min = 7.000000
+		animation_time_max = 7.000000
+		animation_time = 7.000000
+		animation_type = "lerp"
+		position_source = 2.000000
+		animated_target = 2.000000
+		animated_source = 0.000000
+		anim_position_start = 
+		[
+			1090.010000,
+			678,
+			822.205000,
+		]
+		position_target = 
+		[
+			1090.010000,
+			678,
+			1450.210000,
+		]
+		soundevents = 
+		[
+			"PostStrider.DebrisBeamLpEndMulti",
+		]
+	}
+	VaultCollapse.DebrisExplo01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_lp_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_lp_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_lp_03.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshSound"
+		mixgroup = "Explosions"
+		use_named_send = "main"
+		pitch = 1.000000
+		use_world_position = 1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 1.000000
+		stop_at_time = 1.000000
+		volume_falloff_min = 550.000000
+		volume_falloff_max = 4000.000000
+		volume_rand_min = 0.100000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+	}
+	VaultCollapse.DebrisExplo02 = 
+	{
+		base = "VaultCollapse.DebrisExplo01"
+		volume = 1.000000
+		pitch = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_lp_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_lp_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_lp_03.vsnd",
+		]
+		volume_fade_in = 0.100000
+		volume_fade_out = 1.000000
+		stop_at_time = 2.500000
+	}
+	VaultCollapse.DebrisExplo03 = 
+	{
+		base = "VaultCollapse.DebrisExplo01"
+		volume = 0.900000
+		pitch = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_lp_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_lp_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_lp_03.vsnd",
+		]
+		volume_fade_in = 0.100000
+		volume_fade_out = 1.000000
+		stop_at_time = 3.000000
+	}
+	VaultCollapse.DebrisExploImpact01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_rand_min = -0.200000
+		volume_rand_max = 0.200000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.000000
+		chance_to_play = 3.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_impact_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_impact_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_rock_impact_03.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshImpact"
+		mixgroup = "Explosions"
+		use_named_send = "main"
+		use_world_position = 1.000000
+		volume_falloff_min = 550.000000
+		volume_falloff_max = 1550.000000
+	}
+	VaultCollapse.DebrisExploImpact02 = 
+	{
+		base = "VaultCollapse.DebrisExploImpact01"
+		volume = 0.650000
+		chance_to_play = 3.500000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_impact_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_impact_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_metal_impact_03.vsnd",
+		]
+	}
+	VaultCollapse.DebrisExploImpact03 = 
+	{
+		base = "VaultCollapse.DebrisExploImpact01"
+		volume = 0.650000
+		chance_to_play = 6
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_impact_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_impact_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_whooshes_glass_impact_03.vsnd",
+		]
+	}
+	VaultCollapse.DebrisExploWhoosh01 = 
+	{
+		type = "hlvr_whoosh_single_direction"
+		whoosh_sound = "VaultCollapse.DebrisExplo01"
+		impact_sound = "VaultCollapse.DebrisExploImpact01"
+		use_world_position = 1.000000
+		distance_min = 800
+		distance_max = 1000
+		animation_time = 1.500000
+		use_doppler = 1.000000
+		doppler_factor = 1.000000
+		impact_offset_pct = 0.470000
+		doppler_factor_receding = 1.000000
+		passthrough_distance_min = 25
+		passthrough_distance_max = 250
+		animation_symmetry = 0.520000
+		lfo_multiplier = 45
+		lfo_depth = 0.800000
+		remap_pct_to_vol_x1 = 0.400000
+		remap_pct_to_vol_y1 = 0.350000
+		remap_pct_to_vol_x2 = 0.490000
+		remap_pct_to_vol_y2 = 1.450000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.450000
+		remap_pct_to_vol_x4 = 0.650000
+		remap_pct_to_vol_y4 = 0.750000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.350000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.380000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		random_seek_min = -3.000000
+		random_seek_max = 0.000000
+		lfo_rate_noise_depth = 0.800000
+		lfo_rate_noise_min = -0.750000
+		lfo_rate_noise_max = 1.000000
+	}
+	VaultCollapse.DebrisExploWhoosh02 = 
+	{
+		base = "AmbientWhoosh.VaultEnergyWhoosh01"
+		whoosh_sound = "VaultCollapse.DebrisExplo02"
+		impact_sound = "VaultCollapse.DebrisExploImpact02"
+		impact_offset_pct = 0.490000
+		animation_time = 2.100000
+		passthrough_distance_min = 75
+		passthrough_distance_max = 250
+		distance_min = 700
+		distance_max = 1250
+		animation_symmetry = 0.500000
+		lfo_multiplier = 40
+		lfo_depth = 0.850000
+		remap_pct_to_vol_x1 = 0.300000
+		remap_pct_to_vol_y1 = 0.500000
+		remap_pct_to_vol_x2 = 0.485000
+		remap_pct_to_vol_y2 = 1.200000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.700000
+		remap_pct_to_vol_x4 = 0.550000
+		remap_pct_to_vol_y4 = 0.500000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.230000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.250000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		random_seek_min = -2.000000
+		lfo_rate_noise_depth = 0.750000
+		lfo_rate_noise_max = 2.000000
+	}
+	VaultCollapse.DebrisExploWhoosh03 = 
+	{
+		base = "AmbientWhoosh.VaultEnergyWhoosh01"
+		whoosh_sound = "VaultCollapse.DebrisExplo03"
+		impact_sound = "VaultCollapse.DebrisExploImpact03"
+		animation_time = 2.500000
+		distance_min = 200
+		distance_max = 800
+		passthrough_distance_min = 50
+		passthrough_distance_max = 300
+		animation_symmetry = 0.470000
+		lfo_multiplier = 40
+		lfo_depth = 0.750000
+		remap_pct_to_vol_x1 = 0.450000
+		remap_pct_to_vol_y1 = 0.300000
+		remap_pct_to_vol_x2 = 0.495000
+		remap_pct_to_vol_y2 = 1.500000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.000000
+		remap_pct_to_vol_x4 = 0.550000
+		remap_pct_to_vol_y4 = 1.200000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.230000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.250000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.450000
+		random_seek_min = -2.200000
+		lfo_rate_noise_depth = 0.300000
+	}
+	VaultCollapse.DebrisExploWhooshes = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "VaultCollapse.DebrisExploWhoosh01"
+		soundevent_02 = "VaultCollapse.DebrisExploWhoosh03"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	VaultCollapse.DebrisExploWhooshOutbound = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "VaultCollapse.DebrisExploWhoosh02"
+		use_01 = 1.000000
+	}
+	VaultCollapse.DebrisExploWhooshBurst = 
+	{
+		type = "hlvr_ambient_burst"
+		soundevent_name = "VaultCollapse.DebrisExploWhooshes"
+		burst_length_min = 2
+		burst_length_max = 2
+		delay_timer_min = 0.200000
+		delay_timer_max = 0.250000
+		remap_elapsed_to_delay_x1 = 0.000000
+		remap_elapsed_to_delay_y1 = 2.000000
+		remap_elapsed_to_delay_x2 = 0.330000
+		remap_elapsed_to_delay_y2 = 1.000000
+		remap_elapsed_to_delay_x3 = 0.500000
+		remap_elapsed_to_delay_y3 = 1.000000
+		remap_elapsed_to_delay_x4 = 0.600000
+		remap_elapsed_to_delay_y4 = 5.000000
+		position = 
+		[
+			2176,
+			2010,
+			1664,
+		]
+	}
+	VaultCollapse.DebrisExploWhooshBurstOutbound = 
+	{
+		base = "VaultCollapse.DebrisExploWhooshBurst"
+		soundevent_name = "VaultCollapse.DebrisExploWhooshOutbound"
+		burst_length_min = 4
+		burst_length_max = 4
+		delay_timer_min = 0.300000
+		delay_timer_max = 0.350000
+		position = 
+		[
+			2439.800000,
+			5759.440000,
+			944,
+		]
+	}
+	VaultCollapse.FireballWhooshLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_point_source_fireball_whoosh_lp_01.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshSound"
+		mixgroup = "Explosions"
+		use_named_send = "main"
+		pitch = 1.000000
+		use_world_position = 1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 1.000000
+		stop_at_time = 2
+		volume_falloff_min = 850.000000
+		volume_falloff_max = 4000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+	}
+	VaultCollapse.FireballWhooshImpact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		volume_rand_min = -0.200000
+		volume_rand_max = 0.200000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_point_source_fireball_impact_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_fireball_impact_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_fireball_impact_03.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshImpact"
+		mixgroup = "Explosions"
+		use_named_send = "main"
+		use_world_position = 1.000000
+		volume_falloff_min = 550.000000
+		volume_falloff_max = 1550.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+	}
+	VaultCollapse.FireballWhoosh01 = 
+	{
+		type = "hlvr_whoosh_single_direction"
+		whoosh_sound = "VaultCollapse.FireballWhooshLp"
+		impact_sound = "VaultCollapse.FireballWhooshImpact"
+		use_world_position = 1.000000
+		distance_min = 800
+		distance_max = 1000
+		animation_time = 3.000000
+		use_doppler = 1.000000
+		doppler_factor = 1.000000
+		impact_offset_pct = 0.470000
+		doppler_factor_receding = 1.000000
+		passthrough_distance_min = 25
+		passthrough_distance_max = 250
+		animation_symmetry = 0.520000
+		lfo_multiplier = 45
+		lfo_depth = 0.800000
+		remap_pct_to_vol_x1 = 0.400000
+		remap_pct_to_vol_y1 = 0.350000
+		remap_pct_to_vol_x2 = 0.490000
+		remap_pct_to_vol_y2 = 1.450000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.450000
+		remap_pct_to_vol_x4 = 0.650000
+		remap_pct_to_vol_y4 = 0.750000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.350000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.380000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		random_seek_min = -3.000000
+		random_seek_max = 0.000000
+		lfo_rate_noise_depth = 0.800000
+		lfo_rate_noise_min = -0.750000
+		lfo_rate_noise_max = 1.000000
+	}
+	VaultCollapse.FireballWhooshes = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "VaultCollapse.FireballWhoosh01"
+		soundevent_02 = "VaultCollapse.FireballWhoosh01"
+		soundevent_03 = "VaultCollapse.FireballWhoosh01"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		position = 
+		[
+			2227.080000,
+			2283.120000,
+			298.937000,
+		]
+	}
+	VaultCollapse.PlasmaWhooshLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_point_source_plasma_lp_01.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshSound"
+		mixgroup = "Explosions"
+		use_named_send = "main"
+		pitch = 1.000000
+		use_world_position = 1.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 1.000000
+		stop_at_time = 2
+		volume_falloff_min = 850.000000
+		volume_falloff_max = 4000.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		use_hrtf = 1.000000
+	}
+	VaultCollapse.PlasmaWhoosh01 = 
+	{
+		type = "hlvr_whoosh_single_direction"
+		whoosh_sound = "VaultCollapse.PlasmaWhooshLp"
+		use_world_position = 1.000000
+		distance_min = 800
+		distance_max = 1000
+		animation_time = 3.000000
+		use_doppler = 1.000000
+		doppler_factor = 1.000000
+		impact_offset_pct = 0.470000
+		doppler_factor_receding = 1.000000
+		passthrough_distance_min = 0
+		passthrough_distance_max = 36
+		animation_symmetry = 0.520000
+		lfo_multiplier = 45
+		lfo_depth = 0.800000
+		remap_pct_to_vol_x1 = 0.400000
+		remap_pct_to_vol_y1 = 0.350000
+		remap_pct_to_vol_x2 = 0.490000
+		remap_pct_to_vol_y2 = 1.450000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.450000
+		remap_pct_to_vol_x4 = 0.650000
+		remap_pct_to_vol_y4 = 0.750000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.350000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.380000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		random_seek_min = -3.000000
+		random_seek_max = 0.000000
+		lfo_rate_noise_depth = 0.800000
+		lfo_rate_noise_min = -0.750000
+		lfo_rate_noise_max = 1.000000
+	}
+	VaultCollapse.PlasmaWhooshes = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "VaultCollapse.PlasmaWhoosh01"
+		soundevent_02 = "VaultCollapse.PlasmaWhoosh01"
+		soundevent_03 = "VaultCollapse.PlasmaWhoosh01"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		position = 
+		[
+			2176,
+			2010,
+			1664,
+		]
+	}
+	VaultCollapse.StressCrashQuad = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "VaultCollapse.StressCrashQuad_L"
+		soundevent_02 = "VaultCollapse.StressCrashQuad_R"
+		soundevent_03 = "VaultCollapse.StressCrashQuad_LS"
+		soundevent_04 = "VaultCollapse.StressCrashQuad_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	VaultCollapse.StressCrashQuad_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_stress_crash_01_l.vsnd",
+		]
+		mixgroup = "ScriptedSequence"
+		use_named_send = "ScriptedSeqPriority3"
+		ambient_ducking_pct = 0.600000
+		radius = 250.000000
+		volume_falloff_min = 300
+		volume_falloff_max = 300
+		rotation_angle = 315.000000
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 2.000000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		enable_debug_radius = 0.000000
+		soundname_string = "LEFT"
+	}
+	VaultCollapse.StressCrashQuad_R = 
+	{
+		base = "VaultCollapse.StressCrashQuad_L"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_stress_crash_01_r.vsnd",
+		]
+		rotation_angle = 225.000000
+		soundname_string = "RIGHT"
+	}
+	VaultCollapse.StressCrashQuad_LS = 
+	{
+		base = "VaultCollapse.StressCrashQuad_L"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_stress_crash_01_ls.vsnd",
+		]
+		rotation_angle = 45.000000
+		soundname_string = "LEFT_SURR"
+	}
+	VaultCollapse.StressCrashQuad_RS = 
+	{
+		base = "VaultCollapse.StressCrashQuad_L"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_stress_crash_01_rs.vsnd",
+		]
+		rotation_angle = 135.000000
+		soundname_string = "RIGHT_SURR"
+	}
+	VaultCollapse.LinearBase = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		volume_falloff_min = 600
+		volume_falloff_max = 2500
+		volume_fade_in = 0.000000
+		volume_fade_out = 0.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.900000
+		spread_min = 360
+		spread_max = 600
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		enable_debug_radius = 0.000000
+		mixgroup = "ScriptedSequence"
+		use_named_send = "main"
+	}
+	VaultCollapse.BridgeDestruct = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 1200
+		volume_falloff_max = 4000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BubbleBuildChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 3000
+		volume_falloff_max = 6000
+		spread_min = 500
+		spread_max = 4000
+		volume_fade_out = 3.000000
+		use_doppler = 1.000000
+		doppler_factor = 1.200000
+		stop_at_time = 4.540000
+		use_world_position = 1.000000
+		soundname_string = "BUBBLE"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bubble_build_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BubbleBuild = 
+	{
+		type = "hlvr_animate_soundevent"
+		soundevents = 
+		[
+			"VaultCollapse.BubbleBuildChild",
+		]
+		animation_time_min = 6.000000
+		animation_time_max = 6.000000
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		use_public_position = 1.000000
+		unconstrained_target = 1.000000
+		animation_type = "lerp"
+		position = 
+		[
+			2176,
+			2010,
+			1664,
+		]
+		position_target = 
+		[
+			2406.190000,
+			5080.870000,
+			1006.630000,
+		]
+	}
+	VaultCollapse.BubbleCollapseChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 3000
+		volume_falloff_max = 6000
+		spread_min = 500
+		spread_max = 4000
+		use_doppler = 1.000000
+		doppler_factor = 0.300000
+		use_world_position = 1.000000
+		soundname_string = "BUBBLE"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bubble_deflate_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.BubbleCollapse = 
+	{
+		type = "hlvr_animate_soundevent"
+		soundevents = 
+		[
+			"VaultCollapse.BubbleCollapseChild",
+		]
+		animation_time_min = 1.000000
+		animation_time_max = 1.000000
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		use_public_position = 1.000000
+		unconstrained_target = 1.000000
+		animation_type = "lerp"
+		position = 
+		[
+			2441.351318,
+			3968.453613,
+			1023.173767,
+		]
+		position_target = 
+		[
+			2406.190000,
+			5080.870000,
+			1006.630000,
+		]
+	}
+	VaultCollapse.EndFireballChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 3000
+		volume_falloff_max = 6000
+		use_world_position = 1.000000
+		soundname_string = "FIREBALL"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_end_fireball_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.EndFireball = 
+	{
+		base = "VaultCollapse.BubbleBuild"
+		soundevents = 
+		[
+			"VaultCollapse.EndFireballChild",
+		]
+		animation_time_min = 2
+		animation_time_max = 2
+		position = 
+		[
+			2227.080000,
+			2283.120000,
+			298.937000,
+		]
+		position_target = 
+		[
+			2406.190000,
+			5100.870000,
+			1006.630000,
+		]
+	}
+	VaultCollapse.EndFireWubWubChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume = 2.200000
+		volume_falloff_min = 3000
+		volume_falloff_max = 6000
+		volume_fade_in = 0.500000
+		use_world_position = 1.000000
+		soundname_string = "WubWub"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_fire_lfe_wubwub_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.EndFireWubWub = 
+	{
+		base = "VaultCollapse.BubbleBuild"
+		soundevents = 
+		[
+			"VaultCollapse.EndFireWubWubChild",
+		]
+		animation_time_min = 1.500000
+		animation_time_max = 1.500000
+		position = 
+		[
+			2227.080000,
+			2283.120000,
+			298.937000,
+		]
+		position_target = 
+		[
+			2406.190000,
+			5100.870000,
+			1006.630000,
+		]
+	}
+	VaultCollapse.ExploBlastChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 3000
+		volume_falloff_max = 6000
+		spread_min = 500
+		spread_max = 4000
+		enable_debug_radius = 0.000000
+		use_world_position = 1.000000
+		soundname_string = "EXPLO"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_explo_blast_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.ExploBlast = 
+	{
+		base = "VaultCollapse.BubbleBuild"
+		soundevents = 
+		[
+			"VaultCollapse.ExploBlastChild",
+		]
+		animation_time_min = 0.500000
+		animation_time_max = 0.500000
+	}
+	VaultCollapse.WingCrashChild = 
+	{
+		base = "VaultCollapse.LinearBase"
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		spread_min = 500
+		spread_max = 4000
+		use_world_position = 1.000000
+		soundname_string = "WING"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_wing_crash_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.WingCrash = 
+	{
+		base = "VaultCollapse.BubbleBuild"
+		soundevents = 
+		[
+			"VaultCollapse.WingCrashChild",
+		]
+		animation_time_min = 9.000000
+		animation_time_max = 9.000000
+		position = 
+		[
+			1781.510010,
+			2943.717773,
+			1329.304077,
+		]
+		position_target = 
+		[
+			1844.132446,
+			3623.576172,
+			1242.721680,
+		]
+	}
+	VaultCollapse.TractorBeamFreakout = 
+	{
+		type = "hlvr_voicegraph_filter_dynamics_on_capsule"
+		volume = 1.000000
+		occlusion_scale = 0.000000
+		use_hrtf = 1.000000
+		delay = -0.430000
+		volume_fade_in = 0.100000
+		volume_fade_out = 3.500000
+		stop_at_time = 3.500000
+		volume_falloff_min = 4500.000000
+		volume_falloff_max = 10000.000000
+		spread_min = 1000.000000
+		spread_max = 4000.000000
+		mixgroup = "ScriptedSequence"
+		use_named_send = "ScriptedSeqPriority2"
+		enable_debug_radius = 0.000000
+		debug_radius_max = 800.000000
+		sphere_1_pos = 
+		[
+			2455.488525,
+			5239.010742,
+			2638.705811,
+		]
+		sphere_1_radius = 12
+		sphere_2_pos = 
+		[
+			2584.976074,
+			2434.242676,
+			3375.202148,
+		]
+		sphere_2_radius = 800
+		use_world_position = true
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_tractor_beam_freakout_01.vsnd",
+		]
+	}
+	VaultCollapse.PointBase = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 2500
+		use_hrtf = 1.000000
+		hrtf_mix = 0.900000
+		spread_min = 360
+		spread_max = 600
+		mixgroup = "ScriptedSequence"
+		use_named_send = "main"
+	}
+	VaultCollapse.Lightning = 
+	{
+		base = "VaultCollapse.PointBase"
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_point_source_lightning_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_lightning_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_lightning_03.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.PreShear = 
+	{
+		base = "VaultCollapse.PointBase"
+		volume = 1.000000
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_point_source_pre_shear_01.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_pre_shear_02.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_pre_shear_03.vsnd",
+			"sounds/world/vault_crash/vault_crash_point_source_pre_shear_04.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BridgeLeft = 
+	{
+		base = "VaultCollapse.PointBase"
+		volume = 3.000000
+		volume_falloff_min = 1800
+		volume_falloff_max = 4000
+		use_doppler = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_left_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BridgeCenter = 
+	{
+		base = "VaultCollapse.BridgeLeft"
+		volume = 2.000000
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_center_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BridgeRight = 
+	{
+		base = "VaultCollapse.BridgeLeft"
+		volume = 3.000000
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_right_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority2"
+	}
+	VaultCollapse.BridgeLeftBreak = 
+	{
+		base = "VaultCollapse.BridgeLeft"
+		volume = 2.500000
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_impact_left_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	VaultCollapse.BridgeRightBreak = 
+	{
+		base = "VaultCollapse.BridgeLeft"
+		volume = 2.500000
+		volume_falloff_min = 1800
+		volume_falloff_max = 3000
+		vsnd_files = 
+		[
+			"sounds/world/vault_crash/vault_crash_bridge_destruct_impact_right_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+}

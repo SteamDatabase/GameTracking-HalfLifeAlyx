@@ -1,0 +1,367 @@
+{
+	Music.a4_zoo_cats = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.750000
+		mixgroup = "Music"
+		volume_falloff_min = 150
+		volume_falloff_max = 850.000000
+		occlusion_scale = 0.300000
+		volume_fade_out = 5
+		volume_fade_in = 5
+		distance_max_velocity = 150
+		enable_debug_radius = 0
+		spread_min = 30
+		spread_max = 40
+		restart_time = 77.948000
+		fade_over_time_x1 = 30.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 70
+		fade_over_time_y2 = 0.600000
+		fade_over_time_x3 = 120.000000
+		fade_over_time_y3 = 0.900000
+		fade_over_time_x4 = 160
+		fade_over_time_y4 = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_zoo_cats.vsnd",
+		]
+	}
+	Music.a4_zoo.antlion_cats_combat = 
+	{
+		type = "hlvr_start_multi_sequence"
+		use_random_delay = 0.000000
+		soundevent_01 = "music.a4_zoo.antlion_cats_combat_intro_child"
+		use_01 = 1.000000
+		wait_01 = 1
+		soundevent_02 = "music.a4_zoo.antlion_cats_combat_child"
+		use_02 = 1.000000
+		wait_02 = 5.800000
+	}
+	music.a4_zoo.antlion_cats_combat_intro_child = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.400000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				2.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_zoo_antlion_combat_intro2.vsnd",
+		]
+	}
+	music.a4_zoo.antlion_cats_combat_child = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		volume = 0.700000
+		track = "main"
+		priority = 0
+		start_point = 0.000000
+		end_point = 40.800000
+		sync_bpm = 100
+		sync_bpm_beats = 2.000000
+		volume_fade_out = 7.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_tanker_antlion_zoo_combat.vsnd",
+		]
+	}
+	music.a4_zoo.antlion_cats_combat_close = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		volume = 0.250000
+		delay = 5.800000
+		presence_adjust = 500
+		presence_adjust_velocity = 200
+		presence_map_curve = 
+		[
+			
+			[
+				100.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				300.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				400.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		restart_time = 19.200000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_tanker_antlion_zoo_combat_close.vsnd",
+		]
+	}
+	music.a4_zoo.antlion_cats_combat_endcap = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 1
+		sync_track = "main"
+		start_point = 0.000000
+		end_point = 40.800000
+		sync_bpm = 100
+		sync_bpm_beats = 2.000000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a4_zoo_insects = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.450000
+		mixgroup = "Music"
+		volume_falloff_min = 100
+		volume_falloff_max = 550.000000
+		occlusion_scale = 0.300000
+		volume_fade_out = 5
+		volume_fade_in = 4
+		distance_max_velocity = 150
+		enable_debug_radius = 0
+		spread_min = 30
+		spread_max = 40
+		restart_time = 37.113000
+		fade_over_time_x1 = 30.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 70
+		fade_over_time_y2 = 0.450000
+		fade_over_time_x3 = 120.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 160
+		fade_over_time_y4 = 0.600000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_zoo_insects.vsnd",
+		]
+	}
+	Music.a4_zoo_aquatic = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.450000
+		mixgroup = "Music"
+		volume_falloff_min = 100
+		volume_falloff_max = 550.000000
+		occlusion_scale = 0.300000
+		volume_fade_out = 5
+		volume_fade_in = 4
+		distance_max_velocity = 150
+		enable_debug_radius = 0
+		spread_min = 30
+		spread_max = 40
+		restart_time = 37.113000
+		fade_over_time_x1 = 30.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 70
+		fade_over_time_y2 = 0.450000
+		fade_over_time_x3 = 120.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 160
+		fade_over_time_y4 = 0.600000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_zoo_insects.vsnd",
+		]
+	}
+	Music.a4_zoo_vort_base = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.200000
+		volume_fade_out = 1.500000
+		volume_fade_in = 1.500000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 60.000000
+		volume_falloff_max = 450.000000
+		occlusion_scale = 0.400000
+		position = 
+		[
+			2114.000000,
+			-1200.000000,
+			788.000000,
+		]
+		use_world_position = true
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+		]
+	}
+	Music.a4_zoo_vort_01 = 
+	{
+		base = "Music.a4_zoo_vort_base"
+		position = 
+		[
+			7074.440000,
+			2351.230000,
+			-108,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+			"sounds/music/places/vault/vort_02.vsnd",
+			"sounds/music/places/vault/vort_03.vsnd",
+		]
+	}
+	Music.a4_zoo_vort_02 = 
+	{
+		base = "Music.a4_zoo_vort_base"
+		position = 
+		[
+			7016.700000,
+			2356.250000,
+			-108,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_04.vsnd",
+			"sounds/music/places/vault/vort_05.vsnd",
+			"sounds/music/places/vault/vort_06.vsnd",
+			"sounds/music/places/vault/vort_07.vsnd",
+		]
+	}
+	Music.a4_zoo_vort_03 = 
+	{
+		base = "Music.a4_zoo_vort_base"
+		position = 
+		[
+			6965.310000,
+			2347.700000,
+			-108,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_08.vsnd",
+			"sounds/music/places/vault/vort_09.vsnd",
+			"sounds/music/places/vault/vort_10.vsnd",
+		]
+	}
+	Music.a4_zoo_vort_3_lp01_arr = 
+	{
+		type = "hlvr_start_arrangement"
+		arrangement = "a4_zoo_vort_3_lp01_arr"
+		arrangement_volume = 1.000000
+		quantize_type = "reset"
+		bpm = 57.000000
+	}
+	music.a4_zoo.xen = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				45,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 30
+		volume_fade_over_time_loop_end = 50
+		volume_fade_in = 4
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_intro.vsnd",
+		]
+	}
+	music.a4_zoo.puffer = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+}

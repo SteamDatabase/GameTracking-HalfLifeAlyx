@@ -1,0 +1,59 @@
+{
+	music.hlvr_valve_logo = 
+	{
+		type = "hlvr_music_start_multi_quad"
+		track = "logo"
+		soundevent_01 = "music.hlvr_valve_logo_l"
+		soundevent_02 = "music.hlvr_valve_logo_r"
+		soundevent_03 = "music.hlvr_valve_logo_ls"
+		soundevent_04 = "music.hlvr_valve_logo_rs"
+		rand_delay_min = 0.000000
+		rand_delay_max = 0.000000
+	}
+	music.hlvr_valve_logo_l = 
+	{
+		type = "hlvr_music_fixed_rotation"
+		volume_base = 1.000000
+		mixgroup = "LoudMusic"
+		rotation_angle = 0
+		volume_fade_in = 0
+		volume_fade_out = 0
+		volume = 2.400000
+		enable_debug_radius = 0.000000
+		soundname_string = "L"
+		vsnd_files = 
+		[
+			"sounds/music/places/bellevue/hlvr_valve_logo_l.vsnd",
+		]
+	}
+	music.hlvr_valve_logo_r = 
+	{
+		base = "music.hlvr_valve_logo_l"
+		rotation_angle = 270
+		soundname_string = "R"
+		vsnd_files = 
+		[
+			"sounds/music/places/bellevue/hlvr_valve_logo_r.vsnd",
+		]
+	}
+	music.hlvr_valve_logo_ls = 
+	{
+		base = "music.hlvr_valve_logo_l"
+		rotation_angle = 90
+		soundname_string = "LS"
+		vsnd_files = 
+		[
+			"sounds/music/places/bellevue/hlvr_valve_logo_ls.vsnd",
+		]
+	}
+	music.hlvr_valve_logo_rs = 
+	{
+		base = "music.hlvr_valve_logo_l"
+		rotation_angle = 180
+		soundname_string = "RS"
+		vsnd_files = 
+		[
+			"sounds/music/places/bellevue/hlvr_valve_logo_rs.vsnd",
+		]
+	}
+}

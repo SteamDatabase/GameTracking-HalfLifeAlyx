@@ -1,0 +1,571 @@
+{
+	Barnacle.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		occlusion_scale = 0.900000
+		occlusion_radius = 80.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Barnacles"
+	}
+	Barnacle.Puke = 
+	{
+		base = "Barnacle.Base"
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/puke_01.vsnd",
+			"sounds/creatures/barnacle/puke_02.vsnd",
+		]
+	}
+	Barnacle.Idle_Breath_Both = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Barnacle.Idle_Breath_In"
+		soundevent_02 = "Barnacle.Idle_Breath_Out"
+	}
+	Barnacle.Idle_Breath_In = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.400000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/idle_in_01.vsnd",
+			"sounds/creatures/barnacle/idle_in_02.vsnd",
+			"sounds/creatures/barnacle/idle_in_03.vsnd",
+			"sounds/creatures/barnacle/idle_in_04.vsnd",
+			"sounds/creatures/barnacle/idle_in_05.vsnd",
+			"sounds/creatures/barnacle/idle_in_06.vsnd",
+			"sounds/creatures/barnacle/idle_in_07.vsnd",
+			"sounds/creatures/barnacle/idle_in_08.vsnd",
+			"sounds/creatures/barnacle/idle_in_09.vsnd",
+			"sounds/creatures/barnacle/idle_in_10.vsnd",
+		]
+	}
+	Barnacle.Idle_Breath_Out = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.400000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/idle_out_01.vsnd",
+			"sounds/creatures/barnacle/idle_out_02.vsnd",
+			"sounds/creatures/barnacle/idle_out_03.vsnd",
+			"sounds/creatures/barnacle/idle_out_04.vsnd",
+			"sounds/creatures/barnacle/idle_out_05.vsnd",
+			"sounds/creatures/barnacle/idle_out_06.vsnd",
+			"sounds/creatures/barnacle/idle_out_07.vsnd",
+			"sounds/creatures/barnacle/idle_out_08.vsnd",
+			"sounds/creatures/barnacle/idle_out_09.vsnd",
+			"sounds/creatures/barnacle/idle_out_10.vsnd",
+		]
+	}
+	Barnacle.Idle_Subtle = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Barnacle.Idle_Croak"
+		soundevent_02 = "Barnacle.Idle_Breath_Subtle"
+		soundevent_split = 0.100000
+	}
+	Barnacle.Idle_Croak = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.400000
+		volume_rand_min = -0.200000
+		delay_rand_min = 0.100000
+		delay_rand_max = 0.300000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/idle_croak_01.vsnd",
+			"sounds/creatures/barnacle/idle_croak_02.vsnd",
+			"sounds/creatures/barnacle/idle_croak_03.vsnd",
+			"sounds/creatures/barnacle/idle_croak_04.vsnd",
+			"sounds/creatures/barnacle/idle_croak_05.vsnd",
+			"sounds/creatures/barnacle/idle_croak_06.vsnd",
+			"sounds/creatures/barnacle/idle_croak_07.vsnd",
+			"sounds/creatures/barnacle/idle_croak_08.vsnd",
+		]
+	}
+	Barnacle.Idle_Breath_Subtle = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.600000
+		volume_rand_min = -0.200000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.300000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/idle_subtle_01.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_02.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_03.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_04.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_05.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_06.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_07.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_08.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_09.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_10.vsnd",
+			"sounds/creatures/barnacle/idle_subtle_11.vsnd",
+		]
+	}
+	Barnacle.Digest = 
+	{
+		base = "Barnacle.Base"
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_radius = 60.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/bite_digest_01.vsnd",
+			"sounds/creatures/barnacle/bite_digest_02.vsnd",
+			"sounds/creatures/barnacle/bite_digest_03.vsnd",
+			"sounds/creatures/barnacle/bite_digest_04.vsnd",
+			"sounds/creatures/barnacle/bite_digest_05.vsnd",
+			"sounds/creatures/barnacle/bite_digest_06.vsnd",
+			"sounds/creatures/barnacle/bite_digest_07.vsnd",
+			"sounds/creatures/barnacle/bite_digest_08.vsnd",
+		]
+	}
+	Barnacle.Bite_Pull = 
+	{
+		base = "Barnacle.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/bite_pull_01.vsnd",
+			"sounds/creatures/barnacle/bite_pull_02.vsnd",
+			"sounds/creatures/barnacle/bite_pull_03.vsnd",
+			"sounds/creatures/barnacle/bite_pull_04.vsnd",
+			"sounds/creatures/barnacle/bite_pull_05.vsnd",
+			"sounds/creatures/barnacle/bite_pull_06.vsnd",
+			"sounds/creatures/barnacle/bite_pull_07.vsnd",
+			"sounds/creatures/barnacle/bite_pull_08.vsnd",
+			"sounds/creatures/barnacle/bite_pull_09.vsnd",
+		]
+	}
+	Barnacle.Bite_Player = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		use_hrtf = 0.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/bite_player.vsnd",
+		]
+	}
+	Barnacle.Bite_Attack_A = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.900000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/bite_attack_a_01.vsnd",
+			"sounds/creatures/barnacle/bite_attack_a_02.vsnd",
+		]
+	}
+	Barnacle.Bite_Attack_B = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/bite_attack_b_01.vsnd",
+			"sounds/creatures/barnacle/bite_attack_b_02.vsnd",
+		]
+	}
+	Barnacle.Pull_Grunt = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		mixgroup = "Barnacles"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/pull_grunt_01.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_02.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_03.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_04.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_05.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_06.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_07.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_08.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_09.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_10.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_11.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_12.vsnd",
+			"sounds/creatures/barnacle/pull_grunt_13.vsnd",
+		]
+	}
+	Barnacle.Death_01 = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		volume_falloff_max = 2500.000000
+		block_duration = 2.000000
+		block_match_this_event = false
+		block_event_name = "Barnacle.Tongue_Extend"
+		block_distance = 30.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/death_one_01.vsnd",
+			"sounds/creatures/barnacle/death_one_02.vsnd",
+		]
+	}
+	Barnacle.Death_03 = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		volume_falloff_max = 2500.000000
+		block_duration = 2.000000
+		block_match_this_event = false
+		block_event_name = "Barnacle.Tongue_Extend"
+		block_distance = 30.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/death_three.vsnd",
+		]
+	}
+	Barnacle.Death_04 = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		volume_falloff_max = 2500.000000
+		block_duration = 2.000000
+		block_match_this_event = false
+		block_event_name = "Barnacle.Tongue_Extend"
+		block_distance = 30.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/death_four.vsnd",
+		]
+	}
+	Barnacle.Pain = 
+	{
+		base = "Barnacle.Base"
+		delay = 0.100000
+		volume = 1.000000
+		volume_falloff_max = 2500.000000
+		block_duration = 1.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/pain_01.vsnd",
+			"sounds/creatures/barnacle/pain_02.vsnd",
+			"sounds/creatures/barnacle/pain_03.vsnd",
+			"sounds/creatures/barnacle/pain_04.vsnd",
+			"sounds/creatures/barnacle/pain_05.vsnd",
+			"sounds/creatures/barnacle/pain_06.vsnd",
+			"sounds/creatures/barnacle/pain_07.vsnd",
+			"sounds/creatures/barnacle/pain_08.vsnd",
+		]
+	}
+	Barnacle.Grunt_Unhappy = 
+	{
+		base = "Barnacle.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/grunt_unhappy_01.vsnd",
+			"sounds/creatures/barnacle/grunt_unhappy_02.vsnd",
+			"sounds/creatures/barnacle/grunt_unhappy_03.vsnd",
+			"sounds/creatures/barnacle/grunt_unhappy_04.vsnd",
+		]
+	}
+	Barnacle.Spit_Build = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/spit_build_01.vsnd",
+			"sounds/creatures/barnacle/spit_build_02.vsnd",
+		]
+	}
+	Barnacle.Spit_Emit = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/spit_emit_01.vsnd",
+			"sounds/creatures/barnacle/spit_emit_02.vsnd",
+		]
+	}
+	Barnacle.Drip = 
+	{
+		type = "hlvr_start_multi_sequence"
+		block_stop = 1.000000
+		use_random_delay = 0.000000
+		wait_02 = 0.700000
+		wait_03 = 0.140000
+		wait_04 = 0.210000
+		soundevent_01 = "Barnacle.Drip_Child_First"
+		use_01 = 1.000000
+		soundevent_02 = "Barnacle.Drip_Child_Sequenced"
+		use_02 = 1.000000
+		soundevent_03 = "Barnacle.Drip_Child_Sequenced"
+		use_03 = 1.000000
+		soundevent_04 = "Barnacle.Drip_Child_Sequenced"
+		use_04 = 1.000000
+	}
+	Barnacle.Drip_Child_First = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		distance_max = 301.000000
+		mixgroup = "Barnacles"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/drip_01.vsnd",
+			"sounds/creatures/barnacle/drip_02.vsnd",
+			"sounds/creatures/barnacle/drip_03.vsnd",
+			"sounds/creatures/barnacle/drip_04.vsnd",
+			"sounds/creatures/barnacle/drip_05.vsnd",
+			"sounds/creatures/barnacle/drip_06.vsnd",
+			"sounds/creatures/barnacle/drip_07.vsnd",
+		]
+	}
+	Barnacle.Drip_Child_Sequenced = 
+	{
+		type = "hlvr_default_3d"
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.300000
+		volume = 0.500000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		distance_max = 301.000000
+		mixgroup = "Barnacles"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/drip_01.vsnd",
+			"sounds/creatures/barnacle/drip_02.vsnd",
+			"sounds/creatures/barnacle/drip_03.vsnd",
+			"sounds/creatures/barnacle/drip_04.vsnd",
+			"sounds/creatures/barnacle/drip_05.vsnd",
+			"sounds/creatures/barnacle/drip_06.vsnd",
+			"sounds/creatures/barnacle/drip_07.vsnd",
+		]
+	}
+	Barnacle.vomit_splash = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.850000
+		volume_fade_out = 3.000000
+		use_hrtf = 1.000000
+		mixgroup = "Barnacles"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/vomit_splash_01.vsnd",
+			"sounds/creatures/barnacle/vomit_splash_02.vsnd",
+			"sounds/creatures/barnacle/vomit_splash_03.vsnd",
+		]
+	}
+	Barnacle.vomit_splash_drips = 
+	{
+		type = "hlvr_2d_w_falloff"
+		volume = 0.300000
+		fade_out = 3.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 200.000000
+		mixgroup = "Barnacles"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/vomit_splash_drip_layer_01.vsnd",
+			"sounds/creatures/barnacle/vomit_splash_drip_layer_02.vsnd",
+			"sounds/creatures/barnacle/vomit_splash_drip_layer_03.vsnd",
+		]
+	}
+	Barnacle.Tongue_Extend = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Barnacle.Tongue_Extend_Stretch"
+		use_01 = 1.000000
+		soundevent_02 = "Barnacle.Idle_Breath_Out"
+		use_02 = 1.000000
+	}
+	Barnacle.Tongue_Extend_Stretch = 
+	{
+		base = "Barnacle.Base"
+		volume = 0.400000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/tongue_ext_01.vsnd",
+			"sounds/creatures/barnacle/tongue_ext_02.vsnd",
+		]
+	}
+	Barnacle.Grab = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/grab_contact_01.vsnd",
+			"sounds/creatures/barnacle/grab_contact_02.vsnd",
+			"sounds/creatures/barnacle/grab_contact_03.vsnd",
+		]
+	}
+	Barnacle.Grab_Reaction = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/grab_react_other_01.vsnd",
+			"sounds/creatures/barnacle/grab_react_other_02.vsnd",
+			"sounds/creatures/barnacle/grab_react_other_03.vsnd",
+		]
+	}
+	Barnacle.Grab_Player = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Barnacle.Grab_Player_Reaction"
+		use_01 = 1.000000
+		soundevent_02 = "Barnacle.Grab_Player_TongueWrap"
+		use_02 = 1.000000
+	}
+	Barnacle.Grab_Player_Reaction = 
+	{
+		base = "Barnacle.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/grab_react_player_01.vsnd",
+			"sounds/creatures/barnacle/grab_react_player_02.vsnd",
+			"sounds/creatures/barnacle/grab_react_player_03.vsnd",
+		]
+	}
+	Barnacle.Grab_Player_TongueWrap = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/creatures/barnacle/grab_player_01.vsnd",
+			"sounds/creatures/barnacle/grab_player_02.vsnd",
+		]
+	}
+	Barnacle.Scream_Lifting = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Barnacles"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	Barnacle.IdleClicks = 
+	{
+		type = "BarnacleIdleClick"
+		pitch = 1.000000
+		volume = 2.000000
+		playerVelocity = 0.520000
+		block_duration = 0.000000
+		block_distance = 500.000000
+		retrigger_time = 1.000000
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 3000.000000
+		vsnd_files_track_01 = 
+		[
+			"sounds/creatures/barnacle/idle_click_01.vsnd",
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.930403,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2394.812744,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		playerVelocity_retrigger_time_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.996337,
+				-0.994036,
+				-0.994036,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				-0.866633,
+				-0.866633,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_pitch_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.400000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1200.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2213.602295,
+				0.793495,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+}

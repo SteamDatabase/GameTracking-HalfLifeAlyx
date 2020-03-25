@@ -1,0 +1,34 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/propaganda_screens/propaganda_screens.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="Container">
+		<Panel id="ColorBarContainer" class="ScreenContainer">
+			<Panel id="StandByText" class="TextLine">
+				<Panel class="TextBox">
+					<Label text="#HLVR_Propaganda_Standby" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="BumperContainer_Screen1" class="ScreenContainer">
+			<Image src="s2r://panorama/images/propaganda_screens/propaganda_combine_bumper_screen1_psd.vtex" class="BumperImage" />
+		</Panel>
+		<Panel id="BumperContainer_Screen2" class="ScreenContainer">
+			<Image src="s2r://panorama/images/propaganda_screens/propaganda_combine_bumper_screen2_psd.vtex" class="BumperImage" />
+		</Panel>
+		<Panel id="BumperContainer_Screen3" class="ScreenContainer">
+			<Image src="s2r://panorama/images/propaganda_screens/propaganda_combine_bumper_screen3_psd.vtex" class="BumperImage" />
+		</Panel>
+		<Panel id="BumperContainer_Screen4" class="ScreenContainer">
+			<Image src="s2r://panorama/images/propaganda_screens/propaganda_combine_bumper_screen4_psd.vtex" class="BumperImage" />
+		</Panel>
+		<Panel id="BumperContainer_Screen5" class="ScreenContainer">
+			<Image src="s2r://panorama/images/propaganda_screens/propaganda_combine_bumper_screen5_psd.vtex" class="BumperImage" />
+		</Panel>
+	</Panel>
+</root>
+
+

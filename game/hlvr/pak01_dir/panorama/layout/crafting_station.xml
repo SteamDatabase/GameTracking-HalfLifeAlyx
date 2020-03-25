@@ -1,0 +1,225 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/crafting_station.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<HLVRCraftingStation class="CraftingStation" id="CraftingStation">
+			<Panel id="corner_brackets"/>
+			<Panel id="vr_affordance_left" class="VRaffordance">
+				<Panel id="vr_affordance_interior"/>
+			</Panel>
+			<Panel id="vr_affordance_right" class="VRaffordance">
+				<Panel id="vr_affordance_interior"/>
+			</Panel>
+			<Panel id="CraftingInterior">
+				<Panel id="scan_line_mask">
+
+					<Panel id="DesignElements">
+						<Panel id="LeftBars">
+							<Panel class="LeftBar Top" />
+							<Panel class="LeftBar Middle" />
+							<Panel class="LeftBar Bottom" />
+						</Panel>
+						<Panel id="Lines">
+							<Panel id="TopDividers">
+								<Panel class="Line Container" id="TopLine">
+									<Panel class="LineFill" />
+								</Panel>
+							</Panel>
+							<Panel id="BottomDividers">
+								<Panel class="Line Container" id="BottomDividerLeft">
+									<Panel class="LineFill" />
+								</Panel>
+								<Panel id="BottomRightContainer">
+									<Panel class="Line Container" id="BottomDividerRight">
+										<Panel class="LineFill" />
+									</Panel>
+								</Panel>
+							</Panel>
+						</Panel>
+					</Panel>
+
+					<Panel id="PanelContents">
+						<Panel class="MainLayoutPanel" id="TopBar">
+							<Panel class="InnerContainer">
+								<Panel id="WeaponZone">
+									<Label class="StateText" id="HasObjectTitle" text="#HLVR_CraftingStation_SelectedWeapon" />
+									<Panel id="WeaponIDContainer" class="IDContainer" />
+								</Panel>
+								<Panel id="LogoZone">
+									<Image id="CraftingStationLogo" src="s2r://panorama/images/upgrade_station_ui/combine_logo_psd.vtex" />
+									<Label id="CraftingStationTitle" class="SmallText" text="#HLVR_CraftingStation_Name" />
+								</Panel>
+							</Panel>
+						</Panel>
+
+						<Panel class="MainLayoutPanel" id="StatePanelContainer">
+							<Panel class="InnerContainer">
+								
+								<!-- FUNCTIONAL -->
+								<Panel class="StatePanel OnePane" id="WaitingForObject">
+									<Label class="StateText" id="InsertWeaponLabel" text="#HLVR_CraftingStation_InsertWeapon" />
+									<Panel class="AnimatedChevrons">
+										<Panel class="Chevron C3" />
+										<Panel class="Chevron C2" />
+										<Panel class="Chevron C1" />
+									</Panel>
+								</Panel>
+
+								<!-- TODO -->
+								<Panel class="StatePanel" id="WaitingForPrintSelect">
+									<Label class="StateText" id="WaitingForPrintSelectTitle" text="#HLVR_CraftingStation_SelectObject" />
+									<Panel id="PrintSubmenuListPanel" />
+									<TextButton class="PrintBackButton" text="&lt;-" onactivate="PlayerSelectedPrintBack();" />
+								</Panel>
+								
+								<!-- FUNCTIONAL -->
+								<Panel class="StatePanel TwoPane" id="HasObject">
+									<Panel class="ContentBody">
+										<Panel class="Headings">
+											<Label id="UpgradesHeading" class="Heading" text="#HLVR_CraftingStation_Upgrades" />
+											<Label id="CostHeading" class="Heading" text="#HLVR_CraftingStation_Cost" />
+										</Panel>
+										<Panel id="UpgradeContainerPanel" />
+										<Panel id="NoUpgradesPanel">
+											<Label class="StateText" id="NoUpgradesTitle" text="#HLVR_CraftingStation_NoUpgrades" />
+										</Panel>
+									</Panel>
+									<Panel class="ContentDetail">
+										<Label id="DetailHeading" class="Heading" text="#HLVR_CraftingStation_Summary" />
+										<Panel class="DetailContainer" id="UpgradeDetailContainerPanel" />
+									</Panel>
+								</Panel>
+
+								<!-- TODO -->
+								<Panel class="StatePanel TwoPane UpgradeSelection" id="WaitingForCurrency">
+									<Panel class="ContentBody">
+										<Panel class="SelectionPanel">
+											<Panel class="SelectionContent">
+												<Panel class="CurrencyContainer">
+													<Panel id="CurrencyAdded" class="CurrencyDrawer IDContainer" />
+													<Label id="CurrencySlash" text="/" />
+													<Panel id="CurrencyNeeded" class="CurrencyDrawer IDContainer" />
+												</Panel>
+												<Label class="StateText" id="InsertResin" text="#HLVR_CraftingStation_InsertResin" />
+												<ProgressBar id="CurrencyBar" />
+											</Panel>
+										</Panel>
+										<TextButton class="Button Usable Cancel" text="#HLVR_CraftingStation_Cancel" onactivate="PlayerSelectedPrintBack();" onmouseover="PlayerHoverOverGeneric()" />
+									</Panel>
+									<Panel class="ContentDetail">
+										<Label id="DetailHeading" class="Heading" text="#HLVR_CraftingStation_Summary" />
+										<Panel class="DetailContainer">
+											<Panel class="UpgradeDetails">
+												<Label class="UpgradeName" text="{s:upgradeselection}" />
+												<Label class="UpgradeDescription" text="{s:upgradedescription}" />
+											</Panel>
+										</Panel>
+									</Panel>
+								</Panel>
+								
+								<!-- TODO -->
+								<Panel class="StatePanel TwoPane UpgradeSelection" id="Crafting">
+									<Panel class="ContentBody">
+										<Panel class="SelectionPanel">
+											<Panel class="SelectionContent">
+												<Label class="StateText Highlight" id="CraftingPerc" text="{i:craftperc}%" />
+												<Label class="StateText" text="#HLVR_CraftingStation_Scanning" />
+												<Label class="StateText" text="#HLVR_CraftingStation_Rendering" />
+												<Label class="StateText" text="#HLVR_CraftingStation_Printing" />
+											</Panel>
+										</Panel>
+									</Panel>
+									<Panel class="ContentDetail">
+										<Label id="DetailHeading" class="Heading" text="#HLVR_CraftingStation_Acquiring" />
+										<Panel class="DetailContainer">
+											<Panel class="UpgradeDetails">
+												<Label class="UpgradeName" text="{s:upgradeselection}" />
+												<Label class="UpgradeDescription" text="{s:upgradedescription}" />
+											</Panel>
+										</Panel>
+									</Panel>
+								</Panel>
+
+								<!-- TODO -->
+								<Panel class="StatePanel TwoPane UpgradeSelection" id="Finished">
+									<Panel class="ContentBody">
+										<Panel class="SelectionPanel">
+											<Panel class="SelectionContent">
+												<Label class="StateText" id="FabricationComplete" text="#HLVR_CraftingStation_Complete" />
+												<Label class="StateText Highlight BigFlicker" text="#HLVR_CraftingStation_TakeObject" />
+											</Panel>
+										</Panel>
+									</Panel>
+									<Panel class="ContentDetail">
+										<Label id="DetailHeading" class="Heading" text="#HLVR_CraftingStation_Acquired" />
+										<Panel class="DetailContainer">
+											<Panel class="UpgradeDetails">
+												<Label class="UpgradeName" text="{s:upgradeselection}" />
+												<Label class="UpgradeDescription" text="{s:upgradedescription}" />
+											</Panel>
+										</Panel>
+									</Panel>
+								</Panel>
+
+								<!-- TODO -->
+								<Panel class="StatePanel TwoPane UpgradeSelection" id="Cancelled">
+									<Panel class="ContentBody">
+										<Panel class="SelectionPanel">
+											<Panel class="SelectionContent">
+												<Label class="StateText" id="FabricationCancelled" text="#HLVR_CraftingStation_Cancelled" />
+												<Label class="StateText Highlight BigFlicker" text="#HLVR_CraftingStation_TakeObject" />
+											</Panel>
+										</Panel>
+									</Panel>
+								</Panel>
+
+								<!-- TODO -->
+								<Panel class="StatePanel" id="ViewingUpgrade">
+									<TextButton class="ViewingUpgradeBackButton" text="&lt; BACK" onactivate="PlayerSelectedPrintBack();" />
+									<Label class="StateText" text=""/>
+									<Label class="StateText" id="ViewingUpgradeTitle" text="#HLVR_CraftingStation_NotEnoughResin" />
+									<Label class="StateText" id="ViewingUpgradeCurrencyRequiredLabel" text="{i:currencyrequired}" />
+									<Label class="StateText" id="ViewingUpgradeSelection" text="{s:upgradeselection}" />
+									<Label class="StateText" id="ViewingUpgradeDesc" text="{s:upgradedescription}" />
+								</Panel>
+							</Panel>
+						</Panel>
+
+						<Panel class="MainLayoutPanel" id="BottomBar">
+							<Panel class="InnerContainer">
+								<Panel class="CurrentResinPanel">
+									<Panel id="BarcodeZone">
+										<Panel class="Barcode Top BarcodeGraphic">
+										</Panel>
+										<Panel class="Barcode Bottom">
+											<Label id="SmallPrint" class="SmallText" text="#HLVR_CraftingStation_SmallPrint" />
+											<Panel id="BarcodeRemainder" class="BarcodeGraphic" />
+										</Panel>
+									</Panel>
+									<Panel id="ResinContainer">
+										<Label class="CurrentResinText" text="#HLVR_CraftingStation_ResinAmount" />
+										<Panel class="CurrentResinHeaders">
+											<Label class="ResinInsufficient" text="#HLVR_CraftingStation_InsufficientResin" />
+											<Label class="YourResinLabel" text="#HLVR_CraftingStation_YourResinLabel" />
+										</Panel>
+									</Panel>
+								</Panel>
+							</Panel>
+						</Panel>
+
+					</Panel>
+
+					<Panel id="FullScreenStates" hittest="false" acceptsinput="false">
+						<Panel class="FullScreenState" id="BootUp">
+							<Label id="BootingTemp" class="noshadow" text="[BOOT SEQUENCE]"/>
+						</Panel>
+					</Panel>
+				</Panel> 
+			</Panel>
+		</HLVRCraftingStation>
+	</ClientUIDialogPanel>
+</root>

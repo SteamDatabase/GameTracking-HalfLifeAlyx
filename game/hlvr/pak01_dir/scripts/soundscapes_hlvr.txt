@@ -1,0 +1,578 @@
+"train_yard_combat"
+{	
+	"fadetime" "2"
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"sounds/ambient/train_warehouse/amb_train_warehouse_lp_01.vsnd"
+		"pitch"		"100"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientTrainyard.AlarmNotice"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientTrainyard.RollingGlass"
+		"position"	"random"
+	}
+}
+
+"warehouse_alarm"
+{	
+	"playevent"
+	{
+		"event" "AmbientTrainyard.AlarmNotice"
+		"position"	"random"
+	}
+}
+
+"peeling_paint_main"
+{	
+	"fadetime" "2"
+	"playlooping"
+	{
+		"volume"	"0.11"
+		"wave"		"sounds/ambient/abstract/amb_stretchwood_lp_02.vsnd"
+		"pitch"		"100"
+	}
+	"playlooping"
+	{
+		"volume"	"0.13"
+		"wave"		"sounds/ambient/abstract/amb_stretchwood_lp_03.vsnd"
+		"pitch"		"100"
+	}
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"wave"		"sounds/ambient/lights/amb_lighthum_lp_01.vsnd"
+		"pitch"		"100"
+		"origin"	"-721.454, -594.218, 1132.53;"
+		"soundlevel" 	"SNDLVL_63dB"
+	}
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"wave"		"sounds/ambient/lights/amb_lighthum_lp_01.vsnd"
+		"pitch"		"100"
+		"origin"	"-528.094, -968.055, 1132.53;"
+		"soundlevel" 	"SNDLVL_63dB"
+	}
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"wave"		"sounds/ambient/lights/amb_lighthum_lp_01.vsnd"
+		"pitch"		"100"
+		"origin"	"-735.938, -1156.85, 1132.53;"
+		"soundlevel" 	"SNDLVL_63dB"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.CreakingFloor"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.LightFlicker"
+		"origin"	"-721.454, -594.218, 1132.53"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.LightFlicker"
+		"origin"	"-528.094, -968.055, 1132.53"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.LightFlicker"
+		"origin"	"-735.938, -1156.85, 1132.53"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientTrainyard.RollingGlass"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.SteamRush"
+		"origin"	"-865.693, -875.605, 1044"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.SteamRush"
+		"origin"	"-860, -612, 1044;"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.SteamRush"
+		"origin"	"-793.132, -763.84, 1044"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientPeelingPaint.StumbleWood"
+		"origin"	" -558.165, -828.887, 1088.02"
+	}
+}
+
+"cavern_creepy_sizzle_lp"
+{	
+	"fadetime" "2"
+
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"wave"		"sounds/ambient/abstract/amb_cavern_excavation_creepy_sizzle_lp_01.vsnd"
+		"pitch"		"100"
+		"soundlevel" 	"SNDLVL_63dB"
+	}
+}
+
+"creepy_amb_lp_01"
+{	
+	// "fadetime" "2"
+
+	// "playlooping"
+	// {
+		// "volume"	"0.23"
+		// "wave"		"sounds/ambient/abstract/amb_creep_lp_01.vsnd"
+		// "pitch"		"100"
+		// "soundlevel" 	"SNDLVL_75dB"
+	// }	
+	"playevent"
+	{
+		"event"	 "AmbientCreepy.MetalQuad"
+	}
+}
+
+// "trainyard_interior_lp_01"
+// {	
+	// "fadetime" "2"
+
+	// "playlooping"
+	// {
+		// "volume"	"1.0"
+		// "wave"		"sounds/ambient/train_warehouse/trainyard/amb_trainyard_interior_lp_01.vsnd"
+		// "pitch"		"100"
+		// "soundlevel" 	"SNDLVL_75dB"
+	// }
+// }
+
+"excavation_caverns_01"
+{
+
+	"playevent"
+	{
+		"event" "AmbientCave.RandomPebbleFall"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientTenement.BatSqueak"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientCreepy.Cymbals"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCave.RandomRubbleFall"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientExcavationTunnel.RandomBoom"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCave.WaterDripLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCave.SnowTextureLp"
+	}
+
+}
+
+"creepy_hallway_01"
+{
+
+	"playsoundscape"
+	{
+		"name" "creepy_amb_lp_01"
+		"volume" "0.7"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a2_headcrabs_tunnel_vents_and_lights"
+		"volume" "1.0"
+	}	
+	"playevent"
+	{
+		"event"	"AmbientCreepy.Metal_01"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreepy.Glass"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientIndoor.SteamRush"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Low_01"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "A2Headcrabs.TunnelLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"MetalPipe.BangAndCreak"
+		"position"	"random"
+	}
+	
+}
+
+"a2_pistol_skylight"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.SkylightAddLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_main"
+	}
+	
+}
+
+"a2_pistol_skylight_intro"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.SkylightAddIntroLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_main"
+	}
+}
+
+"a2_pistol_skylight_outro"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.SkylightAddOutroLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_main"
+	}
+}
+
+"a2_pistol_traincar"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.TraincarLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_vents_and_lights"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_steam_pipes"
+	}	
+	
+	"playevent"
+	{
+		"event"	"AmbientTenement.LowPulse"
+		"position"	"random"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_skylight_debris"
+	}
+}
+
+"a2_pistol_traincar_transition"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.TraincarTransitionLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_vents_and_lights"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_steam_pipes"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_skylight_debris"
+	}		
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.SkullBreath"
+		"position"	"random"
+		"volume"	"0.5"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.EvoMaraca"
+		"position"	"random"
+		"volume"	"0.5"
+	}	
+	
+	"playevent"
+	{
+		"event"	"AmbientTenement.LowPulse"
+		"position"	"random"
+	}
+}
+
+"a2_pistol_traincar_transition_02"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.TraincarTransitionLp02"
+	}
+
+	"playevent"
+	{
+		"event" "A2Pistol.SkylightAddTransitionLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_vents_and_lights"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_steam_pipes"
+	}	
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_skylight_debris"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.SkullBreath"
+		"position"	"random"
+		"volume"	"0.5"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.EvoMaraca"
+		"position"	"random"
+		"volume"	"0.5"
+	}	
+	
+	"playevent"
+	{
+		"event"	"AmbientTenement.LowPulse"
+		"position"	"random"
+	}
+}
+
+
+"creepy_trainyard_interior_01"
+{
+
+	"playevent"
+	{
+		"event" "A2Pistol.InteriorLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"a2_pistol_vents_and_lights"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Cymbals"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.SkullBreath"
+		"position"	"random"
+		"volume"	"0.7"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.EvoMaraca"
+		"position"	"random"
+		"volume"	"0.7"
+	}
+	
+	"playevent"
+	{
+		"event"	"MetalPipe.BangAndCreak"
+		"position"	"random"
+	}
+}
+
+"a1m1_intro_intro"
+{
+	"playevent"
+	{
+		"event" "AmbientTrainyard.OutsideLp"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "warehouse_alarm"
+		"volume" "1.0"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"wave"		"sounds/ambient/city/amb_combine_city_vista_ext_lp_01.vsnd"
+		"pitch"		"100"
+	}
+	"playevent"
+	{
+		"event"	"AmbientCity.MetalPress"
+		"position"	"random"
+	}
+}
+
+"a1m1_follow_scanner_intro"
+{
+	"playsoundscape"
+	{
+		"name" "trainyard_outside_surround"
+		"volume" "1.0"
+	}
+	"playsoundscape"
+	{
+		"name" "warehouse_alarm"
+		"volume" "1.0"
+	}
+}
+
+"generator_puzzle_01"
+{
+	"playevent"
+	{
+		"event"	"AmbientGeneratorTest.RandomMetallic"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientGeneratorTest.RandomLowWobble"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreepy.Glass"
+		"position"	"random"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreepy.Metal_01"
+		"position"	"random"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Cymbals"
+		"position"	"random"
+	}
+
+	"playsoundscape"
+	{
+		"name" "cavern_creepy_sizzle_lp"
+		"volume" "0.65"
+	}
+}
+	
+"a3_tenements_falling_debris"
+{
+	"playevent"
+	{
+		"event"	"A3Tenements.RubbleFall"
+		"origin"	"1832.733643, -1327.089600, 114.596390"
+		"position_target"	"1870.160034, -1272.565796, -463.968750"
+		"use_initial_random_offset"	 "1.0"
+	}	
+
+	"playevent"
+	{
+		"event"	"A3Tenements.RubbleFall" 
+		"origin"	"2188.525635, -1215.520508, 88.481575"
+		"position_target"	"2188.525635, -1215.520508, -463.968750"
+		"use_initial_random_offset"	 "1.0"
+	}	
+
+	"playevent"
+	{
+		"event"	"A3Tenements.RubbleFall" 
+		"origin"	"1923.953857, -1022.165283, 29.406250"
+		"position_target"	"1923.953857, -1022.165283, -463.968750"
+		"use_initial_random_offset"	 "1.0"
+	}	
+}

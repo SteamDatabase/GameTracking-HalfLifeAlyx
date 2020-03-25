@@ -1,0 +1,89 @@
+
+/* Scroll Bars */
+VerticalScrollBar, 
+VerticalScrollBar .ScrollThumb, 
+HorizontalScrollBar, 
+HorizontalScrollBar .ScrollThumb
+HTMLHorizontalScrollBar, 
+HTMLHorizontalScrollBar .ScrollThumb, 
+HTMLVerticalScrollBar,
+HTMLVerticalScrollBar .ScrollThumb, 
+{
+       // The transition duration and timing function must match constants used in code:
+       // k_flScrollTransitionTime, k_flScrollTransitionFunc, so dont change without talking with a dev
+       transition-duration: 0.20s;
+       transition-timing-function: ease-in-out;
+	transition-property: transform;
+}
+
+VerticalScrollBar.MouseDown, 
+VerticalScrollBar.MouseDown .ScrollThumb, 
+HorizontalScrollBar.MouseDown, 
+HorizontalScrollBar.MouseDown .ScrollThumb
+HTMLHorizontalScrollBar.MouseDown,  
+HTMLHorizontalScrollBar.MouseDown .ScrollThumb, 
+HTMLVerticalScrollBar.MouseDown, 
+HTMLVerticalScrollBar.MouseDown .ScrollThumb, 
+{
+       // Disable the transition when the mouse is dragging the scroll thumb. Note that this must match
+       // when IUIScrollBar::IsMouseDown returns true, or else the content will be out of sync
+       transition-duration: 0.0s;
+	transition-property: transform;
+}
+
+VerticalScrollBar, HTMLVerticalScrollBar,
+HorizontalScrollBar, HTMLHorizontalScrollBar
+{
+	background-color: rgba(0, 0, 0, 1);
+	margin: 0px;
+}
+
+VerticalScrollBar, HTMLVerticalScrollBar
+{
+	width: 48px;
+	height: 100%;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+HorizontalScrollBar, HTMLHorizontalScrollBar
+{
+	height: 48px;
+	width: 100%;
+	horizontal-align: left;
+	vertical-align: bottom;
+}
+
+.ScrollThumb
+{
+    transition-property: position;
+    transition-property: background-color, transform;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    border: 4px solid #000000aa;
+    background-color: #999999;
+    wash-color: #ffe954;
+    min-width: 64px;
+    min-height: 64px;
+}
+
+:hover > .ScrollThumb
+{
+	background-color: #f2a50d;
+}
+
+:active .ScrollThumb
+{
+	background-color: #f2a50d;
+}
+
+VerticalScrollBar .ScrollThumb, HTMLVerticalScrollBar .ScrollThumb
+{
+	width: 100%;
+}
+
+HorizontalScrollBar .ScrollThumb, HTMLHorizontalScrollBar .ScrollThumb
+{
+	height: 100%;
+}
+

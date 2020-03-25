@@ -1,0 +1,2707 @@
+{
+	a1_intro_world.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA1Intro.CityNiceElevationLp01_L_Transition"
+		soundevent_02 = "AmbientA1Intro.CityNiceElevationLp01_R_Transition"
+		soundevent_03 = "AmbientA1Intro.CityNiceElevationLp01_LS_Transition"
+		soundevent_04 = "AmbientA1Intro.CityNiceElevationLp01_RS_Transition"
+		soundevent_05 = "AmbientA1Intro.ElevatorIntLp_L_Transition"
+		soundevent_06 = "AmbientA1Intro.ElevatorIntLp_R_Transition"
+		soundevent_07 = "AmbientA1Intro.ElevatorIntLp_LS_Transition"
+		soundevent_08 = "AmbientA1Intro.ElevatorIntLp_RS_Transition"
+		soundevent_09 = "AmbientA1Intro.ApartmentBasementLp_L_Transition"
+		soundevent_10 = "AmbientA1Intro.ApartmentBasementLp_R_Transition"
+		soundevent_11 = "AmbientA1Intro.ApartmentBasementLp_LS_Transition"
+		soundevent_12 = "AmbientA1Intro.ApartmentBasementLp_RS_Transition"
+		soundevent_13 = "AmbientA1Intro.ApartmentHallLp_L_Transition"
+		soundevent_14 = "AmbientA1Intro.ApartmentHallLp_R_Transition"
+		soundevent_15 = "AmbientA1Intro.ApartmentHallLp_LS_Transition"
+		soundevent_16 = "AmbientA1Intro.ApartmentHallLp_RS_Transition"
+		soundevent_17 = "a1_intro_world_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+	}
+	a1_intro_world_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 0.991952
+		small_room_invert_scalar_array_value = 0.008048
+		large_room_addin_array_value = 1.000000
+		skylight_proximity_array_value = 0.390021
+	}
+	a1_intro_world_2.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA1Intro.ApartmentBasementLp_L_Transition"
+		soundevent_02 = "AmbientA1Intro.ApartmentBasementLp_R_Transition"
+		soundevent_03 = "AmbientA1Intro.ApartmentBasementLp_LS_Transition"
+		soundevent_04 = "AmbientA1Intro.ApartmentBasementLp_RS_Transition"
+		soundevent_05 = "AmbientA1Intro.ApartmentBasementElevatorLp_L_Transition"
+		soundevent_06 = "AmbientA1Intro.ApartmentBasementElevatorLp_R_Transition"
+		soundevent_07 = "AmbientA1Intro.ApartmentBasementElevatorLp_LS_Transition"
+		soundevent_08 = "AmbientA1Intro.ApartmentBasementElevatorLp_RS_Transition"
+		soundevent_09 = "AmbientA1Intro.CityNiceElevationLp02_L_Transition"
+		soundevent_10 = "AmbientA1Intro.CityNiceElevationLp02_R_Transition"
+		soundevent_11 = "AmbientA1Intro.CityNiceElevationLp02_LS_Transition"
+		soundevent_12 = "AmbientA1Intro.CityNiceElevationLp02_RS_Transition"
+		soundevent_13 = "AmbientA1Intro.ComputerRoomAddinLp_L_Transition"
+		soundevent_14 = "AmbientA1Intro.ComputerRoomAddinLp_R_Transition"
+		soundevent_15 = "AmbientA1Intro.ComputerRoomAddinLp_LS_Transition"
+		soundevent_16 = "AmbientA1Intro.ComputerRoomAddinLp_RS_Transition"
+		soundevent_17 = "a1_intro_world_2_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+	}
+	a1_intro_world_2_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		skylight_proximity_array_value = 0.390021
+	}
+	a2_quarantine_entrance.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientQuarantine.ExteriorQuadLp_L_Transition"
+		soundevent_02 = "AmbientQuarantine.ExteriorQuadLp_R_Transition"
+		soundevent_03 = "AmbientQuarantine.ExteriorQuadLp_LS_Transition"
+		soundevent_04 = "AmbientQuarantine.ExteriorQuadLp_RS_Transition"
+		soundevent_05 = "AmbientQuarantine.BasementLp_L_Transition"
+		soundevent_06 = "AmbientQuarantine.BasementLp_R_Transition"
+		soundevent_07 = "AmbientQuarantine.BasementLp_LS_Transition"
+		soundevent_08 = "AmbientQuarantine.BasementLp_RS_Transition"
+		soundevent_09 = "AmbientQuarantine.WoodBuildingSmallLp01_L_Transition"
+		soundevent_10 = "AmbientQuarantine.WoodBuildingSmallLp01_R_Transition"
+		soundevent_11 = "AmbientQuarantine.WoodBuildingSmallLp01_LS_Transition"
+		soundevent_12 = "AmbientQuarantine.WoodBuildingSmallLp01_RS_Transition"
+		soundevent_13 = "a2_quarantine_entrance_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a2_quarantine_entrance_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 1.000000
+		large_room_addin_array_value = 0.477752
+		skylight_invert_scalar_array_value = 1.000000
+	}
+	a2_pistol.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_02 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_03 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_04 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_05 = "AmbientA2Pistol.OpenAirSkylightLp_L_Transition"
+		soundevent_06 = "AmbientA2Pistol.OpenAirSkylightLp_R_Transition"
+		soundevent_07 = "AmbientA2Pistol.OpenAirSkylightLp_LS_Transition"
+		soundevent_08 = "AmbientA2Pistol.OpenAirSkylightLp_RS_Transition"
+		soundevent_09 = "A2Pistol.BasementLp_L_Transition"
+		soundevent_10 = "A2Pistol.BasementLp_R_Transition"
+		soundevent_11 = "A2Pistol.BasementLp_LS_Transition"
+		soundevent_12 = "A2Pistol.BasementLp_RS_Transition"
+		soundevent_13 = "a2_pistol_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a2_pistol_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 0.014395
+	}
+	a2_hideout.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbA2Hideout.MainHallwayLp_L_Transition"
+		soundevent_02 = "AmbA2Hideout.MainHallwayLp_R_Transition"
+		soundevent_03 = "AmbA2Hideout.MainHallwayLp_LS_Transition"
+		soundevent_04 = "AmbA2Hideout.MainHallwayLp_RS_Transition"
+		soundevent_05 = "AmbA2Hideout.SmallRoomLp_L_Transition"
+		soundevent_06 = "AmbA2Hideout.SmallRoomLp_R_Transition"
+		soundevent_07 = "AmbA2Hideout.SmallRoomLp_LS_Transition"
+		soundevent_08 = "AmbA2Hideout.SmallRoomLp_RS_Transition"
+		soundevent_09 = "AmbA2Hideout.VortSanctumAddin_L_Transition"
+		soundevent_10 = "AmbA2Hideout.VortSanctumAddin_R_Transition"
+		soundevent_11 = "AmbA2Hideout.VortSanctumAddin_LS_Transition"
+		soundevent_12 = "AmbA2Hideout.VortSanctumAddin_RS_Transition"
+		soundevent_13 = "a2_hideout_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a2_hideout_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 1.000000
+		large_room_addin_array_value = 0.171875
+	}
+	a2_headcrabs_tunnel.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA2Headcrabs.TunnelMainLp_L_Transition"
+		soundevent_02 = "AmbientA2Headcrabs.TunnelMainLp_R_Transition"
+		soundevent_03 = "AmbientA2Headcrabs.TunnelMainLp_LS_Transition"
+		soundevent_04 = "AmbientA2Headcrabs.TunnelMainLp_RS_Transition"
+		soundevent_05 = "AmbientA2Headcrabs.SubBasementLp_L_Transition"
+		soundevent_06 = "AmbientA2Headcrabs.SubBasementLp_R_Transition"
+		soundevent_07 = "AmbientA2Headcrabs.SubBasementLp_LS_Transition"
+		soundevent_08 = "AmbientA2Headcrabs.SubBasementLp_RS_Transition"
+		soundevent_09 = "a2_headcrabs_tunnel_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+	}
+	a2_headcrabs_tunnel_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 1.000000
+	}
+	a2_drainage.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA2Headcrabs.TunnelMainLp_L_Transition"
+		soundevent_02 = "AmbientA2Headcrabs.TunnelMainLp_R_Transition"
+		soundevent_03 = "AmbientA2Headcrabs.TunnelMainLp_LS_Transition"
+		soundevent_04 = "AmbientA2Headcrabs.TunnelMainLp_RS_Transition"
+		soundevent_05 = "AmbientA2Headcrabs.SubBasementLp_L_Transition"
+		soundevent_06 = "AmbientA2Headcrabs.SubBasementLp_R_Transition"
+		soundevent_07 = "AmbientA2Headcrabs.SubBasementLp_LS_Transition"
+		soundevent_08 = "AmbientA2Headcrabs.SubBasementLp_RS_Transition"
+		soundevent_09 = "AmbA2Drainage.XenInfestLp_L_Transition"
+		soundevent_10 = "AmbA2Drainage.XenInfestLp_R_Transition"
+		soundevent_11 = "AmbA2Drainage.XenInfestLp_LS_Transition"
+		soundevent_12 = "AmbA2Drainage.XenInfestLp_RS_Transition"
+		soundevent_13 = "a2_drainage_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a2_drainage_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		xen_proximity_array_value = 1.000000
+	}
+	a2_train_yard.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA2TrainYard.PostCrashTrainCarIntLp_L_Transition"
+		soundevent_02 = "AmbientA2TrainYard.PostCrashTrainCarIntLp_R_Transition"
+		soundevent_03 = "AmbientA2TrainYard.PostCrashTrainCarIntLp_LS_Transition"
+		soundevent_04 = "AmbientA2TrainYard.PostCrashTrainCarIntLp_RS_Transition"
+		soundevent_05 = "AmbientA2TrainYard.PostCrashTallRoomLp_L_Transition"
+		soundevent_06 = "AmbientA2TrainYard.PostCrashTallRoomLp_R_Transition"
+		soundevent_07 = "AmbientA2TrainYard.PostCrashTallRoomLp_LS_Transition"
+		soundevent_08 = "AmbientA2TrainYard.PostCrashTallRoomLp_RS_Transition"
+		soundevent_09 = "AmbientA2TrainYard.PostCrashExtLp_L_Transition"
+		soundevent_10 = "AmbientA2TrainYard.PostCrashExtLp_R_Transition"
+		soundevent_11 = "AmbientA2TrainYard.PostCrashExtLp_LS_Transition"
+		soundevent_12 = "AmbientA2TrainYard.PostCrashExtLp_RS_Transition"
+		soundevent_13 = "AmbientA2TrainYard.PostCrashMetal02_L_Transition"
+		soundevent_14 = "AmbientA2TrainYard.PostCrashMetal02_R_Transition"
+		soundevent_15 = "AmbientA2TrainYard.PostCrashMetal02_LS_Transition"
+		soundevent_16 = "AmbientA2TrainYard.PostCrashMetal02_RS_Transition"
+		soundevent_17 = "AmbientA2TrainYard.RockfallDebris04_L_Transition"
+		soundevent_18 = "AmbientA2TrainYard.RockfallDebris04_R_Transition"
+		soundevent_19 = "AmbientA2TrainYard.RockfallDebris04_LS_Transition"
+		soundevent_20 = "AmbientA2TrainYard.RockfallDebris04_RS_Transition"
+		soundevent_21 = "a2_train_yard_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_17 = 1.000000
+		volume_soundevent_18 = 1.000000
+		volume_soundevent_19 = 1.000000
+		volume_soundevent_20 = 1.000000
+	}
+	a2_train_yard_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		large_room_addin_array_value = 1.000000
+	}
+	a3_station_street.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbTrainStation.TextureQuad_L_Transition"
+		soundevent_02 = "AmbTrainStation.TextureQuad_R_Transition"
+		soundevent_03 = "AmbTrainStation.TextureQuad_LS_Transition"
+		soundevent_04 = "AmbTrainStation.TextureQuad_RS_Transition"
+		soundevent_05 = "AmbientHotelRooftop.OpenAirSkylightLp_L_Transition"
+		soundevent_06 = "AmbientHotelRooftop.OpenAirSkylightLp_R_Transition"
+		soundevent_07 = "AmbientHotelRooftop.OpenAirSkylightLp_LS_Transition"
+		soundevent_08 = "AmbientHotelRooftop.OpenAirSkylightLp_RS_Transition"
+		soundevent_09 = "AmbientHotelStreet.ExteriorLp_L_Transition"
+		soundevent_10 = "AmbientHotelStreet.ExteriorLp_R_Transition"
+		soundevent_11 = "AmbientHotelStreet.ExteriorLp_LS_Transition"
+		soundevent_12 = "AmbientHotelStreet.ExteriorLp_RS_Transition"
+		soundevent_13 = "a3_station_street_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a3_station_street_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 0.334745
+		small_room_invert_scalar_array_value = 0.665255
+		skylight_proximity_array_value = 0.678521
+	}
+	a3_hotel_lobby_basement.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientTenement.BasementLp01_L_Transition"
+		soundevent_02 = "AmbientTenement.BasementLp01_R_Transition"
+		soundevent_03 = "AmbientTenement.BasementLp01_LS_Transition"
+		soundevent_04 = "AmbientTenement.BasementLp01_RS_Transition"
+		soundevent_05 = "AmbientTenement.SmallRoomXenLp01_L_Transition"
+		soundevent_06 = "AmbientTenement.SmallRoomXenLp01_R_Transition"
+		soundevent_07 = "AmbientTenement.SmallRoomXenLp01_LS_Transition"
+		soundevent_08 = "AmbientTenement.SmallRoomXenLp01_RS_Transition"
+		soundevent_09 = "AmbientTenement.SubBasementLp01_L_Transition"
+		soundevent_10 = "AmbientTenement.SubBasementLp01_R_Transition"
+		soundevent_11 = "AmbientTenement.SubBasementLp01_LS_Transition"
+		soundevent_12 = "AmbientTenement.SubBasementLp01_RS_Transition"
+		soundevent_13 = "a3_hotel_lobby_basement_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a3_hotel_lobby_basement_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_sub_basement_proximity_array_value = 1.000000
+	}
+	a3_hotel_underground_pit.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientUndergroundPit.BasementLp02_L_Transition"
+		soundevent_02 = "AmbientUndergroundPit.BasementLp02_R_Transition"
+		soundevent_03 = "AmbientUndergroundPit.BasementLp02_LS_Transition"
+		soundevent_04 = "AmbientUndergroundPit.BasementLp02_RS_Transition"
+		soundevent_05 = "AmbientUndergroundPit.SubBasementLp01_L_Transition"
+		soundevent_06 = "AmbientUndergroundPit.SubBasementLp01_R_Transition"
+		soundevent_07 = "AmbientUndergroundPit.SubBasementLp01_LS_Transition"
+		soundevent_08 = "AmbientUndergroundPit.SubBasementLp01_RS_Transition"
+		soundevent_09 = "AmbientUndergroundPit.AbstractPitAddinLp_L_Transition"
+		soundevent_10 = "AmbientUndergroundPit.AbstractPitAddinLp_R_Transition"
+		soundevent_11 = "AmbientUndergroundPit.AbstractPitAddinLp_LS_Transition"
+		soundevent_12 = "AmbientUndergroundPit.AbstractPitAddinLp_RS_Transition"
+		soundevent_13 = "AmbientHotelRooftop.OpenAirSkylightLp_L_Transition"
+		soundevent_14 = "AmbientHotelRooftop.OpenAirSkylightLp_R_Transition"
+		soundevent_15 = "AmbientHotelRooftop.OpenAirSkylightLp_LS_Transition"
+		soundevent_16 = "AmbientHotelRooftop.OpenAirSkylightLp_RS_Transition"
+		soundevent_17 = "a3_hotel_underground_pit_transition_opvar_set"
+		soundevent_21 = "AmbientHotelStreet.ExteriorLp_L_Transition"
+		soundevent_22 = "AmbientHotelStreet.ExteriorLp_R_Transition"
+		soundevent_23 = "AmbientHotelStreet.ExteriorLp_LS_Transition"
+		soundevent_24 = "AmbientHotelStreet.ExteriorLp_RS_Transition"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_21 = 1.000000
+		volume_soundevent_22 = 1.000000
+		volume_soundevent_23 = 1.000000
+		volume_soundevent_24 = 1.000000
+	}
+	a3_hotel_underground_pit_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		small_room_invert_scalar_array_value = 0.294008
+	}
+	a3_hotel_interior_rooftop.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientHotelRooftop.HotelIntLp_L_Transition"
+		soundevent_02 = "AmbientHotelRooftop.HotelIntLp_R_Transition"
+		soundevent_03 = "AmbientHotelRooftop.HotelIntLp_LS_Transition"
+		soundevent_04 = "AmbientHotelRooftop.HotelIntLp_RS_Transition"
+		soundevent_05 = "AmbientTenement.SmallRoomXenLp01_L_Transition"
+		soundevent_06 = "AmbientTenement.SmallRoomXenLp01_R_Transition"
+		soundevent_07 = "AmbientTenement.SmallRoomXenLp01_LS_Transition"
+		soundevent_08 = "AmbientTenement.SmallRoomXenLp01_RS_Transition"
+		soundevent_09 = "AmbientHotelRooftop.Attic_L_Transition"
+		soundevent_10 = "AmbientHotelRooftop.Attic_R_Transition"
+		soundevent_11 = "AmbientHotelRooftop.Attic_LS_Transition"
+		soundevent_12 = "AmbientHotelRooftop.Attic_RS_Transition"
+		soundevent_13 = "AmbientAbstract.Despair_03_L_Transition"
+		soundevent_14 = "AmbientAbstract.Despair_03_R_Transition"
+		soundevent_15 = "AmbientAbstract.Despair_03_LS_Transition"
+		soundevent_16 = "AmbientAbstract.Despair_03_RS_Transition"
+		soundevent_17 = "AmbientAbstract.Despair_05_L_Transition"
+		soundevent_18 = "AmbientAbstract.Despair_05_R_Transition"
+		soundevent_19 = "AmbientAbstract.Despair_05_LS_Transition"
+		soundevent_20 = "AmbientAbstract.Despair_05_RS_Transition"
+		soundevent_21 = "a3_hotel_interior_rooftop_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_17 = 1.000000
+		volume_soundevent_18 = 1.000000
+		volume_soundevent_19 = 1.000000
+		volume_soundevent_20 = 1.000000
+	}
+	a3_hotel_interior_rooftop_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 0.575571
+		small_room_invert_scalar_array_value = 0.177756
+		skylight_proximity_array_value = 0.724281
+	}
+	a3_hotel_street.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientHotelStreet.ExteriorLp_L_Transition"
+		soundevent_02 = "AmbientHotelStreet.ExteriorLp_R_Transition"
+		soundevent_03 = "AmbientHotelStreet.ExteriorLp_LS_Transition"
+		soundevent_04 = "AmbientHotelStreet.ExteriorLp_RS_Transition"
+		soundevent_05 = "AmbientHotelStreet.StairwellAddin_L_Transition"
+		soundevent_06 = "AmbientHotelStreet.StairwellAddin_R_Transition"
+		soundevent_07 = "AmbientHotelStreet.StairwellAddin_LS_Transition"
+		soundevent_08 = "AmbientHotelStreet.StairwellAddin_RS_Transition"
+		soundevent_09 = "AmbientHotelStreet.InteriorLgLp_L_Transition"
+		soundevent_10 = "AmbientHotelStreet.InteriorLgLp_R_Transition"
+		soundevent_11 = "AmbientHotelStreet.InteriorLgLp_LS_Transition"
+		soundevent_12 = "AmbientHotelStreet.InteriorLgLp_RS_Transition"
+		soundevent_13 = "AmbientHotelStreet.InteriorSmLp_L_Transition"
+		soundevent_14 = "AmbientHotelStreet.InteriorSmLp_R_Transition"
+		soundevent_15 = "AmbientHotelStreet.InteriorSmLp_LS_Transition"
+		soundevent_16 = "AmbientHotelStreet.InteriorSmLp_RS_Transition"
+		soundevent_17 = "a3_hotel_street_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+	}
+	a3_hotel_street_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		skylight_proximity_array_value = 0.430471
+	}
+	a3_c17_processing_plant.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbProcPlant.IntSmallRoomLp_L_Transition"
+		soundevent_02 = "AmbProcPlant.IntSmallRoomLp_R_Transition"
+		soundevent_03 = "AmbProcPlant.IntSmallRoomLp_LS_Transition"
+		soundevent_04 = "AmbProcPlant.IntSmallRoomLp_RS_Transition"
+		soundevent_05 = "AmbProcPlant.InteriorLp_L_Transition"
+		soundevent_06 = "AmbProcPlant.InteriorLp_R_Transition"
+		soundevent_07 = "AmbProcPlant.InteriorLp_LS_Transition"
+		soundevent_08 = "AmbProcPlant.InteriorLp_RS_Transition"
+		soundevent_09 = "AmbProcPlant.ExteriorLp_L_Transition"
+		soundevent_10 = "AmbProcPlant.ExteriorLp_R_Transition"
+		soundevent_11 = "AmbProcPlant.ExteriorLp_LS_Transition"
+		soundevent_12 = "AmbProcPlant.ExteriorLp_RS_Transition"
+		soundevent_13 = "a3_c17_processing_plant_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+	}
+	a3_c17_processing_plant_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_small_room_proximity_array_value = 0.309586
+		skylight_proximity_array_value = 0.089203
+	}
+	a3_distillery.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA3Distillery.InteriorLargeRoomLp_L_Transition"
+		soundevent_02 = "AmbientA3Distillery.InteriorLargeRoomLp_R_Transition"
+		soundevent_03 = "AmbientA3Distillery.InteriorLargeRoomLp_LS_Transition"
+		soundevent_04 = "AmbientA3Distillery.InteriorLargeRoomLp_RS_Transition"
+		soundevent_05 = "AmbientA3Distillery.CaveLp_L_Transition"
+		soundevent_06 = "AmbientA3Distillery.CaveLp_R_Transition"
+		soundevent_07 = "AmbientA3Distillery.CaveLp_LS_Transition"
+		soundevent_08 = "AmbientA3Distillery.CaveLp_RS_Transition"
+		soundevent_09 = "a3_distillery_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+	}
+	a3_distillery_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+	}
+	a4_c17_zoo.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientC17Zoo.ExteriorLp_L_Transition"
+		soundevent_02 = "AmbientC17Zoo.ExteriorLp_R_Transition"
+		soundevent_03 = "AmbientC17Zoo.ExteriorLp_LS_Transition"
+		soundevent_04 = "AmbientC17Zoo.ExteriorLp_RS_Transition"
+		soundevent_05 = "AmbientC17Zoo.HallwaysLp_L_Transition"
+		soundevent_06 = "AmbientC17Zoo.HallwaysLp_R_Transition"
+		soundevent_07 = "AmbientC17Zoo.HallwaysLp_LS_Transition"
+		soundevent_08 = "AmbientC17Zoo.HallwaysLp_RS_Transition"
+		soundevent_09 = "AmbientC17Antlions.SewerIntLp_L_Transition"
+		soundevent_10 = "AmbientC17Antlions.SewerIntLp_R_Transition"
+		soundevent_11 = "AmbientC17Antlions.SewerIntLp_LS_Transition"
+		soundevent_12 = "AmbientC17Antlions.SewerIntLp_RS_Transition"
+		soundevent_13 = "AmbientC17Antlions.SmallRoomXenLp01_L_Transition"
+		soundevent_14 = "AmbientC17Antlions.SmallRoomXenLp01_R_Transition"
+		soundevent_15 = "AmbientC17Antlions.SmallRoomXenLp01_LS_Transition"
+		soundevent_16 = "AmbientC17Antlions.SmallRoomXenLp01_RS_Transition"
+		soundevent_17 = "a4_c17_zoo_transition_opvar_set"
+		soundevent_21 = "AmbientC17Antlions.SewerSubBasementLp_L_Transition"
+		soundevent_22 = "AmbientC17Antlions.SewerSubBasementLp_R_Transition"
+		soundevent_23 = "AmbientC17Antlions.SewerSubBasementLp_LS_Transition"
+		soundevent_24 = "AmbientC17Antlions.SewerSubBasementLp_RS_Transition"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_21 = 1.000000
+		volume_soundevent_22 = 1.000000
+		volume_soundevent_23 = 1.000000
+		volume_soundevent_24 = 1.000000
+	}
+	a4_c17_zoo_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		hotel_sub_basement_proximity_array_value = 1.000000
+	}
+	a4_c17_tanker_yard.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientC17.SpillwayLp_L_Transition"
+		soundevent_02 = "AmbientC17.SpillwayLp_R_Transition"
+		soundevent_03 = "AmbientC17.SpillwayLp_LS_Transition"
+		soundevent_04 = "AmbientC17.SpillwayLp_RS_Transition"
+		soundevent_05 = "AmbientC17.ExteriorDroneLp_L_Transition"
+		soundevent_06 = "AmbientC17.ExteriorDroneLp_R_Transition"
+		soundevent_07 = "AmbientC17.ExteriorDroneLp_LS_Transition"
+		soundevent_08 = "AmbientC17.ExteriorDroneLp_RS_Transition"
+		soundevent_09 = "AmbientC17Antlions.SewerIntLp_L_Transition"
+		soundevent_10 = "AmbientC17Antlions.SewerIntLp_R_Transition"
+		soundevent_11 = "AmbientC17Antlions.SewerIntLp_LS_Transition"
+		soundevent_12 = "AmbientC17Antlions.SewerIntLp_RS_Transition"
+		soundevent_13 = "AmbientC17.RubbleEchoes06_L_Transition"
+		soundevent_14 = "AmbientC17.RubbleEchoes06_R_Transition"
+		soundevent_15 = "AmbientC17.RubbleEchoes06_LS_Transition"
+		soundevent_16 = "AmbientC17.RubbleEchoes06_RS_Transition"
+		soundevent_17 = "AmbientC17.RubbleEchoes07_L_Transition"
+		soundevent_18 = "AmbientC17.RubbleEchoes07_R_Transition"
+		soundevent_19 = "AmbientC17.RubbleEchoes07_LS_Transition"
+		soundevent_20 = "AmbientC17.RubbleEchoes07_RS_Transition"
+		soundevent_21 = "a4_c17_tanker_yard_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_17 = 1.000000
+		volume_soundevent_18 = 1.000000
+		volume_soundevent_19 = 1.000000
+		volume_soundevent_20 = 1.000000
+	}
+	a4_c17_tanker_yard_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		small_room_invert_scalar_array_value = 1.000000
+		skylight_proximity_array_value = 1.000000
+	}
+	a4_c17_water_tower.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA5Strider.ItsADamnCaveLP_L_Transition"
+		soundevent_02 = "AmbientA5Strider.ItsADamnCaveLP_R_Transition"
+		soundevent_03 = "AmbientA5Strider.ItsADamnCaveLP_LS_Transition"
+		soundevent_04 = "AmbientA5Strider.ItsADamnCaveLP_RS_Transition"
+		soundevent_05 = "AmbientA5Strider.UndergroundDecayLp_L_Transition"
+		soundevent_06 = "AmbientA5Strider.UndergroundDecayLp_R_Transition"
+		soundevent_07 = "AmbientA5Strider.UndergroundDecayLp_LS_Transition"
+		soundevent_08 = "AmbientA5Strider.UndergroundDecayLp_RS_Transition"
+		soundevent_09 = "AmbientA5Strider.ApocalypseLp_L_Transition"
+		soundevent_10 = "AmbientA5Strider.ApocalypseLp_R_Transition"
+		soundevent_11 = "AmbientA5Strider.ApocalypseLp_LS_Transition"
+		soundevent_12 = "AmbientA5Strider.ApocalypseLp_RS_Transition"
+		soundevent_13 = "AmbientA5Strider.DebrisWronk_02_L_Transition"
+		soundevent_14 = "AmbientA5Strider.DebrisWronk_02_R_Transition"
+		soundevent_15 = "AmbientA5Strider.DebrisWronk_02_LS_Transition"
+		soundevent_16 = "AmbientA5Strider.DebrisWronk_02_RS_Transition"
+		soundevent_17 = "a4_c17_water_tower_transition_opvar_set"
+		soundevent_21 = "AmbientA5Strider.ParkingGarageDistantAlarm01_L_Transition"
+		soundevent_22 = "AmbientA5Strider.ParkingGarageDistantAlarm01_R_Transition"
+		soundevent_23 = "AmbientA5Strider.ParkingGarageDistantAlarm01_LS_Transition"
+		soundevent_24 = "AmbientA5Strider.ParkingGarageDistantAlarm01_RS_Transition"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_21 = 1.000000
+		volume_soundevent_22 = 1.000000
+		volume_soundevent_23 = 1.000000
+		volume_soundevent_24 = 1.000000
+	}
+	a4_c17_water_tower_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		small_room_invert_scalar_array_value = 1.000000
+		skylight_proximity_array_value = 1.000000
+	}
+	a4_c17_parking_garage.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA5Strider.ItsADamnCaveLP_L_Transition"
+		soundevent_02 = "AmbientA5Strider.ItsADamnCaveLP_R_Transition"
+		soundevent_03 = "AmbientA5Strider.ItsADamnCaveLP_LS_Transition"
+		soundevent_04 = "AmbientA5Strider.ItsADamnCaveLP_RS_Transition"
+		soundevent_05 = "AmbientA5Strider.UndergroundDecayLp_L_Transition"
+		soundevent_06 = "AmbientA5Strider.UndergroundDecayLp_R_Transition"
+		soundevent_07 = "AmbientA5Strider.UndergroundDecayLp_LS_Transition"
+		soundevent_08 = "AmbientA5Strider.UndergroundDecayLp_RS_Transition"
+		soundevent_09 = "AmbientA5Strider.ApocalypseLp_L_Transition"
+		soundevent_10 = "AmbientA5Strider.ApocalypseLp_R_Transition"
+		soundevent_11 = "AmbientA5Strider.ApocalypseLp_LS_Transition"
+		soundevent_12 = "AmbientA5Strider.ApocalypseLp_RS_Transition"
+		soundevent_13 = "AmbientA5Strider.DebrisWronk_04_L_Transition"
+		soundevent_14 = "AmbientA5Strider.DebrisWronk_04_R_Transition"
+		soundevent_15 = "AmbientA5Strider.DebrisWronk_04_LS_Transition"
+		soundevent_16 = "AmbientA5Strider.DebrisWronk_04_RS_Transition"
+		soundevent_17 = "a4_c17_parking_garage_transition_opvar_set"
+		soundevent_21 = "AmbientA5Strider.ParkingGarageDistantAlarm02_L_Transition"
+		soundevent_22 = "AmbientA5Strider.ParkingGarageDistantAlarm02_R_Transition"
+		soundevent_23 = "AmbientA5Strider.ParkingGarageDistantAlarm02_LS_Transition"
+		soundevent_24 = "AmbientA5Strider.ParkingGarageDistantAlarm02_RS_Transition"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_21 = 1.000000
+		volume_soundevent_22 = 1.000000
+		volume_soundevent_23 = 1.000000
+		volume_soundevent_24 = 1.000000
+	}
+	a4_c17_parking_garage_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		skylight_proximity_array_value = 1.000000
+	}
+	a5_vault.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "AmbientA5Vault.CombineHallMetalLP_L_Transition"
+		soundevent_02 = "AmbientA5Vault.CombineHallMetalLP_R_Transition"
+		soundevent_03 = "AmbientA5Vault.CombineHallMetalLP_LS_Transition"
+		soundevent_04 = "AmbientA5Vault.CombineHallMetalLP_RS_Transition"
+		soundevent_05 = "AmbientA5Vault.ExteriorVistaLp_L_Transition"
+		soundevent_06 = "AmbientA5Vault.ExteriorVistaLp_R_Transition"
+		soundevent_07 = "AmbientA5Vault.ExteriorVistaLp_LS_Transition"
+		soundevent_08 = "AmbientA5Vault.ExteriorVistaLp_RS_Transition"
+		soundevent_09 = "a5_vault_transition_opvar_set"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+	}
+	a5_vault_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		skylight_proximity_array_value = 0.201250
+	}
+	a5_ending.map_end_transition = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+	}
+	a5_ending_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+	}
+	test_transition_opvar_set = 
+	{
+		type = "hlvr_level_transition_opvar_setter"
+		xen_proximity_array_value = 1.000000
+		hotel_small_room_proximity_array_value = 1.000000
+		small_room_invert_scalar_array_value = 0.250000
+		large_room_addin_array_value = 1.000000
+		hotel_sub_basement_proximity_array_value = 1.000000
+		skylight_proximity_array_value = 1.000000
+		skylight_invert_scalar_array_value = 0.250000
+	}
+	test_madness = 
+	{
+		type = "hlvr_start_multi_24"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+		voice_layer = "async_load"
+		soundevent_01 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_02 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_03 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_04 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_05 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_06 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_07 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_08 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_09 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_10 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_11 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_12 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_13 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_14 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_15 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_16 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_17 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_18 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_19 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_20 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		soundevent_21 = "A2Pistol.InteriorLpMulti_L_Transition"
+		soundevent_22 = "A2Pistol.InteriorLpMulti_R_Transition"
+		soundevent_23 = "A2Pistol.InteriorLpMulti_LS_Transition"
+		soundevent_24 = "A2Pistol.InteriorLpMulti_RS_Transition"
+		volume_soundevent_01 = 1.000000
+		volume_soundevent_02 = 1.000000
+		volume_soundevent_03 = 1.000000
+		volume_soundevent_04 = 1.000000
+		volume_soundevent_05 = 1.000000
+		volume_soundevent_06 = 1.000000
+		volume_soundevent_07 = 1.000000
+		volume_soundevent_08 = 1.000000
+		volume_soundevent_09 = 1.000000
+		volume_soundevent_10 = 1.000000
+		volume_soundevent_11 = 1.000000
+		volume_soundevent_12 = 1.000000
+		volume_soundevent_13 = 1.000000
+		volume_soundevent_14 = 1.000000
+		volume_soundevent_15 = 1.000000
+		volume_soundevent_16 = 1.000000
+		volume_soundevent_17 = 1.000000
+		volume_soundevent_18 = 1.000000
+		volume_soundevent_19 = 1.000000
+		volume_soundevent_20 = 1.000000
+		volume_soundevent_21 = 1.000000
+		volume_soundevent_22 = 1.000000
+		volume_soundevent_23 = 1.000000
+		volume_soundevent_24 = 1.000000
+	}
+	AmbientA1Intro.CityNiceElevationLp01_L_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp01_R_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp01_LS_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp01_RS_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ElevatorIntLp_L_Transition = 
+	{
+		base = "AmbientA1Intro.ElevatorIntLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ElevatorIntLp_R_Transition = 
+	{
+		base = "AmbientA1Intro.ElevatorIntLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ElevatorIntLp_LS_Transition = 
+	{
+		base = "AmbientA1Intro.ElevatorIntLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ElevatorIntLp_RS_Transition = 
+	{
+		base = "AmbientA1Intro.ElevatorIntLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementLp_L_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementLp_R_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementLp_LS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementLp_RS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentHallLp_L_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentHallLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentHallLp_R_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentHallLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentHallLp_LS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentHallLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentHallLp_RS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentHallLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementElevatorLp_L_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementElevatorLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementElevatorLp_R_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementElevatorLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementElevatorLp_LS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementElevatorLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ApartmentBasementElevatorLp_RS_Transition = 
+	{
+		base = "AmbientA1Intro.ApartmentBasementElevatorLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp02_L_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp02_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp02_R_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp02_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp02_LS_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp02_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.CityNiceElevationLp02_RS_Transition = 
+	{
+		base = "AmbientA1Intro.CityNiceElevationLp02_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ComputerRoomAddinLp_L_Transition = 
+	{
+		base = "AmbientA1Intro.ComputerRoomAddinLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ComputerRoomAddinLp_R_Transition = 
+	{
+		base = "AmbientA1Intro.ComputerRoomAddinLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ComputerRoomAddinLp_LS_Transition = 
+	{
+		base = "AmbientA1Intro.ComputerRoomAddinLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA1Intro.ComputerRoomAddinLp_RS_Transition = 
+	{
+		base = "AmbientA1Intro.ComputerRoomAddinLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.ExteriorQuadLp_L_Transition = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.ExteriorQuadLp_R_Transition = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.ExteriorQuadLp_LS_Transition = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.ExteriorQuadLp_RS_Transition = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.BasementLp_L_Transition = 
+	{
+		base = "AmbientQuarantine.BasementLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.BasementLp_R_Transition = 
+	{
+		base = "AmbientQuarantine.BasementLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.BasementLp_LS_Transition = 
+	{
+		base = "AmbientQuarantine.BasementLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.BasementLp_RS_Transition = 
+	{
+		base = "AmbientQuarantine.BasementLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_L_Transition = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_R_Transition = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_LS_Transition = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_RS_Transition = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.InteriorLpMulti_L_Transition = 
+	{
+		base = "A2Pistol.InteriorLpMulti_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.InteriorLpMulti_R_Transition = 
+	{
+		base = "A2Pistol.InteriorLpMulti_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.InteriorLpMulti_LS_Transition = 
+	{
+		base = "A2Pistol.InteriorLpMulti_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.InteriorLpMulti_RS_Transition = 
+	{
+		base = "A2Pistol.InteriorLpMulti_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_L_Transition = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_R_Transition = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_LS_Transition = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_RS_Transition = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.BasementLp_L_Transition = 
+	{
+		base = "A2Pistol.BasementLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.BasementLp_R_Transition = 
+	{
+		base = "A2Pistol.BasementLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.BasementLp_LS_Transition = 
+	{
+		base = "A2Pistol.BasementLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	A2Pistol.BasementLp_RS_Transition = 
+	{
+		base = "A2Pistol.BasementLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.MainHallwayLp_L_Transition = 
+	{
+		base = "AmbA2Hideout.MainHallwayLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.MainHallwayLp_R_Transition = 
+	{
+		base = "AmbA2Hideout.MainHallwayLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.MainHallwayLp_LS_Transition = 
+	{
+		base = "AmbA2Hideout.MainHallwayLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.MainHallwayLp_RS_Transition = 
+	{
+		base = "AmbA2Hideout.MainHallwayLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.SmallRoomLp_L_Transition = 
+	{
+		base = "AmbA2Hideout.SmallRoomLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.SmallRoomLp_R_Transition = 
+	{
+		base = "AmbA2Hideout.SmallRoomLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.SmallRoomLp_LS_Transition = 
+	{
+		base = "AmbA2Hideout.SmallRoomLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.SmallRoomLp_RS_Transition = 
+	{
+		base = "AmbA2Hideout.SmallRoomLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.VortSanctumAddin_L_Transition = 
+	{
+		base = "AmbA2Hideout.VortSanctumAddin_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.VortSanctumAddin_R_Transition = 
+	{
+		base = "AmbA2Hideout.VortSanctumAddin_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.VortSanctumAddin_LS_Transition = 
+	{
+		base = "AmbA2Hideout.VortSanctumAddin_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Hideout.VortSanctumAddin_RS_Transition = 
+	{
+		base = "AmbA2Hideout.VortSanctumAddin_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.TunnelMainLp_L_Transition = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.TunnelMainLp_R_Transition = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.TunnelMainLp_LS_Transition = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.TunnelMainLp_RS_Transition = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.SubBasementLp_L_Transition = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.SubBasementLp_R_Transition = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.SubBasementLp_LS_Transition = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2Headcrabs.SubBasementLp_RS_Transition = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Drainage.XenInfestLp_L_Transition = 
+	{
+		base = "AmbA2Drainage.XenInfestLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Drainage.XenInfestLp_R_Transition = 
+	{
+		base = "AmbA2Drainage.XenInfestLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Drainage.XenInfestLp_LS_Transition = 
+	{
+		base = "AmbA2Drainage.XenInfestLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbA2Drainage.XenInfestLp_RS_Transition = 
+	{
+		base = "AmbA2Drainage.XenInfestLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTrainCarIntLp_L_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTrainCarIntLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTrainCarIntLp_R_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTrainCarIntLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTrainCarIntLp_LS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTrainCarIntLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTrainCarIntLp_RS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTrainCarIntLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTallRoomLp_L_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTallRoomLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTallRoomLp_R_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTallRoomLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTallRoomLp_LS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTallRoomLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashTallRoomLp_RS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashTallRoomLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashExtLp_L_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashExtLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashExtLp_R_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashExtLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashExtLp_LS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashExtLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashExtLp_RS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashExtLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashMetal02_L_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashMetal02_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashMetal02_R_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashMetal02_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashMetal02_LS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashMetal02_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.PostCrashMetal02_RS_Transition = 
+	{
+		base = "AmbientA2TrainYard.PostCrashMetal02_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.RockfallDebris04_L_Transition = 
+	{
+		base = "AmbientA2TrainYard.RockfallDebris04_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.RockfallDebris04_R_Transition = 
+	{
+		base = "AmbientA2TrainYard.RockfallDebris04_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.RockfallDebris04_LS_Transition = 
+	{
+		base = "AmbientA2TrainYard.RockfallDebris04_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA2TrainYard.RockfallDebris04_RS_Transition = 
+	{
+		base = "AmbientA2TrainYard.RockfallDebris04_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbTrainStation.TextureQuad_L_Transition = 
+	{
+		base = "AmbTrainStation.TextureQuad_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbTrainStation.TextureQuad_R_Transition = 
+	{
+		base = "AmbTrainStation.TextureQuad_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbTrainStation.TextureQuad_LS_Transition = 
+	{
+		base = "AmbTrainStation.TextureQuad_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbTrainStation.TextureQuad_RS_Transition = 
+	{
+		base = "AmbTrainStation.TextureQuad_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_L_Transition = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_R_Transition = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_LS_Transition = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_RS_Transition = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.ExteriorLp_L_Transition = 
+	{
+		base = "AmbientHotelStreet.ExteriorLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.ExteriorLp_R_Transition = 
+	{
+		base = "AmbientHotelStreet.ExteriorLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.ExteriorLp_LS_Transition = 
+	{
+		base = "AmbientHotelStreet.ExteriorLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.ExteriorLp_RS_Transition = 
+	{
+		base = "AmbientHotelStreet.ExteriorLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.BasementLp01_L_Transition = 
+	{
+		base = "AmbientTenement.BasementLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.BasementLp01_R_Transition = 
+	{
+		base = "AmbientTenement.BasementLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.BasementLp01_LS_Transition = 
+	{
+		base = "AmbientTenement.BasementLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.BasementLp01_RS_Transition = 
+	{
+		base = "AmbientTenement.BasementLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SmallRoomXenLp01_L_Transition = 
+	{
+		base = "AmbientTenement.SmallRoomXenLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SmallRoomXenLp01_R_Transition = 
+	{
+		base = "AmbientTenement.SmallRoomXenLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SmallRoomXenLp01_LS_Transition = 
+	{
+		base = "AmbientTenement.SmallRoomXenLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SmallRoomXenLp01_RS_Transition = 
+	{
+		base = "AmbientTenement.SmallRoomXenLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SubBasementLp01_L_Transition = 
+	{
+		base = "AmbientTenement.SubBasementLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SubBasementLp01_R_Transition = 
+	{
+		base = "AmbientTenement.SubBasementLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SubBasementLp01_LS_Transition = 
+	{
+		base = "AmbientTenement.SubBasementLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientTenement.SubBasementLp01_RS_Transition = 
+	{
+		base = "AmbientTenement.SubBasementLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.BasementLp02_L_Transition = 
+	{
+		base = "AmbientUndergroundPit.BasementLp02_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.BasementLp02_R_Transition = 
+	{
+		base = "AmbientUndergroundPit.BasementLp02_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.BasementLp02_LS_Transition = 
+	{
+		base = "AmbientUndergroundPit.BasementLp02_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.BasementLp02_RS_Transition = 
+	{
+		base = "AmbientUndergroundPit.BasementLp02_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.SubBasementLp01_L_Transition = 
+	{
+		base = "AmbientUndergroundPit.SubBasementLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.SubBasementLp01_R_Transition = 
+	{
+		base = "AmbientUndergroundPit.SubBasementLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.SubBasementLp01_LS_Transition = 
+	{
+		base = "AmbientUndergroundPit.SubBasementLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.SubBasementLp01_RS_Transition = 
+	{
+		base = "AmbientUndergroundPit.SubBasementLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.AbstractPitAddinLp_L_Transition = 
+	{
+		base = "AmbientUndergroundPit.AbstractPitAddinLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.AbstractPitAddinLp_R_Transition = 
+	{
+		base = "AmbientUndergroundPit.AbstractPitAddinLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.AbstractPitAddinLp_LS_Transition = 
+	{
+		base = "AmbientUndergroundPit.AbstractPitAddinLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientUndergroundPit.AbstractPitAddinLp_RS_Transition = 
+	{
+		base = "AmbientUndergroundPit.AbstractPitAddinLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.HotelIntLp_L_Transition = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.HotelIntLp_R_Transition = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.HotelIntLp_LS_Transition = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.HotelIntLp_RS_Transition = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.Attic_L_Transition = 
+	{
+		base = "AmbientHotelRooftop.Attic_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.Attic_R_Transition = 
+	{
+		base = "AmbientHotelRooftop.Attic_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.Attic_LS_Transition = 
+	{
+		base = "AmbientHotelRooftop.Attic_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelRooftop.Attic_RS_Transition = 
+	{
+		base = "AmbientHotelRooftop.Attic_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_03_L_Transition = 
+	{
+		base = "AmbientAbstract.Despair_03_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_03_R_Transition = 
+	{
+		base = "AmbientAbstract.Despair_03_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_03_LS_Transition = 
+	{
+		base = "AmbientAbstract.Despair_03_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_03_RS_Transition = 
+	{
+		base = "AmbientAbstract.Despair_03_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_05_L_Transition = 
+	{
+		base = "AmbientAbstract.Despair_05_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_05_R_Transition = 
+	{
+		base = "AmbientAbstract.Despair_05_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_05_LS_Transition = 
+	{
+		base = "AmbientAbstract.Despair_05_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientAbstract.Despair_05_RS_Transition = 
+	{
+		base = "AmbientAbstract.Despair_05_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.StairwellAddin_L_Transition = 
+	{
+		base = "AmbientHotelStreet.StairwellAddin_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.StairwellAddin_R_Transition = 
+	{
+		base = "AmbientHotelStreet.StairwellAddin_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.StairwellAddin_LS_Transition = 
+	{
+		base = "AmbientHotelStreet.StairwellAddin_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.StairwellAddin_RS_Transition = 
+	{
+		base = "AmbientHotelStreet.StairwellAddin_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorLgLp_L_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorLgLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorLgLp_R_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorLgLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorLgLp_LS_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorLgLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorLgLp_RS_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorLgLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorSmLp_L_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorSmLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorSmLp_R_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorSmLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorSmLp_LS_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorSmLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientHotelStreet.InteriorSmLp_RS_Transition = 
+	{
+		base = "AmbientHotelStreet.InteriorSmLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.IntSmallRoomLp_L_Transition = 
+	{
+		base = "AmbProcPlant.IntSmallRoomLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.IntSmallRoomLp_R_Transition = 
+	{
+		base = "AmbProcPlant.IntSmallRoomLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.IntSmallRoomLp_LS_Transition = 
+	{
+		base = "AmbProcPlant.IntSmallRoomLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.IntSmallRoomLp_RS_Transition = 
+	{
+		base = "AmbProcPlant.IntSmallRoomLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.InteriorLp_L_Transition = 
+	{
+		base = "AmbProcPlant.InteriorLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.InteriorLp_R_Transition = 
+	{
+		base = "AmbProcPlant.InteriorLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.InteriorLp_LS_Transition = 
+	{
+		base = "AmbProcPlant.InteriorLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.InteriorLp_RS_Transition = 
+	{
+		base = "AmbProcPlant.InteriorLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.ExteriorLp_L_Transition = 
+	{
+		base = "AmbProcPlant.ExteriorLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.ExteriorLp_R_Transition = 
+	{
+		base = "AmbProcPlant.ExteriorLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.ExteriorLp_LS_Transition = 
+	{
+		base = "AmbProcPlant.ExteriorLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbProcPlant.ExteriorLp_RS_Transition = 
+	{
+		base = "AmbProcPlant.ExteriorLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.InteriorLargeRoomLp_L_Transition = 
+	{
+		base = "AmbientA3Distillery.InteriorLargeRoomLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.InteriorLargeRoomLp_R_Transition = 
+	{
+		base = "AmbientA3Distillery.InteriorLargeRoomLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.InteriorLargeRoomLp_LS_Transition = 
+	{
+		base = "AmbientA3Distillery.InteriorLargeRoomLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.InteriorLargeRoomLp_RS_Transition = 
+	{
+		base = "AmbientA3Distillery.InteriorLargeRoomLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.CaveLp_L_Transition = 
+	{
+		base = "AmbientA3Distillery.CaveLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.CaveLp_R_Transition = 
+	{
+		base = "AmbientA3Distillery.CaveLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.CaveLp_LS_Transition = 
+	{
+		base = "AmbientA3Distillery.CaveLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA3Distillery.CaveLp_RS_Transition = 
+	{
+		base = "AmbientA3Distillery.CaveLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.ExteriorLp_L_Transition = 
+	{
+		base = "AmbientC17Zoo.ExteriorLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.ExteriorLp_R_Transition = 
+	{
+		base = "AmbientC17Zoo.ExteriorLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.ExteriorLp_LS_Transition = 
+	{
+		base = "AmbientC17Zoo.ExteriorLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.ExteriorLp_RS_Transition = 
+	{
+		base = "AmbientC17Zoo.ExteriorLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.HallwaysLp_L_Transition = 
+	{
+		base = "AmbientC17Zoo.HallwaysLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.HallwaysLp_R_Transition = 
+	{
+		base = "AmbientC17Zoo.HallwaysLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.HallwaysLp_LS_Transition = 
+	{
+		base = "AmbientC17Zoo.HallwaysLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Zoo.HallwaysLp_RS_Transition = 
+	{
+		base = "AmbientC17Zoo.HallwaysLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerIntLp_L_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerIntLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerIntLp_R_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerIntLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerIntLp_LS_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerIntLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerIntLp_RS_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerIntLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SmallRoomXenLp01_L_Transition = 
+	{
+		base = "AmbientC17Antlions.SmallRoomXenLp01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SmallRoomXenLp01_R_Transition = 
+	{
+		base = "AmbientC17Antlions.SmallRoomXenLp01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SmallRoomXenLp01_LS_Transition = 
+	{
+		base = "AmbientC17Antlions.SmallRoomXenLp01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SmallRoomXenLp01_RS_Transition = 
+	{
+		base = "AmbientC17Antlions.SmallRoomXenLp01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerSubBasementLp_L_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerSubBasementLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerSubBasementLp_R_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerSubBasementLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerSubBasementLp_LS_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerSubBasementLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17Antlions.SewerSubBasementLp_RS_Transition = 
+	{
+		base = "AmbientC17Antlions.SewerSubBasementLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.SpillwayLp_L_Transition = 
+	{
+		base = "AmbientC17.SpillwayLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.SpillwayLp_R_Transition = 
+	{
+		base = "AmbientC17.SpillwayLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.SpillwayLp_LS_Transition = 
+	{
+		base = "AmbientC17.SpillwayLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.SpillwayLp_RS_Transition = 
+	{
+		base = "AmbientC17.SpillwayLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.ExteriorDroneLp_L_Transition = 
+	{
+		base = "AmbientC17.ExteriorDroneLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.ExteriorDroneLp_R_Transition = 
+	{
+		base = "AmbientC17.ExteriorDroneLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.ExteriorDroneLp_LS_Transition = 
+	{
+		base = "AmbientC17.ExteriorDroneLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.ExteriorDroneLp_RS_Transition = 
+	{
+		base = "AmbientC17.ExteriorDroneLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes06_L_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes06_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes06_R_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes06_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes06_LS_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes06_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes06_RS_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes06_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes07_L_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes07_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes07_R_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes07_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes07_LS_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes07_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientC17.RubbleEchoes07_RS_Transition = 
+	{
+		base = "AmbientC17.RubbleEchoes07_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ItsADamnCaveLP_L_Transition = 
+	{
+		base = "AmbientA5Strider.ItsADamnCaveLP_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ItsADamnCaveLP_R_Transition = 
+	{
+		base = "AmbientA5Strider.ItsADamnCaveLP_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ItsADamnCaveLP_LS_Transition = 
+	{
+		base = "AmbientA5Strider.ItsADamnCaveLP_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ItsADamnCaveLP_RS_Transition = 
+	{
+		base = "AmbientA5Strider.ItsADamnCaveLP_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.UndergroundDecayLp_L_Transition = 
+	{
+		base = "AmbientA5Strider.UndergroundDecayLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.UndergroundDecayLp_R_Transition = 
+	{
+		base = "AmbientA5Strider.UndergroundDecayLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.UndergroundDecayLp_LS_Transition = 
+	{
+		base = "AmbientA5Strider.UndergroundDecayLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.UndergroundDecayLp_RS_Transition = 
+	{
+		base = "AmbientA5Strider.UndergroundDecayLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ApocalypseLp_L_Transition = 
+	{
+		base = "AmbientA5Strider.ApocalypseLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ApocalypseLp_R_Transition = 
+	{
+		base = "AmbientA5Strider.ApocalypseLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ApocalypseLp_LS_Transition = 
+	{
+		base = "AmbientA5Strider.ApocalypseLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ApocalypseLp_RS_Transition = 
+	{
+		base = "AmbientA5Strider.ApocalypseLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_02_L_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_02_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_02_R_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_02_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_02_LS_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_02_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_02_RS_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_02_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm01_L_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm01_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm01_R_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm01_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm01_LS_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm01_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm01_RS_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm01_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_04_L_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_04_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_04_R_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_04_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_04_LS_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_04_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.DebrisWronk_04_RS_Transition = 
+	{
+		base = "AmbientA5Strider.DebrisWronk_04_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm02_L_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm02_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm02_R_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm02_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm02_LS_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm02_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Strider.ParkingGarageDistantAlarm02_RS_Transition = 
+	{
+		base = "AmbientA5Strider.ParkingGarageDistantAlarm02_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.CombineHallMetalLP_L_Transition = 
+	{
+		base = "AmbientA5Vault.CombineHallMetalLP_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.CombineHallMetalLP_R_Transition = 
+	{
+		base = "AmbientA5Vault.CombineHallMetalLP_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.CombineHallMetalLP_LS_Transition = 
+	{
+		base = "AmbientA5Vault.CombineHallMetalLP_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.CombineHallMetalLP_RS_Transition = 
+	{
+		base = "AmbientA5Vault.CombineHallMetalLP_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.ExteriorVistaLp_L_Transition = 
+	{
+		base = "AmbientA5Vault.ExteriorVistaLp_L"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.ExteriorVistaLp_R_Transition = 
+	{
+		base = "AmbientA5Vault.ExteriorVistaLp_R"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.ExteriorVistaLp_LS_Transition = 
+	{
+		base = "AmbientA5Vault.ExteriorVistaLp_LS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+	AmbientA5Vault.ExteriorVistaLp_RS_Transition = 
+	{
+		base = "AmbientA5Vault.ExteriorVistaLp_RS"
+		should_pause = "false"
+		volume_fade_out = 10
+		mixgroup = "LoudEvents"
+	}
+}

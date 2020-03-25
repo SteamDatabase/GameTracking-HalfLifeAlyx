@@ -1,0 +1,34 @@
+/* styles for the player hud */
+
+.RootPanel {
+    /*background-color: #00AA00AA;*/
+}
+
+.WorldUITextPanel {
+	width: 100%;
+	height: fit-children;
+    flow-children: down;
+}
+
+.HintPanel {
+    margin: 0px;
+    flow-children: right;
+    horizontal-align: center;
+}
+
+.OutsideLabel {
+    font-size: 150px;
+    text-align: center;
+    color: #00000000;
+    background-color: #00000000;
+}
+
+.HintLabel {
+    font-size: 150px;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    background-color: #00000099;
+}
+
+#Hint {
+}

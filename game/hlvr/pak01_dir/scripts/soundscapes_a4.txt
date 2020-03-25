@@ -1,0 +1,730 @@
+"antlion_caves_main"
+{ 	
+	"playevent"
+	{
+		"event"	"AmbientCave.SnowTextureLp"
+		"volume"	"0.25"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCavern.WindSystem"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCave.RandomPebbleFall"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientTenement.BatSqueak"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientCreepy.Cymbals"
+		"position"	"random"
+		"volume"	"0.8"
+		"use_initial_random_offset"	 "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCave.RandomRubbleFall"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientExcavationTunnel.RandomBoom"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+}
+
+"a4_c17_antlions_start"
+{
+	"playevent"
+	{
+		"event"	"A3Tenements.InteriorLp"
+		"volume"	"0.25"
+		"rand_delay_min"	"-5.0"
+		"rand_delay_max"	"0.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Low_01"
+		"position"	"random"
+		"volume"	"0.25"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCave.RandomRubbleFall"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+		"volume"	"0.4"
+	}
+	
+//	"playevent"
+//	{
+//		"event"	"AmbientExcavationTunnel.RandomBoom"
+//		"position"	"random"
+//		"use_initial_random_offset"	 "1.0"
+//	}
+
+	"playevent"
+	{
+		"event"	"AmbientCave.WaterDripLp"
+		"volume" "0.1"
+	}
+}
+
+
+
+"a4_c17_antlions_lights_and_vents"
+{
+	// "playevent"
+	// {
+		// "event"	"AmbientHVAC.Vent"
+		// "origin"	"6932.29, -3642.56, 140.162"
+	// } 
+	// "playevent"
+	// {
+		// "event"	"AmbientHVAC.Vent"
+		// "origin"	"7420.79, -3782.43, 116.576"
+	// } 
+
+	// "playevent" 
+	// {
+		// "event"	"AmbientHVAC.Conduit"
+		// "origin"	"726.635864, -573.031494, 3.727450"
+		// "position_02"	"968.792114, -574.375244, -5.968750"
+	// } 
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6785.99, -3079.07, 135.995"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6656.23, -3558.1, 152.208"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6112.2, -3005.62, 47.7698"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5344, -1768, -40.0901"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5632.07, -1408.75, -43.3427"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5569.32, -1324.19, -19.9445"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5569.32, -1196.19, -19.9445"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5668, -599.999, -32"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6422.39, 192, -15.5373"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6108.22, -778.757, -61.3097"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"6336, 1152, -28.3435"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"5905.55, 1166, -37.8784"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"7296, 1968, -12"
+	// }
+
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.CombineLanternLp" 
+		// "origin"	"-597.562, -100.041, 267.474"
+		// "volume"	"0.9"
+		// "enable_debug_radius" 	"0.0"
+		// "debug_radius_max"		"150"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6110.89, -3782.75, 50" //z = origin.z + ~80 
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6457.54, -2699.9, -120.498"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6413.35, -1382.38, -117.115"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6006.15, -1684.51, -48"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6330.94, 802.782, -109.884"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"5857.05, 1088.32, -112.069"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6334.68, 1471.82, -47.996"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"6556.24, 1444.24, -47.182"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"7260.42, 1237.36, -43.176"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientLight.HalogenWorkLampLp"
+		// "origin"	"5468.73, -791.111, -47.996"
+	// }
+
+	// "playevent"
+	// {
+		// "event"	"AmbientPeelingPaint.LightFlicker"
+		// "origin"	"5357.53, -1411.74, 32.6416"
+	// }
+
+}
+
+"a4_c17_antlions_main_01" //IN USE
+{
+	"playevent"//EXTERIOR
+	{
+		"event"	"AmbientC17Zoo.ExteriorLp"
+		"volume"	"1.0"
+	}
+	"playevent" //Interior, big room
+	{
+		"event"	"AmbientC17Zoo.HallwaysLp"
+	}
+	"playevent" //SMALL ROOM
+	{
+		"event"	"AmbientC17Antlions.SewerIntLp"
+		"volume"	"0.7"	
+	}
+	"playevent" //XEN
+	{
+		"event"	"AmbientC17Antlions.SmallRoomXenLp01"
+		"volume"	"1.0"	
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.WaterdripSingle"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Low_01"
+		"position"	"random"
+		"volume"	"0.25"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientC17Antlions.RandomBoom"
+		"volume"	"1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.RubbleEchoes"
+	}	
+	"playevent"
+	{
+		"event"	"AmbientZoo.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"AmbientZooLevelUnique"
+	}
+}
+
+
+
+
+"a4_c17_antlions_spillway_ext"
+{
+	"playevent"
+	{
+		"event"	"AmbientC17.SpillwayLp"
+		"volume"	"1.0"
+		"rand_delay_min"	"-5.0"
+		"rand_delay_max"	"0.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCavern.WindSystem"
+		"volume"	"0.4"
+	}
+}
+
+"a4_c17_antlions_int_ext_transition"
+{
+	"playsoundscape"
+	{
+		"name" "a4_c17_antlions_spillway_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "a4_c17_antlions_start"
+		"volume" "0.4"
+	}
+}
+
+
+"a4_c17_ext_base"
+{ 
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.ExteriorDroneLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"Ambient.WindSystem"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientTenement.RandomConcreteFall"
+		"position"	"random"
+	}
+}
+
+"a4_c17_antlions_ext_city"
+{
+	"playsoundscape"
+	{
+		"name" "a4_c17_ext_base"
+		"volume" "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.RubbleEchoes"
+	}	
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+}
+
+"a4_tanker_yard_main" //IN USE
+{
+	"playevent"//Big room, exterior
+	{
+		"event"	"AmbientC17.SpillwayLp" //Ext.  Replace
+		"volume"	"1.0"
+		"rand_delay_min"	"-5.0"
+		"rand_delay_max"	"0.0"
+	}
+	"playevent" //Interior, big room
+	{
+		"event"	"AmbientC17.ExteriorDroneLp" //Actually Int Large.  Replace.
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.SewerIntLp" //Small Room.  Replace
+		"volume"	"0.4"	
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.WaterdripSingle"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Low_01"
+		"position"	"random"
+		"volume"	"0.25"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientC17Antlions.RandomBoom"
+		"volume"	"1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.RubbleEchoes"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientA4TankerYard.EvoMaraca"
+		"volume"	"1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientA4TankerYard.SkullBreath"
+		"volume"	"1.0"
+	}
+	"playevent"
+	{
+		"event"	"AmbientTankerYard.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"AmbientTankerYardLevelUnique"
+	}
+}
+
+
+"a4_c17_antlions_main_02"
+{
+	"playevent"//Big room, exterior
+	{
+		"event"	"AmbientC17.SpillwayLp"
+		"volume"	"1.0"
+		"rand_delay_min"	"-5.0"
+		"rand_delay_max"	"0.0"
+	}
+	"playevent" //Interior, big room
+	{
+		"event"	"AmbientC17.ExteriorDroneLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.SewerIntLp"
+		"volume"	"0.4"	
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.SmallRoomXenLp01"
+		"volume"	"1.0"	
+	}
+	"playevent"
+	{
+		"event"	"AmbientC17Antlions.WaterdripSingle"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCreature.AntlionClick"
+		"position"	"random"
+		"use_initial_random_offset"	 "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientCreepy.Low_01"
+		"position"	"random"
+		"volume"	"0.25"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientC17Antlions.RandomBoom"
+		"volume"	"1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.RubbleEchoes"
+	}	
+}
+	
+"a4_water_tower_main" //IN USE
+{
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.ExteriorLp"
+		"traveler" "ExteriorLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.InteriorSmallRoomLp"
+		"traveler" "InteriorSmallRoomLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.RandomCableTicks"
+		"traveler" "RandomCableTicks"
+		"volume"	"0.12"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.PrepperRhythm"
+		"traveler" "PrepperRhythm"
+		"volume"	"0.9"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.InteriorLgLp"
+		"traveler" "InteriorLgLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientWaterTower.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"AmbientWaterTowerLevelUnique"
+	}
+}
+	
+"a4_water_tower_exterior_tower" //IN USE
+{
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.ExteriorLp"
+		"traveler" "ExteriorLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.InteriorSmallRoomLp"
+		"traveler" "InteriorSmallRoomLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.TowerLgLp"
+		"traveler" "TowerLgLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.MetalDebrisAbstract"
+		"traveler" "MetalDebrisAbstract"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.RandomCableTicks"
+		"traveler" "RandomCableTicks"
+		"volume"	"0.12"
+		"use_initial_random_offset"	 "1.0"
+	}
+	"playevent"
+	{
+		"event"	"AmbientWaterTower.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"AmbientWaterTowerLevelUnique"
+	}
+}
+	
+"a4_water_tower_end_building" //IN USE
+{
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.ExteriorLp"
+		"traveler" "ExteriorLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.InteriorSmallRoomLp"
+		"traveler" "InteriorSmallRoomLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.WoodyIntLgLp"
+		"traveler" "WoodyIntLgLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbProcPlant.WoodCreak"
+		"volume"	"1.0"	
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.PrepperRhythm"
+		"traveler" "PrepperRhythm"
+		"volume"	"0.9"
+		"use_initial_random_offset"	 "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbProcPlant.WoodDebris"
+		"volume"	"1.0"	
+		"use_initial_random_offset"	 "1.0"
+	}
+	"playevent"
+	{
+		"event"	"AmbientWaterTower.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"AmbientWaterTowerLevelUnique"
+	}
+}
+
+"a4_water_tower_post_collapse" //IN USE
+{
+	"playevent"
+	{
+		"event"	"AmbientA4WaterTower.ExteriorLp"
+		"volume"	"0.5"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientA5Strider.RandomRubbleFall"
+		"volume"	"0.45"
+		"use_initial_random_offset"	 "1.0"
+		"traveler" "RandomRubbleFall"
+	}
+
+	"playevent"
+	{			
+		"event" "AmbientA5Strider.RandomPebbleFall"
+		"volume"	"0.4"
+		"traveler" "RandomPebbleFall"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientA5Strider.RandomDebrisFall"
+		"volume"	"0.9"
+		"traveler" "RandomDebrisFall"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientA5Strider.BuildingMetal"
+		"volume"	"0.8"
+		"traveler" "BuildingMetal"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientA5Strider.FireballDestruction"
+		"volume"	"0.7"
+		"traveler" "FireballDestruction"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA5Strider.UndergroundDecayLp"
+		"volume"	"0.5"
+		"position"	"random"
+		"traveler" "UndergroundDecayLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA5Strider.ApocalypseLp"
+		"volume"	"1.0"
+		"traveler" "ApocalypseLp"
+	}
+}

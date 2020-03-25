@@ -1,0 +1,54 @@
+{
+	Music.a2_drainage_combine_barnacles = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		volume_fade_out = 6
+		restart_time = 102.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/drainage/a2_drainage_barnacles.vsnd",
+		]
+	}
+	Music.a2_drainage_manhack_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		volume_fade_out = 0
+		track = "manhack"
+		priority = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/drainage/a2_drainage_mhack_intro.vsnd",
+		]
+	}
+	Music.a2_drainage_manhack_01 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		volume = 0.500000
+		volume_fade_out = 0
+		track = "manhack"
+		priority = 1
+		sync_track = "manhack"
+		start_point = 3.111000
+		end_point = 17.333000
+		sync_bpm = 135
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/music/places/drainage/manhack_b01.vsnd",
+		]
+	}
+	Music.a2_drainage_gascans = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		volume_fade_out = 6
+		restart_time = 102.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/drainage/a2_drainage_gascans_01.vsnd",
+		]
+	}
+}

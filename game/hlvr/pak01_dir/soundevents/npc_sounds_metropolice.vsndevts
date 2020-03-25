@@ -1,0 +1,572 @@
+{
+	NPC_MetroPolice.SentenceParameters = 
+	{
+		type = "src1_3d"
+		volume = 0.799805
+		pitch_rand_min = -0.030000
+		pitch_rand_max = 0.030000
+		pitch = 1.030000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/common/null.vsnd"
+	}
+	NPC_MetroPolice.HitByVehicle = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		limiter_on = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/hit_by_vehicle1.vsnd",
+			"sounds/npc/metropolice/hit_by_vehicle2.vsnd",
+			"sounds/npc/metropolice/hit_by_vehicle3.vsnd",
+		]
+	}
+	NPC_MetroPolice.Shove = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/physics/flesh/flesh_impact_hard3.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard4.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard5.vsnd",
+		]
+	}
+	NPC_MetroPolice.FootstepLeft = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/tile1.vsnd",
+			"sounds/player/footsteps/tile2.vsnd",
+		]
+	}
+	NPC_MetroPolice.FootstepRight = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/tile3.vsnd",
+			"sounds/player/footsteps/tile4.vsnd",
+		]
+	}
+	NPC_MetroPolice.RunFootstepLeft = 
+	{
+		type = "src1_3d"
+		volume = 0.549805
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/gear1.vsnd",
+			"sounds/npc/metropolice/gear3.vsnd",
+			"sounds/npc/metropolice/gear5.vsnd",
+		]
+	}
+	NPC_MetroPolice.RunFootstepRight = 
+	{
+		type = "src1_3d"
+		volume = 0.549805
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/gear2.vsnd",
+			"sounds/npc/metropolice/gear4.vsnd",
+			"sounds/npc/metropolice/gear6.vsnd",
+		]
+	}
+	NPC_MetroPolice.Alert = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 80.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/confirmpriority1sighted.vsnd"
+	}
+	NPC_MetroPolice.Die = 
+	{
+		type = "src1_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		soundlevel = 80.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/die1.vsnd",
+			"sounds/npc/metropolice/die2.vsnd",
+			"sounds/npc/metropolice/die3.vsnd",
+			"sounds/npc/metropolice/die4.vsnd",
+		]
+	}
+	NPC_MetroPolice.Pain = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 80.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/pain1.vsnd",
+			"sounds/npc/metropolice/pain2.vsnd",
+			"sounds/npc/metropolice/pain3.vsnd",
+			"sounds/npc/metropolice/pain4.vsnd",
+		]
+	}
+	NPC_MetroPolice.OnFireScream = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 85.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/officerneedshelp.vsnd",
+			"sounds/npc/metropolice/vo/help.vsnd",
+		]
+	}
+	NPC_MetroPolice.LocateSpeech = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 80.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/thereheis.vsnd"
+	}
+	NPC_MetroPolice.DeploySpeech = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/visceratordeployed.vsnd"
+	}
+	NPC_MetroPolice.WaterSpeech = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/wasteriver.vsnd",
+			"sounds/npc/metropolice/vo/canal.vsnd",
+		]
+	}
+	NPC_MetroPolice.HidingSpeech = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/searchingforsuspect.vsnd",
+			"sounds/npc/metropolice/vo/novisualonupi.vsnd",
+		]
+	}
+	NPC_MetroPolice.Warn = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/holdit.vsnd",
+			"sounds/npc/metropolice/vo/dontmove.vsnd",
+		]
+	}
+	NPC_MetroPolice.Freeze = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/dontmove.vsnd"
+	}
+	NPC_MetroPolice.Stay = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/holdit.vsnd"
+	}
+	NPC_MetroPolice.Customs.GoRight = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/moveit2.vsnd"
+	}
+	NPC_MetroPolice.Customs.GoLeft = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/movealong3.vsnd"
+	}
+	NPC_MetroPolice.Luggagescript.Warn = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/firstwarningmove.vsnd"
+	}
+	NPC_MetroPolice.Radio.On = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/on1.vsnd",
+			"sounds/npc/metropolice/vo/on2.vsnd",
+		]
+	}
+	NPC_MetroPolice.Radio.Off = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/off1.vsnd",
+			"sounds/npc/metropolice/vo/off2.vsnd",
+		]
+	}
+	NPC_MetroPolice.Cupcop.Intro = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/standardloyaltycheck.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.PickUpTheCan = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/pickupthecan1.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.PickUpTheCan.Nag = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/pickupthecan2.vsnd",
+			"sounds/npc/metropolice/vo/pickupthecan3.vsnd",
+			"sounds/npc/metropolice/vo/youknockeditover.vsnd",
+		]
+	}
+	NPC_MetroPolice.Cupcop.PutItInTheTrash = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/metropolice/vo/putitinthetrash1.vsnd",
+			"sounds/npc/metropolice/vo/putitinthetrash2.vsnd",
+		]
+	}
+	NPC_MetroPolice.Cupcop.Failure = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/prepareforjudgement.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.Failure.Leave = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/loyaltycheckfailure.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.Success = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/citizensummoned.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.GoAway = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/allrightyoucango.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.GoAway.Failure = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/nowgetoutofhere.vsnd"
+	}
+	NPC_MetroPolice.Cupcop.Chuckle = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/vo/chuckle.vsnd"
+	}
+	NPC_MetroPolice.onecontained = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/combine_soldier/vo/onecontained.vsnd"
+	}
+	NPC_MetroPolice.takedown = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/metropolice/takedown.vsnd"
+	}
+}

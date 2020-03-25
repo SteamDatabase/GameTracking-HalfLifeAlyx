@@ -1,0 +1,77 @@
+.Container
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border: 0px solid white;
+}
+
+.Container Label
+{
+    horizontal-align: center;
+    background-color: #000000;
+    font-family: Raju;
+    font-weight: bold;
+    font-size: 100px;
+    border: 0px solid red;
+}
+
+.Powered
+{
+    color:#28a4bb;
+}
+
+.Unpowered
+{
+    color:#e77b29;
+}
+
+#CountX,
+{
+    visibility: visible;
+}
+
+#Count1,
+#Count2,
+#Count3,
+#CountComplete,
+{
+    visibility: collapse;
+}
+
+.ShowX #CountX,
+.Show1 #Count1,
+.Show2 #Count2,
+.Show3 #Count3,
+.ShowComplete #CountComplete,
+{
+    visibility: visible;
+}
+
+.ShowX #Count1,
+.ShowX #Count2,
+.ShowX #Count3,
+.ShowX #CountComplete,
+
+.Show1 #CountX,
+.Show1 #Count2,
+.Show1 #Count3,
+.Show1 #CountComplete,
+
+.Show2 #CountX,
+.Show2 #Count1,
+.Show2 #Count3,
+.Show2 #CountComplete,
+
+.Show3 #CountX,
+.Show3 #Count1,
+.Show3 #Count2,
+.Show3 #CountComplete,
+
+.ShowComplete #CountX,
+.ShowComplete #Count1,
+.ShowComplete #Count2,
+.ShowComplete #Count3,
+{
+    visibility: collapse;
+}

@@ -1,0 +1,1189 @@
+{
+	music.a3_distillery.bz_xen_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 0
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				45,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 30
+		volume_fade_over_time_loop_end = 50
+		volume_fade_in = 4
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_intro.vsnd",
+		]
+	}
+	music.a3_distillery.puffer1 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer2_1 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer2_2 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer3 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer4 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer5 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.puffer6 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.vault_view = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		track = "main"
+		priority = 0
+		volume_fade_in = 5
+		delay = -14
+		volume_fade_out = 5
+		restart_time = 84.210000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/a3_distillery_vault1.vsnd",
+		]
+	}
+	music.a3_distillery.vault_view2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		track = "main"
+		volume_fade_in = 5
+		delay = -14
+		volume_fade_out = 5
+		restart_time = 84.210000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/a3_distillery_vault1.vsnd",
+		]
+	}
+	music.a3_distillery.bz_xen = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.300000
+		track = "main"
+		presence_adjust = 1
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_in = 4
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_intro.vsnd",
+		]
+	}
+	music.a3_distillery.bz_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.900000
+		track = "main"
+		priority = 2
+		presence_adjust = 1.000000
+		presence_map_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				0.500000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				0.700000,
+				0.800000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 147.692000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_intro.vsnd",
+		]
+	}
+	music.a3_distillery.bz_xen_cave = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 3
+		start_point = 0.000000
+		end_point = 73.846000
+		sync_bpm = 65
+		sync_bpm_beats = 1.000000
+		presence_adjust = 1
+		presence_map_curve = 
+		[
+			
+			[
+				0.000000,
+				0.350000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				0.500000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				0.700000,
+				0.800000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		presence_adjust_velocity = 0.300000
+		volume_fade_out = 4.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_cave.vsnd",
+		]
+	}
+	music.a3_distillery.bz_xen_cave2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		sync_track = "main"
+		priority = 4
+		start_point = 0.000000
+		end_point = 73.846000
+		sync_bpm = 65
+		sync_bpm_beats = 1.000000
+		presence_adjust = 1
+		presence_map_curve = 
+		[
+			
+			[
+				0.000000,
+				0.350000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				0.500000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				0.700000,
+				0.800000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		presence_adjust_velocity = 0.300000
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_cave2.vsnd",
+		]
+	}
+	music.a3_distillery.bz_xen_cave_end = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.400000
+		track = "main"
+		priority = 5
+		sync_track = "main"
+		start_point = 0.000000
+		end_point = 73.846000
+		sync_bpm = 65
+		sync_bpm_beats = 1.000000
+		presence_adjust = 1
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				5.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				15.000000,
+				0.650000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				25.000000,
+				0.450000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 15
+		volume_fade_over_time_loop_end = 25
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_cave_end.vsnd",
+		]
+	}
+	music.a3_distillery.bz_hello = 
+	{
+		type = "hlvr_music_2d"
+		volume = 2
+		track = "main"
+		priority = 6
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				27.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				40.000000,
+				0.650000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				55.000000,
+				0.450000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				70.000000,
+				0.650000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 40
+		volume_fade_over_time_loop_end = 70
+		volume_fade_out = 7.000000
+		restart_time = 88.292000
+		restart_start = 25.853000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_hello.vsnd",
+		]
+	}
+	music.a3_distillery.bz_hello_end = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 7
+		stop_at_time = 6
+		volume_fade_out = 7.000000
+		restart_time = 140.300003
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	music.a3_distillery.bz_walkin = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 8
+		stop_at_time = 180
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				160.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				180.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 147.692000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_intro2.vsnd",
+		]
+	}
+	music.a3_distillery.bz_lights_out = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.650000
+		track = "main"
+		priority = 9
+		volume_fade_in = 2
+		stop_at_time = 180
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				25.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				160.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				180.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 147.692000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_dark.vsnd",
+		]
+	}
+	music.a3_distillery.bz_freezer_escape = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		track = "main"
+		priority = 10
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				25.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				45.000000,
+				0.350000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				65.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 25
+		volume_fade_over_time_loop_end = 65
+		restart_time = 86.829000
+		restart_start = 24.390000
+		stop_at_time = 120
+		volume_fade_out = 7.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_freezer_escape.vsnd",
+		]
+	}
+	a3_distillery.elevator_start = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 10.500000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				60.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 147.692000
+		restart_start = 36.164000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_elevator_on.vsnd",
+		]
+	}
+	a3_distillery.elevator_open = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.900000
+		track = "main"
+		priority = 11
+		volume_fade_out = 1.700000
+		restart_time = 55.670000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_elevator_open.vsnd",
+		]
+	}
+	a3_distillery.elevator_button_start = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1.100000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_elevator_start.vsnd",
+		]
+	}
+	a3_distillery.elevator_radio = 
+	{
+		type = "hlvr_music_3d"
+		track = "main"
+		priority = 12
+		volume = 1
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 300.000000
+		spread_min = 10
+		spread_max = 15
+		volume_falloff_floor = 1.000000
+		volume_fade_in = 0.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_elevator_radio.vsnd",
+		]
+	}
+	a3_distillery.elevator_arrive = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	music.a3_distillery.plug_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 0
+		stop_at_time = 20
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				20.000000,
+				0.150000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 140.300003
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	music.a3_distillery.cheeky_hc = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		track = "main"
+		priority = 14
+		stop_at_time = 60
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.450000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_intro2.vsnd",
+		]
+	}
+	music.a3_distillery.bz_xen_passage = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.450000
+		track = "main"
+		priority = 15
+		presence_adjust = 1
+		presence_adjust_velocity = 0.300000
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_cave.vsnd",
+		]
+	}
+	music.a3_distillery.plug_vault = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 0
+		stop_at_time = 30
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.150000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 140.300003
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	music.a3_distillery.pit = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 0
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				60.000000,
+				0.650000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				90.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 30
+		volume_fade_over_time_loop_end = 90
+		volume_fade_out = 7.000000
+		restart_time = 140.300003
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_bz_intro.vsnd",
+		]
+	}
+	music.a3_distillery.pitpuffer1 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.pitpuffer2 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.pitpuffer3 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+	music.a3_distillery.bz_trapped = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.400000
+		track = "trapped"
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 500.000000
+		occlusion_scale = 0.700000
+		spread_min = 10
+		spread_max = 15
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_trapped_radio.vsnd",
+		]
+	}
+	music.a3_distillery.bz_compactor = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.600000
+		track = "trapped"
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 700.000000
+		spread_min = 10
+		spread_max = 15
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_compacted_radio.vsnd",
+		]
+	}
+	music.a3_distillery.bz_plug_open = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.600000
+		track = "main"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				12.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				19.000000,
+				0.550000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				40.000000,
+				0.450000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_out = 7.000000
+		restart_time = 40.800000
+		restart_start = 12
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/a3_distillery_plug_open.vsnd",
+		]
+	}
+}

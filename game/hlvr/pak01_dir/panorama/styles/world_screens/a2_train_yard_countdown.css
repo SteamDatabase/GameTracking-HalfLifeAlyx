@@ -1,0 +1,51 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	border: 0px solid white;
+}
+
+.Container Label
+{
+	margin-top: 0px;
+	horizontal-align: center;
+	background-color: #000000;
+	font-family: Raju;
+	font-weight: bold;
+	font-size: 512px;
+    color: red;
+	border: 0px solid red;
+}
+
+#SecondBlank,
+{
+	visibility: visible;
+}
+
+#Second1,
+#Second2,
+#Second3,
+#Second4,
+#Second5,
+{
+	visibility: collapse;
+}
+
+.ShowSecond1 #Second1,
+.ShowSecond2 #Second2,
+.ShowSecond3 #Second3,
+.ShowSecond4 #Second4,
+.ShowSecond5 #Second5,
+{
+	visibility: visible;
+}
+
+.ShowSecond1 #Second2,
+.ShowSecond2 #Second3,
+.ShowSecond3 #Second4,
+.ShowSecond4 #Second5,
+.ShowSecond5 #SecondBlank,
+{
+	visibility: collapse;
+}

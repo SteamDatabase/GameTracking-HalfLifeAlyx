@@ -1,0 +1,32 @@
+.Container
+{
+	margin-top: 32px;
+	width: 100%;
+	height: 50%;
+	background-color: #000000;
+	border: 2px solid white;
+}
+
+.Container Label
+{
+	margin-top: 12px;
+	horizontal-align: center;
+	background-color: #000000;
+	font-family: Raju;
+	font-weight: bold;
+	font-size: 32px;
+    color: red;
+	border: 0px solid red;
+}
+
+#ErrorText,
+#OverrideText,
+{
+	visibility: collapse;
+}
+
+.ShowText1 #ErrorText,
+.ShowText2 #OverrideText,
+{
+	visibility: visible;
+}

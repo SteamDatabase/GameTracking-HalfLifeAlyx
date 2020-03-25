@@ -1,0 +1,46 @@
+/* styles for the player hud */
+
+.RootPanel {
+    /*background-color: #00AA00AA;*/
+}
+
+.WorldUITextPanel {
+	width: 100%;
+	height: fit-children;
+    flow-children: down;
+}
+
+.MainPanel {
+    margin: 0px;
+    flow-children: right;
+    horizontal-align: center;
+}
+
+
+.OutsideLabel {
+    text-align: center;
+    color: #00000000;
+    background-color: #00000000;
+}
+
+.TextLabel {
+    color: rgb(229, 229, 229);
+    font-size: 200px;
+    text-align: center;
+    background-color: #00000099;
+}
+
+.LinePanel {
+    margin: 0px;
+    width: 100%;
+}
+
+.LineLabel {
+    width: 100%;
+    color: rgb(229, 229, 229);
+    font-size: 200px;
+    text-align: center;
+}
+
+#TextLabel {
+}

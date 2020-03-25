@@ -1,0 +1,56 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+	</styles>
+
+  <HLVRMainMenuCarouselPanel class="game_menu_root">
+    <Panel id="vr_affordance_left" class="VRaffordance">
+      <Panel id="vr_affordance_interior"/>
+    </Panel>
+    <Panel id="vr_affordance_right" class="VRaffordance">
+      <Panel id="vr_affordance_interior"/>
+    </Panel>
+    <Panel class="base_container_sibling" id="layout_root">
+      <Panel id="background_panel">
+        <Panel class="header_info_panel" />
+        <Panel class="empty_row" />
+
+        <Panel class="row">
+          <Panel class="col_body_sibling">
+            <Panel class="info_body">
+              <Panel class="row">
+                <Panel class="col_body_sibling">
+                  <Panel class="label">
+                    <Label class="body_copy" text="#HLVR_MainMenu_Init_desc"/>
+                  </Panel>
+                </Panel>
+              </Panel>
+
+              <Panel class="row_divider">
+                <Panel class="button_label">
+                  <Panel class="row_divider_line" />
+                </Panel>
+                <Panel class="button_bullet" />
+              </Panel>
+
+              <Panel class="button_container_left">
+                <Button class="button_modal" onactivate="GameMenu_Cmd( 'left' );">
+                  <Label class="cta" text="Left" />
+                </Button>
+                <Button class="button_modal" onactivate="GameMenu_Cmd( 'right' );">
+                  <Label class="cta" text="Right" />
+                </Button>
+              </Panel>
+            </Panel>
+          </Panel>
+        </Panel>  
+              
+        <Panel class="empty_row" />
+        <Panel class="empty_row_bottomR_corner" />
+        
+      </Panel>
+    </Panel>
+	</HLVRMainMenuCarouselPanel>
+</root>
+
+

@@ -1,0 +1,121 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+		<include src="s2r://panorama/styles/game_menu_ui.vcss_c" />
+	</styles>
+
+	<GameMenuOptionsPanel>
+			<Panel id="options">
+				<Panel class="button_list">
+					<Panel class="header_container">
+						<Panel id="header_row_backer_options" class="rows header_left">
+							<Label class="header" text="#HLVR_MainMenu_Options"/>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center" onactivate="$.GetContextPanel().ToggleClass( 'show_controls' );">
+								<Label text="Controls"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center temp_deactivated"> <!--onactivate="$.GetContextPanel().ToggleClass( 'show_graphics' );"-->
+								<Label text="Graphics"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center temp_deactivated"> <!--onactivate="$.GetContextPanel().ToggleClass( 'show_audio' );"-->
+								<Label text="Audio"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center" onactivate="$.GetContextPanel().ToggleClass( 'show_preferences' );">
+								<Label text="Preferences"/>
+							</Button>
+						</Panel>
+					</Panel>
+				</Panel>
+
+				<Button class="button_back" onactivate="GameMenu_ExitOptions();">
+					<Label text="#HLVR_MainMenu_Back"/>
+				</Button>
+			</Panel>
+
+			<Panel id="controls">
+				<Panel class="button_list">
+					<Panel class="header_container">
+						<Panel id="header_row_backer_controls" class="rows header_left">
+							<Label class="header" text="Controls"/>
+						</Panel>
+					</Panel>
+
+					<Button class="button_right" onactivate="GameMenu_Cmd( toggle vr_teleport_shift )">
+						<Label text="TOG Movement Type"/>
+					</Button>
+				</Panel>
+
+				<Button class="button_back" onactivate="$.GetContextPanel().ToggleClass( 'show_controls' );">
+					<Label text="#HLVR_MainMenu_Back"/>
+				</Button>
+			</Panel>
+
+			<Panel id="graphics">
+				<Panel class="button_list">
+					<Panel class="header_container">
+						<Panel id="header_row_backer_graphics" class="rows header_left">
+							<Label class="header" text="Graphics"/>
+						</Panel>
+					</Panel>
+				</Panel>
+
+				<Button class="button_back" onactivate="$.GetContextPanel().ToggleClass( 'show_graphics' );">
+					<Label text="#HLVR_MainMenu_Back"/>
+				</Button>
+			</Panel>
+
+			<Panel id="audio">
+				<Panel class="button_list">
+					<Panel class="header_container">
+						<Panel id="header_row_backer_audio" class="rows header_left">
+							<Label class="header" text="Audio"/>
+						</Panel>
+					</Panel>					
+				</Panel>
+
+				<Button class="button_back" onactivate="$.GetContextPanel().ToggleClass( 'show_audio' );">
+					<Label text="#HLVR_MainMenu_Back"/>
+				</Button>
+			</Panel>
+
+			<Panel id="preferences">
+				<Panel class="button_list">
+					<Panel class="header_container">
+						<Panel id="header_row_backer_preferences" class="rows header_left">
+							<Label class="header" text="Preferences"/>
+						</Panel>
+					</Panel>
+
+					<Button class="button_right" onactivate="GameMenu_Cmd( toggle closecaption )">
+						<Label text="TOG Closed Captions"/>
+					</Button>
+          <Button class="button_right" onactivate="GameMenu_Cmd( toggle hlvr_left_hand_primary )">
+            <Label text="Switch Weapon Hand"/>
+          </Button>
+				</Panel>
+
+				<Button class="button_back" onactivate="$.GetContextPanel().ToggleClass( 'show_preferences' );">
+					<Label text="#HLVR_MainMenu_Back"/>
+				</Button>
+			</Panel>
+	</GameMenuOptionsPanel>
+</root>

@@ -1,0 +1,388 @@
+// Concept priorities
+conceptpriority COMBINE_RADIO_ON			nopriority
+conceptpriority COMBINE_RADIO_OFF			nopriority
+conceptpriority COMBINESOLDIER_PAIN				-1
+conceptpriority COMBINESOLDIER_IDLE				-2
+conceptpriority COMBINESOLDIER_IDLECOMABT			-1
+conceptpriority COMBINESOLDIER_INJURED				1		
+conceptpriority COMBINESOLDIER_ANNOUNCEENEMY		2
+conceptpriority COMBINESOLDIER_ANNOUNCEKILL		3
+conceptpriority COMBINESOLDIER_PLAYERISHURT		2
+conceptpriority COMBINESOLDIER_THROWING_GRENADE 	5
+conceptpriority COMBINESOLDER_DEPLOYING_MANHACK 	5
+conceptpriority COMBINESOLDIER_DIE 				10
+
+
+
+// "then" concatenation test example
+criterion "Concept_TestCS" "concept" "COMBINESOLDIER_TESTSTEPS" "required"
+criterion "Sentence_Step2" "step" "2" "required"
+criterion "Sentence_Step3" "step" "3" "required"
+criterion "SoldierIsHurt" "healthfrac" "<.5" "required"
+criterion "SoldierIsUnhurt" "healthfrac" ">=.5" "required"
+
+criterion "AlyxIsKnown" "alyxisknown:1" "required"
+// ent_fire !player addcontext "alyxisknown:1"
+
+//Radio bloops on/off
+criterion "ConceptRadioOn" "concept" "COMBINE_RADIO_ON" "required"
+criterion "ConceptRadioOff" "concept" "COMBINE_RADIO_OFF" "required"
+
+// Combine Classes
+criterion "IsCombine" "classname" "npc_combine" "required"
+criterion "IsCombineS" "classname" "npc_combine_s" "required"
+criterion "IsClass_Officer" "combine_class" "officer" "required"			
+criterion "IsClass_Charger" "combine_class" "charger" "required"			
+criterion "IsClass_Suppressor" "combine_class" "suppressor" "required"		
+criterion "IsClass_Grunt" "combine_class" "default" "required"
+		
+
+// combine action events
+criterion "ConceptAnnounceAttack" "concept" "COMBINESOLDIER_ANNOUNCEATTACK" "required"
+criterion "ConceptMissedMe" "concept" "COMBINESOLDIER_MISSEDME" "required"
+criterion "ConceptPressAttack" "concept" "COMBINESOLDIER_PRESS_ATTACK" "required"
+criterion "ConceptAttackingFromBehind" "concept" "COMBINESOLDIER_FIRING_FROM_BEHIND" "required"
+criterion "ConceptDeployingManhack" "concept" "COMBINESOLDER_DEPLOYING_MANHACK" "required"
+criterion "ConceptThrowingGrenade" "concept" "COMBINESOLDIER_THROWING_GRENADE" "required"
+criterion "ConceptAnnounceEnemy" "concept" "COMBINESOLDIER_ANNOUNCEENEMY" "required"
+criterion "ConceptAnnounceAssault" "concept" "COMBINESOLDIER_ANNOUNCEASSAULT" "required"
+criterion "ConceptAnnounceKill" "concept" "COMBINESOLDIER_ANNOUNCEKILL" "required"
+criterion "ConceptAnnounceCharge" "concept" "COMBINESOLDIER_ANNOUNCECHARGE" "required"
+criterion "ConceptAdvancingOnTarget" "concept" "COMBINESOLDIER_ADVANCING_ON_TARGET" "required"
+criterion "ConceptEstablishingLOF" "concept" "COMBINESOLDIER_ESTABLISHINGLOF" "required"
+criterion "ConceptDanger" "concept" "COMBINESOLDIER_DANGER" "required"
+criterion "ConceptFlank" "concept" "COMBINESOLDIER_FLANK" "required"
+criterion "ConceptOnFire" "concept" "COMBINESOLDIER_ONFIRE" "required"
+criterion "ConceptGasTankHit" "concept" "COMBINESOLDIER_GASTANK_HIT" "required"
+criterion "ConceptLimping" "concept" "COMBINESOLDIER_LIMPING" "required"
+criterion "ConceptPain" "concept" "COMBINESOLDIER_PAIN" "required"
+criterion "ConceptTaunt" "concept" "COMBINESOLDIER_TAUNT" "required"
+criterion "ConceptCoverMe" "concept" "COMBINESOLDIER_COVERME" "required"
+criterion "ConceptLostEnemy" "concept" "COMBINESOLDIER_LOSTENEMY" "required"
+criterion "ConceptOverwatch" "concept" "COMBINESOLDIER_OVERWATCH" "required"
+criterion "ConceptReload" "concept" "COMBINESOLDIER_RELOAD" "required"
+criterion "ConceptSuppressing" "concept" "COMBINESOLDIER_SUPPRESSING" "required"
+criterion "ConceptPlayerIsHurt" "concept" "COMBINESOLDIER_PLAYERISHURT" "required"
+criterion "ConceptSquadMemberLost" "concept" "COMBINESOLDIER_SQUADMEMBERLOST" "required"
+criterion "ConceptDie" "concept" "COMBINESOLDIER_DIE" "required"
+criterion "ConceptUnderAttack" "concept" "COMBINESOLDIER_UNDERATTACK" "required"
+criterion "ConceptTakingFire" "concept" "COMBINESOLDIER_TAKINGFIRE" "required"
+criterion "ConceptInjured" "concept" "COMBINESOLDIER_INJURED" "required"
+criterion "ConceptLostVisual" "concept" "COMBINESOLDIER_LOSTVISUAL" "required"
+criterion "ConceptAttackingCover" "concept" "COMBINESOLDIER_ATTACKINGCOVER" "required"
+criterion "ConceptGetBack" "concept" "COMBINESOLDIER_GETBACK" "required"
+criterion "ConceptNearPanic" "concept" "COMBINESOLDIER_NEARPANIC" "required"
+criterion "ConceptRetreat" "concept" "COMBINESOLDIER_RETREAT" "required"
+criterion "ConceptRetreatToReload" "concept" "COMBINESOLDIER_RETREATTORELOAD" "required"
+criterion "ConceptFiring" "concept" "COMBINESOLDIER_FIRING" "required"
+criterion "ConceptFindEnemy" "concept" "COMBINESOLDIER_FINDENEMY" "required"
+criterion "ConceptFlushingEnemy" "concept" "COMBINESOLDIER_FLUSHINGENEMY" "required"
+criterion "ConceptReconnoiterStart" "concept" "COMBINESOLDIER_RECONNOITER_START" "required"
+criterion "ConceptReconnoiterSearch" "concept" "COMBINESOLDIER_RECONNOITER_SEARCH" "required"
+criterion "ConceptReconnoiterFinish" "concept" "COMBINESOLDIER_RECONNOITER_FINISH" "required"
+criterion "ConceptCallReinforcements" "concept" "COMBINESOLDIER_CALLREINFORCEMENTS" "required"
+criterion "ConceptHearSuspicious" "concept" "COMBINESOLDIER_HEARSUSPICIOUS" "required"
+criterion "ConceptOrderCall" "isordercall" "COMBINESOLDIER_ORDER_CALL" "required"
+criterion "ConceptOrderResponse" "isorderresponse" "COMBINESOLDIER_ORDER_RESPONSE" "required"
+
+// Idle 
+criterion "ConceptIdleCheck" "concept" "COMBINESOLDIER_CHECK" "required"
+criterion "ConceptIdleQuestion" "concept" "COMBINESOLDIER_QUESTION" "required"
+criterion "ConceptIdle" "concept" "COMBINESOLDIER_IDLE" "required"
+criterion "ConceptIdleCombat" "concept" "COMBINESOLDIER_IDLECOMBAT" "required"
+criterion "ConceptIdleReportClear" "concept" "COMBINESOLDIER_REPORTCLEAR" "required"
+criterion "ConceptIdleAnswer" "concept" "COMBINESOLDIER_ANSWER" "required"
+
+// Target and Squad State
+criterion "AnnounceIsGrenade" "announce_grenade" "1" "weight" "5" "required"
+criterion "AnnounceIsManhack" "announce_manhack" "1" "weight" "5" "required"
+criterion "EnemyIsPlayer" "enemy" "player" "required"
+criterion "EnemyIsZombie" "enemy" "npc_zombie" "required"
+criterion "EnemyIsHeadcrab" "enemy" "npc_headcrab" "required"
+criterion "EnemyIsAntlion" "enemy" "npc_antlion" "required"
+criterion "DangerIsGrenade" "danger_grenade" "1" "required"
+criterion "LostEnemyHaveHandle" "lost_haveenemy" "1"
+criterion "LostEnemyShortTime" "lost_time" "<10"
+criterion "IsLastSquadMemberLeft" "num_squad_members" "1" required
+criterion "HasOtherSquadMembers" "num_squad_members" ">1" required
+criterion "LostSquadLeader" "lost_leader" "1" "weight" "5" required
+criterion "LostSquadOfficer" "lost_combineclass" "officer"
+criterion "LostSquadCharger" "lost_combineclass" "charger"
+criterion "LostSquadSuppressor" "lost_combineclass" "suppressor"
+criterion "LostSquadGrunt" "lost_combineclass" "default"
+
+// Debugging criteria designed to always fail to match, used to temporarily disable rules.
+criterion "EnemyIsPlayerX" "enemy" "debuggingfail" "required"
+
+
+
+// Location Callouts
+criterion "PlayerAtBricks" "worldplayerat" "bricks" "required"
+criterion "PlayerAtBridge" "worldplayerat" "bridge" "required"
+criterion "PlayerAtCar" "worldplayerat" "car" "required"
+criterion "PlayerAtContainer" "worldplayerat" "container" "required"
+criterion "PlayerAtCrane" "worldplayerat" "crane" "required"
+criterion "PlayerAtDoor" "worldplayerat" "door" "required"
+criterion "PlayerAtFence" "worldplayerat" "fence" "required"
+criterion "PlayerAtPipes" "worldplayerat" "pipes" "required"
+criterion "PlayerAtShack" "worldplayerat" "shack" "required"
+criterion "PlayerAtStation" "worldplayerat" "station" "required"
+criterion "PlayerAtToilet" "worldplayerat" "toilet" "required"
+criterion "PlayerAtTracks" "worldplayerat" "tracks" "required"
+criterion "PlayerAtTraincar" "worldplayerat" "traincar" "required"
+criterion "PlayerAtTruck" "worldplayerat" "truck" "required"
+criterion "PlayerAtTunnel" "worldplayerat" "tunnel" "required"
+criterion "PlayerAtVan" "worldplayerat" "van" "required"
+criterion "PlayerAtWall" "worldplayerat" "wall" "required"
+criterion "PlayerAtWindow" "worldplayerat" "window" "required"
+criterion "PlayerAtWoodpile" "worldplayerat" "woodpile" "required"
+
+// new location markup
+criterion "PlayerAtTrash" "worldplayerat" "trash" "required"
+criterion "PlayerAtFront" "worldplayerat" "front"  "required"
+criterion "PlayerAtWheels" "worldplayerat" "wheels" "required"
+criterion "PlayerAtBehind" "worldplayerat" "behind" "required"
+criterion "PlayerAtAbove" "worldplayerat" "above" "required"
+criterion "PlayerAtBelow" "worldplayerat" "below" "required"
+criterion "PlayerAtApartment" "worldplayerat" "apartment" "required"
+criterion "PlayerAtElevator" "worldplayerat" "elevator" "required"
+criterion "PlayerAtHut" "worldplayerat" "hut" "required"
+criterion "PlayerAtBuilding" "worldplayerat" "building" "required"
+criterion "PlayerAtBarrels" "worldplayerat" "barrels" "required"
+
+
+//////////////
+/// CALL & RESPONSE
+/////////////
+
+criterion "Order_EstablishLOS" "order" "establishlos" "required"
+criterion "Order_Recon" "order" "recon" "required"
+
+criterion "IsOrderCall" "order_call" "1" "required"
+criterion "IsOrderResponse" "order_response" "1" "required"
+criterion "ResponderIsGrunt" "responder_combine_class" "default" "required"
+criterion "ResponderIsCharger" "responder_combine_class" "charger" "required"
+criterion "ResponderIsSuppressor" "responder_combine_class" "suppressor" "required"
+criterion "ResponderIsOfficer" "responder_combine_class" "officer" "required"
+
+
+//////////////////////////
+//// ORIGINAL CONCEPTS
+///////////////////////////
+// Question / Answer concepts
+criterion "ConceptTalkAnswer" "Concept" "TLK_ANSWER" required weight 1
+criterion "ConceptTalkQuestion" "Concept" "TLK_QUESTION" required // weight 1 implied
+criterion "ConceptTalkAnswerCitizen" "Concept" "TLK_ANSWER_CIT" required weight 1
+criterion "ConceptTalkQuestionCitizen" "Concept" "TLK_QUESTION_CIT" required 
+criterion "ConceptTalkAnswerVort" "Concept" "TLK_ANSWER_VORT" required weight 1
+criterion "ConceptTalkQuestionVort" "Concept" "TLK_QUESTION_VORT" required 
+
+// General concepts
+criterion "ConceptTalkIdle" "Concept" "TLK_IDLE" required
+criterion "ConceptTalkStare" "Concept" "TLK_STARE" required
+criterion "ConceptTalkUse" "Concept" "TLK_USE" required
+criterion "ConceptTalkStartFollow" "Concept" "TLK_STARTFOLLOW" required
+criterion "ConceptTalkStopFollow" "Concept" "TLK_STOPFOLLOW" required
+criterion "ConceptTalkStop" "Concept" "TLK_STOP" required
+criterion "ConceptTalkNoShoot" "Concept" "TLK_NOSHOOT" required
+criterion "ConceptTalkHello" "Concept" "TLK_HELLO" required
+criterion "ConceptTalkPHello" "Concept" "TLK_PHELLO" required
+criterion "ConceptTalkPIdle" "Concept" "TLK_PIDLE" required
+criterion "ConceptTalkPQuestion" "Concept" "TLK_PQUESTION" required
+criterion "ConceptTalkPlayerHurt1" "Concept" "TLK_PLHURT1" required
+criterion "ConceptTalkPlayerHurt2" "Concept" "TLK_PLHURT2" required
+criterion "ConceptTalkPlayerHurt3" "Concept" "TLK_PLHURT3" required
+criterion "ConceptTalkPlayerPushed" "Concept" "TLK_PLPUSH" required
+criterion "ConceptTalkSmell" "Concept" "TLK_SMELL" required
+criterion "ConceptTalkWound" "Concept" "TLK_WOUND" required
+criterion "ConceptTalkMortal" "Concept" "TLK_MORTAL" required
+criterion "ConceptTalkDanger" "Concept" "TLK_DANGER" required
+criterion "ConceptTalkResume" "Concept" "TLK_RESUME" required
+criterion "ConceptTalkHeal" "Concept" "TLK_HEAL" required
+criterion "ConceptTalkTourGuideStayPut" "Concept" "TLK_TGSTAYPUT" required
+criterion "ConceptTalkTourGuideFind" "Concept" "TLK_TGFIND" required
+criterion "ConceptTalkTourGuideSeek" "Concept" "TLK_TGSEEK" required
+criterion "ConceptTalkTourGuideLostYou" "Concept" "TLK_TGLOSTYOU" required
+criterion "ConceptTalkTourGuideCatchUp" "Concept" "TLK_TGCATCHUP" required
+criterion "ConceptTalkTourGuideEndTour" "Concept" "TLK_TGENDTOUR" required
+criterion "ConceptTalkSelected" "Concept" "TLK_SELECTED" required
+criterion "ConceptTalkCommanded" "Concept" "TLK_COMMANDED" required
+criterion "ConceptTalkCommandFailed" "Concept" "TLK_COMMAND_FAILED" required
+criterion "ConceptTalkBetrayed" "Concept" "TLK_BETRAYED" required
+criterion "ConceptTalkGiveAmmo" "Concept" "TLK_GIVEAMMO" required
+criterion "ConceptTalkAllyKilled" "Concept" "TLK_ALLY_KILLED" required
+criterion "ConceptSeeCombine" "Concept" "TLK_SEE_COMBINE" required
+criterion "ConceptEnemyDead" "Concept" "TLK_ENEMY_DEAD" required
+criterion "ConceptTalkWatchOut" "Concept" "TLK_WATCHOUT" required
+criterion "ConceptTalkAttacking" "Concept" "TLK_ATTACKING" required
+criterion "ConceptTalkDeath" "Concept" "TLK_DEATH" required
+criterion "ConceptTalkHelpMe" "Concept" "TLK_HELP_ME" required
+criterion "ConceptTalkPlayerPhysAttack" "Concept" "TLK_PLYR_PHYSATK" required
+criterion "ConceptDissolveScream" "Concept" "TLK_DISSOLVESCREAM" required
+criterion "ConceptElectrocuteScream" "Concept" "TLK_ELECTROCUTESCREAM" required
+criterion "ConceptNewWeapon" "Concept" "TLK_NEWWEAPON" required
+criterion "ConceptShot" "Concept" "TLK_SHOT" required
+criterion "ConceptPlayerReload" "Concept" "TLK_PLRELOAD" required
+criterion "ConceptPlayerDead" "Concept" "TLK_PLDEAD" required
+criterion "ConceptHideAndReload" "Concept" "TLK_HIDEANDRELOAD" required
+criterion "ConceptStartCombat" "Concept" "TLK_STARTCOMBAT" required
+criterion "ConceptJoinPlayer" "Concept" "TLK_JOINPLAYER" required
+
+// Lead behavior
+criterion "ConceptLeadStart" "Concept" "TLK_LEAD_START" required			// Spoken once when the NPC first starts to lead the player
+criterion "ConceptLeadWaitOver" "Concept" "TLK_LEAD_WAITOVER" required			// Spoken when the player arrives at an NPC waiting to lead the player
+criterion "ConceptLeadAttractPlayer" "Concept" "TLK_LEAD_ATTRACTPLAYER" required	// Nag spoken by a NPC waiting to lead the player, trying to attract the player
+criterion "ConceptLeadCatchup" "Concept" "TLK_LEAD_CATCHUP" required			// Spoken by the NPC when the player's lagging behind
+criterion "ConceptLeadComingBack" "Concept" "TLK_LEAD_COMINGBACK" required		// Spoken when the NPC comes back to find a lost player
+criterion "ConceptLeadRetrieve" "Concept" "TLK_LEAD_RETRIEVE" required			// Spoken when the NPC has come back to the player, and is now resuming the lead
+criterion "ConceptLeadArrival" "Concept" "TLK_LEAD_ARRIVAL" required			// Spoken when the leading NPC reaches the target point
+criterion "ConceptLeadSuccess" "Concept" "TLK_LEAD_SUCCESS" required			// Spoken when the player and the leading NPC have both reached the target point
+criterion "ConceptLeadMissingWeapon" "Concept" "TLK_LEAD_MISSING_WEAPON" required	// Spoken when the NPC refuses to lead the player because he's missing a weapon
+
+// Citizen responses
+criterion "ConceptCRPlayerShotGunship" "Concept" "TLK_CITIZEN_RESPONSE_SHOT_GUNSHIP" required
+criterion "ConceptCRPlayerKilledGunship" "Concept" "TLK_CITIZEN_RESPONSE_KILLEd_GUNSHIP" required
+criterion "ConceptCRVitalNPCDied" "Concept" "TLK_VITALNPC_DIED" required
+
+criterion "PlayerAlive" "PlayerHealth" ">0" required
+criterion "PlayerDead" "PlayerHealth" "<=0" required
+criterion "PlayerWounded" "PlayerHealthFrac"	">0,<=.5"
+criterion "NPCAlive" "Health" ">0" required
+criterion "NPCAlert" "NPCState" ">=[NPCState::Idle],<[NPCState::Alert]"
+criterion "NPCIdle" "NPCState" "[NPCState::Idle]" required
+criterion "PlayerNear" "distancetoplayer" "<500" required
+criterion "SeePlayer" "seeplayer" "1" required
+criterion "SeenByPlayer" "seenbyplayer" "1" required
+criterion "NoRecentCombat" "timesincecombat" ">25" required
+
+criterion "ShotInLeg" "shotloc" "leg" required weight 0
+criterion "ShotInArm" "shotloc" "arm" required weight 0
+criterion "ShotInGut" "shotloc" "gut" required weight 0
+
+// randomnum is actually 0-100, so these chances aren't right.
+// the weight is to ensure that the rarest possible valid chance is used, assuming multiple rules with diff chances.
+criterion "Chance_1%"	"randomnum" "<=1" required weight 22
+criterion "Chance_2%"	"randomnum" "<=2" required weight 21
+criterion "Chance_3%"	"randomnum" "<=3" required weight 20
+criterion "Chance_5%"	"randomnum" "<=5" required weight 19
+criterion "Chance_10%"	"randomnum" "<=10" required weight 18
+criterion "Chance_15%"	"randomnum" "<=15" required weight 17
+criterion "Chance_20%"	"randomnum" "<=20" required weight 16
+criterion "Chance_25%"	"randomnum" "<=25" required weight 15
+criterion "Chance_30%"	"randomnum" "<=30" required weight 14
+criterion "Chance_35%"	"randomnum" "<=35" required weight 13
+criterion "Chance_40%"	"randomnum" "<=40" required weight 12
+criterion "Chance_45%"	"randomnum" "<=45" required weight 11
+criterion "Chance_50%"	"randomnum" "<=50" required weight 10
+criterion "Chance_55%"	"randomnum" "<=55" required weight 9
+criterion "Chance_60%"	"randomnum" "<=60" required weight 8
+criterion "Chance_65%"	"randomnum" "<=65" required weight 7
+criterion "Chance_70%"	"randomnum" "<=70" required weight 6
+criterion "Chance_75%"	"randomnum" "<=75" required weight 5
+
+// choreo
+criterion "Combine_Sees_Player_First_Time" "concept" "COMBINE_SEE_PLAYER_FIRST_TIME" weight 200 "required"
+criterion "IsFirstEncounterSoldier" "first_encounter_soldiers" "1" weight 100 "required"
+criterion "IsBridgeEncounterSoldierLeft" "bridge_lower_left_soldier_zombie_speech" "1" weight 100 "required"
+criterion "IsBridgeEncounterSoldierRight" "bridge_lower_right_soldier_zombie_speech" "1" weight 100 "required"
+criterion "ConceptBridgeEncounterZombieSpeech" "concept" "COMBINE_SECOND_ENCOUNTER_ZOMBIE" "required"
+criterion "ConceptBridgeEncounterZombie2Speech" "concept" "COMBINE_SECOND_ENCOUNTER_ZOMBIE2" "required"
+criterion "Choreo_PPC17_SearchingForAlyx" "concept" "COMBINESOLDIER_CHOREO_C17PP_SEARCHING" "required"
+criterion "Choreo_PPC17_SuppressorIntroRetreat" "concept" "COMBINESOLDIER_CHOREO_C17PP_RETREAT" "required"
+criterion "Choreo_PPC17_SuppressorIntroAmbushAttack" "concept" "COMBINESOLDIER_CHOREO_C17PP_AMBUSH" "required"
+criterion "Choreo_A5Vault_InPosition" "concept" "COMBINESOLDIER_CHOREO_A5VAULT_INPOSITION" "required"
+criterion "Choreo_PPC17_GruntAtElectricalBox" "concept" "COMBINESOLDIER_CHOREO_C17PP_ELECTRICALBOX" "required"
+criterion "Choreo_PPC17_GruntAtBridge" "concept" "COMBINESOLDIER_CHOREO_C17PP_GRUNTBRIDGE" "required"
+criterion "Choreo_PPC17_OfficerAtBridge" "concept" "COMBINESOLDIER_CHOREO_C17PP_OFFICERBRIDGE" "required"
+criterion "Choreo_StationStreet_ChargerInvestigates" "concept" "COMBINESOLDIER_CHOREO_SS_CHARGERINVESTIGATES" "required"
+criterion "Choreo_PPC17_GruntEnterArena1" "concept" "COMBINESOLDIER_CHOREO_C17PP_GRUNTENTERARENA1" "required"
+criterion "Choreo_PPC17_GruntEnterArena2" "concept" "COMBINESOLDIER_CHOREO_C17PP_GRUNTENTERARENA2" "required"
+criterion "Choreo_PPC17_SuppressorEnterArena" "concept" "COMBINESOLDIER_CHOREO_C17PP_SUPPRESSORENTERARENA" "required"
+criterion "Choreo_PPC17_BatteryArenaOfficerEntry" "concept" "COMBINESOLDIER_CHOREO_C17PP_BATTERYARENAOFFICER" "required"
+criterion "Choreo_TYC17_GruntGantry1" "concept" "COMBINESOLDIER_CHOREO_C17TY_GRUNTGANTRY1" "required"
+criterion "Choreo_TYC17_GruntGantry2" "concept" "COMBINESOLDIER_CHOREO_C17TY_GRUNTGANTRY2" "required"
+criterion "Choreo_TYC17_GruntGarbageGuy" "concept" "COMBINESOLDIER_CHOREO_C17TY_GRUNTGARBAGEGUY" "required"
+criterion "Choreo_A5Vault_GruntAlertGuy" "concept" "COMBINESOLDIER_CHOREO_A5VAULT_GRUNTALERTGUY" "required"
+
+
+criterion "Choreo_27_1107" "concept" "COMBINESOLDIER_CHOREO_27_1107" "required"
+criterion "Choreo_27_1108" "concept" "COMBINESOLDIER_CHOREO_27_1108" "required"
+criterion "Choreo_27_1109" "concept" "COMBINESOLDIER_CHOREO_27_1109" "required"
+criterion "Choreo_27_1111" "concept" "COMBINESOLDIER_CHOREO_27_1111" "required"
+
+criterion "Choreo_28_1110" "concept" "COMBINESOLDIER_CHOREO_28_1110" "required"
+
+criterion "Choreo_29_0001" "concept" "COMBINESOLDIER_CHOREO_29_0001" "required"
+criterion "Choreo_29_0002" "concept" "COMBINESOLDIER_CHOREO_29_0002" "required"
+criterion "Choreo_29_0003" "concept" "COMBINESOLDIER_CHOREO_29_0003" "required"
+criterion "Choreo_29_0004" "concept" "COMBINESOLDIER_CHOREO_29_0004" "required"
+criterion "Choreo_29_0005" "concept" "COMBINESOLDIER_CHOREO_29_0005" "required"
+criterion "Choreo_29_0006" "concept" "COMBINESOLDIER_CHOREO_29_0006" "required"
+criterion "Choreo_29_0007" "concept" "COMBINESOLDIER_CHOREO_29_0007" "required"
+criterion "Choreo_29_0008" "concept" "COMBINESOLDIER_CHOREO_29_0008" "required"
+criterion "Choreo_29_0009" "concept" "COMBINESOLDIER_CHOREO_29_0009" "required"
+criterion "Choreo_29_0010" "concept" "COMBINESOLDIER_CHOREO_29_0010" "required"
+criterion "Choreo_29_0011" "concept" "COMBINESOLDIER_CHOREO_29_0011" "required"
+criterion "Choreo_29_0012" "concept" "COMBINESOLDIER_CHOREO_29_0012" "required"
+criterion "Choreo_29_0013" "concept" "COMBINESOLDIER_CHOREO_29_0013" "required"
+criterion "Choreo_29_0014" "concept" "COMBINESOLDIER_CHOREO_29_0014" "required"
+criterion "Choreo_29_0015" "concept" "COMBINESOLDIER_CHOREO_29_0015" "required"
+criterion "Choreo_29_0016" "concept" "COMBINESOLDIER_CHOREO_29_0016" "required"
+criterion "Choreo_29_0017" "concept" "COMBINESOLDIER_CHOREO_29_0017" "required"
+criterion "Choreo_29_0018" "concept" "COMBINESOLDIER_CHOREO_29_0018" "required"
+criterion "Choreo_29_0019" "concept" "COMBINESOLDIER_CHOREO_29_0019" "required"
+criterion "Choreo_29_0020" "concept" "COMBINESOLDIER_CHOREO_29_0020" "required"
+criterion "Choreo_29_0021" "concept" "COMBINESOLDIER_CHOREO_29_0021" "required"
+criterion "Choreo_29_0022" "concept" "COMBINESOLDIER_CHOREO_29_0022" "required"
+criterion "Choreo_29_0023" "concept" "COMBINESOLDIER_CHOREO_29_0023" "required"
+
+criterion "Choreo_30_0001" "concept" "COMBINESOLDIER_CHOREO_30_0001" "required"
+criterion "Choreo_30_0002" "concept" "COMBINESOLDIER_CHOREO_30_0002" "required"
+criterion "Choreo_30_0003" "concept" "COMBINESOLDIER_CHOREO_30_0003" "required"
+criterion "Choreo_30_0004" "concept" "COMBINESOLDIER_CHOREO_30_0004" "required"
+criterion "Choreo_30_0005" "concept" "COMBINESOLDIER_CHOREO_30_0005" "required"
+criterion "Choreo_30_0006" "concept" "COMBINESOLDIER_CHOREO_30_0006" "required"
+criterion "Choreo_30_0007" "concept" "COMBINESOLDIER_CHOREO_30_0007" "required"
+criterion "Choreo_30_0008" "concept" "COMBINESOLDIER_CHOREO_30_0008" "required"
+criterion "Choreo_30_0009" "concept" "COMBINESOLDIER_CHOREO_30_0009" "required"
+criterion "Choreo_30_0010" "concept" "COMBINESOLDIER_CHOREO_30_0010" "required"
+criterion "Choreo_30_0011" "concept" "COMBINESOLDIER_CHOREO_30_0011" "required"
+criterion "Choreo_30_0012" "concept" "COMBINESOLDIER_CHOREO_30_0012" "required"
+criterion "Choreo_30_0013" "concept" "COMBINESOLDIER_CHOREO_30_0013" "required"
+criterion "Choreo_30_0014" "concept" "COMBINESOLDIER_CHOREO_30_0014" "required"
+criterion "Choreo_30_0015" "concept" "COMBINESOLDIER_CHOREO_30_0015" "required"
+criterion "Choreo_30_0016" "concept" "COMBINESOLDIER_CHOREO_30_0016" "required"
+criterion "Choreo_30_0017" "concept" "COMBINESOLDIER_CHOREO_30_0017" "required"
+criterion "Choreo_30_0018" "concept" "COMBINESOLDIER_CHOREO_30_0018" "required"
+criterion "Choreo_30_0019" "concept" "COMBINESOLDIER_CHOREO_30_0019" "required"
+criterion "Choreo_30_0020" "concept" "COMBINESOLDIER_CHOREO_30_0020" "required"
+criterion "Choreo_30_0021" "concept" "COMBINESOLDIER_CHOREO_30_0021" "required"
+criterion "Choreo_30_0022" "concept" "COMBINESOLDIER_CHOREO_30_0022" "required"
+criterion "Choreo_30_0023" "concept" "COMBINESOLDIER_CHOREO_30_0023" "required"
+criterion "Choreo_30_0024" "concept" "COMBINESOLDIER_CHOREO_30_0024" "required"
+criterion "Choreo_30_0025" "concept" "COMBINESOLDIER_CHOREO_30_0025" "required"
+criterion "Choreo_30_0026" "concept" "COMBINESOLDIER_CHOREO_30_0026" "required"
+criterion "Choreo_30_0027" "concept" "COMBINESOLDIER_CHOREO_30_0027" "required"
+
+
+
+/////////////////
+/// NEW
+//////////////////
+criterion "ConceptPrepareCharge" "Concept" "COMBINESOLDIER_PREPARECHARGE" "required"
+criterion "ConceptPrepareShield" "Concept" "COMBINESOLDIER_PREPARESHIELD" "required"
+criterion "ConceptSwitchingWeapons" "Concept" "COMBINESOLDIER_SWITCHINGWEAPONS" "required"
+criterion "ConceptFlashSuccess" "Concept" "COMBINESOLDIER_FLASHSUCCESS" "required"
+criterion "ConceptFlashFailed" "Concept" "COMBINESOLDIER_FLASHFAILED" "required"
+criterion "ResponseIsPositive" "Concept" "COMBINESOLDIER_POSITIVE" "required"
+criterion "ResponseIsNegative" "Concept" "COMBINESOLDIER_NEGATIVE" "required"
+
+
+// sees player has stuff
+criterion "PlayerHasGrenades" "worldplayer_has_grenades" "1" "required"
+criterion "PlayerHasUpgrades" "worldplayer_has_upgrades" "1" "required"
+criterion "PlayerHasFriends" "worldplayer_has_friends" "1" "required"
+criterion "PlayerIsReloading" "worldplayer_is_reloading" "1" "required"
+
+
+

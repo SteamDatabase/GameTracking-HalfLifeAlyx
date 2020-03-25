@@ -1,0 +1,439 @@
+{
+	HL2Player.SprintNoPower = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.798000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/suit_denydevice.vsnd",
+		]
+	}
+	HL2Player.SprintStart = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.898000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.308571
+		fade_over_time_y2 = 1.451613
+		fade_over_time_x3 = 0.674286
+		fade_over_time_y3 = 0.690322
+		fade_over_time_x4 = 0.999543
+		fade_over_time_y4 = 0.245419
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/suit_sprint.vsnd",
+		]
+	}
+	HL2Player.FlashLightOn = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.798000
+		pitch = 1.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/items/flashlight1.vsnd",
+		]
+	}
+	HL2Player.FlashLightOff = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.616000
+		pitch = 1.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.325714
+		fade_over_time_y2 = 0.656716
+		fade_over_time_x3 = 0.660000
+		fade_over_time_y3 = 1.000000
+		fade_over_time_x4 = 1.000000
+		fade_over_time_y4 = 1.000000
+		use_hrtf = 0.500000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/items/flashlight1.vsnd",
+		]
+	}
+	HL2Player.PickupWeapon = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.798000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/items/ammo_pickup.vsnd",
+		]
+	}
+	HL2Player.TrainUse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.798000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/plats/train_use1.vsnd",
+		]
+	}
+	HL2Player.Use = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.399902
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_select.vsnd",
+		]
+	}
+	HL2Player.UseNPC = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.399902
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_select.vsnd",
+		]
+	}
+	HL2Player.UseDeny = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.399902
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	HL2Player.BurnPain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_burnpain1.vsnd",
+			"sounds/player/pl_burnpain2.vsnd",
+			"sounds/player/pl_burnpain3.vsnd",
+		]
+	}
+	Player.Death = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.799805
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_pain5.vsnd",
+			"sounds/player/pl_pain6.vsnd",
+			"sounds/player/pl_pain7.vsnd",
+		]
+	}
+	Player.PlasmaDamage = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/general/flesh_burn.vsnd",
+		]
+	}
+	Player.SonicDamage = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.699707
+		pitch = 1.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_pain5.vsnd",
+			"sounds/player/pl_pain6.vsnd",
+			"sounds/player/pl_pain7.vsnd",
+		]
+	}
+	Player.DrownStart = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_drown1.vsnd",
+		]
+	}
+	Player.Swim = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/wade5.vsnd",
+			"sounds/player/footsteps/wade6.vsnd",
+			"sounds/player/footsteps/wade7.vsnd",
+			"sounds/player/footsteps/wade8.vsnd",
+		]
+	}
+	Player.FallDamage = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		pitch = 1.000000
+		event_type = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_fallpain1.vsnd",
+			"sounds/player/pl_fallpain3.vsnd",
+		]
+	}
+	Player.FallGib = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/physics/body/body_medium_break2.vsnd",
+		]
+	}
+	Player.DrownContinue = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/pl_drown1.vsnd",
+			"sounds/player/pl_drown2.vsnd",
+			"sounds/player/pl_drown3.vsnd",
+		]
+	}
+	Player.Wade = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		pitch = 1.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/footsteps/wade5.vsnd",
+			"sounds/player/footsteps/wade6.vsnd",
+			"sounds/player/footsteps/wade7.vsnd",
+			"sounds/player/footsteps/wade8.vsnd",
+		]
+	}
+	Player.AmbientUnderWater = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.219971
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/ambient/water/underwater.vsnd",
+		]
+	}
+	Player.UseTrain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.799805
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/plats/train_use1.vsnd",
+		]
+	}
+	Player.UseDeny = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.399902
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_select.vsnd",
+		]
+	}
+	Player.PickupWeapon = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.799805
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/items/ammo_pickup.vsnd",
+		]
+	}
+	Geiger.BeepLow = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/geiger1.vsnd",
+			"sounds/player/geiger2.vsnd",
+		]
+	}
+	Geiger.BeepHigh = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/geiger2.vsnd",
+			"sounds/player/geiger3.vsnd",
+		]
+	}
+	Player.TeleportFootsteps = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/concrete1.vsnd",
+			"sounds/player/concrete3.vsnd",
+		]
+	}
+}

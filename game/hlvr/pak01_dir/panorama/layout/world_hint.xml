@@ -1,0 +1,21 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/world_hint.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <ClientUIDialogPanel class="RootPanel">
+    <Panel class="WorldUITextPanel" id="WorldUITextPanel">
+      <Panel class="HintPanel" id="HintPanel">
+        <Panel class="TextContainer" id="TextContainer">
+          <Label class="HintLabel" id="Hint" text="{s:HintText}" />
+        </Panel>
+		<Panel id="AnimatedTextureMask" acceptsinput="false" hittest="false">	
+			<Panel id="AnimatedTexture" acceptsinput="false" hittest="false"/>
+			<Panel id="AnimatedTextureAlt" acceptsinput="false" hittest="false"/>
+		</Panel>
+      </Panel>
+    </Panel>
+  </ClientUIDialogPanel>
+</root>

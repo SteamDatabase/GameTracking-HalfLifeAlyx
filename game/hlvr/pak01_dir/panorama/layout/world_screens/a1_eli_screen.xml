@@ -1,0 +1,52 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/world_screens/a1_eli_screen.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	
+	
+	<Panel class="ScreenContainer">
+
+		<Panel class="callWaiting">
+			<AnimatedImageStrip animating="true" src="s2r://panorama/images/world_screens/eli_call/eli_call_waiting_png.vtex"  frametime=".4s" />
+			<Panel class="callerID">
+				<Label class="textSmallLabel" text="#HLVR_Eli_Call_Incoming" />
+				<Label class="textBigLabel" text="#HLVR_Eli_Call_Incoming_Name" />
+			</Panel>
+		</Panel>
+		
+	
+		<Panel class="callIncoming">
+			<AnimatedImageStrip animating="true" src="s2r://panorama/images/world_screens/eli_call/eli_call_incoming_png.vtex"  frametime=".4s" />
+			<Panel class="callerID">
+				<Label class="textSmallLabel" text="#HLVR_Eli_Call_Incoming" />
+				<Label class="textBigLabel" text="#HLVR_Eli_Call_Incoming_Name" />
+			</Panel>
+		</Panel>
+		
+
+		<Panel class="callEnded">
+			<Panel class="callEndedContent">
+				<AnimatedImageStrip animating="true" src="s2r://panorama/images/world_screens/eli_call/eli_call_ended_png.vtex"  frametime=".4s" />
+				<Panel class="callerID">
+					<Label class="textSmallLabel textYellow" text="#HLVR_Eli_Call_Ended_01" />
+					<Label class="textBigLabel textYellow" text="#HLVR_Eli_Call_Ended_02" />
+				</Panel>
+			</Panel>
+			<Panel class="screenCallEndedCover"></Panel>
+		</Panel>	
+		
+		<Panel class="screenLocation">
+			<Label class="textYellow textLocationLabel" text="#HLVR_Eli_Call_Location" />
+			<Panel class="screenLocationCover"></Panel>
+			<Panel class="screenLocationCoverClose"></Panel>
+
+		</Panel>
+
+		
+	</Panel>
+	
+
+</root>

@@ -1,0 +1,3567 @@
+{
+	Bullets.DefaultNearmiss = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_rand_min = -0.200000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		chance_to_play = 3.000000
+		use_hrtf = 1.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/bullet_passby_01.vsnd",
+			"sounds/weapons/bullet_passby_02.vsnd",
+			"sounds/weapons/bullet_passby_03.vsnd",
+			"sounds/weapons/bullet_passby_04.vsnd",
+			"sounds/weapons/bullet_passby_05.vsnd",
+			"sounds/weapons/bullet_passby_06.vsnd",
+			"sounds/weapons/bullet_passby_07.vsnd",
+		]
+	}
+	Combat.PlayerKilledNPC = 
+	{
+		type = "hlvr_start_multi_distance_delay"
+		soundevent_01 = "Combat.PlayerKilledNPC_Child"
+		use_01 = 1.000000
+	}
+	Combat.PlayerKilledNPC_Child = 
+	{
+		type = "hlvr_2d_w_occlusion"
+		volume = 0.850000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/damage/last_hit.vsnd",
+		]
+	}
+	DamageNPC.Bullet = 
+	{
+		type = "hlvr_bullet_damage"
+		use_track_1 = 1.000000
+		use_track_2 = 1.000000
+		volume_mult_1 = 0.350000
+		volume_mult_2 = 0.350000
+		vsnd_files_1 = 
+		[
+			"sounds/damage/bullet_damage_npc_01.vsnd",
+			"sounds/damage/bullet_damage_npc_02.vsnd",
+			"sounds/damage/bullet_damage_npc_03.vsnd",
+			"sounds/damage/bullet_damage_npc_04.vsnd",
+			"sounds/damage/bullet_damage_npc_05.vsnd",
+			"sounds/damage/bullet_damage_npc_06.vsnd",
+			"sounds/damage/bullet_damage_npc_07.vsnd",
+		]
+		vsnd_files_2 = 
+		[
+			"sounds/damage/bullet_damage_layer.vsnd",
+		]
+	}
+	DamageNPC.Bullet_Mech = 
+	{
+		type = "hlvr_bullet_damage"
+		use_track_1 = 1.000000
+		use_track_2 = 1.000000
+		use_track_3 = 1.000000
+		volume_mult_1 = 0.600000
+		volume_mult_2 = 0.600000
+		volume_mult_3 = 0.350000
+		vsnd_files_1 = 
+		[
+			"sounds/damage/bullet_damage_mech_01.vsnd",
+			"sounds/damage/bullet_damage_mech_02.vsnd",
+			"sounds/damage/bullet_damage_mech_03.vsnd",
+			"sounds/damage/bullet_damage_mech_04.vsnd",
+		]
+		vsnd_files_2 = 
+		[
+			"sounds/damage/bullet_damage_mech_gling.vsnd",
+		]
+		vsnd_files_3 = 
+		[
+			"sounds/damage/bullet_damage_layer.vsnd",
+		]
+	}
+	DamageNPC.Break = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.800000
+		mixgroup = "BulletImpacts"
+		vsnd_files = 
+		[
+			"sounds/damage/break_npc_01.vsnd",
+			"sounds/damage/break_npc_02.vsnd",
+			"sounds/damage/break_npc_03.vsnd",
+		]
+	}
+	NPC_HeadCrab.Gib = 
+	{
+		base = "DamageNPC.Break"
+	}
+	DamageNPC.Bullet_Extra_Gore = 
+	{
+		type = "hlvr_2d_w_occlusion"
+		volume = 0.800000
+		block_duration = 1.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/damage/bullet_damage_npc_extra_gore_01.vsnd",
+			"sounds/damage/bullet_damage_npc_extra_gore_02.vsnd",
+			"sounds/damage/bullet_damage_npc_extra_gore_03.vsnd",
+		]
+	}
+	DamageNPC.Bullet_Extra_Gore_Subtle = 
+	{
+		type = "hlvr_2d_w_occlusion"
+		volume = 0.500000
+		block_duration = 1.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/damage/bullet_damage_npc_extra_gore_01.vsnd",
+			"sounds/damage/bullet_damage_npc_extra_gore_02.vsnd",
+			"sounds/damage/bullet_damage_npc_extra_gore_03.vsnd",
+		]
+	}
+	NPC_Antlion.Abdomen_Hit_Success = 
+	{
+		base = "DamageNPC.Bullet_Extra_Gore"
+	}
+	BaseExplosionEffect.Sound = 
+	{
+		type = "hlvr_explosions"
+		groups = 
+		[
+			"match_explosions",
+		]
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 500.000000
+		volume_falloff_mid_max = 2000.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "BaseExplosionEffect.Sound"
+		initial_muffle_delay = 0.200000
+		max_muffle_fade_in_time = 0.300000
+		muffle_hold_time = 1.100000
+		max_muffle_fade_out_time = 5.000000
+		max_muffle_mix_val = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_swt_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+	}
+	Explosion.GasCan = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		mixgroup = "Explosions"
+	}
+	Grenade.Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "Grenade.Explode"
+		limiter_max = 3.000000
+		limiter_stop_oldest = true
+		volume_falloff_mid_min = 1500.000000
+		volume_falloff_mid_max = 2400.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "Grenade.Explode"
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_explo_digital_01.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_digital_02.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_digital_03.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_digital_04.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_digital_05.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_explo_head_01.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_head_02.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_head_03.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_head_04.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_head_05.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_explo_boom_01.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_boom_02.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_boom_03.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_boom_04.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_boom_05.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_explo_debris_01.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_debris_02.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_debris_03.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_debris_04.vsnd",
+			"sounds/weapons/grenade/wpn_grenade_explo_debris_05.vsnd",
+		]
+	}
+	Grenade.Activate = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_activate_01.vsnd",
+		]
+	}
+	EnergyPistol.ConnectClip = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_03.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_04.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_05.vsnd",
+		]
+	}
+	EnergyPistol.ConnectGrenade = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_grenade_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_grenade_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_grenade_03.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_grenade_04.vsnd",
+		]
+	}
+	EnergyPistol.ConnectBulletPod = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_bullet_pod_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_bullet_pod_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_bullet_pod_03.vsnd",
+		]
+	}
+	EnergyPistol.ConnectLaserPod = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_03.vsnd",
+		]
+	}
+	EnergyPistol.LaserPodFire = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_laser_pod_fire_01.vsnd",
+		]
+	}
+	EnergyPistol.SmallShot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_small_shot_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_small_shot_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_small_shot_03.vsnd",
+		]
+	}
+	EnergyPistol.ChargeLEDs = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_charge_leds_01.vsnd",
+		]
+	}
+	EnergyPistol.ChargedBlast = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_03.vsnd",
+		]
+	}
+	EnergyPistol.ChargeLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "EnergyPistol.ChargeLEDs"
+		soundevent_02 = "Jeep.GaussCharge"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Pistol.ClipInsert = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_clip_insert_01.vsnd",
+		]
+	}
+	Pistol.ClipRelease = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_clip_release_01.vsnd",
+		]
+	}
+	Pistol.CloseSlide = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_close_slide_01.vsnd",
+		]
+	}
+	Pistol.NeedSlide = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_needs_slide_01.vsnd",
+		]
+	}
+	Pistol.NoAmmo = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_no_ammo_01.vsnd",
+		]
+	}
+	Pistol.SlideLock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/pistol_foley_slide_lock_01.vsnd",
+		]
+	}
+	Pistol.LastShotChambered = 
+	{
+		type = "hlvr_default_3d"
+		volume = 3.000000
+		pitch_external = 1.150000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_near_empty_01.vsnd",
+		]
+	}
+	AlyxPistol.FireHead = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_head_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_04.vsnd",
+		]
+	}
+	AlyxPistol.FireBody = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 0.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_body_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_04.vsnd",
+		]
+	}
+	AlyxPistol.FireLFE = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 0.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_04.vsnd",
+		]
+	}
+	AlyxPistol.FireMech = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_mech_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_mech_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_mech_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_mech_04.vsnd",
+		]
+	}
+	AlyxPistol.FireOld = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "AlyxPistol.FireHead"
+		soundevent_02 = "AlyxPistol.FireBody"
+		soundevent_03 = "AlyxPistol.FireLFE"
+		soundevent_04 = "AlyxPistol.FireMech"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	AlyxPistol.Slideback = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/pistol_slideback_1.vsnd",
+		]
+	}
+	Pistol.AddonButtonPush = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/buttonclick.vsnd",
+		]
+	}
+	Pistol.BurstFireSwitch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/rifle_fullautobutton_1.vsnd",
+		]
+	}
+	AlyxPistol.Fire = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		ambient_ducking_pct = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "AlyxPistol.Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.900000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.850000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.800000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.200000
+		mixgroup = "PlayerWeaponFire"
+		memory_type = 10
+		preload_vsnds = 1
+		vsnd_files_head = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_head_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_body_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_fire_tail_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_tail_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_tail_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_fire_tail_04.vsnd",
+		]
+	}
+	AlyxPistol.HopperLoad = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 300.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_04.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_05.vsnd",
+		]
+	}
+	AlyxPistol.HopperLoadComplete = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 300.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_complete_01.vsnd",
+		]
+	}
+	AlyxPistol.FireDry = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		ambient_ducking_pct = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "AlyxPistol.Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.900000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.850000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.800000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.200000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/pistol/dry/wpn_head_pistol_shot_01.vsnd",
+			"sounds/weapons/pistol/dry/wpn_head_pistol_shot_02.vsnd",
+			"sounds/weapons/pistol/dry/wpn_head_pistol_shot_03.vsnd",
+			"sounds/weapons/pistol/dry/wpn_head_pistol_shot_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/pistol/dry/wpn_body_pistol_shot_01.vsnd",
+			"sounds/weapons/pistol/dry/wpn_body_pistol_shot_02.vsnd",
+			"sounds/weapons/pistol/dry/wpn_body_pistol_shot_03.vsnd",
+			"sounds/weapons/pistol/dry/wpn_body_pistol_shot_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/pistol/dry/wpn_lfe_pistol_shot_01.vsnd",
+			"sounds/weapons/pistol/dry/wpn_lfe_pistol_shot_02.vsnd",
+			"sounds/weapons/pistol/dry/wpn_lfe_pistol_shot_03.vsnd",
+			"sounds/weapons/pistol/dry/wpn_lfe_pistol_shot_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/pistol/dry/wpn_tail_pistol_shot_01.vsnd",
+			"sounds/weapons/pistol/dry/wpn_tail_pistol_shot_02.vsnd",
+			"sounds/weapons/pistol/dry/wpn_tail_pistol_shot_03.vsnd",
+			"sounds/weapons/pistol/dry/wpn_tail_pistol_shot_04.vsnd",
+		]
+	}
+	AlyxPistol.CarryingNoAmmo = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	Combine.FlashbangExplosion = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		use_named_send = "weapons"
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_blast_01.vsnd",
+		]
+	}
+	Combine.ChargerShieldUp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 1500.000000
+		use_hrtf = 1.000000
+		use_named_send = "weapons"
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_shield_up_01.vsnd",
+		]
+	}
+	Combine.ChargerShieldDown = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 1500.000000
+		use_hrtf = 1.000000
+		use_named_send = "weapons"
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_shield_down_01.vsnd",
+		]
+	}
+	Combine.ChargerShieldLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.950000
+		occlusion_scale = 0.600000
+		volume_falloff_max = 600.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.750000
+		use_hrtf = 1.000000
+		use_named_send = "weapons"
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_shield_lp_01.vsnd",
+		]
+	}
+	Combine.FlashbangPrepare = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		use_named_send = "weapons"
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_windup_01.vsnd",
+		]
+	}
+	Combine.FlashbangRinging = 
+	{
+		type = "hlvr_default_3d"
+		force_from_player = true
+		use_named_send = "weapons"
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_combine_flashbang_ringing_01.vsnd",
+		]
+	}
+	CombineMG.Fire = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 200.000000
+		volume_falloff_mid_max = 1200.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 800.000000
+		volume_falloff_mech_max = 1500.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 70.000000
+		volume_falloff_lfe_max = 800.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 4000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 20.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_04.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_04.vsnd",
+		]
+	}
+	CombineMG.FireLp = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.FireLp"
+		limiter_max = 3.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 200.000000
+		volume_falloff_mid_max = 1200.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 800.000000
+		volume_falloff_mech_max = 1500.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 70.000000
+		volume_falloff_lfe_max = 800.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 4000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lp_body_01.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lp_mech_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lp_lfe_01.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lp_tail_01.vsnd",
+		]
+	}
+	CombineMG.Fire_Old = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMG.Distant"
+		soundevent_02 = "CombineMG.Mid"
+		soundevent_03 = "CombineMG.Mech"
+		soundevent_04 = "CombineMG.LFE"
+		use_01 = 0.000000
+		use_02 = 1.000000
+		use_03 = 0.000000
+		use_04 = 0.000000
+	}
+	CombineMG.IntDistantFireFarShort = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 1000.000000
+		volume_falloff_max = 2400.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_far_short_01.vsnd",
+		]
+	}
+	CombineMG.IntDistantFireFarMed = 
+	{
+		base = "CombineMG.IntDistantFireFarShort"
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_far_med_01.vsnd",
+		]
+	}
+	CombineMG.IntDistantFireFarLong = 
+	{
+		base = "CombineMG.IntDistantFireFarShort"
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_far_long_01.vsnd",
+		]
+	}
+	CombineMG.IntDistantFireNearShort = 
+	{
+		base = "CombineMG.IntDistantFireFarShort"
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_near_short_01.vsnd",
+		]
+	}
+	CombineMG.IntDistantFireNearMed = 
+	{
+		base = "CombineMG.IntDistantFireFarShort"
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_near_med_01.vsnd",
+		]
+	}
+	CombineMG.IntDistantFireNearLong = 
+	{
+		base = "CombineMG.IntDistantFireFarShort"
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_amb_near_long_01.vsnd",
+		]
+	}
+	CombineMG.Distant = 
+	{
+		type = "hlvr_distance_xfade_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.Distant"
+		limiter_max = 4.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.700000
+		volume_falloff_min = 1500.000000
+		volume_falloff_max = 3000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		use_hrtf = 1.000000
+		direct_mix_level = 1.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_near = 
+		[
+			"sounds/test/null.vsnd",
+		]
+		vsnd_files_far = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_distant_04.vsnd",
+		]
+	}
+	CombineMG.Mid = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.Mid"
+		limiter_max = 2.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume_falloff_min = 1500.000000
+		volume_falloff_max = 3000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		use_hrtf = 1.000000
+		direct_mix_level = 1.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mid_04.vsnd",
+		]
+	}
+	CombineMG.Mech = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_max = 2.000000
+		limiter_match_entity = 1.000000
+		limiter_event_name = "CombineMG.Mech"
+		use_hrtf = 1.000000
+		direct_mix_level = 1.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_mech_04.vsnd",
+		]
+	}
+	CombineMG.LFE = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_max = 2.000000
+		limiter_event_name = "CombineMG.LFE"
+		use_hrtf = 1.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_01.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_02.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_03.vsnd",
+			"sounds/weapons/combine_mg/wpn_combine_mg_lfe_04.vsnd",
+		]
+	}
+	CombineMG.Windup = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.WinddownWhine"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		use_hrtf = 1.000000
+		direct_mix_level = 1.000000
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_wind_up_01.vsnd",
+		]
+	}
+	CombineMG.WinddownWhine = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "CombineMG.Windup"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		volume = 0.600000
+		volume_fade_out = 0.300000
+		use_hrtf = 1.000000
+		direct_mix_level = 1.000000
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_wind_down_01.vsnd",
+		]
+	}
+	CombineMG.WinddownLatch = 
+	{
+		base = "CombineMG.WinddownWhine"
+		mixgroup = "NPC_Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_mg/wpn_combine_mg_wind_down_latch_01.vsnd",
+		]
+	}
+	CombineMG.Winddown = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMG.WinddownLatch"
+		soundevent_02 = "CombineMG.WinddownWhine"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombineSMG.Fire = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineSMG.Fire"
+		limiter_max = 6.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 200.000000
+		volume_falloff_mid_max = 1200.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 800.000000
+		volume_falloff_mech_max = 1500.000000
+		volume_mech = 0.700000
+		volume_falloff_lfe_min = 70.000000
+		volume_falloff_lfe_max = 800.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 4000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 20.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/combine_smg/wpn_combine_smg_head_01.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_head_03.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_head_04.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_head_05.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/combine_smg/wpn_combine_smg_body_02.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_body_03.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_body_04.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_body_05.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/combine_smg/wpn_combine_smg_lfe_01.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_lfe_02.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_lfe_03.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/combine_smg/wpn_combine_smg_tail_01.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_tail_02.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_tail_03.vsnd",
+			"sounds/weapons/combine_smg/wpn_combine_smg_tail_04.vsnd",
+		]
+	}
+	CombineShotgun.Fire = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineShotgun.Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.000000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 600.000000
+		volume_falloff_mid_max = 1300.000000
+		volume_mid = 0.750000
+		volume_falloff_mech_min = 600.000000
+		volume_falloff_mech_max = 1100.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 300.000000
+		volume_falloff_lfe_max = 1600.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1000.000000
+		volume_falloff_distant_max = 3000.000000
+		volume_distant = 0.400000
+		distant_xfade_start = 200.000000
+		distant_xfade_end = 800.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_body_01.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_body_02.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_body_03.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_body_04.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_head_01.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_head_02.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_head_03.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_head_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_lfe_01.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_lfe_02.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_lfe_03.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_tail_01.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_tail_02.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_tail_03.vsnd",
+			"sounds/weapons/combine_shotgun/wpn_combine_shotgun_fire_tail_04.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.005714,
+				0.300000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.227125,
+				0.227125,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	CombineAR.Fire = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 0.900000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineAR.Fire"
+		limiter_max = 6.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 200.000000
+		volume_falloff_mid_max = 1200.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 800.000000
+		volume_falloff_mech_max = 1500.000000
+		volume_mech = 0.700000
+		volume_falloff_lfe_min = 70.000000
+		volume_falloff_lfe_max = 800.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 4000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 20.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "NPC_WeaponFire"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_head_01.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_head_02.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_head_03.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_head_04.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_body_01.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_body_02.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_body_03.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_lfe_01.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_lfe_02.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_lfe_03.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_tail_01.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_tail_02.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_tail_03.vsnd",
+			"sounds/weapons/combine_ar/wpn_combine_ar_fire_tail_04.vsnd",
+		]
+	}
+	PhysCannon.Launch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/physcannon/superphys_launch4.vsnd",
+			"sounds/weapons/physcannon/superphys_launch2.vsnd",
+			"sounds/weapons/physcannon/superphys_launch3.vsnd",
+			"sounds/weapons/physcannon/superphys_launch4.vsnd",
+		]
+	}
+	Grenade.PinPull = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/grenade_pinpull.vsnd",
+		]
+	}
+	Grenade.HandlePop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/grenade_spoon.vsnd",
+		]
+	}
+	XenGrenade.Fizzle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/bugbait/bugbait_squeeze3.vsnd",
+		]
+	}
+	XenGrenade.Squeeze = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		volume_fade_out = 0.750000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_squeeze.vsnd",
+		]
+	}
+	XenGrenade.Blip = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 600.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_blip.vsnd",
+		]
+	}
+	XenGrenade.BlipLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.000000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_blip_loop.vsnd",
+		]
+	}
+	XenGrenade.ActivatedIdleParticle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_activated_idle_particle.vsnd",
+		]
+	}
+	XenGrenade.Explode = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = -0.050000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 0.000000
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_explode_01.vsnd",
+		]
+	}
+	HealthPen.Deploy = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_extend_01.vsnd",
+		]
+	}
+	HealthPen.Retract = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_retract_01.vsnd",
+		]
+	}
+	HealthPen.Stab = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.800000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_stab_01.vsnd",
+		]
+	}
+	HealthPen.StabFail = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.600000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_stab_fail_01.vsnd",
+		]
+	}
+	HealthPen.Success01 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.600000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_success_01.vsnd",
+		]
+	}
+	HealthPen.Success02 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.900000
+		delay = 0.100000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_inject_success_pt2_01.vsnd",
+			"sounds/props/health_pen/prop_health_pen_inject_success_pt2_02.vsnd",
+		]
+	}
+	HealthPen.Fail = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/props/health_pen/prop_health_pen_fail_01.vsnd",
+		]
+	}
+	RapidFire.SingleShotOld = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/fire1.vsnd",
+		]
+	}
+	RapidFire.SingleShot = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 0.800000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.SingleShot"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 0.450000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.800000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.700000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.800000
+		mixgroup = "PlayerWeaponFire"
+		memory_type = 10
+		preload_vsnds = 1
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_head_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_head_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_head_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_body_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_body_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_body_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_lfe_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_lfe_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_lfe_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_tail_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_tail_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_tail_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_fire_tail_04.vsnd",
+		]
+	}
+	RapidFire.LastShot = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/ar2_altfire.vsnd",
+		]
+	}
+	RapidFire.EmptyPowerCellDryFire = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/ar2_empty.vsnd",
+		]
+	}
+	RapidFire.NoPowerCellDryFire = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/shotgun_empty.vsnd",
+		]
+	}
+	RapidFire.CyclePowerCell = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/ar2_reload_push.vsnd",
+		]
+	}
+	RapidFire.CantCyclePowerCell = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/ar2_reload_rotate.vsnd",
+		]
+	}
+	RapidFire.CyclePowerCellAfterReload = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/ar2/ar2_reload.vsnd",
+		]
+	}
+	RapidFire.ReplaceCapsules = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_insert_01.vsnd",
+		]
+	}
+	RapidFire.Recharge = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 20.000000
+		volume_falloff_max = 250.000000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.500000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_recharge_01.vsnd",
+		]
+	}
+	RapidFire.RechargeBoostWindow = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.800000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_reload_boost_window_01.vsnd",
+		]
+	}
+	RapidFire.RechargeBoostSuccess = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_reload_boost_success_01.vsnd",
+		]
+	}
+	RapidFire.RechargeBoostFail = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_reload_boost_fail_01.vsnd",
+		]
+	}
+	RapidFire.ClipAttached = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/357/357_reload1.vsnd",
+		]
+	}
+	RapidFire.OpenClipBay = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_open_01.vsnd",
+		]
+	}
+	RapidFire.CloseClipBay = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_close_01.vsnd",
+		]
+	}
+	RapidFire.RemovePowerCell = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_cartridge_remove_01.vsnd",
+		]
+	}
+	RapidFire.LoadPowerCell = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		delay = 0.600000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_cartridge_advance_01.vsnd",
+		]
+	}
+	RapidFire.AdvancePowerCell = 
+	{
+		type = "hlvr_start_multi"
+		use_random_delay = 0.000000
+		soundevent_01 = "RapidFire.RemovePowerCell"
+		use_01 = 1.000000
+		soundevent_02 = "RapidFire.LoadPowerCell"
+		use_02 = 1.000000
+	}
+	RapidFire.TagDartCharging = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		spread_min = 50.000000
+		spread_max = 200.000000
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.300000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_charge_01.vsnd",
+		]
+	}
+	RapidFire.TagDartReady = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_ready_01.vsnd",
+		]
+	}
+	RapidFire.TagDartFire = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.TagDartFire"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 0.450000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.800000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.500000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_head_01.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_body_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_lfe_01.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_tail_01.vsnd",
+		]
+	}
+	RapidFire.TagDartAttach = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 1500.000000
+		volume_falloff_max = 2400.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_impact_01.vsnd",
+		]
+	}
+	RapidFire.UpgradeSelectionChanged = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_bullet_pod_01.vsnd",
+		]
+	}
+	RapidFire.UpgradeSelectionEnabled = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		spread_min = 50.000000
+		spread_max = 200.000000
+		volume_fade_in = 0.000000
+		volume_fade_out = 0.300000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_charge_enable_01.vsnd",
+		]
+	}
+	RapidFire.UpgradeSelectionDisabled = 
+	{
+		base = "RapidFire.UpgradeSelectionEnabled"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_charge_disable_01.vsnd",
+		]
+	}
+	RapidFire.EnergyBallCharging = 
+	{
+		base = "RapidFire.TagDartCharging"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_charge_01.vsnd",
+		]
+	}
+	RapidFire.EnergyBallReady = 
+	{
+		base = "RapidFire.TagDartReady"
+		mixgroup = "PlayerWeapons"
+	}
+	RapidFire.EnergyBallLaunch = 
+	{
+		base = "RapidFire.TagDartFire"
+		limiter_event_name = "RapidFire.EnergyBallLaunch"
+		ambient_ducking_pct = 1.000000
+		volume_head = 0.600000
+		volume_body = 0.800000
+		volume_lfe = 0.900000
+		volume_tail = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_fire_head_01.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_fire_body_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_fire_lfe_01.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_fire_tail_01.vsnd",
+		]
+	}
+	RapidFire.EnergyBallExplode = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.EnergyBallExplode"
+		limiter_max = 2.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 1.000000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.700000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_04.vsnd",
+		]
+	}
+	RapidFire.EnergyBallImpact = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.EnergyBallImpact"
+		limiter_max = 2.000000
+		volume = 0.700000
+		volume_rand_min = -0.200000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_bounce_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_bounce_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_bounce_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_bounce_04.vsnd",
+		]
+	}
+	RapidFire.BulletClusterReady = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.TagDartFire"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 0.450000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.800000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.500000
+		mixgroup = "PlayerWeapons"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_head_01.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_body_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_lfe_01.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_dart_fire_tail_01.vsnd",
+		]
+	}
+	RapidFire.GelExplode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.GelExplode"
+		limiter_max = 3.000000
+		limiter_stop_oldest = true
+		volume_falloff_mid_min = 1500.000000
+		volume_falloff_mid_max = 2400.000000
+		volume_falloff_distant_min = 1000.000000
+		volume_falloff_distant_max = 2400.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 50.000000
+		distant_xfade_end = 100.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "RapidFire.GelExplode"
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_head_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_head_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_head_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_head_04.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_body_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_body_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_body_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_lfe_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_lfe_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_lfe_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_tail_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_tail_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_tail_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_gel_explo_tail_04.vsnd",
+		]
+	}
+	RapidFire.BulletClusterExplode = 
+	{
+		base = "RapidFire.GelExplode"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+	}
+	RapidFire.ClusterExplodeButtonReady = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_03.vsnd",
+		]
+	}
+	RapidFire.ClusterExplodeButtonPressed = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_01.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_02.vsnd",
+			"sounds/weapons/energy_pistol/eblaster_blast_fire_03.vsnd",
+		]
+	}
+	RapidFire.CarryingNoAmmo = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	Shotgun.Railshot_Fire_Old = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/gauss_fire1.vsnd",
+		]
+	}
+	Shotgun.Railshot_chargeLP = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 2.500000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 7.000000
+		fade_over_time_y3 = 0.350000
+		fade_over_time_x4 = 7.000000
+		fade_over_time_y4 = 0.350000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.400000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_altfire_windup_lp_01.vsnd",
+		]
+	}
+	Shotgun.Railshot_chargeWinddown = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "Shotgun.Railshot_chargeLP"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = true
+		limiter_match_entity = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_altfire_winddown_01.vsnd",
+		]
+	}
+	Shotgun.Slideback = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_rack_back_01.vsnd",
+		]
+	}
+	Shotgun.Slideforward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_rack_forward_01.vsnd",
+		]
+	}
+	Shotgun.SlidebackEmpty = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_lever_stuck_01.vsnd",
+		]
+	}
+	Shotgun.TubeFull = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_reload_full_01.vsnd",
+		]
+	}
+	Shotgun.OpenChamber = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_open_chamber_01.vsnd",
+		]
+	}
+	Shotgun.CloseTube = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_close_tube_01.vsnd",
+		]
+	}
+	Shotgun.CloseChamber = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_close_chamber_01.vsnd",
+		]
+	}
+	Shotgun.LoadShell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_load_shell_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_foley_load_shell_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_foley_load_shell_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_foley_load_shell_04.vsnd",
+		]
+	}
+	Shotgun.Speedload = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_foley_load_shells_upgraded_01.vsnd",
+		]
+	}
+	Shotgun.UpgradeLeverDown = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/shotgun/shotgun_lever-temp.vsnd",
+		]
+	}
+	Shotgun.UpgradeLeverUp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/shotgun/mp44_boltback.vsnd",
+		]
+	}
+	Shotgun.ChargerIntakeExplosion = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		pitch = 0.800000
+		volume_mult = 0.500000
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/shotgun_dbl_fire.vsnd",
+		]
+	}
+	Shotgun.Fire = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		ambient_ducking_pct = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "Shotgun.Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.900000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.850000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.800000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.500000
+		mixgroup = "PlayerWeaponFire"
+		memory_type = 10
+		preload_vsnds = 1
+		vsnd_files_head = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_fire_head_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_head_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_head_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_fire_body_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_body_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_body_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_fire_lfe_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_lfe_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_lfe_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_fire_tail_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_tail_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_tail_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_fire_tail_04.vsnd",
+		]
+	}
+	Shotgun.Railshot_Fire = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		ambient_ducking_pct = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "Shotgun.Railshot_Fire"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.900000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.850000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.800000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.200000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_head_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_head_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_head_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_body_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_body_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_body_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_lfe_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_lfe_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_lfe_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_tail_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_tail_02.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_tail_03.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_tau_cannon_fire_tail_04.vsnd",
+		]
+	}
+	Shotgun.CarryingNoAmmo = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	HandCannon.Shot = 
+	{
+		base = "Shotgun.Fire"
+	}
+	Tripmine.Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "Tripmine.Explode"
+		limiter_max = 3.000000
+		limiter_stop_oldest = true
+		ambient_ducking_pct = 1.000000
+		volume_falloff_mid_min = 1500.000000
+		volume_falloff_mid_max = 2400.000000
+		volume_mid = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_explo_digital_01.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_digital_02.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_digital_03.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_digital_04.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_digital_05.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_explo_impact_01.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_impact_02.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_impact_03.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_impact_04.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_impact_05.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_explo_boom_01.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_boom_02.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_boom_03.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_boom_04.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_boom_05.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_explo_debris_01.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_debris_02.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_debris_03.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_debris_04.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_debris_05.vsnd",
+		]
+	}
+	Tripmine.Activate = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		use_named_send = "weapons"
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_explo_beeps_01.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_beeps_02.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_beeps_03.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_beeps_04.vsnd",
+			"sounds/weapons/tripmine/wpn_tripmine_explo_beeps_05.vsnd",
+		]
+	}
+	Tripmine.Deploy = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		ambient_ducking_pct = 0.500000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		use_named_send = "weapons"
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_attach_01.vsnd",
+		]
+	}
+	Tripmine.Deployed = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		ambient_ducking_pct = 0.600000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		use_named_send = "weapons"
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_attach_confirm_beeps_01.vsnd",
+		]
+	}
+	Tripmine.Deactivate = 
+	{
+		base = "Tripmine.Deploy"
+		volume = 1.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_deactivate_01.vsnd",
+		]
+	}
+	Tripmine.Charge = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_laser_charge_01.vsnd",
+		]
+	}
+	Tripmine.AlarmStart = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		spread_min = 30.000000
+		spread_max = 54.000000
+		ambient_ducking_pct = 0.500000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		use_named_send = "weapons"
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_alarm_start_01.vsnd",
+		]
+	}
+	Tripmine.AlarmLp = 
+	{
+		base = "Tripmine.AlarmStart"
+		volume = 0.500000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.500000
+		delay = 0.100000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 3.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 10.000000
+		fade_over_time_y4 = 0.500000
+		vsnd_files = 
+		[
+			"sounds/weapons/tripmine/wpn_tripmine_alarm_lp_01.vsnd",
+		]
+	}
+	Tripmine.Alarm = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Tripmine.AlarmStart"
+		soundevent_02 = "Tripmine.AlarmLp"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	RollerMine.Deploy = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.750000
+		volume_falloff_min = 120.000000
+		volume_falloff_max = 1200.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/roller_mine/wpn_roller_mine_open_01.vsnd",
+			"sounds/weapons/roller_mine/wpn_roller_mine_open_02.vsnd",
+			"sounds/weapons/roller_mine/wpn_roller_mine_open_03.vsnd",
+		]
+	}
+	Shotgun.UpgradeLaunchGrenade = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hl1_old/shotgun/grenade_launcher1.vsnd",
+		]
+	}
+	Molotov.Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		mixgroup = "Explosions"
+	}
+	Fireworks.Explode = 
+	{
+		type = "hlvr_explosions"
+		groups = 
+		[
+			"match_explosions",
+		]
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 500.000000
+		volume_falloff_mid_max = 2000.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "BaseExplosionEffect.Sound"
+		initial_muffle_delay = 0.200000
+		max_muffle_fade_in_time = 0.300000
+		muffle_hold_time = 1.100000
+		max_muffle_fade_out_time = 5.000000
+		max_muffle_mix_val = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_swt_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+	}
+	GasCylinder.Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		mixgroup = "Explosions"
+	}
+	ExplosiveBarrel.Explode = 
+	{
+		type = "hlvr_explosions"
+		groups = 
+		[
+			"match_explosions",
+		]
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 500.000000
+		volume_falloff_mid_max = 2000.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "BaseExplosionEffect.Sound"
+		initial_muffle_delay = 0.200000
+		max_muffle_fade_in_time = 0.300000
+		muffle_hold_time = 1.100000
+		max_muffle_fade_out_time = 5.000000
+		max_muffle_mix_val = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_swt_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+	}
+	Electrical.Explode = 
+	{
+		type = "hlvr_explosions"
+		groups = 
+		[
+			"match_explosions",
+		]
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 500.000000
+		volume_falloff_mid_max = 2000.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "BaseExplosionEffect.Sound"
+		initial_muffle_delay = 0.200000
+		max_muffle_fade_in_time = 0.300000
+		muffle_hold_time = 1.100000
+		max_muffle_fade_out_time = 5.000000
+		max_muffle_mix_val = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_swt_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+	}
+	Shrapnel.Explode = 
+	{
+		type = "hlvr_explosions"
+		groups = 
+		[
+			"match_explosions",
+		]
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 500.000000
+		volume_falloff_mid_max = 2000.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "BaseExplosionEffect.Sound"
+		initial_muffle_delay = 0.200000
+		max_muffle_fade_in_time = 0.300000
+		muffle_hold_time = 1.100000
+		max_muffle_fade_out_time = 5.000000
+		max_muffle_mix_val = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_swt_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_swt_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/gas_can/explo_gas_can_01.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_02.vsnd",
+			"sounds/weapons/gas_can/explo_gas_can_03.vsnd",
+		]
+	}
+	Flashbang.Explode = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		use_named_send = "weapons"
+		mixgroup = "Explosions"
+		vsnd_files = 
+		[
+			"sounds/weapons/combine_flashbang/wpn_charger_flashbang_blast_01.vsnd",
+		]
+	}
+	SmokeGrenade.Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		mixgroup = "Explosions"
+	}
+	EMP.Explode = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "RapidFire.EnergyBallExplode"
+		limiter_max = 2.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 1.000000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.700000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 1.000000
+		mixgroup = "Explosions"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_01.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_02.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_03.vsnd",
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_tail_04.vsnd",
+		]
+	}
+	Grenade.Blip = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "Weapons"
+		use_hrtf = 1.000000
+		spread_min = 240.000000
+		spread_max = 500.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/grenade/wpn_grenade_tick_01.vsnd",
+		]
+	}
+	TruckGun.Player_Enter = 
+	{
+		type = "src1_2d"
+		volume = 0.700000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_player_enter.vsnd",
+		]
+	}
+	TruckGun.Player_Exit = 
+	{
+		type = "src1_2d"
+		volume = 0.700000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_player_exit.vsnd",
+		]
+	}
+	TruckGun.Windup = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		ambient_ducking_pct = 1.000000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_windup_mono_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_windup_mono_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_windup_mono_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_windup_mono_04.vsnd",
+		]
+	}
+	TruckGun.Windup_Quick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		ambient_ducking_pct = 1.000000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		use_named_send = "weapons"
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_windup_button_beeps.vsnd",
+		]
+	}
+	TruckGun.Fire = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "TruckGun.Fire"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 1.000000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.750000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.700000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_head_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_head_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_head_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_body_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_body_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_body_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_lfe_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_lfe_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_lfe_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_tail_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_tail_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_tail_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_fire_tail_04.vsnd",
+		]
+	}
+	TruckGun.ProjectileExplo = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 0.800000
+		limiter_on = 1.000000
+		limiter_event_name = "TruckGun.ProjectileExplo"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.200000
+		volume_falloff_body_min = 500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.400000
+		volume_falloff_lfe_min = 500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 0.800000
+		volume_falloff_tail_min = 800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.500000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files_head = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_head_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_head_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_head_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_head_04.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_body_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_body_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_body_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_lfe_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_lfe_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_lfe_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_lfe_04.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_tail_01.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_tail_02.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_tail_03.vsnd",
+			"sounds/weapons/truck_gun/wpn_combine_truck_gun_impact_tail_04.vsnd",
+		]
+	}
+	TruckGun.ProjectileExplo_HitStrider = 
+	{
+		base = "TruckGun.ProjectileExplo"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "TruckGun.ProjectileExplo"
+		limiter_max = 8.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 1.000000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.600000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.100000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.600000
+	}
+	VortMagic.Pull = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch = 1.200000
+		ambient_ducking_pct = 1.000000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 2000.000000
+		volume_fade_in = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.030000
+		spread_min = 24.000000
+		spread_max = 72.000000
+		use_named_send = "weapons"
+		use_hrtf = 1.000000
+		mixgroup = "PlayerWeaponFire"
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_02.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_03.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_04.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_05.vsnd",
+		]
+	}
+	VortMagic.Throw = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "VortMagic.Throw"
+		limiter_max = 3.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 0.850000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.600000
+		mixgroup = "PlayerWeaponFire"
+		memory_type = 10
+		vsnd_files_head = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_head_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_head_02.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_head_03.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_head_04.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_head_05.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_body_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_body_02.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_body_03.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_body_04.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_body_05.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_lfe_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_lfe_02.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_lfe_03.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_lfe_04.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_lfe_05.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_tail_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_tail_02.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_tail_03.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_tail_04.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_throw_tail_05.vsnd",
+		]
+	}
+	VortMagic.ThrowNoHit = 
+	{
+		base = "VortMagic.Throw"
+		volume_lfe = 0.000000
+		volume_tail = 0.000000
+	}
+	VortMagic.ThrowTwoHanded = 
+	{
+		base = "VortMagic.Throw"
+	}
+	VortMagic.HandEnergyLp = 
+	{
+		base = "VortMagic.Pull"
+		volume = 0.500000
+		delay = 0.400000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 18.000000
+		volume_falloff_max = 96.000000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 3.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 10.000000
+		fade_over_time_y4 = 0.500000
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_hand_lp_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_hand_lp_02.vsnd",
+		]
+	}
+	VortMagic.HandEnergyLpEndgame = 
+	{
+		base = "VortMagic.HandEnergyLp"
+		volume = 0.600000
+		delay = 0.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 2.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_hand_lp_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_hand_lp_02.vsnd",
+		]
+	}
+	VortMagic.PullEnergyLp = 
+	{
+		base = "VortMagic.Pull"
+		volume = 0.500000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.500000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 3.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 10.000000
+		fade_over_time_y4 = 0.500000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.500000
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_target_lp_01.vsnd",
+			"sounds/weapons/vort_magic/wpn_vort_energy_pull_target_lp_02.vsnd",
+		]
+	}
+	VortMagic.EnvironEnergyLp = 
+	{
+		base = "VortMagic.Pull"
+		volume = 0.500000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.500000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 3.000000
+		fade_over_time_y3 = 0.800000
+		fade_over_time_x4 = 10.000000
+		fade_over_time_y4 = 0.500000
+		enable_debug_radius = 0.000000
+		soundname_string = "VortMagic"
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_const_lp_01.vsnd",
+		]
+	}
+	VortMagic.EnvironEnergyThin = 
+	{
+		base = "VortMagic.Pull"
+		volume = 0.000000
+		volume_fade_in = 0.000000
+		volume_fade_out = 3.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "VortMagic"
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_md_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_md_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_md_03.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_03.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_04.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_05.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_thin_sm_06.vsnd",
+		]
+	}
+	VortMagic.EnvironEnergy = 
+	{
+		base = "VortMagic.Pull"
+		volume = 0.500000
+		volume_fade_in = 0.000000
+		volume_fade_out = 3.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "VortMagic"
+		vsnd_files = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_environ_md_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_md_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_md_03.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_03.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_04.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_05.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_environ_sm_06.vsnd",
+		]
+	}
+	VortMagic.D20Explode = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "VortMagic.D20Explode"
+		limiter_max = 3.000000
+		limiter_stop_oldest = true
+		volume_mid = 1.000000
+		volume_mech = 1.000000
+		volume_lfe = 1.000000
+		volume_distant = 0.750000
+		volume_falloff_mid_min = 1500.000000
+		volume_falloff_mid_max = 2800.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2800.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 3000.000000
+		volume_falloff_lfe_min = 1800.000000
+		volume_falloff_lfe_max = 3000.000000
+		distant_xfade_start = 240.000000
+		distant_xfade_end = 1800.000000
+		enable_debug_radius = 0.000000
+		ambient_ducking_pct = 0.400000
+		soundname_string = "VortMagic.D20Explode"
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_body_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_body_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_body_03.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_head_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_head_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_head_03.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_lfe_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_lfe_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_lfe_03.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_tail_01.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_tail_02.vsnd",
+			"sounds/weapons/vort_magic/vort_energy_d20_blast_tail_03.vsnd",
+		]
+	}
+	VortMagic.D20ExplodeDistant = 
+	{
+		base = "VortMagic.D20Explode"
+		groups = 
+		[
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+			"match_explosions",
+		]
+		volume = 1.000000
+		volume_mid = 0.600000
+		volume_mech = 0.300000
+		volume_lfe = 0.500000
+		volume_distant = 1.000000
+		ambient_ducking_pct = 0.200000
+	}
+	Vault.D20LightningStrike = 
+	{
+		base = "BaseExplosionEffect.Sound"
+		groups = 
+		[
+			"match_explosions",
+		]
+		volume = 4.000000
+		distant_xfade_start = 50.000000
+		distant_xfade_end = 120.000000
+		enable_debug_radius = 0.000000
+		ambient_ducking_pct = 0.800000
+		volume_mid = 1.000000
+		volume_mech = 0.500000
+		volume_lfe = 0.500000
+		volume_distant = 0.750000
+		soundname_string = "VortMagic.D20LightningStrike"
+		mixgroup = "Explosions"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/vort_magic/vault_d20_lightning_strike_thunder_01.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/vort_magic/vault_d20_lightning_strike_energy_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/vort_magic/vault_d20_lightning_strike_vort_01.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/vort_magic/vault_d20_lightning_strike_debris_01.vsnd",
+		]
+	}
+	Midi.D20BeepTestSingle = 
+	{
+		type = "hlvr_default_3d"
+		vsnd_files = 
+		[
+			"sounds/diagnostics/beep.vsnd",
+		]
+	}
+	Shotgun.Deny = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_min = 36.000000
+		volume_falloff_max = 240.000000
+		spread_min = 12
+		spread_max = 60
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_deny_01.vsnd",
+		]
+	}
+	Shotgun.SlideLock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_min = 36.000000
+		volume_falloff_max = 240.000000
+		spread_min = 12
+		spread_max = 60
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_slidelock_01.vsnd",
+		]
+	}
+	Shotgun.LastShotChambered = 
+	{
+		type = "hlvr_default_3d"
+		pitch_external = 1.150000
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_near_empty_01.vsnd",
+		]
+	}
+	Shotgun.AutoLoad = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 300.000000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_01.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_02.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_03.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_04.vsnd",
+			"sounds/weapons/pistol/wpn_pistol_hopper_load_05.vsnd",
+		]
+	}
+	Shotgun.AutoloaderShellAdd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		mixgroup = "PlayerWeapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/shotgun/wpn_shotgun_shell_in_autoloader_01.vsnd",
+			"sounds/weapons/shotgun/wpn_shotgun_shell_in_autoloader_02.vsnd",
+		]
+	}
+}

@@ -1,0 +1,92 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+
+	flow-children: down;
+}
+
+.ScreenContainer
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: #000000;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	flow-children: down;
+	border: 0px solid white;
+}
+
+.BumperImage
+{
+	width: 80%;
+	height: 100%;
+	border: 0px solid white;
+	margin-left: 10%;
+}
+
+#ColorBarContainer
+{
+	background-image: url("s2r://panorama/images/propaganda_screens/propaganda_color_bars_psd.vtex");
+	visibility: visible;
+}
+
+#BumperContainer_Screen1,
+#BumperContainer_Screen2,
+#BumperContainer_Screen3,
+#BumperContainer_Screen4,
+#BumperContainer_Screen5,
+{
+	visibility: collapse;
+}
+
+.ShowBumper1 #BumperContainer_Screen1,
+.ShowBumper2 #BumperContainer_Screen2,
+.ShowBumper3 #BumperContainer_Screen3,
+.ShowBumper4 #BumperContainer_Screen4,
+.ShowBumper5 #BumperContainer_Screen5,
+{
+	visibility: visible;
+}
+
+.ShowBumper1 #ColorBarContainer,
+.ShowBumper2 #BumperContainer_Screen1,
+.ShowBumper3 #BumperContainer_Screen2,
+.ShowBumper4 #BumperContainer_Screen3,
+.ShowBumper5 #BumperContainer_Screen4,
+{
+	visibility: collapse;
+}
+
+.TextLine
+{
+	width: 50%;
+	height: 15%;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	border: 0px solid white;
+	background-color: #000000;
+
+	flow-children: down;
+
+	visibility: collapse;
+}
+
+.TextBox
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 256px;
+	color: white;
+	border: 0px solid white;
+}

@@ -1,0 +1,1666 @@
+{
+	Inventory.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pouch_open_01.vsnd",
+		]
+	}
+	Inventory.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pouch_close_01.vsnd",
+		]
+	}
+	Inventory.PackOpenResin = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pack_open_resin_01.vsnd",
+		]
+	}
+	Inventory.PackCloseResin = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pack_close_resin_01.vsnd",
+		]
+	}
+	Inventory.GrenadeGrab = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_grenade_grab_01.vsnd",
+		]
+	}
+	Inventory.ClipGrab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pickup_clip_01.vsnd",
+		]
+	}
+	Inventory.ResinGrab = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_pickup_resin_01.vsnd",
+		]
+	}
+	Inventory.DepositItem = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_backpack_deposit_01.vsnd",
+		]
+	}
+	Inventory.GrabItem = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		delay = 0.050000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/grab_item_01.vsnd",
+			"sounds/player/inventory/grab_item_02.vsnd",
+		]
+	}
+	Inventory.BackpackGrabItemResin = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_grab_item_resin_01.vsnd",
+		]
+	}
+	Inventory.ResinGloveHoverStart = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_resin_glove_hover_start_01.vsnd",
+		]
+	}
+	Inventory.ResinGloveHoverStop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_resin_glove_hover_stop_01.vsnd",
+		]
+	}
+	Inventory.ResinGloveHoverLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_fade_in = 0.650000
+		volume_fade_out = 0.400000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_resin_glove_hover_lp_01.vsnd",
+		]
+	}
+	Inventory.ResinGloveHover = 
+	{
+		type = "hlvr_loop_with_start_and_stop"
+		soundevent_start_name = "Inventory.ResinGloveHoverStart"
+		soundevent_loop_name = "Inventory.ResinGloveHoverLp"
+		soundevent_stop_name = "Inventory.ResinGloveHoverStop"
+		use_start = 1.000000
+		use_loop = 1.000000
+		use_stop = 1.000000
+	}
+	Inventory.StripWeapons = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/items/suitchargeok1.vsnd",
+		]
+	}
+	Inventory.WristPocketGrabItem = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		spread_min = 6.000000
+		spread_max = 24.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_wrist_pocket_item_retrieve_01.vsnd",
+		]
+	}
+	Inventory.WristPocketDepositItem = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		spread_min = 6.000000
+		spread_max = 24.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_wrist_pocket_item_deposit_01.vsnd",
+		]
+	}
+	Inventory.WristPocketPopOpen = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		spread_min = 6.000000
+		spread_max = 24.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.300000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "Inventory.WristPocketPop"
+		limiter_match_substring = 1.000000
+		block_event_name = "Inventory.WristPocketPopOpen"
+		block_match_entity = 1.000000
+		block_duration = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_wrist_pocket_pop_open_01.vsnd",
+		]
+	}
+	Inventory.WristPocketPopClosed = 
+	{
+		base = "Inventory.WristPocketPopOpen"
+		volume = 0.350000
+		block_event_name = "Inventory.WristPocketPopClosed"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_wrist_pocket_pop_closed_01.vsnd",
+		]
+	}
+	Inventory.WristPocketOpenLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		spread_min = 6.000000
+		spread_max = 24.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.100000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 2.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 4.000000
+		fade_over_time_y3 = 0.350000
+		fade_over_time_x4 = 4.000000
+		fade_over_time_y4 = 0.350000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_wrist_pocket_pop_open_lp_01.vsnd",
+		]
+	}
+	Inventory.FlashlightAttach = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 24.000000
+		volume_falloff_max = 100.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.300000
+		volume_fade_out = 0.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_attach_flashlight_01.vsnd",
+		]
+	}
+	Grabbity.Acquire = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_acquire_01.vsnd",
+		]
+	}
+	Grabbity.Ready = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.050000
+		use_hrtf = 1.000000
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 105.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_ready_01.vsnd",
+		]
+	}
+	Grabbity.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_grab_01.vsnd",
+			"sounds/player/grabbity/grabbity_grab_02.vsnd",
+			"sounds/player/grabbity/grabbity_grab_02.vsnd",
+			"sounds/player/grabbity/grabbity_grab_02.vsnd",
+			"sounds/player/grabbity/grabbity_grab_03.vsnd",
+			"sounds/player/grabbity/grabbity_grab_03.vsnd",
+		]
+	}
+	Grabbity.Charge = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.418000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.750000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/weapons/physcannon/physcannon_charge.vsnd",
+		]
+	}
+	Grabbity.PowerDown = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_power_down.vsnd",
+		]
+	}
+	Grabbity.PowerUp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_power_up.vsnd",
+		]
+	}
+	Grabbity.BeamLp = 
+	{
+		type = "hlvr_fadetime_resonant_lpf_default_3d_hrtf"
+		volume = 0.220000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.350000
+		remap_fadetime_to_freq_x1 = 0.000000
+		remap_fadetime_to_freq_y1 = 0.150000
+		remap_fadetime_to_freq_x2 = 0.700000
+		remap_fadetime_to_freq_y2 = 0.250000
+		remap_fadetime_to_freq_x3 = 1.000000
+		remap_fadetime_to_freq_y3 = 0.550000
+		remap_fadetime_to_freq_x4 = 1.000000
+		remap_fadetime_to_freq_y4 = 0.550000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 0.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 4.500000
+		fade_over_time_y3 = 0.650000
+		fade_over_time_x4 = 10.000000
+		fade_over_time_y4 = 0.500000
+		enable_debug_radius = 0.000000
+		soundname_string = "Grabbity.BeamLp"
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.300000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_beam_lp_01.vsnd",
+		]
+	}
+	Grabbity.BeamEnd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 2.000000
+		volume_falloff_min = 75.000000
+		volume_falloff_max = 205.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "Grabbity.TeslaFingers"
+		limiter_match_substring = 1.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "Grabbity.BeamEnd"
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_end_beam_01.vsnd",
+		]
+	}
+	Grabbity.BeamMovement = 
+	{
+		type = "hlvr_ambient_rand_particle_control_point"
+		random_soundevent_01_name = "Grabbity.BeamMovementChild"
+		random_soundevent_01_timer_min = 0.050000
+		random_soundevent_01_timer_max = 0.350000
+		use_initial_random_offset = 1.000000
+	}
+	Grabbity.BeamMovementChild = 
+	{
+		type = "hlvr_ambient_rand_child_random_anim_time"
+		volume = 0.200000
+		volume_rand_min = -0.020000
+		volume_rand_max = 0.050000
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 205.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.250000
+		animation_time_min = 0.500000
+		animation_time_max = 1.750000
+		volume_fade_in = 0.250000
+		volume_fade_out = 0.500000
+		use_calculated_stop_at_time = 1.000000
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		animation_type = "lerp"
+		use_doppler = 1.000000
+		doppler_factor = 2.500000
+		mixgroup = "PlayerInventory"
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 6.000000
+		limiter_event_name = "Grabbity.BeamMovementChild"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = true
+		enable_debug_radius = 0.000000
+		soundname_string = "Grabbity.BeamMovement"
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_beam_spawns_01.vsnd",
+			"sounds/player/grabbity/grabbity_beam_spawns_02.vsnd",
+			"sounds/player/grabbity/grabbity_beam_spawns_03.vsnd",
+			"sounds/player/grabbity/grabbity_beam_spawns_04.vsnd",
+			"sounds/player/grabbity/grabbity_beam_spawns_05.vsnd",
+			"sounds/player/grabbity/grabbity_beam_spawns_06.vsnd",
+		]
+	}
+	Grabbity.HoverPing = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_event_name = "Grabbity.HoverPing"
+		limiter_match_substring = 1.000000
+		limiter_stop_oldest = true
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_hover_ping_01.vsnd",
+		]
+	}
+	Grabbity.HoverPingEnd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_event_name = "Grabbity.HoverPing"
+		limiter_match_substring = 1.000000
+		limiter_stop_oldest = true
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_hover_ping_end_01.vsnd",
+		]
+	}
+	Grabbity.TeslaFingersSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.060000
+		use_hrtf = 1.000000
+		delay = 0.500000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 65.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_elec_ladder_sm_01.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_sm_02.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_sm_03.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_sm_04.vsnd",
+		]
+	}
+	Grabbity.TeslaFingersMd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.060000
+		use_hrtf = 1.000000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 65.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_elec_ladder_md_01.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_md_02.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_md_03.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_md_04.vsnd",
+		]
+	}
+	Grabbity.TeslaFingersLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.060000
+		use_hrtf = 1.000000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 65.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		enable_debug_radius = 0.000000
+		soundname_string = "Grabbity.TeslaFingersLg"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_elec_ladder_lg_01.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_lg_02.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_lg_03.vsnd",
+			"sounds/player/grabbity/grabbity_elec_ladder_lg_04.vsnd",
+		]
+	}
+	Grabbity.CalibrationSignalBase = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 1.000000
+		volume = 0.550000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.200000
+		global_opvar_name_01 = "grabbity_calibration_completion_pct"
+		global_opvar_to_vol_mult_min = 0.800000
+		global_opvar_to_vol_mult = 1.000000
+		global_opvar_vol_base = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		remap_distance_to_freq_x1 = 1.000000
+		remap_distance_to_freq_y1 = 1.000000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 1.000000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 1.000000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/stations/grabbity_calibration/grabbity_calibration_signal_lp_01.vsnd",
+		]
+	}
+	Grabbity.CalibrationSignalCarrier = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 1.000000
+		volume = 0.850000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.200000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		global_opvar_name_01 = "grabbity_calibration_completion_pct"
+		global_opvar_name_02 = "grabbity_calibration_completion_pct"
+		filter_velocity = 1.000000
+		remap_global_opvar_x1 = 0.000000
+		remap_global_opvar_y1 = 0.000000
+		remap_global_opvar_x2 = 0.700000
+		remap_global_opvar_y2 = 1.000000
+		remap_global_opvar_x3 = 0.740000
+		remap_global_opvar_y3 = 1.000000
+		remap_global_opvar_x4 = 1.000000
+		remap_global_opvar_y4 = 0.000000
+		global_opvar_to_pitch_mult_min = 0.750000
+		global_opvar_to_pitch_mult = 1.000000
+		global_opvar_pitch_base = 1.000000
+		global_opvar_to_vol_mult_min_02 = 0.350000
+		global_opvar_to_vol_mult_02 = 1.000000
+		global_opvar_vol_base_02 = 1.000000
+		remap_distance_to_freq_x1 = 0.000000
+		remap_distance_to_freq_y1 = 0.500000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 1.000000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 1.000000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/stations/grabbity_calibration/grabbity_calibration_carrier_lp_01.vsnd",
+		]
+	}
+	Grabbity.CalibrationSignalCarrierStage2 = 
+	{
+		base = "Grabbity.CalibrationSignalCarrier"
+		remap_global_opvar_x2 = 0.200000
+		remap_global_opvar_x3 = 0.240000
+		mixgroup = "PlayerInventory"
+	}
+	Grabbity.CalibrationSignalCarrierStage3 = 
+	{
+		base = "Grabbity.CalibrationSignalCarrier"
+		remap_global_opvar_x2 = 0.870000
+		remap_global_opvar_x3 = 0.910000
+		mixgroup = "PlayerInventory"
+	}
+	Grabbity.CalibrationSignalSwt = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 1.000000
+		volume = 0.500000
+		volume_fade_in = 1.000000
+		volume_fade_out = 2.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		global_opvar_name_01 = "grabbity_calibration_completion_pct"
+		global_opvar_name_02 = "grabbity_calibration_completion_pct"
+		filter_velocity = 0.800000
+		global_opvar_to_vol_mult_min = 0.000000
+		global_opvar_to_vol_mult = 1.000000
+		global_opvar_vol_base = 1.000000
+		global_opvar_to_vol_mult_min_02 = 0.350000
+		global_opvar_to_vol_mult_02 = 1.000000
+		global_opvar_vol_base_02 = 1.000000
+		remap_global_opvar_x1 = 0.000000
+		remap_global_opvar_y1 = 0.000000
+		remap_global_opvar_x2 = 0.570000
+		remap_global_opvar_y2 = 0.000000
+		remap_global_opvar_x3 = 0.720000
+		remap_global_opvar_y3 = 1.000000
+		remap_global_opvar_x4 = 0.870000
+		remap_global_opvar_y4 = 0.000000
+		remap_distance_to_freq_x1 = 0.000000
+		remap_distance_to_freq_y1 = 0.000000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 1.000000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 1.000000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/stations/grabbity_calibration/grabbity_calibration_swt_lp_01.vsnd",
+		]
+	}
+	Grabbity.CalibrationSignalSwtStage2 = 
+	{
+		base = "Grabbity.CalibrationSignalSwt"
+		remap_global_opvar_x2 = 0.070000
+		remap_global_opvar_x3 = 0.220000
+		mixgroup = "PlayerInventory"
+	}
+	Grabbity.CalibrationSignalSwtStage3 = 
+	{
+		base = "Grabbity.CalibrationSignalSwt"
+		remap_global_opvar_x2 = 0.740000
+		remap_global_opvar_x3 = 0.890000
+		mixgroup = "PlayerInventory"
+	}
+	Grabbity.CalibrationSignal = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Grabbity.CalibrationSignalBase"
+		soundevent_02 = "Grabbity.CalibrationSignalCarrier"
+		soundevent_03 = "Grabbity.CalibrationSignalSwt"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Grabbity.CalibrationSignalStage2 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Grabbity.CalibrationSignalBase"
+		soundevent_02 = "Grabbity.CalibrationSignalCarrierStage2"
+		soundevent_03 = "Grabbity.CalibrationSignalSwtStage2"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Grabbity.CalibrationSignalStage3 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Grabbity.CalibrationSignalBase"
+		soundevent_02 = "Grabbity.CalibrationSignalCarrierStage3"
+		soundevent_03 = "Grabbity.CalibrationSignalSwtStage3"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Grabbity.CalibrationClickManager = 
+	{
+		type = "hlvr_click_player"
+		soundevent_name = "Grabbity.CalibrationClick"
+	}
+	Grabbity.CalibrationClick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 235.000000
+		use_facing_vol_attenuation = 1.000000
+		facing_scale_min = 0.350000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/stations/grabbity_calibration/grabbity_calibration_click_01.vsnd",
+		]
+	}
+	Inventory.Appear = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_appear_01.vsnd",
+		]
+	}
+	Inventory.Disappear = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_disappear_01.vsnd",
+		]
+	}
+	Inventory.Select = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_select_01.vsnd",
+		]
+	}
+	Inventory.Invalid = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_invalid_01.vsnd",
+		]
+	}
+	Inventory.Rollover = 
+	{
+		base = "Inventory.Select"
+		volume = 0.350000
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_rollover_01.vsnd",
+		]
+	}
+	Instructor.StartLesson = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/ui/beepclear.vsnd",
+		]
+	}
+	Inventory.BackpackAcquire = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_backpack_acquire_01.vsnd",
+		]
+	}
+	WristWatch.HeartMonitor = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		global_opvar_to_vol_mult_min = 0.400000
+		global_opvar_to_vol_mult = 1.000000
+		filter_velocity = 2.000000
+		global_opvar_name_01 = "player_is_looking_at_watch"
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_watch_heart_monitor_01.vsnd",
+			"sounds/player/inventory/player_watch_heart_monitor_02.vsnd",
+			"sounds/player/inventory/player_watch_heart_monitor_03.vsnd",
+		]
+	}
+	WristWatch.HealthAlarm = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 55.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_watch_health_alarm_01.vsnd",
+		]
+	}
+	WristWatch.HealthAlarmAck = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 55.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_watch_health_alarm_ack_01.vsnd",
+		]
+	}
+	WristWatch.ResinMonitor = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		global_opvar_to_vol_mult_min = 0.200000
+		global_opvar_to_vol_mult = 1.000000
+		filter_velocity = 1.500000
+		global_opvar_name_01 = "player_is_looking_at_watch"
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_watch_resin_monitor_01.vsnd",
+			"sounds/player/inventory/player_watch_resin_monitor_02.vsnd",
+		]
+	}
+	WristWatch.AmmoMonitor = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 5.000000
+		volume_falloff_max = 25.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/player_watch_ammo_monitor_01.vsnd",
+		]
+	}
+	Multitool.SignalBase = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 0.000000
+		volume = 0.240000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.200000
+		global_opvar_name_01 = "tool_puzzle_particle_count"
+		global_opvar_name_02 = "tool_puzzle_highlight_pct"
+		filter_velocity = 5.000000
+		pitch_rand_min = 0.250000
+		pitch_rand_max = 0.250000
+		global_opvar_to_vol_mult_min = 0.850000
+		global_opvar_to_vol_mult = 1.000000
+		global_opvar_to_pitch_mult_min = 0.990000
+		global_opvar_to_pitch_mult = 1.000000
+		global_opvar_vol_base = 1.000000
+		remap_global_opvar_x1 = 0.000000
+		remap_global_opvar_y1 = 0.000000
+		remap_global_opvar_x2 = 12.000000
+		remap_global_opvar_y2 = 0.000000
+		remap_global_opvar_x3 = 35.000000
+		remap_global_opvar_y3 = 0.800000
+		remap_global_opvar_x4 = 50.000000
+		remap_global_opvar_y4 = 1.000000
+		global_opvar_to_vol_mult_min_02 = 0.250000
+		global_opvar_to_vol_mult_02 = 1.100000
+		global_opvar_vol_base_02 = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		remap_distance_to_freq_x1 = 0.000000
+		remap_distance_to_freq_y1 = 0.250000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 0.950000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 0.950000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 0.950000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_signal_lp_01.vsnd",
+		]
+	}
+	Multitool.SignalCarrier = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 0.000000
+		volume = 0.360000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.200000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		pitch_rand_min = 0.250000
+		pitch_rand_max = 0.250000
+		global_opvar_name_01 = "tool_puzzle_highlight_pct"
+		global_opvar_name_02 = "tool_puzzle_pulse_intensity"
+		filter_velocity = 0.200000
+		global_opvar_to_pitch_mult_min = 0.990000
+		global_opvar_to_pitch_mult = 1.000000
+		global_opvar_pitch_base = 1.000000
+		global_opvar_to_vol_mult_min_02 = 0.350000
+		global_opvar_to_vol_mult_02 = 1.000000
+		global_opvar_vol_base_02 = 1.000000
+		remap_global_opvar_02_x1 = 0.000000
+		remap_global_opvar_02_y1 = 0.000000
+		remap_global_opvar_02_x2 = 0.200000
+		remap_global_opvar_02_y2 = 1.000000
+		remap_global_opvar_02_x3 = 0.200000
+		remap_global_opvar_02_y3 = 1.000000
+		remap_global_opvar_02_x4 = 0.200000
+		remap_global_opvar_02_y4 = 1.000000
+		remap_distance_to_freq_x1 = 0.000000
+		remap_distance_to_freq_y1 = 0.300000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 0.850000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 0.850000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 0.850000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_carrier_lp_01.vsnd",
+		]
+	}
+	Multitool.SignalSwt = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		normal_mode = 0.000000
+		volume = 0.250000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		pitch_rand_min = 0.250000
+		pitch_rand_max = 0.250000
+		global_opvar_name_01 = "tool_puzzle_particle_count"
+		global_opvar_name_02 = "tool_puzzle_pulse_intensity"
+		filter_velocity = 5.000000
+		global_opvar_to_vol_mult_min = 0.000000
+		global_opvar_to_vol_mult = 1.000000
+		global_opvar_vol_base = 1.000000
+		global_opvar_to_pitch_mult_min = 0.990000
+		global_opvar_to_pitch_mult = 1.000000
+		global_opvar_to_vol_mult_min_02 = 0.300000
+		global_opvar_to_vol_mult_02 = 1.000000
+		global_opvar_vol_base_02 = 1.000000
+		remap_global_opvar_x1 = 0.000000
+		remap_global_opvar_y1 = 0.000000
+		remap_global_opvar_x2 = 12.000000
+		remap_global_opvar_y2 = 0.000000
+		remap_global_opvar_x3 = 35.000000
+		remap_global_opvar_y3 = 0.800000
+		remap_global_opvar_x4 = 50.000000
+		remap_global_opvar_y4 = 1.000000
+		remap_global_opvar_02_x1 = 0.000000
+		remap_global_opvar_02_y1 = 0.000000
+		remap_global_opvar_02_x2 = 0.200000
+		remap_global_opvar_02_y2 = 1.000000
+		remap_global_opvar_02_x3 = 0.200000
+		remap_global_opvar_02_y3 = 1.000000
+		remap_global_opvar_02_x4 = 0.200000
+		remap_global_opvar_02_y4 = 1.000000
+		remap_distance_to_freq_x1 = 0.000000
+		remap_distance_to_freq_y1 = 0.500000
+		remap_distance_to_freq_x2 = 1.000000
+		remap_distance_to_freq_y2 = 1.000000
+		remap_distance_to_freq_x3 = 1.000000
+		remap_distance_to_freq_y3 = 1.000000
+		remap_distance_to_freq_x4 = 1.000000
+		remap_distance_to_freq_y4 = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_swt_lp_01.vsnd",
+		]
+	}
+	Multitool.SignalClickSingle = 
+	{
+		type = "hlvr_3d_pitch_vol_opvar"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		pitch_rand_min = 1.800000
+		pitch_rand_max = 2.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		global_opvar_name_01 = "tool_puzzle_pulse_intensity"
+		filter_velocity = 0.200000
+		global_opvar_to_vol_mult_min = 0.000000
+		global_opvar_to_vol_mult = 1.000000
+		global_opvar_vol_base = 1.000000
+		remap_global_opvar_x1 = 0.000000
+		remap_global_opvar_y1 = 0.450000
+		remap_global_opvar_x2 = 0.200000
+		remap_global_opvar_y2 = 1.000000
+		remap_global_opvar_x3 = 0.200000
+		remap_global_opvar_y3 = 1.000000
+		remap_global_opvar_x4 = 0.200000
+		remap_global_opvar_y4 = 1.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "Multitool.SignalClickSingle"
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_01.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_02.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_03.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_04.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_05.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_puzzle_click_06.vsnd",
+		]
+	}
+	Multitool.SignalClickBurst = 
+	{
+		type = "hlvr_ambient_burst"
+		soundevent_name = "Multitool.SignalClickSingle"
+		burst_length_min = 0.800000
+		burst_length_max = 1.500000
+		delay_timer_min = 0.030000
+		delay_timer_max = 0.100000
+		delay_offset_min = 0.000000
+		delay_offset_max = 0.000000
+	}
+	Multitool.SignalClickRand = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "Multitool.SignalClickBurst"
+		random_soundevent_01_timer_min = 1.500000
+		random_soundevent_01_timer_max = 2.500000
+		use_initial_random_offset = 1.000000
+		input_min_delay_adjust_mult_01 = 0.150000
+		input_max_delay_adjust_mult_01 = 0.100000
+		global_opvar_name_01 = "tool_puzzle_particle_count"
+		remap_global_opvar_01_x1 = 0.000000
+		remap_global_opvar_01_y1 = 0.000000
+		remap_global_opvar_01_x2 = 65.000000
+		remap_global_opvar_01_y2 = 1.000000
+		remap_global_opvar_01_x3 = 65.000000
+		remap_global_opvar_01_y3 = 1.000000
+		remap_global_opvar_01_x4 = 65.000000
+		remap_global_opvar_01_y4 = 1.000000
+	}
+	Multitool.SignalClick = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Multitool.SignalClickRand"
+		soundevent_02 = "Multitool.SignalClickBurst"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Multitool.Signal = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Multitool.SignalBase"
+		soundevent_02 = "Multitool.SignalCarrier"
+		soundevent_03 = "Multitool.SignalSwt"
+		soundevent_04 = "Multitool.SignalClick"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Multitool.Shock = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/npc/roller/mine/rmine_shockvehicle1.vsnd",
+		]
+	}
+	Multitool.ChargedLoop = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.500000
+		volume_falloff_max = 40.000000
+		volume_falloff_min = 0.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/ambient/electric/amb_electric_buzz_lp_03.vsnd",
+		]
+	}
+	Multitool.ShockDeny = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.800000
+		volume_falloff_min = 0.000000
+		volume_falloff_max = 60.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/weapons/physcannon/superphys_small_zap1.vsnd",
+			"sounds/weapons/physcannon/superphys_small_zap2.vsnd",
+			"sounds/weapons/physcannon/superphys_small_zap3.vsnd",
+			"sounds/weapons/physcannon/superphys_small_zap4.vsnd",
+		]
+	}
+	Multitool_Dowse.Standing_Loop = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.500000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/weapons/physcannon/hold_loop.vsnd",
+		]
+	}
+	Multitool_Dowse.Empty_Loop = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.300000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/ambient/electric/amb_electric_buzz_lp_01.vsnd",
+		]
+	}
+	Multitool_Dowse.Warmer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.500000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_hover_ping_01.vsnd",
+		]
+	}
+	Multitool_Dowse.Colder = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.500000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/grabbity/grabbity_end_beam_01.vsnd",
+		]
+	}
+	Multitool_Dowse.Discover = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.500000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/plats/elevbell1.vsnd",
+		]
+	}
+	Flashlight.On = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/buttons/button9.vsnd",
+		]
+	}
+	Flashlight.Off = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/buttons/button9.vsnd",
+		]
+	}
+	RadioHeadset.PutOn = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/radio_headset_put_on.vsnd",
+		]
+	}
+	RadioHeadset.Interrupt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/radio_headset_interrupt.vsnd",
+		]
+	}
+	HackingSphere.Appear = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		spread_min = 8.000000
+		spread_max = 48.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_appear_01.vsnd",
+		]
+	}
+	HackingSphere.Disappear = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.950000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_disappear_01.vsnd",
+		]
+	}
+	HackingSphere.GrabActivate = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_grab_activate_01.vsnd",
+		]
+	}
+	HackingSphere.PointRollover = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_pingover_01.vsnd",
+		]
+	}
+	HackingSphere.PointRolloff = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_pingoff_01.vsnd",
+		]
+	}
+	HackingSphere.GrabPoint = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_grab_point_01.vsnd",
+		]
+	}
+	HackingSphere.SuccessBeep = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.310000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_success_beep_01.vsnd",
+		]
+	}
+	HackingSphere.FailureBeep = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.380000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_failure_beep_01.vsnd",
+		]
+	}
+	HackingSphere.FailureBeepLow = 
+	{
+		base = "HackingSphere.FailureBeep"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_failure_beep_low_01.vsnd",
+		]
+	}
+	HackingSphere.DroneLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 1.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_sphere_drone_lp_01.vsnd",
+		]
+	}
+	HackingSphere.PuzzleActivatedLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "HackingSphere.SphereMelodyLp"
+		soundevent_02 = "HackingSphere.SphereRhythmLp"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	HackingSphere.SphereMelodyLp = 
+	{
+		type = "hlvr_simple_voicegraph_filter_dynamics"
+		volume = 0.700000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		global_opvar_name = "sphere_hacking_value"
+		remap_opvar_to_freq_x1 = 0.500000
+		remap_opvar_to_freq_y1 = 0.700000
+		remap_opvar_to_freq_x2 = 0.500000
+		remap_opvar_to_freq_y2 = 0.700000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.700000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_melody_lp_01.vsnd",
+		]
+	}
+	HackingSphere.SphereMelodyTail = 
+	{
+		base = "HackingSphere.SphereMelodyLp"
+		volume = 0.580000
+		volume_fade_in = 0.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_tail_01.vsnd",
+		]
+	}
+	HackingSphere.SphereRhythmLp = 
+	{
+		type = "hlvr_simple_voicegraph_filter_dynamics"
+		volume = 0.300000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		global_opvar_name = "sphere_hacking_value"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 0.400000
+		remap_opvar_to_freq_x2 = 0.500000
+		remap_opvar_to_freq_y2 = 0.600000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.600000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 0.950000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_sphere_rhythm_lp_01.vsnd",
+		]
+	}
+	HackingPuzzle.TripmineSuccess = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_puzzle_tripmine_success_01.vsnd",
+		]
+	}
+	HackingPuzzle.TripmineFailure = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "HackingPuzzle.TripmineFailureBeep"
+		soundevent_02 = "HackingPuzzle.TripmineFailureExplo"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	HackingPuzzle.TripmineFailureBeep = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_puzzle_tripmine_failure_01.vsnd",
+		]
+	}
+	HackingPuzzle.TripmineFailureExplo = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_puzzle_tripmine_failure_explo_01.vsnd",
+		]
+	}
+	HackingPuzzle.TripminePulse = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.300000
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_puzzle_tripmine_pulse_01.vsnd",
+		]
+	}
+	HackingPuzzle.TripmineRing = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.500000
+		vsnd_selection_type = "forward"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_01.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_02.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_03.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_04.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_05.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_06.vsnd",
+			"sounds/world/hacking/hacking_puzzle_tripmine_ring_07.vsnd",
+		]
+	}
+	HackingPuzzle.FailureExplo = 
+	{
+		base = "HackingSphere.Appear"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_failure_explo_01.vsnd",
+		]
+	}
+	HackingPuzzle.InitHoloAppear = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		spread_min = 20.000000
+		spread_max = 150.000000
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_appear_01.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_02.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_03.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_04.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_05.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_06.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_07.vsnd",
+		]
+	}
+	HackingPuzzle.InitHoloAppearIndv = 
+	{
+		base = "HackingPuzzle.InitHoloAppear"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_appear_indv_01.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_02.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_03.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_04.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_05.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_06.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_07.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_08.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_09.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_10.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_11.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_12.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_13.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_14.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_15.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_16.vsnd",
+		]
+	}
+	HackingPuzzle.InitHoloAppearIndvEnd = 
+	{
+		base = "HackingPuzzle.InitHoloAppear"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_appear_indv_end_01.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_02.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_03.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_04.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_05.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_06.vsnd",
+			"sounds/world/hacking/hacking_holo_appear_indv_end_07.vsnd",
+		]
+	}
+	HackingPuzzle.InitHoloMeshAppear = 
+	{
+		base = "HackingPuzzle.InitHoloAppear"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_intro_mesh_appear_01.vsnd",
+		]
+	}
+	HackingPuzzle.InitHoloMeshDisappear = 
+	{
+		base = "HackingPuzzle.InitHoloAppear"
+		vsnd_files = 
+		[
+			"sounds/world/hacking/hacking_holo_intro_mesh_disappear_01.vsnd",
+		]
+	}
+	HackingPlug.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.380000
+		spread_min = 18
+		spread_max = 48
+		volume_falloff_min = 55.000000
+		volume_falloff_max = 255.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_plug_move_01.vsnd",
+		]
+	}
+	HackingPlug.Connect = 
+	{
+		base = "HackingPlug.Move"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_plug_connect_01.vsnd",
+		]
+	}
+	Inventory.SelectSame = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/inv_select_01.vsnd",
+		]
+	}
+	Inventory.Camera_Shot = 
+	{
+		type = "src1_2d"
+		volume = 0.600000
+		mixgroup = "PlayerInventory"
+		vsnd_files = 
+		[
+			"sounds/player/inventory/camera_collect_shot.vsnd",
+		]
+	}
+}

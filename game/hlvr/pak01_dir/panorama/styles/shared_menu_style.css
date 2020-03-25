@@ -1,0 +1,100 @@
+.hidden
+{
+    visibility: collapse;
+}
+
+.dev_only
+{
+    visibility: visible;
+}
+
+Button Label
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+}
+
+Button
+{
+	background-color: #999999;
+	horizontal-align: center;
+	border: 4px solid black;
+	margin: 5px;
+	padding: 15px;
+}
+
+Button:hover
+{
+	border: 4px solid white;
+	background-color: #f2a50d;
+}
+
+Button:active
+{
+	background-color: white;
+	border: 4px solid #f2a50d;
+}
+Button:active Label
+{
+	color: #999999;
+}
+
+.columns Button
+{
+	width: 100%;
+}
+
+.columns
+{
+	flow-children: right;
+	width: 100%;
+}
+
+.rows
+{
+	width: 100%;
+}
+
+.horizontal_button_list
+{
+	flow-children: right;
+}
+
+.button_list
+{
+	flow-children: down;
+	width: fill-parent-flow(1);
+}
+
+.header
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+}
+
+.rows.commands
+{
+    padding-bottom: 50px;
+}
+.rows.commands .horizontal_button_list
+{
+    horizontal-align: center;
+}
+.rows.commands Button
+{
+    height: 100px;
+    width: 300px;
+}
+.rows.commands Button Label
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+}

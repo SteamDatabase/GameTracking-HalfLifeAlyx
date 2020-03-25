@@ -1,0 +1,18 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/base_styles.vcss_c" />
+    <include src="s2r://panorama/styles/world_signage.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <Panel class="WorldSignage">
+		<Panel class="SignageTextLeft">
+			<Label id='line1' text="#HLVR_Signage_Infestation_Control1" class="InfestationControl" />
+		</Panel>
+		<Panel class="SignageTextLeft">
+			<Label id='line2' text="#HLVR_Signage_Infestation_Control2" class="InfestationControl" />
+		</Panel>
+	</Panel>
+</root>
+
+

@@ -1,0 +1,99 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	border: 0px solid white;
+}
+
+.Container Label
+{
+	margin-top: 10px;
+	horizontal-align: center;
+	background-color: #000000;
+	font-family: Raju;
+	font-weight: bold;
+	font-size: 55px;
+    color: white;
+	border: 0px solid red;
+}
+
+#LarryShootBarnacle01,
+{
+	visibility: visible;
+}
+
+#LarryShootBarnacle02,
+#LarryShootBarnacle03,
+#LarryShootBarnacle04,
+#LarryShootBarnacle05,
+#LarryShootBarnacle06,
+#LarryIntro01,
+#LarryIntro02,
+#LarryIntro03,
+#LarryIntro04,
+#LarryIntro05,
+#LarryIntro06,
+#LarryIntro07,
+#LarryIntro08,
+#LarryCough01,
+#LarryCough02,
+{
+	visibility: collapse;
+}
+
+.ShowLarryShootBarnacle02 #LarryShootBarnacle02,
+.ShowLarryShootBarnacle03 #LarryShootBarnacle03,
+.ShowLarryShootBarnacle04 #LarryShootBarnacle04,
+.ShowLarryShootBarnacle05 #LarryShootBarnacle05,
+.ShowLarryShootBarnacle06 #LarryShootBarnacle06,
+.ShowLarryIntro01 #LarryIntro01,
+.ShowLarryIntro02 #LarryIntro02,
+.ShowLarryIntro03 #LarryIntro03,
+.ShowLarryIntro04 #LarryIntro04,
+.ShowLarryIntro05 #LarryIntro05,
+.ShowLarryIntro06 #LarryIntro06,
+.ShowLarryIntro07 #LarryIntro07,
+.ShowLarryIntro08 #LarryIntro08,
+.ShowLarryCough01 #LarryCough01,
+.ShowLarryCough02 #LarryCough02,
+{
+	visibility: visible;
+}
+
+.LarryShootBarnacle02 #ShowLarryShootBarnacle01,
+.LarryShootBarnacle03 #ShowLarryShootBarnacle02,
+.LarryShootBarnacle04 #ShowLarryShootBarnacle03,
+.LarryShootBarnacle05 #ShowLarryShootBarnacle04,
+.LarryShootBarnacle06 #ShowLarryShootBarnacle05,
+.LarryIntro02 #ShowLarryIntro01,
+.LarryIntro03 #ShowLarryIntro02,
+.LarryIntro04 #ShowLarryIntro03,
+.LarryIntro05 #ShowLarryIntro04,
+.LarryIntro06 #ShowLarryIntro05,
+.LarryIntro07 #ShowLarryIntro06,
+.LarryIntro08 #ShowLarryIntro07,
+.ShowLarryCough02 #ShowLarryCough01,
+{
+	visibility: collapse;
+}
+
+.HideLarryShootBarnacle01 #LarryShootBarnacle01,
+.HideLarryShootBarnacle02 #LarryShootBarnacle02,
+.HideLarryShootBarnacle03 #LarryShootBarnacle03,
+.HideLarryShootBarnacle04 #LarryShootBarnacle04,
+.HideLarryShootBarnacle05 #LarryShootBarnacle05,
+.HideLarryShootBarnacle06 #LarryShootBarnacle06,
+.HideLarryIntro01 #LarryIntro01,
+.HideLarryIntro02 #LarryIntro02,
+.HideLarryIntro03 #LarryIntro03,
+.HideLarryIntro04 #LarryIntro04,
+.HideLarryIntro05 #LarryIntro05,
+.HideLarryIntro06 #LarryIntro06,
+.HideLarryIntro07 #LarryIntro07,
+.HideLarryIntro08 #LarryIntro08,
+.HideLarryCough01 #LarryCough01,
+.HideLarryCough02 #LarryCough02,
+{
+	visibility: collapse;
+}

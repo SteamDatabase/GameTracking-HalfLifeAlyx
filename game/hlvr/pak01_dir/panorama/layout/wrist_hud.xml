@@ -1,0 +1,29 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/wrist_hud.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<HLVRWristHUD class="WristHUD" id="WristHUD">
+			<Panel class ="HealthPanel">
+        <Label class="StatTitle" text="HP" />
+        <Label class="HealthSeperator" text=":" />
+        <ProgressBar id="HealthProgressBar" min="0" max="100" />
+        <ProgressBar id="HealthProgressBarBackground" min="0" max="100" />
+        <Label class="StatLabel" id="Health" text="{i:HealthAmount}" />
+			</Panel>
+			<Panel class="StatPanel">
+				<Label class="StatTitle" text="Ammo" />
+        <Label class="Seperator" text=":" />
+				<Label class="StatLabel" id="Ammo" text="{i:AmmoAmount}" />
+			</Panel>
+			<Panel class="StatPanel">
+				<Label class="StatTitle" text="Resin" />
+        <Label class="Seperator" text=":" />
+				<Label class="StatLabel" id="Currency" text="{i:CurrencyAmount}" />
+			</Panel>
+		</HLVRWristHUD>
+	</ClientUIDialogPanel>
+</root>

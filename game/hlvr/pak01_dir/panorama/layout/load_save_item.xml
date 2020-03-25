@@ -1,0 +1,30 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+    <include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/game_menu_ui.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/game_menu_ui.vjs_c" />
+	</scripts>
+
+  <Button class="LoadSaveGameItem">
+    <Panel class="row">
+      <Image id="ItemThumbImage" class="ScreenshotThumb" scaling="stretch-to-cover-preserve-aspect" />
+      <Panel id="loadsave_desc_container">
+        <Label class="ChapterNumber" text="{s:chapter_number}"/>
+        <Label class="ChapterName" text="{s:chapter_name}"/>
+        <Label class="SaveType" id="SaveType" text="{s:save_type}"/>
+        <Label class="ElapsedTimeSince" text="{t:s:t:time_saved}"/>
+        <Panel class="Stats_Container">
+          <Label class="Stats" text="HP:{s:health}  Resin:{s:currency}"/>
+          <Label class="Stats" text="Ammo: {s:pistol}  {s:shotgun}  {s:rapidfire}"/>
+        </Panel>
+      </Panel>
+    </Panel>
+  </Button>
+    
+</root>
+
+

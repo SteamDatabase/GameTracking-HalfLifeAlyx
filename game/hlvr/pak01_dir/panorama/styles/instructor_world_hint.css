@@ -1,0 +1,57 @@
+/* styles for the player hud */
+
+.RootPanel {
+    /*background-color: #00AA00AA;*/
+}
+
+.WorldUITextPanel {
+	width: 100%;
+	height: fit-children;
+    flow-children: up;
+    vertical-align: bottom;
+}
+
+.HintPanel {
+    flow-children: right;
+    horizontal-align: center;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: #000000FF;
+
+    width: 100%;
+    height: 100%;
+    background-color: #404654;
+    border: 8px solid #f2a50d;
+    border-radius: 12px;
+
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+}
+
+.TextContainer
+{
+    margin: 5px;
+}
+    
+.HintLabel {
+    text-align: center;
+    font-family: "Arial";
+}
+
+.ControllerHint {
+    font-size: 14px;
+    color: rgb(229, 229, 229);
+}
+
+.ItemHint {
+    font-size: 80px;
+    color: rgb(229, 229, 229);
+}
+
+.LargeItemHint {
+    font-size: 150px;
+    color: rgb(229, 229, 229);
+}
+
+#Hint {
+}

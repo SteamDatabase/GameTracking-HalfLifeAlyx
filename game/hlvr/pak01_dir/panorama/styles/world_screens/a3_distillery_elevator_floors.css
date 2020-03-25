@@ -1,0 +1,54 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	border: 0px solid white;
+}
+
+.Container Label
+{
+	margin-top: -10px;
+	horizontal-align: center;
+	background-color: #000000;
+	font-family: Raju;
+	font-weight: bold;
+	font-size: 90px;
+    color: red;
+	border: 0px solid red;
+}
+
+#Floor1,
+{
+	visibility: visible;
+}
+
+#Floor2,
+#Floor3,
+#Floor4,
+#Floor5,
+#Floor6,
+#Floor7,
+{
+	visibility: collapse;
+}
+
+.ShowFloor2 #Floor2,
+.ShowFloor3 #Floor3,
+.ShowFloor4 #Floor4,
+.ShowFloor5 #Floor5,
+.ShowFloor6 #Floor6,
+.ShowFloor7 #Floor7,
+{
+	visibility: visible;
+}
+
+.ShowFloor2 #Floor1,
+.ShowFloor3 #Floor2,
+.ShowFloor4 #Floor3,
+.ShowFloor5 #Floor4,
+.ShowFloor6 #Floor5,
+.ShowFloor7 #Floor6,
+{
+	visibility: collapse;
+}

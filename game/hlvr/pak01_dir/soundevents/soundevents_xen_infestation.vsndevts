@@ -1,0 +1,3223 @@
+{
+	XenInfest.Bulb_Spew = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 250.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		distance_max = 201.000000
+		use_hrtf = 1.000000
+		occlusion_radius = 10.000000
+		occlusion_scale = 0.900000
+		delay_rand_min = 0.010000
+		delay_rand_max = 0.100000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/bulb/spew_01.vsnd",
+			"sounds/world/infestation/bulb/spew_02.vsnd",
+			"sounds/world/infestation/bulb/spew_03.vsnd",
+			"sounds/world/infestation/bulb/spew_04.vsnd",
+			"sounds/world/infestation/bulb/spew_05.vsnd",
+			"sounds/world/infestation/bulb/spew_06.vsnd",
+			"sounds/world/infestation/bulb/spew_07.vsnd",
+			"sounds/world/infestation/bulb/spew_08.vsnd",
+			"sounds/world/infestation/bulb/spew_09.vsnd",
+			"sounds/world/infestation/bulb/spew_10.vsnd",
+			"sounds/world/infestation/bulb/spew_b_01.vsnd",
+			"sounds/world/infestation/bulb/spew_b_02.vsnd",
+			"sounds/world/infestation/bulb/spew_b_03.vsnd",
+			"sounds/world/infestation/bulb/spew_b_04.vsnd",
+			"sounds/world/infestation/bulb/spew_b_05.vsnd",
+			"sounds/world/infestation/bulb/spew_b_06.vsnd",
+			"sounds/world/infestation/bulb/spew_b_07.vsnd",
+			"sounds/world/infestation/bulb/spew_b_08.vsnd",
+			"sounds/world/infestation/bulb/spew_b_09.vsnd",
+			"sounds/world/infestation/bulb/spew_b_10.vsnd",
+			"sounds/world/infestation/bulb/spew_b_11.vsnd",
+			"sounds/world/infestation/bulb/spew_b_12.vsnd",
+		]
+	}
+	XenInfest.Poison_Cloud = 
+	{
+		type = "hlvr_2d_w_occlusion"
+		volume = 0.400000
+		mixgroup = "Xen"
+		block_duration = 2.000000
+		block_match_this_event = true
+		occlusion_scale = 0.000000
+		vsnd_files = 
+		[
+			"sounds/world/infestation/bulb/poison_cloud.vsnd",
+		]
+	}
+	XenInfest.Poison_Cloud_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/bulb/poison_cloud.vsnd",
+		]
+	}
+	XenInfest.Click = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 115.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_click_01.vsnd",
+			"sounds/world/infestation/xen_infest_click_02.vsnd",
+			"sounds/world/infestation/xen_infest_click_03.vsnd",
+			"sounds/world/infestation/xen_infest_click_04.vsnd",
+			"sounds/world/infestation/xen_infest_click_05.vsnd",
+			"sounds/world/infestation/xen_infest_click_06.vsnd",
+			"sounds/world/infestation/xen_infest_click_07.vsnd",
+			"sounds/world/infestation/xen_infest_click_08.vsnd",
+			"sounds/world/infestation/xen_infest_click_09.vsnd",
+			"sounds/world/infestation/xen_infest_click_10.vsnd",
+			"sounds/world/infestation/xen_infest_click_11.vsnd",
+			"sounds/world/infestation/xen_infest_click_12.vsnd",
+			"sounds/world/infestation/xen_infest_click_13.vsnd",
+			"sounds/world/infestation/xen_infest_click_14.vsnd",
+			"sounds/world/infestation/xen_infest_click_15.vsnd",
+			"sounds/world/infestation/xen_infest_click_16.vsnd",
+		]
+	}
+	XenInfest.PlantBubble = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_plant_bubble_01.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_02.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_03.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_04.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_05.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_06.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_07.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bubble_08.vsnd",
+		]
+	}
+	XenInfest.PlantPop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_plant_pop_01.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_02.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_03.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_04.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_05.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_06.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_07.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_08.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_09.vsnd",
+			"sounds/world/infestation/xen_infest_plant_pop_10.vsnd",
+		]
+	}
+	XenInfest.ShellSquishLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_shell_squish_lg_01.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_02.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_03.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_04.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_05.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_06.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_07.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_08.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_09.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_10.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_lg_11.vsnd",
+		]
+	}
+	XenInfest.ShellSquishSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_shell_squish_sm_01.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_02.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_03.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_04.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_05.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_06.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_07.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_08.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_09.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_10.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_11.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_12.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_13.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_14.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_15.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_16.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_17.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_18.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_19.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_20.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_21.vsnd",
+			"sounds/world/infestation/xen_infest_shell_squish_sm_22.vsnd",
+		]
+	}
+	XenInfest.ThrumLp = 
+	{
+		type = "hlvr_ambient_position_on_sphere"
+		volume = 0.700000
+		volume_falloff_max = 1150.000000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		sphere_position = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		sphere_radius = 65.000000
+		no_position_update = 0.000000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_thrum_lp_01.vsnd",
+		]
+	}
+	XenInfest.XenLaugh = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.XenLaughBurst"
+		random_soundevent_01_timer_min = 15.500000
+		random_soundevent_01_timer_max = 22.500000
+		use_initial_random_offset = 1.000000
+	}
+	XenInfest.XenLaughBurst = 
+	{
+		type = "hlvr_ambient_burst"
+		soundevent_name = "XenInfest.XenLaughChild"
+		burst_length_min = 7.000000
+		burst_length_max = 12.000000
+		delay_timer_min = 1.500000
+		delay_timer_max = 3.500000
+	}
+	XenInfest.XenLaughChild = 
+	{
+		type = "hlvr_ambient_rand_child_random_anim_time"
+		volume = 0.850000
+		volume_rand_min = -0.020000
+		volume_rand_max = 0.050000
+		volume_falloff_min = 750.000000
+		volume_falloff_max = 2500.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		animation_time_min = 5.000000
+		animation_time_max = 10.000000
+		use_calculated_stop_at_time = 1.000000
+		volume_fade_out = 3.000000
+		position_source = 2.000000
+		animated_target = 1.000000
+		constrain_direction = "none"
+		make_ortho_vertical = false
+		ortho_distance_min = 550.000000
+		ortho_distance_max = 1100.000000
+		ortho_flyby = 1.000000
+		unconstrained_target = 1.000000
+		animation_type = "slerp"
+		rand_radius_min = 150.000000
+		rand_radius_max = 350.000000
+		use_doppler = 1.000000
+		doppler_factor = 0.800000
+		mixgroup = "ambient"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_rand_laughs_01.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_02.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_03.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_04.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_06.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_07.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_08.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_09.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_10.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_11.vsnd",
+			"sounds/ambient/xen/amb_xen_rand_laughs_12.vsnd",
+		]
+	}
+	XenInfest.AptFoliageLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "XenInfest.AptFoliageLp_L"
+		soundevent_02 = "XenInfest.AptFoliageLp_R"
+		soundevent_03 = "XenInfest.AptFoliageLp_LS"
+		soundevent_04 = "XenInfest.AptFoliageLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	XenInfest.AptFoliageLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		mixgroup = "ambient"
+		radius = 250.000000
+		volume_falloff_min = 250.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 3.500000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_foliage_apt_lp_01_l.vsnd",
+		]
+	}
+	XenInfest.AptFoliageLp_R = 
+	{
+		base = "XenInfest.AptFoliageLp_L"
+		rotation_angle = 315.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_foliage_apt_lp_01_r.vsnd",
+		]
+	}
+	XenInfest.AptFoliageLp_LS = 
+	{
+		base = "XenInfest.AptFoliageLp_L"
+		rotation_angle = 135.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_foliage_apt_lp_01_ls.vsnd",
+		]
+	}
+	XenInfest.AptFoliageLp_RS = 
+	{
+		base = "XenInfest.AptFoliageLp_L"
+		rotation_angle = 225.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_foliage_apt_lp_01_rs.vsnd",
+		]
+	}
+	XenInfest.AmbApartmentLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "XenInfest.AmbApartmentLp_L"
+		soundevent_02 = "XenInfest.AmbApartmentLp_R"
+		soundevent_03 = "XenInfest.AmbApartmentLp_LS"
+		soundevent_04 = "XenInfest.AmbApartmentLp_RS"
+		rand_delay_min = 0.000000
+		rand_delay_max = 0.000000
+	}
+	XenInfest.AmbApartmentLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation_multi_vsnd"
+		vsnd_file_01 = "sounds/ambient/xen/amb_xen_foliage_apt_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_tenement_interior_lp_01_l.vsnd"
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = 0.500000
+		vsnd_vol_02 = 0.400000
+		vsnd_vol_03 = 0.000000
+		vsnd_vol_04 = 0.000000
+		vsnd_vol_05 = 0.000000
+		vsnd_vol_06 = 0.000000
+		vsnd_vol_07 = 0.000000
+		vsnd_vol_08 = 0.000000
+		mixgroup = "ambient"
+		radius = 250.000000
+		volume_falloff_min = 250.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.900000
+	}
+	XenInfest.AmbApartmentLp_R = 
+	{
+		base = "XenInfest.AmbApartmentLp_L"
+		vsnd_file_01 = "sounds/ambient/xen/amb_xen_foliage_apt_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_tenement_interior_lp_01_r.vsnd"
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	XenInfest.AmbApartmentLp_LS = 
+	{
+		base = "XenInfest.AmbApartmentLp_L"
+		vsnd_file_01 = "sounds/ambient/xen/amb_xen_foliage_apt_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_tenement_interior_lp_01_ls.vsnd"
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	XenInfest.AmbApartmentLp_RS = 
+	{
+		base = "XenInfest.AmbApartmentLp_L"
+		vsnd_file_01 = "sounds/ambient/xen/amb_xen_foliage_apt_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_tenement_interior_lp_01_rs.vsnd"
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	XenInfest.EradicatedXenDripping = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.EradicatedXenDrippingBurst"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 11.000000
+		use_initial_random_offset = 1.000000
+		position_random = 0.000000
+	}
+	XenInfest.EradicatedXenDrippingBurst = 
+	{
+		type = "hlvr_ambient_burst"
+		soundevent_name = "XenInfest.EradicatedXenDrippingChild"
+		burst_length_min = 3.000000
+		burst_length_max = 4.000000
+		delay_timer_min = 0.500000
+		delay_timer_max = 1.000000
+	}
+	XenInfest.EradicatedXenDrippingChild = 
+	{
+		type = "hlvr_ambient_rand_child"
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		volume = 0.220000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 400.000000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.100000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.050000
+		position_source = 2.000000
+		constrain_direction = "right_down"
+		make_ortho_vertical = true
+		ortho_distance_min = 60.000000
+		ortho_distance_max = 80.000000
+		animated_target = 1.000000
+		animation_time = 1.500000
+		animation_type = "lerp"
+		rand_radius_min = 65.000000
+		rand_radius_max = 250.000000
+		unconstrained_target = 1.000000
+		use_doppler = 1.000000
+		doppler_factor = 0.850000
+		debug_radius_max = 100.000000
+		soundname_string = "XenInfest.EradicatedXenDrippingChild"
+		vsnd_files = 
+		[
+			"sounds/ambient/xen/amb_xen_dripping_01.vsnd",
+			"sounds/ambient/xen/amb_xen_dripping_02.vsnd",
+			"sounds/ambient/xen/amb_xen_dripping_03.vsnd",
+			"sounds/ambient/xen/amb_xen_dripping_04.vsnd",
+			"sounds/ambient/xen/amb_xen_dripping_05.vsnd",
+			"sounds/ambient/xen/amb_xen_dripping_06.vsnd",
+		]
+	}
+	XenInfest.BioluminescencePropagateDangliesFloories = 
+	{
+		type = "hlvr_default_3d_xen_propagation"
+		volume = 0.500000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 45.000000
+		cull_at_distance = 320.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.100000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		limiter_on = 0.000000
+		limiter_max = 128.000000
+		limiter_event_name = "XenInfest.BioluminescencePropagate"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = false
+		limiter_match_entity = 0.000000
+		limiter_match_event_duration = 0.250000
+		remap_scale_to_pitch_x1 = 0.500000
+		remap_scale_to_pitch_y1 = 1.200000
+		remap_scale_to_pitch_x2 = 0.800000
+		remap_scale_to_pitch_y2 = 1.100000
+		remap_scale_to_pitch_x3 = 1.000000
+		remap_scale_to_pitch_y3 = 1.000000
+		remap_scale_to_pitch_x4 = 1.100000
+		remap_scale_to_pitch_y4 = 0.800000
+		remap_scale_to_vol_x1 = 0.500000
+		remap_scale_to_vol_y1 = 0.850000
+		remap_scale_to_vol_x2 = 0.800000
+		remap_scale_to_vol_y2 = 0.900000
+		remap_scale_to_vol_x3 = 1.000000
+		remap_scale_to_vol_y3 = 1.000000
+		remap_scale_to_vol_x4 = 1.250000
+		remap_scale_to_vol_y4 = 1.100000
+		round_to_bucket = 0.150000
+		remap_index_pct_to_freq_x1 = 0.000000
+		remap_index_pct_to_freq_y1 = 0.500000
+		remap_index_pct_to_freq_x2 = 0.500000
+		remap_index_pct_to_freq_y2 = 0.600000
+		remap_index_pct_to_freq_x3 = 0.750000
+		remap_index_pct_to_freq_y3 = 0.800000
+		remap_index_pct_to_freq_x4 = 1.000000
+		remap_index_pct_to_freq_y4 = 1.000000
+		index_pitch_min = 0.750000
+		index_pitch_max = 1.500000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_danglies_floories1.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories2.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories3.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories4.vsnd",
+		]
+	}
+	XenInfest.BioluminescencePropagateSphinctus = 
+	{
+		type = "hlvr_default_3d_xen_propagation"
+		volume = 0.500000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 35.000000
+		cull_at_distance = 320.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.100000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		limiter_on = 0.000000
+		limiter_max = 128.000000
+		limiter_event_name = "XenInfest.BioluminescencePropagate"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = false
+		limiter_match_entity = 0.000000
+		limiter_match_event_duration = 0.250000
+		remap_scale_to_pitch_x1 = 0.800000
+		remap_scale_to_pitch_y1 = 1.100000
+		remap_scale_to_pitch_x2 = 0.800000
+		remap_scale_to_pitch_y2 = 1.100000
+		remap_scale_to_pitch_x3 = 1.000000
+		remap_scale_to_pitch_y3 = 1.000000
+		remap_scale_to_pitch_x4 = 1.100000
+		remap_scale_to_pitch_y4 = 0.800000
+		remap_scale_to_vol_x1 = 0.500000
+		remap_scale_to_vol_y1 = 0.850000
+		remap_scale_to_vol_x2 = 0.800000
+		remap_scale_to_vol_y2 = 0.900000
+		remap_scale_to_vol_x3 = 1.000000
+		remap_scale_to_vol_y3 = 1.000000
+		remap_scale_to_vol_x4 = 1.250000
+		remap_scale_to_vol_y4 = 1.100000
+		round_to_bucket = 0.150000
+		remap_index_pct_to_freq_x1 = 0.900000
+		remap_index_pct_to_freq_y1 = 0.900000
+		remap_index_pct_to_freq_x2 = 0.950000
+		remap_index_pct_to_freq_y2 = 0.950000
+		remap_index_pct_to_freq_x3 = 1.000000
+		remap_index_pct_to_freq_y3 = 1.000000
+		remap_index_pct_to_freq_x4 = 1.000000
+		remap_index_pct_to_freq_y4 = 1.000000
+		index_pitch_min = 0.950000
+		index_pitch_max = 1.050000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_sphinctus1.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus2.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus3.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus4.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus5.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus6.vsnd",
+		]
+	}
+	XenInfest.BioluminescencePropagateUrchin = 
+	{
+		type = "hlvr_default_3d_xen_propagation"
+		volume = 0.400000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 320.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.100000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		limiter_on = 0.000000
+		limiter_max = 128.000000
+		limiter_event_name = "XenInfest.BioluminescencePropagate"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = false
+		limiter_match_entity = 0.000000
+		limiter_match_event_duration = 0.250000
+		remap_scale_to_pitch_x1 = 0.500000
+		remap_scale_to_pitch_y1 = 1.200000
+		remap_scale_to_pitch_x2 = 0.800000
+		remap_scale_to_pitch_y2 = 1.100000
+		remap_scale_to_pitch_x3 = 1.000000
+		remap_scale_to_pitch_y3 = 1.000000
+		remap_scale_to_pitch_x4 = 1.000000
+		remap_scale_to_pitch_y4 = 0.800000
+		remap_scale_to_vol_x1 = 0.500000
+		remap_scale_to_vol_y1 = 0.850000
+		remap_scale_to_vol_x2 = 0.800000
+		remap_scale_to_vol_y2 = 0.900000
+		remap_scale_to_vol_x3 = 1.000000
+		remap_scale_to_vol_y3 = 1.000000
+		remap_scale_to_vol_x4 = 1.250000
+		remap_scale_to_vol_y4 = 1.100000
+		round_to_bucket = 0.150000
+		remap_index_pct_to_freq_x1 = 0.900000
+		remap_index_pct_to_freq_y1 = 0.900000
+		remap_index_pct_to_freq_x2 = 0.900000
+		remap_index_pct_to_freq_y2 = 0.950000
+		remap_index_pct_to_freq_x3 = 0.950000
+		remap_index_pct_to_freq_y3 = 0.950000
+		remap_index_pct_to_freq_x4 = 1.000000
+		remap_index_pct_to_freq_y4 = 1.000000
+		index_pitch_min = 0.950000
+		index_pitch_max = 1.050000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_urchin1.vsnd",
+			"sounds/world/infestation/xen_infest_urchin2.vsnd",
+			"sounds/world/infestation/xen_infest_urchin3.vsnd",
+			"sounds/world/infestation/xen_infest_urchin4.vsnd",
+		]
+	}
+	XenInfest.BioluminescencePropagatePlantStalk = 
+	{
+		type = "hlvr_default_3d_xen_propagation"
+		volume = 0.500000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 35.000000
+		cull_at_distance = 320.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		limiter_on = 0.000000
+		limiter_max = 128.000000
+		limiter_event_name = "XenInfest.BioluminescencePropagate"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = false
+		limiter_match_entity = 0.000000
+		limiter_match_event_duration = 0.250000
+		remap_scale_to_pitch_x1 = 0.500000
+		remap_scale_to_pitch_y1 = 1.200000
+		remap_scale_to_pitch_x2 = 0.800000
+		remap_scale_to_pitch_y2 = 1.100000
+		remap_scale_to_pitch_x3 = 1.000000
+		remap_scale_to_pitch_y3 = 1.000000
+		remap_scale_to_pitch_x4 = 1.100000
+		remap_scale_to_pitch_y4 = 0.800000
+		remap_scale_to_vol_x1 = 0.500000
+		remap_scale_to_vol_y1 = 0.850000
+		remap_scale_to_vol_x2 = 0.800000
+		remap_scale_to_vol_y2 = 0.900000
+		remap_scale_to_vol_x3 = 1.000000
+		remap_scale_to_vol_y3 = 1.000000
+		remap_scale_to_vol_x4 = 1.250000
+		remap_scale_to_vol_y4 = 1.100000
+		round_to_bucket = 0.150000
+		remap_index_pct_to_freq_x1 = 0.900000
+		remap_index_pct_to_freq_y1 = 0.900000
+		remap_index_pct_to_freq_x2 = 0.900000
+		remap_index_pct_to_freq_y2 = 0.950000
+		remap_index_pct_to_freq_x3 = 0.950000
+		remap_index_pct_to_freq_y3 = 0.950000
+		remap_index_pct_to_freq_x4 = 1.000000
+		remap_index_pct_to_freq_y4 = 1.000000
+		index_pitch_min = 0.850000
+		index_pitch_max = 1.050000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_plant_stalk1.vsnd",
+			"sounds/world/infestation/xen_infest_plant_stalk2.vsnd",
+			"sounds/world/infestation/xen_infest_plant_stalk3.vsnd",
+		]
+	}
+	XenInfest.BioluminescencePropagatePlantBulb = 
+	{
+		type = "hlvr_default_3d_xen_propagation"
+		volume = 0.450000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 25.000000
+		cull_at_distance = 320.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		limiter_on = 0.000000
+		limiter_max = 128.000000
+		limiter_event_name = "XenInfest.BioluminescencePropagate"
+		limiter_match_substring = 0.000000
+		limiter_stop_oldest = false
+		limiter_match_entity = 0.000000
+		limiter_match_event_duration = 0.250000
+		remap_scale_to_pitch_x1 = 0.500000
+		remap_scale_to_pitch_y1 = 1.200000
+		remap_scale_to_pitch_x2 = 0.800000
+		remap_scale_to_pitch_y2 = 1.100000
+		remap_scale_to_pitch_x3 = 1.000000
+		remap_scale_to_pitch_y3 = 1.000000
+		remap_scale_to_pitch_x4 = 1.100000
+		remap_scale_to_pitch_y4 = 0.800000
+		remap_scale_to_vol_x1 = 0.500000
+		remap_scale_to_vol_y1 = 0.850000
+		remap_scale_to_vol_x2 = 0.800000
+		remap_scale_to_vol_y2 = 0.900000
+		remap_scale_to_vol_x3 = 1.000000
+		remap_scale_to_vol_y3 = 1.000000
+		remap_scale_to_vol_x4 = 1.250000
+		remap_scale_to_vol_y4 = 1.100000
+		round_to_bucket = 0.150000
+		remap_index_pct_to_freq_x1 = 0.900000
+		remap_index_pct_to_freq_y1 = 0.900000
+		remap_index_pct_to_freq_x2 = 0.900000
+		remap_index_pct_to_freq_y2 = 0.950000
+		remap_index_pct_to_freq_x3 = 0.950000
+		remap_index_pct_to_freq_y3 = 0.950000
+		remap_index_pct_to_freq_x4 = 1.000000
+		remap_index_pct_to_freq_y4 = 1.000000
+		index_pitch_min = 0.950000
+		index_pitch_max = 1.050000
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_plant_bulb1.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bulb2.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bulb3.vsnd",
+			"sounds/world/infestation/xen_infest_plant_bulb4.vsnd",
+		]
+	}
+	XenInfest.BloaterSwell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 800.000000
+		volume_falloff_min = 150.000000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.BloaterSwell"
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_swell_01.vsnd",
+		]
+	}
+	XenInfest.BloaterUnswell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 800.000000
+		volume_falloff_min = 150.000000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.BloaterUnswell"
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_unswell_01.vsnd",
+		]
+	}
+	XenInfest.BloaterExplode = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.750000
+		volume_falloff_max = 1200.000000
+		volume_falloff_min = 400.000000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.750000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.BloaterExplode"
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_explode_01.vsnd",
+		]
+	}
+	XenInfest.BloaterStretchedLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_max = 800.000000
+		volume_falloff_min = 20.000000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.BloaterStretchedLoop"
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_stretched_loop_01.vsnd",
+		]
+	}
+	XenInfest.BloaterMiniPain_Screech = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.500000
+		volume_falloff_max = 900.000000
+		volume_falloff_min = 500.000000
+		use_hrtf = 1.000000
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_mini_pain_01.vsnd",
+			"sounds/world/infestation/xen_bloater_mini_pain_02.vsnd",
+			"sounds/world/infestation/xen_bloater_mini_pain_03.vsnd",
+			"sounds/world/infestation/xen_bloater_mini_pain_04.vsnd",
+			"sounds/world/infestation/xen_bloater_mini_pain_05.vsnd",
+		]
+	}
+	XenInfest.BloaterPain_Screech = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 900.000000
+		volume_falloff_min = 500.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_pain_01.vsnd",
+			"sounds/world/infestation/xen_bloater_pain_02.vsnd",
+			"sounds/world/infestation/xen_bloater_pain_03.vsnd",
+			"sounds/world/infestation/xen_bloater_pain_04.vsnd",
+			"sounds/world/infestation/xen_bloater_pain_05.vsnd",
+		]
+	}
+	XenInfest.Bloater_Node_Hit = 
+	{
+		type = "hlvr_start_multi_distance_delay"
+		soundevent_01 = "XenInfest.Bloater_Node_Hit_Rise"
+		use_01 = 1.000000
+		soundevent_02 = "DamageNPC.Bullet_Extra_Gore"
+		use_02 = 1.000000
+	}
+	XenInfest.Bloater_Node_Hit_Rise = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/damage/xen_node_hit_rise_01.vsnd",
+			"sounds/damage/xen_node_hit_rise_02.vsnd",
+			"sounds/damage/xen_node_hit_rise_03.vsnd",
+		]
+	}
+	XenInfest.BloaterMiniPain = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "XenInfest.BloaterMiniPain_Screech"
+		soundevent_02 = "XenInfest.Bloater_Node_Hit"
+		soundevent_03 = "DamageNPC.Bullet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	XenInfest.BloaterMiniSwell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 60.000000
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_mini_swell_01.vsnd",
+		]
+	}
+	XenInfest.BloaterMiniUnswell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 60.000000
+		use_world_position = true
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_bloater_mini_unswell_01.vsnd",
+		]
+	}
+	XenInfest.Bloater_Node_Explode = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 200.000000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "XenInfest.BloaterMiniSwell"
+		use_world_position = true
+		mixgroup = "NPC_Med"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/damage/xen_node_explode_01.vsnd",
+			"sounds/damage/xen_node_explode_02.vsnd",
+			"sounds/damage/xen_node_explode_03.vsnd",
+		]
+	}
+	DamageNPC.Break_Bloater_Node = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 200.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_event_name = "XenInfest.BloaterMiniUnswell"
+		use_world_position = true
+		mixgroup = "BulletImpacts"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/damage/break_npc_01.vsnd",
+			"sounds/damage/break_npc_02.vsnd",
+			"sounds/damage/break_npc_03.vsnd",
+		]
+	}
+	XenInfest.BloaterMiniExplode = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "XenInfest.Bloater_Node_Explode"
+		use_01 = 1.000000
+		soundevent_02 = "DamageNPC.Break_Bloater_Node"
+		use_02 = 1.000000
+	}
+	XenInfest.MembraneLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 270.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_membrane_loop_01.vsnd",
+		]
+	}
+	XenGrenade.SpawnGrenade = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_spawn_grenade.vsnd",
+		]
+	}
+	XenGrenade.ProtectIntro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_protect_intro.vsnd",
+		]
+	}
+	XenGrenade.ProtectIdleBase = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_protect_idle.vsnd",
+		]
+	}
+	XenGrenade.ProtectIdle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		volume_falloff_max = 600.000000
+		volume_falloff_min = 100.000000
+		distance_max = 320.000000
+		occlusion_scale = 0.100000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_protect_idle_01.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_02.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_03.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_04.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_05.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_06.vsnd",
+		]
+	}
+	XenGrenade.ProtectOutro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_protect_outro.vsnd",
+		]
+	}
+	XenGrenade.Picked = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_picked.vsnd",
+		]
+	}
+	XenGrenade.PickedVocalReaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_picked_vocal_reaction_01.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_vocal_reaction_02.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_vocal_reaction_04.vsnd",
+		]
+	}
+	XenGrenade.PickedMissedVocalReaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_01.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_02.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_03.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_04.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_05.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_06.vsnd",
+			"sounds/world/infestation/xen_grenade_picked_missed_vocal_reaction_07.vsnd",
+		]
+	}
+	XenGrenade.FlinchVocalReaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 200.000000
+		use_hrtf = 1.000000
+		chance_to_play = 1.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_flinch_vocal_reaction_01.vsnd",
+			"sounds/world/infestation/xen_grenade_flinch_vocal_reaction_02.vsnd",
+			"sounds/world/infestation/xen_grenade_flinch_vocal_reaction_03.vsnd",
+			"sounds/world/infestation/xen_grenade_flinch_vocal_reaction_04.vsnd",
+		]
+	}
+	XenGrenade.TickledVocalReaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_tickled_vocal_reaction_01.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_vocal_reaction_02.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_vocal_reaction_03.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_vocal_reaction_04.vsnd",
+		]
+	}
+	XenGrenade.TickledSweetener = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		chance_to_play = 1.500000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_tickled_sweetener_01.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_sweetener_02.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_sweetener_03.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_sweetener_04.vsnd",
+			"sounds/world/infestation/xen_grenade_tickled_sweetener_05.vsnd",
+		]
+	}
+	XenGrenade.PickedReaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_picked_reaction.vsnd",
+		]
+	}
+	XenGrenade.ProtectIdleClawTap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = -0.100000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		distance_max = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_grenade_protect_idle_claw_tap_01.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_claw_tap_02.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_claw_tap_03.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_claw_tap_04.vsnd",
+			"sounds/world/infestation/xen_grenade_protect_idle_claw_tap_05.vsnd",
+		]
+	}
+	XenReviverPlant.TwitchAction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 20.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_twitch_action.vsnd",
+		]
+	}
+	XenReviverPlant.TwitchActionNonAware = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 20.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_twitch_action.vsnd",
+		]
+	}
+	XenReviverPlant.TwitchActionAware = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 20.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_twitch_action.vsnd",
+		]
+	}
+	XenReviverPlant.GlowLoop = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.000000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 220.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_glow_loop.vsnd",
+		]
+	}
+	XenReviverPlant.GlowLoopNonAware = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.000000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 220.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_glow_loop.vsnd",
+		]
+	}
+	XenReviverPlant.GlowLoopAware = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.000000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 220.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_glow_loop.vsnd",
+		]
+	}
+	XenReviverPlant.NonAware = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.750000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_non_aware.vsnd",
+		]
+	}
+	XenReviverPlant.Aware = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.750000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_aware.vsnd",
+		]
+	}
+	XenReviverPlant.ActionIdle = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 1.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_action_idle.vsnd",
+		]
+	}
+	XenReviverPlant.ActionStart = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_action_start_01.vsnd",
+		]
+	}
+	XenReviverPlant.ActionExit = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 100.000000
+		distance_max = 520.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_plant_action_exit_01.vsnd",
+		]
+	}
+	XenAntlionCluster.AnimIdleAware01 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.800000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_antlion_cluster_anim_idle_aware_01.vsnd",
+		]
+	}
+	XenAntlionCluster.AnimIdleAware02 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.800000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_antlion_cluster_anim_idle_aware_02.vsnd",
+		]
+	}
+	XenAntlionCluster.AnimIdleNonAware01 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.800000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_antlion_cluster_anim_idle_non_aware_01.vsnd",
+		]
+	}
+	XenHeadcrabCluster.AnimIdleAware01 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_anim_idle_aware_01.vsnd",
+		]
+	}
+	XenHeadcrabCluster.AnimIdleAware02 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_anim_idle_aware_02.vsnd",
+		]
+	}
+	XenHeadcrabCluster.AnimIdleNonAware01 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 320.000000
+		use_hrtf = 1.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_anim_idle_non_aware_01.vsnd",
+		]
+	}
+	XenHeadcrabCluster.AwareLp01 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 950.000000
+		volume_falloff_min = 350.000000
+		cull_at_distance = 951.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_aware_lp_01.vsnd",
+		]
+	}
+	XenHeadcrabCluster.AwareLp02 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 950.000000
+		volume_falloff_min = 350.000000
+		cull_at_distance = 951.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_aware_lp_02.vsnd",
+		]
+	}
+	XenHeadcrabCluster.NonAwareLp01 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 950.000000
+		volume_falloff_min = 350.000000
+		cull_at_distance = 951.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrab_cluster_non_aware_lp_01.vsnd",
+		]
+	}
+	XenAntlionHabitat.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 1.000000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 260.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_antlion_habitat_lp_01.vsnd",
+		]
+	}
+	XenInfest.Clam_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 1000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+	}
+	XenInfest.Clam_Curious = 
+	{
+		base = "XenInfest.Clam_Base"
+		groups = 
+		[
+			"xen_clam_event_blocker",
+		]
+		volume = 0.600000
+		delay_rand_min = 0.010000
+		delay_rand_max = 0.200000
+		occlusion_scale = 0.700000
+		vsnd_files = 
+		[
+			"sounds/world/infestation/clams/curious_01.vsnd",
+			"sounds/world/infestation/clams/curious_02.vsnd",
+			"sounds/world/infestation/clams/curious_03.vsnd",
+			"sounds/world/infestation/clams/curious_04.vsnd",
+			"sounds/world/infestation/clams/curious_05.vsnd",
+			"sounds/world/infestation/clams/curious_06.vsnd",
+		]
+	}
+	XenInfest.Clam_Bark = 
+	{
+		base = "XenInfest.Clam_Base"
+		volume = 0.800000
+		occlusion_scale = 0.300000
+		vsnd_files = 
+		[
+			"sounds/world/infestation/clams/bark_01.vsnd",
+			"sounds/world/infestation/clams/bark_02.vsnd",
+			"sounds/world/infestation/clams/bark_03.vsnd",
+			"sounds/world/infestation/clams/bark_04.vsnd",
+			"sounds/world/infestation/clams/bark_05.vsnd",
+			"sounds/world/infestation/clams/bark_06.vsnd",
+			"sounds/world/infestation/clams/bark_07.vsnd",
+			"sounds/world/infestation/clams/bark_08.vsnd",
+			"sounds/world/infestation/clams/bark_09.vsnd",
+			"sounds/world/infestation/clams/bark_10.vsnd",
+			"sounds/world/infestation/clams/bark_11.vsnd",
+			"sounds/world/infestation/clams/bark_12.vsnd",
+			"sounds/world/infestation/clams/bark_13.vsnd",
+		]
+	}
+	XenInfest.Clam_Close = 
+	{
+		base = "XenInfest.Clam_Base"
+		volume = 1.100000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.200000
+		occlusion_scale = 0.100000
+		vsnd_files = 
+		[
+			"sounds/world/infestation/clams/close_01.vsnd",
+			"sounds/world/infestation/clams/close_02.vsnd",
+			"sounds/world/infestation/clams/close_03.vsnd",
+			"sounds/world/infestation/clams/close_04.vsnd",
+			"sounds/world/infestation/clams/close_05.vsnd",
+			"sounds/world/infestation/clams/close_06.vsnd",
+			"sounds/world/infestation/clams/close_07.vsnd",
+		]
+	}
+	XenInfest.Clam_Grunt = 
+	{
+		base = "XenInfest.Clam_Base"
+		groups = 
+		[
+			"xen_clam_event_blocker",
+		]
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/clams/slobber_01.vsnd",
+			"sounds/world/infestation/clams/slobber_02.vsnd",
+			"sounds/world/infestation/clams/slobber_03.vsnd",
+			"sounds/world/infestation/clams/slobber_04.vsnd",
+			"sounds/world/infestation/clams/slobber_05.vsnd",
+			"sounds/world/infestation/clams/slobber_06.vsnd",
+			"sounds/world/infestation/clams/slobber_07.vsnd",
+			"sounds/world/infestation/clams/slobber_08.vsnd",
+			"sounds/world/infestation/clams/slobber_09.vsnd",
+			"sounds/world/infestation/clams/slobber_10.vsnd",
+			"sounds/world/infestation/clams/slobber_11.vsnd",
+			"sounds/world/infestation/clams/slobber_12.vsnd",
+		]
+	}
+	XenInfest.Clam_Relax = 
+	{
+		base = "XenInfest.Clam_Base"
+		groups = 
+		[
+			"xen_clam_event_blocker",
+		]
+		volume = 0.300000
+		vsnd_files = 
+		[
+			"sounds/world/infestation/clams/relax_01.vsnd",
+			"sounds/world/infestation/clams/relax_02.vsnd",
+			"sounds/world/infestation/clams/relax_03.vsnd",
+			"sounds/world/infestation/clams/relax_04.vsnd",
+			"sounds/world/infestation/clams/relax_05.vsnd",
+		]
+	}
+	XenLampPlant.HeadPop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 60.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_head_pop_01.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_head_pop_02.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_head_pop_03.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_head_pop_04.vsnd",
+		]
+	}
+	XenLampPlant.PostMovement = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 60.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_post_movement_01.vsnd",
+		]
+	}
+	XenLampPlant.Retract = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 60.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_retract_01.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_retract_02.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_retract_03.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_retract_04.vsnd",
+		]
+	}
+	XenLampPlant.Extend = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 200.000000
+		volume_falloff_min = 60.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_extend_01.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_extend_02.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_extend_03.vsnd",
+		]
+	}
+	XenLampPlant.Pulse = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.300000
+		occlusion_scale = 0.500000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		distance_max = 320.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_pulse_01.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_pulse_02.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_pulse_03.vsnd",
+			"sounds/world/infestation/xen_lamp_plant_pulse_04.vsnd",
+		]
+	}
+	XenLampPlant.Idle = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.450000
+		occlusion_scale = 0.500000
+		use_facing_vol_attenuation = 0.500000
+		volume_falloff_max = 500.000000
+		volume_falloff_min = 200.000000
+		distance_max = 520.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_lamp_plant_idle_lp.vsnd",
+		]
+	}
+	XenVilliMedium.Twitch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 100.000000
+		distance_max = 320.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_villi_medium_twitch_01.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_02.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_03.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_04.vsnd",
+		]
+	}
+	XenVilliMedium.Reaction = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 50.000000
+		distance_max = 151.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_villi_medium_twitch_01.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_02.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_03.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_04.vsnd",
+		]
+	}
+	XenCoralear.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 200.000000
+		distance_max = 201.000000
+		volume_rand_min = -0.010000
+		volume_rand_max = 0.010000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		occlusion_scale = 0.900000
+		occlusion_radius = 10.000000
+		use_hrtf = 1.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		limiter_on = 1.000000
+		limiter_max = 10.000000
+	}
+	XenCoralear.ActionNoise = 
+	{
+		base = "XenCoralear.Base"
+		volume = 0.600000
+		limiter_max = 4.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_coralear_action_noise_01.vsnd",
+		]
+	}
+	XenCoralear.CloseToOpen = 
+	{
+		base = "XenCoralear.Base"
+		volume = 0.600000
+		delay_rand_min = 0.001000
+		delay_rand_max = 0.100000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_coralear_close_to_open_01.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_close_to_open_02.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_close_to_open_03.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_close_to_open_04.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_close_to_open_05.vsnd",
+		]
+	}
+	XenCoralear.OpenToClose = 
+	{
+		base = "XenCoralear.Base"
+		volume = 0.600000
+		delay_rand_min = 0.001000
+		delay_rand_max = 0.100000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_coralear_open_to_close_01.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_open_to_close_02.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_open_to_close_03.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_open_to_close_04.vsnd",
+		]
+	}
+	XenCoralear.IdleOpen = 
+	{
+		base = "XenCoralear.Base"
+		volume_falloff_min = 20.000000
+		volume_falloff_max = 100.000000
+		distance_max = 101.000000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_coralear_idle_open_01.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_02.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_03.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_04.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_05.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_06.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_07.vsnd",
+			"sounds/world/infestation/xen_infest_coralear_idle_open_08.vsnd",
+		]
+	}
+	XenLifeLarge.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.600000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_large_lp_01.vsnd",
+		]
+	}
+	XenLifeLargeWrithe.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.700000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_large_writhe_lp_01.vsnd",
+		]
+	}
+	XenLifeSmall.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.800000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_small_lp_01.vsnd",
+		]
+	}
+	XenLifeSmallBodyWrap.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.700000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		occlusion_scale = 0.500000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		mixgroup = "Xen"
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_small_body_wrap_lp_01.vsnd",
+		]
+	}
+	XenLifeGurgle.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.400000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_gurgle_lp_01.vsnd",
+		]
+	}
+	XenLifeDefault.Lp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 75.000000
+		cull_at_distance = 351.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_life_default_lp_01.vsnd",
+		]
+	}
+	XenDiscGreen.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.400000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 270.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_disc_green_lp_01.vsnd",
+		]
+	}
+	XenDiscGrey.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.600000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 270.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_disc_grey_lp_01.vsnd",
+		]
+	}
+	XenPetalPlant.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.750000
+		volume_falloff_max = 300.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 310.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_petal_lp_01.vsnd",
+		]
+	}
+	XenReviverFoliage.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.650000
+		volume_falloff_max = 400.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 401.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_reviver_foliage_lp_01.vsnd",
+		]
+	}
+	Xen_Glue.Stretch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_fade_in = 0.200000
+		volume_fade_out = 2.000000
+		mixgroup = "Xen"
+		block_duration = 0.500000
+		block_match_this_event = true
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/glue/stretch_01.vsnd",
+			"sounds/world/infestation/glue/stretch_02.vsnd",
+		]
+	}
+	Xen_Glue.Snap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Xen"
+		block_duration = 0.300000
+		block_match_this_event = true
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/glue/snap.vsnd",
+		]
+	}
+	Xen_Memory_Worm_01.BaseLp = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.900000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 30.000000
+		cull_at_distance = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_curve_amount = 0.900000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_base_lp.vsnd",
+		]
+	}
+	Xen_Memory_Worm_02.BaseLp = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.900000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 30.000000
+		cull_at_distance = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_curve_amount = 0.900000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_base_lp.vsnd",
+		]
+	}
+	Xen_Memory_Worm_03.BaseLp = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.900000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 30.000000
+		cull_at_distance = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_curve_amount = 0.900000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_base_lp.vsnd",
+		]
+	}
+	Xen_Memory_Worm_04.BaseLp = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.900000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 30.000000
+		cull_at_distance = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_curve_amount = 0.900000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_base_lp.vsnd",
+		]
+	}
+	Xen_Memory_Worm_01.Twitch = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_01.Twitch"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.750000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_twitch_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_04.vsnd",
+		]
+	}
+	Xen_Memory_Worm_02.Twitch = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_02.Twitch"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.750000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_twitch_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_04.vsnd",
+		]
+	}
+	Xen_Memory_Worm_03.Twitch = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_03.Twitch"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.750000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_twitch_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_04.vsnd",
+		]
+	}
+	Xen_Memory_Worm_04.Twitch = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_04.Twitch"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.750000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_twitch_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_twitch_04.vsnd",
+		]
+	}
+	Xen_Memory_Worm_01.Rub = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_01.Rub"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.950000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		pitch_rand_min = -0.500000
+		pitch_rand_max = 0.500000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_rub_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_04.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_05.vsnd",
+		]
+	}
+	Xen_Memory_Worm_02.Rub = 
+	{
+		type = "hlvr_default_3d"
+		limiter_on = 1.000000
+		limiter_event_name = "Xen_Memory_Worm_02.Rub"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		volume = 0.950000
+		volume_falloff_max = 80.000000
+		volume_falloff_min = 20.000000
+		distance_max = 90.000000
+		pitch_rand_min = -0.500000
+		pitch_rand_max = 0.500000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_memory_worm_rub_01.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_02.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_03.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_04.vsnd",
+			"sounds/world/infestation/xen_memory_worm_rub_05.vsnd",
+		]
+	}
+	XenHeadcrabsTunnelXenMass.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.450000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 350.000000
+		volume_falloff_min = 150.000000
+		cull_at_distance = 350.000000
+		volume_falloff_curve_amount = 0.250000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_headcrabs_tunnel_xen_mass_lp_01.vsnd",
+		]
+	}
+	XenQuarantineEntranceXenMass.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.750000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 550.000000
+		volume_falloff_min = 150.000000
+		cull_at_distance = 551.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_quarantine_entrance_xen_mass_lp_01.vsnd",
+		]
+	}
+	XenQuarantineEntranceXenMassLarger.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.350000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 550.000000
+		volume_falloff_min = 250.000000
+		cull_at_distance = 551.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.200000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_quarantine_entrance_xen_mass_larger_lp_01.vsnd",
+		]
+	}
+	XenTunnelDoorsXenMassLarger.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.800000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 550.000000
+		volume_falloff_min = 50.000000
+		cull_at_distance = 551.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.200000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_quarantine_entrance_xen_mass_larger_lp_01.vsnd",
+		]
+	}
+	XenInfest.QuarantineEntranceVilliTwitches = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.QuarantineEntranceVilliTwitchesChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 10.000000
+	}
+	XenInfest.QuarantineEntranceVilliTwitchesChild = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.750000
+		volume_falloff_max = 555.000000
+		volume_falloff_min = 350.000000
+		distance_max = 556.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.QuarantineEntranceVilliTwitches"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.900000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_villi_medium_twitch_01.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_02.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_03.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_04.vsnd",
+		]
+	}
+	XenInfest.QuarantineEntranceDangliesFloories = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.QuarantineEntranceDangliesFlooriesChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 10.000000
+	}
+	XenInfest.QuarantineEntranceDangliesFlooriesChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.QuarantineEntranceDangliesFloories"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.800000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_danglies_floories1.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories2.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories3.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories4.vsnd",
+		]
+	}
+	XenInfest.TunnelDangliesFloories = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.QuarantineEntranceDangliesFlooriesChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 10.000000
+	}
+	XenInfest.TunnelDangliesFlooriesChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 550.000000
+		volume_falloff_min = 150.000000
+		distance_max = 551.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.QuarantineEntranceDangliesFloories"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		spread_min = 2.000000
+		spread_max = 10.000000
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.100000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_danglies_floories1.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories2.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories3.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories4.vsnd",
+		]
+	}
+	XenInfest.QuarantineEntranceSphinctus = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.QuarantineEntranceSphinctusChild"
+		random_soundevent_01_timer_min = 7.000000
+		random_soundevent_01_timer_max = 14.000000
+	}
+	XenInfest.QuarantineEntranceSphinctusChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.QuarantineEntranceSphinctus"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.900000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_sphinctus1.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus2.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus3.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus4.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus5.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus6.vsnd",
+		]
+	}
+	XenInfest.QuarantineEntranceUrchin = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.QuarantineEntranceUrchinChild"
+		random_soundevent_01_timer_min = 7.000000
+		random_soundevent_01_timer_max = 14.000000
+	}
+	XenInfest.QuarantineEntranceUrchinChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.QuarantineEntranceUrchin"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.950000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_urchin1.vsnd",
+			"sounds/world/infestation/xen_infest_urchin2.vsnd",
+			"sounds/world/infestation/xen_infest_urchin3.vsnd",
+			"sounds/world/infestation/xen_infest_urchin4.vsnd",
+		]
+	}
+	XenHotelFloorsXenMass.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.750000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		cull_at_distance = 751.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_quarantine_entrance_xen_mass_lp_01.vsnd",
+		]
+	}
+	XenInfest.HotelFloorsVilliTwitches = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.HotelFloorsVilliTwitchesChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 10.000000
+	}
+	XenInfest.HotelFloorsVilliTwitchesChild = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 0.450000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.HotelFloorsVilliTwitches"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.900000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_villi_medium_twitch_01.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_02.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_03.vsnd",
+			"sounds/world/infestation/xen_villi_medium_twitch_04.vsnd",
+		]
+	}
+	XenInfest.HotelFloorsDangliesFloories = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.HotelFloorsDangliesFlooriesChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 10.000000
+	}
+	XenInfest.HotelFloorsDangliesFlooriesChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.HotelFloorseDangliesFloories"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.800000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_danglies_floories1.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories2.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories3.vsnd",
+			"sounds/world/infestation/xen_infest_danglies_floories4.vsnd",
+		]
+	}
+	XenInfest.HotelFloorsSphinctus = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.HotelFloorsSphinctusChild"
+		random_soundevent_01_timer_min = 7.000000
+		random_soundevent_01_timer_max = 14.000000
+	}
+	XenInfest.HotelFloorsSphinctusChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.HotelFloorsSphinctus"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.900000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_sphinctus1.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus2.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus3.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus4.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus5.vsnd",
+			"sounds/world/infestation/xen_infest_sphinctus6.vsnd",
+		]
+	}
+	XenInfest.HotelFloorsUrchin = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "XenInfest.HotelFloorsUrchinChild"
+		random_soundevent_01_timer_min = 7.000000
+		random_soundevent_01_timer_max = 14.000000
+	}
+	XenInfest.HotelFloorsUrchinChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 750.000000
+		volume_falloff_min = 350.000000
+		distance_max = 751.000000
+		limiter_on = 1.000000
+		limiter_event_name = "XenInfest.HotelFloorsUrchin"
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		occlusion_max = 1.000000
+		mixgroup = "Xen"
+		volume_falloff_curve_amount = 0.950000
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_infest_urchin1.vsnd",
+			"sounds/world/infestation/xen_infest_urchin2.vsnd",
+			"sounds/world/infestation/xen_infest_urchin3.vsnd",
+			"sounds/world/infestation/xen_infest_urchin4.vsnd",
+		]
+	}
+	XenFloaties.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.850000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 250.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 251.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_floaties_lp_01.vsnd",
+		]
+	}
+	XenXenMass.Lp = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 1.000000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		volume_falloff_max = 400.000000
+		volume_falloff_min = 100.000000
+		cull_at_distance = 401.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/xen_quarantine_entrance_xen_mass_lp_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubCompress = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.500000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_compress_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubCompressCrush = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.900000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_compress_crush_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_04.vsnd",
+			"sounds/world/infestation/health_station_grub_pain_05.vsnd",
+			"sounds/world/infestation/health_station_grub_pain_06.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain02 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_02.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain03 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_03.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain04 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_04.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain05 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_05.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubPain06 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 150.000000
+		volume_falloff_min = 75.000000
+		distance_max = 151.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_pain_06.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubBreath = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.700000
+		chance_to_play = 3.000000
+		spread_min = 5.000000
+		spread_max = 10.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.200000
+		volume_falloff_max = 60.000000
+		volume_falloff_min = 30.000000
+		distance_max = 61.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_breath_01.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_02.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_03.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_04.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_05.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_06.vsnd",
+			"sounds/world/infestation/health_station_grub_breath_07.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubVocal = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.850000
+		spread_min = 5.000000
+		spread_max = 10.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.200000
+		volume_falloff_max = 60.000000
+		volume_falloff_min = 30.000000
+		distance_max = 61.000000
+		occlusion_scale = 0.800000
+		occlusion_radius = 20.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_vocal_01.vsnd",
+			"sounds/world/infestation/health_station_grub_vocal_02.vsnd",
+			"sounds/world/infestation/health_station_grub_vocal_03.vsnd",
+			"sounds/world/infestation/health_station_grub_vocal_04.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubGlowLp01 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.400000
+		spread_min = 5.000000
+		spread_max = 10.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.200000
+		volume_falloff_max = 50.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 51.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_glow_lp_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubGlowLp02 = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_entity_block_1",
+		]
+		volume = 0.750000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_falloff_max = 50.000000
+		volume_falloff_min = 20.000000
+		cull_at_distance = 51.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_glow_lp_02.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubFlush01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_falloff_max = 100.000000
+		volume_falloff_min = 50.000000
+		distance_max = 101.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_flush_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubFlushTransition01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_falloff_max = 100.000000
+		volume_falloff_min = 50.000000
+		distance_max = 101.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_flush_transition_01.vsnd",
+		]
+	}
+	XenInfest.HealthStationGrubEvacuation01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		spread_min = 5.000000
+		spread_max = 20.000000
+		volume_falloff_max = 100.000000
+		volume_falloff_min = 50.000000
+		distance_max = 101.000000
+		mixgroup = "Xen"
+		enable_spatial_blend = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/infestation/health_station_grub_evacuation_01.vsnd",
+		]
+	}
+}

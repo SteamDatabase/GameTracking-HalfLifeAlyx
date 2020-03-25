@@ -1,0 +1,12 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/instructor_locator_panel.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<InstructorLocatorPanel class="InstructorLocatorPanel">
+		<Label class="LocatorBinding" text="{s:binding}" />
+		<Label class="LocatorCaption" text="{s:caption}" />
+	</InstructorLocatorPanel>
+</root>

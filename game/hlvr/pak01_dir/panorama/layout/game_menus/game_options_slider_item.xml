@@ -1,0 +1,26 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <HLVR_SettingsSlider>
+
+    <Slider id="Slider" class="OptionsSlider" direction="horizontal">
+      <Panel class="SliderContainer">
+        <Panel id="SliderRow" class="SliderRow">
+          <Label id="Title" class="slider_label" text="{s:label}"/>
+          <Panel class="slider_divider" />
+          <Label id="Value" class="slider_value" text="0"/>
+        </Panel>
+      </Panel>
+    </Slider>
+
+    <Panel></Panel>
+  </HLVR_SettingsSlider>
+
+</root>
+
+
+
+

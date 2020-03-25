@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/world_screens/a1_intro_world_transmission.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="Container">
+		<Label id="IncomingText" class="TextContainer" text="#HLVR_Transmission_Incoming" />
+		<Label id="EndedText" class="TextContainer" text="#HLVR_Transmission_Ended" />
+	</Panel>
+</root>
+
+

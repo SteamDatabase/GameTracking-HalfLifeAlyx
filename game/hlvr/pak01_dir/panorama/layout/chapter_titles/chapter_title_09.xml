@@ -1,0 +1,19 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/chapter_title.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="ChapterTitle">
+		<Panel id="EmptyContainer" />
+		<Panel id="ChapterNumber">
+			<Label text="#HLVR_Chapter_Number_09" />
+		</Panel>
+		<Panel id="ChapterText">
+			<Label text="#HLVR_Chapter_Title_09" />
+		</Panel>
+	</Panel>
+</root>
+
+

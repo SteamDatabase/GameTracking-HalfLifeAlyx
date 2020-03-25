@@ -1,0 +1,13 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/tutorial_screens/gravity_glove_training.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<Panel class="Container" id="MainPanel">
+			<Image src="s2r://panorama/images/tutorial_screens/gravity_glove_training_psd.vtex" class="TrainingImage" />	 
+		</Panel>
+	</ClientUIDialogPanel>
+</root>

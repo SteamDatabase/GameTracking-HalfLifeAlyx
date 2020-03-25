@@ -1,0 +1,209 @@
+{
+	Error = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/null.vsnd"
+	}
+	AI_BaseNPC.BodyDrop_Heavy = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 0.900000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/physics/flesh/flesh_impact_hard1.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard2.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard3.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard4.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard5.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard6.vsnd",
+		]
+	}
+	AI_BaseNPC.BodyDrop_Light = 
+	{
+		type = "src1_3d"
+		volume = 0.899902
+		pitch = 1.050000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/physics/flesh/flesh_impact_hard1.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard2.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard3.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard4.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard5.vsnd",
+			"sounds/physics/flesh/flesh_impact_hard6.vsnd",
+		]
+	}
+	AI_BaseNPC.SwishSound = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/zombie/claw_miss2.vsnd"
+	}
+	AI_BaseNPC.SentenceStop = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 60.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/common/null.vsnd"
+	}
+	BaseCombatCharacter.CorpseGib = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/physics/flesh/flesh_squishy_impact_hard2.vsnd"
+	}
+	BaseCombatCharacter.StopWeaponSounds = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/common/null.vsnd"
+	}
+	BaseCombatCharacter.AmmoPickup = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/items/ammo_pickup.vsnd"
+	}
+	BaseCombatWeapon.WeaponDrop = 
+	{
+		type = "src1_3d"
+		volume = 0.799805
+		pitch_rand_min = -0.075000
+		pitch_rand_max = 0.075000
+		pitch = 1.025000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/physics/metal/weapon_impact_hard1.vsnd",
+			"sounds/physics/metal/weapon_impact_hard2.vsnd",
+			"sounds/physics/metal/weapon_impact_hard3.vsnd",
+		]
+	}
+	BaseCombatWeapon.WeaponMaterialize = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.500000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/items/suitchargeok1.vsnd"
+	}
+	General.BurningFlesh = 
+	{
+		type = "src1_3d"
+		volume = 0.449951
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/npc/headcrab/headcrab_burning_loop2.vsnd"
+	}
+	General.BurningObject = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/ambient/fire/fire_small_loop2.vsnd"
+	}
+	General.StopBurning = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/common/null.vsnd"
+	}
+	Hud.Hint = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/ui/hint.vsnd"
+	}
+}

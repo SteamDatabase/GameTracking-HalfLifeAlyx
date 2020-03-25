@@ -1,0 +1,179 @@
+{
+	Step_Vort.Base = 
+	{
+		type = "hlvr_footstep_npc"
+		volume = 0.750000
+		walkspeed_max = 0.800000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 1.000000
+		limiter_stop_oldest = false
+		volume_falloff_max = 700.000000
+		distance_max = 701.000000
+		occlusion_scale = 0.700000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_09.vsnd",
+		]
+	}
+	Step_Vort.Default = 
+	{
+		base = "Step_Vort.Base"
+	}
+	Step_Vort.Concrete = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_09.vsnd",
+		]
+	}
+	Step_Vort.Dirt = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_01.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_02.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_03.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_04.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_05.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_06.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_07.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_08.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_09.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_10.vsnd",
+			"sounds/physics/footsteps/vort/dirt/vort_dirt_step_11.vsnd",
+		]
+	}
+	Step_Vort.Gravel = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_01.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_02.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_03.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_04.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_05.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_06.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_07.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_08.vsnd",
+			"sounds/physics/footsteps/vort/gravel/vort_gravel_step_09.vsnd",
+		]
+	}
+	Step_Vort.Metal_Solid = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_01.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_02.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_03.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_04.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_05.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_06.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_07.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_08.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_09.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_10.vsnd",
+		]
+	}
+	Step_Vort.Metal_Walkway = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_01.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_02.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_03.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_04.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_05.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_06.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_07.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_08.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_09.vsnd",
+			"sounds/physics/footsteps/vort/metal_walkway/vort_metal_walkway_step_10.vsnd",
+		]
+	}
+	Step_Vort.Wood = 
+	{
+		base = "Step_Vort.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_01.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_02.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_03.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_04.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_05.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_06.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_07.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_08.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_09.vsnd",
+			"sounds/physics/footsteps/vort/wood/vort_wood_step_10.vsnd",
+		]
+	}
+	Step_Vort.Manual_Default = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/vort/concrete/vort_concrete_step_09.vsnd",
+		]
+	}
+	Step_Vort.Scripted_Hideout_Walkwaway = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 700.000000
+		distance_max = 701.000000
+		occlusion_scale = 0.400000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_01.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_02.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_03.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_04.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_05.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_06.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_07.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_08.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_09.vsnd",
+			"sounds/physics/footsteps/vort/metal_solid/vort_metal_solid_step_10.vsnd",
+		]
+	}
+}

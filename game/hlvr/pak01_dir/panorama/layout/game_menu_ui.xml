@@ -1,0 +1,138 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+    <include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/game_menu_ui.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/game_menu_ui.vjs_c" />
+	</scripts>
+
+	<GameMenuPanel class="game_menu_root">
+		<Panel id="corner_brackets"/>
+		<Panel id="scan_line_mask">
+			<Panel id="layout_root">
+				<Panel id="base_container">
+
+					<!--<Panel class="row">
+						<Panel class="button_large ">
+							<Button class="button_center temp_deactivated" onactivate="GameMenu_Cmd( pause_noop )">
+								<Label text="Pause"/>
+							</Button>
+						</Panel>
+					</Panel>-->
+
+					<Panel class="row">
+						<Panel class="button_small">
+							<Button class="button_left" onactivate="GameMenu_CmdCloseAndPostEvent( 'save quick', 'game_saved' )">
+								<Label text="Save"/>
+							</Button>
+						</Panel>
+            <Panel class="button_container">
+              <Button class="button_right" onactivate="$.GetContextPanel().ToggleClass( 'show_loadsave' );">
+                <Label text="Load..."/>
+              </Button>
+            </Panel>
+					</Panel>
+         
+          <Panel class="row">
+            <Panel class="button_large">
+              <Button class="button_center" onactivate="GameMenu_Close()">
+                <Label text="Resume Game"/>
+              </Button>
+            </Panel>
+          </Panel>
+
+          <Panel class="row" id="empty_row">
+          </Panel>
+          
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center" onactivate="$.GetContextPanel().ToggleClass( 'ViewOptionsMenu' );">
+								<Label text="Options"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center" onactivate="GameMenu_Cmd( map startup )">
+								<Label text="Exit To Main Menu"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_large">
+							<Button class="button_center " onactivate="GameMenu_Cmd( quit )">
+								<Label text="Quit Game"/>
+							</Button>
+						</Panel>
+					</Panel>
+         
+					<Panel class="row" id="dev_menu_row">
+						<Panel class="button_small">
+							<Button class="button_center" onactivate="GameMenu_Cmd( dev_menu )">
+								<Label text="Dev Menu"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+          <Panel class="row" id="dev_menu_row">
+            <Panel class="button_small">
+              <Button class="button_center" onactivate="GameMenu_Cmd( proto_menu )">
+                <Label text="Proto Menu"/>
+              </Button>
+            </Panel>
+          </Panel>
+          
+				</Panel>
+			</Panel>
+
+      <Panel id="loadsave">
+        
+        <Panel class="header_container_loadsave">
+          <Panel id="header_row_backer_controls" class="rows header_left">
+            <Label class="header" text="Load Game"/>
+          </Panel>
+        </Panel>
+   
+        <Panel class="button_small02">
+          <Button class="button_left" onactivate="$.GetContextPanel().ToggleClass( 'show_loadsave' );">
+            <Label text="Back"/>
+          </Button>
+        </Panel>
+
+        <!--<Panel class="row" >
+          <Panel class="button_arrow">
+            <Button class="button_left" onactivate="PagePanelUp(loadsave_list);" >
+              <Label text="Page Up"/>
+            </Button>
+          </Panel>
+
+          <Panel class="button_arrow">
+            <Button class="button_right" onactivate="PagePanelDown(loadsave_list);">
+              <Label text="Page Down"/>
+            </Button>
+          </Panel>
+        </Panel>-->
+        <!--<Panel class="last_autosave_button" id="last_autosave">
+        </Panel>-->
+
+        <Panel class="button_list" id="loadsave_list">
+        </Panel>
+      </Panel>
+      
+      <GameMenuOptionsPanel id="GameMenuOptionsPanel"></GameMenuOptionsPanel>
+
+			<Panel id="AnimatedTextureMask" acceptsinput="false" hittest="false">
+				<Panel id="AnimatedTexture" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureAlt" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureSpinnerMask" acceptsinput="false" hittest="false" />
+			</Panel>
+		</Panel>
+	</GameMenuPanel>
+</root>
+
+

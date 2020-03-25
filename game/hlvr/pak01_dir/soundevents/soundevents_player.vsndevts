@@ -1,0 +1,500 @@
+{
+	HL2Player.Use = 
+	{
+		type = "src1_2d"
+		volume = 0.100000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_select.vsnd",
+		]
+	}
+	HL2Player.UseDeny = 
+	{
+		type = "src1_2d"
+		volume = 0.100000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	Player.FallDamage = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = "sounds/player/damage/fall_01.vsnd"
+	}
+	PlayerDamage.Bullet = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/bullet_01.vsnd",
+			"sounds/player/damage/bullet_02.vsnd",
+			"sounds/player/damage/bullet_03.vsnd",
+		]
+	}
+	PlayerDamage.Claw = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/claw_01.vsnd",
+			"sounds/player/damage/claw_02.vsnd",
+			"sounds/player/damage/claw_03.vsnd",
+		]
+	}
+	PlayerDamage.Bite = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/hc_bite_01.vsnd",
+			"sounds/player/damage/hc_bite_02.vsnd",
+			"sounds/player/damage/hc_bite_03.vsnd",
+		]
+	}
+	PlayerDamage.BZ_Tentacle = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/claw_01.vsnd",
+			"sounds/player/damage/claw_02.vsnd",
+			"sounds/player/damage/claw_03.vsnd",
+		]
+	}
+	PlayerDamage.Antlion_Poison = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/poison_projectile_01.vsnd",
+			"sounds/player/damage/poison_projectile_02.vsnd",
+		]
+	}
+	PlayerDamage.Headcrab_Reviver_Ranged = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PlayerDamage.Headcrab_Reviver_Ranged_Electrics"
+		use_01 = 1.000000
+		soundevent_02 = "Prop.Alyx_Radio_Headset_Reviver_Interference"
+		use_02 = 1.000000
+	}
+	PlayerDamage.Headcrab_Reviver_Ranged_Electrics = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/electric_01.vsnd",
+			"sounds/player/damage/electric_02.vsnd",
+			"sounds/player/damage/electric_03.vsnd",
+		]
+	}
+	PlayerDamage.Electric_Zombie_Zap = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.100000
+		pitch_rand_min = -0.250000
+		pitch_rand_max = 0.100000
+		limiter_on = 0.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/electric_zap_01.vsnd",
+			"sounds/player/damage/electric_zap_02.vsnd",
+			"sounds/player/damage/electric_zap_03.vsnd",
+			"sounds/player/damage/electric_zap_04.vsnd",
+			"sounds/player/damage/electric_zap_05.vsnd",
+			"sounds/player/damage/electric_zap_06.vsnd",
+			"sounds/player/damage/electric_zap_07.vsnd",
+			"sounds/player/damage/electric_zap_08.vsnd",
+		]
+	}
+	PlayerDamage.Electric_Zombie_Storm = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/electric_01.vsnd",
+			"sounds/player/damage/electric_02.vsnd",
+			"sounds/player/damage/electric_03.vsnd",
+		]
+	}
+	PlayerDeath.BlindZombie_Attack = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/death_blind_zombie_attack.vsnd",
+		]
+	}
+	PlayerDeath.Asphyxiate = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/death_asphyxiate.vsnd",
+		]
+	}
+	PlayerTeleport.Fail = 
+	{
+		type = "src1_2d"
+		volume = 0.800000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/teleport_fail.vsnd",
+		]
+	}
+	Player.Dash = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Player.Dash_Wind"
+		use_01 = 1.000000
+		soundevent_02 = "PlayerFoley.Body_movement_layer"
+		use_02 = 1.000000
+	}
+	Player.Dash_Wind = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.500000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/dash/dash_start_01.vsnd",
+			"sounds/player/dash/dash_start_02.vsnd",
+			"sounds/player/dash/dash_start_03.vsnd",
+		]
+	}
+	Player.Dash_Stop = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Player.Dash_Wind_Stop"
+		use_01 = 1.000000
+		soundevent_02 = "PlayerFoley.Body_movement_layer"
+		use_02 = 1.000000
+	}
+	Player.Dash_Wind_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/dash/dash_stop.vsnd",
+		]
+	}
+	PlayerFoley.Teleport_movement = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		force_from_player = true
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/teleport_movement_01.vsnd",
+			"sounds/player/foley/teleport_movement_02.vsnd",
+			"sounds/player/foley/teleport_movement_03.vsnd",
+			"sounds/player/foley/teleport_movement_04.vsnd",
+		]
+	}
+	PlayerFoley.Teleport_movement_short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		force_from_player = true
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/teleport_movement_01_short.vsnd",
+			"sounds/player/foley/teleport_movement_02_short.vsnd",
+			"sounds/player/foley/teleport_movement_03_short.vsnd",
+			"sounds/player/foley/teleport_movement_04_short.vsnd",
+		]
+	}
+	PlayerFoley.Body_movement = 
+	{
+		type = "hlvr_movement_player_body"
+		volume = 0.850000
+		child_name = "PlayerFoley.Body_movement_layer"
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/body_loop.vsnd",
+		]
+	}
+	PlayerFoley.Body_movement_layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_out = 0.100000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		limiter_stop_oldest = true
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/body_oneshot_01.vsnd",
+			"sounds/player/foley/body_oneshot_02.vsnd",
+			"sounds/player/foley/body_oneshot_03.vsnd",
+			"sounds/player/foley/body_oneshot_04.vsnd",
+			"sounds/player/foley/body_oneshot_05.vsnd",
+			"sounds/player/foley/body_oneshot_06.vsnd",
+		]
+	}
+	PlayerFoley.Arm_movement_l = 
+	{
+		type = "hlvr_movement_player_arm"
+		volume = 0.800000
+		child_name = "PlayerFoley.Arm_movement_layer"
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/arm_loop_left.vsnd",
+		]
+	}
+	PlayerFoley.Arm_movement_r = 
+	{
+		type = "hlvr_movement_player_arm"
+		arm_side = 1.000000
+		volume = 0.800000
+		child_name = "PlayerFoley.Arm_movement_layer"
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/arm_loop_right.vsnd",
+		]
+	}
+	PlayerFoley.Arm_movement_layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.070000
+		volume_fade_out = 0.050000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		limiter_stop_oldest = true
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/arm_oneshot_01.vsnd",
+			"sounds/player/foley/arm_oneshot_02.vsnd",
+			"sounds/player/foley/arm_oneshot_03.vsnd",
+			"sounds/player/foley/arm_oneshot_04.vsnd",
+			"sounds/player/foley/arm_oneshot_05.vsnd",
+			"sounds/player/foley/arm_oneshot_06.vsnd",
+			"sounds/player/foley/arm_oneshot_07.vsnd",
+		]
+	}
+	PlayerFoley.Mantle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		force_from_player = true
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/mantle_01.vsnd",
+			"sounds/player/foley/mantle_02.vsnd",
+			"sounds/player/foley/mantle_03.vsnd",
+		]
+	}
+	PlayerFoley.Window_Traverse = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PlayerFoley.Mantle"
+		use_01 = 1.000000
+	}
+	Step_Player.Ladder_Single = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_07.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_08.vsnd",
+		]
+	}
+	Step_Player.Wooden_Ladder_Single = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/step_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_03.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_04.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_05.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_06.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_07.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_08.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_09.vsnd",
+		]
+	}
+	PlayerDamage.HeartbeatBa = 
+	{
+		type = "hlvr_default_3d"
+		pitch = 1.010000
+		volume = 0.950000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/player_heartbeat_ba_01.vsnd",
+			"sounds/player/damage/player_heartbeat_ba_02.vsnd",
+			"sounds/player/damage/player_heartbeat_ba_03.vsnd",
+		]
+	}
+	PlayerDamage.HeartbeatBump = 
+	{
+		type = "hlvr_default_3d"
+		pitch = 0.950000
+		volume = 0.950000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/player_heartbeat_bump_01.vsnd",
+			"sounds/player/damage/player_heartbeat_bump_02.vsnd",
+			"sounds/player/damage/player_heartbeat_bump_03.vsnd",
+		]
+	}
+	PlayerDamage.EarRingingLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_in = 0.500000
+		force_from_player = true
+		limiter_on = 1.000000
+		limiter_event_name = "PlayerDamage.EarRingingLp"
+		limiter_max = 2.000000
+		limiter_stop_oldest = false
+		use_named_send = "clean"
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/damage/player_ear_ringing_lp_01.vsnd",
+		]
+	}
+	HandFX.Electrocuted = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "HandFX.Electrocuted_Child_a"
+		use_01 = 1.000000
+		soundevent_02 = "HandFX.Electrocuted_Child_b"
+		use_02 = 1.000000
+	}
+	HandFX.Electrocuted_Child_a = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 300.000000
+		volume_fade_out = 3.000000
+		use_hrtf = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/handfx/electrocuted_01.vsnd",
+			"sounds/player/handfx/electrocuted_02.vsnd",
+		]
+	}
+	HandFX.Electrocuted_Child_b = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "HandFX.Electrocuted_Child_c"
+		random_soundevent_01_timer_min = 0.200000
+		random_soundevent_01_timer_max = 0.600000
+	}
+	HandFX.Electrocuted_Child_c = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 200.000000
+		use_hrtf = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/handfx/electrocuted_spark_01.vsnd",
+			"sounds/player/handfx/electrocuted_spark_02.vsnd",
+			"sounds/player/handfx/electrocuted_spark_03.vsnd",
+			"sounds/player/handfx/electrocuted_spark_04.vsnd",
+			"sounds/player/handfx/electrocuted_spark_05.vsnd",
+			"sounds/player/handfx/electrocuted_spark_06.vsnd",
+			"sounds/player/handfx/electrocuted_spark_07.vsnd",
+			"sounds/player/handfx/electrocuted_spark_08.vsnd",
+			"sounds/player/handfx/electrocuted_spark_09.vsnd",
+		]
+	}
+	HandFX.Electrocuted_End = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/handfx/electrocuted_end.vsnd",
+		]
+	}
+	Player.Gasmask_On = 
+	{
+		type = "src1_2d"
+		volume = 0.900000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/gasmask_on.vsnd",
+		]
+	}
+	Player.Gasmask_Remove = 
+	{
+		type = "src1_2d"
+		volume = 0.900000
+		mixgroup = "Player"
+		vsnd_files = 
+		[
+			"sounds/player/foley/gasmask_remove.vsnd",
+		]
+	}
+}

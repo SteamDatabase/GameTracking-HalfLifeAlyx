@@ -1,0 +1,803 @@
+
+/* GLOBAL CONTAINERS */
+
+
+
+.SpectatorHUD {
+    //background-color: #ffffffff;
+    //background-image: url("s2r://panorama/images/personal/jaker/menubackground_png.vtex");
+    background-size: 100% 100%;
+    opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+    color: #f6c41f;
+    width: 100%;
+    height: 100%;
+}
+
+.NoSpectatorHUD .SpectatorHUD
+{
+    visibility: collapse;
+}
+
+
+.HUD_Bottom {
+    vertical-align: bottom;
+    flow-children: down;
+    margin: 45px;
+}
+
+
+.HUD_Bottom > Panel
+{
+	margin-top: 20px;
+}
+
+
+/* Add class RightHanded to root to align HUD for a RIGHT HANDED gun hand */
+
+.RightHanded #HealthAndResin.HUD_Bottom
+{
+	horizontal-align: left;
+}
+
+.RightHanded #GunsAndAmmo.HUD_Bottom
+{
+	horizontal-align: right;
+}
+
+.RightHanded .WristPouch.Left
+{
+	margin: 45px 45px 45px 347.5px;
+}
+
+.RightHanded .WristPouch.Right
+{
+	margin: 45px 275px 45px 45px;
+}	
+
+
+/* Add class LeftHanded to root to align HUD for a LEFT HANDED gun hand */
+
+.LeftHanded #HealthAndResin.HUD_Bottom
+{
+	horizontal-align: right;
+}
+
+.LeftHanded #GunsAndAmmo.HUD_Bottom
+{
+	horizontal-align: left;
+}
+
+.LeftHanded .WristPouch.Left
+{
+	margin: 45px 45px 45px 275px;
+}
+
+.LeftHanded .WristPouch.Right
+{
+	margin: 45px 347.5px 45px 45px;
+}	
+
+
+
+
+/* INDIVIDUAL MODULES */
+
+/* Resin */
+
+.Container_Resin
+{
+	width:280px;
+	padding-top:6px;
+	padding-bottom:12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	flow-children: right;
+	background-color: #00000099;
+	border-radius: 10px;
+	margin:0px;
+	
+}
+
+.Pulse_ResinBackpack #ResinContainer 
+{
+	animation-name: ResinBackpackAnimation;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'ResinBackpackAnimation' 
+{
+	0%
+	{
+		background-color: #68ffffaa; 
+		color: #ffffff;
+		box-shadow: #68ffffaa -15px -15px 00px 30px; //outer, filled
+	}
+
+	40%
+	{
+		background-color: #00434a99; 
+		color: #68ffff;
+		box-shadow: #00434a99 0px 0px 0px 0px; //outer, filled
+	}
+
+	
+	100%
+	{
+		background-color: #00000099; 
+		color: #ffcb16;
+		box-shadow: #00000099 0px 0px 0px 0px; //outer, filled
+	}
+}
+
+
+/* Health */
+
+.Container_Health
+{
+	width:280px;
+	color: #ffcb16;
+	height:137.5px;
+	padding-top:10px;
+	padding-bottom:12.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	flow-children: down;
+	background-color: #00000099;
+	border-radius: 10px;
+}
+
+.Container_Hearts
+{
+	flow-children: right;
+	height: 65px;
+	margin-top: 15px;
+}
+
+.Icon_Heart {
+    width: 65px;
+    height: 65px;
+    background-image: url("s2r://panorama/images/personal/jaker/hud_icon_health_heart_sheet_png.vtex");
+    background-size: auto 100%;
+    wash-color: #ffcb16;
+}
+	
+
+#health_heart_2.Icon_Heart
+{
+	margin-left: 22.5px;
+	margin-right: 22.5px;
+}
+
+
+.health_icon_0
+{
+	background-position: 0% 0%;
+}
+
+.health_icon_1
+{
+	background-position: 20% 0%;
+}
+
+.health_icon_2
+{
+	background-position: 40% 0%;
+}
+
+.health_icon_3
+{
+	background-position: 60% 0%;
+}
+
+.health_icon_4
+{
+	background-position: 80% 0%;
+}
+
+.health_icon_63 {
+    background-position: 100% 0%;
+}
+
+
+/* Health Animations */
+
+/* +++ Get Health (put hand on charger or inject health syringe) */
+
+
+.Pulse_HealthGet #container_health
+{
+	animation-name: AnimationActionGet;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'AnimationActionGet' 
+{
+	0%
+	{
+		background-color: #ffcb16FF; 
+		color: #ffffff;
+		box-shadow: #ffcb16FF -15px -15px 00px 30px; //outer, filled
+	}
+
+	50%
+	{
+		background-color: #00000099; 
+		box-shadow: #00000099 0px 0px 0px 0px; //outer, filled
+	}
+
+	
+	100%
+	{
+		color: #ffcb16;
+	}
+}
+
+
+.Pulse_HealthGet #health_heart_1 
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthGet #health_heart_2 
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthGet #health_heart_3 
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+@keyframes 'AnimationActionGet_Heart' 
+{
+	0%
+	{
+		wash-color: #FFFFFF;
+	}
+	
+
+	100%
+	{
+		wash-color: #ffcb16;
+	}
+}
+
+
+
+/* --- Get Hit */
+
+
+
+.Pulse_HealthHit #container_health
+{
+	animation-name: AnimationHealthHit;
+	animation-duration: .3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'AnimationHealthHit' 
+{
+	0%
+	{
+		background-color: #000000CC; 
+		color: #ff0000;
+		box-shadow: #000000CC -15px -15px 00px 30px; //outer, filled
+	}
+
+	95%
+	{
+		background-color: #00000099; 
+		box-shadow: #00000099 0px 0px 0px 0px; //outer, filled
+	}
+
+	
+	100%
+	{
+		color: #ffcb16;
+	}
+}
+
+
+.Pulse_HealthHit #health_heart_1 
+{
+	animation-name: AnimationHealthHit_Heart;
+	animation-duration: .3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthHit #health_heart_2 
+{
+	animation-name: AnimationHealthHit_Heart;
+	animation-duration: .3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthHit #health_heart_3 
+{
+	animation-name: AnimationHealthHit_Heart;
+	animation-duration: .3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+@keyframes 'AnimationHealthHit_Heart' 
+{
+
+
+	
+	0%
+	{
+		wash-color: #FF0000;
+	}
+		
+
+	100%
+	{
+		wash-color: #ffcb16;
+	}
+}
+
+
+
+
+/* --- Get Hit BIG */
+
+
+
+.Pulse_HealthHitBig #container_health
+{
+	animation-name: AnimationHealthHitBig;
+	animation-duration: .6s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'AnimationHealthHitBig' 
+{
+	0%
+	{
+		background-color: #FFFFFFFF; 
+		color: #ffffff;
+		box-shadow: #FFFFFFFF -15px -15px 00px 30px; //outer, filled
+	}
+	
+	5%
+	{
+		background-color: #FFFFFFFF; 
+		color: #ffffff;
+
+		box-shadow: #FFFFFFFF -15px -15px 00px 30px; //outer, filled
+	}
+
+	5.1%
+	{
+		background-color: #FF0000FF; 
+		color: #000000;
+		box-shadow: #FF0000FF -15px -15px 00px 30px; //outer, filled
+	}
+		
+	
+	25%
+	{
+		color: #000000;
+	}	
+	
+	90%
+	{
+		background-color: #00000099; 
+		box-shadow: #00000099 0px 0px 0px 0px; //outer, filled
+	}
+
+	
+	100%
+	{
+		color: #ffcb16;
+	}
+}
+
+
+.Pulse_HealthHitBig #health_heart_1 
+{
+	animation-name: AnimationHealthHitBig_Heart;
+	animation-duration: .8s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthHitBig #health_heart_2 
+{
+	animation-name: AnimationHealthHitBig_Heart;
+	animation-duration: .8s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_HealthHitBig #health_heart_3 
+{
+	animation-name: AnimationHealthHitBig_Heart;
+	animation-duration: .8s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+@keyframes 'AnimationHealthHitBig_Heart' 
+{
+
+	
+	0%
+	{
+		wash-color: #ffffff;
+	}
+
+	
+	5%
+	{
+		wash-color: #ffffff;
+	}
+
+	5.1%
+	{
+		wash-color: #000000;
+	}
+		
+	
+	25%
+	{
+		wash-color: #000000;
+	}
+		
+
+	100%
+	{
+		wash-color: #ffcb16;
+	}
+}
+
+
+
+
+
+/* AMMO ZONE */
+
+.Icon_Gun_Pistol
+{
+	width:36px;
+	height:39px;
+	background-image: url("s2r://panorama/images/personal/jaker/hud_pistol_sheet_png.vtex");
+	background-size: auto 100%;
+    background-position: 0% 0%;
+	opacity: 0.4;
+	wash-color: #ffcb16;
+}
+
+.Icon_Gun_Pistol.active
+{
+	background-position: 100% 0%;
+	opacity: 1;
+	wash-color: #ffcb16;
+}
+
+
+.Icon_Gun_Shotgun {
+    width: 52px;
+    height: 39px;
+    background-image: url("s2r://panorama/images/personal/jaker/hud_shotgun_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 0% 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+    opacity: 0.4;
+    wash-color: #ffcb16;
+}
+
+.Icon_Gun_Shotgun.active
+{
+    background-position: 100% 0%;
+	opacity: 1;
+	wash-color: #ffcb16;
+}
+
+.Icon_Gun_Rapid_Fire {
+    width: 51.5px;
+    height: 39px;
+    background-image: url("s2r://panorama/images/personal/jaker/hud_rapid_fire_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 0% 0%;
+    opacity: 0.4;
+    wash-color: #ffcb16;
+}
+
+.Icon_Gun_Rapid_Fire.active
+{
+    background-position: 100% 0%;	
+	opacity: 1;
+	wash-color: #ffcb16;
+}
+
+
+
+.Container_Guns
+{
+	width:210px;
+	padding-top:11px;
+	padding-bottom:12.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	flow-children: right;
+	background-color: #00000099;
+	border-radius: 10px;
+	margin:0px;
+}
+
+.NoGuns .Container_Guns
+{
+    visibility: collapse;
+}
+
+.Container_Ammo
+{
+	width:210px;
+	height:137.5px;
+	padding-top:10px;
+	padding-bottom:12.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	flow-children: down;
+	background-color: #00000099;
+	border-radius: 10px;
+}
+
+.NoAmmo .Container_Ammo
+{
+    visibility: collapse;
+}
+
+.Container_Ammo_Counter
+{
+	flow-children: right;
+	
+}
+
+
+
+.Pulse_AmmoGet #container_Ammo
+{
+	animation-name: AnimationActionGet;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+.Pulse_GunGet #container_Guns
+{
+	animation-name: AnimationActionGet;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+.Pulse_GunGet #icon_gun_pistol 
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_GunGet #icon_gun_shotgun
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+.Pulse_GunGet #icon_gun_rapid_fire 
+{
+	animation-name: AnimationActionGet_Heart;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out; 
+	animation-iteration-count: 1; 
+}
+
+
+/* WRIST POUCHES */
+
+.WristPouch
+{
+	width:70px;
+	height:87.5px;
+	background-color: #00000099;
+	border-radius: 10px;
+	margin:0px;
+	vertical-align: bottom;
+	wash-color: #ffcb16;
+
+}
+
+.WristPouch.Left
+{
+	horizontal-align:left;
+}
+
+.WristPouch.Right {
+    horizontal-align: right;
+}
+
+/*Wrist Pouch Items */
+
+.WristItem {
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.WristItem.HealthPen {
+    background-image: url("s2r://panorama/images/personal/jaker/hud_icon_healthpen_png.vtex");
+    visibility: collapse;
+}
+
+
+
+
+
+/* wrist pouch animations in progress */
+
+.WristPouchCircle
+{
+	background-image: url("s2r://panorama/images/personal/jaker/hud_wristpouch_circle_png.vtex");
+	background-position: center;
+	opacity: 1;
+	wash-color: #ffcb16;
+	width: 150px;
+	height: 150px;
+	horizontal-align: center;
+	vertical-align: center;
+	background-repeat: no-repeat;
+	background-size: 0px 0px;
+}
+
+.WristPouchCircleInverted
+{
+	background-image: url("s2r://panorama/images/personal/jaker/hud_wristpouch_circle_inverted_png.vtex");
+	background-position: center;
+	opacity: 1;
+	wash-color: #ffcb16;
+	width: 150px;
+	height: 150px;
+	horizontal-align: center;
+	vertical-align: center;
+	background-repeat: no-repeat;
+	background-size: 80px 80px;
+}
+
+
+@keyframes 'AnimationWristPouchCircle_appear' 
+{
+	0%
+	{
+		background-size: 0px 0px;
+	}
+	
+	100%
+	{
+		background-size: 150px 150px;
+	}
+}
+
+@keyframes 'AnimationWristPouchCircle_appear' 
+{
+	0%
+	{
+		background-size: 0px 0px;
+	}
+	
+	100%
+	{
+		background-size: 150px 150px;
+	}
+}
+
+
+
+
+
+/* Text Styles */
+
+.TextLabel
+{
+	font-family: Rajdhani;
+	font-weight: semi-bold;
+	font-size: 30px;
+	height:30px;
+	text-align: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	horizontal-align: left;
+	vertical-align: center;
+}
+
+.TextResinCount
+{
+	font-family: Rajdhani;
+	font-weight: medium;
+	font-size: 40px;
+	height:42.5px;
+	text-align: right;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+.TextAmmoClipCount
+{
+	font-family: Rajdhani;
+	font-size: 87.5px;
+	height:87.5px;
+	text-align: center;
+	margin-top: -5px;
+	margin-left: -5px;
+	margin-right: 3.5px;
+	horizontal-align: left;
+	vertical-align: center;
+	width: 45px;
+
+}
+
+.TextBackpackCount
+{
+	font-family: Rajdhani;
+	font-weight: medium;
+	font-size: 40px;
+	height:42.5px;
+	text-align: left;
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-bottom:2.5px;
+	margin-right: 2.5px;
+	text-overflow: clip;
+
+}
+
+

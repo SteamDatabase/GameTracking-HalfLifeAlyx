@@ -1,0 +1,266 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	sequences = 
+	{
+		a3_processing2_vort_13_lp01_arr_base = 
+		{
+			loop = true
+			length = 32.0
+			numerator = 4
+			denominator = 4
+			sequence = 
+			[
+				[9, 0.0, 51, 127],
+				[9, 2.34, 52, 127],
+				[9, 5.85, 53, 127],
+				[9, 8.19, 54, 127],
+				[9, 11.7, 55, 127],
+				[9, 14.04, 56, 127],
+				[9, 16.38, 57, 127],
+				[9, 18.72, 58, 127],
+				[9, 21.06, 59, 127],
+				[9, 23.4, 60, 127],
+				[9, 25.74, 61, 127],
+				[9, 28.08, 62, 127],
+				[9, 30.42, 63, 127]
+			]
+		}
+	}
+	samplers = 
+	{
+		a3_processing2_vort_13_lp01_arr = 
+		{
+			attack = 0.0
+			release = 0.0
+			min_note = 51
+			max_note = 63
+			min_velocity_db = -40
+			max_velocity_db = 0
+			soundevent = "core.sampler_base"
+			soundevent_samples = true
+			key_groups = 
+			[
+				{
+					center = 51
+					min = 51
+					max = 51
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_09"
+							]
+						}
+					]
+				},
+				{
+					center = 52
+					min = 52
+					max = 52
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_11"
+							]
+						}
+					]
+				},
+				{
+					center = 53
+					min = 53
+					max = 53
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_05"
+							]
+						}
+					]
+				},
+				{
+					center = 54
+					min = 54
+					max = 54
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_03"
+							]
+						}
+					]
+				},
+				{
+					center = 55
+					min = 55
+					max = 55
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_12"
+							]
+						}
+					]
+				},
+				{
+					center = 56
+					min = 56
+					max = 56
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_07"
+							]
+						}
+					]
+				},
+				{
+					center = 57
+					min = 57
+					max = 57
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_01"
+							]
+						}
+					]
+				},
+				{
+					center = 58
+					min = 58
+					max = 58
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_13"
+							]
+						}
+					]
+				},
+				{
+					center = 59
+					min = 59
+					max = 59
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_08"
+							]
+						}
+					]
+				},
+				{
+					center = 60
+					min = 60
+					max = 60
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_04"
+							]
+						}
+					]
+				},
+				{
+					center = 61
+					min = 61
+					max = 61
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_06"
+							]
+						}
+					]
+				},
+				{
+					center = 62
+					min = 62
+					max = 62
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_02"
+							]
+						}
+					]
+				},
+				{
+					center = 63
+					min = 63
+					max = 63
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_processing2_vort_10"
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+	arrangements = 
+	{
+		a3_processing2_vort_13_lp01_arr = 
+		{
+			tracks = 
+			{
+				base = 
+				{
+					sync_track = "base"
+					bpm = 77.0
+					quantize_type = "bar"
+					quantize_multiplier = 2.0
+					stop_events_by_next = true
+					instrument = "a3_processing2_vort_13_lp01_arr"
+					events = 
+					[
+						{
+							beat = 0.0
+							sequence = "a3_processing2_vort_13_lp01_arr_base"
+						}
+					]
+				}
+			}
+		}
+	}
+}

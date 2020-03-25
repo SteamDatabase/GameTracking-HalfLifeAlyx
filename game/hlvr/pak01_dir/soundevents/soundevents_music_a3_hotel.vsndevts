@@ -1,0 +1,1262 @@
+{
+	Music.a3_reviver_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.400000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		delay = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_intro.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_xen_01 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 0
+		volume = 0.450000
+		volume_fade_in = 4
+		volume_fade_out = 7
+		restart_time = 71.078000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_xen_01.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_xen_02 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 1
+		volume = 0.450000
+		volume_fade_in = 4
+		volume_fade_out = 7
+		restart_time = 71.078000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_xen_02.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_xen_03 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 2
+		volume = 0.450000
+		volume_fade_in = 4
+		volume_fade_out = 7
+		restart_time = 71.078000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_xen_03.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_xen_04 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 3
+		volume = 0.450000
+		volume_fade_in = 4
+		volume_fade_out = 9
+		restart_time = 71.078000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_xen_04.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_xen_05 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 4
+		volume = 0.450000
+		volume_fade_in = 4
+		volume_fade_out = 7
+		restart_time = 71.078000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_xen_05.vsnd",
+		]
+	}
+	Music.a3_reviver_intro2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.150000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_intro.vsnd",
+		]
+	}
+	Music.a3_reviver_intro3 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.250000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_intro.vsnd",
+		]
+	}
+	Music.a3_reviver_basement_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_basement_intro.vsnd",
+		]
+	}
+	Music.a3_basement_reviver_base = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 115.200000
+		delay = 1.500000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_basement_reviver_base.vsnd",
+		]
+	}
+	Music.a3_pit_vort_base = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.600000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 60.000000
+		volume_falloff_max = 450.000000
+		position = 
+		[
+			2114,
+			-1200,
+			788,
+		]
+		use_world_position = 1
+		use_hrtf = 1
+		enable_debug_radius = 0
+		distance_max_velocity = 100
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+		]
+	}
+	Music.a3_pit_vort_01 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			1960,
+			-836,
+			-272,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+		]
+	}
+	Music.a3_pit_vort_02 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			1960,
+			-940,
+			-272,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_02.vsnd",
+		]
+	}
+	Music.a3_pit_vort_03 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			1960,
+			-1048,
+			-272,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_03.vsnd",
+		]
+	}
+	Music.a3_pit_vort_04 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2088,
+			-1086,
+			-314,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_04.vsnd",
+		]
+	}
+	Music.a3_pit_vort_05 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2188,
+			-1066,
+			-332,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_05.vsnd",
+		]
+	}
+	Music.a3_pit_vort_06 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2204,
+			-1024,
+			-274,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_06.vsnd",
+		]
+	}
+	Music.a3_pit_vort_07 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2284,
+			-1122,
+			-138,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_07.vsnd",
+		]
+	}
+	Music.a3_pit_vort_08 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2280,
+			-1102,
+			-278,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_08.vsnd",
+		]
+	}
+	Music.a3_pit_vort_09 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2276,
+			-1090,
+			-422,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_09.vsnd",
+		]
+	}
+	Music.a3_pit_vort_10 = 
+	{
+		base = "Music.a3_pit_vort_base"
+		position = 
+		[
+			2284,
+			-1122,
+			-422,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_10.vsnd",
+		]
+	}
+	Music.a3_pit_vort_10_lp01_arr = 
+	{
+		type = "hlvr_start_arrangement"
+		arrangement = "a3_pit_vort_10_lp01_arr"
+		arrangement_volume = 1
+		quantize_type = "reset"
+		bpm = 117
+	}
+	Music.a3_pit_vort_resonator1 = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 0.130000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 300.000000
+		spread_min = 50
+		spread_max = 60
+		use_hrtf = 1
+		enable_debug_radius = 0
+		distance_max_velocity = 100
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_still_lp01.vsnd",
+		]
+	}
+	Music.a3_pit_vort_resonator2 = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 0.130000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 300.000000
+		spread_min = 50
+		spread_max = 60
+		use_hrtf = 1
+		enable_debug_radius = 0
+		distance_max_velocity = 100
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_still_lp01.vsnd",
+		]
+	}
+	Music.a3_pit_vort_resonator3 = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 0.600000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 160.000000
+		volume_falloff_max = 500.000000
+		spread_min = 50
+		spread_max = 60
+		use_world_position = 1
+		position = 
+		[
+			2120,
+			-964,
+			788,
+		]
+		use_hrtf = 1
+		enable_debug_radius = 0
+		distance_max_velocity = 100
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_still_lp01.vsnd",
+		]
+	}
+	Music.a3_pit_reviver_intro = 
+	{
+		type = "hlvr_music_2d"
+		track = "reviver_intro"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 115.200000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_basement_reviver_base.vsnd",
+		]
+	}
+	Music.a3_pit_reviver_intro2 = 
+	{
+		type = "hlvr_music_2d"
+		track = "reviver_intro"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 115.200000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_basement_reviver_base.vsnd",
+		]
+	}
+	Music.a3_pit_reviver_base = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 115.200000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_basement_reviver_base.vsnd",
+		]
+	}
+	Music.a3_reviver_reviving_intro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_reviving_intro.vsnd",
+		]
+	}
+	Music.a3_reviver_reviving_outro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_reviver_reviving_outro.vsnd",
+		]
+	}
+	Music.a3_pit_reviver_reviving = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 76.800000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_pit_reviver_revive_01.vsnd",
+		]
+	}
+	Music.a3_rooftop_xen_01 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		restart_time = 123.428000
+		volume_fade_in = 7
+		volume_fade_out = 20
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_rooftop_xen_01.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hallway = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 0
+		volume = 0.750000
+		volume_fade_out = 1
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_rooftop_crab_hallway.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hotel_entry = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.300000
+		volume_fade_out = 1
+		restart_time = 123.428000
+		track = "main"
+		priority = 1
+		start_point = 0
+		end_point = 123.428000
+		sync_bpm = 70
+		sync_bpm_beats = 2
+		set_mixlayer = 1.000000
+		mixlayer_use_curve = 1.000000
+		mixlayer_to_set = "PulseInteriorLayer"
+		mixlayer_attack_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		mixlayer_release_curve = 
+		[
+			
+			[
+				0.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_rooftop_crab_hotel_entry.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hotel_pit = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.300000
+		volume_fade_out = 1
+		restart_time = 123.428000
+		track = "main"
+		priority = 2
+		sync_track = "main"
+		start_point = 0
+		end_point = 123.428000
+		sync_bpm = 70
+		sync_bpm_beats = 2
+		set_mixlayer = 1.000000
+		mixlayer_use_curve = 1.000000
+		mixlayer_to_set = "PulseInteriorLayer"
+		mixlayer_attack_curve = 
+		[
+			
+			[
+				0.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		mixlayer_release_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_rooftop_crab_hotel_pit.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hotel_dark = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_out = 1
+		track = "overdub"
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hotel_waves = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.300000
+		volume_fade_out = 1
+		restart_time = 123.428000
+		track = "main"
+		priority = 3
+		sync_track = "main"
+		start_point = 0
+		end_point = 123.428000
+		sync_bpm = 70
+		sync_bpm_beats = 2
+		set_mixlayer = 1.000000
+		mixlayer_use_curve = 1.000000
+		mixlayer_to_set = "PulseInteriorLayer"
+		mixlayer_attack_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		mixlayer_release_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a3_rooftop_crab_hotel_exit = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.300000
+		volume_fade_out = 12
+		restart_time = 123.428000
+		track = "main"
+		sync_track = "main"
+		priority = 4
+		start_point = 0
+		end_point = 123.428000
+		sync_bpm = 70
+		sync_bpm_beats = 1
+		set_mixlayer = 1.000000
+		mixlayer_use_curve = 1.000000
+		mixlayer_to_set = "PulseInteriorLayer"
+		mixlayer_attack_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		mixlayer_release_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				7.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_rooftop_crab_hotel_exit.vsnd",
+		]
+	}
+	Music.a3_pit_reviver_revive = 
+	{
+		type = "hlvr_start_multi_sequence"
+		soundevent_01 = "Music.a3_reviver_reviving_intro"
+		use_01 = true
+		soundevent_02 = "Music.a3_pit_reviver_reviving"
+		use_02 = true
+		wait_02 = 3
+	}
+	Music.a3_rooftop_reviver_base = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 115.200000
+		set_mixlayer = 1.000000
+		mixlayer_use_curve = 1.000000
+		mixlayer_to_set = "PulseInteriorLayer"
+		mixlayer_attack_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		mixlayer_release_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				5.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_basement_reviver_base.vsnd",
+		]
+	}
+	Music.a3_rooftop_reviver_reviving = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 76.800000
+		track = "revive"
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			76.800000,
+		]
+		sync_bpm = 
+		[
+			100.000000,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_pit_reviver_revive_01.vsnd",
+		]
+	}
+	Music.a3_rooftop_reviver_reviving2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.350000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 76.800000
+		track = "revive2"
+		sync_track = "revive"
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			76.800000,
+		]
+		sync_bpm = 
+		[
+			100.000000,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				15.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_pit_reviver_revive_02.vsnd",
+		]
+	}
+	Music.a3_rooftop_reviver_revive = 
+	{
+		type = "hlvr_start_multi_sequence"
+		soundevent_01 = "Music.a3_reviver_reviving_intro"
+		use_01 = true
+		soundevent_02 = "Music.a3_rooftop_reviver_reviving"
+		use_02 = true
+		wait_02 = 3
+	}
+	Music.a3_rooftop_reviver_revive2 = 
+	{
+		type = "hlvr_start_multi_sequence"
+		soundevent_01 = "Music.a3_reviver_reviving_intro"
+		use_01 = true
+		soundevent_02 = "Music.a3_rooftop_reviver_reviving2"
+		use_02 = true
+		wait_02 = 3
+	}
+	Music.HotelStreetCombine = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 0
+		volume = 0.600000
+		volume_fade_out = 3.000000
+		restart_time = 18.640000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/combine_battle_intro_01.vsnd",
+		]
+	}
+	Music.HotelStreetCombine2 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 1
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				20.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.500000
+		volume_fade_out = 2.000000
+		restart_time = 55.922000
+		restart_start = 9.320000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/combine_battle_01.vsnd",
+		]
+	}
+	Music.HotelStreetCombine3 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 2
+		sync_track = "main"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				20.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.500000
+		volume_fade_out = 3.000000
+		restart_time = 18.640000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/combine_battle_intro_01.vsnd",
+		]
+	}
+	Music.HotelStreetCombine4 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 3
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				20.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.500000
+		volume_fade_out = 8.000000
+		start_point = 0
+		end_point = 101.605000
+		sync_bpm = 137
+		sync_bpm_beats = 4
+		restart_time = 55.922000
+		restart_start = 9.320000
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/combine_battle_01.vsnd",
+		]
+	}
+}

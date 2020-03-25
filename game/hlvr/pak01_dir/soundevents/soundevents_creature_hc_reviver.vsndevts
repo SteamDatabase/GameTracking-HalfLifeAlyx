@@ -1,0 +1,1574 @@
+{
+	Headcrab_Reviver.Bite_Player = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "PlayerDamage.Bite"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Bite"
+		use_02 = 1.000000
+	}
+	Headcrab_Reviver.Idle = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	Headcrab_Reviver.Attack = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Snap_At_Player"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Growl"
+		use_02 = 1.000000
+	}
+	Headcrab_Reviver.Snap_At_Player = 
+	{
+		type = "hlvr_default_3d"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1200.000000
+		distance_max = 1200.000000
+		occlusion_scale = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/snap_at_player.vsnd",
+		]
+	}
+	Headcrab_Reviver.Heartbeat = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 250.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/heartbeat_01.vsnd",
+			"sounds/creatures/headcrab_reviver/heartbeat_02.vsnd",
+			"sounds/creatures/headcrab_reviver/heartbeat_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Heartbeat_Zap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_rand_min = -0.070000
+		delay_rand_min = 0.100000
+		delay_rand_max = 1.500000
+		pitch_rand_min = 1.100000
+		pitch_rand_max = 1.700000
+		use_hrtf = 1.000000
+		volume_falloff_min = 10.000000
+		volume_falloff_max = 150.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/orb_bolt_01.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_02.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_03.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_04.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_05.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_06.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_07.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_08.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_09.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_10.vsnd",
+		]
+	}
+	Headcrab_Reviver.BodyLoop = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.400000
+		volume_falloff_min = 20.000000
+		volume_falloff_max = 250.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/bodyloop.vsnd",
+		]
+	}
+	Headcrab_Reviver.Bite_Slobber = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		occlusion_scale = 0.600000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_classic/bite/slobber_01.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_02.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_03.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_04.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_05.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_06.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_07.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_08.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_09.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_10.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_11.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_12.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_13.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_14.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_15.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_16.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_17.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_18.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_19.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_20.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_21.vsnd",
+			"sounds/creatures/headcrab_classic/bite/slobber_22.vsnd",
+		]
+	}
+	Headcrab_Reviver.Bite = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.600000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/bite/bite_01.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_02.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_03.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_04.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_05.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_06.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_07.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_08.vsnd",
+			"sounds/creatures/headcrab_reviver/bite/bite_09.vsnd",
+		]
+	}
+	Headcrab_Reviver.Attach = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_attach_gore.vsnd",
+		]
+	}
+	Headcrab_Reviver.Host_Abandon_Gore_Exit = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_abandon_exit.vsnd",
+		]
+	}
+	Headcrab_Reviver.Host_Abandon_Gore_Burst = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_abandon_burst_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_burst_02.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_burst_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Host_Abandon_Gore_Crack = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_abandon_crack_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_crack_02.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_crack_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Host_Abandon_Gore_Pop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_abandon_pop_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_pop_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Host_Abandon_Gore_Snap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_abandon_snap_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_snap_02.vsnd",
+			"sounds/creatures/headcrab_reviver/host_abandon_snap_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Host_Abandon_A = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		occlusion_scale = 0.100000
+		limiter_on = 1.000000
+		limiter_event_name = "Zombie.Die"
+		limiter_max = 0.000000
+		block_duration = 1.000000
+		block_match_this_event = false
+		block_event_name = "Zombie.Die"
+		block_distance = 60.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/host_abandon_a.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Host_Abandon_B = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		limiter_on = 1.000000
+		limiter_event_name = "Zombie.Die"
+		limiter_max = 0.000000
+		block_duration = 1.000000
+		block_match_this_event = false
+		block_event_name = "Zombie.Die"
+		block_distance = 60.000000
+		occlusion_scale = 0.100000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/host_abandon_b.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Host_Abandon_C = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		limiter_on = 1.000000
+		limiter_event_name = "Zombie.Die"
+		limiter_max = 0.000000
+		block_duration = 1.000000
+		block_match_this_event = false
+		block_event_name = "Zombie.Die"
+		block_distance = 60.000000
+		occlusion_scale = 0.100000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/host_abandon_c.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Host_Choose = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/host_choose.vsnd",
+		]
+	}
+	Zombie_Revived.Node_Movement_Submerge = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_submerge_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_submerge_02.vsnd",
+		]
+	}
+	Zombie_Revived.Node_Movement_Emerge = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_emerge_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_emerge_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Node_Movement_Gore_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_01.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_02.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_03.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_04.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_05.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_06.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_07.vsnd",
+			"sounds/creatures/headcrab_reviver/host_movement_gore_layer_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Ranged_Warning = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Ranged_Warning_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Ranged_Warning_Layer"
+		use_02 = 1.000000
+	}
+	Headcrab_Reviver.Ranged_Warning_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "Reviver"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_warning.vsnd",
+		]
+	}
+	Headcrab_Reviver.Ranged_Warning_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_warning_layer_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_warning_layer_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Ranged_Shoot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_shoot_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_shoot_02.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_shoot_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Ranged_Impact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Ranged_Impact_Base"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Ranged_Impact_Layer"
+		use_02 = 1.000000
+	}
+	Headcrab_Reviver.Ranged_Impact_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		static_position = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_impact_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_impact_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Ranged_Impact_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		static_position = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_impact_layer_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_impact_layer_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Projectile_Loop = 
+	{
+		type = "hlvr_3d_projectile"
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		occlusion_scale = 0.200000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		use_doppler = 1.000000
+		should_pause = true
+		passby_soundevent_name = "Headcrab_Reviver.Projectile_Passby"
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_projectile.vsnd",
+		]
+	}
+	Headcrab_Reviver.Projectile_Passby = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		use_doppler = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_02.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_03.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_04.vsnd",
+		]
+	}
+	Headcrab_Reviver.Smoke_Warning = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/smoke_warning.vsnd",
+		]
+	}
+	Headcrab_Reviver.Smoke_Release = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Smoke_Release_Cloud"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Vox_Smoke_Whistle"
+		use_02 = 1.000000
+		soundevent_03 = "Headcrab_Reviver.Smoke_Release_Layer"
+		use_03 = 1.000000
+	}
+	Headcrab_Reviver.Smoke_Release_Cloud = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/smoke_release.vsnd",
+		]
+	}
+	Headcrab_Reviver.Smoke_Release_Layer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/smoke_release_layer.vsnd",
+		]
+	}
+	Headcrab_Reviver.Body_Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 1000.000000
+		distance_max = 1000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_classic/movement/body_impact_01.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_02.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_03.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_04.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_05.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_06.vsnd",
+		]
+	}
+	Headcrab_Reviver.Jump_Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 1000.000000
+		distance_max = 1000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_classic/movement/body_impact_01.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_02.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_03.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_04.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_05.vsnd",
+			"sounds/creatures/headcrab_classic/movement/body_impact_06.vsnd",
+		]
+	}
+	Headcrab_Reviver.Death = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Death_Scream"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Death_Disintegrate"
+		use_02 = 1.000000
+	}
+	Headcrab_Reviver.Death_Scream = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		use_distance_delay = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/death.vsnd",
+		]
+	}
+	Headcrab_Reviver.Death_Disintegrate = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		use_distance_delay = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/death_disintegrate.vsnd",
+		]
+	}
+	Headcrab_Reviver.Snap_Warning = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_max = 2000.000000
+		distance_max = 2000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/hiss_long_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_long_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_long_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Bark = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/snap_at_player.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Ranged_Warning = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "Reviver"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/ranged_warning.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Smoke_Warning = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/smoke_warning.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Smoke_Whistle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/smoke_whistle.vsnd",
+		]
+	}
+	Headcrab_Reviver.Pain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		delay = 0.100000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		occlusion_scale = 0.300000
+		block_duration = 1.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/pain_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/pain_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/pain_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/pain_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/pain_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/pain_06.vsnd",
+		]
+	}
+	Headcrab_Reviver.Grunt_Hard = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/grunt_hard_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_hard_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_hard_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_hard_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_hard_05.vsnd",
+		]
+	}
+	Headcrab_Reviver.Grunt_Soft = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/grunt_soft_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_soft_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_soft_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_soft_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_soft_05.vsnd",
+		]
+	}
+	Headcrab_Reviver.Grunt_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_10.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_11.vsnd",
+		]
+	}
+	Headcrab_Reviver.Hiss_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_06.vsnd",
+		]
+	}
+	Headcrab_Reviver.Growl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/growl_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/growl_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Grunt_Acc = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Headcrab_Reviver.Grunt_Acc_Core"
+		soundevent_02 = "Headcrab_Reviver.Grunt_Hard"
+	}
+	Headcrab_Reviver.Grunt_Acc_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.400000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/run_start_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_start_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_start_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_start_04.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Shake_Off = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/shake_off.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Shake_Subtle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		mixgroup = "Reviver"
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/shake_subtle_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/shake_subtle_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Taunt = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		mixgroup = "Reviver"
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Taunt_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_short_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_short_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_short_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vox_Taunt_Mini = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_01.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_02.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_03.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_04.vsnd",
+		]
+	}
+	Headcrab_Reviver.Waiting = 
+	{
+		type = "hlvr_distance_xfade_3d_index_match"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		xfade_start = 50.000000
+		xfade_end = 1500.000000
+		volume_falloff_max = 4000.000000
+		occlusion_scale = 0.200000
+		mixgroup = "Reviver"
+		vsnd_files_near = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_10.vsnd",
+		]
+		vsnd_files_far = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/waiting_call_wet_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/idle_wet_10.vsnd",
+		]
+	}
+	Headcrab_Reviver.Little_Stamp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/steps/stamp_01.vsnd",
+			"sounds/creatures/headcrab_reviver/steps/stamp_02.vsnd",
+			"sounds/creatures/headcrab_reviver/steps/stamp_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Tail_Shake = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 800.000000
+		distance_max = 800.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/tail_shake_01.vsnd",
+			"sounds/creatures/headcrab_reviver/tail_shake_02.vsnd",
+			"sounds/creatures/headcrab_reviver/tail_shake_03.vsnd",
+			"sounds/creatures/headcrab_reviver/tail_shake_04.vsnd",
+		]
+	}
+	Headcrab_Reviver.Vent_Screech = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vent/vent_screech_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_screech_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_screech_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_screech_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_screech_05.vsnd",
+		]
+	}
+	Reviver.Vent_Parent = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "Reviver.Vent_Child"
+		random_soundevent_01_timer_min = 0.100000
+		random_soundevent_01_timer_max = 0.140000
+	}
+	Reviver.Vent_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_rand_min = -0.100000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 1200.000000
+		spread_min = 10.000000
+		spread_max = 20.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vent/vent_step_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_10.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_11.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_12.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_13.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_14.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_15.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_16.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_17.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_18.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_19.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_20.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_21.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_22.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_23.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_24.vsnd",
+			"sounds/creatures/headcrab_reviver/vent/vent_step_25.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Fast_In = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/breath/fast_in_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Fast_Out = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/breath/fast_out_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Fast_Both = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/breath/fast_in_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_in_08.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Injured_Out = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/breath/injured_out_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/injured_out_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Injured_Switch = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Headcrab_Reviver.Breath_Fast_Out"
+		soundevent_02 = "Headcrab_Reviver.Breath_Injured_Out"
+	}
+	Headcrab_Reviver.Grunt_Run = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.400000
+		use_hrtf = 1.000000
+		volume_fade_out = 0.300000
+		block_duration = 2.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_10.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_11.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/run_grunt_12.vsnd",
+		]
+	}
+	Headcrab_Reviver.Breath_Run_Switch = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_split = 0.700000
+		soundevent_01 = "Headcrab_Reviver.Breath_Fast_Out"
+		soundevent_02 = "Headcrab_Reviver.Grunt_Run"
+	}
+	AmbientReviver.ElectricalBuzz = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		cull_at_distance = 1000.000000
+		volume = 0.300000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/electrics/buzz_loop_01.vsnd",
+			"sounds/creatures/headcrab_reviver/electrics/buzz_loop_02.vsnd",
+			"sounds/creatures/headcrab_reviver/electrics/buzz_loop_03.vsnd",
+		]
+	}
+	AmbientReviver.Zap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/electrics/buzz_zap_01.vsnd",
+			"sounds/creatures/headcrab_reviver/electrics/buzz_zap_02.vsnd",
+			"sounds/creatures/headcrab_reviver/electrics/buzz_zap_03.vsnd",
+		]
+	}
+	Headcrab_Reviver.Electric_Bolt = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Headcrab_Reviver.Electric_Bolt_Blast"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Electric_Bolt_Thunder"
+		use_02 = 1.000000
+		soundevent_03 = "Headcrab_Reviver.Electric_Bolt_Zap"
+		use_03 = 1.000000
+	}
+	Headcrab_Reviver.Electric_Bolt_Blast = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_out = 6.000000
+		use_hrtf = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.100000
+		occlusion_scale = 0.500000
+		distance_max = 3000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_blast_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_06.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_07.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_08.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_09.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_10.vsnd",
+		]
+	}
+	Headcrab_Reviver.Electric_Bolt_Thunder = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_limit_1",
+		]
+		volume = 0.100000
+		volume_fade_out = 3.000000
+		volume_falloff_min = 100.000000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.150000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		distance_max = 3000.000000
+		should_pause = true
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_06.vsnd",
+		]
+	}
+	Headcrab_Reviver.Electric_Bolt_Zap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 4.000000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.150000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		distance_max = 3000.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_zap_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_06.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_07.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_08.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_09.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_10.vsnd",
+		]
+	}
+	Headcrab_Reviver.Battery_Insert = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/battery_in.vsnd",
+		]
+	}
+	Headcrab_Reviver.Battery_Remove = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/battery_out.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Elevator_Crawl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/run_start_02.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Intro_Vox_Shake = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_intro/vox_shake.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Intro_Vox_Turn = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_intro/vox_turn.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_PreRevive_Taunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/taunt_screech_01.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Gore_Dive = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/gore_dive.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Gore_Impact = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/gore_impact.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Gore_Layer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/gore_layer.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Push = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/push.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Vox_Cute = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/vox_cute.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Revive_Vox_Dive = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.500000
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_revive/vox_dive_in.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Escape_Vox_A = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_escape/escape_vox_a.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Escape_Vox_B = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_escape/escape_vox_b.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Escape_Vox_C = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_escape/escape_vox_c.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Escape_Vox_D = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_escape/escape_vox_d.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Pit_Passby_A = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_pit/vox_passby_a.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Pit_Passby_B = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_pit/vox_passby_b.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Duel_Growl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/growl_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/growl_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_01.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_02.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_03.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_04.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_05.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_06.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_07.vsnd",
+			"sounds/creatures/headcrab_reviver/breath/fast_out_08.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Duel_Taunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_01.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_02.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_03.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/taunt_mini_04.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Duel_Grunt_Backoff = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_07.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_08.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_09.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_10.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_11.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/grunt_short_12.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Duel_Pain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_01.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_02.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_03.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_04.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_05.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_06.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_07.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_08.vsnd",
+			"sounds/creatures/headcrab_reviver/scripted_standoff/pain_mini_09.vsnd",
+		]
+	}
+	Headcrab_Reviver.Scripted_Duel_Short_Hiss = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Reviver"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_02.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_03.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_04.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_05.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/hiss_short_06.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/growl_01.vsnd",
+			"sounds/creatures/headcrab_reviver/vox/growl_02.vsnd",
+		]
+	}
+}

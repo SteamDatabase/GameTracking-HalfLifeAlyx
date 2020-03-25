@@ -1,0 +1,17 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/world_signage.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <Panel class="WorldSignage">
+		<Panel class="SignageTextCenter">
+			<Label id='line1' text="#HLVR_Signage_Main_Power" class="EmergencyMainPowerShutoff" />
+		</Panel>
+		<Panel class="SignageTextCenter">
+			<Label id='line2' text="#HLVR_Signage_Shutoff" class="EmergencyMainPowerShutoff" />
+		</Panel>
+	</Panel>
+</root>
+
+

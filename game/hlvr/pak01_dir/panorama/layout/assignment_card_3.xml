@@ -1,0 +1,20 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/assignment_card.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/assignment_card.vjs_c" />
+	</scripts>
+
+	<Panel class="MessageTitle">
+		<Panel class="SubjectText">
+			<Label id='line1a' class="emphasis" text="HLVR_Assignment" />
+			<Label id='line1b' />
+		</Panel>
+	</Panel>
+</root>
+
+

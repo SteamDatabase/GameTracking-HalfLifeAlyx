@@ -1,0 +1,387 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/base_styles.vcss_c" />
+    <include src="s2r://panorama/styles/credits.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <Panel class="Credits">
+    <Panel id="CreditsContainer">
+      <Image class="HLVRLogo" src="s2r://panorama/images/backgrounds/logo_hlvr_png.vtex"/>
+      <Image class="ValveLogo" src="s2r://panorama/images/backgrounds/logo_valve_white_png.vtex"/>
+      <Panel id="Group01" class="RobotRollCall">
+        <Label class="CreditName" text="Yazan Aldehayyat"/>
+        <Label class="CreditName" text="Steve Allen"/>
+        <Label class="CreditName" text="Mike Ambinder"/>
+        <Label class="CreditName" text="Matthew An"/>
+        <Label class="CreditName" text="Lakulish Antani"/>
+        <Label class="CreditName" text="Max Aristov"/>
+        <Label class="CreditName" text="Ricardo Ariza"/>
+        <Label class="CreditName" text="Gautam Babbar"/>
+        <Label class="CreditName" text="Amy Baisch"/>
+        <Label class="CreditName" text="Daniel Ballance"/>
+        <Label class="CreditName" text="Jeff Ballinger"/>
+        <Label class="CreditName" text="Kenneth Banks"/>
+        <Label class="CreditName" text="Aaron Barber"/>
+        <Label class="CreditName" text="Jeep Barnett"/>
+        <Label class="CreditName" text="Michael Baseflug"/>
+        <Label class="CreditName" text="Don Beaugez"/>
+        <Label class="CreditName" text="Martin Beecroft"/>
+        <Label class="CreditName" text="Michael Belzer"/>
+        <Label class="CreditName" text="Teryn Bence"/>
+        <Label class="CreditName" text="Jay Benson"/>
+        <Label class="CreditName" text="Yahn Bernier"/>
+        <Label class="CreditName" text="Jon Blakeley"/>
+        <Label class="CreditName" text="Iestyn Bleasdale-Shepherd"/>
+        <Label class="CreditName" text="Andrew Bliss"/>
+        <Label class="CreditName" text="Nathaniel Blue"/>
+        <Label class="CreditName" text="Matthew Boone"/>
+        <Label class="CreditName" text="Daniel Boutwell"/>
+        <Label class="CreditName" text="Chris Boyd"/>
+        <Label class="CreditName" text="Kaci Aitchison Boyle"/>
+        <Label class="CreditName" text="Jamaal Bradley"/>
+        <Label class="CreditName" text="Jason Brashill"/>
+        <Label class="CreditName" text="Rob Briscoe"/>
+        <Label class="CreditName" text="Charles Brown"/>
+        <Label class="CreditName" text="Simonne Brown"/>
+        <Label class="CreditName" text="Chris Bryant"/>
+        <Label class="CreditName" text="Tom Bui"/>
+        <Label class="CreditName" text="Benjamin Burbank"/>
+        <Label class="CreditName" text="Andrew Burke"/>
+        <Label class="CreditName" text="Augusta Butlin"/>
+        <Label class="CreditName" text="Tobin Buttram"/>
+        <Label class="CreditName" text="Jeff Cain"/>
+        <Label class="CreditName" text="Antonio Calomeni"/>
+      </Panel>
+      <Panel id="Group02" class="RobotRollCall">
+        <Label class="CreditName" text="Heather Campbell"/>
+        <Label class="CreditName" text="Bruno Carlucci"/>
+        <Label class="CreditName" text="Chris Carollo"/>
+        <Label class="CreditName" text="Molly Carroll"/>
+        <Label class="CreditName" text="Ted Carson"/>
+        <Label class="CreditName" text="Dario Casali"/>
+        <Label class="CreditName" text="Kenneth Chamberlin"/>
+        <Label class="CreditName" text="Anish Chandak"/>
+        <Label class="CreditName" text="Sara Charhon"/>
+        <Label class="CreditName" text="Matthew A Charlesworth"/>
+        <Label class="CreditName" text="Greg Cherlin"/>
+        <Label class="CreditName" text="Christopher Chin"/>
+        <Label class="CreditName" text="Kurtis Chinn"/>
+        <Label class="CreditName" text="Christine Choi"/>
+        <Label class="CreditName" text="Cameron Chrisman"/>
+        <Label class="CreditName" text="Jared Christen"/>
+        <Label class="CreditName" text="Izumi Chunovic"/>
+        <Label class="CreditName" text="Kelly Cline"/>
+        <Label class="CreditName" text="Phil Co"/>
+        <Label class="CreditName" text="Benoit Collette"/>
+        <Label class="CreditName" text="Carl Conlee"/>
+        <Label class="CreditName" text="John Cook"/>
+        <Label class="CreditName" text="Michele Coombs"/>
+        <Label class="CreditName" text="Christen Coomer"/>
+        <Label class="CreditName" text="Greg Coomer"/>
+        <Label class="CreditName" text="Kyle Cornelius"/>
+        <Label class="CreditName" text="Michael Owen Coupland"/>
+        <Label class="CreditName" text="Tony Cox"/>
+        <Label class="CreditName" text="Jason Crist"/>
+        <Label class="CreditName" text="James Cunliffe"/>
+        <Label class="CreditName" text="Scott Dalton"/>
+        <Label class="CreditName" text="Kerry Davis"/>
+        <Label class="CreditName" text="Kyle Davis"/>
+        <Label class="CreditName" text="Joseph Demers"/>
+        <Label class="CreditName" text="Peter Demoreuille"/>
+        <Label class="CreditName" text="Dawn Dempsey"/>
+        <Label class="CreditName" text="Fabrice Demurger"/>
+        <Label class="CreditName" text="Johnny Deng"/>
+        <Label class="CreditName" text="Nathanael Deraney"/>
+        <Label class="CreditName" text="Ariel Diaz"/>
+        <Label class="CreditName" text="Tony DiJulio"/>
+        <Label class="CreditName" text="Quintin Doroquez"/>
+      </Panel>
+      <Panel id="Group03" class="RobotRollCall">
+        <Label class="CreditName" text="Shanon Drone"/>
+        <Label class="CreditName" text="John Drury"/>
+        <Label class="CreditName" text="Chippy Dugan"/>
+        <Label class="CreditName" text="Fletcher Dunn"/>
+        <Label class="CreditName" text="Landon Dyer"/>
+        <Label class="CreditName" text="Marcus Egan"/>
+        <Label class="CreditName" text="David Eichorn"/>
+        <Label class="CreditName" text="Markus Emmerling"/>
+        <Label class="CreditName" text="Christopher Emond"/>
+        <Label class="CreditName" text="Daria Koldunova"/>
+        <Label class="CreditName" text="Dhabih Eng"/>
+        <Label class="CreditName" text="Brett English"/>
+        <Label class="CreditName" text="Justin Ennen"/>
+        <Label class="CreditName" text="Bram Eulaers"/>
+        <Label class="CreditName" text="Jan-Peter Ewert"/>
+        <Label class="CreditName" text="Al Farnsworth"/>
+        <Label class="CreditName" text="David Feise"/>
+        <Label class="CreditName" text="Paul Fenwick"/>
+        <Label class="CreditName" text="Ezra Ferguson"/>
+        <Label class="CreditName" text="Cam Fielding"/>
+        <Label class="CreditName" text="Adrian Finol"/>
+        <Label class="CreditName" text="Noemi Flor"/>
+        <Label class="CreditName" text="Adam Foster"/>
+        <Label class="CreditName" text="Zachary Franks"/>
+        <Label class="CreditName" text="Clinton Freeman"/>
+        <Label class="CreditName" text="Reuben Fries"/>
+        <Label class="CreditName" text="Clement Gallois"/>
+        <Label class="CreditName" text="Nicolas Gauvin"/>
+        <Label class="CreditName" text="Dennis Geels"/>
+        <Label class="CreditName" text="Vitaliy Genkin"/>
+        <Label class="CreditName" text="Kassidy Gerber"/>
+        <Label class="CreditName" text="Tom Giardino"/>
+        <Label class="CreditName" text="Brandon Gilmore"/>
+        <Label class="CreditName" text="Monty Goodson"/>
+        <Label class="CreditName" text="Drew Gottlieb"/>
+        <Label class="CreditName" text="Paul Graham"/>
+        <Label class="CreditName" text="Dirk Gregorius"/>
+        <Label class="CreditName" text="Pierre-Loup Griffais"/>
+        <Label class="CreditName" text="Bronwen Grimes"/>
+        <Label class="CreditName" text="Chris Grinstead"/>
+        <Label class="CreditName" text="Aaron Halifax"/>
+        <Label class="CreditName" text="Jeff Hameluck"/>
+      </Panel>
+      <Panel id="Group04" class="RobotRollCall">
+        <Label class="CreditName" text="Katye I Hargrove"/>
+        <Label class="CreditName" text="Jesse Hatfield"/>
+        <Label class="CreditName" text="Joel Hatfield"/>
+        <Label class="CreditName" text="Romy Hatfield"/>
+        <Label class="CreditName" text="Aubrey Lars Hesselgren"/>
+        <Label class="CreditName" text="Steffen Higel"/>
+        <Label class="CreditName" text="Jeff Hill"/>
+        <Label class="CreditName" text="Lindsay Hill"/>
+        <Label class="CreditName" text="Donald Holden"/>
+        <Label class="CreditName" text="Erik Holverson"/>
+        <Label class="CreditName" text="Eric Hope"/>
+        <Label class="CreditName" text="Ronald Hu"/>
+        <Label class="CreditName" text="Joshua Hudman"/>
+        <Label class="CreditName" text="Scott Hudziak"/>
+        <Label class="CreditName" text="Ben Huen"/>
+        <Label class="CreditName" text="James Hughes"/>
+        <Label class="CreditName" text="Brandon Idol"/>
+        <Label class="CreditName" text="John Ikeda"/>
+        <Label class="CreditName" text="Ryan Ingram"/>
+        <Label class="CreditName" text="Abdul Ismail"/>
+        <Label class="CreditName" text="Ben Jackson"/>
+        <Label class="CreditName" text="Brian Jacobson"/>
+        <Label class="CreditName" text="Steve Jaros"/>
+        <Label class="CreditName" text="Daniel Jennings"/>
+        <Label class="CreditName" text="Magnar Jenssen"/>
+        <Label class="CreditName" text="Erik Johnson"/>
+        <Label class="CreditName" text="Brock Jones"/>
+        <Label class="CreditName" text="Jakob Jungels"/>
+        <Label class="CreditName" text="Christopher Kadar"/>
+        <Label class="CreditName" text="Richard Kaethler"/>
+        <Label class="CreditName" text="Stephen Kalning"/>
+        <Label class="CreditName" text="Bank Kaninworapan"/>
+        <Label class="CreditName" text="Brian Keane"/>
+        <Label class="CreditName" text="Emily Kent"/>
+        <Label class="CreditName" text="Iikka Keranen"/>
+        <Label class="CreditName" text="Resibi Khan"/>
+        <Label class="CreditName" text="Andrew Kim"/>
+        <Label class="CreditName" text="Bradley Kinley"/>
+        <Label class="CreditName" text="David Kircher"/>
+        <Label class="CreditName" text="Eric Kirchmer"/>
+        <Label class="CreditName" text="Tom Kirkland"/>
+        <Label class="CreditName" text="Adam Klaff"/>
+      </Panel>
+      <Panel id="Group05" class="RobotRollCall">
+        <Label class="CreditName" text="Sarah Kneller"/>
+        <Label class="CreditName" text="Stephen Kody"/>
+        <Label class="CreditName" text="Tejeev Kohli"/>
+        <Label class="CreditName" text="Jeff Koontz"/>
+        <Label class="CreditName" text="Tor Krog"/>
+        <Label class="CreditName" text="Alden Kroll"/>
+        <Label class="CreditName" text="Philip Lafornara"/>
+        <Label class="CreditName" text="Jeffrey Lane"/>
+        <Label class="CreditName" text="Sam O Lantinga"/>
+        <Label class="CreditName" text="Mike Lapinsky"/>
+        <Label class="CreditName" text="Tim Larkin"/>
+        <Label class="CreditName" text="Liam Lavery"/>
+        <Label class="CreditName" text="Scott Leberecht"/>
+        <Label class="CreditName" text="Jinwoo Lee"/>
+        <Label class="CreditName" text="Matt Lee"/>
+        <Label class="CreditName" text="Michael Lee"/>
+        <Label class="CreditName" text="Aaron Leiby"/>
+        <Label class="CreditName" text="Jeff Leinbaugh"/>
+        <Label class="CreditName" text="Brian Levinthal"/>
+        <Label class="CreditName" text="Eric Lieberman"/>
+        <Label class="CreditName" text="Jim Liming"/>
+        <Label class="CreditName" text="Jeff Lind"/>
+        <Label class="CreditName" text="Shreya Liu"/>
+        <Label class="CreditName" text="Jane Lo"/>
+        <Label class="CreditName" text="Matthew Logue"/>
+        <Label class="CreditName" text="Charles Lohr"/>
+        <Label class="CreditName" text="Andrew Loomer"/>
+        <Label class="CreditName" text="Joseph Ludwig"/>
+        <Label class="CreditName" text="Randy Lundeen"/>
+        <Label class="CreditName" text="Scott Lynch"/>
+        <Label class="CreditName" text="Owen Macindoe"/>
+        <Label class="CreditName" text="Sophie Mackey"/>
+        <Label class="CreditName" text="Ido Magal"/>
+        <Label class="CreditName" text="Nick Maggiore"/>
+        <Label class="CreditName" text="Yasser Malaika"/>
+        <Label class="CreditName" text="Connor Malone"/>
+        <Label class="CreditName" text="Alexander Mark"/>
+        <Label class="CreditName" text="John McCaskey"/>
+        <Label class="CreditName" text="Ivan McCracken"/>
+        <Label class="CreditName" text="John Kinney McDonald"/>
+        <Label class="CreditName" text="Sergiy Migdalskiy"/>
+        <Label class="CreditName" text="Kristian Miller"/>
+      </Panel>
+      <Panel id="Group06" class="RobotRollCall">
+        <Label class="CreditName" text="Keith Miron"/>
+        <Label class="CreditName" text="Jason Mitchell"/>
+        <Label class="CreditName" text="Aravind Moorthy"/>
+        <Label class="CreditName" text="John Morello II"/>
+        <Label class="CreditName" text="Oliver Moss"/>
+        <Label class="CreditName" text="Jeff Mucha"/>
+        <Label class="CreditName" text="Brad Muir"/>
+        <Label class="CreditName" text="Cassie Murphy"/>
+        <Label class="CreditName" text="Jim Murray"/>
+        <Label class="CreditName" text="Amit Nagar"/>
+        <Label class="CreditName" text="Christopher Nalker"/>
+        <Label class="CreditName" text="Gabe Newell"/>
+        <Label class="CreditName" text="Jane Ng"/>
+        <Label class="CreditName" text="Milton Ngan"/>
+        <Label class="CreditName" text="Matt Nickerson"/>
+        <Label class="CreditName" text="Scott Nietfeld"/>
+        <Label class="CreditName" text="Andrew Nisbet"/>
+        <Label class="CreditName" text="Steven Noonan"/>
+        <Label class="CreditName" text="Seán O Sullivan"/>
+        <Label class="CreditName" text="Naru Omori"/>
+        <Label class="CreditName" text="James Orara"/>
+        <Label class="CreditName" text="John O'Rorke"/>
+        <Label class="CreditName" text="Martin Otten"/>
+        <Label class="CreditName" text="Jennifer Paine"/>
+        <Label class="CreditName" text="Tony Paloma"/>
+        <Label class="CreditName" text="Edward Parker"/>
+        <Label class="CreditName" text="Morten Pedersen"/>
+        <Label class="CreditName" text="Corey Peters"/>
+        <Label class="CreditName" text="Erik Peterson"/>
+        <Label class="CreditName" text="Christine Phelan"/>
+        <Label class="CreditName" text="Jonathon Pile"/>
+        <Label class="CreditName" text="Jay Pinkerton"/>
+        <Label class="CreditName" text="Michael Plummer"/>
+        <Label class="CreditName" text="DJ Powers"/>
+        <Label class="CreditName" text="Karen Prell"/>
+        <Label class="CreditName" text="Karl Quackenbush"/>
+        <Label class="CreditName" text="Elizabeth Ratto"/>
+        <Label class="CreditName" text="Kam Rausch"/>
+        <Label class="CreditName" text="Ali Razmpoosh"/>
+        <Label class="CreditName" text="Tristan Reidford"/>
+        <Label class="CreditName" text="Brandon Reinhart"/>
+        <Label class="CreditName" text="Jeff Reitman"/>
+      </Panel>
+      <Panel id="Group07" class="RobotRollCall">
+        <Label class="CreditName" text="Jeff Reitman"/>
+        <Label class="CreditName" text="Christopher Remo"/>
+        <Label class="CreditName" text="Matthew Rhoten"/>
+        <Label class="CreditName" text="Sergei Riabinin"/>
+        <Label class="CreditName" text="Garret Rickey"/>
+        <Label class="CreditName" text="Emily Ridgway"/>
+        <Label class="CreditName" text="David Riller"/>
+        <Label class="CreditName" text="Erik Robson"/>
+        <Label class="CreditName" text="Jake Rodkin"/>
+        <Label class="CreditName" text="Dan Rosas Paulsen"/>
+        <Label class="CreditName" text="Gabe Rowe"/>
+        <Label class="CreditName" text="Jason Ruymen"/>
+        <Label class="CreditName" text="Jenni Salmi"/>
+        <Label class="CreditName" text="Brett Sanborn"/>
+        <Label class="CreditName" text="Adil M Sardar"/>
+        <Label class="CreditName" text="Chris Schenck"/>
+        <Label class="CreditName" text="Wade Schin"/>
+        <Label class="CreditName" text="John Schoenick"/>
+        <Label class="CreditName" text="Matthew Scott"/>
+        <Label class="CreditName" text="Aaron Seeler"/>
+        <Label class="CreditName" text="Jeremy Selan"/>
+        <Label class="CreditName" text="Chris Shambaugh"/>
+        <Label class="CreditName" text="Jay Shaw"/>
+        <Label class="CreditName" text="Roland Edward Shaw"/>
+        <Label class="CreditName" text="Taylor Sherman"/>
+        <Label class="CreditName" text="Colby Sieber"/>
+        <Label class="CreditName" text="Jeremy Slocum"/>
+        <Label class="CreditName" text="Brian Smith"/>
+        <Label class="CreditName" text="Eric Smith"/>
+        <Label class="CreditName" text="Quentin Smith"/>
+        <Label class="CreditName" text="Will Smith"/>
+        <Label class="CreditName" text="Kyle Sommer"/>
+        <Label class="CreditName" text="David Speyrer"/>
+        <Label class="CreditName" text="Tucker Spofford"/>
+        <Label class="CreditName" text="Jay Stelly"/>
+        <Label class="CreditName" text="Adam Stevens"/>
+        <Label class="CreditName" text="Mike Stevens"/>
+        <Label class="CreditName" text="Gordon Stoll"/>
+        <Label class="CreditName" text="Lisa Strago"/>
+        <Label class="CreditName" text="Eric Strand"/>
+        <Label class="CreditName" text="Eric Tams"/>
+        <Label class="CreditName" text="Dean Tate"/>
+        <Label class="CreditName" text="Frank Taylor"/>
+      </Panel>
+      <Panel id="Group08" class="RobotRollCall">
+        <Label class="CreditName" text="Angie Teetzel"/>
+        <Label class="CreditName" text="Susan Thayer"/>
+        <Label class="CreditName" text="Kelly Thornton"/>
+        <Label class="CreditName" text="Paul Thuriot"/>
+        <Label class="CreditName" text="Michael Tjosvold"/>
+        <Label class="CreditName" text="Jeffrey Unay"/>
+        <Label class="CreditName" text="David Underwood"/>
+        <Label class="CreditName" text="Jacob Urman"/>
+        <Label class="CreditName" text="Ricky Uy"/>
+        <Label class="CreditName" text="James Van Den Bogart"/>
+        <Label class="CreditName" text="Joe van den Heuvel"/>
+        <Label class="CreditName" text="Gabe Van Engel"/>
+        <Label class="CreditName" text="Sean O Vanaman"/>
+        <Label class="CreditName" text="Eric VanWyk"/>
+        <Label class="CreditName" text="Vivek Varadarajan"/>
+        <Label class="CreditName" text="Thiago Vidotto"/>
+        <Label class="CreditName" text="Robin Walker"/>
+        <Label class="CreditName" text="Sharon Wang"/>
+        <Label class="CreditName" text="Chad Weaver"/>
+        <Label class="CreditName" text="Chris Welch"/>
+        <Label class="CreditName" text="Thad Wharton"/>
+        <Label class="CreditName" text="Karl Whinnie"/>
+        <Label class="CreditName" text="David White"/>
+        <Label class="CreditName" text="Matthew Wilde"/>
+        <Label class="CreditName" text="Andrew Wilson"/>
+        <Label class="CreditName" text="Mark Winters"/>
+        <Label class="CreditName" text="Travis Wolfe"/>
+        <Label class="CreditName" text="Lawrence Yang"/>
+        <Label class="CreditName" text="Alan Yates"/>
+        <Label class="CreditName" text="Han Young"/>
+        <Label class="CreditName" text="Shawn Zabecki"/>
+        <Label class="CreditName" text="Patricia Zavalza"/>
+        <Label class="CreditName" text="Irving Zhang"/>
+        <Label class="CreditName" text="Boyang Zhu"/>
+        <Label class="CreditName" text="Vasili Zorin"/>
+      </Panel>
+      <Panel id="Group09" class="VoicesCredits">
+        <Label class="CreditTitle" text="Cast:"/>
+        <Label class="Character" text="Alyx Vance"/>
+        <Label class="CreditName" text="Ozioma Akagha"/>
+        <Label class="Character" text="Russell"/>
+        <Label class="CreditName" text="Rhys Darby"/>
+        <Label class="Character" text="Dr. Eli Vance"/>
+        <Label class="CreditName" text="James Moses Black"/>
+        <Label class="Character" text="Vortigaunt"/>
+        <Label class="CreditName" text="Tony Todd"/>
+        <Label class="Character" text="G Man"/>
+        <Label class="CreditName" text="Michael Shapiro"/>
+        <Label class="Character" text="Larry, Drone, Combine Soldier"/>
+        <Label class="CreditName" text="Rich Sommer"/>
+        <Label class="Character" text="Overwatch"/>
+        <Label class="CreditName" text="Ellen McClain"/>
+        <Label class="Character" text="Olga"/>
+        <Label class="CreditName" text="Cissy Jones"/>
+        <Label class="Character" text="Scientist"/>
+        <Label class="CreditName" text="Kim Dickens"/>
+        <Label class="Character" text="Zombie"/>
+        <Label class="CreditName" text="Tom Taylorson"/>
+        <Label class="Character" text="Combine Grunt"/>
+        <Label class="CreditName" text="Jason Vande Brake"/>
+        <Label class="Character" text="Combine Charger"/>
+        <Label class="CreditName" text="Michael Schwalbe"/>
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

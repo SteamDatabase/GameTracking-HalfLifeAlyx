@@ -1,0 +1,2302 @@
+
+// Soundscapes for Canals & Underground
+
+// city voice
+
+// pa requests player id
+
+//  CHAR_STREAM			'*'		// as one of 1st 2 chars in name, indicates streaming wav data
+//  CHAR_USERVOX		'?'		// as one of 1st 2 chars in name, indicates user realtime voice data
+//  CHAR_SENTENCE		'!'		// as one of 1st 2 chars in name, indicates sentence wav
+//  CHAR_DRYMIX			'#'		// as one of 1st 2 chars in name, indicates wav bypasses dsp fx
+//  CHAR_DOPPLER		'>'		// as one of 1st 2 chars in name, indicates doppler encoded stereo wav: left wav (incomming) and right wav (outgoing).
+//  CHAR_DIRECTIONAL	'<'		// as one of 1st 2 chars in name, indicates stereo wav has direction cone: mix left wav (front facing) with right wav (rear facing) based on soundfacing direction
+//  CHAR_DISTVARIANT	'^'		// as one of 1st 2 chars in name, indicates distance variant encoded stereo wav (left is close, right is far)
+//  CHAR_OMNI			'@'		// as one of 1st 2 chars in name, indicates non-directional wav (default mono or stereo)
+//  CHAR_SPATIALSTEREO	')'		// as one of 1st 2 chars in name, indicates spatialized stereo wav
+//  CHAR_FAST_PITCH		'}'		// as one of 1st 2 chars in name, forces low quality, non-interpolated pitch shift
+
+
+"cityvoice_level0"
+{
+	"playrandom"
+	{
+		"time"		"15,30"
+		"volume"	"0.4,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_confirmcivilstatus_1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_protectionresponse_1_spkr.vsnd"
+		}
+	}
+}
+
+// pa invokes unrest procedures, requests player id
+
+"cityvoice_level1"
+{
+	"playrandom"
+	{
+		"time"		"12,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_innactionisconspiracy_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_unrestprocedure1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_confirmcivilstatus_1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_protectionresponse_1_spkr.vsnd"
+		}
+	}
+}
+
+// player is evading, cops are summoned
+
+"cityvoice_level2"
+{
+	"playrandom"
+	{
+		"time"		"12,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_evasionbehavior_2_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_unrestprocedure1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_anticivilevidence_3_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_innactionisconspiracy_spkr.vsnd"
+		}
+	}
+}
+
+// player convicted of civil disruption, city block on alert
+
+"cityvoice_level3"
+{
+	"playrandom"
+	{
+		"time"		"12,30"
+		"volume"	"0.8,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_sociolevel1_4_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_localunrest_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_unrestprocedure1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_anticivilevidence_3_spkr.vsnd"
+		}
+	}
+}
+
+// player convicted of anticivil activity, city block punished
+
+"cityvoice_level4"
+{
+	"playrandom"
+	{
+		"time"		"12,25"
+		"volume"	"0.8,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_ceaseevasionlevelfive_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_ceaseevasionlevelfive_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_anticivil1_5_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_rationunitsdeduct_3_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_unrestprocedure1_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_protectionresponse_4_spkr.vsnd"
+		}
+	}
+}
+
+// citizenship revoked, cops fire at will
+
+"cityvoice_level5"
+{
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.7,1.0"
+		"pitch"		"100"
+
+		"rndwave"
+		{
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_citizenshiprevoked_6_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_citizenshiprevoked_6_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_capitalmalcompliance_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_anticitizenreport_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_rationunitsdeduct_3_spkr.vsnd"
+			"wave"	"*sounds/npc/overwatch/cityvoice/f_protectionresponse_5_spkr.vsnd"
+		}
+	}
+}
+
+// city looking for player
+
+"city_searching_level1"
+{
+
+	"playlooping"
+	{
+		"volume"	"0.42"
+		"wave"		"sounds/ambient/atmosphere/station_ambience_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.2,0.8"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/heli_pass1.vsnd"
+			"wave"	"sounds/ambient/machines/aircraft_distant_flyby1.vsnd"
+			"wave"	"sounds/ambient/machines/aircraft_distant_flyby3.vsnd"
+			"wave"	"sounds/ambient/alarms/apc_alarm_pass1.vsnd"
+			"wave"	"sounds/ambient/alarms/manhack_alert_pass1.vsnd"
+			"wave"	"sounds/ambient/alarms/scanner_alert_pass1.vsnd"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"30,60"
+		"volume"	"0.1,0.2"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/alarms/train_horn_distant1.vsnd"
+		}
+	}
+}
+
+"city_searching_level2"
+{
+	"playsoundscape"
+	{
+		"name"		"city_searching_level1"
+		"volume"	"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"		"3,10"
+		"volume"	"0.3,1.0"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/heli_pass1.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass_distant1.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass2.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass_quick1.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass_quick2.vsnd"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.1,0.4"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/truck_pass_distant1.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_distant2.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_distant3.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_overhead1.vsnd"
+		}
+	}
+
+	// undone: cop announcements
+}
+
+// shots fired by/at player, city on alert
+
+"city_searching_level3"
+{
+	"playlooping"
+	{
+		"volume"	"0.42"
+		"wave"		"sounds/ambient/atmosphere/station_ambience_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+	"playrandom"
+	{
+		"time"		"3,10"
+		"volume"	"0.6,1.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/heli_pass1.vsnd"
+			"wave"	"sounds/ambient/machines/aircraft_distant_flyby1.vsnd"
+			"wave"	"sounds/ambient/machines/aircraft_distant_flyby3.vsnd"
+			"wave"	"sounds/ambient/alarms/apc_alarm_pass1.vsnd"
+			"wave"	"sounds/ambient/alarms/manhack_alert_pass1.vsnd"
+			"wave"	"sounds/ambient/alarms/scanner_alert_pass1.vsnd"
+		}
+	}
+
+	// undone: cop announcements
+	"playrandom"
+	{
+		"time"		"8,20"
+		"volume"	"0.4,0.9"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/truck_pass_distant1.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_distant2.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_distant3.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_overhead1.vsnd"
+		}
+	}
+}
+
+
+"d1_canals.util_windgusts"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"time"		"10.0, 30.0"
+		"pitch"		"90,130"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave" "sounds/ambient/wind/wind_hit1.vsnd"
+			"wave" "sounds/ambient/wind/wind_hit2.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet3.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet4.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet5.vsnd"
+		}
+	}
+}
+
+
+"d1_canals.util_drips"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.5"
+		"pitch"		"100"
+		"time"		"0.5, 5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/drip1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/drip2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/drip3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/drip4.vsnd"
+			"wave"	"sounds/ambient/water/rain_drip1.vsnd"
+			"wave"	"sounds/ambient/water/rain_drip2.vsnd"
+			"wave"	"sounds/ambient/water/rain_drip3.vsnd"
+			"wave"	"sounds/ambient/water/rain_drip4.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_fardrips"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.5"
+		"pitch"		"90,120"
+		"time"		"0.5, 5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/distant_drip1.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip2.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip3.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip4.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_headcrab_canister"
+{
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"soundlevel"	"SNDLVL_65dB"
+		"pitch"		"100"
+		"wave"	"sounds/npc/env_headcrabcanister/hiss.vsnd"
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.4,0.6"
+		"pitch"		"90,120"
+		"time"		"5.0, 15.0"
+		"soundlevel"	"SNDLVL_90db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient5.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient6.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_shoreline"
+{
+	"playrandom"
+	{
+		"volume"	"0.45,0.65"
+		"pitch"		"100"
+		"time"		"3.0, 4.0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/shore1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore4.vsnd"
+		}
+	}
+}
+
+
+
+// d1_canals_01
+
+"d1_canals_tunnel01"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level0"
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.3"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_80dB"
+		"position"	"0"
+		"wave"		"sounds/ambient/machines/train_wheels_overhead_loop1.vsnd"
+	}
+}
+
+
+"d1_canals_citystart"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level0"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.4"
+	}
+
+
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.2,0.4"
+		"pitch"		"95,105"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/alarms/train_horn_distant1.vsnd"
+		}
+	}
+	
+}
+
+"d1_canals_citadel"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level0"
+		"volume"	"0.9"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.6"
+	}
+		
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/corridor.vsnd"
+	}
+}
+
+"d1_canals_traincanal"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level0"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.4"
+	}
+}
+
+"d1_canals_traintunnel"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level0"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+}
+
+"d1_canals_watercanal"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level1"
+		"volume"	"0.04"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.8"
+	}
+
+// position 1 is boat with water
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"1"
+		"wave"		"sounds/ambient/water/water_in_boat1.vsnd"
+	}
+
+}
+
+"d1_canals_junkyard"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level1"
+		"volume"	"0.9"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level2"
+		"volume"	"0.4"
+	}
+
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.1,0.55"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/creaking.vsnd"
+			"wave"	"sounds/ambient/materials/icegrind1.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress1.vsnd"
+		}
+	}	
+}
+
+
+"d1_canals_copcanals"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level2"
+		"volume"	"0.7"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.65"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"2"
+		"wave"		"sounds/ambient/water/drip_loop1.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"80"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"3"
+		"wave"		"sounds/ambient/water/corridor_water.vsnd"
+	}
+
+	"playrandom"
+	{
+
+		"time"		"15,30"
+		"volume"	"0.15,0.3"
+		"pitch"		"90,105"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/truck_pass_overhead1.vsnd"
+		}
+	}
+}
+
+"d1_truck_pass"
+{
+	"playrandom"
+	{
+
+		"time"		"15,30"
+		"volume"	"0.6,0.9"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/truck_pass_overhead1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit2.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit2.vsnd"
+		}
+	}
+}
+
+"d1_canals_barnacle_tunnel"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level3"
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level1"
+		"volume"	"0.2"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.3"
+	}
+
+}
+
+"d1_canals_pipe_chamber"
+{
+	"dsp"	"1"
+
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level2"
+		"volume"	"0.25"
+	}
+	
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_80dB"
+		"wave"		"sounds/ambient/water/drip_loop1.vsnd"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.2"
+	}
+
+}
+
+"d1_canals_cop_alerted"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level4"
+		"volume"	"0.3"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level3"
+		"volume"	"0.2"
+		
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"2"
+		"wave"		"sounds/ambient/water/drip_loop1.vsnd"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.2"
+	}
+
+}
+
+
+// d1_canals_02
+
+"d1_canals.heli_slide_tunnels"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level4"
+		"volume"	"0.2"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level3"
+		"volume"	"0.1"
+		
+	}
+	
+	"playlooping"
+	{
+		"wave"	"sounds/ambient/levels/canals/water_rivulet_loop2.vsnd"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_drips"
+		"volume"	"1.0"
+	}
+		
+	
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.2"
+	}
+		
+}
+
+"d1_canals.heli_attack"
+{
+	"dsp"	"1"
+
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level4"
+		"volume"	"0.35"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level3"
+		"volume"	"0.5"
+		
+	}
+	
+	"playlooping"
+	{
+		"wave"	"sounds/ambient/levels/canals/water_rivulet_loop2.vsnd"
+		"volume"	"0.05"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.2"
+	}
+		
+}
+
+"d1_canals.drainroom"
+{
+	"dsp"	"1"
+	
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level4"
+		"volume"	"0.18"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level2"
+		"volume"	"0.15"
+		
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_90dB"
+		"position"	"0"
+		"wave"		"sounds/ambient/water/water_run1.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"105"
+		"soundlevel" "SNDLVL_90dB"
+		"position"	"1"
+		"wave"		"sounds/ambient/water/water_run1.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_90dB"
+		"position"	"2"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.3"
+	}
+}
+
+// d1_canals_03
+
+"d1_canals.03copsattackthroughboards"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level5"
+		"volume"	"0.7"
+	
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level2"
+		"volume"	"1.0"
+		
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_90dB"
+		"position"	"0"
+		"wave"		"sounds/ambient/machines/diesel_engine_idle1.vsnd"
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"d1_truck_pass"
+		"volume"	"0.3"
+	}
+}
+
+"d1_canals.03entrytunnel"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level5"
+		"volume"	"0.2"
+		
+	}
+
+	"playsoundscape"	
+	{
+		"name"		"city_searching_level2"
+		"volume"	"0.15"
+		
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"0"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_90dB"
+		"position"	"2"
+		"wave"		"sounds/ambient/water/leak_1.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		// "position"	"0"
+		"volume"	"1.0"
+	}
+}
+
+// steam tunnel
+
+"d1_canals.steamtunnel"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"	
+	{
+		"name"		"cityvoice_level5"
+		"volume"	"0.38"
+		
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/cargo_hold2.vsnd"
+	}
+}
+
+// manhack and water puzzle room
+
+"d1_canals.waterpuzzleroom"
+{
+	"dsp"	"1"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		// "position"	"0"
+		"volume"	"0.3"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/water/drip_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/corridor2.vsnd"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/cargo_hold2.vsnd"
+	}
+}
+
+
+//*******************************************************************
+// airboat canals
+
+
+"d1_canals.util_birds"
+{
+	"playrandom"
+	{
+		"time"		"8,30"
+		"volume"	"0.2,0.4"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/swamp_bird1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/swamp_bird2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/swamp_bird3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/swamp_bird4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/swamp_bird5.vsnd"
+			"wave"	"sounds/ambient/levels/canals/swamp_bird6.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter6.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_critters"
+{
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.1,0.2"
+		"pitch"		"95,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/critter1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter5.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter6.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter7.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter8.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_tunnel_windgusts"
+{
+	"playrandom"
+	{
+		"volume"	"0.2,0.5"
+		"pitch"		"80,120"
+		"time"		"5.0, 20.0"
+		"pitch"		"80,140"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave" "sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet2.vsnd"
+		}
+	}
+}
+
+
+"d1_canals.util_critters_under_docks"
+{
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/levels/canals/swamp_frogs_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_critters"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+}
+
+	
+"d1_canals.util_toxic_slime"
+{
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/levels/canals/toxic_slime_loop1.vsnd"
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.15,0.3"
+		"time"		"2.0,10.0"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_gurgle3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_gurgle5.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_gurgle6.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_gurgle7.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_gurgle8.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_sizzle1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_sizzle2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_sizzle3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/toxic_slime_sizzle4.vsnd"
+		}
+	}
+}
+
+"d1_canals.util_industrial"
+{
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"sounds/ambient/atmosphere/metallic1.vsnd"
+	}
+}
+
+
+//*******************************************************************
+// general tunnels:
+
+
+
+"d1_canals.general_dripping_tunnel"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/water/drip_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		// "position"	"0"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"0.7"
+	}
+		
+}
+
+"d1_canals.general_windy_tunnel"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"sounds/ambient/levels/canals/tunnel_wind_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+}
+
+// canal tunnel with water, but no 'shore' sounds
+// position 0 - drips
+// position 1 - critters
+
+"d1_canals.general_watery_tunnel"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/levels/canals/waterleak_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		"position"	"0"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_critters"
+		"position"	"1"
+		"volume"	"1.0"
+	}
+}
+
+// canal tunnel with water, with 'shore' sounds
+// position 0 - drips
+// position 1 - critters
+
+"d1_canals.general_watery_tunnel_shore"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.general_watery_tunnel"
+		"volume"	"0.8"
+	}
+	
+}
+
+
+// red barn - headcrab canister at position 0
+
+"d1_canals.redbarn_ambience"
+{
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.2,0.45"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet2.vsnd"
+		}
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_windgusts"
+		"volume" "1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_birds"
+		"volume" "0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.5"
+		"positionoverride"	"0"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"canals_river_calm"
+		"volume" "0.38"
+	}
+
+}
+
+// position 0 is manhack 'charge station' ambience
+
+"d1_canals.floodgate_base_ambience"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"sounds/ambient/levels/canals/generator_ambience_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"sounds/ambient/atmosphere/cargo_hold2.vsnd"
+		"pitch"		"100"
+	}
+
+	// manhack dispenser ambience - position 0
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"0"
+		"wave"		"sounds/ambient/levels/canals/manhack_machine_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	// position 1 is combine computer terminal
+	"playsoundscape"
+	{
+		"name"	"combine.computer"
+		"volume"	"0.8"
+		"positionoverride"	"1"
+	}
+
+}
+
+"d1_canals.floodgate_machineroom"
+{
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"sounds/ambient/wind/wasteland_wind.vsnd"
+		"pitch"		"100"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"sounds/ambient/atmosphere/cargo_hold1.vsnd"
+		"pitch"		"100"
+	}
+}
+
+"d1_canals.shore_and_reeds"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_birds"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.8"
+	}
+
+}
+
+
+
+"d1_canals.spooky_infested_pipe"
+{
+	"dsp"	"1"
+
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.2,0.3"
+		"pitch"		"80,90"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/wind/wind_moan1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/critter6.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit5.vsnd"
+		}
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		// "position"	"0"
+		"volume"	"0.7"
+	}
+
+}
+
+
+
+"d1_canals.water_tunnel_with_frogs"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/levels/canals/swamp_stereo_frogs_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"sounds/ambient/levels/canals/water_rivulet_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_critters"
+		"volume"	"1.0"
+	}
+
+
+}
+
+
+
+// windchimes at position 0
+
+"d1_canals.windchimes_and_wind"
+{
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"sounds/ambient/levels/canals/windmill_wind_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.2,0.4"
+		"pitch"		"100"
+		"time"		"3.0, 8.0"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/windchine1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime2.vsnd"
+			//"wave"	"sounds/ambient/levels/canals/windchime3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime5.vsnd"
+			//"wave"	"sounds/ambient/levels/canals/windchime6.vsnd"
+			//"wave"	"sounds/ambient/levels/canals/windchime7.vsnd"
+			//"wave"	"sounds/ambient/levels/canals/windchime8.vsnd"
+		}
+	}
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_birds"
+		"volume" "0.2"
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// All slime tunnels throughout the canals
+//-----------------------------------------------------------------------------
+"canals_slime_outside"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"0"
+		"volume"	"1.0"
+	}
+}
+
+"canals_slime_tunnel"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+	// This is a burbling slime sound
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"0"
+		"volume"	"1.0"
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// Tunnels throughout the canals
+//-----------------------------------------------------------------------------
+
+// A dry tunnel, which has no water or slime
+"canals_tunnel_dry"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/sewer_air1.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+}
+
+// A wet tunnel, which has water
+"canals_tunnel_wet"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.general_watery_tunnel"
+		"volume"	"1.0"
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// Generic outdoor area surrounded by concrete
+//-----------------------------------------------------------------------------
+
+// This version is where there's no water nearby
+"canals_canal_nowater"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_birds"
+		"volume" "0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_windgusts"
+		"volume" "0.4"
+	}
+
+}
+
+// This version is where there's water through the canal
+"canals_canal_water"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_birds"
+		"volume" "0.3"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.4"
+	}
+}
+
+// This version is where there's water through the canal in an industrial area
+"canals_canal_water_industrial"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_industrial"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.4"
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// Generic outdoor river area
+//-----------------------------------------------------------------------------
+"canals_river"
+{
+	// This is the sound of the reservoir, audible after the chopper is destroyed.
+
+	"dsp"	"1"
+
+	// Ambient sound of the river
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_birds"
+		"volume"	"0.3"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.3"
+	}
+}
+
+//-----------------------------------------------------------------------------
+// Generic outdoor river area with frogs and critters
+//-----------------------------------------------------------------------------
+"canals_river_calm"
+{
+	// This is the sound of the calm river sections after the shanty
+
+	"dsp"	"1"
+
+	// Ambient sound of the river
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_birds"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.5"
+	}
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"wave"		"sounds/ambient/levels/canals/swamp_frogs_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_critters"
+		"volume"	"1.0"
+	}
+}
+
+//-----------------------------------------------------------------------------
+// d1_canals_05
+//-----------------------------------------------------------------------------
+
+// d1_canals_05 -- This is for the tunnel right before the shanty area.
+
+"d1_canals_05_shanty_approach"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+	// This is a burbling slime sound
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"0"
+		"volume"	"1.0"
+	}
+	
+	// This is a burbling slime sound
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"1"
+		"volume"	"1.0"
+	}
+}
+
+// d1_canals_05 -- This is for the shanty area.
+// canisters at positions 2,3,4,5,6
+
+"d1_canals_05_shanty"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+
+
+	// This is for the toxic slime at the zombie intro.
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"0"
+		"volume"	"0.3"
+	}
+
+	// This is for the toxic slime at the end of the shanty.
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_toxic_slime"
+		"position"	"1"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.7"
+		"positionoverride"	"2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.7"
+		"positionoverride"	"3"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.7"
+		"positionoverride"	"4"
+	}
+	
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.7"
+		"positionoverride"	"5"
+	}
+	"playsoundscape"
+	{
+		"name"	"d1_canals.util_headcrab_canister"
+		"volume" "0.7"
+		"positionoverride"	"6"
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// d1_canals_07, 2nd helicopter bombing level
+//-----------------------------------------------------------------------------
+// This is the tunnel you're in right before the reservoir
+"d1_canals_07_entry_tunnel"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+
+	// This is a dripping noise somewhere inside the tunnel
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		"position"	"0"
+		"volume"	"0.4"
+	}
+
+	// This is a dripping noise somewhere inside the tunnel
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_drips"
+		"positionoverride"	"1"
+		"volume"	"0.2"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+}
+
+//-----------------------------------------------------------------------------
+// d1_canals_07a, final helicopter bombing run
+//-----------------------------------------------------------------------------
+"d1_canals_07a_warehouse"
+{
+	// The ambient sounds of the warehouse
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_90dB"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.1,0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+		}
+	}
+
+}
+
+
+//-----------------------------------------------------------------------------
+// d1_canals_08a
+//-----------------------------------------------------------------------------
+
+// d1_canals_08a, This is right inside the gun scene tunnel entrance.
+"d1_canals_08a_gun_tunnel_entrance"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"wave"		"sounds/ambient/levels/canals/water_rivulet_loop2.vsnd"
+		"pitch"		"100"
+	}	
+	
+}
+
+// d1_canals_08a, The outdoor area where the ramp puzzle is.
+"d1_canals_08a_puzzle_arena"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_birds"
+		"volume"	"0.1"
+	}
+}
+
+// d1_canals_08a, The gun scene tunnel area.  
+"d1_canals_08a_gun_scene"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/levels/canals/waterleak_loop1.vsnd"
+	}
+
+	// This is a dripping noise somewhere inside the tunnel
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		"position"	"0"
+		"volume"	"0.4"
+	}
+
+	// This is a dripping noise somewhere inside the tunnel
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_drips"
+		"position"	"1"
+		"volume"	"0.2"
+	}
+}
+
+// d1_canals_08a, The gun scene exit tunnel, triggered right before the helicopter shows up.  Copied from canals_tunnel_wet -JL
+"d1_canals_08a_tunnel_exit"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+}
+
+
+
+//-----------------------------------------------------------------------------
+// d1_canals_06a, second gun map
+//-----------------------------------------------------------------------------
+// This version is where there's water through the canal w/ creaking wood nearby
+// position 0 - creaking wood
+// position 1 - creaking wood
+"canals_canal_water_creaking_wood"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_birds"
+		"volume" "0.3"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.4"
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.1,0.35"
+		"pitch"		"95,105"
+		"position"		"0"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.1,0.35"
+		"pitch"		"95,105"
+		"position"		"1"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+		}
+	}
+}
+
+"canals_canal_water_creaking_metal"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name" "d1_canals.util_birds"
+		"volume" "0.3"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"0.4"
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.1,0.35"
+		"pitch"		"95,105"
+		"position"		"0"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/metal_stress2.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress4.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress5.vsnd"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.1,0.35"
+		"pitch"		"95,105"
+		"position"		"1"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/metal_stress2.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress4.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress5.vsnd"
+		}
+	}
+}
+
+
+//-----------------------------------------------------------------------------
+// d1_canals_08, final helicopter battle
+//-----------------------------------------------------------------------------
+
+// This is the tunnel you're in right before the reservoir
+"d1_canals_08_entry_tunnel"
+{
+	"dsp"	"1"
+
+	// This is the sound of the tunnel
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience5.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_tunnel_windgusts"
+		"volume"	"1.0"
+	}
+
+	// This is a dripping noise somewhere inside the tunnel
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_fardrips"
+		"positionoverride"	"0"
+		"volume"	"1.0"
+	}
+
+	// This is the sound of a helicopter outside the tunnel to foreshadow the chopper battle
+	"playrandom"
+	{
+		"time"		"15,25"
+		"volume"	"0.2,0.8"
+		"pitch"		"100"
+		"position"	"2"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/machines/heli_pass1.vsnd"
+		}
+	}
+}
+
+// This is the reservoir where the battle with the helicopter happens
+"d1_canals_08_reservoir"
+{
+	"dsp"	"1"
+
+	// Ambient sound of the reservoir
+	
+	// This is the sound of the dam itself
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_100dB"
+		"position"	"1"
+		"wave"		")sounds/ambient/levels/canals/dam_water_loop2.vsnd"
+	}
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_birds"
+		"volume"	"0.3"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_shoreline"
+		"volume"	"0.5"
+	}
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"wave"		"sounds/ambient/levels/canals/swamp_frogs_loop2.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_critters"
+		"volume"	"1.0"
+	}
+}
+
+// This is over the island that the base is on (also necessary to cause us to
+// switch away from the base_interior soundscape when we leave the base)
+// You could make new sounds here (target0 still represents the dam), or leave it
+"d1_canals_08_island"
+{
+	"playsoundscape"	
+	{
+		"name"		"d1_canals_08_reservoir"
+		"volume"	"1.0"
+	}
+
+	// This is the sound of the dam itself
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_100dB"
+		"position"	"0"
+		"wave"		")sounds/ambient/levels/canals/dam_water_loop2.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"d1_canals.util_windgusts"
+		"volume"	"1.0"
+	}
+}
+
+// This is the interior of the base on the island
+"d1_canals_08_base_interior"
+{
+	// The ambient sounds of the base
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+
+	// position 0 is combine computer
+
+	// position 1 is combine computer terminal
+	"playsoundscape"
+	{
+		"name"	"combine.computer"
+		"volume"	"0.9"
+		"position"	"1"
+	}
+
+}

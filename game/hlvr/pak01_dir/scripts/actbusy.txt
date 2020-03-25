@@ -1,0 +1,78 @@
+// "act busy name"			This is the name that a mapmaker must specify in the hint node.
+// { 
+//		"busy_anim" 		"Activity Name".
+//		"entry_anim"		"Activity Name"
+//		"exit_anim"			"Activity Name"
+//		"busy_sequence"		"Sequence Name". If specified, this is used over the activity name. Specify it in the hint node.
+//		"entry_sequence" 	"Sequence Name". If specified, this is used over the entry anim.
+//		"exit_sequence" 	"Sequence Name". If specified, this is used over the exit anim.
+//		"min_time"			"Minimum time to spend in this busy anim"
+//		"max_time"			"Maximum time to spend in this busy anim"	0 = only stop when interrupted by external event
+//		"interrupts"		One of:
+//							"BA_INT_NONE"		break out only when time runs out. No external influence will break me out.
+//							"BA_INT_DANGER"		break out of this anim only if threatened
+//							"BA_INT_PLAYER"		break out of this anim if I can see the player, or I'm threatened
+//							"BA_INT_AMBUSH"		break out of this anim when I see enemies, but don't break on danger sounds
+//							"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
+//							"BA_INT_ENEMY_REACHABLE"	break out of this anim if our enemy becomes reachable
+//
+//		"use_automovement"	Set to 1, the NPC navigation system will be used as the actor animates, preventing them moving into solids. Should be used in 
+//					all cases except those where the actor will be interpenetrating another object (such as sitting on a chair).
+//		"use_ragdoll"	Set to 1, the NPC will play their entry animation, then go into ragdoll. Whenever the condition for breaking out of actbusy is met, they will unragdoll
+// }
+//
+// 
+"ActBusy.txt"
+{
+
+//*****************************************************************************
+//************  Zombie actbusy section  *nuugggh* *****************************
+//*****************************************************************************
+
+	"Zombie_Inspect_Ground"
+	{
+		"animgraph_bool"	"b_act_busy"
+		"animgraph_enum"	"e_act_busy_type"
+		"animgraph_value"	"0"							// ground_inspect
+		"min_time"			"5"
+		"max_time"			"10"
+		"interrupts"		"BA_INT_PLAYER"
+		"use_automovement"	"1"
+	}
+
+	"Zombie_Inspect_Above"
+	{
+		"animgraph_bool"	"b_act_busy"
+		"animgraph_enum"	"e_act_busy_type"
+		"animgraph_value"	"1"							// player_above
+		"min_time"			"15"
+		"max_time"			"30"
+		"interrupts"		"BA_INT_ENEMY_REACHABLE"
+		"use_automovement"	"1"
+	}
+
+	"Zombie_Bang_Fence"
+	{
+		"animgraph_bool"	"b_act_busy"
+		"animgraph_enum"	"e_act_busy_type"
+		"animgraph_value"	"2"							// fence_banging
+		"min_time"			"40"
+		"max_time"			"45"
+		"interrupts"		"BA_INT_ENEMY_REACHABLE"
+		"use_automovement"	"1"
+	}
+
+	"Zombie_Lean_Fence"
+	{
+		"animgraph_bool"	"b_act_busy"
+		"animgraph_enum"	"e_act_busy_type"
+		"animgraph_value"	"3"							// fence_leaning
+		"min_time"			"40"
+		"max_time"			"45"
+		"interrupts"		"BA_INT_ENEMY_REACHABLE"
+		"use_automovement"	"1"
+	}
+
+}
+
+

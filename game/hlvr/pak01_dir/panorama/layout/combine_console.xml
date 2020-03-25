@@ -1,0 +1,26 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/combine_console.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<HLVRCombineConsole class="CombineConsole" id="CombineConsole">
+
+			<Panel id="ConsoleInterior">
+				<Panel id="scan_line_mask">
+					<Panel id="PanelContents">
+						<Label id="CombineConsoleTitle" text="#HLVR_CombineConsole_Name" />
+					</Panel>
+				</Panel>
+
+				<Button class="button_small" onactivate="CombineConsoleCompleted()">
+					<Label text="#HLVR_CombineConsole_Activate"/>
+				</Button>
+				
+			</Panel>
+
+		</HLVRCombineConsole>
+	</ClientUIDialogPanel>
+</root>

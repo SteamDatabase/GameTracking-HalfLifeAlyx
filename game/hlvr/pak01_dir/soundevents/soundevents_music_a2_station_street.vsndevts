@@ -1,0 +1,182 @@
+{
+	Music.StationStreetChargerIntro = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.400000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				20.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.300000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/hotel/a3_station_street_charger.vsnd",
+		]
+	}
+	Music.StationStreetCombineManhack = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		volume = 0.400000
+		volume_fade_out = 17
+		track = "main"
+		priority = 1
+		restart_time = 43.795000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				12.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.750000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				100.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 20
+		volume_fade_over_time_loop_end = 100
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a3_station_street_battle_intro.vsnd",
+		]
+	}
+	Music.StationStreetCombineManhack2 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		volume = 0.700000
+		volume_fade_out = 7
+		start_point = 0
+		end_point = 17.333000
+		sync_bpm = 135
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.StationStreetCombine = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 2
+		volume = 0.600000
+		volume_fade_out = 4.000000
+		start_point = 0
+		end_point = 101.605000
+		sync_bpm = 137
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a3_station_street_battle_01.vsnd",
+		]
+	}
+	Music.StationStreetCombine2 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 3
+		volume = 0.600000
+		volume_fade_out = 2.000000
+		start_point = 0
+		end_point = 101.605000
+		sync_bpm = 137
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a3_station_street_battle_01.vsnd",
+		]
+	}
+	Music.StationStreetCombineEndCap = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 4
+		sync_track = "main"
+		volume = 0.500000
+		start_point = 0
+		end_point = 101.605000
+		sync_bpm = 137
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a3_station_street_battle_endcap.vsnd",
+		]
+	}
+}

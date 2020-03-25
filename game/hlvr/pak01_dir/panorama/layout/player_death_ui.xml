@@ -1,0 +1,46 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+    <include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/game_menu_ui.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/game_menu_ui.vjs_c" />
+	</scripts>
+  
+	<GameMenuPanel class="game_menu_root">
+		<Panel id="corner_brackets"/>
+		<Panel id="scan_line_mask">
+
+      <Panel id="loadsave">
+        
+        <Panel class="header_container_loadsave">
+          <Panel id="header_row_backer_controls" class="rows header_left">
+            <Label class="header" text="Load Game"/>
+          </Panel>
+        </Panel>
+
+        <Panel class="row hidden" id="ReloadButton">
+          <Panel class="button_small">
+            <Button class="button_left" onactivate="GameMenu_Cmd( reload )">
+              <Label text="Dev: Reload"/>
+            </Button>
+          </Panel>
+        </Panel>
+        
+        <Panel class="button_list" id="loadsave_list">
+        </Panel>
+      </Panel>
+      
+			<Panel id="AnimatedTextureMask" acceptsinput="false" hittest="false">
+				<Panel id="AnimatedTexture" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureAlt" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureSpinnerMask" acceptsinput="false" hittest="false" />
+			</Panel>
+		</Panel>
+	</GameMenuPanel>
+</root>
+
+

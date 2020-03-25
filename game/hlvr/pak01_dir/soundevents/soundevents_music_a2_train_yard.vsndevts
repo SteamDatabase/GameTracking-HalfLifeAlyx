@@ -1,0 +1,994 @@
+{
+	Music.TrainYardCombineIntro1 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 0
+		volume = 0.450000
+		volume_fade_out = 3.000000
+		restart_time = 27.017000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/combine_battle_intro_05.vsnd",
+		]
+	}
+	Music.TrainYardCombine1 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		use_combat_music_convar = 1.000000
+		priority = 1
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				40.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.500000
+		volume_fade_in = 0
+		volume_fade_out = 5
+		restart_time = 92.673000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/combine_battle_05.vsnd",
+		]
+	}
+	Music.TrainYardCombineInterm = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 2
+		volume = 0.450000
+		volume_fade_out = 3.000000
+		restart_time = 27.017000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/combine_battle_intro_05.vsnd",
+		]
+	}
+	Music.TrainYardCombineIntro = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 3
+		volume = 0.450000
+		volume_fade_out = 3.000000
+		restart_time = 27.017000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/combine_battle_intro_05.vsnd",
+		]
+	}
+	Music.TrainYardCombine = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 4
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				40.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.500000
+		volume_fade_in = 2.500000
+		volume_fade_out = 4
+		restart_time = 92.673000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/combine_battle_05.vsnd",
+		]
+	}
+	Music.TrainYardCombineEndCap = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 5
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_combine_console_enter = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_out = 10
+		track = "main"
+		priority = 0
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			33.103000,
+		]
+		sync_bpm = 
+		[
+			116.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 33.103000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_combine_cell_enter = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_out = 10
+		track = "main"
+		priority = 1
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			85.560000,
+		]
+		sync_bpm = 
+		[
+			116.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 85.560000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				40.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_trainyard_combine_cell.vsnd",
+		]
+	}
+	Music.a2_trainyard_combine_cell_exit = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		volume_fade_out = 0.100000
+		track = "main"
+		priority = 2
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			33.103000,
+		]
+		sync_bpm = 
+		[
+			116.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 33.103000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_action_1 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		volume_fade_out = 0.100000
+		track = "main"
+		priority = 3
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			33.103000,
+		]
+		sync_bpm = 
+		[
+			116.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 33.103000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_action1.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_action_1b = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.800000
+		volume_fade_out = 0.100000
+		track = "main"
+		priority = 4
+		sync_track = "main"
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			32.820000,
+		]
+		sync_bpm = 
+		[
+			117.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 32.820000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_action1b.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_action_2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.900000
+		volume_fade_out = 0.100000
+		track = "main"
+		priority = 5
+		sync_track = "main"
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			32.542000,
+		]
+		sync_bpm = 
+		[
+			118.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 32.542000
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_action2.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_action_3 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_out = 0.100000
+		track = "main"
+		priority = 6
+		sync_track = "main"
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			32.268000,
+		]
+		sync_bpm = 
+		[
+			119.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 32.268000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_action3.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_10_seconds = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		track = "main"
+		priority = 7
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			10.256000,
+		]
+		sync_bpm = 
+		[
+			120.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_crash.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_lever_success = 
+	{
+		type = "hlvr_music_2d"
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_lever_failure = 
+	{
+		type = "hlvr_music_2d"
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_post_crash = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_out = 7
+		track = "main"
+		priority = 8
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			59.076000,
+		]
+		sync_bpm = 
+		[
+			65,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 59.076000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_post_crash.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_open = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 9
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_advisors = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.350000
+		volume_fade_out = 3
+		track = "main"
+		priority = 10
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			59.076000,
+		]
+		sync_bpm = 
+		[
+			65,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 59.076000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.900000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.900000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_advisors.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_advisors_exit = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_out = 3
+		track = "main"
+		priority = 11
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			59.076000,
+		]
+		sync_bpm = 
+		[
+			65,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 59.076000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 0
+		volume_fade_over_time_loop_end = 60
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_crash_exit.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_pod = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_out = 4
+		track = "main"
+		priority = 12
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			29.538000,
+		]
+		sync_bpm = 
+		[
+			65,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 29.538000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.650000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_dad_pod.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_sight = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_in = 3
+		volume_fade_out = 4
+		track = "main"
+		priority = 13
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			29.538000,
+		]
+		sync_bpm = 
+		[
+			65,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 29.538000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_eli_sight.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_trouble = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		volume_fade_in = 3
+		volume_fade_out = 3
+		track = "main"
+		priority = 14
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			28.656000,
+		]
+		sync_bpm = 
+		[
+			67,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 28.656000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_eli_trouble.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_reach = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1
+		stop_at_time = 2
+		volume_fade_out = 2
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_eli_reach.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_sequence_child = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		track = "main"
+		priority = 16
+		vsnd_files = 
+		[
+			"sounds/music/places/trains/a2_train_eli_seq.vsnd",
+		]
+	}
+	Music.a2_trainyard_vort_chant = 
+	{
+		type = "hlvr_music_start_multi_quad"
+		soundevent_01 = "Music.a2_trainyard_vort_chant_l"
+		soundevent_02 = "Music.a2_trainyard_vort_chant_r"
+		soundevent_03 = "Music.a2_trainyard_vort_chant_ls"
+		soundevent_04 = "Music.a2_trainyard_vort_chant_rs"
+		rand_delay_min = 0.000000
+		rand_delay_max = 0.000000
+	}
+	Music.a2_trainyard_vort_chant_l = 
+	{
+		type = "hlvr_music_fixed_rotation"
+		volume_base = 1.000000
+		mixgroup = "LoudMusic"
+		rotation_angle = 0
+		volume_fade_out = 1.000000
+		volume = 1.100000
+		enable_debug_radius = 0.000000
+		soundname_string = "L"
+		restart_time = 44.769000
+		stop_at_time = 16
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 0.000000
+		fade_over_time_x2 = 1.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 10.000000
+		fade_over_time_y3 = 1.000000
+		fade_over_time_x4 = 16.000000
+		fade_over_time_y4 = 0.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/hideout/a2_hideout_vort_prep_l.vsnd",
+		]
+	}
+	Music.a2_trainyard_vort_chant_r = 
+	{
+		base = "Music.a2_trainyard_vort_chant_l"
+		rotation_angle = 270
+		soundname_string = "R"
+		vsnd_files = 
+		[
+			"sounds/music/places/hideout/a2_hideout_vort_prep_r.vsnd",
+		]
+	}
+	Music.a2_trainyard_vort_chant_ls = 
+	{
+		base = "Music.a2_trainyard_vort_chant_l"
+		rotation_angle = 90
+		soundname_string = "LS"
+		vsnd_files = 
+		[
+			"sounds/music/places/hideout/a2_hideout_vort_prep_ls.vsnd",
+		]
+	}
+	Music.a2_trainyard_vort_chant_rs = 
+	{
+		base = "Music.a2_trainyard_vort_chant_l"
+		rotation_angle = 180
+		soundname_string = "RS"
+		vsnd_files = 
+		[
+			"sounds/music/places/hideout/a2_hideout_vort_prep_rs.vsnd",
+		]
+	}
+	Music.a2_trainyard_train_eli_sequence = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Music.a2_trainyard_train_eli_sequence_child"
+		soundevent_02 = "Music.a2_trainyard_vort_chant"
+		use_01 = 1.000000
+		use_02 = 1
+	}
+}

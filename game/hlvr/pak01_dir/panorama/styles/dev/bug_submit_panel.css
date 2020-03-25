@@ -1,0 +1,176 @@
+BugSubmitPanel
+{
+	flow-children: down;
+}
+
+Label
+{
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+#current_user_info
+{
+	flow-children: right;
+	background-color: #444;
+	width: 100%;
+}
+
+#current_user_info Label
+{
+	color: white;
+	font-size: 42px;
+	font-weight: bold;
+	vertical-align: center;
+}
+
+#current_user_info Button Label
+{
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#current_user_info Button
+{
+	width: fill-parent-flow( .5 );
+}
+
+#current_user_label
+{
+	width: fill-parent-flow( .5 );
+}
+
+#change_user
+{
+	visibility: visible;
+}
+
+.state_user_selection #change_user
+{
+	visibility: collapse;
+}
+
+#complete_user_selection
+{
+	visibility: collapse;
+}
+
+.state_user_selection #complete_user_selection
+{
+	visibility: visible;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+#state_container
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+#user_selection
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	flow-children: down;
+	background-color: #444;
+}
+
+.state_user_selection #user_selection
+{
+	opacity: 1;
+}
+
+BugUserSelectionPanel
+{
+	width: 100%;
+	height: fill-parent-flow( 1 );
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+#pending_submit
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	opacity: 0;
+}
+
+#pending_submit Label
+{
+	font-size: 60px;
+}
+
+#pending_submit Button
+{
+	height: 160px;
+	width: 50%;
+}
+
+#pending_submit Button Label
+{
+	font-size: 40px;
+}
+
+.state_waiting_for_submit #pending_submit
+{
+	opacity: 1;
+}
+
+#instruction_text
+{
+	text-shadow: 2px 2px 8px 8.0 #000000;
+	margin: 8px;
+}
+
+#cancel_button
+{
+	background-color: #644;
+}
+#cancel_button:hover
+{
+	background-color: #F44;
+}
+#cancel_button:active
+{
+	background-color: #FFF;
+}
+
+
+#cancel_button
+{
+	background-color: #644;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+#record_voice_button
+{
+	visibility: visible;
+}
+
+#pause_voice_button
+{
+	visibility: collapse;
+}
+
+.is_recording #record_voice_button
+{
+	visibility: collapse;
+}
+
+.is_recording #pause_voice_button
+{
+	visibility: visible;
+}
+
+

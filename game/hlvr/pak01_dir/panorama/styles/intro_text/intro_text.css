@@ -1,0 +1,95 @@
+.TextContainer
+{
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+	border: 0px;
+
+	font-family: Raju;
+	font-size: 180px;
+	font-weight: semi-bold;
+
+    color: #666159;
+
+	border-style: solid;
+	border-color: blue;
+	border-width: 0px;
+}
+
+.TextLine
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: down;
+
+	opacity: 0;
+	
+	transition-property: opacity; 
+	transition-duration: .5s; 
+	border: 0px solid red;
+}
+
+.TextBox
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+	text-align: center;
+}
+
+.TextBox Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+	text-align: center;
+}
+
+.TextBox Label
+{
+/*
+	text-align: center;
+	flow-children: right;
+*/	
+	/* HAS PIXEL TEARING BUG */
+	/* blur: gaussian(10); */
+	/* text-shadow: #ff000088 0px 0px 64px 64px; */
+}
+
+.TextBox Label.emphasis
+{
+	color: #000;
+}
+
+.ShowIntroText01 #IntroText01,
+.ShowIntroText02 #IntroText02,
+.ShowIntroText03 #IntroText03,
+.ShowIntroText04 #IntroText04,
+.ShowIntroText05 #IntroText05,
+.ShowIntroText06 #IntroText06,
+.ShowIntroText07 #IntroText07,
+.ShowIntroText08 #IntroText08,
+{
+	opacity: 1;
+}
+
+.HidePart1 #IntroText01,
+.HidePart1 #IntroText02,
+.HidePart1 #IntroText03,
+.HidePart1 #IntroText04,
+.HidePart1 #IntroText05,
+.HidePart1 #IntroText06,
+{
+	opacity: 0;
+	transition-property: opacity; 
+	transition-duration: 2s; 
+}
+
+.HidePart2 #IntroText07,
+.HidePart2 #IntroText08,
+{
+	opacity: 0;
+	transition-property: opacity; 
+	transition-duration: 2s; 
+}

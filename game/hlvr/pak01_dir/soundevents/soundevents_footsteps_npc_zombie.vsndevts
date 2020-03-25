@@ -1,0 +1,242 @@
+{
+	Step_Zombie.Base = 
+	{
+		type = "hlvr_footstep_npc"
+		walkspeed_max = 0.850000
+		walkspeed_vol_max = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 1.000000
+		limiter_stop_oldest = false
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_scale = 0.900000
+		mixgroup = "NPC_Footsteps"
+		use_step_layer = 1.000000
+		use_foley_layer = 1.000000
+		volume_mult_step_layer = 0.600000
+		volume_mult_foley_layer = 0.300000
+		use_foley_falloff = 1.000000
+		foley_falloff_max = 400.000000
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+		vsnd_files_step_layer = 
+		[
+			"sounds/creatures/zombie/step_layer_01.vsnd",
+			"sounds/creatures/zombie/step_layer_02.vsnd",
+			"sounds/creatures/zombie/step_layer_03.vsnd",
+			"sounds/creatures/zombie/step_layer_04.vsnd",
+			"sounds/creatures/zombie/step_layer_05.vsnd",
+			"sounds/creatures/zombie/step_layer_06.vsnd",
+			"sounds/creatures/zombie/step_layer_07.vsnd",
+		]
+		vsnd_files_foley_layer = 
+		[
+			"sounds/creatures/zombie/foley/move_01.vsnd",
+			"sounds/creatures/zombie/foley/move_02.vsnd",
+			"sounds/creatures/zombie/foley/move_03.vsnd",
+			"sounds/creatures/zombie/foley/move_04.vsnd",
+			"sounds/creatures/zombie/foley/move_05.vsnd",
+			"sounds/creatures/zombie/foley/move_06.vsnd",
+			"sounds/creatures/zombie/foley/move_07.vsnd",
+			"sounds/creatures/zombie/foley/move_08.vsnd",
+			"sounds/creatures/zombie/foley/move_09.vsnd",
+			"sounds/creatures/zombie/foley/move_10.vsnd",
+			"sounds/creatures/zombie/foley/move_11.vsnd",
+			"sounds/creatures/zombie/foley/move_12.vsnd",
+			"sounds/creatures/zombie/foley/move_13.vsnd",
+			"sounds/creatures/zombie/foley/move_14.vsnd",
+		]
+	}
+	Step_Zombie.Default = 
+	{
+		base = "Step_Zombie.Base"
+	}
+	Step_Zombie.Concrete = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+	}
+	Step_Zombie.Dirt = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_01.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_02.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_03.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_04.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_05.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_06.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_07.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_08.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_09.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_10.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_11.vsnd",
+		]
+	}
+	Step_Zombie.Gravel = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_01.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_02.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_03.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_04.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_05.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_06.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_07.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_08.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_09.vsnd",
+		]
+	}
+	Step_Zombie.Metal_Solid = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_08.vsnd",
+		]
+	}
+	Step_Zombie.Metal_Walkway = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_08.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_09.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_10.vsnd",
+		]
+	}
+	Step_Zombie.Wood = 
+	{
+		base = "Step_Zombie.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_01.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_02.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_03.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_04.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_05.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_06.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_07.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_08.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_09.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_10.vsnd",
+		]
+	}
+	Zombie.Step_Manual_Default_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie.Step_Manual_Default"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie.Step_Manual_Layer"
+		use_02 = 1.000000
+	}
+	Zombie.Step_Manual_Default = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+	}
+	Zombie.Step_Manual_Foley = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/foley/move_01.vsnd",
+			"sounds/creatures/zombie/foley/move_02.vsnd",
+			"sounds/creatures/zombie/foley/move_03.vsnd",
+			"sounds/creatures/zombie/foley/move_04.vsnd",
+			"sounds/creatures/zombie/foley/move_05.vsnd",
+			"sounds/creatures/zombie/foley/move_06.vsnd",
+			"sounds/creatures/zombie/foley/move_07.vsnd",
+			"sounds/creatures/zombie/foley/move_08.vsnd",
+			"sounds/creatures/zombie/foley/move_09.vsnd",
+			"sounds/creatures/zombie/foley/move_10.vsnd",
+			"sounds/creatures/zombie/foley/move_11.vsnd",
+			"sounds/creatures/zombie/foley/move_12.vsnd",
+			"sounds/creatures/zombie/foley/move_13.vsnd",
+			"sounds/creatures/zombie/foley/move_14.vsnd",
+		]
+	}
+	Zombie.Step_Manual_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/step_layer_01.vsnd",
+			"sounds/creatures/zombie/step_layer_02.vsnd",
+			"sounds/creatures/zombie/step_layer_03.vsnd",
+			"sounds/creatures/zombie/step_layer_04.vsnd",
+			"sounds/creatures/zombie/step_layer_05.vsnd",
+			"sounds/creatures/zombie/step_layer_06.vsnd",
+			"sounds/creatures/zombie/step_layer_07.vsnd",
+		]
+	}
+}

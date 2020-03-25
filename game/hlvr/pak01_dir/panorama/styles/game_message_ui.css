@@ -1,0 +1,59 @@
+.game_message_root
+{
+	width: 100%;
+	border-radius: 6px;
+
+	height: 0%;
+	opacity: 0;
+	
+	transition-property: height, opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in; 
+}
+
+.game_message_root.Visible
+{
+	height: 100%;
+	opacity: 1;
+}
+
+.game_message_root Label
+{
+	font-size: 120px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	overflow: noclip; 
+	color: #ffffff;
+	text-align: center;
+	horizontal-align: center;
+    vertical-align: middle;
+}
+
+.game_message_root.Background  Label
+{
+	opacity: 0.25;
+}
+
+
+#trigger_to_restart_label
+{
+	visibility: collapse;
+}
+
+#trigger_to_play_label
+{
+	visibility: collapse;
+}
+
+.trigger_to_restart #trigger_to_restart_label
+{
+	visibility: visible;
+}
+
+.trigger_to_play #trigger_to_play_label
+{
+	visibility: visible;
+}
+
+

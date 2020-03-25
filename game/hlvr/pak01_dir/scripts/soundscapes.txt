@@ -1,0 +1,1172 @@
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET	1.5f	65dB
+//	ATTN_GUNFIRE	0.27f	140dB
+
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+
+// General soundscapes
+
+// This soundscape enables automatic dsp
+
+"automatic"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+}
+// This soundscape enables automatic dsp at 50% mix - good if you have 
+// a lot of dialog that must be understood at any distance
+
+"automatic_dialog"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.5"
+}
+
+
+// *******************************************************************************
+// ***************** E3_Techdemo_01 - 06 *****************
+
+// e3_techdemo_01
+
+"e3_techdemo_gmanspeaking"
+{
+	"dsp"	"10"
+}
+
+"e3_Techdemo_02"
+{
+	"dsp"	"20"	
+
+	// physics room
+
+	"playlooping"
+	{
+		"volume"	"0.1"
+		"pitch"		"100"
+		"attenuation"	"0"
+		"wave"		"sounds/ambient/machines/courtyard_mach_loop.vsnd"
+	}
+}
+
+"e3_Techdemo_03"
+{
+	"dsp"	"1"	
+
+}
+
+"e3_Techdemo_05"
+{
+	"dsp"	"10"
+
+	// dripping cave ambient
+
+	"playlooping"
+	{
+		"volume"	"0.23"
+		"pitch"		"100"
+		"attenuation"	"0"
+		"wave"		"sounds/ambient/water/corridor_water.vsnd"
+	}
+}
+
+"e3_Techdemo_06"
+{
+	"dsp"	"20"	
+
+	// lake
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"attenuation"	"0"
+		"wave"		"sounds/ambient/water/lake_water.vsnd"
+	}
+}
+
+"e3_end"
+{
+	"dsp" "0"
+}
+
+// ***************** E3_Techdemo_01 - 06 *****************
+// *******************************************************************************
+
+
+// ******************   SOUNDSCAPE TEST  ***************************************
+
+
+// No DSP, no ambients
+"Nothing"
+{
+	"dsp"	"0"
+}
+
+"GenericIndoor"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/indoor2.vsnd"
+	}
+}
+
+"GenericOutdoor"
+{
+	"dsp"	"19"
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"sounds/ambient/atmosphere/indoor2.vsnd"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"sounds/ambient/atmosphere/outdoor2.vsnd"
+		"pitch"		"100"
+		"position"	"0"
+	}
+	"playsoundscape"
+	{
+		"name"		"d2_depot_cellblock_medium"
+		"volume"	"0.75"
+		"position"	"2"
+	}
+	"playsoundscape"
+	{
+		"name"		"d2_depot_cellblock_medium"
+		"volume"	"0.75"
+		"position"	"2"
+	}
+}
+
+
+
+
+"cabin"
+{
+	"dsp"	"17"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"sounds/test/temp/soundscape_test/cabin_ambience.vsnd"
+	}
+
+	// *** TEST TV ********
+	"playsoundscape"
+	{
+		"name"		"test_tvset"
+		"volume"	"1"
+		"position"	"0"
+	
+	}
+	
+	// ** Tower sticking out of wall
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"sounds/test/temp/soundscape_test/cabin_wall.vsnd"
+		"pitch"		"100"
+		"attenuation"	"2"
+		"position"	"1"
+	}
+
+
+	// Random Sounds for Wall
+	"playrandom"
+	{
+		// time, volume, pitch, attenuation are all random intervals ( i.e. minval, maxval )
+		// every 0.5 to 2 seconds
+		"time"		"1,4"
+
+		// at a volume of 0.25 to 0.25
+		"volume"	"0.5,0.8"
+
+		// at a pitch of 90 to 100
+		"pitch"		"80,120"
+
+		// play one of these .wav files randomly each time
+		"rndwave"
+		{
+			"wave"	"sounds/test/temp/soundscape_test/wall1.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/wall2.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/wall3.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/wall4.vsnd"
+		}
+		
+		// omit position for ambient sounds
+		"position"	"1"
+		// only required if "position" is present
+		"attenuation"	"2"
+	}
+
+
+
+}
+
+
+"cabin_outdoor"
+{
+	"dsp"	"20"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/test/temp/soundscape_test/outdoor.vsnd"
+	}
+
+	"playrandom"
+	{
+		// time, volume, pitch, attenuation are all random intervals ( i.e. minval, maxval )
+		// every 0.5 to 2 seconds
+		"time"		"0.1, 0.1"
+
+		// at a volume of 0.25 to 0.25
+		"volume"	"0.5,1"
+
+		// at a pitch of 90 to 100
+		"pitch"		"50,120"
+
+		// play one of these .wav files randomly each time
+		"rndwave"
+		{
+			"wave"	"sounds/test/temp/soundscape_test/music_snippet1.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/music_snippet2.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet3.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet4.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet5.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet6.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet7.vsnd"
+			//"wave"	"sounds/test/temp/soundscape_test/music_snippet8.vsnd"
+		}
+		
+
+	}
+
+}
+
+"test_tvset"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"pitch"		"100"
+
+		"wave"		"sounds/test/temp/soundscape_test/tv_music.vsnd"
+		"position"	"0"
+		"attenuation"	"2"
+
+	}
+
+
+	"playrandom"
+	{
+		"time"		"0.1, 0.3"
+		"volume"	"0.1,0.15"
+		"pitch"		"95,105"
+		"attenuation"	"2"
+		"position"	"0"
+
+		"rndwave"
+		{
+			"wave"	"sounds/test/temp/soundscape_test/music_snippet1.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/music_snippet2.vsnd"
+			"wave"	"sounds/test/temp/soundscape_test/music_snippet3.vsnd"
+
+		}
+		
+	}
+}
+
+"test_funny_noises"
+{
+	"dsp"	"20"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/test/temp/soundscape_test/outdoor.vsnd"
+	}
+
+	"playrandom"
+	{
+		// time, volume, pitch, attenuation are all random intervals ( i.e. minval, maxval )
+		// every 0.5 to 2 seconds
+		"time"		"0.1, 0.8"
+
+		// at a volume of 0.25 to 0.25
+		"volume"	"0.5, 1.0"
+
+		// at a pitch of 90 to 100
+		"pitch"		"50, 120"
+
+		// play one of these .wav files randomly each time
+		"rndwave"
+		{
+			"wave"	"sounds/items/ammo_pickup.vsnd"
+			"wave"	"sounds/items/battery_pickup.vsnd"
+			"wave"	"sounds/items/medshot4.vsnd"
+		}
+	}
+}
+
+
+"smalltown_sounds"
+{
+	"dsp"	"20"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"sounds/test/temp/soundscape_test/outdoor.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"smalltown.util_train_horn"
+		"volume"	"1.0"
+	}
+
+	"playrandom"
+	{
+		// time, volume, pitch, attenuation are all random intervals ( i.e. minval, maxval )
+		// every 0.5 to 2 seconds
+		"time"		"15, 25 "
+
+		// at a volume of 0.25 to 0.25
+		"volume"	"0.5, 1.0"
+
+		// at a pitch of 90 to 100
+		"pitch"		"100, 105"
+
+		// play one of these .wav files randomly each time
+		"rndwave"
+		{
+			"wave"	"sounds/npc/overwatch/cityvoice/f_innactionisconspiracy_spkr.vsnd"
+			"wave"	"sounds/npc/overwatch/cityvoice/f_unrestprocedure1_spkr.vsnd"
+			"wave"	"sounds/npc/overwatch/cityvoice/f_protectionresponse_4_spkr.vsnd"
+			"wave"	"sounds/npc/overwatch/cityvoice/f_protectionresponse_5_spkr.vsnd"
+			"wave"	"sounds/npc/overwatch/cityvoice/f_trainstation_cooperation_spkr.vsnd"
+			"wave"	"sounds/npc/overwatch/cityvoice/f_trainstation_assemble_spkr.vsnd"
+			"wave"	"sounds/ambient/levels/streetwar/apc_distant3.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass_distant1.vsnd"
+			"wave"	"sounds/ambient/levels/streetwar/apc_distant3.vsnd"
+			"wave"	"sounds/ambient/levels/streetwar/heli_distant1.vsnd"
+			"wave"	"sounds/ambient/levels/streetwar/marching_distant1.vsnd"
+			"wave"	"sounds/ambient/machines/truck_pass_distant1.vsnd"
+			"wave"	"sounds/ambient/levels/streetwar/strider_distant3.vsnd"
+			"wave"	"sounds/ambient/alarms/manhack_alert_pass1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_med1.vsnd"
+			"wave"	"sounds/ambient/machines/heli_pass_distant1.vsnd"
+			"wave"	"sounds/npc/metropolice/vo/firstwarningmove.vsnd"
+			"wave"	"sounds/npc/metropolice/vo/movealong.vsnd"
+			"wave"	"sounds/npc/metropolice/vo/dontmove.vsnd"
+		}
+	}
+}
+
+"smalltown.util_train_horn"
+{
+	"playrandom"
+	{
+		"time"		"60, 120"
+
+		"volume"	"0.25, 0.5"
+
+		"pitch"		"100, 105"
+
+		// play one of these .wav files randomly each time
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/alarms/train_horn_distant1.vsnd"
+			"wave"	"sounds/ambient/alarms/razortrain_horn1.vsnd"
+		}
+	}
+}
+
+
+//////////////////////////////// Utility soundscapes ////////////////////////
+
+"streetwar.util_combine_atmosphere"
+{
+	"playrandom"
+	{
+		"time"		"2.0,2.0"
+		"volume"	"0.15,0.25"
+		"pitch"		"80,125"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave" 
+		{
+			"wave"		"ambient/atmosphere/cave_hit1.wav"
+			"wave"		"ambient/atmosphere/cave_hit2.wav"
+			"wave"		"ambient/atmosphere/cave_hit3.wav"
+			"wave"		"ambient/atmosphere/cave_hit4.wav"
+			"wave"		"ambient/atmosphere/cave_hit5.wav"
+			"wave"		"ambient/atmosphere/cave_hit6.wav"
+
+			"wave"		"ambient/atmosphere/city_skybeam1.wav"
+			"wave"		"ambient/atmosphere/city_skypass1.wav"
+			"wave"		"ambient/atmosphere/city_truckpass1.wav"
+		}
+	}
+}
+
+"streetwar.util_rubble"
+{
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.2,0.5"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"		"ambient/levels/streetwar/building_rubble1.wav"
+			"wave"		"ambient/levels/streetwar/building_rubble2.wav"
+			"wave"		"ambient/levels/streetwar/building_rubble3.wav"
+			"wave"		"ambient/levels/streetwar/building_rubble4.wav"
+			"wave"		"ambient/levels/streetwar/building_rubble5.wav"
+			"wave"		"ambient/materials/wood_creak1.wav"
+			"wave"		"ambient/materials/creak5.wav"	
+			"wave"		"ambient/materials/metal_stress4.wav"
+			"wave"		"ambient/materials/metal_stress5.wav"
+			"wave"		"ambient/materials/rustypipes1.wav"
+			"wave"		"ambient/materials/rustypipes2.wav"
+			"wave"		"ambient/materials/rustypipes3.wav"
+		}
+	}
+					
+}
+
+"streetwar.util_sirens"
+{
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.2,0.8"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/machines/heli_pass1.wav"
+			"wave"	"ambient/machines/aircraft_distant_flyby1.wav"
+			"wave"	"ambient/machines/aircraft_distant_flyby3.wav"
+			"wave"	"ambient/alarms/apc_alarm_pass1.wav"
+			"wave"	"ambient/alarms/manhack_alert_pass1.wav"
+			"wave"	"ambient/alarms/scanner_alert_pass1.wav"
+		}
+	}
+}
+
+"streetwar.util_light_sirens"
+{
+	"playrandom"
+	{
+		"time"		"15,60"
+		"volume"	"0.2,0.8"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/machines/heli_pass1.wav"
+			"wave"	"ambient/machines/aircraft_distant_flyby1.wav"
+			"wave"	"ambient/machines/aircraft_distant_flyby3.wav"
+			"wave"	"ambient/alarms/apc_alarm_pass1.wav"
+			"wave"	"ambient/alarms/manhack_alert_pass1.wav"
+			"wave"	"ambient/alarms/scanner_alert_pass1.wav"
+		}
+	}
+}
+
+"streetwar.util_zombie_infested"
+{
+
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"		"ambient/creatures/flies1.wav"
+			"wave"		"ambient/creatures/flies2.wav"
+			"wave"		"ambient/creatures/flies3.wav"
+			"wave"		"ambient/creatures/flies4.wav"
+			"wave"		"ambient/creatures/flies5.wav"
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.2,0.4"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/rats1.wav"
+			"wave"	"ambient/creatures/rats2.wav"
+			"wave"	"ambient/creatures/rats3.wav"
+			"wave"	"ambient/creatures/rats4.wav"
+		}
+		
+	}
+	
+	"playrandom"
+	{
+		"time"		"15, 60"
+		"volume"	"0.1,0.3"
+		"pitch"		"90,110"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/town_moan1.wav"
+			//"wave"	"ambient/creatures/town_zombie_call1.wav"
+			"wave"	"ambient/creatures/town_scared_breathing1.wav"
+		}
+	}	
+}
+
+"streetwar.util_light_combat_atmosphere"
+{
+	"playrandom"
+	{
+		"time"		"10,40"
+		"volume"	"0.15,0.45"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/apc_distant1.wav"
+			"wave"	"ambient/levels/streetwar/apc_distant2.wav"
+			"wave"	"ambient/levels/streetwar/apc_distant3.wav"
+			"wave"	"ambient/levels/streetwar/gunship_distant1.wav"
+			"wave"	"ambient/levels/streetwar/gunship_distant2.wav"
+			"wave"	"ambient/levels/streetwar/heli_distant1.wav"
+			"wave"	"ambient/levels/streetwar/marching_distant1.wav"
+			"wave"	"ambient/levels/streetwar/marching_distant2.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant1.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant2.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant3.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant_walk1.wav"
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"60,300"
+		"volume"	"0.15,0.2"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_chant1.wav"
+			"wave"	"ambient/levels/streetwar/city_riot1.wav"
+			"wave"	"ambient/levels/streetwar/city_riot2.wav"
+			"wave"	"ambient/levels/streetwar/city_scream3.wav"
+		}
+		
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_sirens"
+		"volume"	"0.8"
+	}
+}
+
+"streetwar.util_heavy_combat_atmosphere"
+{
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.35,0.75"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/apc_distant1.wav"
+			"wave"	"ambient/levels/streetwar/apc_distant2.wav"
+			"wave"	"ambient/levels/streetwar/apc_distant3.wav"
+			"wave"	"ambient/levels/streetwar/gunship_distant1.wav"
+			"wave"	"ambient/levels/streetwar/gunship_distant2.wav"
+			"wave"	"ambient/levels/streetwar/heli_distant1.wav"
+			"wave"	"ambient/levels/streetwar/marching_distant1.wav"
+			"wave"	"ambient/levels/streetwar/marching_distant2.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant1.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant2.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant3.wav"
+			"wave"	"ambient/levels/streetwar/strider_distant_walk1.wav"
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"60,300"
+		"volume"	"0.1,0.25"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_chant1.wav"
+			"wave"	"ambient/levels/streetwar/city_riot1.wav"
+			"wave"	"ambient/levels/streetwar/city_riot2.wav"
+			"wave"	"ambient/levels/streetwar/city_scream3.wav"
+		}
+		
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_sirens"
+		"volume"	"0.8"
+	}
+
+}
+
+// distant explosions, heard from underground
+
+"streetwar.util_muffled_light_combat"
+{
+
+	"playrandom"
+	{
+		"time"		"3,30"
+		"volume"	"0.12,0.25"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"soundlevel"	"SNDLVL_140dB"	
+		"rndwave"
+		{
+
+			"wave"	"ambient/levels/streetwar/city_battle7.wav"
+			"wave"	"ambient/levels/streetwar/city_battle17.wav"
+			"wave"	"ambient/levels/streetwar/city_battle18.wav"
+			"wave"	"ambient/levels/streetwar/city_battle19.wav"
+			"wave"	"ambient/atmosphere/thunder1.wav"
+			"wave"	"ambient/atmosphere/thunder2.wav"
+			"wave"	"ambient/atmosphere/thunder3.wav"
+			"wave"	"ambient/atmosphere/thunder4.wav"
+		}
+	}
+}
+
+"streetwar.util_light_combat"
+{
+
+	"playrandom"
+	{
+		"time"		"2,35"
+		"volume"	"0.2,0.35"
+		"pitch"		"90,105"
+		"position"	"random"	
+		"soundlevel"	"SNDLVL_140dB"	
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_battle1.wav"
+			"wave"	"ambient/levels/streetwar/city_battle2.wav"
+			"wave"	"ambient/levels/streetwar/city_battle3.wav"
+			"wave"	"ambient/levels/streetwar/city_battle4.wav"
+			"wave"	"ambient/levels/streetwar/city_battle5.wav"
+			"wave"	"ambient/levels/streetwar/city_battle6.wav"
+			"wave"	"ambient/levels/streetwar/city_battle7.wav"
+			"wave"	"ambient/levels/streetwar/city_battle8.wav"
+			"wave"	"ambient/levels/streetwar/city_battle9.wav"
+			"wave"	"ambient/levels/streetwar/city_battle10.wav"
+
+			"wave"	"ambient/levels/prison/inside_battle1.wav"
+			"wave"	"ambient/levels/prison/inside_battle2.wav"
+			"wave"	"ambient/levels/prison/inside_battle3.wav"
+			"wave"	"ambient/levels/prison/inside_battle4.wav"
+
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"5,30"
+		"volume"	"0.2,0.45"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_battle11.wav"
+			"wave"	"ambient/levels/streetwar/city_battle12.wav"
+			"wave"	"ambient/levels/streetwar/city_battle13.wav"
+			"wave"	"ambient/levels/streetwar/city_battle14.wav"
+			"wave"	"ambient/levels/streetwar/city_battle15.wav"
+			"wave"	"ambient/levels/streetwar/city_battle16.wav"
+			"wave"	"ambient/levels/streetwar/city_battle17.wav"
+			"wave"	"ambient/levels/streetwar/city_battle18.wav"
+			"wave"	"ambient/levels/streetwar/city_battle19.wav"
+
+		}
+		
+	}
+}
+
+"streetwar.util_medium_combat"
+{
+	"playrandom"
+	{
+		"time"		"1,15"
+		"volume"	"0.25,0.5"
+		"pitch"		"90,105"	
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_battle1.wav"
+			"wave"	"ambient/levels/streetwar/city_battle2.wav"
+			"wave"	"ambient/levels/streetwar/city_battle3.wav"
+			"wave"	"ambient/levels/streetwar/city_battle4.wav"
+			"wave"	"ambient/levels/streetwar/city_battle5.wav"
+			"wave"	"ambient/levels/streetwar/city_battle6.wav"
+			"wave"	"ambient/levels/streetwar/city_battle7.wav"
+			"wave"	"ambient/levels/streetwar/city_battle8.wav"
+			"wave"	"ambient/levels/streetwar/city_battle9.wav"
+			"wave"	"ambient/levels/streetwar/city_battle10.wav"
+
+			
+			"wave"	"ambient/levels/prison/inside_battle1.wav"
+			"wave"	"ambient/levels/prison/inside_battle2.wav"
+			"wave"	"ambient/levels/prison/inside_battle3.wav"
+			"wave"	"ambient/levels/prison/inside_battle4.wav"
+			"wave"	"ambient/levels/prison/inside_battle5.wav"
+			"wave"	"ambient/levels/prison/inside_battle6.wav"
+			"wave"	"ambient/levels/prison/inside_battle7.wav"
+			"wave"	"ambient/levels/prison/inside_battle8.wav"
+			"wave"	"ambient/levels/prison/inside_battle9.wav"
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"3,15"
+		"volume"	"0.25,0.5"
+		"pitch"		"90,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_battle11.wav"
+			"wave"	"ambient/levels/streetwar/city_battle12.wav"
+			//"wave"	"ambient/levels/streetwar/city_battle13.wav"
+			"wave"	"ambient/levels/streetwar/city_battle14.wav"
+			"wave"	"ambient/levels/streetwar/city_battle15.wav"
+			"wave"	"ambient/levels/streetwar/city_battle16.wav"
+			"wave"	"ambient/levels/streetwar/city_battle17.wav"
+			"wave"	"ambient/levels/streetwar/city_battle18.wav"
+			"wave"	"ambient/levels/streetwar/city_battle19.wav"
+		}
+		
+	}
+}
+
+"streetwar.util_heavy_combat"
+{
+	"playrandom"
+	{
+		"time"		"1,4"
+		"volume"	"0.45,0.95"
+		"pitch"		"90,115"	
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"		
+		"rndwave"
+		{
+			"wave"	"ambient/levels/streetwar/city_battle1.wav"
+			"wave"	"ambient/levels/streetwar/city_battle2.wav"
+			"wave"	"ambient/levels/streetwar/city_battle3.wav"
+			"wave"	"ambient/levels/streetwar/city_battle4.wav"
+			"wave"	"ambient/levels/streetwar/city_battle5.wav"
+			"wave"	"ambient/levels/streetwar/city_battle6.wav"
+			"wave"	"ambient/levels/streetwar/city_battle7.wav"
+			"wave"	"ambient/levels/streetwar/city_battle8.wav"
+			"wave"	"ambient/levels/streetwar/city_battle9.wav"
+			"wave"	"ambient/levels/streetwar/city_battle10.wav"
+			"wave"	"ambient/levels/streetwar/city_battle11.wav"
+			
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"1,4"
+		"volume"	"0.3,0.8"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"	
+		"rndwave"
+		{
+
+			"wave"	"ambient/levels/streetwar/city_battle12.wav"
+			//"wave"	"ambient/levels/streetwar/city_battle13.wav"
+			"wave"	"ambient/levels/streetwar/city_battle14.wav"
+			"wave"	"ambient/levels/streetwar/city_battle15.wav"
+			"wave"	"ambient/levels/streetwar/city_battle16.wav"
+			"wave"	"ambient/levels/streetwar/city_battle17.wav"
+			"wave"	"ambient/levels/streetwar/city_battle18.wav"
+			"wave"	"ambient/levels/streetwar/city_battle19.wav"
+
+			"wave"	"ambient/levels/prison/inside_battle1.wav"
+			"wave"	"ambient/levels/prison/inside_battle2.wav"
+			"wave"	"ambient/levels/prison/inside_battle3.wav"
+			"wave"	"ambient/levels/prison/inside_battle4.wav"
+			"wave"	"ambient/levels/prison/inside_battle5.wav"
+			"wave"	"ambient/levels/prison/inside_battle6.wav"
+			"wave"	"ambient/levels/prison/inside_battle7.wav"
+			"wave"	"ambient/levels/prison/inside_battle8.wav"
+			"wave"	"ambient/levels/prison/inside_battle9.wav"
+		}
+		
+	}
+}
+
+
+"streetwar.util_drips"
+{
+	"playrandom"
+	{
+		"volume"	"0.1,0.3"
+		"pitch"		"100"
+		"time"		"0.5, 5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/levels/canals/drip1.wav"
+			"wave"	"ambient/levels/canals/drip2.wav"
+			"wave"	"ambient/levels/canals/drip3.wav"
+			"wave"	"ambient/levels/canals/drip4.wav"
+			"wave"	"ambient/water/rain_drip1.wav"
+			"wave"	"ambient/water/rain_drip2.wav"
+			"wave"	"ambient/water/rain_drip3.wav"
+			"wave"	"ambient/water/rain_drip4.wav"
+		}
+	}
+}
+
+"streetwar.util_fardrips"
+{
+	"playrandom"
+	{
+		"volume"	"0.1,0.3"
+		"pitch"		"90,120"
+		"time"		"0.5, 5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"ambient/water/distant_drip1.wav"
+			"wave"	"ambient/water/distant_drip2.wav"
+			"wave"	"ambient/water/distant_drip3.wav"
+			"wave"	"ambient/water/distant_drip4.wav"
+		}
+	}
+}
+
+
+"streetwar.general_indoor_light_combat"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat_atmosphere"
+		"volume"	"0.2"	
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.06"
+		"wave"		"ambient/atmosphere/pipe1.wav"
+		"pitch"		"100"
+
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat"
+		"volume"	"0.5"	
+	}
+}
+
+"streetwar.general_indoor_medium_combat"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_rubble"
+		"volume"	"0.5"	
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_muffled_light_combat"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.06"
+		"wave"		"ambient/atmosphere/pipe1.wav"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat_atmosphere"
+		"volume"	"0.2"	
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_medium_combat"
+		"volume"	"0.5"	
+	}
+}
+
+"streetwar.general_indoor_heavy_combat"
+{
+	"dsp"	"1"
+
+	// inside
+
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_rubble"
+		"volume"	"1.0"	
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.05"
+		"wave"		"ambient/atmosphere/pipe1.wav"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_muffled_light_combat"
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat_atmosphere"
+		"volume"	"0.25"	
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat"
+		"volume"	"0.4"	
+	}
+}
+
+"streetwar.general_outdoor_light_combat"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat_atmosphere"
+		"volume"	"0.8"	
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.07"
+		"wave"		"ambient/atmosphere/city_tone.wav"
+		"pitch"		"100"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat"
+		"volume"	"1.0"	
+	}
+}
+
+"streetwar.general_outdoor_medium_combat"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_light_combat_atmosphere"
+		"volume"	"0.8"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/atmosphere/station_ambience_loop2.wav"
+		"pitch"		"100"
+	}
+
+	
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_medium_combat"
+		"volume"	"1.0"	
+	}
+}
+
+"streetwar.general_outdoor_heavy_combat"
+{
+	"dsp"	"1"
+
+
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat_atmosphere"
+		"volume"	"0.85"	
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/atmosphere/station_ambience_loop2.wav"
+		"pitch"		"100"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"streetwar.util_heavy_combat"
+		"volume"	"1.0"	
+	}
+}
+
+"streetwar.rooftop_heavy_combat"
+{
+	"dsp"	"1"
+
+	"playrandom"
+	{
+		"volume"	"0.4,0.6"
+		"pitch"		"100"
+		"time"		"5.0, 12.0"
+		"pitch"		"90,130"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave" "ambient/wind/wind_med1.wav"
+			"wave" "ambient/wind/wind_hit1.wav"
+			"wave" "ambient/wind/wind_hit2.wav"
+			"wave" "ambient/wind/wind_snippet3.wav"
+			"wave" "ambient/wind/wind_snippet4.wav"
+			"wave" "ambient/wind/wind_snippet5.wav"
+		}
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient/atmosphere/station_ambience_loop2.wav"
+		"pitch"		"100"
+	}
+
+
+	"playlooping"
+	{
+		"volume"	"0.15"
+		"wave"		"ambient/alarms/city_siren_loop2.wav"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"streetwar.general_outdoor_heavy_combat"
+		"volume"	"0.88"
+	}
+}

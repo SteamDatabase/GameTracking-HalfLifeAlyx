@@ -1,0 +1,179 @@
+{
+	HUDQuickInfo.LowHealth = 
+	{
+		type = "src1_2d"
+		volume = 0.799805
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/warning.vsnd",
+		]
+	}
+	HUDQuickInfo.LowAmmo = 
+	{
+		type = "src1_2d"
+		volume = 0.799805
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/warning.vsnd",
+		]
+	}
+	HudChat.Message = 
+	{
+		type = "src1_2d"
+		volume = 0.799805
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/talk.vsnd",
+		]
+	}
+	Player.DenyWeaponSelection = 
+	{
+		type = "src1_2d"
+		volume = 0.319824
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_denyselect.vsnd",
+		]
+	}
+	Player.WeaponSelected = 
+	{
+		type = "src1_2d"
+		volume = 0.319824
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_select.vsnd",
+		]
+	}
+	Player.WeaponSelectionMoveSlot = 
+	{
+		type = "src1_2d"
+		volume = 0.319824
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_moveselect.vsnd",
+		]
+	}
+	Player.WeaponSelectionOpen = 
+	{
+		type = "src1_2d"
+		volume = 0.319824
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_hudon.vsnd",
+		]
+	}
+	Player.WeaponSelectionClose = 
+	{
+		type = "src1_2d"
+		volume = 0.319824
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/common/wpn_hudoff.vsnd",
+		]
+	}
+	MenuMusic.Intro = 
+	{
+		type = "src1_2d"
+		volume = 0.399902
+		pitch = 1.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/music/hl2_song7.vsnd",
+		]
+	}
+	Instructor.LessonStart = 
+	{
+		type = "src1_2d"
+		volume = 0.750000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/ui/beepclear.vsnd",
+		]
+	}
+	Instructor.ImportantLessonStart = 
+	{
+		type = "src1_2d"
+		volume = 0.750000
+		pitch = 1.000000
+		limiter_on = 0.000000
+		mixgroup = "UI"
+		vsnd_files = 
+		[
+			"sounds/ui/beep22.vsnd",
+		]
+	}
+}

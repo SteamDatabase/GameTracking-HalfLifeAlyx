@@ -1,0 +1,816 @@
+{
+	Music.a3_processing_vort_base = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.600000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 60.000000
+		volume_falloff_max = 650.000000
+		occlusion_scale = 0.400000
+		position = 
+		[
+			2114.000000,
+			-1200.000000,
+			788.000000,
+		]
+		use_world_position = true
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+		]
+	}
+	Music.a3_processing_vort_01 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			63.600000,
+			-1528.780000,
+			933.240000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+		]
+	}
+	Music.a3_processing_vort_02 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			112,
+			-1533.970000,
+			933.240000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_02.vsnd",
+		]
+	}
+	Music.a3_processing_vort_03 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			176,
+			-1568,
+			912,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_03.vsnd",
+		]
+	}
+	Music.a3_processing_vort_04 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			83.461500,
+			-1520,
+			841.795000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_04.vsnd",
+		]
+	}
+	Music.a3_processing_vort_05 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			144.224000,
+			-1540.750000,
+			865.504000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_05.vsnd",
+		]
+	}
+	Music.a3_processing_vort_06 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			204.016000,
+			-1551.960000,
+			851.903000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_06.vsnd",
+		]
+	}
+	Music.a3_processing_vort_07 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			60.187600,
+			-1544.350000,
+			775.525000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_07.vsnd",
+		]
+	}
+	Music.a3_processing_vort_08 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			108.387000,
+			-1521.520000,
+			763.098000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_08.vsnd",
+		]
+	}
+	Music.a3_processing_vort_09 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			176.149000,
+			-1573.680000,
+			774.725000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_09.vsnd",
+		]
+	}
+	Music.a3_processing_vort_10 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			303.722000,
+			-1569.160000,
+			756.645000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_11 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			74.832600,
+			-1532.120000,
+			661.228000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+		]
+	}
+	Music.a3_processing_vort_12 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			144.363000,
+			-1533.570000,
+			697.015000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_13 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			204.284000,
+			-1569.650000,
+			680.076000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_14 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			272.220000,
+			-1587.480000,
+			682.095000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_15 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			110.916000,
+			-1517.290000,
+			604.487000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_16 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			173.376000,
+			-1497.670000,
+			611.099000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_17 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			236.294000,
+			-1544.060000,
+			580.997000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_18 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			292.080000,
+			-1514.560000,
+			604.394000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_19 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			47.665400,
+			-1635.960000,
+			613.860000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_20 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			38.791800,
+			-1572.040000,
+			607.222000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_21 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			35.629800,
+			-1508.270000,
+			601.698000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing_vort_21_lp01_arr = 
+	{
+		type = "hlvr_start_arrangement"
+		arrangement = "a3_processing_vort_21_lp01_arr"
+		arrangement_volume = 1.000000
+		quantize_type = "reset"
+		bpm = 77.000000
+	}
+	Music.a3_processing2_vort_01 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			556.465000,
+			-2478.290000,
+			793.648000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_02 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			496.175000,
+			-2469.290000,
+			792.047000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_02.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_03 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			436.158000,
+			-2480.780000,
+			795.715000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_03.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_04 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			523.818000,
+			-2485.570000,
+			711.407000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_04.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_05 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			463.952000,
+			-2504.310000,
+			719.627000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_05.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_06 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			556.216000,
+			-2493.590000,
+			618.182000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_06.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_07 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			495.246000,
+			-2497.090000,
+			624.521000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_07.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_08 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			436.064000,
+			-2478.990000,
+			619.871000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_08.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_09 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			523.971000,
+			-2482.010000,
+			530.217000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_09.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_10 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			463.762000,
+			-2501.630000,
+			544.497000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_11 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			556.938000,
+			-2484.100000,
+			432.373000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_12 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			495.489000,
+			-2496,
+			445.008000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_13 = 
+	{
+		base = "Music.a3_processing_vort_base"
+		position = 
+		[
+			436.265000,
+			-2495.850000,
+			444.122000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort2_01.vsnd",
+			"sounds/music/places/vault/vort2_02.vsnd",
+			"sounds/music/places/vault/vort2_03.vsnd",
+			"sounds/music/places/vault/vort2_04.vsnd",
+			"sounds/music/places/vault/vort2_05.vsnd",
+			"sounds/music/places/vault/vort2_06.vsnd",
+			"sounds/music/places/vault/vort2_07.vsnd",
+			"sounds/music/places/vault/vort2_08.vsnd",
+			"sounds/music/places/vault/vort2_09.vsnd",
+			"sounds/music/places/vault/vort2_10.vsnd",
+		]
+	}
+	Music.a3_processing2_vort_13_lp01_arr = 
+	{
+		type = "hlvr_start_arrangement"
+		arrangement = "a3_processing2_vort_13_lp01_arr"
+		arrangement_volume = 1.000000
+		quantize_type = "reset"
+		bpm = 117.000000
+	}
+	Music.a4_processing_tripmines = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				70.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				100.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				130.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 70
+		volume_fade_over_time_loop_end = 130
+		volume = 0.750000
+		volume_fade_out = 5.000000
+		restart_time = 100
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_processing_tripmines.vsnd",
+		]
+	}
+	Music.ProcessingCombine01 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 0
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.850000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.750000
+		volume_fade_out = 5.000000
+		restart_time = 102.295000
+		restart_start = 3.934000
+		start_point = 0
+		end_point = 102.295000
+		sync_bpm = 122
+		sync_bpm_beats = 4
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/combine_battle_03.vsnd",
+		]
+	}
+	Music.ProcessingCombineInter = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 1
+		volume = 1.000000
+		volume_fade_out = 4.000000
+		start_point = 0
+		end_point = 101.605000
+		sync_bpm = 137
+		sync_bpm_beats = 4
+		restart_time = 15.737000
+		restart_start = 9.320000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/combine_battle_inter_03.vsnd",
+		]
+	}
+	Music.ProcessingCombine02 = 
+	{
+		type = "hlvr_music_2d"
+		use_combat_music_convar = 1.000000
+		track = "main"
+		priority = 3
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume = 0.750000
+		volume_fade_out = 8.000000
+		start_point = 0
+		end_point = 98.360000
+		sync_bpm = 122
+		sync_bpm_beats = 4
+		stop_at_time = 130.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/combine_battle_03.vsnd",
+		]
+	}
+}

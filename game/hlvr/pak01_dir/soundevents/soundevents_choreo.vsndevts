@@ -1,0 +1,12047 @@
+{
+	choreo_a1_intro_window_amb = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		volume = 0.500000
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.485816,
+				0.000000,
+				0.001286,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				399.787384,
+				1.000000,
+				0.001286,
+				0.001286,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.001667,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				599.755859,
+				0.000000,
+				-0.001667,
+				-0.001667,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_basement_window_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_bike = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		block_duration = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		volume = 0.300000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.001923,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				520.128601,
+				0.000000,
+				-0.001923,
+				-0.001923,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_basement_bike_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_metrocops = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_metrocop_catchthatbliponstabilization.vsnd",
+			"sounds/choreo/choreo_metrocop_citizensummoned.vsnd",
+			"sounds/choreo/choreo_metrocop_classifyasdbthisblockready.vsnd",
+			"sounds/choreo/choreo_metrocop_contactwith243suspect.vsnd",
+			"sounds/choreo/choreo_metrocop_control100percent.vsnd",
+			"sounds/choreo/choreo_metrocop_cpbolforthat243.vsnd",
+			"sounds/choreo/choreo_metrocop_cprequestsallunitsreportin.vsnd",
+			"sounds/choreo/choreo_metrocop_gota10-107sendairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_ihave10-30my10-20responding.vsnd",
+			"sounds/choreo/choreo_metrocop_level3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_loyaltycheckfailure.vsnd",
+			"sounds/choreo/choreo_metrocop_movetoarrestpositions.vsnd",
+			"sounds/choreo/choreo_metrocop_pickupthecan1.vsnd",
+			"sounds/choreo/choreo_metrocop_possible10-103alerttagunits.vsnd",
+			"sounds/choreo/choreo_metrocop_possible647erequestairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_possiblelevel3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_preparingtojudge10-107.vsnd",
+			"sounds/choreo/choreo_metrocop_readytoprosecutefinalwarning.vsnd",
+			"sounds/choreo/choreo_metrocop_requestsecondaryviscerator.vsnd",
+			"sounds/choreo/choreo_metrocop_sacrificecode1maintaincp.vsnd",
+			"sounds/choreo/choreo_metrocop_standardloyaltycheck.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_footsteps_concrete = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_footstep_concrete_01.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_02.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_03.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_04.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_05.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_06.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_07.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_08.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_09.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_footscuffs_concrete = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003299,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.114410,
+				0.000000,
+				-0.003299,
+				-0.003299,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_footscuff_concrete_01.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_02.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_03.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_04.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_05.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_06.vsnd",
+			"sounds/choreo/choreo_footscuff_concrete_07.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_footsteps_combine = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003290,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.995575,
+				0.000000,
+				-0.003290,
+				-0.003290,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_09.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_clothes_combine = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		volume = 0.300000
+		pitch_random_min = 0.200000
+		pitch_random_max = -0.200000
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/combine/soldier_common/foley_step_01.vsnd",
+			"sounds/combine/soldier_common/foley_step_02.vsnd",
+			"sounds/combine/soldier_common/foley_step_03.vsnd",
+			"sounds/combine/soldier_common/foley_step_04.vsnd",
+			"sounds/combine/soldier_common/foley_step_05.vsnd",
+			"sounds/combine/soldier_common/foley_step_06.vsnd",
+			"sounds/combine/soldier_common/foley_step_07.vsnd",
+			"sounds/combine/soldier_common/foley_step_08.vsnd",
+			"sounds/combine/soldier_common/foley_step_09.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_gateon = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_basement_barrier_up_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_clothes_jacketA = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_foley_jacket_01.vsnd",
+			"sounds/choreo/choreo_foley_jacket_02.vsnd",
+			"sounds/choreo/choreo_foley_jacket_03.vsnd",
+			"sounds/choreo/choreo_foley_jacket_04.vsnd",
+			"sounds/choreo/choreo_foley_jacket_05.vsnd",
+			"sounds/choreo/choreo_foley_jacket_06.vsnd",
+			"sounds/choreo/choreo_foley_jacket_07.vsnd",
+			"sounds/choreo/choreo_foley_jacket_08.vsnd",
+			"sounds/choreo/choreo_foley_jacket_09.vsnd",
+			"sounds/choreo/choreo_foley_jacket_10.vsnd",
+			"sounds/choreo/choreo_foley_jacket_11.vsnd",
+			"sounds/choreo/choreo_foley_jacket_12.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_gate_truck = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		volume = 0.500000
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_gate_truck_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.535461,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_blackout = 
+	{
+		type = "choreo_3d"
+		volume = 3.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_capture_blackout_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000115,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.737589,
+				0.000115,
+				0.000115,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_footsteps_wood_combine = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003299,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.114410,
+				0.000000,
+				-0.003299,
+				-0.003299,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_01.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_02.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_03.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_04.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_05.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_06.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_07.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_08.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_09.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_footsteps_wood_combine_charger = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003299,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.114410,
+				0.000000,
+				-0.003299,
+				-0.003299,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_01.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_02.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_03.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_04.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_05.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_06.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_07.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_08.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_09.vsnd",
+			"sounds/physics/footsteps/combine_charger/wood/charger_wood_step_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_charger_footsteps = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003280,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				304.876709,
+				0.000000,
+				-0.003280,
+				-0.003280,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_01.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_02.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_03.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_04.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_05.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_06.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_07.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_08.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_09.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000115,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.737589,
+				0.000115,
+				0.000115,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_grunt_footsteps = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003290,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.995575,
+				0.000000,
+				-0.003290,
+				-0.003290,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_01.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_02.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_03.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_04.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_05.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_06.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_07.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_08.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_09.vsnd",
+			"sounds/physics/footsteps/combine_soldier/wood/combine_wood_step_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000115,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.737589,
+				0.000115,
+				0.000115,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_gate_grunt_footsteps = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003318,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				301.352142,
+				0.000000,
+				-0.003318,
+				-0.003318,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/combine_soldier/concrete/combine_concrete_step_09.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.531915,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_combine_clothes = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/combine/soldier_common/foley_step_01.vsnd",
+			"sounds/combine/soldier_common/foley_step_02.vsnd",
+			"sounds/combine/soldier_common/foley_step_03.vsnd",
+			"sounds/combine/soldier_common/foley_step_04.vsnd",
+			"sounds/combine/soldier_common/foley_step_05.vsnd",
+			"sounds/combine/soldier_common/foley_step_06.vsnd",
+			"sounds/combine/soldier_common/foley_step_07.vsnd",
+			"sounds/combine/soldier_common/foley_step_08.vsnd",
+			"sounds/combine/soldier_common/foley_step_09.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000115,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.737589,
+				0.000115,
+				0.000115,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_gate_clothes = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003280,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				304.876709,
+				0.000000,
+				-0.003280,
+				-0.003280,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_foley_jacket_01.vsnd",
+			"sounds/choreo/choreo_foley_jacket_02.vsnd",
+			"sounds/choreo/choreo_foley_jacket_03.vsnd",
+			"sounds/choreo/choreo_foley_jacket_04.vsnd",
+			"sounds/choreo/choreo_foley_jacket_05.vsnd",
+			"sounds/choreo/choreo_foley_jacket_06.vsnd",
+			"sounds/choreo/choreo_foley_jacket_07.vsnd",
+			"sounds/choreo/choreo_foley_jacket_08.vsnd",
+			"sounds/choreo/choreo_foley_jacket_09.vsnd",
+			"sounds/choreo/choreo_foley_jacket_10.vsnd",
+			"sounds/choreo/choreo_foley_jacket_11.vsnd",
+			"sounds/choreo/choreo_foley_jacket_12.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.595745,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_clothes = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_foley_jacket_01.vsnd",
+			"sounds/choreo/choreo_foley_jacket_02.vsnd",
+			"sounds/choreo/choreo_foley_jacket_03.vsnd",
+			"sounds/choreo/choreo_foley_jacket_04.vsnd",
+			"sounds/choreo/choreo_foley_jacket_05.vsnd",
+			"sounds/choreo/choreo_foley_jacket_06.vsnd",
+			"sounds/choreo/choreo_foley_jacket_07.vsnd",
+			"sounds/choreo/choreo_foley_jacket_08.vsnd",
+			"sounds/choreo/choreo_foley_jacket_09.vsnd",
+			"sounds/choreo/choreo_foley_jacket_10.vsnd",
+			"sounds/choreo/choreo_foley_jacket_11.vsnd",
+			"sounds/choreo/choreo_foley_jacket_12.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_footsteps = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003280,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				304.876709,
+				0.000000,
+				-0.003280,
+				-0.003280,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_footstep_concrete_01.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_02.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_03.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_04.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_05.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_06.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_07.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_08.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_09.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_gate_footsteps = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_footstep_concrete_01.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_02.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_03.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_04.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_05.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_06.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_07.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_08.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_09.vsnd",
+			"sounds/choreo/choreo_footstep_concrete_10.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.560284,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_stress = 
+	{
+		type = "choreo_3d"
+		volume = 0.100000
+		retrigger_radius = 2000.000000
+		retrigger_interval_max = 15.000000
+		retrigger_interval_min = 7.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_stress_01.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_02.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_03.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_04.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_05.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_06.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_07.vsnd",
+			"sounds/choreo/choreo_a1_intro_truck_stress_08.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.741135,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.737589,
+				-0.000001,
+				-0.000001,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_driving = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.205128,
+				0.000000,
+				-0.000030,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.168498,
+				-0.000030,
+				-0.000030,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_driving_interior_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				1.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_bounce = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.205128,
+				0.000000,
+				-0.000030,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.168498,
+				-0.000030,
+				-0.000030,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_bounce_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				1.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_broken = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.002000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				497.983429,
+				0.004249,
+				-0.002000,
+				-0.002000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_broken_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				1.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_explosion = 
+	{
+		type = "choreo_3d"
+		volume = 3.000000
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_explo_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.528369,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_amb = 
+	{
+		type = "choreo_3d"
+		volume = 0.400000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.205128,
+				0.000000,
+				-0.000030,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.168498,
+				-0.000030,
+				-0.000030,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_amb_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				1.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_alarm = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 300.000000
+		retrigger_interval_min = 2.000000
+		retrigger_interval_max = 2.000000
+		block_matching_events = false
+		block_match_entity = false
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.010863,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				63.004280,
+				0.315603,
+				-0.006832,
+				-0.006832,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				146.363785,
+				-0.000000,
+				-0.003786,
+				-0.003786,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_alarm_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.677305,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				95.100868,
+				0.680851,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_deadcombine = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		volume = 0.500000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.011007,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				55.907780,
+				0.384615,
+				-0.011007,
+				-0.005000,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				200.000000,
+				0.000000,
+				-0.002669,
+				-0.002669,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_dead_combine_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.517730,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_window_open = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000721,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1387.649414,
+				0.000000,
+				-0.000721,
+				-0.000721,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_window_open_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.641844,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_door_open = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.300366,
+				0.000000,
+				-0.000006,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.293040,
+				-0.000006,
+				-0.000006,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_door_open_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.585106,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_welding_start = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		delay = 1.000000
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.004342,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				160.886902,
+				0.301418,
+				-0.004342,
+				-0.001011,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				989.454407,
+				0.000000,
+				-0.000364,
+				-0.000364,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_welding_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_scanner_1_passby = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_window_scanner_1_passby.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_scanner_2_pullsaway = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_window_scanner_2_pullsaway.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_gate_scanner_1_passby = 
+	{
+		type = "choreo_3d"
+		volume = 1.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		delay = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_gate_scanner_1_passby.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.514184,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a4_tanker_eavesdrop_scanner = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a4_tanker_eavesdrop_scanner.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_engine = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		pitch = 1.000000
+		use_doppler = 1.000000
+		doppler_factor = 15.000000
+		doppler_factor_receding = 15.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.801418,
+				0.000000,
+				-0.002746,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				211.815567,
+				0.219858,
+				-0.000534,
+				-0.000534,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1500.000000,
+				0.000000,
+				-0.000171,
+				-0.000171,
+				1.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_engine.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.397163,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.390071,
+				-0.000002,
+				-0.000002,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.255319,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2974.113281,
+				0.283688,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_gate1open = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_gate1open.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_gate2open = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_gate2open.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_scanner_2_pullsup = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_window_scanner_2_pullsup.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_scanner_3_all = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_window_scanner_3_all.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_roundabout = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_roundabout.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_startladder = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_startladder.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_upladder = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_upladder.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_metrocops_running = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_metrocop_catchthatbliponstabilization.vsnd",
+			"sounds/choreo/choreo_metrocop_citizensummoned.vsnd",
+			"sounds/choreo/choreo_metrocop_classifyasdbthisblockready.vsnd",
+			"sounds/choreo/choreo_metrocop_contactwith243suspect.vsnd",
+			"sounds/choreo/choreo_metrocop_control100percent.vsnd",
+			"sounds/choreo/choreo_metrocop_cpbolforthat243.vsnd",
+			"sounds/choreo/choreo_metrocop_cprequestsallunitsreportin.vsnd",
+			"sounds/choreo/choreo_metrocop_gota10-107sendairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_ihave10-30my10-20responding.vsnd",
+			"sounds/choreo/choreo_metrocop_level3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_loyaltycheckfailure.vsnd",
+			"sounds/choreo/choreo_metrocop_movetoarrestpositions.vsnd",
+			"sounds/choreo/choreo_metrocop_pickupthecan1.vsnd",
+			"sounds/choreo/choreo_metrocop_possible10-103alerttagunits.vsnd",
+			"sounds/choreo/choreo_metrocop_possible647erequestairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_possiblelevel3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_preparingtojudge10-107.vsnd",
+			"sounds/choreo/choreo_metrocop_readytoprosecutefinalwarning.vsnd",
+			"sounds/choreo/choreo_metrocop_requestsecondaryviscerator.vsnd",
+			"sounds/choreo/choreo_metrocop_sacrificecode1maintaincp.vsnd",
+			"sounds/choreo/choreo_metrocop_standardloyaltycheck.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_metrocops_order = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003271,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				305.757874,
+				0.000000,
+				-0.003271,
+				-0.003271,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_metrocop_catchthatbliponstabilization.vsnd",
+			"sounds/choreo/choreo_metrocop_citizensummoned.vsnd",
+			"sounds/choreo/choreo_metrocop_classifyasdbthisblockready.vsnd",
+			"sounds/choreo/choreo_metrocop_contactwith243suspect.vsnd",
+			"sounds/choreo/choreo_metrocop_control100percent.vsnd",
+			"sounds/choreo/choreo_metrocop_cpbolforthat243.vsnd",
+			"sounds/choreo/choreo_metrocop_cprequestsallunitsreportin.vsnd",
+			"sounds/choreo/choreo_metrocop_gota10-107sendairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_ihave10-30my10-20responding.vsnd",
+			"sounds/choreo/choreo_metrocop_level3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_loyaltycheckfailure.vsnd",
+			"sounds/choreo/choreo_metrocop_movetoarrestpositions.vsnd",
+			"sounds/choreo/choreo_metrocop_pickupthecan1.vsnd",
+			"sounds/choreo/choreo_metrocop_possible10-103alerttagunits.vsnd",
+			"sounds/choreo/choreo_metrocop_possible647erequestairwatch.vsnd",
+			"sounds/choreo/choreo_metrocop_possiblelevel3civilprivacyviolator.vsnd",
+			"sounds/choreo/choreo_metrocop_preparingtojudge10-107.vsnd",
+			"sounds/choreo/choreo_metrocop_readytoprosecutefinalwarning.vsnd",
+			"sounds/choreo/choreo_metrocop_requestsecondaryviscerator.vsnd",
+			"sounds/choreo/choreo_metrocop_sacrificecode1maintaincp.vsnd",
+			"sounds/choreo/choreo_metrocop_standardloyaltycheck.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_radiochirp_end = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.114410,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_radiochirp_end.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_radiochirp_start = 
+	{
+		type = "choreo_3d"
+		block_matching_events = false
+		block_match_entity = false
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				303.114410,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_radiochirp_start.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_truck_scannerhit = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		volume = 2.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000721,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1387.649414,
+				0.000000,
+				-0.000721,
+				-0.000721,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_scannerhit_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.539007,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_1_togiveheadset = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_1_giveheadset.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_2_postheadset = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_2_postheadset.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_3_togate1 = 
+	{
+		type = "choreo_3d"
+		volume = 1.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000500,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2000.000000,
+				0.000000,
+				-0.000500,
+				-0.000500,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_3_togate1.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_4_thrugates = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_4_throughgates.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_5_overwall = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_5_overwall.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_6_thruplay = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_6_throughplay.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_7_postladder = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_7_postladder.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_8_todeath = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_moves_8_todeath.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_headcrab_land = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		delay = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_hideout_headcrab_land_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.535461,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.698582,
+				0.000054,
+				0.000054,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_vort_jump_railing = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_hideout_vort_jump_railing.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.734043,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_scanner = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.025344,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				39.978107,
+				1.013187,
+				0.025344,
+				-0.000063,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				250.000000,
+				1.000000,
+				-0.000063,
+				-0.000063,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.675768,
+				0.000000,
+				-0.000331,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000331,
+				-0.000331,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_capture_scanner.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.672355,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				0.123919,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_hotelstreet_vortfree_scamperaway = 
+	{
+		type = "choreo_3d"
+		volume = 1.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.868446,
+				0.000000,
+				0.000045,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				250.000000,
+				0.879580,
+				0.000045,
+				0.000045,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_hotelstreet_vort_scamper.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.230496,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_whiskers = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.808511,
+				0.000000,
+				-0.001480,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				213.175140,
+				0.492908,
+				-0.000834,
+				-0.000834,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				969.343567,
+				0.000000,
+				-0.000652,
+				-0.000652,
+				1.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_whiskers.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.705674,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.702128,
+				-0.000001,
+				-0.000001,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_window_alarm = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		volume = 1.200000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.897163,
+				0.000000,
+				0.000009,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.907801,
+				0.000009,
+				0.000009,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000094,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				490.705017,
+				0.953901,
+				-0.000094,
+				-0.000849,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				1178.496460,
+				0.000000,
+				-0.001387,
+				-0.001387,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_basement_alarm.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.666667,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.563830,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.574468,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_weld_loop = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.004427,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				128.357193,
+				0.431773,
+				-0.004427,
+				-0.000918,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				966.149536,
+				0.113475,
+				-0.000380,
+				0.000018,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1369.171509,
+				0.120567,
+				0.000018,
+				-0.000213,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				1500.000000,
+				0.000000,
+				-0.000922,
+				-0.000922,
+				1.000000,
+				1.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_weld_loop.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2.438040,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_headcrab_cries = 
+	{
+		type = "choreo_3d"
+		volume = 0.300000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.004013,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				249.213806,
+				0.000000,
+				-0.004013,
+				-0.004013,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/creatures/headcrab_classic/vox/alerted_01.vsnd",
+			"sounds/creatures/headcrab_classic/hideout/bold_hiss_01.vsnd",
+			"sounds/creatures/headcrab_classic/hideout/bold_hiss_02.vsnd",
+			"sounds/creatures/headcrab_classic/hideout/bold_hiss_03.vsnd",
+			"sounds/creatures/headcrab_classic/hideout/bold_hiss_04.vsnd",
+			"sounds/creatures/headcrab_classic/vox/alerted_02.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.535461,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.698582,
+				0.000054,
+				0.000054,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_headcrab_death = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		block_duration = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		should_pause = true
+		delay = 0.750000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.826241,
+				0.000000,
+				0.000064,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				222.890320,
+				0.840426,
+				0.000064,
+				0.000064,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/scripted_sequences/a2/hideout/headcrab_death.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.535461,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.698582,
+				0.000054,
+				0.000054,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_headcrab_cook = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/scripted_sequences/a2/hideout/headcrab_corpse_into_pot.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.535461,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.698582,
+				0.000054,
+				0.000054,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_hangar_open_ether_01 = 
+	{
+		type = "choreo_3d"
+		volume = 0.400000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_hideout_hangar_open_stereo.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.592199,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_scanner_exitearly = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.025344,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				39.978107,
+				1.013187,
+				0.025344,
+				-0.000063,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				250.000000,
+				1.000000,
+				-0.000063,
+				-0.000063,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_capture_scanner_exitearly.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.726950,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_capture_scanner_eyepoke = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		use_doppler = 1.000000
+		doppler_factor = 4.000000
+		doppler_factor_receding = 4.000000
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.025344,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				39.978107,
+				1.013187,
+				0.025344,
+				-0.000063,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				250.000000,
+				1.000000,
+				-0.000063,
+				-0.000063,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_capture_scanner_eyepoke.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.702128,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_courtyard_scanner = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.602837,
+				0.000000,
+				0.000028,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				254.283401,
+				0.609929,
+				0.000028,
+				0.000028,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.001198,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				834.954224,
+				0.000000,
+				-0.001198,
+				-0.001198,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_courtyard_scanner.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.620567,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				0.314121,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_pp_scanner_1_todoor = 
+	{
+		type = "choreo_3d"
+		volume = 1.500000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		block_duration = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		should_pause = true
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				222.890320,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_pp_scanner_1_todoor.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.198582,
+				0.000000,
+				0.000001,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.202128,
+				0.000001,
+				0.000001,
+				0.000000,
+				1.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_pp_scanner_2_outside = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		block_duration = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		should_pause = true
+		pitch = 1.000000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				222.890320,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_pp_scanner_2_outside.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.198582,
+				0.000000,
+				0.000001,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.202128,
+				0.000001,
+				0.000001,
+				0.000000,
+				1.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_pp_scanner_3_todeath = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		block_duration = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		should_pause = true
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				222.890320,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_pp_scanner_3_todeath.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.198582,
+				0.000000,
+				0.000001,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.202128,
+				0.000001,
+				0.000001,
+				0.000000,
+				1.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_hotelstreet_vortfree_outwindow = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.868446,
+				0.000000,
+				0.000045,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				250.000000,
+				0.879580,
+				0.000045,
+				0.000045,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000490,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				2040.345825,
+				0.000000,
+				-0.000490,
+				-0.000490,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_hotelstreet_vort_outwindow.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				1.095058,
+				0.229304,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				215.734833,
+				0.244681,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_train_trainpullaway = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				233.285995,
+				1.000000,
+				0.000000,
+				-0.000860,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000860,
+				-0.000860,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000027,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				130.506195,
+				0.003546,
+				0.000027,
+				0.003533,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				283.035309,
+				1.000000,
+				0.006533,
+				0.006533,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_train_trainpullaway.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_ladderfall = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				168.931244,
+				1.000000,
+				0.000000,
+				-0.000815,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000815,
+				-0.000815,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.432624,
+				0.000000,
+				0.000462,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000462,
+				0.000462,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_ladderfall.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.478723,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				268.011536,
+				0.496454,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_train_eli_swing = 
+	{
+		type = "choreo_3d"
+		volume = 0.400000
+		retrigger_radius = 0.000000
+		should_pause = true
+		pitch = 1.500000
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		block_matching_events = false
+		block_match_entity = false
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				233.285995,
+				1.000000,
+				0.000000,
+				-0.000860,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000860,
+				-0.000860,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				283.035309,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/world/chasm_crane/stuck_creak_01.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_02.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_03.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_04.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				492.795410,
+				0.638298,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_hideout_pre_static = 
+	{
+		type = "choreo_3d"
+		volume = 0.700000
+		retrigger_radius = 0.000000
+		should_pause = true
+		block_matching_events = false
+		block_match_entity = false
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_hideout_pre_static.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_rus_scanner_moves_2_retract = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000716,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000716,
+				-0.000716,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_rus_scanner_2_retract.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.620567,
+				0.000076,
+				0.000076,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2982.708984,
+				0.712766,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a1_intro_ladder_welding_start = 
+	{
+		type = "choreo_3d"
+		retrigger_radius = 0.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.004342,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				160.886902,
+				0.301418,
+				-0.004342,
+				-0.001011,
+				0.000000,
+				1.000000,
+			],
+			
+			[
+				989.454407,
+				0.000000,
+				-0.000364,
+				-0.000364,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a1_intro_truck_welding_01.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.391941,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.578014,
+				0.000219,
+				0.000219,
+				2.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a3_pp_scanner_4_explode = 
+	{
+		type = "choreo_3d"
+		volume = 2.000000
+		retrigger_radius = 0.000000
+		block_matching_events = false
+		block_match_entity = false
+		block_duration = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		should_pause = true
+		delay = 0.500000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1395.693848,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				222.890320,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a3_pp_scanner_4_explosion.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.198582,
+				0.000000,
+				0.000001,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				3000.000000,
+				0.202128,
+				0.000001,
+				0.000001,
+				0.000000,
+				1.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_pistol_hanging_combine = 
+	{
+		type = "choreo_3d"
+		volume = 1.000000
+		retrigger_radius = 2000.000000
+		retrigger_interval_max = 5.000000
+		retrigger_interval_min = 1.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.002827,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				253.396866,
+				0.283688,
+				-0.000716,
+				-0.000716,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1395.693848,
+				0.000000,
+				-0.000131,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/combine/soldier_common/combine_radio_off_01.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_02.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_04.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_05.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_06.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_07.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_01.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_02.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_03.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_04.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_05.vsnd",
+			"sounds/common/null.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.886525,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.890071,
+				0.000001,
+				0.000001,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	choreo_a2_pistol_hanging_combine_static = 
+	{
+		type = "choreo_3d"
+		volume = 0.500000
+		retrigger_radius = 2000.000000
+		retrigger_interval_max = 7.000000
+		retrigger_interval_min = 6.000000
+		should_pause = true
+		mixgroup = "ScriptedSequence_Loud"
+		pitch_random_min = -0.100000
+		pitch_random_max = 0.100000
+		distance_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.003611,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				209.152969,
+				0.244681,
+				-0.001262,
+				-0.001262,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				792.367981,
+				0.000000,
+				-0.000131,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+		]
+		distance_steamaudio_mix_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				1227.665771,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		vsnd_files_track_01 = 
+		[
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_01.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_02.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_03.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_04.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_05.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_06.vsnd",
+			"sounds/choreo/choreo_a2_pistol_hanging_combine_07.vsnd",
+		]
+		distance_reverb_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.886525,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.890071,
+				0.000001,
+				0.000001,
+				0.000000,
+				3.000000,
+			],
+		]
+		distance_Occlusion_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				3000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+}

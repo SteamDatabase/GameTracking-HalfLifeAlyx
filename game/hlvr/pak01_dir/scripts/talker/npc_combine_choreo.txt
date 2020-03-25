@@ -1,0 +1,470 @@
+response Choreo_PPC17_SearchingForAlyx
+{
+	criteria		IsCombineS IsClass_Officer Choreo_PPC17_SearchingForAlyx
+	sequential
+
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_01" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_01" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.announceattack_alyx_04" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene	
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_04" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene	
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_01" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.reconnoiter_search_01" thensimple 0.5 speak "vo.combine.officer.reconnoiter_search_02" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.reconnoiter_start_12" thensimple 0.5 speak "vo.combine.officer.reconnoiter_start_11" thensimple 0 speak "combine.radioOff" noscene	
+
+}
+
+response Choreo_PPC17_GruntAtElectricalBox
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_PPC17_GruntAtElectricalBox
+	// negative. uhhhh... no can do. sector is tracking at 43% stable. Aaaand still holding for transmission. over. Affirmative. Can do. Transmission clear...Negative on condition quicksand. Uhh... wait... No. Radials clear. Over."
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.unabletocommence_01" thensimple 0.5 speak "vo.combine.grunt.unabletocommence_02" thensimple 2.0 speak "vo.combine.grunt.idle_08" thensimple 0.5 speak "vo.combine.grunt.orderresponse_positive_06" thensimple 0.5 speak "vo.combine.grunt.orderresponse_positive_04" thensimple 2.0 speak "vo.combine.grunt.idle_06" thensimple 0.0 speak "combine.radioOff" noscene
+	
+}
+
+response Choreo_PPC17_GruntAtBridge
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_PPC17_GruntAtBridge
+	// "affirmative. contact at sector niner four. open echo on alyx."
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.orderresponse_positive_06" thensimple 0.4 speak "vo.combine.grunt.refindenemy_11" thensimple 0.3 speak "vo.combine.grunt.announceattack_alyx_07" thensimple 0.0 speak "combine.radioOff" noscene	
+	
+}
+
+response Choreo_PPC17_OfficerAtBridge
+{
+	criteria		IsCombineS IsClass_Officer Choreo_PPC17_OfficerAtBridge
+	// all units sound on. report contaminate evasion.
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.hear_suspicious_06" thensimple 0.0 speak "combine.radioOff" noscene
+	
+}
+
+response Choreo_StationStreet_ChargerInvestigates
+{
+	criteria		IsCombineS IsClass_Charger Choreo_StationStreet_ChargerInvestigates
+	// all units sound on. report contaminate evasion.
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.charger.hear_suspicious_06" thensimple 0.3 speak "vo.combine.charger.establishinglof_13" thensimple 0.0 speak "combine.radioOff" noscene
+	
+}
+
+response Choreo_PPC17_GruntEnterArena1
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_PPC17_GruntEnterArena1
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.lostvisual_09" thensimple 0.3 speak "vo.combine.grunt.lostvisual_10" thensimple 0.0 speak "combine.radioOff" noscene
+	
+}
+
+response Choreo_PPC17_GruntEnterArena2
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_PPC17_GruntEnterArena2
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.order_response_positive_02" thensimple 0.3 speak "vo.combine.grunt.establishinglof_15" thensimple 0.0 speak "combine.radioOff" noscene
+	
+}
+
+response Choreo_PPC17_SuppressorEnterArena
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_PPC17_SuppressorEnterArena
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.suppressor.order_response_positive_02" thensimple 0.3 speak "vo.combine.suppressor.establishinglof_15" thensimple 0.0 speak "combine.radioOff" noscene
+}
+
+response Choreo_PPC17_BatteryArenaOfficerEntry
+{
+	criteria		IsCombineS IsClass_Officer Choreo_PPC17_BatteryArenaOfficerEntry
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_06" thensimple 0.3 speak "vo.combine.officer.manhack_release_111" thensimple 0.0 speak "combine.radioOff" noscene
+}
+
+response Choreo_TYC17_GruntGantry1
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_TYC17_GruntGantry1
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.overwatch_19" thensimple 0.0 speak "combine.radioOff" noscene
+}
+
+response Choreo_TYC17_GruntGantry2
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_TYC17_GruntGantry2
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.overwatch_02" thensimple 0.0 speak "combine.radioOff" noscene
+}
+
+response Choreo_TYC17_GruntGarbageGuy
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_TYC17_GruntGarbageGuy
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.idle_03" thensimple 0.0 speak "combine.radioOff" noscene
+}
+
+response Choreo_SearchingForAlyx
+{
+	criteria		IsCombineS IsClass_Officer Choreo_PPC17_SearchingForAlyx
+	sequential
+
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_01" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_01" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.announceattack_alyx_04" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_04" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.lostvisual_player_01" thensimple 0.5 speak "vo.combine.officer.lostvisual_player_03" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.reconnoiter_search_01" thensimple 0.5 speak "vo.combine.officer.reconnoiter_search_02" thensimple 0 speak "combine.radioOff" noscene
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.reconnoiter_start_12" thensimple 0.5 speak "vo.combine.officer.reconnoiter_start_11" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_PPC17_SuppressorIntroRetreat
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_PPC17_SuppressorIntroRetreat
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.suppressor.retreat_07" thensimple 0 speak "vo.combine.suppressor.retreat_06" thensimple 0 speak "vo.combine.suppressor.retreat_03" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_PPC17_SuppressorIntroAmbushAttack
+{
+	criteria		IsCombineS IsClass_Suppressor Choreo_PPC17_SuppressorIntroAmbushAttack
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.suppressor.laugh_06" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_A5Vault_OfficerInPosition
+{
+	criteria		IsCombineS IsClass_Officer Choreo_A5Vault_InPosition
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.officer.announceattack_07" thensimple 0.5 speak "vo.combine.officer.advancing_on_target_order_03" thensimple 0 speak  "combine.radioOff" noscene
+}
+
+response Choreo_A5Vault_ChargerInPosition
+{
+	criteria		IsCombineS IsClass_Charger Choreo_A5Vault_InPosition
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.charger.orderresponse_positive_03" thensimple 0.5 speak "vo.combine.charger.overwatch_03" thensimple 0.2 speak "vo.combine.charger.reconnoiter_search_01" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_A5Vault_GruntInPosition
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_A5Vault_InPosition
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.orderresponse_positive_02"thensimple 0.3 speak "vo.combine.grunt.advancing_on_target_16" thensimple 0 speak "vo.combine.grunt.calloutcode_charlie_01" thensimple 0 speak "vo.combine.grunt.calloutcode_dash_01" thensimple 0 speak "vo.combine.grunt.calloutcode_eight_01" thensimple 0 speak "vo.combine.grunt.calloutcode_thirty_01" thensimple 0 speak "vo.combine.grunt.calloutcode_five_01" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_A5Vault_GruntAlertGuy
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_A5Vault_GruntAlertGuy
+	speak "combine.radioOn" thensimple 0 speak "vo.combine.grunt.announceattack_alyx_11" thensimple 0.5 speak "vo.combine.grunt.nearpanic_08" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0001
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0001
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0001" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0002
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0002
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0002" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0003
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0003
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0003" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0004
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0004
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0004" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0005
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0005
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0005" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0006
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0006
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0006" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0007
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0007
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0007" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0008
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0008
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0008" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0009
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0009
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0009" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0010
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0010
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0010" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0011
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0011
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0011" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0012
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0012
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0012" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0013
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0013
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0013" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0014
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0014
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0014" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0015
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0015
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0015" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0016
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0016
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0016" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0017
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0017
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0017" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0018
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0018
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0018" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0019
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0019
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0019" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0020
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0020
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0020" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0021
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0021
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0021" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0022
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0022
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0022" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_29_0023
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_29_0023
+	speak "combine.radioOn" thensimple 0 speak "vo.29_0023" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0001
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0001
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0001" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0002
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0002
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0002" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0003
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0003
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0003" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0004
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0004
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0004" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0005
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0005
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0005" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0006
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0006
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0006" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0007
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0007
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0007" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0008
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0008
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0008" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0009
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0009
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0009" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0010
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0010
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0010" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0011
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0011
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0011" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0012
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0012
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0012" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0013
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0013
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0013" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0014
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0014
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0014" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0015
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0015
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0015" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0016
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0016
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0016" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0017
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0017
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0018" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0018
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0018
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0018" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0019
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0019
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0019" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0020
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0020
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0020" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0021
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0021
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0021" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0022
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0022
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0022" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0023
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0023
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0023" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0024
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0024
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0024" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0025
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0025
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0025" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0026
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0026
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0026" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_30_0027
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_30_0027
+	speak "combine.radioOn" thensimple 0 speak "vo.30_0027" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_28_1110
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_28_1110
+	speak "combine.radioOn" thensimple 0 speak "vo.28_1110" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_27_1107
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_27_1107
+	speak "combine.radioOn" thensimple 0 speak "vo.27_1107" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_27_1108
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_27_1108
+	speak "combine.radioOn" thensimple 0 speak "vo.27_1108" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_27_1109
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_27_1109
+	speak "combine.radioOn" thensimple 0 speak "vo.27_1109" thensimple 0 speak "combine.radioOff" noscene
+}
+
+response Choreo_27_1111
+{
+	criteria		IsCombineS IsClass_Grunt Choreo_27_1111
+	speak "combine.radioOn" thensimple 0 speak "vo.27_1111" thensimple 0 speak "combine.radioOff" noscene
+}

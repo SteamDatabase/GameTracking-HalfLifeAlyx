@@ -1,0 +1,102 @@
+BugUserSelectionPanel
+{
+	background-color: #404654;
+	border: 8px solid #f2a50d;
+	border-radius: 12px;
+	flow-children: down;
+}
+
+Label
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+}
+
+DropDown
+{
+}
+
+#prompt
+{
+	font-size: 60px;
+	font-weight: bold;
+	color: white;
+}
+
+#UserListAndShortcuts
+{
+	height: fill-parent-flow(1.0);
+	width: 100%;
+	flow-children: right;
+}
+
+#UserList
+{
+	flow-children: down;
+	overflow: squish scroll;
+	width: 600px;
+	height: 100%;
+}
+
+#UserList .user_choice
+{
+	border: 2px solid #888;
+	width: 100%;
+	padding: 6px;
+}
+
+#UserList .user_choice:hover
+{
+	background-color: #888;
+}
+
+#UserList .user_choice:selected
+{
+	border: 2px solid #f2a50d;
+	background-color: #222;
+}
+
+#UserList .user_choice:selected Label
+{
+	color: #f2a50d;
+}
+
+#UserList Label
+{
+	font-size: 28px;
+}
+
+#AZShortcuts
+{
+	flow-children: right-wrap;
+	margin: 8px;
+	height: 100%;
+}
+
+#AZShortcuts Button
+{
+	width: 80px;
+	height: 120px;
+	padding: 1px;
+	margin: 2px;
+}
+
+#AZShortcuts Label
+{
+	font-size: 60px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+	text-align: center;
+}
+
+.wrap_padding
+{
+	width: fill-parent-flow(1.0);
+}
+
+

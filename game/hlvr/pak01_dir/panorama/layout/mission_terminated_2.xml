@@ -1,0 +1,20 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/mission_terminated.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/mission_terminated.vjs_c" />
+	</scripts>
+
+	<Panel class="MessageTitle">
+		<Panel class="SubjectText">
+			<Label id='line1a' text="#HLVR_Mission_Terminated_02a" />
+			<Label id='line1b' class="emphasis" text="#HLVR_Mission_Terminated_02b" />
+		</Panel>
+	</Panel>
+</root>
+
+

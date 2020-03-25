@@ -1,0 +1,56 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dev/bug_submit_panel.vcss_c" />
+		<include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+	</styles>
+
+	<script>
+		function StartRecording()
+		{
+			$.GetContextPanel().SetHasClass( "is_recording", true );
+			$.DispatchEvent( "GameMenu_Cmd", "+bugvoice" );
+		}
+
+		function PauseRecording()
+		{
+			$.GetContextPanel().SetHasClass( "is_recording", false );
+			$.DispatchEvent( "GameMenu_Cmd", "-bugvoice" );
+		}
+	</script>
+	
+	<BugSubmitPanel>
+		<Panel id="current_user_info">
+			<Label text="Submit As:"/>
+			<Label id="current_user_label" />
+			<Button onactivate="BugSubmitPanel_ChangeUser()" id="change_user">
+				<Label text="Change..."/>
+			</Button>
+			<Button onactivate="BugSubmitPanel_CompleteUserSelection()" id="complete_user_selection">
+				<Label text="Ok"/>
+			</Button>
+		</Panel>
+		<Panel id="state_container">
+			<Panel id="user_selection">
+				<BugUserSelectionPanel />
+			</Panel>
+			<Panel id="pending_submit">
+				<Label id="instruction_text" text="Look at the bug, then close this panel with the menu button. That will take a screenshot and submit the bug."/>
+				<Button id="record_voice_button" onactivate="StartRecording();">
+					<Label text="Record Voice"/>
+				</Button>
+				<Button id="pause_voice_button" onactivate="PauseRecording();">
+					<Label text="Pause Voice"/>
+				</Button>
+				<Button id="clear_voice_button" onactivate="GameMenu_Cmd( bugvoice_clear )">
+					<Label text="Erase Recording"/>
+				</Button>
+				<Button id="cancel_button" onactivate="GameMenu_CancelBug()">
+					<Label text="Cancel Bug"/>
+				</Button>
+			</Panel>
+		</Panel>
+	</BugSubmitPanel>
+</root>
+
+

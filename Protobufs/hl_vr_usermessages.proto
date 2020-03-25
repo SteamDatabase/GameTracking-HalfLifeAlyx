@@ -1,0 +1,147 @@
+import "networkbasetypes.proto";
+
+option optimize_for = SPEED;
+option cc_generic_services = false;
+
+enum HLVRUserMessageIds {
+	UM_Geiger = 300;
+	UM_Battery = 301;
+	UM_Damage = 302;
+	UM_MuzzleFlashLight = 303;
+	UM_RapidfireBulletManager = 304;
+	UM_SaveSlot = 305;
+	UM_BackUpSaves = 306;
+}
+
+enum RAPIDFIRE_BULLET_MANAGER_MESSAGE {
+	RAPIDFIRE_BULLET_MANAGER_EVENT_CREATE_BULLET = 0;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_ACTIVATE_BULLET = 1;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_DEACTIVATE_BULLET = 2;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_MOVE_BULLET = 3;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_STOP_BULLET = 4;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_TRANSFER_BULLET = 5;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_CREATE_CLUSTER = 6;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_ACTIVATE_CLUSTER = 7;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_DEACTIVATE_CLUSTER = 8;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_ADD_BULLET_TO_CLUSTER = 9;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_REMOVE_BULLET_FROM_CLUSTER = 10;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_EXPLODE_CLUSTER = 11;
+	RAPIDFIRE_BULLET_MANAGER_EVENT_TRANSFER_CLUSTER = 12;
+}
+
+message CUserMessageGeiger {
+	optional uint32 geiger = 1;
+}
+
+message CUserMessageBattery {
+	optional int32 armorvalue = 1;
+}
+
+message CUserMessageDamage {
+	optional int32 dmg_save = 1;
+	optional int32 dmg_take = 2;
+	optional int32 visible_damage_bits = 3;
+	optional float damage_origin_x = 4;
+	optional float damage_origin_y = 5;
+	optional float damage_origin_z = 6;
+}
+
+message CUserMessageMuzzleFlashLight {
+	optional int32 flash_type = 1;
+	optional .CMsgVector origin = 2;
+	optional .CMsgVector forward = 3;
+	optional .CMsgVector right = 4;
+	optional .CMsgVector up = 5;
+}
+
+message CUserMessageRapidfireBulletManager {
+	message CreateBullet {
+	}
+
+	message ActivateBullet {
+		optional .CMsgVector position = 1;
+		optional bool is_explosive = 2;
+	}
+
+	message DeactivateBullet {
+		optional .CMsgVector position = 1;
+		optional .CMsgVector hit_normal = 2;
+	}
+
+	message MoveBullet {
+		optional .CMsgVector new_position = 1;
+	}
+
+	message StopBullet {
+		optional .CMsgVector position = 1;
+		optional bool parented = 2;
+		optional int32 parent_handle = 3;
+		optional .CMsgVector local_position = 4;
+		optional int32 hitbox_bone_index = 5;
+		optional int32 cluster_index = 6;
+		optional .CMsgVector hit_normal = 7;
+	}
+
+	message TransferBullet {
+		optional int32 new_parent_handle = 1;
+	}
+
+	message CreateCluster {
+	}
+
+	message ActivateCluster {
+		optional uint32 bullet_index = 1;
+		optional .CMsgVector position = 3;
+		optional bool parented = 4;
+		optional int32 parent_handle = 5;
+		optional .CMsgVector local_position = 6;
+	}
+
+	message DeactivateCluster {
+		optional bool deactivate_bullets = 1;
+	}
+
+	message AddBulletToCluster {
+		optional uint32 bullet_index = 1;
+		optional .CMsgVector position = 2;
+		optional .CMsgVector local_position = 3;
+		optional bool ready_to_explode = 4;
+	}
+
+	message RemoveBulletFromCluster {
+		optional uint32 bullet_index = 1;
+		optional bool deactivate_bullet = 2;
+	}
+
+	message ExplodeCluster {
+	}
+
+	message TransferCluster {
+		optional int32 new_parent_handle = 1;
+	}
+
+	required .RAPIDFIRE_BULLET_MANAGER_MESSAGE type = 1 [default = RAPIDFIRE_BULLET_MANAGER_EVENT_CREATE_BULLET];
+	required uint32 index = 2;
+	optional .CUserMessageRapidfireBulletManager.CreateBullet create_bullet = 3;
+	optional .CUserMessageRapidfireBulletManager.ActivateBullet activate_bullet = 4;
+	optional .CUserMessageRapidfireBulletManager.DeactivateBullet deactivate_bullet = 5;
+	optional .CUserMessageRapidfireBulletManager.MoveBullet move_bullet = 6;
+	optional .CUserMessageRapidfireBulletManager.StopBullet stop_bullet = 7;
+	optional .CUserMessageRapidfireBulletManager.TransferBullet transfer_bullet = 8;
+	optional .CUserMessageRapidfireBulletManager.CreateCluster create_cluster = 9;
+	optional .CUserMessageRapidfireBulletManager.ActivateCluster activate_cluster = 10;
+	optional .CUserMessageRapidfireBulletManager.DeactivateCluster deactivate_cluster = 11;
+	optional .CUserMessageRapidfireBulletManager.AddBulletToCluster add_bullet_to_cluster = 12;
+	optional .CUserMessageRapidfireBulletManager.RemoveBulletFromCluster remove_bullet_from_cluster = 13;
+	optional .CUserMessageRapidfireBulletManager.ExplodeCluster explode_cluster = 14;
+	optional .CUserMessageRapidfireBulletManager.TransferCluster transfer_cluster = 15;
+}
+
+message CUserMessageSaveSlot {
+	optional string save_slot = 1;
+}
+
+message CUserMessageBackUpSaves {
+	optional string save_name = 1;
+	optional string save_slot = 2;
+}

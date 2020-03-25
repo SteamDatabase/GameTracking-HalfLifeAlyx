@@ -1,0 +1,603 @@
+{
+	AmbientHotelRooftop.OpenAirSkylightLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientHotelRooftop.OpenAirSkylightLp_L"
+		soundevent_02 = "AmbientHotelRooftop.OpenAirSkylightLp_R"
+		soundevent_03 = "AmbientHotelRooftop.OpenAirSkylightLp_LS"
+		soundevent_04 = "AmbientHotelRooftop.OpenAirSkylightLp_RS"
+		rand_delay_min = 0.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation_multi_vsnd"
+		vsnd_file_01 = "sounds/ambient/city/amb_tenement_open_air_quad_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/city/amb_proc_plant_ext_lp_01_l.vsnd"
+		vsnd_file_04 = "sounds/ambient/train_warehouse/trainyard/amb_trainyard_outdoor_lp_01_l.vsnd"
+		vsnd_vol_01 = "1.0"
+		vsnd_vol_02 = "0.5"
+		vsnd_vol_03 = "0.65"
+		vsnd_vol_04 = "0.36"
+		mixgroup = "ambient"
+		radius = 250.000000
+		volume_falloff_min = 250
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 35.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		global_opvar_name_01 = "skylight_proximity_beacon"
+		global_opvar_filter_velocity = 2.500000
+		remap_vol_opvar_x1 = 0.000000
+		remap_vol_opvar_y1 = 0.000000
+		remap_vol_opvar_x2 = 0.200000
+		remap_vol_opvar_y2 = 0.650000
+		remap_vol_opvar_x3 = 0.500000
+		remap_vol_opvar_y3 = 0.700000
+		remap_vol_opvar_x4 = 1.000000
+		remap_vol_opvar_y4 = 1.000000
+		opvar_to_volume_multiplier_min = 0.000000
+		opvar_to_volume_multiplier = 1.000000
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_R = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/city/amb_tenement_open_air_quad_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/city/amb_proc_plant_ext_lp_01_r.vsnd"
+		vsnd_file_04 = "sounds/ambient/train_warehouse/trainyard/amb_trainyard_outdoor_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_LS = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/city/amb_tenement_open_air_quad_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/city/amb_proc_plant_ext_lp_01_ls.vsnd"
+		vsnd_file_04 = "sounds/ambient/train_warehouse/trainyard/amb_trainyard_outdoor_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	AmbientHotelRooftop.OpenAirSkylightLp_RS = 
+	{
+		base = "AmbientHotelRooftop.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/city/amb_tenement_open_air_quad_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/city/amb_proc_plant_ext_lp_01_rs.vsnd"
+		vsnd_file_04 = "sounds/ambient/train_warehouse/trainyard/amb_trainyard_outdoor_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+	AmbientHotelRooftop.HotelIntLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientHotelRooftop.HotelIntLp_L"
+		soundevent_02 = "AmbientHotelRooftop.HotelIntLp_R"
+		soundevent_03 = "AmbientHotelRooftop.HotelIntLp_LS"
+		soundevent_04 = "AmbientHotelRooftop.HotelIntLp_RS"
+		rand_delay_min = -4.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientHotelRooftop.HotelIntLp_L = 
+	{
+		base = "AmbientTenement.HotelIntLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_ringing_pulse_quad_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_tunnel_friction_quad_lp_01_l.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_tenement_interior_lp_01_l.vsnd"
+		vsnd_vol_01 = "0.75"
+		vsnd_vol_02 = "0.3"
+		vsnd_vol_03 = "0.53"
+		vsnd_vol_04 = "0.51"
+		volume = 0.760000
+		enable_debug_radius = 0.000000
+		soundname_string = "AmbientHotelRooftop.HotelIntLp_L"
+	}
+	AmbientHotelRooftop.HotelIntLp_R = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_ringing_pulse_quad_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_tunnel_friction_quad_lp_01_r.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_tenement_interior_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+		soundname_string = "AmbientHotelRooftop.HotelIntLp_R"
+	}
+	AmbientHotelRooftop.HotelIntLp_LS = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_ringing_pulse_quad_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_tunnel_friction_quad_lp_01_ls.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_tenement_interior_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+		soundname_string = "AmbientHotelRooftop.HotelIntLp_LS"
+	}
+	AmbientHotelRooftop.HotelIntLp_RS = 
+	{
+		base = "AmbientHotelRooftop.HotelIntLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_ringing_pulse_quad_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_tunnel_friction_quad_lp_01_rs.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_tenement_interior_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+		soundname_string = "AmbientHotelRooftop.HotelIntLp_LS"
+	}
+	AmbientHotelRooftop.TextureQuad = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientHotelRooftop.TextureQuad_L"
+		soundevent_02 = "AmbientHotelRooftop.TextureQuad_R"
+		soundevent_03 = "AmbientHotelRooftop.TextureQuad_LS"
+		soundevent_04 = "AmbientHotelRooftop.TextureQuad_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientHotelRooftop.TextureQuad_L = 
+	{
+		base = "AmbientBase.IntMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_tenement_lp_01_l.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "1.0"
+		vsnd_vol_02 = "0.00"
+		vsnd_vol_03 = "0.00"
+		vsnd_vol_04 = "0.00"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+		remap_vol_opvar_x1 = 0.000000
+		remap_vol_opvar_y1 = 1.000000
+		remap_vol_opvar_x2 = 0.200000
+		remap_vol_opvar_y2 = 0.900000
+		remap_vol_opvar_x3 = 0.500000
+		remap_vol_opvar_y3 = 0.500000
+		remap_vol_opvar_x4 = 1.000000
+		remap_vol_opvar_y4 = 0.150000
+	}
+	AmbientHotelRooftop.TextureQuad_R = 
+	{
+		base = "AmbientHotelRooftop.TextureQuad_L"
+		rotation_angle = 315.000000
+		vsnd_file_01 = "sounds/ambient/abstract/amb_tenement_lp_01_r.vsnd"
+	}
+	AmbientHotelRooftop.TextureQuad_LS = 
+	{
+		base = "AmbientHotelRooftop.TextureQuad_L"
+		rotation_angle = 135.000000
+		vsnd_file_01 = "sounds/ambient/abstract/amb_tenement_lp_01_ls.vsnd"
+	}
+	AmbientHotelRooftop.TextureQuad_RS = 
+	{
+		base = "AmbientHotelRooftop.TextureQuad_L"
+		rotation_angle = 225.000000
+		vsnd_file_01 = "sounds/ambient/abstract/amb_tenement_lp_01_rs.vsnd"
+	}
+	AmbientHotelRooftop.HeadcrabWall = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "AmbientHotelRooftop.HeadcrabScurryBurst"
+		random_soundevent_01_timer_min = 10
+		random_soundevent_01_timer_max = 15
+		global_opvar_name_01 = "hotel_headcrab_wall_proximity_beacon"
+		input_min_delay_adjust_mult_01 = 0.600000
+		input_max_delay_adjust_mult_01 = 0.600000
+		remap_global_opvar_01_to_vol_min = 0.500000
+		remap_global_opvar_01_to_vol_max = 1.200000
+		use_initial_random_offset = 1.000000
+		position_array = 
+		[
+			
+			[
+				1329.638062,
+				-1663.041504,
+				725.386658,
+			],
+			
+			[
+				2257.109131,
+				-1680.752808,
+				725.386658,
+			],
+			
+			[
+				1307.645996,
+				-1491.981201,
+				725.386658,
+			],
+			
+			[
+				2142.224854,
+				-1501.302612,
+				725.386658,
+			],
+		]
+	}
+	AmbientHotelRooftop.HeadcrabWallMultilevel01 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabWall"
+		position_array = 
+		[
+			
+			[
+				2594.655029,
+				-1872.557251,
+				555.134644,
+			],
+			
+			[
+				2579.966064,
+				-2480.170898,
+				547.964233,
+			],
+			
+			[
+				2230.444092,
+				-2524.507568,
+				496.524658,
+			],
+			
+			[
+				2244.253662,
+				-1864.038818,
+				655.905029,
+			],
+		]
+	}
+	AmbientHotelRooftop.HeadcrabWallMultilevel02 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabWall"
+		position_array = 
+		[
+			
+			[
+				2601.016113,
+				-2039.566772,
+				523.931213,
+			],
+			
+			[
+				2226.974609,
+				-2300.637207,
+				702.763000,
+			],
+			
+			[
+				2528.697266,
+				-2441.237549,
+				677.056152,
+			],
+			
+			[
+				2043.799438,
+				-1933.499512,
+				443.649414,
+			],
+		]
+	}
+	AmbientHotelRooftop.HeadcrabWallMultilevel03 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabWall"
+		random_soundevent_01_timer_min = 8
+		random_soundevent_01_timer_max = 10
+		position_array = 
+		[
+			
+			[
+				2481.020996,
+				-2381.345215,
+				450.479614,
+			],
+			
+			[
+				2501.065918,
+				-1898.093872,
+				450.479614,
+			],
+			
+			[
+				2249.567871,
+				-1894.987671,
+				450.479614,
+			],
+			
+			[
+				2261.441895,
+				-2403.816895,
+				450.479614,
+			],
+		]
+	}
+	AmbientHotelRooftop.HeadcrabWallMultilevel04 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabWallMultilevel03"
+		position_array = 
+		[
+			
+			[
+				2481.020996,
+				-2381.345215,
+				450.479614,
+			],
+			
+			[
+				2249.567871,
+				-1894.987671,
+				450.479614,
+			],
+			
+			[
+				2501.065918,
+				-1898.093872,
+				450.479614,
+			],
+			
+			[
+				2261.441895,
+				-2403.816895,
+				450.479614,
+			],
+		]
+	}
+	AmbientHotelRooftop.HeadcrabScurryBurst = 
+	{
+		type = "hlvr_ambient_burst_animation_time_adjust"
+		soundevent_name = "AmbientHotelRooftop.HeadcrabBlackRunSoundevents"
+		burst_length_min = 3.000000
+		burst_length_max = 4.000000
+		delay_timer_min = 1.000000
+		delay_timer_max = 1.500000
+		delay_offset_min = -1
+		delay_offset_max = 0.000000
+		block_event_name = "AmbientHotelRooftop.HeadcrabScurryBurst"
+		block_duration = 0.500000
+		block_is_untimed = 0.000000
+		animation_time_min = 4.500000
+		animation_time_max = 10.500000
+		volume_fade_out = 2.000000
+		remap_delay_tweak_min = 1.000000
+		remap_delay_tweak_max = 2.200000
+		spawn_orphans = false
+	}
+	AmbientHotelRooftop.HeadcrabBlackRunSoundevents = 
+	{
+		type = "hlvr_start_soundevent"
+		soundevents = 
+		[
+			"AmbientHotelRooftop.HeadcrabBlackRun01",
+			"AmbientHotelRooftop.HeadcrabBlackRun02",
+			"AmbientHotelRooftop.HeadcrabBlackRun03",
+			"AmbientHotelRooftop.HeadcrabBlackRun04",
+		]
+	}
+	AmbientHotelRooftop.HeadcrabBlackRun01 = 
+	{
+		type = "hlvr_animate_soundevent_random_range_indexed_positions"
+		soundevents = 
+		[
+			"AmbientHotelRooftop.HeadcrabBlackScurrySequence",
+		]
+		use_public_position = 0.000000
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		unconstrained_target = 1.000000
+		animation_type = "lerp"
+		animation_time_min = 4
+		animation_time_max = 8
+		volume_fade_out = 1.000000
+		use_calculated_stop_at_time = 1.000000
+		position_start_index = 0
+		position_target_index = 1
+		pos_01_random_pct_min = 0.000000
+		pos_01_random_pct_max = 0.330000
+		pos_02_random_pct_min = 0.660000
+		pos_02_random_pct_max = 1.000000
+	}
+	AmbientHotelRooftop.HeadcrabBlackRun02 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabBlackRun01"
+		position_start_index = 1
+		position_target_index = 0
+	}
+	AmbientHotelRooftop.HeadcrabBlackRun03 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabBlackRun01"
+		position_start_index = 2
+		position_target_index = 3
+	}
+	AmbientHotelRooftop.HeadcrabBlackRun04 = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabBlackRun01"
+		position_start_index = 3
+		position_target_index = 2
+	}
+	AmbientHotelRooftop.HeadcrabBlackScurrySequence = 
+	{
+		type = "hlvr_soundevent_sequence"
+		wait_rand_min = -1.000000
+		wait_rand_max = -0.500000
+		sequence_type = "index"
+		use_public_position = 1.000000
+		soundevents = 
+		[
+			"AmbientHotelRooftop.HeadcrabBlackSequenceMultiLarge",
+			"AmbientHotelRooftop.HeadcrabBlackSequenceMultiShort",
+			"AmbientHotelRooftop.HeadcrabBlackSequenceMultiLarge",
+			"AmbientHotelRooftop.HeadcrabBlackSequenceMultiShort",
+		]
+	}
+	AmbientHotelRooftop.HeadcrabBlackSequenceMultiLarge = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "AmbientHotelRooftop.HeadcrabBlackAggroLong"
+		soundevent_02 = "AmbientHotelRooftop.HeadcrabBlackFsLong"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	AmbientHotelRooftop.HeadcrabBlackSequenceMultiShort = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "AmbientHotelRooftop.HeadcrabBlackAggroShort"
+		soundevent_02 = "AmbientHotelRooftop.HeadcrabBlackFsShort"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	AmbientHotelRooftop.HeadcrabBlackAggroLong = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		use_named_send = "ambient"
+		use_hrtf = 1.000000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 750.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		delay_rand_min = 0.000000
+		delay_rand_max = 1.500000
+		volume_rand_min = -0.300000
+		volume_rand_max = 0.000000
+		use_doppler = 1.000000
+		doppler_factor = 1.500000
+		vsnd_files = 
+		[
+			"sounds/ambient/creatures/amb_headcrab_black_vox_long_aggro_01.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_long_aggro_02.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_long_aggro_03.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_long_aggro_04.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_long_aggro_05.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		debug_radius_max = 20
+	}
+	AmbientHotelRooftop.HeadcrabBlackAggroShort = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabBlackAggroLong"
+		vsnd_files = 
+		[
+			"sounds/ambient/creatures/amb_headcrab_black_vox_short_aggro_01.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_short_aggro_02.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_short_aggro_03.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_short_aggro_04.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_vox_short_aggro_05.vsnd",
+		]
+	}
+	AmbientHotelRooftop.HeadcrabBlackFsLong = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		use_named_send = "ambient"
+		use_hrtf = 1.000000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 950.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		delay_rand_min = 0.000000
+		delay_rand_max = 1.000000
+		volume_rand_min = -0.300000
+		volume_rand_max = 0.000000
+		use_doppler = 1.000000
+		doppler_factor = 1.250000
+		vsnd_files = 
+		[
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_13.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_14.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_15.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_16.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_17.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_18.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_19.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_20.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_21.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_22.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_23.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_24.vsnd",
+		]
+		enable_debug_radius = 0.000000
+	}
+	AmbientHotelRooftop.HeadcrabBlackFsShort = 
+	{
+		base = "AmbientHotelRooftop.HeadcrabBlackFsLong"
+		vsnd_files = 
+		[
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_01.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_02.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_03.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_04.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_05.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_06.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_07.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_08.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_09.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_10.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_11.vsnd",
+			"sounds/ambient/creatures/amb_headcrab_black_fs_crash_12.vsnd",
+		]
+	}
+	AmbientHotelRooftop.Generator = 
+	{
+		base = "Generator.MultiLp"
+	}
+	AmbientHotelRooftop.Attic = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientHotelRooftop.Attic_L"
+		soundevent_02 = "AmbientHotelRooftop.Attic_R"
+		soundevent_03 = "AmbientHotelRooftop.Attic_LS"
+		soundevent_04 = "AmbientHotelRooftop.Attic_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientHotelRooftop.Attic_L = 
+	{
+		base = "AmbientBase.IntSmallRoomLp_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_attic_lp_01_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_01_l.vsnd"
+		vsnd_vol_01 = "1.00"
+		vsnd_vol_02 = "0.27"
+		volume = 0.900000
+		global_opvar_filter_velocity = 2.000000
+		remap_vol_opvar_x1 = 0.000000
+		remap_vol_opvar_y1 = 0.100000
+		remap_filter_freq_opvar_x1 = 0.000000
+		remap_filter_freq_opvar_y1 = 0.800000
+		remap_filter_freq_opvar_x2 = 0.000000
+		remap_filter_freq_opvar_y2 = 0.800000
+		remap_filter_freq_opvar_x3 = 0.500000
+		remap_filter_freq_opvar_y3 = 0.900000
+		remap_filter_freq_opvar_x4 = 1.000000
+		remap_filter_freq_opvar_y4 = 1.000000
+	}
+	AmbientHotelRooftop.Attic_R = 
+	{
+		base = "AmbientHotelRooftop.Attic_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_attic_lp_01_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	AmbientHotelRooftop.Attic_LS = 
+	{
+		base = "AmbientHotelRooftop.Attic_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_attic_lp_01_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	AmbientHotelRooftop.Attic_RS = 
+	{
+		base = "AmbientHotelRooftop.Attic_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_attic_lp_01_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+}

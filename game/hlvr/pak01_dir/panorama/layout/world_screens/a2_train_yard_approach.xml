@@ -1,0 +1,16 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/world_screens/a2_train_yard_approach.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="Container">
+		<Label id="TextContainer" text="#HLVR_Trainyard_Train_Approaching" />
+		<Panel id="ImageContainer" class="ScreenContainer">
+			<Image src="s2r://panorama/images/world_screens/train_approaching_psd.vtex" class="TrainImage" />
+		</Panel>
+	</Panel>
+</root>
+
+

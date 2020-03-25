@@ -1,0 +1,23 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <GameMenuOptionTogglePanel onactivate="ToggleButton()">
+    <Panel class="row">
+      <Panel class="switch_button" >
+        <Label id="itemOff" class="switch_label switch_label_off" text="{s:off}"/>
+        <Label id="itemOn" class="switch_label switch_label_on" text="{s:on}"/>
+      </Panel>
+      <Panel class ="switch_button_image">
+        <Panel class="switch_image" />
+      </Panel>
+    </Panel>
+    <Panel></Panel>
+  </GameMenuOptionTogglePanel>
+</root>
+
+
+
+

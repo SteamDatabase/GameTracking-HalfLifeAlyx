@@ -1,0 +1,17 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/base_styles.vcss_c" />
+    <include src="s2r://panorama/styles/progress_panel.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <Panel class="Container">
+    <Label id="CountX" text="X" class="Unpowered"/>
+    <Label id="Count1" text="1" class="Powered"/>
+    <Label id="Count2" text="2" class="Powered"/>
+    <Label id="Count3" text="3" class="Powered"/>
+    <Label id="CountComplete" text=" " class="Powered"/>
+  </Panel>
+</root>
+
+

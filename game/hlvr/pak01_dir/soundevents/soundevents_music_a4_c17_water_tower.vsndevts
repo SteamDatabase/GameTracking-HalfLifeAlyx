@@ -1,0 +1,291 @@
+{
+	Music.a4_tower_puzzle = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_out = 10
+		track = "main"
+		wait_for_track = 0.000000
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			85.560000,
+		]
+		sync_bpm = 
+		[
+			116.000000,
+		]
+		sync_bpm_beats = 
+		[
+			1.000000,
+		]
+		restart_time = 94.300000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				90.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 30
+		volume_fade_over_time_loop_end = 90
+		vsnd_files = 
+		[
+			"sounds/music/places/c17/a4_tower_puzzle.vsnd",
+		]
+	}
+	music.a4_tower.vault_docking = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_in = 10
+		volume_fade_out = 0.150000
+		track = "main"
+		priority = 0
+		start_point = 
+		[
+			0.000000,
+		]
+		end_point = 
+		[
+			19.200000,
+		]
+		sync_bpm = 
+		[
+			100,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		restart_time = 19.200000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a4_tower_docking.vsnd",
+		]
+	}
+	music.a4_tower.vault_second_lever = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.600000
+		volume_fade_out = 0.150000
+		volume_fade_in = 0.150000
+		track = "main"
+		priority = 1
+		sync_track = "main"
+		start_point = 
+		[
+			1.800000,
+		]
+		end_point = 
+		[
+			21,
+		]
+		sync_bpm = 
+		[
+			100,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a4_tower_second_lever.vsnd",
+		]
+	}
+	music.a4_tower.vault_third_lever = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		volume_fade_out = 0.150000
+		volume_fade_in = 0.150000
+		track = "main"
+		priority = 2
+		sync_track = "main"
+		start_point = 
+		[
+			1.800000,
+		]
+		end_point = 
+		[
+			21,
+		]
+		sync_bpm = 
+		[
+			100,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a4_tower_third_lever.vsnd",
+		]
+	}
+	music.a4_tower.vault_falls = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.850000
+		volume_fade_in = 0.000000
+		track = "main"
+		priority = 3
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a4_tower_vault_fall.vsnd",
+		]
+	}
+	Music.a4_tower.fall_warp_3d = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1
+		mixgroup = "LoudMusic"
+		volume_falloff_min = 1000.000000
+		volume_falloff_max = 5000.000000
+		volume_fade_out = 0
+		volume_fade_in = 0
+		distance_max_velocity = 10
+		enable_debug_radius = 0
+		spread_min = 30
+		spread_max = 40
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/fall_warp_c2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_ab1_01.vsnd",
+			"sounds/music/places/vault/fall_warp_g2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_b1_01.vsnd",
+			"sounds/music/places/vault/fall_warp_eb2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_e2_01.vsnd",
+		]
+	}
+	Music.a4_tower.fall_warp_2d = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/fall_warp_c2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_ab1_01.vsnd",
+			"sounds/music/places/vault/fall_warp_g2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_b1_01.vsnd",
+			"sounds/music/places/vault/fall_warp_eb2_01.vsnd",
+			"sounds/music/places/vault/fall_warp_e2_01.vsnd",
+		]
+	}
+	music.a4_tower.xen = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				10.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				20.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				30.000000,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				45,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				60,
+				0.700000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 30
+		volume_fade_over_time_loop_end = 50
+		volume_fade_in = 4
+		volume_fade_out = 7.000000
+		restart_time = 73.846000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_xen_intro.vsnd",
+		]
+	}
+	music.a4_tower.puffer = 
+	{
+		type = "hlvr_music_3d"
+		volume = 1.100000
+		volume_falloff_min = 100
+		volume_falloff_max = 200
+		occlusion_scale = 0.500000
+		spread_min = 12
+		spread_max = 12
+		enable_debug_radius = 0
+		volume_fade_out = 7.000000
+		restart_time = 19.384000
+		vsnd_files = 
+		[
+			"sounds/music/places/distillery/distillery_puffer1.vsnd",
+		]
+	}
+}

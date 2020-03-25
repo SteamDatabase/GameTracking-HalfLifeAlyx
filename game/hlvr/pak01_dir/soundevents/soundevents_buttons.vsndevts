@@ -1,0 +1,119 @@
+{
+	Button_Base = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.850000
+		mixgroup = "Buttons"
+	}
+	Button_Basic.Press = 
+	{
+		base = "Button_Base"
+		vsnd_files = 
+		[
+			"sounds/buttons/button_common_success.vsnd",
+		]
+	}
+	Button_Basic.Fail = 
+	{
+		base = "Button_Base"
+		vsnd_files = 
+		[
+			"sounds/buttons/button_common_fail.vsnd",
+		]
+	}
+	Button_Basic.Unlock = 
+	{
+		base = "Button_Base"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	Button_LobbyElevator.Success = 
+	{
+		base = "Button_Basic.Press"
+	}
+	Button_LobbyElevator.Fail = 
+	{
+		base = "Button_Basic.Fail"
+	}
+	Button_ScissorLift.Success = 
+	{
+		base = "Button_Basic.Press"
+	}
+	Button_ScissorLift.Fail = 
+	{
+		base = "Button_Basic.Fail"
+	}
+	Button_Distillery_Elevator.Success = 
+	{
+		base = "Button_Base"
+		vsnd_files = 
+		[
+			"sounds/buttons/distillery_elevator_button_success.vsnd",
+		]
+	}
+	Button_Distillery_Elevator.Fail = 
+	{
+		base = "Button_Basic.Fail"
+	}
+	Button_VidLink.Answer = 
+	{
+		base = "Button_Base"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/buttons/vidlink_button_answer.vsnd",
+		]
+	}
+	ButtonCombine.Success = 
+	{
+		base = "Button_Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/buttons/combine_button_success.vsnd",
+		]
+	}
+	ButtonCombine.Fail = 
+	{
+		base = "Button_Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/buttons/combine_button_fail.vsnd",
+		]
+	}
+	Keycard.Success = 
+	{
+		base = "Button_Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/buttons/keycard_success.vsnd",
+		]
+	}
+	Keycard.Fail = 
+	{
+		base = "Button_Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/buttons/keycard_fail.vsnd",
+		]
+	}
+	Button_Washing_Machine.Switch = 
+	{
+		base = "Button_Base"
+		vsnd_files = 
+		[
+			"sounds/buttons/washing_machine_switch_01.vsnd",
+			"sounds/buttons/washing_machine_switch_02.vsnd",
+		]
+	}
+	Button.TrainDrawbridge = 
+	{
+		base = "Button_Basic.Press"
+	}
+}

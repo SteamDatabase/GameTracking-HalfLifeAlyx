@@ -1,0 +1,813 @@
+{
+	Music.a5_vault.warp_3d = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.720000
+		volume_falloff_min = 70.000000
+		volume_falloff_max = 2700.000000
+		volume_fade_out = 0
+		volume_fade_in = 0
+		distance_max_velocity = 10
+		spread_min = 30
+		spread_max = 40
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_warp_d2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_d2_02.vsnd",
+			"sounds/music/places/vault/vault_warp_e2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_e2_02.vsnd",
+			"sounds/music/places/vault/vault_warp_a2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_a2_02.vsnd",
+		]
+	}
+	Music.a5_vault.warp_2d = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_warp_d2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_d2_02.vsnd",
+			"sounds/music/places/vault/vault_warp_e2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_e2_02.vsnd",
+			"sounds/music/places/vault/vault_warp_a2_01.vsnd",
+			"sounds/music/places/vault/vault_warp_a2_02.vsnd",
+		]
+	}
+	Vault.a5_vault.inner_pulse = 
+	{
+		type = "hlvr_player_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "Vault.a5_vault.inner_pulse"
+		limiter_max = 2.000000
+		ambient_ducking_pct = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		direct_mix_level = 1.000000
+		enable_limiter = 1.000000
+		volume_falloff_head_min = 1500.000000
+		volume_falloff_head_max = 2400.000000
+		volume_head = 1.000000
+		volume_falloff_body_min = 1500.000000
+		volume_falloff_body_max = 2400.000000
+		volume_body = 0.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_tail_min = 1800.000000
+		volume_falloff_tail_max = 5000.000000
+		volume_tail = 0.000000
+		mixgroup = "Explosions"
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		vsnd_files_head = 
+		[
+			"sounds/music/places/vault/vault_pulse.vsnd",
+		]
+		vsnd_files_body = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_head_01.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/rapid_fire/wpn_rapid_fire_chargeball_explo_lfe_01.vsnd",
+		]
+		vsnd_files_tail = 
+		[
+			"sounds/music/places/vault/vault_pulse.vsnd",
+		]
+	}
+	a5_vault.containment_pulse_warp = 
+	{
+		type = "hlvr_start_multi_sequence"
+		use_01 = 1.000000
+		soundevent_01 = "Vault.a5_vault.inner_pulse"
+		use_02 = 1.000000
+		soundevent_02 = "Music.a5_vault.warp_2d"
+	}
+	Music.a5_vault.gravity_beam = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.720000
+		volume_falloff_min = 70.000000
+		volume_falloff_max = 170.000000
+		volume_fade_out = 7
+		volume_fade_in = 4
+		distance_max_velocity = 10
+		spread_min = 30
+		spread_max = 40
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_gravity_beam.vsnd",
+		]
+	}
+	Music.a5_vault.hallway1 = 
+	{
+		type = "hlvr_music_3d"
+		volume = 0.450000
+		track = "main"
+		priority = 0
+		volume_fade_in = 1.500000
+		volume_fade_out = 1
+		volume_falloff_min = 20.000000
+		volume_falloff_max = 250.000000
+		restart_time = 8.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_hallway1.vsnd",
+		]
+	}
+	Music.a5_vault.hallway1_2 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 1
+		volume = 0.500000
+		volume_fade_out = 6.170000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_hallway1_2.vsnd",
+		]
+	}
+	Music.a5_vault.stairwell_gravity_beam = 
+	{
+		type = "hlvr_ambient_position_on_line"
+		volume = 0.650000
+		volume_fade_in = 3
+		volume_fade_out = 5
+		volume_falloff_min = 15.000000
+		volume_falloff_max = 225.000000
+		volume_filter_amount = 0.400000
+		mixgroup = "Music"
+		use_named_send = "clean"
+		use_hrtf = 1.000000
+		position = 
+		[
+			-1515,
+			2540,
+			-200,
+		]
+		position_02 = 
+		[
+			-1515,
+			2540,
+			350,
+		]
+		enable_debug_radius = 0
+		debug_radius_max = 225
+		distance_max_velocity = 10
+		spread_min = 10
+		spread_max = 15
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_gravity_beam.vsnd",
+		]
+	}
+	Music.a5_vault.inner_vault1 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.900000
+		volume_fade_in = 2
+		volume_fade_out = 7
+		restart_time = 240
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_inner1_base.vsnd",
+		]
+	}
+	Music.a5_vault.kitchen_debris = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a5_vault.kitchen = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a5_vault.sideways_room = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.550000
+		restart_time = 218.157000
+		volume_fade_out = 8
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				6.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				20.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				40.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 6
+		volume_fade_over_time_loop_end = 40
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a5_vault_sideways_piano.vsnd",
+		]
+	}
+	Music.a5_vault.sideways_amb = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.650000
+		track = "main"
+		priority = 3
+		restart_time = 180
+		volume_fade_out = 7
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				20.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				40.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 0
+		volume_fade_over_time_loop_end = 40
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a5_vault.kitchen2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		volume_fade_in = 2
+		volume_fade_out = 9
+		restart_time = 37
+		volume_velocity_filter = 0.150000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_kitchen2.vsnd",
+		]
+	}
+	Music.a5_vault.kitchen2_2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_kitchen2_2.vsnd",
+		]
+	}
+	Music.a5_vault.hallway2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.900000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_hallway2.vsnd",
+		]
+	}
+	Music.a5_vault.mirror1 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 4
+		restart_start = 0.389000
+		restart_time = 5.844000
+		volume_fade_out = 2.500000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_mirror1.vsnd",
+		]
+	}
+	Music.a5_vault.mirror1_2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		track = "main"
+		priority = 5
+		restart_time = 93.506000
+		volume_fade_out = 4.500000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_mirror1_2.vsnd",
+		]
+	}
+	Music.a5_vault.mirror2_base = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.250000
+		track = "main"
+		priority = 6
+		restart_time = 243.647000
+		volume_fade_out = 20
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				35.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				70.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		volume_fade_over_time_loop_start = 0
+		volume_fade_over_time_loop_end = 70
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_mirror_room.vsnd",
+		]
+	}
+	Music.a5_vault.mirror2_ashtrays = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.450000
+		track = "main"
+		priority = 7
+		volume_fade_in = 0.600000
+		volume_fade_out = 2
+		restart_time = 64.452000
+		restart_start = 20.387000
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				25,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				40.000000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_ashtray.vsnd",
+		]
+	}
+	Music.a5_vault.mirror2_suction = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 8
+		volume = 0.800000
+		volume_fade_in = 0.200000
+		volume_fade_out = 3
+		restart_time = 172
+		restart_start = 32
+		volume_fade_over_time_curve = 
+		[
+			
+			[
+				35,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				45.000000,
+				0.600000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				60.000000,
+				0.400000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_suction.vsnd",
+		]
+	}
+	Music.a5_vault.inner_vault2 = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 9
+		volume = 0.900000
+		volume_fade_in = 2
+		volume_fade_out = 7
+		restart_time = 240
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_inner1_base.vsnd",
+		]
+	}
+	Music.a5_vault.combat1 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.700000
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 10
+		start_point = 
+		[
+			0,
+		]
+		end_point = 
+		[
+			55.172000,
+		]
+		sync_bpm = 
+		[
+			87,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a5_vault_combat1.vsnd",
+		]
+	}
+	Music.a5_vault.combat2 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.200000
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 11
+		start_point = 
+		[
+			0,
+		]
+		end_point = 
+		[
+			22.068000,
+		]
+		sync_bpm = 
+		[
+			87,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a5_vault_combat2.vsnd",
+		]
+	}
+	Music.a5_vault.combat3 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.600000
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 12
+		start_point = 
+		[
+			0,
+		]
+		end_point = 
+		[
+			22.068000,
+		]
+		sync_bpm = 
+		[
+			87,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a5_vault_combat3.vsnd",
+		]
+	}
+	Music.a5_vault.combat4 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.800000
+		use_combat_music_convar = 1.000000
+		track = "main"
+		sync_track = "main"
+		priority = 13
+		volume_fade_out = 5.170000
+		start_point = 
+		[
+			0,
+		]
+		end_point = 
+		[
+			88.275000,
+		]
+		sync_bpm = 
+		[
+			87,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/a5_vault_combat4.vsnd",
+		]
+	}
+	Music.a5_vault.combat_end = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.800000
+		track = "main"
+		sync_track = "main"
+		priority = 14
+		start_point = 
+		[
+			0,
+		]
+		end_point = 
+		[
+			88.275000,
+		]
+		sync_bpm = 
+		[
+			87,
+		]
+		sync_bpm_beats = 
+		[
+			4.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.a5_vault.inner_vault3 = 
+	{
+		type = "hlvr_music_2d"
+		volume = 0.750000
+		volume_fade_in = 2
+		volume_fade_out = 7
+		restart_time = 240
+		presence_adjust = 0
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vault_inner1_base.vsnd",
+		]
+	}
+	Music.a5_ending.inner_chamber = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 15
+		volume = 2
+		volume_fade_out = 2.000000
+		presence_adjust = 0
+		presence_adjust_velocity = 0.200000
+		presence_map_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				0.750000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1.000000,
+				0.800000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/hlvr_a5_vault_field.vsnd",
+		]
+	}
+	Music.a5_ending.inner_cage = 
+	{
+		type = "hlvr_music_2d"
+		priority = 15
+		volume = 0.900000
+		volume_fade_out = 2.000000
+		restart_time = 48
+		presence_adjust = 0
+		presence_map_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				0.800000,
+				0.500000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/ending/a5_ending_inner_cage.vsnd",
+		]
+	}
+	Music.a5_vault.end_containment_end = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/hlvr_a5_vault_field_end.vsnd",
+		]
+	}
+	Music.a5_vault.end_containment = 
+	{
+		type = "hlvr_start_multi_sequence"
+		use_01 = 1.000000
+		soundevent_01 = "Music.a5_vault.end_containment_end"
+	}
+	Music.a5_ending.intro = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.a5_ending.intro_simple"
+		use_01 = 1.000000
+		use_02 = 0.000000
+		use_03 = 0.000000
+		use_04 = 0.000000
+	}
+	Music.a5_ending.intro_simple = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1.000000
+		track = "main"
+		priority = 16
+		volume_fade_out = 4.000000
+		restart_time = 130.027000
+		restart_start = 91.203000
+		vsnd_files = 
+		[
+			"sounds/music/places/ending/a5_ending_intro.vsnd",
+		]
+	}
+	Music.a5_ending.white_xfer = 
+	{
+		type = "hlvr_music_2d"
+		track = "main"
+		priority = 17
+		volume = 0.650000
+		restart_time = 76.681000
+		restart_start = 57.700000
+		volume_fade_out = 3
+		vsnd_files = 
+		[
+			"sounds/music/places/ending/a5_ending_white_xfer.vsnd",
+		]
+	}
+	Music.a5_ending.triumph = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1.000000
+		track = "main"
+		priority = 18
+		volume_fade_out = 4
+		should_pause = "false"
+		vsnd_files = 
+		[
+			"sounds/music/places/ending/a5_ending_triumph.vsnd",
+		]
+	}
+	Music.a5_ending.alyx = 
+	{
+		type = "hlvr_music_2d"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/ending/a5_ending_alyx.vsnd",
+		]
+	}
+}

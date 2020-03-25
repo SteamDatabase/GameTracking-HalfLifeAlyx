@@ -1,0 +1,1434 @@
+{
+	Sliding_Window.Up = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.010000
+		occlusion_scale = 0.700000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/loop_slide_up.vsnd",
+		]
+	}
+	Sliding_Window.Down = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.010000
+		occlusion_scale = 0.700000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/loop_slide_down.vsnd",
+		]
+	}
+	Sliding_Window.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		block_duration = 2.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_05.vsnd",
+		]
+	}
+	Carousel.Move = 
+	{
+		type = "hlvr_spinning_hinge_parent"
+		child_soundevent_name = "Carousel.Tick"
+		timer_min = 0.200000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.050000
+	}
+	Carousel.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/carousel/tick_01.vsnd",
+			"sounds/world/hinges_drawers/carousel/tick_02.vsnd",
+			"sounds/world/hinges_drawers/carousel/tick_03.vsnd",
+			"sounds/world/hinges_drawers/carousel/tick_04.vsnd",
+		]
+	}
+	Carousel.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_drawer/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_04.vsnd",
+		]
+	}
+	Seesaw.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/seesaw/move_01.vsnd",
+			"sounds/world/hinges_drawers/seesaw/move_02.vsnd",
+			"sounds/world/hinges_drawers/seesaw/move_03.vsnd",
+			"sounds/world/hinges_drawers/seesaw/move_04.vsnd",
+			"sounds/world/hinges_drawers/seesaw/move_05.vsnd",
+			"sounds/world/hinges_drawers/seesaw/move_06.vsnd",
+		]
+	}
+	Seesaw.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_05.vsnd",
+		]
+	}
+	TicTacToe.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/tictac/move_01.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_02.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_03.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_04.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_05.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_06.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_07.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_08.vsnd",
+			"sounds/world/hinges_drawers/tictac/move_09.vsnd",
+		]
+	}
+	TicTacToe.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/tictac/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/tictac/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/tictac/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/tictac/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/tictac/reverse_05.vsnd",
+		]
+	}
+	Van_Sliding_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.010000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/sliding_door_open_loop.vsnd",
+		]
+	}
+	Van_Sliding_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_in = 0.200000
+		volume_fade_out = 0.010000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/sliding_door_close_loop.vsnd",
+		]
+	}
+	Van_Sliding_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/van/sliding_door_reverse_05.vsnd",
+		]
+	}
+	Van_Trunk.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/trunk_open_01.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_open_02.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_open_03.vsnd",
+		]
+	}
+	Van_Trunk.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/trunk_close_01.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_close_02.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_close_03.vsnd",
+		]
+	}
+	Van_Trunk.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/van/trunk_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/van/trunk_reverse_05.vsnd",
+		]
+	}
+	Car_Trunk.Open = 
+	{
+		base = "Van_Trunk.Open"
+		mixgroup = "Doors"
+	}
+	Car_Trunk.Close = 
+	{
+		base = "Van_Trunk.Close"
+		mixgroup = "Doors"
+	}
+	Car_Trunk.Reverse = 
+	{
+		base = "Van_Trunk.Reverse"
+		mixgroup = "Doors"
+	}
+	Metal_Cabinet_Drawer.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_drawer/loop_open.vsnd",
+		]
+	}
+	Metal_Cabinet_Drawer.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_drawer/loop_close.vsnd",
+		]
+	}
+	Metal_Cabinet_Drawer.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_drawer/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_drawer/reverse_04.vsnd",
+		]
+	}
+	Metal_Panel.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel/open_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/open_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/open_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/open_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/open_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/open_06.vsnd",
+		]
+	}
+	Metal_Panel.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel/close_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/close_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/close_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/close_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/close_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/close_06.vsnd",
+		]
+	}
+	Metal_Panel_Vert.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_fade_out = 0.500000
+		occlusion_scale = 0.100000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel_vert/open_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_vert/open_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_vert/open_03.vsnd",
+		]
+	}
+	Metal_Panel_Vert.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_fade_out = 0.500000
+		occlusion_scale = 0.100000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel_vert/close_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_vert/close_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_vert/close_03.vsnd",
+		]
+	}
+	Metal_Panel.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel/reverse_06.vsnd",
+		]
+	}
+	Metal_Panel_Large.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel_large/open_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/open_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/open_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/open_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/open_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/open_06.vsnd",
+		]
+	}
+	Metal_Panel_Large.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel_large/close_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/close_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/close_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/close_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/close_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/close_06.vsnd",
+		]
+	}
+	Metal_Panel_Large.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/metal_panel_large/reverse_06.vsnd",
+		]
+	}
+	Metal_Vet_Cage.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/vet_cage/move_01.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/move_02.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/move_03.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/move_04.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/move_05.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/move_06.vsnd",
+		]
+	}
+	Metal_Vet_Cage.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/vet_cage/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/vet_cage/reverse_05.vsnd",
+		]
+	}
+	Toilet_Handle.Down = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/toilet_handle/down_01.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/down_02.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/down_03.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/down_04.vsnd",
+		]
+	}
+	Toilet_Handle.Up = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/toilet_handle/up_01.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/up_02.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/up_03.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/up_04.vsnd",
+		]
+	}
+	Toilet_Handle.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/toilet_handle/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/toilet_handle/reverse_04.vsnd",
+		]
+	}
+	Metal_Locker_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_locker/open_01.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/open_02.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/open_03.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/open_04.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/open_05.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/open_06.vsnd",
+		]
+	}
+	Metal_Locker_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_locker/close_01.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/close_02.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/close_03.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/close_04.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/close_05.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/close_06.vsnd",
+		]
+	}
+	Metal_Locker_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		mixgroup = "Doors"
+		occlusion_scale = 0.900000
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_locker/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/metal_locker/reverse_05.vsnd",
+		]
+	}
+	Iron_Gate_Tunnel.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 800.000000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/iron_gate_tunnel/iron_gate_tunnel_move_01.vsnd",
+		]
+	}
+	Iron_Gate_Tunnel.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 800.000000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/iron_gate_tunnel/iron_gate_tunnel_stop_01.vsnd",
+		]
+	}
+	Iron_Gate_Tunnel.Forward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 900.000000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/iron_gate_tunnel/iron_gate_tunnel_forward_01.vsnd",
+		]
+	}
+	Metal_Dumpster_Lid.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_dumpster/move_01.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/move_02.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/move_03.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/move_04.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/move_05.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/move_06.vsnd",
+		]
+	}
+	Metal_Dumpster_Lid.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/metal_dumpster/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/metal_dumpster/reverse_05.vsnd",
+		]
+	}
+	Fridge_Door_Creaky.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/fridge_creaky/move_01.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_02.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_03.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_04.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_05.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_06.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_07.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_08.vsnd",
+		]
+	}
+	Fridge_Door_Creaky.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_07.vsnd",
+		]
+	}
+	Dangling_Frame.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/fridge_creaky/move_01.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_02.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_03.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_04.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_05.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_06.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_07.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/move_08.vsnd",
+		]
+	}
+	Dangling_Frame.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/fridge_creaky/reverse_07.vsnd",
+		]
+	}
+	Washing_Machine_Creaky_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/open_01.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/open_02.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/open_03.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/open_04.vsnd",
+		]
+	}
+	Washing_Machine_Creaky_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/close_01.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/close_02.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/close_03.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/close_04.vsnd",
+		]
+	}
+	Washing_Machine_Creaky_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/reverse_05.vsnd",
+		]
+	}
+	Washing_Machine_Loader.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/drawer_open_loop.vsnd",
+		]
+	}
+	Washing_Machine_Loader.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/drawer_close_loop.vsnd",
+		]
+	}
+	Washing_Machine_Loader.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/washing_machine/drawer_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/drawer_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/drawer_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/drawer_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/washing_machine/drawer_reverse_05.vsnd",
+		]
+	}
+	Hazmat_Crate.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.050000
+		occlusion_scale = 0.900000
+		volume_fade_out = 0.100000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/hazmat_crate/open_01.vsnd",
+			"sounds/world/hinges_drawers/hazmat_crate/open_02.vsnd",
+		]
+	}
+	Hazmat_Crate.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.050000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/hazmat_crate/close_01.vsnd",
+			"sounds/world/hinges_drawers/hazmat_crate/close_02.vsnd",
+		]
+	}
+	Hazmat_Crate.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/hazmat_crate/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/hazmat_crate/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/hazmat_crate/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/hazmat_crate/reverse_04.vsnd",
+		]
+	}
+	Stove_Lid.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_move_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_05.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_06.vsnd",
+		]
+	}
+	Stove_Lid.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_05.vsnd",
+		]
+	}
+	Firebox_Door.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		pitch = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_move_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_05.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_06.vsnd",
+		]
+	}
+	Firebox_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		pitch = 0.900000
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_05.vsnd",
+		]
+	}
+	Mailbox_Hinge.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_move_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_05.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_move_06.vsnd",
+		]
+	}
+	Mailbox_Hinge.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_05.vsnd",
+		]
+	}
+	Antenna_Array.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/antenna/move_01.vsnd",
+			"sounds/world/hinges_drawers/antenna/move_02.vsnd",
+			"sounds/world/hinges_drawers/antenna/move_03.vsnd",
+			"sounds/world/hinges_drawers/antenna/move_04.vsnd",
+			"sounds/world/hinges_drawers/antenna/move_05.vsnd",
+			"sounds/world/hinges_drawers/antenna/move_06.vsnd",
+		]
+	}
+	Antenna_Array.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/stove/lid_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/stove/lid_reverse_05.vsnd",
+		]
+	}
+	Wood_Drawer.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer/open_loop.vsnd",
+		]
+	}
+	Wood_Drawer.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer/close_loop.vsnd",
+		]
+	}
+	Wood_Drawer.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		mixgroup = "Doors"
+		occlusion_scale = 0.900000
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_07.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_08.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer/reverse_09.vsnd",
+		]
+	}
+	Wood_Drawer_Large.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer_large/open_loop.vsnd",
+		]
+	}
+	Wood_Drawer_Large.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 0.020000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer_large/close_loop.vsnd",
+		]
+	}
+	Wood_Drawer_Large.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_07.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_08.vsnd",
+			"sounds/world/hinges_drawers/wood_drawer_large/reverse_09.vsnd",
+		]
+	}
+	Wood_Cabinet_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_cabinet/open_01.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/open_02.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/open_03.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/open_04.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/open_05.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/open_06.vsnd",
+		]
+	}
+	Wood_Cabinet_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_cabinet/close_01.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_02.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_03.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_04.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_05.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_06.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/close_07.vsnd",
+		]
+	}
+	Wood_Cabinet_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_07.vsnd",
+			"sounds/world/hinges_drawers/wood_cabinet/reverse_08.vsnd",
+		]
+	}
+	Wood_Wardrobe_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_wardrobe/open_01.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/open_02.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/open_03.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/open_04.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/open_05.vsnd",
+		]
+	}
+	Wood_Wardrobe_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_wardrobe/close_01.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/close_02.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/close_03.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/close_04.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/close_05.vsnd",
+		]
+	}
+	Wood_Wardrobe_Door.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_05.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_06.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_07.vsnd",
+			"sounds/world/hinges_drawers/wood_wardrobe/reverse_08.vsnd",
+		]
+	}
+	Globe_Prop.Move = 
+	{
+		type = "hlvr_spinning_hinge_parent"
+		child_soundevent_name = "Globe_Prop.Tick"
+		timer_min = 0.100000
+		timer_max = 0.400000
+		pitch_map_min = 0.950000
+		pitch_map_max = 1.050000
+	}
+	Globe_Prop.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/globe/tick.vsnd",
+		]
+	}
+	Camera_Prop.Move = 
+	{
+		type = "hlvr_spinning_hinge_parent"
+		child_soundevent_name = "Camera_Prop.Tick"
+		timer_min = 0.100000
+		timer_max = 0.400000
+		pitch_map_min = 0.950000
+		pitch_map_max = 1.050000
+	}
+	Camera_Prop.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/globe/tick.vsnd",
+		]
+	}
+	Sink_Tap.Turn = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_fade_in = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/tap/move_01.vsnd",
+			"sounds/world/hinges_drawers/tap/move_02.vsnd",
+			"sounds/world/hinges_drawers/tap/move_03.vsnd",
+			"sounds/world/hinges_drawers/tap/move_04.vsnd",
+			"sounds/world/hinges_drawers/tap/move_05.vsnd",
+		]
+	}
+	Door_Default.Forward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_default/door_default_forward_01.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_02.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_03.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_04.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_05.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_06.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_forward_07.vsnd",
+		]
+	}
+	Door_Default.Backward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_default/door_default_backward_01.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_02.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_03.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_04.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_05.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_06.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_backward_07.vsnd",
+		]
+	}
+	Door_Default.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_05.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_06.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_07.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_08.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_09.vsnd",
+			"sounds/world/hinges_drawers/door_default/door_default_reverse_10.vsnd",
+		]
+	}
+	Door_Chainlink_Gate.Forward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/chainlink_gate/move_01.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_02.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_03.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_04.vsnd",
+		]
+	}
+	Door_Chainlink_Gate.Backward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/chainlink_gate/move_05.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_06.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_07.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/move_08.vsnd",
+		]
+	}
+	Door_Chainlink_Gate.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/chainlink_gate/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/reverse_02.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/reverse_04.vsnd",
+			"sounds/world/hinges_drawers/chainlink_gate/reverse_05.vsnd",
+		]
+	}
+	Door_Electrical.Forward = 
+	{
+		base = "Metal_Panel.Open"
+	}
+	Door_Electrical.Backward = 
+	{
+		base = "Metal_Panel.Close"
+	}
+	Door_Electrical.Reverse = 
+	{
+		base = "Metal_Panel.Reverse"
+	}
+	Door_Metal_Barred.Forward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_forward_01.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_forward_02.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_forward_03.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_forward_04.vsnd",
+		]
+	}
+	Door_Metal_Barred.Backward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_backward_01.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_backward_02.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_backward_03.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_backward_04.vsnd",
+		]
+	}
+	Door_Metal_Barred.Reverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		occlusion_scale = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_01.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_02.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_03.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_04.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_05.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_06.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_07.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_08.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_09.vsnd",
+			"sounds/world/hinges_drawers/door_metal_barred/door_metal_barred_reverse_10.vsnd",
+		]
+	}
+	Door_PortaPotty.Forward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_porta_potty/door_portapotty_forward_01.vsnd",
+		]
+	}
+	Door_PortaPotty.Backward = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_porta_potty/door_portapotty_backward_01.vsnd",
+		]
+	}
+	Door_PortaPotty.Latch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_porta_potty/door_portapotty_latch_01.vsnd",
+			"sounds/world/hinges_drawers/door_porta_potty/door_portapotty_latch_02.vsnd",
+			"sounds/world/hinges_drawers/door_porta_potty/door_portapotty_latch_03.vsnd",
+		]
+	}
+	Door_Combine_Transport.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/combine_transport/door_open_01.vsnd",
+		]
+	}
+	Door_Combine_Transport.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/combine_transport/door_stop_01.vsnd",
+		]
+	}
+	Door_Vault_Wood.Slam = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.250000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_vault/door_vault_wood_slam1.vsnd",
+			"sounds/world/hinges_drawers/door_vault/door_vault_wood_slam2.vsnd",
+			"sounds/world/hinges_drawers/door_vault/door_vault_wood_slam3.vsnd",
+		]
+	}
+	Door_Vault_Metal.Slam = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.250000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/door_vault/door_vault_metal_slam1.vsnd",
+			"sounds/world/hinges_drawers/door_vault/door_vault_metal_slam2.vsnd",
+			"sounds/world/hinges_drawers/door_vault/door_vault_metal_slam3.vsnd",
+			"sounds/world/hinges_drawers/door_vault/door_vault_metal_slam4.vsnd",
+		]
+	}
+}

@@ -1,0 +1,28 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <GameMenuPanel class="game_menu_root" onactivate="GameMenuNavigation_Cmd( 'GoTo Child03' )">
+    <Panel class="base_container" id="layout_root">
+      <Panel class="vr_affordance_container">
+        <Panel id="vr_affordance_left" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+        <Panel id="vr_affordance_right" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+
+        <Panel id="background_panel">
+
+          <Panel class="col_body child_panel_root" id="child_newgameoptions_container_03">
+          </Panel>
+
+        </Panel>
+      </Panel>
+    </Panel>
+  </GameMenuPanel>
+</root>
+
+

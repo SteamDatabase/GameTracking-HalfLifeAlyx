@@ -1,0 +1,540 @@
+// *******************************************************************************
+// ***************** ravenholm *****************
+
+// don't play directly - these 2 are referenced by other soundscapes
+
+"d1_town.ScaredPeopleInside"
+{
+	"playrandom"
+	{
+		"time"		"60, 300"
+		"volume"	"0.18,0.35"
+		"pitch"		"95,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/creatures/town_scared_sob1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_scared_breathing1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_scared_breathing2.vsnd"
+		}	
+	}
+}
+
+"d1_town.ScaredPeopleOutside"
+{
+	"playrandom"
+	{
+		"time"		"60, 300"
+		"volume"	"0.18,0.35"
+		"pitch"		"95,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/creatures/town_child_scream1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_muffled_cry1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_scared_sob2.vsnd"
+		}	
+	}
+}
+
+// first 2 maps
+
+"d1_town.Start"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+	
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"1.0"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"sounds/ambient/atmosphere/tone_alley.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"7, 16"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,110"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/wind/wind_moan1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan4.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit5.vsnd"
+			"wave"	"sounds/ambient/creatures/town_zombie_call1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_moan1.vsnd"
+		}
+		
+	}
+}
+
+// in the streets
+
+"d1_town.Street"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"sounds/ambient/atmosphere/town_ambience.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"6,12"
+		"volume"	"0.35,0.65"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/wind/wind_moan1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet3.vsnd"
+			"wave"	"sounds/ambient/wind/wind_moan4.vsnd"
+			"wave"	"sounds/ambient/materials/shutter7.vsnd"
+			"wave"	"sounds/ambient/materials/shutter8.vsnd"
+			"wave"	"sounds/ambient/materials/metal4.vsnd"
+			"wave"	"sounds/ambient/materials/metal5.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit5.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit6.vsnd"
+		}
+		
+	}
+}
+
+// room with corpses, buzzing flies
+
+"d1_town.CorpseRoom"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleOutside"
+		"volume"	"0.5"
+	}
+
+	"playrandom"
+	{
+		"time"		"1,14"
+		"volume"	"0.4,0.7"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"		"sounds/ambient/creatures/flies1.vsnd"
+			"wave"		"sounds/ambient/creatures/flies2.vsnd"
+			"wave"		"sounds/ambient/creatures/flies3.vsnd"
+			"wave"		"sounds/ambient/creatures/flies4.vsnd"
+			"wave"		"sounds/ambient/creatures/flies5.vsnd"
+		}
+		
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.2,0.4"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/creatures/rats1.vsnd"
+			"wave"	"sounds/ambient/creatures/rats2.vsnd"
+			"wave"	"sounds/ambient/creatures/rats3.vsnd"
+			"wave"	"sounds/ambient/creatures/rats4.vsnd"
+		}
+		
+	}
+}
+
+// in wooden buildings
+
+"d1_town.WoodBuilding"
+{
+
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playsoundscape"
+	{
+		"name"		"d1_town.ScaredPeopleInside"
+		"volume"	"0.7"
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.35,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+			"wave"	"sounds/ambient/materials/shutter7.vsnd"
+			"wave"	"sounds/ambient/materials/shutter8.vsnd"
+		}
+	
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.25,0.35"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/creatures/rats1.vsnd"
+			"wave"	"sounds/ambient/creatures/rats2.vsnd"
+			"wave"	"sounds/ambient/creatures/rats3.vsnd"
+			"wave"	"sounds/ambient/creatures/rats4.vsnd"
+			"wave"	"sounds/ambient/creatures/flies1.vsnd"
+			"wave"	"sounds/ambient/creatures/flies4.vsnd"
+		}	
+	}
+			
+}
+
+// in concrete buildings
+
+"d1_town.ConcreteBuilding"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+}
+
+// on rooftops, above streets
+
+"d1_town.Rooftop"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.7"
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"wave"		"sounds/ambient/atmosphere/town_ambience.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"7,14"
+		"volume"	"0.4,0.65"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet2.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet3.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet4.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet5.vsnd"
+			"wave"	"sounds/ambient/materials/shutter7.vsnd"
+			"wave"	"sounds/ambient/materials/shutter8.vsnd"
+			"wave"	"sounds/ambient/materials/metal_rattle3.vsnd"
+			"wave"	"sounds/ambient/materials/metal9.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit5.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit6.vsnd"
+		}	
+	}
+}
+
+// above and in mineshaft
+
+"d1_town.MineshaftDown"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"3, 8"
+		"volume"	"0.35,0.6"
+		"pitch"		"70,80"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+		}
+		
+	}
+
+
+	"playrandom"
+	{
+		"time"		"8, 14"
+		"volume"	"0.4, 0.7"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/rock1.vsnd"
+			"wave"	"sounds/ambient/materials/rock2.vsnd"
+			"wave"	"sounds/ambient/materials/rock3.vsnd"
+			"wave"	"sounds/ambient/materials/rock4.vsnd"
+			"wave"	"sounds/ambient/materials/rock5.vsnd"
+		}
+
+		"attenuation"	"0"	
+	}
+
+
+	"playrandom"
+	{
+		"time"		"10, 14"
+		"volume"	"0.35, 0.55"
+		"pitch"		"70, 120"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/atmosphere/hole_hit1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit2.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit3.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit4.vsnd"
+			"wave"	"sounds/ambient/atmosphere/hole_hit5.vsnd"
+		}
+
+		"attenuation"	"0"	
+	}
+}
+
+// swim cave + shaft
+
+"d1_town.WaterCave"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"0.5, 1.5"
+		"volume"	"0.25, 0.35"
+		"pitch"		"96,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/drip1.vsnd"
+			"wave"	"sounds/ambient/water/drip2.vsnd"
+			"wave"	"sounds/ambient/water/drip3.vsnd"
+			"wave"	"sounds/ambient/water/drip4.vsnd"
+		}	
+
+	}
+
+	"playrandom"
+	{
+		"time"		"12, 20"
+		"volume"	"0.45,0.6"
+		"pitch"		"70,80"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+		}
+		
+	}
+}
+
+// In headcrab cave
+
+"d1_town.HeadcrabCave"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"10, 16"
+		"volume"	"0.1,0.3"
+		"pitch"		"100"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/atmosphere/cave_hit1.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit2.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit3.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit4.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit5.vsnd"
+			"wave"	"sounds/ambient/atmosphere/cave_hit6.vsnd"
+
+		}
+		
+	}
+
+
+
+	// support Metal Creak
+
+	"playrandom"
+	{
+		"time"		"5, 6"
+		"volume"	"0.35, 0.65"
+		"pitch"		"98,102"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+
+			"wave"	"sounds/ambient/materials/metal_stress1.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress2.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress3.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress4.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress5.vsnd"
+
+
+		}
+
+	}
+
+
+	"playrandom"
+	{
+		"time"		"2, 6"
+		"volume"	"0.15, 0.3"
+		"pitch"		"96,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/drip1.vsnd"
+			"wave"	"sounds/ambient/water/drip2.vsnd"
+			"wave"	"sounds/ambient/water/drip3.vsnd"
+			"wave"	"sounds/ambient/water/drip4.vsnd"
+			
+			"wave"	"sounds/ambient/water/distant_drip1.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip2.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip3.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip4.vsnd"
+
+		}
+
+	}
+
+
+	"playrandom"
+	{
+		"time"		"5, 7"
+		"volume"	"0.45, 0.55"
+		"pitch"		"98,102"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/rock1.vsnd"
+			"wave"	"sounds/ambient/materials/rock2.vsnd"
+			"wave"	"sounds/ambient/materials/rock3.vsnd"
+			"wave"	"sounds/ambient/materials/rock4.vsnd"
+			"wave"	"sounds/ambient/materials/rock5.vsnd"
+		}
+	}
+}
+
+// exit tunnel from headcrab cave
+
+"d1_town.CaveTunnel"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+
+	"playrandom"
+	{
+		"time"		"10, 16"
+		"volume"	"0.45, 0.55"
+		"pitch"		"98,102"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/rock1.vsnd"
+			"wave"	"sounds/ambient/materials/rock2.vsnd"
+			"wave"	"sounds/ambient/materials/rock3.vsnd"
+			"wave"	"sounds/ambient/materials/rock4.vsnd"
+			"wave"	"sounds/ambient/materials/rock5.vsnd"
+		}	
+	}
+
+}

@@ -1,0 +1,37 @@
+.ChapterTitle
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: #000000;
+
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 256px;
+    font-weight: bold;
+    color: white;
+
+	flow-children: down;
+}
+
+#ChapterNumber
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	text-align: center;
+	border: 0px solid white;
+
+	margin-top: 0px;
+}
+
+#ChapterText
+{
+	horizontal-align: center;
+	vertical-align: top;
+	text-align: center;
+	border: 0px solid white;
+
+	margin-bottom: 0px;
+}
+

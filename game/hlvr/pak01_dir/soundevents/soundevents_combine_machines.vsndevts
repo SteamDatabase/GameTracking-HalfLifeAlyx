@@ -1,0 +1,1968 @@
+{
+	CombineLocker.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 800.000000
+		mixgroup = "CombineMachines"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_locker_open.vsnd",
+		]
+	}
+	Combine_SwitchBox.Open_Start = 
+	{
+		base = "CombineLocker.Open"
+	}
+	Combine_SwitchBox.Open_Stop = 
+	{
+		base = "CombineLocker.Open"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_switch_box_open_stop.vsnd",
+		]
+	}
+	Combine_SwitchBox.Close_Start = 
+	{
+		base = "CombineLocker.Open"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_switch_box_close_start.vsnd",
+		]
+	}
+	Combine_SwitchBox.Close_Stop = 
+	{
+		base = "CombineLocker.Open"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_switch_box_close_stop.vsnd",
+		]
+	}
+	CombineDoor.Move_Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		delay = 0.100000
+		volume_falloff_max = 1000.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door/move_open.vsnd",
+		]
+	}
+	CombineDoor.Move_Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		delay = 0.100000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1000.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door/move_close.vsnd",
+		]
+	}
+	CombineDoor.lock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door/lock.vsnd",
+		]
+	}
+	CombineDoor.Unlock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door/unlock.vsnd",
+		]
+	}
+	CombineDoor_Hallway.Start_Moving = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 1000.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door_hallway/start_01.vsnd",
+			"sounds/mechanical_units/combine_door_hallway/start_02.vsnd",
+		]
+	}
+	CombineDoor_Hallway.Stop_Moving = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 1000.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_door_hallway/stop_01.vsnd",
+			"sounds/mechanical_units/combine_door_hallway/stop_02.vsnd",
+		]
+	}
+	CombineScreen_Rig.Scripted_Close_Occluded = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.300000
+		mixgroup = "CombineMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_screen_rig/scripted_close_occluded.vsnd",
+		]
+	}
+	CombineBarrier.Dry_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "CombineMachines"
+		should_pause = "true"
+	}
+	CombineBarrier.Wet_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		occlusion_scale = 0.000000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "CombineMachines"
+		should_pause = "true"
+	}
+	CombineBarrier.Alarm_Oneshot = 
+	{
+		base = "CombineBarrier.Dry_Base"
+		volume = 1.400000
+		vsnd_files = 
+		[
+			"sounds/world/misc/combine_alarm_oneshot.vsnd",
+		]
+	}
+	CombineBarrier.Open1 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineBarrier.Open1_Dry"
+		soundevent_02 = "CombineBarrier.Open1_Wet"
+		soundevent_03 = "CombineBarrier.Alarm_Oneshot"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	CombineBarrier.Open2 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineBarrier.Open2_Dry"
+		soundevent_02 = "CombineBarrier.Open2_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombineBarrier.Open1_Dry = 
+	{
+		base = "CombineBarrier.Dry_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_1_dry.vsnd",
+		]
+	}
+	CombineBarrier.Open1_Wet = 
+	{
+		base = "CombineBarrier.Wet_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_1_wet.vsnd",
+		]
+	}
+	CombineBarrier.Open2_Dry = 
+	{
+		base = "CombineBarrier.Dry_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_2_dry.vsnd",
+		]
+	}
+	CombineBarrier.Open2_Wet = 
+	{
+		base = "CombineBarrier.Wet_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_2_wet.vsnd",
+		]
+	}
+	CombineBarrier.Open_Full = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineBarrier.Open_Full_Dry"
+		soundevent_02 = "CombineBarrier.Open_Full_Wet"
+		soundevent_03 = "CombineBarrier.Alarm_Oneshot"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	CombineBarrier.Open_Full_Dry = 
+	{
+		base = "CombineBarrier.Dry_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_full_dry.vsnd",
+		]
+	}
+	CombineBarrier.Open_Full_Wet = 
+	{
+		base = "CombineBarrier.Wet_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_open_full_wet.vsnd",
+		]
+	}
+	CombineBarrier.Close_Full = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineBarrier.Close_Full_Dry"
+		soundevent_02 = "CombineBarrier.Close_Full_Wet"
+		soundevent_03 = "CombineBarrier.Alarm_Oneshot"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	CombineBarrier.Close_Full_Dry = 
+	{
+		base = "CombineBarrier.Dry_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_close_full_dry.vsnd",
+		]
+	}
+	CombineBarrier.Close_Full_Wet = 
+	{
+		base = "CombineBarrier.Wet_Base"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_close_full_wet.vsnd",
+		]
+	}
+	CombineBarrier.Quarantine_Open = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineBarrier.Quarantine_Open_Dry"
+		soundevent_02 = "CombineBarrier.Quarantine_Open_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombineBarrier.Quarantine_Open_Dry = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		volume_falloff_min = 400.000000
+		volume_fade_out = 0.200000
+		mixgroup = "CombineMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_quarantine_open_dry.vsnd",
+		]
+	}
+	CombineBarrier.Quarantine_Open_Wet = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.100000
+		volume_falloff_min = 400.000000
+		volume_fade_out = 1.000000
+		mixgroup = "CombineMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_barrier/barrier_quarantine_open_wet.vsnd",
+		]
+	}
+	BatteryHolder.Insert = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.800000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/battery_holder/battery_pack_insert.vsnd",
+		]
+	}
+	BatteryHolder.Remove = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.800000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/battery_holder/battery_pack_remove.vsnd",
+		]
+	}
+	BatteryHolder.Reviver_Insert = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "BatteryHolder.Insert"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Battery_Insert"
+		use_02 = 1.000000
+	}
+	BatteryHolder.Reviver_Remove = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "BatteryHolder.Remove"
+		use_01 = 1.000000
+		soundevent_02 = "Headcrab_Reviver.Battery_Remove"
+		use_02 = 1.000000
+	}
+	BatteryHolder.Loop_On = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_in = 1.000000
+		volume_fade_out = 0.100000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		occlusion_scale = 0.900000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/battery_holder/battery_holder_loop_on.vsnd",
+		]
+	}
+	Combine_Wall.Blade_Move_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 3000.000000
+		occlusion_scale = 0.100000
+		limiter_on = 1.000000
+		limiter_max = 6.000000
+		limiter_event_name = "Combine_Wall.Blade_Move_Short"
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_wall_blades/move_short_01.vsnd",
+			"sounds/world/combine_wall_blades/move_short_02.vsnd",
+			"sounds/world/combine_wall_blades/move_short_03.vsnd",
+			"sounds/world/combine_wall_blades/move_short_04.vsnd",
+			"sounds/world/combine_wall_blades/move_short_05.vsnd",
+			"sounds/world/combine_wall_blades/move_short_06.vsnd",
+		]
+	}
+	Combine_Wall.Blade_Move_Long = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 3000.000000
+		occlusion_scale = 0.100000
+		limiter_on = 1.000000
+		limiter_max = 6.000000
+		limiter_event_name = "Combine_Wall.Blade_Move_Short"
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_wall_blades/move_long_01.vsnd",
+			"sounds/world/combine_wall_blades/move_long_02.vsnd",
+			"sounds/world/combine_wall_blades/move_long_03.vsnd",
+			"sounds/world/combine_wall_blades/move_long_04.vsnd",
+			"sounds/world/combine_wall_blades/move_long_05.vsnd",
+			"sounds/world/combine_wall_blades/move_long_06.vsnd",
+		]
+	}
+	Combine_Wall.Blades_Move = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Wall.Blades_Growl_A"
+		use_01 = 1.000000
+		soundevent_02 = "Combine_Wall.Blades_Growl_B"
+		use_02 = 1.000000
+		soundevent_03 = "Combine_Wall.Blades_Movement"
+		use_03 = 1.000000
+	}
+	Combine_Wall.Blades_Growl_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 3000.000000
+		occlusion_scale = 0.100000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_wall_blades/shared_growl_a.vsnd",
+		]
+	}
+	Combine_Wall.Blades_Growl_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		delay = 5.000000
+		volume_falloff_min = 3000.000000
+		occlusion_scale = 0.100000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_wall_blades/shared_growl_b.vsnd",
+		]
+	}
+	Combine_Wall.Blades_Movement = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_min = 3000.000000
+		occlusion_scale = 0.500000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_wall_blades/shared_movement.vsnd",
+		]
+	}
+	Combine_Plug.Puzzle_Controls_PowerSurge = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/controls_power_surge_01.vsnd",
+			"sounds/world/combine_plug/controls_power_surge_02.vsnd",
+			"sounds/world/combine_plug/controls_power_surge_03.vsnd",
+		]
+	}
+	Combine_Plug.Puzzle_Controls_Steam = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_max = 800.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/controls_steam_01.vsnd",
+			"sounds/world/combine_plug/controls_steam_02.vsnd",
+		]
+	}
+	Combine_Plug.Puzzle_Start = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/beep.vsnd",
+		]
+	}
+	Combine_Plug.Puzzle_Beep = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		spread_min = 10.000000
+		spread_max = 20.000000
+		occlusion_scale = 0.500000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/beep.vsnd",
+		]
+	}
+	Combine_Plug.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		occlusion_scale = 0.100000
+		occlusion_radius = 200.000000
+		mixgroup = "CombineMachines"
+	}
+	Combine_Plug.Base_Reverb = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 200.000000
+		occlusion_scale = 0.100000
+		occlusion_radius = 200.000000
+		mixgroup = "CombineMachines"
+	}
+	Combine_Plug.Stage_01_Open = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_01_Open_Dry"
+		soundevent_02 = "Combine_Plug.Stage_01_Open_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_01_Open_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_01.vsnd",
+		]
+	}
+	Combine_Plug.Stage_01_Open_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_01_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_01_Reset = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_01_Reset_Dry"
+		soundevent_02 = "Combine_Plug.Stage_01_Reset_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_01_Reset_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_01.vsnd",
+		]
+	}
+	Combine_Plug.Stage_01_Reset_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_01_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_02_Open = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_02_Open_Dry"
+		soundevent_02 = "Combine_Plug.Stage_02_Open_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_02_Open_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_02.vsnd",
+		]
+	}
+	Combine_Plug.Stage_02_Open_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_02_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_02_Reset = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_02_Reset_Dry"
+		soundevent_02 = "Combine_Plug.Stage_02_Reset_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_02_Reset_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_02.vsnd",
+		]
+	}
+	Combine_Plug.Stage_02_Reset_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_02_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_03_Open = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_03_Open_Dry"
+		soundevent_02 = "Combine_Plug.Stage_03_Open_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_03_Open_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_03.vsnd",
+		]
+	}
+	Combine_Plug.Stage_03_Open_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_03_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_03_Reset = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_03_Reset_Dry"
+		soundevent_02 = "Combine_Plug.Stage_03_Reset_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_03_Reset_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_03.vsnd",
+		]
+	}
+	Combine_Plug.Stage_03_Reset_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_03_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Open = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_04_Open_Dry"
+		soundevent_02 = "Combine_Plug.Stage_04_Open_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_04_Open_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_04.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Open_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_04_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Open_End = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_04_Open_End_Dry"
+		soundevent_02 = "Combine_Plug.Stage_04_Open_End_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_04_Open_End_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		volume = 1.200000
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_04_end.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Open_End_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/open_stage_04_end_wet.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Reset = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Stage_04_Reset_Dry"
+		soundevent_02 = "Combine_Plug.Stage_04_Reset_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Stage_04_Reset_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_04.vsnd",
+		]
+	}
+	Combine_Plug.Stage_04_Reset_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_stage_04_wet.vsnd",
+		]
+	}
+	Combine_Plug.Reset_Closed = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Reset_Closed_Dry"
+		soundevent_02 = "Combine_Plug.Reset_Closed_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Combine_Plug.Reset_Closed_Dry = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_closed.vsnd",
+		]
+	}
+	Combine_Plug.Reset_Closed_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/reset_closed_wet.vsnd",
+		]
+	}
+	Combine_Plug.Close_Behind_Player = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Close_Behind_Player_Core"
+		soundevent_02 = "Combine_Plug.Close_Behind_Player_Core_Wet"
+		soundevent_03 = "Combine_Plug.Close_Behind_Player_Echo"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Combine_Plug.Close_Behind_Player_Core = 
+	{
+		base = "Combine_Plug.Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/behind_player.vsnd",
+		]
+	}
+	Combine_Plug.Close_Behind_Player_Core_Wet = 
+	{
+		base = "Combine_Plug.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/world/combine_plug/behind_player_wet.vsnd",
+		]
+	}
+	Combine_Plug.Close_Behind_Player_Echo = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Combine_Plug.Close_Behind_Player_Echo_Front_L"
+		soundevent_02 = "Combine_Plug.Close_Behind_Player_Echo_Front_R"
+		soundevent_03 = "Combine_Plug.Close_Behind_Player_Echo_Rear_L"
+		soundevent_04 = "Combine_Plug.Close_Behind_Player_Echo_Rear_R"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Combine_Plug.Close_Behind_Player_Echo_Base = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 150.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0.000000
+		spread_min = 0
+		spread_max = 400
+		volume = 1.000000
+		mixgroup = "CombineMachines"
+	}
+	Combine_Plug.Close_Behind_Player_Echo_Front_L = 
+	{
+		base = "Combine_Plug.Close_Behind_Player_Echo_Base"
+		vsnd_files = "sounds/world/combine_plug/behind_player_echo_front_l.vsnd"
+	}
+	Combine_Plug.Close_Behind_Player_Echo_Front_R = 
+	{
+		base = "Combine_Plug.Close_Behind_Player_Echo_Base"
+		rotation_angle = 315.000000
+		vsnd_files = "sounds/world/combine_plug/behind_player_echo_front_r.vsnd"
+	}
+	Combine_Plug.Close_Behind_Player_Echo_Rear_L = 
+	{
+		base = "Combine_Plug.Close_Behind_Player_Echo_Base"
+		rotation_angle = 135.000000
+		vsnd_files = "sounds/world/combine_plug/behind_player_echo_rear_l.vsnd"
+	}
+	Combine_Plug.Close_Behind_Player_Echo_Rear_R = 
+	{
+		base = "Combine_Plug.Close_Behind_Player_Echo_Base"
+		rotation_angle = 225.000000
+		vsnd_files = "sounds/world/combine_plug/behind_player_echo_rear_r.vsnd"
+	}
+	CombineEnergyFence.StaticLp = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.400000
+		volume_fade_in = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		cull_at_distance = 400.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_lp_01.vsnd",
+		]
+	}
+	CombineEnergyFence.Start = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_start_01.vsnd",
+		]
+	}
+	CombineEnergyFence.Stop = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_stop_01.vsnd",
+		]
+	}
+	CombineEnergyFence.StopSimple = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_stop_01.vsnd",
+		]
+	}
+	CombineEnergyFenceCitizen.StaticLp = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.400000
+		volume_fade_in = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/forcefield_citizen_lp_01.vsnd",
+		]
+	}
+	CombineEnergyFenceCitizen.Start = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/forcefield_citizen_start_01.vsnd",
+		]
+	}
+	CombineEnergyFenceCitizen.Stop = 
+	{
+		type = "hlvr_default_3d_on_aabb"
+		volume = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/forcefield_citizen_stop_01.vsnd",
+		]
+	}
+	CombineEnergyFence.ImpactEffect = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		pitch = 0.550000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.150000
+		volume_fade_out = 0.750000
+		enable_debug_radius = 0.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_impact_effect_01.vsnd",
+			"sounds/world/forcefields/quarantine_forcefield_impact_effect_02.vsnd",
+			"sounds/world/forcefields/quarantine_forcefield_impact_effect_03.vsnd",
+		]
+	}
+	CombineEnergyFence.StartLg = 
+	{
+		base = "CombineEnergyFence.Start"
+		volume = 0.700000
+		occlusion_scale = 0.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 1100
+		cull_at_distance = 1200
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 4
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 10
+		fade_over_time_y3 = 0.400000
+		fade_over_time_x4 = 30
+		fade_over_time_y4 = 0.300000
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_fence_startup_lg_lp_01.vsnd",
+		]
+	}
+	CombineEnergyFence.ShutdownLgZoo = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 1100
+		use_hrtf = 1.000000
+		spread_min = 120
+		spread_max = 360
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_fence_shutdown_lg_zoo_01.vsnd",
+		]
+	}
+	CombineEnergyFence.ShutdownLgStation = 
+	{
+		base = "CombineEnergyFence.ShutdownLgZoo"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_fence_shutdown_lg_station_01.vsnd",
+		]
+	}
+	Forcefield.StaticLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_fade_in = 0.750000
+		volume_fade_out = 0.750000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 1250.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_lp_01.vsnd",
+		]
+	}
+	Forcefield.StopLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 1250.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_stop_01.vsnd",
+		]
+	}
+	Forcefield.StartLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_min = 150.000000
+		volume_falloff_max = 1250.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/quarantine_forcefield_start_01.vsnd",
+		]
+	}
+	PrisonForcefield.EnergyLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		volume_fade_in = 5
+		volume_fade_out = 2.000000
+		volume_falloff_min = 450.000000
+		volume_falloff_max = 1550.000000
+		spread_min = 120
+		spread_max = 480
+		mixgroup = "CombineMachines"
+		enable_debug_radius = 0.000000
+		soundname_string = "PrisonForcefield"
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 15
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 45
+		fade_over_time_y3 = 0.600000
+		fade_over_time_x4 = 45
+		fade_over_time_y4 = 0.600000
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_prison_forcefield_energy_lp_01.vsnd",
+		]
+	}
+	PrisonForcefield.PingLp = 
+	{
+		base = "PrisonForcefield.EnergyLp"
+		volume = 0.300000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_prison_forcefield_ping_lp_01.vsnd",
+		]
+	}
+	PrisonForcefield.DeepLp = 
+	{
+		base = "PrisonForcefield.EnergyLp"
+		volume = 0.700000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/forcefields/combine_prison_forcefield_deep_lp_01.vsnd",
+		]
+	}
+	Elevator_Combine.Power_On_Parent = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		delay = 0.000000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/power_on_combine.vsnd",
+		]
+	}
+	Elevator_Combine.Power_Off = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		delay = 0.500000
+		volume_falloff_min = 200.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/power_off.vsnd",
+		]
+	}
+	Elevator_Combine.Button_Call = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Buttons"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/button_call.vsnd",
+		]
+	}
+	Elevator_Combine.Button_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Buttons"
+		vsnd_files = 
+		[
+			"sounds/buttons/combine_button_success.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Combine.Move_Start_Core"
+		soundevent_02 = "Elevator_Combine.Start_Layer"
+		soundevent_03 = "Elevator_Combine.Move_Start_Air"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Elevator_Combine.Move_Start_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		delay = 0.050000
+		volume_falloff_min = 2000.000000
+		volume_falloff_max = 4000.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/start_01.vsnd",
+			"sounds/world/elevator_combine/start_02.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Start_Air = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		delay = 0.500000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/start_air_01.vsnd",
+			"sounds/world/elevator_combine/start_air_02.vsnd",
+		]
+	}
+	Elevator_Combine.Start_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_shared/start_heavy_layer.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Stop = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Combine.Move_Stop_Core"
+		soundevent_02 = "Elevator_Combine.Stop_Layer"
+		soundevent_03 = "Elevator_Combine.Move_Stop_Air"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Elevator_Combine.Move_Stop_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 800.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/stop_01.vsnd",
+			"sounds/world/elevator_combine/stop_02.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Stop_Air = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		delay = 0.100000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/stop_air_01.vsnd",
+			"sounds/world/elevator_combine/stop_air_02.vsnd",
+		]
+	}
+	Elevator_Combine.Stop_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_shared/stop_heavy_layer.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Combine.Move_Loop"
+		use_01 = 1.000000
+		soundevent_02 = "Elevator_Combine.Move_Rattle_Random"
+		use_02 = 1.000000
+	}
+	Elevator_Combine.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.100000
+		should_pause = "true"
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 4000.000000
+		occlusion_scale = 0.600000
+		mixgroup = "Combine_Elevator_Loop"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/move_loop.vsnd",
+		]
+	}
+	Elevator_Combine.Move_Rattle_Random = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "Elevator_Combine.Move_Rattle_Child"
+		random_soundevent_01_timer_min = 4.000000
+		random_soundevent_01_timer_max = 6.000000
+	}
+	Elevator_Combine.Move_Rattle_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/move_creak_01.vsnd",
+			"sounds/world/elevator_combine/move_creak_02.vsnd",
+			"sounds/world/elevator_combine/move_creak_03.vsnd",
+			"sounds/world/elevator_combine/move_creak_04.vsnd",
+			"sounds/world/elevator_combine/move_creak_05.vsnd",
+			"sounds/world/elevator_combine/move_creak_06.vsnd",
+			"sounds/world/elevator_combine/move_creak_07.vsnd",
+		]
+	}
+	Elevator_Combine.Scripted_Cable_Twangs = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1000.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/scripted_cable_twangs.vsnd",
+		]
+	}
+	Elevator_Combine.Scripted_Cale_Twangs = 
+	{
+		base = "Elevator_Combine.Scripted_Cable_Twangs"
+	}
+	AnimDoor_Elevator_Combine.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_grab_01.vsnd",
+			"sounds/world/elevator_combine/door_grab_02.vsnd",
+		]
+	}
+	AnimDoor_Elevator_Combine.End = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_end_01.vsnd",
+			"sounds/world/elevator_combine/door_end_02.vsnd",
+			"sounds/world/elevator_combine/door_end_03.vsnd",
+		]
+	}
+	AnimDoor_Elevator_Combine.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimDoor_Elevator_Combine.Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 0.980000
+		pitch_map_max = 1.020000
+	}
+	AnimDoor_Elevator_Combine.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.800000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_tick_01.vsnd",
+			"sounds/world/elevator_combine/door_tick_02.vsnd",
+			"sounds/world/elevator_combine/door_tick_03.vsnd",
+			"sounds/world/elevator_combine/door_tick_04.vsnd",
+			"sounds/world/elevator_combine/door_tick_05.vsnd",
+			"sounds/world/elevator_combine/door_tick_06.vsnd",
+		]
+	}
+	Elevator_Combine_Door.Clunk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_clunk.vsnd",
+		]
+	}
+	Elevator_Combine_Door.MoveLp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		pitch = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_move_loop.vsnd",
+		]
+	}
+	Elevator_Combine_Door.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_end_01.vsnd",
+			"sounds/world/elevator_combine/door_end_02.vsnd",
+			"sounds/world/elevator_combine/door_end_03.vsnd",
+		]
+	}
+	Elevator_Combine_Door.Scripted_Door_Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_scripted_vort_open.vsnd",
+		]
+	}
+	Anim_Combine_Locker.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_grab_01.vsnd",
+			"sounds/world/elevator_combine/door_grab_02.vsnd",
+		]
+	}
+	Anim_Combine_Locker.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_end_01.vsnd",
+			"sounds/world/elevator_combine/door_end_02.vsnd",
+			"sounds/world/elevator_combine/door_end_03.vsnd",
+		]
+	}
+	Anim_Combine_Locker.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_2staged_tick"
+		child_soundevent_a = "Anim_Combine_Locker.Tick_A"
+		timer_min_a = 0.100000
+		timer_max_a = 0.200000
+		child_soundevent_b = "Anim_Combine_Locker.Tick_B"
+		timer_min_b = 0.100000
+		timer_max_b = 0.300000
+	}
+	Anim_Combine_Locker.Tick_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.900000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_rod/tick_b_01.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_02.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_03.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_04.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_05.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_06.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_07.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_08.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_09.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_10.vsnd",
+		]
+	}
+	Anim_Combine_Locker.Tick_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		occlusion_scale = 0.800000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_combine/door_tick_01.vsnd",
+			"sounds/world/elevator_combine/door_tick_02.vsnd",
+			"sounds/world/elevator_combine/door_tick_03.vsnd",
+			"sounds/world/elevator_combine/door_tick_04.vsnd",
+			"sounds/world/elevator_combine/door_tick_05.vsnd",
+			"sounds/world/elevator_combine/door_tick_06.vsnd",
+		]
+	}
+	HealthStation.Complete = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/stations/hl1_old/elevbell1.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMachines.QuarantineDoorOpen_Start_Core"
+		use_01 = 1.000000
+		soundevent_02 = "CombineMachines.QuarantineDoorOpen_Start_Layer"
+		use_02 = 1.000000
+	}
+	CombineMachines.QuarantineDoorOpen_Slide = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMachines.QuarantineDoorOpen_Slide_Core"
+		use_01 = 1.000000
+		soundevent_02 = "CombineMachines.QuarantineDoorOpen_Slide_Layer"
+		use_02 = 1.000000
+	}
+	CombineMachines.QuarantineDoorOpen_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 2000.000000
+		volume_falloff_max = 5000.000000
+		ambient_ducking_pct = 0.600000
+		use_named_send = "loud"
+		mixgroup = "LoudEvents"
+		should_pause = true
+	}
+	CombineMachines.QuarantineDoorOpen_Start_Core = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_start_core.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Start_Layer = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Base"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_start_layer.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Slide_Core = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Base"
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_slide_core.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Slide_Layer = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Base"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_slide_layer.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Air = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Base"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_air_release.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Sparks = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 3000.000000
+		use_named_send = "loud"
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/world/combine_quarantine_door/open_sparks.vsnd",
+		]
+	}
+	CombineMachines.QuarantineDoorOpen_Echo = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMachines.QuarantineDoorOpen_Echo_Front_L"
+		soundevent_02 = "CombineMachines.QuarantineDoorOpen_Echo_Front_R"
+		soundevent_03 = "CombineMachines.QuarantineDoorOpen_Echo_Rear_L"
+		soundevent_04 = "CombineMachines.QuarantineDoorOpen_Echo_Rear_R"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	CombineMachines.QuarantineDoorOpen_Echo_Base = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 150.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0.000000
+		spread_min = 0
+		spread_max = 400
+		volume = 1.000000
+		mixgroup = "CombineMachines"
+	}
+	CombineMachines.QuarantineDoorOpen_Echo_Front_L = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Echo_Base"
+		vsnd_files = "sounds/world/combine_quarantine_door/echo_front_l.vsnd"
+	}
+	CombineMachines.QuarantineDoorOpen_Echo_Front_R = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Echo_Base"
+		rotation_angle = 315.000000
+		vsnd_files = "sounds/world/combine_quarantine_door/echo_front_r.vsnd"
+	}
+	CombineMachines.QuarantineDoorOpen_Echo_Rear_L = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Echo_Base"
+		rotation_angle = 135.000000
+		vsnd_files = "sounds/world/combine_quarantine_door/echo_rear_l.vsnd"
+	}
+	CombineMachines.QuarantineDoorOpen_Echo_Rear_R = 
+	{
+		base = "CombineMachines.QuarantineDoorOpen_Echo_Base"
+		rotation_angle = 225.000000
+		vsnd_files = "sounds/world/combine_quarantine_door/echo_rear_r.vsnd"
+	}
+	CombineMachines.QuarantineDoor_Close_Muffled = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombineMachines.QuarantineDoor_Close_Muffled_Dry"
+		use_01 = 1.000000
+		soundevent_02 = "CombineMachines.QuarantineDoor_Close_Muffled_Wet"
+		use_02 = 1.000000
+	}
+	CombineMachines.QuarantineDoor_Close_Muffled_Dry = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 800.000000
+		volume_falloff_max = 5000.000000
+		ambient_ducking_pct = 0.100000
+		mixgroup = "ScriptedSequence"
+		use_hrtf = 1.000000
+		vsnd_files = "sounds/world/combine_quarantine_door/close_muffled_dry.vsnd"
+	}
+	CombineMachines.QuarantineDoor_Close_Muffled_Wet = 
+	{
+		type = "src1_2d"
+		volume = 0.500000
+		mixgroup = "ScriptedSequence"
+		vsnd_files = "sounds/world/combine_quarantine_door/close_muffled_wet.vsnd"
+	}
+	CombineMachines.CombineAlarmChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		stop_at_time = 2.500000
+		volume_fade_in = 0.000000
+		volume_fade_out = 0.800000
+		use_doppler = 1.000000
+		doppler_factor = 1.200000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/ambient/alarms/combine_alarm_01_01.vsnd",
+			"sounds/ambient/alarms/combine_alarm_01_02.vsnd",
+		]
+	}
+	CombineMachines.CombineAlarm01Lp = 
+	{
+		type = "hlvr_start_soundevent"
+		sequence_type = "random"
+		restart_on_finish = 1.000000
+		soundevents = 
+		[
+			"CombineMachines.CombineAlarmChild",
+		]
+	}
+	CombineMachines.CombineAlarmChildFar = 
+	{
+		base = "CombineMachines.CombineAlarmChild"
+		volume_falloff_min = 800.000000
+		volume_falloff_max = 2500.000000
+		volume = 0.600000
+		stop_at_time = 3.500000
+		volume_fade_out = 0.500000
+	}
+	CombineMachines.CombineAlarm01x4 = 
+	{
+		type = "hlvr_soundevent_sequence"
+		wait_rand_min = 0.500000
+		wait_rand_max = 0.500000
+		sequence_type = "forward"
+		use_public_position = 1.000000
+		soundevents = 
+		[
+			"CombineMachines.CombineAlarmChildFar",
+			"CombineMachines.CombineAlarmChildFar",
+			"CombineMachines.CombineAlarmChildFar",
+			"CombineMachines.CombineAlarmChildFar",
+			"CombineMachines.CombineAlarmChildFar",
+		]
+	}
+	CombineMachines.CombineAlarm02Lp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.500000
+		use_doppler = 1.000000
+		doppler_factor = 1.200000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1200.000000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/ambient/alarms/combine_alarm_02_01_lp.vsnd",
+		]
+	}
+	Combine_Signal_Light.Switch = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_FloorTurret.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1500.000000
+	}
+	NPC_FloorTurret.Activate = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/active.vsnd"
+	}
+	NPC_FloorTurret.Alarm = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/alarm.vsnd"
+	}
+	NPC_FloorTurret.Alert = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/alert.vsnd"
+	}
+	NPC_FloorTurret.DryFire = 
+	{
+		base = "NPC_FloorTurret.Base"
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1000.000000
+		vsnd_files = "sounds/mechanical_units/turret/imported/click1.vsnd"
+	}
+	NPC_FloorTurret.Deploy = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/deploy.vsnd"
+	}
+	NPC_FloorTurret.Die = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/die.vsnd"
+	}
+	NPC_FloorTurret.Ping = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/ping.vsnd"
+	}
+	NPC_FloorTurret.AlarmPing = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/ping.vsnd"
+	}
+	NPC_FloorTurret.ShotSounds = 
+	{
+		base = "NPC_FloorTurret.Base"
+		occlusion_scale = 0.300000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/turret/imported/shoot1.vsnd",
+			"sounds/mechanical_units/turret/imported/shoot2.vsnd",
+			"sounds/mechanical_units/turret/imported/shoot3.vsnd",
+		]
+	}
+	NPC_FloorTurret.Retire = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/retract.vsnd"
+	}
+	NPC_FloorTurret.Retract = 
+	{
+		base = "NPC_FloorTurret.Base"
+		vsnd_files = "sounds/mechanical_units/turret/imported/retract.vsnd"
+	}
+	NPC_FloorTurret.Destruct = 
+	{
+		base = "NPC_FloorTurret.Base"
+	}
+	NPC_FloorTurret.Move = 
+	{
+		base = "NPC_FloorTurret.Base"
+		occlusion_scale = 0.900000
+		volume_falloff_max = 500.000000
+	}
+	SubstationCables.Twang = 
+	{
+		type = "hlvr_simple_voicegraph_filter_dynamics"
+		volume = 1.000000
+		volume_falloff_min = 1200.000000
+		volume_falloff_max = 3000.000000
+		pitch = 1.000000
+		ambient_ducking_pct = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_fade_out = 0.750000
+		enable_debug_radius = 0.000000
+		occlusion_scale = 0.500000
+		occlusion_radius = 120
+		occlusion_max = 0.250000
+		use_doppler = 1.000000
+		doppler_factor = 1.200000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_01.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_02.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_03.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_04.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_05.vsnd",
+		]
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		global_opvar_name = "skylight_proximity_beacon"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 0.400000
+		remap_opvar_to_freq_x2 = 0.300000
+		remap_opvar_to_freq_y2 = 0.500000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.700000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 1.000000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 0.500000
+		remap_opvar_to_vol_x2 = 1.000000
+		remap_opvar_to_vol_y2 = 1.000000
+		remap_opvar_to_vol_x3 = 1.000000
+		remap_opvar_to_vol_y3 = 1.000000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 1.000000
+	}
+	SubstationCables.SynthImpact = 
+	{
+		base = "SubstationCables.Twang"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_synth_01.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_synth_02.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_synth_03.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_twang_synth_04.vsnd",
+		]
+	}
+	SubstationCables.TwangImpact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "SubstationCables.Twang"
+		use_01 = 1.000000
+		soundevent_02 = "SubstationCables.SynthImpact"
+		use_02 = 1.000000
+	}
+	SubstationCables.TwangImpactQuiet = 
+	{
+		type = "hlvr_start_multi"
+		volume = 0.250000
+		soundevent_01 = "SubstationCables.Twang"
+		use_01 = 1.000000
+		soundevent_02 = "SubstationCables.SynthImpact"
+		use_02 = 1.000000
+	}
+	SubstationCables.StressDeep = 
+	{
+		base = "SubstationCables.Twang"
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1500.000000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_deep_01.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_deep_02.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_deep_03.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_deep_04.vsnd",
+		]
+	}
+	SubstationCables.StressPops = 
+	{
+		base = "SubstationCables.Twang"
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1500.000000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_pops_01.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_pops_02.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_pops_03.vsnd",
+			"sounds/mechanical_units/substation/world_combine_substation_cable_stress_pops_04.vsnd",
+		]
+	}
+	SubstationCables.Stress = 
+	{
+		type = "hlvr_start_multi"
+		volume = 0.650000
+		soundevent_01 = "SubstationCables.StressPops"
+		use_01 = 1.000000
+		soundevent_02 = "SubstationCables.StressDeep"
+		use_02 = 1.000000
+	}
+	SubstationCables.StressQuiet = 
+	{
+		base = "SubstationCables.Stress"
+		volume = 0.500000
+	}
+	CombineLeverSwitch.LeverDeploy = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.100000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_lever_deploy_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.LeverDeployReverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.100000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_lever_deploy_reverse_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.Unlock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.150000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_unlock_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.Lockout = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.150000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_lockout_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.LockoutReverse = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		pitch_rand_min = -0.350000
+		pitch_rand_max = 0.150000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_lockout_reverse_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.PrimeAutoThrow = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_prime_auto_throw_01.vsnd",
+		]
+	}
+	CombineLeverSwitch.AutoThrow = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/combine_lever_switch/combine_lever_switch_auto_throw_01.vsnd",
+		]
+	}
+}

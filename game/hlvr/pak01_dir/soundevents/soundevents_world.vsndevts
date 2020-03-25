@@ -1,0 +1,3321 @@
+{
+	Foliage.Interact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/foliage/foliage_interact_01.vsnd",
+			"sounds/world/foliage/foliage_interact_02.vsnd",
+			"sounds/world/foliage/foliage_interact_03.vsnd",
+			"sounds/world/foliage/foliage_interact_04.vsnd",
+			"sounds/world/foliage/foliage_interact_05.vsnd",
+		]
+	}
+	Foliage.Explosion = 
+	{
+		type = "hlvr_default_3d"
+		delay = 0.500000
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1500.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/foliage/foliage_react_explosion_01.vsnd",
+			"sounds/world/foliage/foliage_react_explosion_02.vsnd",
+			"sounds/world/foliage/foliage_react_explosion_03.vsnd",
+			"sounds/world/foliage/foliage_react_explosion_04.vsnd",
+			"sounds/world/foliage/foliage_react_explosion_05.vsnd",
+		]
+	}
+	Water.Drip_Splashy_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.500000
+		delay_rand_min = 0.300000
+		delay_rand_max = 0.600000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 350.000000
+		cull_at_distance = 360.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/water/water_drip_splashy_loop_01.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_02.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_03.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_04.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_05.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_06.vsnd",
+			"sounds/world/water/water_drip_splashy_loop_07.vsnd",
+		]
+	}
+	Lock_Door_Default.Unlock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/locks/door_default_unlock.vsnd",
+		]
+	}
+	Lock_Door_Default.Lock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/locks/door_default_lock.vsnd",
+		]
+	}
+	Powered_Door.Power_Up = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/powered_door/power_up.vsnd",
+		]
+	}
+	Powered_Door.Unlock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/powered_door/unlock.vsnd",
+		]
+	}
+	DoorHandles.Unlocked1 = 
+	{
+		base = "Lock_Door_Default.Unlock"
+	}
+	VidLink.Incoming_Call = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		spread_min = 10.000000
+		spread_max = 20.000000
+		vsnd_files = 
+		[
+			"sounds/world/misc/vidlink_call.vsnd",
+		]
+	}
+	VidLink.End_Call = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/vidlink_call_end.vsnd",
+		]
+	}
+	Spark.Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.550000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		occlusion_radius = 20.000000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_short_01.vsnd",
+			"sounds/world/sparks/spark_short_02.vsnd",
+			"sounds/world/sparks/spark_short_03.vsnd",
+			"sounds/world/sparks/spark_short_04.vsnd",
+			"sounds/world/sparks/spark_short_05.vsnd",
+			"sounds/world/sparks/spark_short_06.vsnd",
+			"sounds/world/sparks/spark_short_07.vsnd",
+			"sounds/world/sparks/spark_short_08.vsnd",
+			"sounds/world/sparks/spark_short_09.vsnd",
+			"sounds/world/sparks/spark_short_10.vsnd",
+			"sounds/world/sparks/spark_short_11.vsnd",
+			"sounds/world/sparks/spark_short_12.vsnd",
+			"sounds/world/sparks/spark_short_13.vsnd",
+			"sounds/world/sparks/spark_short_14.vsnd",
+		]
+	}
+	Spark.Short_Subtle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.900000
+		occlusion_radius = 20.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_short_01.vsnd",
+			"sounds/world/sparks/spark_short_02.vsnd",
+			"sounds/world/sparks/spark_short_03.vsnd",
+			"sounds/world/sparks/spark_short_04.vsnd",
+			"sounds/world/sparks/spark_short_05.vsnd",
+			"sounds/world/sparks/spark_short_06.vsnd",
+			"sounds/world/sparks/spark_short_07.vsnd",
+			"sounds/world/sparks/spark_short_08.vsnd",
+			"sounds/world/sparks/spark_short_09.vsnd",
+			"sounds/world/sparks/spark_short_10.vsnd",
+			"sounds/world/sparks/spark_short_11.vsnd",
+			"sounds/world/sparks/spark_short_12.vsnd",
+			"sounds/world/sparks/spark_short_13.vsnd",
+			"sounds/world/sparks/spark_short_14.vsnd",
+		]
+	}
+	Spark.Short_Subtle_A2Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.500000
+		occlusion_radius = 20.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_short_01.vsnd",
+			"sounds/world/sparks/spark_short_02.vsnd",
+			"sounds/world/sparks/spark_short_03.vsnd",
+			"sounds/world/sparks/spark_short_04.vsnd",
+			"sounds/world/sparks/spark_short_05.vsnd",
+			"sounds/world/sparks/spark_short_06.vsnd",
+			"sounds/world/sparks/spark_short_07.vsnd",
+			"sounds/world/sparks/spark_short_08.vsnd",
+			"sounds/world/sparks/spark_short_09.vsnd",
+			"sounds/world/sparks/spark_short_10.vsnd",
+			"sounds/world/sparks/spark_short_11.vsnd",
+			"sounds/world/sparks/spark_short_12.vsnd",
+			"sounds/world/sparks/spark_short_13.vsnd",
+			"sounds/world/sparks/spark_short_14.vsnd",
+		]
+	}
+	Spark.Tiny = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_rand_min = -0.020000
+		volume_rand_max = 0.020000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.900000
+		occlusion_radius = 20.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_tiny_01.vsnd",
+			"sounds/world/sparks/spark_tiny_02.vsnd",
+			"sounds/world/sparks/spark_tiny_03.vsnd",
+			"sounds/world/sparks/spark_tiny_04.vsnd",
+			"sounds/world/sparks/spark_tiny_05.vsnd",
+			"sounds/world/sparks/spark_tiny_06.vsnd",
+			"sounds/world/sparks/spark_tiny_07.vsnd",
+			"sounds/world/sparks/spark_tiny_08.vsnd",
+			"sounds/world/sparks/spark_tiny_09.vsnd",
+			"sounds/world/sparks/spark_tiny_10.vsnd",
+			"sounds/world/sparks/spark_tiny_11.vsnd",
+			"sounds/world/sparks/spark_tiny_12.vsnd",
+		]
+	}
+	Spark.Large = 
+	{
+		type = "hlvr_default_3d"
+		volume_rand_min = -0.020000
+		volume_rand_max = 0.020000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 2000.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_short_01.vsnd",
+			"sounds/world/sparks/spark_short_02.vsnd",
+			"sounds/world/sparks/spark_short_03.vsnd",
+			"sounds/world/sparks/spark_short_04.vsnd",
+			"sounds/world/sparks/spark_short_05.vsnd",
+			"sounds/world/sparks/spark_short_06.vsnd",
+			"sounds/world/sparks/spark_short_07.vsnd",
+			"sounds/world/sparks/spark_short_08.vsnd",
+			"sounds/world/sparks/spark_short_09.vsnd",
+			"sounds/world/sparks/spark_short_10.vsnd",
+			"sounds/world/sparks/spark_short_11.vsnd",
+			"sounds/world/sparks/spark_short_12.vsnd",
+			"sounds/world/sparks/spark_short_13.vsnd",
+			"sounds/world/sparks/spark_short_14.vsnd",
+		]
+	}
+	Spark.Short_Sparkles = 
+	{
+		type = "hlvr_default_3d"
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_sparkles_01.vsnd",
+			"sounds/world/sparks/spark_sparkles_02.vsnd",
+			"sounds/world/sparks/spark_sparkles_03.vsnd",
+			"sounds/world/sparks/spark_sparkles_04.vsnd",
+			"sounds/world/sparks/spark_sparkles_05.vsnd",
+			"sounds/world/sparks/spark_sparkles_06.vsnd",
+			"sounds/world/sparks/spark_sparkles_07.vsnd",
+			"sounds/world/sparks/spark_sparkles_08.vsnd",
+			"sounds/world/sparks/spark_sparkles_09.vsnd",
+			"sounds/world/sparks/spark_sparkles_10.vsnd",
+			"sounds/world/sparks/spark_sparkles_11.vsnd",
+			"sounds/world/sparks/spark_sparkles_12.vsnd",
+			"sounds/world/sparks/spark_sparkles_13.vsnd",
+			"sounds/world/sparks/spark_sparkles_14.vsnd",
+		]
+	}
+	JunctionBox.Clunk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/junction_box_clunk.vsnd",
+		]
+	}
+	DoorHandle_Metal.Break = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.950000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/door_handle_break_metal.vsnd",
+		]
+	}
+	Luggage_Cart.Roll_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.500000
+		volume_falloff_max = 1500.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/misc/luggage_cart_roll_lp_01.vsnd",
+			"sounds/world/misc/luggage_cart_roll_lp_02.vsnd",
+		]
+	}
+	Siren.Citywide_Alert_Loop = 
+	{
+		type = "hlvr_2d_remap_opvar"
+		volume = 0.400000
+		volume_fade_in = 0.500000
+		volume_fade_out = 3.000000
+		volume_filter_amount = 0.500000
+		freq_filter_amount = 0.500000
+		mixgroup = "World"
+		voicegraph_name = "hlvr.2d_lpf"
+		global_opvar_name = "skylight_proximity_beacon"
+		filter_mix = 0.700000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/misc/city17_siren_loop.vsnd",
+		]
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 0.400000
+		remap_opvar_to_freq_x2 = 1.000000
+		remap_opvar_to_freq_y2 = 1.000000
+		remap_opvar_to_freq_x3 = 1.000000
+		remap_opvar_to_freq_y3 = 1.000000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 1.000000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 0.300000
+		remap_opvar_to_vol_x2 = 1.000000
+		remap_opvar_to_vol_y2 = 0.700000
+		remap_opvar_to_vol_x3 = 1.000000
+		remap_opvar_to_vol_y3 = 0.700000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 0.700000
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 10.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 30.000000
+		fade_over_time_y3 = 0.300000
+		fade_over_time_x4 = 30.000000
+		fade_over_time_y4 = 0.300000
+	}
+	AlarmBell.Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/misc/alarm_bell_loop.vsnd",
+		]
+	}
+	AlarmBell.Loop_Trainyard = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		volume_fade_in = 0.500000
+		volume_fade_out = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/misc/alarm_bell_loop.vsnd",
+		]
+	}
+	AlarmBell.Train_Crossing_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_in = 0.500000
+		volume_fade_out = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/train_crossing_bell_01.vsnd",
+			"sounds/world/misc/train_crossing_bell_02.vsnd",
+			"sounds/world/misc/train_crossing_bell_03.vsnd",
+			"sounds/world/misc/train_crossing_bell_04.vsnd",
+		]
+	}
+	Alarm.Combine_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/combine_alarm_oneshot.vsnd",
+		]
+	}
+	Alarm_Buzzer.Trainyard_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 50.000000
+		spread_min = 10.000000
+		spread_max = 20.000000
+		occlusion_scale = 0.500000
+		mixgroup = "CombineMachines"
+		vsnd_files = 
+		[
+			"sounds/world/misc/trainyard_buzzer_oneshot.vsnd",
+		]
+	}
+	NoiseHazard.Table = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/noise_hazard_table.vsnd",
+		]
+	}
+	NoiseHazard.Wheel = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/noise_hazard_wheel_01.vsnd",
+			"sounds/world/misc/noise_hazard_wheel_02.vsnd",
+			"sounds/world/misc/noise_hazard_wheel_03.vsnd",
+		]
+	}
+	Door_Distillery_Vertical_Large.Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/start_closing.vsnd",
+		]
+	}
+	Door_Distillery_Vertical_Large.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/fully_open.vsnd",
+		]
+	}
+	Door_Zoo_Vertical_Large.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/fully_open.vsnd",
+		]
+	}
+	Elevator_Apartment.Door_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/door_start_01.vsnd",
+			"sounds/world/elevator_apartment/door_start_02.vsnd",
+			"sounds/world/elevator_apartment/door_start_03.vsnd",
+			"sounds/world/elevator_apartment/door_start_04.vsnd",
+		]
+	}
+	Elevator_Apartment.Door_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/door_stop_01.vsnd",
+			"sounds/world/elevator_apartment/door_stop_02.vsnd",
+		]
+	}
+	Elevator_Apartment.Move_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/move_oneshot.vsnd",
+		]
+	}
+	Elevator_Apartment.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/move_stop.vsnd",
+		]
+	}
+	Elevator_Apartment.Light_Flicker = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/light_flicker_01.vsnd",
+			"sounds/world/elevator_apartment/light_flicker_02.vsnd",
+			"sounds/world/elevator_apartment/light_flicker_03.vsnd",
+		]
+	}
+	Elevator_Apartment.Ding = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.950000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_apartment/ding.vsnd",
+		]
+	}
+	Elevator_Shared.Power_On = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_shared/power_on.vsnd",
+		]
+	}
+	Elevator_Shared.Start_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_shared/start_heavy_layer.vsnd",
+		]
+	}
+	Elevator_Shared.Start_Layer_Light = 
+	{
+		base = "Elevator_Shared.Start_Layer"
+		volume = 0.600000
+	}
+	Elevator_Shared.Stop_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_shared/stop_heavy_layer.vsnd",
+		]
+	}
+	Elevator_Shared.Stop_Layer_Light = 
+	{
+		base = "Elevator_Shared.Stop_Layer"
+		volume = 0.550000
+	}
+	Elevator_Train_Station.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/elevator_trainstation/move_loop.vsnd",
+		]
+	}
+	Elevator_Train_Station.Move_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Train_Station.Move_Start_Core"
+		soundevent_02 = "Elevator_Shared.Start_Layer_Light"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Train_Station.Move_Start_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_trainstation/move_start_01.vsnd",
+			"sounds/world/elevator_trainstation/move_start_02.vsnd",
+		]
+	}
+	Elevator_Train_Station.Move_Stop = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Train_Station.Move_Stop_Core"
+		soundevent_02 = "Elevator_Shared.Stop_Layer_Light"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Train_Station.Move_Stop_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_trainstation/move_stop_01.vsnd",
+			"sounds/world/elevator_trainstation/move_stop_02.vsnd",
+		]
+	}
+	Elevator_Cage_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/elevator_cage_open.vsnd",
+		]
+	}
+	Elevator_Cage_Door.Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/elevator_cage_close.vsnd",
+		]
+	}
+	Elevator_Distillery.Mechanism_Broken_Parent = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "Elevator_Distillery.Mechanism_Broken_Child"
+		random_soundevent_01_timer_min = 1.800000
+		random_soundevent_01_timer_max = 1.900000
+	}
+	Elevator_Distillery.Mechanism_Broken_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 1500.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/mechanism_broken_01.vsnd",
+			"sounds/world/elevator_distillery/mechanism_broken_02.vsnd",
+			"sounds/world/elevator_distillery/mechanism_broken_03.vsnd",
+			"sounds/world/elevator_distillery/mechanism_broken_04.vsnd",
+			"sounds/world/elevator_distillery/mechanism_broken_05.vsnd",
+			"sounds/world/elevator_distillery/mechanism_broken_06.vsnd",
+		]
+	}
+	Elevator_Distillery.Doors_Jammed = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/doors_jammed.vsnd",
+		]
+	}
+	Elevator_Distillery.Door_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/door_start_01.vsnd",
+			"sounds/world/elevator_distillery/door_start_02.vsnd",
+			"sounds/world/elevator_distillery/door_start_03.vsnd",
+			"sounds/world/elevator_distillery/door_start_04.vsnd",
+		]
+	}
+	Elevator_Distillery.Door_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/door_stop_01.vsnd",
+			"sounds/world/elevator_distillery/door_stop_02.vsnd",
+			"sounds/world/elevator_distillery/door_stop_03.vsnd",
+		]
+	}
+	Elevator_Distillery.Ding = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/ding.vsnd",
+		]
+	}
+	Elevator_Distillery.Sparks = 
+	{
+		base = "Spark.Short"
+	}
+	Elevator_Distillery.Move_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Distillery.Move_Start_Core"
+		soundevent_02 = "Elevator_Shared.Start_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Distillery.Move_Start_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/start.vsnd",
+		]
+	}
+	Elevator_Distillery.Move_Stop = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Distillery.Move_Stop_Core"
+		soundevent_02 = "Elevator_Shared.Stop_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Distillery.Move_Stop_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/stop.vsnd",
+		]
+	}
+	Elevator_Distillery.Call_Move = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		hrtf_mix = 0.500000
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/scripted/calldown.vsnd",
+		]
+	}
+	Elevator_Distillery.Move_Parent = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 0.500000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/elevator_distillery/move_loop.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Power_Up = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 4000.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/wakeup.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Door_Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/door_start_01.vsnd",
+			"sounds/world/elevator_parking_garage/door_start_02.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Door_Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/door_stop_01.vsnd",
+			"sounds/world/elevator_parking_garage/door_stop_02.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Move_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Parking_Garage.Move_Start_Core"
+		soundevent_02 = "Elevator_Shared.Start_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Parking_Garage.Move_Start_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 800.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/move_start_01.vsnd",
+			"sounds/world/elevator_parking_garage/move_start_02.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Move_Stop = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Elevator_Parking_Garage.Move_Stop_Core"
+		soundevent_02 = "Elevator_Shared.Stop_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Elevator_Parking_Garage.Move_Stop_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 800.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/move_stop_01.vsnd",
+			"sounds/world/elevator_parking_garage/move_stop_02.vsnd",
+		]
+	}
+	Elevator_Parking_Garage.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_in = 1.000000
+		volume_fade_out = 0.100000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/move_loop.vsnd",
+		]
+	}
+	Headcrab_Trap.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		block_pitch_from_code = 1.000000
+		mixgroup = "World"
+		block_duration = 1.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/move_start_01.vsnd",
+			"sounds/world/elevator_parking_garage/move_start_02.vsnd",
+		]
+	}
+	Headcrab_Trap.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		block_pitch_from_code = 1.000000
+		mixgroup = "World"
+		block_duration = 1.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/elevator_parking_garage/move_stop_01.vsnd",
+			"sounds/world/elevator_parking_garage/move_stop_02.vsnd",
+		]
+	}
+	Speaker_Distillery.Pop_On = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = "sounds/world/misc/distillery_radio_pop_on.vsnd"
+	}
+	Speaker_Distillery.Elevator_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = "sounds/world/misc/distillery_elevator_speaker_start.vsnd"
+	}
+	Speaker_Distillery.Elevator_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = "sounds/world/misc/distillery_elevator_speaker_stop.vsnd"
+	}
+	Trash_Compactor.Inner_Door_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/inner_door_start_moving_01.vsnd",
+			"sounds/world/trash_compactor/inner_door_start_moving_02.vsnd",
+			"sounds/world/trash_compactor/inner_door_start_moving_03.vsnd",
+		]
+	}
+	Trash_Compactor.Inner_Door_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/inner_door_stop_moving_01.vsnd",
+			"sounds/world/trash_compactor/inner_door_stop_moving_02.vsnd",
+		]
+	}
+	Trash_Compactor.Inner_Door_Pneumatics_Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/inner_door_pneumatic_open.vsnd",
+		]
+	}
+	Trash_Compactor.Inner_Door_Pneumatics_Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/inner_door_pneumatic_close.vsnd",
+		]
+	}
+	Trash_Compactor.Door_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/door_start_01.vsnd",
+			"sounds/world/trash_compactor/door_start_02.vsnd",
+			"sounds/world/trash_compactor/door_start_03.vsnd",
+			"sounds/world/trash_compactor/door_start_04.vsnd",
+		]
+	}
+	Trash_Compactor.Door_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/door_stop_01.vsnd",
+			"sounds/world/trash_compactor/door_stop_02.vsnd",
+			"sounds/world/trash_compactor/door_stop_03.vsnd",
+		]
+	}
+	Trash_Compactor.Inner_Door_Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/door_stop_01.vsnd",
+			"sounds/world/trash_compactor/door_stop_02.vsnd",
+			"sounds/world/trash_compactor/door_stop_03.vsnd",
+		]
+	}
+	Trash_Compactor.Inner_Door_Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/door_stop_01.vsnd",
+			"sounds/world/trash_compactor/door_stop_02.vsnd",
+			"sounds/world/trash_compactor/door_stop_03.vsnd",
+		]
+	}
+	Trash_Compactor.Run_Empty = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.200000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/run_empty.vsnd",
+		]
+	}
+	Trash_Compactor.Reset = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.200000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/reset.vsnd",
+		]
+	}
+	Trash_Compactor.Crush_BZ = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Trash_Compactor.Run_BZ_Mechanism"
+		soundevent_02 = "Trash_Compactor.Run_BZ_Screams"
+		soundevent_03 = "Trash_Compactor.Run_BZ_Detail"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	Trash_Compactor.Run_BZ_Mechanism = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.200000
+		mixgroup = "ScriptedSequence"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/run_bz_mechanism.vsnd",
+		]
+	}
+	Trash_Compactor.Run_BZ_Screams = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.200000
+		mixgroup = "ScriptedSequence"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/run_bz_screams.vsnd",
+		]
+	}
+	Trash_Compactor.Run_BZ_Detail = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.200000
+		mixgroup = "ScriptedSequence"
+		vsnd_files = 
+		[
+			"sounds/world/trash_compactor/run_bz_detail.vsnd",
+		]
+	}
+	Pallet_Winch.Move_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Pallet_Winch.Move_Start"
+		soundevent_02 = "Pallet_Winch.Move_Loop"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Pallet_Winch.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 400.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/pallet_winch/move_start_01.vsnd",
+			"sounds/world/pallet_winch/move_start_02.vsnd",
+		]
+	}
+	Pallet_Winch.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 300.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/pallet_winch/move_lp.vsnd",
+		]
+	}
+	Pallet_Winch.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/pallet_winch/move_stop_01.vsnd",
+			"sounds/world/pallet_winch/move_stop_02.vsnd",
+		]
+	}
+	Pallet_Winch.Clunk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/pallet_winch/clunk.vsnd",
+		]
+	}
+	Pallet_Winch_Vert.Clunk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/clunk.vsnd",
+		]
+	}
+	Pallet_Winch_Vert.Move_Parent = 
+	{
+		type = "hlvr_loop_with_start_and_stop_pass_pos"
+		soundevent_start_name = "Pallet_Winch_Vert.Move_Start"
+		soundevent_loop_name = "Pallet_Winch_Vert.Move_Loop"
+		soundevent_stop_name = "Pallet_Winch_Vert.Move_Stop"
+		use_start = 1.000000
+		use_loop = 1.000000
+		use_stop = 1.000000
+	}
+	Pallet_Winch_Vert.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/start_01.vsnd",
+			"sounds/world/scissor_lift/start_02.vsnd",
+			"sounds/world/scissor_lift/start_03.vsnd",
+		]
+	}
+	Pallet_Winch_Vert.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/move_loop.vsnd",
+		]
+	}
+	Pallet_Winch_Vert.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/stop_01.vsnd",
+			"sounds/world/scissor_lift/stop_02.vsnd",
+			"sounds/world/scissor_lift/stop_03.vsnd",
+		]
+	}
+	Pallet_Lever.Powerup = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/scripted_sequences/a3/hotel_lobby/lights_power_on.vsnd",
+		]
+	}
+	Pallet_Lever.Unpowered_Beep = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		pitch = 0.900000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/buttons/button_common_fail.vsnd",
+		]
+	}
+	Waste_Pit_Lift.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		block_volume_atten = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		block_pitch_from_code = 1.000000
+		block_duration = 2.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_lift/start_01.vsnd",
+			"sounds/world/waste_pit_lift/start_02.vsnd",
+		]
+	}
+	Waste_Pit_Lift.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		volume_fade_in = 1.000000
+		block_volume_atten = 1.000000
+		volume_fade_out = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_lift/move_loop.vsnd",
+		]
+	}
+	Waste_Pit_Lift.Bump = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_max = 1000.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		block_pitch_from_code = 1.000000
+		block_duration = 2.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_lift/bump_01.vsnd",
+			"sounds/world/waste_pit_lift/bump_02.vsnd",
+			"sounds/world/waste_pit_lift/bump_03.vsnd",
+		]
+	}
+	Waste_Pit_Bridge.Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_bridge/start_01.vsnd",
+			"sounds/world/waste_pit_bridge/start_02.vsnd",
+		]
+	}
+	Waste_Pit_Bridge.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_bridge/stop_01.vsnd",
+			"sounds/world/waste_pit_bridge/stop_02.vsnd",
+		]
+	}
+	Waste_Pit_Bridge.Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.100000
+		volume_falloff_max = 1500.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_bridge/loop_01.vsnd",
+			"sounds/world/waste_pit_bridge/loop_02.vsnd",
+		]
+	}
+	Waste_Pit_Bridge.Lock = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/waste_pit_bridge/lock.vsnd",
+		]
+	}
+	Waste_Pit_Bridge.Null = 
+	{
+		type = "hlvr_default_3d"
+	}
+	Rolling_Chainlink_Gate.Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_in = 0.100000
+		volume_fade_out = 0.100000
+		volume_falloff_max = 1000.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/misc/chainlink_gate_roll_loop.vsnd",
+		]
+	}
+	Rolling_Chainlink_Gate.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_max = 1000.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/misc/chainlink_gate_stop_01.vsnd",
+			"sounds/world/misc/chainlink_gate_stop_02.vsnd",
+		]
+	}
+	NPC_Crow.Flap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_fade_in = 0.500000
+		volume_fade_out = 0.500000
+		volume_falloff_max = 400.000000
+		cull_at_distance = 500.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/critters/birds_shared/wing_flap_loop_01.vsnd",
+			"sounds/world/critters/birds_shared/wing_flap_loop_02.vsnd",
+			"sounds/world/critters/birds_shared/wing_flap_loop_03.vsnd",
+		]
+	}
+	NPC_Crow.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+	}
+	NPC_Crow.Gib = 
+	{
+		base = "NPC_Crow.Base"
+		volume = 0.500000
+		volume_falloff_min = 200.000000
+		vsnd_files = 
+		[
+			"sounds/damage/break_npc_critter_01.vsnd",
+			"sounds/damage/break_npc_critter_02.vsnd",
+			"sounds/damage/break_npc_critter_03.vsnd",
+		]
+	}
+	NPC_Crow.Pain = 
+	{
+		base = "NPC_Crow.Base"
+		vsnd_files = 
+		[
+			"sounds/world/critters/crow/squawk_pain_01.vsnd",
+			"sounds/world/critters/crow/squawk_pain_02.vsnd",
+			"sounds/world/critters/crow/squawk_pain_03.vsnd",
+			"sounds/world/critters/crow/squawk_pain_04.vsnd",
+			"sounds/world/critters/crow/squawk_pain_05.vsnd",
+			"sounds/world/critters/crow/squawk_pain_06.vsnd",
+		]
+	}
+	NPC_Crow.Die = 
+	{
+		base = "NPC_Crow.Pain"
+	}
+	NPC_Crow.Idle = 
+	{
+		base = "NPC_Crow.Base"
+		volume = 0.600000
+		chance_to_play = 3.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/crow/idle_croak_01.vsnd",
+			"sounds/world/critters/crow/idle_croak_02.vsnd",
+			"sounds/world/critters/crow/idle_croak_03.vsnd",
+			"sounds/world/critters/crow/idle_croak_04.vsnd",
+			"sounds/world/critters/crow/idle_croak_05.vsnd",
+			"sounds/world/critters/crow/idle_croak_06.vsnd",
+		]
+	}
+	NPC_Crow.Wings_Jump = 
+	{
+		base = "NPC_Crow.Base"
+		volume = 1.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/crow/wings_jump_01.vsnd",
+			"sounds/world/critters/crow/wings_jump_02.vsnd",
+			"sounds/world/critters/crow/wings_jump_03.vsnd",
+			"sounds/world/critters/crow/wings_jump_04.vsnd",
+		]
+	}
+	NPC_Crow.Squawk_Short = 
+	{
+		base = "NPC_Crow.Base"
+		volume = 0.700000
+		delay_rand_min = 0.100000
+		delay_rand_max = 0.300000
+		block_duration = 2.000000
+		block_match_this_event = true
+		block_distance = 200.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/crow/squawk_short_01.vsnd",
+			"sounds/world/critters/crow/squawk_short_02.vsnd",
+			"sounds/world/critters/crow/squawk_short_03.vsnd",
+			"sounds/world/critters/crow/squawk_short_04.vsnd",
+			"sounds/world/critters/crow/squawk_short_05.vsnd",
+			"sounds/world/critters/crow/squawk_short_06.vsnd",
+		]
+	}
+	NPC_Crow.Squawk_Call = 
+	{
+		base = "NPC_Crow.Squawk_Short"
+		vsnd_files = 
+		[
+			"sounds/world/critters/crow/squawk_call_01.vsnd",
+			"sounds/world/critters/crow/squawk_call_02.vsnd",
+			"sounds/world/critters/crow/squawk_call_03.vsnd",
+			"sounds/world/critters/crow/squawk_call_04.vsnd",
+			"sounds/world/critters/crow/squawk_call_05.vsnd",
+			"sounds/world/critters/crow/squawk_call_06.vsnd",
+		]
+	}
+	NPC_Crow.Squawk_Takeoff = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_Crow.Squawk_Call"
+		soundevent_02 = "NPC_Crow.Squawk_Short"
+		soundevent_split = 0.500000
+	}
+	NPC_Crow.Scripted_Takeoff = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Crow.Wings_Jump"
+		soundevent_02 = "NPC_Crow.Squawk_Takeoff"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Pigeon.Flap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_in = 1.000000
+		volume_fade_out = 0.500000
+		volume_falloff_max = 400.000000
+		cull_at_distance = 500.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/critters/birds_shared/wing_flap_loop_01.vsnd",
+			"sounds/world/critters/birds_shared/wing_flap_loop_02.vsnd",
+			"sounds/world/critters/birds_shared/wing_flap_loop_03.vsnd",
+		]
+	}
+	NPC_Pigeon.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 700.000000
+		distance_max = 701.000000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+	}
+	NPC_Pigeon.Gib = 
+	{
+		base = "NPC_Pigeon.Base"
+		volume = 0.700000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		vsnd_files = 
+		[
+			"sounds/damage/break_npc_critter_01.vsnd",
+			"sounds/damage/break_npc_critter_02.vsnd",
+			"sounds/damage/break_npc_critter_03.vsnd",
+		]
+	}
+	NPC_Pigeon.Pain = 
+	{
+		base = "NPC_Pigeon.Base"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/pain.vsnd",
+		]
+	}
+	NPC_Pigeon.Squawk = 
+	{
+		base = "NPC_Pigeon.Base"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		block_duration = 2.000000
+		block_distance = 200.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/die.vsnd",
+		]
+	}
+	NPC_Pigeon.Die = 
+	{
+		base = "NPC_Pigeon.Base"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/die.vsnd",
+		]
+	}
+	NPC_Pigeon.Idle = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_Pigeon.Idle_Anim = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_Pigeon.Idle_Coo_Long"
+		soundevent_02 = "NPC_Pigeon.Idle_Coo_Short"
+		soundevent_split = 0.500000
+	}
+	NPC_Pigeon.Idle_Coo_Long = 
+	{
+		base = "NPC_Pigeon.Base"
+		volume = 0.450000
+		volume_fade_out = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		chance_to_play = 6.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		limiter_on = 1.000000
+		limiter_max = 3.000000
+		limiter_match_event = 1.000000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.500000
+		block_duration = 3.000000
+		block_distance = 200.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/idle_coo_01.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_02.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_03.vsnd",
+		]
+	}
+	NPC_Pigeon.Idle_Coo_Short = 
+	{
+		base = "NPC_Pigeon.Base"
+		volume = 0.450000
+		volume_fade_out = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		chance_to_play = 6.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		limiter_on = 1.000000
+		limiter_max = 3.000000
+		limiter_match_event = 1.000000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.500000
+		block_duration = 3.000000
+		block_distance = 200.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/idle_coo_short_01.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_short_02.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_short_03.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_short_04.vsnd",
+			"sounds/world/critters/pigeon/idle_coo_short_05.vsnd",
+		]
+	}
+	NPC_Pigeon.Wings_Takeoff = 
+	{
+		base = "NPC_Pigeon.Base"
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/wings_takeoff_01.vsnd",
+			"sounds/world/critters/pigeon/wings_takeoff_02.vsnd",
+			"sounds/world/critters/pigeon/wings_takeoff_03.vsnd",
+			"sounds/world/critters/pigeon/wings_takeoff_04.vsnd",
+		]
+	}
+	NPC_Pigeon.Takeoff = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Pigeon.Wings_Takeoff"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Pigeon.Squawk"
+		use_02 = 1.000000
+	}
+	NPC_Pigeon.Wings_Hop = 
+	{
+		base = "NPC_Pigeon.Base"
+		volume = 0.500000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/pigeon/wings_hop_01.vsnd",
+			"sounds/world/critters/pigeon/wings_hop_02.vsnd",
+			"sounds/world/critters/pigeon/wings_hop_03.vsnd",
+			"sounds/world/critters/pigeon/wings_hop_04.vsnd",
+		]
+	}
+	NPC_Rat.Squeal = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		distance_max = 301.000000
+		reverb_curve_max_distance = 500.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/rats/rat_die_01.vsnd",
+			"sounds/world/critters/rats/rat_die_02.vsnd",
+			"sounds/world/critters/rats/rat_die_03.vsnd",
+			"sounds/world/critters/rats/rat_die_04.vsnd",
+			"sounds/world/critters/rats/rat_die_04.vsnd",
+		]
+	}
+	Cockroach_Swarm.Large = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 400.000000
+		distance_max = 501.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/cockroaches/swarm_large_01.vsnd",
+			"sounds/world/critters/cockroaches/swarm_large_02.vsnd",
+			"sounds/world/critters/cockroaches/swarm_large_03.vsnd",
+		]
+	}
+	Cockroach_Swarm.Small = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 400.000000
+		distance_max = 501.000000
+		vsnd_files = 
+		[
+			"sounds/world/critters/cockroaches/swarm_small_01.vsnd",
+			"sounds/world/critters/cockroaches/swarm_small_02.vsnd",
+			"sounds/world/critters/cockroaches/swarm_small_03.vsnd",
+		]
+	}
+	WorldMoviePanel.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Screens"
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		volume_falloff_curve_amount = 0.850000
+		spread_min = 20.000000
+		spread_max = 60.000000
+		occlusion_scale = 1.000000
+	}
+	WorldMoviePanel.Default = 
+	{
+		base = "WorldMoviePanel.Base"
+		mixgroup = "Screens"
+	}
+	WorldMoviePanel.Large = 
+	{
+		base = "WorldMoviePanel.Base"
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 2400.000000
+		volume_falloff_curve_amount = 0.600000
+		spread_min = 100.000000
+		spread_max = 300.000000
+		occlusion_scale = 0.500000
+		mixgroup = "Screens"
+	}
+	Toner.Spark = 
+	{
+		base = "Spark.Short"
+		mixgroup = "Toner"
+	}
+	Toner_Node.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/world/toner_node/open.vsnd",
+		]
+	}
+	Toner_Node.Connect = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/world/toner_node/connect.vsnd",
+		]
+	}
+	Toner.PortTurnedOn = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_init_box_close_01.vsnd",
+		]
+	}
+	Toner.JunctionRotate = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_junction_switch_actuate_01.vsnd",
+		]
+	}
+	Toner.PathPowerUp = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_junction_switch_on_01.vsnd",
+		]
+	}
+	Toner.PathPowerDown = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_puzzle_junction_switch_off_01.vsnd",
+		]
+	}
+	Toner.PortComplete = 
+	{
+		type = "hlvr_default_3d_sequential_select"
+		groups = 
+		[
+			"match_toner_success",
+		]
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 600.000000
+		vsnd_selection_type = "forward"
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_success_01.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_03.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_04.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_02.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_05.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_06.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_07.vsnd",
+		]
+	}
+	Toner.PathComplete = 
+	{
+		type = "hlvr_default_3d_sequential_select"
+		groups = 
+		[
+			"match_toner_success",
+		]
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1000.000000
+		vsnd_selection_type = "forward"
+		mixgroup = "Toner"
+		vsnd_files = 
+		[
+			"sounds/player/multitool/ui_multitool_toner_success_01.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_03.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_04.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_02.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_05.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_06.vsnd",
+			"sounds/player/multitool/ui_multitool_toner_success_07.vsnd",
+		]
+	}
+	BreakableBoard.Strain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		occlusion_scale = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/breakables/board/strain_01.vsnd",
+			"sounds/world/breakables/board/strain_02.vsnd",
+			"sounds/world/breakables/board/strain_03.vsnd",
+			"sounds/world/breakables/board/strain_04.vsnd",
+			"sounds/world/breakables/board/strain_05.vsnd",
+			"sounds/world/breakables/board/strain_06.vsnd",
+		]
+	}
+	BreakableBoard.Nail_Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		occlusion_scale = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/breakables/board/nail_release_01.vsnd",
+			"sounds/world/breakables/board/nail_release_02.vsnd",
+			"sounds/world/breakables/board/nail_release_03.vsnd",
+		]
+	}
+	Van_Horn.Beep = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/misc/vehicle_horn_beep_03.vsnd",
+		]
+	}
+	Car_Horn.Beep = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/misc/vehicle_horn_beep_01.vsnd",
+		]
+	}
+	Car_Horn.Beep_Variant = 
+	{
+		base = "Car_Horn.Beep"
+		vsnd_files = 
+		[
+			"sounds/world/misc/vehicle_horn_beep_02.vsnd",
+		]
+	}
+	Car_Horn.Beep_Variant2 = 
+	{
+		base = "Van_Horn.Beep"
+	}
+	Lock.UnlockPadlock = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "WorldObjects"
+		vsnd_files = 
+		[
+			"sounds/world/locks/unlock_padlock_01.vsnd",
+		]
+	}
+	Lock.PadlockBreak = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "WorldObjects"
+		limiter_event_name = "PhysBreak.Default"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event_duration = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/locks/padlock_destroy_01.vsnd",
+			"sounds/world/locks/padlock_destroy_02.vsnd",
+			"sounds/world/locks/padlock_destroy_03.vsnd",
+		]
+	}
+	Washing_Machine.Spin = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		occlusion_scale = 0.300000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		cull_at_distance = 601.000000
+		mixgroup = "WorldMachines"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/misc/washing_machine_drum_loop.vsnd",
+		]
+	}
+	Vent.AirRelease = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_steam_rush_01.vsnd",
+			"sounds/ambient/air/amb_steam_rush_02.vsnd",
+			"sounds/ambient/air/amb_steam_rush_03.vsnd",
+			"sounds/ambient/air/amb_steam_rush_04.vsnd",
+			"sounds/ambient/air/amb_steam_rush_05.vsnd",
+			"sounds/ambient/air/amb_steam_rush_06.vsnd",
+		]
+	}
+	Vent.BurstOpen = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/grate/vent_crash_open_01.vsnd",
+			"sounds/world/grate/vent_crash_open_02.vsnd",
+			"sounds/world/grate/vent_crash_open_03.vsnd",
+			"sounds/world/grate/vent_crash_open_04.vsnd",
+		]
+	}
+	Rotating_Bridge.Finished_Lock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/misc/rotating_bridge_lock.vsnd",
+		]
+	}
+	Steam.PipeLoop_a = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_max = 1000.000000
+		volume = 0.500000
+		mixgroup = "WorldMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/steam/steam_pipe_loop_01.vsnd",
+		]
+	}
+	Steam.PipeLoop_b = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_max = 1000.000000
+		volume = 0.500000
+		mixgroup = "WorldMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/steam/steam_pipe_loop_02.vsnd",
+		]
+	}
+	Steam.HazardLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_max = 1000.000000
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		mixgroup = "WorldMachines"
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/world/steam/steam_hazard_loop.vsnd",
+		]
+	}
+	Steam.HazardShutoff = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_max = 1000.000000
+		volume = 0.700000
+		mixgroup = "WorldMachines"
+		vsnd_files = 
+		[
+			"sounds/world/steam/steam_shufoff.vsnd",
+		]
+	}
+	BarrelFire.Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		should_pause = "true"
+		vsnd_files = 
+		[
+			"sounds/ambient/fire/amb_small_fire_lp_01.vsnd",
+		]
+	}
+	Door_Train_Freight.Slide_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/train/sliding_freight_door_move_01.vsnd",
+			"sounds/world/doors/train/sliding_freight_door_move_02.vsnd",
+		]
+	}
+	Door_Train_Freight.Slide_End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/train/sliding_freight_door_end_01.vsnd",
+			"sounds/world/doors/train/sliding_freight_door_end_02.vsnd",
+		]
+	}
+	Advisor_Train_Platform.Lower = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/train/advisor_train_platform_lower_01.vsnd",
+		]
+	}
+	Advisor_Train_Door.Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.500000
+		use_hrtf = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/train/advisor_train_door_open_01.vsnd",
+		]
+	}
+	Advisor_Train_Door.Bounce = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/train/advisor_train_door_bounce_01.vsnd",
+		]
+	}
+	Door.Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_max = 500.000000
+		occlusion_scale = 1.000000
+		mixgroup = "Doors"
+	}
+	PhysDoor.Metal_Close = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_close.vsnd",
+		]
+	}
+	PhysDoor.Metal_LatchEngage = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_latch_engage.vsnd",
+		]
+	}
+	PhysDoor.Metal_LatchExtend = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_latch_extend.vsnd",
+		]
+	}
+	PhysDoor.Metal_LatchRetract = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_latch_retract.vsnd",
+		]
+	}
+	PhysDoor.Metal_MoveStart = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_open.vsnd",
+		]
+	}
+	PhysDoor.Metal_OpenFull = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_open_full.vsnd",
+		]
+	}
+	PhysDoor.Metal_Rattle = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_metal_rattle_02.vsnd",
+		]
+	}
+	DoorMetal.FullyOpened = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_full_open_01.vsnd",
+			"sounds/world/doors/door_metal_full_open_02.vsnd",
+		]
+	}
+	DoorMetal.FullyClosed = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_close_01.vsnd",
+			"sounds/world/doors/door_metal_close_02.vsnd",
+		]
+	}
+	DoorMetal.PhysMovementLp = 
+	{
+		type = "hlvr_update_door_rotating"
+		volume = 0.300000
+		volume_fade_in = 0.010000
+		volume_fade_out = 0.010000
+		volume_falloff_max = 500.000000
+		occlusion_scale = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_movement_lp_02.vsnd",
+		]
+	}
+	DoorMetal.HandleLatch = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_handle_closed_01.vsnd",
+			"sounds/world/doors/door_metal_handle_closed_02.vsnd",
+		]
+	}
+	DoorMetal.DoorJiggle = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_jiggle_01.vsnd",
+			"sounds/world/doors/door_metal_jiggle_02.vsnd",
+			"sounds/world/doors/door_metal_jiggle_03.vsnd",
+			"sounds/world/doors/door_metal_jiggle_04.vsnd",
+		]
+	}
+	DoorMetal.HandleAutoJiggle = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/doors/latchlocked2.vsnd",
+		]
+	}
+	DoorMetal.HandleJiggle = 
+	{
+		base = "Door.Base"
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/phys_door_latch_locked.vsnd",
+		]
+	}
+	Door_Chainlink_Gate.Jiggle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_chainlink_jiggle_01.vsnd",
+			"sounds/world/doors/door_chainlink_jiggle_02.vsnd",
+			"sounds/world/doors/door_chainlink_jiggle_03.vsnd",
+		]
+	}
+	Door.Distillery_Creaky_PhysMovementLp = 
+	{
+		type = "hlvr_update_door_rotating"
+		volume = 1.000000
+		volume_fade_in = 0.010000
+		volume_fade_out = 0.010000
+		volume_falloff_max = 1000.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_movement_lp_02.vsnd",
+		]
+	}
+	Door.Distillery_Cage_PhysMovementLp = 
+	{
+		type = "hlvr_update_door_rotating"
+		volume = 1.000000
+		volume_fade_in = 0.010000
+		volume_fade_out = 0.010000
+		volume_falloff_max = 1000.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/door_metal_movement_lp_02.vsnd",
+		]
+	}
+	Door_Van.Move = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/van/move_01.vsnd",
+			"sounds/world/doors/van/move_02.vsnd",
+			"sounds/world/doors/van/move_03.vsnd",
+			"sounds/world/doors/van/move_04.vsnd",
+			"sounds/world/doors/van/move_05.vsnd",
+		]
+	}
+	Door_Van.Latch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/van/latch_01.vsnd",
+			"sounds/world/doors/van/latch_02.vsnd",
+		]
+	}
+	Door_Van.Fully_Opened = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/van/fully_opened_01.vsnd",
+			"sounds/world/doors/van/fully_opened_02.vsnd",
+			"sounds/world/doors/van/fully_opened_03.vsnd",
+		]
+	}
+	Door_Van.Fully_Closed = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/doors/van/fully_closed_01.vsnd",
+			"sounds/world/doors/van/fully_closed_02.vsnd",
+			"sounds/world/doors/van/fully_closed_03.vsnd",
+		]
+	}
+	Door_Car.Move = 
+	{
+		base = "Door_Van.Move"
+		mixgroup = "Doors"
+	}
+	Door_Car.Latch = 
+	{
+		base = "Door_Van.Latch"
+		mixgroup = "Doors"
+	}
+	Door_Car.Fully_Opened = 
+	{
+		base = "Door_Van.Fully_Opened"
+		mixgroup = "Doors"
+	}
+	Door_Car.Fully_Closed = 
+	{
+		base = "Door_Van.Fully_Closed"
+		mixgroup = "Doors"
+	}
+	ScissorLift.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/start_01.vsnd",
+			"sounds/world/scissor_lift/start_02.vsnd",
+			"sounds/world/scissor_lift/start_03.vsnd",
+		]
+	}
+	ScissorLift.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/stop_01.vsnd",
+			"sounds/world/scissor_lift/stop_02.vsnd",
+			"sounds/world/scissor_lift/stop_03.vsnd",
+		]
+	}
+	ScissorLift.Clunk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/clunk.vsnd",
+		]
+	}
+	ScissorLift.Move_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ScissorLift.Move_Loop"
+		use_01 = 1.000000
+		soundevent_02 = "ScissorLift.Move_Rattle_Random"
+		use_02 = 1.000000
+	}
+	ScissorLift.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 1.000000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/move_loop.vsnd",
+		]
+	}
+	ScissorLift.Move_Rattle_Random = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "ScissorLift.Move_Rattle_Child"
+		random_soundevent_01_timer_min = 3.000000
+		random_soundevent_01_timer_max = 5.000000
+	}
+	ScissorLift.Move_Rattle_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/creak_01.vsnd",
+			"sounds/world/scissor_lift/creak_02.vsnd",
+			"sounds/world/scissor_lift/creak_03.vsnd",
+			"sounds/world/scissor_lift/creak_04.vsnd",
+		]
+	}
+	Hideout_Gate.Puzzle_Fail = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/hideout_gate/puzzle_disconnect.vsnd",
+		]
+	}
+	Hideout_Gate.Puzzle_Success = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/hideout_gate/puzzle_connect.vsnd",
+		]
+	}
+	Hideout_Gate.Winch_Raise = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hideout_gate/winch_raise.vsnd",
+		]
+	}
+	Hideout_Gate.Door_Raise = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.250000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/hideout_gate/gate_raise.vsnd",
+		]
+	}
+	DebrisCloud.ImpactBurst01 = 
+	{
+		type = "hlvr_ambient_burst"
+		soundevent_name = "DebrisCloud.Impact01"
+		burst_length_min = 6.000000
+		burst_length_max = 7.000000
+		delay_timer_min = 0.100000
+		delay_timer_max = 0.150000
+		delay_offset_min = -0.010000
+		delay_offset_max = 0.000000
+	}
+	DebrisCloud.Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "DebrisCloud.Impact"
+		limiter_max = 4.000000
+		limiter_match_event_duration = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/debris/cardboard_swarm_impact_01.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_02.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_03.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_04.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_05.vsnd",
+		]
+	}
+	DebrisCloud.Impact01 = 
+	{
+		type = "hlvr_ambient_rand_child_in_box"
+		animation_time = 2.000000
+		animation_type = "slerp"
+		position_source = 2.000000
+		animated_source = 0.000000
+		make_ortho_vertical = false
+		ortho_distance_min = 100.000000
+		ortho_distance_max = 500.000000
+		animated_target = 1.000000
+		rand_radius_min = 100.000000
+		rand_radius_max = 200.000000
+		use_doppler = 1.000000
+		volume = 0.000000
+		limiter_on = 1.000000
+		limiter_event_name = "DebrisCloud.Impact"
+		limiter_max = 8.000000
+		limiter_match_event_duration = 3.000000
+		box_position_01 = 
+		[
+			969.807007,
+			-677.101990,
+			-131.623993,
+		]
+		box_position_02 = 
+		[
+			1053.900024,
+			-629.333984,
+			-1.800000,
+		]
+		vsnd_files = 
+		[
+			"sounds/world/debris/cardboard_swarm_impact_01.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_02.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_03.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_04.vsnd",
+			"sounds/world/debris/cardboard_swarm_impact_05.vsnd",
+		]
+	}
+	DebrisCloud.LoopSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 2.000000
+		use_world_position = true
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/debris/cardboard_swarm_lp_01.vsnd",
+		]
+	}
+	DebrisCloud.LoopLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.000000
+		use_world_position = true
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/world/debris/cardboard_swarm_lp_02.vsnd",
+		]
+	}
+	DebrisCloud.Loop01 = 
+	{
+		type = "hlvr_ambient_swarm_loop"
+		volume_filter_velocity = 0.700000
+		soundevent = "DebrisCloud.LoopSm"
+		position_source = 0.000000
+		bounding_box_position_01 = 
+		[
+			969.807007,
+			-677.101990,
+			-131.623993,
+		]
+		bounding_box_position_02 = 
+		[
+			1053.900024,
+			-629.333984,
+			-1.800000,
+		]
+		swarm_count_soundevent_name = "DebrisCloud.Impact01"
+		soundevent_count_to_vol_x1 = 0.000000
+		soundevent_count_to_vol_y1 = 0.000000
+		soundevent_count_to_vol_x2 = 2.000000
+		soundevent_count_to_vol_y2 = 0.500000
+		soundevent_count_to_vol_x3 = 5.000000
+		soundevent_count_to_vol_y3 = 1.000000
+		soundevent_count_to_vol_x4 = 7.000000
+		soundevent_count_to_vol_y4 = 0.800000
+	}
+	DebrisCloud.Loop02 = 
+	{
+		base = "DebrisCloud.Loop01"
+		soundevent = "DebrisCloud.LoopLg"
+		soundevent_count_to_vol_x1 = 0.000000
+		soundevent_count_to_vol_y1 = 0.000000
+		soundevent_count_to_vol_x2 = 3.000000
+		soundevent_count_to_vol_y2 = 0.300000
+		soundevent_count_to_vol_x3 = 7.000000
+		soundevent_count_to_vol_y3 = 0.700000
+		soundevent_count_to_vol_x4 = 8.000000
+		soundevent_count_to_vol_y4 = 1.000000
+	}
+	DebrisCloud.VortModelBurst01 = 
+	{
+		base = "DebrisCloud.ImpactBurst01"
+		burst_length_min = 7.000000
+		burst_length_max = 7.000000
+	}
+	DebrisCloud.VortModelBurst02 = 
+	{
+		base = "DebrisCloud.ImpactBurst01"
+	}
+	DebrisCloud.VortModelBurst03 = 
+	{
+		base = "DebrisCloud.ImpactBurst01"
+	}
+	DebrisCloud.VortModelBurst04 = 
+	{
+		base = "DebrisCloud.ImpactBurst01"
+	}
+	DebrisCloud.VortModelBurst05 = 
+	{
+		base = "DebrisCloud.ImpactBurst01"
+	}
+	DebrisCloud.VortModel01 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "DebrisCloud.Loop01"
+		soundevent_02 = "DebrisCloud.Loop02"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		stop_at_time = 6.000000
+	}
+	DebrisCloud.VortModel02 = 
+	{
+		base = "DebrisCloud.VortModel01"
+	}
+	DebrisCloud.VortModel03 = 
+	{
+		base = "DebrisCloud.VortModel01"
+	}
+	DebrisCloud.VortModel04 = 
+	{
+		base = "DebrisCloud.VortModel01"
+	}
+	DebrisCloud.VortModel05 = 
+	{
+		base = "DebrisCloud.VortModel01"
+	}
+	A4_Chasm_Crane.Stuck_Creak = 
+	{
+		type = "hlvr_default_3d_rand_sat"
+		volume = 0.900000
+		volume_fade_out = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/chasm_crane/stuck_creak_01.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_02.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_03.vsnd",
+			"sounds/world/chasm_crane/stuck_creak_04.vsnd",
+		]
+	}
+	A4_Chasm_Crane.Move_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/start_01.vsnd",
+			"sounds/world/scissor_lift/start_02.vsnd",
+			"sounds/world/scissor_lift/start_03.vsnd",
+		]
+	}
+	A4_Chasm_Crane.Move_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/stop_01.vsnd",
+			"sounds/world/scissor_lift/stop_02.vsnd",
+			"sounds/world/scissor_lift/stop_03.vsnd",
+		]
+	}
+	A4_Chasm_Crane.Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_fade_in = 1.000000
+		volume_fade_out = 0.100000
+		mixgroup = "World"
+		should_pause = "true"
+		block_pitch_from_code = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/scissor_lift/move_loop.vsnd",
+		]
+	}
+	World.TurnstileSpin = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_min = 250.000000
+		volume_falloff_max = 1500.000000
+		block_event_name = "World.TurnstileSpin"
+		block_match_entity = 1.000000
+		block_duration = 1.000000
+		mixgroup = "Doors"
+		vsnd_files = 
+		[
+			"sounds/world/stations/world_turnstile_rotate_01.vsnd",
+			"sounds/world/stations/world_turnstile_rotate_02.vsnd",
+			"sounds/world/stations/world_turnstile_rotate_03.vsnd",
+			"sounds/world/stations/world_turnstile_rotate_04.vsnd",
+			"sounds/world/stations/world_turnstile_rotate_05.vsnd",
+		]
+	}
+	TapeMachine.Rewind = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "WorldMachines"
+		vsnd_files = 
+		[
+			"sounds/world/misc/tape_rewind.vsnd",
+		]
+	}
+	Van.Crash = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = 
+		[
+			"sounds/vehicles/van_crash_01.vsnd",
+		]
+	}
+	Snark_Jar.Tap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/snark_jar/tap_01.vsnd",
+			"sounds/world/snark_jar/tap_02.vsnd",
+			"sounds/world/snark_jar/tap_03.vsnd",
+			"sounds/world/snark_jar/tap_04.vsnd",
+			"sounds/world/snark_jar/tap_05.vsnd",
+			"sounds/world/snark_jar/tap_06.vsnd",
+			"sounds/world/snark_jar/tap_07.vsnd",
+		]
+	}
+	Snark_Food.Shake = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		volume_fade_out = 1.500000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 500.000000
+		mixgroup = "World"
+	}
+	World.Metal_Walkway_Creak = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		block_duration = 3.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/world/metal_walkway_creak/walkway_creak_01.vsnd",
+			"sounds/world/metal_walkway_creak/walkway_creak_02.vsnd",
+			"sounds/world/metal_walkway_creak/walkway_creak_03.vsnd",
+			"sounds/world/metal_walkway_creak/walkway_creak_04.vsnd",
+			"sounds/world/metal_walkway_creak/walkway_creak_05.vsnd",
+		]
+	}
+	RussellMap.Ping = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.000000
+		occlusion_radius = 20.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 350.000000
+		spread_min = 6.000000
+		spread_max = 36.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_alyx_ping_01.vsnd",
+			"sounds/world/russell_map/world_russell_map_eli_ping_01.vsnd",
+		]
+	}
+	RussellMap.BobbleAR = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_bobble_ar_01.vsnd",
+		]
+	}
+	RussellMap.Shuffle01 = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_shuffle_01.vsnd",
+		]
+	}
+	RussellMap.Shuffle02 = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_shuffle_02.vsnd",
+		]
+	}
+	RussellMap.Shuffle03 = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_shuffle_03.vsnd",
+		]
+	}
+	RussellMap.StartMap = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_start_map_01.vsnd",
+		]
+	}
+	RussellMap.StopMap = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_stop_map_01.vsnd",
+		]
+	}
+	RussellMap.TrainPing = 
+	{
+		base = "RussellMap.Ping"
+		vsnd_files = 
+		[
+			"sounds/world/russell_map/world_russell_map_train_ping_01.vsnd",
+			"sounds/world/russell_map/world_russell_map_train_ping_02.vsnd",
+		]
+	}
+	Vault.TractorBeam = 
+	{
+		type = "hlvr_voicegraph_filter_dynamics_on_capsule"
+		volume = 1.000000
+		occlusion_scale = 0.000000
+		use_hrtf = 0.600000
+		volume_falloff_min = 4500.000000
+		volume_falloff_max = 10000.000000
+		spread_min = 1000.000000
+		spread_max = 4000.000000
+		mixgroup = "World"
+		enable_debug_radius = 0.000000
+		debug_radius_max = 800.000000
+		sphere_1_pos = 
+		[
+			3044.971680,
+			2440.445068,
+			2337.667725,
+		]
+		sphere_1_radius = 800
+		sphere_2_pos = 
+		[
+			920.726624,
+			5966.821777,
+			2225.354492,
+		]
+		sphere_2_radius = 12
+		use_world_position = true
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		fade_over_time_x1 = 0.000000
+		fade_over_time_y1 = 1.000000
+		fade_over_time_x2 = 10.000000
+		fade_over_time_y2 = 1.000000
+		fade_over_time_x3 = 60.000000
+		fade_over_time_y3 = 0.500000
+		fade_over_time_x4 = 60.000000
+		fade_over_time_y4 = 0.500000
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		global_opvar_name = "skylight_proximity_beacon"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 0.450000
+		remap_opvar_to_freq_x2 = 0.300000
+		remap_opvar_to_freq_y2 = 0.650000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.850000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 1.000000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 0.600000
+		remap_opvar_to_vol_x2 = 0.500000
+		remap_opvar_to_vol_y2 = 0.850000
+		remap_opvar_to_vol_x3 = 1.000000
+		remap_opvar_to_vol_y3 = 1.000000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 1.000000
+		should_save = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_tractor_beam_lp_01.vsnd",
+		]
+	}
+	Vault.TractorBeamWaterTower = 
+	{
+		base = "Vault.TractorBeam"
+		volume = 1.000000
+		volume_falloff_min = 2500.000000
+		volume_falloff_max = 5000.000000
+		spread_min = 500.000000
+		spread_max = 4000.000000
+		enable_debug_radius = 0.000000
+		debug_radius_max = 800.000000
+		sphere_1_pos = 
+		[
+			2455.488525,
+			5239.010742,
+			2638.705811,
+		]
+		sphere_1_radius = 12
+		sphere_2_pos = 
+		[
+			2584.976074,
+			2434.242676,
+			3375.202148,
+		]
+		sphere_2_radius = 800
+	}
+	Vault.CrashFakeout = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Vault.CrashFakeout_L"
+		soundevent_02 = "Vault.CrashFakeout_R"
+		soundevent_03 = "Vault.CrashFakeout_LS"
+		soundevent_04 = "Vault.CrashFakeout_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Vault.CrashFakeout_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_catch_01_l.vsnd",
+		]
+		mixgroup = "World"
+		radius = 250.000000
+		volume_falloff_min = 500
+		volume_falloff_max = 500
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 20
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		use_hrtf = 1.000000
+		hrtf_mix = 0.800000
+		volume = 1.000000
+		enable_debug_radius = 0.000000
+		debug_radius_max = 25.000000
+		use_named_send = "ScriptedSeqPriority3"
+		soundname_string = "Left"
+	}
+	Vault.CrashFakeout_R = 
+	{
+		base = "Vault.CrashFakeout_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_catch_01_r.vsnd",
+		]
+		rotation_angle = 135.000000
+		soundname_string = "Right"
+	}
+	Vault.CrashFakeout_LS = 
+	{
+		base = "Vault.CrashFakeout_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_catch_01_ls.vsnd",
+		]
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 0
+		soundname_string = "LS"
+	}
+	Vault.CrashFakeout_RS = 
+	{
+		base = "Vault.CrashFakeout_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_catch_01_rs.vsnd",
+		]
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0
+		soundname_string = "RS"
+	}
+	Vault.CableCutExplo = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Vault.CableCutExplo_L"
+		soundevent_02 = "Vault.CableCutExplo_R"
+		soundevent_03 = "Vault.CableCutExplo_LS"
+		soundevent_04 = "Vault.CableCutExplo_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Vault.CableCutExplo_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_crash_fake_cable_explo_l.vsnd",
+		]
+		mixgroup = "World"
+		radius = 250.000000
+		volume_falloff_min = 500
+		volume_falloff_max = 500
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 20
+		volume_fade_in = 0.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		use_hrtf = 1.000000
+		hrtf_mix = 0.800000
+		volume = 1.000000
+		enable_debug_radius = 0.000000
+		debug_radius_max = 25.000000
+		use_named_send = "ScriptedSeqPriority2"
+		soundname_string = "Left"
+	}
+	Vault.CableCutExplo_R = 
+	{
+		base = "Vault.CableCutExplo_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_crash_fake_cable_explo_r.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	Vault.CableCutExplo_LS = 
+	{
+		base = "Vault.CableCutExplo_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_crash_fake_cable_explo_ls.vsnd",
+		]
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 0
+	}
+	Vault.CableCutExplo_RS = 
+	{
+		base = "Vault.CableCutExplo_L"
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_crash_fake_cable_explo_rs.vsnd",
+		]
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0
+	}
+	Vault.GroundExploChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		volume_fade_in = 0.000000
+		volume_fade_out = 3.000000
+		use_hrtf = 1.000000
+		hrtf_mix = 0.900000
+		occlusion_scale = 0.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0
+		volume_falloff_min = 745
+		volume_falloff_max = 2000
+		spread_min = 100
+		spread_max = 745
+		use_doppler = 1.000000
+		doppler_factor = 1.200000
+		enable_debug_radius = 0.000000
+		soundname_string = "EXPLO"
+		ambient_ducking_pct = 0.800000
+		use_world_position = 1.000000
+		vsnd_files = 
+		[
+			"sounds/world/combine_tractor_beam/world_vault_crash_fake_explo_01.vsnd",
+		]
+		use_named_send = "ScriptedSeqPriority1"
+	}
+	Vault.GroundExplo = 
+	{
+		type = "hlvr_animate_soundevent"
+		soundevents = 
+		[
+			"Vault.GroundExploChild",
+		]
+		animation_time_min = 1
+		animation_time_max = 1
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		use_public_position = 1.000000
+		unconstrained_target = 1.000000
+		animation_type = "lerp"
+		position = 
+		[
+			4736.603516,
+			2139.556152,
+			272.255157,
+		]
+		position_target = 
+		[
+			6175.018066,
+			2333.983154,
+			675.095276,
+		]
+	}
+	hlvr.global_stack = 
+	{
+		type = "hlvr_global_stack"
+	}
+}

@@ -1,0 +1,2108 @@
+//========================================================================================================
+// EXAMPLE OF NEW FORMAT
+//====================================================================
+criterion "ConceptExample" "concept" "COMBINESOLDIER_EXAMPLE" "required"
+response CS_Officer_Example
+{
+	criteria IsCombineS IsClass_Officer ConceptExample
+
+	response
+	{
+		criteria		SoldierIsHurt
+		speak "vo.combine.officer.announceattack_cover_01"
+	}
+	response
+	{
+		criteria		SoldierIsUnhurt
+		speak "vo.combine.officer.announceattack_cover_02" thensimple 1 speak "vo.combine.officer.announceattack_cover_01" thensimple 1 speak "vo.combine.officer.announceattack_cover_03"
+	}
+}
+
+
+//========================================================================================================
+// ADVANCING ON TARGET
+//====================================================================
+response CS_Officer_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Officer ConceptAdvancingOnTarget 
+	
+	speak "vo.combine.officer.advancing_on_target_01"
+	speak "vo.combine.officer.advancing_on_target_02"
+	speak "vo.combine.officer.advancing_on_target_03"
+	speak "vo.combine.officer.advancing_on_target_04"
+	speak "vo.combine.officer.advancing_on_target_05"
+	speak "vo.combine.officer.advancing_on_target_06"
+	speak "vo.combine.officer.advancing_on_target_07"
+	speak "vo.combine.officer.advancing_on_target_08"
+	speak "vo.combine.officer.advancing_on_target_10"
+	speak "vo.combine.officer.advancing_on_target_11"
+	speak "vo.combine.officer.advancing_on_target_13"
+	speak "vo.combine.officer.advancing_on_target_14"
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_02"
+			speak "vo.combine.officer.advancing_on_target_order_03"
+			speak "vo.combine.officer.advancing_on_target_order_04"
+			speak "vo.combine.officer.advancing_on_target_order_05"
+			speak "vo.combine.officer.advancing_on_target_order_06"
+		}
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_02"
+			speak "vo.combine.officer.advancing_on_target_order_03"
+			speak "vo.combine.officer.advancing_on_target_order_04"
+			speak "vo.combine.officer.advancing_on_target_order_05"
+			speak "vo.combine.officer.advancing_on_target_order_06"
+		}
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.advancing_on_target_order_02"
+			speak "vo.combine.officer.advancing_on_target_order_03"
+			speak "vo.combine.officer.advancing_on_target_order_04"
+			speak "vo.combine.officer.advancing_on_target_order_05"
+			speak "vo.combine.officer.advancing_on_target_order_06"
+		}
+}
+
+	
+//========================================================================================================
+// ANNOUNCING CHARGE
+//====================================================================
+response CS_Officer_Charging
+{
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceCharge 
+	
+	speak "vo.combine.officer.advancing_on_target_01"
+	speak "vo.combine.officer.advancing_on_target_02"
+	speak "vo.combine.officer.advancing_on_target_03"
+	speak "vo.combine.officer.advancing_on_target_04"
+	speak "vo.combine.officer.advancing_on_target_05"
+	speak "vo.combine.officer.advancing_on_target_06"
+	speak "vo.combine.officer.advancing_on_target_07"
+	speak "vo.combine.officer.advancing_on_target_08"
+	speak "vo.combine.officer.advancing_on_target_09"
+	speak "vo.combine.officer.advancing_on_target_10"
+	speak "vo.combine.officer.advancing_on_target_11"
+	speak "vo.combine.officer.advancing_on_target_12"
+	speak "vo.combine.officer.advancing_on_target_13"
+	speak "vo.combine.officer.advancing_on_target_14"
+}
+
+//========================================================================================================
+// ATTACKING WITH MANHACK
+//====================================================================
+response CS_Officer_DeployingManhack
+{
+	criteria		IsCombineS IsClass_Officer ConceptDeployingManhack 
+	
+	speak "vo.combine.officer.manhack_release_010"
+	speak "vo.combine.officer.manhack_release_011"
+	speak "vo.combine.officer.manhack_release_012"
+	speak "vo.combine.officer.manhack_release_020"
+	speak "vo.combine.officer.manhack_release_021"
+	speak "vo.combine.officer.manhack_release_022"
+	speak "vo.combine.officer.manhack_release_030"
+	speak "vo.combine.officer.manhack_release_031"
+	speak "vo.combine.officer.manhack_release_032"
+	speak "vo.combine.officer.manhack_release_040"
+	speak "vo.combine.officer.manhack_release_041"
+	speak "vo.combine.officer.manhack_release_042"
+	speak "vo.combine.officer.manhack_release_050"
+	speak "vo.combine.officer.manhack_release_051"
+	speak "vo.combine.officer.manhack_release_052"
+	speak "vo.combine.officer.manhack_release_060"
+	speak "vo.combine.officer.manhack_release_061"
+	speak "vo.combine.officer.manhack_release_062"
+	speak "vo.combine.officer.manhack_release_070"
+	speak "vo.combine.officer.manhack_release_071"
+	speak "vo.combine.officer.manhack_release_072"
+	speak "vo.combine.officer.manhack_release_080"
+	speak "vo.combine.officer.manhack_release_081"
+	speak "vo.combine.officer.manhack_release_082"
+	speak "vo.combine.officer.manhack_release_090"
+	speak "vo.combine.officer.manhack_release_091"
+	speak "vo.combine.officer.manhack_release_092"
+	speak "vo.combine.officer.manhack_release_100"
+	speak "vo.combine.officer.manhack_release_101"
+	speak "vo.combine.officer.manhack_release_102"
+	speak "vo.combine.officer.manhack_release_110"
+	speak "vo.combine.officer.manhack_release_111"
+	speak "vo.combine.officer.manhack_release_112"
+}
+
+//========================================================================================================
+// ANNOUNCING ATTACKS - GRENADE THROW
+//====================================================================
+response CS_Officer_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Officer ConceptThrowingGrenade
+	
+	speak "vo.combine.officer.announceattack_grenade_01" 
+	speak "vo.combine.officer.announceattack_grenade_02" 
+	speak "vo.combine.officer.announceattack_grenade_03" 
+	speak "vo.combine.officer.announceattack_grenade_04" 
+	speak "vo.combine.officer.announceattack_grenade_05" 
+	speak "vo.combine.officer.announceattack_grenade_06" 
+	speak "vo.combine.officer.announceattack_grenade_07"
+
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_02"
+			speak "vo.combine.officer.announceattack_grenade_order_03"
+		}
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_02"
+			speak "vo.combine.officer.announceattack_grenade_order_03"
+		}
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_grenade_order_02"
+			speak "vo.combine.officer.announceattack_grenade_order_03"
+		}
+}
+
+
+//========================================================================================================
+// ANNOUNCING ENEMY
+//====================================================================
+response CS_Officer_AnnounceEnemy
+{	
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceEnemy
+	
+	speak "vo.combine.officer.announceattack_01"
+	speak "vo.combine.officer.announceattack_02"
+	speak "vo.combine.officer.announceattack_03"
+	speak "vo.combine.officer.announceattack_04"
+	speak "vo.combine.officer.announceattack_05"
+	speak "vo.combine.officer.announceattack_06"
+	speak "vo.combine.officer.announceattack_07"
+	speak "vo.combine.officer.announceattack_09"
+	
+	response
+	{
+		criteria		IsOrderCall ResponderIsofficer
+		speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_order_01"
+		speak "vo.combine.officer.announceattack_order_02"
+	}
+		
+	response
+	{
+		criteria		IsOrderCall ResponderIsCharger
+		speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_order_01"
+		speak "vo.combine.officer.announceattack_order_02"
+	}
+		
+	response
+	{
+		criteria		IsOrderCall ResponderIsSuppressor
+		speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_order_01"
+		speak "vo.combine.officer.announceattack_order_02"
+	}
+	
+	
+	response
+	{
+		criteria		EnemyIsPlayer
+		
+		speak "vo.combine.officer.announceattack_01"
+		speak "vo.combine.officer.announceattack_02"
+		speak "vo.combine.officer.announceattack_03"
+		speak "vo.combine.officer.announceattack_04"
+		speak "vo.combine.officer.announceattack_05"
+		speak "vo.combine.officer.announceattack_06"
+		speak "vo.combine.officer.announceattack_07"
+		speak "vo.combine.officer.announceattack_09"
+		
+		response
+		{
+			criteria 	AlyxIsKnown
+			speak "vo.combine.officer.announceattack_alyx_01"
+			speak "vo.combine.officer.announceattack_alyx_02"
+			speak "vo.combine.officer.announceattack_alyx_03"
+			speak "vo.combine.officer.announceattack_alyx_04"
+			speak "vo.combine.officer.announceattack_alyx_05"
+			speak "vo.combine.officer.announceattack_alyx_06"
+			speak "vo.combine.officer.announceattack_alyx_07"
+			speak "vo.combine.officer.announceattack_alyx_08"
+		}
+		
+		
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_02"
+			speak "vo.combine.officer.announceattack_alyx_order_03"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_02"
+			speak "vo.combine.officer.announceattack_alyx_order_03"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_alyx_order_02"
+			speak "vo.combine.officer.announceattack_alyx_order_03"
+		}
+		
+		response
+		{
+			criteria		PlayerHasUpgrades 
+			speak "vo.combine.officer.sees_upgrades_01"
+			speak "vo.combine.officer.sees_upgrades_02"
+			speak "vo.combine.officer.sees_upgrades_03"
+			speak "vo.combine.officer.sees_upgrades_04"
+			speak "vo.combine.officer.sees_upgrades_05"
+		}
+		
+		response
+		{
+			criteria		PlayerHasGrenades
+			speak "vo.combine.officer.sees_grenades_01"
+			speak "vo.combine.officer.sees_grenades_02"
+			speak "vo.combine.officer.sees_grenades_03"
+			speak "vo.combine.officer.sees_grenades_04"
+			speak "vo.combine.officer.sees_grenades_05"
+		}
+	}
+	
+	
+	response
+	{
+		criteria		EnemyIsAntlion
+		speak "vo.combine.officer.announceenemy_antlion_01" 
+		speak "vo.combine.officer.announceenemy_antlion_02" 
+		speak "vo.combine.officer.announceenemy_antlion_03" 
+		speak "vo.combine.officer.announceenemy_antlion_04" 
+		speak "vo.combine.officer.announceenemy_antlion_05" 
+		speak "vo.combine.officer.announceenemy_antlion_06" 
+		
+	}
+	
+	response
+	{
+		criteria		EnemyIsZombie
+		speak "vo.combine.officer.announceenemy_zombie_01" 
+		speak "vo.combine.officer.announceenemy_zombie_02" 
+		speak "vo.combine.officer.announceenemy_zombie_03" 
+		speak "vo.combine.officer.announceenemy_zombie_04" 
+		speak "vo.combine.officer.announceenemy_zombie_05" 
+		speak "vo.combine.officer.announceenemy_zombie_06" 
+		speak "vo.combine.officer.announceenemy_zombie_07" 
+		speak "vo.combine.officer.announceenemy_zombie_08" 
+		speak "vo.combine.officer.announceenemy_zombie_09" 
+		speak "vo.combine.officer.announceenemy_zombie_10" 
+	}
+	
+	response
+	{
+		criteria		EnemyIsHeadcrab
+		speak "vo.combine.officer.announceenemy_headcrabs_01" 
+		speak "vo.combine.officer.announceenemy_headcrabs_02"  thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+		speak "vo.combine.officer.announceenemy_headcrabs_03" 
+		speak "vo.combine.officer.announceenemy_headcrabs_04" 
+		speak "vo.combine.officer.announceenemy_headcrabs_05" 
+		speak "vo.combine.officer.announceenemy_headcrabs_08" 
+		speak "vo.combine.officer.announceenemy_headcrabs_09" 
+		speak "vo.combine.officer.announceenemy_headcrabs_10" 
+	}
+	
+	
+	
+}
+
+//========================================================================================================
+// ANNOUNCE KILL
+//============================
+response CS_Officer_AnnounceKill
+{
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceKill
+	
+	
+		speak "vo.combine.officer.announcekill_01" 
+		speak "vo.combine.officer.announcekill_02" 
+		speak "vo.combine.officer.announcekill_03" 
+		speak "vo.combine.officer.announcekill_04" 
+		speak "vo.combine.officer.announcekill_05" 
+		speak "vo.combine.officer.announcekill_06" 
+		speak "vo.combine.officer.announcekill_09" 
+		speak "vo.combine.officer.announcekill_11" 
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.announcekill_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+			speak "vo.combine.officer.announcekill_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.announcekill_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01"
+			speak "vo.combine.officer.announcekill_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.announcekill_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01"
+			speak "vo.combine.officer.announcekill_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_apf_02"
+		}
+	
+	response
+	{
+		criteria		EnemyIsPlayer
+		speak "vo.combine.officer.announcekill_player_01" 
+		speak "vo.combine.officer.announcekill_player_02" 
+		speak "vo.combine.officer.announcekill_player_03" 
+		speak "vo.combine.officer.announcekill_player_04" 
+		speak "vo.combine.officer.announcekill_player_05" 
+		speak "vo.combine.officer.announcekill_player_06" 
+		speak "vo.combine.officer.announcekill_player_07" 
+
+		speak "vo.combine.officer.announcekill_01" 
+		speak "vo.combine.officer.announcekill_02" 
+		speak "vo.combine.officer.announcekill_03" 
+		speak "vo.combine.officer.announcekill_04" 
+		speak "vo.combine.officer.announcekill_05" 
+		speak "vo.combine.officer.announcekill_06" 
+		speak "vo.combine.officer.announcekill_09" 
+		speak "vo.combine.officer.announcekill_11" 
+		speak "vo.combine.officer.announcekill_12" 
+		speak "vo.combine.officer.announcekill_13" 
+		speak "vo.combine.officer.announcekill_14" 
+		speak "vo.combine.officer.announcekill_15" 
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.announcekill_player_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+			speak "vo.combine.officer.announcekill_player_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.announcekill_player_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01"
+			speak "vo.combine.officer.announcekill_player_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.announcekill_player_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01"
+			speak "vo.combine.officer.announcekill_player_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_apf_02"
+		}
+		
+	}
+	
+	response
+	{
+		criteria		EnemyIsAntlion
+		speak "vo.combine.officer.announcekill_antlion_01" 
+		speak "vo.combine.officer.announcekill_antlion_02" 
+		speak "vo.combine.officer.announcekill_antlion_03" 
+		speak "vo.combine.officer.announcekill_antlion_04" 
+		speak "vo.combine.officer.announcekill_antlion_05" 
+		speak "vo.combine.officer.announcekill_01" 
+		speak "vo.combine.officer.announcekill_02" 
+		speak "vo.combine.officer.announcekill_03" 
+		speak "vo.combine.officer.announcekill_04" 
+	}
+	
+	response
+	{
+		criteria		EnemyIsZombie
+		speak "vo.combine.officer.announcekill_zombie_01" 
+		speak "vo.combine.officer.announcekill_zombie_02" 
+		speak "vo.combine.officer.announcekill_zombie_02" 
+		speak "vo.combine.officer.announcekill_zombie_03" 
+		speak "vo.combine.officer.announcekill_zombie_04" 
+		speak "vo.combine.officer.announcekill_zombie_05" 
+		speak "vo.combine.officer.announcekill_05" 
+		speak "vo.combine.officer.announcekill_06" 
+		speak "vo.combine.officer.announcekill_09" 
+		speak "vo.combine.officer.announcekill_11" 
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.announcekill_zombie_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+			speak "vo.combine.officer.announcekill_zombie_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.announcekill_zombie_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01"
+			speak "vo.combine.officer.announcekill_zombie_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.announcekill_zombie_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01"
+			speak "vo.combine.officer.announcekill_zombie_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_apf_02"
+		}
+	}
+	
+	response
+	{
+		criteria		EnemyIsHeadcrab
+		speak "vo.combine.officer.announcekill_headcrab_01" 
+		speak "vo.combine.officer.announcekill_headcrab_02" 
+		speak "vo.combine.officer.announcekill_headcrab_03" 
+		speak "vo.combine.officer.announcekill_headcrab_04" 
+		speak "vo.combine.officer.announcekill_headcrab_05" 
+		speak "vo.combine.officer.announcekill_headcrab_06" 
+		speak "vo.combine.officer.announcekill_headcrab_07" 
+		speak "vo.combine.officer.announcekill_headcrab_08" 
+		speak "vo.combine.officer.announcekill_headcrab_09" 
+		speak "vo.combine.officer.announcekill_12" 
+		speak "vo.combine.officer.announcekill_13" 
+		speak "vo.combine.officer.announcekill_14" 
+		speak "vo.combine.officer.announcekill_15" 
+		
+	}
+}
+
+
+//========================================================================================================
+// REQUESTING COVER
+//====================================================================
+response CS_Officer_CoverMe
+{
+	criteria		IsCombineS IsClass_Officer ConceptCoverMe HasOtherSquadMembers
+	
+	speak "vo.combine.officer.coverme_01" 
+	speak "vo.combine.officer.coverme_02" 
+	speak "vo.combine.officer.coverme_03" 
+	speak "vo.combine.officer.coverme_04" 
+	speak "vo.combine.officer.coverme_05" 
+	speak "vo.combine.officer.coverme_06" 
+	speak "vo.combine.officer.coverme_07" 
+}
+
+
+//========================================================================================================
+// ANNOUNCING DANGER - GRENADE
+//====================================================================
+response CS_Officer_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Officer ConceptDanger DangerIsGrenade
+	
+	speak "vo.combine.officer.danger_grenade_01"
+	speak "vo.combine.officer.danger_grenade_02"
+	speak "vo.combine.officer.danger_grenade_03"
+	speak "vo.combine.officer.danger_grenade_04"
+	speak "vo.combine.officer.danger_grenade_05"
+	speak "vo.combine.officer.danger_grenade_06"
+	speak "vo.combine.officer.danger_grenade_07"
+	speak "vo.combine.officer.danger_grenade_08" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.danger_grenade_09"
+	speak "vo.combine.officer.danger_grenade_10"
+}
+
+
+//========================================================================================================
+// DEATH
+//==================================
+
+response CS_Officer_Die
+{
+	criteria		IsCombineS IsClass_Officer ConceptDie
+	
+	speak "vo.combine.officer.die_01" noscene
+	speak "vo.combine.officer.die_02" noscene
+	speak "vo.combine.officer.die_03" noscene
+	speak "vo.combine.officer.die_04" noscene
+	speak "vo.combine.officer.die_05" noscene
+	speak "vo.combine.officer.die_06" noscene
+	speak "vo.combine.officer.die_07" noscene
+	speak "vo.combine.officer.die_08" noscene
+	speak "vo.combine.officer.die_09" noscene
+	speak "vo.combine.officer.die_10" noscene
+	
+}
+
+//========================================================================================================
+// ESTABLISHING LINE OF FIRE
+//====================================================================
+response CS_Officer_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Officer ConceptEstablishingLOF
+	
+	speak "vo.combine.officer.establishinglof_01" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_02" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_03" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_04" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_05" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_06" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_07" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_08" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_09" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_10" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_11" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_12" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_13" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_14" respeakdelay 5
+	speak "vo.combine.officer.establishinglof_15" respeakdelay 5
+	
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_02"
+			speak "vo.combine.officer.establishinglof_order_03"
+			speak "vo.combine.officer.establishinglof_order_04"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_02"
+			speak "vo.combine.officer.establishinglof_order_03"
+			speak "vo.combine.officer.establishinglof_order_04"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.establishinglof_order_02"
+			speak "vo.combine.officer.establishinglof_order_03"
+			speak "vo.combine.officer.establishinglof_order_04"
+		}
+}
+
+
+
+
+//========================================================================================================
+// FLUSHING ENEMY OUT OF COVER
+//====================================================================
+response CS_Officer_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Officer ConceptFlushingEnemy 
+	
+	speak "vo.combine.officer.flushing_01"
+	speak "vo.combine.officer.flushing_02"
+	speak "vo.combine.officer.flushing_03" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.flushing_04"
+	speak "vo.combine.officer.flushing_05"
+	speak "vo.combine.officer.flushing_06"
+	speak "vo.combine.officer.flushing_07"
+}
+
+
+//========================================================================================================
+// GET BACK
+//====================================================================
+response CS_Officer_GetBack
+{
+	criteria		IsCombineS IsClass_Officer ConceptGetBack 
+	
+	speak "vo.combine.officer.getback_01" 
+	speak "vo.combine.officer.getback_02" 
+	speak "vo.combine.officer.getback_03"	
+}
+
+
+//========================================================================================================
+// INJURED
+//====================================================================
+response CS_Officer_Injured
+{
+	criteria		IsCombineS IsClass_Officer ConceptInjured 
+	
+	speak "vo.combine.officer.injured_01"
+	speak "vo.combine.officer.injured_02"
+	speak "vo.combine.officer.injured_03" 
+	speak "vo.combine.officer.injured_04" 
+	speak "vo.combine.officer.injured_05"
+	speak "vo.combine.officer.injured_06"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.injured_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.injured_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.injured_order_01"
+		}
+}
+
+//========================================================================================================
+// LIMPING
+//====================================================================
+response CS_Officer_Limping
+{
+	criteria		IsCombineS IsClass_Officer ConceptLimping 
+	
+	speak "vo.combine.officer.panting_01"
+}
+
+
+//========================================================================================================
+// LOST ENEMY 16+ sec
+//====================================================================
+response CS_Officer_LostShort
+{
+	criteria		IsCombineS IsClass_Officer ConceptLostEnemy LostEnemyShortTime
+	
+	speak "vo.combine.officer.lostenemy_01"
+	speak "vo.combine.officer.lostenemy_02"
+	speak "vo.combine.officer.lostenemy_03"
+	speak "vo.combine.officer.lostenemy_04"
+	speak "vo.combine.officer.lostenemy_05"
+	speak "vo.combine.officer.lostenemy_06"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.lostenemy_order_01"
+			speak "vo.combine.officer.lostenemy_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.lostenemy_order_01"
+			speak "vo.combine.officer.lostenemy_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.lostenemy_order_01"
+			speak "vo.combine.officer.lostenemy_order_02"
+		}
+}
+
+
+//========================================================================================================
+// LOST VISUAL 3+ sec
+//====================================================================
+response CS_Officer_LostVisual
+{
+	criteria		IsCombineS IsClass_Officer ConceptLostVisual 
+	
+	speak "vo.combine.officer.lostvisual_01" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_02" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_03" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_04" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_05" respeakdelay 8 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.lostvisual_06" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_07" respeakdelay 8 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.lostvisual_08" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_09" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_01" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_02" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_03" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_04" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_05" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_06" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_07" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_09" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_10" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_11" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_12" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_13" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_14" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_15" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_16" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_17" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_search_18" respeakdelay 8
+	
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.lostvisual_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.lostvisual_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.lostvisual_order_01"
+		}
+	
+	response
+	{
+		criteria		EnemyIsPlayer
+		speak "vo.combine.officer.lostvisual_01" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_02" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_03" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_04" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_05" respeakdelay 11 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+		speak "vo.combine.officer.lostvisual_06" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_07" respeakdelay 11 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+		speak "vo.combine.officer.lostvisual_08" respeakdelay 11
+		speak "vo.combine.officer.lostvisual_09" respeakdelay 11
+		
+		response
+		{
+			criteria AlyxIsKnown
+			speak "vo.combine.officer.lostvisual_player_01" respeakdelay 11
+			speak "vo.combine.officer.lostvisual_player_02" respeakdelay 11
+			speak "vo.combine.officer.lostvisual_player_03" respeakdelay 11
+			speak "vo.combine.officer.lostvisual_player_04" respeakdelay 11
+		}
+		
+		
+		response
+		{
+			criteria		IsOrderCall ResponderIsofficer AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.lostvisual_player_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.lostvisual_player_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor AlyxIsKnown
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.lostvisual_player_order_01"
+		}
+	}
+	
+}
+
+
+//========================================================================================================
+// PANIC ON ENEMY NEAR
+//====================================================================
+response CS_Officer_NearPanic
+{
+	criteria		IsCombineS IsClass_Officer ConceptNearPanic
+	
+	speak "vo.combine.officer.nearpanic_01"
+	speak "vo.combine.officer.nearpanic_02"
+	speak "vo.combine.officer.nearpanic_03"
+	speak "vo.combine.officer.nearpanic_04"
+	speak "vo.combine.officer.nearpanic_05"
+}
+
+
+//========================================================================================================
+// ENTERING OVERWATCH
+//====================================================================
+
+response CS_Officer_Overwatch
+{
+	criteria		IsCombineS IsClass_Officer ConceptOverwatch 
+	
+	speak "vo.combine.officer.overwatch_01" respeakdelay 8
+	speak "vo.combine.officer.overwatch_02" respeakdelay 8
+	speak "vo.combine.officer.overwatch_03" respeakdelay 8
+	speak "vo.combine.officer.overwatch_04" respeakdelay 8
+	speak "vo.combine.officer.overwatch_05" respeakdelay 8
+	speak "vo.combine.officer.overwatch_06" respeakdelay 8
+	speak "vo.combine.officer.overwatch_07" respeakdelay 8
+	speak "vo.combine.officer.overwatch_08" respeakdelay 8
+	speak "vo.combine.officer.overwatch_09" respeakdelay 8
+	speak "vo.combine.officer.overwatch_10" respeakdelay 8
+	speak "vo.combine.officer.overwatch_11" respeakdelay 8
+	speak "vo.combine.officer.overwatch_12" respeakdelay 8
+	speak "vo.combine.officer.overwatch_13" respeakdelay 8
+	speak "vo.combine.officer.overwatch_14" respeakdelay 8
+	speak "vo.combine.officer.overwatch_15" respeakdelay 8
+	speak "vo.combine.officer.overwatch_16" respeakdelay 8
+	speak "vo.combine.officer.overwatch_17" respeakdelay 8
+	speak "vo.combine.officer.overwatch_18" respeakdelay 8
+	speak "vo.combine.officer.overwatch_19" respeakdelay 8
+	speak "vo.combine.officer.overwatch_20" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_01" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_02" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_03" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_04" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_05" respeakdelay 8
+	speak "vo.combine.officer.lostenemy_06" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_01" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_02" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_03" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_04" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_05" respeakdelay 8 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.lostvisual_06" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_07" respeakdelay 8 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.lostvisual_08" respeakdelay 8
+	speak "vo.combine.officer.lostvisual_09" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_01" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_03" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_04" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_05" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_06" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_08" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_09" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_10" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_11" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_12" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_13" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_14" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_15" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_16" respeakdelay 8
+	speak "vo.combine.officer.reconnoiter_start_17" respeakdelay 8
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.overwatch_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.overwatch_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.overwatch_order_01"
+		}
+}
+
+
+//========================================================================================================
+// PAIN 
+//============================
+
+response CS_Officer_Pain
+{
+	criteria		IsCombineS IsClass_Officer ConceptPain
+	
+	speak "vo.combine.officer.pain_01" 
+	speak "vo.combine.officer.pain_02" 
+	speak "vo.combine.officer.pain_03" 
+	speak "vo.combine.officer.pain_04" 
+	speak "vo.combine.officer.pain_05" 
+	speak "vo.combine.officer.pain_06" 
+	speak "vo.combine.officer.pain_07" 
+	speak "vo.combine.officer.pain_08" 
+	speak "vo.combine.officer.pain_09" 
+	speak "vo.combine.officer.pain_10" 
+	speak "vo.combine.officer.pain_01" thensimple 1 speak "vo.combine.officer.underattack_01"
+	speak "vo.combine.officer.pain_02" thensimple 1 speak "vo.combine.officer.underattack_02"
+	speak "vo.combine.officer.pain_03" thensimple 1 speak "vo.combine.officer.underattack_03"
+	speak "vo.combine.officer.pain_04" thensimple 1 speak "vo.combine.officer.underattack_04"
+	speak "vo.combine.officer.pain_05" thensimple 1 speak "vo.combine.officer.underattack_05"
+	speak "vo.combine.officer.pain_06" thensimple 1 speak "vo.combine.officer.underattack_06"
+	speak "vo.combine.officer.pain_07" thensimple 1 speak "vo.combine.officer.underattack_07"
+	speak "vo.combine.officer.pain_08" thensimple 1 speak "vo.combine.officer.underattack_08"
+	speak "vo.combine.officer.pain_09" thensimple 1 speak "vo.combine.officer.underattack_09"
+	speak "vo.combine.officer.pain_10" thensimple 1 speak "vo.combine.officer.underattack_10"
+	speak "vo.combine.officer.pain_01" thensimple 1 speak "vo.combine.officer.underattack_11"
+	speak "vo.combine.officer.pain_02" thensimple 1 speak "vo.combine.officer.underattack_12"
+}
+
+
+
+//========================================================================================================
+// PLAYER IS WOUNDED
+//====================================================================
+response CS_Officer_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Officer ConceptPlayerIsHurt 
+	
+	speak "vo.combine.officer.playerishurt_01"
+	speak "vo.combine.officer.playerishurt_02"
+	speak "vo.combine.officer.playerishurt_03"
+	speak "vo.combine.officer.playerishurt_04"
+	speak "vo.combine.officer.playerishurt_05"
+	speak "vo.combine.officer.playerishurt_06"
+	speak "vo.combine.officer.playerishurt_07"
+	speak "vo.combine.officer.playerishurt_08"
+	speak "vo.combine.officer.playerishurt_09"
+	speak "vo.combine.officer.playerishurt_10"
+	speak "vo.combine.officer.playerishurt_11"
+	speak "vo.combine.officer.playerishurt_12"
+	speak "vo.combine.officer.playerishurt_13"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.playerishurt_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.playerishurt_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.playerishurt_order_01"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER END
+//====================================================================
+response CS_Officer_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterFinish 
+	
+	speak "vo.combine.officer.reconnoiter_finish_01"
+	speak "vo.combine.officer.reconnoiter_finish_02"
+	speak "vo.combine.officer.reconnoiter_finish_03"
+	speak "vo.combine.officer.reconnoiter_finish_04"
+	speak "vo.combine.officer.reconnoiter_finish_05"
+	speak "vo.combine.officer.reconnoiter_finish_06"
+	speak "vo.combine.officer.reconnoiter_finish_07"
+	speak "vo.combine.officer.reconnoiter_finish_08"
+	speak "vo.combine.officer.reconnoiter_finish_09"
+	speak "vo.combine.officer.reconnoiter_finish_10"
+	speak "vo.combine.officer.reconnoiter_finish_11"
+	speak "vo.combine.officer.reconnoiter_finish_12"
+	speak "vo.combine.officer.reconnoiter_finish_13"
+	speak "vo.combine.officer.reconnoiter_finish_14"
+	speak "vo.combine.officer.reconnoiter_finish_15"
+	speak "vo.combine.officer.reconnoiter_finish_16"
+	speak "vo.combine.officer.reconnoiter_finish_18"
+	speak "vo.combine.officer.reconnoiter_finish_19"
+	speak "vo.combine.officer.reconnoiter_finish_20"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_finish_order_02"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER SEARCH
+//====================================================================
+response CS_Officer_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterSearch 
+	
+	speak "vo.combine.officer.reconnoiter_search_01"
+	speak "vo.combine.officer.reconnoiter_search_02"
+	speak "vo.combine.officer.reconnoiter_search_03"
+	speak "vo.combine.officer.reconnoiter_search_04"
+	speak "vo.combine.officer.reconnoiter_search_05"
+	speak "vo.combine.officer.reconnoiter_search_06"
+	speak "vo.combine.officer.reconnoiter_search_07"
+	speak "vo.combine.officer.reconnoiter_search_09"
+	speak "vo.combine.officer.reconnoiter_search_10"
+	speak "vo.combine.officer.reconnoiter_search_11"
+	speak "vo.combine.officer.reconnoiter_search_12"
+	speak "vo.combine.officer.reconnoiter_search_13"
+	speak "vo.combine.officer.reconnoiter_search_14"
+	speak "vo.combine.officer.reconnoiter_search_15"
+	speak "vo.combine.officer.reconnoiter_search_16"
+	speak "vo.combine.officer.reconnoiter_search_17"
+	speak "vo.combine.officer.reconnoiter_search_18"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_search_order_02"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER START
+//====================================================================
+response CS_Officer_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterStart 
+	
+	speak "vo.combine.officer.reconnoiter_start_01"
+	speak "vo.combine.officer.reconnoiter_start_03"
+	speak "vo.combine.officer.reconnoiter_start_04"
+	speak "vo.combine.officer.reconnoiter_start_05"
+	speak "vo.combine.officer.reconnoiter_start_06"
+	speak "vo.combine.officer.reconnoiter_start_08"
+	speak "vo.combine.officer.reconnoiter_start_09"
+	speak "vo.combine.officer.reconnoiter_start_10"
+	speak "vo.combine.officer.reconnoiter_start_11"
+	speak "vo.combine.officer.reconnoiter_start_12"
+	speak "vo.combine.officer.reconnoiter_start_13"
+	speak "vo.combine.officer.reconnoiter_start_14"
+	speak "vo.combine.officer.reconnoiter_start_15"
+	speak "vo.combine.officer.reconnoiter_start_16"
+	speak "vo.combine.officer.reconnoiter_start_17"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_02"
+			speak "vo.combine.officer.reconnoiter_start_order_04"
+			speak "vo.combine.officer.reconnoiter_start_order_05"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_02"
+			speak "vo.combine.officer.reconnoiter_start_order_04"
+			speak "vo.combine.officer.reconnoiter_start_order_05"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reconnoiter_start_order_02"
+			speak "vo.combine.officer.reconnoiter_start_order_04"
+			speak "vo.combine.officer.reconnoiter_start_order_05"
+		}
+}
+
+
+//========================================================================================================
+// FIND ENEMY
+//====================================================================
+response CS_Officer_FindEnemy
+{
+	criteria		IsCombineS IsClass_Officer ConceptFindEnemy 
+	
+	speak "vo.combine.officer.refindenemy_01" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_02" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_03" 
+	speak "vo.combine.officer.refindenemy_04"
+	speak "vo.combine.officer.refindenemy_05"
+	speak "vo.combine.officer.refindenemy_06"
+	speak "vo.combine.officer.refindenemy_07"
+	speak "vo.combine.officer.refindenemy_08"
+	speak "vo.combine.officer.refindenemy_09"
+	speak "vo.combine.officer.refindenemy_10" 
+	speak "vo.combine.officer.refindenemy_11" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_12"
+	speak "vo.combine.officer.refindenemy_13"
+	speak "vo.combine.officer.refindenemy_14"
+	speak "vo.combine.officer.refindenemy_15"
+	speak "vo.combine.officer.refindenemy_16"
+	speak "vo.combine.officer.refindenemy_17"
+	speak "vo.combine.officer.refindenemy_18"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_02"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_03"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_02"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_03"
+
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_02"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.refindenemy_order_03"
+		}
+}
+
+//========================================================================================================
+// RELOADING
+//====================================================================
+response CS_Officer_Reload
+{
+	criteria		IsCombineS IsClass_Officer ConceptReload 
+	
+	speak "vo.combine.officer.reload_01" 
+	speak "vo.combine.officer.reload_02" 
+	speak "vo.combine.officer.reload_03" 
+	speak "vo.combine.officer.reload_05" 
+	speak "vo.combine.officer.reload_06" 
+	speak "vo.combine.officer.reload_07" 
+	speak "vo.combine.officer.reload_08" 
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.reload_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.reload_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.reload_order_01"
+		}
+}
+
+
+//====================================================================
+//		SQUAD MEMBER LOST
+//====================================================================
+response CS_Officer_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Officer ConceptSquadMemberLost 
+	
+	response
+	{
+		criteria		LostSquadofficer
+		speak "vo.combine.officer.squadmemberlost_01" predelay 1
+		speak "vo.combine.officer.squadmemberlost_02" predelay 1
+		speak "vo.combine.officer.squadmemberlost_03" predelay 1
+		speak "vo.combine.officer.calloutentity_echoone_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_04"
+		speak "vo.combine.officer.squadmemberlost_05" predelay 1
+		speak "vo.combine.officer.squadmemberlost_06" predelay 1
+		speak "vo.combine.officer.squadmemberlost_07" predelay 1
+		speak "vo.combine.officer.squadmemberlost_09" predelay 1
+		speak "vo.combine.officer.squadmemberlost_10" predelay 1
+		speak "vo.combine.officer.calloutentity_echoone_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadCharger
+		speak "vo.combine.officer.squadmemberlost_01" predelay 1
+		speak "vo.combine.officer.squadmemberlost_02" predelay 1
+		speak "vo.combine.officer.squadmemberlost_03" predelay 1
+		speak "vo.combine.officer.calloutentity_wallhammer_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_04"
+		speak "vo.combine.officer.squadmemberlost_05" predelay 1
+		speak "vo.combine.officer.squadmemberlost_06" predelay 1
+		speak "vo.combine.officer.squadmemberlost_07" predelay 1
+		speak "vo.combine.officer.squadmemberlost_09" predelay 1
+		speak "vo.combine.officer.squadmemberlost_10" predelay 1
+		speak "vo.combine.officer.calloutentity_wallhammer_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadSuppressor
+		speak "vo.combine.officer.squadmemberlost_01" predelay 1
+		speak "vo.combine.officer.squadmemberlost_02" predelay 1
+		speak "vo.combine.officer.squadmemberlost_03" predelay 1
+		speak "vo.combine.officer.calloutentity_apf_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_04"
+		speak "vo.combine.officer.squadmemberlost_05" predelay 1
+		speak "vo.combine.officer.squadmemberlost_06" predelay 1
+		speak "vo.combine.officer.squadmemberlost_07" predelay 1
+		speak "vo.combine.officer.squadmemberlost_09" predelay 1
+		speak "vo.combine.officer.squadmemberlost_10" predelay 1
+		speak "vo.combine.officer.calloutentity_apf_01" predelay 1 thensimple 1 speak "vo.combine.officer.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadLeader
+		speak "vo.combine.officer.squadmemberlost_leader_01" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_02" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_03" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_04" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_05" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_06" predelay 1
+		speak "vo.combine.officer.squadmemberlost_leader_07" predelay 1
+	}
+	
+}
+
+
+
+//====================================================================
+//		LAST MAN STANDING
+//====================================================================
+response CS_Officer_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Officer ConceptSquadMemberLost IsLastSquadMemberLeft
+	
+	speak "vo.combine.officer.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_09" predelay 1
+}
+
+
+//========================================================================================================
+// SUPPRESSING
+//====================================================================
+response CS_Officer_Suppressing
+{
+	criteria		IsCombineS IsClass_Officer ConceptSuppressing 
+	
+	speak "vo.combine.officer.suppressing_01"
+	speak "vo.combine.officer.suppressing_02"
+	speak "vo.combine.officer.suppressing_03"
+	speak "vo.combine.officer.suppressing_04"
+	speak "vo.combine.officer.suppressing_05"
+	speak "vo.combine.officer.suppressing_06"
+	speak "vo.combine.officer.suppressing_07"
+	speak "vo.combine.officer.announceattack_cover_01"
+	speak "vo.combine.officer.announceattack_cover_02" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.announceattack_cover_03"
+	speak "vo.combine.officer.announceattack_cover_04"
+	speak "vo.combine.officer.announceattack_cover_05"
+	speak "vo.combine.officer.announceattack_cover_06"
+	speak "vo.combine.officer.announceattack_cover_07"
+	speak "vo.combine.officer.announceattack_cover_08"
+	speak "vo.combine.officer.announceattack_cover_09"
+	speak "vo.combine.officer.announceattack_cover_10"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.suppressing_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01" 
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.suppressing_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01" 
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.suppressing_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01" 
+		}
+}
+
+
+//========================================================================================================
+// I'M TAKING FIRE
+//====================================================================
+response CS_Officer_TakingFire
+{
+	criteria		IsCombineS IsClass_Officer ConceptTakingFire 
+	
+	speak "vo.combine.officer.takingfire_01" respeakdelay 15
+	speak "vo.combine.officer.takingfire_02" respeakdelay 15
+	speak "vo.combine.officer.takingfire_03" respeakdelay 15
+	speak "vo.combine.officer.takingfire_04" respeakdelay 15
+	speak "vo.combine.officer.takingfire_05" respeakdelay 15
+	speak "vo.combine.officer.takingfire_06" respeakdelay 15
+	speak "vo.combine.officer.takingfire_07" respeakdelay 15
+	speak "vo.combine.officer.takingfire_08" respeakdelay 15
+	speak "vo.combine.officer.takingfire_09" respeakdelay 15
+	speak "vo.combine.officer.takingfire_10" respeakdelay 15
+	speak "vo.combine.officer.takingfire_11" respeakdelay 15
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.takingfire_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01"
+			speak "vo.combine.officer.takingfire_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_echoone_01" 			
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.takingfire_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01"
+			speak "vo.combine.officer.takingfire_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_wallhammer_01" 			
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.takingfire_order_01" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01"
+			speak "vo.combine.officer.takingfire_order_02" thensimple 0 speak "vo.combine.officer.calloutentity_apf_01" 			
+		}
+}
+
+
+//========================================================================================================
+// SQUAD IS UNDER ATTACK
+//====================================================================
+response CS_Officer_UnderAttack
+{
+	criteria		IsCombineS IsClass_Officer ConceptUnderAttack 
+	
+	speak "vo.combine.officer.underattack_01"
+	speak "vo.combine.officer.underattack_02"
+	speak "vo.combine.officer.underattack_03" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.underattack_04"
+	speak "vo.combine.officer.underattack_05"
+	speak "vo.combine.officer.underattack_06"
+	speak "vo.combine.officer.underattack_07"
+	speak "vo.combine.officer.underattack_08"
+	speak "vo.combine.officer.underattack_09"
+	speak "vo.combine.officer.underattack_10"
+	speak "vo.combine.officer.underattack_11"
+	speak "vo.combine.officer.underattack_12"
+}
+
+	
+//========================================================================================================
+// ORDER RESPONSES
+//====================================================================
+response CS_Officer_UnableToComply
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderResponse 
+	
+	response
+	{
+		criteria		ResponseIsNegative
+		speak "vo.combine.officer.unabletocommence_01"
+		speak "vo.combine.officer.unabletocommence_02"
+		speak "vo.combine.officer.unabletocommence_03"
+		speak "vo.combine.officer.unabletocommence_04"
+		speak "vo.combine.officer.unabletocommence_05"
+		speak "vo.combine.officer.unabletocommence_06"
+		speak "vo.combine.officer.unabletocommence_07"
+	}
+	
+	response
+	{
+		criteria		ResponseIsPositive
+		speak "vo.combine.officer.orderresponse_positive_01"
+		speak "vo.combine.officer.orderresponse_positive_02"
+		speak "vo.combine.officer.orderresponse_positive_03"
+		speak "vo.combine.officer.orderresponse_positive_04"
+		speak "vo.combine.officer.orderresponse_positive_05"
+		speak "vo.combine.officer.orderresponse_positive_06"
+	}
+}
+
+
+//========================================================================================================
+// TAUNT
+//====================================================================
+response CS_Officer_Taunt
+{
+	criteria		IsCombineS IsClass_Officer ConceptTaunt 
+	
+	speak "vo.combine.officer.taunt_010" respeakdelay 15
+	speak "vo.combine.officer.taunt_011" respeakdelay 15
+	speak "vo.combine.officer.taunt_012" respeakdelay 15
+	speak "vo.combine.officer.taunt_020" respeakdelay 15
+	speak "vo.combine.officer.taunt_021" respeakdelay 15
+	speak "vo.combine.officer.taunt_022" respeakdelay 15 
+	speak "vo.combine.officer.taunt_030" respeakdelay 15
+	speak "vo.combine.officer.taunt_031" respeakdelay 15
+	speak "vo.combine.officer.taunt_032" respeakdelay 15
+	speak "vo.combine.officer.taunt_040" respeakdelay 15
+	speak "vo.combine.officer.taunt_041" respeakdelay 15
+	speak "vo.combine.officer.taunt_042" respeakdelay 15
+	speak "vo.combine.officer.taunt_050" respeakdelay 15
+	speak "vo.combine.officer.taunt_051" respeakdelay 15
+	speak "vo.combine.officer.taunt_052" respeakdelay 15
+	speak "vo.combine.officer.taunt_060" respeakdelay 15
+	speak "vo.combine.officer.taunt_061" respeakdelay 15
+	speak "vo.combine.officer.taunt_062" respeakdelay 15
+	speak "vo.combine.officer.taunt_070" respeakdelay 15
+	speak "vo.combine.officer.taunt_071" respeakdelay 15
+	speak "vo.combine.officer.taunt_072" respeakdelay 15
+	speak "vo.combine.officer.taunt_080" respeakdelay 15
+	speak "vo.combine.officer.taunt_081" respeakdelay 15
+	speak "vo.combine.officer.taunt_082" respeakdelay 15
+	speak "vo.combine.officer.taunt_090" respeakdelay 15
+	speak "vo.combine.officer.taunt_091" respeakdelay 15
+	speak "vo.combine.officer.taunt_092" respeakdelay 15
+	speak "vo.combine.officer.taunt_100" respeakdelay 15
+	speak "vo.combine.officer.taunt_101" respeakdelay 15
+	speak "vo.combine.officer.taunt_102" respeakdelay 15
+	speak "vo.combine.officer.taunt_110" respeakdelay 15
+	speak "vo.combine.officer.taunt_111" respeakdelay 15
+	speak "vo.combine.officer.taunt_112" respeakdelay 15
+	speak "vo.combine.officer.taunt_120" respeakdelay 15
+	speak "vo.combine.officer.taunt_121" respeakdelay 15
+	speak "vo.combine.officer.taunt_122" respeakdelay 15
+	speak "vo.combine.officer.taunt_130" respeakdelay 15
+	speak "vo.combine.officer.taunt_131" respeakdelay 15
+	speak "vo.combine.officer.taunt_132" respeakdelay 15
+	speak "vo.combine.officer.taunt_140" respeakdelay 15
+	speak "vo.combine.officer.taunt_141" respeakdelay 15
+	speak "vo.combine.officer.taunt_142" respeakdelay 15
+	speak "vo.combine.officer.taunt_150" respeakdelay 15
+	speak "vo.combine.officer.taunt_151" respeakdelay 15
+	speak "vo.combine.officer.taunt_152" respeakdelay 15
+	speak "vo.combine.officer.taunt_160" respeakdelay 15
+	speak "vo.combine.officer.taunt_161" respeakdelay 15
+	speak "vo.combine.officer.taunt_162" respeakdelay 15
+	speak "vo.combine.officer.taunt_170" respeakdelay 15
+	speak "vo.combine.officer.taunt_171" respeakdelay 15
+	speak "vo.combine.officer.taunt_172" respeakdelay 15
+	speak "vo.combine.officer.taunt_180" respeakdelay 15
+	speak "vo.combine.officer.taunt_181" respeakdelay 15
+	speak "vo.combine.officer.taunt_182" respeakdelay 15
+	speak "vo.combine.officer.taunt_190" respeakdelay 15
+	speak "vo.combine.officer.taunt_191" respeakdelay 15
+	speak "vo.combine.officer.taunt_192" respeakdelay 15
+	speak "vo.combine.officer.taunt_200" respeakdelay 15
+	speak "vo.combine.officer.taunt_201" respeakdelay 15
+	speak "vo.combine.officer.taunt_202" respeakdelay 15
+}
+
+
+//========================================================================================================
+// HEAR SUSPICIOUS
+//====================================================================
+response CS_Officer_HearSuspicous
+{
+	criteria		IsCombineS IsClass_Officer ConceptHearSuspicious
+	
+	speak "vo.combine.officer.hear_suspicious_01" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.hear_suspicious_02"
+	speak "vo.combine.officer.hear_suspicious_03"
+	speak "vo.combine.officer.hear_suspicious_04"
+	speak "vo.combine.officer.hear_suspicious_05"
+	speak "vo.combine.officer.hear_suspicious_06"
+}
+
+
+//========================================================================================================
+// ATTACKING PLAYER'S COVER
+//====================================================================
+response CS_Officer_AttackingCover
+{
+	criteria		IsCombineS IsClass_Officer ConceptAttackingCover
+	
+	speak "vo.combine.officer.announceattack_cover_01"
+	speak "vo.combine.officer.announceattack_cover_02" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.announceattack_cover_03"
+	speak "vo.combine.officer.announceattack_cover_04"
+	speak "vo.combine.officer.announceattack_cover_05"
+	speak "vo.combine.officer.announceattack_cover_06"
+	speak "vo.combine.officer.announceattack_cover_07"
+	speak "vo.combine.officer.announceattack_cover_08"
+	speak "vo.combine.officer.announceattack_cover_09"
+	speak "vo.combine.officer.announceattack_cover_10"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.announceattack_cover_order_02"
+		}
+}
+
+
+//========================================================================================================
+// RETREATING
+//====================================================================
+response CS_Officer_Retreating
+{
+	criteria		IsCombineS IsClass_Officer ConceptDanger
+	
+	speak "vo.combine.officer.retreat_01"
+	speak "vo.combine.officer.retreat_02"
+	speak "vo.combine.officer.retreat_03"
+	speak "vo.combine.officer.retreat_04"
+	speak "vo.combine.officer.retreat_05"
+	speak "vo.combine.officer.retreat_06"
+	speak "vo.combine.officer.retreat_07"
+	speak "vo.combine.officer.retreat_08"
+	speak "vo.combine.officer.retreat_09"
+	speak "vo.combine.officer.coverme_01" 
+	speak "vo.combine.officer.coverme_02" 
+	speak "vo.combine.officer.coverme_03" 
+	speak "vo.combine.officer.coverme_04" 
+	speak "vo.combine.officer.coverme_05" 
+	speak "vo.combine.officer.coverme_06" 
+	speak "vo.combine.officer.coverme_07"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.retreat_order_01"
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.retreat_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.retreat_order_01"
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.retreat_order_02"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.retreat_order_01"
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.retreat_order_02"
+		}
+}
+
+//========================================================================================================
+// RETREATING DUE TO RELOAD
+//====================================================================
+response CS_Officer_RetreatToReload
+{
+	criteria		IsCombineS IsClass_Officer ConceptRetreatToReload
+	
+	speak "vo.combine.officer.retreat_03" 
+	speak "vo.combine.officer.retreat_04" 
+	speak "vo.combine.officer.retreat_05" 
+	speak "vo.combine.officer.retreat_07" 
+	speak "vo.combine.officer.retreat_08" 
+	speak "vo.combine.officer.coverme_02"  
+	speak "vo.combine.officer.coverme_03"  
+	speak "vo.combine.officer.coverme_07" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.coverme_01" 
+	speak "vo.combine.officer.coverme_02" 
+	speak "vo.combine.officer.coverme_03" 
+	speak "vo.combine.officer.coverme_04" 
+	speak "vo.combine.officer.coverme_05" 
+	speak "vo.combine.officer.coverme_06" 
+	speak "vo.combine.officer.underattack_01"
+	speak "vo.combine.officer.underattack_02"
+	speak "vo.combine.officer.underattack_03" thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.underattack_04"
+	speak "vo.combine.officer.underattack_05"
+	speak "vo.combine.officer.underattack_06"
+	speak "vo.combine.officer.underattack_07"
+	speak "vo.combine.officer.underattack_08"
+	speak "vo.combine.officer.underattack_09"
+	speak "vo.combine.officer.underattack_10"
+	speak "vo.combine.officer.underattack_11"
+	speak "vo.combine.officer.underattack_12"
+	speak "vo.combine.officer.unabletocommence_01"
+	speak "vo.combine.officer.unabletocommence_02"
+	speak "vo.combine.officer.unabletocommence_03"
+	speak "vo.combine.officer.unabletocommence_04"
+	speak "vo.combine.officer.unabletocommence_05"
+	speak "vo.combine.officer.unabletocommence_06"
+	speak "vo.combine.officer.unabletocommence_07"
+
+		response
+		{
+			criteria		IsOrderCall
+			speak "vo.combine.officer.orderresponse_positive_01" thensimple 0 speak "vo.combine.officer.coverme_03"
+			speak "vo.combine.officer.orderresponse_positive_02" thensimple 0 speak "vo.combine.officer.retreat_05" 
+			speak "vo.combine.officer.orderresponse_positive_03" thensimple 0 speak "vo.combine.officer.retreat_04"
+			speak "vo.combine.officer.orderresponse_positive_04" thensimple 0 speak "vo.combine.officer.retreat_07"
+			speak "vo.combine.officer.orderresponse_positive_05" thensimple 0 speak "vo.combine.officer.retreat_08"
+			speak "vo.combine.officer.orderresponse_positive_05" thensimple 0 speak "vo.combine.officer.retreat_03"
+		}
+}
+
+//========================================================================================================
+// SEES PLAYER IS RELOADING
+//====================================================================
+response CS_Officer_SeesPlayerReloading
+{
+	criteria		IsCombineS IsClass_Officer PlayerIsReloading 
+	
+	speak "vo.combine.officer.sees_reloading_01"
+	speak "vo.combine.officer.sees_reloading_02"
+	speak "vo.combine.officer.sees_reloading_03"
+	speak "vo.combine.officer.sees_reloading_04"
+	speak "vo.combine.officer.sees_reloading_05"
+	
+	response
+		{
+			criteria		IsOrderCall ResponderIsofficer
+			speak "vo.combine.officer.calloutentity_echoone_01" thensimple 0 speak "vo.combine.officer.sees_reloading_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsCharger
+			speak "vo.combine.officer.calloutentity_wallhammer_01" thensimple 0 speak "vo.combine.officer.sees_reloading_order_01"
+		}
+			
+		response
+		{
+			criteria		IsOrderCall ResponderIsSuppressor
+			speak "vo.combine.officer.calloutentity_apf_01" thensimple 0 speak "vo.combine.officer.sees_reloading_order_01"
+		}
+}
+
+
+//========================================================================================================
+// IDLE
+//===========================
+response CS_Officer_Idle
+{
+	criteria		IsCombineS IsClass_Officer ConceptIdle
+	
+	speak "vo.combine.officer.idle_01" respeakdelay 11
+	speak "vo.combine.officer.idle_02" respeakdelay 11
+	speak "vo.combine.officer.idle_03" respeakdelay 11
+	speak "vo.combine.officer.idle_04" respeakdelay 11
+	speak "vo.combine.officer.idle_05" respeakdelay 11
+	speak "vo.combine.officer.idle_06" respeakdelay 11
+	speak "vo.combine.officer.idle_07" respeakdelay 11
+	speak "vo.combine.officer.idle_08" respeakdelay 11
+	speak "vo.combine.officer.idle_09" respeakdelay 11
+	speak "vo.combine.officer.idle_10" respeakdelay 11
+	speak "vo.combine.officer.idle_11" respeakdelay 11
+	speak "vo.combine.officer.idle_12" respeakdelay 11
+	speak "vo.combine.officer.idle_13" respeakdelay 11
+	speak "vo.combine.officer.idle_14" respeakdelay 11
+	speak "vo.combine.officer.idle_15" respeakdelay 11
+	speak "vo.combine.officer.idle_16" respeakdelay 11
+	speak "vo.combine.officer.idle_17" respeakdelay 11
+	speak "vo.combine.officer.idle_18" respeakdelay 11
+	speak "vo.combine.officer.idle_19" respeakdelay 11
+	speak "vo.combine.officer.idle_20" respeakdelay 11
+}
+
+
+response CS_Officer_IdleCombat
+{
+	criteria		IsCombineS IsClass_Officer ConceptIdleCombat
+	
+	speak "vo.combine.officer.combat_idle_010" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_012" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_020" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_021" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_022" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_030" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_031" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_032" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_040" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_041" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_042" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_050" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_051" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_052" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_060" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_061" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_062" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_070" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_071" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_072" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_080" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_081" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_082" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_090" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_091" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_092" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_100" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_101" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_102" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_110" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_111" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_112" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_120" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_121" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_122" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_130" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_131" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_132" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_140" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_141" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_142" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_150" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_151" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_152" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_160" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_161" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_162" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_170" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_171" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_172" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_180" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_181" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_182" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_190" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_191" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_192" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_200" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_201" respeakdelay 8
+	speak "vo.combine.officer.combat_idle_202" respeakdelay 8
+	speak "vo.combine.officer.taunt_010" respeakdelay 8
+	speak "vo.combine.officer.taunt_011" respeakdelay 8
+	speak "vo.combine.officer.taunt_012" respeakdelay 8
+	speak "vo.combine.officer.taunt_020" respeakdelay 8
+	speak "vo.combine.officer.taunt_021" respeakdelay 8
+	speak "vo.combine.officer.taunt_022" respeakdelay 8 
+	speak "vo.combine.officer.taunt_030" respeakdelay 8
+	speak "vo.combine.officer.taunt_031" respeakdelay 8
+	speak "vo.combine.officer.taunt_032" respeakdelay 8
+	speak "vo.combine.officer.taunt_040" respeakdelay 8
+	speak "vo.combine.officer.taunt_041" respeakdelay 8
+	speak "vo.combine.officer.taunt_042" respeakdelay 8
+	speak "vo.combine.officer.taunt_050" respeakdelay 8
+	speak "vo.combine.officer.taunt_051" respeakdelay 8
+	speak "vo.combine.officer.taunt_052" respeakdelay 8
+	speak "vo.combine.officer.taunt_060" respeakdelay 8
+	speak "vo.combine.officer.taunt_061" respeakdelay 8
+	speak "vo.combine.officer.taunt_062" respeakdelay 8
+	speak "vo.combine.officer.taunt_070" respeakdelay 8
+	speak "vo.combine.officer.taunt_071" respeakdelay 8
+	speak "vo.combine.officer.taunt_072" respeakdelay 8
+	speak "vo.combine.officer.taunt_080" respeakdelay 8
+	speak "vo.combine.officer.taunt_081" respeakdelay 8
+	speak "vo.combine.officer.taunt_082" respeakdelay 8
+	speak "vo.combine.officer.taunt_090" respeakdelay 8
+	speak "vo.combine.officer.taunt_091" respeakdelay 8
+	speak "vo.combine.officer.taunt_092" respeakdelay 8
+	speak "vo.combine.officer.taunt_100" respeakdelay 8
+	speak "vo.combine.officer.taunt_101" respeakdelay 8
+	speak "vo.combine.officer.taunt_102" respeakdelay 8
+	speak "vo.combine.officer.taunt_110" respeakdelay 8
+	speak "vo.combine.officer.taunt_111" respeakdelay 8
+	speak "vo.combine.officer.taunt_112" respeakdelay 8
+	speak "vo.combine.officer.taunt_120" respeakdelay 8
+	speak "vo.combine.officer.taunt_121" respeakdelay 8
+	speak "vo.combine.officer.taunt_122" respeakdelay 8
+	speak "vo.combine.officer.taunt_130" respeakdelay 8
+	speak "vo.combine.officer.taunt_131" respeakdelay 8
+	speak "vo.combine.officer.taunt_132" respeakdelay 8
+	speak "vo.combine.officer.taunt_140" respeakdelay 8
+	speak "vo.combine.officer.taunt_141" respeakdelay 8
+	speak "vo.combine.officer.taunt_142" respeakdelay 8
+	speak "vo.combine.officer.taunt_150" respeakdelay 8
+	speak "vo.combine.officer.taunt_151" respeakdelay 8
+	speak "vo.combine.officer.taunt_152" respeakdelay 8
+	speak "vo.combine.officer.taunt_160" respeakdelay 8
+	speak "vo.combine.officer.taunt_161" respeakdelay 8
+	speak "vo.combine.officer.taunt_162" respeakdelay 8
+	speak "vo.combine.officer.taunt_170" respeakdelay 8
+	speak "vo.combine.officer.taunt_171" respeakdelay 8
+	speak "vo.combine.officer.taunt_172" respeakdelay 8
+	speak "vo.combine.officer.taunt_180" respeakdelay 8
+	speak "vo.combine.officer.taunt_181" respeakdelay 8
+	speak "vo.combine.officer.taunt_182" respeakdelay 8
+	speak "vo.combine.officer.taunt_190" respeakdelay 8
+	speak "vo.combine.officer.taunt_191" respeakdelay 8
+	speak "vo.combine.officer.taunt_192" respeakdelay 8
+	speak "vo.combine.officer.taunt_200" respeakdelay 8
+	speak "vo.combine.officer.taunt_201" respeakdelay 8
+	speak "vo.combine.officer.taunt_202" respeakdelay 8
+}
+
+//======================================================================================
+// FIRING LOCATION CALLOUTS
+//======================================================================================
+
+
+response CS_Officer_NoSpeech
+{
+}
+
+response CS_Officer_Firing
+{
+	criteria		IsCombineS IsClass_Officer ConceptFiring
+	
+	speak "vo.combine.officer.firing_02" respeakdelay 12
+	speak "vo.combine.officer.firing_03" respeakdelay 12
+	speak "vo.combine.officer.firing_04" respeakdelay 12
+	speak "vo.combine.officer.firing_05" respeakdelay 12
+	speak "vo.combine.officer.firing_06" respeakdelay 12
+	speak "vo.combine.officer.firing_01" respeakdelay 12
+	speak "vo.combine.officer.firing_110" respeakdelay 12
+	speak "vo.combine.officer.firing_111" respeakdelay 12
+	speak "vo.combine.officer.firing_112" respeakdelay 12
+	speak "vo.combine.officer.firing_120" respeakdelay 12
+	speak "vo.combine.officer.firing_121" respeakdelay 12
+	speak "vo.combine.officer.firing_122" respeakdelay 12
+	speak "vo.combine.officer.firing_130" respeakdelay 12
+	speak "vo.combine.officer.firing_131" respeakdelay 12
+	speak "vo.combine.officer.firing_132" respeakdelay 12
+	speak "vo.combine.officer.firing_140" respeakdelay 12
+	speak "vo.combine.officer.firing_141" respeakdelay 12
+	speak "vo.combine.officer.firing_142" respeakdelay 12
+	speak "vo.combine.officer.firing_150" respeakdelay 12
+	speak "vo.combine.officer.firing_151" respeakdelay 12
+	speak "vo.combine.officer.firing_152" respeakdelay 12
+	speak "vo.combine.officer.firing_160" respeakdelay 12
+	speak "vo.combine.officer.firing_161" respeakdelay 12
+	speak "vo.combine.officer.firing_162" respeakdelay 12
+	speak "vo.combine.officer.firing_170" respeakdelay 12
+	speak "vo.combine.officer.firing_171" respeakdelay 12
+	speak "vo.combine.officer.firing_172" respeakdelay 12
+	speak "vo.combine.officer.firing_180" respeakdelay 12
+	speak "vo.combine.officer.firing_181" respeakdelay 12
+	speak "vo.combine.officer.firing_182" respeakdelay 12
+	speak "vo.combine.officer.firing_190" respeakdelay 12
+	speak "vo.combine.officer.firing_191" respeakdelay 12
+	speak "vo.combine.officer.firing_192" respeakdelay 12
+	speak "vo.combine.officer.firing_200" respeakdelay 12
+	speak "vo.combine.officer.firing_201" respeakdelay 12
+	speak "vo.combine.officer.firing_202" respeakdelay 12
+	speak "vo.combine.officer.firing_220" respeakdelay 12
+	speak "vo.combine.officer.firing_221" respeakdelay 12
+	speak "vo.combine.officer.firing_222" respeakdelay 12
+	speak "vo.combine.officer.announceattack_02" respeakdelay 12
+	speak "vo.combine.officer.announceattack_03" respeakdelay 12
+	speak "vo.combine.officer.announceattack_04" respeakdelay 12
+	speak "vo.combine.officer.announceattack_05" respeakdelay 12
+	speak "vo.combine.officer.announceattack_06" respeakdelay 12
+	speak "vo.combine.officer.announceattack_07" respeakdelay 12
+	speak "vo.combine.officer.announceattack_08" respeakdelay 12
+	speak "vo.combine.officer.announceattack_09" respeakdelay 12
+	speak "vo.combine.officer.announceattack_11" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_01" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_02" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_03" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_04" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_05" respeakdelay 12
+	speak "vo.combine.officer.orderresponse_positive_06" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_01" respeakdelay 12 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_02" respeakdelay 12 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_03" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_04" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_05" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_06" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_07" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_08" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_09" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_10" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_11" respeakdelay 12 thensimple 0 speak "vo.combine.officer.calloutcode_numbers"
+	speak "vo.combine.officer.refindenemy_12" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_13" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_14" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_15" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_16" respeakdelay 12
+	speak "vo.combine.officer.refindenemy_17" respeakdelay 12
+	
+	response
+	{
+		criteria		PlayerAtBarrels
+		speak "vo.combine.officer.calloutlocation_barrells_01" respeakdelay 17
+	}
+	
+	
+	response
+	{
+		criteria		PlayerAtBricks
+		speak "vo.combine.officer.calloutlocation_bricks_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtBuilding
+		speak "vo.combine.officer.calloutlocation_building_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtBridge
+		speak "vo.combine.officer.calloutlocation_bridge_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtCar
+		speak "vo.combine.officer.calloutlocation_car_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtCrane
+		speak "vo.combine.officer.calloutlocation_crane_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtDoor
+		speak "vo.combine.officer.calloutlocation_door_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtPipes
+		speak "vo.combine.officer.calloutlocation_pipes_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtShack
+		speak "vo.combine.officer.calloutlocation_shack_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTunnel
+		speak "vo.combine.officer.calloutlocation_tunnel_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtHut
+		speak "vo.combine.officer.calloutlocation_hut_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrainCar
+		speak "vo.combine.officer.calloutlocation_traincar_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrainCar
+		speak "vo.combine.officer.calloutlocation_traincar_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTruck
+		speak "vo.combine.officer.calloutlocation_truck_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtWoodPile
+		speak "vo.combine.officer.calloutlocation_woodpile_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtVan
+		speak "vo.combine.officer.calloutlocation_van_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtElevator
+		speak "vo.combine.officer.calloutlocation_elevator_01" respeakdelay 17
+
+	}
+	
+	
+	response
+	{
+		criteria		PlayerAtApartment
+		speak "vo.combine.officer.calloutlocation_apartment_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtBelow
+		speak "vo.combine.officer.calloutlocation_below_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtAbove
+		speak "vo.combine.officer.calloutlocation_above_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtBehind
+		speak "vo.combine.officer.calloutlocation_behind_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtToilet
+		speak "vo.combine.officer.calloutlocation_toilet_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtWheels
+		speak "vo.combine.officer.calloutlocation_wheels_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtFront
+		speak "vo.combine.officer.calloutlocation_front_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrash
+		speak "vo.combine.officer.calloutlocation_trash_01" respeakdelay 17
+	}
+}
+

@@ -1,0 +1,314 @@
+"vort_puzzle_chimes_first_room"
+{
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+		"random_soundevent_01_timer_min"	"12"
+		"random_soundevent_01_timer_max"	"15"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+	}
+}
+
+"vort_puzzle_chimes_main_room"
+{
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLowMainRoom"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLowMainRoom"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHighMainRoom"
+		"random_soundevent_01_timer_min"	"12"
+		"random_soundevent_01_timer_max"	"15"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHighMainRoom"
+	}
+}
+
+"vort_puzzle_random_main_room"
+{
+	"playsoundscape"
+	{
+		"name"	"vort_puzzle_chimes_main_room"	
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.WhooshDeep"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.MetalEvo"
+	}
+	
+}
+
+"vort_puzzle_random_first_room"
+{
+	"playsoundscape"
+	{
+		"name"	"vort_puzzle_chimes_first_room"	
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.WhooshDeep"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.MetalEvo"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientAbstract.WhispyDoppler"
+	}	
+}
+
+"vort_puzzle_water"
+{
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.WaterAndGeneratorLp"
+	}
+}
+
+"vort_puzzle_wet"
+{
+
+	"playsoundscape"
+	{
+		"name" "creepy_amb_lp_01"
+		"volume" "0.7"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.ChimesLowWaterChild"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.ChimesHighWaterChild"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.WhooshDeep"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.MetalEvo"
+	}
+	
+	"playsoundscape"
+	{
+		"name"	"vort_puzzle_water"	
+	}
+
+	"playevent"
+	{
+		"event" "A2Headcrabs.TunnelLp"
+		"volume"	"0.85"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a2_headcrabs_tunnel_vents_and_lights"
+		"volume" "1.0"
+	}	
+}
+
+"vort_puzzle_first_room"
+{
+
+	"playsoundscape"
+	{
+		"name" "creepy_amb_lp_01"
+		"volume" "0.7"
+	}
+	
+	"playsoundscape"
+	{
+		"name"	"vort_puzzle_random_first_room"	
+	}
+
+	"playevent"
+	{
+		"event" "A2Headcrabs.TunnelLp"
+		"volume"	"0.85"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a2_headcrabs_tunnel_vents_and_lights"
+		"volume" "1.0"
+	}	
+}
+
+"vort_puzzle_main_room"
+{
+
+	"playsoundscape"
+	{
+		"name" "creepy_amb_lp_01"
+		"volume" "0.7"
+	}
+	
+	"playsoundscape"
+	{
+		"name"	"vort_puzzle_random_main_room"	
+	}
+
+	"playevent"
+	{
+		"event" "A2Headcrabs.TunnelLp"
+		"volume"	"0.85"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a2_headcrabs_tunnel_vents_and_lights"
+		"volume" "1.0"
+	}	
+}
+
+"vort_puzzle_main_room_big"
+{
+	
+	"playsoundscape"
+	{
+		"name" "vort_puzzle_main_room"
+		"volume" "1.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.BuchlMystery"
+		"volume"	"0.55"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.WorldChimesHighMainRoomChild"
+		"random_soundevent_01_timer_min" "15.0"
+		"random_soundevent_01_timer_max" "22.0"
+	}	
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.WorldChimesLowMainRoomChild"
+		"random_soundevent_01_timer_min" "15.0"
+		"random_soundevent_01_timer_max" "22.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientAbstract.LightSwitchOminous"
+	}	
+}
+
+"vort_puzzle_sanctum"
+{
+	"playsoundscape"
+	{
+		"name" "creepy_amb_lp_01"
+		"volume" "0.5"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.VortSanctumLp"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.ChimesHighSanctumChild"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.ChimesLowSanctumChild"
+	}
+	
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.WhooshDeep"
+		"volume"	"0.8"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.MetalEvo"
+		"volume"	"0.8"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesHigh"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.WorldChimesHighSanctumChild"
+		"random_soundevent_01_timer_min" "15.0"
+		"random_soundevent_01_timer_max" "22.0"
+	}	
+
+	"playevent"
+	{
+		"event" "AmbientDebrisPuzzle.ChimesLow"
+		"random_soundevent_01_name"	"AmbientDebrisPuzzle.WorldChimesLowSanctumChild"
+		"random_soundevent_01_timer_min" "15.0"
+		"random_soundevent_01_timer_max" "22.0"
+	}
+
+	"playevent"
+	{
+		"event" "AmbientAbstract.HighDoppler"
+	}
+
+	"playevent"
+	{
+		"event" "VortSanctum.BirdHole"
+		"origin"	"971.616, -701.674, 153"
+	}
+
+	// "playevent"
+	// {
+		// "event" "AmbientAbstract.LightSwitchOminous"
+	// }
+
+	// "playevent"
+	// {
+		// "event" "AmbientAbstract.Despair"
+	// }	
+}

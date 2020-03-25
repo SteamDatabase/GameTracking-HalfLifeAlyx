@@ -1,0 +1,102 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	collision_properties =
+	[
+		{
+			name = "default"
+			description = "Default collision"
+			collision_group = "default"
+			interact_as = []
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "default_block_sound"
+			description = "Default collision, but occlude sound, block soundscape selection, etc"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "blocksound", "CONTENTS_SOLID" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "solid_no_block_los"
+			description = "Default collision, but do not block line of sight"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "CONTENTS_SOLID_NO_BLOCK_LOS" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "window"
+			description = "Solid but does not block light or LOS"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "window" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "grating"
+			description = "Solid to everything but bullets"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "passbullets" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "vr_hand"
+			description = "The player's hand in VR"
+			collision_group = "ConditionallySolid"
+			interact_as = []
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "clip"
+			description = "Solid to Player and NPCs, but not physics props"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "playerclip", "npcclip" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "npc_clip"
+			description = "Solid to NPCs but not players or physics props"
+			collision_group = "ConditionallySolid"
+			interact_as = [ "npcclip" ]
+			interact_with = []
+			interact_exclude = []
+		},
+		{
+			name = "default_no_npc"
+			description = "Default collision, except ignored by NPC movement"
+			collision_group = "default"
+			interact_as = []
+			interact_with = []
+			interact_exclude = [ "npc" ]
+		},
+		{
+			name = "default_no_npc_no_player_continuous"
+			description = "Default collision, except ignored by NPC movement and by VR player continuous movement"
+			collision_group = "default"
+			interact_as = []
+			interact_with = []
+			interact_exclude = [ "npc", "vr_player_continuous" ]
+		},
+		{
+			name = "default_no_npc_no_player_movement"
+			description = "Default collision, except ignored by NPC movement and by VR player movement"
+			collision_group = "default"
+			interact_as = []
+			interact_with = []
+			interact_exclude = [ "npc", "vr_player_movement" ]
+		},
+		{
+			name = "breakable_window"
+			description = "Solid but does not block light, LOS, or weapon LOS"
+			collision_group = "breakable_glass"
+			interact_as = [ "window" ]
+			interact_with = []
+			interact_exclude = []
+		},
+	]
+}

@@ -1,0 +1,40 @@
+{
+	core.soundscape_2d = 
+	{
+		type = "hlvr_src1_soundscape_2d"
+		limiter_on = 0.000000
+		vsnd_files = "sounds/diagnostics/bell.vsnd"
+	}
+	core.soundscape_3d = 
+	{
+		type = "hlvr_src1_soundscape_3d"
+		limiter_on = 0.000000
+		vsnd_files = "sounds/diagnostics/bell.vsnd"
+	}
+	hlvr.set_mix_send_levels = 
+	{
+		type = "hlvr_set_mix_send_levels"
+	}
+	hlvr.set_mix_send_pre_gain = 
+	{
+		type = "hlvr_set_mix_send_pre_gain"
+	}
+	hlvr.set_all_mix_sends = 
+	{
+		type = "hlvr_set_all_mix_sends"
+	}
+	core.stop_all_soundevents = 
+	{
+		type = "hlvr_reset_sound_defaults"
+	}
+	core.set_playerdsp_muffled = 
+	{
+		type = "core_set_playerdsp"
+		mix = 0.000000
+		enable = 0.000000
+	}
+	hlvr.hlvr_vo_radio_ext = 
+	{
+		type = "hlvr_vo_radio_ext"
+	}
+}

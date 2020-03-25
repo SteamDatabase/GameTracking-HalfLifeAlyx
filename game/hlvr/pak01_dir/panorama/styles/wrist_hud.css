@@ -1,0 +1,128 @@
+/* styles for the player hud */
+
+.RootPanel {
+}
+
+.WristHUD {
+	width: 40%;
+	height: fit-children;
+    background-color: #000000;
+    flow-children: down;
+}
+
+.StatPanel {
+    width: 100%;
+    flow-children: none;
+    margin: 2px;
+}
+
+.StatTitle {
+    color: rgb(250, 198, 0);
+    font-size: 13px;
+    text-align: left;
+    width: 100%;
+}
+
+.Seperator {
+    color: rgb(250, 198, 0);
+    font-size: 13px;
+    margin-left: 50%;
+    text-align: left;
+    width: 100%;
+}
+
+.StatLabel {
+    color: rgb(250, 198, 0);
+    font-size: 13px;
+    margin-left: 60%;
+    text-align: left;
+    width: 100%;
+}
+
+.HealthPanel {
+    width: 100%;
+    flow-children: none;
+    margin: 2px;
+}
+
+.HealthSeperator {
+    color: rgb(250, 198, 0);
+    font-size: 13px;
+    margin-left: 30%;
+    text-align: left;
+    width: 100%;
+}
+
+#HealthProgressBarBackground
+{
+    box-shadow: inset black 2px 2px 4px 4px;
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+    margin-right: 1%;
+    border: 1px solid rgb(250, 198, 0);
+    background-color: #00000000;
+    horizontal-align: left;
+    saturation: 1.0;
+}
+
+#HealthProgressBar
+{
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+    margin-right: 1%;
+    background-color: #222222;
+    horizontal-align: left;
+    vertical-align: bottom;
+    saturation: 1.0;
+}
+
+@keyframes 'healthMaxAnimation' {
+    0%   {background-color: #31ff00;}
+    25%  {background-color: #31ff00;}
+    50%  {background-color: #00c81d;}
+    75%  {background-color: #31ff00;}
+    100% {background-color: #31ff00;}
+}
+
+@keyframes 'healthMinorAnimation' {
+    0%   {background-color: rgb(250, 198, 0);}
+    25%  {background-color: #b9a400;}
+    50%  {background-color: #a09300;}
+    75%  {background-color: #b9a400;}
+    100% {background-color: rgb(250, 198, 0);}
+}
+
+@keyframes 'healthHurtAnimation' {
+    0%   {background-color: #ff0000;}
+    25%  {background-color: #b90000;}
+    50%  {background-color: #8f0000;}
+    75%  {background-color: #b90000;}
+    100% {background-color: #ff0000;}
+}
+
+@keyframes 'healthDangerAnimation' {
+    0%   {background-color: #ff0000;}
+    25%  {background-color: #b90000;}
+    50%  {background-color: #6d0000;}
+    75%  {background-color: #b90000;}
+    100% {background-color: #ff0000;}
+}
+
+#HealthProgressBar .ProgressBarLeft
+{
+    background-color: #4cff00;
+    /*animation-name: healthHurtAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;*/
+}
+
+#Health {
+}
+
+#Ammo {
+}
+
+#Currency {
+}

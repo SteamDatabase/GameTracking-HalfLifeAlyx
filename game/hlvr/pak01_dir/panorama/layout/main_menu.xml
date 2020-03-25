@@ -1,0 +1,110 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+		<include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/game_menu_ui.vcss_c" />		
+		<include src="s2r://panorama/styles/main_menu.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/game_menu_ui.vjs_c" />
+	</scripts>
+	
+	<snippets>
+		<snippet name="SaveGame">
+			<Button class="SaveGameItem">
+				<Image id="ItemThumbImage" class="ScreenshotThumb" scaling="stretch-to-cover-preserve-aspect" />
+				<Label class="ChapterNumber" text="{s:chapter_number}"/>
+				<Label class="ChapterName" text="{s:chapter_name}"/>
+				<Label class="TimeSaved" text="{t:s:t:time_saved}"/>
+			</Button>
+		</snippet>
+		
+		<snippet name="ChapterListItem">
+			<Button class="ChapterListItem">
+				<Image id="ItemThumbImage" class="ScreenshotThumb" scaling="stretch-to-cover-preserve-aspect" />
+				<Label class="ChapterNumber" text="{s:chapter_number}"/>
+				<Label class="ChapterName" text="{s:chapter_name}"/>
+			</Button>
+		</snippet>		
+	</snippets>
+
+  <HLVRMainMenu class="game_menu_root ViewMainMenu" >
+    <Panel id="corner_brackets"/>
+    <Panel id="scan_line_mask">
+      <Panel class="MainMenu">
+        <Panel class="TopLevelMenu Page button_list" id="base_container">
+          <Panel class="row" id="ContinueBtn">
+            <Panel class="button_scale">
+              <Button class="button_center" onactivate="MainMenu_ContinueGame()">
+                <Label text="#HLVR_MainMenu_Continue"/>
+                <Label class="ContinueSubLabel" text="{s:resume_chapter_number}"/>
+                <Label class="ContinueSubLabel" text="{s:resume_chapter_name}"/>
+                <Label class="ContinueSubLabel" text="{t:s:t:resume_time_saved}"/>
+              </Button>
+            </Panel>
+          </Panel>
+          <Panel class="row">
+            <Panel class="button_large">
+              <Button class="button_center" id="NewGameBtn" onactivate="MainMenu_NewGame()">
+                <Label text="#HLVR_MainMenu_NewGame"/>
+              </Button>
+            </Panel>
+          </Panel>
+          <Panel class="row" id="LoadGameBtn">
+            <Panel class="button_large">
+              <Button class="button_center" onactivate="MainMenu_ViewSaveGameList()">
+                <Label text="#HLVR_MainMenu_LoadGame"/>
+              </Button>
+            </Panel>
+          </Panel>
+          <Panel class="row">
+            <Panel class="button_large">
+              <Button class="button_center" id="OptionsBtn" onactivate="MainMenu_ViewOptions()">
+                <Label text="#HLVR_MainMenu_Options"/>
+              </Button>
+            </Panel>
+          </Panel>
+          <Panel class="row">
+            <Panel class="button_large">
+              <Button class="button_center" id="QuitGameBtn" onactivate="MainMenu_QuitGame()">
+                <Label text="#HLVR_MainMenu_Quit"/>
+              </Button>
+            </Panel>
+          </Panel>
+        </Panel>
+
+        <Panel class="Page" id="SaveGamePage">
+          <Panel class="header_container">
+            <Panel id="header_row_backer_options" class="rows header_left">
+              <Label class="header" text="#HLVR_MainMenu_LoadGame"/>
+            </Panel>
+          </Panel>
+          <Panel class="ItemList" id="SaveGameList"></Panel>
+          <Panel id="bottom_container">
+            <Button class="button_back" onactivate="MainMenu_BackToMainMenu()">
+              <Label text="#HLVR_MainMenu_Back"/>
+            </Button>
+          </Panel>
+        </Panel>
+
+        <Panel class="Page" id="ChapterListPage">
+          <Panel class="header_container">
+            <Panel id="header_row_backer_options" class="rows header_left">
+              <Label class="header" text="#HLVR_MainMenu_SelectChapter"/>
+            </Panel>
+          </Panel>
+          <Panel class="ItemList" id="ChapterList"></Panel>
+          <Panel id="bottom_container">
+            <Button class="button_back" onactivate="MainMenu_BackToMainMenu()">
+              <Label text="#HLVR_MainMenu_Back"/>
+            </Button>
+          </Panel>
+        </Panel>
+
+        <GameMenuOptionsPanel id="GameMenuOptionsPanel"></GameMenuOptionsPanel>
+      </Panel>
+    </Panel>
+  </HLVRMainMenu>
+</root>
+

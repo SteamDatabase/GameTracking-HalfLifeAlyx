@@ -1,0 +1,1303 @@
+{
+	Step_Player.Default = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/step_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_07.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_08.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_light_07.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/step_run_09.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/land_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/land_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Cardboard = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/cardboard/step_01.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_02.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_03.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_04.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_05.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_06.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_07.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_08.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/cardboard/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_light_09.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/cardboard/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/cardboard/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/cardboard/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/cardboard/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/cardboard/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/cardboard/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/cardboard/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/cardboard/land_01.vsnd",
+			"sounds/physics/footsteps/player/cardboard/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Carpet = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/carpet/step_01.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_02.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_03.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_04.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_05.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_06.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_07.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_08.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/carpet/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_light_08.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/carpet/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/carpet/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/carpet/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/carpet/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/carpet/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/carpet/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/carpet/land_01.vsnd",
+			"sounds/physics/footsteps/player/carpet/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Concrete_Plain = 
+	{
+		base = "Step_Player.Default"
+	}
+	Step_Player.Concrete_Rough = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/concrete_rough/step_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_07.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_08.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/concrete_rough/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_light_07.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/concrete_rough/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/concrete_rough/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_rough/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/concrete_plain/land_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/land_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_plain/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Concrete_Flooded = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/concrete_flooded/step_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_07.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_08.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_light_07.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/concrete_flooded/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/concrete_flooded/land_01.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/land_02.vsnd",
+			"sounds/physics/footsteps/player/concrete_flooded/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Debris = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/debris/step_01.vsnd",
+			"sounds/physics/footsteps/player/debris/step_02.vsnd",
+			"sounds/physics/footsteps/player/debris/step_03.vsnd",
+			"sounds/physics/footsteps/player/debris/step_04.vsnd",
+			"sounds/physics/footsteps/player/debris/step_05.vsnd",
+			"sounds/physics/footsteps/player/debris/step_06.vsnd",
+			"sounds/physics/footsteps/player/debris/step_07.vsnd",
+			"sounds/physics/footsteps/player/debris/step_08.vsnd",
+			"sounds/physics/footsteps/player/debris/step_09.vsnd",
+			"sounds/physics/footsteps/player/debris/step_10.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/debris/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/debris/step_light_08.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/debris/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/debris/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/debris/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/debris/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/debris/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/debris/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/debris/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/debris/land_01.vsnd",
+			"sounds/physics/footsteps/player/debris/land_02.vsnd",
+			"sounds/physics/footsteps/player/debris/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Dirt = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/dirt/step_01.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_02.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_03.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_04.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_05.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_06.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_07.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_08.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_09.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_10.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_11.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/dirt/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_light_09.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/dirt/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/dirt/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/dirt/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/dirt/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/dirt/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/dirt/scuff_04.vsnd",
+			"sounds/physics/footsteps/player/dirt/scuff_05.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/dirt/land_01.vsnd",
+			"sounds/physics/footsteps/player/dirt/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Grass = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/grass/step_01.vsnd",
+			"sounds/physics/footsteps/player/grass/step_02.vsnd",
+			"sounds/physics/footsteps/player/grass/step_03.vsnd",
+			"sounds/physics/footsteps/player/grass/step_04.vsnd",
+			"sounds/physics/footsteps/player/grass/step_05.vsnd",
+			"sounds/physics/footsteps/player/grass/step_06.vsnd",
+			"sounds/physics/footsteps/player/grass/step_07.vsnd",
+			"sounds/physics/footsteps/player/grass/step_08.vsnd",
+			"sounds/physics/footsteps/player/grass/step_09.vsnd",
+			"sounds/physics/footsteps/player/grass/step_10.vsnd",
+			"sounds/physics/footsteps/player/grass/step_11.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/grass/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/grass/step_light_09.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/grass/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/grass/step_run_09.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/grass/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/grass/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/grass/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/grass/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/grass/land_01.vsnd",
+			"sounds/physics/footsteps/player/grass/land_02.vsnd",
+			"sounds/physics/footsteps/player/grass/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Gravel = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/gravel/step_01.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_02.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_03.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_04.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_05.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_06.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_07.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_08.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_09.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_10.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_11.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/gravel/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_09.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_10.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_light_11.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/gravel/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_10.vsnd",
+			"sounds/physics/footsteps/player/gravel/step_run_11.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/gravel/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/gravel/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/gravel/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/gravel/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/gravel/land_01.vsnd",
+			"sounds/physics/footsteps/player/gravel/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Metal_Panel = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/metal_panel/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_07.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_08.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_09.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_10.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_11.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/metal_panel/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_light_09.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/metal_panel/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_10.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/step_run_11.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/metal_panel/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/metal_panel/land_01.vsnd",
+			"sounds/physics/footsteps/player/metal_panel/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Metal_Solid = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/metal_solid/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_07.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_08.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/metal_solid/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_09.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_10.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_11.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_light_12.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/metal_solid/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_10.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/step_run_11.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/metal_solid/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/metal_solid/land_01.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/land_02.vsnd",
+			"sounds/physics/footsteps/player/metal_solid/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Metal_Thin = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_07.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_08.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_09.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_10.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_11.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_light_12.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/step_run_08.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/metal_thin/land_01.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/land_02.vsnd",
+			"sounds/physics/footsteps/player/metal_thin/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Metal_Walkway = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/metal_walkway/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_07.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_08.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_09.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_10.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/metal_walkway/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_light_08.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/metal_walkway/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/step_run_08.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/metal_walkway/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/metal_walkway/land_01.vsnd",
+			"sounds/physics/footsteps/player/metal_walkway/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Metal_Chainlink = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/metal_chainlink/step_01.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_02.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_03.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_04.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_05.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_06.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_07.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_light_07.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/metal_chainlink/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/scuff_02.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/metal_chainlink/land_01.vsnd",
+			"sounds/physics/footsteps/player/metal_chainlink/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Mud = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/mud/step_01.vsnd",
+			"sounds/physics/footsteps/player/mud/step_02.vsnd",
+			"sounds/physics/footsteps/player/mud/step_03.vsnd",
+			"sounds/physics/footsteps/player/mud/step_04.vsnd",
+			"sounds/physics/footsteps/player/mud/step_05.vsnd",
+			"sounds/physics/footsteps/player/mud/step_06.vsnd",
+			"sounds/physics/footsteps/player/mud/step_07.vsnd",
+			"sounds/physics/footsteps/player/mud/step_08.vsnd",
+			"sounds/physics/footsteps/player/mud/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/mud/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/mud/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/mud/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/mud/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/mud/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/mud/step_light_06.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/mud/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/mud/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/mud/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/mud/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/mud/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/mud/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/mud/land_01.vsnd",
+			"sounds/physics/footsteps/player/mud/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Mud_Puddles = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/step_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_02.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_03.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_04.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_05.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_06.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_07.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_08.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_light_06.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/land_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Plastic_Hollow = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/plastic_hollow/step_01.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_02.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_03.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_04.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_05.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_06.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_07.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_08.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_light_09.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/step_run_07.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/plastic_hollow/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/plastic_hollow/land_01.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/land_02.vsnd",
+			"sounds/physics/footsteps/player/plastic_hollow/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Wood_Crate = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/step_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_03.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_04.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_05.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_06.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_07.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_08.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_light_08.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_10.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/step_run_11.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/wood_crate/land_01.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/land_02.vsnd",
+			"sounds/physics/footsteps/player/wood_crate/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Wood_Debris = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/wood_debris/step_01.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_02.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_03.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_04.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_05.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_06.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_07.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_08.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_09.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/wood_debris/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_light_07.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/wood_debris/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/wood_debris/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/wood_debris/land_01.vsnd",
+			"sounds/physics/footsteps/player/wood_debris/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Wood_Floor_Old = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_old/step_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_08.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_09.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_10.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_08.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_09.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_light_10.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_10.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/step_run_11.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_old/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_old/land_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/land_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_old/land_03.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Wood_Floor_Parquet = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_08.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_light_08.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_04.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_05.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_06.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_07.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_08.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_09.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/step_run_10.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_parquet/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/scuff_02.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/scuff_03.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/scuff_04.vsnd",
+		]
+		vsnd_files_landing = 
+		[
+			"sounds/physics/footsteps/player/wood_floor_parquet/land_01.vsnd",
+			"sounds/physics/footsteps/player/wood_floor_parquet/land_02.vsnd",
+		]
+		vsnd_files_landing_layer = 
+		[
+			"sounds/player/foley/land_01.vsnd",
+			"sounds/player/foley/land_02.vsnd",
+			"sounds/player/foley/land_03.vsnd",
+			"sounds/player/foley/land_04.vsnd",
+		]
+	}
+	Step_Player.Lightbridge = 
+	{
+		type = "hlvr_footsteps_player"
+		mixgroup = "PlayerFootsteps"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/player/lightbridge/step_01.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_02.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_03.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_04.vsnd",
+		]
+		vsnd_files_step_light = 
+		[
+			"sounds/physics/footsteps/player/lightbridge/step_light_01.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_light_02.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_light_03.vsnd",
+		]
+		vsnd_files_step_run = 
+		[
+			"sounds/physics/footsteps/player/lightbridge/step_run_01.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_run_02.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/step_run_03.vsnd",
+		]
+		vsnd_files_scuff = 
+		[
+			"sounds/physics/footsteps/player/lightbridge/scuff_01.vsnd",
+			"sounds/physics/footsteps/player/lightbridge/scuff_02.vsnd",
+		]
+	}
+}

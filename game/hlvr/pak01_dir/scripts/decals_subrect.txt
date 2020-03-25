@@ -1,0 +1,309 @@
+// Decal definitions, format is 
+//   decalname weight
+//   where weight is used to randomly selected a decal to apply from within the group
+
+"Impact.Concrete"
+{
+	"materials/decals/concrete1.vmat" "1"
+	"materials/decals/concrete2.vmat" "1"
+	"materials/decals/concrete3.vmat" "1"
+	"materials/decals/concrete4.vmat" "1"
+	"materials/decals/concrete5.vmat" "1"
+}
+
+"Impact.Tile"
+{
+	"materials/decals/tile1.vmat" "2"
+	"materials/decals/tile2.vmat" "1"
+	"materials/decals/tile3.vmat" "1"
+	"materials/decals/tile4.vmat" "1"
+	"materials/decals/tile5.vmat" "2"
+	//"materials/decals/tile6.vmat" "1"
+}
+
+"Impact.Dirt"
+{
+	"materials/decals/dirt/dirt1.vmat" "1"
+	"materials/decals/dirt/dirt2.vmat" "1"
+	"materials/decals/dirt/dirt3.vmat" "1"
+	"materials/decals/dirt/dirt4.vmat" "1"
+}
+
+"Impact.Upholstery"
+{
+	"materials/decals/upholstery/upholstery1.vmat" "1"
+	"materials/decals/upholstery/upholstery2.vmat" "1"
+}
+
+"Impact.Xen"
+{
+	"materials/decals/xen/xen1.vmat" "1"
+//	"materials/decals/upholstery/upholstery2.vmat" "1"
+}
+
+"Impact.Carpet"
+{
+//	"materials/decals/carpet/carpet1.vmat" "1"
+	"materials/decals/upholstery/upholstery1.vmat" "1"
+	"materials/decals/upholstery/upholstery2.vmat" "1"
+}
+
+"Impact.Rubber"
+{
+	"materials/decals/rubber/rubber1.vmat" "1"
+	"materials/decals/rubber/rubber2.vmat" "1"
+	//"materials/decals/rubber/rubber3.vmat" "1"
+	//"materials/decals/rubber/rubber4.vmat" "1"
+}
+
+"Impact.Cardboard"
+{
+	"materials/decals/cardboard/cardboard1.vmat" "1"
+	"materials/decals/cardboard/cardboard2.vmat" "1"
+}
+
+"Impact.Asphalt"
+{
+	"materials/decals/asphalt/asphalt1.vmat" "1"
+	"materials/decals/asphalt/asphalt2.vmat" "1"
+	"materials/decals/asphalt/asphalt3.vmat" "1"
+	"materials/decals/asphalt/asphalt4.vmat" "1"
+}
+
+"Impact.Vent"
+{
+	"materials/decals/metal/metal1_thin.vmat" "1"
+	"materials/decals/metal/metal2_thin.vmat" "1"
+	"materials/decals/metal/metal3_thin.vmat" "1"
+	"materials/decals/metal/metal4_thin.vmat" "1"
+}
+
+"Impact.Computer"
+{
+	"materials/decals/rubber/rubber1.vmat" "1"
+	"materials/decals/rubber/rubber2.vmat" "1"
+	//"decals/computer/computer1_subrect" "1"
+	//"decals/computer/computer2_subrect" "1"
+	//"decals/computer/computer3_subrect" "1"
+	//"decals/computer/computer4_subrect" "1"
+}
+
+"Impact.Paper"
+{
+	"materials/decals/paper/paper1.vmat" "1"
+}
+
+"Impact.Plastic"
+{
+	"materials/decals/rubber/rubber1.vmat" "1"
+	"materials/decals/rubber/rubber2.vmat" "1"
+	//"materials/decals/rubber/rubber3.vmat" "1"
+	//"materials/decals/rubber/rubber4.vmat" "1"
+}
+
+"Impact.Metal"
+{
+	"materials/decals/metal/metal1.vmat" "1"
+	"materials/decals/metal/metal2.vmat" "1"
+	"materials/decals/metal/metal3.vmat" "1"
+//	"materials/decals/metal/metal4.vmat" "1"
+}
+
+"Impact.Metal_Grazing"
+{
+	"materials/decals/metal/metal1_grazing.vmat" "1"
+	"materials/decals/metal/metal1_flipped_grazing.vmat" "1"
+	"materials/decals/metal/metal2_grazing.vmat" "1"
+}
+
+"Impact.Wood"
+{
+	"materials/decals/wood1.vmat" "1"
+	"materials/decals/wood2.vmat" "1"
+	"materials/decals/wood3.vmat" "1"
+	"materials/decals/wood4.vmat" "1"
+}
+
+"Impact.Glass"
+{
+	"materials/decals/glass/glass1_safety.vmat" "1"
+	"materials/decals/glass/glass2_safety.vmat" "1"
+}
+
+"Impact.Flesh"
+{
+	"materials/decals/flesh/flesh1.vmat" "1"
+	"materials/decals/flesh/flesh2.vmat" "1"
+}
+
+// Antlion/headcrab flesh impact
+"Impact.FleshYellow"
+{
+	"materials/decals/flesh/flesh1_yellow.vmat" "1"
+	"materials/decals/flesh/flesh2_yellow.vmat" "1"
+}
+
+// Antlion spitter flesh impact
+"Impact.FleshGreen"
+{
+	"materials/decals/flesh/flesh1_green.vmat" "1"
+	"materials/decals/flesh/flesh2_green.vmat" "1"
+}
+
+// Sand does not have model versions of the decals.
+"Impact.Sand"
+{
+	"materials/decals/sand/sand1.vmat" "1"
+	"materials/decals/sand/sand2.vmat" "1"
+}
+
+// Grass does not have model versions of the decals.
+"Impact.Grass"
+{
+	"materials/decals/grass/grass1.vmat" "1"
+}
+
+// Leaves does not have model versions of the decals.
+"Impact.Leaves"
+{
+	"materials/decals/grass/grass1.vmat" "1"
+}
+
+"Impact.Drywall"
+{
+	"materials/decals/drywall/drywall1.vmat" "1"
+	"materials/decals/drywall/drywall2.vmat" "1"
+	"materials/decals/drywall/drywall3.vmat" "1"
+	"materials/decals/drywall/drywall4.vmat" "1"
+}
+
+"Impact.Plaster"
+{
+	"materials/decals/plaster/plaster1.vmat" "1"
+	"materials/decals/plaster/plaster2.vmat" "1"
+	//"materials/decals/plaster/plaster3.vmat" "1"
+	//"materials/decals/plaster/plaster4.vmat" "1"
+}
+
+"Impact.Rock"
+{
+	"materials/decals/concrete1.vmat" "1"
+	"materials/decals/concrete2.vmat" "1"
+	"materials/decals/concrete3.vmat" "1"
+	"materials/decals/concrete4.vmat" "1"
+}
+
+"Impact.Brick"
+{
+	"materials/decals/brick/brick1.vmat" "1"
+	"materials/decals/brick/brick2.vmat" "1"
+	"materials/decals/brick/brick3.vmat" "1"
+}
+
+"Impact.BrickRed"
+{
+	"materials/decals/brick/brick1_red.vmat" "1"
+	"materials/decals/brick/brick2_red.vmat" "1"
+	"materials/decals/brick/brick3_red.vmat" "1"
+}
+
+"MolotovScorch"
+{
+	"materials/decals/invalid_decal.vmat" "1"
+	//"decals/MolotovScorch" "1"
+}
+
+"Scorch"
+{
+	"materials/decals/scorch1.vmat" "1"
+//	"decals/scorch1_subrect" "1"
+//	"decals/scorch2_subrect" "1"
+}
+
+"Blood"
+{
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_1_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_2_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_3_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_4_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_5_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_6_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_7_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_8_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_9_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_10_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_11_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_12_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_13_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_14_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_15_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_16_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_17_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_18_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_19_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_20_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_21_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_22_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_23_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_24_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_25_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_26_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_27_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_28_22.vmat" "1"
+	"materials/particle/fluids/blood_decals/fluid_spray_b_decals_29_22.vmat" "1"
+}
+
+"BloodDead"
+{
+	"materials/decals/blood1.vmat" "1"
+	"materials/decals/blood2.vmat" "1"
+	"materials/decals/blood3.vmat" "1"
+	"materials/decals/blood4.vmat" "1"
+	"materials/decals/blood5.vmat" "1"
+	"materials/decals/blood6.vmat" "1"
+	"materials/decals/blood7.vmat" "1"
+	"materials/decals/blood8.vmat" "1"
+}
+
+
+// Antlion/headcrab blood
+"YellowBlood"
+{
+	"materials/decals/yblood1.vmat" "1"
+	"materials/decals/yblood2.vmat" "1"
+	"materials/decals/yblood3.vmat" "1"
+	"materials/decals/yblood4.vmat" "1"
+}
+
+// Antlion spitter blood
+"GreenBlood"
+{
+	"materials/decals/gblood1.vmat" "1"
+	"materials/decals/gblood2.vmat" "1"
+	"materials/decals/gblood3.vmat" "1"
+	"materials/decals/gblood4.vmat" "1"
+	"materials/decals/gblood5.vmat" "1"
+	"materials/decals/gblood6.vmat" "1"
+}
+
+"Models"
+{
+	// Model specific decal precache.
+//	"decals/bigshot1model" "1"
+//	"decals/bigshot2model" "1"
+//	"decals/bigshot3model" "1"
+//	"decals/bigshot4model" "1"
+//	"decals/bigshot5model" "1"
+//	"decals/bproof1model" "1"
+//	"decals/break1model" "1"
+//	"decals/break2model" "1"
+//	"decals/break3model" "1"
+//	"decals/extinguish1model" "1"
+//	"decals/extinguish2model" "1"
+//	"decals/scorch1model" "1"
+//	"decals/scorch2model" "1"
+//	"decals/scorchfademodel" "1"
+//	"decals/smscorch1model" "1"
+//	"decals/smscorch2model" "1"
+//	"decals/smscorch3model" "1"
+}

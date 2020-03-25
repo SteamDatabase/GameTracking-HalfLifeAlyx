@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/worldui_text.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+    <HLVRWorldUITextPanel class="WorldUITextPanel" id="WorldUITextPanel">
+			<Panel class ="MainPanel" id="MainPanel">
+        <Label class="OutsideLabel" id="Outside" text="" />
+        <Label class="TextLabel" id="TextLabel" text="{s:text_label}"/>
+        <Label class="OutsideLabel" id="Outside2" text="" />
+			</Panel>
+		</HLVRWorldUITextPanel>
+	</ClientUIDialogPanel>
+</root>

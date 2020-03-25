@@ -1,0 +1,114 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/hud.vcss_c" />
+		<include src="s2r://panorama/styles/hud_debug.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+	
+<Panel class="WindowRoot " hittest="false">
+
+<!-- SPECTATOR HUD -->
+	
+    <Panel id="SpectatorHUD" class="SpectatorHUD RightHanded" >
+      <Panel id="HealthAndResin" class="HUD_Bottom">
+        <Panel id="ResinContainer" class="Container_Resin">
+          <Label id="ResinLabel" class="TextLabel" text="#HLVR_HUD_Resin" />
+          <Label id="ResinCount" class="TextResinCount" text="0" />
+        </Panel>
+        <Panel id="container_health" class="Container_Health">
+          <Label class="TextLabel" text="#HLVR_HUD_Health" />
+          <Panel id="HeartContainer" class="Container_Hearts">
+            <Panel id="health_heart_1" class="Icon_Heart health_icon_0" />
+            <Panel id="health_heart_2" class="Icon_Heart health_icon_0" />
+            <Panel id="health_heart_3" class="Icon_Heart health_icon_0" />
+          </Panel>
+        </Panel>
+      </Panel>
+      <Panel id="GunsAndAmmo" class="HUD_Bottom">
+        <Panel id="container_Guns" class="Container_Guns ">
+          <Panel id="icon_gun_pistol" class="Icon_Gun Icon_Gun_Pistol" />
+          <Panel id="icon_gun_shotgun" class="Icon_Gun Icon_Gun_Shotgun" />
+          <Panel id="icon_gun_rapid_fire" class="Icon_Gun Icon_Gun_Rapid_Fire" />
+        </Panel>
+        <Panel id="container_Ammo" class="Container_Ammo" >
+          <Label class="TextLabel" text="#HLVR_HUD_Ammo" />
+          <Panel class="Container_Ammo_Counter">
+            <Label id="ammoclipcount_100" class="TextAmmoClipCount" text=" " />
+			<Label id="ammoclipcount_10" class="TextAmmoClipCount" text=" " />
+            <Label id="ammoclipcount_1" class="TextAmmoClipCount" text="0" />
+            <Label id="backpackclipcount" class="TextBackpackCount" text="/00" />
+          </Panel>
+        </Panel>
+      </Panel>
+
+      <Panel id="container_Hand" class="Container_Hand">
+		<Panel id="HandItem" class="HandItem Icon_Hand" />
+      </Panel>	  
+	  
+      <Panel id="WristPouchLeft" class="WristPouch Left">
+ 		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_inverted_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircleInverted" id="WristPouchCircleInvertedLeft" />
+		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircle" id="WristPouchCircleLeft" />
+		<Panel id="WristItemLeft" class="WristItem" />
+      </Panel>
+
+      <Panel id="WristPouchRight" class="WristPouch Right">
+ 		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_inverted_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircleInverted" id="WristPouchCircleInvertedRight" />
+		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircle" id="WristPouchCircleRight" />
+		<Panel id="WristItemRight" class="WristItem" />
+      </Panel>
+    </Panel>
+
+
+	
+<!-- end SPECTATOR HUD -->
+
+<!-- DEBUG INFO HUD -->
+    <Panel id="DebugHUD" class="Debug">
+      <Label class="CurrentTime" text="{t:l:T:current_time}"/>
+      <Label class="CurrentMap" text="{s:current_map}"/>
+      <Label class="WarningText" text="{s:warning_text}"/>
+      <Label class="PlayerName" text="{s:hlvr_playername}"/>
+      <Panel class="Status">
+        <Label class="ValidityText" text="Validity: {s:head_validity} ({s:illegal_peephole})"/>
+        <Panel class="Controls">
+          <Panel class="HandControllerStatus">
+	    <Label class="LeftType" text="{s:controller_type}"/>
+            <Label class="LeftTriggerEvent" text="L TRIG {s:Left_trigger}"/>
+            <Label class="LeftGripEvent" text="L GRIP {s:Left_grip}"/>
+            <Label class="LeftTrigger" text="L TRIG {s:Left_trigger_value}"/>
+            <Label class="LeftGrip" text="L GRIP {s:Left_grip_value}"/>
+            <Label class="LeftForce" text="L FORCE {s:Left_force_value}"/>
+            <Label class="LeftItem" text="L ITEM {s:Left_item_holder}"/>
+            <Panel class="HandControllerButtons">
+              <Label class="LeftBEvent" text="[ B ] "/>
+              <Label class="LeftAEvent" text="[ A ] "/>
+              <Label class="LeftPadEvent" text="[ Pad ] "/>
+              <Label class="LeftBackpackEvent" text="[ BackP ] "/>
+            </Panel>
+          </Panel>
+          <Panel class="HandControllerStatus">
+	    <Label class="RightType" text=""/>
+            <Label class="RightTriggerEvent" text="R TRIG {s:Right_trigger}"/>
+            <Label class="RightGripEvent" text="R GRIP {s:Right_grip}"/>
+            <Label class="RightTrigger" text="R TRIG {s:Right_trigger_value}"/>
+            <Label class="RightGrip" text="R GRIP {s:Right_grip_value}"/>
+            <Label class="RightForce" text="R FORCE {s:Right_force_value}"/>
+            <Label class="RightItem" text="R ITEM {s:Right_item_holder}"/>
+            <Panel class="HandControllerButtons">
+              <Label class="RightBEvent" text="[ B ] "/>
+              <Label class="RightAEvent" text="[ A ] "/>
+              <Label class="RightPadEvent" text="[ Pad ]"/>
+              <Label class="RightBackpackEvent" text="[ BackP ] "/>
+            </Panel>
+          </Panel>
+        </Panel>
+      </Panel>
+    </Panel>
+<!-- end DEBUG INFO HUD -->
+
+</Panel>
+
+	
+	
+	
+</root>

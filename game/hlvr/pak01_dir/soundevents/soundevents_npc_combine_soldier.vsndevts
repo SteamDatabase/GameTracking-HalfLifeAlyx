@@ -1,0 +1,1207 @@
+{
+	NPC_Combine.Flashlight_On = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 1000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/flashlight_on.vsnd",
+		]
+	}
+	NPC_Combine.Flashlight_Off = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 1000.000000
+		pitch = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/flashlight_off.vsnd",
+		]
+	}
+	NPC_Combine.Gastank_Hit = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Combine.Gastank_Fire_Start"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Combine.Gastank_Flame"
+		use_02 = 1.000000
+	}
+	NPC_Combine.Gastank_Fire_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		volume_fade_out = 0.500000
+		mixgroup = "NPC_Med"
+		block_match_this_event = true
+		block_distance = 50.000000
+		block_duration = 5.000000
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/gastank_fire_start_01.vsnd",
+			"sounds/npc/combine_soldier/gastank_fire_start_02.vsnd",
+			"sounds/npc/combine_soldier/gastank_fire_start_03.vsnd",
+		]
+	}
+	NPC_Combine.Gastank_Flame = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		volume_fade_out = 0.500000
+		mixgroup = "NPC_Med"
+		block_match_this_event = true
+		block_distance = 50.000000
+		block_duration = 5.000000
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/gastank_flame_01.vsnd",
+			"sounds/npc/combine_soldier/gastank_flame_02.vsnd",
+			"sounds/npc/combine_soldier/gastank_flame_03.vsnd",
+		]
+	}
+	NPC_Combine.SentenceParameters = 
+	{
+		type = "src1_3d"
+		volume = 0.799805
+		pitch_rand_min = -0.040000
+		pitch_rand_max = 0.040000
+		pitch = 0.990000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	combine.radioOn = 
+	{
+		type = "hlvr_update_vo_combine"
+		line_text = ""
+		volume = 2.000000
+		volume_falloff_scale_x = 1.000000
+		vsnd_duration = 0.028594
+		occlusion_scale = 0.600000
+		metadata = 
+		[
+			"walkie talkie, bloop",
+			"",
+		]
+		vsnd_files = 
+		[
+			"sounds/combine/soldier_common/combine_radio_on_01.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_02.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_03.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_04.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_05.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.425532,
+				0.000412,
+				0.000412,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1395.948608,
+				1.000000,
+				0.000427,
+				0.000427,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.001021,
+				-0.001021,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				607.862671,
+				0.379433,
+				-0.000248,
+				-0.000248,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2396.913086,
+				0.000000,
+				-0.000081,
+				-0.000081,
+				2.000000,
+				3.000000,
+			],
+		]
+		eq1_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000116,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq2_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.000116,
+				-0.000116,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq3_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		radio_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				810.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				0.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+	}
+	combine.radioOff = 
+	{
+		type = "hlvr_update_vo_combine"
+		line_text = ""
+		volume = 2.000000
+		volume_falloff_scale_x = 1.000000
+		vsnd_duration = 0.133175
+		occlusion_scale = 0.600000
+		metadata = 
+		[
+			"walkie talkie, bloop",
+			"",
+		]
+		vsnd_files = 
+		[
+			"sounds/combine/soldier_common/combine_radio_off_01.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_02.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_04.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_05.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_06.vsnd",
+			"sounds/combine/soldier_common/combine_radio_off_07.vsnd",
+			"sounds/combine/soldier_common/combine_radio_on_05.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.425532,
+				0.000412,
+				0.000412,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1395.948608,
+				1.000000,
+				0.000427,
+				0.000427,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.001075,
+				-0.001075,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				587.140137,
+				0.368794,
+				-0.000248,
+				-0.000248,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				2396.913086,
+				0.000000,
+				-0.000081,
+				-0.000081,
+				2.000000,
+				3.000000,
+			],
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				0.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				3.000000,
+			],
+		]
+		radio_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				810.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq1_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000116,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq2_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.000116,
+				-0.000116,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq3_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+	}
+	NPC_Combine.WeaponBash = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch = 1.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 0.000000
+		occlusion_scale = 0.900000
+		vsnd_files = 
+		[
+			"sounds/npc/shared/human_bodyfall_hard_01.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_02.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_03.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_04.vsnd",
+		]
+	}
+	NPC_Combine.GrenadeLaunch = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		pitch = 1.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/grenade_launcher1.vsnd",
+		]
+	}
+	NPC_CombineS.ElectrocuteScream = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/die1.vsnd",
+			"sounds/npc/combine_soldier/die2.vsnd",
+			"sounds/npc/combine_soldier/die3.vsnd",
+		]
+	}
+	NPC_CombineS.DissolveScream = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 0.000000
+		vsnd_files = 
+		[
+			"sounds/npc/combine_soldier/die1.vsnd",
+			"sounds/npc/combine_soldier/die2.vsnd",
+			"sounds/npc/combine_soldier/die3.vsnd",
+		]
+	}
+	combine.radioIdles = 
+	{
+		type = "hlvr_update_vo_combine"
+		line_text = "[combine radio chatter]"
+		volume = 1.000000
+		volume_falloff_scale_x = 1.000000
+		vsnd_duration = 14.320477
+		metadata = 
+		[
+			"walkie talkie, bloop",
+			"",
+		]
+		vsnd_files = 
+		[
+			"sounds/combine/soldier_common/combine_radio_idle_01.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_02.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_03.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_04.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_05.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_06.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_07.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_08.vsnd",
+			"sounds/combine/soldier_common/combine_radio_idle_09.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.144322,
+				0.002394,
+				0.002394,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				293.672180,
+				0.847518,
+				0.000613,
+				0.000138,
+				1.000000,
+				0.000000,
+			],
+			
+			[
+				1395.948608,
+				1.000000,
+				0.000138,
+				0.000138,
+				0.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.336879,
+				-0.006246,
+				-0.001882,
+				2.000000,
+				2.000000,
+			],
+			
+			[
+				163.505219,
+				0.145390,
+				-0.001073,
+				-0.000245,
+				2.000000,
+				0.000000,
+			],
+			
+			[
+				756.484131,
+				0.000000,
+				-0.000200,
+				-0.000200,
+				2.000000,
+				3.000000,
+			],
+		]
+		eq1_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000116,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq2_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.000116,
+				-0.000116,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq3_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		radio_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.061856,
+				0.000050,
+				0.000050,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				103.297958,
+				0.067010,
+				0.000050,
+				0.000050,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				464.840820,
+				0.252577,
+				0.000659,
+				0.000659,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				807.355103,
+				1.000000,
+				0.002125,
+				0.002125,
+				2.000000,
+				3.000000,
+			],
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.000704,
+				0.000704,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	combine.choreo.apartmentFight1 = 
+	{
+		type = "hlvr_update_vo_combine"
+		vsnd_duration = 15.225964
+		line_text = "[distant combine chatter]"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/combine/choreo/distant_apartment_fight_01.vsnd",
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.002125,
+				0.002125,
+				2.000000,
+				3.000000,
+			],
+		]
+		volume_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.000116,
+				-0.000116,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.000116,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				528.645508,
+				0.465055,
+				-0.000624,
+				-0.000624,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				1657.867432,
+				0.006300,
+				-0.000200,
+				-0.000200,
+				2.000000,
+				3.000000,
+			],
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.061856,
+				0.000050,
+				0.000050,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				103.297958,
+				0.067010,
+				0.000050,
+				0.000050,
+				0.000000,
+				3.000000,
+			],
+			
+			[
+				464.840820,
+				0.252577,
+				0.000659,
+				0.000659,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				807.355103,
+				1.000000,
+				0.002125,
+				0.002125,
+				2.000000,
+				3.000000,
+			],
+		]
+		eq1_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.000116,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq2_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				-0.000116,
+				-0.000116,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				78.905525,
+				0.990824,
+				-0.000116,
+				-0.002804,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.398041,
+				-0.002804,
+				-0.000561,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				-0.000561,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		eq3_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				78.905525,
+				0.000000,
+				-0.012673,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				290.276886,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				1000.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		radio_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				810.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+	}
+	combine.choreo.apartmentFight2 = 
+	{
+		type = "hlvr_update_vo_combine"
+		vsnd_duration = 15.327846
+		line_text = "[distant combine chatter]"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/combine/choreo/distant_apartment_fight_02.vsnd",
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.002125,
+				0.002125,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	combine.choreo.apartmentFight3 = 
+	{
+		type = "hlvr_update_vo_combine"
+		line_text = "[distant combine chatter]"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/combine/choreo/distant_apartment_fight_03.vsnd",
+		]
+		hrtf_falloff_curve = 
+		[
+			
+			[
+				0.000000,
+				1.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				81.153725,
+				1.000000,
+				0.002125,
+				0.002125,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+}

@@ -1,0 +1,770 @@
+/* styles for the player hud */
+
+.RootPanel {
+    /*background-color: #00AA00AA;*/
+}
+
+.WorldUITextPanel {
+    width: 100%;
+    height: fit-children;
+    flow-children: up;
+    vertical-align: bottom;
+	
+	/*commenting out to try shader background*/
+	//animation-name: SelectionAreaFlicker;
+	//animation-duration: 4s;
+	//animation-delay: 0s;
+	//animation-timing-function: linear; 
+	//animation-iteration-count: infinite; 
+}
+
+
+@keyframes 'SelectionAreaFlicker' 
+{
+	0%
+	{
+	opacity: 1;	
+	}
+	3%
+	{
+	opacity: .95;	
+	}
+	5%
+	{
+	opacity: 1;	
+	}
+	8%
+	{
+	opacity: .93;	
+	}
+	10%
+	{
+	opacity: .97;	
+	}
+	11%
+	{
+	opacity: 1;	
+	}
+	14%
+	{
+	opacity: .92;	
+	}
+	15%
+	{
+	opacity: .95;	
+	}
+	17%
+	{
+	opacity: .95;	
+	}
+	18%
+	{
+	opacity: 1;	
+	}
+	21%
+	{
+	opacity: .92;	
+	}
+	24%
+	{
+	opacity: .95;	
+	}
+	26%
+	{
+	opacity: .93;	
+	}
+	29%
+	{
+	opacity: .88;	
+	}
+	30%
+	{
+	opacity: 1;	
+	}
+	33%
+	{
+	opacity: .99;	
+	}
+	35%
+	{
+	opacity: .94;	
+	}
+	36%
+	{
+	opacity: 1;	
+	}
+	38%
+	{
+	opacity: .9;	
+	}
+	39%
+	{
+	opacity: .95;	
+	}
+	41%
+	{
+	opacity: .9;	
+	}
+	44%
+	{
+	opacity: 1;
+	}
+	46%
+	{
+	opacity: .93;	
+	}
+	48%
+	{
+	opacity: .9;	
+	}
+	50%
+	{
+	opacity: 1;	
+	}
+	53%
+	{
+	opacity: 1;	
+	}
+	55%
+	{
+	opacity: 1;	
+	}
+	58%
+	{
+	opacity: .9;	
+	}
+	59%
+	{
+	opacity: .91;	
+	}
+	61%
+	{
+	opacity: .97;	
+	}
+	65%
+	{
+	opacity: 1;	
+	}
+	68%
+	{
+	opacity: 1;	
+	}
+	73%
+	{
+	opacity: 1;	
+	}
+	75%
+	{
+	opacity: 1;	
+	}
+	80%
+	{
+	opacity: .96;	
+	}
+	82%
+	{
+	opacity: .95;	
+	}
+	85%
+	{
+	opacity: .89;	
+	}
+	88%
+	{
+	opacity: .99;	
+	}
+	90%
+	{
+	opacity: 1;	
+	}
+	92%
+	{
+	opacity: .96;	
+	}
+	95%
+	{
+	opacity: .9;	
+	}
+	96%
+	{
+	opacity: .9;	
+	}
+	98%
+	{
+	opacity: .92;	
+	}
+	100%
+	{
+	opacity: 1;
+	}
+}
+
+.HintPanel {
+    flow-children: right;
+    horizontal-align: center;
+    border: 1px solid white;
+	border: 2px solid #f4d71422;
+    border-radius: 0px;
+	
+	box-shadow: #f4b71455 -12px -12px 24px 24px;
+	margin: 24px;
+	
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffe500cc ), color-stop( 0.97, #ff720055 ), to( #ffe50088 ) );
+    
+    /*alt background for 'shader background'*/
+    background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffe50077 ), color-stop( 0.97, #ff720022 ), to( #ffe50044 ) );
+    box-shadow: #f4b71433 -12px -12px 24px 24px;
+    border: 2px solid #f4d71400;
+	
+	/*commenting out to try shader background*/
+	//background-image: url("s2r://panorama/images/hint_ui/hint_hot_pixels_psd.vtex");
+	//background-size: 100% 100%;
+	//background-repeat: no-repeat; 
+	
+	wash-color: yellow; 
+	
+	/*commenting out to try shader background*/
+	//opacity-mask: url("s2r://panorama/images/hint_ui/hint_type_mask_psd.vtex");
+	
+	opacity: 0;
+	pre-transform-scale2d: .8;
+	
+	transition-property: opacity, pre-transform-scale2d;
+    transition-delay: 0s;
+    transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+}
+
+
+.Opening .HintPanel
+{	
+	pre-transform-scale2d: 1;
+	opacity: 1;
+	animation-name: DelayApperanceAnimationPanel;
+	animation-duration: .3s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'DelayApperanceAnimationPanel' 
+{
+	0%
+	{
+		opacity: 0; 
+	}
+	
+	10%
+	{
+		opacity: 0; 
+	}
+	
+	11%
+	{
+		opacity: .3; 
+	}
+	
+	25%
+	{
+		opacity: .3; 
+	}
+	
+	26%
+	{
+		opacity: .1; 
+	}
+	
+	30%
+	{
+		opacity: .1; 
+	}
+	
+	31%
+	{
+		opacity: .4; 
+	}
+	
+	35%
+	{
+		opacity: .4; 
+	}
+	
+	49%
+	{
+		opacity: .2; 
+	}
+	
+	
+	40%
+	{
+		opacity: .2; 
+	}
+	
+	51%
+	{
+		opacity: .5; 
+	}
+	
+	53%
+	{
+		opacity: .5; 
+	}
+	
+	64%
+	{
+		opacity: 0; 
+	}
+	
+	65%
+	{
+		opacity: 0; 
+	}
+	
+	78%
+	{
+		opacity: .6; 
+	}
+	
+	79%
+	{
+		opacity: .6; 
+	}
+	
+	81%
+	{
+		opacity: .5; 
+	}
+	
+	83%
+	{
+		opacity: .1; 
+	}
+	
+	84%
+	{
+		opacity: .7; 
+	}
+	
+	89%
+	{
+		opacity: .0; 
+	}
+	
+	94%
+	{
+		opacity: .6; 
+	}
+	
+	97%
+	{
+		opacity: .6; 
+	}
+	
+	100%
+	{
+		opacity: 1; 
+	}
+}
+
+
+.Closing .HintPanel
+{
+	pre-transform-scale2d: .9;
+	opacity: 0;
+	transition-property: opacity, pre-transform-scale2d;
+    transition-delay: 0s;
+    transition-duration: .2s;
+	transition-timing-function: ease-in-out;
+	
+	animation-name: DelayApperanceAnimationPanelClosing;
+	animation-duration: .2s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'DelayApperanceAnimationPanelClosing' 
+{
+	0%
+	{
+		opacity: 1; 
+	}
+	
+	10%
+	{
+		opacity: 1; 
+	}
+	
+	11%
+	{
+		opacity: .3; 
+	}
+	
+	25%
+	{
+		opacity: .3; 
+	}
+	
+	26%
+	{
+		opacity: .4; 
+	}
+	
+	30%
+	{
+		opacity: .4; 
+	}
+	
+	31%
+	{
+		opacity: .3;
+	}
+	
+	35%
+	{
+		opacity: .3; 
+	}
+	
+	49%
+	{
+		opacity: .4; 
+	}
+	
+	
+	40%
+	{
+		opacity: .4; 
+	}
+	
+	51%
+	{
+		opacity: .2; 
+	}
+	
+	53%
+	{
+		opacity: .2; 
+	}
+	
+	64%
+	{
+		opacity: 0; 
+	}
+	
+	65%
+	{
+		opacity: 0; 
+	}
+	
+	78%
+	{
+		opacity: 0; 
+	}
+	
+	79%
+	{
+		opacity: 0; 
+	}
+	
+	81%
+	{
+		opacity: 0; 
+	}
+	
+	83%
+	{
+		opacity: 0; 
+	}
+	
+	84%
+	{
+		opacity: 0; 
+	}
+	
+	89%
+	{
+		opacity: .0; 
+	}
+	
+	94%
+	{
+		opacity: 0; 
+	}
+	
+	97%
+	{
+		opacity: 0; 
+	}
+	
+	100%
+	{
+		opacity: 0; 
+	}
+}
+
+
+#AnimatedTextureMask{
+	width: 100%;
+	height: 100%;
+	horizontal-align: right;
+	vertical-align: center; 
+	overflow: noclip; 
+	opacity: 1;
+}
+
+/*commenting out to try shader background*/
+#AnimatedTexture{
+	//background-image: url("s2r://panorama/images/hint_ui/hint_animated_texture_psd.vtex");
+	//width: 100%;
+	//height: 6000px;
+	//horizontal-align: center;
+	//vertical-align: center;
+	//opacity: .2; 
+}
+
+/*commenting out to try shader background*/
+.Opening #AnimatedTexture {
+	//opacity: .2; 
+	//animation-name: ScrollingAnimation;
+	//animation-duration: 160s;
+	//animation-delay: 0s;
+	//animation-timing-function: linear; 
+	//animation-iteration-count: 1; 
+}
+
+@keyframes 'ScrollingAnimation' 
+{
+	0%
+	{
+		transform: translateY(0px); 
+	}
+	
+	
+	100%
+	{
+		transform: translateY(4000px); 
+	}
+}
+
+/*commenting out to try shader background*/
+#AnimatedTextureAlt{
+	//background-image: url("s2r://panorama/images/hint_ui/hint_animated_texture_alt_psd.vtex");
+	//width: 100%;
+	//height: 6000px;
+	//horizontal-align: center;
+	//vertical-align: center;
+	//opacity: .2; 
+}
+
+/*commenting out to try shader background*/
+.Opening #AnimatedTextureAlt {
+	//opacity: .2; 
+	//animation-name: ScrollingAnimationAlt;
+	//animation-duration: 80s;
+	//animation-delay: 0s;
+	//animation-timing-function: linear; 
+	//animation-iteration-count: 1; 
+}
+
+@keyframes 'ScrollingAnimationAlt' 
+{
+	0%
+	{
+		transform: translateY(0px); 
+	}
+	
+	
+	100%
+	{
+		transform: translateY(4000px); 
+	}
+}
+
+.TextContainer
+{
+    margin: 40px;
+	margin-top: 25px;
+	margin-bottom: 7px; 
+	
+}
+
+.Opening .TextContainer
+{
+	animation-name: DelayApperanceAnimationText;
+	animation-duration: .4s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'DelayApperanceAnimationText' 
+{
+	0%
+	{
+		opacity: 0; 
+	}
+	
+	50%
+	{
+		opacity: 0; 
+	}
+	
+	51%
+	{
+		opacity: .3; 
+	}
+	
+	55%
+	{
+		opacity: .3; 
+	}
+	
+	56%
+	{
+		opacity: 0; 
+	}
+	
+	60%
+	{
+		opacity: 0; 
+	}
+	
+	61%
+	{
+		opacity: .4; 
+	}
+	
+	65%
+	{
+		opacity: .4; 
+	}
+	
+	69%
+	{
+		opacity: 0; 
+	}
+	
+	
+	70%
+	{
+		opacity: 0; 
+	}
+	
+	71%
+	{
+		opacity: .5; 
+	}
+	
+	73%
+	{
+		opacity: .5; 
+	}
+	
+	74%
+	{
+		opacity: 0; 
+	}
+	
+	75%
+	{
+		opacity: 0; 
+	}
+	
+	78%
+	{
+		opacity: .6; 
+	}
+	
+	79%
+	{
+		opacity: .6; 
+	}
+	
+	81%
+	{
+		opacity: .5; 
+	}
+	
+	83%
+	{
+		opacity: .1; 
+	}
+	
+	84%
+	{
+		opacity: .7; 
+	}
+	
+	89%
+	{
+		opacity: .0; 
+	}
+	
+	94%
+	{
+		opacity: .6; 
+	}
+	
+	97%
+	{
+		opacity: .6; 
+	}
+	
+	100%
+	{
+		opacity: 1; 
+	}
+}
+    
+.HintLabel {
+    text-align: center;
+    font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	padding: 8px; 
+	//max-width: 400px;
+	
+	
+	//text-shadow: 0px 0px 8px 3 #ffea0144;
+	text-shadow: 0px 0px 16px 3 #ffc60022;
+	color: #ffff2b;
+	color: gradient( radial, 50% 50%, 0% 0%, 80% 100%, from( #ffffbf ), to( #ffff2b ) );
+	color: gradient( radial, 50% 50%, 0% 0%, 80% 100%, from( #ffff2b ), to( #ffffb7 ) );
+	color: gradient( radial, 50% 50%, 0% 0%, 50% 100%, from( #fff369 ), to( #ffe500 ) );
+	color: gradient( radial, 50% 50%, 0% 0%, 50% 100%, from( white ), to( #ffba00 ) );
+	//color: gradient( radial, 50% 50%, 0% 0%, 80% 100%, from( white ), to( #cc9900 ) );
+	//color: gradient( linear, 0% 0%, 100% 0%, from( blue ), to( red ) );
+	//color: #ffffff;
+	
+	brightness: 1.3;
+	
+	line-height: 50; 
+	
+}
+
+.ControllerHint {
+    font-size: 60px;
+    color: rgb(229, 229, 229);
+}
+
+.ItemHint {
+    font-size: 70px;
+    //color: rgb(229, 229, 229);
+	
+	
+}
+
+.LargeItemHint {
+    font-size: 10px;
+    color: rgb(0, 100, 229);
+	width: 100%;
+	background-color: red; 
+}
+
+.HMDHint {
+    font-size: 60px;
+    color: rgb(229, 229, 229);
+}
+
+#Hint {
+}

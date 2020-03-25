@@ -1,0 +1,2144 @@
+.game_menu_root
+{
+    width: 100%;
+    height: 0%;
+    margin: 0px;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding: 0px;
+    font-family: Raju;
+    font-weight: semi-bold;
+    color: #FFBE55;
+    blur: none;
+    visibility: collapse;
+    opacity: 0;
+    transition-property: height;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+}
+
+.game_menu_root.Visible
+{
+    transition-property: height;
+    transition-duration: 0.6s;
+	transition-timing-function: ease-in; 
+    height: 100%;
+    opacity: 1;
+}
+
+/* ========== Duplicated Panorama Background Treament ========== */
+.game_menu_root.Visible.Background
+{
+    background-color: none;
+}
+
+/* =========================================================== */
+.game_menu_root.Visible.Foreground
+{
+    background-color: none;
+}
+
+#background_panel
+{
+    flow-children: down;
+    width: 100%;
+    background-color: none;
+}
+
+#background_panel.Background
+{
+    flow-children: down;
+    width: 100%;
+    background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #553c18 ), color-stop( 0.97, #000000 ), to( #000000 ) );
+    box-shadow: inset #995e0011 2px 2px 4px 4px;
+    blur: gaussian(3);
+    opacity: .9;
+}
+
+
+#background_panel.Background.background_panel_cta
+{
+    flow-children: down;
+    width: 100%;
+    background-color: none;
+    blur: gaussian(3);
+    opacity: 1;
+}
+
+#layout_root
+{
+    
+    /* Probably useful for visibility logic, but otherwise should remove */
+}
+
+/* margin-top hack for poor aliasing */
+.base_container
+{
+    width: 100%;
+    flow-children: down;
+    margin-top: 2px;
+}
+
+/* margin-top hack for poor aliasing on */
+.base_container_sibling
+{
+    width: 700px;
+    flow-children: down;
+    margin-top: 2px; 
+}
+
+.base_container_modal
+{
+    width: 700px;
+    flow-children: down;
+}
+
+.base_container.Visible
+{
+    visibility: visible;
+}
+
+.header
+{
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    background-color: #FFBE55;
+}
+
+.header Label
+{
+    margin-top: -1px;
+    padding-right: 56px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #553c18;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.options_divider
+{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 60px;
+    flow-children: left;
+    font-size: 24px;
+    color: #FFBE55aa;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.options_divider Label
+{
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.horizontal_line
+{
+    width: 100%;
+    margin-right: 20px;
+    vertical-align: center;
+    horizontal-align: left;
+    height: 2px;
+    background-color: #FFBE5544;
+}
+
+.deactivated
+{
+    width: 100%;
+    min-height: 108px;
+    flow-children: right;
+    horizontal-align: right;
+    text-align: right;
+    background-color: none;
+}
+
+.deactivated Label
+{
+    color: #eeeeee55;
+    font-size: 36px;
+}
+
+/* LAYOUT STRUCTURE ******************************************************************/
+
+.row
+{
+    width: 100%;
+    flow-children: right;
+}
+
+.mini_row
+{
+    vertical-align: center;
+    width: 950px;
+    flow-children: none;
+}
+
+.col_body
+{
+    width: 100%;
+    min-height: 700px;
+    border-right: 1px solid #FFBE5544;
+    flow-children: down;
+}
+
+.col_body_sibling
+{
+    width: 100%;
+    border-right: 1px solid #FFBE5544;
+    flow-children: down;
+}
+
+.col_body_graphics
+{
+    width: 100%;
+    flow-children: down;
+}
+
+.info_body
+{
+    width: 100%;
+    margin-left: 32px;
+    flow-children: down;
+}
+
+.col_scrollbar
+{
+    width: 44px;
+    border-left: 1px solid #FFBE5566;
+    border-right: 1px solid #FFBE5566;
+}
+
+.scroll_bar_bg
+{
+    width: 8px;
+    height: 718px; /* max page height */
+    margin-right: 18px;
+    margin-left: 18px;
+    horizontal-align: center;
+    background-color: #FFBE5566;
+}
+
+/* Menu Options ********************************/
+#graphics_options_list
+{
+    width: 100%;
+    flow-children: down;
+    overflow: scroll;
+    height: 568px;
+}
+#root_options_list,
+#interface_options_list 
+{
+    width: 100%;
+    flow-children: down;
+    overflow: scroll;
+    height: 710px;
+}
+/* GameMenuOptionTogglePanel********************************/
+GameMenuOptionTogglePanel
+{
+    width: 100%;
+    min-height: 116px;
+    /* This is confusing. Why can't I apply this style further up the heirarchy? */
+    flow-children: right;
+    horizontal-align: right;
+    text-align: right;
+    /* Hover 'Off' values */
+    background-color: #FFBE5500;
+    transition-property: background-color;
+    transition-duration: 0s;
+}
+
+GameMenuOptionTogglePanel Label
+{
+    vertical-align: center;
+    horizontal-align: right;
+    font-size: 44px;
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 64px 3 #f4ec8e33; */
+    text-align: right;
+}
+
+GameMenuOptionTogglePanel.mini_option Label
+{
+    /*font-size: 70px;*/
+}
+
+GameMenuOptionTogglePanel:hover
+{
+    color: #fff;
+    background-color: #FFBE5588;
+    transition-property: background-color;
+    transition-duration: .38s;
+    transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );
+
+}
+
+GameMenuOptionTogglePanel:active
+{
+    background-color: #FFBE55;
+    color: #000;
+    transition-property: background-color;
+    transition-duration: 0s;
+}
+
+
+/* ========== Toggle Switch Properties ========== */
+
+
+.switch_label
+{
+    width: 100%; /* These dimensions are not intuitive */
+    padding: 0px;
+    margin: 0px;
+    vertical-align: center;
+    horizontal-align: right;
+    text-align: right;
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.switch_label_on,
+.switch_off .switch_label_off,
+.single_controller .switch_label_off,
+.single_controller_on .single_controller .switch_label_on
+{
+	visibility: visible;
+}
+
+.switch_label_off,
+.switch_off .switch_label_on,
+.single_controller .switch_label_on,
+.single_controller_on .single_controller .switch_label_off
+{
+    visibility: collapse;
+}
+
+.switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_on_png.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: center;
+    horizontal-align: center;
+    text-align: right;
+    width: 96px;
+    height: 96px;
+}
+
+.switch_button
+{
+    height: 110px;
+    width: 84.5%;
+    text-align: right;
+    vertical-align: center;
+    margin-top: 4px;
+}
+
+.switch_button_image
+{
+    width: 15.5%;
+    vertical-align: center;
+    horizontal-align: center;
+    margin-top: 4px;
+}
+
+
+.single_controller_off .single_controller .switch_image,
+.switch_off .switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_off_png.vtex");
+    brightness: 0.5;
+}
+
+.single_controller_on .single_controller .switch_image
+{
+	background-image: url("s2r://panorama/images/game_menu_ui/component_switch_on_png.vtex");
+	brightness: 1.0;
+}
+
+.single_controller_on GameMenuOptionTogglePanel.single_controller:hover .switch_image,
+GameMenuOptionTogglePanel:hover .switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_on_hover_png.vtex");
+    brightness: 1.0;
+}
+
+.single_controller_off GameMenuOptionTogglePanel.single_controller:hover .switch_image,
+GameMenuOptionTogglePanel.switch_off:hover .switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_off_hover_png.vtex");
+    brightness: 1.0;
+}
+
+
+.single_controller_off GameMenuOptionTogglePanel.single_controller:active .switch_image,
+GameMenuOptionTogglePanel.switch_off:active .switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_off_press_png.vtex");
+    brightness: 1.0;
+}
+
+.single_controller_on GameMenuOptionTogglePanel.single_controller:active .switch_image,
+GameMenuOptionTogglePanel:active .switch_image
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_switch_on_press_png.vtex");
+    brightness: 1.0;
+}
+
+
+/* GameMenuOptionCyclePanel ***************************************************/
+GameMenuOptionCycleCondenseTexturePanel,
+GameMenuOptionCycleCondensePanel,
+GameMenuOptionCyclePanel
+{
+    width: 100%;
+    
+    flow-children: right;
+    horizontal-align: right;
+    text-align: right;
+    background-color: #FFBE5500;
+    transition-property: background-color;
+    transition-duration: 0s;
+}
+
+/* Indicator Dots ********************************/
+.dot_row
+{
+    width: 100%;
+    flow-children: left;
+    text-align: left;
+}
+
+.cycle_dots
+{
+    color: #FFBE5577;
+    font-size: 16px;
+    text-align: right;
+    line-height: 10px;
+    margin-top: 0px;
+}
+
+.cycle_dots_selected
+{
+    color: rgb(255, 212, 144);
+    font-weight: bold;
+}
+
+.cycle_item
+{
+    width: 100%;
+    flow-children: right;
+}
+
+.cycle_label
+{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    vertical-align: center;
+    horizontal-align: right;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: right;
+    visibility: collapse;
+}
+
+.cycle_image
+{
+    opacity: 1;
+    vertical-align: center;
+    horizontal-align: center;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+}
+
+.cycle_button_left
+{
+    opacity: 1.0;
+    width: 15%;
+    vertical-align: center;
+    horizontal-align: left;
+}
+
+.cycle_image_left
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_left_png.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #FFBE55;
+    brightness: 0.3;
+}
+
+.cycle_button_left:hover .cycle_image_left
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_left_hover_png.vtex");
+    border: 1px solid #FFFFFF;
+    brightness: 1.0;
+}
+
+.cycle_button_left:active .cycle_image_left
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_left_press_png.vtex");
+    border: 1px solid #000000;
+    brightness: 1.0;
+}
+
+.cycle_button_right_col
+{
+    flow-children: down;
+    width: 80%;
+    margin: 10px;
+    text-align: right;
+}
+
+.mini_cycle
+{
+    font-size: 48px;
+    ui-scale: 60%;
+    width: 50%;
+}
+
+.mini_cycle_modal
+{
+    font-size: 36px;
+    ui-scale: 100%;
+    width: 100%;
+}
+
+/* Right Button ********************************/
+.cycle_button_right
+{
+    opacity: 1.0;
+    width: 85%;
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.cycle_button_right_image
+{
+    opacity: 1.0;
+    width: 25%;
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.cycle_image_right
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_right_png.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #FFBE55;
+    margin-right: 10px;
+    brightness: 0.3;
+}
+
+.cycle_button_right:hover .cycle_image_right
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_right_hover_png.vtex");
+    border: 1px solid #FFFFFF;
+    brightness: 1.0;
+}
+
+.cycle_button_right:active .cycle_image_right
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/component_cycle_right_press_png.vtex");
+    border: 1px solid #000000;
+    brightness: 1.0;
+}
+
+.cycle_button_divider
+{
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+    horizontal-align: center;
+}
+/* OPTIONS SLIDER *************************************************************************/
+
+.slider_divider
+{
+    border-right: 1px solid #FFBE55;
+    width: 5px;
+    height: 80%;
+    vertical-align: center;
+    margin-left: 40px;
+}
+
+.slider_value
+{
+    width: 10%;
+    text-transform: uppercase;
+    text-align: center;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+.slider_label
+{
+    width: 77.5%;
+    text-transform: uppercase;
+    text-align: right;
+    vertical-align: center;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+HLVR_SettingsSlider
+{
+    width: 100%;
+    flow-children: none;
+}
+
+HLVR_SettingsSlider:hover
+{
+    color: #fff;
+    /*background-color: #FFBE5588;*/
+    transition-property: background-color;
+    transition-duration: .38s;
+    transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );
+}
+
+HLVR_SettingsSlider:active
+{
+    color: #000000;
+    background-color: #ffd800;
+}
+
+.SliderContainer
+{
+    height: 100px;
+    width: 100%;
+    margin: 16px;
+}
+
+.SliderRow
+{
+    font-size: 44px;
+    height: 100px;
+    width: 85%;
+    vertical-align: center;
+    horizontal-align: right;
+    flow-children: right;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.OptionsSlider
+{
+    height: 100px;
+    width: 100%;
+    margin: 24px;
+    margin-top: 0px;
+}
+
+.OptionsSlider #SliderTrack
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FFBE5588;
+    vertical-align: center;
+}
+
+.OptionsSlider #SliderTrackProgress
+{
+    width: 100%;
+    height: 85%;
+    vertical-align: center;
+    border: 1px solid #FFBE5588;
+    background-color: rgba(94, 70, 33, 0.7);
+}
+
+HLVR_SettingsSlider:hover .OptionsSlider #SliderTrackProgress
+{
+    width: 100%;
+    height: 85%;
+    vertical-align: center;
+    border: 1px solid #FFBE5588;
+    background-color: #FFBE5588;
+}
+
+.OptionsSlider.Horizontal:active #SliderTrackProgress
+{
+    width: 100%;
+    height: 85%;
+    vertical-align: center;
+    border: 1px solid #FFBE5588;
+    background-color: #FFBE55;
+}
+
+.OptionsSlider.Horizontal:active
+{
+    color: rgb(161, 115, 41);
+}
+
+
+.OptionsSlider #SliderThumb
+{
+    width: 1px;
+    height: 85%;
+    background-color: #FFBE5588;
+    vertical-align: center;
+}
+
+/* *******************************************************************************/
+.left_align
+{
+    horizontal-align: left;
+    vertical-align: center;
+}
+
+.right_align
+{
+    horizontal-align: right;
+    vertical-align: center;
+}
+/* *******************************************************************************/
+.row_divider
+{
+    width: 100%;
+    height: 24px;
+    flow-children: right;
+}
+
+.row_divider_line
+{
+    width: 100%;
+    height: 2px; 
+    vertical-align: center;
+    background-color: #FFBE5566;
+}
+
+.row_divider_line_small
+{
+    width: 100%;
+    height: 2px;
+    vertical-align: center;
+    horizontal-align: left;
+    background-color: #FFBE5566;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.hasScrollWindow .row_divider_line_small
+{
+	width: 95%;
+}
+/* Used as corners and caps. Need to rename these or reformat */
+.empty_row
+{
+    width: 100%;
+    height: 32px;
+    margin: 0px;
+    padding: 0px;
+    border-right: 8px solid #FFBE55;
+}
+
+.empty_row_bottomR_corner
+{
+    width: 100%;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+    border-right: 40px solid #FFBE55;
+}
+
+/* = Bread Crumbs =============================================== */
+#resume_highlight
+{
+    width: 100%;   
+}
+
+.show_save_container #resume_highlight
+{
+    color: #fff;
+    background-color: #FFBE5544;
+}
+
+.inactive .item_breadcrumb
+{
+	color: #FFBE55;
+	background-color: #FFBE5544;
+}
+
+/* ========== BUTTONS ========== */
+Button
+{
+    width: 100%;
+    min-height: 110px;
+    /* This is confusing. Why can't I apply this style further up the heirarchy? */
+    flow-children: right;
+    horizontal-align: right;
+    text-align: right;
+
+    /* Hover 'Off' values */
+    background-color: #FFBE5500;
+	transition-property: background-color; 
+	transition-duration: 0s; 
+}
+
+.button_base 
+{
+    width: 100%;
+    horizontal-align: left;
+}
+
+Button Label
+{
+    vertical-align: center;
+    horizontal-align: right;
+    font-size: 44px;
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 64px 3 #f4ec8e33; */
+    text-align: right;
+}
+
+Button:hover
+{
+    color: #fff;
+    background-color: #FFBE5588;
+    transition-property: background-color;
+    transition-duration: .38s;
+    transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );
+}
+
+Button:active
+{
+    background-color: #FFBE55;
+    color: #000;
+    transition-property: background-color; 
+    transition-duration: 0s; 
+}
+
+Button:hover .text_xsmall
+{
+    color: #fff;
+}
+
+Button:hover .text_small
+{
+    color: #fff;
+}
+
+
+Button:hover .highlight_quicksave
+{
+    background-color: #FFBE55;
+}
+
+
+Button:hover #save_type_quick_save
+{
+    color: #553c18;
+}
+
+Button:active .text_xsmall
+{
+    color: #000;
+}
+
+Button:active .text_small
+{
+    color: #000;
+}
+
+Button:active #save_type_quick_save
+{
+    color: #000;
+}
+
+.button_container
+{
+    flow-children: right;
+    horizontal-align: right;
+}
+
+.button_container_left
+{
+    flow-children: right;
+    horizontal-align: left;
+}
+
+.button_standard
+{
+    width: 100%;
+    min-height: 108px;
+    flow-children: right;
+    horizontal-align: right;
+    text-align: right;
+}
+
+.button_cta
+{
+    width: 300px;
+    min-height: 108px;
+    max-height: 108px;
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 8px;
+    background-color: #FFBE5533;
+    border: 2px solid #FFBE55;
+    text-overflow: shrink;
+}
+
+.Japanese .button_cta
+{
+    text-overflow: shrink;
+}
+
+.button_newgameoptions
+{
+    horizontal-align: center;
+    width: 500px;
+    min-height: 108px;
+    margin-top: 24px;
+    margin-left: 24px;
+    padding-top: 8px;
+    background-color: #FFBE5533;
+    border: 2px solid #FFBE55;
+}
+
+
+.button_modal
+{
+    width: 300px;
+    min-height: 108px;
+    margin-top: 24px;
+    margin-right: 24px;
+    padding-top: 8px;
+    background-color: #FFBE5533;
+    border: 2px solid #FFBE55;
+}
+
+Label.cta
+{
+    width: 100%;
+    text-align: center;
+    text-overflow: shrink;
+}
+
+.Japanese Label.cta
+{
+    text-overflow: shrink;
+}
+
+#save_game_btn,
+.flow_c_none,
+#resume_game,
+#occupied_save_slot
+{
+    flow-children: none;
+}
+
+
+.load_item_hover
+{
+    width: 97%;
+    text-align: left;
+    visibility: collapse;
+    font-size: 32px;
+    font-family: raju;
+    font-weight: bold;
+    color: #000;
+}
+
+#save_game_btn:hover .load_item_hover,
+#resume_game:hover .load_item_hover,
+#occupied_save_slot:hover .load_item_hover
+{
+    visibility: visible;
+}
+
+.button_label
+{
+    width: 94%; /* These dimensions are not intuitive */
+    padding-top: 8px;
+    vertical-align: center;
+    horizontal-align: left;
+    text-align: right;
+}
+
+.button_continue
+{
+    text-align: right;
+    width: 94%;
+    flow-children: down;
+    padding-top: 8px;
+}
+
+.button_continue_line2
+{
+    margin-top: -16px;
+    font-size: 24px;
+}
+
+.save_slot_item_line1
+{
+    font-size: 30px;
+    color: #FFBE55cc;
+}
+
+.save_slot_item_line2
+{
+    margin-top: -10px;
+    line-height: 36px;
+}
+
+.empty_slot
+{   
+    margin-top: 16px;
+}
+
+
+
+.button_bullet
+{
+    vertical-align: center;
+    horizontal-align: right;
+    text-align: right;
+}
+
+.is_continue_slot .button_bullet_normal,
+.button_bullet_continue_slot
+{
+	visibility: collapse;
+}
+
+.is_continue_slot .button_bullet_continue_slot,
+.button_bullet_normal
+{
+	visibility: visible;
+}
+
+
+
+
+.setting_label
+{
+    width: 80%; /* These dimensions are not intuitive */
+    padding-top: 8px;
+    vertical-align: center;
+    horizontal-align: right;
+    text-align: right;
+}
+
+.setting_component
+{
+    horizontal-align: center;
+    text-align: center;
+}
+
+.inactive_window
+{
+    visibility: collapse;
+}
+
+.inactive .inactive_window
+{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== Scroll Bar Properties ========== */
+VerticalScrollBar,
+VerticalScrollBar .ScrollThumb,
+HorizontalScrollBar,
+HorizontalScrollBar .ScrollThumb
+HTMLHorizontalScrollBar,
+HTMLHorizontalScrollBar .ScrollThumb,
+HTMLVerticalScrollBar,
+HTMLVerticalScrollBar .ScrollThumb,
+{
+    /*The transition duration and timing function must match constants used in code: // k_flScrollTransitionTime, k_flScrollTransitionFunc, so dont change without talking with a dev*/
+    transition-duration: 0.20s;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+}
+
+VerticalScrollBar.MouseDown,
+VerticalScrollBar.MouseDown .ScrollThumb,
+HorizontalScrollBar.MouseDown,
+HorizontalScrollBar.MouseDown .ScrollThumb
+HTMLHorizontalScrollBar.MouseDown,
+HTMLHorizontalScrollBar.MouseDown .ScrollThumb,
+HTMLVerticalScrollBar.MouseDown,
+HTMLVerticalScrollBar.MouseDown .ScrollThumb,
+{
+    // Disable the transition when the mouse is dragging the scroll thumb. Note that this must match // when IUIScrollBar::IsMouseDown returns true, or else the content will be out of sync transition-duration: 0.0s;
+    transition-property: transform;
+}
+
+VerticalScrollBar, HTMLVerticalScrollBar
+{
+    width: 34px;
+    height: 100%;
+    horizontal-align: right;
+    vertical-align: center;
+    background-color: #FFBE5533;
+    margin-right: 8px;
+}
+
+HorizontalScrollBar, HTMLHorizontalScrollBar
+{
+    height: 34px;
+    width: 100%;
+    horizontal-align: left;
+    vertical-align: bottom;
+}
+
+.ScrollThumb
+{
+    transition-property: position;
+    transition-property: background-color, transform;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    background-color: #FFBE5555;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+:hover > .ScrollThumb
+{
+    background-color: #FFBE55aa;
+}
+
+:active .ScrollThumb
+{
+    background-color: #FFBE55;
+}
+
+VerticalScrollBar .ScrollThumb, HTMLVerticalScrollBar .ScrollThumb
+{
+    width: 100%;
+}
+
+HorizontalScrollBar .ScrollThumb, HTMLHorizontalScrollBar .ScrollThumb
+{
+    height: 100%;
+}
+
+/* ========== Targetting Reticle ========== */
+
+.vr_affordance_container
+{
+    width: 100%;
+    height: 850px;
+    flow-children: none;
+}
+
+.vr_affordance_container_cta
+{
+    width: 100%;
+    height: 230px;
+    flow-children: none;
+}
+
+.VRaffordance
+{
+    visibility: collapse;
+}
+
+.ShowAffordanceLeft #vr_affordance_left
+{
+    visibility: visible;
+}
+
+.ShowAffordanceRight #vr_affordance_right
+{
+    visibility: visible;
+}
+
+#vr_affordance_interior
+{
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+    margin-top: -50%;
+    border-radius: 50%;
+    border-color: #FFBE5577;
+    border-width: 4px;
+    border-style: solid;
+    background-color: #FFBE5533;
+}
+
+/* ========== Save Slots ========== */
+.overwrite_header
+{
+    visibility: visible;
+    flow-children: down;
+    width: 100%;
+    vertical-align: center;
+    horizontal-align: center;
+    min-height: 50px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.base_list
+{
+    width: 100%;
+    flow-children: down;
+    overflow: scroll;
+    height: 710px;
+}
+
+.save_slot_item
+{
+    margin-right: 50px;
+    
+    width: 100%;
+    min-height: 108px;
+    flow-children: down;
+    horizontal-align: left;
+    vertical-align: center;
+    text-align: right;
+    border-right: 1px solid #FFBE5566;
+}
+
+/* ========== Chapter Select ========== */
+#chapter_list
+{
+    width: 100%;
+    flow-children: down;
+    overflow: scroll;
+    height: 710px;
+}
+
+.chapter_item
+{
+    margin-right: 5px;
+    width: 100%;
+    min-height: 108px;
+    flow-children: right;
+    horizontal-align: left;
+    text-align: right;
+    border-right: 1px solid #FFBE5566;
+    line-height: 32px;
+}
+
+/* ========== Load Save Game ========== */
+#loadsave_list
+{
+    width: 100%;
+    flow-children: down;
+    overflow: scroll;
+    height: 700px;
+}
+
+.load_saveitem
+{
+    margin-right: 50px;
+    width: 100%;
+    min-height: 108px;
+    flow-children: right;
+    horizontal-align: left;
+    text-align: right;
+    border-right: 1px solid #FFBE5566;
+}
+
+.button_label_single
+{
+    width: 94%;
+    margin-top: 12px;
+    vertical-align: center;
+    flow-children: down;
+}
+
+.button_label_col1
+{
+    width: 70%;
+    margin-top: 24px;
+    vertical-align: center;
+    flow-children: down;
+}
+
+.button_label_col2
+{
+    margin-top: 24px;
+    width: 24%;
+    vertical-align: center;
+    flow-children: down;
+}
+
+.text_xsmall
+{
+    font-size: 24px;
+    color: #FFBE55cc;
+}
+
+.text_small
+{
+    padding-top: -8px;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.no_capitalization
+{
+    text-transform: none;
+}
+
+.mini_option
+{
+    ui-scale: 60%;
+    width: 50%;
+}
+
+.mini_option_right
+{
+    ui-scale: 60%;
+    width: 50%;
+}
+
+.save_type
+{
+    background-color: #00000000;
+}
+
+Label.save_type
+{
+    text-overflow: shrink;
+}
+
+.highlight_quicksave
+{
+    background-color: #FFBE5544;
+}
+
+#save_type_quick_save
+{
+    width: 100%;
+    max-height: 48px;
+    margin-top: -8px;
+    padding: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: #FFDE80;
+}
+
+/* ========== Icons ========== */
+.graphics_warning
+{
+    vertical-align: top;
+    height: 75%;
+    width: height-percentage(100%);
+    background-color: #FFBE5588;
+    margin-right: 5px;
+    margin-top: 1px;
+    opacity: 0;
+    opacity-mask: url("s2r://panorama/images/upgrade_station_ui/crafting_station_error_mask_psd.vtex");
+}
+
+.WristItem
+{
+    width: 100%;
+    height: 88px;
+    opacity: 1;
+    wash-color: #FFBE55;
+    background-repeat: no-repeat;
+    background-image: url("s2r://panorama/images/hud/hud_icon_wristpouch_sheet_png.vtex");
+    background-size: 509px 64px;
+}
+
+.WristItem.HealthPen
+{
+    background-position: -2px;
+}
+
+.WristItem.HealthVial
+{
+    background-position: -54px;
+}
+
+.WristItem.CombineBattery
+{
+    background-position: -106px;
+}
+
+.WristItem.ReviverHeart
+{
+    background-position: -156px;
+}
+
+.WristItem.Bottle
+{
+    background-position: -208px;
+}
+
+.WristItem.Keycard
+{
+    background-position: -258px;
+}
+
+.WristItem.Grenade
+{
+    background-position: -308px;
+}
+
+.WristItem.XenGrenade
+{
+    background-position: -358px;
+}
+
+/* ========== Options Styles ========== */
+.scroll_window
+{
+    min-height: 600px;
+    width: 95%;
+}
+
+.col_body_adv_graphics
+{
+    min-height: 500px;
+    flow-children: down;
+}
+/* ========== Sibling Styles ========== */
+.base_info_panel_collapse
+{
+    visibility: collapse;
+    width: 688px;
+    flow-children: down;
+}
+
+.base_info_panel
+{
+    width: 624px;
+	flow-children: down;
+}
+
+.header_info_panel
+{
+    width: 100%;
+    height: 12px;
+    margin: 0px;    
+    background-color: #FFBE55;
+}
+
+.label
+{
+    margin-top: 1px;
+    padding-right: 40px;
+    vertical-align: center;
+    flow-children: down;    
+
+    font-size: 44px;
+    font-weight: semi-bold;
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 120px 3 #f4ec8e33; */
+}
+
+.stats_container
+{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 8px;
+    flow-children: down;
+}
+
+.stats_col_hp_header
+{
+    width: 40%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_resin_header
+{
+    width: 40%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_pocket_l_header
+{
+    width: 10%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+    border: 0px;
+}
+
+.stats_col_pocket_r_header
+{
+    width: 10%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_weapon_1_header
+{
+    width: 33%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_weapon_2_header
+{
+    width: 33%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_weapon_3_header
+{
+    width: 34%;
+    height: 32px;
+    padding-left: 8px;
+    background-color: #FFBE5533;
+}
+
+.stats_col_hp
+{
+    width: 40%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+.stats_col_resin
+{
+    width: 40%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+.stats_col_pocket_l
+{
+    width: 10%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+}
+
+.stats_col_pocket_r
+{
+    width: 10%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.stats_col_weapon_1
+{
+    width: 33%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.stats_col_weapon_2
+{
+    width: 33%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.stats_col_weapon_3
+{
+    width: 34%;
+    height: 48px;
+    padding-left: 8px;
+    border-color: #FFBE5555;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.stats_col_weapon1
+{
+    width: 33%;
+}
+
+.stats_col_weapon2
+{
+    width: 33%;
+}
+
+.stats_col_weapon3
+{
+    width: 33%;
+}
+
+.stats
+{
+    width: 100%;
+    font-size: 24px;
+}
+
+.stats_value
+{
+    font-size: 40px;
+    margin-top: -6px;
+    color: #FFBE55;
+}
+
+.stats_icon
+{
+    width: 48px;
+    height: 48px;
+}
+
+.body_copy
+{
+    font-size: 40px;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+.Japanese .body_copy 
+{
+    line-height: 48px;
+}
+
+.Korean .body_copy
+{
+    line-height: 48px;
+}
+
+.modal_body_copy
+{
+    font-size: 40px;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+.ScreenshotThumb 
+{
+    width: 624px;
+    height: 311px;
+    margin-bottom: 24px;
+    background-color: #000000;
+}
+
+.show_options #layout_root
+{
+    visibility: collapse;
+    height: 0%;
+    transition-property: height;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+}
+
+/* = Menu Panel Visibility ========== */
+.Hidden
+{
+    visibility: collapse;
+}
+
+.Visible
+{
+    visibility: visible;
+}
+
+/* = Child Panel Visibility =============================================== */
+.child_panel_root
+{
+    visibility: collapse;
+}
+
+#child_load_container_pause,
+#child_load_container,
+#child_chapter_container_01,
+#child_chapter_container_02
+{
+    visibility: collapse;
+}
+
+.show_load_container_pause #child_load_container_pause,
+.show_load_container #child_load_container,
+.show_chapter_container_01 #child_chapter_container_01,
+.show_chapter_container_02 #child_chapter_container_02,
+.show_saved_slots_container #child_save_slot_container,
+.show_override_slots_container #child_save_slot_override_container,
+.show_child_list_container #child_list_container,
+.show_child02_list_container #child02_list_container,
+.show_child_newgameoptions_01 #child_newgameoptions_container_01,
+.show_child_newgameoptions_02 #child_newgameoptions_container_02,
+.show_child_newgameoptions_03 #child_newgameoptions_container_03
+{
+    visibility: visible;
+}
+
+
+/* Preferences / Options Combinations */
+.show_options_container #child_options_container,
+.show_preferences_container #child_options_container,
+.show_subtitles_container #child_options_container,
+.show_accessibility_container #child_options_container,
+.show_interface_container #child_options_container,
+.show_audio_container #child_options_container,
+.show_spectator_container #child_options_container,
+.show_graphics_container #child_options_container,
+.show_preferences_container #child_preferences_container,
+.show_subtitles_container #child_subtitles_container,
+.show_accessibility_container #child_accessibility_container,
+.show_interface_container #child_interface_container,
+.show_audio_container #child_audio_container,
+.show_graphics_container #child_graphics_container,
+.show_spectator_container #child_spectator_container 
+{
+    visibility: visible;
+}
+
+#advance_graphics_panel
+{
+    visibility: collapse;
+}
+
+.show_advance_graphics #advance_graphics_panel
+{
+    visibility: visible;
+}
+
+#child_panel_list,
+#child_panel_list_02,
+#override_save_slot_list,
+#save_slot_list,
+#chapter_list,
+#chapter_list_02
+{
+	visibility: collapse;
+}
+
+.show_load_container #child_panel_list_02
+{
+	visibility: visible;
+}
+
+.show_load_container_pause #child_panel_list
+{
+	visibility: visible;
+}
+
+
+.show_chapter_container_01 #chapter_list
+{
+	visibility: visible;
+}
+
+.show_chapter_container_02 #chapter_list_02
+{
+	visibility: visible;
+}
+
+
+.show_saved_slots_container #save_slot_list
+{
+	visibility: visible;
+}
+
+
+
+.show_override_slots_container #override_save_slot_list
+{
+	visibility: visible;
+}
+
+/* = Main Menu Visibility =============================================== */
+.has_save_games #start_new_game,
+#resume_game,
+#save_slots,
+#new_game_slot
+{
+	visibility: collapse;
+}
+
+.has_save_games #resume_game,
+.has_save_games #save_slots,
+.has_save_games #new_game_slot
+{
+    visibility: visible;
+}
+
+.is_in_main_menu .main_menu_deactivate
+{
+    color: #FFBE5555;
+}
+
+.save_game .button_label 
+{
+    horizontal-align: right;
+}
+
+
+.is_in_no_save .save_game 
+{
+    color: #FFBE5555;
+}
+
+/* Skip Credits *******************************************************/
+.pause_menu
+{
+    visibility: visible;
+}
+
+.skip_credits_panel,
+.skip_credits .pause_menu
+{
+    visibility: collapse;
+}
+
+.skip_credits .skip_credits_panel
+{
+    visibility: visible;
+}
+
+.skip_credits_btn
+{
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+/* = Modal Visibility =============================================== */
+.game_menu_root.modal
+{
+    visibility: visible;
+    opacity: 0.1;
+    height: 100%;
+    width: 70%;
+    pre-transform-scale2d: 0.1;
+    transition-property: pre-transform-scale2d, opacity;
+    transition-duration: .15s;
+}
+
+.game_menu_root.modal.newgame_confirm_visible
+{
+    width: 100%;
+}
+
+.modal.Visible
+{
+    opacity: 1;
+    pre-transform-scale2d: 1;
+    transition-property: pre-transform-scale2d, opacity;
+    transition-duration: .15s;
+}
+
+.modal_label
+{
+    margin-left: 10px;
+    font-size: 36px;
+    font-weight: semi-bold;
+    text-transform: uppercase;
+}
+
+#modal_dialog
+{
+    pre-transform-scale2d: 1;
+    transition-property: pre-transform-scale2d;
+    transition-duration: .15s;
+    width: 700px;
+}
+
+.modal_container
+{
+    border-right: 1px solid #FFBE5588;
+}
+
+#newgame_confirm,
+#attention_button
+{
+    visibility: collapse;
+}
+
+.modal_cancel,
+.attention_confirm_visible #attention_button,
+.newgame_confirm_visible #newgame_confirm
+{
+    visibility: visible;
+}
+
+.modal_ok_only .modal_cancel
+{
+    visibility: collapse;
+}
+
+/* = CTA Visibility =============================================== */
+#cta_adv_graphics
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/options_advanced_png.vtex");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    visibility: collapse;
+    width: 100px;
+    min-height: 108px;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 180px;
+    padding-top: 8px;
+    background-color: #FFBE5533;
+    border: 2px solid #FFBE55;
+    horizontal-align: left;
+}
+
+#cta_adv_graphics:hover
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/options_advanced_hover_png.vtex");
+    background-color: #FFBE5588;
+}
+
+#cta_adv_graphics:active
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/options_advanced_press_png.vtex");
+    background-color: #FFBE55;
+}
+/* Delete slots */
+#cta_delete_slot
+{
+	background-image: url("s2r://panorama/images/game_menu_ui/delete_png.vtex");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	visibility: collapse;
+	width: 100px;
+	min-height: 108px;
+	margin-top: 24px;
+	margin-left: 24px;
+	margin-right: 180px;
+    padding-top: 8px;
+	background-color: #FFBE5533;
+	border: 2px solid #FFBE55;
+    horizontal-align: left;
+}
+
+#cta_delete_slot:hover
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/delete_hover_png.vtex");
+    background-color: #FFBE5588;
+}
+
+#cta_delete_slot:active
+{
+    background-image: url("s2r://panorama/images/game_menu_ui/delete_press_png.vtex");
+    background-color: #FFBE55;
+}
+
+#cta_dev_menu,
+#cta_back,
+#cta_reset_graphics,
+#cta_reload_map,
+#cta_mainmenu_button
+{
+    visibility: collapse;
+}
+
+.show_load_container #cta_delete_slot.Visible,
+.show_load_item #cta_delete_slot.Visible,
+.show_graphics_container #cta_adv_graphics.Visible,
+.show_graphics_container #cta_reset_graphics.Visible,
+#cta_reload_map.Visible,
+#cta_mainmenu_button.Visible,
+#cta_dev_menu.Visible,
+#cta_back.Visible
+{
+    visibility: visible;
+}
+
+/* = ScrollWindows ============ */
+.hasScrollWindow .load_saveitem,
+.hasScrollWindow .save_slot_item,
+.hasScrollWindow .chapter_item
+{
+    width: 95%;
+}
+
+/* = Backgrounds ============ */
+/* Decoupled background content from background panel */
+
+.inactive .base_container
+{
+    blur: gaussian(1.5);
+    brightness: 0.75;
+    opacity: .7;
+}
+
+.inactive .base_container_sibling
+{
+    blur: gaussian(1.5);
+    brightness: 0.75;
+    opacity: .7;
+}
+
+.Background .col_body
+{
+    border-color: #FFBE5511;
+}
+
+.Background .col_body_sibling
+{
+    border-color: #FFBE5511;
+}
+.Background .load_saveitem
+{
+    border-color: #FFBE5511;
+}
+
+.Background .header
+{
+    opacity: .05;
+}
+
+.Background .header_info_panel
+{
+    opacity: .05;
+}
+
+.Background .empty_row
+{
+    opacity: .05;
+}
+
+.Background .empty_row_bottomR_corner
+{
+    opacity: .05;
+}
+
+.Background Button
+{
+    opacity: .1;
+}
+/*
+.Background Label
+{
+    opacity: .1;
+}
+*/
+.Background Image
+{
+    opacity: 0;
+}
+
+.Background .modal_container
+{
+    opacity: .1;
+}
+
+.Background .row_divider_line
+{
+    opacity: .1;
+}
+
+.Background .horizontal_line
+{
+    opacity: .1;
+}
+
+.Background VerticalScrollBar, HTMLVerticalScrollBar
+{
+    opacity: .1;
+}
+
+.Background .ScrollThumb
+{
+    opacity: .1;
+}
+
+.Background .switch_label
+{
+    opacity: .05;
+}
+.Background .switch_image
+{
+    opacity: .05;
+}
+
+.Background .cycle_image_left
+{
+    opacity: .1;
+}
+
+.Background .cycle_image_right
+{
+    opacity: .1;
+}
+
+.Background .body_copy
+{
+    opacity: .1;
+}
+
+.Background HLVR_SettingsSlider
+{
+    opacity: .1;
+}
+
+.Background .stats_container
+{
+    opacity: .1;
+}
+
+.Background .chapter_item
+{
+	border-color: #FFBE5511;
+}
+
+.Background .options_divider Label
+{
+    opacity: .1;
+}
+
+.Background .modal_body_copy
+{
+    opacity: .1;
+}
+
+.Background .overwrite_header
+{
+    opacity: .3;
+}
+
+.Background .row_divider_line_small
+{
+    opacity: .05;
+}
+
+.Background .save_slot_item
+{
+    border-color: #FFBE5511;
+}
+
+.Background .is_in_main_menu .main_menu_deactivate 
+{
+    opacity: .1;
+}
+
+.Background .is_in_no_save .save_game
+{
+    opacity: .1;
+}
+
+

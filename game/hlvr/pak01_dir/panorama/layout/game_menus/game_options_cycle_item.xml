@@ -1,0 +1,42 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <GameMenuOptionCyclePanel>
+    <Panel class="row" onmouseover="CycleMouseOver()">
+      <Button id="button_left" class="cycle_button_left" onactivate="ButtonBackward()" >
+        <Panel class="cycle_image cycle_image_left" />
+      </Button>
+      <Button id="button_right" class="cycle_button_right" onactivate="ButtonForward()">
+        <Panel class="cycle_button_right_col" >
+          <Label id="item0" class="cycle_label" text="{s:label}"/>
+          <Label id="item1" class="cycle_label" text="{s:label}"/>
+          <Label id="item2" class="cycle_label" text="{s:label}"/>
+          <Label id="item3" class="cycle_label" text="{s:label}"/>
+          <Label id="item4" class="cycle_label" text="{s:label}"/>
+          <Label id="item5" class="cycle_label" text="{s:label}"/>
+          <Label id="custom" class="cycle_label" text="#HLVR_Options_Fidelity_Custom"/>
+          <Panel class="dot_row" >
+            <Label id="dot0" class="cycle_dots" text=" ■ "/>
+            <Label id="dot1" class="cycle_dots" text=" ■ "/>
+            <Label id="dot2" class="cycle_dots" text=" ■ "/>
+            <Label id="dot3" class="cycle_dots" text=" ■ "/>
+            <Label id="dot4" class="cycle_dots" text=" ■ "/>
+            <Label id="dot5" class="cycle_dots" text=" ■ "/>
+            <Panel></Panel>
+          </Panel>
+        </Panel>
+        <Panel class ="cycle_button_right_image">
+          <Panel class="cycle_image cycle_image_right" />
+        </Panel>
+      </Button>
+    </Panel>
+    <Panel></Panel>
+  </GameMenuOptionCyclePanel>
+</root>
+
+
+
+

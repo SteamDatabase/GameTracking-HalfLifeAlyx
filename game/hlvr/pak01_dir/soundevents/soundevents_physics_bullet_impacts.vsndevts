@@ -1,0 +1,902 @@
+{
+	PhysBullet.Default = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Default_Core"
+	}
+	PhysBullet.Default_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_02 = 0.700000
+		volume_mult_debris = 0.100000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/default_concrete_rock_01.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_02.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_03.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_04.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_05.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_06.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_07.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_prop_shared_09.vsnd",
+		]
+	}
+	PhysBullet.Concrete = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Concrete_Core"
+	}
+	PhysBullet.Concrete_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		volume_mult_debris = 0.250000
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_concrete_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_09.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_10.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_11.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_concrete_12.vsnd",
+		]
+	}
+	PhysBullet.Prop_Misc = 
+	{
+		base = "PhysBullet.Default"
+	}
+	PhysBullet.Dirt = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Dirt_Core"
+	}
+	PhysBullet.Dirt_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		volume_mult_debris = 0.250000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/dirt_01.vsnd",
+			"sounds/physics/bullet_impacts/dirt_02.vsnd",
+			"sounds/physics/bullet_impacts/dirt_03.vsnd",
+			"sounds/physics/bullet_impacts/dirt_04.vsnd",
+			"sounds/physics/bullet_impacts/dirt_05.vsnd",
+			"sounds/physics/bullet_impacts/dirt_06.vsnd",
+			"sounds/physics/bullet_impacts/dirt_07.vsnd",
+			"sounds/physics/bullet_impacts/dirt_08.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_dirt_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_dirt_09.vsnd",
+		]
+	}
+	PhysBullet.Mud_Dry = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Mud_Dry_Core"
+	}
+	PhysBullet.Mud_Dry_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		volume_mult_debris = 0.250000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/mud_01.vsnd",
+			"sounds/physics/bullet_impacts/mud_02.vsnd",
+			"sounds/physics/bullet_impacts/mud_03.vsnd",
+			"sounds/physics/bullet_impacts/mud_04.vsnd",
+			"sounds/physics/bullet_impacts/mud_05.vsnd",
+			"sounds/physics/bullet_impacts/mud_06.vsnd",
+			"sounds/physics/bullet_impacts/mud_07.vsnd",
+			"sounds/physics/bullet_impacts/mud_08.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_dry_09.vsnd",
+		]
+	}
+	PhysBullet.Mud_Wet = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Mud_Wet_Core"
+	}
+	PhysBullet.Mud_Wet_Core = 
+	{
+		base = "PhysBullet.Mud_Dry_Core"
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_mud_wet_slime_09.vsnd",
+		]
+	}
+	PhysBullet.Sand = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Sand_Core"
+	}
+	PhysBullet.Sand_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_02 = 0.300000
+		volume_mult_debris = 0.200000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/sand_01.vsnd",
+			"sounds/physics/bullet_impacts/sand_02.vsnd",
+			"sounds/physics/bullet_impacts/sand_03.vsnd",
+			"sounds/physics/bullet_impacts/sand_04.vsnd",
+			"sounds/physics/bullet_impacts/sand_05.vsnd",
+			"sounds/physics/bullet_impacts/sand_06.vsnd",
+			"sounds/physics/bullet_impacts/sand_07.vsnd",
+			"sounds/physics/bullet_impacts/sand_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_sand_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_sand_09.vsnd",
+		]
+	}
+	PhysBullet.Plastic = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Plastic_Core"
+	}
+	PhysBullet.Plastic_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		volume_mult_debris = 0.250000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/plastic_01.vsnd",
+			"sounds/physics/bullet_impacts/plastic_02.vsnd",
+			"sounds/physics/bullet_impacts/plastic_03.vsnd",
+			"sounds/physics/bullet_impacts/plastic_04.vsnd",
+			"sounds/physics/bullet_impacts/plastic_05.vsnd",
+			"sounds/physics/bullet_impacts/plastic_06.vsnd",
+			"sounds/physics/bullet_impacts/plastic_07.vsnd",
+			"sounds/physics/bullet_impacts/plastic_08.vsnd",
+		]
+	}
+	PhysBullet.Rubber = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Rubber_Core"
+	}
+	PhysBullet.Rubber_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/rubber_01.vsnd",
+			"sounds/physics/bullet_impacts/rubber_02.vsnd",
+			"sounds/physics/bullet_impacts/rubber_03.vsnd",
+			"sounds/physics/bullet_impacts/rubber_04.vsnd",
+			"sounds/physics/bullet_impacts/rubber_05.vsnd",
+			"sounds/physics/bullet_impacts/rubber_06.vsnd",
+			"sounds/physics/bullet_impacts/rubber_07.vsnd",
+			"sounds/physics/bullet_impacts/rubber_08.vsnd",
+		]
+	}
+	PhysBullet.Cardboard = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Cardboard_Core"
+	}
+	PhysBullet.Cardboard_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_02 = 0.700000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/cardboard_01.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_02.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_03.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_04.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_05.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_06.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_07.vsnd",
+			"sounds/physics/bullet_impacts/cardboard_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_cardboard_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_cardboard_08.vsnd",
+		]
+	}
+	PhysBullet.Water = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Water_Core"
+	}
+	PhysBullet.Water_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_01 = 0.900000
+		volume_mult_02 = 0.250000
+		volume_mult_debris = 0.350000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/water_01.vsnd",
+			"sounds/physics/bullet_impacts/water_02.vsnd",
+			"sounds/physics/bullet_impacts/water_03.vsnd",
+			"sounds/physics/bullet_impacts/water_04.vsnd",
+			"sounds/physics/bullet_impacts/water_05.vsnd",
+			"sounds/physics/bullet_impacts/water_06.vsnd",
+			"sounds/physics/bullet_impacts/water_07.vsnd",
+			"sounds/physics/bullet_impacts/water_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_water_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_water_09.vsnd",
+		]
+	}
+	PhysBullet.Glass = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Glass_Core"
+	}
+	PhysBullet.Glass_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_01 = 1.200000
+		volume_mult_02 = 0.700000
+		volume_mult_debris = 0.450000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/glass_01.vsnd",
+			"sounds/physics/bullet_impacts/glass_02.vsnd",
+			"sounds/physics/bullet_impacts/glass_03.vsnd",
+			"sounds/physics/bullet_impacts/glass_04.vsnd",
+			"sounds/physics/bullet_impacts/glass_05.vsnd",
+			"sounds/physics/bullet_impacts/glass_06.vsnd",
+			"sounds/physics/bullet_impacts/glass_07.vsnd",
+			"sounds/physics/bullet_impacts/glass_08.vsnd",
+			"sounds/physics/bullet_impacts/glass_09.vsnd",
+			"sounds/physics/bullet_impacts/glass_10.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_glass_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_09.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_glass_10.vsnd",
+		]
+	}
+	PhysBullet.Pottery = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Pottery_Core"
+	}
+	PhysBullet.Pottery_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_02 = 0.700000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/pottery_01.vsnd",
+			"sounds/physics/bullet_impacts/pottery_02.vsnd",
+			"sounds/physics/bullet_impacts/pottery_03.vsnd",
+			"sounds/physics/bullet_impacts/pottery_04.vsnd",
+			"sounds/physics/bullet_impacts/pottery_05.vsnd",
+			"sounds/physics/bullet_impacts/pottery_06.vsnd",
+			"sounds/physics/bullet_impacts/pottery_07.vsnd",
+			"sounds/physics/bullet_impacts/pottery_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_pottery_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_pottery_08.vsnd",
+		]
+	}
+	PhysBullet.Metal_Solid = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Metal_Solid_Core"
+	}
+	PhysBullet.Metal_Solid_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_02 = 0.700000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/metal_01.vsnd",
+			"sounds/physics/bullet_impacts/metal_02.vsnd",
+			"sounds/physics/bullet_impacts/metal_03.vsnd",
+			"sounds/physics/bullet_impacts/metal_04.vsnd",
+			"sounds/physics/bullet_impacts/metal_05.vsnd",
+			"sounds/physics/bullet_impacts/metal_06.vsnd",
+			"sounds/physics/bullet_impacts/metal_07.vsnd",
+			"sounds/physics/bullet_impacts/metal_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_metal_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_metal_12.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_09.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_10.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_11.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_12.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_13.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_metal_shared_14.vsnd",
+		]
+	}
+	PhysBullet.Metal_Sheet = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Metal_Sheet_Core"
+	}
+	PhysBullet.Metal_Sheet_Core = 
+	{
+		base = "PhysBullet.Metal_Solid_Core"
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/metal_sheet_01.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_02.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_03.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_04.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_05.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_06.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_07.vsnd",
+			"sounds/physics/bullet_impacts/metal_sheet_08.vsnd",
+		]
+	}
+	PhysBullet.Metal_Prop = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Metal_Prop_Core"
+	}
+	PhysBullet.Metal_Prop_Core = 
+	{
+		base = "PhysBullet.Metal_Solid_Core"
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/metal_prop_01.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_02.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_03.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_04.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_05.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_06.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_07.vsnd",
+			"sounds/physics/bullet_impacts/metal_prop_08.vsnd",
+		]
+	}
+	PhysBullet.Wood = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Wood_Core"
+	}
+	PhysBullet.Wood_Core = 
+	{
+		base = "PhysBullet.Default_Core"
+		volume_mult_debris = 0.250000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/wood_01.vsnd",
+			"sounds/physics/bullet_impacts/wood_02.vsnd",
+			"sounds/physics/bullet_impacts/wood_03.vsnd",
+			"sounds/physics/bullet_impacts/wood_04.vsnd",
+			"sounds/physics/bullet_impacts/wood_05.vsnd",
+			"sounds/physics/bullet_impacts/wood_06.vsnd",
+			"sounds/physics/bullet_impacts/wood_07.vsnd",
+			"sounds/physics/bullet_impacts/wood_08.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_wood_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_wood_08.vsnd",
+		]
+	}
+	PhysBullet.Foliage = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Foliage_Core"
+	}
+	PhysBullet.Foliage_Core = 
+	{
+		base = "PhysBullet.Wood_Core"
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/foliage_01.vsnd",
+			"sounds/physics/bullet_impacts/foliage_02.vsnd",
+			"sounds/physics/bullet_impacts/foliage_03.vsnd",
+			"sounds/physics/bullet_impacts/foliage_04.vsnd",
+			"sounds/physics/bullet_impacts/foliage_05.vsnd",
+			"sounds/physics/bullet_impacts/foliage_06.vsnd",
+			"sounds/physics/bullet_impacts/foliage_07.vsnd",
+			"sounds/physics/bullet_impacts/foliage_08.vsnd",
+		]
+	}
+	PhysBullet.Prop_Flesh = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.Prop_Flesh_Core"
+	}
+	PhysBullet.Prop_Flesh_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_01 = 0.800000
+		volume_mult_02 = 0.800000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_flesh_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_flesh_10.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flesh_layer_01.vsnd",
+			"sounds/physics/bullet_impacts/flesh_layer_02.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_flesh_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_09.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_10.vsnd",
+		]
+	}
+	PhysBullet.NPC_Flesh = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.NPC_Flesh_Core"
+		soundevent_damage = "DamageNPC.Bullet"
+		use_soundevent_damage = 1.000000
+	}
+	PhysBullet.NPC_Flesh_Core = 
+	{
+		base = "PhysBullet.Prop_Flesh_Core"
+		volume_mult_01 = 0.700000
+		volume_mult_02 = 0.900000
+		volume_mult_03 = 0.900000
+		volume_mult_damage_01 = 0.700000
+		volume_mult_damage_02 = 1.000000
+		volume_mult_damage_03 = 1.000000
+		vsnd_files_03 = 
+		[
+			"sounds/physics/bullet_impacts/flesh_npc_01.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_02.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_03.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_04.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_05.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_06.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_07.vsnd",
+			"sounds/physics/bullet_impacts/flesh_npc_08.vsnd",
+		]
+		vsnd_files_debris = 
+		[
+			"sounds/physics/bullet_impact_debris/debris_flesh_01.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_02.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_03.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_04.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_05.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_06.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_07.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_08.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_09.vsnd",
+			"sounds/physics/bullet_impact_debris/debris_flesh_10.vsnd",
+		]
+	}
+	PhysBullet.Combine_Soldier = 
+	{
+		base = "PhysBullet.NPC_Flesh"
+	}
+	PhysBullet.Creature_Flesh = 
+	{
+		base = "PhysBullet.NPC_Flesh"
+	}
+	PhysBullet.Zombie_Flesh = 
+	{
+		base = "PhysBullet.NPC_Flesh"
+	}
+	NPC_Antlion.Bullet_Flesh = 
+	{
+		base = "PhysBullet.NPC_Flesh"
+	}
+	PhysBullet.NPC_Antlion_No_Damage = 
+	{
+		base = "PhysBullet.Prop_Flesh_Core"
+		volume_mult_01 = 0.800000
+		volume_mult_02 = 0.800000
+		volume_mult_damage_01 = 0.400000
+		volume_mult_damage_02 = 0.400000
+	}
+	PhysBullet.NPC_Manhack = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.NPC_Manhack_Core"
+		soundevent_damage = "DamageNPC.Bullet_Mech"
+		use_soundevent_damage = 1.000000
+	}
+	PhysBullet.NPC_Manhack_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_damage_01 = 1.400000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/manhack_01.vsnd",
+			"sounds/physics/bullet_impacts/manhack_02.vsnd",
+			"sounds/physics/bullet_impacts/manhack_03.vsnd",
+			"sounds/physics/bullet_impacts/manhack_04.vsnd",
+			"sounds/physics/bullet_impacts/manhack_05.vsnd",
+			"sounds/physics/bullet_impacts/manhack_06.vsnd",
+			"sounds/physics/bullet_impacts/manhack_07.vsnd",
+			"sounds/physics/bullet_impacts/manhack_08.vsnd",
+		]
+	}
+	PhysBullet.NPC_Armor = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.NPC_Armor_Core"
+	}
+	PhysBullet.NPC_Armor_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume_mult_01 = 1.200000
+		volume_mult_02 = 0.700000
+		chance_to_play_ricochet = 0.700000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/npc_armor_01.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_02.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_03.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_04.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_05.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_06.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_07.vsnd",
+			"sounds/physics/bullet_impacts/npc_armor_08.vsnd",
+		]
+		vsnd_files_02 = 
+		[
+			"sounds/physics/bullet_impacts/flavor_default_01.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_02.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_03.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_04.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_05.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_06.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_07.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_08.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_09.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_10.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_11.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_12.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_13.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_14.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_15.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_16.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_17.vsnd",
+			"sounds/physics/bullet_impacts/flavor_default_18.vsnd",
+		]
+	}
+	PhysBullet.Antlion_Armor = 
+	{
+		base = "PhysBullet.NPC_Armor"
+	}
+	PhysBullet.Combine_Armor = 
+	{
+		base = "PhysBullet.NPC_Armor"
+	}
+	PhysBullet.NPC_Charger_Shield = 
+	{
+		type = "hlvr_start_multi_bullet"
+		soundevent_core = "PhysBullet.NPC_Charger_Shield_Core"
+	}
+	PhysBullet.NPC_Charger_Shield_Core = 
+	{
+		type = "hlvr_bullet_impact"
+		volume = 1.100000
+		pitch = 0.900000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		chance_to_play_ricochet = 0.700000
+		vsnd_files_01 = 
+		[
+			"sounds/physics/bullet_impacts/npc_charger_shield_01.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_02.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_03.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_04.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_05.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_06.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_07.vsnd",
+			"sounds/physics/bullet_impacts/npc_charger_shield_08.vsnd",
+		]
+	}
+	PhysBullet.Revived_Zombie_Flesh = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		use_distance_delay = 1.000000
+		mixgroup = "BulletImpacts"
+		vsnd_files = 
+		[
+			"sounds/physics/bullet_impacts/default_concrete_rock_01.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_02.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_03.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_04.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_05.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_06.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_07.vsnd",
+			"sounds/physics/bullet_impacts/default_concrete_rock_08.vsnd",
+		]
+	}
+	PhysBullet.BlindZombie = 
+	{
+		type = "src1_2d"
+		volume = 1.000000
+		delay = 0.100000
+		mixgroup = "BulletImpacts"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_01.vsnd",
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_02.vsnd",
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_03.vsnd",
+		]
+	}
+	PhysBullet.Ricochet = 
+	{
+		type = "hlvr_bullet_ricochet"
+		volume = 0.400000
+		volume_rand_min = -0.150000
+		volume_rand_max = 0.250000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		vsnd_files = 
+		[
+			"sounds/physics/bullet_impacts/ricochet_01.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_02.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_03.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_04.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_05.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_06.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_07.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_08.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_09.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_10.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_11.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_12.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_13.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_14.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_15.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_16.vsnd",
+			"sounds/physics/bullet_impacts/ricochet_17.vsnd",
+		]
+	}
+}

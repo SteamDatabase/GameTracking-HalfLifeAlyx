@@ -1,0 +1,1216 @@
+{
+	Music.ext_med_cables_active_l = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 1.000000
+		volume_falloff_min = 7000.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		distance_max_velocity = 100.000000
+		occlusion_scale = 0.400000
+		volume_fade_in = 5.500000
+		volume_fade_out = 2.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_active_l.vsnd",
+		]
+	}
+	Music.ext_med_cables_active_l_2 = 
+	{
+		base = "Music.ext_med_cables_active_l"
+		delay = -76.800000
+	}
+	Music.ext_med_cables_active_r = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 0.750000
+		volume_falloff_min = 7500.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		volume_fade_out = 2.400000
+		volume_fade_in = 5.500000
+		occlusion_scale = 0.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_active_r.vsnd",
+		]
+	}
+	Music.ext_med_cables_active_r_2 = 
+	{
+		base = "Music.ext_med_cables_active_r"
+		delay = -76.800000
+	}
+	Music.ext_med_cables_active_ls = 
+	{
+		base = "Music.ext_med_cables_active_r"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_active_ls.vsnd",
+		]
+	}
+	Music.ext_med_cables_active_ls_2 = 
+	{
+		base = "Music.ext_med_cables_active_ls"
+		delay = -76.800000
+	}
+	Music.ext_med_cables_active_rs = 
+	{
+		base = "Music.ext_med_cables_active_ls"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_active_rs.vsnd",
+		]
+	}
+	Music.ext_med_cables_active_rs_2 = 
+	{
+		base = "Music.ext_med_cables_active_rs"
+		delay = -76.800000
+	}
+	Music.ext_med_cables_active = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.ext_med_cables_active_l"
+		soundevent_02 = "Music.ext_med_cables_active_r"
+		soundevent_03 = "Music.ext_med_cables_active_ls"
+		soundevent_04 = "Music.ext_med_cables_active_rs"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Music.ext_med_cables_active_2 = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.ext_med_cables_active_l_2"
+		soundevent_02 = "Music.ext_med_cables_active_r_2"
+		soundevent_03 = "Music.ext_med_cables_active_ls_2"
+		soundevent_04 = "Music.ext_med_cables_active_rs_2"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Music.ext_med_cables_static_l = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 1.000000
+		volume_falloff_min = 7000.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		distance_max_velocity = 100.000000
+		occlusion_scale = 0.400000
+		volume_fade_in = 1.000000
+		volume_fade_out = 2.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_static_l.vsnd",
+		]
+	}
+	Music.ext_med_cables_static_r = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 0.750000
+		volume_falloff_min = 7500.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		volume_fade_out = 2.400000
+		volume_fade_in = 1.000000
+		occlusion_scale = 0.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_static_r.vsnd",
+		]
+	}
+	Music.ext_med_cables_static_ls = 
+	{
+		base = "Music.ext_med_cables_static_r"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_static_ls.vsnd",
+		]
+	}
+	Music.ext_med_cables_static_rs = 
+	{
+		base = "Music.ext_med_cables_static_ls"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_static_rs.vsnd",
+		]
+	}
+	Music.ext_med_cables_static = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.ext_med_cables_static_l"
+		soundevent_02 = "Music.ext_med_cables_static_r"
+		soundevent_03 = "Music.ext_med_cables_static_ls"
+		soundevent_04 = "Music.ext_med_cables_static_rs"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Music.ext_med_cables_pulse_l = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 1.000000
+		volume_falloff_min = 7000.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		distance_max_velocity = 100.000000
+		occlusion_scale = 0.400000
+		volume_fade_in = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_pulse_l.vsnd",
+		]
+	}
+	Music.ext_med_cables_pulse_r = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 0.750000
+		volume_falloff_min = 7500.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		volume_fade_out = 0.000000
+		volume_fade_in = 0.000000
+		occlusion_scale = 0.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_pulse_r.vsnd",
+		]
+	}
+	Music.ext_med_cables_pulse_ls = 
+	{
+		base = "Music.ext_med_cables_pulse_r"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_pulse_ls.vsnd",
+		]
+	}
+	Music.ext_med_cables_pulse_rs = 
+	{
+		base = "Music.ext_med_cables_pulse_ls"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/ext_cables_pulse_rs.vsnd",
+		]
+	}
+	Music.ext_med_cables_pulse = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.ext_med_cables_pulse_l"
+		soundevent_02 = "Music.ext_med_cables_pulse_r"
+		soundevent_03 = "Music.ext_med_cables_pulse_ls"
+		soundevent_04 = "Music.ext_med_cables_pulse_rs"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Music.ext_med_cables_blast_l = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "World"
+		volume = 1.000000
+		volume_falloff_min = 8000.000000
+		volume_falloff_max = 14000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		distance_max_velocity = 100.000000
+		occlusion_scale = 0.200000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_l.vsnd",
+		]
+	}
+	Music.ext_med_cables_blast_r = 
+	{
+		base = "Music.ext_med_cables_blast_l"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_r.vsnd",
+		]
+	}
+	Music.ext_med_cables_blast_ls = 
+	{
+		base = "Music.ext_med_cables_blast_l"
+		volume = 1.500000
+		volume_falloff_min = 8000.000000
+		volume_falloff_max = 15000.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_ls.vsnd",
+		]
+	}
+	Music.ext_med_cables_blast_rs = 
+	{
+		base = "Music.ext_med_cables_blast_ls"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_rs.vsnd",
+		]
+	}
+	Music.ext_med_cables_blast = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.ext_med_cables_blast_l"
+		soundevent_02 = "Music.ext_med_cables_blast_r"
+		soundevent_03 = "Music.ext_med_cables_blast_ls"
+		soundevent_04 = "Music.ext_med_cables_blast_rs"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Music.ext_med_cables_travel_1 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.200000
+		volume_falloff_min = 4200.000000
+		volume_falloff_max = 12000.000000
+		enable_debug_radius = 0.000000
+		use_doppler = 1.000000
+		doppler_factor = 2.000000
+		doppler_factor_receding = 2.000000
+		volume_fade_in = 4.000000
+		volume_fade_out = 4.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_hacked.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.005714,
+				0.300000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.227125,
+				0.227125,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	Music.nearby_cables_pulse_layer_l = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.000000
+		volume_falloff_min = 7000.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		distance_max_velocity = 100.000000
+		occlusion_scale = 0.400000
+		volume_fade_in = 0.700000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_layer_l.vsnd",
+		]
+	}
+	Music.nearby_cables_pulse_layer_r = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 0.750000
+		volume_falloff_min = 7500.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		use_named_send = "main"
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		volume_fade_out = 0.000000
+		volume_fade_in = 0.000000
+		occlusion_scale = 0.400000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_layer_r.vsnd",
+		]
+	}
+	Music.nearby_cables_pulse_layer_ls = 
+	{
+		base = "Music.nearby_cables_pulse_layer_r"
+		volume = 1.500000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_layer_ls.vsnd",
+		]
+	}
+	Music.nearby_cables_pulse_layer_rs = 
+	{
+		base = "Music.nearby_cables_pulse_layer_ls"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_layer_rs.vsnd",
+		]
+	}
+	Music.SetParticleOpvars = 
+	{
+		type = "hlvr_set_pulse_particle_opvars"
+		pulse_particle_2_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.222987,
+				0.222987,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				4.484571,
+				1.000000,
+				0.021933,
+				0.021933,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				7.445713,
+				0.163308,
+				-0.181310,
+				-0.181310,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.000000,
+				0.000000,
+				-0.063935,
+				-0.063935,
+				3.000000,
+				1.000000,
+			],
+		]
+		pulse_particle_1_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				11.538857,
+				0.000000,
+				0.083487,
+				0.083487,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				11.977946,
+				1.000000,
+				0.535037,
+				0.535037,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				13.407888,
+				1.000000,
+				-0.199122,
+				-0.199122,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				17.000000,
+				0.000000,
+				-0.278388,
+				-0.278388,
+				3.000000,
+				1.000000,
+			],
+		]
+		pulse_particle_3_curve = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.000000,
+				0.000000,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				6.899434,
+				0.000000,
+				0.000000,
+				0.848857,
+				0.000000,
+				0.000000,
+			],
+			
+			[
+				8.077489,
+				1.000000,
+				0.270764,
+				0.270764,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				10.592689,
+				1.000000,
+				-0.254939,
+				-0.254939,
+				1.000000,
+				1.000000,
+			],
+			
+			[
+				12.000000,
+				0.000000,
+				-0.710575,
+				0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+	}
+	Music.Pulse_vort_base = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.600000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 60.000000
+		volume_falloff_max = 450.000000
+		occlusion_scale = 0.250000
+		position = 
+		[
+			2114.000000,
+			-1200.000000,
+			788.000000,
+		]
+		use_world_position = true
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+		]
+	}
+	Music.Pulse_vort_01 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2114.000000,
+			-1200.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+		]
+	}
+	Music.Pulse_vort_02 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2114.000000,
+			-1150.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_02.vsnd",
+		]
+	}
+	Music.Pulse_vort_03 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2114.000000,
+			-1104.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_03.vsnd",
+		]
+	}
+	Music.Pulse_vort_04 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2114.000000,
+			-1064.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_04.vsnd",
+		]
+	}
+	Music.Pulse_vort_05 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2164.000000,
+			-1174.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_05.vsnd",
+		]
+	}
+	Music.Pulse_vort_06 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2164.000000,
+			-1128.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_06.vsnd",
+		]
+	}
+	Music.Pulse_vort_07 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2164.000000,
+			-1088.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_07.vsnd",
+		]
+	}
+	Music.Pulse_vort_08 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2164.000000,
+			-1036.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_08.vsnd",
+		]
+	}
+	Music.Pulse_vort_09 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2114.000000,
+			-1104.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_09.vsnd",
+		]
+	}
+	Music.Pulse_vort_10 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2164.000000,
+			-1088.000000,
+			788.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_10.vsnd",
+		]
+	}
+	Music.Pulse_vort_11 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2128.000000,
+			-1162.000000,
+			605.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_01.vsnd",
+			"sounds/music/places/vault/vort_02.vsnd",
+			"sounds/music/places/vault/vort_03.vsnd",
+			"sounds/music/places/vault/vort_04.vsnd",
+		]
+	}
+	Music.Pulse_vort_12 = 
+	{
+		base = "Music.Pulse_vort_base"
+		position = 
+		[
+			2136.000000,
+			-1210.000000,
+			626.000000,
+		]
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_07.vsnd",
+			"sounds/music/places/vault/vort_08.vsnd",
+			"sounds/music/places/vault/vort_09.vsnd",
+			"sounds/music/places/vault/vort_10.vsnd",
+		]
+	}
+	Music.a3_pulse_vort_10_lp01_arr = 
+	{
+		type = "hlvr_start_arrangement"
+		arrangement = "a3_pulse_vort_10_lp01_arr"
+		arrangement_volume = 1.000000
+		quantize_type = "reset"
+		bpm = 117.000000
+	}
+	Music.Pulse_vort_still = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 0.350000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 160.000000
+		volume_falloff_max = 500.000000
+		volume_fade_out = 3
+		spread_min = 50.000000
+		spread_max = 60.000000
+		use_world_position = true
+		position = 
+		[
+			2120.000000,
+			-964.000000,
+			788.000000,
+		]
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_still_lp01.vsnd",
+		]
+	}
+	Music.Pulse_vort_quiet_still = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Music"
+		volume = 0.130000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 160.000000
+		volume_falloff_max = 500.000000
+		volume_fade_in = 3
+		volume_fade_out = 3
+		spread_min = 50.000000
+		spread_max = 60.000000
+		use_world_position = true
+		position = 
+		[
+			2120.000000,
+			-964.000000,
+			788.000000,
+		]
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		reverb_use_curve = 0.000000
+		reverb_xfade_value = 0.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/vort_still_lp01.vsnd",
+		]
+	}
+	Music.cable_Base = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudMusic"
+		volume = 1.400000
+		volume_falloff_min = 10000.000000
+		volume_falloff_max = 10000.000000
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		volume_fade_out = 2.400000
+		volume_fade_in = 5.500000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_idle.vsnd",
+		]
+	}
+	Music.cable_1_idle = 
+	{
+		base = "Music.cable_Base"
+		volume = 2.000000
+		volume_falloff_max = 420.000000
+		volume_falloff_min = 220.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_idle.vsnd",
+		]
+	}
+	Music.cable_1_idle_2 = 
+	{
+		base = "Music.cable_1_idle"
+		delay = -76.800000
+	}
+	Music.cable_1_static = 
+	{
+		base = "Music.cable_1_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_static.vsnd",
+		]
+	}
+	Music.cable_1_pulse = 
+	{
+		base = "Music.cable_1_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_pulse.vsnd",
+		]
+	}
+	Music.cable_hacked_1 = 
+	{
+		base = "Music.cable_1_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_hacked.vsnd",
+		]
+	}
+	Music.cable_destroyed_1 = 
+	{
+		base = "Music.cable_1_idle"
+		stop_at_time = 3.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_1_destroyed.vsnd",
+		]
+	}
+	Music.cable_2_idle = 
+	{
+		base = "Music.cable_Base"
+		volume = 1.600000
+		volume_falloff_max = 420.000000
+		volume_falloff_min = 220.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_2_idle.vsnd",
+		]
+	}
+	Music.cable_2_idle_2 = 
+	{
+		base = "Music.cable_2_idle"
+		delay = -76.800000
+	}
+	Music.cable_2_static = 
+	{
+		base = "Music.cable_2_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_2_static.vsnd",
+		]
+	}
+	Music.cable_2_pulse = 
+	{
+		base = "Music.cable_2_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_2_pulse.vsnd",
+		]
+	}
+	Music.cable_hacked_2 = 
+	{
+		base = "Music.cable_2_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_2_hacked.vsnd",
+		]
+	}
+	Music.cable_destroyed_2 = 
+	{
+		base = "Music.cable_2_idle"
+		stop_at_time = 3.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_2_destroyed.vsnd",
+		]
+	}
+	Music.cable_3_idle = 
+	{
+		base = "Music.cable_Base"
+		volume = 1.400000
+		volume_falloff_max = 530.000000
+		volume_falloff_min = 330.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_3_idle.vsnd",
+		]
+	}
+	Music.cable_3_idle_2 = 
+	{
+		base = "Music.cable_3_idle"
+		delay = -76.800000
+	}
+	Music.cable_3_static = 
+	{
+		base = "Music.cable_3_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_3_static.vsnd",
+		]
+	}
+	Music.cable_3_pulse = 
+	{
+		base = "Music.cable_3_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_3_pulse.vsnd",
+		]
+	}
+	Music.cable_hacked_3 = 
+	{
+		base = "Music.cable_3_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_3_hacked.vsnd",
+		]
+	}
+	Music.cable_destroyed_3 = 
+	{
+		base = "Music.cable_3_idle"
+		stop_at_time = 3.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_3_destroyed.vsnd",
+		]
+	}
+	Music.cable_4_idle = 
+	{
+		base = "Music.cable_Base"
+		volume = 2.200000
+		volume_falloff_max = 640.000000
+		volume_falloff_min = 400.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_4_idle.vsnd",
+		]
+	}
+	Music.cable_4_idle_2 = 
+	{
+		base = "Music.cable_4_idle"
+		delay = -76.800000
+	}
+	Music.cable_4_static = 
+	{
+		base = "Music.cable_4_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_4_static.vsnd",
+		]
+	}
+	Music.cable_4_pulse = 
+	{
+		base = "Music.cable_4_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_4_pulse.vsnd",
+		]
+	}
+	Music.cable_hacked_4 = 
+	{
+		base = "Music.cable_4_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_4_hacked.vsnd",
+		]
+	}
+	Music.cable_destroyed_4 = 
+	{
+		base = "Music.cable_4_idle"
+		stop_at_time = 3.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_4_destroyed.vsnd",
+		]
+	}
+	Music.cable_5_idle = 
+	{
+		base = "Music.cable_Base"
+		volume = 2.800000
+		volume_falloff_max = 770.000000
+		volume_falloff_min = 470.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_5_idle.vsnd",
+		]
+	}
+	Music.cable_5_idle_2 = 
+	{
+		base = "Music.cable_5_idle"
+		delay = -76.800000
+	}
+	Music.cable_5_static = 
+	{
+		base = "Music.cable_5_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_5_static.vsnd",
+		]
+	}
+	Music.cable_5_pulse = 
+	{
+		base = "Music.cable_5_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_5_pulse.vsnd",
+		]
+	}
+	Music.cable_hacked_5 = 
+	{
+		base = "Music.cable_5_idle"
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_5_hacked.vsnd",
+		]
+	}
+	Music.cable_destroyed_5 = 
+	{
+		base = "Music.cable_5_idle"
+		stop_at_time = 3.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cable_5_destroyed.vsnd",
+		]
+	}
+	Music.a3_pulse_nearby_group = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Music.a3_pulse_vort_10_lp01_arr"
+		soundevent_02 = "Music.Pulse_vort_still"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 0.000000
+		use_04 = 0.000000
+		position = 
+		[
+			2120.000000,
+			-964.000000,
+			788.000000,
+		]
+	}
+	Music.all_cables_hacked = 
+	{
+		base = "Music.cable_Base"
+		volume = 1.600000
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Music.stop_vorts = 
+	{
+		type = "core_stop_soundevent"
+		event_name = "Music.a3_pulse_nearby_group"
+	}
+	Music.stop_still = 
+	{
+		type = "core_stop_soundevent"
+		event_name = "Music.Pulse_vort_still"
+	}
+	Music.all_cables_cut = 
+	{
+		type = "hlvr_start_multi_simple"
+		soundevent_01 = "Music.stop_vorts"
+		soundevent_02 = "Music.Pulse_vort_quiet_still"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 0.000000
+		use_04 = 0.000000
+	}
+	Music.substation_powerdown = 
+	{
+		type = "hlvr_stop_sequence_track"
+		track = "base"
+	}
+	Music.a3_pulse_vort_oscillation = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "LoudEvents"
+		volume = 1.000000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 1000.000000
+		volume_falloff_max = 1000.000000
+		position = 
+		[
+			2216.000000,
+			-568.000000,
+			864.000000,
+		]
+		use_world_position = true
+		use_hrtf = 1.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/pulse_vort_oscillation.vsnd",
+		]
+	}
+	Music.Pulse_vort_misc_stop_track = 
+	{
+		type = "hlvr_stop_sequence_track"
+		track = "misc"
+	}
+	Music.cables_pulse_deep_int = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PulseInterior"
+		volume = 0.700000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100000.000000
+		volume_falloff_max = 100000.000000
+		use_hrtf = 1.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0.500000
+		occlusion_scale = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_int_deep.vsnd",
+		]
+	}
+	Music.cable_blast_deep_int = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PulseInterior"
+		volume = 0.700000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100000.000000
+		volume_falloff_max = 100000.000000
+		use_hrtf = 1.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0.500000
+		occlusion_scale = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_int_deep.vsnd",
+		]
+	}
+	Music.cables_pulse_occ_ext = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PulseInterior"
+		volume = 0.700000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100000.000000
+		volume_falloff_max = 100000.000000
+		use_hrtf = 1.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0.500000
+		occlusion_scale = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_pulse_occ_ext.vsnd",
+		]
+	}
+	Music.cable_blast_occ_ext = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "PulseInterior"
+		volume = 0.700000
+		volume_falloff_curve_amount = 0.900000
+		volume_falloff_min = 100000.000000
+		volume_falloff_max = 100000.000000
+		use_hrtf = 1.000000
+		reverb_use_curve = 0
+		reverb_xfade_value = 0.500000
+		occlusion_scale = 0.000000
+		enable_debug_radius = 0.000000
+		distance_max_velocity = 100.000000
+		vsnd_files = 
+		[
+			"sounds/music/places/vault/cables_blast_occ_ext.vsnd",
+		]
+	}
+}

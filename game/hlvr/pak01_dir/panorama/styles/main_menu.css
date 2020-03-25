@@ -1,0 +1,189 @@
+.MainMenu
+{
+	width: 100%;
+	height: 100%;
+
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5788 ), color-stop( 0.97, #ffed5733 ), to( #f4d71455 ) );
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5766 ), color-stop( 0.97, #ffed5711 ), to( #f4d71433 ) );
+	border-radius: 6px;
+
+	background-repeat: no-repeat;
+    background-size: 800px 800px;
+}
+
+.Page
+{
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	flow-children: down;
+	margin-top: 30px;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	padding: 60px; 
+	
+}
+
+.Page Button Label
+{
+	font-size: 32px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	
+}
+
+.Page Button
+{
+	width: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	//overflow: noclip; 
+}
+
+#ChapterListPage .button_back
+{
+	overflow: noclip;
+}
+
+
+
+.ItemList
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right-wrap;
+}
+
+.ViewMainMenu #base_container,
+.ViewSaveGameList #SaveGamePage,
+.ViewChapterList #ChapterListPage,
+.ViewOptionsMenu #Options
+{
+	height: 100%;
+	opacity: 1;
+}
+
+#ContinueBtn,
+#LoadGameBtn
+{
+	visibility: collapse;
+}
+
+.HasSaveGame #ContinueBtn
+{
+	visibility: visible;
+}
+.HasSaveGame #LoadGameBtn
+{
+	//	visibility: visible;
+	visibility: collapse;
+}
+
+#ContinueBtn Button
+{
+	flow-children: down;
+}
+
+.button_scale
+{
+	width: 100%;
+	min-height: 275px;
+}
+
+#base_container .button_scale Button Label.ContinueSubLabel
+{
+	font-size: 22px;
+	margin-top: 1px;
+}
+
+.SaveGameItem,
+.ChapterListItem
+{
+	width: 31%;
+	border: 1px solid #00000000;
+	margin: 5px;
+	flow-children: down;
+	transition-duration: .2s;
+	transition-property: brightness; 
+}
+
+.SaveGameItem:hover,
+.ChapterListItem:hover
+{
+	brightness: 3; 
+}
+
+
+.ChapterListItem.Locked:hover
+{
+	border: 1px solid #00000000;
+}
+
+.ScreenshotThumb
+{
+	width: 100%;
+	min-height: 100px;
+	background-color: #000000;
+}
+
+.ChapterNumber
+{
+	font-size: 24px;
+	color: #ffffff;
+ 	wash-color: #ffe954;
+}
+
+.ChapterName
+{
+	font-size: 14px;
+	color: #ffffff;
+ 	wash-color: #ffe954;
+}
+
+.TimeSaved
+{
+	font-size: 12px;
+ 	wash-color: #ffe954;
+	color: #ffffff;
+}
+
+
+.ChapterListItem.Locked:hover
+{
+	brightness: 1; 
+}
+
+.ChapterListItem.Locked .ChapterNumber,
+.ChapterListItem.Locked .ChapterName
+{
+	color: #aa0000;
+	color: #000000ee;
+}
+.ChapterListItem.Locked .ScreenshotThumb
+{
+	wash-color: #000000cc;
+	saturation: .2;
+}
+
+#bottom_container
+{
+	width: 100%;
+}
+
+#bottom_container Button.button_back
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	horizontal-align: center; 
+	width: 30%;
+	height: 70px;
+}
+#bottom_container Button.button_back Label
+{
+	margin-top: 0px;
+}

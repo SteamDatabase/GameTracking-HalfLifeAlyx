@@ -1,0 +1,1042 @@
+{
+	Zombie.Alert = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		attachment = "snd_mouth"
+		block_duration = 5.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/alert_01.vsnd",
+			"sounds/creatures/zombie/vox/alert_02.vsnd",
+			"sounds/creatures/zombie/vox/alert_03.vsnd",
+			"sounds/creatures/zombie/vox/alert_04.vsnd",
+		]
+	}
+	Zombie.Attack = 
+	{
+		type = "hlvr_default_3d"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		attachment = "snd_mouth"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/attack_grunt_01.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_02.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_03.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_04.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_05.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_06.vsnd",
+			"sounds/creatures/zombie/vox/attack_grunt_07.vsnd",
+		]
+	}
+	Zombie.Attack_Pre = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/attack_pre_01.vsnd",
+			"sounds/creatures/zombie/vox/attack_pre_02.vsnd",
+			"sounds/creatures/zombie/vox/attack_pre_03.vsnd",
+			"sounds/creatures/zombie/vox/attack_pre_04.vsnd",
+		]
+	}
+	Zombie.Die = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_min = 300.000000
+		use_distance_delay = 1.000000
+		occlusion_scale = 0.500000
+		use_hrtf = 1.000000
+		attachment = "snd_mouth"
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/death_01.vsnd",
+			"sounds/creatures/zombie/vox/death_02.vsnd",
+			"sounds/creatures/zombie/vox/death_03.vsnd",
+			"sounds/creatures/zombie/vox/death_04.vsnd",
+			"sounds/creatures/zombie/vox/death_05.vsnd",
+			"sounds/creatures/zombie/vox/death_06.vsnd",
+			"sounds/creatures/zombie/vox/death_07.vsnd",
+			"sounds/creatures/zombie/vox/death_08.vsnd",
+			"sounds/creatures/zombie/vox/death_09.vsnd",
+		]
+	}
+	Zombie.Pain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.950000
+		volume_falloff_min = 400.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_distance_delay = 1.000000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		attachment = "snd_mouth"
+		mixgroup = "Zombies"
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 1.000000
+		block_duration = 2.000000
+		block_match_this_event = true
+		block_match_entity = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/pain_01.vsnd",
+			"sounds/creatures/zombie/vox/pain_02.vsnd",
+			"sounds/creatures/zombie/vox/pain_03.vsnd",
+			"sounds/creatures/zombie/vox/pain_04.vsnd",
+			"sounds/creatures/zombie/vox/pain_05.vsnd",
+			"sounds/creatures/zombie/vox/pain_06.vsnd",
+			"sounds/creatures/zombie/vox/pain_07.vsnd",
+			"sounds/creatures/zombie/vox/pain_08.vsnd",
+			"sounds/creatures/zombie/vox/pain_09.vsnd",
+		]
+	}
+	Zombie.Idle_Anim = 
+	{
+		type = "hlvr_start_multi"
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 13.000000
+		soundevent_01 = "Zombie.Idle_Anim_Dry"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie.Idle_Anim_Wet"
+		use_02 = 1.000000
+	}
+	Zombie.Idle_Anim_Dry = 
+	{
+		type = "hlvr_default_3d"
+		occlusion_scale = 0.900000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		use_hrtf = 1.000000
+		attachment = "snd_mouth"
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/idle_moan_dry_01.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_02.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_03.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_04.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_05.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_06.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_07.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_08.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_09.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_10.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_11.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_12.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_13.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_dry_14.vsnd",
+		]
+	}
+	Zombie.Idle_Anim_Wet = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		occlusion_scale = 0.100000
+		use_hrtf = 1.000000
+		attachment = "snd_mouth"
+		mixgroup = "Zombies"
+		distance_max = 2501.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/idle_moan_wet_01.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_02.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_03.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_04.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_05.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_06.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_07.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_08.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_09.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_10.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_11.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_12.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_13.vsnd",
+			"sounds/creatures/zombie/vox/idle_moan_wet_14.vsnd",
+		]
+	}
+	Zombie.Idle = 
+	{
+		type = "hlvr_default_3d"
+	}
+	Zombie.Grunt_Soft = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/grunt_01.vsnd",
+			"sounds/creatures/zombie/vox/grunt_02.vsnd",
+			"sounds/creatures/zombie/vox/grunt_03.vsnd",
+			"sounds/creatures/zombie/vox/grunt_04.vsnd",
+			"sounds/creatures/zombie/vox/grunt_05.vsnd",
+			"sounds/creatures/zombie/vox/grunt_06.vsnd",
+			"sounds/creatures/zombie/vox/grunt_07.vsnd",
+			"sounds/creatures/zombie/vox/grunt_08.vsnd",
+			"sounds/creatures/zombie/vox/grunt_09.vsnd",
+		]
+	}
+	Zombie.Grunt_Hard = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/grunt_hard_01.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_02.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_03.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_04.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_05.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_06.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_07.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_08.vsnd",
+			"sounds/creatures/zombie/vox/grunt_hard_09.vsnd",
+		]
+	}
+	Zombie.Grunt_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/grunt_short_01.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_02.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_03.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_04.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_05.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_06.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_07.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_08.vsnd",
+			"sounds/creatures/zombie/vox/grunt_short_09.vsnd",
+		]
+	}
+	Zombie.Grunt_Soft_Subtle = 
+	{
+		base = "Zombie.Grunt_Soft"
+		volume = 0.650000
+	}
+	Zombie.Grunt_Hard_Subtle = 
+	{
+		base = "Zombie.Grunt_Hard"
+		volume = 0.700000
+	}
+	Zombie.Grunt_Short_Subtle = 
+	{
+		base = "Zombie.Grunt_Short"
+		volume = 0.700000
+	}
+	Zombie.Switch_Grunts_Subtle = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Zombie.Grunt_Hard_Subtle"
+		soundevent_02 = "Zombie.Grunt_Soft_Subtle"
+		soundevent_split = 0.300000
+	}
+	Zombie.Breath_In_Foreshadow = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie.Breath_Long_Foreshadow"
+		use_01 = 1.000000
+	}
+	Zombie.Breath_Out_Foreshadow = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie.Breath_Long_Foreshadow"
+		use_01 = 1.000000
+	}
+	Zombie.Breath_Long = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_rand_min = -0.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/breath/breath_long_01.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_02.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_03.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_04.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_05.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_06.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_07.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_08.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_09.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_10.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_11.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_12.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_13.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_14.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_15.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_16.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_17.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_18.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_19.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_20.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_21.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_22.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_23.vsnd",
+		]
+	}
+	Zombie.Breath_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_rand_min = -0.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/breath/breath_short_01.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_02.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_03.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_04.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_05.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_06.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_07.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_08.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_09.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_10.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_11.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_12.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_13.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_14.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_15.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_16.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_17.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_18.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_19.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_20.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_21.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_22.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_23.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_24.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_25.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_26.vsnd",
+			"sounds/creatures/zombie/breath/breath_short_27.vsnd",
+		]
+	}
+	Zombie.Breath_Long_Foreshadow = 
+	{
+		type = "hlvr_default_3d"
+	}
+	Zombie.Breath_Long_Foreshadow_Loud = 
+	{
+		type = "hlvr_default_3d"
+	}
+	Zombie.Switch_IdleMoan_Or_BreathOut = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Zombie.Breath_Long"
+		soundevent_02 = "Zombie.Idle_Anim"
+		soundevent_split = 0.700000
+	}
+	Zombie.Switch_IdleMoan_Or_BreathOut_Walking = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Zombie.Breath_Long"
+		soundevent_02 = "Zombie.Idle_Anim"
+		soundevent_split = 0.800000
+	}
+	Zombie.Switch_Breath_Short_Long = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "Zombie.Breath_Long"
+		soundevent_02 = "Zombie.Breath_Short"
+		soundevent_split = 0.500000
+	}
+	Zombie.Snore_In = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_rand_min = -0.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/snores/snore_in_01.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_02.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_03.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_04.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_05.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_06.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_07.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_08.vsnd",
+			"sounds/creatures/zombie/snores/snore_in_09.vsnd",
+		]
+	}
+	Zombie.Snore_Out = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		volume_rand_min = -0.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/snores/snore_out_01.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_02.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_03.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_04.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_05.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_06.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_07.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_08.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_09.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_10.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_11.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_12.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_13.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_14.vsnd",
+			"sounds/creatures/zombie/snores/snore_out_15.vsnd",
+		]
+	}
+	Zombie.Choke = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		volume_rand_min = -0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/choke_01.vsnd",
+			"sounds/creatures/zombie/vox/choke_02.vsnd",
+			"sounds/creatures/zombie/vox/choke_03.vsnd",
+			"sounds/creatures/zombie/vox/choke_04.vsnd",
+			"sounds/creatures/zombie/vox/choke_05.vsnd",
+			"sounds/creatures/zombie/vox/choke_06.vsnd",
+			"sounds/creatures/zombie/vox/choke_07.vsnd",
+			"sounds/creatures/zombie/vox/choke_08.vsnd",
+			"sounds/creatures/zombie/vox/choke_09.vsnd",
+			"sounds/creatures/zombie/vox/choke_10.vsnd",
+		]
+	}
+	Zombie.Danger_Parent = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "Zombie.Danger_Child"
+		random_soundevent_01_timer_min = 1.000000
+		random_soundevent_01_timer_max = 2.200000
+	}
+	Zombie.Danger_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/warning_01.vsnd",
+			"sounds/creatures/zombie/vox/warning_02.vsnd",
+			"sounds/creatures/zombie/vox/warning_03.vsnd",
+			"sounds/creatures/zombie/vox/warning_04.vsnd",
+			"sounds/creatures/zombie/vox/warning_05.vsnd",
+			"sounds/creatures/zombie/vox/warning_06.vsnd",
+			"sounds/creatures/zombie/vox/warning_07.vsnd",
+			"sounds/creatures/zombie/vox/warning_08.vsnd",
+			"sounds/creatures/zombie/vox/warning_09.vsnd",
+			"sounds/creatures/zombie/vox/warning_10.vsnd",
+			"sounds/creatures/zombie/vox/warning_11.vsnd",
+			"sounds/creatures/zombie/vox/warning_12.vsnd",
+			"sounds/creatures/zombie/vox/warning_13.vsnd",
+			"sounds/creatures/zombie/vox/warning_14.vsnd",
+			"sounds/creatures/zombie/vox/warning_15.vsnd",
+		]
+	}
+	Zombie.Foley = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/foley/move_01.vsnd",
+			"sounds/creatures/zombie/foley/move_02.vsnd",
+			"sounds/creatures/zombie/foley/move_03.vsnd",
+			"sounds/creatures/zombie/foley/move_04.vsnd",
+			"sounds/creatures/zombie/foley/move_05.vsnd",
+			"sounds/creatures/zombie/foley/move_06.vsnd",
+			"sounds/creatures/zombie/foley/move_07.vsnd",
+			"sounds/creatures/zombie/foley/move_08.vsnd",
+			"sounds/creatures/zombie/foley/move_09.vsnd",
+			"sounds/creatures/zombie/foley/move_10.vsnd",
+			"sounds/creatures/zombie/foley/move_11.vsnd",
+			"sounds/creatures/zombie/foley/move_12.vsnd",
+			"sounds/creatures/zombie/foley/move_13.vsnd",
+			"sounds/creatures/zombie/foley/move_14.vsnd",
+		]
+	}
+	Zombie.Foley_Loud = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/foley/move_loud_01.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_02.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_03.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_04.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_05.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_06.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_07.vsnd",
+			"sounds/creatures/zombie/foley/move_loud_08.vsnd",
+		]
+	}
+	Zombie.Foley_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/foley/move_short_01.vsnd",
+			"sounds/creatures/zombie/foley/move_short_02.vsnd",
+			"sounds/creatures/zombie/foley/move_short_03.vsnd",
+			"sounds/creatures/zombie/foley/move_short_04.vsnd",
+			"sounds/creatures/zombie/foley/move_short_05.vsnd",
+			"sounds/creatures/zombie/foley/move_short_06.vsnd",
+			"sounds/creatures/zombie/foley/move_short_07.vsnd",
+			"sounds/creatures/zombie/foley/move_short_08.vsnd",
+			"sounds/creatures/zombie/foley/move_short_09.vsnd",
+			"sounds/creatures/zombie/foley/move_short_10.vsnd",
+		]
+	}
+	Zombie.BodyFall_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie.BodyFall"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie.Foley_Loud"
+		use_02 = 1.000000
+	}
+	Zombie.BodyFall = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/npc/shared/human_bodyfall_hard_01.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_02.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_03.vsnd",
+			"sounds/npc/shared/human_bodyfall_hard_04.vsnd",
+		]
+	}
+	Zombie.BodyFall_Soft_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie.BodyFall_Soft"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie.Foley_Short_Quiet"
+		use_02 = 1.000000
+	}
+	Zombie.BodyFall_Soft = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/npc/shared/human_bodyfall_soft_01.vsnd",
+			"sounds/npc/shared/human_bodyfall_soft_02.vsnd",
+			"sounds/npc/shared/human_bodyfall_soft_03.vsnd",
+			"sounds/npc/shared/human_bodyfall_soft_04.vsnd",
+		]
+	}
+	Zombie.HeadbuttImpact = 
+	{
+		type = "hlvr_default_3d"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		occlusion_radius = 50.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/impacts/headbutt_01.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_02.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_03.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_04.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_05.vsnd",
+		]
+	}
+	Zombie.HeadbuttUnstick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_radius = 50.000000
+		occlusion_scale = 0.950000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/impacts/headbutt_unstick_01.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_02.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_03.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_04.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_05.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_06.vsnd",
+			"sounds/creatures/zombie/impacts/headbutt_unstick_07.vsnd",
+		]
+	}
+	Zombie.ShoulderImpact = 
+	{
+		type = "hlvr_default_3d"
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		occlusion_scale = 0.700000
+		occlusion_radius = 60.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/impacts/shoulder_pound_01.vsnd",
+			"sounds/creatures/zombie/impacts/shoulder_pound_02.vsnd",
+			"sounds/creatures/zombie/impacts/shoulder_pound_03.vsnd",
+			"sounds/creatures/zombie/impacts/shoulder_pound_04.vsnd",
+		]
+	}
+	Zombie.Attack_Whoosh = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		distance_max = 800.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/attack_whoosh_01.vsnd",
+			"sounds/creatures/zombie/attack_whoosh_02.vsnd",
+			"sounds/creatures/zombie/attack_whoosh_03.vsnd",
+			"sounds/creatures/zombie/attack_whoosh_04.vsnd",
+			"sounds/creatures/zombie/attack_whoosh_05.vsnd",
+		]
+	}
+	Zombie.AttackHit = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/attack_hit_01.vsnd",
+			"sounds/creatures/zombie/attack_hit_02.vsnd",
+			"sounds/creatures/zombie/attack_hit_03.vsnd",
+			"sounds/creatures/zombie/attack_hit_04.vsnd",
+			"sounds/creatures/zombie/attack_hit_05.vsnd",
+			"sounds/creatures/zombie/attack_hit_06.vsnd",
+		]
+	}
+	Zombie.AttackMiss = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/vox/attack_miss_01.vsnd",
+			"sounds/creatures/zombie/vox/attack_miss_02.vsnd",
+			"sounds/creatures/zombie/vox/attack_miss_03.vsnd",
+		]
+	}
+	Zombie.Step_Slide = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		volume_rand_min = -0.050000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 500.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 1.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/step_slide_01.vsnd",
+			"sounds/creatures/zombie/step_slide_02.vsnd",
+			"sounds/creatures/zombie/step_slide_03.vsnd",
+			"sounds/creatures/zombie/step_slide_04.vsnd",
+			"sounds/creatures/zombie/step_slide_05.vsnd",
+			"sounds/creatures/zombie/step_slide_06.vsnd",
+			"sounds/creatures/zombie/step_slide_07.vsnd",
+			"sounds/creatures/zombie/step_slide_08.vsnd",
+			"sounds/creatures/zombie/step_slide_09.vsnd",
+			"sounds/creatures/zombie/step_slide_10.vsnd",
+			"sounds/creatures/zombie/step_slide_11.vsnd",
+			"sounds/creatures/zombie/step_slide_12.vsnd",
+			"sounds/creatures/zombie/step_slide_13.vsnd",
+			"sounds/creatures/zombie/step_slide_14.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Base = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 150.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0.000000
+		spread_min = 0
+		spread_max = 400
+		volume = 1.000000
+		mixgroup = "Zombies"
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Distant_Scream.Shotgun_Warning_A_Front_L"
+		soundevent_02 = "Zombie_Distant_Scream.Shotgun_Warning_A_Front_R"
+		soundevent_03 = "Zombie_Distant_Scream.Shotgun_Warning_A_Rear_L"
+		soundevent_04 = "Zombie_Distant_Scream.Shotgun_Warning_A_Rear_R"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_A_Front_L = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_a_front_l.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_A_Front_R = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		volume = 0.800000
+		rotation_angle = 315.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_a_front_r.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_A_Rear_L = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		volume = 0.800000
+		rotation_angle = 135.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_a_rear_l.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_A_Rear_R = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		volume = 0.800000
+		rotation_angle = 225.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_a_rear_r.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Distant_Scream.Shotgun_Warning_B_Front_L"
+		soundevent_02 = "Zombie_Distant_Scream.Shotgun_Warning_B_Front_R"
+		soundevent_03 = "Zombie_Distant_Scream.Shotgun_Warning_B_Rear_L"
+		soundevent_04 = "Zombie_Distant_Scream.Shotgun_Warning_B_Rear_R"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_B_Front_L = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_b_front_l.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_B_Front_R = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		rotation_angle = 315.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_b_front_r.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_B_Rear_L = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		rotation_angle = 135.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_b_rear_l.vsnd",
+		]
+	}
+	Zombie_Distant_Scream.Shotgun_Warning_B_Rear_R = 
+	{
+		base = "Zombie_Distant_Scream.Base"
+		rotation_angle = 225.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/distant_scream/shotgun_warning_b_rear_r.vsnd",
+		]
+	}
+	Zombie.Scripted_Fall_Hotel = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/scripted_misc/hotel_fall_yell.vsnd",
+		]
+	}
+	Zombie.Scripted_Scream_Trainyard_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/scripted_misc/trainyard_scream_a.vsnd",
+		]
+	}
+	Zombie.Scripted_Scream_Trainyard_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		delay = 0.500000
+		volume_falloff_min = 500.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/scripted_misc/trainyard_scream_b.vsnd",
+		]
+	}
+	Zombie.Scratch_Wall_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/world/destruction/brickwall/zombie_scratch_short_01.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_02.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_03.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_04.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_05.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_06.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_07.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_08.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_09.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_10.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_11.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_12.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_13.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_14.vsnd",
+			"sounds/world/destruction/brickwall/zombie_scratch_short_15.vsnd",
+		]
+	}
+	Zombie.Breath_Long_Loud = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_rand_min = -0.100000
+		occlusion_scale = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie/breath/breath_long_01.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_02.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_03.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_04.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_05.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_06.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_07.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_08.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_09.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_10.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_11.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_12.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_13.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_14.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_15.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_16.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_17.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_18.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_19.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_20.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_21.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_22.vsnd",
+			"sounds/creatures/zombie/breath/breath_long_23.vsnd",
+		]
+	}
+}

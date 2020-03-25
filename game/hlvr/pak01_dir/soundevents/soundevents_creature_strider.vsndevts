@@ -1,0 +1,1884 @@
+{
+	CombatStrider.Base = 
+	{
+		type = "hlvr_default_3d"
+		use_named_send = "loud"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 4000.000000
+		reverb_curve_max_distance = 4000.000000
+		occlusion_scale = 0.150000
+		occlusion_max = 0.350000
+		mixgroup = "Strider"
+	}
+	CombatStrider.Base_Reverb = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 4000.000000
+		reverb_curve_max_distance = 4000.000000
+		occlusion_scale = 0.100000
+		occlusion_max = 0.300000
+		mixgroup = "Strider"
+	}
+	CombatStrider.Footstep = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Step_Detail"
+		soundevent_02 = "CombatStrider.Step_Lfe"
+		soundevent_03 = "CombatStrider.Step_Layer_Dry"
+		soundevent_04 = "CombatStrider.Step_Layer_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_03 = 1.000000
+		use_shared_vsnd_index_for_04 = 1.000000
+		shared_vsnd_index_max = 9.000000
+	}
+	CombatStrider.Step_Detail = 
+	{
+		base = "CombatStrider.Base"
+		volume = 1.200000
+		volume_falloff_max = 2500.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_05.vsnd",
+		]
+	}
+	CombatStrider.Step_Lfe = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.900000
+		occlusion_scale = 0.000000
+		occlusion_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/step_lfe_01.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_02.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_03.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_04.vsnd",
+		]
+	}
+	CombatStrider.Step_Layer_Dry = 
+	{
+		base = "CombatStrider.Base"
+		volume = 1.000000
+		occlusion_scale = 0.200000
+		occlusion_max = 0.400000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 2500.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_layer_dry_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_05.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_06.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_07.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_08.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_09.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_10.vsnd",
+		]
+	}
+	CombatStrider.Step_Layer_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_layer_wet_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_05.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_06.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_07.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_08.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_09.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_10.vsnd",
+		]
+	}
+	CombatStrider.Idle_Footstep = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Idle_Step_Detail"
+		soundevent_02 = "CombatStrider.Idle_Step_Lfe"
+		soundevent_03 = "CombatStrider.Idle_Step_Layer_Dry"
+		soundevent_04 = "CombatStrider.Idle_Step_Layer_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_03 = 1.000000
+		use_shared_vsnd_index_for_04 = 1.000000
+		shared_vsnd_index_max = 9.000000
+	}
+	CombatStrider.Idle_Step_Detail = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_max = 2500.000000
+		occlusion_scale = 0.500000
+		occlusion_max = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_05.vsnd",
+		]
+	}
+	CombatStrider.Idle_Step_Lfe = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		occlusion_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/step_lfe_01.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_02.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_03.vsnd",
+			"sounds/creatures/strider/steps/step_lfe_04.vsnd",
+		]
+	}
+	CombatStrider.Idle_Step_Layer_Dry = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_max = 2500.000000
+		occlusion_scale = 0.500000
+		occlusion_max = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_layer_dry_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_05.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_06.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_07.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_08.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_09.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_dry_10.vsnd",
+		]
+	}
+	CombatStrider.Idle_Step_Layer_Wet = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_max = 2500.000000
+		occlusion_scale = 0.100000
+		occlusion_max = 0.300000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/steps/combat_step_layer_wet_01.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_02.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_03.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_04.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_05.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_06.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_07.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_08.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_09.vsnd",
+			"sounds/creatures/strider/steps/combat_step_layer_wet_10.vsnd",
+		]
+	}
+	CombatStrider.Target_Acquired = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Target_Acquired_Dry"
+		soundevent_02 = "CombatStrider.Target_Acquired_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		attachment = "MiniGun"
+	}
+	CombatStrider.Target_Acquired_Dry = 
+	{
+		base = "CombatStrider.Base"
+		occlusion_scale = 0.100000
+		occlusion_max = 0.300000
+		attachment = "MiniGun"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/target_acquired.vsnd",
+		]
+	}
+	CombatStrider.Target_Acquired_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		occlusion_scale = 0.100000
+		occlusion_max = 0.300000
+		attachment = "MiniGun"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/target_acquired_wet.vsnd",
+		]
+	}
+	CombatStrider.Damaged_Flinch = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Damaged_Flinch_Dry"
+		soundevent_02 = "CombatStrider.Damaged_Flinch_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 2.000000
+	}
+	CombatStrider.Damaged_Flinch_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/damaged/flinch_01.vsnd",
+			"sounds/creatures/strider/combat/damaged/flinch_02.vsnd",
+			"sounds/creatures/strider/combat/damaged/flinch_03.vsnd",
+		]
+	}
+	CombatStrider.Damaged_Flinch_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/damaged/flinch_wet_01.vsnd",
+			"sounds/creatures/strider/combat/damaged/flinch_wet_02.vsnd",
+			"sounds/creatures/strider/combat/damaged/flinch_wet_03.vsnd",
+		]
+	}
+	CombatStrider.Damaged_Shake = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Damaged_Shake_Dry"
+		soundevent_02 = "CombatStrider.Damaged_Shake_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 3.000000
+	}
+	CombatStrider.Damaged_Shake_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/damaged/shake_01.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_02.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_03.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_04.vsnd",
+		]
+	}
+	CombatStrider.Damaged_Shake_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/damaged/shake_wet_01.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_wet_02.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_wet_03.vsnd",
+			"sounds/creatures/strider/combat/damaged/shake_wet_04.vsnd",
+		]
+	}
+	CombatStrider.Idle_Hunting = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "CombatStrider.Idle_Vox"
+		soundevent_02 = "CombatStrider.Idle_Hunting_B"
+		chance_to_play = 2.000000
+	}
+	CombatStrider.Idle_Hunting_B = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "CombatStrider.Idle_Footstep"
+		soundevent_02 = "CombatStrider.Search_Ping"
+	}
+	CombatStrider.Idle_Vox = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Idle_Vox_Dry"
+		soundevent_02 = "CombatStrider.Idle_Vox_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 7.000000
+	}
+	CombatStrider.Idle_Vox_Dry = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.800000
+		block_duration = 5.000000
+		block_match_this_event = true
+		occlusion_scale = 0.300000
+		occlusion_max = 0.500000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/idle/vox_dry_01.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_02.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_03.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_04.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_05.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_06.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_07.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_dry_08.vsnd",
+		]
+	}
+	CombatStrider.Idle_Vox_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		block_duration = 5.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/idle/vox_wet_01.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_02.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_03.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_04.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_05.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_06.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_07.vsnd",
+			"sounds/creatures/strider/combat/idle/vox_wet_08.vsnd",
+		]
+	}
+	CombatStrider.Search_Ping = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Search_Ping_Dry"
+		soundevent_02 = "CombatStrider.Search_Ping_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Search_Ping_Dry = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.800000
+		block_duration = 5.000000
+		block_match_this_event = true
+		occlusion_scale = 0.300000
+		occlusion_max = 0.500000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/ping_dry.vsnd",
+		]
+	}
+	CombatStrider.Search_Ping_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		block_duration = 5.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/ping_wet.vsnd",
+		]
+	}
+	CombatStrider.Movement_Grunt = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Movement_Grunt_Dry"
+		soundevent_02 = "CombatStrider.Movement_Grunt_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 8.000000
+	}
+	CombatStrider.Movement_Grunt_Dry = 
+	{
+		base = "CombatStrider.Base"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/movement_grunt/dry_01.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_02.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_03.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_04.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_05.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_06.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_07.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_08.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/dry_09.vsnd",
+		]
+	}
+	CombatStrider.Movement_Grunt_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/movement_grunt/wet_01.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_02.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_03.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_04.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_05.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_06.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_07.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_08.vsnd",
+			"sounds/creatures/strider/combat/movement_grunt/wet_09.vsnd",
+		]
+	}
+	CombatStrider.Intro_Recover = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Intro_Recover_Dry"
+		soundevent_02 = "CombatStrider.Intro_Recover_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Intro_Recover_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_intro/vox_recover.vsnd",
+		]
+	}
+	CombatStrider.Intro_Recover_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		limiter_on = 1.000000
+		limiter_event_name = "CombatStrider.Target_Acquired"
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_intro/vox_recover_wet.vsnd",
+		]
+	}
+	CombatStrider.Intro_Recover_FX_Powerup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Intro_Recover_FX_Powerup_Dry"
+		soundevent_02 = "CombatStrider.Intro_Recover_FX_Powerup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Intro_Recover_FX_Powerup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		volume = 1.200000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_intro/fx_powerup_dry.vsnd",
+		]
+	}
+	CombatStrider.Intro_Recover_FX_Powerup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_intro/fx_powerup_wet.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Backup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Arena_Entry_Backup_Dry"
+		soundevent_02 = "CombatStrider.Arena_Entry_Backup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Arena_Entry_Backup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_backup.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Backup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_backup_wet.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Grunt = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Arena_Entry_Grunt_Dry"
+		soundevent_02 = "CombatStrider.Arena_Entry_Grunt_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Arena_Entry_Grunt_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_grunt.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Grunt_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_grunt_wet.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Warning = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Arena_Entry_Warning_Dry"
+		soundevent_02 = "CombatStrider.Arena_Entry_Warning_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Arena_Entry_Warning_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_shoot_warning.vsnd",
+		]
+	}
+	CombatStrider.Arena_Entry_Warning_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_arena_entry/vox_shoot_warning_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Attack_Grunt = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_Attack_Grunt_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_Attack_Grunt_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_Attack_Grunt_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_attack_grunt.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Attack_Grunt_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_attack_grunt_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Backup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_Backup_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_Backup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_Backup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_backup.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Backup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_backup_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Raise_Leg = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_Raise_Leg_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_Raise_Leg_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_Raise_Leg_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_raise_leg.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Raise_Leg_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_raise_leg_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Warning = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_Warning_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_Warning_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_Warning_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_warning.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_Warning_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/vox_warning_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Backup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_FX_Backup_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_FX_Backup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_FX_Backup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_backup_dry.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Backup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_backup_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Impact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_FX_Impact_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_FX_Impact_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_FX_Impact_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_impact_dry.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Impact_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_impact_wet.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Raise_Leg = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Cover_Smash_FX_Raise_Leg_Dry"
+		soundevent_02 = "CombatStrider.Cover_Smash_FX_Raise_Leg_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Cover_Smash_FX_Raise_Leg_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_raise_leg_dry.vsnd",
+		]
+	}
+	CombatStrider.Cover_Smash_FX_Raise_Leg_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_cover_smash/fx_raise_leg_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_A_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_a.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_a_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_B_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_B_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_B_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_b.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_B_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_b_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_C = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_C_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_C_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_C_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_c.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_C_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_c_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_D = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_D_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_D_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_D_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_d.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_D_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_d_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_E = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_E_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_E_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_E_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_e.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_E_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_e_wet.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_F = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Elevator_Chase_Vox_F_Dry"
+		soundevent_02 = "CombatStrider.Elevator_Chase_Vox_F_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Elevator_Chase_Vox_F_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_f.vsnd",
+		]
+	}
+	CombatStrider.Elevator_Chase_Vox_F_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_elevator_chase/vox_f_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Backup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_Vox_Backup_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_Vox_Backup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_Vox_Backup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_backup.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Backup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_backup_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Pound = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_Vox_Pound_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_Vox_Pound_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_Vox_Pound_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_pound.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Pound_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_pound_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Push = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_Vox_Push_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_Vox_Push_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_Vox_Push_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_push.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Push_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_push_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Warning = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_Vox_Warning_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_Vox_Warning_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_Vox_Warning_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_warning.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_Vox_Warning_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/vox_warning_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Backup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_FX_Backup_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_FX_Backup_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_FX_Backup_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_backup_dry.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Backup_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_backup_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Impact_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_FX_Impact_A_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_FX_Impact_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_FX_Impact_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_impact_a_dry.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Impact_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_impact_a_wet.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Impact_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Headbutt_FX_Impact_B_Dry"
+		soundevent_02 = "CombatStrider.Headbutt_FX_Impact_B_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Headbutt_FX_Impact_B_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_impact_b_dry.vsnd",
+		]
+	}
+	CombatStrider.Headbutt_FX_Impact_B_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_headbutt/fx_impact_b_wet.vsnd",
+		]
+	}
+	CombatStrider.Heli_Kill_Vox_Warning = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Heli_Kill_Vox_Warning_Dry"
+		soundevent_02 = "CombatStrider.Heli_Kill_Vox_Warning_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Heli_Kill_Vox_Warning_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_kill/vox_warning.vsnd",
+		]
+	}
+	CombatStrider.Heli_Kill_Vox_Warning_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_kill/vox_warning_wet.vsnd",
+		]
+	}
+	CombatStrider.Heli_Kill_Vox_Prepare = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Heli_Kill_Vox_Prepare_Dry"
+		soundevent_02 = "CombatStrider.Heli_Kill_Vox_Prepare_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Heli_Kill_Vox_Prepare_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_kill/vox_prepare.vsnd",
+		]
+	}
+	CombatStrider.Heli_Kill_Vox_Prepare_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_kill/vox_prepare_wet.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_Vox_Growl = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Heli_Pounce_Vox_Growl_Dry"
+		soundevent_02 = "CombatStrider.Heli_Pounce_Vox_Growl_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Heli_Pounce_Vox_Growl_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/vox_growl.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_Vox_Growl_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/vox_growl_wet.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_FX_Impact = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Heli_Pounce_FX_Impact_Dry"
+		soundevent_02 = "CombatStrider.Heli_Pounce_FX_Impact_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Heli_Pounce_FX_Impact_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/fx_impact_dry.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_FX_Impact_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/fx_impact_wet.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_FX_Riser = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Heli_Pounce_FX_Riser_Dry"
+		soundevent_02 = "CombatStrider.Heli_Pounce_FX_Riser_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Heli_Pounce_FX_Riser_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/fx_riser_dry.vsnd",
+		]
+	}
+	CombatStrider.Heli_Pounce_FX_Riser_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_heli_pounce/fx_riser_wet.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_Start = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Pit_Recover_Vox_Start_Dry"
+		soundevent_02 = "CombatStrider.Pit_Recover_Vox_Start_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Pit_Recover_Vox_Start_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_start.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_Start_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_start_wet.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Pit_Recover_Vox_A_Dry"
+		soundevent_02 = "CombatStrider.Pit_Recover_Vox_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Pit_Recover_Vox_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_a.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_a_wet.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_C = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Pit_Recover_Vox_C_Dry"
+		soundevent_02 = "CombatStrider.Pit_Recover_Vox_C_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Pit_Recover_Vox_C_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_c.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_C_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_c_wet.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_D = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Pit_Recover_Vox_D_Dry"
+		soundevent_02 = "CombatStrider.Pit_Recover_Vox_D_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Pit_Recover_Vox_D_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_d.vsnd",
+		]
+	}
+	CombatStrider.Pit_Recover_Vox_D_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_pit_recover/vox_d_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Explo = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Explo_Base"
+		soundevent_02 = "CombatStrider.Death_Explo_Flavor"
+		soundevent_03 = "CombatStrider.Death_Explo_Reverb"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	CombatStrider.Death_Explo_Base = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/explo_base.vsnd",
+		]
+	}
+	CombatStrider.Death_Explo_Flavor = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/explo_flavor.vsnd",
+		]
+	}
+	CombatStrider.Death_Explo_Reverb = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/explo_reverb.vsnd",
+		]
+	}
+	CombatStrider.Death_Fall = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Fall_Dry"
+		soundevent_02 = "CombatStrider.Death_Fall_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Fall_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/fall_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Fall_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/fall_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Land = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Land_Core"
+		soundevent_02 = "CombatStrider.Death_Land_Flavor"
+		soundevent_03 = "CombatStrider.Death_Land_Rumble"
+		soundevent_04 = "CombatStrider.Death_Land_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	CombatStrider.Death_Land_Core = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/land_core.vsnd",
+		]
+	}
+	CombatStrider.Death_Land_Flavor = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/land_flavor.vsnd",
+		]
+	}
+	CombatStrider.Death_Land_Rumble = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/land_rumble.vsnd",
+		]
+	}
+	CombatStrider.Death_Land_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/land_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Land_Rocks = 
+	{
+		base = "CombatStrider.Base"
+		volume_falloff_min = 600.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/land_rocks.vsnd",
+		]
+	}
+	CombatStrider.Death_Plasma_Pulse_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Plasma_Pulse_A_Dry"
+		soundevent_02 = "CombatStrider.Death_Plasma_Pulse_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Plasma_Pulse_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/plasma_a_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Plasma_Pulse_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/plasma_a_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Plasma_Pulse_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Plasma_Pulse_B_Dry"
+		soundevent_02 = "CombatStrider.Death_Plasma_Pulse_B_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Plasma_Pulse_B_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/plasma_b_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Plasma_Pulse_B_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/plasma_b_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Zap_A_Dry"
+		soundevent_02 = "CombatStrider.Death_Zap_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Zap_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_dry_01.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_wet_01.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Zap_B_Dry"
+		soundevent_02 = "CombatStrider.Death_Zap_B_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Zap_B_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_dry_02.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_B_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_wet_02.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_C = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Zap_C_Dry"
+		soundevent_02 = "CombatStrider.Death_Zap_C_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Zap_C_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_dry_03.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_C_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_wet_03.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_D = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Zap_D_Dry"
+		soundevent_02 = "CombatStrider.Death_Zap_D_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Zap_D_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_dry_04.vsnd",
+		]
+	}
+	CombatStrider.Death_Zap_D_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/zap_wet_04.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Vox_A_Dry"
+		soundevent_02 = "CombatStrider.Death_Vox_A_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Vox_A_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_a_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_A_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_a_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Vox_B_Dry"
+		soundevent_02 = "CombatStrider.Death_Vox_B_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Vox_B_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_b_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_B_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_b_wet.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_C = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Death_Vox_C_Dry"
+		soundevent_02 = "CombatStrider.Death_Vox_C_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Death_Vox_C_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_c_dry.vsnd",
+		]
+	}
+	CombatStrider.Death_Vox_C_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/seq_death/death_vox_c_wet.vsnd",
+		]
+	}
+	Strider.Bodyloop_a = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.500000
+		occlusion_scale = 0.900000
+		volume_falloff_max = 1500.000000
+		mixgroup = "Strider"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/body_loop_a.vsnd",
+		]
+	}
+	Strider.Bodyloop_b = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.500000
+		occlusion_scale = 0.900000
+		volume_falloff_max = 1500.000000
+		mixgroup = "Strider"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/body_loop_b.vsnd",
+		]
+	}
+	Strider.Movement = 
+	{
+		base = "CombatStrider.Base"
+		volume = 0.700000
+		occlusion_scale = 0.700000
+		mixgroup = "Strider"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/movement/move_01.vsnd",
+			"sounds/creatures/strider/movement/move_02.vsnd",
+			"sounds/creatures/strider/movement/move_03.vsnd",
+			"sounds/creatures/strider/movement/move_04.vsnd",
+			"sounds/creatures/strider/movement/move_05.vsnd",
+			"sounds/creatures/strider/movement/move_06.vsnd",
+			"sounds/creatures/strider/movement/move_07.vsnd",
+			"sounds/creatures/strider/movement/move_08.vsnd",
+			"sounds/creatures/strider/movement/move_09.vsnd",
+			"sounds/creatures/strider/movement/move_10.vsnd",
+		]
+	}
+	CombatStrider.Movement = 
+	{
+		base = "Strider.Movement"
+	}
+	CombatStrider.Warp_Cannon_Warning_Short = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Warp_Cannon_Warning_Short_Dry"
+		soundevent_02 = "CombatStrider.Warp_Cannon_Warning_Short_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Warp_Cannon_Warning_Short_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/warning_short_dry.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Warning_Short_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/warning_short_wet.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Warning_Long = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Warp_Cannon_Warning_Long_Dry"
+		soundevent_02 = "CombatStrider.Warp_Cannon_Warning_Long_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	CombatStrider.Warp_Cannon_Warning_Long_Dry = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/warning_long_dry.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Warning_Long_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/warning_long_wet.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Shoot = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Warp_Cannon_Shoot_Blast"
+		soundevent_02 = "CombatStrider.Warp_Cannon_Shoot_Core"
+		soundevent_03 = "CombatStrider.Warp_Cannon_Shoot_Mech"
+		soundevent_04 = "CombatStrider.Warp_Cannon_Shoot_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	CombatStrider.Warp_Cannon_Shoot_Blast = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/shoot_blast.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Shoot_Core = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/shoot_core.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Shoot_Mech = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/shoot_mech.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Shoot_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/shoot_wet.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Failed_Shot = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "CombatStrider.Warp_Cannon_Failed_Shot_Blast"
+		soundevent_02 = "CombatStrider.Warp_Cannon_Failed_Shot_Core"
+		soundevent_03 = "CombatStrider.Warp_Cannon_Failed_Shot_Mech"
+		soundevent_04 = "CombatStrider.Warp_Cannon_Failed_Shot_Wet"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	CombatStrider.Warp_Cannon_Failed_Shot_Blast = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/failed_shot_blast.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Failed_Shot_Core = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/failed_shot_core.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Failed_Shot_Mech = 
+	{
+		base = "CombatStrider.Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/failed_shot_mech.vsnd",
+		]
+	}
+	CombatStrider.Warp_Cannon_Failed_Shot_Wet = 
+	{
+		base = "CombatStrider.Base_Reverb"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/warp_cannon/failed_shot_wet.vsnd",
+		]
+	}
+	Strider.Cannon_Windup = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Strider.Cannon_Windup_Core"
+		soundevent_02 = "Strider.Cannon_Windup_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		attachment = "MiniGun"
+	}
+	Strider.Cannon_Windup_Core = 
+	{
+		base = "CombatStrider.Base"
+		volume = 1.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Strider_Minigun"
+		attachment = "MiniGun"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/shoot_warning_01.vsnd",
+			"sounds/creatures/strider/combat/shoot_warning_02.vsnd",
+			"sounds/creatures/strider/combat/shoot_warning_03.vsnd",
+		]
+	}
+	Strider.Cannon_Windup_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_falloff_min = 400.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Strider_Minigun"
+		attachment = "MiniGun"
+		vsnd_files = 
+		[
+			"sounds/creatures/strider/combat/shoot_warning_layer_01.vsnd",
+			"sounds/creatures/strider/combat/shoot_warning_layer_02.vsnd",
+			"sounds/creatures/strider/combat/shoot_warning_layer_03.vsnd",
+		]
+	}
+	NPC_Strider.FireMinigun = 
+	{
+		type = "hlvr_gun_layers_3d"
+		volume = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "NPC_Strider.FireMinigun"
+		limiter_max = 8.000000
+		limiter_match_entity = 1.000000
+		limiter_stop_oldest = true
+		pitch = 1.200000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.000000
+		direct_mix_level = 1.000000
+		volume_falloff_mid_min = 1500.000000
+		volume_falloff_mid_max = 2400.000000
+		volume_mid = 1.000000
+		volume_falloff_mech_min = 1500.000000
+		volume_falloff_mech_max = 2400.000000
+		volume_mech = 1.000000
+		volume_falloff_lfe_min = 1500.000000
+		volume_falloff_lfe_max = 4000.000000
+		volume_lfe = 1.000000
+		volume_falloff_distant_min = 1800.000000
+		volume_falloff_distant_max = 5000.000000
+		volume_distant = 1.000000
+		distant_xfade_start = 200.000000
+		distant_xfade_end = 1800.000000
+		mixgroup = "Strider_Minigun"
+		attachment = "MiniGun"
+		vsnd_files_mid = 
+		[
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_head_01.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_head_02.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_head_03.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_head_04.vsnd",
+		]
+		vsnd_files_mech = 
+		[
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_body_01.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_body_02.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_body_03.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_body_04.vsnd",
+		]
+		vsnd_files_lfe = 
+		[
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_lfe_01.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_lfe_02.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_lfe_03.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_lfe_04.vsnd",
+		]
+		vsnd_files_distant = 
+		[
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_tail_01.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_tail_02.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_tail_03.vsnd",
+			"sounds/weapons/strider_cannon/wpn_strider_cannon_fire_tail_04.vsnd",
+		]
+	}
+}

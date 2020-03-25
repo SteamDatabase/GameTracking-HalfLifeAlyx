@@ -1,0 +1,83 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+  
+	<GameMenuPanel class="game_menu_root" onactivate="GameMenuNavigation_Cmd( 'GoTo Root' )">
+    <Panel class="base_container" id="layout_root">
+
+      <Panel class="vr_affordance_container">
+        <Panel id="vr_affordance_left" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+        <Panel id="vr_affordance_right" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+        
+        <Panel id="background_panel">
+          <Panel class="header">
+            <Label class="header" />
+          </Panel>
+
+          <Panel class="empty_row" />
+
+          <Panel class="row">
+            <Panel class="col_body">
+              <Panel id="resume_highlight">
+                <Button id="resume_game" class="flow_c_none" onactivate="GameMenuNavigation_Cmd( 'MainMenuContinue' );" onmouseover="GameMenu_MouseOver( 'show_save_container' )">
+                  <Label class="load_item_hover" text="{s:save} {s:slot}"/>
+                  <Panel class="button_continue">
+                    <Label text="#HLVR_MainMenu_Continue"/>
+                    <Label class="button_continue_line2" text="{s:chapter_number}  |  {s:chapter_name}"/>
+                  </Panel>
+                  <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_focused_png.vtex" />
+                </Button>
+              </Panel>
+              <Button id="start_new_game" onactivate="GameMenuNavigation_Cmd( 'MainMenuNewGame' );" onmouseover="GameMenu_MouseOver( 'show_start_new_game_container' )">
+                <Panel class="button_continue">
+                  <Label text="#HLVR_MainMenu_StartNewGame"/>
+                </Panel>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_focused_png.vtex" />
+              </Button>
+
+              <Panel class="row_divider">
+                <Panel class="button_label">
+                  <Panel class="row_divider_line" />
+                </Panel>
+                <Panel class="button_bullet" />
+              </Panel>
+
+              <Button id="save_slots" onactivate="GameMenuNavigation_CmdButton( 'show_saved_slots_container' );" onmouseover="GameMenu_MouseOver( 'show_saved_slots_container' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
+                <Label class="button_label" text="#HLVR_MainMenu_SavedGames"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+
+              <Button id="new_game_slot" onactivate="GameMenuNavigation_CmdButton( 'show_newgame_slots_container' );" onmouseover="GameMenu_MouseOver( 'show_newgame_slots_container' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
+                <Label class="button_label" text="#HLVR_MainMenu_StartNewGame"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+            
+              <Button id="options_button" onactivate="GameMenuNavigation_CmdButton( 'show_options_container' );" onmouseover="GameMenu_MouseOver( 'show_options_container' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
+                <Label class="button_label" text="#HLVR_MainMenu_Options"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+            
+              <Button id="quit_button" onactivate="GameMenu_Cmd( quit )" onmouseover="GameMenu_MouseOver( 'show_quit_container' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
+                <Label class="button_label" text="#HLVR_MainMenu_Quit"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+              </Button>
+            </Panel>
+ 
+          </Panel>
+
+          <Panel class="empty_row" />
+          <Panel class="empty_row_bottomR_corner" />
+
+        </Panel>
+      </Panel>
+    </Panel>
+	</GameMenuPanel>
+</root>
+
+

@@ -1,0 +1,950 @@
+GameMenuPanel
+{
+	width: 100%;
+	height: 0%;
+	border-radius: 6px;
+
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5788 ), color-stop( 0.97, #ffed5733 ), to( #f4d71455 ) );
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5766 ), color-stop( 0.97, #ffed5711 ), to( #f4d71433 ) );
+	//wash-color: #000000d0;
+	//wash-color: #00000066;
+	
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+	
+	transition-property: height, opacity, opacity-mask;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in; 
+	opacity: 0;
+	opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	//brightness: 20; 
+}
+
+GameMenuPanel.Visible
+{
+	opacity: 1;
+	pre-transform-scale2d: 1;
+	height: 100%; 
+	animation-name: SelectionAreaFlicker;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	opacity-mask: none;
+}
+
+GameMenuPanel.Visible.Background
+{
+	//wash-color: #000000d0;
+	//background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #00000088 ), color-stop( 0.97, #00000066 ), to( #00000077 ) );
+	blur: gaussian(2);
+    box-shadow: inset #ffed5711 2px 2px 4px 4px;
+	opacity: 1; 
+}
+
+GameMenuPanel.Visible.Foreground
+{
+	background-color: #ffed5700;
+	opacity: 1;
+	box-shadow: inset #ffed5711 10px 10px 20px 20px;
+	animation-name: DelayApperanceAnimation;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+
+@keyframes 'DelayApperanceAnimation' 
+{
+	0%
+	{
+		opacity: 0; 
+	}
+	
+	100%
+	{
+		opacity: 1; 
+	}
+}
+
+
+GameMenuPanel.pending_bug_submission
+{
+	background-color: transparent;
+	background-image: none;
+	border: 0px;
+}
+
+GameMenuPanel.pending_screenshot
+{
+	background-color: transparent;
+	background-image: none;
+	border: 0px;
+}
+
+#layout_root
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+#corner_brackets
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/game_menu_ui/corner_brackets_psd.vtex");
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	wash-color: #ffc600; 
+	opacity: 1; 
+}
+
+#scan_line_mask
+{
+	width: 100%;
+	height: 100%; 
+	opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+}
+
+#header_row_backer
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer
+{
+	pre-transform-scale2d: 1;
+}
+
+	
+.header
+{
+	margin-top: 6px;
+	font-size: 40px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	color: #6d632c;
+}
+
+.header_container_advanced
+{
+	width: 50%; 
+	height: fit-children;
+	
+}
+
+
+.header_left
+{
+	margin-right: 15px;
+	margin-left: 30px; 
+	margin-bottom: 15px; 
+	height: 60px;
+}
+
+.header_right
+{
+	margin-right: 30px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+	height: 60px;
+}
+
+.pending_bug_submission #layout_root,
+.show_maps #layout_root
+{
+ 	visibility: collapse;
+}
+
+#bug_submit_panel
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.pending_bug_submission #bug_submit_panel
+{
+	opacity: 1;
+}
+
+#bug_instructions
+{
+ 	visibility: collapse;
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+#bug_instructions Button
+{
+	width: 50%;
+}
+
+#bug_instructions Button Label
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+	
+	
+}
+
+.pending_bug_submission #bug_instructions
+{
+	visibility: visible;
+}
+
+#instruction_text
+{
+	margin: 32px;
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+    vertical-align: middle;
+	
+}
+
+.pending_screenshot #layout_root
+{
+ 	visibility: collapse;
+}
+
+#screenshot_instructions
+{
+ 	visibility: collapse;
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+#screenshot_instructions Button
+{
+	width: 50%;
+}
+
+#screenshot_instructions Button Label
+{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	horizontal-align: center;
+    vertical-align: middle;
+}
+
+.pending_screenshot #screenshot_instructions
+{
+	visibility: visible;
+}
+
+#fake_console
+{
+	flow-children: down;
+	background-color: #FFFFFF44;
+	border: 2px solid white;
+	border-radius: 5px;
+	width: 100%;
+	margin: 10px;
+}
+
+#fake_console Label
+{
+	width: 100%;
+	font-family: "Courier New";
+	color: black;
+	height: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+
+#toggle_advanced
+{
+	margin-top: 20px;
+	height: 60px;
+	width: 40%;
+	margin-bottom: 60px; 
+}
+#toggle_advanced Label
+{
+	font-size: 32px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 10px;
+	overflow: noclip; 
+}
+
+#show_advanced
+{
+	visibility: visible;
+	
+}
+
+#hide_advanced
+{
+	visibility: collapse;
+	
+}
+
+.show_advanced_options #show_advanced
+{
+	visibility: collapse;
+}
+
+.show_advanced_options #hide_advanced
+{
+	visibility: visible;
+}
+
+#maps
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip;
+}
+
+.show_maps #maps
+{
+	height: 100%;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+#advanced_container
+{
+	//visibility: collapse;
+	//height: fill-parent-flow(1);
+	width: 100%;
+	flow-children: down;
+	//opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	margin-top: 20px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .3s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+}
+
+.show_advanced_options #advanced_container
+{
+	//visibility: visible;
+	height: 28%;
+	transition-property: height, opacity;
+	transition-duration: .3s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+
+
+#base_container
+{
+	width: 100%;
+	flow-children: down;
+	//opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	margin-top: 30px;
+	
+	//padding-left: 60px;
+	//padding-right: 60px;
+}
+
+#base_container Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	overflow: noclip; 
+}
+
+#advanced_container Button Label
+{
+	font-size: 32px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 10px;
+	overflow: noclip; 
+}
+
+#advanced_container Button
+{
+	height: 60px;
+	padding: 0px;
+}
+
+#advanced_container .button_left
+{
+	height: 45px;
+	padding: 0px;
+}
+
+#normal_container #main_menu_button Label
+{
+	font-size: 40px;
+}
+
+.header_container_maps
+{
+	width: 30%; 
+	height: fit-children;
+	margin-left: 150px;
+}
+
+#maps Button
+{
+	width: 60%;
+	height: 45px;
+	padding: 0px;
+	margin-bottom: 10px;
+}
+#maps Button Label
+{
+	font-size: 22px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 10px;
+	overflow: noclip; 
+}
+
+.Foreground Button
+{
+	background-color: none;
+	wash-color: #ffe954;
+	opacity: 1;
+	box-shadow: #ffe74819 -15px -15px 30px 30px;
+	brightness: 2; 
+	animation-name: TextMotionFlicker;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	border: 3px solid #ffffffaa;
+}
+
+
+@keyframes 'TextMotionFlicker' 
+{
+	0%
+	{
+		brightness: 2; 
+	}
+	50%
+	{
+		brightness: 7; 
+
+	}
+	100%
+	{
+		brightness: 2; 
+	}
+}	
+
+
+.button_container
+{
+	width: 50%; 
+	height: 150px;
+}
+
+.button_container_full
+{
+	width: 100%; 
+	height: 150px;
+}
+
+.button_container_advanced
+{
+	width: 50%; 
+	height: 60px;
+}
+
+#base_container Button
+{
+	
+	width: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#base_container .button_left
+{
+	margin-right: 15px;
+}
+
+#base_container .button_right
+{
+	margin-left: 15px;
+}
+
+#bottom_container
+{
+	width: 100%;
+	flow-children: down;
+	//opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	margin-top: 0px;
+	
+}
+
+#bottom_container Button
+{
+	width: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
+
+#bottom_container Button Label
+{
+	font-size: 40px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 15px;
+	overflow: noclip; 
+	
+}
+
+#bottom_container Button.button_back
+{
+	margin-bottom: 45px; 
+	margin-top: 20px; 
+	horizontal-align: center; 
+	width: 40%;
+	height: 110px;
+}
+
+.button_left
+{
+	margin-right: 15px;
+	margin-left: 30px; 
+	margin-bottom: 15px; 
+}
+
+.button_right
+{
+	margin-right: 30px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+}
+
+.button_center
+{
+	margin-right: 15px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+}
+
+#maps Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 40px; 
+	horizontal-align: center; 
+	width: 30%;
+}
+
+.row
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.row Button
+{
+	width: 50%;
+} 
+
+#dev_menu_row
+{
+	vertical-align: bottom;
+}
+
+#dev_menu_row .button_small
+{
+	horizontal-align: center;
+}
+
+Button
+{
+	pre-transform-scale2d: .8;
+	opacity: .5;
+	transition-property: pre-transform-scale2d, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in; 
+	background-color: #f4d71444; 
+	border: 2px solid #f4d71400;
+	wash-color: #f4d714; 
+	
+	height: 0%; 
+	
+	margin: 0px;
+	//padding: 0px;
+	
+}
+
+.Foreground Button
+{
+	transition-duration: .2s;
+	transition-property: background-color;
+}
+
+Button:hover
+{
+	background-color: #ffffff33; 
+}
+
+.Visible Button 
+{
+	pre-transform-scale2d: 1;
+	height: 100%; 
+}
+
+.Foreground Button.VRTouchApproach25:hover
+{
+	pre-transform-scale2d: 1.01;
+	//background-color: #f4d71410;
+	wash-color: #ffe954;
+}
+.Foreground Button.VRTouchApproach50:hover
+{
+	pre-transform-scale2d: 1.02;
+	//background-color: #f4d71420;
+	wash-color: #ffea5f;
+}
+.Foreground Button.VRTouchApproach75:hover
+{
+	pre-transform-scale2d: 1.03;
+	//background-color: #f4d71430;
+	wash-color: #ffec6b;
+}
+.Foreground Button.VRTouchApproach90:hover
+{
+	pre-transform-scale2d: 1.02;
+	//background-color: #f4d71440;
+	wash-color: #ffed76;
+}
+.Foreground Button.VRTouchApproach100:hover
+{
+	pre-transform-scale2d: 1.01;
+	//background-color: #f4d71450;
+	wash-color: #ffef83;
+}
+
+.Foreground Button:active
+{
+	//pre-transform-scale2d: 1;
+	pre-transform-scale2d: .97;
+	background-color: #f4d71460;
+	wash-color: #fffef9;
+	transition-duration: 0s;
+}
+
+#AnimatedTextureMask{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center; 
+	//opacity-mask: url("s2r://panorama/images/weapon_select_ui/animated_texture_mask_psd.vtex");
+	overflow: noclip; 
+	opacity: 1;
+	transition-property: opacity, pre-transform-scale2d; 
+	transition-duration: .2s; 
+	pre-transform-scale2d: 1;
+}
+
+
+	
+#AnimatedTexture{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 40s; 
+	//transition-timing-function: ease-out; 
+	opacity: 0; 
+}
+
+.Visible #AnimatedTexture {
+	opacity: 1; 
+	transform: translateY(2000px);
+	transition-property: transform;
+	transition-duration: 0s; 
+}
+
+
+#AnimatedTextureAlt{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_alt_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 30s; 
+	//transition-timing-function: ease-out; 
+	wash-color: #f4d714; 
+	opacity: 0; 
+}
+
+.Visible #AnimatedTextureAlt {
+	opacity: .2; 
+	transform: translateY(800px);
+	transition-property: transform;
+	transition-duration: 0s; 
+}
+
+.Foreground #AnimatedTextureAlt {
+	visibility: collapse; 
+}
+
+@keyframes 'SelectionAreaFlicker' 
+{
+	0%
+	{
+	opacity: 1;	
+	}
+	3%
+	{
+	opacity: .95;	
+	}
+	5%
+	{
+	opacity: 1;	
+	}
+	8%
+	{
+	opacity: .93;	
+	}
+	10%
+	{
+	opacity: .97;	
+	}
+	11%
+	{
+	opacity: 1;	
+	}
+	14%
+	{
+	opacity: .92;	
+	}
+	15%
+	{
+	opacity: .95;	
+	}
+	17%
+	{
+	opacity: .95;	
+	}
+	18%
+	{
+	opacity: 1;	
+	}
+	21%
+	{
+	opacity: .92;	
+	}
+	24%
+	{
+	opacity: .95;	
+	}
+	26%
+	{
+	opacity: .93;	
+	}
+	29%
+	{
+	opacity: .88;	
+	}
+	30%
+	{
+	opacity: 1;	
+	}
+	33%
+	{
+	opacity: .99;	
+	}
+	35%
+	{
+	opacity: .94;	
+	}
+	36%
+	{
+	opacity: 1;	
+	}
+	38%
+	{
+	opacity: .9;	
+	}
+	39%
+	{
+	opacity: .95;	
+	}
+	41%
+	{
+	opacity: .9;	
+	}
+	44%
+	{
+	opacity: 1;
+	}
+	46%
+	{
+	opacity: .93;	
+	}
+	48%
+	{
+	opacity: .9;	
+	}
+	50%
+	{
+	opacity: 1;	
+	}
+	53%
+	{
+	opacity: 1;	
+	}
+	55%
+	{
+	opacity: 1;	
+	}
+	58%
+	{
+	opacity: .9;	
+	}
+	59%
+	{
+	opacity: .91;	
+	}
+	61%
+	{
+	opacity: .97;	
+	}
+	65%
+	{
+	opacity: 1;	
+	}
+	68%
+	{
+	opacity: 1;	
+	}
+	73%
+	{
+	opacity: 1;	
+	}
+	75%
+	{
+	opacity: 1;	
+	}
+	80%
+	{
+	opacity: .96;	
+	}
+	82%
+	{
+	opacity: .95;	
+	}
+	85%
+	{
+	opacity: .89;	
+	}
+	88%
+	{
+	opacity: .99;	
+	}
+	90%
+	{
+	opacity: 1;	
+	}
+	92%
+	{
+	opacity: .96;	
+	}
+	95%
+	{
+	opacity: .9;	
+	}
+	96%
+	{
+	opacity: .9;	
+	}
+	98%
+	{
+	opacity: .92;	
+	}
+	100%
+	{
+	opacity: 1;
+	}
+}
+
+#dev_teleport_button
+{
+//	background-color: #400;
+}
+
+.in_dev_teleport #dev_teleport_button
+{
+//	background-color: #040;
+}
+
+#dev_teleport_label_off
+{
+	visibility: visible;
+}
+
+.in_dev_teleport #dev_teleport_label_off
+{
+ 	visibility: collapse;
+}
+
+#dev_teleport_label_on
+{
+ 	visibility: collapse;
+}
+
+.in_dev_teleport #dev_teleport_label_on
+{
+ 	visibility: visible;
+}
+
+
+

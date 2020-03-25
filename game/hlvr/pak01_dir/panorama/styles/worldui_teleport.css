@@ -1,0 +1,36 @@
+.RootPanel {
+}
+
+.WorldUITextPanel {
+	width: 100%;
+	height: fit-children;
+    	flow-children: down;
+}
+
+.MainPanel {
+    margin: 0px;
+    flow-children: right;
+    horizontal-align: center;
+}
+
+.TextLabel {
+    color: rgb(255, 106, 2);
+    font-size: 200px;
+    text-align: center;
+    background-color: #00000099;
+}
+
+.LinePanel {
+    margin: 0px;
+    width: 100%;
+}
+
+.LineLabel {
+    width: 100%;
+    color: rgb(255, 106, 2);
+    font-size: 200px;
+    text-align: center;
+}
+
+#TextLabel {
+}

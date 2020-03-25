@@ -1,0 +1,250 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	sequences = 
+	{
+		a3_pit_vort_10_lp01_arr_base = 
+		{
+			loop = true
+			length = 32.0
+			numerator = 4
+			denominator = 4
+			sequence = 
+			[
+				[9, 0.0, 51, 127],
+				[9, 3.0, 52, 127],
+				[9, 6.0, 53, 127],
+				[9, 9.0, 54, 127],
+				[9, 10.0, 55, 127],
+				[9, 12.0, 56, 127],
+				[9, 15.0, 57, 127],
+				[9, 17.0, 58, 127],
+				[9, 19.0, 59, 127],
+				[9, 20.0, 60, 127],
+				[9, 23.0, 61, 127],
+				[9, 26.0, 62, 127]
+			]
+		}
+	}
+	samplers = 
+	{
+		a3_pit_vort_10_lp01_arr = 
+		{
+			attack = 0.0
+			release = 0.0
+			min_note = 51
+			max_note = 62
+			min_velocity_db = -40
+			max_velocity_db = 0
+			soundevent = "core.sampler_base"
+			soundevent_samples = true
+			key_groups = 
+			[
+				{
+					center = 51
+					min = 51
+					max = 51
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_09"
+							]
+						}
+					]
+				},
+				{
+					center = 52
+					min = 52
+					max = 52
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_05"
+							]
+						}
+					]
+				},
+				{
+					center = 53
+					min = 53
+					max = 53
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_03"
+							]
+						}
+					]
+				},
+				{
+					center = 54
+					min = 54
+					max = 54
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_07"
+							]
+						}
+					]
+				},
+				{
+					center = 55
+					min = 55
+					max = 55
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_11"
+							]
+						}
+					]
+				},
+				{
+					center = 56
+					min = 56
+					max = 56
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_01"
+							]
+						}
+					]
+				},
+				{
+					center = 57
+					min = 57
+					max = 57
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_08"
+							]
+						}
+					]
+				},
+				{
+					center = 58
+					min = 58
+					max = 58
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_04"
+							]
+						}
+					]
+				},
+				{
+					center = 59
+					min = 59
+					max = 59
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_12"
+							]
+						}
+					]
+				},
+				{
+					center = 60
+					min = 60
+					max = 60
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_06"
+							]
+						}
+					]
+				},
+				{
+					center = 61
+					min = 61
+					max = 61
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_02"
+							]
+						}
+					]
+				},
+				{
+					center = 62
+					min = 62
+					max = 62
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a3_pit_vort_10"
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+	arrangements = 
+	{
+		a3_pit_vort_10_lp01_arr = 
+		{
+			tracks = 
+			{
+				base = 
+				{
+					sync_track = "base"
+					bpm = 100.0
+					quantize_type = "bar"
+					quantize_multiplier = 2.0
+					stop_events_by_next = true
+					instrument = "a3_pit_vort_10_lp01_arr"
+					events = 
+					[
+						{
+							beat = 0.0
+							sequence = "a3_pit_vort_10_lp01_arr_base"
+						}
+					]
+				}
+			}
+		}
+	}
+}

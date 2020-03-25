@@ -1,0 +1,96 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dev/bug_user_selection.vcss_c" />
+		<include src="s2r://panorama/styles/shared_scroll_style.vcss_c" />
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+	</styles>
+
+	<BugUserSelectionPanel class="bug_user_selection">
+		<Label id="prompt" text="Bug Submission User"/>
+		<Panel id="UserListAndShortcuts">
+			<Panel id="UserList" />
+			<Panel id="AZShortcuts">
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'a' )">
+					<Label text="A"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'b' )">
+					<Label text="B"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'c' )">
+					<Label text="C"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'd' )">
+					<Label text="D"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'e' )">
+					<Label text="E"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'f' )">
+					<Label text="F"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'g' )">
+					<Label text="G"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'h' )">
+					<Label text="H"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'i' )">
+					<Label text="I"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'j' )">
+					<Label text="J"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'k' )">
+					<Label text="K"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'l' )">
+					<Label text="L"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'm' )">
+					<Label text="M"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'n' )">
+					<Label text="N"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'o' )">
+					<Label text="O"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'p' )">
+					<Label text="P"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'q' )">
+					<Label text="Q"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'r' )">
+					<Label text="R"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 's' )">
+					<Label text="S"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 't' )">
+					<Label text="T"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'u' )">
+					<Label text="U"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'v' )">
+					<Label text="V"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'w' )">
+					<Label text="W"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'x' )">
+					<Label text="X"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'y' )">
+					<Label text="Y"/>
+				</Button>
+				<Button onactivate="BugUserPanel_ScrollToLetter( 'z' )">
+					<Label text="Z"/>
+				</Button>
+				<Panel class="wrap_padding" />
+			</Panel>
+		</Panel>
+	</BugUserSelectionPanel>
+</root>
+

@@ -1,0 +1,1511 @@
+	?fromWCharArray@QString@@SA?AV1@PEBGH@Z
+	?indexOf@QString@@QEBAHVQChar@@HW4CaseSensitivity@Qt@@@Z
+	?insert@QListData@@QEAAPEAPEAXH@Z
+                          
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>
+      </requestedPrivileges>
+      <requestedPrivileges>
+    </security>
+    <security>
+  </trustInfo>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ %O>Ixt
+ (0x%1)
+ ?palette@QWidget@@QEBAAEBVQPalette@@XZ
+ ?paletteChange@QWidget@@MEAAXAEBVQPalette@@@Z
+ A]A\_
+ A]_^
+ A^A]A\
+ A^A]A\_^
+ A_A^A]A\_
+ Base Class Array'
+ Base Class Descriptor at (
+ C>TQ
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+ HcQpL
+ Type Descriptor'
+ data
+ delete
+ delete[]
+ new[]
+ t?D9
+ throw(
+ volatile
+!!ARBfp1.0PARAM c[5] = { program.local[0..1],{ 0.5, 2, 1, 0.0625 },{ 1.164, 0, 1.596, 2.0179999 },{ 1.164, -0.391, -0.81300002 } };TEMP R0;TEMP R1;TEMP R2;FLR R1.z, fragment.texcoord[0].x;ADD R0.x, R1.z, c[2];ADD R1.z, fragment.texcoord[0].x, -R1;MUL R1.x, fragment.texcoord[0].z, R0;MOV R1.y, fragment.texcoord[0];TEX R0, R1, texture[0], 2D;ADD R1.y, R0.z, -R0.x;MUL R2.x, R1.z, R1.y;MAD R0.x, R2, c[2].y, R0;MOV R1.y, fragment.texcoord[0];ADD R1.x, fragment.texcoord[0].z, R1;TEX R1.xyw, R1, texture[0], 2D;ADD R2.x, R1, -R0.z;MAD R1.x, R1.z, c[2].y, -c[2].z;MAD R0.z, R1.x, R2.x, R0;ADD R1.xy, R1.ywzw, -R0.ywzw;ADD R0.z, R0, -R0.x;SGE R1.w, R1.z, c[2].x;MAD R0.x, R1.w, R0.z, R0;MAD R0.yz, R1.z, R1.xxyw, R0.xyww;ADD R0.xyz, R0, -c[2].wxxw;MUL R0.w, R0.y, c[0];MAD R0.w, R0.z, c[0].z, R0;MUL R0.z, R0, c[0].w;MAD R0.y, R0, c[0].z, R0.z;MUL R0.w, R0, c[0].y;MUL R0.y, R0, c[0];MUL R0.z, R0.w, c[1].x;MAD R0.x, R0, c[0].y, c[0];MUL R0.y, R0, c[1].x;DP3 result.color.x, R0, c[3];DP3 result.color.y, R0, c[4];DP3 result.color.z, R0, c[3].xwyw;MOV result.color.w, c[1].y;END
+!!ARBfp1.0PARAM c[5] = { program.local[0..1],{ 1.164, 0, 1.596, 0.5 },{ 0.0625, 1.164, -0.391, -0.81300002 },{ 1.164, 2.0179999, 0 } };TEMP R0;TEX R0.x, fragment.texcoord[0], texture[1], 2D;ADD R0.y, R0.x, -c[2].w;TEX R0.x, fragment.texcoord[0], texture[2], 2D;ADD R0.x, R0, -c[2].w;MUL R0.z, R0.y, c[0].w;MAD R0.z, R0.x, c[0], R0;MUL R0.w, R0.x, c[0];MUL R0.z, R0, c[0].y;TEX R0.x, fragment.texcoord[0], texture[0], 2D;MAD R0.y, R0, c[0].z, R0.w;ADD R0.x, R0, -c[3];MUL R0.y, R0, c[0];MUL R0.z, R0, c[1].x;MAD R0.x, R0, c[0].y, c[0];MUL R0.y, R0, c[1].x;DP3 result.color.x, R0, c[2];DP3 result.color.y, R0, c[3].yzww;DP3 result.color.z, R0, c[4];MOV result.color.w, c[1].y;END
+!D$8!D$HM
+!D$8I
+!IcD$
+!N$=O
+!This program cannot be run in DOS mode.
+!t$(H!t$ A
+!t$(H!t$ H
+"?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+"E7*v
+"e?<<<<<<l?
+#3:O4j
+#?qt_metacast@QWidget@@UEAAPEAXPEBD@Z
+#[.oL
+$$L9e
+$?rect@QWidget@@QEBA?AVQRect@@XZ
+$?rects@QRegion@@QEBA?AV?$QVector@VQRect@@@@XZ
+$?red@QColor@@QEBAHXZ
+$?redirected@QPainter@@SAPEAVQPaintDevice@@PEBV2@PEAVQPoint@@@Z
+$?releaseDC@QWidget@@UEBAXPEAUHDC__@@@Z
+$Ib?s
+$uJIcD$
+$uLIcD$
+%?resizeEvent@QWidget@@MEAAXPEAVQResizeEvent@@@Z
+%GoU?*
+%Wy;+
+&?PPPPPPP?
+'+-|j^l
+'+?2LF
+'?setBrush@QPainter@@QEAAXAEBVQBrush@@@Z
+( \rDg
+(A]A\_^][
+(D$ H
+(D$ f
+(D$@H
+(T?j?Y
+(l$ H
+(l$0H
+(l$0f
+(l$@f
+(l$PH
+(l$`f
+(l$pH
+(t$ H
+(t$0H
+(t$@D
+(t$@L
+(t$PH
+(t$`H
+(|$ H
+(|$0H
+(|$@H
+(|$@L
+)D$ fD
+)D$0A
+)D$0L
+)L$@I
+)\$@fD
+)t$ f
+)t$0I
+)t$0M
+)t$0f
+)t$@E
+)t$PH
+)t$Pf
+)t$`A
+)|$ f
+)|$@D
+)|$@H
+)|B?d!
++?setPalette@QWidget@@QEAAXAEBVQPalette@@@Z
++?setPen@QPainter@@QEAAXW4PenStyle@Qt@@@Z
+,<ellipsis>
+,HR>O
+,eventCode,param1
+-64OS
+-?setTransform@QPainter@@QEAAXAEBVQTransform@@_N@Z
+-?setUpdatesEnabled@QWidget@@QEAAX_N@Z
+-BH>t
+-np1A
+-qZ~C
+..om?
+.>PJ;I:qE>
+.?AUIAsyncReader@@
+.?AUIBaseFilter@@
+.?AUIDispatch@@
+.?AUIEnumMediaTypes@@
+.?AUIEnumPins@@
+.?AUIMediaFilter@@
+.?AUIMediaPosition@@
+.?AUIMediaSeeking@@
+.?AUIMemInputPin@@
+.?AUIPersist@@
+.?AUIPin@@
+.?AUITitleInterface@DS9@Phonon@@
+.?AUIUnknown@@
+.?AVAbstractVideoRenderer@DS9@Phonon@@
+.?AVAddonInterface@Phonon@@
+.?AVAudioOutput@DS9@Phonon@@
+.?AVAudioOutputInterface40@Phonon@@
+.?AVBackend@DS9@Phonon@@
+.?AVBackendInterface@Phonon@@
+.?AVBackendNode@DS9@Phonon@@
+.?AVEffect@DS9@Phonon@@
+.?AVEffectInterface@Phonon@@
+.?AVFakePin@DS9@Phonon@@
+.?AVFakeSource@DS9@Phonon@@
+.?AVIODeviceReader@DS9@Phonon@@
+.?AVMediaGraph@DS9@Phonon@@
+.?AVMediaObject@DS9@Phonon@@
+.?AVMediaObjectInterface@Phonon@@
+.?AVQAsyncReader@DS9@Phonon@@
+.?AVQAudioCDPlayer@DS9@Phonon@@
+.?AVQAudioCDReader@DS9@Phonon@@
+.?AVQBaseFilter@DS9@Phonon@@
+.?AVQEnumMediaTypes@DS9@Phonon@@
+.?AVQEnumPins@DS9@Phonon@@
+.?AVQEvent@@
+.?AVQMemInputPin@DS9@Phonon@@
+.?AVQObject@@
+.?AVQPaintDevice@@
+.?AVQPin@DS9@Phonon@@
+.?AVQThread@@
+.?AVQWidget@@
+.?AVStreamInterface@Phonon@@
+.?AVStreamReader@DS9@Phonon@@
+.?AVVideoRendererEVR@DS9@Phonon@@
+.?AVVideoRendererSoft@DS9@Phonon@@
+.?AVVideoRendererSoftFilter@DS9@Phonon@@
+.?AVVideoRendererSoftPin@DS9@Phonon@@
+.?AVVideoRendererVMR9@DS9@Phonon@@
+.?AVVideoWidget@DS9@Phonon@@
+.?AVVideoWidgetInterface@Phonon@@
+.?AVVideoWindow@DS9@Phonon@@
+.?AVVolumeEffect@DS9@Phonon@@
+.?AVVolumeEffectFilter@DS9@Phonon@@
+.?AVVolumeFaderInterface@Phonon@@
+.?AVVolumeMemInputPin@DS9@Phonon@@
+.?AVVolumeMemOutputPin@DS9@Phonon@@
+.?AVWorkerThread@DS9@Phonon@@
+.?AV__non_rtti_object@std@@
+.?AVbad_cast@std@@
+.?AVbad_exception@std@@
+.?AVbad_typeid@std@@
+.?AVexception@std@@
+.?AVtype_info@@
+.?showEvent@QWidget@@MEAAXPEAVQShowEvent@@@Z
+.i?0@I
+.pdata
+.text
+/2GG>!B
+/?size@QImage@@QEBA?AVQSize@@XZ
+/L9\$ t
+0><[cZUg^>
+0A\_^
+0A\_^][
+0A]A\_
+0A]A\_^]
+0A]_^
+0A^A]A\
+0A^A]A\_^
+0A^A]A\_^H
+0A^A]A\_^][
+0A^][
+0A_A^A]A\]
+0A_A^A]A\_
+0A_A^A]A\_^[
+0A_A^A]A\_^]
+0X8b?~
+1"EYg-
+1#IND
+1#INF
+1#QNAN
+1#SNAN
+1?styleChange@QWidget@@MEAAXAEAVQStyle@@@Z
+1finishLoading(quint16,HRESULT,Graph)
+1finishSeeking(quint16,qint64)
+1handleEvents(Graph,long,long)
+1mediaObjectDestroyed()
+1slotStateReady(Graph,Phonon::State)
+1switchToNextSource()
+2?testAttribute_helper@QWidget@@AEBA_NW4WidgetAttribute@Qt@@@Z
+2asyncRenderFinished(quint16,HRESULT,Graph)
+2asyncSeekingFinished(quint16,qint64)
+2destroyed()
+2eventReady(Graph,long,long)
+2stateReady(Graph,Phonon::State)
+3!XI-X
+3]X+1 
+4.{C?
+6&?scale@QTransform@@QEAAAEAV1@NN@Z
+6?translate@QTransform@@QEAAAEAV1@NN@Z
+7;|$0t,
+7?updateGeometry@QWidget@@QEAAXXZ
+7?updatesEnabled@QWidget@@QEBA_NXZ
+8$u,D
+8$u.D
+80tVD
+80|'A
+8?u$H
+8?u-H
+8?winEvent@QWidget@@MEAA_NPEAUtagMSG@@PEAJ@Z
+8?winId@QWidget@@QEBAPEAUHWND__@@XZ
+8?window@QWidget@@QEBAPEAV1@XZ
+8?windowActivationChange@QWidget@@MEAAX_N@Z
+8@tJH
+8@txH
+8@u!H
+8@u<H
+8A\_^[
+8A_A^A]A\_^][
+8D$8t
+8Ft0A
+8Ht*A
+8L$8t
+8QupI
+8Xu3H
+8Zu"H
+8_^][
+8_uNH
+8ke?;
+9	t	H
+9	tmH
+91~O3
+9?uPH
+9D$`u
+9D$pu
+9XVnTm
+9Z!jj%
+9t$P~98\$vt3H
+:>)*	v
+:>t6k'
+;.uAL
+;7sUH
+;?tJA
+;Pb69
+;\$p|
+;{LthH
+< tG<	tC
+<$-Hc
+</assembly>PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+<0|/<9
+<1~1<3~$<4t9<5t
+<>#n2
+<?u7H
+<A|2<P
+<Et	H
+<_uyI
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<ellipsis>
+<unknown>
+<z~$<A|
+>	?grow@QVectorData@@SAHHHH_N@Z
+?.?setVisible@QWidget@@UEAAX_N@Z
+?7zQ6$
+?:kP<
+??0EffectParameter@Phonon@@QEAA@AEBV01@@Z
+??0EffectParameter@Phonon@@QEAA@HAEBVQString@@V?$QFlags@W4Hint@EffectParameter@Phonon@@@@AEBVQVariant@@22AEBV?$QList@VQVariant@@@@0@Z
+??0MediaSource@Phonon@@QEAA@AEBV01@@Z
+??0MediaSource@Phonon@@QEAA@XZ
+??0QBrush@@QEAA@AEBVQColor@@W4BrushStyle@Qt@@@Z
+??0QByteArray@@QEAA@HD@Z
+??0QByteArray@@QEAA@PEBD@Z
+??0QChar@@QEAA@D@Z
+??0QChar@@QEAA@UQLatin1Char@@@Z
+??0QEvent@@QEAA@W4Type@0@@Z
+??0QImage@@QEAA@AEBV0@@Z
+??0QImage@@QEAA@HHW4Format@0@@Z
+??0QImage@@QEAA@XZ
+??0QMutex@@QEAA@W4RecursionMode@0@@Z
+??0QMutexLocker@@QEAA@PEAVQMutex@@@Z
+??0QObject@@QEAA@PEAV0@@Z
+??0QPainter@@QEAA@PEAVQPaintDevice@@@Z
+??0QPalette@@QEAA@W4GlobalColor@Qt@@@Z
+??0QRegion@@QEAA@AEBVQRect@@W4RegionType@0@@Z
+??0QSettings@@QEAA@AEBVQString@@W4Format@0@PEAVQObject@@@Z
+??0QString@@QEAA@AEBV0@@Z
+??0QThread@@QEAA@PEAVQObject@@@Z
+??0QTransform@@QEAA@XZ
+??0QVariant@@QEAA@AEBV0@@Z
+??0QVariant@@QEAA@AEBVQString@@@Z
+??0QVariant@@QEAA@H@Z
+??0QVariant@@QEAA@M@Z
+??0QVariant@@QEAA@XZ
+??0QVariant@@QEAA@_N@Z
+??0QWaitCondition@@QEAA@XZ
+??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
+??0StreamInterface@Phonon@@IEAA@XZ
+??1EffectParameter@Phonon@@QEAA@XZ
+??1MediaSource@Phonon@@QEAA@XZ
+??1QBasicTimer@@QEAA@XZ
+??1QBrush@@QEAA@XZ
+??1QByteArray@@QEAA@XZ
+??1QEvent@@UEAA@XZ
+??1QImage@@UEAA@XZ
+??1QMutex@@QEAA@XZ
+??1QMutexLocker@@QEAA@XZ
+??1QObject@@UEAA@XZ
+??1QPainter@@QEAA@XZ
+??1QPalette@@QEAA@XZ
+??1QRegion@@QEAA@XZ
+??1QSettings@@UEAA@XZ
+??1QString@@QEAA@XZ
+??1QThread@@UEAA@XZ
+??1QUrl@@QEAA@XZ
+??1QVariant@@QEAA@XZ
+??1QWaitCondition@@QEAA@XZ
+??1QWidget@@UEAA@XZ
+??1StreamInterface@Phonon@@UEAA@XZ
+??4MediaSource@Phonon@@QEAAAEAV01@AEBV01@@Z
+??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z
+??4QImage@@QEAAAEAV0@$$QEAV0@@Z
+??4QImage@@QEAAAEAV0@AEBV0@@Z
+??4QString@@QEAAAEAV0@$$QEAV0@@Z
+??4QString@@QEAAAEAV0@AEBV0@@Z
+??4QVariant@@QEAAAEAV0@$$QEAV0@@Z
+??4QVariant@@QEAAAEAV0@AEBV0@@Z
+??9QBasicAtomicInt@@QEBA_NH@Z
+??GQRegion@@QEBA?BV0@AEBV0@@Z
+??MQString@@QEBA_NAEBV0@@Z
+?CuND8g
+?QStringList_removeDuplicates@QtPrivate@@YAHPEAVQStringList@@@Z
+?QStringList_replaceInStrings@QtPrivate@@YAXPEAVQStringList@@AEBVQString@@1W4CaseSensitivity@Qt@@@Z
+?QY^&
+?R0I?
+?UUUUUU
+?WindowsVersion@QSysInfo@@2W4WinVersion@1@B
+?actionEvent@QWidget@@MEAAXPEAVQActionEvent@@@Z
+?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z
+?allocate@QVectorData@@SAPEAU1@HH@Z
+?allocateNode@QHashData@@QEAAPEAXH@Z
+?append2@QListData@@QEAAPEAPEAXAEBU1@@Z
+?append@QByteArray@@QEAAAEAV1@AEBV1@@Z
+?append@QListData@@QEAAPEAPEAXXZ
+?append@QString@@QEAAAEAV1@AEBV1@@Z
+?arg@QString@@QEBA?AV1@AEBV1@HAEBVQChar@@@Z
+?arg@QString@@QEBA?AV1@VQChar@@HAEBV2@@Z
+?at@QListData@@QEBAPEAPEAXH@Z
+?availableGeometry@QDesktopWidget@@QEBA?BVQRect@@H@Z
+?backgroundRole@QWidget@@QEBA?AW4ColorRole@QPalette@@XZ
+?begin@QListData@@QEBAPEAPEAXXZ
+?beginNativePainting@QPainter@@QEAAXXZ
+?bits@QImage@@QEAAPEAEXZ
+?blue@QColor@@QEBAHXZ
+?boundedTo@QSize@@QEBA?AV1@AEBV1@@Z
+?cast@QMetaObject@@QEBAPEAVQObject@@PEAV2@@Z
+?changeEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+?changeGuard@QMetaObject@@SAXPEAPEAVQObject@@PEAV2@@Z
+?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
+?childGroups@QSettings@@QEBA?AVQStringList@@XZ
+?clear@QByteArray@@QEAAXXZ
+?clear@QString@@QEAAXXZ
+?closeEvent@QWidget@@MEAAXPEAVQCloseEvent@@@Z
+?color@QPalette@@QEBAAEBVQColor@@W4ColorRole@1@@Z
+?connect@QObject@@SA_NPEBV1@PEBD01W4ConnectionType@Qt@@@Z
+?connectNotify@QObject@@MEAAXPEBD@Z
+?connectToSource@StreamInterface@Phonon@@QEAAXAEBVMediaSource@2@@Z
+?contains@QRect@@QEBA_NAEBV1@_N@Z
+?contains@QString@@QEBA?AVQBool@@AEBV1@W4CaseSensitivity@Qt@@@Z
+?contextMenuEvent@QWidget@@MEAAXPEAVQContextMenuEvent@@@Z
+?continueFreeData@QMapData@@QEAAXH@Z
+?createData@QMapData@@SAPEAU1@H@Z
+?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
+?deref@QBasicAtomicInt@@QEAA_NXZ
+?desktop@QApplication@@SAPEAVQDesktopWidget@@XZ
+?detach@QByteArray@@QEAAXXZ
+?detach@QListData@@QEAAPEAUData@1@H@Z
+?detach_grow@QListData@@QEAAPEAUData@1@PEAHH@Z
+?detach_helper2@QHashData@@QEAAPEAU1@P6AXPEAUNode@1@PEAX@ZP6AX0@ZHH@Z
+?devType@QWidget@@UEBAHXZ
+?discType@MediaSource@Phonon@@QEBA?AW4DiscType@2@XZ
+?disconnect@QObject@@SA_NPEBV1@PEBD01@Z
+?disconnectNotify@QObject@@MEAAXPEBD@Z
+?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
+?dragMoveEvent@QWidget@@MEAAXPEAVQDragMoveEvent@@@Z
+?drawImage@QPainter@@QEAAXHHAEBVQImage@@HHHHV?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
+?drawRects@QPainter@@QEAAXPEBVQRect@@H@Z
+?dropEvent@QWidget@@MEAAXPEAVQDropEvent@@@Z
+?enabledChange@QWidget@@MEAAX_N@Z
+?end@QListData@@QEBAPEAPEAXXZ
+?endNativePainting@QPainter@@QEAAXXZ
+?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+?erase@QListData@@QEAAPEAPEAXPEAPEAX@Z
+?event@QObject@@UEAA_NPEAVQEvent@@@Z
+?event@QWidget@@MEAA_NPEAVQEvent@@@Z
+?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
+?expandedTo@QSize@@QEBA?AV1@AEBV1@@Z
+?f`Y4
+?fileName@MediaSource@Phonon@@QEBA?AVQString@@XZ
+?firstNode@QHashData@@QEAAPEAUNode@1@XZ
+?focusInEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
+?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
+?fontChange@QWidget@@MEAAXAEBVQFont@@@Z
+?free@QString@@CAXPEAUData@1@@Z
+?free@QVectorData@@SAXPEAU1@H@Z
+?freeNode@QHashData@@QEAAXPEAX@Z
+?free_helper@QHashData@@QEAAXP6AXPEAUNode@1@@Z@Z
+?fromAscii_helper@QString@@CAPEAUData@1@PEBDH@Z
+?fromLatin1@QString@@SA?AV1@PEBDH@Z
+?fromLatin1_helper@QString@@CAPEAUData@1@PEBDH@Z
+?getDC@QWidget@@UEBAPEAUHDC__@@XZ
+?green@QColor@@QEBAHXZ
+?heightForWidth@QWidget@@UEBAHH@Z
+?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
+?id@EffectParameter@Phonon@@QEBAHXZ
+?index@ObjectDescriptionData@Phonon@@QEBAHXZ
+?inputMethodEvent@QWidget@@MEAAXPEAVQInputMethodEvent@@@Z
+?inputMethodQuery@QWidget@@UEBA?AVQVariant@@W4InputMethodQuery@Qt@@@Z
+?isNull@QImage@@QEBA_NXZ
+?isNull@QVariant@@QEBA_NXZ
+?isWidgetType@QObject@@QEBA_NXZ
+?keyPressEvent@QWidget@@MEAAXPEAVQKeyEvent@@@Z
+?keyReleaseEvent@QWidget@@MEAAXPEAVQKeyEvent@@@Z
+?languageChange@QWidget@@MEAAXXZ
+?leaveEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+?mapRect@QTransform@@QEBA?AVQRect@@AEBV2@@Z
+?metaObject@QObject@@UEBAPEBUQMetaObject@@XZ
+?metaObject@QWidget@@UEBAPEBUQMetaObject@@XZ
+?metric@QWidget@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
+?mid@QByteArray@@QEBA?AV1@HH@Z
+?mid@QString@@QEBA?AV1@HH@Z
+?minimumSizeHint@QWidget@@UEBA?AVQSize@@XZ
+?mouseDoubleClickEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+?mouseMoveEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+?mousePressEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+?mouseReleaseEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+?moveEvent@QWidget@@MEAAXPEAVQMoveEvent@@@Z
+?needData@StreamInterface@Phonon@@QEAAXXZ
+?nextNode@QHashData@@SAPEAUNode@1@PEAU21@@Z
+?node_create@QMapData@@QEAAPEAUNode@1@QEAPEAU21@HH@Z
+?number@QString@@SA?AV1@IH@Z
+?opacity@QPainter@@QEBANXZ
+?postEvent@QCoreApplication@@SAXPEAVQObject@@PEAVQEvent@@@Z
+?qFree@@YAXPEAX@Z
+?qHash@@YAIAEBVQByteArray@@@Z
+?qMemCopy@@YAPEAXPEAXPEBX_K@Z
+?qMemSet@@YAPEAXPEAXH_K@Z
+?qWarning@@YAXPEBDZZ
+?qt_metacall@QObject@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+?qt_metacall@QThread@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+?qt_metacast@QObject@@UEAAPEAXPEBD@Z
+?qt_metacast@QThread@@UEAAPEAXPEBD@Z
+?realloc@QString@@AEAAXXZ
+?registerType@QMetaType@@SAHPEBDP6AXPEAX@ZP6APEAXPEBX@Z@Z
+?registerTypedef@QMetaType@@SAHPEBDH@Z
+?rehash@QHashData@@QEAAXH@Z
+?remove@QListData@@QEAAXH@Z
+?removeGuard@QMetaObject@@SAXPEAPEAVQObject@@@Z
+?resolve@QLibrary@@SAPEAXAEBVQString@@PEBD@Z
+?seekStream@StreamInterface@Phonon@@QEAAX_J@Z
+?shared_null@QByteArray@@0UData@1@A
+?shared_null@QHashData@@2U1@A
+?shared_null@QListData@@2UData@1@A
+?shared_null@QMapData@@2U1@A
+?shared_null@QString@@0UData@1@A
+?shared_null@QVectorData@@2U1@A
+?singleShot@QTimer@@SAXHPEAVQObject@@PEBD@Z
+?size@QListData@@QEBAHXZ
+?start@QBasicTimer@@QEAAXHPEAVQObject@@@Z
+?start@QThread@@QEAAXW4Priority@1@@Z
+?staticMetaObject@QObject@@2UQMetaObject@@B
+?staticMetaObject@QThread@@2UQMetaObject@@B
+?stop@QBasicTimer@@QEAAXXZ
+?timerEvent@QObject@@MEAAXPEAVQTimerEvent@@@Z
+?toBool@QVariant@@QEBA_NXZ
+?toFloat@QVariant@@QEBAMPEA_N@Z
+?toInt@QVariant@@QEBAHPEA_N@Z
+?toLower@QString@@QEBA?AV1@XZ
+?toString@QUrl@@QEBA?AVQString@@V?$QFlags@W4FormattingOption@QUrl@@@@@Z
+?type@MediaSource@Phonon@@QEBA?AW4Type@12@XZ
+?unlock@QMutexLocker@@QEAAXXZ
+?unlockInline@QMutex@@QEAAXXZ
+?url@MediaSource@Phonon@@QEBA?AVQUrl@@XZ
+?utf16@QString@@QEBAPEBGXZ
+?wait@QThread@@QEAA_NK@Z
+?wait@QWaitCondition@@QEAA_NPEAVQMutex@@K@Z
+?wakeOne@QWaitCondition@@QEAAXXZ
+@%?reset@QTransform@@QEAAXXZ
+@.data
+@.reloc
+@.rsrc
+@4L;A
+@8t$8t
+@8|$8t
+@A\_^
+@A\_^][
+@A]A\]
+@A]A\_
+@A]A\_^]
+@A^A\_
+@A^A]A\
+@A^A]A\_^][
+@A_A^A]A\_
+@A_A^A]A\_^]
+@SUAVH
+@SUVWATAUAVAWH
+@SUVWATAUAVH
+@SUVWATH
+@SUVWH
+@SVWATAUAVAWH
+@SVWH
+@UATAUAVAWH
+@UATAUH
+@USVWATAUAVAWH
+@USVWATAUAVH
+@USVWATAUH
+@USVWATH
+@USVWH
+@UVWATAUAVAWH
+@UVWATAUH
+@UVWH
+@VWATAUAVH
+@VWATH
+@VWAUH
+@WATAUAVAWH
+@WATAUH
+@text
+A03>A|
+A0D9x
+A9	u<A
+A9	uxA
+A;1~	I
+A>l$/
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+AK>(v
+AMGetErrorTextW
+ARTIST
+ATAUAVH
+A\_^[]
+A\_^][
+A]A\]
+A]A\_
+A]A\_^[]
+A]A\_^]
+A^A]A\
+A^A]A\_]
+A^A]A\_^
+A^A]A\_^][
+A^A]]
+A_A]A\
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A`9i$tPH
+AddonInterface0.2.phonon.kde.org
+April
+AudioOutputInterface2.phonon.kde.org
+August
+B(I9A(u
+B,?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
+BI* V
+BackendInterface3.phonon.kde.org
+C A+C
+C E+C
+C0HcH
+C4M;A
+C5R?	
+C:[*;'
+C:\Valve\ThirdPartyCode\lgpl\qt\qt_valve_win64\plugins\phonon_backend\phonon_ds94.pdb
+CL:>8
+COPYRIGHT
+CWD>~3
+Ch:HPt-
+CloseHandle
+CoCreateInstance
+CoGetMalloc
+CoInitialize
+CoTaskMemAlloc
+CoTaskMemFree
+CoUninitialize
+CorExitProcess
+CreateEventW
+CreateFileW
+CreatePen
+CreateSolidBrush
+D W?{W
+D$ HcH
+D$ LcA
+D$&8\$&t-8X
+D$(;Q
+D$(E3
+D$(HcH
+D$0HcP
+D$0LcA
+D$8E3
+D$8HcH
+D$@HcP
+D$DE3
+D$HI;
+D$HL9\$P@
+D$PE3
+D$PH#
+D$PL9oXt
+D$XE3
+D$XH;
+D$XHcA
+D$\IcI
+D$`E3
+D$hE3
+D$p H
+D$pE3
+D$pH;
+D$pIc@
+D80tEH
+D80tTH
+D86tuH
+D8\$(u|H
+D8\$8t
+D8\$8t#H
+D8d$Ht
+D8t$ t
+D9d$ 
+D9d$`
+D;+t1
+DESCRIPTION
+DMOEnum
+DMOGetName
+December
+DecodePointer
+DeleteCriticalSection
+DeleteObject
+DeviceIoControl
+DirectSound
+E9,$~T3
+E94$t
+E9A u
+E9A u#I
+E9Y t
+E;,$|
+E>nEA
+EHLc@
+EPIcH
+E\HcH
+EffectInterface0.phonon.kde.org
+EgAYUV
+EncodePointer
+EnterCriticalSection
+EnumSystemLocalesA
+ExIcH
+ExitProcess
+F"!,=
+F&?scanLine@QImage@@QEAAPEAEH@Z
+F0HcH
+F>qUxv
+F\IcI
+FatalAppExitA
+February
+FlsAlloc
+FlsFree
+FlsGetValue
+FlsSetValue
+FreeEnvironmentStringsW
+FreeLibrary
+Friday
+G0Hc	H
+GDI32.dll
+GetACP
+GetActiveWindow
+GetCPInfo
+GetCommandLineA
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetEnvironmentStringsW
+GetFileType
+GetLastActivePopup
+GetLastError
+GetLocaleInfoA
+GetLocaleInfoW
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleA
+GetModuleHandleW
+GetOEMCP
+GetProcAddress
+GetProcessHeap
+GetProcessWindowStation
+GetStartupInfoW
+GetStdHandle
+GetStringTypeW
+GetSystemTimeAsFileTime
+GetTickCount
+GetUserDefaultLCID
+GetUserObjectInformationW
+GetVersion
+Graph
+H(H9J(u
+H+M0x
+H91tL
+H99t$
+H99t)
+H9C t
+H9L$ u'H
+H9L$Xt'H
+H9M`u	H
+H9\$X
+H9\$Xr
+H;;t6ffffff
+H;;t9ffffff
+H;C t
+HA]A\_^][
+HH:mm:ss
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\mplayer2\mime types
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Multimedia\wmplayer\mime types
+HRESULT
+H[><y5
+H_^][
+HcC H
+HcD$8H
+HcD$XH
+HcH<H
+HcL$8H
+HcO H
+HcT$8McJ
+Hct$@H
+HeapAlloc
+HeapCreate
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSetInformation
+HeapSize
+I94$tt
+IcqHH
+IcqHI
+Il?333333c?
+InitializeCriticalSectionAndSpinCount
+IsDebuggerPresent
+IsValidCodePage
+IsValidLocale
+January
+Jg3}hD6zF
+K$ZQH
+K0HcQ
+K0LcY
+KERNEL32.dll
+KpD9{T|
+L ?paintEngine@QPainter@@QEBAPEAVQPaintEngine@@XZ
+L!l$HL!l$@
+L$ E3
+L$ H3
+L$ HcQ
+L$ SUVWATH
+L$ SUVWH
+L$ VWATH
+L$ tB
+L$(E3
+L$(HcA
+L$(HcQ
+L$0<`t
+L$0E3
+L$0H3
+L$0H;
+L$0HcQ
+L$0ff
+L$0tB
+L$8H3
+L$@;|
+L$@E3
+L$@H3
+L$HH3
+L$PE3
+L$PH3
+L$PHcQ
+L$PfH
+L$PfI
+L$XE3
+L$XHcA
+L$`D;
+L$`H3
+L$`uT
+L$ht:
+L$pH3
+L$pH;
+L$pH;L$(A
+L$xI+
+L;fxu
+L;fxu0
+L?UUUUUUU?
+LCMapStringW
+LC_ALL
+LC_COLLATE
+LC_CTYPE
+LC_MONETARY
+LC_NUMERIC
+LC_TIME
+LRich*
+LcA<E3
+LcD$8O
+LcD$XN
+LcIpL
+Lc\$8HcJ
+Lc\$8McJ
+Lc\$XMcJ
+LeaveCriticalSection
+LoadLibraryW
+M9.t=H
+M94$tiA
+M94$t|A
+M@~fD
+MM/dd/yy
+MOREINFO
+MPHcA
+March
+Mc,$E
+Mct$lM
+MediaObjectInterface3.phonon.kde.org
+MessageBoxW
+Monday
+MultiByteToWideChar
+N3`d?
+N>O=I9
+NHHcQ
+Norwegian-Nynorsk
+November
+O,I;J,u
+O0HcQ
+O4I;J4u
+OF>;^
+OHHcQ
+OLEAUT32.dll
+OPENGL32.dll
+October
+P69!FW
+P89|$@t
+P>q_Y~
+PA\_^][
+PA^A]A\_^[]
+PA^A]A\_^][
+PH;;u
+PHHcK8L
+PHHcK`L
+PHHcO`L
+PhHcOTH
+PhHcOXH
+Phonon::AddonInterface
+Phonon::AudioOutputInterface
+Phonon::BackendInterface
+Phonon::DS9::AudioOutput
+Phonon::DS9::Backend
+Phonon::DS9::BackendNode
+Phonon::DS9::Effect
+Phonon::DS9::MediaObject
+Phonon::DS9::VideoWidget
+Phonon::DS9::VolumeEffect
+Phonon::DS9::WorkerThread
+Phonon::EffectInterface
+Phonon::MediaObjectInterface
+Phonon::VideoWidgetInterface
+Phonon::VolumeFaderInterface
+Q5rHg,>
+Q8?wheelEvent@QWidget@@MEAAXPEAVQWheelEvent@@@Z
+QhIcJ
+QtCore4.dll
+QtGui4.dll
+Qt_GetCustomAllocators
+QueryPerformanceCounter
+RaiseException
+Rectangle
+ResetEvent
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlPcToFileHeader
+RtlUnwindEx
+RtlVirtualUnwind
+S>$hkDh$h>[2
+SUVWATAUAVAWH
+SUVWATAUAVH
+SUVWATAUH
+SUVWATH
+SUVWH
+SVWATAUAVAWH
+SVWATH
+Saturday
+SelectObject
+September
+SetConsoleCtrlHandler
+SetEvent
+SetHandleCount
+SetLastError
+SetUnhandledExceptionFilter
+Sleep
+Sunday
+SystemFunction036
+T$ E3
+T$0E3
+T$PA;
+T$PE3
+T$pH3
+TITLE
+TUUUU
+TerminateProcess
+Thursday
+Tuesday
+UA>N0Wl
+UATAUAVAWH
+UATAUH
+UAUAVH
+UNKNOWN
+USVWATAUAVAWH
+USVWATAUH
+USVWATH
+UUUUUU
+UVWATAUAVAWH
+UVWATAUH
+UWATAUAVH
+UWATH
+UYZ h7y
+UnhandledExceptionFilter
+Unknown error
+Unknown exception
+V(L9"
+V>u`B
+VD$pf
+VDEST
+VT$pD
+VWATAUAVH
+VWATH
+VideoWidgetInterface3.phonon.kde.org
+VolumeFaderInterface4.phonon.kde.org
+W50en
+W50en {L
+WATAUAVAWH
+WATAUH
+WATAVH
+WaNd?
+WaitForMultipleObjects
+WaitForSingleObject
+Wednesday
+WideCharToMultiByte
+WriteFile
+X=lh)
+XA_A^A]A\_^][
+Y3@(G
+Y>kX>M
+YD$`f
+YhHcK
+Z\>z8
+ZfOgH
+Zod(^?
+['?setAttribute@QWidget@@QEAAXW4WidgetAttribute@Qt@@_N@Z
+[*ncd>0
+[thunk]:
+\$ +H
+\$ E3
+\$ UVWATAUAVAWH
+\$ VH
+\$ VWAUH
+\$ WH
+\$$A;
+\$0H;
+\$0HcA
+\$0HcJ
+\$0IcH
+\$0L+
+\$8L3
+\$HD+a
+\$PHcA
+\$PHcJ
+\$gm?
+\J, k
+\\.\%1:
+\\.\Cdrom0
+]$C9"D
+])6M>&
+]>)2X
+]u`@j
+^RfN>
+__based(
+__cdecl
+__clrcall
+__eabi
+__fastcall
+__int128
+__int16
+__int32
+__int64
+__int8
+__pascal
+__ptr64
+__restrict
+__stdcall
+__thiscall
+__unaligned
+__w64 
+_cabs
+_hypot
+_logb
+_nextafter
+_oD>Kg
+` AUH
+`*7YF
+`+!]?
+`.rdata
+`A\_]
+`A^A]A\_^][
+`A_A^A]A\_^]
+`RTTI
+`adjustor{
+`anonymous namespace'
+`copy constructor closure'
+`default constructor closure'
+`dynamic atexit destructor for '
+`dynamic initializer for '
+`eh vector constructor iterator'
+`eh vector copy constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`eh vector vbase copy constructor iterator'
+`local static destructor helper'
+`local static guard'
+`local static thread guard'
+`local vftable constructor closure'
+`local vftable'
+`managed vector constructor iterator'
+`managed vector copy constructor iterator'
+`managed vector destructor iterator'
+`non-type-template-parameter
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`scalar deleting destructor'
+`string'
+`template static data member constructor helper'
+`template static data member destructor helper'
+`template-parameter
+`typeof'
+`udt returning'
+`unknown ecsu'
+`vbase destructor'
+`vbtable'
+`vcall'
+`vector constructor iterator'
+`vector copy constructor iterator'
+`vector deleting destructor'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`vector vbase copy constructor iterator'
+`vftable'
+`virtual displacement map'
+`vtordispex{
+`vtordisp{
+abcdefghijklmnopqrstuvwxyz
+aboutToFinish()
+america
+american
+american english
+american-english
+an error occurred while reading from the media
+angleChanged(int)
+asyncRenderFinished(quint16,HRESULT,Graph)
+asyncSeekingFinished(quint16,qint64)
+atan2
+audioDeviceFailed()
+australian
+availableAnglesChanged(int)
+availableChaptersChanged(int)
+availableTitlesChanged(int)
+b?^Cy
+b[98Bp
+bad exception
+belgian
+be~`D
+britain
+bufferStatus(int)
+buildkey=Windows x64 msvc release full-config
+c AUH
+c0&>`
+c?FA@s}
+cC?xM
+cY?>p
+canadian
+chapterChanged(int)
+char 
+china
+chinese
+chinese-hongkong
+chinese-simplified
+chinese-singapore
+chinese-traditional
+class 
+cli::array<
+cli::pin_ptr<
+coclass 
+cointerface 
+const
+const 
+currentSourceChanged(MediaSource)
+czech
+d	?hasShrunk@QHashData@@QEAAXXZ
+d$ E3
+d$ IcD$
+d$ UH
+d$(IcD$
+d$0IcD$
+d$8H+
+d$8IcD$
+d$HIcD$
+d$PIcD$
+d$pIcD$
+d$xIcD$
+d?000000`?
+dddd, MMMM dd, yyyy
+debug=false
+dn$\_B
+double
+dutch-belgian
+e O*c
+e+000
+e@IcD$
+eHIcD$
+eXIcD$
+emlrt
+england
+english-american
+english-aus
+english-belize
+english-can
+english-caribbean
+english-ire
+english-jamaica
+english-nz
+english-south africa
+english-trinidad y tobago
+english-uk
+english-us
+english-usa
+enum 
+eventReady(Graph,long,long)
+extern "C" 
+f'?setAutoFillBackground@QWidget@@QEAAX_N@Z
+f/?sizeHint@QWidget@@UEBA?AVQSize@@XZ
+f0IcD$
+f9Q`u
+fD9 t
+fD9#u
+fD9:r
+fD9t$b
+fJBGo
+fffff
+ffffff
+fffffff
+finishLoading(quint16,HRESULT,Graph)
+finishSeeking(quint16,qint64)
+finished()
+float
+floor
+french-belgian
+french-canadian
+french-luxembourg
+french-swiss
+frexp
+generic-type-
+german-austrian
+german-lichtenstein
+german-luxembourg
+german-swiss
+gfffA
+gfffffffH
+glActiveTexture
+glBindProgramARB
+glBindTexture
+glDeleteProgramsARB
+glDeleteTextures
+glDisable
+glDisableClientState
+glDrawArrays
+glEnable
+glEnableClientState
+glGenProgramsARB
+glGenTextures
+glGetError
+glProgramLocalParameter4fARB
+glProgramStringARB
+glTexCoordPointer
+glTexImage2D
+glTexParameterf
+glVertexPointer
+great britain
+h7?update@QWidget@@QEAAXAEBVQRect@@@Z
+h>1my
+hA]A\_^[]
+handleEvents(Graph,long,long)
+hasVideoChanged(bool)
+holland
+hong-kong
+irish-english
+italian-swiss
+j>>A?1
+j?V()
+j?{$*
+k7?update@QWidget@@QEAAXXZ
+l$ D!
+l$ VWATH
+l$ WH
+l$(IcE
+l$(LcnlL
+l$0HcE
+l$0IcE
+l$8IcE
+l$@@2
+l$PHcE
+l$hIcE
+l$pHcE
+l$xHcE
+ldexp
+length
+log10
+log10f
+long 
+mediaObjectDestroyed()
+metaDataChanged(QMultiMap<QString,QString>)
+msdmo.dll
+nCO&BB
+nD$dH
+nL=S"
+n]?iJ
+new-zealand
+newVolume
+newstate,oldstate
+norwegian
+norwegian-bokmal
+norwegian-nynorsk
+oI>O7
+objectDescriptionChanged(ObjectDescriptionType)
+ole32.dll
+operator
+ot$@H
+p WATAUAVAWH
+p WATAUH
+pA]A\_^]
+pattern=QT_PLUGIN_VERIFICATION_DATA
+pdvsd
+phonon4.dll
+phonon_ds94.dll
+piavs
+portuguese-brazilian
+pr china
+pr-china
+prefinishMarkReached(qint32)
+private: 
+protected: 
+prpza
+public: 
+puerto-rico
+pvids
+q7A15
+q7A44
+q7A88
+q7R16
+q7R32
+q9A15
+q9A44
+q9A88
+q9R16
+q9R32
+qAI44
+qCFCC
+qCLJR
+qCLPL
+qCPLA
+qDVCS
+qDVSD
+qH264
+qIA44
+qIF09
+qIJPG
+qIMC1
+qIMC2
+qIMC3
+qIMC4
+qIYUV
+qMDVF
+qMJPG
+qNV11
+qNV12
+qNV24
+qP010
+qP016
+qP208
+qP210
+qP216
+qP408
+qPlum
+qS340
+qS342
+qS>g?h3
+qTVMJ
+qUYVY
+qWAKE
+qY210
+qY211
+qY216
+qY411
+qY41P
+qYUY2
+qYUYV
+qYV12
+qYVU9
+qYVYU
+qauds
+qdmcs
+qdv25
+qdv50
+qdvh1
+qdvhd
+qdvsl
+qfile
+qjpeg
+qmids
+qoE`b
+qrle 
+qsmc 
+qt_plugin_instance
+qt_plugin_query_verification_data
+qtxts
+quartz
+qurls
+s WATAUAVAWH
+s\HcL$HH
+seekableChanged(bool)
+short
+short 
+signed 
+slotStateReady(Graph,Phonon::State)
+slovak
+south africa
+south korea
+south-africa
+south-korea
+spanish-argentina
+spanish-bolivia
+spanish-chile
+spanish-colombia
+spanish-costa rica
+spanish-dominican republic
+spanish-ecuador
+spanish-el salvador
+spanish-guatemala
+spanish-honduras
+spanish-mexican
+spanish-modern
+spanish-nicaragua
+spanish-panama
+spanish-paraguay
+spanish-peru
+spanish-puerto rico
+spanish-uruguay
+spanish-venezuela
+stateChanged(Phonon::State,Phonon::State)
+stateReady(Graph,Phonon::State)
+static 
+std::nullptr_t
+struct 
+swedish-finland
+swiss
+switchToNextSource()
+t$ @80
+t$ IcF
+t$ UH
+t$ UWATH
+t$ WATAUAVAWH
+t$ WATAUH
+t$ WH
+t$(H;
+t$@H3
+t$@IcF
+t$Hffff
+t$PH;]
+t$Pt6H
+t$`HcH
+t$xD;t$`A
+t&ffff
+t*HcO
+t0<@t
+t2fff
+t6fff
+t7fff
+tGfff
+tHfff
+tIfffff
+tO<_t<<$t8<<t4<>t0<-t,<a|
+tb<A|M<P
+tbffffff
+teL9;t
+template-parameter-
+tick(qint64)
+tier0.dll
+titleChanged(int)
+tnLcV
+totalTimeChanged(qint64)
+trinidad & tobago
+u	A!A
+u"E9Q t
+u#HcF
+u#HcG
+u1!D$0
+u2HcF
+u5E9Q t
+u6HcF
+uDIcE
+uGIcE
+uHIcE
+uIHcA
+uIIcG
+uJIcE
+uLffff
+uNM9u
+uQI91tLH
+uRIcE
+u_D9u
+uaIcE
+udHcE
+ujHcE
+unable to load the TOC from the CD
+union 
+united-kingdom
+united-states
+unsigned 
+uqffff
+v0H9s0t,
+version=4.8.3
+virtual 
+void 
+volatile
+volatile 
+volumeChanged(qreal)
+v}`[>
+wchar_t
+wglGetProcAddress
+workId,hr,
+workId,time
+x ATAUAVH
+x ATAUAWH
+x ATH
+x$data
+xA_A^A]A\_^[]
+x_^][
+z?aUY
+zB`BoT>
+zY;>u:m	
+zc%C1
+zux!l$ E3
+{flat}
+{for 
+|$ ATAUAVH
+|$ ATH
+|$ E3
+|$ H;
+|$ HcA
+|$ UATAUAVAWH
+|$ UH
+|$0-H
+|$@-D
+|$@-H
+|$HHcC
+|$HfA
+|$PHcH
+|$PHc_
+|$xfD
+|2?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z
+~/8\$vt)H
+~;fff
+~<Lc@
+~Clft
+~ID;c
+~kHcA

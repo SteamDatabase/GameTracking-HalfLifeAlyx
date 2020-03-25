@@ -1,0 +1,432 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/credits_hlvr.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<HLVRCreditsPanel>
+
+		<Panel class="CreditsContainer">
+			<Panel class="TopBar DesignElement">
+				<Panel class="TopBarFill" />
+			</Panel>
+			<Panel class="Header DesignElement">
+				<Label id="HeaderLabel" />
+			</Panel>
+			<Panel class="Content">
+				<Panel class="ForJake">
+					<Label text="For Jake" />
+				</Panel>
+				<Panel id="CreditsDrawer" class="CreditsList" />
+			</Panel>
+			<Panel class="Footer DesignElement">
+				<Image class="ValveLogo" src="s2r://panorama/images/backgrounds/logo_valve_white_png.vtex"/>
+			</Panel>
+		</Panel>
+
+		<Panel class="Raw" id="RawValveList">
+			<Label text="Yazan Aldehayyat"/>
+			<Label text="Steve Allen"/>
+			<Label text="Mike Ambinder"/>
+			<Label text="Matthew An"/>
+			<Label text="Lakulish Antani"/>
+			<Label text="Max Aristov"/>
+			<Label text="Ricardo Ariza"/>
+			<Label text="Gautam Babbar"/>
+			<Label text="Amy Baisch"/>
+			<Label text="Dan Ballance"/>
+			<Label text="Jeff Ballinger"/>
+			<Label text="Ken Banks"/>
+			<Label text="Aaron Barber"/>
+			<Label text="Jeep Barnett"/>
+			<Label text="Michael Baseflug"/>
+			<Label text="Don Beaugez"/>
+			<Label text="Martin Beecroft"/>
+			<Label text="Mike Belzer"/>
+			<Label text="James Benson"/>
+			<Label text="Yahn Bernier"/>
+			<Label text="Jon Blakeley"/>
+			<Label text="iestyn Bleasdale-Shepherd"/>
+			<Label text="Drew Bliss"/>
+			<Label text="Nathaniel Blue"/>
+			<Label text="Matt Boone"/>
+			<Label text="Daniel Boutwell"/>
+			<Label text="Chris Boyd"/>
+			<Label text="Kaci Aitchison Boyle"/>
+			<Label text="Jamaal Bradley"/>
+			<Label text="Jason Brashill"/>
+			<Label text="Rob Briscoe"/>
+			<Label text="Charlie Brown"/>
+			<Label text="Simonne Brown"/>
+			<Label text="Chris Bryant"/>
+			<Label text="Tom Bui"/>
+			<Label text="Ben Burbank"/>
+			<Label text="Andrew Burke"/>
+			<Label text="Augusta Butlin"/>
+			<Label text="Tobin Buttram"/>
+			<Label text="Jeff Cain"/>
+			<Label text="Antonio Calomeni"/>
+			<Label text="Heather Campbell"/>
+			<Label text="Bruno Carlucci"/>
+			<Label text="Chris Carollo"/>
+			<Label text="Molly Carroll"/>
+			<Label text="Ted Carson"/>
+			<Label text="Dario Casali"/>
+			<Label text="Kenny Chamberlin"/>
+			<Label text="Anish Chandak"/>
+			<Label text="Sara Charhon"/>
+			<Label text="Matt Charlesworth"/>
+			<Label text="Gregoire Cherlin"/>
+			<Label text="Chris Chin"/>
+			<Label text="Kurtis Chinn"/>
+			<Label text="Christine Choi"/>
+			<Label text="Cameron Chrisman"/>
+			<Label text="Jared Christen"/>
+			<Label text="Izumi Chunovic"/>
+			<Label text="Kelly Cline"/>
+			<Label text="Phil Co"/>
+			<Label text="Benoit Collette"/>
+			<Label text="Carl Conlee"/>
+			<Label text="John Cook"/>
+			<Label text="Michele Coombs"/>
+			<Label text="Christen Coomer"/>
+			<Label text="Greg Coomer"/>
+			<Label text="Kyle Cornelius"/>
+			<Label text="Michael Coupland"/>
+			<Label text="Tony Cox"/>
+			<Label text="Jason Crist"/>
+			<Label text="James Cunliffe"/>
+			<Label text="Scott Dalton"/>
+			<Label text="Kerry William Davis"/>
+			<Label text="Kyle Davis"/>
+			<Label text="Joe Demers"/>
+			<Label text="Pete Demoreuille"/>
+			<Label text="Dawn Dempsey"/>
+			<Label text="Fabrice Demurger"/>
+			<Label text="Johnny Deng"/>
+			<Label text="Nathanael Deraney"/>
+			<Label text="Ariel Diaz"/>
+			<Label text="Tony DiJulio"/>
+			<Label text="Quintin Doroquez"/>
+			<Label text="Shanon Drone"/>
+			<Label text="John Drury"/>
+			<Label text="Chippy Dugan"/>
+			<Label text="Fletcher Dunn"/>
+			<Label text="Yosef Durr"/>
+			<Label text="Landon Dyer"/>
+			<Label text="Marcus Egan"/>
+			<Label text="David Eichorn"/>
+			<Label text="Markus Emmerling"/>
+			<Label text="Christopher Emond"/>
+			<Label text="Dhabih Eng"/>
+			<Label text="Brett English"/>
+			<Label text="Justin Ennen"/>
+			<Label text="Miles Estes"/>
+			<Label text="Bram Eulaers"/>
+			<Label text="Jan-Peter Ewert"/>
+			<Label text="Al Farnsworth"/>
+			<Label text="David Feise"/>
+			<Label text="Paul Fenwick"/>
+			<Label text="Ezra Ferguson"/>
+			<Label text="Cam Fielding"/>
+			<Label text="Adrian Finol"/>
+			<Label text="Noemi Flor"/>
+			<Label text="Adam Foster"/>
+			<Label text="Zachary Franks"/>
+			<Label text="Clinton Freeman"/>
+			<Label text="Reuben Fries"/>
+			<Label text="Simon Fuchs"/>
+			<Label text="Nicolas Gauvin"/>
+			<Label text="Dennis Geels"/>
+			<Label text="Vitaliy Genkin"/>
+			<Label text="Kassidy Gerber"/>
+			<Label text="Tom Giardino"/>
+			<Label text="Brandon Gilmore"/>
+			<Label text="Dan Ginsburg"/>
+			<Label text="Monty Goodson"/>
+			<Label text="Drew Gottlieb"/>
+			<Label text="Paul Graham"/>
+			<Label text="Dirk Gregorius"/>
+			<Label text="Pierre-Loup Griffais"/>
+			<Label text="Bronwen Grimes"/>
+			<Label text="Chris Grinstead"/>
+			<Label text="Aaron Halifax"/>
+			<Label text="Jeff Hameluck"/>
+			<Label text="Jesse Hatfield"/>
+			<Label text="Joel Hatfield"/>
+			<Label text="Romy Hatfield"/>
+			<Label text="Aubrey Hesselgren"/>
+			<Label text="Steffen Higel"/>
+			<Label text="Jeff Hill"/>
+			<Label text="Lindsay Hill"/>
+			<Label text="Don Holden"/>
+			<Label text="Erik Holverson"/>
+			<Label text="Eric Hope"/>
+			<Label text="Ronald Hu"/>
+			<Label text="Josh Hudman"/>
+			<Label text="Scott Hudziak"/>
+			<Label text="Ben Huen"/>
+			<Label text="Jim Hughes"/>
+			<Label text="Claire Hummel"/>
+			<Label text="Brandon Idol"/>
+			<Label text="John Ikeda"/>
+			<Label text="Ryan Ingram"/>
+			<Label text="Abdul Ismail"/>
+			<Label text="Ben Jackson"/>
+			<Label text="Brian Jacobson"/>
+			<Label text="Steve Jaros"/>
+			<Label text="Daniel Jennings"/>
+			<Label text="Magnar Jenssen"/>
+			<Label text="Erik Johnson"/>
+			<Label text="Brock Jones"/>
+			<Label text="Jakob Jungels"/>
+			<Label text="Chris Kadar"/>
+			<Label text="Rich Kaethler"/>
+			<Label text="Steve Kalning"/>
+			<Label text="Pongthep Bank Kaninworapan"/>
+			<Label text="Brian Keane"/>
+			<Label text="Emily Kent"/>
+			<Label text="Iikka Keränen"/>
+			<Label text="Resibi Khan"/>
+			<Label text="Andrew Young Kim"/>
+			<Label text="Brad Kinley"/>
+			<Label text="Dave Kircher"/>
+			<Label text="Eric Kirchmer"/>
+			<Label text="Tom Kirkland"/>
+			<Label text="Adam Klaff"/>
+			<Label text="Sarah Kneller"/>
+			<Label text="Steve Kody"/>
+			<Label text="Tejeev Kohli"/>
+			<Label text="Daria Koldunova"/>
+			<Label text="Jeff Koontz"/>
+			<Label text="Tor Krog"/>
+			<Label text="Alden Kroll"/>
+			<Label text="Phil Lafornara"/>
+			<Label text="Jeff Lane"/>
+			<Label text="Sam Lantinga"/>
+			<Label text="Mike Lapinsky"/>
+			<Label text="Tim Larkin"/>
+			<Label text="Liam Lavery"/>
+			<Label text="Scott Leberecht"/>
+			<Label text="Matt Lee"/>
+			<Label text="Jinwoo Lee"/>
+			<Label text="Mike Lee"/>
+			<Label text="Aaron Leiby"/>
+			<Label text="Jeff Leinbaugh"/>
+			<Label text="Brian Levinthal"/>
+			<Label text="Eric Lieberman"/>
+			<Label text="Jim Liming"/>
+			<Label text="Jeff Lind"/>
+			<Label text="Shreya Liu"/>
+			<Label text="Jane Lo"/>
+			<Label text="Matt Logue"/>
+			<Label text="Charles Lohr"/>
+			<Label text="Doug Lombardi"/>
+			<Label text="Andrew Loomer"/>
+			<Label text="Joe Ludwig"/>
+			<Label text="Randy Lundeen"/>
+			<Label text="Scott Lynch"/>
+			<Label text="Owen Macindoe"/>
+			<Label text="Sophie Mackey"/>
+			<Label text="Ido Magal"/>
+			<Label text="Nick Maggiore"/>
+			<Label text="Yasser Malaika"/>
+			<Label text="Connor Malone"/>
+			<Label text="Alexander Mark"/>
+			<Label text="John McCaskey"/>
+			<Label text="Ivan McCracken"/>
+			<Label text="John McDonald"/>
+			<Label text="Sergiy Migdalskiy"/>
+			<Label text="Kristian Miller"/>
+			<Label text="Keith Miron"/>
+			<Label text="Jason Mitchell"/>
+			<Label text="Aravind Moorthy"/>
+			<Label text="Mike Morasky"/>
+			<Label text="John Morello"/>
+			<Label text="Olly Moss"/>
+			<Label text="Jeff Mucha"/>
+			<Label text="Brad Muir"/>
+			<Label text="Cassie Murphy"/>
+			<Label text="Jim Murray"/>
+			<Label text="Amit Nagar"/>
+			<Label text="Luke Nalker"/>
+			<Label text="Gabe Newell"/>
+			<Label text="Jane Ng"/>
+			<Label text="Milton Ngan"/>
+			<Label text="Matt Nickerson"/>
+			<Label text="Scott Nietfeld"/>
+			<Label text="Andy Nisbet"/>
+			<Label text="Steven Noonan"/>
+			<Label text="Seán O Sullivan"/>
+			<Label text="John O'Rorke"/>
+			<Label text="Naru Omori"/>
+			<Label text="James Orara"/>
+			<Label text="Martin Otten"/>
+			<Label text="Jennifer Paine"/>
+			<Label text="Tony Paloma"/>
+			<Label text="Eddie Parker"/>
+			<Label text="Morten Pedersen"/>
+			<Label text="Corey Peters"/>
+			<Label text="Erik Peterson"/>
+			<Label text="Christine Phelan"/>
+			<Label text="Jon Pile"/>
+			<Label text="Jay Pinkerton"/>
+			<Label text="Michael Plummer"/>
+			<Label text="DJ Powers"/>
+			<Label text="Karen Prell"/>
+			<Label text="Karl Quackenbush"/>
+			<Label text="Elizabeth Ratto"/>
+			<Label text="Kameron Rausch"/>
+			<Label text="Alireza Razmpoosh"/>
+			<Label text="Tristan Reidford"/>
+			<Label text="Brandon Reinhart"/>
+			<Label text="Jeff Reitman"/>
+			<Label text="Chris Remo"/>
+			<Label text="Matt Rhoten"/>
+			<Label text="Sergei Riabinin"/>
+			<Label text="Garret Rickey"/>
+			<Label text="Emily Ridgway"/>
+			<Label text="Dave Riller"/>
+			<Label text="Erik Robson"/>
+			<Label text="Jake Rodkin"/>
+			<Label text="Dan Rosas Paulsen"/>
+			<Label text="Gabe Rowe"/>
+			<Label text="Jason Ruymen"/>
+			<Label text="Jenni Salmi"/>
+			<Label text="Brett Sanborn"/>
+			<Label text="Adil Sardar"/>
+			<Label text="Chris Schenck"/>
+			<Label text="Thorsten Scheuermann"/>
+			<Label text="Wade Schin"/>
+			<Label text="John Schoenick"/>
+			<Label text="Matt Scott"/>
+			<Label text="Aaron Seeler"/>
+			<Label text="Jeremy Selan"/>
+			<Label text="Chris Shambaugh"/>
+			<Label text="Jay Shaw"/>
+			<Label text="Roland Shaw"/>
+			<Label text="Taylor Sherman"/>
+			<Label text="Colby Sieber"/>
+			<Label text="Ivan Simoncini"/>
+			<Label text="Jeremy Slocum"/>
+			<Label text="Will Smith"/>
+			<Label text="Brian Smith"/>
+			<Label text="Eric Smith"/>
+			<Label text="Quentin Smith"/>
+			<Label text="Kyle Sommer"/>
+			<Label text="David Speyrer"/>
+			<Label text="Tucker Spofford"/>
+			<Label text="Jay Stelly"/>
+			<Label text="Adam Stevens"/>J
+			<Label text="Mike Stevens"/>
+			<Label text="Gordon Stoll"/>
+			<Label text="Lisa Strago"/>
+			<Label text="Eric Strand"/>
+			<Label text="Eric Tams"/>
+			<Label text="Dean Tate"/>
+			<Label text="Frank Taylor"/>
+			<Label text="Angie Teetzel"/>
+			<Label text="Susan Elizabeth Thayer"/>
+			<Label text="Kelly Thornton"/>
+			<Label text="Paul G. Thuriot"/>
+			<Label text="Mike Tjosvold"/>
+			<Label text="Jeff Unay"/>
+			<Label text="David Underwood"/>
+			<Label text="Jacob Urman"/>
+			<Label text="Ricky Uy"/>
+			<Label text="James Van Den Bogart"/>
+			<Label text="Joe van den Heuvel"/>
+			<Label text="Gabe Van Engel"/>
+			<Label text="Sean Vanaman"/>
+			<Label text="Eric VanWyk"/>
+			<Label text="Vivek Varadarajan"/>
+			<Label text="Thiago Vidotto"/>
+			<Label text="Robin Walker"/>
+			<Label text="Sharon Wang"/>
+			<Label text="Chad Weaver"/>
+			<Label text="Chris Welch"/>
+			<Label text="Thad Wharton"/>
+			<Label text="Karl Whinnie"/>
+			<Label text="David White"/>
+			<Label text="Matt Wilde"/>
+			<Label text="Andrew Wilson"/>
+			<Label text="Mark Winters"/>
+			<Label text="Travis Wolfe"/>
+			<Label text="Erik Wolpaw"/>
+			<Label text="Lawrence Yang"/>
+			<Label text="Alan Yates"/>
+			<Label text="Han Young"/>
+			<Label text="Shawn Zabecki"/>
+			<Label text="Patricia Zavalza"/>
+			<Label text="Irving Zhang"/>
+			<Label text="Boyang Zhu"/>
+			<Label text="Vasili Zorin"/>
+		</Panel>
+
+		<Panel class="Raw" id="RawContractorsList" header="#HLVR_Credits_ContractorsHeader">
+			<Label text="Anton Bersenev"/>
+			<Label text="Junaid Chundrigar"/>
+			<Label text="Craig Collins"/>
+			<Label text="Brendan Hogan"/>
+			<Label text="Arkady Krylov"/>
+			<Label text="Vladislav Kulinka"/>
+			<Label text="Noah Landis"/>
+			<Label text="Derek Lieu"/>
+			<Label text="Lily Nishita"/>
+			<Label text="Patrick James Sutton"/>
+			<Label text="Damon Tasker"/>
+			<Label text="Paul Douglas Taylor"/>
+			<Label text="Chris Thuersam"/>
+			<Label text="Blueprint Technologies, LLC"/>
+			<Label text="Cubic Motion"/>
+			<Label text="Niall Calder (Cubic Motion)"/>
+			<Label text="James Duncan (Cubic Motion)"/>
+			<Label text="Derek Ho (Cubic Motion)"/>
+			<Label text="Varvara Juodiskiene (Cubic Motion)"/>
+			<Label text="Liam Kennedy (Cubic Motion)"/>
+			<Label text="Niall Selman (Cubic Motion)"/>
+			<Label text="Adam Walton (Cubic Motion)"/>
+			<Label text="Lee Young (Cubic Motion)"/>
+			<Label text="Kakehashi Games"/>
+			<Label text="Ryu Ito (Kakehashi Games)"/>
+			<Label text="Rockheart Studios"/>
+			<Label text="Daniel Molin (Rockheart Studios)"/>
+			<Label text="Michael Palm (Rockheart Studios)"/>
+			<Label text="Seven League Software"/>
+			<Label text="Sweet Justice Sound"/>
+			<Label text="WB Game Audio"/>
+			<Label text="Emma Emrich (WB Game Audio)"/>
+			<Label text="R. Dutch Hill (WB Game Audio)"/>
+			<Label text="Aaron Southerland (WB Game Audio)"/>
+			<Label text="Alli Diehl (WB Game Audio)"/>
+			<Label text="Xandra Hobe (WB Game Audio)"/>
+			<Label text="Daniel P. Francis (WB Game Audio)"/>
+			<Label text="Matt Klimek (WB Game Audio)"/>
+			<Label text="Garrett Montgomery (WB Game Audio)"/>
+			<Label text="Mitch Osias (WB Game Audio)"/>
+			<Label text="YouWorkForThem"/>
+		</Panel>
+
+		<Panel class="Raw" id="RawCastList" header="#HLVR_Credits_CastHeader">
+			<Label text="Ozioma Akagha" role="Alyx Vance"/>
+			<Label text="James Moses Black" role="Dr. Eli Vance"/>
+			<Label text="Rhys Darby" role="Russell"/>
+			<Label text="Tony Todd" role="Vortigaunts"/>
+			<Label text="Michael Shapiro" role="G-Man"/>
+			<Label text="Ellen McClain" role="Overwatch"/>
+
+			<Label text="Cissy Jones" role="Olga"/>
+			<Label text="Rich Sommer" role="Larry, Drone, Combine Soldier"/>
+			<Label text="Kim Dickens" role="Scientist"/>
+
+			<Label text="Isaac Singleton Jr." role="Combine Suppressor"/>
+			<Label text="Jason Vande Brake" role="Combine Grunt"/>
+			<Label text="Michael Schwalbe" role="Combine Charger"/>
+			<Label text="Rajia Baroudi" role="Combine Ordinal"/>
+			<Label text="Rick Zieff" role="Combine Guy"/>
+
+			<Label text="Tom Taylorson" role="Zombie"/>
+		</Panel>
+	</HLVRCreditsPanel>
+</root>

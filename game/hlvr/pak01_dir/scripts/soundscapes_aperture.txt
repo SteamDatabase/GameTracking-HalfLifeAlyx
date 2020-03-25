@@ -1,0 +1,315 @@
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET	1.5f	65dB
+//	ATTN_GUNFIRE	0.27f	140dB
+
+//	SNDLVL_84dB		= 50,	// 3.9
+//	SNDLVL_84dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_84dB		= 60,	// 2.0
+//	SNDLVL_84dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_84dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_84dB		= 75,	// 0.8
+//	SNDLVL_84dB		= 80,	// 0.7
+//	SNDLVL_84dB		= 85,	// 0.6
+//	SNDLVL_84dB		= 90,	// 0.5
+//	SNDLVL_84dB		= 95,
+//	SNDLVL_84dB	= 100,	// 0.4
+//	SNDLVL_84dB	= 105,
+//	SNDLVL_84dB	= 120,
+//	SNDLVL_84dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_84dB	= 140,	// 0.2
+//	SNDLVL_84dB	= 150,	// 0.2
+
+
+
+////////////////////////////////////
+////////aperture spawn/////////////////////
+////////////////////////////////////
+
+
+
+
+"aperture_spawn_01"
+{
+	"dsp"	"1"
+	"fadetime" "1"
+	
+	"playlooping"
+	{
+		"volume"		".5"
+		"pitch"		"100"
+		"wave"		"sounds/ambience/quiet_cellblock_amb.vsnd"
+		"origin"	"-40.812500, -72.906250, -25.718750"
+		"soundlevel" 	"SNDLVL_40dB"
+	}
+	"playlooping"
+	{
+		"volume"		".24"
+		"pitch"		"110"
+		"wave"		"sounds/ambience/amb_fluorescent_lights_lp_02.vsnd"
+		"origin"	"5.156250 3.250000 67.718750"
+		"soundlevel" 	"SNDLVL_20dB"
+	}
+	"playlooping"
+	{
+		"volume"		".28"
+		"pitch"		"100"
+		"origin"	"5.156250 3.250000 67.718750"
+		"soundlevel" 	"SNDLVL_30dB"
+		"wave"		"sounds/ambience/amb_hotel_refrigeration_lp_01.vsnd"
+	}
+	// "playsoundscape"
+	// {
+		// "name"		 "aperture.spawn.randoms"
+		// "volume"	 "1"
+	// }
+}
+
+
+"aperture_spawn_first_wall_open_01"
+{
+	"dsp"	"1"
+	"fadetime" "6"
+	
+	"playlooping"
+	{
+		"volume"		".5"
+		"pitch"		"100"
+		"wave"		"sounds/ambience/quiet_cellblock_amb.vsnd"
+		"origin"	"-40.812500, -72.906250, -25.718750"
+		"soundlevel" 	"SNDLVL_56dB"
+	}
+	"playlooping"
+	{
+		"volume"		".2"
+		"pitch"		"110"
+		"wave"		"sounds/ambience/amb_fluorescent_lights_lp_02.vsnd"
+		"origin"	"5.156250 3.250000 67.718750"
+		"soundlevel" 	"SNDLVL_55dB"
+	}
+	"playlooping"
+	{
+		"volume"		".3"
+		"pitch"		"100"
+		"wave"		"sounds/ambience/amb_hotel_refrigeration_lp_01.vsnd"
+	}
+	"playlooping"
+	{
+		"volume"		".5"
+		"pitch"		"100"
+		"wave"				"sounds/aperture/ambience_looping/amb_industrial_muffled_mono_lp_02.vsnd"
+		"origin"	"207.093750, -0.093750, 102.812500"
+		"soundlevel" 	"SNDLVL_70dB"
+	}
+	"playlooping"
+	{
+		"volume"		".9"
+		"pitch"		"28"
+		"wave"		"sounds/aperture/ambience_looping/p2_large_fan_loop_01.vsnd"
+		"origin"	"1094.375000, -645.812500, 1772.843750"
+		"soundlevel" 	"SNDLVL_100dB"
+	}
+	"playlooping"
+	{
+		"volume"		".6"
+		"pitch"		"28"
+		"wave"		"sounds/aperture/ambience_looping/warehouse_ambience_mono_lp_01.vsnd"
+		"origin"	"289.406250, 110.560562, 59.312496"
+		"soundlevel" 	"SNDLVL_100dB"
+	}
+	
+	// "playrandom"
+	// {
+		// "time"		"23,25"
+		// "volume"	".3,.4"
+		// "pitch"		"80"
+		// "origin"	"356.812500, -8.062500, 21.531248"
+		// "soundlevel"	"SNDLVL_100dB"
+		// "rndwave"
+		// {
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_01.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_02.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_03.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_04.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_05.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_06.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_07.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_08.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_09.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_10.vsnd"
+			// "wave" "sounds/aperture/ambient_random/amb_randomabstract_11.vsnd"
+		// }
+	// }
+	// "playsoundscape"
+	// {
+		// "name" "aperture.spawn.randoms"
+		// "volume" ".5"
+	// }
+}
+
+
+"aperture.large.chamber"
+{
+	"dsp"	"1"
+	"fadetime" "3"
+	
+	"playlooping"
+	{
+		"volume"		".15"
+		"pitch"		"100"
+		"wave"		"sounds/aperture/ambience_looping/amb_industrial_muffled_st_lp_02.vsnd"
+	}
+	"playlooping"
+	{
+		"volume"		"1"
+		"pitch"		"28"
+		"wave"		"sounds/aperture/ambience_looping/p2_large_fan_loop_01.vsnd"
+		"origin"	"1094.375000, -645.812500, 1772.843750"
+		"soundlevel" 	"SNDLVL_100dB"
+	}
+	"playlooping"
+	{
+		"volume"		".9"
+		"pitch"		"28"
+		"wave"		"sounds/aperture/ambience_looping/warehouse_ambience_mono_lp_01.vsnd"
+		"origin"	"289.406250, 110.560562, 59.312496"
+		"soundlevel" 	"SNDLVL_100dB"
+	}
+	// "playsoundscape"
+	// {
+		// "name" "aperture.spawn.random_ab"
+		// "volume" ".9"
+	// }
+}
+
+
+"aperture_spawn_final"
+{
+	"dsp"	"1"
+	"fadetime" "3"
+	"playlooping"
+	{
+		"volume"		".45"
+		"pitch"		"100"
+		"wave"		"sounds/ambience/quiet_cellblock_amb.vsnd"
+		"origin"	"-40.812500, -72.906250, -25.718750"
+		"soundlevel" 	"SNDLVL_58dB"
+	}
+	"playlooping"
+	{
+		"volume"		".2"
+		"pitch"		"110"
+		"wave"		"sounds/ambience/amb_fluorescent_lights_lp_02.vsnd"
+		"origin"	"5.156250 3.250000 67.718750"
+		"soundlevel" 	"SNDLVL_57dB"
+	}
+	"playlooping"
+	{
+		"volume"		".4"
+		"pitch"		"100"
+		"wave"		"sounds/ambience/amb_hotel_refrigeration_lp_01.vsnd"
+	}
+}
+
+
+////////////////////////////////////////
+//////random soundscapes////////////////
+////////////////////////////////////////
+// currently unused
+"aperture.spawn.randoms"
+{
+
+
+	"playrandom"
+	{
+		"volume"	"0.2, 0.3"
+		"pitch"		"80,110"
+		"time"		"12,27"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_01.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_02.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_03.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_04.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_05.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_06.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_07.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_08.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_09.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_muffled_lo_mach_10.vsnd"
+
+		}
+	}
+}
+
+"aperture.spawn.random_ab"
+{
+
+
+	"playrandom"
+	{
+		"volume"	"0.4, 0.5"
+		"pitch"		"90,120"
+		"time"		"10,15"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_01.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_02.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_03.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_04.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_05.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_06.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_07.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_08.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_09.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_10.vsnd"
+			"wave" "sounds/aperture/ambient_random/amb_randomabstract_11.vsnd"
+
+		}
+	}
+
+
+}
+

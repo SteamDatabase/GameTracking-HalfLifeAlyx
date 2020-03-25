@@ -1,0 +1,1162 @@
+"distant_construction_int"
+{
+	"playevent"
+	{
+		"event"	"A1Intro.PileDistRand"
+		"position"	"random"
+		"volume" "0.7"
+		"rand_radius_min" "1200.0"
+		"rand_radius_max" "2000.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.PileDistCitadel"
+		"volume" "0.7"
+		"rand_radius_min" "1200.0"
+		"rand_radius_max" "2000.0"
+	}
+	// "playevent" //These sound terrible -DF
+	// {
+		// "event"	"A1Intro.JackDistRand"
+		// "position"	"random"
+		// "volume" "0.7"
+		// "rand_radius_min" "1200.0"
+		// "rand_radius_max" "2000.0"
+	// }
+	// "playevent"
+	// {
+		// "event"	"A1Intro.JackDistCitadel"
+		// "volume" "0.7"
+		// "rand_radius_min" "1200.0"
+		// "rand_radius_max" "2000.0"
+	// }
+}
+
+"distant_construction_ext"
+{
+	"playevent"
+	{
+		"event"	"A1Intro.PileDistRand"
+		"position"	"random"
+		"volume" "0.7"
+		"rand_radius_min" "1200.0"
+		"rand_radius_max" "2000.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.PileDistCitadel"
+		"volume" "0.7"
+		"rand_radius_min" "1200.0"
+		"rand_radius_max" "2000.0"
+	}
+	// "playevent"
+	// {
+		// "event"	"A1Intro.JackDistRand"
+		// "position"	"random"
+		// "volume" "0.7"
+		// "rand_radius_min" "1200.0"
+		// "rand_radius_max" "2000.0"
+	// }
+	// "playevent"
+	// {
+		// "event"	"A1Intro.JackDistCitadel"
+		// "volume" "0.7"
+		// "rand_radius_min" "1200.0"
+		// "rand_radius_max" "2000.0"
+	// }
+}
+
+"distant_hl_activity_int"
+{
+	"playevent"
+	{
+		"event"	"A1Intro.DistantAirShipsPassbyRand"
+		"position"	"random"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.StriderDistRand"
+		"position"	"random"
+		"volume" "1.0"
+		"rand_radius_min" "2400.0"
+		"rand_radius_max" "3500.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.NearbyAirshipsPassbyRand"
+		"position"	"random"
+		"volume" "1.0"
+	}
+
+	"playevent"
+	{
+		"event"	"A1Intro.DistantStriderStepsPassbyRand"
+		"position"	"random"
+		"volume" "1.0"
+	}
+//	"playevent"
+//	{
+//		"event" "A1Intro.Citadel.CloUpDwnRand"
+//		"origin" "-2194.0, 10588.0, 2868.0"
+//	}
+	"playevent"
+	{
+		"event" "A1Intro.Citadel.BassPulseRand"
+		"origin" "-2194.0, 10588.0, 2868.0"
+	}
+//	"playevent"
+//	{
+//		"event" "A1Intro.Citadel.SwellRand"
+//		"origin" "-2194.0, 10588.0, 2868.0"
+//	}
+
+	"playevent"
+	{
+		"event" "A1Intro.Overwatch.CityVoiceRand"
+		"origin" "-2194.0, 10588.0, 2868.0"
+	}
+	"playevent"
+	{
+		"event" "A1Intro.MetroCopGibberishBurstRand"
+		"origin" "random"
+	}
+
+}
+
+"distant_hl_activity_ext"
+{
+//	"playevent"
+//	{
+//		"event"	"A1Intro.DistantAirShipsPassbyRand"
+//		"position"	"random"
+//		"volume" "1.0"
+//	}
+	"playevent"
+	{
+		"event"	"A1Intro.StriderDistRand"
+		"position"	"random"
+		"volume" "1.0"
+		"rand_radius_min" "2400.0"
+		"rand_radius_max" "3500.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.DistantStriderStepsPassbyRand"
+		"position"	"random"
+		"volume" "1.0"
+	}
+//	"playevent"
+//	{
+//		"event" "A1Intro.Citadel.CloUpDwnRand"
+//		"origin" "-2194.0, 10588.0, 2868.0"
+//	}
+	"playevent"
+	{
+		"event" "A1Intro.Citadel.BassPulseRand"
+		"origin" "-2194.0, 10588.0, 2868.0"
+	}
+	"playevent"
+	{
+		"event" "A1Intro.Citadel.SwellRand"
+		"origin" "-2194.0, 10588.0, 2868.0"
+	}
+	"playevent"
+	{
+		"event" "A1Intro.Overwatch.CityVoiceRand"
+		"origin" "-74.863586 5201.291016 365.692322"
+	}
+	"playevent"
+	{
+		"event" "A1Intro.MetroCopGibberishBurstRand"
+		"origin" "random"
+	}
+}
+
+"a1_futuretrain_passby_01"
+{
+	"playevent"
+	{
+		"event"	"FutureTrain.PassbyLp"
+		"origin"	"352.999756, 3221.718750, 0"
+		"position_target"	"305.124878, -3619.000000, 0"
+		"random_soundevent_01_timer_min"	"35"
+		"random_soundevent_01_timer_max"	"50"
+	}
+	"playevent"
+	{
+		"event"	"FutureTrain.PassbyLp"
+		"origin"			"305.124878, -3619.000000, 0"
+		"position_target"	"352.999756, 3221.718750, 0"
+		"random_soundevent_01_timer_min"	"55"
+		"random_soundevent_01_timer_max"	"65"
+	}
+}
+
+"a1_brick_warehouse_int"
+{ 
+	
+	"playevent"
+	{
+		"event"	"AmbientCave.RandomPebbleFall"
+	}
+	
+	"playevent"
+	{
+		"event"	"BrickWarehouse.InteriorLP"
+	}
+	
+	"playevent"
+	{
+		"event"	"BrickWarehouse.WoodSubtle"
+	}
+	
+	"playevent"
+	{
+		"event"	"BrickWarehouse.MetalSubtle"
+	}
+	
+	"playevent"
+	{
+		"event"	"BrickWarehouse.BrickSubtle"
+	}
+}
+
+"a1_lab_train_car_int"
+{
+	"playevent"
+	{
+		"event"	"AmbientTenement.LowPulse"
+		"position"	"random"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Lab.BoxCarIntLp"
+		"position"	"random"
+	}	
+}
+
+"a1_intro_boxcar_passbys"
+{
+	"playevent"   
+	{
+		"event"		"TrainBoxcar.BellPassby"
+		"origin"	"-3800.00, 1550.687500, 27.767151"
+		"position_target"	"-3800.00, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"13"
+		"random_soundevent_01_timer_max"	"13"
+	}
+	"playevent" 
+	{
+		"event"		"TrainBoxcar.BellPassby"
+		"origin"	"-3066.560547, 1511.644775, 25.923401"
+		"position_target"	"-3066.560547, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"13"
+		"random_soundevent_01_timer_max"	"13"
+	} 
+	"playevent"   
+	{
+		"event"		"TrainBoxcar.WindyPassby"
+		"origin"	"-3800.00, 1550.687500, 27.767151"
+		"position_target"	"-3800.00, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"2"
+		"random_soundevent_01_timer_max"	"6"
+	}
+	"playevent" 
+	{
+		"event"		"TrainBoxcar.WindyPassby"
+		"origin"	"-3066.560547, 1511.644775, 25.923401"
+		"position_target"	"-3066.560547, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"1"
+		"random_soundevent_01_timer_max"	"4"
+	} 
+	
+	
+}
+
+"a1_intro_boxcar_start"
+{
+	"playsoundscape"
+	{
+		"name" "a1_intro_boxcar_passbys"
+	}
+	"playsoundscape"
+	{
+		"name" "a1_lab_train_car_int"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"origin"	"-3372, -192, 98" 
+		"volume"	"0.4"
+	}
+}
+
+"a1_intro_boxcar_stopping"
+{
+	"playevent"   
+	{
+		"event"		"TrainBoxcar.WindyPassby"
+		"origin"	"-3800.00, 1550.687500, 27.767151"
+		"position_target"	"-3800.00, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"2"
+		"random_soundevent_01_timer_max"	"6"
+	}
+	"playevent" 
+	{
+		"event"		"TrainBoxcar.WindyPassby"
+		"origin"	"-3066.560547, 1511.644775, 25.923401"
+		"position_target"	"-3066.560547, -2000.718750, 25.923401"
+		"random_soundevent_01_timer_min"	"1"
+		"random_soundevent_01_timer_max"	"4"
+	} 
+	
+	"playsoundscape"
+	{
+		"name" "a1_lab_train_car_int"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"origin"	"-3372, -192, 98" 
+		"volume"	"0.4"
+	}
+}
+
+"a1_intro_boxcar_arrive"
+{
+//	"playevent"
+//	{
+//		"event"	"AmbientCreepy.Cymbals"
+//		"position"	"random"
+//	}
+//	"playsoundscape"
+//	{
+//		"name" "a1_lab_train_car_int"
+//	}
+
+	"playevent"
+	{
+		"event"	"AmbientA1Lab.BoxCarIntLp"
+		"position"	"random"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_construction_int"
+		"volume" "0.5"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_int"
+		"volume" "1.0"
+	}
+
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"origin"	"-3372, -192, 98" 
+		"volume"	"0.4"
+	}
+	
+	// "playevent"
+	// {
+		// "event"	"CitizenTrain.PassbyLp"
+		// "origin"	"-3752, -1696, 27"
+		// "position_target"	"-3752, 1640, 27"
+		// "random_soundevent_01_timer_min"	"20"
+		// "random_soundevent_01_timer_max"	"25"
+		// "volume"	"0.2"
+	// }
+	
+}
+
+"a1_intro_boxcar_ext"
+{
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"origin"	"-3049, -324, 80" 
+		"volume"	"0.4"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0`.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.CityLp"
+		"position"	"random"
+	}
+}
+
+"a1_intro_sscape0"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_int"
+		"volume" "0.5"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_int"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.ClosetLp"
+		"position"	"random"
+	}
+}
+
+"a1_intro_int1"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_int"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_int"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.GarageLp"
+		"position"	"random"
+	}
+}
+
+
+"a1_intro_int_hahn"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_int"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_int"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.GarageLp"
+		"position"	"random"
+	}
+	"playevent"
+	{
+		"event"	"Music.IntroHahnRand"
+		"position"	"random"
+	}
+}
+
+"a1_intro_ext1"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.CityLp"
+	}
+}
+
+"a1_intro_vents_lights"
+{
+	// "playevent" //move to fan prop(er)
+	// {
+		// "event"	"AmbientElectric.FanLp"
+		// "origin"	"-685.4, 1924.75, 217"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"-860.75, 1735.89, 269.285"
+		// "volume_falloff_max"	"130.0"
+		// "volume"	"0.6"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"-878.75, 1735.89, 269.285"
+		// "volume_falloff_max"	"130.0"
+		// "volume"	"0.6"
+	// }
+	
+	// "playevent"
+	// {
+		// "event"	"AmbientElectric.HumBuzz"
+		// "origin"	"-896.75, 1735.89, 269.285"
+		// "volume_falloff_max"	"130.0"
+		// "volume"	"0.6"
+	// }
+
+	// "playevent"
+	// {
+		// "event"	"AmbientPeelingPaint.LightFlicker"
+		// "origin"	"-878.75, 1735.89, 269.285"
+		// "volume"	"0.6"
+	// }
+}
+
+"a1_intro_rooftop_main"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "1.0"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.4"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp01"
+		"volume"	"1.0"
+		"traveler"	"CityNiceElevationLp01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.AlyxSanctuaryLp"
+		"volume"	"0.65"
+		"traveler"	"AlyxSanctuaryLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ApartmentHallLp"
+		"volume"	"0.6"
+		"traveler"	"ApartmentHallLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ElevatorIntLp"
+		"volume"	"0.65"
+		"traveler"	"ElevatorIntLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.SubtleWoodCreaking"
+		"volume"	"0.25"
+		"traveler"	"SubtleWoodCreaking"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientIntroWorld01.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"IntroWorld01LevelUnique"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientNature.C17Crows"
+		"traveler"	"C17Crows"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCity.DogBarkDistant"
+		"volume"	"0.25"
+		"traveler"	"DogBarkDistant"
+	}
+}
+
+"a1_intro_street_level_main"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"//replace with street level exterior
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp01"
+		"volume"	"1.0"
+		"traveler"	"CityNiceElevationLp01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementLp"
+		"volume"	"0.7"
+		"traveler"	"ApartmentBasementLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementElevatorLp"
+		"volume"	"0.75"
+		"traveler"	"ApartmentBasementElevatorLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ElevatorIntLp"
+		"volume"	"0.65"
+		"traveler"	"ElevatorIntLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientIntroWorld01.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"IntroWorld01LevelUnique"
+	}
+	"playevent"
+	{
+		"event"	"AmbientNature.C17Crows"
+		"traveler"	"C17Crows"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCity.DogBarkDistant"
+		"volume"	"0.25"
+		"traveler"	"DogBarkDistant"
+	}
+}
+
+"a1_intro_street_level_main_02"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.SubtleWoodCreaking"
+		"volume"	"0.25"
+		"traveler"	"SubtleWoodCreaking"
+	}
+	"playevent"//replace with street level exterior
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp01"
+		"volume"	"0.75"
+		"traveler"	"CityNiceElevationLp01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementLp"
+		"volume"	"0.7"
+		"traveler"	"ApartmentBasementLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ApartmentHallLp"
+		"volume"	"0.6"
+		"traveler"	"ApartmentHallLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.ElevatorIntLp"
+		"volume"	"0.65"
+		"traveler"	"ElevatorIntLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientIntroWorld01.LevelUnique"
+		"volume"	"1.0"
+		"traveler"	"IntroWorld01LevelUnique"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientNature.C17Crows"
+		"traveler"	"C17Crows"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCity.DogBarkDistant"
+		"volume"	"0.25"
+		"traveler"	"DogBarkDistant"
+	}
+}
+
+
+
+
+
+"a1_intro_02_main"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.SubtleWoodCreaking"
+		"volume"	"0.25"
+		"traveler"	"SubtleWoodCreaking"
+	}
+	"playevent" //INT Big room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementLp"
+		"volume"	"0.7"
+		"traveler"	"ApartmentBasementLp"
+	}
+	"playevent"//INT small room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementElevatorLp"
+		"volume"	"0.75"
+		"traveler"	"ApartmentBasementElevatorLp"
+	}
+	"playevent"//replace with street level exterior
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp01"
+		"volume"	"0.75"
+		"traveler"	"CityNiceElevationLp01"
+	}
+}
+
+
+"a1_intro_02_point_source"
+{
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Condenser"
+		"volume"	"0.8"
+		"origin"	"-1808, 320, 100"
+		"traveler"	"Condenser02"
+	}
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Condenser"
+		"volume"	"0.8"
+		"origin"	"-1856, 320, 100"
+		"traveler"	"Condenser03"
+	}
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Condenser"
+		"volume"	"0.8"
+		"origin"	"-2082, 2383, 80"
+		"traveler"	"Condenser04"
+	}
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Condenser"
+		"volume"	"0.8"
+		"origin"	"-1596, 2383, 80"
+		"traveler"	"Condenser05"
+	}
+	"playevent"
+	{
+		"event"	"AmbientElectric.TransformerBoxHumLp"
+		"volume"	"0.4"
+		"origin"	"-1596, 2383, 80"
+		"traveler"	"TransformerBoxHumLp01"
+		"aabb_min"	"-1935.118774, 2224.646973, -125"
+		"aabb_max"	"-1996.013306, 2209.871582, -80"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientElectric.TransformerBoxHumLp"
+		"volume"	"0.4"
+		"origin"	"-1596, 2383, 80"
+		"traveler"	"TransformerBoxHumLp04"
+		"aabb_min"	"-1719.109131, -639.315979, -40.416565"
+		"aabb_max"	"-1689.652832, -749.340881, 22.523926"
+	}
+
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Vent"
+		"volume"	"0.6"
+		"origin"	"-1896, 2186, -100"
+		"traveler"	"Vent01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientPeelingPaint.SteamRush"
+		"volume"	"0.6"
+		"origin"	"-1728, 28.0038, 100"
+		"traveler"	"SteamRush01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientHVAC.Conduit"
+		"volume"	"1.0"
+		"origin"	"-1881.976318, 2159.954, -113.651581"
+		"position_02" "-1885.333618, 2164.793701, 180.374725"
+		"traveler"	"Conduit01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientPeelingPaint.LightFlicker"
+		"volume"	"0.9"
+		"origin"	"-1755.471436, 26.488621, 165.613464"
+		"traveler"	"LightFlicker01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"volume"	"0.8"
+		"origin"	"-1755.471436, 26.488621, 165.613464"
+		"traveler"	"HumBuzz01"
+	}
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"volume"	"0.8"
+		"origin"	"-1920, -32.0001, 208"
+		"traveler"	"HumBuzz02"
+	}
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"volume"	"0.8"
+		"origin"	"-1144, 1162, -24"
+		"traveler"	"HumBuzz03"
+	}
+	"playevent"
+	{
+		"event"	"AmbientElectric.HumBuzz"
+		"volume"	"0.8"
+		"origin"	"-2176, -64.0001, 208"
+		"traveler"	"HumBuzz05"
+	}
+}
+
+"a1_intro_02_bad_side_of_town"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+
+	"playevent"
+	{
+		"event"	"A1Intro.DistantStriderStepsPassbyRand"
+		"position"	"random"
+		"volume" "0.7"
+		"traveler"	"DistantStriderStepsPassbyRand"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a1_intro_02_point_source"
+		"volume" "1.0"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.SubtleWoodCreaking"
+		"volume"	"0.25"
+		"traveler"	"SubtleWoodCreaking"
+	}
+	"playevent" //INT Big room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementLp"
+		"volume"	"0.7"
+		"traveler"	"ApartmentBasementLp"
+	}
+	"playevent"//INT small room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementElevatorLp"
+		"volume"	"0.75"
+		"traveler"	"ApartmentBasementElevatorLp"
+	}
+	"playevent"//replace with street level exterior for bad side of town
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp02"
+		"volume"	"0.75"
+		"traveler"	"CityNiceElevationLp02"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientIntroWorld02.LevelUnique"
+		"volume"	"0.25"
+		"traveler"	"IntroWorld02LevelUnique"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.CitizenTrainPassbyLp"
+		"traveler"	"CitizenTrainPassbyLp01"
+		"origin"	"620.311646, -1163.144897, -23.969971"
+		"position_target"	"-4449.050781, -1105.661743, -23.969971"
+		"random_soundevent_01_timer_min"	"55"
+		"random_soundevent_01_timer_max"	"80"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.CitizenTrainPassbyLp"
+		"traveler"	"CitizenTrainPassbyLp02"
+		"origin"	"-4449.050781, -1105.661743, -23.969971"
+		"position_target"	"620.311646, -1163.144897, -23.969971"
+		"random_soundevent_01_timer_min"	"60"
+		"random_soundevent_01_timer_max"	"95"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.DistantSiren"
+		"volume"	"0.8"
+		"traveler"	"DistantSiren"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientNature.C17Crows"
+		"volume"	"0.7"
+		"traveler"	"C17Crows"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCity.DogBarkDistant"
+		"volume"	"0.1"
+		"traveler"	"DogBarkDistant"
+	}
+}
+
+"a1_intro_02_lab"
+{
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	
+	"playsoundscape"
+	{
+		"name" "a1_intro_02_point_source"
+		"volume" "1.0"
+	}
+
+	"playevent"
+	{
+		"event"	"A1Intro.DistantStriderStepsPassbyRand"
+		"position"	"random"
+		"volume" "0.7"
+		"traveler"	"DistantStriderStepsPassbyRand"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.SubtleWoodCreaking"
+		"volume"	"0.25"
+		"traveler"	"SubtleWoodCreaking"
+	}
+	"playevent" //INT Big room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementLp"
+		"volume"	"0.7"
+		"traveler"	"ApartmentBasementLp"
+	}
+	"playevent"//INT small room - Replace
+	{
+		"event"	"AmbientA1Intro.ApartmentBasementElevatorLp"
+		"volume"	"0.75"
+		"traveler"	"ApartmentBasementElevatorLp"
+	}
+	"playevent"//replace with street level exterior for bad side of town
+	{
+		"event"	"AmbientA1Intro.CityNiceElevationLp02"
+		"volume"	"0.75"
+		"traveler"	"CityNiceElevationLp02"
+	}
+	"playevent" //INT Big room - Replace
+	{
+		"event"	"AmbientA1Intro.ComputerRoomAddinLp"
+		"volume"	"0.7"
+		"traveler"	"ComputerRoomAddinLp"
+	}
+	"playevent"
+	{
+		"event"	"AmbientIntroWorld01.LevelUnique"
+		"volume"	"0.25"
+		"traveler"	"IntroWorld01LevelUnique"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.CitizenTrainPassbyLp"
+		"traveler"	"CitizenTrainPassbyLp01"
+		"origin"	"620.311646, -1163.144897, -23.969971"
+		"position_target"	"-4449.050781, -1105.661743, -23.969971"
+		"random_soundevent_01_timer_min"	"40"
+		"random_soundevent_01_timer_max"	"75"
+	}
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.CitizenTrainPassbyLp"
+		"traveler"	"CitizenTrainPassbyLp02"
+		"origin"	"-4449.050781, -1105.661743, -23.969971"
+		"position_target"	"620.311646, -1163.144897, -23.969971"
+		"random_soundevent_01_timer_min"	"40"
+		"random_soundevent_01_timer_max"	"75"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientC17.DistantSiren"
+		"volume"	"0.7"
+		"traveler"	"DistantSiren"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientNature.C17Crows"
+		"volume"	"0.7"
+		"traveler"	"C17Crows"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientCity.DogBarkDistant"
+		"volume"	"0.1"
+		"traveler"	"DogBarkDistant"
+	}
+}
+
+
+"a1_intro_m1"
+{ 
+	"playsoundscape"
+	{
+		"name" "a1_intro_ext1"
+		"volume" "1"
+	}
+	"playevent"
+	{
+		"event"	"Music.IntroWorldBaseLp_01"
+		"position"	"random"
+	}
+}
+
+"a1_intro_ext_rooftop"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.CityLp"
+		"position"	"random"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.RooftopWindSnipsRand"
+		"position"	"random"
+	}
+}
+
+"a1_lab_ext"
+{ 
+	
+	"playevent"
+	{  
+		"event"	"AmbientA1Lab.ExteriorLp"
+	}
+	
+	"playevent"
+	{
+		"event"	"AmbientTenement.LowPulse"
+		"position"	"random"
+	}
+	"playsoundscape"
+	{
+		"name" "a1_futuretrain_passby_01"
+	}
+	
+	"playevent"
+	{
+		"event"	"CitizenTrain.PassbyLp"
+		"origin"	"-752.999756, 3221.718750, 0"
+		"position_target"	"-755.124878, -3619.000000, 0"
+		"random_soundevent_01_timer_min"	"30"
+		"random_soundevent_01_timer_max"	"45"
+	}
+}
+
+"a1_intro_citadel_reveal"
+{ 
+	"playsoundscape"
+	{
+		"name" "distant_construction_ext"
+		"volume" "0.6"
+	}
+	"playsoundscape"
+	{
+		"name" "distant_hl_activity_ext"
+		"volume" "1.0"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.CityLp"
+		"position"	"random"
+	}
+	"playevent"
+	{
+		"event"	"A1Intro.CitadelReveal"
+	}
+}
+
+"a1_test"
+{ 
+	"playevent"
+	{
+		"event"	"AmbientA1Intro.AlyxSanctuaryLp"
+		"volume"	"0.65"
+	}
+}

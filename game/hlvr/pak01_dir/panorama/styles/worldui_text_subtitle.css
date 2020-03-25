@@ -1,0 +1,208 @@
+/* styles for the subtitles */
+
+
+@define fadeDuration: 0.15s;
+
+
+.RootPanel
+{
+	/* background-color: palevioletred; */
+}
+
+.MainPanel
+{
+	width: fit-children;
+	height: 1200px;
+	flow-children: down;
+	horizontal-align: center;
+}
+
+.TextLabel
+{
+	padding: 5px;
+	text-align: center;
+	text-shadow: 2px 2px 8px 30.0 black;
+	color: rgb(229, 229, 229);
+	horizontal-align: center;
+	opacity: 1.0;
+	border-width: 3px;
+	border-color: purple;
+
+	transition-property: opacity, position;
+	transition-duration: fadeDuration;
+	transition-delay: 0.0s;
+	transition-timing-function: ease-in-out;
+
+	font-family: Arial;
+}
+
+
+/* Narrow Panel */
+.TextLabel.SmallFont.NarrowPanel
+{
+	font-size: 90px;
+}
+
+.TextLabel.MediumFont.NarrowPanel
+{
+	font-size: 115px;
+}
+
+.TextLabel.LargeFont.NarrowPanel
+{
+	font-size: 160px;
+}
+
+
+/* Medium Panel */
+.TextLabel.SmallFont.MediumPanel
+{
+	font-size: 55px;
+}
+
+.TextLabel.MediumFont.MediumPanel
+{
+	font-size: 70px;
+}
+
+.TextLabel.LargeFont.MediumPanel
+{
+	font-size: 100px;
+}
+
+
+/* Wide Panel */
+.TextLabel.SmallFont.WidePanel
+{
+	font-size: 40px;
+}
+
+.TextLabel.MediumFont.WidePanel
+{
+	font-size: 50px;
+}
+
+.TextLabel.LargeFont.WidePanel
+{
+	font-size: 70px;
+}
+
+
+/* Narrow Panel Japanese */
+.TextLabel.SmallFont.NarrowPanel.Japanese
+{
+	font-size: 65px;
+}
+
+.TextLabel.MediumFont.NarrowPanel.Japanese
+{
+	font-size: 90px;
+}
+
+.TextLabel.LargeFont.NarrowPanel.Japanese
+{
+	font-size: 115px;
+}
+
+
+/* Medium Panel Japanese */
+.TextLabel.SmallFont.MediumPanel.Japanese
+{
+	font-size: 45px;
+}
+
+.TextLabel.MediumFont.MediumPanel.Japanese
+{
+	font-size: 55px;
+}
+
+.TextLabel.LargeFont.MediumPanel.Japanese
+{
+	font-size: 70px;
+}
+
+
+/* Wide Panel Japanese */
+.TextLabel.SmallFont.WidePanel.Japanese
+{
+	font-size: 30px;
+}
+
+.TextLabel.MediumFont.WidePanel.Japanese
+{
+	font-size: 40px;
+}
+
+.TextLabel.LargeFont.WidePanel.Japanese
+{
+	font-size: 50px;
+}
+
+
+
+.TextLabel.FadeOut
+{
+	opacity: 0.0;
+}
+
+.TextLabel b
+{
+	font-weight: bold;
+}
+
+.TextLabel i
+{
+	font-style: italic;
+}
+
+.Purple
+{
+	background-color: mediumpurple;
+}
+
+.Green
+{
+	background-color: darkseagreen;
+}
+
+.Japanese
+{
+	font-family: Noto Sans JP Regular;
+}
+
+.Japanese b
+{
+	font-family: Noto Sans JP Bold;
+}
+
+.Korean
+{
+	font-family: Noto Sans KR Regular;
+}
+
+.Korean b
+{
+	font-family: Noto Sans KR Bold;
+}
+
+.SChinese
+{
+	font-family: Noto Sans SC Regular;
+}
+
+.SChinese b
+{
+	font-family: Noto Sans SC Bold;
+}
+
+.TChinese
+{
+	font-family: Noto Sans TC Regular;
+}
+
+.TChinese b
+{
+	font-family: Noto Sans TC Bold;
+}
+
+

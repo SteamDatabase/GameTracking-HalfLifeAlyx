@@ -1,0 +1,842 @@
+{
+	Revived.Bullet_Fail = 
+	{
+		type = "src1_2d"
+		volume = 1.500000
+		delay = 0.100000
+		mixgroup = "BulletImpacts"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_01.vsnd",
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_02.vsnd",
+			"sounds/creatures/headcrab_reviver/bullet_revived_absorb_03.vsnd",
+		]
+	}
+	Revived.Bullet_Success = 
+	{
+		type = "src1_2d"
+		volume = 1.200000
+		mixgroup = "BulletImpacts"
+		vsnd_files = 
+		[
+			"sounds/damage/reviver_node_damage_01.vsnd",
+			"sounds/damage/reviver_node_damage_02.vsnd",
+			"sounds/damage/reviver_node_damage_03.vsnd",
+			"sounds/damage/reviver_node_damage_04.vsnd",
+		]
+	}
+	Zombie.Revived = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		use_named_send = "loud"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_revived_screech_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_revived_screech_02.vsnd",
+		]
+	}
+	Zombie.Revived_Extra_Electrics_Emerge = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/extra_electrics_emerge_01.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_emerge_01.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_emerge_03.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_emerge_04.vsnd",
+		]
+	}
+	Zombie.Revived_Extra_Electrics_Submerge = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/extra_electrics_submerge_01.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_submerge_01.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_submerge_03.vsnd",
+			"sounds/creatures/zombie_revived/extra_electrics_submerge_04.vsnd",
+		]
+	}
+	Zombie.Revived_Getup_Roll = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 400.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/getup_roll_01.vsnd",
+			"sounds/creatures/zombie_revived/getup_roll_02.vsnd",
+		]
+	}
+	Zombie.Revived_Getup_Long = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/getup_long.vsnd",
+		]
+	}
+	Zombie.Revived_Getup_Med = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/getup_medium.vsnd",
+		]
+	}
+	Zombie.Revived_Getup_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/getup_short.vsnd",
+		]
+	}
+	Zombie_Revived.Warning_Yell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 400.000000
+		volume_fade_out = 0.200000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_run_warning_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_run_warning_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_run_warning_03.vsnd",
+			"sounds/creatures/zombie_revived/vox_run_warning_04.vsnd",
+			"sounds/creatures/zombie_revived/vox_run_warning_05.vsnd",
+		]
+	}
+	Zombie_Revived.Vox_Abandoned_Gurgle = 
+	{
+		type = "hlvr_default_3d"
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Med"
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_B"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_abandon_gurgle_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_abandon_gurgle_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_abandon_gurgle_03.vsnd",
+		]
+	}
+	Zombie_Revived.Vox_Abandoned_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		should_pause = true
+		mixgroup = "Zombies"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_abandon_grunt_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_abandon_grunt_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_abandon_grunt_03.vsnd",
+		]
+	}
+	Zombie_Revived.Vox_Grunt_Misc = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.600000
+		volume_falloff_max = 1200.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_grunt_misc_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_03.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_04.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_05.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_06.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_07.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_08.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_09.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_10.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_11.vsnd",
+			"sounds/creatures/zombie_revived/vox_grunt_misc_12.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalBuzzLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 1500.000000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		mixgroup = "NPC_Low"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/orb_loop_synth.vsnd",
+		]
+	}
+	Zombie_Revived.Electric_Bolt_Quiet = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_rand_min = -0.200000
+		volume_rand_max = 0.100000
+		pitch_rand_min = -0.300000
+		pitch_rand_max = 0.200000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/orb_bolt_01.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_02.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_03.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_04.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_05.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_06.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_07.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_08.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_09.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_10.vsnd",
+		]
+	}
+	Zombie_Revived.Electric_Bolt_Loud = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		use_hrtf = 1.000000
+		pitch = 0.850000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/orb_bolt_01.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_02.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_03.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_04.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_05.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_06.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_07.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_08.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_09.vsnd",
+			"sounds/creatures/zombie_revived/orb_bolt_10.vsnd",
+		]
+	}
+	Zombie_Revived.Electric_Bolt = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Revived.Electric_Bolt_Blast"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie_Revived.Electric_Bolt_Thunder"
+		use_02 = 1.000000
+		soundevent_03 = "Zombie_Revived.Electric_Bolt_Zap"
+		use_03 = 1.000000
+	}
+	Zombie_Revived.Electric_Bolt_Blast = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_fade_out = 6.000000
+		use_hrtf = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.100000
+		occlusion_scale = 0.500000
+		distance_max = 2500.000000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_blast_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_06.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_07.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_08.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_09.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_blast_10.vsnd",
+		]
+	}
+	Zombie_Revived.Electric_Bolt_Thunder = 
+	{
+		type = "hlvr_default_3d"
+		groups = 
+		[
+			"static_branch_event_limit_1",
+		]
+		volume = 0.300000
+		volume_fade_out = 3.000000
+		delay_rand_min = 0.000000
+		delay_rand_max = 0.150000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		distance_max = 2500.000000
+		mixgroup = "NPC_Med"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_thunder_06.vsnd",
+		]
+	}
+	Zombie_Revived.Electric_Bolt_Zap = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_out = 4.000000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.150000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		distance_max = 2500.000000
+		mixgroup = "NPC_Med"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/bolt_huge_zap_01.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_02.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_03.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_04.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_05.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_06.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_07.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_08.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_09.vsnd",
+			"sounds/creatures/zombie_revived/bolt_huge_zap_10.vsnd",
+		]
+	}
+	Zombie_Revived.Shockwave_Vox_Attack = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		pitch_rand_min = -0.200000
+		pitch_rand_max = 0.200000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_shockwave_yell_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_yell_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_yell_03.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_yell_04.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_yell_05.vsnd",
+		]
+	}
+	Zombie_Revived.Shockwave_Vox_Tell = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.400000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/vox_shockwave_tell_01.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_tell_02.vsnd",
+			"sounds/creatures/zombie_revived/vox_shockwave_tell_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Tell = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Revived.ElectricalStorm_Tell_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie_Revived.ElectricalStorm_Tell_Bass"
+		use_02 = 1.000000
+	}
+	Zombie_Revived.ElectricalStorm_Tell_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.200000
+		mixgroup = "NPC_High"
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_tell_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_tell_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_tell_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Tell_Bass = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		use_named_send = "loud"
+		mixgroup = "NPC_High"
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_tell_bass_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_tell_bass_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_tell_bass_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Rise = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Revived.ElectricalStorm_Rise_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie_Revived.ElectricalStorm_Rise_Bass"
+		use_02 = 1.000000
+	}
+	Zombie_Revived.ElectricalStorm_Rise_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		occlusion_scale = 0.200000
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_rise_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_rise_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_rise_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Rise_Bass = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		occlusion_scale = 0.100000
+		use_named_send = "loud"
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_rise_bass_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_rise_bass_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_rise_bass_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Whoosh = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.650000
+		mixgroup = "NPC_High"
+		occlusion_scale = 0.600000
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_whoosh.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Shoot = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Revived.ElectricalStorm_Shoot_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie_Revived.ElectricalStorm_Shoot_Layer"
+		use_02 = 1.000000
+	}
+	Zombie_Revived.ElectricalStorm_Shoot_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		occlusion_scale = 0.100000
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_shoot_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_shoot_02.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_Shoot_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_High"
+		use_named_send = "loud"
+		occlusion_scale = 0.100000
+		set_mixlayer = 1.000000
+		mixlayer_to_set = "NPC_Ducking_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_shoot_layer_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_shoot_layer_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_shoot_layer_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStormLoop = 
+	{
+		type = "hlvr_3d_projectile"
+		volume = 1.400000
+		volume_fade_out = 1.000000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 800.000000
+		occlusion_scale = 0.200000
+		use_hrtf = 1.000000
+		passby_soundevent_name = "Zombie_Revived.Projectile_Passby"
+		mixgroup = "Zombies"
+		block_volume_atten = 1.000000
+		block_pitch_from_code = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_projectile_loop.vsnd",
+		]
+	}
+	Zombie_Revived.Projectile_Passby = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		use_doppler = 1.000000
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_01.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_02.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_03.vsnd",
+			"sounds/creatures/headcrab_reviver/ranged_projectile_passby_04.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_End = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Zombie_Revived.ElectricalStorm_End_Core"
+		use_01 = 1.000000
+		soundevent_02 = "Zombie_Revived.ElectricalStorm_End_Layer"
+		use_02 = 1.000000
+	}
+	Zombie_Revived.ElectricalStorm_End_Core = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.400000
+		volume_falloff_min = 300.000000
+		volume_fade_out = 5.000000
+		occlusion_scale = 0.200000
+		mixgroup = "Zombies"
+		should_pause = true
+		static_position = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_projectile_end_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_projectile_end_02.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_projectile_end_03.vsnd",
+		]
+	}
+	Zombie_Revived.ElectricalStorm_End_Layer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.800000
+		volume_fade_out = 5.000000
+		occlusion_scale = 0.100000
+		mixgroup = "Zombies"
+		should_pause = true
+		static_position = 1.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/shockwave_projectile_end_layer_01.vsnd",
+			"sounds/creatures/zombie_revived/shockwave_projectile_end_layer_02.vsnd",
+		]
+	}
+	Zombie_Revived.ZapAttack = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		use_hrtf = 1.000000
+		mixgroup = "Zombies"
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		vsnd_files = 
+		[
+			"sounds/player/damage/electric_zap_01.vsnd",
+			"sounds/player/damage/electric_zap_02.vsnd",
+			"sounds/player/damage/electric_zap_03.vsnd",
+			"sounds/player/damage/electric_zap_04.vsnd",
+		]
+	}
+	Zombie_Revived.Danger_Parent = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "Zombie_Revived.Vox_Grunt_Misc"
+		random_soundevent_01_timer_min = 1.000000
+		random_soundevent_01_timer_max = 2.200000
+	}
+	Zombie_Revived.Vox_Grunt_Misc_Danger = 
+	{
+		base = "Zombie_Revived.Vox_Grunt_Misc"
+		volume = 0.400000
+		pitch = 0.900000
+		occlusion_scale = 0.300000
+	}
+	Zombie_Revived.Scripted_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 2000.000000
+		mixgroup = "Zombies"
+	}
+	Zombie_Revived.Scripted_Intro_Electrics = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		volume = 1.200000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/electrics.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Body_Tumble = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/body_tumble.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Fall_Impact = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		volume = 1.200000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/fall_impact.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Pushback = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		volume = 1.200000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/pushback.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Riser = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		volume = 0.600000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/riser.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Gore_Crack = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/gore_crack.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Gore_Pop = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		volume = 0.800000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/gore_pop.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Vox_Grunt = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/vox_grunt.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Vox_Pain = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/vox_pain.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Vox_Rise_A = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/vox_rise_01.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Vox_Rise_B = 
+	{
+		base = "Zombie_Revived.Scripted_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/vox_rise_02.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.100000
+		volume_falloff_max = 2000.000000
+		mixgroup = "Zombies"
+	}
+	Zombie_Revived.Scripted_Intro_Foley_01 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_01.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_02 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_02.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_03 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		volume = 0.500000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_03.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_04 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_04.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_05 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_05.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_06 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_06.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_07 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_07.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_08 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_08.vsnd",
+		]
+	}
+	Zombie_Revived.Scripted_Intro_Foley_09 = 
+	{
+		base = "Zombie_Revived.Scripted_Intro_Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_revived/scripted_intro/foley_09.vsnd",
+		]
+	}
+}

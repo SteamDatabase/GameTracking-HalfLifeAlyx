@@ -1,0 +1,517 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	SurfacePropertiesList = 
+	[
+		{
+			surfacePropertyName = "default"
+			effect = resource:"particles/impact_fx/impact_concrete.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_concrete_cheap.vpcf"
+			impactDecalName = "Impact.Concrete"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_shell_pistol"
+		},
+		{
+			surfacePropertyName = "base.metal"
+			effect = resource:"particles/impact_fx/impact_metal.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_cheap.vpcf"
+			impactDecalName = "Impact.Metal"
+			impactGrazingDecalName = "Impact.Metal_Grazing"
+		},
+		{
+			surfacePropertyName = "world.metal_combine"
+			effect = resource:"particles/impact_fx/impact_combine_metal.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_combine_metal_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "world.metal_panel"
+			effect = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "world.metal_vent"
+			effect = resource:"particles/impact_fx/impact_metal_vent.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_vent_cheap.vpcf"
+			impactDecalName = "Impact.Vent"
+		},
+		{
+			surfacePropertyName = "base.metal_grate"
+			effect = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "base.dirt"
+			effect = resource:"particles/impact_fx/impact_dirt.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_dirt_cheap.vpcf"
+			impactDecalName = "Impact.Dirt"
+		},
+		{
+			surfacePropertyName = "world.grass"
+			effect = resource:"particles/impact_fx/impact_grass.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_grass_cheap.vpcf"
+			impactDecalName = "Impact.Grass"
+		},
+		{
+			surfacePropertyName = "world.sand"
+			effect = resource:"particles/impact_fx/impact_sand.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_sand_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "base.wood"
+			effect = resource:"particles/impact_fx/impact_wood.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_wood_cheap.vpcf"
+			impactDecalName = "Impact.Wood"
+		},
+		{
+			surfacePropertyName = "base.water"
+			effect = resource:"particles/impact_fx/impact_wet.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_wet_cheap.vpcf"
+			impactDecalName = ""
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "world.slime"
+		},
+		{
+			surfacePropertyName = "world.water_shallow"
+			effect = resource:"particles/impact_fx/impact_puddle.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_puddle_cheap.vpcf"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "base.glass"
+			effect = resource:"particles/impact_fx/impact_glass.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_glass_cheap.vpcf"
+			impactDecalName = "Impact.Glass"
+		},
+		{
+			surfacePropertyName = "prop.glass_tv_tube"
+			effect = resource:"particles/impact_fx/tv_tube_shards_01.vpcf"
+			effect_simplified = resource:"particles/impact_fx/tv_tube_shards_01.vpcf"
+		},
+		{
+			surfacePropertyName = "prop.glass_tv_tube_02"
+			effect = resource:"particles/impact_fx/tv_tube_shards_02.vpcf"
+			effect_simplified = resource:"particles/impact_fx/tv_tube_shards_02.vpcf"
+		},
+		{
+			impactDecalName = "Impact.Concrete"
+			surfacePropertyName = "prop.pottery"
+		},
+		{
+			surfacePropertyName = "base.concrete"
+			effect = resource:"particles/impact_fx/impact_concrete.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_concrete_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "world.rock"
+			effect = resource:"particles/impact_fx/impact_rock.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_rock_cheap.vpcf"
+			impactDecalName = "Impact.Rock"
+		},
+		{
+			surfacePropertyName = "world.asphalt"
+			effect = resource:"particles/impact_fx/impact_asphalt.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_asphalt_cheap.vpcf"
+			impactDecalName = "Impact.Asphalt"
+		},
+		{
+			impactDecalName = "Impact.Brick"
+			surfacePropertyName = "world.brick"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.flesh"
+		},
+		{
+			surfacePropertyName = "npc_combine_soldier"
+			effect = resource:"particles/blood_impact/blood_impact_red_dead.vpcf"
+			effect_alive = resource:"particles/blood_impact/blood_impact_red_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_red_01.vpcf"
+			use_oriented_effect = true
+			sprayDecalName = "Blood"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_combine_grunt_gastank"
+			effect = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_alive = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			surfacePropertyName = "npc_combine_soldier_gear"
+			effect = resource:"particles/impact_fx/impact_carpet.vpcf"
+			effect_alive = resource:"particles/blood_impact/blood_impact_red_01.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+			use_oriented_effect = true
+			impactDecalName = "Impact.Upholstery"
+		},
+		{
+			surfacePropertyName = "npc_zombie_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_dead_zombie_01.vpcf"
+			effect_alive = resource:"particles/blood_impact/blood_impact_zombie_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_zombie_01.vpcf"
+			use_oriented_effect = true
+			sprayDecalName = "Blood"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_blindzombie_body"
+			effect = resource:"particles/blood_fx/blood_impact_blind_zombie.vpcf"
+			effect_simplified = resource:"particles/blood_fx/blood_impact_blind_zombie.vpcf"
+			effect_alive = resource:"particles/blood_fx/blood_impact_blind_zombie.vpcf"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "npc_creature_flesh"
+		},
+		{
+			surfacePropertyName = "npc_headcrab_flesh"
+			effect_alive = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			effect = resource:"particles/blood_impact/blood_impact_yellow_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			use_oriented_effect = true
+			sprayDecalName = "YellowBlood"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_headcrab_black_flesh"
+			effect_alive = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			effect = resource:"particles/blood_impact/blood_impact_yellow_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			use_oriented_effect = true
+			sprayDecalName = "YellowBlood"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_barnacle_flesh"
+			effect_alive = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			effect = resource:"particles/blood_impact/blood_impact_yellow_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			use_oriented_effect = true
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_reviver_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_blue_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_blue_01.vpcf"
+			use_oriented_effect = true
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_reviver_node_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_reviver_node_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_reviver_node_01.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			surfacePropertyName = "npc_reviver_zombie_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_reviver_zombie_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_reviver_zombie_01.vpcf"
+			use_oriented_effect = true
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_zombie_dead_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_dead_zombie_01.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_dead_zombie_01.vpcf"
+			use_oriented_effect = true
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_antlion_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_antlion_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_antlion_01.vpcf"
+			use_oriented_effect = true
+			effect_alive = resource:"particles/blood_impact/blood_impact_antlion_01.vpcf"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "npc_antlion_armor"
+			effect = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			surfacePropertyName = "npc_manhack"
+			effect = resource:"particles/impact_fx/impact_computer.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_computer.vpcf"
+		},
+		{
+			impactDecalName = "Impact.Metal"
+			surfacePropertyName = "npc_combine_hand_shield"
+		},
+		{
+			surfacePropertyName = "npc_boomerplant"
+			effect_alive = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			effect = resource:"particles/blood_impact/blood_impact_yellow_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_yellow_01.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			surfacePropertyName = "world.plastic"
+			effect = resource:"particles/impact_fx/impact_plastic.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_plastic_cheap.vpcf"
+			impactDecalName = "Impact.Plastic"
+		},
+		{
+			impactDecalName = "Impact.Rubber"
+			effect = resource:"particles/impact_fx/impact_rubber.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_rubber_cheap.vpcf"
+			surfacePropertyName = "prop.plastic"
+		},
+		{
+			surfacePropertyName = "base.rubber"
+			effect = resource:"particles/impact_fx/impact_rubber.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_rubber_cheap.vpcf"
+			impactDecalName = "Impact.Rubber"
+		},
+		{
+			surfacePropertyName = "base.cardboard"
+			effect = resource:"particles/impact_fx/impact_cardboard.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_cardboard_cheap.vpcf"
+			impactDecalName = "Impact.Cardboard"
+		},
+		{
+			surfacePropertyName = "prop.paper"
+			effect = resource:"particles/impact_fx/impact_paper.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_paper_cheap.vpcf"
+			impactDecalName = "Impact.Paper"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.paper_cup"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.watermelon"
+		},
+		{
+			surfacePropertyName = "no_decal"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "world.foliage"
+			effect = resource:"particles/impact_fx/impact_leaves.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_leaves_cheap.vpcf"
+			impactDecalName = "Impact.Leaves"
+		},
+		{
+			surfacePropertyName = "world.foliage_palm"
+			effect = resource:"particles/impact_fx/impact_palm_leaves_02.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_palm_leaves_02.vpcf"
+			impactDecalName = "Impact.Leaves"
+		},
+		{
+			surfacePropertyName = "world.carpet"
+			effect = resource:"particles/impact_fx/impact_carpet.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+			impactDecalName = "Impact.Carpet"
+		},
+		{
+			surfacePropertyName = "world.sofa"
+			impactDecalName = "Impact.Upholstery"
+			effect = resource:"particles/impact_fx/impact_carpet.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+		},
+		{
+			surfacePropertyName = "world.mattress"
+			impactDecalName = "Impact.Upholstery"
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+			effect = resource:"particles/impact_fx/impact_carpet.vpcf"
+		},
+		{
+			surfacePropertyName = "world.plaster"
+			effect = resource:"particles/impact_fx/impact_plaster.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_plaster_cheap.vpcf"
+			impactDecalName = "Impact.Plaster"
+		},
+		{
+			surfacePropertyName = "world.tile_floor"
+			effect = resource:"particles/impact_fx/impact_tile.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_tile_cheap.vpcf"
+			impactDecalName = "Impact.Tile"
+		},
+		{
+			surfacePropertyName = "prop.computer"
+			effect = resource:"particles/impact_fx/impact_computer.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_computer_cheap.vpcf"
+			impactDecalName = "Impact.Computer"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_shell_shotgun"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_clip"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.health_pen"
+		},
+		{
+			surfacePropertyName = "npc_antlion_abdomen"
+			effect = resource:"particles/blood_impact/blood_impact_antlion_01_dead.vpcf"
+			effect_alive = resource:"particles/blood_impact/blood_impact_antlion_abdomen.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_antlion_01.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "flesh"
+		},
+		{
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+			surfacePropertyName = "prop.pillow"
+		},
+		{
+			effect = resource:"particles/impact_fx/impact_carpet.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_carpet_cheap.vpcf"
+			impactDecalName = "Impact.Upholstery"
+			surfacePropertyName = "base.cloth"
+		},
+		{
+			effect = resource:"particles/creatures/xen_wildlife/xen_coralear_gib.vpcf"
+			effect_simplified = resource:"particles/creatures/xen_wildlife/xen_coralear_gib.vpcf"
+			surfacePropertyName = "npc_xen_hearing_flower_flesh"
+			impactDecalName = ""
+		},
+		{
+			surfacePropertyName = "prop.sofa"
+		},
+		{
+			surfacePropertyName = "npc_headcrab_armor"
+			effect = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_grate.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.xen_resin_stack"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.xen_resin_puck"
+		},
+		{
+			impactDecalName = "Impact.Sand"
+			effect = resource:"particles/impact_fx/impact_sand.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_sand_cheap.vpcf"
+			surfacePropertyName = "prop.antlions_habitat"
+		},
+		{
+			effect = resource:"particles/impact_fx/impact_plaster.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_plaster_cheap.vpcf"
+			impactDecalName = "Impact.Drywall"
+			surfacePropertyName = "world.drywall"
+		},
+		{
+			impactDecalName = "Impact.Metal"
+			effect = resource:"particles/impact_fx/impact_metal_vent_cheap.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_vent_cheap.vpcf"
+			effect_alive = resource:"particles/impact_fx/impact_metal_vent_cheap.vpcf"
+			surfacePropertyName = "npc_combine_soldier_armor"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_clip_large"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_clip_rapidfire"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.ammo_clip_shotgun"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "player_hand"
+		},
+		{
+			surfacePropertyName = "npc_antlion_worker_flesh"
+			effect = resource:"particles/blood_impact/blood_impact_antlion_worker_01_dead.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_antlion_worker_01.vpcf"
+			use_oriented_effect = true
+			effect_alive = resource:"particles/blood_impact/blood_impact_antlion_worker_01.vpcf"
+		},
+		{
+			surfacePropertyName = "npc_antlion_worker_abdomen"
+			effect = resource:"particles/blood_impact/blood_impact_antlion_worker_01_dead.vpcf"
+			effect_alive = resource:"particles/blood_impact/blood_impact_antlion_worker_abdomen.vpcf"
+			effect_simplified = resource:"particles/blood_impact/blood_impact_antlion_worker_01.vpcf"
+			use_oriented_effect = true
+		},
+		{
+			effect_alive = resource:"particles/blood_impact/blood_impact_red_kevlar.vpcf"
+			surfacePropertyName = "npc_combine_soldier_kevlar"
+			effect = resource:"particles/blood_impact/blood_impact_red_dead.vpcf"
+		},
+		{
+			impactDecalName = "Impact.Paper"
+			surfacePropertyName = "prop.paper_towel"
+		},
+		{
+			impactDecalName = "Impact.Plastic"
+			surfacePropertyName = "prop.luggage_large"
+		},
+		{
+			impactDecalName = "Impact.Plastic"
+			surfacePropertyName = "prop.luggage_small"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.soap_bar"
+		},
+		{
+			impactDecalName = "Impact.Plastic"
+			surfacePropertyName = "prop.leather_shoe"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.gpu"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.keyfob"
+		},
+		{
+			effect = resource:"particles/blood_impact/xen_impact_01_puff.vpcf"
+			surfacePropertyName = "xen_foliage_impact"
+			impactDecalName = "Impact.Xen"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.respirator"
+		},
+		{
+			impactDecalName = ""
+			surfacePropertyName = "prop.leather_folder"
+		},
+		{
+			effect_simplified = resource:"particles/impact_fx/impact_wood_cheap.vpcf"
+			effect = resource:"particles/impact_fx/impact_wood.vpcf"
+			impactDecalName = "Impact.Wood"
+			surfacePropertyName = "stairs.wood"
+		},
+		{
+			effect = resource:"particles/impact_fx/impact_metal.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_metal_cheap.vpcf"
+			impactDecalName = "Impact.Metal"
+			surfacePropertyName = "stairs.metal"
+		},
+		{
+			impactDecalName = "Impact.Vent"
+			surfacePropertyName = "prop.metal_vase"
+		},
+		{
+			impactDecalName = "Impact.Rubber"
+			effect = resource:"particles/impact_fx/impact_rubber.vpcf"
+			effect_simplified = resource:"particles/impact_fx/impact_rubber_cheap.vpcf"
+			surfacePropertyName = "prop.tabletop_eraser"
+		},
+	]
+}

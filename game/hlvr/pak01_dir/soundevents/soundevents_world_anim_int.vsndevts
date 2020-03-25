@@ -1,0 +1,3160 @@
+{
+	Anim_Int_Shared.Locked = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		block_duration = 1.000000
+		block_match_this_event = true
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/locked.vsnd",
+		]
+	}
+	Anim_Vert_Ratchet.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/grab.vsnd",
+		]
+	}
+	Anim_Vert_Ratchet.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_Vert_Ratchet.Move_Tick"
+		timer_min = 0.100000
+		timer_max = 0.600000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	Anim_Vert_Ratchet.Move_Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/tick_01.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_02.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_03.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_04.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_05.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_06.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_07.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_08.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_09.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_10.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_11.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_12.vsnd",
+		]
+	}
+	Anim_Vert_Ratchet.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/end_01.vsnd",
+			"sounds/world/anim_int/lever_geared/end_02.vsnd",
+		]
+	}
+	Anim_Truck_Gun.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_tall/grab.vsnd",
+		]
+	}
+	Anim_Truck_Gun.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_Truck_Gun.Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+		remap_code_vol_x3 = 0.500000
+	}
+	Anim_Truck_Gun.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/truck_gun/clunk_01.vsnd",
+			"sounds/world/anim_int/truck_gun/clunk_02.vsnd",
+			"sounds/world/anim_int/truck_gun/clunk_03.vsnd",
+			"sounds/world/anim_int/truck_gun/clunk_04.vsnd",
+			"sounds/world/anim_int/truck_gun/clunk_05.vsnd",
+			"sounds/world/anim_int/truck_gun/clunk_06.vsnd",
+		]
+	}
+	Truck_Gun.Reset = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/truck_gun/reset.vsnd",
+		]
+	}
+	Anim_GearedLever.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/grab.vsnd",
+		]
+	}
+	Anim_GearedLever.Bounce = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/bounce.vsnd",
+		]
+	}
+	Anim_GearedLever.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/end_01.vsnd",
+			"sounds/world/anim_int/lever_geared/end_02.vsnd",
+		]
+	}
+	Anim_GearedLever.Stuck = 
+	{
+		base = "Anim_GearedLever.End"
+		pitch = 0.900000
+	}
+	Anim_GearedLever.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_GearedLever.Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	Anim_GearedLever.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/tick_01.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_02.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_03.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_04.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_05.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_06.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_07.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_08.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_09.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_10.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_11.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_12.vsnd",
+		]
+	}
+	Anim_CombineLever.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/grab.vsnd",
+		]
+	}
+	Anim_CombineLever.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/end_01.vsnd",
+			"sounds/world/anim_int/lever_geared/end_02.vsnd",
+		]
+	}
+	Anim_CombineLever.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_CombineLever.Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+		remap_code_vol_y2 = 0.400000
+		remap_code_vol_y3 = 1.400000
+	}
+	Anim_CombineLever.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 600.000000
+		occlusion_scale = 0.500000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_geared/tick_01.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_02.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_03.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_04.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_05.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_06.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_07.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_08.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_09.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_10.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_11.vsnd",
+			"sounds/world/anim_int/lever_geared/tick_12.vsnd",
+		]
+	}
+	Anim_CombineSlider.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	Anim_CombineSlider.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_slider/end.vsnd",
+		]
+	}
+	Anim_CombineSlider.Complete = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_slider/complete.vsnd",
+		]
+	}
+	Anim_CombineSlider.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick_pitched"
+		child_soundevent_name = "Anim_CombineSlider.Tick"
+		timer_min = 0.050000
+		timer_max = 0.300000
+		pitch_map_min = 0.900000
+		pitch_map_max = 1.100000
+	}
+	Anim_CombineSlider.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_slider/tick_01.vsnd",
+			"sounds/world/anim_int/combine_slider/tick_02.vsnd",
+			"sounds/world/anim_int/combine_slider/tick_03.vsnd",
+			"sounds/world/anim_int/combine_slider/tick_04.vsnd",
+		]
+	}
+	Anim_CombineRod.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	Anim_CombineRod.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_rod/end.vsnd",
+		]
+	}
+	Anim_CombineRod.Move = 
+	{
+		type = "hlvr_update_animinteractable_3staged_tick"
+		child_soundevent_a = "Anim_CombineRod.Tick_A"
+		timer_min_a = 0.100000
+		timer_max_a = 0.200000
+		child_soundevent_b = "Anim_CombineRod.Tick_B"
+		timer_min_b = 0.100000
+		timer_max_b = 0.150000
+		child_soundevent_c = "Anim_CombineRod.Tick_C"
+		timer_min_c = 0.100000
+		timer_max_c = 0.200000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_y3 = 1.600000
+	}
+	Anim_CombineRod.Tick_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_rod/tick_a_01.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_02.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_03.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_04.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_05.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_06.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_07.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_08.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_09.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_a_10.vsnd",
+		]
+	}
+	Anim_CombineRod.Tick_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_rod/tick_b_01.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_02.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_03.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_04.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_05.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_06.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_07.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_08.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_09.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_b_10.vsnd",
+		]
+	}
+	Anim_CombineRod.Tick_C = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/combine_rod/tick_c_01.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_c_02.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_c_03.vsnd",
+			"sounds/world/anim_int/combine_rod/tick_c_04.vsnd",
+		]
+	}
+	AnimLever.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimLever.MoveLp_Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	AnimLever.MoveLp_Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever/tick_01.vsnd",
+			"sounds/world/anim_int/lever/tick_02.vsnd",
+			"sounds/world/anim_int/lever/tick_03.vsnd",
+			"sounds/world/anim_int/lever/tick_04.vsnd",
+			"sounds/world/anim_int/lever/tick_05.vsnd",
+			"sounds/world/anim_int/lever/tick_06.vsnd",
+			"sounds/world/anim_int/lever/tick_07.vsnd",
+			"sounds/world/anim_int/lever/tick_08.vsnd",
+			"sounds/world/anim_int/lever/tick_09.vsnd",
+			"sounds/world/anim_int/lever/tick_10.vsnd",
+			"sounds/world/anim_int/lever/tick_11.vsnd",
+			"sounds/world/anim_int/lever/tick_12.vsnd",
+		]
+	}
+	AnimLever.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	AnimLever.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	AnimLever.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.350000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever/move_loop.vsnd",
+		]
+	}
+	AnimLever.Bounce = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "AnimLever.BounceLg"
+		delay = 0.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.200000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.700000
+		remap_code_vol_y3 = 0.800000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.850000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 1.000000
+		remap_code_pitch_x3 = 0.650000
+		remap_code_pitch_y3 = 1.000000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.750000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	AnimLeverTallTrainYard.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimLeverTallTrainYard.MoveLp_Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	AnimLeverTallTrainYard.MoveLp_Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_tall/tick_01.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_02.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_03.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_04.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_05.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_06.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_07.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_08.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_09.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_10.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_11.vsnd",
+			"sounds/world/anim_int/lever_tall/tick_12.vsnd",
+		]
+	}
+	AnimLeverTallTrainYard.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_tall/grab.vsnd",
+		]
+	}
+	AnimLeverTallTrainYard.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_tall/release.vsnd",
+		]
+	}
+	AnimLeverShortTrainYard.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimLeverShortTrainYard.MoveLp_Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	AnimLeverShortTrainYard.MoveLp_Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_short/tick_01.vsnd",
+			"sounds/world/anim_int/lever_short/tick_02.vsnd",
+			"sounds/world/anim_int/lever_short/tick_03.vsnd",
+			"sounds/world/anim_int/lever_short/tick_04.vsnd",
+			"sounds/world/anim_int/lever_short/tick_05.vsnd",
+			"sounds/world/anim_int/lever_short/tick_06.vsnd",
+			"sounds/world/anim_int/lever_short/tick_07.vsnd",
+			"sounds/world/anim_int/lever_short/tick_08.vsnd",
+			"sounds/world/anim_int/lever_short/tick_09.vsnd",
+			"sounds/world/anim_int/lever_short/tick_10.vsnd",
+			"sounds/world/anim_int/lever_short/tick_11.vsnd",
+			"sounds/world/anim_int/lever_short/tick_12.vsnd",
+		]
+	}
+	AnimLeverShortTrainYard.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_short/grab.vsnd",
+		]
+	}
+	AnimLeverShortTrainYard.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_tall/release.vsnd",
+		]
+	}
+	AnimLeverTrainYardTrack.Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_track/start.vsnd",
+		]
+	}
+	AnimLeverTrainYardTrack.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimLeverTrainYardTrack.MoveLp_Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.020000
+	}
+	AnimLeverTrainYardTrack.MoveLp_Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_track/tick_01.vsnd",
+			"sounds/world/anim_int/lever_track/tick_02.vsnd",
+			"sounds/world/anim_int/lever_track/tick_03.vsnd",
+			"sounds/world/anim_int/lever_track/tick_04.vsnd",
+			"sounds/world/anim_int/lever_track/tick_05.vsnd",
+			"sounds/world/anim_int/lever_track/tick_06.vsnd",
+			"sounds/world/anim_int/lever_track/tick_07.vsnd",
+			"sounds/world/anim_int/lever_track/tick_08.vsnd",
+			"sounds/world/anim_int/lever_track/tick_09.vsnd",
+			"sounds/world/anim_int/lever_track/tick_10.vsnd",
+			"sounds/world/anim_int/lever_track/tick_11.vsnd",
+			"sounds/world/anim_int/lever_track/tick_12.vsnd",
+		]
+	}
+	AnimLeverTrainYardTrack.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/lever_track/stop.vsnd",
+		]
+	}
+	RollUpDoor.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.850000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.050000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/move_loop.vsnd",
+		]
+	}
+	RollUpDoor.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	RollUpDoor.End = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	RollUpDoor.BounceDoorLp = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.150000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/move_loop.vsnd",
+		]
+	}
+	RollUpDoor.Bounce = 
+	{
+		type = "hlvr_start_animinteract_multi"
+		soundevent_01 = "RollUpDoor.BounceDoor"
+		soundevent_02 = "RollUpDoor.BounceImpact"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	RollUpDoor.BounceDoor = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "RollUpDoor.BounceDoorLp"
+		delay = 0.000000
+		min_completion_pct = 0.900000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.100000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.500000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.900000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 1.000000
+		remap_code_pitch_x3 = 0.750000
+		remap_code_pitch_y3 = 1.000000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.950000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	RollUpDoor.BounceImpact = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.368200
+		cycle_amt_compare_md = 0.736400
+		cycle_amt_compare_sm = 0.920500
+		soundevent_lg = "RollUpDoor.BounceLg"
+		soundevent_md = "RollUpDoor.BounceMd"
+		soundevent_sm = "RollUpDoor.BounceSm"
+	}
+	RollUpDoor.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "AnimInteract"
+		limiter_on = 1.000000
+		limiter_event_name = "RollUpDoor.BounceDoorLp"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_lg.vsnd",
+		]
+	}
+	RollUpDoor.BounceMd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_md.vsnd",
+		]
+	}
+	RollUpDoor.BounceSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_sm.vsnd",
+		]
+	}
+	RollUpDoor.FullOpen = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/fully_open.vsnd",
+		]
+	}
+	RollUpDoor.Start_Closing = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/start_closing.vsnd",
+		]
+	}
+	RollUpDoor.BounceMdLouder = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_md.vsnd",
+		]
+	}
+	RollUpDoor.Null = 
+	{
+		type = "hlvr_default_3d"
+	}
+	RollUpDoor.Scripted_Zoo_Move_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "World"
+		occlusion_scale = 0.300000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/move_loop.vsnd",
+		]
+	}
+	RollUpDoor.MoveLinear_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		mixgroup = "World"
+		block_pitch_from_code = 1.000000
+		volume_falloff_max = 800.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/start_closing.vsnd",
+		]
+	}
+	RollUpDoor.MoveLinear_Stop = 
+	{
+		type = "hlvr_default_3d"
+		vsnd_files = 
+		[
+			"sounds/common/null.vsnd",
+		]
+	}
+	Ladder.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	Ladder.BounceSm = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "AnimInteract"
+		limiter_on = 1.000000
+		limiter_event_name = "Ladder.Stop"
+		limiter_max = 0.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/bounce_sm.vsnd",
+		]
+	}
+	Ladder.BounceMd = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "AnimInteract"
+		limiter_on = 1.000000
+		limiter_event_name = "Ladder.Stop"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		limiter_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/bounce_med.vsnd",
+		]
+	}
+	Ladder.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "AnimInteract"
+		limiter_on = 1.000000
+		limiter_event_name = "Ladder.Stop"
+		limiter_max = 0.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/bounce_lg.vsnd",
+		]
+	}
+	Ladder.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/release.vsnd",
+		]
+	}
+	Ladder.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_out = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/stop.vsnd",
+		]
+	}
+	Ladder.Bounce = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.368200
+		cycle_amt_compare_md = 0.736400
+		cycle_amt_compare_sm = 0.920500
+		soundevent_lg = "Ladder.BounceLg"
+		soundevent_md = "Ladder.BounceMd"
+		soundevent_sm = "Ladder.BounceSm"
+	}
+	Ladder.SlideLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/move_loop.vsnd",
+		]
+	}
+	Ladder.SlideLp_Slow = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.200000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/ladder/move_loop.vsnd",
+		]
+	}
+	Anim_Frankenswitch.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/frankenswitch/grab.vsnd",
+		]
+	}
+	Anim_Frankenswitch.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_Frankenswitch.Tick"
+		timer_min = 0.100000
+		timer_max = 0.250000
+	}
+	Anim_Frankenswitch.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/frankenswitch/tick_01.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_02.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_03.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_04.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_05.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_06.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_07.vsnd",
+			"sounds/world/anim_int/frankenswitch/tick_08.vsnd",
+		]
+	}
+	Anim_Frankenswitch.End = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/frankenswitch/end.vsnd",
+		]
+	}
+	Anim_Frankenswitch.Bounce_Return = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/frankenswitch/bounce_return.vsnd",
+		]
+	}
+	Anim_Frankenswitch.Bounce_Remain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.100000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/frankenswitch/bounce_remain.vsnd",
+		]
+	}
+	Freezer_Door.Lock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/lock.vsnd",
+		]
+	}
+	Freezer_Door.Unlock = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/unlock.vsnd",
+		]
+	}
+	Anim_FreezerDoor.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/grab.vsnd",
+		]
+	}
+	Anim_FreezerDoor.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 1.000000
+		volume_fade_in = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001000
+		remap_code_vol_y2 = 0.100000
+		remap_code_vol_x3 = 0.007000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.050000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/loop.vsnd",
+		]
+	}
+	Anim_FreezerDoor.BounceSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/bounce_sm.vsnd",
+		]
+	}
+	Anim_FreezerDoor.BounceMd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/bounce_md.vsnd",
+		]
+	}
+	Anim_FreezerDoor.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/bounce_lg.vsnd",
+		]
+	}
+	Anim_FreezerDoor.Bounce = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.300000
+		cycle_amt_compare_md = 0.700000
+		cycle_amt_compare_sm = 0.900000
+		soundevent_lg = "Anim_FreezerDoor.BounceLg"
+		soundevent_md = "Anim_FreezerDoor.BounceMd"
+		soundevent_sm = "Anim_FreezerDoor.BounceSm"
+	}
+	Refuge_Door.Unlock = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Refuge_Door.Unlock_A"
+		soundevent_02 = "Refuge_Door.Unlock_B"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Refuge_Door.Unlock_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_refuge/unlock.vsnd",
+		]
+	}
+	Refuge_Door.Unlock_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/freezer/unlock.vsnd",
+		]
+	}
+	Anim_RefugeDoor.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	Anim_RefugeDoor.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_2staged"
+		volume = 1.200000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001000
+		remap_code_vol_y2 = 0.100000
+		remap_code_vol_x3 = 0.003000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.050000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files_a = 
+		[
+			"sounds/world/anim_int/door_refuge/handle_move_loop_01.vsnd",
+			"sounds/world/anim_int/door_refuge/handle_move_loop_02.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/world/anim_int/freezer/loop.vsnd",
+		]
+	}
+	Anim_RefugeDoor.Handle_Open_End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_refuge/handle_open_end.vsnd",
+		]
+	}
+	Anim_RefugeDoor.Handle_Close_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_refuge/handle_close_start.vsnd",
+		]
+	}
+	Anim_RefugeDoor.Slide_Start = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_refuge/slide_start.vsnd",
+		]
+	}
+	Anim_RollingCabinet.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/rolling_cabinet/grab_01.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/grab_02.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/grab_03.vsnd",
+		]
+	}
+	Anim_RollingCabinet.Move = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "Anim_RollingCabinet.Tick"
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 1.000000
+		pitch_map_max = 1.050000
+	}
+	Anim_RollingCabinet.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/rolling_cabinet/move_tick_01.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_02.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_03.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_04.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_05.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_06.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_07.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_08.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_09.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_10.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_11.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/move_tick_12.vsnd",
+		]
+	}
+	Anim_RollingCabinet.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "Anim_RollingCabinet.Bounce"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/rolling_cabinet/end_01.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/end_02.vsnd",
+			"sounds/world/anim_int/rolling_cabinet/end_03.vsnd",
+		]
+	}
+	AnimWheel.Insert = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/insert.vsnd",
+		]
+	}
+	AnimWheel.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimWheel.Tick"
+		remap_code_vol_x2 = 0.001000
+		elbow_speed = 0.001000
+		fastest_speed = 0.010000
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 0.900000
+		pitch_map_max = 1.100000
+	}
+	AnimWheel.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/tick_01.vsnd",
+			"sounds/world/anim_int/wheel/tick_02.vsnd",
+			"sounds/world/anim_int/wheel/tick_03.vsnd",
+			"sounds/world/anim_int/wheel/tick_04.vsnd",
+			"sounds/world/anim_int/wheel/tick_05.vsnd",
+			"sounds/world/anim_int/wheel/tick_06.vsnd",
+			"sounds/world/anim_int/wheel/tick_07.vsnd",
+			"sounds/world/anim_int/wheel/tick_08.vsnd",
+			"sounds/world/anim_int/wheel/tick_09.vsnd",
+			"sounds/world/anim_int/wheel/tick_10.vsnd",
+			"sounds/world/anim_int/wheel/tick_11.vsnd",
+			"sounds/world/anim_int/wheel/tick_12.vsnd",
+		]
+	}
+	AnimWheel.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	AnimWheel.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "AnimWheel.Bounce_Child"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	AnimWheel.Bounce_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/bounce.vsnd",
+		]
+	}
+	AnimWheel.Bounce = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.050000
+		soundevent_lg = "AnimWheel.Bounce_Child"
+	}
+	AnimWheel_Creaky.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "AnimWheel_Creaky.Tick"
+		remap_code_vol_x2 = 0.000500
+		remap_code_vol_y2 = 0.500000
+		elbow_speed = 0.001000
+		fastest_speed = 0.080000
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 0.950000
+		pitch_map_max = 1.050000
+	}
+	AnimWheel_Creaky.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1000.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel_creaky/tick_01.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_02.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_03.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_04.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_05.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_06.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_07.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_08.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_09.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_10.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_11.vsnd",
+			"sounds/world/anim_int/wheel_creaky/tick_12.vsnd",
+		]
+	}
+	AnimWheel_Creaky.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1000.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	AnimWheel_Creaky.End = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "AnimWheel_Creaky.Bounce_Child"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1000.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	AnimWheel_Creaky.Bounce = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.050000
+		soundevent_lg = "AnimWheel.Bounce_Child"
+	}
+	AnimWheel_Creaky.End_Freezer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "AnimWheel_Creaky.Bounce_Child"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 1000.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	RollUpDoor.MoveLp_WheelChild = 
+	{
+		base = "RollUpDoor.MoveLp"
+		volume = 0.600000
+		volume_fade_out = 0.200000
+		spread_min = 0.000000
+		spread_max = 1000.000000
+		spread_max_value = 0.500000
+	}
+	AnimWheel.MoveLp_RollerDoor_Parent = 
+	{
+		type = "hlvr_update_animinteractable_tick_with_child"
+		child_soundevent_name = "AnimWheel.Tick"
+		animint_child_soundevent_name = "RollUpDoor.MoveLp_WheelChild"
+		remap_code_vol_x2 = 0.001000
+		elbow_speed = 0.001000
+		fastest_speed = 0.010000
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 0.900000
+		pitch_map_max = 1.100000
+	}
+	AnimWheel.Bounce_RollerDoor_Parent = 
+	{
+		type = "hlvr_start_bounce_layer"
+		cycle_amt_compare_layer = 0.050000
+		soundevent_layer = "AnimWheel.Bounce_Child"
+		cycle_amt_compare_lg = 0.400000
+		cycle_amt_compare_md = 0.700000
+		cycle_amt_compare_sm = 0.920000
+		soundevent_lg = "RollUpDoor.BounceLg_WheelChild"
+		soundevent_md = "RollUpDoor.BounceMd_WheelChild"
+		soundevent_sm = "RollUpDoor.BounceSm_WheelChild"
+	}
+	RollUpDoor.BounceLg_WheelChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		spread_min = 0.000000
+		spread_max = 1000.000000
+		spread_max_value = 0.500000
+		limiter_on = 1.000000
+		limiter_event_name = "RollUpDoor.MoveLp_WheelChild"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.200000
+		volume_falloff_max = 800.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_lg.vsnd",
+		]
+	}
+	RollUpDoor.BounceMd_WheelChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		spread_min = 0.000000
+		spread_max = 1000.000000
+		spread_max_value = 0.500000
+		occlusion_scale = 0.200000
+		volume_falloff_max = 800.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_md.vsnd",
+		]
+	}
+	RollUpDoor.BounceSm_WheelChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		mixgroup = "AnimInteract"
+		spread_min = 0.000000
+		spread_max = 1000.000000
+		spread_max_value = 0.500000
+		occlusion_scale = 0.200000
+		volume_falloff_max = 800.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_rollup/bounce_sm.vsnd",
+		]
+	}
+	CombineWheel.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable_tick"
+		child_soundevent_name = "CombineWheel.Tick"
+		remap_code_vol_x2 = 0.001000
+		elbow_speed = 0.001000
+		fastest_speed = 0.010000
+		timer_min = 0.100000
+		timer_max = 0.500000
+		pitch_map_min = 0.900000
+		pitch_map_max = 1.100000
+	}
+	CombineWheel.Tick = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel_combine/tick_01.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_02.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_03.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_04.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_05.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_06.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_07.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_08.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_09.vsnd",
+			"sounds/world/anim_int/wheel_combine/tick_10.vsnd",
+		]
+	}
+	CombineWheel.Grab = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel_combine/grab.vsnd",
+		]
+	}
+	CombineWheel.End = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_event_name = "CombineWheel.Bounce_Child"
+		limiter_max = 0.000000
+		limiter_match_entity = 1.000000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel_combine/stop.vsnd",
+		]
+	}
+	CombineWheel.Bounce_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel_combine/bounce.vsnd",
+		]
+	}
+	CombineWheel.Bounce = 
+	{
+		type = "hlvr_start_bounce"
+		cycle_amt_compare_lg = 0.050000
+		soundevent_lg = "CombineWheel.Bounce_Child"
+	}
+	DoorSubway.MovementLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.800000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_subway/move_loop_01.vsnd",
+			"sounds/world/anim_int/door_subway/move_loop_02.vsnd",
+			"sounds/world/anim_int/door_subway/move_loop_03.vsnd",
+		]
+	}
+	DoorSubway.HandleInteract = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_subway/grabbed_01.vsnd",
+			"sounds/world/anim_int/door_subway/grabbed_02.vsnd",
+			"sounds/world/anim_int/door_subway/grabbed_03.vsnd",
+		]
+	}
+	DoorSubway.StopMove = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_subway/end_01.vsnd",
+			"sounds/world/anim_int/door_subway/end_02.vsnd",
+			"sounds/world/anim_int/door_subway/end_03.vsnd",
+		]
+	}
+	DoorSubway.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		volume_fade_out = 0.350000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door_subway/move_loop_01.vsnd",
+			"sounds/world/anim_int/door_subway/move_loop_02.vsnd",
+			"sounds/world/anim_int/door_subway/move_loop_03.vsnd",
+		]
+	}
+	DoorSubway.Bounce = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "DoorSubway.BounceLg"
+		delay = 0.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.500000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.700000
+		remap_code_vol_y3 = 0.800000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.800000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 1.000000
+		remap_code_pitch_x3 = 0.650000
+		remap_code_pitch_y3 = 1.000000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.650000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	Anim_Sliding_Window.Move = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.700000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.100000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/loop_slide_up.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/loop_slide_down.vsnd",
+		]
+	}
+	Anim_Sliding_Window.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/reverse_01.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_02.vsnd",
+		]
+	}
+	Anim_Sliding_Window.Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/hinges_drawers/sliding_window/reverse_03.vsnd",
+			"sounds/world/hinges_drawers/sliding_window/reverse_04.vsnd",
+		]
+	}
+	AnimDoor.OpenLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door/move_loop.vsnd",
+		]
+	}
+	AnimDoor.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door/grab.vsnd",
+		]
+	}
+	AnimDoor.Release = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/door/end.vsnd",
+		]
+	}
+	AnimGears.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/gears/move_loop.vsnd",
+		]
+	}
+	AnimGears.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	AnimGears.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	AnimGears.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.650000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/gears/move_loop.vsnd",
+		]
+	}
+	AnimGears.Bounce = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "AnimGears.BounceLg"
+		delay = 0.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.200000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.700000
+		remap_code_vol_y3 = 0.800000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.800000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 1.000000
+		remap_code_pitch_x3 = 0.650000
+		remap_code_pitch_y3 = 1.000000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.650000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	AnimGears.BounceSlow = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "AnimGears.BounceLg"
+		delay = 0.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.200000
+		remap_code_vol_y2 = 0.400000
+		remap_code_vol_x3 = 0.700000
+		remap_code_vol_y3 = 0.450000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.350000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 0.400000
+		remap_code_pitch_x3 = 0.650000
+		remap_code_pitch_y3 = 0.400000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.200000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	AnimBladeSwitch.MoveLp = 
+	{
+		type = "hlvr_update_animinteractable"
+		volume = 0.500000
+		pitch = 1.000000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.001875
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.010000
+		remap_code_vol_y3 = 1.000000
+		remap_code_vol_x4 = 1.000000
+		remap_code_vol_y4 = 1.000000
+		remap_code_vol_limiter = 1.500000
+		volume_fade_out = 0.150000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/bladeswitch/move_loop.vsnd",
+		]
+	}
+	AnimBladeSwitch.Grab = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/shared/grab_shared.vsnd",
+		]
+	}
+	AnimBladeSwitch.Release = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/wheel/end.vsnd",
+		]
+	}
+	AnimBladeSwitch.Complete = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/bladeswitch/connect.vsnd",
+		]
+	}
+	AnimBladeSwitch.BounceLg = 
+	{
+		type = "hlvr_default_3d"
+		volume_fade_out = 0.350000
+		mixgroup = "AnimInteract"
+		occlusion_scale = 0.500000
+		volume_falloff_max = 600.000000
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/bladeswitch/move_loop.vsnd",
+		]
+	}
+	AnimBladeSwitch.Bounce = 
+	{
+		type = "hlvr_start_bounce_single"
+		soundevent = "AnimBladeSwitch.BounceLg"
+		delay = 0.000000
+		min_completion_pct = 0.930000
+		remap_code_vol_x1 = 0.000000
+		remap_code_vol_y1 = 0.000000
+		remap_code_vol_x2 = 0.200000
+		remap_code_vol_y2 = 0.500000
+		remap_code_vol_x3 = 0.700000
+		remap_code_vol_y3 = 0.800000
+		remap_code_vol_x4 = 0.950000
+		remap_code_vol_y4 = 0.200000
+		remap_code_pitch_x1 = 0.000000
+		remap_code_pitch_y1 = 0.850000
+		remap_code_pitch_x2 = 0.300000
+		remap_code_pitch_y2 = 1.000000
+		remap_code_pitch_x3 = 0.650000
+		remap_code_pitch_y3 = 1.000000
+		remap_code_pitch_x4 = 1.000000
+		remap_code_pitch_y4 = 0.750000
+		remap_code_vol_limiter = 1.500000
+		remap_code_pitch_limiter = 1.500000
+	}
+	Anim_Piano.A0 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a0.vsnd",
+		]
+	}
+	Anim_Piano.A1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a1.vsnd",
+		]
+	}
+	Anim_Piano.A2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a2.vsnd",
+		]
+	}
+	Anim_Piano.A3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a3.vsnd",
+		]
+	}
+	Anim_Piano.A4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a4.vsnd",
+		]
+	}
+	Anim_Piano.A5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a5.vsnd",
+		]
+	}
+	Anim_Piano.A6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a6.vsnd",
+		]
+	}
+	Anim_Piano.A7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_a7.vsnd",
+		]
+	}
+	Anim_Piano.As0 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as0.vsnd",
+		]
+	}
+	Anim_Piano.As1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as1.vsnd",
+		]
+	}
+	Anim_Piano.As2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as2.vsnd",
+		]
+	}
+	Anim_Piano.As3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as3.vsnd",
+		]
+	}
+	Anim_Piano.As4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as4.vsnd",
+		]
+	}
+	Anim_Piano.As5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as5.vsnd",
+		]
+	}
+	Anim_Piano.As6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as6.vsnd",
+		]
+	}
+	Anim_Piano.As7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_as7.vsnd",
+		]
+	}
+	Anim_Piano.B0 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b0.vsnd",
+		]
+	}
+	Anim_Piano.B1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b1.vsnd",
+		]
+	}
+	Anim_Piano.B2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b2.vsnd",
+		]
+	}
+	Anim_Piano.B3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b3.vsnd",
+		]
+	}
+	Anim_Piano.B4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b4.vsnd",
+		]
+	}
+	Anim_Piano.B5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b5.vsnd",
+		]
+	}
+	Anim_Piano.B6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b6.vsnd",
+		]
+	}
+	Anim_Piano.B7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_b7.vsnd",
+		]
+	}
+	Anim_Piano.C1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c1.vsnd",
+		]
+	}
+	Anim_Piano.C2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c2.vsnd",
+		]
+	}
+	Anim_Piano.C3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c3.vsnd",
+		]
+	}
+	Anim_Piano.C4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c4.vsnd",
+		]
+	}
+	Anim_Piano.C5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c5.vsnd",
+		]
+	}
+	Anim_Piano.C6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c6.vsnd",
+		]
+	}
+	Anim_Piano.C7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c7.vsnd",
+		]
+	}
+	Anim_Piano.C8 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c8.vsnd",
+		]
+	}
+	Anim_Piano.Cs1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs1.vsnd",
+		]
+	}
+	Anim_Piano.Cs2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs2.vsnd",
+		]
+	}
+	Anim_Piano.Cs3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs3.vsnd",
+		]
+	}
+	Anim_Piano.Cs4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs4.vsnd",
+		]
+	}
+	Anim_Piano.Cs5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs5.vsnd",
+		]
+	}
+	Anim_Piano.Cs6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_c6.vsnd",
+		]
+	}
+	Anim_Piano.Cs7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_cs7.vsnd",
+		]
+	}
+	Anim_Piano.D1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d1.vsnd",
+		]
+	}
+	Anim_Piano.D2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d2.vsnd",
+		]
+	}
+	Anim_Piano.D3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d3.vsnd",
+		]
+	}
+	Anim_Piano.D4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d4.vsnd",
+		]
+	}
+	Anim_Piano.D5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d5.vsnd",
+		]
+	}
+	Anim_Piano.D6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d6.vsnd",
+		]
+	}
+	Anim_Piano.D7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_d7.vsnd",
+		]
+	}
+	Anim_Piano.Ds1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds1.vsnd",
+		]
+	}
+	Anim_Piano.Ds2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds2.vsnd",
+		]
+	}
+	Anim_Piano.Ds3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds3.vsnd",
+		]
+	}
+	Anim_Piano.Ds4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds4.vsnd",
+		]
+	}
+	Anim_Piano.Ds5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds5.vsnd",
+		]
+	}
+	Anim_Piano.Ds6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds6.vsnd",
+		]
+	}
+	Anim_Piano.Ds7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_ds7.vsnd",
+		]
+	}
+	Anim_Piano.E1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e1.vsnd",
+		]
+	}
+	Anim_Piano.E2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e2.vsnd",
+		]
+	}
+	Anim_Piano.E3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e3.vsnd",
+		]
+	}
+	Anim_Piano.E4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e4.vsnd",
+		]
+	}
+	Anim_Piano.E5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e5.vsnd",
+		]
+	}
+	Anim_Piano.E6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e6.vsnd",
+		]
+	}
+	Anim_Piano.E7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_e7.vsnd",
+		]
+	}
+	Anim_Piano.F1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f1.vsnd",
+		]
+	}
+	Anim_Piano.F2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f2.vsnd",
+		]
+	}
+	Anim_Piano.F3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f3.vsnd",
+		]
+	}
+	Anim_Piano.F4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f4.vsnd",
+		]
+	}
+	Anim_Piano.F5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f5.vsnd",
+		]
+	}
+	Anim_Piano.F6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f6.vsnd",
+		]
+	}
+	Anim_Piano.F7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_f7.vsnd",
+		]
+	}
+	Anim_Piano.Fs1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs1.vsnd",
+		]
+	}
+	Anim_Piano.Fs2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs2.vsnd",
+		]
+	}
+	Anim_Piano.Fs3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs3.vsnd",
+		]
+	}
+	Anim_Piano.Fs4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs4.vsnd",
+		]
+	}
+	Anim_Piano.Fs5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs5.vsnd",
+		]
+	}
+	Anim_Piano.Fs6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs6.vsnd",
+		]
+	}
+	Anim_Piano.Fs7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_fs7.vsnd",
+		]
+	}
+	Anim_Piano.G1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g1.vsnd",
+		]
+	}
+	Anim_Piano.G2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g2.vsnd",
+		]
+	}
+	Anim_Piano.G3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g3.vsnd",
+		]
+	}
+	Anim_Piano.G4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g4.vsnd",
+		]
+	}
+	Anim_Piano.G5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g5.vsnd",
+		]
+	}
+	Anim_Piano.G6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g6.vsnd",
+		]
+	}
+	Anim_Piano.G7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_g7.vsnd",
+		]
+	}
+	Anim_Piano.Gs1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs1.vsnd",
+		]
+	}
+	Anim_Piano.Gs2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs2.vsnd",
+		]
+	}
+	Anim_Piano.Gs3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs3.vsnd",
+		]
+	}
+	Anim_Piano.Gs4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs4.vsnd",
+		]
+	}
+	Anim_Piano.Gs5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs5.vsnd",
+		]
+	}
+	Anim_Piano.Gs6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs6.vsnd",
+		]
+	}
+	Anim_Piano.Gs7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_gs7.vsnd",
+		]
+	}
+	Anim_Piano.Scale1 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_1.vsnd",
+		]
+	}
+	Anim_Piano.Scale2 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_2.vsnd",
+		]
+	}
+	Anim_Piano.Scale3 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_3.vsnd",
+		]
+	}
+	Anim_Piano.Scale4 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_4.vsnd",
+		]
+	}
+	Anim_Piano.Scale5 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_5.vsnd",
+		]
+	}
+	Anim_Piano.Scale6 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_6.vsnd",
+		]
+	}
+	Anim_Piano.Scale7 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_7.vsnd",
+		]
+	}
+	Anim_Piano.Scale8 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		occlusion_scale = 0.500000
+		mixgroup = "AnimInteract"
+		vsnd_files = 
+		[
+			"sounds/world/anim_int/piano/piano_scale_8.vsnd",
+		]
+	}
+}

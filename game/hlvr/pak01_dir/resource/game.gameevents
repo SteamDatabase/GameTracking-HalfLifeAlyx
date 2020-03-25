@@ -1,0 +1,723 @@
+//=========== (C) Copyright Valve, L.L.C. All rights reserved. ===========
+//
+// The copyright to the contents herein is the property of Valve, L.L.C.
+// The contents may be used and/or copied only with the written permission of
+// Valve, L.L.C., or in accordance with the terms and conditions stipulated in
+// the agreement/contract under which the contents have been supplied.
+//=============================================================================
+
+// No spaces in event names, max length 32
+// All strings are case sensitive
+// total game event byte length must be < 1024
+//
+// valid data key types are:
+//   none   : value is not networked
+//   string : a zero terminated string
+//   bool   : unsigned int, 1 bit
+//   byte   : unsigned int, 8 bit
+//   short  : signed int, 16 bit
+//   long   : signed int, 32 bit
+//   float  : float, 32 bit
+
+"gameevents"
+{
+	"item_pickup"
+	{
+		"userid"	"short"
+		"item"		"string"
+		"item_name"	"string"
+		"wasparentedto"		"string"
+		"vr_tip_attachment"	"short"
+		"otherhand_vr_tip_attachment" "short"
+		"controller_type"	"byte"
+	}
+	"item_released"
+	{
+		"userid"	"short"
+		"item"		"string"
+		"item_name"	"string"
+		"vr_tip_attachment"	"short"
+	}
+
+	"item_attachment"
+	{
+		"userid"	"short"
+		"item"		"string"
+	}
+
+	"weapon_switch"
+	{
+		"userid"	"short"
+		"item"		"string"
+	}
+
+	// gravity glove related
+	"grabbity_glove_pull"
+	{
+		"userid"	"short"
+		"item"		"string"
+		"item_name"	"string"
+		"entindex"	"long"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+		"wasparentedto"		"string"
+	}
+	"grabbity_glove_catch"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+		"item"		"string"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+	}
+	"grabbity_glove_highlight_start"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+	}
+	"grabbity_glove_highlight_stop"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+	}
+	"grabbity_glove_locked_on_start"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+	}
+	"grabbity_glove_locked_on_stop"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+		"hand_is_primary" "bool"
+		"vr_tip_attachment" "short"
+		"highlight_active" "bool"
+	}
+
+	"player_gestured"
+	{
+		"userid"	"short"
+		"item"		"string"
+	}
+
+	"player_shoot_weapon"
+	{
+		"userid"	"short"
+	}
+	
+	"player_teleport_start"
+	{
+		"userid"	"short"
+		"positionX"	"float"
+		"positionY"	"float"
+		"positionZ"	"float"
+		"map_name"	"string"
+	}
+
+	"player_teleport_finish"
+	{
+		"userid"	"short"
+		"positionX"	"float"
+		"positionY"	"float"
+		"positionZ"	"float"
+		"map_name"	"string"
+	}
+
+	"player_picked_up_weapon_off_hand"
+	{
+		"userid"	"short"
+		"picked_up" "short"
+	}
+
+	"player_picked_up_weapon_off_hand_crafting"
+	{
+		"userid"	"short"
+	}
+
+	"player_eject_clip"
+	{
+		"userid"	"short"
+		"holding_ammo"	"short"
+	}
+
+	"player_armed_grenade"
+	{
+		"userid"	"short"
+	}
+	"player_health_pen_prepare"
+	{
+		"userid"	"short"
+	}
+	"player_health_pen_retract"
+	{
+		"userid"	"short"
+	}
+	"player_health_pen_used"
+	{
+		"userid"	"short"
+	}
+	"player_pistol_empty_clip"
+	{
+		"userid"	"short"
+	}
+	"player_pistol_clip_inserted"
+	{
+		"userid"	"short"
+		"bullet_count"	"short"
+	}
+
+	"player_pistol_empty_chamber"
+	{
+		"userid"	"short"
+		"bullet_count"	"short"
+		"controller_type"	"byte"
+	}
+
+	"player_pistol_chambered_round"
+	{
+		"userid"	"short"
+	}
+
+	"player_pistol_slide_lock"
+	{
+		"userid"	"short"
+	}
+
+	"player_pistol_bought_lasersight"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_toggle_lasersight"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_bought_burstfire"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_toggle_burstfire"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_pickedup_charged_clip"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_armed_charged_clip"
+	{
+		"userid"	"short"
+	}
+	
+	"player_pistol_clip_charge_ended"
+	{
+		"userid"	"short"
+	}
+	
+	"player_retrieved_backpack_clip"
+	{
+		"userid"	"short"
+	}
+
+	"player_drop_ammo_in_backpack"
+	{
+		"userid"	"short"
+		"ammotype" "string"
+	}
+
+	"player_drop_resin_in_backpack"
+	{
+		"userid"	"short"
+	}
+
+	"player_using_healthstation"
+	{
+		"userid"	"short"
+	}
+
+	"health_station_open"
+	{
+	}
+
+	"player_looking_at_wristhud"
+	{
+		"userid"	"short"
+	}
+
+	"player_shotgun_shell_loaded"
+	{
+		"userid"						"short"
+		"shellcount"				"short"
+		"hint_target"				"long"		// entity id that the hint should display at
+	}
+	
+	"player_shotgun_state_changed"
+	{
+		"userid"						"short"
+		"shotgun_state"			"short"
+		"ammo_count"				"short"
+		"hint_target"				"long"		// entity id that the hint should display at
+	}
+
+	"player_shotgun_upgrade_grenade_launcher_state"
+	{
+		"userid"						"short"
+		"state"						  "short"
+		"hint_target"				"long"		// entity id that the hint should display at
+	}
+	
+	"player_shotgun_autoloader_state"
+	{
+		"userid"						"short"
+		"state"							"short"
+		"hint_target"				"long"		// entity id that the hint should display at
+	}
+	
+	"player_shotgun_autoloader_shells_added"
+	{
+		"userid"						"short"
+		"shellcount"				"short"
+		"hint_target"				"long"		// entity id that the hint should display at
+	}
+	
+	"player_shotgun_upgrade_quickfire"
+	{
+		"userid"						"short"
+	}
+	
+	"player_shotgun_is_ready"
+	{
+		"userid"	"short"
+	}
+
+	"player_shotgun_open"
+	{
+		"userid"	"short"
+	}
+
+	"player_shotgun_loaded_shells"
+	{
+		"userid"	"short"
+	}
+
+	"player_shotgun_upgrade_grenade_long"
+	{
+		"userid"	"short"
+	}
+	
+	"player_rapidfire_capsule_chamber_empty"
+	{
+		"userid"	"short"
+		"hint_target" "long"
+	}
+
+	"player_rapidfire_cycled_capsule"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_magazine_empty"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_opened_casing"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_closed_casing"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_inserted_capsule_in_chamber"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_inserted_capsule_in_magazine"
+	{
+		"userid"	"short"
+		"num_capsules_in_magazine"	"short"
+	}
+	
+	"player_rapidfire_upgrade_selector_can_use"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_selector_used"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_can_charge"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_can_not_charge"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_fully_charged"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_not_fully_charged"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_upgrade_fired"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_energy_ball_can_charge"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_energy_ball_fully_charged"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_energy_ball_not_fully_charged"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_energy_ball_can_pick_up"
+	{
+		"userid"	"short"
+		"hint_target" "long"
+	}
+
+	"player_rapidfire_energy_ball_picked_up"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_stun_grenade_ready"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_stun_grenade_not_ready"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_stun_grenade_picked_up"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_explode_button_ready"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_explode_button_not_ready"
+	{
+		"userid"	"short"
+	}
+
+	"player_rapidfire_explode_button_pressed"
+	{
+		"userid"	"short"
+	}
+
+	"game_saved"
+	{
+	}
+
+	"player_attempted_invalid_storage"
+	{
+		"userid"			"short"
+		"vr_tip_attachment"	"short"
+	}
+
+	"player_attempted_invalid_pistol_clip_storage"
+	{
+		"userid"			"short"
+		"vr_tip_attachment"	"short"
+	}
+	
+	"opened_weapon_switch"
+	{
+		"userid"	"short"
+	}
+
+	"player_started_2h_levitate"
+	{
+		"userid"	"short"
+	}
+
+	"player_stored_item_in_itemholder"
+	{
+		"userid"	"short"
+		"item"		"string"
+		"item_name"	"string"
+	}
+
+	"player_removed_item_from_itemholder"
+	{
+		"userid"			"short"
+		"item"				"string"
+		"vr_tip_attachment"	"short"
+	}
+
+	"player_picked_up_flashlight"
+	{
+		"userid"	"short"
+	}
+	
+	"player_picked_up_flashlight_single_controller"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+	}
+	
+	"player_attached_flashlight"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_pistol_grab_start"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_pistol_grab_end"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_rapidfire_grab_start"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_rapidfire_grab_end"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_shotgun_grab_start"
+	{
+		"userid"	"short"
+	}
+	
+	"two_hand_shotgun_grab_end"
+	{
+		"userid"	"short"
+	}
+	
+	"health_pen_teach_storage"
+	{
+		"userid"	"short"
+		"vr_tip_attachment"	"short"
+		"hint_target"	"long"		// entity id that the hint should display at for single controller mode
+	}
+	"health_vial_teach_storage"
+	{
+		"userid"	"short"
+		"vr_tip_attachment"	"short"
+		"hint_target"	"long"		// entity id that the hint should display at for single controller mode
+	}
+
+	"player_opened_game_menu"
+	{
+	}
+
+	"player_closed_game_menu"
+	{
+	}
+
+	"player_pickedup_storable_clip"
+	{
+		"userid"	"short"
+		"vr_tip_attachment"	"short"
+		"otherhand_vr_tip_attachment" "short"
+	}
+	"player_pickedup_insertable_clip"
+	{
+		"userid"	"short"
+		"vr_tip_attachment"	"short"
+		"otherhand_vr_tip_attachment" "short"
+	}
+
+	"player_covered_mouth"
+	{
+		"userid"	"short"
+	}
+
+	"player_upgraded_weapon"
+	{
+		"weapon"	"string"
+		"num_upgrades" "short"
+	}
+
+	"soldier_killed_by_gastank_explosion"
+	{
+	}
+	"charger_killed_while_shield_up"
+	{
+	}
+	"steal_xen_grenade"
+	{
+	}
+	"tripmine_hack_started"
+	{
+		"userid"	"short"
+	}
+	"tripmine_hacked"
+	{
+		"userid"	"short"
+	}
+
+	"primary_hand_changed"
+	{
+		"is_primary_left"	"bool"
+	}
+
+	"close_to_blindzombie"
+	{
+		"userid"	"short"
+	}
+
+	"player_grabbed_by_barnacle"
+	{
+		"userid"	"short"
+	}
+
+	"player_released_by_barnacle"
+	{
+		"userid"	"short"
+	}
+
+	"single_controller_mode_changed"
+	{
+	    "userid"                    "short"
+		"is_single_controller_mode" "bool"
+		"is_primary_left"	        "bool"
+	}
+
+
+
+//////////////////////////////////////////////////////////////////////
+// Game events
+//////////////////////////////////////////////////////////////////////
+
+	"npc_ragdoll_created"
+	{
+		"npc_entidex"		"long"
+		"ragdoll_entindex"	"long"
+	}
+	"friendly_npc_spawned"
+	{
+		"npc_entidex"		"long"
+		"npc_is_friendly"	"bool"
+	}
+
+	"combine_tank_moved_by_player"
+	{
+		"userid"	"short"
+		"entindex"	"long"
+	}
+	
+	"change_level_activated"
+	{
+		"map_name"			"string"
+		"landmark_name"		"string"
+		"landmark_height"	"float"
+		"landmark_yaw"		"float"
+	}
+
+	"save_game_loaded"
+	{
+		"sub_directory"		"string"
+	}
+	
+	"player_quick_turned"
+	{
+		"userid"	"short"
+		"map_name"	"string"
+	}
+
+	"game_option_changed"
+	{
+		"userid"			"short"
+		"game_option_name"	"string"
+		"game_option_value" "string"
+		"map_name"			"string"
+	}
+
+	"barnacle_grabbed_zombie"
+	{
+	}
+
+	"barnacle_grabbed_grenade"
+	{
+	}
+
+	"barnacle_killed_by_grenade"
+	{
+	}
+
+	"zombie_killed_by_grenade"
+	{
+	}
+
+	"player_continuous_jump_finish"
+	{
+		"userid"			"short"
+	}
+
+	"player_continuous_mantle_finish"
+	{
+		"userid"			"short"
+	}
+
+	"player_crouch_toggle_finish"
+	{
+		"userid"			"short"
+	}
+
+	"player_stand_toggle_finish"
+	{
+		"userid"			"short"
+	}
+
+	"player_grabbed_ladder"
+	{
+		"userid"			"short"
+	}
+
+//////////////////////////////////////////////////////////////////////
+// Instructor / Hint Events
+//////////////////////////////////////////////////////////////////////
+
+	
+	"vr_controller_hint_create"
+	{
+		"hint_name"					"string"	// what to name the hint. Referenced against instructor for the proper lesson
+		"hint_dominant_hand"		"bool"		// True for dominant hand, false for off hand
+	}
+}

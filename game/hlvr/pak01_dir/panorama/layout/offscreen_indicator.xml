@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/offscreen_indicator.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <ClientUIDialogPanel class="RootPanel">
+    <Panel class="WorldUITextPanel" id="WorldUITextPanel">
+      <Panel class="HintPanel" id="HintPanel">
+        <Label class="OutsideLabel" id="Outside" text="" />
+        <Label class="HintLabel" id="Hint" text="[ ! ]" />
+        <Label class="OutsideLabel" id="Outside2" text="" />
+      </Panel>
+    </Panel>
+  </ClientUIDialogPanel>
+</root>

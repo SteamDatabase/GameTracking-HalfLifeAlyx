@@ -1,0 +1,1065 @@
+{
+	AmbientWhoosh.QuarantineEnergyLp01 = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.720000
+		vsnd_files = 
+		[
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_lp_01.vsnd",
+		]
+		soundname_string = "Diagnostic.WhooshSound"
+		pitch = 1.100000
+		use_world_position = 1.000000
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		stop_at_time = 1.500000
+		volume_falloff_min = 250.000000
+		volume_falloff_max = 4000.000000
+		volume_rand_min = 0.100000
+		use_hrtf = 1.000000
+	}
+	AmbientWhoosh.QuarantineEnergyLp02 = 
+	{
+		base = "AmbientWhoosh.QuarantineEnergyLp01"
+		volume = 0.750000
+		pitch = 0.800000
+		vsnd_files = 
+		[
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_lp_02.vsnd",
+		]
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		stop_at_time = 2.500000
+	}
+	AmbientWhoosh.QuarantineEnergyLp03 = 
+	{
+		base = "AmbientWhoosh.QuarantineEnergyLp01"
+		volume = 0.650000
+		pitch = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_lp_03.vsnd",
+		]
+		volume_fade_in = 0.200000
+		volume_fade_out = 1.000000
+		stop_at_time = 2.000000
+	}
+	AmbientWhoosh.QuarantineEnergyImpact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_impact_02.vsnd",
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_impact_03.vsnd",
+			"sounds/ambient/whoosh_machine/amb_citadel_whoosh_impact_04.vsnd",
+		]
+		enable_debug_radius = 0.000000
+		soundname_string = "Diagnostic.WhooshImpact"
+		use_world_position = 1.000000
+		volume_falloff_min = 550.000000
+		volume_falloff_max = 1550.000000
+	}
+	AmbientWhoosh.QuarantineEnergyWhoosh01 = 
+	{
+		type = "hlvr_whoosh_single_direction"
+		whoosh_sound = "AmbientWhoosh.QuarantineEnergyLp01"
+		use_world_position = 1.000000
+		distance_min = 2800
+		distance_max = 3500
+		animation_time = 2.500000
+		use_doppler = 1.000000
+		doppler_factor = 1.000000
+		doppler_factor_receding = 1.000000
+		passthrough_distance_min = 75
+		passthrough_distance_max = 250
+		animation_symmetry = 0.520000
+		lfo_multiplier = 45
+		lfo_depth = 0.300000
+		remap_pct_to_vol_x1 = 0.485000
+		remap_pct_to_vol_y1 = 0.350000
+		remap_pct_to_vol_x2 = 0.490000
+		remap_pct_to_vol_y2 = 1.450000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.450000
+		remap_pct_to_vol_x4 = 0.650000
+		remap_pct_to_vol_y4 = 0.750000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.230000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.250000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		random_seek_min = -8.000000
+		random_seek_max = 0.000000
+		lfo_rate_noise_depth = 0.800000
+		lfo_rate_noise_min = -0.750000
+		lfo_rate_noise_max = 1.000000
+	}
+	AmbientWhoosh.QuarantineEnergyWhoosh02 = 
+	{
+		base = "AmbientWhoosh.QuarantineEnergyWhoosh01"
+		whoosh_sound = "AmbientWhoosh.QuarantineEnergyLp02"
+		impact_sound = "AmbientWhoosh.QuarantineEnergyImpact"
+		impact_offset_pct = 0.490000
+		animation_time = 4.000000
+		passthrough_distance_min = 0
+		passthrough_distance_max = 0
+		animation_symmetry = 0.500000
+		lfo_multiplier = 35
+		lfo_depth = 0.850000
+		remap_pct_to_vol_x1 = 0.450000
+		remap_pct_to_vol_y1 = 0.500000
+		remap_pct_to_vol_x2 = 0.485000
+		remap_pct_to_vol_y2 = 1.000000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.700000
+		remap_pct_to_vol_x4 = 0.550000
+		remap_pct_to_vol_y4 = 0.500000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.230000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.250000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.700000
+		lfo_rate_noise_depth = 0.750000
+		lfo_rate_noise_max = 2.000000
+	}
+	AmbientWhoosh.QuarantineEnergyWhoosh03 = 
+	{
+		base = "AmbientWhoosh.QuarantineEnergyWhoosh01"
+		whoosh_sound = "AmbientWhoosh.QuarantineEnergyLp03"
+		impact_sound = ""
+		animation_time = 3.000000
+		passthrough_distance_min = 150
+		passthrough_distance_max = 300
+		animation_symmetry = 0.470000
+		lfo_multiplier = 40
+		lfo_depth = 0.850000
+		remap_pct_to_vol_x1 = 0.450000
+		remap_pct_to_vol_y1 = 0.300000
+		remap_pct_to_vol_x2 = 0.495000
+		remap_pct_to_vol_y2 = 1.500000
+		remap_pct_to_vol_x3 = 0.510000
+		remap_pct_to_vol_y3 = 1.000000
+		remap_pct_to_vol_x4 = 0.550000
+		remap_pct_to_vol_y4 = 1.200000
+		remap_pct_to_lfo_speed_x1 = 0
+		remap_pct_to_lfo_speed_y1 = 0.950000
+		remap_pct_to_lfo_speed_x2 = 0.230000
+		remap_pct_to_lfo_speed_y2 = 1.000000
+		remap_pct_to_lfo_speed_x3 = 0.250000
+		remap_pct_to_lfo_speed_y3 = 1.000000
+		remap_pct_to_lfo_speed_x4 = 1.000000
+		remap_pct_to_lfo_speed_y4 = 0.450000
+		lfo_rate_noise_depth = 0.300000
+	}
+	AmbientWhoosh.QuarantineEnergy = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "AmbientWhoosh.QuarantineEnergyWhoosh01"
+		soundevent_02 = "AmbientWhoosh.QuarantineEnergyWhoosh02"
+		soundevent_03 = "AmbientWhoosh.QuarantineEnergyWhoosh03"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+	}
+	AmbientWhoosh.WhooshMult = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "AmbientWhoosh.QuarantineEnergy"
+		random_soundevent_01_timer_min = 22.500000
+		random_soundevent_01_timer_max = 35.500000
+		use_initial_random_offset = 1.000000
+		position = 
+		[
+			-4072.200928,
+			3647.005859,
+			41.885082,
+		]
+	}
+	AmbientQuarantine.TrainCarIntLp = 
+	{
+		base = "AmbientBase.TrainCarIntLp"
+	}
+	AmbientQuarantine.ExteriorQuadLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientQuarantine.ExteriorQuadLp_L"
+		soundevent_02 = "AmbientQuarantine.ExteriorQuadLp_R"
+		soundevent_03 = "AmbientQuarantine.ExteriorQuadLp_LS"
+		soundevent_04 = "AmbientQuarantine.ExteriorQuadLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientQuarantine.ExteriorQuadLp_L = 
+	{
+		base = "AmbientBase.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/metal/amb_resometal_quad_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/city/amb_spillway_quad_lp_01_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_cave_snow_texture_quad_lp_01_l.vsnd"
+		vsnd_file_04 = "sounds/ambient/wind/wind_system/amb_quarantine_wind_lp_01_l.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "0.45"
+		vsnd_vol_02 = "0.85"
+		vsnd_vol_03 = "0.08"
+		vsnd_vol_04 = "0.5"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+		volume = 0.900000
+		global_opvar_name_02 = "large_room_addin_beacon"
+		global_opvar_filter_velocity_02 = 2.500000
+		opvar_02_to_volume_multiplier_min = 0.000000
+		opvar_02_to_volume_multiplier = 1.000000
+		remap_vol_opvar_02_x1 = 0.000000
+		remap_vol_opvar_02_y1 = 1.000000
+		remap_vol_opvar_02_x2 = 0.000000
+		remap_vol_opvar_02_y2 = 1.000000
+		remap_vol_opvar_02_x3 = 0.000000
+		remap_vol_opvar_02_y3 = 1.000000
+		remap_vol_opvar_02_x4 = 1.000000
+		remap_vol_opvar_02_y4 = 0.800000
+	}
+	AmbientQuarantine.ExteriorQuadLp_R = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_L"
+		vsnd_file_01 = "sounds/ambient/metal/amb_resometal_quad_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/city/amb_spillway_quad_lp_01_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_cave_snow_texture_quad_lp_01_r.vsnd"
+		vsnd_file_04 = "sounds/ambient/wind/wind_system/amb_quarantine_wind_lp_01_r.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	AmbientQuarantine.ExteriorQuadLp_LS = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_L"
+		vsnd_file_01 = "sounds/ambient/metal/amb_resometal_quad_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/city/amb_spillway_quad_lp_01_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_cave_snow_texture_quad_lp_01_ls.vsnd"
+		vsnd_file_04 = "sounds/ambient/wind/wind_system/amb_quarantine_wind_lp_01_ls.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	AmbientQuarantine.ExteriorQuadLp_RS = 
+	{
+		base = "AmbientQuarantine.ExteriorQuadLp_L"
+		vsnd_file_01 = "sounds/ambient/metal/amb_resometal_quad_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/city/amb_spillway_quad_lp_01_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/abstract/amb_cave_snow_texture_quad_lp_01_rs.vsnd"
+		vsnd_file_04 = "sounds/ambient/wind/wind_system/amb_quarantine_wind_lp_01_rs.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.QuadOneshot = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "AmbientMicrometal.QuadOneshotChild"
+		random_soundevent_01_timer_min = 13
+		random_soundevent_01_timer_max = 20
+		use_initial_random_offset = 1.000000
+		global_volume_opvar_01 = "skylight_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 0.000000
+		remap_global_opvar_01_to_vol_max = 1.000000
+	}
+	AmbientMicrometal.QuadOneshotChild = 
+	{
+		type = "hlvr_start_soundevent"
+		soundevents = 
+		[
+			"AmbientMicrometal.FrontQuad01",
+			"AmbientMicrometal.FrontQuad02",
+			"AmbientMicrometal.FrontQuad03",
+			"AmbientMicrometal.FrontQuad04",
+			"AmbientMicrometal.FrontQuad05",
+			"AmbientMicrometal.FrontQuad06",
+			"AmbientMicrometal.RearQuad01",
+			"AmbientMicrometal.RearQuad02",
+			"AmbientMicrometal.RearQuad03",
+			"AmbientMicrometal.RearQuad04",
+			"AmbientMicrometal.RearQuad05",
+		]
+	}
+	AmbientMicrometal.FrontQuad01 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad01_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad01_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad01_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad01_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad01_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_01_l.vsnd",
+		]
+		mixgroup = "ambient"
+		radius = 250.000000
+		volume_falloff_min = 250
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		use_named_send = "ambient"
+		spread_min = 0
+		spread_max = 300
+		volume = 0.400000
+	}
+	AmbientMicrometal.FrontQuad01_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_01_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad01_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_01_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad01_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_01_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.FrontQuad02 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad02_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad02_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad02_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad02_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad02_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_02_l.vsnd",
+		]
+	}
+	AmbientMicrometal.FrontQuad02_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_02_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad02_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_02_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad02_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_02_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.FrontQuad03 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad03_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad03_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad03_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad03_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad03_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_03_l.vsnd",
+		]
+	}
+	AmbientMicrometal.FrontQuad03_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_03_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad03_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_03_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad03_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_03_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.FrontQuad04 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad04_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad04_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad04_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad04_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad04_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_04_l.vsnd",
+		]
+	}
+	AmbientMicrometal.FrontQuad04_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_04_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad04_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_04_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad04_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_04_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.FrontQuad05 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad05_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad05_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad05_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad05_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad05_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_05_l.vsnd",
+		]
+	}
+	AmbientMicrometal.FrontQuad05_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_05_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad05_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_05_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad05_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_05_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.FrontQuad06 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.FrontQuad06_L"
+		soundevent_02 = "AmbientMicrometal.FrontQuad06_R"
+		soundevent_03 = "AmbientMicrometal.FrontQuad06_LS"
+		soundevent_04 = "AmbientMicrometal.FrontQuad06_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.FrontQuad06_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_06_l.vsnd",
+		]
+	}
+	AmbientMicrometal.FrontQuad06_R = 
+	{
+		base = "AmbientMicrometal.FrontQuad06_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_06_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.FrontQuad06_LS = 
+	{
+		base = "AmbientMicrometal.FrontQuad06_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_06_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.FrontQuad06_RS = 
+	{
+		base = "AmbientMicrometal.FrontQuad06_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_front_06_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.RearQuad01 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.RearQuad01_L"
+		soundevent_02 = "AmbientMicrometal.RearQuad01_R"
+		soundevent_03 = "AmbientMicrometal.RearQuad01_LS"
+		soundevent_04 = "AmbientMicrometal.RearQuad01_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.RearQuad01_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_01_l.vsnd",
+		]
+	}
+	AmbientMicrometal.RearQuad01_R = 
+	{
+		base = "AmbientMicrometal.RearQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_01_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.RearQuad01_LS = 
+	{
+		base = "AmbientMicrometal.RearQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_01_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.RearQuad01_RS = 
+	{
+		base = "AmbientMicrometal.RearQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_01_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.RearQuad02 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.RearQuad02_L"
+		soundevent_02 = "AmbientMicrometal.RearQuad02_R"
+		soundevent_03 = "AmbientMicrometal.RearQuad02_LS"
+		soundevent_04 = "AmbientMicrometal.RearQuad02_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.RearQuad02_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_02_l.vsnd",
+		]
+	}
+	AmbientMicrometal.RearQuad02_R = 
+	{
+		base = "AmbientMicrometal.RearQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_02_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.RearQuad02_LS = 
+	{
+		base = "AmbientMicrometal.RearQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_02_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.RearQuad02_RS = 
+	{
+		base = "AmbientMicrometal.RearQuad02_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_02_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.RearQuad03 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.RearQuad03_L"
+		soundevent_02 = "AmbientMicrometal.RearQuad03_R"
+		soundevent_03 = "AmbientMicrometal.RearQuad03_LS"
+		soundevent_04 = "AmbientMicrometal.RearQuad03_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.RearQuad03_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_03_l.vsnd",
+		]
+	}
+	AmbientMicrometal.RearQuad03_R = 
+	{
+		base = "AmbientMicrometal.RearQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_03_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.RearQuad03_LS = 
+	{
+		base = "AmbientMicrometal.RearQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_03_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.RearQuad03_RS = 
+	{
+		base = "AmbientMicrometal.RearQuad03_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_03_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.RearQuad04 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.RearQuad04_L"
+		soundevent_02 = "AmbientMicrometal.RearQuad04_R"
+		soundevent_03 = "AmbientMicrometal.RearQuad04_LS"
+		soundevent_04 = "AmbientMicrometal.RearQuad04_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.RearQuad04_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_04_l.vsnd",
+		]
+	}
+	AmbientMicrometal.RearQuad04_R = 
+	{
+		base = "AmbientMicrometal.RearQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_04_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.RearQuad04_LS = 
+	{
+		base = "AmbientMicrometal.RearQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_04_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.RearQuad04_RS = 
+	{
+		base = "AmbientMicrometal.RearQuad04_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_04_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientMicrometal.RearQuad05 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientMicrometal.RearQuad05_L"
+		soundevent_02 = "AmbientMicrometal.RearQuad05_R"
+		soundevent_03 = "AmbientMicrometal.RearQuad05_LS"
+		soundevent_04 = "AmbientMicrometal.RearQuad05_RS"
+		rand_delay_min = -2.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientMicrometal.RearQuad05_L = 
+	{
+		base = "AmbientMicrometal.FrontQuad01_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_05_l.vsnd",
+		]
+	}
+	AmbientMicrometal.RearQuad05_R = 
+	{
+		base = "AmbientMicrometal.RearQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_05_r.vsnd",
+		]
+		rotation_angle = 315.000000
+	}
+	AmbientMicrometal.RearQuad05_LS = 
+	{
+		base = "AmbientMicrometal.RearQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_05_ls.vsnd",
+		]
+		rotation_angle = 135.000000
+	}
+	AmbientMicrometal.RearQuad05_RS = 
+	{
+		base = "AmbientMicrometal.RearQuad05_L"
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/amb_micrometal_quad_rear_05_rs.vsnd",
+		]
+		rotation_angle = 225.000000
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01 = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientQuarantine.WoodBuildingSmallLp01_L"
+		soundevent_02 = "AmbientQuarantine.WoodBuildingSmallLp01_R"
+		soundevent_03 = "AmbientQuarantine.WoodBuildingSmallLp01_LS"
+		soundevent_04 = "AmbientQuarantine.WoodBuildingSmallLp01_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_L = 
+	{
+		base = "AmbientBase.IntSmallRoomLp_L"
+		vsnd_file_01 = "sounds/ambient/wood/amb_wood_building_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_brick_garage_lp_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_02_l.vsnd"
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "0.90"
+		vsnd_vol_02 = "1.00"
+		vsnd_vol_03 = "0.22"
+		vsnd_vol_04 = "0.00"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_R = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_L"
+		vsnd_file_01 = "sounds/ambient/wood/amb_wood_building_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_brick_garage_lp_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_02_r.vsnd"
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_LS = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_L"
+		vsnd_file_01 = "sounds/ambient/wood/amb_wood_building_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_brick_garage_lp_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_02_ls.vsnd"
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	AmbientQuarantine.WoodBuildingSmallLp01_RS = 
+	{
+		base = "AmbientQuarantine.WoodBuildingSmallLp01_L"
+		vsnd_file_01 = "sounds/ambient/wood/amb_wood_building_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_brick_garage_lp_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_md_room_quad_lp_02_rs.vsnd"
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	AmbientQuarantine.BasementLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientQuarantine.BasementLp_L"
+		soundevent_02 = "AmbientQuarantine.BasementLp_R"
+		soundevent_03 = "AmbientQuarantine.BasementLp_LS"
+		soundevent_04 = "AmbientQuarantine.BasementLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientQuarantine.BasementLp_L = 
+	{
+		base = "AmbientBase.IntMainLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_l.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_l.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "0.35"
+		vsnd_vol_02 = "0.17"
+		vsnd_vol_03 = "0.22"
+		vsnd_vol_04 = "0.73"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+		remap_filter_freq_opvar_x1 = 0.000000
+		remap_filter_freq_opvar_y1 = 0.650000
+		remap_filter_freq_opvar_x2 = 0.000000
+		remap_filter_freq_opvar_y2 = 0.650000
+		remap_filter_freq_opvar_x3 = 0.500000
+		remap_filter_freq_opvar_y3 = 0.750000
+		remap_filter_freq_opvar_x4 = 1.000000
+		remap_filter_freq_opvar_y4 = 1.000000
+	}
+	AmbientQuarantine.BasementLp_R = 
+	{
+		base = "AmbientQuarantine.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_r.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_r.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	AmbientQuarantine.BasementLp_LS = 
+	{
+		base = "AmbientQuarantine.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_ls.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_ls.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	AmbientQuarantine.BasementLp_RS = 
+	{
+		base = "AmbientQuarantine.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_rs.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_rs.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	AmbientQuarantine.WoodRattle = 
+	{
+		base = "AmbientCreepy.WoodRattle"
+		global_volume_opvar_01 = "skylight_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 0.000000
+		remap_global_opvar_01_to_vol_max = 1.000000
+	}
+	AmbientQuarantine.CombineWindLp = 
+	{
+		type = "hlvr_ambient_position_on_line"
+		volume = 0.700000
+		volume_falloff_min = 600
+		volume_falloff_max = 2400
+		cull_at_distance = 2500
+		spread_min = 600
+		spread_max = 1000
+		volume_filter_amount = 0.400000
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/wind/amb_wind_through_combine_metal_lp_01.vsnd",
+		]
+		global_volume_opvar_01 = "skylight_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 0.000000
+		remap_global_opvar_01_to_vol_max = 1.000000
+		enable_debug_radius = 0.000000
+		debug_radius_max = 2400
+	}
+	AmbientQuarantine.DarknessAddinLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientQuarantine.DarknessAddinLp_L"
+		soundevent_02 = "AmbientQuarantine.DarknessAddinLp_R"
+		soundevent_03 = "AmbientQuarantine.DarknessAddinLp_LS"
+		soundevent_04 = "AmbientQuarantine.DarknessAddinLp_RS"
+		rand_delay_min = 0.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientQuarantine.DarknessAddinLp_L = 
+	{
+		base = "AmbientBase.IntMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_quar_entrance_darkness_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/metal/amb_resometal_quad_lp_01_l.vsnd"
+		vsnd_vol_01 = "0.90"
+		vsnd_vol_02 = "0.60"
+		volume = 1.000000
+		global_opvar_name_01 = "large_room_addin_beacon"
+		remap_vol_opvar_x1 = 0.000000
+		remap_vol_opvar_y1 = 0.000000
+		remap_vol_opvar_x2 = 0.200000
+		remap_vol_opvar_y2 = 0.350000
+		remap_vol_opvar_x3 = 0.500000
+		remap_vol_opvar_y3 = 0.650000
+		remap_vol_opvar_x4 = 1.000000
+		remap_vol_opvar_y4 = 1.000000
+		enable_debug_radius = 0.000000
+		opvar_to_volume_multiplier_min = 0.000000
+		opvar_to_volume_multiplier = 1.000000
+		filter_mix = 1.000000
+		remap_filter_freq_opvar_x1 = 0.000000
+		remap_filter_freq_opvar_y1 = 0.000000
+		remap_filter_freq_opvar_x2 = 0.000000
+		remap_filter_freq_opvar_y2 = 0.000000
+		remap_filter_freq_opvar_x3 = 0.500000
+		remap_filter_freq_opvar_y3 = 0.750000
+		remap_filter_freq_opvar_x4 = 1.000000
+		remap_filter_freq_opvar_y4 = 1.000000
+		global_opvar_name_02 = "skylight_proximity_beacon"
+		global_opvar_filter_velocity_02 = 2.500000
+		opvar_02_to_volume_multiplier_min = 0.000000
+		opvar_02_to_volume_multiplier = 1.000000
+		remap_vol_opvar_02_x1 = 0.000000
+		remap_vol_opvar_02_y1 = 0.800000
+		remap_vol_opvar_02_x2 = 0.000000
+		remap_vol_opvar_02_y2 = 0.800000
+		remap_vol_opvar_02_x3 = 0.000000
+		remap_vol_opvar_02_y3 = 0.800000
+		remap_vol_opvar_02_x4 = 1.000000
+		remap_vol_opvar_02_y4 = 1.000000
+		remap_filter_freq_opvar_02_x1 = 0.000000
+		remap_filter_freq_opvar_02_y1 = 0.900000
+		remap_filter_freq_opvar_02_x2 = 0.000000
+		remap_filter_freq_opvar_02_y2 = 0.900000
+		remap_filter_freq_opvar_02_x3 = 0.000000
+		remap_filter_freq_opvar_02_y3 = 0.900000
+		remap_filter_freq_opvar_02_x4 = 1.000000
+		remap_filter_freq_opvar_02_y4 = 1.000000
+	}
+	AmbientQuarantine.DarknessAddinLp_R = 
+	{
+		base = "AmbientQuarantine.DarknessAddinLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_quar_entrance_darkness_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/metal/amb_resometal_quad_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	AmbientQuarantine.DarknessAddinLp_LS = 
+	{
+		base = "AmbientQuarantine.DarknessAddinLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_quar_entrance_darkness_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/metal/amb_resometal_quad_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	AmbientQuarantine.DarknessAddinLp_RS = 
+	{
+		base = "AmbientQuarantine.DarknessAddinLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_quar_entrance_darkness_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/metal/amb_resometal_quad_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+}

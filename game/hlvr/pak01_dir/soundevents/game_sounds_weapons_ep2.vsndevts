@@ -1,0 +1,71 @@
+{
+	Weapon_StriderBuster.StickToEntity = 
+	{
+		type = "src1_2d"
+		volume = 0.849609
+		pitch = 1.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/weapons/strider_buster/strider_buster_stick1.vsnd"
+	}
+	Weapon_StriderBuster.Detonate = 
+	{
+		type = "src1_3d"
+		volume = 0.849609
+		pitch = 1.000000
+		soundlevel = 100.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/weapons/strider_buster/strider_buster_detonate.vsnd"
+	}
+	Weapon_StriderBuster.Dud_Detonate = 
+	{
+		type = "src1_3d"
+		volume = 0.399902
+		pitch = 1.000000
+		soundlevel = 100.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/weapons/strider_buster/strider_buster_detonate.vsnd"
+	}
+	Weapon_StriderBuster.Dud_Detonate2 = 
+	{
+		type = "src1_3d"
+		volume = 0.599609
+		pitch = 1.750000
+		soundlevel = 100.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/ambient/explosions/explode_9.vsnd"
+	}
+	Weapon_StriderBuster.Ping = 
+	{
+		type = "src1_3d"
+		volume = 0.849609
+		pitch = 1.000000
+		soundlevel = 100.000000
+		event_type = 4.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		vsnd_files = "sounds/ambient/levels/outland/striderbusterarm02.vsnd"
+	}
+}

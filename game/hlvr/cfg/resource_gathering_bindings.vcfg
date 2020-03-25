@@ -1,0 +1,16 @@
+"config"
+{
+	"bindings"
+	{
+		"c"		"ent_fire relay_use_resource_magnet trigger"
+		"F5"		"script_execute dog_resource_gathering/snippet.nut"
+		"F1"		"cls; restart"
+		"F11"		"script_attach_debugger"
+		"x"		"ent_fire relay_use_health_convert trigger"
+		"p"		"ent_fire relay_give_resources_10 trigger"
+		"TAB"		"ent_fire relay_toggle_upgrade_info trigger"
+		"m"		"sv_cheats 1; impulse 101; sv_infinite_ammo 1; god'"
+		"n"		"sv_cheats 1; noclip"
+		"o"		"toggle stats_display"
+	}
+}

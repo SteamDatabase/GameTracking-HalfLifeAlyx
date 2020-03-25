@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/world_screens/a3_distillery_elevator_panel.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="Container">
+			<Label id="ErrorText" text="#HLVR_Distillery_Elevator_Error" />
+			<Label id="OverrideText" text="#HLVR_Distillery_Elevator_Override" />
+	</Panel>
+</root>
+
+

@@ -1,0 +1,28 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+    <Panel class="save_slot_item">
+      <Button id="occupied_save_slot">
+        <Label class="load_item_hover" text="{s:save} {s:slot}"/>
+        <Panel class="button_continue">
+          <Label class="save_slot_item_line1" text="{s:chapter_number}  |  {t:s:time_saved}"/>
+          <Label class="save_slot_item_line2" text="{s:chapter_name}"/>
+        </Panel>
+        <Panel class="button_bullet">
+          <Image class="button_bullet button_bullet_normal" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+          <Image class="button_bullet button_bullet_continue_slot" src="s2r://panorama/images/game_menu_ui/btn_bullet_focused_png.vtex" />
+        </Panel>
+      </Button>
+
+      <Panel class="row_divider">
+          <Panel class="row_divider_line" />
+      </Panel>
+    </Panel>
+</root>
+
+
+
+

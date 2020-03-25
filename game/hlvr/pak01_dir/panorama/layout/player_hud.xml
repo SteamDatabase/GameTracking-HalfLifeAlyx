@@ -1,0 +1,24 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/player_hud.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<HL3PlayerHUD class="PlayerHUD" id="PlayerHUD">
+			<Panel class="HUDPanel">
+				<Label id="Health" text="{i:HealthAmount}" />
+				<Panel id="CurrencyPanel" >
+					<Label class="CraftingTitle" text="Crafting Resin" />
+					<Label class="CraftingAmount" id="CraftingCurrency" text="{i:CurrencyAmount}" />
+				</Panel>	
+				<Panel id="CurrencyPickupPanel" >
+					<Label class="CraftingTitle" text="Crafting Resin" />
+					<Label class="CraftingAmount" id="CraftingCurrencyPickup" text="+{i:CurrencyPickupAmount}" />
+				</Panel>
+				<InstructorPanel id="InstructorPanel"/>
+			</Panel>
+		</HL3PlayerHUD>
+	</ClientUIDialogPanel>
+</root>

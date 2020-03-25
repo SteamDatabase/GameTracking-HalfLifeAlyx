@@ -1,0 +1,90 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	sequences = 
+	{
+		a4_c17_grg_ss00_arr_base = 
+		{
+			loop = false
+			length = 18.0
+			numerator = 4
+			denominator = 4
+			sequence = 
+			[
+				[9, 0.0, 51, 127],
+				[9, 16.0, 52, 127]
+			]
+		}
+	}
+	samplers = 
+	{
+		a4_c17_grg_ss00_arr = 
+		{
+			attack = 0.0
+			release = 0.0
+			min_note = 51
+			max_note = 52
+			min_velocity_db = -40
+			max_velocity_db = 0
+			soundevent = "core.sampler_base"
+			soundevent_samples = true
+			key_groups = 
+			[
+				{
+					center = 51
+					min = 51
+					max = 51
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a4_garage.garage_start_music"
+							]
+						}
+					]
+				},
+				{
+					center = 52
+					min = 52
+					max = 52
+					velocity_zones = 
+					[
+						{
+							max = 127
+							sounds = 
+							[
+								"Music.a4_garage.garage_elevator_music"
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+	arrangements = 
+	{
+		a4_c17_grg_ss00_arr = 
+		{
+			tracks = 
+			{
+				base = 
+				{
+					sync_track = "base"
+					bpm = 154.0
+					quantize_type = "reset"
+					quantize_multiplier = 1.0
+					stop_events_by_next = false
+					instrument = "a4_c17_grg_ss00_arr"
+					events = 
+					[
+						{
+							beat = 0.0
+							sequence = "a4_c17_grg_ss00_arr_base"
+						}
+					]
+				}
+			}
+		}
+	}
+}

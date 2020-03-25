@@ -1,0 +1,5091 @@
+{
+	PhysPlayerCrush.Tin_Can = 
+	{
+		type = "hlvr_phys_crushable"
+		volume_fade_out = 0.500000
+		oneshot_child = "PhysPlayerCrush.Tin_Can_Oneshot"
+		vsnd_files_slow = 
+		[
+			"sounds/physics/crushables/tin_can_crush_slow_loop_01.vsnd",
+			"sounds/physics/crushables/tin_can_crush_slow_loop_02.vsnd",
+			"sounds/physics/crushables/tin_can_crush_slow_loop_03.vsnd",
+		]
+		vsnd_files_fast = 
+		[
+			"sounds/physics/crushables/tin_can_crush_fast_loop_01.vsnd",
+			"sounds/physics/crushables/tin_can_crush_fast_loop_02.vsnd",
+			"sounds/physics/crushables/tin_can_crush_fast_loop_03.vsnd",
+		]
+	}
+	PhysPlayerCrush.Tin_Can_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/physics/crushables/tin_can_oneshot_01.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_02.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_03.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_04.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_05.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_06.vsnd",
+			"sounds/physics/crushables/tin_can_oneshot_07.vsnd",
+		]
+	}
+	PhysPlayerCrush.Plastic_Bottle = 
+	{
+		type = "hlvr_phys_crushable"
+		volume_fade_out = 0.500000
+		oneshot_child = "PhysPlayerCrush.Plastic_Bottle_Oneshot"
+		vsnd_files_slow = 
+		[
+			"sounds/physics/crushables/plastic_bottle_crush_slow_loop_01.vsnd",
+			"sounds/physics/crushables/plastic_bottle_crush_slow_loop_02.vsnd",
+			"sounds/physics/crushables/plastic_bottle_crush_slow_loop_03.vsnd",
+		]
+		vsnd_files_fast = 
+		[
+			"sounds/physics/crushables/plastic_bottle_crush_fast_loop_01.vsnd",
+			"sounds/physics/crushables/plastic_bottle_crush_fast_loop_02.vsnd",
+		]
+	}
+	PhysPlayerCrush.Plastic_Bottle_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/physics/crushables/plastic_bottle_oneshot_01.vsnd",
+			"sounds/physics/crushables/plastic_bottle_oneshot_02.vsnd",
+			"sounds/physics/crushables/plastic_bottle_oneshot_03.vsnd",
+			"sounds/physics/crushables/plastic_bottle_oneshot_04.vsnd",
+		]
+	}
+	PhysPlayerCrush.Soap_Bottle = 
+	{
+		type = "hlvr_phys_crushable"
+		vol_mult_slow = 0.700000
+		volume_fade_out = 0.500000
+		oneshot_child = "PhysPlayerCrush.Soap_Bottle_Oneshot"
+		vsnd_files_slow = 
+		[
+			"sounds/physics/crushables/soap_bottle_crush_loop.vsnd",
+		]
+	}
+	PhysPlayerCrush.Soap_Bottle_Oneshot = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/physics/crushables/soap_bottle_oneshot_01.vsnd",
+			"sounds/physics/crushables/soap_bottle_oneshot_02.vsnd",
+			"sounds/physics/crushables/soap_bottle_oneshot_03.vsnd",
+			"sounds/physics/crushables/soap_bottle_oneshot_04.vsnd",
+			"sounds/physics/crushables/soap_bottle_oneshot_05.vsnd",
+		]
+	}
+	PhysPlayerCrush.Test = 
+	{
+		base = "PhysPlayerCrush.Tin_Can"
+	}
+	PhysImpact_Prop.Vault_Abstract = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.150000
+		volume_fade_out = 0.100000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.300000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		limiter_on = 1.000000
+		limiter_max = 4.000000
+		limiter_match_event = 1.000000
+		use_named_send = "fx"
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/physics/vault/impact_01.vsnd",
+			"sounds/physics/vault/impact_02.vsnd",
+			"sounds/physics/vault/impact_03.vsnd",
+			"sounds/physics/vault/impact_04.vsnd",
+			"sounds/physics/vault/impact_05.vsnd",
+			"sounds/physics/vault/impact_06.vsnd",
+			"sounds/physics/vault/impact_07.vsnd",
+			"sounds/physics/vault/impact_08.vsnd",
+			"sounds/physics/vault/impact_09.vsnd",
+			"sounds/physics/vault/impact_10.vsnd",
+			"sounds/physics/vault/impact_11.vsnd",
+			"sounds/physics/vault/impact_12.vsnd",
+			"sounds/physics/vault/impact_13.vsnd",
+			"sounds/physics/vault/impact_14.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Misc_Medium = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Mannequin = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.850000
+		vol_mult_d = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_d_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_d_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Box = 
+	{
+		base = "PhysImpact_Prop.Plastic_Misc_Medium"
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.250000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_misc_med/shake_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_03.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_04.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_05.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_06.vsnd",
+			"sounds/physics/props/plastic_misc_med/shake_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Misc_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vol_mult_c = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_misc_small/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_misc_small/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_misc_small/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Default = 
+	{
+		base = "PhysImpact_Prop.Plastic_Misc_Small"
+	}
+	PhysImpact_Prop.Plastic_Small_Misc = 
+	{
+		base = "PhysImpact_Prop.Plastic_Misc_Small"
+	}
+	PhysImpact_Prop.Ammo_Clip_Pistol = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/ammo_clip_pistol/impact_a_01.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_a_02.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/ammo_clip_pistol/impact_b_01.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_b_02.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_b_03.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/ammo_clip_pistol/impact_c_01.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_c_02.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_c_03.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/ammo_clip_pistol/contents_01.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_02.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_03.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_04.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_05.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_06.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_07.vsnd",
+			"sounds/physics/props/ammo_clip_pistol/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ammo_Clip_Pistol_Large = 
+	{
+		base = "PhysImpact_Prop.Ammo_Clip_Pistol"
+		vgraph_volume_mult = 0.600000
+	}
+	PhysImpact_Prop.Ammo_Clip_Shotgun = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/ammo_clip_shotgun/impact_a_01.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_a_02.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/ammo_clip_shotgun/impact_b_01.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_b_02.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/ammo_clip_shotgun/impact_c_01.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_c_02.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_c_03.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/ammo_clip_shotgun/contents_01.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/contents_02.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/contents_03.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/contents_04.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/contents_05.vsnd",
+			"sounds/physics/props/ammo_clip_shotgun/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ammo_Clip_RapidFire = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/ammo_clip_rapidfire/impact_a_01.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/impact_a_02.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/ammo_clip_rapidfire/impact_b_01.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/impact_b_02.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/impact_b_03.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/ammo_clip_rapidfire/impact_c_01.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/ammo_clip_rapidfire/contents_01.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_02.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_03.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_04.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_05.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_06.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_07.vsnd",
+			"sounds/physics/props/ammo_clip_rapidfire/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ammo_Shell_Pistol = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_01.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_02.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_03.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_04.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_05.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_06.vsnd",
+			"sounds/physics/props/ammo_shell_pistol/pistol_shell_impact_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ammo_Shell_Shotgun = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.150000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/ammo_shell_shotgun/impact_a_01.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_a_02.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_a_03.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/ammo_shell_shotgun/impact_b_01.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_b_02.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_b_03.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/ammo_shell_shotgun/impact_c_01.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_c_02.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_c_03.vsnd",
+			"sounds/physics/props/ammo_shell_shotgun/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Book = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/book/impact_a_01.vsnd",
+			"sounds/physics/props/book/impact_a_02.vsnd",
+			"sounds/physics/props/book/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/book/impact_b_01.vsnd",
+			"sounds/physics/props/book/impact_b_02.vsnd",
+			"sounds/physics/props/book/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/book/impact_c_01.vsnd",
+			"sounds/physics/props/book/impact_c_02.vsnd",
+			"sounds/physics/props/book/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cigarette = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cigarette/impact_a_01.vsnd",
+			"sounds/physics/props/cigarette/impact_a_02.vsnd",
+			"sounds/physics/props/cigarette/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cigarette/impact_b_01.vsnd",
+			"sounds/physics/props/cigarette/impact_b_02.vsnd",
+			"sounds/physics/props/cigarette/impact_b_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_large/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_large/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_large/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_broken_large/contents_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_04.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_05.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_06.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Medium = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_large/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_medium/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_medium/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_medium/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_box_medium/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/contents_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_04.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_05.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_small/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_small/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_small/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_small/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_small/shake_01.vsnd",
+			"sounds/physics/props/cardboard_box_small/shake_02.vsnd",
+			"sounds/physics/props/cardboard_box_small/shake_03.vsnd",
+			"sounds/physics/props/cardboard_box_small/shake_04.vsnd",
+			"sounds/physics/props/cardboard_box_small/shake_05.vsnd",
+			"sounds/physics/props/cardboard_box_small/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Broken_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_broken_large/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_broken_large/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_broken_large/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_broken_large/contents_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_04.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_05.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_06.vsnd",
+			"sounds/physics/props/cardboard_box_broken_large/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Broken_Medium = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_a_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/contents_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_04.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_05.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Empty_Medium = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_empty_medium/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_a_03.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_empty_medium/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_empty_medium/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_box_empty_medium/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_broken_medium/contents_01.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_02.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_03.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_04.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_05.vsnd",
+			"sounds/physics/props/cardboard_box_broken_medium/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Box_Empty_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/shake_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/shake_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/shake_03.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/shake_04.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/shake_05.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Biscuits = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_biscuits/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_biscuits/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_biscuits/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_c_03.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_carton_biscuits/contents_01.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/contents_02.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/contents_03.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/contents_04.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/contents_05.vsnd",
+			"sounds/physics/props/cardboard_carton_biscuits/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Butter = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.450000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_butter/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_butter/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_butter/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Cereal = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_cereal/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_cereal/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_cereal/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_carton_cereal/contents_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_03.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_04.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_05.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_06.vsnd",
+			"sounds/physics/props/cardboard_carton_cereal/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Cigarettes = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_03.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_04.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_05.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Crackers = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_crackers/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_crackers/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_crackers/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_carton_crackers/contents_01.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/contents_02.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/contents_03.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/contents_04.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/contents_05.vsnd",
+			"sounds/physics/props/cardboard_carton_crackers/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Carton_Milk = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_milk/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_milk/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_milk/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_carton_milk/contents_01.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_02.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_03.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_04.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_05.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_06.vsnd",
+			"sounds/physics/props/cardboard_carton_milk/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Matchbox = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_butter/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_carton_butter/impact_c_01.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_c_02.vsnd",
+			"sounds/physics/props/cardboard_carton_butter/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/cardboard_matchbox/contents_01.vsnd",
+			"sounds/physics/props/cardboard_matchbox/contents_02.vsnd",
+			"sounds/physics/props/cardboard_matchbox/contents_03.vsnd",
+			"sounds/physics/props/cardboard_matchbox/contents_04.vsnd",
+			"sounds/physics/props/cardboard_matchbox/contents_05.vsnd",
+			"sounds/physics/props/cardboard_matchbox/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Matchbook = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_carton_cigarettes/impact_b_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Cardboard_Vort_Magic = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.250000
+		use_hardness_input = 0.000000
+		vol_mult_a = 0.800000
+		vol_mult_b = 0.600000
+		vol_mult_c = 0.800000
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/cardboard_vort_magic/impact_a_01.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_a_02.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_a_03.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_a_04.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_a_05.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_a_06.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_box_empty_small/impact_b_03.vsnd",
+		]
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/cardboard_vort_magic/impact_b_01.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_b_02.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_b_03.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_b_04.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_b_05.vsnd",
+			"sounds/physics/props/cardboard_vort_magic/impact_b_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Stone_Boulder = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/stone_boulder/impact_a_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_a_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/stone_boulder/impact_b_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_03.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/stone_boulder/impact_c_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_03.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Stone_Boulder_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.650000
+		vol_mult_c = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/stone_boulder/impact_a_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_a_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/stone_boulder/impact_b_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_03.vsnd",
+			"sounds/physics/props/stone_boulder/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/stone_boulder/impact_c_01.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_02.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_03.vsnd",
+			"sounds/physics/props/stone_boulder/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Stone_Boulder_Shard = 
+	{
+		base = "PhysImpact_Prop.Stone_Boulder_Small"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/stone_shard/impact_a_01.vsnd",
+			"sounds/physics/props/stone_shard/impact_a_02.vsnd",
+			"sounds/physics/props/stone_shard/impact_a_03.vsnd",
+			"sounds/physics/props/stone_shard/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/stone_shard/impact_b_01.vsnd",
+			"sounds/physics/props/stone_shard/impact_b_02.vsnd",
+			"sounds/physics/props/stone_shard/impact_b_03.vsnd",
+			"sounds/physics/props/stone_shard/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/stone_shard/impact_c_01.vsnd",
+			"sounds/physics/props/stone_shard/impact_c_02.vsnd",
+			"sounds/physics/props/stone_shard/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Stone_Brick_Shard = 
+	{
+		base = "PhysImpact_Prop.Stone_Boulder_Shard"
+	}
+	PhysImpact_Prop.Stone_Brick = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/stone_brick/impact_a_01.vsnd",
+			"sounds/physics/props/stone_brick/impact_a_02.vsnd",
+			"sounds/physics/props/stone_brick/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/stone_brick/impact_b_01.vsnd",
+			"sounds/physics/props/stone_brick/impact_b_02.vsnd",
+			"sounds/physics/props/stone_brick/impact_b_03.vsnd",
+			"sounds/physics/props/stone_brick/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/stone_brick/impact_c_01.vsnd",
+			"sounds/physics/props/stone_brick/impact_c_02.vsnd",
+			"sounds/physics/props/stone_brick/impact_c_03.vsnd",
+			"sounds/physics/props/stone_brick/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Luggage_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/luggage_big/impact_a_01.vsnd",
+			"sounds/physics/props/luggage_big/impact_a_02.vsnd",
+			"sounds/physics/props/luggage_big/impact_a_03.vsnd",
+			"sounds/physics/props/luggage_big/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/luggage_big/impact_b_01.vsnd",
+			"sounds/physics/props/luggage_big/impact_b_02.vsnd",
+			"sounds/physics/props/luggage_big/impact_b_03.vsnd",
+			"sounds/physics/props/luggage_big/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/luggage_big/impact_c_01.vsnd",
+			"sounds/physics/props/luggage_big/impact_c_02.vsnd",
+			"sounds/physics/props/luggage_big/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/luggage_big/contents_01.vsnd",
+			"sounds/physics/props/luggage_big/contents_02.vsnd",
+			"sounds/physics/props/luggage_big/contents_03.vsnd",
+			"sounds/physics/props/luggage_big/contents_04.vsnd",
+			"sounds/physics/props/luggage_big/contents_05.vsnd",
+			"sounds/physics/props/luggage_big/contents_06.vsnd",
+			"sounds/physics/props/luggage_big/contents_07.vsnd",
+			"sounds/physics/props/luggage_big/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Luggage_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.850000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/luggage_small/impact_a_01.vsnd",
+			"sounds/physics/props/luggage_small/impact_a_02.vsnd",
+			"sounds/physics/props/luggage_small/impact_a_03.vsnd",
+			"sounds/physics/props/luggage_small/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/luggage_small/impact_b_01.vsnd",
+			"sounds/physics/props/luggage_small/impact_b_02.vsnd",
+			"sounds/physics/props/luggage_small/impact_b_03.vsnd",
+			"sounds/physics/props/luggage_small/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/luggage_small/impact_c_01.vsnd",
+			"sounds/physics/props/luggage_small/impact_c_02.vsnd",
+			"sounds/physics/props/luggage_small/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/luggage_big/contents_01.vsnd",
+			"sounds/physics/props/luggage_big/contents_02.vsnd",
+			"sounds/physics/props/luggage_big/contents_03.vsnd",
+			"sounds/physics/props/luggage_big/contents_04.vsnd",
+			"sounds/physics/props/luggage_big/contents_05.vsnd",
+			"sounds/physics/props/luggage_big/contents_06.vsnd",
+			"sounds/physics/props/luggage_big/contents_07.vsnd",
+			"sounds/physics/props/luggage_big/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Barstool_Top = 
+	{
+		base = "PhysImpact_Prop.Luggage_Small"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 0.000000
+	}
+	PhysImpact_Prop.Metal_Manhack_Gib = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		groups = 
+		[
+			"physics_impacts",
+		]
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_manhack_gib/impact_a_01.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_a_02.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_a_03.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_manhack_gib/impact_b_01.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_b_02.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_b_03.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_manhack_gib/impact_c_01.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_c_02.vsnd",
+			"sounds/physics/props/metal_manhack_gib/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Bicycle = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_bicycle/impact_a_01.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_a_02.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_bicycle/impact_b_01.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_b_02.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_bicycle/impact_c_01.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_c_02.vsnd",
+			"sounds/physics/props/metal_bicycle/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_bicycle/impact_d_01.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_bicycle/contents_01.vsnd",
+			"sounds/physics/props/metal_bicycle/contents_02.vsnd",
+			"sounds/physics/props/metal_bicycle/contents_03.vsnd",
+			"sounds/physics/props/metal_bicycle/contents_04.vsnd",
+			"sounds/physics/props/metal_bicycle/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Door_Handle = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_door_handle/impact_a_01.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_a_02.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_door_handle/impact_b_01.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_b_02.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_door_handle/impact_c_01.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_c_02.vsnd",
+			"sounds/physics/props/metal_door_handle/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_door_handle/contents_01.vsnd",
+			"sounds/physics/props/metal_door_handle/contents_02.vsnd",
+			"sounds/physics/props/metal_door_handle/contents_03.vsnd",
+			"sounds/physics/props/metal_door_handle/contents_04.vsnd",
+			"sounds/physics/props/metal_door_handle/contents_05.vsnd",
+			"sounds/physics/props/metal_door_handle/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Geiger_Box = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_geigerbox/impact_a_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_a_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_geigerbox/impact_b_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_b_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_geigerbox/impact_c_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_c_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_geigerbox/shake_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_03.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_04.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_05.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Box = 
+	{
+		base = "PhysImpact_Prop.Metal_Geiger_Box"
+		vgraph_volume_mult = 0.500000
+	}
+	PhysImpact_Prop.Metal_Heavy = 
+	{
+		base = "PhysImpact_Prop.Metal_Geiger_Box"
+		vgraph_volume_mult = 0.850000
+		use_contents_layer = 0.000000
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_c_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_03.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Prop = 
+	{
+		base = "PhysImpact_Prop.Metal_Geiger_Box"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 0.000000
+	}
+	PhysImpact_Prop.Metal_Misc_Medium = 
+	{
+		base = "PhysImpact_Prop.Metal_Geiger_Box"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 0.000000
+	}
+	PhysImpact_Prop.Metal_Weapon = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_gun/impact_a_01.vsnd",
+			"sounds/physics/props/metal_gun/impact_a_02.vsnd",
+			"sounds/physics/props/metal_gun/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_gun/impact_b_01.vsnd",
+			"sounds/physics/props/metal_gun/impact_b_02.vsnd",
+			"sounds/physics/props/metal_gun/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_gun/impact_c_01.vsnd",
+			"sounds/physics/props/metal_gun/impact_c_02.vsnd",
+			"sounds/physics/props/metal_gun/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Valve_Handle = 
+	{
+		type = "hlvr_phys_impact_basic"
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		remap_velocity_c_X2 = 10.000000
+		vol_mult_a = 0.200000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_valve_handle/impact_a_01.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_a_02.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_valve_handle/impact_b_01.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_b_02.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_b_03.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_valve_handle/impact_c_01.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_c_02.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_c_03.vsnd",
+			"sounds/physics/props/metal_valve_handle/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Barrel = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 1.200000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		remap_velocity_b_Y3 = 1.000000
+		remap_velocity_c_X3 = 50.000000
+		remap_velocity_d_X3 = 60.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 2000.000000
+		distance_max = 2001.000000
+		vol_mult_c = 1.200000
+		vol_mult_d = 1.200000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_barrel/impact_a_01.vsnd",
+			"sounds/physics/props/metal_barrel/impact_a_02.vsnd",
+			"sounds/physics/props/metal_barrel/impact_a_03.vsnd",
+			"sounds/physics/props/metal_barrel/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_barrel/impact_b_01.vsnd",
+			"sounds/physics/props/metal_barrel/impact_b_02.vsnd",
+			"sounds/physics/props/metal_barrel/impact_b_03.vsnd",
+			"sounds/physics/props/metal_barrel/impact_b_04.vsnd",
+			"sounds/physics/props/metal_barrel/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_barrel/impact_c_01.vsnd",
+			"sounds/physics/props/metal_barrel/impact_c_02.vsnd",
+			"sounds/physics/props/metal_barrel/impact_c_03.vsnd",
+			"sounds/physics/props/metal_barrel/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_barrel/impact_d_01.vsnd",
+			"sounds/physics/props/metal_barrel/impact_d_02.vsnd",
+			"sounds/physics/props/metal_barrel/impact_d_03.vsnd",
+			"sounds/physics/props/metal_barrel/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_barrel/contents_01.vsnd",
+			"sounds/physics/props/metal_barrel/contents_02.vsnd",
+			"sounds/physics/props/metal_barrel/contents_03.vsnd",
+			"sounds/physics/props/metal_barrel/contents_04.vsnd",
+			"sounds/physics/props/metal_barrel/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Barrel_Exp = 
+	{
+		base = "PhysImpact_Prop.Metal_Barrel"
+		vol_mult_contents = 0.950000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_barrel/contents_full_01.vsnd",
+			"sounds/physics/props/metal_barrel/contents_full_02.vsnd",
+			"sounds/physics/props/metal_barrel/contents_full_03.vsnd",
+			"sounds/physics/props/metal_barrel/contents_full_04.vsnd",
+			"sounds/physics/props/metal_barrel/contents_full_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Gas_Canister = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_keg/impact_a_01.vsnd",
+			"sounds/physics/props/metal_keg/impact_a_02.vsnd",
+			"sounds/physics/props/metal_keg/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_gas_canister/impact_b_01.vsnd",
+			"sounds/physics/props/metal_gas_canister/impact_b_02.vsnd",
+			"sounds/physics/props/metal_gas_canister/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_gas_canister/impact_c_01.vsnd",
+			"sounds/physics/props/metal_gas_canister/impact_c_02.vsnd",
+			"sounds/physics/props/metal_gas_canister/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_gas_canister/contents_01.vsnd",
+			"sounds/physics/props/metal_gas_canister/contents_02.vsnd",
+			"sounds/physics/props/metal_gas_canister/contents_03.vsnd",
+			"sounds/physics/props/metal_gas_canister/contents_04.vsnd",
+			"sounds/physics/props/metal_gas_canister/contents_05.vsnd",
+			"sounds/physics/props/metal_gas_canister/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Keg = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_keg/impact_a_01.vsnd",
+			"sounds/physics/props/metal_keg/impact_a_02.vsnd",
+			"sounds/physics/props/metal_keg/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_keg/impact_b_01.vsnd",
+			"sounds/physics/props/metal_keg/impact_b_02.vsnd",
+			"sounds/physics/props/metal_keg/impact_b_03.vsnd",
+			"sounds/physics/props/metal_keg/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_keg/impact_c_01.vsnd",
+			"sounds/physics/props/metal_keg/impact_c_02.vsnd",
+			"sounds/physics/props/metal_keg/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_keg/contents_01.vsnd",
+			"sounds/physics/props/metal_keg/contents_02.vsnd",
+			"sounds/physics/props/metal_keg/contents_03.vsnd",
+			"sounds/physics/props/metal_keg/contents_04.vsnd",
+			"sounds/physics/props/metal_keg/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Paintcan = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.550000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_paintcan/impact_a_01.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_02.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_paintcan/impact_b_01.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_b_02.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_b_03.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_paintcan/impact_c_01.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_c_02.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_c_03.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_paintcan/contents_01.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_02.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_03.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_04.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Vase = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_paintcan/impact_a_01.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_02.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_vase/impact_b_01.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_02.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_03.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_vase/impact_c_01.vsnd",
+			"sounds/physics/props/metal_vase/impact_c_02.vsnd",
+			"sounds/physics/props/metal_vase/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Vase_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		pitch = 1.050000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_paintcan/impact_a_01.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_02.vsnd",
+			"sounds/physics/props/metal_paintcan/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_vase/impact_b_01.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_02.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_03.vsnd",
+			"sounds/physics/props/metal_vase/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_vase/impact_c_01.vsnd",
+			"sounds/physics/props/metal_vase/impact_c_02.vsnd",
+			"sounds/physics/props/metal_vase/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Ashtray = 
+	{
+		base = "PhysImpact_Prop.Metal_Paintcan"
+		vgraph_volume_mult = 0.300000
+		use_contents_layer = 0.000000
+		vsnd_files_d = "sounds/common/null.vsnd"
+	}
+	PhysImpact_Prop.Metal_JerryCan = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_jerrycan/impact_a_01.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_a_02.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_jerrycan/impact_b_01.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_b_02.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_b_03.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_jerrycan/impact_c_01.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_c_02.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_jerrycan/impact_d_01.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_d_02.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_d_03.vsnd",
+			"sounds/physics/props/metal_jerrycan/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_jerrycan/contents_01.vsnd",
+			"sounds/physics/props/metal_jerrycan/contents_02.vsnd",
+			"sounds/physics/props/metal_jerrycan/contents_03.vsnd",
+			"sounds/physics/props/metal_jerrycan/contents_04.vsnd",
+			"sounds/physics/props/metal_jerrycan/contents_05.vsnd",
+			"sounds/physics/props/metal_jerrycan/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_JerryCan_Explosive = 
+	{
+		base = "PhysImpact_Prop.Metal_JerryCan"
+	}
+	PhysImpact_Prop.Metal_Trashcan = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_trashcan/impact_a_01.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_a_02.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_trashcan/impact_b_01.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_b_02.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_b_03.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_trashcan/impact_c_01.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_c_02.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_c_03.vsnd",
+			"sounds/physics/props/metal_trashcan/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Bottle_Crate = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.100000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_bottle_crate/impact_a_01.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_a_02.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_a_03.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_bottle_crate/impact_b_01.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_b_02.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_b_03.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_b_04.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_bottle_crate/impact_c_01.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_c_02.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_c_03.vsnd",
+			"sounds/physics/props/metal_bottle_crate/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_geigerbox/shake_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_03.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_04.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_05.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Bucket = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_bucket/impact_a_01.vsnd",
+			"sounds/physics/props/metal_bucket/impact_a_02.vsnd",
+			"sounds/physics/props/metal_bucket/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_bucket/impact_b_01.vsnd",
+			"sounds/physics/props/metal_bucket/impact_b_02.vsnd",
+			"sounds/physics/props/metal_bucket/impact_b_03.vsnd",
+			"sounds/physics/props/metal_bucket/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_bucket/impact_c_01.vsnd",
+			"sounds/physics/props/metal_bucket/impact_c_02.vsnd",
+			"sounds/physics/props/metal_bucket/impact_c_03.vsnd",
+			"sounds/physics/props/metal_bucket/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Shovel = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_shovel/impact_a_01.vsnd",
+			"sounds/physics/props/metal_shovel/impact_a_02.vsnd",
+			"sounds/physics/props/metal_shovel/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_shovel/impact_b_01.vsnd",
+			"sounds/physics/props/metal_shovel/impact_b_02.vsnd",
+			"sounds/physics/props/metal_shovel/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_shovel/impact_c_01.vsnd",
+			"sounds/physics/props/metal_shovel/impact_c_02.vsnd",
+			"sounds/physics/props/metal_shovel/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_shovel/impact_d_01.vsnd",
+			"sounds/physics/props/metal_shovel/impact_d_02.vsnd",
+			"sounds/physics/props/metal_shovel/impact_d_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Chair = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.250000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_chair/impact_a_01.vsnd",
+			"sounds/physics/props/metal_chair/impact_a_02.vsnd",
+			"sounds/physics/props/metal_chair/impact_a_03.vsnd",
+			"sounds/physics/props/metal_chair/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_chair/impact_b_01.vsnd",
+			"sounds/physics/props/metal_chair/impact_b_02.vsnd",
+			"sounds/physics/props/metal_chair/impact_b_03.vsnd",
+			"sounds/physics/props/metal_chair/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_chair/impact_c_01.vsnd",
+			"sounds/physics/props/metal_chair/impact_c_02.vsnd",
+			"sounds/physics/props/metal_chair/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_chair/impact_d_01.vsnd",
+			"sounds/physics/props/metal_chair/impact_d_02.vsnd",
+			"sounds/physics/props/metal_chair/impact_d_03.vsnd",
+			"sounds/physics/props/metal_chair/impact_d_04.vsnd",
+			"sounds/physics/props/metal_chair/impact_d_05.vsnd",
+			"sounds/physics/props/metal_chair/impact_d_06.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_geigerbox/shake_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_03.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_04.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_05.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Coffee_Pot = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_coffee_pot/impact_a_01.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_a_02.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_coffee_pot/impact_b_01.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_b_02.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_b_03.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_coffee_pot/impact_c_01.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_c_02.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_c_03.vsnd",
+			"sounds/physics/props/metal_coffee_pot/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Food_Can = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_food_can_full/impact_a_01.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_a_02.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_food_can_full/impact_b_01.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_b_02.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_food_can_full/impact_c_01.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_c_02.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_c_03.vsnd",
+			"sounds/physics/props/metal_food_can_full/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Food_Can_Empty = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_food_can_empty/impact_a_01.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_a_02.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_food_can_empty/impact_b_01.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_b_02.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_b_03.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_food_can_empty/impact_c_01.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_c_02.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_c_03.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_c_04.vsnd",
+			"sounds/physics/props/metal_food_can_empty/impact_c_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tin = 
+	{
+		type = "hlvr_phys_impact_basic"
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tin_medium/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tin_medium/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_b_03.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tin_medium/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_c_03.vsnd",
+			"sounds/physics/props/metal_tin_medium/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_tin_medium/contents_01.vsnd",
+			"sounds/physics/props/metal_tin_medium/contents_02.vsnd",
+			"sounds/physics/props/metal_tin_medium/contents_03.vsnd",
+			"sounds/physics/props/metal_tin_medium/contents_04.vsnd",
+			"sounds/physics/props/metal_tin_medium/contents_05.vsnd",
+			"sounds/physics/props/metal_tin_medium/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tin_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tin_large/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tin_large/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_b_03.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tin_large/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_c_03.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_c_04.vsnd",
+			"sounds/physics/props/metal_tin_large/impact_c_05.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_tin_large/contents_01.vsnd",
+			"sounds/physics/props/metal_tin_large/contents_02.vsnd",
+			"sounds/physics/props/metal_tin_large/contents_03.vsnd",
+			"sounds/physics/props/metal_tin_large/contents_04.vsnd",
+			"sounds/physics/props/metal_tin_large/contents_05.vsnd",
+			"sounds/physics/props/metal_tin_large/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tin_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vgraph_volume_mult = 0.450000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tin_small/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_a_03.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tin_small/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tin_small/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tin_small/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_tin_small/contents_01.vsnd",
+			"sounds/physics/props/metal_tin_small/contents_02.vsnd",
+			"sounds/physics/props/metal_tin_small/contents_03.vsnd",
+			"sounds/physics/props/metal_tin_small/contents_04.vsnd",
+			"sounds/physics/props/metal_tin_small/contents_05.vsnd",
+			"sounds/physics/props/metal_tin_small/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Aerosol = 
+	{
+		base = "PhysImpact_Prop.Metal_Tin_Small"
+		vol_mult_contents = 0.900000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_aerosol/shake_01.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_02.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_03.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_04.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_05.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_06.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_07.vsnd",
+			"sounds/physics/props/metal_aerosol/shake_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tin_Tiny = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tin_tiny/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tin_tiny/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tin_tiny/impact_a_03.vsnd",
+			"sounds/physics/props/metal_tin_tiny/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tin_tiny/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tin_tiny/impact_b_02.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tin_tiny/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tin_tiny/impact_c_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Mug = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_mug/impact_a_01.vsnd",
+			"sounds/physics/props/metal_mug/impact_a_02.vsnd",
+			"sounds/physics/props/metal_mug/impact_a_03.vsnd",
+			"sounds/physics/props/metal_mug/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_mug/impact_b_01.vsnd",
+			"sounds/physics/props/metal_mug/impact_b_02.vsnd",
+			"sounds/physics/props/metal_mug/impact_b_03.vsnd",
+			"sounds/physics/props/metal_mug/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_mug/impact_c_01.vsnd",
+			"sounds/physics/props/metal_mug/impact_c_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Combine_Battery = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vol_mult_c = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_combine_battery/impact_a_01.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_a_02.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_combine_battery/impact_b_01.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_b_02.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_combine_battery/impact_c_01.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_c_02.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_combine_battery/impact_d_01.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_d_02.vsnd",
+			"sounds/physics/props/metal_combine_battery/impact_d_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_combine_battery/contents_01.vsnd",
+			"sounds/physics/props/metal_combine_battery/contents_02.vsnd",
+			"sounds/physics/props/metal_combine_battery/contents_03.vsnd",
+			"sounds/physics/props/metal_combine_battery/contents_04.vsnd",
+			"sounds/physics/props/metal_combine_battery/contents_05.vsnd",
+			"sounds/physics/props/metal_combine_battery/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Cookware_Pan_A = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_cookware_pan_a/impact_a_01.vsnd",
+			"sounds/physics/props/metal_cookware_pan_a/impact_a_02.vsnd",
+			"sounds/physics/props/metal_cookware_pan_a/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_cookware_pan_a/impact_b_01.vsnd",
+			"sounds/physics/props/metal_cookware_pan_a/impact_b_02.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_cookware_pan_a/impact_c_01.vsnd",
+			"sounds/physics/props/metal_cookware_pan_a/impact_c_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Cookware_Pan_B = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_cookware_pan_b/impact_a_01.vsnd",
+			"sounds/physics/props/metal_cookware_pan_b/impact_a_02.vsnd",
+			"sounds/physics/props/metal_cookware_pan_b/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_cookware_pan_b/impact_b_01.vsnd",
+			"sounds/physics/props/metal_cookware_pan_b/impact_b_02.vsnd",
+			"sounds/physics/props/metal_cookware_pan_b/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_cookware_pan_b/impact_c_01.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Cookware_Pot_A = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_cookware_pot_a/impact_a_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_a_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_a_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_cookware_pot_a/impact_b_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_b_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_b_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_b_04.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_cookware_pot_a/impact_c_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_c_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_c_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_a/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Cookware_Pot_B = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_cookware_pot_b/impact_a_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_a_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_cookware_pot_b/impact_b_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_b_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_b_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_cookware_pot_b/impact_c_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_c_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_c_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_b/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Cookware_Pot_Lid = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_cookware_pot_lid/impact_a_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_a_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_a_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_cookware_pot_lid/impact_b_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_b_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_b_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_cookware_pot_lid/impact_c_01.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_c_02.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_c_03.vsnd",
+			"sounds/physics/props/metal_cookware_pot_lid/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tool = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tool/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tool/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tool/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tool/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_03.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tool/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tool/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tool/impact_c_03.vsnd",
+			"sounds/physics/props/metal_tool/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_tool/contents_01.vsnd",
+			"sounds/physics/props/metal_tool/contents_02.vsnd",
+			"sounds/physics/props/metal_tool/contents_03.vsnd",
+			"sounds/physics/props/metal_tool/contents_04.vsnd",
+			"sounds/physics/props/metal_tool/contents_05.vsnd",
+			"sounds/physics/props/metal_tool/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tool_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tool_small/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tool_small/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tool_small/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_c_03.vsnd",
+			"sounds/physics/props/metal_tool_small/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Misc_Small = 
+	{
+		base = "PhysImpact_Prop.Metal_Tool_Small"
+	}
+	PhysImpact_Prop.Metal_Prop_Small = 
+	{
+		base = "PhysImpact_Prop.Metal_Tool_Small"
+	}
+	PhysImpact_Prop.Metal_Tool_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tool_large/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_a_02.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tool_large/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tool_large/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_c_02.vsnd",
+			"sounds/physics/props/metal_tool_large/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_tool_large/contents_01.vsnd",
+			"sounds/physics/props/metal_tool_large/contents_02.vsnd",
+			"sounds/physics/props/metal_tool_large/contents_03.vsnd",
+			"sounds/physics/props/metal_tool_large/contents_04.vsnd",
+			"sounds/physics/props/metal_tool_large/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Tool_Hammer = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_tool_hammer/impact_a_01.vsnd",
+			"sounds/physics/props/metal_tool_hammer/impact_a_02.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tool_hammer/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tool_hammer/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tool_hammer/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_tool_hammer/impact_c_01.vsnd",
+			"sounds/physics/props/metal_tool_hammer/impact_c_02.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_tool_hammer/impact_d_01.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Wheel_Hub = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_a_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_a_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_b_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_03.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_c_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_03.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Metal_Wheelbarrow = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_wheelbarrow/impact_a_01.vsnd",
+			"sounds/physics/props/metal_wheelbarrow/impact_a_02.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_b_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_03.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_wheel_hub/impact_c_01.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_02.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_03.vsnd",
+			"sounds/physics/props/metal_wheel_hub/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/metal_wheelbarrow/impact_d_01.vsnd",
+			"sounds/physics/props/metal_wheelbarrow/impact_d_02.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_geigerbox/shake_01.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_02.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_03.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_04.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_05.vsnd",
+			"sounds/physics/props/metal_geigerbox/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Paper_Towel = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/paper_towel/impact_a_01.vsnd",
+			"sounds/physics/props/paper_towel/impact_a_02.vsnd",
+			"sounds/physics/props/paper_towel/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/paper_towel/impact_b_01.vsnd",
+			"sounds/physics/props/paper_towel/impact_b_02.vsnd",
+			"sounds/physics/props/paper_towel/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/paper_towel/impact_c_01.vsnd",
+			"sounds/physics/props/paper_towel/impact_c_02.vsnd",
+			"sounds/physics/props/paper_towel/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Paper_Postit = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/paper_postit/impact_a_01.vsnd",
+			"sounds/physics/props/paper_postit/impact_a_02.vsnd",
+			"sounds/physics/props/paper_postit/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/paper_postit/impact_b_01.vsnd",
+			"sounds/physics/props/paper_postit/impact_b_02.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/paper_postit/shake_01.vsnd",
+			"sounds/physics/props/paper_postit/shake_02.vsnd",
+			"sounds/physics/props/paper_postit/shake_03.vsnd",
+			"sounds/physics/props/paper_postit/shake_04.vsnd",
+			"sounds/physics/props/paper_postit/shake_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Paper_Newspaper = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/paper_newspaper/impact_a_01.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_a_02.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/paper_newspaper/impact_b_01.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_b_02.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/paper_newspaper/impact_c_01.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_c_02.vsnd",
+			"sounds/physics/props/paper_newspaper/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/paper_newspaper/shake_01.vsnd",
+			"sounds/physics/props/paper_newspaper/shake_02.vsnd",
+			"sounds/physics/props/paper_newspaper/shake_03.vsnd",
+			"sounds/physics/props/paper_newspaper/shake_04.vsnd",
+			"sounds/physics/props/paper_newspaper/shake_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Pillow = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/pillow/impact_a_01.vsnd",
+			"sounds/physics/props/pillow/impact_a_02.vsnd",
+			"sounds/physics/props/pillow/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/pillow/impact_b_01.vsnd",
+			"sounds/physics/props/pillow/impact_b_02.vsnd",
+			"sounds/physics/props/pillow/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/pillow/impact_c_01.vsnd",
+			"sounds/physics/props/pillow/impact_c_02.vsnd",
+			"sounds/physics/props/pillow/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/pillow/shake_01.vsnd",
+			"sounds/physics/props/pillow/shake_02.vsnd",
+			"sounds/physics/props/pillow/shake_03.vsnd",
+			"sounds/physics/props/pillow/shake_04.vsnd",
+			"sounds/physics/props/pillow/shake_05.vsnd",
+			"sounds/physics/props/pillow/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ration_Bar = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/rationbar/impact_a_01.vsnd",
+			"sounds/physics/props/rationbar/impact_a_02.vsnd",
+			"sounds/physics/props/rationbar/impact_a_03.vsnd",
+			"sounds/physics/props/rationbar/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/rationbar/impact_b_01.vsnd",
+			"sounds/physics/props/rationbar/impact_b_02.vsnd",
+			"sounds/physics/props/rationbar/impact_b_03.vsnd",
+			"sounds/physics/props/rationbar/impact_b_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/rationbar/shake_01.vsnd",
+			"sounds/physics/props/rationbar/shake_02.vsnd",
+			"sounds/physics/props/rationbar/shake_03.vsnd",
+			"sounds/physics/props/rationbar/shake_04.vsnd",
+			"sounds/physics/props/rationbar/shake_05.vsnd",
+			"sounds/physics/props/rationbar/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Soap_Bar = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/soap/impact_a_01.vsnd",
+			"sounds/physics/props/soap/impact_a_02.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/soap/impact_b_01.vsnd",
+			"sounds/physics/props/soap/impact_b_02.vsnd",
+			"sounds/physics/props/soap/impact_b_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Tabletop_Eraser = 
+	{
+		base = "PhysImpact_Prop.Soap_Bar"
+	}
+	PhysImpact_Prop.Leather_Shoe = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/leather_shoe/impact_a_01.vsnd",
+			"sounds/physics/props/leather_shoe/impact_a_02.vsnd",
+			"sounds/physics/props/leather_shoe/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/leather_shoe/impact_b_01.vsnd",
+			"sounds/physics/props/leather_shoe/impact_b_02.vsnd",
+			"sounds/physics/props/leather_shoe/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/leather_shoe/impact_c_01.vsnd",
+			"sounds/physics/props/leather_shoe/impact_c_02.vsnd",
+			"sounds/physics/props/leather_shoe/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Leather_Folder = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/leather_folder/impact_a_01.vsnd",
+			"sounds/physics/props/leather_folder/impact_a_02.vsnd",
+			"sounds/physics/props/leather_folder/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/leather_folder/impact_b_01.vsnd",
+			"sounds/physics/props/leather_folder/impact_b_02.vsnd",
+			"sounds/physics/props/leather_folder/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/leather_folder/impact_c_01.vsnd",
+			"sounds/physics/props/leather_folder/impact_c_02.vsnd",
+			"sounds/physics/props/leather_folder/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/respirator/shake_01.vsnd",
+			"sounds/physics/props/respirator/shake_02.vsnd",
+			"sounds/physics/props/respirator/shake_03.vsnd",
+			"sounds/physics/props/respirator/shake_04.vsnd",
+			"sounds/physics/props/respirator/shake_05.vsnd",
+			"sounds/physics/props/respirator/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Respirator = 
+	{
+		base = "PhysImpact_Prop.Leather_Shoe"
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/respirator/shake_01.vsnd",
+			"sounds/physics/props/respirator/shake_02.vsnd",
+			"sounds/physics/props/respirator/shake_03.vsnd",
+			"sounds/physics/props/respirator/shake_04.vsnd",
+			"sounds/physics/props/respirator/shake_05.vsnd",
+			"sounds/physics/props/respirator/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Crate_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_box/impact_a_01.vsnd",
+			"sounds/physics/props/wood_box/impact_a_02.vsnd",
+			"sounds/physics/props/wood_box/impact_a_03.vsnd",
+			"sounds/physics/props/wood_box/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_crate_large/impact_b_01.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_b_02.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_b_03.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_crate_large/impact_c_01.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_c_02.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_c_03.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/wood_crate_large/impact_d_01.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_d_02.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_d_03.vsnd",
+			"sounds/physics/props/wood_crate_large/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_chair/creak_01.vsnd",
+			"sounds/physics/props/wood_chair/creak_02.vsnd",
+			"sounds/physics/props/wood_chair/creak_03.vsnd",
+			"sounds/physics/props/wood_chair/creak_04.vsnd",
+			"sounds/physics/props/wood_chair/creak_05.vsnd",
+			"sounds/physics/props/wood_chair/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Box = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		pitch = 1.050000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_box/impact_a_01.vsnd",
+			"sounds/physics/props/wood_box/impact_a_02.vsnd",
+			"sounds/physics/props/wood_box/impact_a_03.vsnd",
+			"sounds/physics/props/wood_box/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_box/impact_b_01.vsnd",
+			"sounds/physics/props/wood_box/impact_b_02.vsnd",
+			"sounds/physics/props/wood_box/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_box/impact_c_01.vsnd",
+			"sounds/physics/props/wood_box/impact_c_02.vsnd",
+			"sounds/physics/props/wood_box/impact_c_03.vsnd",
+			"sounds/physics/props/wood_box/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/wood_box/impact_d_01.vsnd",
+			"sounds/physics/props/wood_box/impact_d_02.vsnd",
+			"sounds/physics/props/wood_box/impact_d_03.vsnd",
+			"sounds/physics/props/wood_box/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_plank/creak_01.vsnd",
+			"sounds/physics/props/wood_plank/creak_02.vsnd",
+			"sounds/physics/props/wood_plank/creak_03.vsnd",
+			"sounds/physics/props/wood_plank/creak_04.vsnd",
+			"sounds/physics/props/wood_plank/creak_05.vsnd",
+			"sounds/physics/props/wood_plank/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Crate_Small = 
+	{
+		base = "PhysImpact_Prop.Wood_Box"
+	}
+	PhysImpact_Prop.Wood_Crate = 
+	{
+		base = "PhysImpact_Prop.Wood_Box"
+		pitch = 0.950000
+		vgraph_volume_mult = 0.750000
+	}
+	PhysImpact_Prop.Wood_Crate_Ammo = 
+	{
+		base = "PhysImpact_Prop.Wood_Box"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 1.000000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_ammocrate/contents_01.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_02.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_03.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_04.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_05.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_06.vsnd",
+			"sounds/physics/props/wood_ammocrate/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Gib = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vol_mult_c = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_gib/impact_a_01.vsnd",
+			"sounds/physics/props/wood_gib/impact_a_02.vsnd",
+			"sounds/physics/props/wood_gib/impact_a_03.vsnd",
+			"sounds/physics/props/wood_gib/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_gib/impact_b_01.vsnd",
+			"sounds/physics/props/wood_gib/impact_b_02.vsnd",
+			"sounds/physics/props/wood_gib/impact_b_03.vsnd",
+			"sounds/physics/props/wood_gib/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_gib/impact_c_01.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_02.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_03.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Gib_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.200000
+		vol_mult_c = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_gib_small/impact_a_01.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_a_02.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_a_03.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_gib_small/impact_b_01.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_b_02.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_gib_small/impact_c_01.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_c_02.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_c_03.vsnd",
+			"sounds/physics/props/wood_gib_small/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Plank = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.650000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_plank/impact_a_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_plank/impact_b_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_plank/impact_c_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_c_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_plank/creak_01.vsnd",
+			"sounds/physics/props/wood_plank/creak_02.vsnd",
+			"sounds/physics/props/wood_plank/creak_03.vsnd",
+			"sounds/physics/props/wood_plank/creak_04.vsnd",
+			"sounds/physics/props/wood_plank/creak_05.vsnd",
+			"sounds/physics/props/wood_plank/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Gib_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_plank/impact_a_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_plank/impact_b_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_plank/impact_c_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_c_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Panel = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_plank/impact_a_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_plank/impact_b_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_gib/impact_c_01.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_02.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_03.vsnd",
+			"sounds/physics/props/wood_gib/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Drawer = 
+	{
+		type = "hlvr_phys_impact_basic"
+		pitch = 1.050000
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.650000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_box/impact_a_01.vsnd",
+			"sounds/physics/props/wood_box/impact_a_02.vsnd",
+			"sounds/physics/props/wood_box/impact_a_03.vsnd",
+			"sounds/physics/props/wood_box/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_plank/impact_b_01.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_02.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_03.vsnd",
+			"sounds/physics/props/wood_plank/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_box/impact_b_01.vsnd",
+			"sounds/physics/props/wood_box/impact_b_02.vsnd",
+			"sounds/physics/props/wood_box/impact_b_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_plank/creak_01.vsnd",
+			"sounds/physics/props/wood_plank/creak_02.vsnd",
+			"sounds/physics/props/wood_plank/creak_03.vsnd",
+			"sounds/physics/props/wood_plank/creak_04.vsnd",
+			"sounds/physics/props/wood_plank/creak_05.vsnd",
+			"sounds/physics/props/wood_plank/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Pic_Frame_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.200000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_picture_frame_lg/impact_b_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_b_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_plank/creak_01.vsnd",
+			"sounds/physics/props/wood_plank/creak_02.vsnd",
+			"sounds/physics/props/wood_plank/creak_03.vsnd",
+			"sounds/physics/props/wood_plank/creak_04.vsnd",
+			"sounds/physics/props/wood_plank/creak_05.vsnd",
+			"sounds/physics/props/wood_plank/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Pic_Frame_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.450000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/impact_a_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_a_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/impact_c_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_c_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/shake_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_03.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_04.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_05.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Pic_Frame_Med = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		pitch = 1.050000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_lg/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_picture_frame_sm/shake_01.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_02.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_03.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_04.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_05.vsnd",
+			"sounds/physics/props/wood_picture_frame_sm/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Furniture = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.550000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_furniture/impact_a_01.vsnd",
+			"sounds/physics/props/wood_furniture/impact_a_02.vsnd",
+			"sounds/physics/props/wood_furniture/impact_a_03.vsnd",
+			"sounds/physics/props/wood_furniture/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_furniture/impact_b_01.vsnd",
+			"sounds/physics/props/wood_furniture/impact_b_02.vsnd",
+			"sounds/physics/props/wood_furniture/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_furniture/impact_c_01.vsnd",
+			"sounds/physics/props/wood_furniture/impact_c_02.vsnd",
+			"sounds/physics/props/wood_furniture/impact_c_03.vsnd",
+			"sounds/physics/props/wood_furniture/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/wood_furniture/impact_d_01.vsnd",
+			"sounds/physics/props/wood_furniture/impact_d_02.vsnd",
+			"sounds/physics/props/wood_furniture/impact_d_03.vsnd",
+			"sounds/physics/props/wood_furniture/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_chair/creak_01.vsnd",
+			"sounds/physics/props/wood_chair/creak_02.vsnd",
+			"sounds/physics/props/wood_chair/creak_03.vsnd",
+			"sounds/physics/props/wood_chair/creak_04.vsnd",
+			"sounds/physics/props/wood_chair/creak_05.vsnd",
+			"sounds/physics/props/wood_chair/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Chair = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		vol_mult_d = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.350000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_chair/impact_a_01.vsnd",
+			"sounds/physics/props/wood_chair/impact_a_02.vsnd",
+			"sounds/physics/props/wood_chair/impact_a_03.vsnd",
+			"sounds/physics/props/wood_chair/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_chair/impact_b_01.vsnd",
+			"sounds/physics/props/wood_chair/impact_b_02.vsnd",
+			"sounds/physics/props/wood_chair/impact_b_03.vsnd",
+			"sounds/physics/props/wood_chair/impact_b_04.vsnd",
+			"sounds/physics/props/wood_chair/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_chair/impact_c_01.vsnd",
+			"sounds/physics/props/wood_chair/impact_c_02.vsnd",
+			"sounds/physics/props/wood_chair/impact_c_03.vsnd",
+			"sounds/physics/props/wood_chair/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/wood_chair/impact_d_01.vsnd",
+			"sounds/physics/props/wood_chair/impact_d_02.vsnd",
+			"sounds/physics/props/wood_chair/impact_d_03.vsnd",
+			"sounds/physics/props/wood_chair/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_plank/creak_01.vsnd",
+			"sounds/physics/props/wood_plank/creak_02.vsnd",
+			"sounds/physics/props/wood_plank/creak_03.vsnd",
+			"sounds/physics/props/wood_plank/creak_04.vsnd",
+			"sounds/physics/props/wood_plank/creak_05.vsnd",
+			"sounds/physics/props/wood_plank/creak_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Wood_Chair_Light = 
+	{
+		base = "PhysImpact_Prop.Wood_Chair"
+		vgraph_volume_mult = 0.600000
+		vol_mult_d = 0.200000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+	}
+	PhysImpact_Prop.Wood_Radio = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.550000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vol_mult_d = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/wood_radio/impact_a_01.vsnd",
+			"sounds/physics/props/wood_radio/impact_a_02.vsnd",
+			"sounds/physics/props/wood_radio/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/wood_radio/impact_b_01.vsnd",
+			"sounds/physics/props/wood_radio/impact_b_02.vsnd",
+			"sounds/physics/props/wood_radio/impact_b_03.vsnd",
+			"sounds/physics/props/wood_radio/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/wood_radio/impact_c_01.vsnd",
+			"sounds/physics/props/wood_radio/impact_c_02.vsnd",
+			"sounds/physics/props/wood_radio/impact_c_03.vsnd",
+			"sounds/physics/props/wood_radio/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/wood_radio/impact_d_01.vsnd",
+			"sounds/physics/props/wood_radio/impact_d_02.vsnd",
+			"sounds/physics/props/wood_radio/impact_d_03.vsnd",
+			"sounds/physics/props/wood_radio/impact_d_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/wood_radio/contents_01.vsnd",
+			"sounds/physics/props/wood_radio/contents_02.vsnd",
+			"sounds/physics/props/wood_radio/contents_03.vsnd",
+			"sounds/physics/props/wood_radio/contents_04.vsnd",
+			"sounds/physics/props/wood_radio/contents_05.vsnd",
+			"sounds/physics/props/wood_radio/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Health_Pen = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/health_pen/impact_a_01.vsnd",
+			"sounds/physics/props/health_pen/impact_a_02.vsnd",
+			"sounds/physics/props/health_pen/impact_a_03.vsnd",
+			"sounds/physics/props/health_pen/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/health_pen/impact_b_01.vsnd",
+			"sounds/physics/props/health_pen/impact_b_02.vsnd",
+			"sounds/physics/props/health_pen/impact_b_03.vsnd",
+			"sounds/physics/props/health_pen/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/health_pen/impact_c_01.vsnd",
+			"sounds/physics/props/health_pen/impact_c_02.vsnd",
+			"sounds/physics/props/health_pen/impact_c_03.vsnd",
+			"sounds/physics/props/health_pen/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/health_pen/contents_01.vsnd",
+			"sounds/physics/props/health_pen/contents_02.vsnd",
+			"sounds/physics/props/health_pen/contents_03.vsnd",
+			"sounds/physics/props/health_pen/contents_04.vsnd",
+			"sounds/physics/props/health_pen/contents_05.vsnd",
+			"sounds/physics/props/health_pen/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Xen_Resin_Puck = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vol_mult_c = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_a_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_a_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_b_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_b_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_c_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_c_02.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/xen_resin_puck/contents_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_03.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_04.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Xen_Resin_Stack = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_a_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_a_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_b_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_b_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_c_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_c_02.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/xen_resin_puck/impact_d_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_d_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/impact_d_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/xen_resin_puck/contents_01.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_02.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_03.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_04.vsnd",
+			"sounds/physics/props/xen_resin_puck/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Flesh = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vol_mult_c = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/flesh/impact_a_01.vsnd",
+			"sounds/physics/props/flesh/impact_a_02.vsnd",
+			"sounds/physics/props/flesh/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/flesh/impact_b_01.vsnd",
+			"sounds/physics/props/flesh/impact_b_02.vsnd",
+			"sounds/physics/props/flesh/impact_b_03.vsnd",
+			"sounds/physics/props/flesh/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/flesh/impact_c_01.vsnd",
+			"sounds/physics/props/flesh/impact_c_02.vsnd",
+			"sounds/physics/props/flesh/impact_c_03.vsnd",
+			"sounds/physics/props/flesh/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/flesh/shake_01.vsnd",
+			"sounds/physics/props/flesh/shake_02.vsnd",
+			"sounds/physics/props/flesh/shake_03.vsnd",
+			"sounds/physics/props/flesh/shake_04.vsnd",
+			"sounds/physics/props/flesh/shake_05.vsnd",
+			"sounds/physics/props/flesh/shake_06.vsnd",
+			"sounds/physics/props/flesh/shake_07.vsnd",
+			"sounds/physics/props/flesh/shake_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Flesh_Bloody = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vol_mult_c = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/flesh_bloody/impact_a_01.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_a_02.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/flesh_bloody/impact_b_01.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_b_02.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_b_03.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/flesh_bloody/impact_c_01.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_c_02.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_c_03.vsnd",
+			"sounds/physics/props/flesh_bloody/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/flesh_bloody/shake_01.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_02.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_03.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_04.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_05.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_06.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_07.vsnd",
+			"sounds/physics/props/flesh_bloody/shake_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Flesh_Bloody_Small = 
+	{
+		base = "PhysImpact_Prop.Flesh_Bloody"
+		vgraph_volume_mult = 0.350000
+		vol_mult_c = 0.400000
+	}
+	PhysImpact_Prop.Plastic_Paint_Pail = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.650000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_traffic_cone/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_paint_pail/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_paint_pail/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_paint_pail/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_paintcan/contents_01.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_02.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_03.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_04.vsnd",
+			"sounds/physics/props/metal_paintcan/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Marker_Pen = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_marker_pen/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_marker_pen/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_marker_pen/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_marker_pen/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Barrel = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_barrel/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_barrel/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_barrel/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_barrel/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_barrel/impact_d_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Crate = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_crate/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_crate/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_crate/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_crate/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_crate/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_crate/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_crate/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Crate_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 1.100000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_crate_large/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_d_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/impact_d_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_crate_large/contents_01.vsnd",
+			"sounds/physics/props/plastic_crate_large/contents_02.vsnd",
+			"sounds/physics/props/plastic_crate_large/contents_03.vsnd",
+			"sounds/physics/props/plastic_crate_large/contents_04.vsnd",
+			"sounds/physics/props/plastic_crate_large/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Traffic_Cone = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_traffic_cone/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_traffic_cone/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_traffic_cone/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_traffic_cone/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_traffic_cone/impact_d_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Traffic_Drum = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_traffic_drum/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_traffic_drum/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_traffic_drum/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_traffic_drum/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_d_02.vsnd",
+			"sounds/physics/props/plastic_traffic_drum/impact_d_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Tray = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_crate/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_crate/impact_b_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Mask_Toy = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_misc_small/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_misc_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_crate/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_crate/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_crate/impact_a_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Small_Empty = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_small/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_small/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_bottle_small/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_c_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Small = 
+	{
+		base = "PhysImpact_Prop.Plastic_Bottle_Small_Empty"
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.650000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_bottle_small/contents_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_03.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_04.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_05.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_large/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_bottle_large/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_bottle_large/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_bottle_small/contents_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_03.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_04.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_05.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Fivegal_Empty = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_fivegal/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_a_03.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_fivegal/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_bottle_fivegal/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_c_04.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/plastic_bottle_fivegal/impact_d_01.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_d_02.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_d_03.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/impact_d_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Fivegal = 
+	{
+		base = "PhysImpact_Prop.Plastic_Bottle_Fivegal_Empty"
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_bottle_fivegal/contents_01.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/contents_02.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/contents_03.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/contents_04.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/contents_05.vsnd",
+			"sounds/physics/props/plastic_bottle_fivegal/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Bleach = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_bleach/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_bleach/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_bottle_bleach/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_bottle_bleach/contents_01.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/contents_02.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/contents_03.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/contents_04.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/contents_05.vsnd",
+			"sounds/physics/props/plastic_bottle_bleach/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Dishsoap = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_bottle_dishsoap/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_bottle_small/contents_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_03.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_04.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_05.vsnd",
+			"sounds/physics/props/plastic_bottle_small/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Bottle_Cap = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.250000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_bottle_small/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_bottle_small/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_bottle_small/impact_b_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Pill_Bottle_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_small/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_small/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_small/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_small/contents_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_03.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_04.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_05.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_06.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_07.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_small/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Pill_Bottle_Large = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_pill_bottle_large/contents_01.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_02.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_03.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_04.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_05.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_06.vsnd",
+			"sounds/physics/props/plastic_pill_bottle_large/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Safety_Hat = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.650000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_safety_hat/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_a_03.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_safety_hat/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_safety_hat/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_safety_hat/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Trashcan = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_trashcan/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_03.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_trashcan/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_trashcan/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Trashcan_Lid = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vol_mult_c = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_trashcan/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_03.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_misc_med/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_misc_med/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_trashcan/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_trashcan/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Stapler = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_stapler/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_stapler/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_stapler/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_stapler/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_stapler/rattle_01.vsnd",
+			"sounds/physics/props/plastic_stapler/rattle_02.vsnd",
+			"sounds/physics/props/plastic_stapler/rattle_03.vsnd",
+			"sounds/physics/props/plastic_stapler/rattle_04.vsnd",
+			"sounds/physics/props/plastic_stapler/rattle_05.vsnd",
+			"sounds/physics/props/plastic_stapler/rattle_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Radio = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_radio/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_radio/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_radio/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_radio/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_radio/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_radio/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_radio/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_radio/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_radio/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/computer/contents_01.vsnd",
+			"sounds/physics/props/computer/contents_02.vsnd",
+			"sounds/physics/props/computer/contents_03.vsnd",
+			"sounds/physics/props/computer/contents_04.vsnd",
+			"sounds/physics/props/computer/contents_05.vsnd",
+			"sounds/physics/props/computer/contents_06.vsnd",
+			"sounds/physics/props/computer/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Plastic_Fan = 
+	{
+		base = "PhysImpact_Prop.Plastic_Radio"
+	}
+	PhysImpact_Prop.Plastic_VHS = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.650000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/plastic_vhs/impact_a_01.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_a_02.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/plastic_vhs/impact_b_01.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_b_02.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_b_03.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/plastic_vhs/impact_c_01.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_c_02.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_c_03.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_c_04.vsnd",
+			"sounds/physics/props/plastic_vhs/impact_c_05.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/plastic_vhs/rattle_01.vsnd",
+			"sounds/physics/props/plastic_vhs/rattle_02.vsnd",
+			"sounds/physics/props/plastic_vhs/rattle_03.vsnd",
+			"sounds/physics/props/plastic_vhs/rattle_04.vsnd",
+			"sounds/physics/props/plastic_vhs/rattle_05.vsnd",
+			"sounds/physics/props/plastic_vhs/rattle_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Keyfob = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/metal_keyfob/impact_a_01.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_a_02.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_keyfob/impact_b_01.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_b_02.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/metal_keyfob/impact_c_01.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_c_02.vsnd",
+			"sounds/physics/props/metal_keyfob/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/metal_keyfob/jingle_01.vsnd",
+			"sounds/physics/props/metal_keyfob/jingle_02.vsnd",
+			"sounds/physics/props/metal_keyfob/jingle_03.vsnd",
+			"sounds/physics/props/metal_keyfob/jingle_04.vsnd",
+			"sounds/physics/props/metal_keyfob/jingle_05.vsnd",
+			"sounds/physics/props/metal_keyfob/jingle_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Pottery_Flowerpot = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/pottery_flowerpot/impact_a_01.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_a_02.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/pottery_flowerpot/impact_b_01.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_b_02.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/pottery_flowerpot/impact_c_01.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_c_02.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_c_03.vsnd",
+			"sounds/physics/props/pottery_flowerpot/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Pottery_Gnome = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.450000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/pottery_gnome/impact_a_01.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_a_02.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_a_03.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/pottery_gnome/impact_b_01.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_b_02.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/pottery_gnome/impact_c_01.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_c_02.vsnd",
+			"sounds/physics/props/pottery_gnome/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/pottery_gnome/contents_01.vsnd",
+			"sounds/physics/props/pottery_gnome/contents_02.vsnd",
+			"sounds/physics/props/pottery_gnome/contents_03.vsnd",
+			"sounds/physics/props/pottery_gnome/contents_04.vsnd",
+			"sounds/physics/props/pottery_gnome/contents_05.vsnd",
+			"sounds/physics/props/pottery_gnome/contents_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Ceramic_Jar = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/ceramic_jar/impact_a_01.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_a_02.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/ceramic_jar/impact_b_01.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_b_02.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_b_03.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/ceramic_jar/impact_c_01.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_c_02.vsnd",
+			"sounds/physics/props/ceramic_jar/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Chunk = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_chunk/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_chunk/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_chunk/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_chunk/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Sink = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_sink/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_sink/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_sink/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_sink/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/porcelain_sink/impact_d_01.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Plate = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_plate/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_a_03.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_plate/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_b_03.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_plate/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_plate/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Mug = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_mug/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_a_03.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_mug/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_mug/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_mug/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Teapot = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_teapot/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_a_03.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_teapot/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_teapot/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_teapot/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/porcelain_teapot/contents_01.vsnd",
+			"sounds/physics/props/porcelain_teapot/contents_02.vsnd",
+			"sounds/physics/props/porcelain_teapot/contents_03.vsnd",
+			"sounds/physics/props/porcelain_teapot/contents_04.vsnd",
+			"sounds/physics/props/porcelain_teapot/contents_05.vsnd",
+		]
+	}
+	PhysImpact_Prop.Porcelain_Shard = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/porcelain_shard/impact_a_01.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_a_02.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_a_03.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/porcelain_shard/impact_b_01.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_b_02.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/porcelain_shard/impact_c_01.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_c_02.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_c_03.vsnd",
+			"sounds/physics/props/porcelain_shard/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Pottery_Shard = 
+	{
+		base = "PhysImpact_Prop.Porcelain_Shard"
+	}
+	PhysImpact_Prop.Computer = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.850000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/computer/impact_a_01.vsnd",
+			"sounds/physics/props/computer/impact_a_02.vsnd",
+			"sounds/physics/props/computer/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/computer/impact_b_01.vsnd",
+			"sounds/physics/props/computer/impact_b_02.vsnd",
+			"sounds/physics/props/computer/impact_b_03.vsnd",
+			"sounds/physics/props/computer/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/computer/impact_c_01.vsnd",
+			"sounds/physics/props/computer/impact_c_02.vsnd",
+			"sounds/physics/props/computer/impact_c_03.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/computer/impact_d_01.vsnd",
+			"sounds/physics/props/computer/impact_d_02.vsnd",
+			"sounds/physics/props/computer/impact_d_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/computer/contents_01.vsnd",
+			"sounds/physics/props/computer/contents_02.vsnd",
+			"sounds/physics/props/computer/contents_03.vsnd",
+			"sounds/physics/props/computer/contents_04.vsnd",
+			"sounds/physics/props/computer/contents_05.vsnd",
+			"sounds/physics/props/computer/contents_06.vsnd",
+			"sounds/physics/props/computer/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Computer_Small = 
+	{
+		base = "PhysImpact_Prop.Computer"
+		vgraph_volume_mult = 0.650000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vol_mult_d = 0.200000
+	}
+	PhysImpact_Prop.Computer_Keyboard = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.950000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/computer_keyboard/impact_a_01.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_02.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_03.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/computer_keyboard/impact_b_01.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_b_02.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_b_03.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/computer_keyboard/impact_c_01.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_c_02.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/computer_keyboard/rattle_01.vsnd",
+			"sounds/physics/props/computer_keyboard/rattle_02.vsnd",
+			"sounds/physics/props/computer_keyboard/rattle_03.vsnd",
+			"sounds/physics/props/computer_keyboard/rattle_04.vsnd",
+			"sounds/physics/props/computer_keyboard/rattle_05.vsnd",
+			"sounds/physics/props/computer_keyboard/rattle_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.PopCan_Full = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/popcan_full/impact_a_01.vsnd",
+			"sounds/physics/props/popcan_full/impact_a_02.vsnd",
+			"sounds/physics/props/popcan_full/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/popcan_full/impact_b_01.vsnd",
+			"sounds/physics/props/popcan_full/impact_b_02.vsnd",
+			"sounds/physics/props/popcan_full/impact_b_03.vsnd",
+			"sounds/physics/props/popcan_full/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/popcan_full/impact_c_01.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_02.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_03.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.PopCan_Open = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/popcan_open/impact_a_01.vsnd",
+			"sounds/physics/props/popcan_open/impact_a_02.vsnd",
+			"sounds/physics/props/popcan_open/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/popcan_open/impact_b_01.vsnd",
+			"sounds/physics/props/popcan_open/impact_b_02.vsnd",
+			"sounds/physics/props/popcan_open/impact_b_03.vsnd",
+			"sounds/physics/props/popcan_open/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/popcan_open/impact_c_01.vsnd",
+			"sounds/physics/props/popcan_open/impact_c_02.vsnd",
+			"sounds/physics/props/popcan_open/impact_c_03.vsnd",
+			"sounds/physics/props/popcan_open/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Grenade = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		vol_mult_c = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/grenade/impact_a_01.vsnd",
+			"sounds/physics/props/grenade/impact_a_02.vsnd",
+			"sounds/physics/props/grenade/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/grenade/impact_b_01.vsnd",
+			"sounds/physics/props/grenade/impact_b_02.vsnd",
+			"sounds/physics/props/grenade/impact_b_03.vsnd",
+			"sounds/physics/props/grenade/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/grenade/impact_c_01.vsnd",
+			"sounds/physics/props/grenade/impact_c_02.vsnd",
+			"sounds/physics/props/grenade/impact_c_03.vsnd",
+			"sounds/physics/props/grenade/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/grenade/rattle_01.vsnd",
+			"sounds/physics/props/grenade/rattle_02.vsnd",
+			"sounds/physics/props/grenade/rattle_03.vsnd",
+			"sounds/physics/props/grenade/rattle_04.vsnd",
+			"sounds/physics/props/grenade/rattle_05.vsnd",
+			"sounds/physics/props/grenade/rattle_06.vsnd",
+			"sounds/physics/props/grenade/rattle_07.vsnd",
+			"sounds/physics/props/grenade/rattle_08.vsnd",
+			"sounds/physics/props/grenade/rattle_09.vsnd",
+		]
+	}
+	PhysImpact_Prop.Combine_Console_Tank = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/combine_console_tank/impact_a_01.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_a_02.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/combine_console_tank/impact_b_01.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_b_02.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/combine_console_tank/impact_c_01.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_c_02.vsnd",
+			"sounds/physics/props/combine_console_tank/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/glass_health_vial/contents_01.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_02.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_03.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_04.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_05.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_06.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_07.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Health_Vial = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/glass_health_vial/impact_a_01.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_a_02.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_health_vial/impact_b_01.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_b_02.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_health_vial/impact_c_01.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_c_02.vsnd",
+			"sounds/physics/props/glass_health_vial/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/glass_health_vial/contents_01.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_02.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_03.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_04.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_05.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_06.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_07.vsnd",
+			"sounds/physics/props/glass_health_vial/contents_08.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Bottle_Base = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vol_mult_a = 0.700000
+		vol_mult_b = 0.700000
+	}
+	PhysImpact_Prop.Glass_Bottle_Large_Spirits = 
+	{
+		base = "PhysImpact_Prop.Glass_Bottle_Base"
+		vgraph_volume_mult = 0.900000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/glass_bottle_wine/impact_a_01.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_a_02.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_bottle_large_spirits/impact_b_01.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/impact_b_02.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_bottle_large_spirits/impact_c_01.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/impact_c_02.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/glass_bottle_large_spirits/contents_01.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_02.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_03.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_04.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_05.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_06.vsnd",
+			"sounds/physics/props/glass_bottle_large_spirits/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Bottle_Large_Wine = 
+	{
+		base = "PhysImpact_Prop.Glass_Bottle_Large_Spirits"
+		vgraph_volume_mult = 0.700000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_bottle_wine/impact_b_01.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_b_02.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_bottle_wine/impact_c_01.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_c_02.vsnd",
+			"sounds/physics/props/glass_bottle_wine/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Bottle_Small_Beer = 
+	{
+		base = "PhysImpact_Prop.Glass_Bottle_Base"
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.300000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/glass_bottle_small_beer/impact_a_01.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_a_02.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_bottle_small_beer/impact_b_01.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_b_02.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_bottle_small_beer/impact_c_01.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_c_02.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/glass_bottle_small_beer/contents_01.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_02.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_03.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_04.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_05.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_06.vsnd",
+			"sounds/physics/props/glass_bottle_small_beer/contents_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Bottle_Shard = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/glass_bottle_shard/impact_a_01.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_a_02.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_a_03.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_bottle_shard/impact_b_01.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_b_02.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_b_03.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_b_04.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_bottle_shard/impact_c_01.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_c_02.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_c_03.vsnd",
+			"sounds/physics/props/glass_bottle_shard/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Prop_Small = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/glass_prop_small/impact_a_01.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_a_02.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/glass_prop_small/impact_b_01.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_b_02.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/glass_prop_small/impact_c_01.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_c_02.vsnd",
+			"sounds/physics/props/glass_prop_small/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Glass_Jar = 
+	{
+		base = "PhysImpact_Prop.Glass_Bottle_Small_Beer"
+		use_contents_layer = 0.000000
+	}
+	PhysImpact_Prop.Rubber_Tire = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/rubber_tire/impact_a_01.vsnd",
+			"sounds/physics/props/rubber_tire/impact_a_02.vsnd",
+			"sounds/physics/props/rubber_tire/impact_a_03.vsnd",
+			"sounds/physics/props/rubber_tire/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/rubber_tire/impact_b_01.vsnd",
+			"sounds/physics/props/rubber_tire/impact_b_02.vsnd",
+			"sounds/physics/props/rubber_tire/impact_b_03.vsnd",
+			"sounds/physics/props/rubber_tire/impact_b_04.vsnd",
+			"sounds/physics/props/rubber_tire/impact_b_05.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/rubber_tire/impact_c_01.vsnd",
+			"sounds/physics/props/rubber_tire/impact_c_02.vsnd",
+			"sounds/physics/props/rubber_tire/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Rubber_Glove = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/rubber_glove/impact_a_01.vsnd",
+			"sounds/physics/props/rubber_glove/impact_a_02.vsnd",
+			"sounds/physics/props/rubber_glove/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/rubber_glove/impact_b_01.vsnd",
+			"sounds/physics/props/rubber_glove/impact_b_02.vsnd",
+			"sounds/physics/props/rubber_glove/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/rubber_glove/impact_c_01.vsnd",
+			"sounds/physics/props/rubber_glove/impact_c_02.vsnd",
+			"sounds/physics/props/rubber_glove/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/rubber_glove/shake_01.vsnd",
+			"sounds/physics/props/rubber_glove/shake_02.vsnd",
+			"sounds/physics/props/rubber_glove/shake_03.vsnd",
+			"sounds/physics/props/rubber_glove/shake_04.vsnd",
+			"sounds/physics/props/rubber_glove/shake_05.vsnd",
+			"sounds/physics/props/rubber_glove/shake_06.vsnd",
+			"sounds/physics/props/rubber_glove/shake_07.vsnd",
+		]
+	}
+	PhysImpact_Prop.Rubber_Plunger = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/rubber_boot/impact_a_01.vsnd",
+			"sounds/physics/props/rubber_boot/impact_a_02.vsnd",
+			"sounds/physics/props/rubber_boot/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/rubber_boot/impact_b_01.vsnd",
+			"sounds/physics/props/rubber_boot/impact_b_02.vsnd",
+			"sounds/physics/props/rubber_boot/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/rubber_boot/impact_c_01.vsnd",
+			"sounds/physics/props/rubber_boot/impact_c_02.vsnd",
+			"sounds/physics/props/rubber_boot/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Rubber_Boot = 
+	{
+		base = "PhysImpact_Prop.Rubber_Plunger"
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/rubber_boot/shake_01.vsnd",
+			"sounds/physics/props/rubber_boot/shake_02.vsnd",
+			"sounds/physics/props/rubber_boot/shake_03.vsnd",
+			"sounds/physics/props/rubber_boot/shake_04.vsnd",
+			"sounds/physics/props/rubber_boot/shake_05.vsnd",
+			"sounds/physics/props/rubber_boot/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Telephone_Rotary = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.750000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.900000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		remap_velocity_d_X2 = 40.000000
+		remap_velocity_d_Y2 = 0.000000
+		remap_velocity_d_X3 = 51.000000
+		remap_velocity_d_Y3 = 0.800000
+		remap_velocity_d_X4 = 60.000000
+		remap_velocity_d_Y4 = 1.000000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/telephone_rotary/impact_a_01.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_a_02.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/telephone_rotary/impact_b_01.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_b_02.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/telephone_rotary/impact_c_01.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_c_02.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_c_03.vsnd",
+			"sounds/physics/props/telephone_rotary/impact_c_04.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/telephone_rotary/contents_01.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_02.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_03.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_04.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_05.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_06.vsnd",
+			"sounds/physics/props/telephone_rotary/contents_07.vsnd",
+		]
+		vsnd_files_d = 
+		[
+			"sounds/physics/props/telephone_rotary/bell_01.vsnd",
+			"sounds/physics/props/telephone_rotary/bell_02.vsnd",
+		]
+	}
+	PhysImpact_Prop.GPU = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		vol_mult_c = 0.700000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/computer_keyboard/impact_a_01.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_02.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_03.vsnd",
+			"sounds/physics/props/computer_keyboard/impact_a_04.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/metal_tool/impact_b_01.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_02.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_03.vsnd",
+			"sounds/physics/props/metal_tool/impact_b_04.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/popcan_full/impact_c_01.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_02.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_03.vsnd",
+			"sounds/physics/props/popcan_full/impact_c_04.vsnd",
+		]
+	}
+	PhysImpact_Prop.Billiard_Ball = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.500000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/billiard_ball/impact_a_01.vsnd",
+			"sounds/physics/props/billiard_ball/impact_a_02.vsnd",
+			"sounds/physics/props/billiard_ball/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/billiard_ball/impact_b_01.vsnd",
+			"sounds/physics/props/billiard_ball/impact_b_02.vsnd",
+			"sounds/physics/props/billiard_ball/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/billiard_ball/impact_c_01.vsnd",
+			"sounds/physics/props/billiard_ball/impact_c_02.vsnd",
+			"sounds/physics/props/billiard_ball/impact_c_03.vsnd",
+		]
+	}
+	PhysImpact_Prop.Foliage_Stem = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.400000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.800000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/foliage_stem/impact_a_01.vsnd",
+			"sounds/physics/props/foliage_stem/impact_a_02.vsnd",
+			"sounds/physics/props/foliage_stem/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/foliage_stem/impact_b_01.vsnd",
+			"sounds/physics/props/foliage_stem/impact_b_02.vsnd",
+			"sounds/physics/props/foliage_stem/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/foliage_stem/impact_c_01.vsnd",
+			"sounds/physics/props/foliage_stem/impact_c_02.vsnd",
+			"sounds/physics/props/foliage_stem/impact_c_03.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/foliage_stem/shake_01.vsnd",
+			"sounds/physics/props/foliage_stem/shake_02.vsnd",
+			"sounds/physics/props/foliage_stem/shake_03.vsnd",
+			"sounds/physics/props/foliage_stem/shake_04.vsnd",
+			"sounds/physics/props/foliage_stem/shake_05.vsnd",
+			"sounds/physics/props/foliage_stem/shake_06.vsnd",
+		]
+	}
+	PhysImpact_Prop.Calculator = 
+	{
+		type = "hlvr_phys_impact_basic"
+		vgraph_volume_mult = 0.600000
+		use_contents_layer = 1.000000
+		vol_mult_contents = 0.850000
+		vsnd_files_a = 
+		[
+			"sounds/physics/props/calculator/impact_a_01.vsnd",
+			"sounds/physics/props/calculator/impact_a_02.vsnd",
+			"sounds/physics/props/calculator/impact_a_03.vsnd",
+		]
+		vsnd_files_b = 
+		[
+			"sounds/physics/props/calculator/impact_b_01.vsnd",
+			"sounds/physics/props/calculator/impact_b_02.vsnd",
+			"sounds/physics/props/calculator/impact_b_03.vsnd",
+		]
+		vsnd_files_c = 
+		[
+			"sounds/physics/props/calculator/impact_c_01.vsnd",
+			"sounds/physics/props/calculator/impact_c_02.vsnd",
+		]
+		vsnd_files_contents = 
+		[
+			"sounds/physics/props/calculator/contents_01.vsnd",
+			"sounds/physics/props/calculator/contents_02.vsnd",
+			"sounds/physics/props/calculator/contents_03.vsnd",
+			"sounds/physics/props/calculator/contents_04.vsnd",
+			"sounds/physics/props/calculator/contents_05.vsnd",
+			"sounds/physics/props/calculator/contents_06.vsnd",
+		]
+	}
+	PhysNull.Walk = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysNull.Impact = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysNull.Scrape = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysNull.Bullet = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysNull.Roll = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysNull.Strain = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+}

@@ -1,0 +1,124 @@
+/* ========== Sibling Styles ========== */
+.base_info_panel_collapse
+{
+	visibility: collapse;
+	width: 100%;
+	flow-children: down;
+}
+
+.base_info_panel
+{
+	width: 848px;
+	flow-children: down;
+}
+
+.header_info_panel
+{
+	width: 100%;
+	height: 12px;
+	margin: 0px;
+	background-color: #FFBE55;
+}
+
+.label
+{
+	margin-top: -1px;
+	padding-right: 40px;
+	vertical-align: center;
+	flow-children: down;    
+
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	/* text-shadow: 0px 0px 120px 3 #f4ec8e33; */
+
+}
+
+.save_info
+{
+	width: 100%;
+}
+
+/* =========================================================== */
+.show_save_container #save_info_container,
+.show_load_item_pause #save_info_container,
+.show_photo_mode_container #photo_mode_container
+{
+	visibility: visible;
+}
+
+.show_options_desc #options_information,
+.show_load_item #save_info_container,
+.show_override_newgame_item #override_newgame_item_container,
+.show_chapter_item_01 #chapter_item_container_01,
+.show_chapter_item_02 #chapter_item_container_01
+{
+	visibility: visible;
+}
+
+/* Hearts Health */
+.Container_Health
+{
+	width: 280px;
+	color: #f6c41f;
+	height: 137.5px;
+	padding-top: 11px;
+	padding-bottom: 11.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	flow-children: down;
+	background-color: #00000099;
+	border-radius: 10px;
+}
+
+.Container_Hearts
+{
+	flow-children: right;
+	height: 64px;
+	margin-top: 5px;
+	ui-scale: 60%;
+}
+
+.Icon_Heart
+{
+	width: 64px;
+	height: 64px;
+	background-image: url("s2r://panorama/images/hud/hud_icon_health_heart_sheet_png.vtex");
+	background-size: 384px 64px;
+	wash-color: #FFBE55;
+}
+
+#health_heart_2.Icon_Heart
+{
+	margin-left: 21.5px;
+	margin-right: 21.5px;
+}
+
+.health_icon_0
+{
+	background-position: 0px 0px;
+}
+
+.health_icon_1
+{
+	background-position: -64px 0px;
+}
+
+.health_icon_2
+{
+	background-position: -128px 0px;
+}
+
+.health_icon_3
+{
+	background-position: -192px 0px;
+}
+
+.health_icon_4
+{
+	background-position: -256px 0px;
+}
+
+.health_icon_63
+{
+	background-position: -320px 0px;
+}

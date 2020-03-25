@@ -1,0 +1,96 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	horizontal-align: center;
+	vertical-align: center;
+
+	flow-children: down;
+}
+
+.ScreenContainer
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: #000000;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	flow-children: down;
+	border: 0px solid white;
+}
+
+.TrainImage
+{
+	width: 100%;
+	height: 100%;
+	border: 0px solid white;
+	margin-left: 10%;
+}
+
+#TextContainer
+{
+	width: 100%;
+	height: 100%;
+	margin-top: 128px;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 96px;
+	color: red;
+
+	visibility: visible;
+}
+
+#ImageContainer
+{
+	horizontal-align: center;
+	vertical-align: center;
+	margin-right: 64px;
+	visibility: collapse;
+}
+
+.ShowImage #ImageContainer,
+.ShowText #TextContainer
+{
+	visibility: visible;
+}
+
+.ShowImage #TextContainer,
+.ShowText #ImageContainer
+{
+	visibility: collapse;
+}
+
+.TextLine
+{
+	width: 50%;
+	height: 15%;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	border: 0px solid white;
+	background-color: #000000;
+
+	flow-children: down;
+
+	visibility: collapse;
+}
+
+.TextBox
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 256px;
+	color: white;
+	border: 0px solid white;
+}

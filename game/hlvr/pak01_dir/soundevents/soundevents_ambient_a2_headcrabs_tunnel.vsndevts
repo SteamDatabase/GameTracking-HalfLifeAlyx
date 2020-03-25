@@ -1,0 +1,248 @@
+{
+	A2Headcrabs.TunnelLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Headcrabs.TunnelLp_L"
+		soundevent_02 = "A2Headcrabs.TunnelLp_R"
+		soundevent_03 = "A2Headcrabs.TunnelLp_LS"
+		soundevent_04 = "A2Headcrabs.TunnelLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Headcrabs.TunnelLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 0.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.200000
+		mixgroup = "ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_l.vsnd"
+	}
+	A2Headcrabs.TunnelLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 0.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.200000
+		mixgroup = "ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_r.vsnd"
+	}
+	A2Headcrabs.TunnelLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 135.000000
+		vertical_rotation_angle = 0.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.200000
+		mixgroup = "ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_ls.vsnd"
+	}
+	A2Headcrabs.TunnelLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 0.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.200000
+		mixgroup = "ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_rs.vsnd"
+	}
+	AmbientA2Headcrabs.TunnelMainLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientA2Headcrabs.TunnelMainLp_L"
+		soundevent_02 = "AmbientA2Headcrabs.TunnelMainLp_R"
+		soundevent_03 = "AmbientA2Headcrabs.TunnelMainLp_LS"
+		soundevent_04 = "AmbientA2Headcrabs.TunnelMainLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientA2Headcrabs.TunnelMainLp_L = 
+	{
+		base = "AmbientBase.IntMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_abstract_creep_quad_lp_01_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_l.vsnd"
+		vsnd_vol_01 = "0.5"
+		vsnd_vol_02 = "0.38"
+	}
+	AmbientA2Headcrabs.TunnelMainLp_R = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_abstract_creep_quad_lp_01_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	AmbientA2Headcrabs.TunnelMainLp_LS = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_abstract_creep_quad_lp_01_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	AmbientA2Headcrabs.TunnelMainLp_RS = 
+	{
+		base = "AmbientA2Headcrabs.TunnelMainLp_L"
+		vsnd_file_01 = "sounds/ambient/abstract/amb_abstract_creep_quad_lp_01_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+	AmbientA2Headcrabs.SubBasementLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientA2Headcrabs.SubBasementLp_L"
+		soundevent_02 = "AmbientA2Headcrabs.SubBasementLp_R"
+		soundevent_03 = "AmbientA2Headcrabs.SubBasementLp_LS"
+		soundevent_04 = "AmbientA2Headcrabs.SubBasementLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientA2Headcrabs.SubBasementLp_L = 
+	{
+		base = "AmbientBase.IntSmallRoomLp_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_l.vsnd"
+		vsnd_vol_01 = "0.11"
+		vsnd_vol_02 = "0.61"
+		vsnd_vol_03 = "0.47"
+		volume = 0.600000
+	}
+	AmbientA2Headcrabs.SubBasementLp_R = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	AmbientA2Headcrabs.SubBasementLp_LS = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	AmbientA2Headcrabs.SubBasementLp_RS = 
+	{
+		base = "AmbientA2Headcrabs.SubBasementLp_L"
+		vsnd_file_01 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_proc_plant_hum_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+	AmbientA2Headcrabs.OpenAirSkylightLp = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp"
+	}
+	AmbientA2Headcrabs.BangAndCreak = 
+	{
+		base = "MetalPipe.BangAndCreak"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+	AmbientA2Headcrabs.MetalRandom = 
+	{
+		base = "AmbientCreepy.Metal_01"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 0.500000
+		remap_global_opvar_01_to_vol_max = 1.200000
+	}
+	AmbientA2Headcrabs.GlassRandom = 
+	{
+		base = "AmbientCreepy.Glass"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.600000
+	}
+	AmbientA2Headcrabs.SteamRush = 
+	{
+		base = "AmbientIndoor.SteamRush"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+	AmbientA2Headcrabs.VortDecalOld = 
+	{
+		type = "hlvr_start_soundevent"
+		restart_on_finish = 1.000000
+		soundevents = 
+		[
+			"AmbientA2Headcrabs.VortDecalChild",
+		]
+	}
+	AmbientA2Headcrabs.VortDecalChild = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		enable_debug_radius = 0.000000
+		soundname_string = "VortDecalChild"
+		volume_fade_in = 0.500000
+		volume_falloff_min = 24
+		volume_falloff_max = 130
+		spread_min = 18
+		spread_max = 48
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/abstract/amb_vort_decal_01.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_02.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_03.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_04.vsnd",
+		]
+	}
+	AmbientA2Headcrabs.VortDecal = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		enable_debug_radius = 0.000000
+		soundname_string = "VortDecalChild"
+		volume_fade_in = 1.000000
+		volume_falloff_min = 24
+		volume_falloff_max = 130
+		cull_at_distance = 150
+		spread_min = 18
+		spread_max = 48
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/abstract/amb_vort_decal_01.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_02.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_03.vsnd",
+			"sounds/ambient/abstract/amb_vort_decal_04.vsnd",
+		]
+	}
+}

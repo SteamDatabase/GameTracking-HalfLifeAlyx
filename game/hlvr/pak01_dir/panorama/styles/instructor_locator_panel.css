@@ -1,0 +1,31 @@
+.InstructorLocatorPanel
+{
+    width: fit-children;
+    height: fit-children;
+    background-color: #22222288;
+    horizontal-align: center;
+    flow-children: right;
+    padding: 10px;
+}
+
+.LocatorCaption
+{
+    font-size: 40px;
+	color: white;
+    vertical-align: middle;
+}
+
+.LocatorBinding
+{
+    font-size: 40px;
+	color: grey;
+    vertical-align: middle;
+    min-width: 150px;
+    text-align: center;
+    visibility: collapse;
+}
+
+.ShowBinding .LocatorBinding
+{
+    visibility: visible;
+}

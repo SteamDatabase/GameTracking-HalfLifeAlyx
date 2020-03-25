@@ -1,0 +1,793 @@
+{
+	NPC_BlackHeadcrab.Bite = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/bite_01.vsnd",
+			"sounds/creatures/headcrab_black/bite_02.vsnd",
+			"sounds/creatures/headcrab_black/bite_03.vsnd",
+			"sounds/creatures/headcrab_black/bite_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Jump = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		delay = 0.100000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_01.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_02.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_03.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_04.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_05.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Jump = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		pitch = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_01.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_02.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_03.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_04.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_05.vsnd",
+			"sounds/creatures/headcrab_black/movement/jump_attack_whoosh_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Bodyfall = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		mixgroup = "Headcrabs"
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/movement/body_impact_01.vsnd",
+			"sounds/creatures/headcrab_black/movement/body_impact_02.vsnd",
+			"sounds/creatures/headcrab_black/movement/body_impact_03.vsnd",
+			"sounds/creatures/headcrab_black/movement/body_impact_04.vsnd",
+			"sounds/creatures/headcrab_black/movement/body_impact_05.vsnd",
+			"sounds/creatures/headcrab_black/movement/body_impact_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Jump_Impact = 
+	{
+		base = "NPC_BlackHeadcrab.Bodyfall"
+	}
+	NPC_BlackHeadcrab.Jump_Impact_Scripted_Soft = 
+	{
+		base = "NPC_BlackHeadcrab.Bodyfall"
+		volume = 0.600000
+		pitch = 0.900000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+	}
+	NPC_BlackHeadcrab.Jump_Impact_Angry = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.Jump_Impact"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_BlackHeadcrab.Jump_Impact_Vox"
+		use_02 = 1.000000
+	}
+	NPC_BlackHeadcrab.Jump_Impact_Vox = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Grunt_Soft"
+		soundevent_02 = "NPC_BlackHeadcrab.Jump_Impact_Vox_Snarl"
+		soundevent_split = 0.400000
+	}
+	NPC_BlackHeadcrab.Jump_Impact_Vox_Snarl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/post_attack_snarl_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/post_attack_snarl_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/post_attack_snarl_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/post_attack_snarl_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Warning = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Attack_Warning_Core"
+		soundevent_02 = "NPC_BlackHeadcrab.Attack_Warning_Option"
+		soundevent_split = 0.700000
+	}
+	NPC_BlackHeadcrab.Attack_Warning_Option = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Attack_Warning_B"
+		soundevent_02 = "NPC_BlackHeadcrab.Grunt_Short"
+		soundevent_split = 0.500000
+	}
+	NPC_BlackHeadcrab.Attack_Warning_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 1500.000000
+		occlusion_scale = 0.700000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_tell_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_05.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Warning_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		use_hrtf = 1.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 1500.000000
+		occlusion_scale = 0.700000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_tell_b_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_b_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_b_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_tell_b_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Growl = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.Attack_Growl_Core"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_BlackHeadcrab.Attack_Growl_Layer"
+		use_02 = 1.000000
+	}
+	NPC_BlackHeadcrab.Attack_Growl_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_out = 0.400000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		block_duration = 1.000000
+		block_match_this_event = true
+		block_distance = 100.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_growl_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_03.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Growl_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		volume_fade_out = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_growl_layer_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_layer_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_layer_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_layer_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_growl_layer_05.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Rattle_Attack_Warning_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_out = 0.200000
+		use_hrtf = 1.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		mixgroup = "Headcrabs"
+		block_duration = 2.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/rattle_warning_layer_01.vsnd",
+			"sounds/creatures/headcrab_black/rattle_warning_layer_02.vsnd",
+			"sounds/creatures/headcrab_black/rattle_warning_layer_03.vsnd",
+			"sounds/creatures/headcrab_black/rattle_warning_layer_04.vsnd",
+			"sounds/creatures/headcrab_black/rattle_warning_layer_05.vsnd",
+			"sounds/creatures/headcrab_black/rattle_warning_layer_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.Attack_Screech"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_BlackHeadcrab.Attack_Jump"
+		use_02 = 1.000000
+		soundevent_03 = "NPC_BlackHeadcrab.Attack_Grunt"
+		use_03 = 1.000000
+		soundevent_04 = "NPC_BlackHeadcrab.Attack_Grunt_Layer"
+		use_04 = 1.000000
+	}
+	NPC_BlackHeadcrab.Attack_Screech = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		use_hrtf = 1.000000
+		delay = 0.100000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		block_duration = 3.000000
+		block_match_this_event = true
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_screech_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_06.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_07.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_screech_08.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		mixgroup = "Headcrabs"
+		occlusion_scale = 0.700000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1500.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_grunt_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Attack_Grunt_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_rand_min = -0.200000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 800.000000
+		distance_max = 800.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_06.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_07.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_08.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_09.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_10.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_11.vsnd",
+			"sounds/creatures/headcrab_black/vox/attack_grunt_layer_12.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Die = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.Die_Vox"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_BlackHeadcrab.Rattle_Die_Layer"
+		use_02 = 1.000000
+	}
+	NPC_BlackHeadcrab.Die_Vox = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_distance_delay = 1.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/die_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/die_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/die_03.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Rattle_Die_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.500000
+		use_distance_delay = 1.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/rattle_death_layer_01.vsnd",
+			"sounds/creatures/headcrab_black/rattle_death_layer_02.vsnd",
+			"sounds/creatures/headcrab_black/rattle_death_layer_03.vsnd",
+			"sounds/creatures/headcrab_black/rattle_death_layer_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Pain = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.650000
+		delay = 0.200000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		block_duration = 1.500000
+		block_match_this_event = true
+		block_distance = 100.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/pain_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/pain_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/pain_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/pain_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/pain_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/pain_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Idle_Anims = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Idle_Voice"
+		soundevent_02 = "NPC_BlackHeadcrab.Idle_Clicks"
+		soundevent_split = 0.500000
+	}
+	NPC_BlackHeadcrab.Idle_Anims_Chance = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Idle_Anims"
+		soundevent_02 = "NPC_BlackHeadcrab.Idle_Null"
+		soundevent_split = 0.200000
+	}
+	NPC_BlackHeadcrab.Idle_Voice = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		block_duration = 3.000000
+		block_match_this_event = true
+		block_distance = 200.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/idle_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_06.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_07.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_08.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_09.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_10.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Idle_Clicks = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		block_duration = 3.000000
+		block_match_this_event = true
+		block_distance = 200.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/idle_clicks_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_clicks_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_clicks_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_clicks_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_clicks_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/idle_clicks_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Clicks = 
+	{
+		base = "NPC_BlackHeadcrab.Idle_Clicks"
+		volume = 0.600000
+		chance_to_play = 3.000000
+		delay_rand_min = 0.500000
+		delay_rand_max = 1.500000
+		pitch = 0.900000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+	}
+	NPC_BlackHeadcrab.Idle_Null = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_BlackHeadcrab.Idle_Sniff = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_fade_out = 0.500000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 800.000000
+		distance_max = 1001.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/idle_sniff.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Idle_Threaten = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/threaten_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/threaten_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/threaten_03.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Panic = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.250000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/scared_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/scared_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/scared_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/scared_04.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Panic_Stop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/scared_end_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/scared_end_02.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Grunt_Hard = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/grunt_hard_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_hard_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_hard_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_hard_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_hard_05.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Grunt_Soft = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/grunt_soft_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_soft_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_soft_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_soft_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_soft_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_soft_06.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Grunt_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/vox/grunt_short_01.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_02.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_03.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_04.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_05.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_06.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_07.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_08.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_09.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_10.vsnd",
+			"sounds/creatures/headcrab_black/vox/grunt_short_11.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Breath_Switch = 
+	{
+		type = "hlvr_start_multi_switch"
+		soundevent_01 = "NPC_BlackHeadcrab.Breath_In"
+		soundevent_02 = "NPC_BlackHeadcrab.Breath_Out"
+	}
+	NPC_BlackHeadcrab.Breath_In = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		use_hrtf = 1.000000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/breath/breath_in_01.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_02.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_03.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_04.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_05.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_06.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_07.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_08.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_09.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_10.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_11.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_12.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_13.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_14.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_15.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_in_16.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Breath_Out = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.400000
+		use_hrtf = 1.000000
+		occlusion_scale = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/breath/breath_out_01.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_02.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_03.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_04.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_05.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_06.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_07.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_08.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_09.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_10.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_11.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_12.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_13.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_14.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_15.vsnd",
+			"sounds/creatures/headcrab_black/breath/breath_out_16.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Piano_Fall_Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/scripted/piano_headcrab_fall_impact_01.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Bar_Jump = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_min = 300.000000
+		use_hrtf = 1.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/scripted/bar_jump.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Bed_Crawl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 200.000000
+		use_hrtf = 1.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/scripted/bed_crawl_out.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Corridor_Scamper = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 200.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/scripted/corridor_scamper.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Scripted_Toilet_Pre = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		use_hrtf = 1.000000
+		volume_falloff_min = 300.000000
+		mixgroup = "Headcrabs"
+		vsnd_files = 
+		[
+			"sounds/creatures/headcrab_black/scripted/toilet_pre.vsnd",
+		]
+	}
+	NPC_BlackHeadcrab.Alert = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.Grunt_Hard"
+		use_01 = 1.000000
+	}
+	NPC_BlackHeadcrab.Idle = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_BlackHeadcrab.Idle_Alert = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_BlackHeadcrab.Talk = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_BlackHeadcrab.AlertVoice = 
+	{
+		type = "hlvr_default_3d"
+	}
+	NPC_BlackHeadcrab.Threat = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_BlackHeadcrab.AlertVoice"
+		use_01 = 1.000000
+	}
+}

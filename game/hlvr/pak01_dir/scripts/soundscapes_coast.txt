@@ -1,0 +1,737 @@
+
+// Soundscapes for Seafloor
+
+ 
+"coast.util_headcrab_canister"
+{
+	"playrandom"
+	{
+		"volume"	"0.3,0.4"
+		"pitch"		"90,120"
+		"time"		"5.0, 15.0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient5.vsnd"
+			"wave"	"sounds/ambient/levels/canals/headcrab_canister_ambient6.vsnd"
+		}
+	}
+}
+
+"coast.util_metalstress"
+{
+	
+	"playrandom"
+	{
+		"time"		"10,20"
+		"volume"	"0.45,0.75"
+		"pitch"		"90,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/metal_stress2.vsnd"
+			"wave"	"sounds/ambient/materials/metal_stress4.vsnd"
+			"wave"	"sounds/ambient/materials/metal4.vsnd"
+			"wave"	"sounds/ambient/materials/rustypipes1.vsnd"
+			"wave"	"sounds/ambient/materials/shipgroan1.vsnd"
+			"wave"	"sounds/ambient/materials/shipgroan2.vsnd"
+			"wave"	"sounds/ambient/materials/shipgroan3.vsnd"
+			"wave"	"sounds/ambient/materials/shipgroan4.vsnd"
+		}
+	}	
+}
+
+"coast.util_shackmetal"
+{
+	
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.3,0.55"
+		"pitch"		"90,105"
+
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/shutter6.vsnd"
+			"wave"	"sounds/ambient/materials/shutter7.vsnd"
+		}
+	}
+}
+
+"coast.util_crumblycliff"
+{
+	
+	"playrandom"
+	{
+		"time"		"5,15"
+		"volume"	"0.5,0.8"
+		"pitch"		"90,105"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/rock2.vsnd"
+			"wave"	"sounds/ambient/materials/rock3.vsnd"
+			"wave"	"sounds/ambient/materials/rock5.vsnd"
+		}
+	}
+}
+
+
+"coast.util_windgusts"
+{
+	"playrandom"
+	{
+		"volume"	"0.4,0.9"
+		"pitch"		"100"
+		"time"		"5.0, 12.0"
+		"pitch"		"90,130"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave" "sounds/ambient/wind/wind_med1.vsnd"
+			"wave" "sounds/ambient/wind/wind_hit1.vsnd"
+			"wave" "sounds/ambient/wind/wind_hit2.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet3.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet4.vsnd"
+			"wave" "sounds/ambient/wind/wind_snippet5.vsnd"
+		}
+	}
+}
+
+"coast.util_fardrips"
+{
+	"playrandom"
+	{
+		"volume"	"0.1,0.2"
+		"pitch"		"90,120"
+		"time"		"0.5, 5.0"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/distant_drip1.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip2.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip3.vsnd"
+			"wave"	"sounds/ambient/water/distant_drip4.vsnd"
+		}
+	}
+}
+
+"coast.util_birds"
+{
+	"playrandom"
+	{
+		"time"		"8,30"
+		"volume"	"0.15,0.38"
+		"pitch"		"90,115"
+		"soundlevel"	"SNDLVL_140dB"
+		
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/coast/coastbird1.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird2.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird3.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird4.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird5.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird6.vsnd"
+			"wave"	"sounds/ambient/levels/coast/coastbird7.vsnd"
+			"wave"	"sounds/ambient/levels/coast/seagulls_ambient1.vsnd"
+			"wave"	"sounds/ambient/levels/coast/seagulls_ambient2.vsnd"
+			"wave"	"sounds/ambient/levels/coast/seagulls_ambient3.vsnd"
+			"wave"	"sounds/ambient/levels/coast/seagulls_ambient4.vsnd"
+			"wave"	"sounds/ambient/levels/coast/seagulls_ambient5.vsnd"
+
+			"wave"	"sounds/ambient/creatures/flies3.vsnd"
+			"wave"	"sounds/ambient/creatures/flies5.vsnd"
+
+		}
+	}
+}
+
+"coast.util_lakeshoreline"
+{
+	"playrandom"
+	{
+		"volume"	"0.45,0.65"
+		"pitch"		"100"
+		"time"		"3.0, 4.0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/shore1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore3.vsnd"
+			"wave"	"sounds/ambient/levels/canals/shore4.vsnd"
+		}
+	}
+}
+
+"coast.util_shoreline"
+{
+	"playrandom"
+	{
+		"volume"	"0.45,0.65"
+		"pitch"		"90,110"
+		"time"		"5.0, 7.0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/wave1.vsnd"
+			"wave"	"sounds/ambient/water/wave2.vsnd"
+			"wave"	"sounds/ambient/water/wave3.vsnd"
+			"wave"	"sounds/ambient/water/wave4.vsnd"
+			"wave"	"sounds/ambient/water/wave5.vsnd"
+			"wave"	"sounds/ambient/water/wave6.vsnd"
+		}
+	}
+}
+
+"coast.util_distant_shoreline"
+{
+	"playrandom"
+	{
+		"volume"	"0.45,0.65"
+		"pitch"		"90,110"
+		"time"		"6.0, 10.0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/water/distant_wave1.vsnd"
+			"wave"	"sounds/ambient/water/distant_wave2.vsnd"
+			"wave"	"sounds/ambient/water/distant_wave3.vsnd"
+		}
+	}
+}
+
+
+"coast.util_antlion_den"
+{
+	"playrandom"
+	{
+		"time"		"4,15"
+		"volume"	"0.6,0.9"
+		"pitch"		"90,115"
+		"soundlevel"	"SNDLVL_90dB"
+		
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/coast/antlion_hill_ambient1.vsnd"
+			"wave"	"sounds/ambient/levels/coast/antlion_hill_ambient2.vsnd"
+			"wave"	"sounds/ambient/levels/coast/antlion_hill_ambient4.vsnd"
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// coast soundscapes
+
+
+"coast.general_windy_tunnel"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"sounds/ambient/atmosphere/hole_amb3.vsnd"
+		"pitch"		"100"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume"	"0.6"
+	}
+}
+
+"coast.general_tunnel"
+{
+
+	"dsp"	"1"
+
+	
+	// wind
+	
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/levels/canals/tunnel_wind_loop1.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_fardrips"
+		"volume" "0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume"	"0.5"
+	}
+}
+
+"coast.zombie_tunnel"
+{
+
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_metalstress"
+		"volume"	"0.5"
+	}
+
+	"playrandom"
+	{
+		"time"		"15, 60"
+		"volume"	"0.35,0.65"
+		"pitch"		"90,110"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/creatures/town_moan1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_zombie_call1.vsnd"
+			"wave"	"sounds/ambient/creatures/town_scared_breathing1.vsnd"
+		}
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.57"
+		"pitch"		"100"
+		"wave"		"sounds/ambient/levels/canals/tunnel_wind_loop1.vsnd"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_fardrips"
+		"volume"	"0.85"
+	}
+}
+
+"coast.general_oldwoodbuilding"
+{
+
+"dsp"	"1"
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.2,0.35"
+		"pitch"		"95,105"
+		"soundlevel"	"SNDLVL_140dB"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/materials/wood_creak1.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak2.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak3.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak4.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak5.vsnd"
+			"wave"	"sounds/ambient/materials/wood_creak6.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet1.vsnd"
+			"wave"	"sounds/ambient/wind/wind_snippet2.vsnd"
+		}
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_birds"
+		"volume" "0.25"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume" "0.4"
+	}
+}
+
+// windchimes at position 0
+"coast.general_oldwoodbuilding_with_windchimes"
+{
+
+"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"	"coast.general_oldwoodbuilding"
+		"volume" "1.0"
+	}
+
+	"playrandom"
+	{
+		"volume"	"0.05,0.1"
+		"pitch"		"100"
+		"time"		"3.0, 8.0"
+		"soundlevel" "SNDLVL_80dB"
+		"position"	"0"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/levels/canals/windchine1.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime2.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime4.vsnd"
+			"wave"	"sounds/ambient/levels/canals/windchime5.vsnd"
+		}
+	}
+}
+
+"coast.combine_controlroom_ambience"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"sounds/ambient/levels/canals/generator_ambience_loop1.vsnd"
+		"pitch"		"100"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"sounds/ambient/atmosphere/cargo_hold2.vsnd"
+		"pitch"		"100"
+	}
+}
+
+"coast.general_shoreline"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_shoreline"
+		"volume" "0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume" "0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_birds"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.5"
+	}
+
+
+}
+
+// waves crash at positions 0,1,2,3,4
+
+"coast.positional_shoreline"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"positionoverride"	"0"
+		"name"		"coast.util_shoreline"	
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"1"
+		"name"		"coast.util_shoreline"	
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"2"
+		"name"		"coast.util_shoreline"	
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"3"
+		"name"		"coast.util_shoreline"	
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"4"
+		"name"		"coast.util_shoreline"	
+		"volume"	"1.0"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_birds"	
+		"volume"	"0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.4"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume" "0.5"
+	}
+}
+
+// positions 0,1,2,3 are antlion dens
+
+"coast.shoreline_with_antlion_dens"
+{
+	"dsp"	"1"
+
+	
+	"playsoundscape"
+	{
+		"name"	"coast.general_shoreline"
+		"volume" "1.0"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"0"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"positionoverride"	"1"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}
+	
+	
+	"playsoundscape"
+	{
+		"positionoverride"	"2"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}
+	
+	
+	"playsoundscape"
+	{
+		"positionoverride"	"3"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}	
+}
+
+"coast.bridge_ambient"
+{
+	
+	"dsp"	"1"
+
+	// wind
+	
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"sounds/ambient/wind/wind_rooftop1.vsnd"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"5, 15"
+		"volume"	"0.4,0.6"
+		"pitch"		"90,115"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"sounds/ambient/wind/windgust.vsnd"
+			"wave"  "sounds/ambient/wind/windgust_strong.vsnd"
+		}
+		
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_metalstress"	
+		"volume"	"0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_birds"	
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_shoreline"	
+		"volume"	"0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_distant_shoreline"	
+		"volume"	"0.7"
+	}
+}
+
+"coast.bridge_shack"
+{
+	"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"		"coast.bridge_ambient"
+		"volume"	"0.55"
+	}
+	
+	"playsoundscape"
+	{
+		"name"		"coast.util_shackmetal"
+		"volume"	"1.0"
+	}
+}
+
+"coast.cliffside"
+{
+
+"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"	"coast.general_shoreline"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume"	"0.6"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_crumblycliff"
+		"volume"	"1.0"
+	}
+}
+
+"coast.bridge_concrete_room"
+{
+
+"dsp"	"1"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"pitch"		"100"
+		"soundlevel" "SNDLVL_140dB"
+		"wave"		"sounds/ambient/atmosphere/ambience_base.vsnd"
+	}
+}
+
+
+"coast.generic_ambient_01"
+{
+	
+"dsp"	"1"
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_shoreline"
+		"volume" "0.2"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume" "0.8"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_birds"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.5"
+	}
+
+}
+
+"coast.distant_shoreline"
+{
+	"playsoundscape"
+	{
+		"name"	"coast.util_distant_shoreline"
+		"volume" "0.7"
+	}
+
+	"playsoundscape"
+	{
+		"name"	"coast.util_windgusts"
+		"volume" "0.5"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"coast.util_birds"
+		"volume"	"0.5"
+	}
+
+	"playsoundscape"
+	{
+		"positionoverride"	"0"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}	
+	
+	"playsoundscape"
+	{
+		"positionoverride"	"1"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}
+	
+	
+	"playsoundscape"
+	{
+		"positionoverride"	"2"
+		"name"	"coast.util_antlion_den"
+		"volume" "1.0"
+	}
+
+}

@@ -1,0 +1,5283 @@
+
+
+response Combine_RadioOn
+{
+	speak "combine.radioOn"
+}
+
+rule CS_Combine_RadioOn
+{
+	criteria		IsCombineS ConceptRadioOn 
+	response		Combine_RadioOn
+}
+
+response Combine_RadioOff
+{
+	speak "combine.radioOff"
+}
+
+rule CS_Combine_RadioOff
+{
+	criteria		IsCombineS ConceptRadioOff
+	response		Combine_RadioOff
+}
+
+//========================================================================================================
+// ANNOUNCING TARGETS 
+//		TARGET IS PLAYER
+//====================================================================
+response CS_Officer_AnnounceEnemy_Player
+{
+	speak "vo.combine.officer.firing_player_01"
+	speak "vo.combine.officer.firing_player_02"
+	speak "vo.combine.officer.firing_player_03"
+	speak "vo.combine.officer.firing_player_04"
+	speak "vo.combine.officer.firing_player_05"
+	
+	speak "vo.combine.officer.firing_01"
+	speak "vo.combine.officer.firing_02"
+	speak "vo.combine.officer.firing_03"
+	speak "vo.combine.officer.firing_04"
+	speak "vo.combine.officer.firing_05"
+	speak "vo.combine.officer.firing_06"
+	
+	speak "vo.combine.officer.announceattack_alyx_01"
+	speak "vo.combine.officer.announceattack_alyx_02"
+	speak "vo.combine.officer.announceattack_alyx_03"
+	speak "vo.combine.officer.announceattack_alyx_04"
+	speak "vo.combine.officer.announceattack_alyx_05"
+	speak "vo.combine.officer.announceattack_alyx_06"
+	speak "vo.combine.officer.announceattack_alyx_07"
+	speak "vo.combine.officer.announceattack_alyx_08"
+	
+	speak "vo.combine.officer.announceattack_01"
+	speak "vo.combine.officer.announceattack_02"
+	speak "vo.combine.officer.announceattack_03"
+	speak "vo.combine.officer.announceattack_04"
+	speak "vo.combine.officer.announceattack_05"
+	speak "vo.combine.officer.announceattack_06"
+	speak "vo.combine.officer.announceattack_07"
+	speak "vo.combine.officer.announceattack_08"
+}
+
+rule CS_Officer_AnnounceEnemy_Player
+{
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceEnemy AnnouncedEnemyIsPlayer
+	response		CS_Officer_AnnounceEnemy_Player
+}
+
+response CS_Charger_AnnounceEnemy_Player
+{
+	speak "vo.combine.charger.announceattack_01"
+	speak "vo.combine.charger.announceattack_02"
+	speak "vo.combine.charger.announceattack_03"
+	speak "vo.combine.charger.announceattack_04"
+	speak "vo.combine.charger.announceattack_05"
+	speak "vo.combine.charger.announceattack_06"
+	speak "vo.combine.charger.announceattack_07"
+	speak "vo.combine.charger.announceattack_08"
+	speak "vo.combine.charger.announceattack_09"
+	speak "vo.combine.charger.announceattack_10"
+	speak "vo.combine.charger.announceattack_11"
+}
+
+rule CS_Charger_AnnounceEnemy_Player
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceEnemy AnnouncedEnemyIsPlayer
+	response		CS_Charger_AnnounceEnemy_Player
+}
+
+response CS_Suppressor_AnnounceEnemy_Player
+{
+	speak "vo.combine.suppressor.announceattack_01"
+	speak "vo.combine.suppressor.announceattack_02"
+	speak "vo.combine.suppressor.announceattack_03"
+	speak "vo.combine.suppressor.announceattack_04"
+	speak "vo.combine.suppressor.announceattack_05"
+	speak "vo.combine.suppressor.announceattack_06"
+	speak "vo.combine.suppressor.announceattack_07"
+	speak "vo.combine.suppressor.announceattack_08"
+	speak "vo.combine.suppressor.announceattack_09"
+	speak "vo.combine.suppressor.announceattack_10"
+	speak "vo.combine.suppressor.announceattack_11"
+}
+
+rule CS_Suppressor_AnnounceEnemy_Player
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAnnounceEnemy AnnouncedEnemyIsPlayer
+	response		CS_Suppressor_AnnounceEnemy_Player
+}
+
+response CS_Grunt_AnnounceEnemy_Player
+{
+	speak "vo.combine.grunt.firing_player_01"
+	speak "vo.combine.grunt.firing_player_01"
+	speak "vo.combine.grunt.firing_player_03"
+	speak "vo.combine.grunt.firing_player_04"
+	speak "vo.combine.grunt.firing_player_05"
+	speak "vo.combine.grunt.firing_player_06"
+	speak "vo.combine.grunt.firing_player_07"
+	speak "vo.combine.grunt.firing_player_08"
+}
+
+rule CS_Grunt_AnnounceEnemy_Player
+{
+	criteria		IsCombineS IsClass_Grunt ConceptAnnounceEnemy AnnouncedEnemyIsPlayer
+	response		CS_Grunt_AnnounceEnemy_Player
+}
+
+//========================================================================================================
+// SQUAD IS UNDER ATTACK
+//====================================================================
+response CS_Officer_UnderAttack
+{
+	speak "vo.combine.officer.underattack_01"
+	speak "vo.combine.officer.underattack_02"
+	speak "vo.combine.officer.underattack_03"
+	speak "vo.combine.officer.underattack_04"
+	speak "vo.combine.officer.underattack_05"
+	speak "vo.combine.officer.underattack_06"
+	speak "vo.combine.officer.underattack_07"
+	speak "vo.combine.officer.underattack_08"
+	speak "vo.combine.officer.underattack_09"
+	speak "vo.combine.officer.underattack_10"
+	speak "vo.combine.officer.underattack_11"
+	speak "vo.combine.officer.underattack_12"
+}
+
+rule CS_Officer_UnderAttack
+{
+	criteria		IsCombineS IsClass_Officer ConceptUnderAttack 
+	response		CS_Officer_UnderAttack
+}
+
+response CS_Charger_UnderAttack
+{
+	speak "vo.combine.charger.underattack_01"
+	speak "vo.combine.charger.underattack_02"
+	speak "vo.combine.charger.underattack_03"
+	speak "vo.combine.charger.underattack_04"
+	speak "vo.combine.charger.underattack_05"
+	speak "vo.combine.charger.underattack_06"
+	speak "vo.combine.charger.underattack_07"
+	speak "vo.combine.charger.underattack_08"
+	speak "vo.combine.charger.underattack_09"
+	speak "vo.combine.charger.underattack_10"
+	speak "vo.combine.charger.underattack_11"
+	speak "vo.combine.charger.underattack_12"
+}
+
+rule CS_Charger_UnderAttack
+{
+	criteria		IsCombineS IsClass_Charger ConceptUnderAttack 
+	response		CS_Charger_UnderAttack
+}
+
+response CS_Suppressor_UnderAttack
+{
+	speak "vo.combine.suppressor.underattack_01"
+	speak "vo.combine.suppressor.underattack_02"
+	speak "vo.combine.suppressor.underattack_03"
+	speak "vo.combine.suppressor.underattack_04"
+	speak "vo.combine.suppressor.underattack_05"
+	speak "vo.combine.suppressor.underattack_06"
+	speak "vo.combine.suppressor.underattack_07"
+	speak "vo.combine.suppressor.underattack_08"
+	speak "vo.combine.suppressor.underattack_09"
+	speak "vo.combine.suppressor.underattack_10"
+	speak "vo.combine.suppressor.underattack_11"
+	speak "vo.combine.suppressor.underattack_12"
+}
+
+rule CS_Suppressor_UnderAttack
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptUnderAttack 
+	response		CS_Suppressor_UnderAttack
+}
+
+response CS_Grunt_UnderAttack
+{
+	speak "vo.combine.grunt.underattack_01"
+	speak "vo.combine.grunt.underattack_02"
+	speak "vo.combine.grunt.underattack_03"
+	speak "vo.combine.grunt.underattack_04"
+	speak "vo.combine.grunt.underattack_05"
+	speak "vo.combine.grunt.underattack_06"
+	speak "vo.combine.grunt.underattack_07"
+	speak "vo.combine.grunt.underattack_08"
+	speak "vo.combine.grunt.underattack_09"
+	speak "vo.combine.grunt.underattack_10"
+	speak "vo.combine.grunt.underattack_11"
+	speak "vo.combine.grunt.underattack_12"
+}
+
+rule CS_Grunt_UnderAttack
+{
+	criteria		IsCombineS IsClass_Grunt ConceptUnderAttack 
+	response		CS_Grunt_UnderAttack
+}
+
+//========================================================================================================
+// I'M TAKING FIRE
+//====================================================================
+response CS_Officer_TakingFire
+{
+	speak "vo.combine.officer.takingfire_01" respeakdelay 15
+	speak "vo.combine.officer.takingfire_02" respeakdelay 15
+	speak "vo.combine.officer.takingfire_03" respeakdelay 15
+	speak "vo.combine.officer.takingfire_04" respeakdelay 15
+	speak "vo.combine.officer.takingfire_05" respeakdelay 15
+	speak "vo.combine.officer.takingfire_06" respeakdelay 15
+	speak "vo.combine.officer.takingfire_07" respeakdelay 15
+	speak "vo.combine.officer.takingfire_08" respeakdelay 15
+	speak "vo.combine.officer.takingfire_09" respeakdelay 15
+	speak "vo.combine.officer.takingfire_10" respeakdelay 15
+}
+
+rule CS_Officer_TakingFire
+{
+	criteria		IsCombineS IsClass_Officer ConceptTakingFire 
+	response		CS_Officer_TakingFire
+}
+
+response CS_Charger_TakingFire
+{
+	speak "vo.combine.charger.takingfire_01" respeakdelay 15
+	speak "vo.combine.charger.takingfire_02" respeakdelay 15
+	speak "vo.combine.charger.takingfire_03" respeakdelay 15
+	speak "vo.combine.charger.takingfire_04" respeakdelay 15
+	speak "vo.combine.charger.takingfire_05" respeakdelay 15
+	speak "vo.combine.charger.takingfire_06" respeakdelay 15
+	speak "vo.combine.charger.takingfire_07" respeakdelay 15
+	speak "vo.combine.charger.takingfire_08" respeakdelay 15
+	speak "vo.combine.charger.takingfire_09" respeakdelay 15
+	speak "vo.combine.charger.takingfire_10" respeakdelay 15
+	speak "vo.combine.charger.takingfire_11" respeakdelay 15
+	speak "vo.combine.charger.takingfire_12" respeakdelay 15
+	speak "vo.combine.charger.takingfire_13" respeakdelay 15
+	speak "vo.combine.charger.takingfire_14" respeakdelay 15
+	speak "vo.combine.charger.takingfire_15" respeakdelay 15
+	speak "vo.combine.charger.takingfire_16" respeakdelay 15
+	speak "vo.combine.charger.takingfire_17" respeakdelay 15
+}
+
+rule CS_Charger_TakingFire
+{
+	criteria		IsCombineS IsClass_Charger ConceptTakingFire 
+	response		CS_Charger_TakingFire
+}
+
+response CS_Suppressor_TakingFire
+{
+	speak "vo.combine.suppressor.takingfire_01" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_02" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_03" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_04" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_05" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_06" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_07" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_08" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_09" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_10" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_11" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_12" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_13" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_14" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_15" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_16" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_17" respeakdelay 15
+}
+
+rule CS_Suppressor_TakingFire
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptTakingFire 
+	response		CS_Suppressor_TakingFire
+}
+
+response CS_Grunt_TakingFire
+{
+	speak "vo.combine.grunt.takingfire_01" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_02" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_03" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_04" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_05" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_06" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_07" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_08" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_09" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_10" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_11" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_12" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_13" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_14" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_15" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_16" respeakdelay 15
+	speak "vo.combine.grunt.takingfire_17" respeakdelay 15
+}
+
+rule CS_Grunt_TakingFire
+{
+	criteria		IsCombineS IsClass_Grunt ConceptTakingFire 
+	response		CS_Grunt_TakingFire
+}
+
+//========================================================================================================
+// INJURED
+//====================================================================
+response CS_Officer_Injured
+{
+	speak "vo.combine.officer.injured_01"
+	speak "vo.combine.officer.injured_02"
+	speak "vo.combine.officer.injured_03"
+	speak "vo.combine.officer.injured_04"
+	speak "vo.combine.officer.injured_05"
+	speak "vo.combine.officer.injured_06"
+}
+
+rule CS_Officer_Injured
+{
+	criteria		IsCombineS IsClass_Officer ConceptInjured 
+	response		CS_Officer_Injured
+}
+
+response CS_Charger_Injured
+{
+	speak "vo.combine.charger.injured_01"
+	speak "vo.combine.charger.injured_02"
+	speak "vo.combine.charger.injured_03"
+	speak "vo.combine.charger.injured_04"
+	speak "vo.combine.charger.injured_05"
+	speak "vo.combine.charger.injured_06"
+	speak "vo.combine.charger.injured_07"
+}
+
+rule CS_Charger_Injured
+{
+	criteria		IsCombineS IsClass_Charger ConceptInjured 
+	response		CS_Charger_Injured
+}
+
+response CS_Suppressor_Injured
+{
+	speak "vo.combine.suppressor.injured_01"
+	speak "vo.combine.suppressor.injured_02"
+	speak "vo.combine.suppressor.injured_03"
+	speak "vo.combine.suppressor.injured_04"
+	speak "vo.combine.suppressor.injured_05"
+	speak "vo.combine.suppressor.injured_06"
+	speak "vo.combine.suppressor.injured_07"
+}
+
+rule CS_Suppressor_Injured
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptInjured 
+	response		CS_Suppressor_Injured
+}
+
+response CS_Grunt_Injured
+{
+	speak "vo.combine.grunt.injured_01"
+	speak "vo.combine.grunt.injured_02"
+	speak "vo.combine.grunt.injured_03"
+	speak "vo.combine.grunt.injured_04"
+	speak "vo.combine.grunt.injured_05"
+	speak "vo.combine.grunt.injured_06"
+	speak "vo.combine.grunt.injured_07"
+	speak "vo.combine.grunt.pain_01"
+	speak "vo.combine.grunt.pain_02"
+	speak "vo.combine.grunt.pain_03"
+	speak "vo.combine.grunt.pain_04"
+	speak "vo.combine.grunt.pain_05"
+	speak "vo.combine.grunt.pain_06"
+	speak "vo.combine.grunt.pain_07"
+	speak "vo.combine.grunt.pain_08"
+	speak "vo.combine.grunt.pain_09"
+	speak "vo.combine.grunt.pain_10"
+}
+
+rule CS_Grunt_Injured
+{
+	criteria		IsCombineS IsClass_Grunt ConceptInjured 
+	response		CS_Grunt_Injured
+}
+
+//========================================================================================================
+// LOST VISUAL
+//====================================================================
+response CS_Officer_LostVisual
+{
+	speak "vo.combine.officer.lostvisual_01" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_02" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_03" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_04" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_05" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_06" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_07" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_08" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_09" respeakdelay 30
+	
+	speak "vo.combine.officer.lostvisual_player_01" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_player_02" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_player_03" respeakdelay 30
+	speak "vo.combine.officer.lostvisual_player_04" respeakdelay 30
+	
+}
+
+rule CS_Officer_LostVisual
+{
+	criteria		IsCombineS IsClass_Officer ConceptLostVisual 
+	response		CS_Officer_LostVisual
+}
+
+response CS_Charger_LostVisual
+{
+	speak "vo.combine.charger.lostvisual_01" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_02" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_03" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_04" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_05" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_06" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_07" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_08" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_09" respeakdelay 30
+	speak "vo.combine.charger.lostvisual_10" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_01" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_02" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_03" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_04" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_05" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_06" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_07" respeakdelay 30
+	speak "vo.combine.charger.lostenemy_08" respeakdelay 30
+}
+
+rule CS_Charger_LostVisual
+{
+	criteria		IsCombineS IsClass_Charger ConceptLostVisual 
+	response		CS_Charger_LostVisual
+}
+
+response CS_Suppressor_LostVisual
+{
+	speak "vo.combine.suppressor.lostvisual_01" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_02" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_03" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_04" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_05" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_06" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_07" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_08" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_09" respeakdelay 30
+	speak "vo.combine.suppressor.lostvisual_10" respeakdelay 30
+}
+
+rule CS_Suppressor_LostVisual
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptLostVisual 
+	response		CS_Suppressor_LostVisual
+}
+
+response CS_Grunt_LostVisual
+{
+	speak "vo.combine.grunt.lostvisual_01" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_02" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_03" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_04" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_05" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_06" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_07" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_08" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_09" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_10" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_01" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_02" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_03" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_04" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_05" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_06" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_07" respeakdelay 30
+	speak "vo.combine.grunt.lostvisual_player_08" respeakdelay 30
+}
+
+rule CS_Grunt_LostVisual
+{
+	criteria		IsCombineS IsClass_Grunt ConceptLostVisual 
+	response		CS_Grunt_LostVisual
+}
+
+//========================================================================================================
+// ATTACKING PLAYER'S COVER
+//====================================================================
+response CS_Officer_AttackingCover
+{
+	speak "vo.combine.officer.announceattack_cover_01"
+	speak "vo.combine.officer.announceattack_cover_02"
+	speak "vo.combine.officer.announceattack_cover_03"
+	speak "vo.combine.officer.announceattack_cover_04"
+	speak "vo.combine.officer.announceattack_cover_05"
+	speak "vo.combine.officer.announceattack_cover_06"
+	speak "vo.combine.officer.announceattack_cover_07"
+	speak "vo.combine.officer.announceattack_cover_08"
+}
+
+rule CS_Officer_AttackingCover
+{
+	criteria		IsCombineS IsClass_Officer ConceptAttackingCover
+	response		CS_Officer_AttackingCover
+}
+
+response CS_Charger_AttackingCover
+{
+	// voice lines dont exist yet, using announceattack instead. 
+	//speak "vo.combine.charger.announceattack_01"
+	//speak "vo.combine.charger.announceattack_02"
+	//speak "vo.combine.charger.announceattack_03"
+	//speak "vo.combine.charger.announceattack_04"
+	//speak "vo.combine.charger.announceattack_05"
+	//speak "vo.combine.charger.announceattack_06"
+	//speak "vo.combine.charger.announceattack_07"
+	//speak "vo.combine.charger.announceattack_08"
+	//speak "vo.combine.charger.announceattack_09"
+	//speak "vo.combine.charger.announceattack_10"
+	//speak "vo.combine.charger.announceattack_11"
+}
+
+rule CS_Charger_AttackingCover
+{
+	criteria		IsCombineS IsClass_Charger ConceptAttackingCover
+	response		CS_Charger_AttackingCover
+}
+
+response CS_Suppressor_AttackingCover
+{
+	speak "vo.combine.suppressor.attackingcover_01"
+	speak "vo.combine.suppressor.attackingcover_02"
+	speak "vo.combine.suppressor.attackingcover_03"
+	speak "vo.combine.suppressor.attackingcover_04"
+	speak "vo.combine.suppressor.attackingcover_05"
+	speak "vo.combine.suppressor.attackingcover_06"
+	speak "vo.combine.suppressor.attackingcover_07"
+	speak "vo.combine.suppressor.attackingcover_08"
+	speak "vo.combine.suppressor.attackingcover_09"
+	speak "vo.combine.suppressor.attackingcover_10"
+	speak "vo.combine.suppressor.attackingcover_11"
+	speak "vo.combine.suppressor.attackingcover_12"
+	speak "vo.combine.suppressor.attackingcover_13"
+	speak "vo.combine.suppressor.attackingcover_14"
+	speak "vo.combine.suppressor.attackingcover_15"
+	speak "vo.combine.suppressor.attackingcover_16"
+
+}
+
+rule CS_Suppressor_AttackingCover
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAttackingCover
+	response		CS_Suppressor_AttackingCover
+}
+
+response CS_Grunt_AttackingCover
+{
+	speak "vo.combine.grunt.announceattack_alyx_01"
+	speak "vo.combine.grunt.announceattack_alyx_02"
+	speak "vo.combine.grunt.announceattack_alyx_03"
+	speak "vo.combine.grunt.announceattack_alyx_04"
+	speak "vo.combine.grunt.announceattack_alyx_05"
+	speak "vo.combine.grunt.announceattack_alyx_06"
+	speak "vo.combine.grunt.announceattack_alyx_07"
+	speak "vo.combine.grunt.announceattack_alyx_08"
+	speak "vo.combine.grunt.announceattack_alyx_09"
+	speak "vo.combine.grunt.announceattack_alyx_10"
+	speak "vo.combine.grunt.announceattack_alyx_11"
+}
+
+rule CS_Grunt_AttackingCover
+{
+	criteria		IsCombineS IsClass_Grunt ConceptAttackingCover
+	response		CS_Grunt_AttackingCover
+}
+
+//========================================================================================================
+// GET BACK
+//====================================================================
+response CS_Officer_GetBack
+{
+	speak "vo.combine.officer.getback_01" 
+	speak "vo.combine.officer.getback_02" 
+	speak "vo.combine.officer.getback_03" 
+}
+
+rule CS_Officer_GetBack
+{
+	criteria		IsCombineS IsClass_Officer ConceptGetBack 
+	response		CS_Officer_GetBack
+}
+
+response CS_Charger_GetBack
+{
+	//speak "Soldier01.Soldier1GetBack"
+}
+
+rule CS_Charger_GetBack
+{
+	criteria		IsCombineS IsClass_Charger ConceptGetBack 
+	response		CS_Charger_GetBack
+}
+
+response CS_Suppressor_GetBack
+{
+	// lines not written or recorded
+	//speak "Soldier07.Soldier7GetBack"
+}
+
+rule CS_Suppressor_GetBack
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptGetBack 
+	response		CS_Suppressor_GetBack
+}
+
+response CS_Grunt_GetBack
+{
+	speak "vo.combine.grunt.getback_01"
+	speak "vo.combine.grunt.getback_02"
+	speak "vo.combine.grunt.getback_03"
+	speak "vo.combine.grunt.getback_04"
+	speak "vo.combine.grunt.getback_05"
+}
+
+rule CS_Grunt_GetBack
+{
+	criteria		IsCombineS IsClass_Grunt ConceptGetBack 
+	response		CS_Grunt_GetBack
+}
+
+//========================================================================================================
+// PANIC ON ENEMY NEAR
+//====================================================================
+response CS_Officer_NearPanic_Alyx
+{
+	speak "vo.combine.officer.nearpanic_01"
+	speak "vo.combine.officer.nearpanic_02"
+	speak "vo.combine.officer.nearpanic_03"
+	speak "vo.combine.officer.nearpanic_04"
+	speak "vo.combine.officer.nearpanic_05"
+}
+rule CS_Officer_NearPanic_Alyx
+{
+	criteria		IsCombineS IsClass_Officer ConceptNearPanic EnemyIsPlayer
+	response		CS_Officer_NearPanic_Alyx
+}
+
+response CS_Officer_NearPanic
+{
+	// dialog has not been recorded - emilyr. 
+	//speak "Soldier05.Soldier5BackOff"
+}
+rule CS_Officer_NearPanic
+{
+	criteria		IsCombineS IsClass_Officer ConceptNearPanic 
+	response		CS_Officer_NearPanic
+}
+
+response CS_Charger_NearPanic
+{
+	speak "vo.combine.charger.nearpanic_01"
+	speak "vo.combine.charger.nearpanic_02"
+	speak "vo.combine.charger.nearpanic_03"
+	speak "vo.combine.charger.nearpanic_04"
+	speak "vo.combine.charger.nearpanic_05"
+	speak "vo.combine.charger.nearpanic_06"
+	speak "vo.combine.charger.nearpanic_07"
+	speak "vo.combine.charger.nearpanic_10"
+}
+rule CS_Charger_NearPanic
+{
+	criteria		IsCombineS IsClass_Charger ConceptNearPanic 
+	response		CS_Charger_NearPanic
+}
+
+response CS_Charger_NearPanic_Alyx
+{
+	speak "vo.combine.suppressor.nearpanic_01"
+	speak "vo.combine.suppressor.nearpanic_02"
+	speak "vo.combine.suppressor.nearpanic_03"
+	speak "vo.combine.suppressor.nearpanic_04"
+	speak "vo.combine.suppressor.nearpanic_05"
+	speak "vo.combine.suppressor.nearpanic_06"
+	speak "vo.combine.suppressor.nearpanic_07"
+	speak "vo.combine.suppressor.nearpanic_10"
+}
+rule CS_Charger_NearPanic_Alyx
+{
+	criteria		IsCombineS IsClass_Charger ConceptNearPanic EnemyIsPlayer
+	response		CS_Charger_NearPanic_Alyx
+}
+
+response CS_Suppressor_NearPanic
+{
+	speak "Soldier07.Soldier7BackOff"
+}
+rule CS_Suppressor_NearPanic
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptNearPanic 
+	response		CS_Suppressor_NearPanic
+}
+
+response CS_Suppressor_NearPanic_Alyx
+{
+	speak "Soldier07.Soldier7ShesOnMe"
+	speak "Soldier07.Soldier7BackOff"
+}
+rule CS_Suppressor_NearPanic_Alyx
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptNearPanic EnemyIsPlayer
+	response		CS_Suppressor_NearPanic_Alyx
+}
+
+response CS_Grunt_NearPanic
+{
+	speak "vo.combine.grunt.nearpanic_01"
+	speak "vo.combine.grunt.nearpanic_02"
+	speak "vo.combine.grunt.nearpanic_03"
+	speak "vo.combine.grunt.nearpanic_04"
+	speak "vo.combine.grunt.nearpanic_05"
+	speak "vo.combine.grunt.nearpanic_06"
+	speak "vo.combine.grunt.nearpanic_07"
+	speak "vo.combine.grunt.nearpanic_08"
+	speak "vo.combine.grunt.nearpanic_09"
+	speak "vo.combine.grunt.nearpanic_10"
+}
+rule CS_Grunt_NearPanic
+{
+	criteria		IsCombineS IsClass_Grunt ConceptNearPanic 
+	response		CS_Grunt_NearPanic
+}
+
+response CS_Grunt_NearPanic_Alyx
+{
+	speak "vo.combine.grunt.nearpanic_01"
+	speak "vo.combine.grunt.nearpanic_02"
+	speak "vo.combine.grunt.nearpanic_03"
+	speak "vo.combine.grunt.nearpanic_04"
+	speak "vo.combine.grunt.nearpanic_05"
+	speak "vo.combine.grunt.nearpanic_06"
+	speak "vo.combine.grunt.nearpanic_07"
+	speak "vo.combine.grunt.nearpanic_08"
+	speak "vo.combine.grunt.nearpanic_09"
+	speak "vo.combine.grunt.nearpanic_10"
+	
+}
+rule CS_Grunt_NearPanic_Alyx
+{
+	criteria		IsCombineS IsClass_Grunt ConceptNearPanic EnemyIsPlayer
+	response		CS_Grunt_NearPanic_Alyx
+}
+
+
+//========================================================================================================
+// FIRING
+//====================================================================
+response CS_Officer_Firing
+{
+	speak "vo.combine.officer.firing_01" respeakdelay 30
+	speak "vo.combine.officer.firing_02" respeakdelay 30
+	speak "vo.combine.officer.firing_03" respeakdelay 30
+	speak "vo.combine.officer.firing_04" respeakdelay 30
+	speak "vo.combine.officer.firing_05" respeakdelay 30
+	speak "vo.combine.officer.firing_06" respeakdelay 30
+	
+	speak "vo.combine.officer.firing_player_01" respeakdelay 30
+	speak "vo.combine.officer.firing_player_02" respeakdelay 30
+	speak "vo.combine.officer.firing_player_03" respeakdelay 30
+	speak "vo.combine.officer.firing_player_04" respeakdelay 30
+	speak "vo.combine.officer.firing_player_05" respeakdelay 30
+}
+
+rule CS_Officer_Firing
+{
+	criteria		IsCombineS IsClass_Officer ConceptFiring 
+	response		CS_Officer_Firing
+}
+
+response CS_Charger_Firing
+{
+	speak "vo.combine.charger.firing_01" respeakdelay 30
+	speak "vo.combine.charger.firing_02" respeakdelay 30
+	speak "vo.combine.charger.firing_03" respeakdelay 30
+	speak "vo.combine.charger.firing_04" respeakdelay 30
+	speak "vo.combine.charger.firing_05" respeakdelay 30
+	speak "vo.combine.charger.firing_06" respeakdelay 30
+	speak "vo.combine.charger.firing_07" respeakdelay 30
+	speak "vo.combine.charger.firing_08" respeakdelay 30
+	speak "vo.combine.charger.firing_09" respeakdelay 30
+	speak "vo.combine.charger.firing_10" respeakdelay 30
+}
+
+rule CS_Charger_Firing
+{
+	criteria		IsCombineS IsClass_Charger ConceptFiring 
+	response		CS_Charger_Firing
+}
+
+response CS_Suppressor_Firing
+{
+	speak "vo.combine.suppressor.firing_01" respeakdelay 30
+	speak "vo.combine.suppressor.firing_02" respeakdelay 30
+	speak "vo.combine.suppressor.firing_03" respeakdelay 30
+	speak "vo.combine.suppressor.firing_04" respeakdelay 30
+	speak "vo.combine.suppressor.firing_05" respeakdelay 30
+	speak "vo.combine.suppressor.firing_06" respeakdelay 30
+	speak "vo.combine.suppressor.firing_07" respeakdelay 30
+	speak "vo.combine.suppressor.firing_08" respeakdelay 30
+	speak "vo.combine.suppressor.firing_09" respeakdelay 30
+	speak "vo.combine.suppressor.firing_10" respeakdelay 30
+}
+
+rule CS_Suppressor_Firing
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFiring 
+	response		CS_Suppressor_Firing
+}
+
+response CS_Grunt_Firing
+{
+	speak "vo.combine.grunt.firing_01" respeakdelay 30
+	speak "vo.combine.grunt.firing_02" respeakdelay 30
+	speak "vo.combine.grunt.firing_03" respeakdelay 30
+	speak "vo.combine.grunt.firing_04" respeakdelay 30
+	speak "vo.combine.grunt.firing_05" respeakdelay 30
+	speak "vo.combine.grunt.firing_06" respeakdelay 30
+	speak "vo.combine.grunt.firing_07" respeakdelay 30
+	speak "vo.combine.grunt.firing_08" respeakdelay 30
+	speak "vo.combine.grunt.firing_09" respeakdelay 30
+	speak "vo.combine.grunt.firing_10" respeakdelay 30
+}
+
+rule CS_Grunt_Firing
+{
+	criteria		IsCombineS IsClass_Grunt ConceptFiring 
+	response		CS_Grunt_Firing
+}
+
+//========================================================================================================
+// FIND ENEMY
+//====================================================================
+response CS_Officer_FindEnemy
+{
+	speak "vo.combine.officer.refindenemy_01"
+	speak "vo.combine.officer.refindenemy_02"
+	speak "vo.combine.officer.refindenemy_03"
+	speak "vo.combine.officer.refindenemy_04"
+	speak "vo.combine.officer.refindenemy_05"
+	speak "vo.combine.officer.refindenemy_06"
+	speak "vo.combine.officer.refindenemy_07"
+	speak "vo.combine.officer.refindenemy_08"
+	speak "vo.combine.officer.refindenemy_09"
+	speak "vo.combine.officer.refindenemy_10"
+	speak "vo.combine.officer.refindenemy_11"
+	speak "vo.combine.officer.refindenemy_12"
+	speak "vo.combine.officer.refindenemy_13"
+	speak "vo.combine.officer.refindenemy_14"
+}
+
+rule CS_Officer_FindEnemy
+{
+	criteria		IsCombineS IsClass_Officer ConceptFindEnemy 
+	response		CS_Officer_FindEnemy
+}
+
+response CS_Charger_FindEnemy
+{
+	speak "vo.combine.charger.refindenemy_01"
+	speak "vo.combine.charger.refindenemy_02"
+	speak "vo.combine.charger.refindenemy_03"
+	speak "vo.combine.charger.refindenemy_04"
+	speak "vo.combine.charger.refindenemy_05"
+	speak "vo.combine.charger.refindenemy_06"
+	speak "vo.combine.charger.refindenemy_07"
+	speak "vo.combine.charger.refindenemy_08"
+	speak "vo.combine.charger.refindenemy_09"
+	speak "vo.combine.charger.refindenemy_10"
+	speak "vo.combine.charger.refindenemy_11"
+	speak "vo.combine.charger.refindenemy_12"
+	speak "vo.combine.charger.refindenemy_13"
+	speak "vo.combine.charger.refindenemy_14"
+	speak "vo.combine.charger.refindenemy_15"
+	speak "vo.combine.charger.refindenemy_16"
+	speak "vo.combine.charger.refindenemy_17"
+	speak "vo.combine.charger.refindenemy_18"
+	speak "vo.combine.charger.refindenemy_19"
+	speak "vo.combine.charger.refindenemy_20"
+	speak "vo.combine.charger.refindenemy_21"
+	speak "vo.combine.charger.refindenemy_22"
+	speak "vo.combine.charger.refindenemy_23"
+	speak "vo.combine.charger.refindenemy_24"
+	speak "vo.combine.charger.refindenemy_25"
+	speak "vo.combine.charger.refindenemy_26"
+	speak "vo.combine.charger.refindenemy_27"
+}
+
+rule CS_Charger_FindEnemy
+{
+	criteria		IsCombineS IsClass_Charger ConceptFindEnemy 
+	response		CS_Charger_FindEnemy
+}
+
+response CS_Suppressor_FindEnemy
+{
+	speak "vo.combine.suppressor.refindenemy_01"
+	speak "vo.combine.suppressor.refindenemy_02"
+	speak "vo.combine.suppressor.refindenemy_03"
+	speak "vo.combine.suppressor.refindenemy_04"
+	speak "vo.combine.suppressor.refindenemy_05"
+	speak "vo.combine.suppressor.refindenemy_06"
+	speak "vo.combine.suppressor.refindenemy_07"
+	speak "vo.combine.suppressor.refindenemy_08"
+	speak "vo.combine.suppressor.refindenemy_09"
+	speak "vo.combine.suppressor.refindenemy_10"
+	speak "vo.combine.suppressor.refindenemy_11"
+	speak "vo.combine.suppressor.refindenemy_12"
+	speak "vo.combine.suppressor.refindenemy_13"
+	speak "vo.combine.suppressor.refindenemy_14"
+	speak "vo.combine.suppressor.refindenemy_15"
+	speak "vo.combine.suppressor.refindenemy_16"
+	speak "vo.combine.suppressor.refindenemy_17"
+	speak "vo.combine.suppressor.refindenemy_18"
+	speak "vo.combine.suppressor.refindenemy_19"
+	speak "vo.combine.suppressor.refindenemy_20"
+	speak "vo.combine.suppressor.refindenemy_21"
+	speak "vo.combine.suppressor.refindenemy_22"
+	speak "vo.combine.suppressor.refindenemy_23"
+	speak "vo.combine.suppressor.refindenemy_24"
+	speak "vo.combine.suppressor.refindenemy_25"
+	speak "vo.combine.suppressor.refindenemy_26"
+	speak "vo.combine.suppressor.refindenemy_27"
+}
+
+rule CS_Suppressor_FindEnemy
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFindEnemy 
+	response		CS_Suppressor_FindEnemy
+}
+
+response CS_Grunt_FindEnemy
+{
+	speak "Soldier04.Soldier4FindHer"
+}
+
+rule CS_Grunt_FindEnemy
+{
+	criteria		IsCombineS IsClass_Grunt ConceptFindEnemy 
+	response		CS_Grunt_FindEnemy
+}
+
+//========================================================================================================
+// FLUSHING ENEMY OUT OF COVER
+//====================================================================
+response CS_Officer_FlushingEnemy
+{
+	speak "vo.combine.officer.flushing_01"
+	speak "vo.combine.officer.flushing_02"
+	speak "vo.combine.officer.flushing_03"
+	speak "vo.combine.officer.flushing_04"
+	speak "vo.combine.officer.flushing_05"
+	speak "vo.combine.officer.flushing_06"
+	speak "vo.combine.officer.flushing_07"
+}
+
+rule CS_Officer_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Officer ConceptFlushingEnemy 
+	response		CS_Officer_FlushingEnemy
+}
+
+response CS_Charger_FlushingEnemy
+{
+	// script has not been written yet
+	//speak "Soldier01.Soldier1FlushingHerOut"
+}
+
+rule CS_Charger_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Charger ConceptFlushingEnemy 
+	response		CS_Charger_FlushingEnemy
+}
+
+response CS_Suppressor_FlushingEnemy
+{
+	speak "vo.combine.suppressor.advancing_on_target_01"
+	speak "vo.combine.suppressor.advancing_on_target_02"
+	speak "vo.combine.suppressor.advancing_on_target_03"
+	speak "vo.combine.suppressor.advancing_on_target_04"
+	speak "vo.combine.suppressor.advancing_on_target_05"
+	speak "vo.combine.suppressor.advancing_on_target_06"
+	speak "vo.combine.suppressor.advancing_on_target_07"
+	speak "vo.combine.suppressor.advancing_on_target_08"
+	speak "vo.combine.suppressor.advancing_on_target_09"
+	speak "vo.combine.suppressor.advancing_on_target_10"
+	speak "vo.combine.suppressor.advancing_on_target_11"
+	speak "vo.combine.suppressor.advancing_on_target_12"
+	speak "vo.combine.suppressor.advancing_on_target_13"
+	speak "vo.combine.suppressor.advancing_on_target_14"
+	speak "vo.combine.suppressor.advancing_on_target_15"
+	speak "vo.combine.suppressor.advancing_on_target_16"
+	speak "vo.combine.suppressor.advancing_on_target_17"
+	speak "vo.combine.suppressor.advancing_on_target_18"
+	speak "vo.combine.suppressor.advancing_on_target_19"
+	speak "vo.combine.suppressor.advancing_on_target_20"
+	speak "vo.combine.suppressor.advancing_on_target_21"
+	speak "vo.combine.suppressor.advancing_on_target_22"
+	speak "vo.combine.suppressor.advancing_on_target_23"
+	speak "vo.combine.suppressor.advancing_on_target_24"
+	speak "vo.combine.suppressor.advancing_on_target_25"
+	speak "vo.combine.suppressor.advancing_on_target_26"
+	speak "vo.combine.suppressor.advancing_on_target_27"
+}
+
+rule CS_Suppressor_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFlushingEnemy 
+	response		CS_Suppressor_FlushingEnemy
+}
+
+response CS_Grunt_FlushingEnemy
+{
+	speak "vo.combine.grunt.flushing_01"
+	speak "vo.combine.grunt.flushing_02"
+	speak "vo.combine.grunt.flushing_03"
+	speak "vo.combine.grunt.flushing_04"
+	speak "vo.combine.grunt.flushing_05"
+	speak "vo.combine.grunt.flushing_06"
+	speak "vo.combine.grunt.flushing_07"
+}
+
+rule CS_Grunt_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Grunt ConceptFlushingEnemy 
+	response		CS_Grunt_FlushingEnemy
+}
+
+//========================================================================================================
+// RECONNOITER START
+//====================================================================
+response CS_Officer_Reconnoiter
+{
+	speak "vo.combine.officer.reconnoiter_start_01"
+	speak "vo.combine.officer.reconnoiter_start_02"
+	speak "vo.combine.officer.reconnoiter_start_03"
+	speak "vo.combine.officer.reconnoiter_start_04"
+	speak "vo.combine.officer.reconnoiter_start_05"
+	speak "vo.combine.officer.reconnoiter_start_06"
+	speak "vo.combine.officer.reconnoiter_start_07"
+	speak "vo.combine.officer.reconnoiter_start_08"
+	speak "vo.combine.officer.reconnoiter_start_09"
+	speak "vo.combine.officer.reconnoiter_start_10"
+	speak "vo.combine.officer.reconnoiter_start_11"
+	speak "vo.combine.officer.reconnoiter_start_12"
+	speak "vo.combine.officer.reconnoiter_start_13"
+}
+
+rule CS_Officer_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterStart 
+	response		CS_Officer_Reconnoiter
+}
+
+response CS_Charger_Reconnoiter
+{
+	speak "vo.combine.charger.reconnoiter_start_01"
+	speak "vo.combine.charger.reconnoiter_start_02"
+	speak "vo.combine.charger.reconnoiter_start_03"
+	speak "vo.combine.charger.reconnoiter_start_04"
+	speak "vo.combine.charger.reconnoiter_start_05"
+	speak "vo.combine.charger.reconnoiter_start_06"
+	speak "vo.combine.charger.reconnoiter_start_07"
+	speak "vo.combine.charger.reconnoiter_start_08"
+	speak "vo.combine.charger.reconnoiter_start_09"
+	speak "vo.combine.charger.reconnoiter_start_10"
+	speak "vo.combine.charger.reconnoiter_start_11"
+	speak "vo.combine.charger.reconnoiter_start_12"
+	speak "vo.combine.charger.reconnoiter_start_13"
+	speak "vo.combine.charger.reconnoiter_start_14"
+	speak "vo.combine.charger.reconnoiter_start_15"
+	speak "vo.combine.charger.reconnoiter_start_16"
+	speak "vo.combine.charger.reconnoiter_start_17"
+	speak "vo.combine.charger.reconnoiter_start_18"
+	speak "vo.combine.charger.reconnoiter_start_19"
+	speak "vo.combine.charger.reconnoiter_start_20"
+	speak "vo.combine.charger.reconnoiter_start_21"
+	speak "vo.combine.charger.reconnoiter_start_22"
+	speak "vo.combine.charger.reconnoiter_start_23"
+	speak "vo.combine.charger.reconnoiter_start_24"
+	speak "vo.combine.charger.reconnoiter_start_25"
+	speak "vo.combine.charger.reconnoiter_start_26"
+	speak "vo.combine.charger.reconnoiter_start_27"
+	speak "vo.combine.charger.reconnoiter_start_28"
+	speak "vo.combine.charger.reconnoiter_start_29"
+	speak "vo.combine.charger.reconnoiter_start_30"
+}
+
+rule CS_Charger_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Charger ConceptReconnoiterStart 
+	response		CS_Charger_Reconnoiter
+}
+
+response CS_Suppressor_Reconnoiter
+{
+	speak "vo.combine.suppressor.coverme_01"
+	speak "vo.combine.suppressor.coverme_02"
+	speak "vo.combine.suppressor.coverme_03"
+	speak "vo.combine.suppressor.coverme_04"
+	speak "vo.combine.suppressor.coverme_05"
+	speak "vo.combine.suppressor.coverme_06"
+	speak "vo.combine.suppressor.coverme_07"
+}
+
+rule CS_Suppressor_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterStart 
+	response		CS_Suppressor_Reconnoiter
+}
+
+response CS_Grunt_Reconnoiter
+{
+	speak "vo.combine.grunt.reconnoiter_start_01"
+	speak "vo.combine.grunt.reconnoiter_start_02"
+	speak "vo.combine.grunt.reconnoiter_start_03"
+	speak "vo.combine.grunt.reconnoiter_start_04"
+	speak "vo.combine.grunt.reconnoiter_start_05"
+	speak "vo.combine.grunt.reconnoiter_start_06"
+	speak "vo.combine.grunt.reconnoiter_start_07"
+	speak "vo.combine.grunt.reconnoiter_start_08"
+	speak "vo.combine.grunt.reconnoiter_start_09"
+	speak "vo.combine.grunt.reconnoiter_start_10"
+	speak "vo.combine.grunt.reconnoiter_start_11"
+	speak "vo.combine.grunt.reconnoiter_start_12"
+	speak "vo.combine.grunt.reconnoiter_start_13"
+	speak "vo.combine.grunt.reconnoiter_start_14"
+	speak "vo.combine.grunt.reconnoiter_start_15"
+	speak "vo.combine.grunt.reconnoiter_start_16"
+	speak "vo.combine.grunt.reconnoiter_start_17"
+	speak "vo.combine.grunt.reconnoiter_start_18"
+	speak "vo.combine.grunt.reconnoiter_start_19"
+	speak "vo.combine.grunt.reconnoiter_start_20"
+	speak "vo.combine.grunt.reconnoiter_start_21"
+	speak "vo.combine.grunt.reconnoiter_start_22"
+	speak "vo.combine.grunt.reconnoiter_start_23"
+	speak "vo.combine.grunt.reconnoiter_start_24"
+	speak "vo.combine.grunt.reconnoiter_start_25"
+	speak "vo.combine.grunt.reconnoiter_start_26"
+	speak "vo.combine.grunt.reconnoiter_start_27"
+	speak "vo.combine.grunt.reconnoiter_start_28"
+	speak "vo.combine.grunt.reconnoiter_start_29"
+	speak "vo.combine.grunt.reconnoiter_start_30"
+}
+
+rule CS_Grunt_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Grunt ConceptReconnoiterStart 
+	response		CS_Grunt_Reconnoiter
+}
+
+//========================================================================================================
+// RECONNOITER SEARCH
+//====================================================================
+response CS_Officer_ReconnoiterSearch
+{
+	speak "vo.combine.officer.reconnoiter_search_01"
+	speak "vo.combine.officer.reconnoiter_search_02"
+	speak "vo.combine.officer.reconnoiter_search_03"
+	speak "vo.combine.officer.reconnoiter_search_04"
+	speak "vo.combine.officer.reconnoiter_search_05"
+	speak "vo.combine.officer.reconnoiter_search_06"
+	speak "vo.combine.officer.reconnoiter_search_07"
+	speak "vo.combine.officer.reconnoiter_search_08"
+	speak "vo.combine.officer.reconnoiter_search_09"
+	speak "vo.combine.officer.reconnoiter_search_10"
+	speak "vo.combine.officer.reconnoiter_search_11"
+	speak "vo.combine.officer.reconnoiter_search_12"
+	speak "vo.combine.officer.reconnoiter_search_13"
+	speak "vo.combine.officer.reconnoiter_search_14"
+	speak "vo.combine.officer.reconnoiter_search_15"
+	speak "vo.combine.officer.reconnoiter_search_16"
+}
+
+rule CS_Officer_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterSearch 
+	response		CS_Officer_ReconnoiterSearch
+}
+
+response CS_Charger_ReconnoiterSearch
+{
+	speak "vo.combine.charger.reconnoiter_search_01"
+	speak "vo.combine.charger.reconnoiter_search_02"
+	speak "vo.combine.charger.reconnoiter_search_03"
+	speak "vo.combine.charger.reconnoiter_search_04"
+	speak "vo.combine.charger.reconnoiter_search_05"
+	speak "vo.combine.charger.reconnoiter_search_06"
+	speak "vo.combine.charger.reconnoiter_search_07"
+	speak "vo.combine.charger.reconnoiter_search_08"
+	speak "vo.combine.charger.reconnoiter_search_09"
+	speak "vo.combine.charger.reconnoiter_search_10"
+	speak "vo.combine.charger.reconnoiter_search_11"
+	speak "vo.combine.charger.reconnoiter_search_12"
+	speak "vo.combine.charger.reconnoiter_search_13"
+	speak "vo.combine.charger.reconnoiter_search_14"
+	speak "vo.combine.charger.reconnoiter_search_15"
+	speak "vo.combine.charger.reconnoiter_search_16"
+	speak "vo.combine.charger.reconnoiter_search_17"
+	speak "vo.combine.charger.reconnoiter_search_18"
+	speak "vo.combine.charger.reconnoiter_search_19"
+	speak "vo.combine.charger.reconnoiter_search_20"
+	speak "vo.combine.charger.reconnoiter_search_21"
+	speak "vo.combine.charger.reconnoiter_search_22"
+	speak "vo.combine.charger.reconnoiter_search_23"
+	speak "vo.combine.charger.reconnoiter_search_24"
+	speak "vo.combine.charger.reconnoiter_search_25"
+	speak "vo.combine.charger.reconnoiter_search_26"
+	speak "vo.combine.charger.reconnoiter_search_27"
+	speak "vo.combine.charger.reconnoiter_search_28"
+	speak "vo.combine.charger.reconnoiter_search_29"
+	speak "vo.combine.charger.reconnoiter_search_30"
+}
+
+rule CS_Charger_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Charger ConceptReconnoiterSearch 
+	response		CS_Charger_ReconnoiterSearch
+}
+
+response CS_Suppressor_ReconnoiterSearch
+{
+	speak "vo.combine.suppressor.reconnoiter_search_01"
+	speak "vo.combine.suppressor.reconnoiter_search_02"
+	speak "vo.combine.suppressor.reconnoiter_search_03"
+	speak "vo.combine.suppressor.reconnoiter_search_04"
+	speak "vo.combine.suppressor.reconnoiter_search_05"
+	speak "vo.combine.suppressor.reconnoiter_search_06"
+	speak "vo.combine.suppressor.reconnoiter_search_07"
+	speak "vo.combine.suppressor.reconnoiter_search_08"
+	speak "vo.combine.suppressor.reconnoiter_search_09"
+	speak "vo.combine.suppressor.reconnoiter_search_10"
+	speak "vo.combine.suppressor.reconnoiter_search_11"
+	speak "vo.combine.suppressor.reconnoiter_search_12"
+	speak "vo.combine.suppressor.reconnoiter_search_13"
+	speak "vo.combine.suppressor.reconnoiter_search_14"
+	speak "vo.combine.suppressor.reconnoiter_search_15"
+	speak "vo.combine.suppressor.reconnoiter_search_16"
+	speak "vo.combine.suppressor.reconnoiter_search_17"
+	speak "vo.combine.suppressor.reconnoiter_search_18"
+	speak "vo.combine.suppressor.reconnoiter_search_19"
+	speak "vo.combine.suppressor.reconnoiter_search_20"
+	speak "vo.combine.suppressor.reconnoiter_search_21"
+	speak "vo.combine.suppressor.reconnoiter_search_22"
+	speak "vo.combine.suppressor.reconnoiter_search_23"
+	speak "vo.combine.suppressor.reconnoiter_search_24"
+	speak "vo.combine.suppressor.reconnoiter_search_25"
+	speak "vo.combine.suppressor.reconnoiter_search_26"
+	speak "vo.combine.suppressor.reconnoiter_search_27"
+	speak "vo.combine.suppressor.reconnoiter_search_28"
+	speak "vo.combine.suppressor.reconnoiter_search_29"
+	speak "vo.combine.suppressor.reconnoiter_search_30"
+}
+
+rule CS_Suppressor_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterSearch 
+	response		CS_Suppressor_ReconnoiterSearch
+}
+
+response CS_Grunt_ReconnoiterSearch
+{
+	speak "vo.combine.grunt.reconnoiter_search_01"
+	speak "vo.combine.grunt.reconnoiter_search_02"
+	speak "vo.combine.grunt.reconnoiter_search_03"
+	speak "vo.combine.grunt.reconnoiter_search_04"
+	speak "vo.combine.grunt.reconnoiter_search_05"
+	speak "vo.combine.grunt.reconnoiter_search_06"
+	speak "vo.combine.grunt.reconnoiter_search_07"
+	speak "vo.combine.grunt.reconnoiter_search_08"
+	speak "vo.combine.grunt.reconnoiter_search_09"
+	speak "vo.combine.grunt.reconnoiter_search_10"
+	speak "vo.combine.grunt.reconnoiter_search_11"
+	speak "vo.combine.grunt.reconnoiter_search_12"
+	speak "vo.combine.grunt.reconnoiter_search_13"
+	speak "vo.combine.grunt.reconnoiter_search_14"
+	speak "vo.combine.grunt.reconnoiter_search_15"
+	speak "vo.combine.grunt.reconnoiter_search_16"
+	speak "vo.combine.grunt.reconnoiter_search_17"
+	speak "vo.combine.grunt.reconnoiter_search_18"
+	speak "vo.combine.grunt.reconnoiter_search_19"
+	speak "vo.combine.grunt.reconnoiter_search_20"
+	speak "vo.combine.grunt.reconnoiter_search_21"
+	speak "vo.combine.grunt.reconnoiter_search_22"
+	speak "vo.combine.grunt.reconnoiter_search_23"
+	speak "vo.combine.grunt.reconnoiter_search_24"
+	speak "vo.combine.grunt.reconnoiter_search_25"
+	speak "vo.combine.grunt.reconnoiter_search_26"
+	speak "vo.combine.grunt.reconnoiter_search_27"
+	speak "vo.combine.grunt.reconnoiter_search_28"
+	speak "vo.combine.grunt.reconnoiter_search_29"
+	speak "vo.combine.grunt.reconnoiter_search_30"
+	speak "vo.combine.grunt.reconnoiter_search_31"
+	speak "vo.combine.grunt.reconnoiter_search_32"
+	speak "vo.combine.grunt.reconnoiter_search_33"
+	speak "vo.combine.grunt.reconnoiter_search_34"
+	speak "vo.combine.grunt.reconnoiter_search_35"
+	speak "vo.combine.grunt.reconnoiter_search_36"
+	speak "vo.combine.grunt.reconnoiter_search_37"
+	
+}
+
+rule CS_Grunt_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Grunt ConceptReconnoiterSearch 
+	response		CS_Grunt_ReconnoiterSearch
+}
+
+//========================================================================================================
+// RECONNOITER END
+//====================================================================
+response CS_Officer_ReconnoiterFinish
+{
+	speak "vo.combine.officer.reconnoiter_finish_01"
+	speak "vo.combine.officer.reconnoiter_finish_02"
+	speak "vo.combine.officer.reconnoiter_finish_03"
+	speak "vo.combine.officer.reconnoiter_finish_04"
+	speak "vo.combine.officer.reconnoiter_finish_05"
+	speak "vo.combine.officer.reconnoiter_finish_06"
+	speak "vo.combine.officer.reconnoiter_finish_07"
+	speak "vo.combine.officer.reconnoiter_finish_08"
+	speak "vo.combine.officer.reconnoiter_finish_09"
+	speak "vo.combine.officer.reconnoiter_finish_10"
+	speak "vo.combine.officer.reconnoiter_finish_11"
+	speak "vo.combine.officer.reconnoiter_finish_12"
+	speak "vo.combine.officer.reconnoiter_finish_13"
+	speak "vo.combine.officer.reconnoiter_finish_14"
+	speak "vo.combine.officer.reconnoiter_finish_15"
+	speak "vo.combine.officer.reconnoiter_finish_16"
+	speak "vo.combine.officer.reconnoiter_finish_17"
+	speak "vo.combine.officer.reconnoiter_finish_18"
+}
+
+rule CS_Officer_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Officer ConceptReconnoiterFinish 
+	response		CS_Officer_ReconnoiterFinish
+}
+
+response CS_Charger_ReconnoiterFinish
+{
+	speak "vo.combine.charger.reconnoiter_finish_01"
+	speak "vo.combine.charger.reconnoiter_finish_02"
+	speak "vo.combine.charger.reconnoiter_finish_03"
+	speak "vo.combine.charger.reconnoiter_finish_04"
+	speak "vo.combine.charger.reconnoiter_finish_05"
+	speak "vo.combine.charger.reconnoiter_finish_06"
+	speak "vo.combine.charger.reconnoiter_finish_07"
+	speak "vo.combine.charger.reconnoiter_finish_08"
+	speak "vo.combine.charger.reconnoiter_finish_09"
+	speak "vo.combine.charger.reconnoiter_finish_10"
+	speak "vo.combine.charger.reconnoiter_finish_11"
+	speak "vo.combine.charger.reconnoiter_finish_12"
+	speak "vo.combine.charger.reconnoiter_finish_13"
+	speak "vo.combine.charger.reconnoiter_finish_14"
+	speak "vo.combine.charger.reconnoiter_finish_15"
+	speak "vo.combine.charger.reconnoiter_finish_16"
+	speak "vo.combine.charger.reconnoiter_finish_17"
+	speak "vo.combine.charger.reconnoiter_finish_18"
+	speak "vo.combine.charger.reconnoiter_finish_19"
+	speak "vo.combine.charger.reconnoiter_finish_20"
+	speak "vo.combine.charger.reconnoiter_finish_21"
+	speak "vo.combine.charger.reconnoiter_finish_22"
+	speak "vo.combine.charger.reconnoiter_finish_23"
+	speak "vo.combine.charger.reconnoiter_finish_24"
+	speak "vo.combine.charger.reconnoiter_finish_25"
+	speak "vo.combine.charger.reconnoiter_finish_26"
+	speak "vo.combine.charger.reconnoiter_finish_27"
+	speak "vo.combine.charger.reconnoiter_finish_28"
+	speak "vo.combine.charger.reconnoiter_finish_29"
+	speak "vo.combine.charger.reconnoiter_finish_30"
+}
+
+rule CS_Charger_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Charger ConceptReconnoiterFinish 
+	response		CS_Charger_ReconnoiterFinish
+}
+
+response CS_Suppressor_ReconnoiterFinish
+{
+	speak "vo.combine.suppressor.reconnoiter_finish_01"
+	speak "vo.combine.suppressor.reconnoiter_finish_02"
+	speak "vo.combine.suppressor.reconnoiter_finish_03"
+	speak "vo.combine.suppressor.reconnoiter_finish_04"
+	speak "vo.combine.suppressor.reconnoiter_finish_05"
+	speak "vo.combine.suppressor.reconnoiter_finish_06"
+	speak "vo.combine.suppressor.reconnoiter_finish_07"
+	speak "vo.combine.suppressor.reconnoiter_finish_08"
+	speak "vo.combine.suppressor.reconnoiter_finish_09"
+	speak "vo.combine.suppressor.reconnoiter_finish_10"
+	speak "vo.combine.suppressor.reconnoiter_finish_11"
+	speak "vo.combine.suppressor.reconnoiter_finish_12"
+	speak "vo.combine.suppressor.reconnoiter_finish_13"
+	speak "vo.combine.suppressor.reconnoiter_finish_14"
+	speak "vo.combine.suppressor.reconnoiter_finish_15"
+	speak "vo.combine.suppressor.reconnoiter_finish_16"
+	speak "vo.combine.suppressor.reconnoiter_finish_17"
+	speak "vo.combine.suppressor.reconnoiter_finish_18"
+	speak "vo.combine.suppressor.reconnoiter_finish_19"
+	speak "vo.combine.suppressor.reconnoiter_finish_20"
+	speak "vo.combine.suppressor.reconnoiter_finish_21"
+	speak "vo.combine.suppressor.reconnoiter_finish_22"
+	speak "vo.combine.suppressor.reconnoiter_finish_23"
+	speak "vo.combine.suppressor.reconnoiter_finish_24"
+	speak "vo.combine.suppressor.reconnoiter_finish_25"
+	speak "vo.combine.suppressor.reconnoiter_finish_26"
+	speak "vo.combine.suppressor.reconnoiter_finish_27"
+	speak "vo.combine.suppressor.reconnoiter_finish_28"
+	speak "vo.combine.suppressor.reconnoiter_finish_29"
+	speak "vo.combine.suppressor.reconnoiter_finish_30"
+}
+
+rule CS_Suppressor_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterFinish 
+	response		CS_Suppressor_ReconnoiterFinish
+}
+
+response CS_Grunt_ReconnoiterFinish
+{
+	speak "vo.combine.grunt.reconnoiter_finish_01"
+	speak "vo.combine.grunt.reconnoiter_finish_02"
+	speak "vo.combine.grunt.reconnoiter_finish_03"
+	speak "vo.combine.grunt.reconnoiter_finish_04"
+	speak "vo.combine.grunt.reconnoiter_finish_05"
+	speak "vo.combine.grunt.reconnoiter_finish_06"
+	speak "vo.combine.grunt.reconnoiter_finish_07"
+	speak "vo.combine.grunt.reconnoiter_finish_08"
+	speak "vo.combine.grunt.reconnoiter_finish_09"
+	speak "vo.combine.grunt.reconnoiter_finish_10"
+	speak "vo.combine.grunt.reconnoiter_finish_11"
+	speak "vo.combine.grunt.reconnoiter_finish_12"
+	speak "vo.combine.grunt.reconnoiter_finish_13"
+	speak "vo.combine.grunt.reconnoiter_finish_14"
+	speak "vo.combine.grunt.reconnoiter_finish_15"
+	speak "vo.combine.grunt.reconnoiter_finish_16"
+	speak "vo.combine.grunt.reconnoiter_finish_17"
+	speak "vo.combine.grunt.reconnoiter_finish_18"
+	speak "vo.combine.grunt.reconnoiter_finish_19"
+	speak "vo.combine.grunt.reconnoiter_finish_20"
+	speak "vo.combine.grunt.reconnoiter_finish_21"
+	speak "vo.combine.grunt.reconnoiter_finish_22"
+	speak "vo.combine.grunt.reconnoiter_finish_23"
+	speak "vo.combine.grunt.reconnoiter_finish_24"
+	speak "vo.combine.grunt.reconnoiter_finish_25"
+	speak "vo.combine.grunt.reconnoiter_finish_26"
+	speak "vo.combine.grunt.reconnoiter_finish_27"
+	speak "vo.combine.grunt.reconnoiter_finish_28"
+	speak "vo.combine.grunt.reconnoiter_finish_29"
+	speak "vo.combine.grunt.reconnoiter_finish_30"
+	speak "vo.combine.grunt.reconnoiter_finish_31"
+	speak "vo.combine.grunt.reconnoiter_finish_32"
+	speak "vo.combine.grunt.reconnoiter_finish_33"
+	speak "vo.combine.grunt.reconnoiter_finish_34"
+}
+
+rule CS_Grunt_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Grunt ConceptReconnoiterFinish 
+	response		CS_Grunt_ReconnoiterFinish
+}
+
+
+//========================================================================================================
+// MOVING TOWARDS OUR ENEMY
+//====================================================================
+response CS_Officer_AdvancingOnTarget
+{
+	speak "vo.combine.officer.advancing_on_target_01"
+	speak "vo.combine.officer.advancing_on_target_02"
+	speak "vo.combine.officer.advancing_on_target_03"
+	speak "vo.combine.officer.advancing_on_target_04"
+	speak "vo.combine.officer.advancing_on_target_05"
+	speak "vo.combine.officer.advancing_on_target_06"
+	speak "vo.combine.officer.advancing_on_target_07"
+	speak "vo.combine.officer.advancing_on_target_08"
+	speak "vo.combine.officer.advancing_on_target_09"
+	speak "vo.combine.officer.advancing_on_target_10"
+	speak "vo.combine.officer.advancing_on_target_11"
+	speak "vo.combine.officer.advancing_on_target_12"
+	speak "vo.combine.officer.advancing_on_target_13"
+	speak "vo.combine.officer.advancing_on_target_14"
+}
+
+rule CS_Officer_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Officer ConceptAdvancingOnTarget 
+	response		CS_Officer_AdvancingOnTarget
+}
+
+response CS_Charger_AdvancingOnTarget
+{
+	speak "vo.combine.charger.advancing_on_target_01"
+	speak "vo.combine.charger.advancing_on_target_02"
+	speak "vo.combine.charger.advancing_on_target_03"
+	speak "vo.combine.charger.advancing_on_target_04"
+	speak "vo.combine.charger.advancing_on_target_05"
+	speak "vo.combine.charger.advancing_on_target_06"
+	speak "vo.combine.charger.advancing_on_target_07"
+	speak "vo.combine.charger.advancing_on_target_08"
+	speak "vo.combine.charger.advancing_on_target_09"
+	speak "vo.combine.charger.advancing_on_target_10"
+	speak "vo.combine.charger.advancing_on_target_11"
+	speak "vo.combine.charger.advancing_on_target_12"
+	speak "vo.combine.charger.advancing_on_target_13"
+	speak "vo.combine.charger.advancing_on_target_14"
+	speak "vo.combine.charger.advancing_on_target_15"
+	speak "vo.combine.charger.advancing_on_target_16"
+	speak "vo.combine.charger.advancing_on_target_17"
+	speak "vo.combine.charger.advancing_on_target_18"
+	speak "vo.combine.charger.advancing_on_target_19"
+	speak "vo.combine.charger.advancing_on_target_20"
+	speak "vo.combine.charger.advancing_on_target_21"
+	speak "vo.combine.charger.advancing_on_target_22"
+	speak "vo.combine.charger.advancing_on_target_23"
+	speak "vo.combine.charger.advancing_on_target_24"
+	speak "vo.combine.charger.advancing_on_target_25"
+	speak "vo.combine.charger.advancing_on_target_26"
+	speak "vo.combine.charger.advancing_on_target_27"
+}
+
+rule CS_Charger_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Charger ConceptAdvancingOnTarget 
+	response		CS_Charger_AdvancingOnTarget
+}
+
+response CS_Suppressor_AdvancingOnTarget
+{
+	speak "vo.combine.suppressor.advancing_on_target_01"
+	speak "vo.combine.suppressor.advancing_on_target_02"
+	speak "vo.combine.suppressor.advancing_on_target_03"
+	speak "vo.combine.suppressor.advancing_on_target_04"
+	speak "vo.combine.suppressor.advancing_on_target_05"
+	speak "vo.combine.suppressor.advancing_on_target_06"
+	speak "vo.combine.suppressor.advancing_on_target_07"
+	speak "vo.combine.suppressor.advancing_on_target_08"
+	speak "vo.combine.suppressor.advancing_on_target_09"
+	speak "vo.combine.suppressor.advancing_on_target_10"
+	speak "vo.combine.suppressor.advancing_on_target_11"
+	speak "vo.combine.suppressor.advancing_on_target_12"
+	speak "vo.combine.suppressor.advancing_on_target_13"
+	speak "vo.combine.suppressor.advancing_on_target_14"
+	speak "vo.combine.suppressor.advancing_on_target_15"
+	speak "vo.combine.suppressor.advancing_on_target_16"
+	speak "vo.combine.suppressor.advancing_on_target_17"
+	speak "vo.combine.suppressor.advancing_on_target_18"
+	speak "vo.combine.suppressor.advancing_on_target_19"
+	speak "vo.combine.suppressor.advancing_on_target_20"
+	speak "vo.combine.suppressor.advancing_on_target_21"
+	speak "vo.combine.suppressor.advancing_on_target_22"
+	speak "vo.combine.suppressor.advancing_on_target_23"
+	speak "vo.combine.suppressor.advancing_on_target_24"
+	speak "vo.combine.suppressor.advancing_on_target_25"
+	speak "vo.combine.suppressor.advancing_on_target_26"
+	speak "vo.combine.suppressor.advancing_on_target_27"
+}
+
+rule CS_Suppressor_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAdvancingOnTarget 
+	response		CS_Suppressor_AdvancingOnTarget
+}
+
+response CS_Grunt_AdvancingOnTarget
+{
+	speak "vo.combine.grunt.advancing_on_target_01"
+	speak "vo.combine.grunt.advancing_on_target_02"
+	speak "vo.combine.grunt.advancing_on_target_03"
+	speak "vo.combine.grunt.advancing_on_target_04"
+	speak "vo.combine.grunt.advancing_on_target_05"
+	speak "vo.combine.grunt.advancing_on_target_06"
+	speak "vo.combine.grunt.advancing_on_target_07"
+	speak "vo.combine.grunt.advancing_on_target_08"
+	speak "vo.combine.grunt.advancing_on_target_09"
+	speak "vo.combine.grunt.advancing_on_target_10"
+	speak "vo.combine.grunt.advancing_on_target_11"
+	speak "vo.combine.grunt.advancing_on_target_12"
+	speak "vo.combine.grunt.advancing_on_target_13"
+	speak "vo.combine.grunt.advancing_on_target_14"
+	speak "vo.combine.grunt.advancing_on_target_15"
+	speak "vo.combine.grunt.advancing_on_target_16"
+	speak "vo.combine.grunt.advancing_on_target_17"
+	speak "vo.combine.grunt.advancing_on_target_18"
+	speak "vo.combine.grunt.advancing_on_target_19"
+	speak "vo.combine.grunt.advancing_on_target_20"
+	speak "vo.combine.grunt.advancing_on_target_21"
+	speak "vo.combine.grunt.advancing_on_target_22"
+	speak "vo.combine.grunt.advancing_on_target_23"
+	speak "vo.combine.grunt.advancing_on_target_24"
+	speak "vo.combine.grunt.advancing_on_target_25"
+	speak "vo.combine.grunt.advancing_on_target_26"
+	speak "vo.combine.grunt.advancing_on_target_27"
+}
+
+rule CS_Grunt_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Grunt ConceptAdvancingOnTarget 
+	response		CS_Grunt_AdvancingOnTarget
+}
+
+
+//========================================================================================================
+// ESTABLISHING LINE OF FIRE
+//====================================================================
+response CS_Officer_EstablishingLOF
+{
+	speak "vo.combine.officer.establishinglof_01" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_02" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_03" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_04" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_05" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_06" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_07" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_08" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_09" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_10" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_11" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_12" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_13" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_14" respeakdelay 30
+	speak "vo.combine.officer.establishinglof_15" respeakdelay 30
+}
+
+rule CS_Officer_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Officer ConceptEstablishingLOF
+	response		CS_Officer_EstablishingLOF
+}
+
+response CS_Charger_EstablishingLOF
+{
+	speak "vo.combine.charger.establishinglof_01" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_02" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_03" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_04" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_05" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_06" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_07" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_08" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_09" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_10" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_11" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_12" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_13" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_14" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_15" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_16" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_17" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_18" respeakdelay 30
+	speak "vo.combine.charger.establishinglof_19" respeakdelay 30
+}
+
+rule CS_Charger_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Charger ConceptEstablishingLOF
+	response		CS_Charger_EstablishingLOF
+}
+
+response CS_Suppressor_EstablishingLOF
+{
+	speak "vo.combine.suppressor.establishinglof_01" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_02" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_03" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_04" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_05" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_06" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_07" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_08" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_09" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_10" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_11" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_12" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_13" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_14" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_15" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_16" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_17" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_18" respeakdelay 30
+	speak "vo.combine.suppressor.establishinglof_19" respeakdelay 30
+}
+
+rule CS_Suppressor_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptEstablishingLOF
+	response		CS_Suppressor_EstablishingLOF
+}
+
+response CS_Grunt_EstablishingLOF
+{
+	speak "vo.combine.grunt.establishinglof_01" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_02" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_03" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_04" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_05" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_06" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_07" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_08" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_09" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_10" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_11" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_12" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_13" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_14" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_15" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_16" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_17" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_18" respeakdelay 30
+	speak "vo.combine.grunt.establishinglof_19" respeakdelay 30
+}
+
+rule CS_Grunt_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Grunt ConceptEstablishingLOF
+	response		CS_Grunt_EstablishingLOF
+}
+
+//========================================================================================================
+// ANNOUNCING A CHARGE
+//========================================================================================================
+response CS_Charger_AnnounceCharge
+{
+	speak "vo.combine.charger.announceattack_charge_01" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_02" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_03" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_04" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_05" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_06" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_07" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_08" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_09" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_10" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_11" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_12" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_13" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_14" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_15" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_16" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_17" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_18" predelay 1.5 respeakdelay 15
+	speak "vo.combine.charger.announceattack_charge_19" predelay 1.5 respeakdelay 15
+}
+
+rule CS_Charger_AnnounceCharge
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge
+	response		CS_Charger_AnnounceCharge
+}
+
+
+//========================================================================================================
+// REQUESTING COVER
+//====================================================================
+response CS_Officer_CoverMe
+{
+	speak "vo.combine.officer.coverme_01" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_02" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_03" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_04" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_05" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_06" predelay 1 respeakdelay 15
+	speak "vo.combine.officer.coverme_07" predelay 1 respeakdelay 15
+}
+
+rule CS_Officer_CoverMe
+{
+	criteria		IsCombineS IsClass_Officer ConceptCoverMe HasOtherSquadMembers
+	response		CS_Officer_CoverMe
+}
+
+response CS_Charger_CoverMe
+{
+	// coverme dialog has not been written yet. using announceattack instead. 
+	speak "vo.combine.charger.announceattack_01" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_02" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_03" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_04" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_05" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_06" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_07" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_08" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_09" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_10" predelay 1 respeakdelay 15
+	speak "vo.combine.charger.announceattack_11" predelay 1 respeakdelay 15
+}
+
+rule CS_Charger_CoverMe
+{
+	criteria		IsCombineS IsClass_Charger ConceptCoverMe HasOtherSquadMembers 
+	response		CS_Charger_CoverMe
+}
+
+response CS_Suppressor_CoverMe
+{
+	speak "vo.combine.suppressor.coverme_01" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_02" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_03" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_04" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_05" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_06" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_07" predelay 1 respeakdelay 15
+}
+
+rule CS_Suppressor_CoverMe
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptCoverMe HasOtherSquadMembers 
+	response		CS_Suppressor_CoverMe
+}
+
+response CS_Grunt_CoverMe
+{
+	speak "vo.combine.grunt.coverme_01" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_02" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_03" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_04" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_05" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_06" predelay 1 respeakdelay 15
+	speak "vo.combine.grunt.coverme_07" predelay 1 respeakdelay 15
+}
+
+rule CS_Grunt_CoverMe
+{
+	criteria		IsCombineS IsClass_Grunt ConceptCoverMe HasOtherSquadMembers 
+	response		CS_Grunt_CoverMe
+}
+
+//========================================================================================================
+// ANNOUNCING ATTACKS
+//		ATTACK IS GRENADE THROW
+//====================================================================
+response CS_Officer_AnnounceAttack_Grenade
+{
+	speak "vo.combine.officer.announceattack_grenade_01" 
+	speak "vo.combine.officer.announceattack_grenade_02" 
+	speak "vo.combine.officer.announceattack_grenade_03" 
+	speak "vo.combine.officer.announceattack_grenade_04" 
+	speak "vo.combine.officer.announceattack_grenade_05" 
+	speak "vo.combine.officer.announceattack_grenade_06" 
+	speak "vo.combine.officer.announceattack_grenade_07" 
+}
+
+rule CS_Officer_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceAttack AnnounceIsGrenade
+	response		CS_Officer_AnnounceAttack_Grenade
+}
+
+response CS_Charger_AnnounceAttack_Grenade
+{
+	// this dialog has not been written yet. 
+	//speak "Soldier01.Soldier1ThrowingGrenade"
+}
+
+rule CS_Charger_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceAttack AnnounceIsGrenade
+	response		CS_Charger_AnnounceAttack_Grenade
+}
+
+response CS_Suppressor_AnnounceAttack_Grenade
+{
+	// dialog not written or recorded yet
+	//speak "Soldier07.Soldier7ThrowingGrenade"
+}
+
+rule CS_Suppressor_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAnnounceAttack AnnounceIsGrenade
+	response		CS_Suppressor_AnnounceAttack_Grenade
+}
+
+response CS_Grunt_AnnounceAttack_Grenade
+{
+	speak "vo.combine.grunt.announceattack_grenade_01"
+	speak "vo.combine.grunt.announceattack_grenade_02"
+	speak "vo.combine.grunt.announceattack_grenade_03"
+	speak "vo.combine.grunt.announceattack_grenade_04"
+	speak "vo.combine.grunt.announceattack_grenade_05"
+	speak "vo.combine.grunt.announceattack_grenade_06"
+	speak "vo.combine.grunt.announceattack_grenade_07"
+	speak "vo.combine.grunt.announceattack_grenade_08"
+	speak "vo.combine.grunt.announceattack_grenade_09"
+	speak "vo.combine.grunt.announceattack_grenade_10"
+}
+
+rule CS_Grunt_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Grunt ConceptAnnounceAttack AnnounceIsGrenade
+	response		CS_Grunt_AnnounceAttack_Grenade
+}
+
+//====================================================================
+//		ATTACK IS MANHACK RELEASE
+//====================================================================
+response CS_Officer_AnnounceAttack_Manhack
+{
+	// oops - this didn't get recorded
+	//speak "vo.combine.officer.announceattack_manhack_01"
+	//speak "vo.combine.officer.announceattack_manhack_02"
+	//speak "vo.combine.officer.announceattack_manhack_03"
+	//speak "vo.combine.officer.announceattack_manhack_04"
+	//speak "vo.combine.officer.announceattack_manhack_05"
+	//speak "vo.combine.officer.announceattack_manhack_06"
+	//speak "vo.combine.officer.announceattack_manhack_07"
+	//speak "vo.combine.officer.announceattack_manhack_08"
+	//speak "vo.combine.officer.announceattack_manhack_09"
+	//speak "vo.combine.officer.announceattack_manhack_10"
+	
+	
+}
+
+rule CS_Officer_AnnounceAttack_Manhack
+{
+	criteria		IsCombineS IsClass_Officer ConceptAnnounceAttack AnnounceIsManhack
+	response		CS_Officer_AnnounceAttack_Manhack
+}
+
+//========================================================================================================
+// REFOUND AN ENEMY THAT ELUDED US
+//====================================================================
+response CS_Officer_overwatch
+{
+	speak "vo.combine.officer.refindenemy_01"
+	speak "vo.combine.officer.refindenemy_02"
+	speak "vo.combine.officer.refindenemy_03"
+	speak "vo.combine.officer.refindenemy_04"
+	speak "vo.combine.officer.refindenemy_05"
+	speak "vo.combine.officer.refindenemy_06"
+	speak "vo.combine.officer.refindenemy_07"
+	speak "vo.combine.officer.refindenemy_08"
+	speak "vo.combine.officer.refindenemy_09"
+	speak "vo.combine.officer.refindenemy_10"
+	speak "vo.combine.officer.refindenemy_11"
+	speak "vo.combine.officer.refindenemy_12"
+	speak "vo.combine.officer.refindenemy_13"
+	speak "vo.combine.officer.refindenemy_14"
+}
+
+rule CS_Officer_overwatch
+{
+	criteria		IsCombineS IsClass_Officer ConceptOverwatch 
+	response		CS_Officer_overwatch
+}
+
+//========================================================================================================
+// ENTERING OVERWATCH
+//====================================================================
+
+response CS_Officer_Overwatch
+{
+	speak "vo.combine.officer.overwatch_01" respeakdelay 15
+	speak "vo.combine.officer.overwatch_02" respeakdelay 15
+	speak "vo.combine.officer.overwatch_03" respeakdelay 15
+	speak "vo.combine.officer.overwatch_04" respeakdelay 15
+	speak "vo.combine.officer.overwatch_05" respeakdelay 15
+	speak "vo.combine.officer.overwatch_06" respeakdelay 15
+	speak "vo.combine.officer.overwatch_07" respeakdelay 15
+	speak "vo.combine.officer.overwatch_08" respeakdelay 15
+	speak "vo.combine.officer.overwatch_09" respeakdelay 15
+	speak "vo.combine.officer.overwatch_10" respeakdelay 15
+	speak "vo.combine.officer.overwatch_11" respeakdelay 15
+	speak "vo.combine.officer.overwatch_12" respeakdelay 15
+	speak "vo.combine.officer.overwatch_13" respeakdelay 15
+	speak "vo.combine.officer.overwatch_14" respeakdelay 15
+	speak "vo.combine.officer.overwatch_15" respeakdelay 15
+	speak "vo.combine.officer.overwatch_16" respeakdelay 15
+	speak "vo.combine.officer.overwatch_17" respeakdelay 15
+	speak "vo.combine.officer.overwatch_18" respeakdelay 15
+	speak "vo.combine.officer.overwatch_19" respeakdelay 15
+}
+
+rule CS_Officer_overwatch
+{
+	criteria		IsCombineS IsClass_Officer ConceptOverwatch 
+	response		CS_Officer_overwatch
+}
+
+
+response CS_Charger_Overwatch
+{
+	speak "vo.combine.grunt.overwatch_01" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_02" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_03" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_04" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_05" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_06" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_07" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_08" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_09" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_10" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_11" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_12" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_13" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_14" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_15" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_16" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_17" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_18" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_19" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_20" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_21" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_22" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_23" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_24" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_25" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_26" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_27" respeakdelay 15
+}
+
+rule CS_Charger_overwatch
+{
+	criteria		IsCombineS IsClass_Charger ConceptOverwatch 
+	response		CS_Charger_overwatch
+}
+
+response CS_Suppressor_Overwatch
+{
+	speak "vo.combine.suppressor.overwatch_01"
+	speak "vo.combine.suppressor.overwatch_02"
+	speak "vo.combine.suppressor.overwatch_03"
+	speak "vo.combine.suppressor.overwatch_04"
+	speak "vo.combine.suppressor.overwatch_05"
+	speak "vo.combine.suppressor.overwatch_06"
+	speak "vo.combine.suppressor.overwatch_07"
+	speak "vo.combine.suppressor.overwatch_08"
+	speak "vo.combine.suppressor.overwatch_09"
+	speak "vo.combine.suppressor.overwatch_10"
+	speak "vo.combine.suppressor.overwatch_11"
+	speak "vo.combine.suppressor.overwatch_12"
+	speak "vo.combine.suppressor.overwatch_13"
+	speak "vo.combine.suppressor.overwatch_14"
+	speak "vo.combine.suppressor.overwatch_15"
+	speak "vo.combine.suppressor.overwatch_16"
+	speak "vo.combine.suppressor.overwatch_17"
+	speak "vo.combine.suppressor.overwatch_18"
+	speak "vo.combine.suppressor.overwatch_19"
+	speak "vo.combine.suppressor.overwatch_20"
+	speak "vo.combine.suppressor.overwatch_21"
+	speak "vo.combine.suppressor.overwatch_22"
+	speak "vo.combine.suppressor.overwatch_23"
+	speak "vo.combine.suppressor.overwatch_24"
+	speak "vo.combine.suppressor.overwatch_25"
+	speak "vo.combine.suppressor.overwatch_26"
+	speak "vo.combine.suppressor.overwatch_27"
+}
+
+rule CS_Suppressor_Overwatch
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptOverwatch 
+	response		CS_Suppressor_Overwatch
+}
+
+response CS_Grunt_Overwatch
+{
+	speak "vo.combine.grunt.overwatch_01" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_02" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_03" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_04" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_05" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_06" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_07" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_08" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_09" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_10" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_11" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_12" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_13" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_14" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_15" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_16" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_17" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_18" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_19" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_20" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_21" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_22" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_23" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_24" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_25" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_26" respeakdelay 15
+	speak "vo.combine.grunt.overwatch_27" respeakdelay 15
+}
+
+rule CS_Grunt_Overwatch
+{
+	criteria		IsCombineS IsClass_Grunt ConceptOverwatch 
+	response		CS_Grunt_Overwatch
+}
+
+//========================================================================================================
+// SUPPRESSING
+//====================================================================
+response CS_Officer_Suppressing
+{
+	speak "vo.combine.officer.firing_01"
+	speak "vo.combine.officer.firing_02"
+	speak "vo.combine.officer.firing_03"
+	speak "vo.combine.officer.firing_04"
+}
+
+rule CS_Officer_Suppressing
+{
+	criteria		IsCombineS IsClass_Officer ConceptSuppressing 
+	response		CS_Officer_Suppressing
+}
+
+response CS_Charger_Suppressing
+{
+	speak "vo.combine.charger.suppressing_01"
+	speak "vo.combine.charger.suppressing_02"
+	speak "vo.combine.charger.suppressing_03"
+	speak "vo.combine.charger.suppressing_04"
+	speak "vo.combine.charger.suppressing_05"
+	speak "vo.combine.charger.suppressing_06"
+	speak "vo.combine.charger.suppressing_07"
+	speak "vo.combine.charger.suppressing_08"
+	speak "vo.combine.charger.suppressing_09"
+	speak "vo.combine.charger.suppressing_10"
+}
+
+rule CS_Charger_Suppressing
+{
+	criteria		IsCombineS IsClass_Charger ConceptSuppressing 
+	response		CS_Charger_Suppressing
+}
+
+response CS_Suppressor_Suppressing
+{
+	speak "vo.combine.suppressor.suppressing_01"
+	speak "vo.combine.suppressor.suppressing_02"
+	speak "vo.combine.suppressor.suppressing_03"
+	speak "vo.combine.suppressor.suppressing_04"
+	speak "vo.combine.suppressor.suppressing_05"
+	speak "vo.combine.suppressor.suppressing_06"
+	speak "vo.combine.suppressor.suppressing_07"
+	speak "vo.combine.suppressor.suppressing_08"
+	speak "vo.combine.suppressor.suppressing_09"
+	speak "vo.combine.suppressor.suppressing_10"
+}
+
+rule CS_Suppressor_Suppressing
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSuppressing 
+	response		CS_Suppressor_Suppressing
+}
+
+response CS_Grunt_Suppressing
+{
+	speak "vo.combine.grunt.suppressing_01"
+	speak "vo.combine.grunt.suppressing_02"
+	speak "vo.combine.grunt.suppressing_03"
+	speak "vo.combine.grunt.suppressing_04"
+	speak "vo.combine.grunt.suppressing_05"
+	speak "vo.combine.grunt.suppressing_06"
+	speak "vo.combine.grunt.suppressing_07"
+	speak "vo.combine.grunt.suppressing_08"
+	speak "vo.combine.grunt.suppressing_09"
+	speak "vo.combine.grunt.suppressing_10"
+}
+
+rule CS_Grunt_Suppressing
+{
+	criteria		IsCombineS IsClass_Grunt ConceptSuppressing 
+	response		CS_Grunt_Suppressing
+}
+
+//========================================================================================================
+// LOST ENEMY
+//		RECENTLY
+//====================================================================
+response CS_Officer_LostShort
+{
+	speak "vo.combine.officer.lostenemy_01"
+	speak "vo.combine.officer.lostenemy_02"
+	speak "vo.combine.officer.lostenemy_03"
+	speak "vo.combine.officer.lostenemy_04"
+	speak "vo.combine.officer.lostenemy_05"
+	speak "vo.combine.officer.lostenemy_06"
+}
+
+rule CS_Officer_LostShort
+{
+	criteria		IsCombineS IsClass_Officer ConceptLostEnemy LostEnemyShortTime
+	response		CS_Officer_LostShort
+}
+
+response CS_Charger_LostShort
+{
+	speak "vo.combine.charger.lostenemy_01"
+	speak "vo.combine.charger.lostenemy_02"
+	speak "vo.combine.charger.lostenemy_03"
+	speak "vo.combine.charger.lostenemy_04"
+	speak "vo.combine.charger.lostenemy_05"
+	speak "vo.combine.charger.lostenemy_06"
+	speak "vo.combine.charger.lostenemy_07"
+	speak "vo.combine.charger.lostenemy_08"
+}
+
+rule CS_Charger_LostShort
+{
+	criteria		IsCombineS IsClass_Charger ConceptLostEnemy LostEnemyShortTime
+	response		CS_Charger_LostShort
+}
+
+response CS_Suppressor_LostShort
+{
+	speak "vo.combine.suppressor.lostenemy_01"
+	speak "vo.combine.suppressor.lostenemy_02"
+	speak "vo.combine.suppressor.lostenemy_03"
+	speak "vo.combine.suppressor.lostenemy_04"
+	speak "vo.combine.suppressor.lostenemy_05"
+	speak "vo.combine.suppressor.lostenemy_06"
+	speak "vo.combine.suppressor.lostenemy_07"
+	speak "vo.combine.suppressor.lostenemy_08"
+}
+
+rule CS_Suppressor_LostShort
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptLostEnemy LostEnemyShortTime
+	response		CS_Suppressor_LostShort
+}
+
+response CS_Grunt_LostShort
+{
+	speak "vo.combine.grunt.lostvisual_01"
+	speak "vo.combine.grunt.lostvisual_02"
+	speak "vo.combine.grunt.lostvisual_03"
+	speak "vo.combine.grunt.lostvisual_04"
+	speak "vo.combine.grunt.lostvisual_05"
+	speak "vo.combine.grunt.lostvisual_06"
+	speak "vo.combine.grunt.lostvisual_07"
+	speak "vo.combine.grunt.lostvisual_08"
+	speak "vo.combine.grunt.lostvisual_09"
+	speak "vo.combine.grunt.lostvisual_10"
+}
+
+rule CS_Grunt_LostShort
+{
+	criteria		IsCombineS IsClass_Grunt ConceptLostEnemy LostEnemyShortTime
+	response		CS_Grunt_LostShort
+}
+
+//========================================================================================================
+// RELOADING
+//====================================================================
+response CS_Officer_Reload
+{
+	// dialog has not been recorded. using grunt barks instead. 
+	speak "vo.combine.officer.reload_01" predelay 0.5
+	speak "vo.combine.officer.reload_02" predelay 0.5
+	speak "vo.combine.officer.reload_03" predelay 0.5
+	speak "vo.combine.officer.reload_04" predelay 0.5
+	speak "vo.combine.officer.reload_05" predelay 0.5
+	speak "vo.combine.officer.reload_06" predelay 0.5
+	speak "vo.combine.officer.reload_07" predelay 0.5
+	speak "vo.combine.officer.reload_08" predelay 0.5
+}
+
+rule CS_Officer_Reload
+{
+	criteria		IsCombineS IsClass_Officer ConceptReload 
+	response		CS_Officer_Reload
+}
+
+response CS_Charger_Reload
+{
+	speak "vo.combine.charger.reload_01" predelay 0.5
+	speak "vo.combine.charger.reload_02" predelay 0.5
+	speak "vo.combine.charger.reload_03" predelay 0.5
+	speak "vo.combine.charger.reload_04" predelay 0.5
+	speak "vo.combine.charger.reload_05" predelay 0.5
+	speak "vo.combine.charger.reload_06" predelay 0.5
+	speak "vo.combine.charger.reload_07" predelay 0.5
+	speak "vo.combine.charger.reload_08" predelay 0.5
+	speak "vo.combine.charger.reload_09" predelay 0.5
+}
+
+rule CS_Charger_Reload
+{
+	criteria		IsCombineS IsClass_Charger ConceptReload 
+	response		CS_Charger_Reload
+}
+
+response CS_Suppressor_Reload
+{
+	speak "vo.combine.suppressor.reload_01" predelay 0.5
+	speak "vo.combine.suppressor.reload_02" predelay 0.5
+	speak "vo.combine.suppressor.reload_03" predelay 0.5
+	speak "vo.combine.suppressor.reload_04" predelay 0.5
+	speak "vo.combine.suppressor.reload_05" predelay 0.5
+	speak "vo.combine.suppressor.reload_06" predelay 0.5
+	speak "vo.combine.suppressor.reload_07" predelay 0.5
+	speak "vo.combine.suppressor.reload_08" predelay 0.5
+	speak "vo.combine.suppressor.reload_09" predelay 0.5
+}
+
+rule CS_Suppressor_Reload
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReload 
+	response		CS_Suppressor_Reload
+}
+
+response CS_Grunt_Reload
+{
+	speak "vo.combine.grunt.reload_01" predelay 0.5
+	speak "vo.combine.grunt.reload_02" predelay 0.5
+	speak "vo.combine.grunt.reload_03" predelay 0.5
+	speak "vo.combine.grunt.reload_04" predelay 0.5
+	speak "vo.combine.grunt.reload_05" predelay 0.5
+	speak "vo.combine.grunt.reload_06" predelay 0.5
+	speak "vo.combine.grunt.reload_07" predelay 0.5
+	speak "vo.combine.grunt.reload_08" predelay 0.5
+	speak "vo.combine.grunt.reload_09" predelay 0.5
+}
+
+rule CS_Grunt_Reload
+{
+	criteria		IsCombineS IsClass_Grunt ConceptReload 
+	response		CS_Grunt_Reload
+}
+
+//========================================================================================================
+// ANNOUNCING DANGER
+//		DANGER IS GRENADE
+//====================================================================
+response CS_Officer_AnnounceDanger_Grenade
+{
+	speak "vo.combine.officer.danger_grenade_01"
+	speak "vo.combine.officer.danger_grenade_02"
+	speak "vo.combine.officer.danger_grenade_03"
+	speak "vo.combine.officer.danger_grenade_04"
+	speak "vo.combine.officer.danger_grenade_05"
+	speak "vo.combine.officer.danger_grenade_06"
+	speak "vo.combine.officer.danger_grenade_07"
+	speak "vo.combine.officer.danger_grenade_08"
+	speak "vo.combine.officer.danger_grenade_09"
+	speak "vo.combine.officer.danger_grenade_10"
+}
+
+rule CS_Officer_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Officer ConceptDanger DangerIsGrenade
+	response		CS_Officer_AnnounceDanger_Grenade
+}
+
+response CS_Charger_AnnounceDanger_Grenade
+{
+	speak "vo.combine.charger.danger_grenade_01"
+	speak "vo.combine.charger.danger_grenade_02"
+	speak "vo.combine.charger.danger_grenade_03"
+	speak "vo.combine.charger.danger_grenade_04"
+	speak "vo.combine.charger.danger_grenade_05"
+	speak "vo.combine.charger.danger_grenade_06"
+	speak "vo.combine.charger.danger_grenade_07"
+	speak "vo.combine.charger.danger_grenade_08"
+	speak "vo.combine.charger.danger_grenade_09"
+	speak "vo.combine.charger.danger_grenade_10"
+}
+
+rule CS_Charger_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Charger ConceptDanger DangerIsGrenade
+	response		CS_Charger_AnnounceDanger_Grenade
+}
+
+response CS_Suppressor_AnnounceDanger_Grenade
+{
+	speak "vo.combine.suppressor.danger_grenade_01"
+	speak "vo.combine.suppressor.danger_grenade_02"
+	speak "vo.combine.suppressor.danger_grenade_03"
+	speak "vo.combine.suppressor.danger_grenade_04"
+	speak "vo.combine.suppressor.danger_grenade_05"
+	speak "vo.combine.suppressor.danger_grenade_06"
+	speak "vo.combine.suppressor.danger_grenade_07"
+	speak "vo.combine.suppressor.danger_grenade_08"
+	speak "vo.combine.suppressor.danger_grenade_09"
+	speak "vo.combine.suppressor.danger_grenade_10"
+}
+
+rule CS_Suppressor_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptDanger DangerIsGrenade
+	response		CS_Suppressor_AnnounceDanger_Grenade
+}
+
+response CS_Grunt_AnnounceDanger_Grenade
+{
+	speak "vo.combine.grunt.danger_grenade_01"
+	speak "vo.combine.grunt.danger_grenade_02"
+	speak "vo.combine.grunt.danger_grenade_03"
+	speak "vo.combine.grunt.danger_grenade_04"
+	speak "vo.combine.grunt.danger_grenade_05"
+	speak "vo.combine.grunt.danger_grenade_06"
+	speak "vo.combine.grunt.danger_grenade_07"
+	speak "vo.combine.grunt.danger_grenade_08"
+	speak "vo.combine.grunt.danger_grenade_09"
+	speak "vo.combine.grunt.danger_grenade_10"
+}
+
+rule CS_Grunt_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Grunt ConceptDanger DangerIsGrenade
+	response		CS_Grunt_AnnounceDanger_Grenade
+}
+
+
+//========================================================================================================
+// PLAYER IS WOUNDED
+//====================================================================
+response CS_Officer_PlayerIsHurt
+{
+	speak "vo.combine.officer.playerishurt_01"
+	speak "vo.combine.officer.playerishurt_02"
+	speak "vo.combine.officer.playerishurt_03"
+	speak "vo.combine.officer.playerishurt_04"
+	speak "vo.combine.officer.playerishurt_05"
+	speak "vo.combine.officer.playerishurt_06"
+	speak "vo.combine.officer.playerishurt_07"
+	speak "vo.combine.officer.playerishurt_08"
+	speak "vo.combine.officer.playerishurt_09"
+	speak "vo.combine.officer.playerishurt_10"
+	speak "vo.combine.officer.playerishurt_11"
+	speak "vo.combine.officer.playerishurt_12"
+}
+
+rule CS_Officer_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Officer ConceptPlayerIsHurt 
+	response		CS_Officer_PlayerIsHurt
+}
+
+response CS_Charger_PlayerIsHurt
+{
+	speak "vo.combine.charger.playerishurt_01"
+	speak "vo.combine.charger.playerishurt_02"
+	speak "vo.combine.charger.playerishurt_03"
+	speak "vo.combine.charger.playerishurt_04"
+	speak "vo.combine.charger.playerishurt_05"
+	speak "vo.combine.charger.playerishurt_06"
+	speak "vo.combine.charger.playerishurt_07"
+	speak "vo.combine.charger.playerishurt_08"
+	speak "vo.combine.charger.playerishurt_09"
+	speak "vo.combine.charger.playerishurt_10"
+	speak "vo.combine.charger.playerishurt_11"
+	speak "vo.combine.charger.playerishurt_12"
+	speak "vo.combine.charger.playerishurt_13"
+}
+
+rule CS_Charger_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Charger ConceptPlayerIsHurt 
+	response		CS_Charger_PlayerIsHurt
+}
+
+response CS_Suppressor_PlayerIsHurt
+{
+	speak "vo.combine.suppressor.playerishurt_01"
+	speak "vo.combine.suppressor.playerishurt_02"
+	speak "vo.combine.suppressor.playerishurt_03"
+	speak "vo.combine.suppressor.playerishurt_04"
+	speak "vo.combine.suppressor.playerishurt_05"
+	speak "vo.combine.suppressor.playerishurt_06"
+	speak "vo.combine.suppressor.playerishurt_07"
+	speak "vo.combine.suppressor.playerishurt_08"
+	speak "vo.combine.suppressor.playerishurt_09"
+	speak "vo.combine.suppressor.playerishurt_10"
+	speak "vo.combine.suppressor.playerishurt_11"
+	speak "vo.combine.suppressor.playerishurt_12"
+	speak "vo.combine.suppressor.playerishurt_13"
+}
+
+rule CS_Suppressor_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptPlayerIsHurt 
+	response		CS_Suppressor_PlayerIsHurt
+}
+
+response CS_Grunt_PlayerIsHurt
+{
+	speak "vo.combine.grunt.playerishurt_01"
+	speak "vo.combine.grunt.playerishurt_02"
+	speak "vo.combine.grunt.playerishurt_03"
+	speak "vo.combine.grunt.playerishurt_04"
+	speak "vo.combine.grunt.playerishurt_05"
+	speak "vo.combine.grunt.playerishurt_06"
+	speak "vo.combine.grunt.playerishurt_07"
+	speak "vo.combine.grunt.playerishurt_08"
+	speak "vo.combine.grunt.playerishurt_09"
+	speak "vo.combine.grunt.playerishurt_10"
+	speak "vo.combine.grunt.playerishurt_11"
+	speak "vo.combine.grunt.playerishurt_12"
+	speak "vo.combine.grunt.playerishurt_13"
+}
+
+rule CS_Grunt_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Grunt ConceptPlayerIsHurt 
+	response		CS_Grunt_PlayerIsHurt
+}
+
+//========================================================================================================
+// SQUAD MEMBER LOST
+//		SQUAD MEMBER WAS LEADER
+//====================================================================
+response CS_Officer_SquadMemberLost_Leader
+{
+	// dialog has not been recorded
+	// officer can't comment on their own death?
+
+}
+
+rule CS_Officer_SquadMemberLost_Leader
+{
+	criteria		IsCombineS IsClass_Officer ConceptSquadMemberLost LostSquadLeader
+	response		CS_Officer_SquadMemberLost_Leader
+}
+
+response CS_Charger_SquadMemberLost_Leader
+{
+	speak "vo.combine.charger.squadmemberlost_leader_01" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_02" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_03" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_04" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_05" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_06" predelay 1
+	speak "vo.combine.charger.squadmemberlost_leader_07" predelay 1
+}
+
+rule CS_Charger_SquadMemberLost_Leader
+{
+	criteria		IsCombineS IsClass_Charger ConceptSquadMemberLost LostSquadLeader
+	response		CS_Charger_SquadMemberLost_Leader
+}
+
+response CS_Suppressor_SquadMemberLost_Leader
+{
+	speak "vo.combine.suppressor.squadmemberlost_leader_01" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_02" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_03" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_04" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_05" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_06" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_leader_07" predelay 1
+}
+
+rule CS_Suppressor_SquadMemberLost_Leader
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSquadMemberLost LostSquadLeader
+	response		CS_Suppressor_SquadMemberLost_Leader
+}
+
+response CS_Grunt_SquadMemberLost_Leader
+{
+	speak "vo.combine.grunt.squadmemberlost_leader_01" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_02" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_03" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_04" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_05" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_06" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_leader_07" predelay 1
+}
+
+rule CS_Grunt_SquadMemberLost_Leader
+{
+	criteria		IsCombineS IsClass_Grunt ConceptSquadMemberLost LostSquadLeader
+	response		CS_Grunt_SquadMemberLost_Leader
+}
+
+//====================================================================
+//		LAST MAN STANDING
+//====================================================================
+response CS_Officer_SquadMemberLost_LastManStanding
+{
+	speak "vo.combine.officer.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_09" predelay 1
+	speak "vo.combine.officer.squadmemberlost_lastman_10" predelay 1
+}
+
+rule CS_Officer_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Officer ConceptSquadMemberLost IsLastSquadMemberLeft
+	response		CS_Officer_SquadMemberLost_LastManStanding
+}
+
+response CS_Charger_SquadMemberLost_LastManStanding
+{
+	speak "vo.combine.charger.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_09" predelay 1
+	speak "vo.combine.charger.squadmemberlost_lastman_10" predelay 1
+}
+
+rule CS_Charger_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Charger ConceptSquadMemberLost IsLastSquadMemberLeft
+	response		CS_Charger_SquadMemberLost_LastManStanding
+}
+
+response CS_Suppressor_SquadMemberLost_LastManStanding
+{
+	speak "vo.combine.suppressor.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_09" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_10" predelay 1
+}
+
+rule CS_Suppressor_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSquadMemberLost IsLastSquadMemberLeft
+	response		CS_Suppressor_SquadMemberLost_LastManStanding
+}
+
+response CS_Grunt_SquadMemberLost_LastManStanding
+{
+	speak "vo.combine.grunt.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_09" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_lastman_10" predelay 1
+}
+
+rule CS_Grunt_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Grunt ConceptSquadMemberLost IsLastSquadMemberLeft
+	response		CS_Grunt_SquadMemberLost_LastManStanding
+}
+
+//====================================================================
+//		SQUAD MEMBER LOST GENERAL
+//====================================================================
+response CS_Officer_SquadMemberLost
+{
+	// dialog has not been recorded. using grunt vo instead.
+	speak "vo.combine.officer.squadmemberlost_01" predelay 1
+	speak "vo.combine.officer.squadmemberlost_02" predelay 1
+	speak "vo.combine.officer.squadmemberlost_03" predelay 1
+	speak "vo.combine.officer.squadmemberlost_04" predelay 1
+	speak "vo.combine.officer.squadmemberlost_05" predelay 1
+	speak "vo.combine.officer.squadmemberlost_06" predelay 1
+	speak "vo.combine.officer.squadmemberlost_07" predelay 1
+	speak "vo.combine.officer.squadmemberlost_08" predelay 1
+	speak "vo.combine.officer.squadmemberlost_09" predelay 1
+	speak "vo.combine.officer.squadmemberlost_10" predelay 1
+	speak "vo.combine.officer.squadmemberlost_11" predelay 1
+}
+
+rule CS_Officer_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Officer ConceptSquadMemberLost 
+	response		CS_Officer_SquadMemberLost
+}
+
+response CS_Charger_SquadMemberLost
+{
+	speak "vo.combine.charger.squadmemberlost_01" predelay 1
+	speak "vo.combine.charger.squadmemberlost_02" predelay 1
+	speak "vo.combine.charger.squadmemberlost_03" predelay 1
+	speak "vo.combine.charger.squadmemberlost_04" predelay 1
+	speak "vo.combine.charger.squadmemberlost_05" predelay 1
+	speak "vo.combine.charger.squadmemberlost_06" predelay 1
+	speak "vo.combine.charger.squadmemberlost_07" predelay 1
+	speak "vo.combine.charger.squadmemberlost_08" predelay 1
+	speak "vo.combine.charger.squadmemberlost_09" predelay 1
+	speak "vo.combine.charger.squadmemberlost_10" predelay 1
+	speak "vo.combine.charger.squadmemberlost_11" predelay 1
+}
+
+rule CS_Charger_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Charger ConceptSquadMemberLost 
+	response		CS_Charger_SquadMemberLost
+}
+
+response CS_Suppressor_SquadMemberLost
+{
+	speak "vo.combine.suppressor.squadmemberlost_01" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_02" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_03" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_04" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_05" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_06" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_07" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_08" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_09" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_10" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_11" predelay 1
+}
+
+rule CS_Suppressor_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSquadMemberLost 
+	response		CS_Suppressor_SquadMemberLost
+}
+
+response CS_Grunt_SquadMemberLost
+{
+	speak "vo.combine.grunt.squadmemberlost_01" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_02" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_03" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_04" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_05" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_06" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_07" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_08" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_09" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_10" predelay 1
+	speak "vo.combine.grunt.squadmemberlost_11" predelay 1
+}
+
+rule CS_Grunt_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Grunt ConceptSquadMemberLost 
+	response		CS_Grunt_SquadMemberLost
+}
+
+//====================================================================
+//		OFFICER CALL FOR REINFORCEMENTS
+//====================================================================
+response CS_Officer_CallReinforcements
+{
+	// oops this didn't get recorded
+	//speak "vo.combine.officer.callreinforcements_01"
+	//speak "vo.combine.officer.callreinforcements_02"
+	//speak "vo.combine.officer.callreinforcements_03"
+	//speak "vo.combine.officer.callreinforcements_04"
+	//speak "vo.combine.officer.callreinforcements_05"
+	//speak "vo.combine.officer.callreinforcements_06"
+	//speak "vo.combine.officer.callreinforcements_07"
+	//speak "vo.combine.officer.callreinforcements_08"
+	//speak "vo.combine.officer.callreinforcements_09"
+	//speak "vo.combine.officer.callreinforcements_10"
+}
+
+rule CS_Officer_CallReinforcements
+{
+	criteria		IsCombineS IsClass_Officer ConceptCallReinforcements 
+	response		CS_Officer_CallReinforcements
+}
+
+
+
+
+//====================================================================
+//		CALL & RESPONSE SYSTEM FOR OFFICER->SOLDIER ORDERS
+//====================================================================
+
+
+//------------------------------------------------
+// ORDER: ESTABLISH LOS GENERAL
+
+response CS_Officer_OrderCall_EstablishLOS
+{
+
+	speak "vo.combine.officer.establishinglof_order_03" 
+	speak "vo.combine.officer.establishinglof_order_04" 
+}
+
+rule CS_Officer_OrderCall_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderCall  Order_EstablishLOS
+	response		CS_Officer_OrderCall_EstablishLOS
+}
+
+//------------------------------------------------
+// ORDER: ESTABLISH LOS CHARGER
+
+response CS_Officer_OrderCall_EstablishLOS
+{
+
+	speak "vo.combine.officer.establishinglof_order_01" 
+	speak "vo.combine.officer.establishinglof_order_02" 
+}
+
+rule CS_Officer_OrderCall_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderCall  Order_EstablishLOS
+	response		CS_Officer_OrderCall_EstablishLOS
+}
+
+//------------------------------------------------
+// ORDER: ESTABLISH LOS SUPPRESSOR
+
+response CS_Officer_OrderCall_EstablishLOS
+{
+
+	speak "vo.combine.officer.establishinglof_order_01" 
+	speak "vo.combine.officer.establishinglof_order_02" 
+}
+
+rule CS_Officer_OrderCall_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderCall  Order_EstablishLOS
+	response		CS_Officer_OrderCall_EstablishLOS
+}
+
+//------------------------------------------------
+// ORDER: ESTABLISH LOS GRUNT
+
+response CS_Officer_OrderCall_EstablishLOS
+{
+
+	speak "vo.combine.officer.establishinglof_order_01" 
+	speak "vo.combine.officer.establishinglof_order_02" 
+}
+
+rule CS_Officer_OrderCall_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderCall  Order_EstablishLOS
+	response		CS_Officer_OrderCall_EstablishLOS
+}
+
+//------------------------------------------------
+
+response CS_Charger_CS_Charger_OrderResponse_EstablishLOS
+{
+	speak "vo.combine.charger.establishinglof_01" 
+	speak "vo.combine.charger.establishinglof_02" 
+	speak "vo.combine.charger.establishinglof_03" 
+	speak "vo.combine.charger.establishinglof_04" 
+	speak "vo.combine.charger.establishinglof_05" 
+	speak "vo.combine.charger.establishinglof_06" 
+	speak "vo.combine.charger.establishinglof_07" 
+	speak "vo.combine.charger.establishinglof_08" 
+	speak "vo.combine.charger.establishinglof_09" 
+	speak "vo.combine.charger.establishinglof_10" 
+	speak "vo.combine.charger.establishinglof_11" 
+	speak "vo.combine.charger.establishinglof_12" 
+	speak "vo.combine.charger.establishinglof_13" 
+	speak "vo.combine.charger.establishinglof_14" 
+	speak "vo.combine.charger.establishinglof_15" 
+	speak "vo.combine.charger.establishinglof_16" 
+	speak "vo.combine.charger.establishinglof_17" 
+	speak "vo.combine.charger.establishinglof_18" 
+	speak "vo.combine.charger.establishinglof_19" 
+}
+
+rule CS_Charger_CS_Charger_OrderResponse_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Charger ConceptOrderResponse  Order_EstablishLOS 
+	response		CS_Charger_CS_Charger_OrderResponse_EstablishLOS
+}
+
+response CS_Suppressor_CS_Charger_OrderResponse_EstablishLOS
+{
+	speak "vo.combine.suppressor.establishinglof_01" 
+	speak "vo.combine.suppressor.establishinglof_02" 
+	speak "vo.combine.suppressor.establishinglof_03" 
+	speak "vo.combine.suppressor.establishinglof_04" 
+	speak "vo.combine.suppressor.establishinglof_05" 
+	speak "vo.combine.suppressor.establishinglof_06" 
+	speak "vo.combine.suppressor.establishinglof_07" 
+	speak "vo.combine.suppressor.establishinglof_08" 
+	speak "vo.combine.suppressor.establishinglof_09" 
+	speak "vo.combine.suppressor.establishinglof_10" 
+	speak "vo.combine.suppressor.establishinglof_11" 
+	speak "vo.combine.suppressor.establishinglof_12" 
+	speak "vo.combine.suppressor.establishinglof_13" 
+	speak "vo.combine.suppressor.establishinglof_14" 
+	speak "vo.combine.suppressor.establishinglof_15" 
+	speak "vo.combine.suppressor.establishinglof_16" 
+	speak "vo.combine.suppressor.establishinglof_17" 
+	speak "vo.combine.suppressor.establishinglof_18" 
+	speak "vo.combine.suppressor.establishinglof_19" 
+}
+
+rule CS_Suppressor_CS_Charger_OrderResponse_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptOrderResponse  Order_EstablishLOS  
+	response		CS_Suppressor_CS_Charger_OrderResponse_EstablishLOS
+}
+
+response CS_Grunt_CS_Charger_OrderResponse_EstablishLOS
+{
+	speak "vo.combine.grunt.establishinglof_01" 
+	speak "vo.combine.grunt.establishinglof_02" 
+	speak "vo.combine.grunt.establishinglof_03" 
+	speak "vo.combine.grunt.establishinglof_04" 
+	speak "vo.combine.grunt.establishinglof_05" 
+	speak "vo.combine.grunt.establishinglof_06" 
+	speak "vo.combine.grunt.establishinglof_07" 
+	speak "vo.combine.grunt.establishinglof_08" 
+	speak "vo.combine.grunt.establishinglof_09" 
+	speak "vo.combine.grunt.establishinglof_10" 
+	speak "vo.combine.grunt.establishinglof_11" 
+	speak "vo.combine.grunt.establishinglof_12" 
+	speak "vo.combine.grunt.establishinglof_13" 
+	speak "vo.combine.grunt.establishinglof_14" 
+	speak "vo.combine.grunt.establishinglof_15" 
+	speak "vo.combine.grunt.establishinglof_16" 
+	speak "vo.combine.grunt.establishinglof_17" 
+	speak "vo.combine.grunt.establishinglof_18" 
+	speak "vo.combine.grunt.establishinglof_19" 
+}
+
+rule CS_Grunt_CS_Charger_OrderResponse_EstablishLOS
+{
+	criteria		IsCombineS IsClass_Grunt ConceptOrderResponse  Order_EstablishLOS  
+	response		CS_Grunt_CS_Charger_OrderResponse_EstablishLOS
+}
+
+//============================
+// ORDER: RECON
+
+response CS_Officer_OrderCall_Recon
+{
+	speak "vo.combine.officer.findenemy_01"
+	speak "vo.combine.officer.findenemy_02"
+	speak "vo.combine.officer.findenemy_03"
+	speak "vo.combine.officer.findenemy_04"
+	speak "vo.combine.officer.findenemy_05"
+	speak "vo.combine.officer.findenemy_06"
+	speak "vo.combine.officer.findenemy_07"
+	speak "vo.combine.officer.findenemy_08"
+	speak "vo.combine.officer.findenemy_09"
+	speak "vo.combine.officer.findenemy_10"
+}
+
+rule CS_Officer_OrderCall_Recon
+{
+	criteria		IsCombineS IsClass_Officer ConceptOrderCall Order_Recon
+	response		CS_Officer_OrderCall_Recon
+}
+
+// -- 
+
+response CS_Charger_CS_Charger_OrderResponse_Recon
+{
+	speak "vo.combine.charger.reconnoiter_start_01"
+	speak "vo.combine.charger.reconnoiter_start_02" 
+	speak "vo.combine.charger.reconnoiter_start_03" 
+	speak "vo.combine.charger.reconnoiter_start_04" 
+	speak "vo.combine.charger.reconnoiter_start_05" 
+	speak "vo.combine.charger.reconnoiter_start_06" 
+	speak "vo.combine.charger.reconnoiter_start_07" 
+	speak "vo.combine.charger.reconnoiter_start_08" 
+	speak "vo.combine.charger.reconnoiter_start_09" 
+	speak "vo.combine.charger.reconnoiter_start_10" 
+}
+
+rule CS_Charger_CS_Charger_OrderResponse_Recon
+{
+	criteria		IsCombineS IsClass_Charger ConceptOrderResponse Order_Recon 
+	response		CS_Charger_CS_Charger_OrderResponse_Recon
+}
+
+response CS_Suppressor_CS_Charger_OrderResponse_Recon
+{
+	speak "vo.combine.suppressor.refindenemy_01" 
+	speak "vo.combine.suppressor.refindenemy_02" 
+	speak "vo.combine.suppressor.refindenemy_03" 
+	speak "vo.combine.suppressor.refindenemy_04" 
+	speak "vo.combine.suppressor.refindenemy_05" 
+	speak "vo.combine.suppressor.refindenemy_06" 
+	speak "vo.combine.suppressor.refindenemy_07" 
+	speak "vo.combine.suppressor.refindenemy_08" 
+	speak "vo.combine.suppressor.refindenemy_09" 
+	speak "vo.combine.suppressor.refindenemy_10" 
+	speak "vo.combine.suppressor.refindenemy_11" 
+	speak "vo.combine.suppressor.refindenemy_12" 
+	speak "vo.combine.suppressor.refindenemy_13" 
+	speak "vo.combine.suppressor.refindenemy_14" 
+	speak "vo.combine.suppressor.refindenemy_15" 
+	speak "vo.combine.suppressor.refindenemy_16" 
+	speak "vo.combine.suppressor.refindenemy_17" 
+	speak "vo.combine.suppressor.refindenemy_18" 
+	speak "vo.combine.suppressor.refindenemy_19" 
+}
+
+rule CS_Suppressor_CS_Charger_OrderResponse_Recon
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptOrderResponse  Order_Recon  
+	response		CS_Suppressor_CS_Charger_OrderResponse_Recon
+}
+
+response CS_Grunt_CS_Charger_OrderResponse_Recon
+{
+	speak "vo.combine.grunt.reconnoiter_start_01"
+	speak "vo.combine.grunt.reconnoiter_start_02" 
+	speak "vo.combine.grunt.reconnoiter_start_03" 
+	speak "vo.combine.grunt.reconnoiter_start_04" 
+	speak "vo.combine.grunt.reconnoiter_start_05" 
+	speak "vo.combine.grunt.reconnoiter_start_06" 
+	speak "vo.combine.grunt.reconnoiter_start_07" 
+	speak "vo.combine.grunt.reconnoiter_start_08" 
+	speak "vo.combine.grunt.reconnoiter_start_09" 
+	speak "vo.combine.grunt.reconnoiter_start_10"
+}
+
+rule CS_Grunt_CS_Charger_OrderResponse_Recon
+{
+	criteria		IsCombineS IsClass_Grunt ConceptOrderResponse  Order_Recon  
+	response		CS_Grunt_CS_Charger_OrderResponse_Recon
+}
+
+
+
+
+
+//========================================================================================================
+//---------
+response CSAnnounceEnemy_Citizen
+{
+	speak "combine_soldier_combine_monst_citizens_01" noscene
+}
+
+rule CSAnnounceEnemy_Citizen
+{
+	criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsCitizen
+	response		CSAnnounceEnemy_Citizen
+}
+
+//---------
+response CSAnnounceEnemy_PlayerAlly
+{
+	speak "combine_soldier_combine_monst_character_01" noscene
+}
+
+rule CSAnnounceEnemy_PlayerAlly
+{
+	criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayerAlly
+	response		CSAnnounceEnemy_PlayerAlly
+}
+
+//---------
+response CSAnnounceEnemy_Antlion
+{
+	speak "combine_soldier_combine_monst_bugs_01" noscene
+}
+
+rule CSAnnounceEnemy_Antlion
+{
+	criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsAntlion
+	response		CSAnnounceEnemy_Antlion
+}
+
+//---------
+response CSAnnounceEnemy_Zombie
+{
+	speak "combine_soldier_combine_monst_zombies_01" noscene
+	speak "combine_soldier_combine_monst_zombies_02" noscene
+}
+
+rule CSAnnounceEnemy_Zombie
+{
+	criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsZombie
+	response		CSAnnounceEnemy_Zombie
+}
+
+//---------
+response CSAnnounceEnemy_HeadcrabBarnacle
+{
+	speak "combine_soldier_combine_monst_parasites_01" noscene
+}
+
+rule CSAnnounceEnemy_HeadcrabBarnacle
+{
+	criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsHeadcrabBarnacle
+	response		CSAnnounceEnemy_HeadcrabBarnacle
+}
+
+//========================================================================================================
+response CSAnnounceAssault
+{
+}
+
+rule CSAnnounceAssault
+{
+	criteria		IsCombineS ConceptAnnounceAssault
+	response		CSAnnounceAssault
+}
+
+//========================================================================================================
+response CSAnnounceKill_Player
+{
+}
+
+rule CSAnnounceKill_Player
+{
+	criteria		IsCombineS ConceptAnnounceKill KillIsPlayer
+	response		CSAnnounceKill_Player
+}
+
+//---------
+response CS_Charger_AnnounceKill
+{
+	speak "vo.combine.charger.announcekill_01" noscene
+	speak "vo.combine.charger.announcekill_02" noscene
+	speak "vo.combine.charger.announcekill_03" noscene
+	speak "vo.combine.charger.announcekill_04" noscene
+	speak "vo.combine.charger.announcekill_05" noscene
+	speak "vo.combine.charger.announcekill_06" noscene
+	speak "vo.combine.charger.announcekill_07" noscene
+	speak "vo.combine.charger.announcekill_08" noscene
+	speak "vo.combine.charger.announcekill_09" noscene
+	speak "vo.combine.charger.announcekill_10" noscene
+	speak "vo.combine.charger.announcekill_11" noscene
+	speak "vo.combine.charger.announcekill_12" noscene
+	speak "vo.combine.charger.announcekill_13" noscene
+	speak "vo.combine.charger.announcekill_14" noscene
+	speak "vo.combine.charger.announcekill_15" noscene
+}
+
+rule CS_Charger_AnnounceKill
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceKill
+	response		CS_Charger_AnnounceKill
+}
+
+response CS_Grunt_AnnounceKill
+{
+	speak "vo.combine.grunt.announcekill_01" noscene
+	speak "vo.combine.grunt.announcekill_02" noscene
+	speak "vo.combine.grunt.announcekill_03" noscene
+	speak "vo.combine.grunt.announcekill_04" noscene
+	speak "vo.combine.grunt.announcekill_05" noscene
+	speak "vo.combine.grunt.announcekill_06" noscene
+	speak "vo.combine.grunt.announcekill_07" noscene
+	speak "vo.combine.grunt.announcekill_08" noscene
+	speak "vo.combine.grunt.announcekill_09" noscene
+	speak "vo.combine.grunt.announcekill_10" noscene
+	speak "vo.combine.grunt.announcekill_11" noscene
+	speak "vo.combine.grunt.announcekill_12" noscene
+	speak "vo.combine.grunt.announcekill_13" noscene
+	speak "vo.combine.grunt.announcekill_14" noscene
+	speak "vo.combine.grunt.announcekill_15" noscene
+}
+
+rule CS_Grunt_AnnounceKill
+{
+	criteria		IsCombineS IsClass_Grunt ConceptAnnounceKill
+	response		CS_Grunt_AnnounceKill
+}
+
+//========================================================================================================
+response CSDanger_General
+{
+}
+
+rule CSDanger_General
+{
+	criteria		IsCombineS ConceptDanger
+	response		CSDanger_General
+}
+
+//========================================================================================================
+// Pain VO
+//============================
+
+response CS_Officer_Pain
+{
+	speak "vo.combine.officer.pain_01" noscene
+	speak "vo.combine.officer.pain_02" noscene
+	speak "vo.combine.officer.pain_03" noscene
+	speak "vo.combine.officer.pain_04" noscene
+	speak "vo.combine.officer.pain_05" noscene
+	speak "vo.combine.officer.pain_06" noscene
+	speak "vo.combine.officer.pain_07" noscene
+	speak "vo.combine.officer.pain_08" noscene
+	speak "vo.combine.officer.pain_09" noscene
+	speak "vo.combine.officer.pain_10" noscene
+}
+
+rule CS_Officer_Pain
+{
+	criteria		IsCombineS IsClass_Officer ConceptPain
+	response		CS_Officer_Pain
+}
+
+
+response CS_Charger_Pain
+{
+	speak "vo.combine.charger.pain_01" noscene
+	speak "vo.combine.charger.pain_02" noscene
+	speak "vo.combine.charger.pain_03" noscene
+	speak "vo.combine.charger.pain_04" noscene
+	speak "vo.combine.charger.pain_05" noscene
+	speak "vo.combine.charger.pain_06" noscene
+	speak "vo.combine.charger.pain_07" noscene
+	speak "vo.combine.charger.pain_08" noscene
+	speak "vo.combine.charger.pain_09" noscene
+	speak "vo.combine.charger.pain_10" noscene
+}
+
+rule CS_Charger_Pain
+{
+	criteria		IsCombineS IsClass_Charger ConceptPain
+	response		CS_Charger_Pain
+}
+
+response CS_Suppressor_Pain
+{
+	speak "vo.combine.suppressor.pain_01" noscene
+	speak "vo.combine.suppressor.pain_02" noscene
+	speak "vo.combine.suppressor.pain_03" noscene
+	speak "vo.combine.suppressor.pain_04" noscene
+	speak "vo.combine.suppressor.pain_05" noscene
+	speak "vo.combine.suppressor.pain_06" noscene
+	speak "vo.combine.suppressor.pain_07" noscene
+	speak "vo.combine.suppressor.pain_08" noscene
+	speak "vo.combine.suppressor.pain_09" noscene
+	speak "vo.combine.suppressor.pain_10" noscene
+}
+
+rule CS_Suppressor_Pain
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptPain
+	response		CS_Suppressor_Pain
+}
+
+response CS_Grunt_Pain
+{
+	speak "vo.combine.grunt.pain_01" noscene
+	speak "vo.combine.grunt.pain_02" noscene
+	speak "vo.combine.grunt.pain_03" noscene
+	speak "vo.combine.grunt.pain_04" noscene
+	speak "vo.combine.grunt.pain_05" noscene
+	speak "vo.combine.grunt.pain_06" noscene
+	speak "vo.combine.grunt.pain_07" noscene
+	speak "vo.combine.grunt.pain_08" noscene
+	speak "vo.combine.grunt.pain_09" noscene
+	speak "vo.combine.grunt.pain_10" noscene
+}
+
+rule CS_Grunt_Pain
+{
+	criteria		IsCombineS IsClass_Grunt ConceptPain
+	response		CS_Grunt_Pain
+}
+
+//========================================================================================================
+// Death
+//==================================
+response CS_Charger_Die
+{
+	speak "vo.combine.charger.die_01" noscene
+	speak "vo.combine.charger.die_02" noscene
+	speak "vo.combine.charger.die_03" noscene
+	speak "vo.combine.charger.die_04" noscene
+	speak "vo.combine.charger.die_05" noscene
+	speak "vo.combine.charger.die_06" noscene
+	speak "vo.combine.charger.die_07" noscene
+	speak "vo.combine.charger.die_08" noscene
+	speak "vo.combine.charger.die_09" noscene
+	speak "vo.combine.charger.die_10" noscene
+	speak "vo.combine.charger.die_11" noscene
+	speak "vo.combine.charger.die_12" noscene
+	speak "vo.combine.charger.die_13" noscene
+	speak "vo.combine.charger.die_14" noscene
+	speak "vo.combine.charger.die_15" noscene
+	speak "vo.combine.charger.die_16" noscene
+	speak "vo.combine.charger.die_17" noscene
+}
+
+rule CS_Charger_Die
+{
+	criteria		IsCombineS IsClass_Charger ConceptDie
+	response		CS_Charger_Die
+}
+
+response CS_Officer_Die
+{
+	speak "vo.combine.officer.die_01" noscene
+	speak "vo.combine.officer.die_02" noscene
+	speak "vo.combine.officer.die_03" noscene
+	speak "vo.combine.officer.die_04" noscene
+	speak "vo.combine.officer.die_05" noscene
+	speak "vo.combine.officer.die_06" noscene
+	speak "vo.combine.officer.die_07" noscene
+	speak "vo.combine.officer.die_08" noscene
+	speak "vo.combine.officer.die_09" noscene
+	speak "vo.combine.officer.die_10" noscene
+	speak "vo.combine.officer.die_11" noscene
+	speak "vo.combine.officer.die_12" noscene
+	speak "vo.combine.officer.die_13" noscene
+	speak "vo.combine.officer.die_14" noscene
+	speak "vo.combine.officer.die_15" noscene
+	speak "vo.combine.officer.die_16" noscene
+	speak "vo.combine.officer.die_17" noscene
+}
+
+rule CS_Officer_Die
+{
+	criteria		IsCombineS IsClass_Officer ConceptDie
+	response		CS_Officer_Die
+}
+
+response CS_Suppressor_Die
+{
+	speak "vo.combine.suppressor.die_01" noscene
+	speak "vo.combine.suppressor.die_02" noscene
+	speak "vo.combine.suppressor.die_03" noscene
+	speak "vo.combine.suppressor.die_04" noscene
+	speak "vo.combine.suppressor.die_05" noscene
+	speak "vo.combine.suppressor.die_06" noscene
+	speak "vo.combine.suppressor.die_07" noscene
+	speak "vo.combine.suppressor.die_08" noscene
+	speak "vo.combine.suppressor.die_09" noscene
+	speak "vo.combine.suppressor.die_10" noscene
+	speak "vo.combine.suppressor.die_11" noscene
+	speak "vo.combine.suppressor.die_12" noscene
+	speak "vo.combine.suppressor.die_13" noscene
+	speak "vo.combine.suppressor.die_14" noscene
+	speak "vo.combine.suppressor.die_15" noscene
+	speak "vo.combine.suppressor.die_16" noscene
+	speak "vo.combine.suppressor.die_17" noscene
+}
+
+rule CS_Suppressor_Die
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptDie
+	response		CS_Suppressor_Die
+}
+
+response CS_Grunt_Die
+{
+	speak "vo.combine.grunt.die_01" noscene
+	speak "vo.combine.grunt.die_02" noscene
+	speak "vo.combine.grunt.die_03" noscene
+	speak "vo.combine.grunt.die_04" noscene
+	speak "vo.combine.grunt.die_05" noscene
+	speak "vo.combine.grunt.die_06" noscene
+	speak "vo.combine.grunt.die_07" noscene
+	speak "vo.combine.grunt.die_08" noscene
+	speak "vo.combine.grunt.die_09" noscene
+	speak "vo.combine.grunt.die_10" noscene
+	speak "vo.combine.grunt.die_11" noscene
+	speak "vo.combine.grunt.die_12" noscene
+	speak "vo.combine.grunt.die_13" noscene
+	speak "vo.combine.grunt.die_14" noscene
+	speak "vo.combine.grunt.die_15" noscene
+	speak "vo.combine.grunt.die_16" noscene
+	speak "vo.combine.grunt.die_17" noscene
+}
+
+rule CS_Grunt_Die
+{
+	criteria		IsCombineS IsClass_Grunt ConceptDie
+	response		CS_Grunt_Die
+}
+
+//======================================================================================
+// a2_trainyard specific lines
+//======================================================================================
+
+response CombineVO_Soldier_Sees_Player_First_Time_Response
+{
+	speak "SoldierDecontamination.UnknownFemale" noscene
+}
+rule CombineVO_Soldier_Sees_Player_First_Time_Rule
+{
+	criteria		Combine_Sees_Player_First_Time
+	response		CombineVO_Soldier_Sees_Player_First_Time_Response
+	matchonce
+}
+
+response CS_Soldier_NoSpeech
+{
+}
+rule CS_FirstEncounterGrunt_AnnounceEnemy_Player
+{
+	criteria		IsFirstEncounterSoldier ConceptAnnounceEnemy
+	response		CS_Soldier_NoSpeech
+}
+rule CS_FirstEncounterGrunt_Firing
+{
+	criteria		IsFirstEncounterSoldier ConceptFiring
+	response		CS_Soldier_NoSpeech
+}
+
+
+response CS_BridgeEncounterLeft
+{
+	speak "SoldierDecontamination.NecroticTarget" noscene
+}
+rule CS_BridgeEncounterLeft
+{
+	criteria		IsBridgeEncounterSoldierLeft ConceptBridgeEncounterZombieSpeech
+	response		CS_BridgeEncounterLeft
+}
+
+response CS_BridgeEncounterRight
+{
+	speak "SoldierDecontamination.NeutralizingRight" noscene
+}
+rule CS_BridgeEncounterRight
+{
+	criteria		IsBridgeEncounterSoldierRight ConceptBridgeEncounterZombieSpeech
+	response		CS_BridgeEncounterRight
+}
+response CS_BridgeEncounterRight2
+{
+	speak "SoldierDecontamination.NeutralizingRight" noscene
+}
+rule CS_BridgeEncounterRight2
+{
+	criteria		IsBridgeEncounterSoldierRight ConceptBridgeEncounterZombie2Speech
+	response		CS_BridgeEncounterRight2
+}
+
+
+
+//======================================================================================
+// a3_c17_processing_plant specific lines
+//======================================================================================
+
+//--------------------------------------------------------------------------------------
+// Advancing On Player At Location
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtBricks
+{
+	speak "vo.combine.charger.a3_c17_tenements_bricks_01" noscene
+	speak "vo.combine.charger.a3_c17_tenements_bricks_02" noscene
+	speak "vo.combine.charger.a3_c17_tenements_bricks_03" noscene
+}
+rule CS_AdvancingTargetAtBricks
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtBricks
+	response		CS_AdvancingTargetAtBricks
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtBridge
+{
+	// dialog has not been written yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_bridge_01" noscene
+	//speak "ConstructionYard.soldier_context_advancing_target_by_bridge_01" noscene
+}
+rule CS_AdvancingTargetAtBridge
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtBridge
+	response		CS_AdvancingTargetAtBridge
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtCar
+{
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_01" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_02" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_03" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_04" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_05" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_06" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_07" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_08" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_09" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_10" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_11" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_12" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_13" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_14" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_15" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_car_16" noscene
+}
+rule CS_AdvancingTargetAtCar
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtCar
+	response		CS_AdvancingTargetAtCar
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtContainer
+{
+	// dialog has not been written
+}
+rule CS_AdvancingTargetAtContainer
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtContainer
+	response		CS_AdvancingTargetAtContainer
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtCrane
+{
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_01" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_02" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_03" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_04" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_05" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_06" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_07" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_08" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_09" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_crane_10" noscene
+}
+rule CS_AdvancingTargetAtCrane
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtCrane
+	response		CS_AdvancingTargetAtCrane
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtDoor
+{
+	speak "vo.combine.grunt.antlions_door_01" noscene
+}
+rule CS_AdvancingTargetAtDoor
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtDoor
+	response		CS_AdvancingTargetAtDoor
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtFence
+{
+	speak "vo.combine.grunt.antlions_fence_01" noscene
+	speak "vo.combine.grunt.antlions_fence_02" noscene
+}
+rule CS_AdvancingTargetAtFence
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtFence
+	response		CS_AdvancingTargetAtFence
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtPipes
+{
+	speak "vo.combine.grunt.antlions_pipes_02" noscene
+	speak "vo.combine.grunt.antlions_pipes_03" noscene
+}
+rule CS_AdvancingTargetAtPipes
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtPipes
+	response		CS_AdvancingTargetAtPipes
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtShack
+{
+	speak "vo.combine.grunt.antlions_shack_01" noscene
+	speak "vo.combine.grunt.antlions_shack_02" noscene
+	speak "vo.combine.grunt.antlions_shack_03" noscene
+	speak "vo.combine.grunt.antlions_shack_04" noscene
+	speak "vo.combine.grunt.antlions_shack_05" noscene
+	speak "vo.combine.grunt.antlions_shack_06" noscene
+	speak "vo.combine.grunt.antlions_shack_07" noscene
+	speak "vo.combine.grunt.antlions_shack_08" noscene
+}
+rule CS_AdvancingTargetAtShack
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtShack
+	response		CS_AdvancingTargetAtShack
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtStation
+{
+	// dialog not written or recorded yet
+}
+rule CS_AdvancingTargetAtStation
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtStation
+	response		CS_AdvancingTargetAtStation
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtToilet
+{
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_01" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_02" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_03" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_04" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_05" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_06" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_07" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_08" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_09" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_10" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_11" noscene
+}
+rule CS_AdvancingTargetAtToilet
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtToilet
+	response		CS_AdvancingTargetAtToilet
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtTracks
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_tracks_01" noscene
+}
+rule CS_AdvancingTargetAtTracks
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtTracks
+	response		CS_AdvancingTargetAtTracks
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtTraincar
+{
+	
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_traincar_01" noscene
+	//speak "ConstructionYard.soldier_context_advancing_target_by_traincar_01" noscene
+}
+rule CS_AdvancingTargetAtTraincar
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtTraincar
+	response		CS_AdvancingTargetAtTraincar
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtTruck
+{
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_01" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_02" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_03" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_04" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_05" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_06" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_07" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_truck_08" noscene
+}
+rule CS_AdvancingTargetAtTruck
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtTruck
+	response		CS_AdvancingTargetAtTruck
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtTunnel
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_tunnel_01" noscene
+}
+rule CS_AdvancingTargetAtTunnel
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtTunnel
+	response		CS_AdvancingTargetAtTunnel
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtVan
+{
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_01" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_02" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_03" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_04" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_05" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_06" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_07" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_08" noscene
+}
+rule CS_AdvancingTargetAtVan
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtVan
+	response		CS_AdvancingTargetAtVan
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtWall
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_wall_01" noscene
+}
+rule CS_AdvancingTargetAtWall
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtWall
+	response		CS_AdvancingTargetAtWall
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtWindow
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_at_window_01" noscene
+}
+rule CS_AdvancingTargetAtWindow
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtWindow
+	response		CS_AdvancingTargetAtWindow
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetAtWoodpile
+{
+	speak "vo.combine.grunt.antlions_woodpile_01" noscene
+	speak "vo.combine.grunt.antlions_woodpile_02" noscene
+	speak "vo.combine.grunt.antlions_woodpile_03" noscene
+}
+rule CS_AdvancingTargetAtWoodpile
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerAtWoodpile
+	response		CS_AdvancingTargetAtWoodpile
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetBehindWall
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_behind_wall_01" noscene
+}
+rule CS_AdvancingTargetBehindWall
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerBehindWall
+	response		CS_AdvancingTargetBehindWall
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetInToilet
+{
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_01" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_02" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_03" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_04" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_05" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_06" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_07" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_08" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_09" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_10" noscene
+	speak "vo.combine.grunt.a3_c17_processing_plant_toilet_11" noscene
+}
+rule CS_AdvancingTargetInToilet
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerInToilet
+	response		CS_AdvancingTargetInToilet
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetInTraincar
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_in_traincar_01" noscene
+}
+rule CS_AdvancingTargetInTraincar
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerInTraincar
+	response		CS_AdvancingTargetInTraincar
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetInTunnel
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_in_tunnel_01" noscene
+}
+rule CS_AdvancingTargetInTunnel
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerInTunnel
+	response		CS_AdvancingTargetInTunnel
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetInVan
+{
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_01" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_02" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_03" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_04" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_05" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_06" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_07" noscene
+	speak "vo.combine.grunt.a3_hotel_interior_rooftop_van_08" noscene
+}
+rule CS_AdvancingTargetInVan
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerInVan
+	response		CS_AdvancingTargetInVan
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetOnBridge
+{
+	// dialog not written or recoded yet
+	// speak "ConstructionYard.soldier_context_advancing_target_on_bridge_01" noscene
+}
+rule CS_AdvancingTargetOnBridge
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerOnBridge
+	response		CS_AdvancingTargetOnBridge
+}
+
+//--------------------------------------------------------------------------------------
+response CS_AdvancingTargetOnTraincar
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_advancing_target_on_traincar_01" noscene
+}
+rule CS_AdvancingTargetOnTraincar
+{
+	criteria		IsCombineS ConceptAdvancingOnTarget EnemyIsPlayer PlayerOnTraincar
+	response		CS_AdvancingTargetOnTraincar
+}
+
+//--------------------------------------------------------------------------------------
+// Charging Player at location 
+//--------------------------------------------------------------------------------------
+response CS_ChargingBricks
+{
+	speak "vo.combine.charger.a3_c17_tenements_bricks_01" noscene
+	speak "vo.combine.charger.a3_c17_tenements_bricks_02" noscene
+	speak "vo.combine.charger.a3_c17_tenements_bricks_03" noscene
+}
+rule CS_ChargingBricks
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtBricks
+	response		CS_ChargingBricks
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingBridge
+{
+	// dialog not written or recoded yet
+	//speak "ConstructionYard.soldier_context_charging_bridge_01" noscene
+}
+rule CS_ChargingBridge
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtBridge
+	response		CS_ChargingBridge
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingCar
+{
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_01" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_02" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_03" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_04" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_05" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_06" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_07" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_08" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_09" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_10" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_11" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_12" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_13" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_14" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_15" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_car_16" noscene
+}
+rule CS_ChargingCar
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtCar
+	response		CS_ChargingCar
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingContainer
+{
+	speak "vo.combine.charger.a3_c17_processing_plant_block_01" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_block_02" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_block_03" noscene
+}
+rule CS_ChargingContainer
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtContainer
+	response		CS_ChargingContainer
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingCrane
+{
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_01" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_02" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_03" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_04" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_05" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_06" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_07" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_08" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_09" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_10" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_11" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_crane_12" noscene
+}
+rule CS_ChargingCrane
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtCrane
+	response		CS_ChargingCrane
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingDoor
+{
+	speak "vo.combine.charger.antlions_door_01" noscene
+	speak "vo.combine.charger.antlions_door_02" noscene
+}
+rule CS_ChargingDoor
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtDoor
+	response		CS_ChargingDoor
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingFence
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_fence_01" noscene
+}
+rule CS_ChargingFence
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtFence
+	response		CS_ChargingFence
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingPipes
+{
+	speak "vo.combine.charger.antlions_pipes_02" noscene
+	speak "vo.combine.charger.antlions_pipes_03" noscene
+	speak "vo.combine.charger.antlions_pipes_01" noscene
+	speak "vo.combine.charger.antlions_pipes_02" noscene
+	speak "vo.combine.charger.antlions_pipes_03" noscene
+}
+rule CS_ChargingPipes
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtPipes
+	response		CS_ChargingPipes
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingShack
+{
+	speak "vo.combine.charger.antlions_shack_01" noscene
+	speak "vo.combine.charger.antlions_shack_02" noscene
+	speak "vo.combine.charger.antlions_shack_03" noscene
+	speak "vo.combine.charger.antlions_shack_04" noscene
+	speak "vo.combine.charger.antlions_shack_05" noscene
+	speak "vo.combine.charger.antlions_shack_06" noscene
+	speak "vo.combine.charger.antlions_shack_07" noscene
+	speak "vo.combine.charger.antlions_shack_08" noscene
+}
+rule CS_ChargingShack
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtShack
+	response		CS_ChargingShack
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingStation
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_station_01" noscene
+}
+rule CS_ChargingStation
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtStation
+	response		CS_ChargingStation
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingToilet
+{
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_01" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_02" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_03" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_04" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_05" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_06" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_07" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_08" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_09" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_10" noscene
+	speak "vo.combine.charger.a3_c17_processing_plant_toilet_11" noscene
+}
+rule CS_ChargingToilet
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtToilet
+	response		CS_ChargingToilet
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingTracks
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_tracks_01" noscene
+}
+rule CS_ChargingTracks
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtTracks
+	response		CS_ChargingTracks
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingTraincar
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_traincar_01" noscene
+}
+rule CS_ChargingTraincar
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtTraincar
+	response		CS_ChargingTraincar
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingTruck
+{
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_01" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_02" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_03" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_04" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_05" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_06" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_07" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_truck_08" noscene
+}
+rule CS_ChargingTruck
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtTruck
+	response		CS_ChargingTruck
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingTunnel
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_tunnel_01" noscene
+}
+rule CS_ChargingTunnel
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtTunnel
+	response		CS_ChargingTunnel
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingVan
+{
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_01" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_02" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_03" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_04" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_05" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_06" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_07" noscene
+	speak "vo.combine.charger.a3_hotel_interior_rooftop_van_08" noscene
+}
+rule CS_ChargingVan
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtVan
+	response		CS_ChargingVan
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingWall
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_wall_01" noscene
+}
+rule CS_ChargingWall
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtWall
+	response		CS_ChargingWall
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingWindow
+{
+	// dialog not written or recorded yet
+	//speak "ConstructionYard.soldier_context_charging_window_01" noscene
+}
+rule CS_ChargingWindow
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtWindow
+	response		CS_ChargingWindow
+}
+
+//--------------------------------------------------------------------------------------
+response CS_ChargingWoodpile
+{
+	speak "vo.combine.charger.antlions_woodpile_01" noscene
+	speak "vo.combine.charger.antlions_woodpile_02" noscene
+	speak "vo.combine.charger.antlions_woodpile_03" noscene
+}
+rule CS_ChargingWoodpile
+{
+	criteria		IsCombineS IsClass_Charger ConceptAnnounceCharge EnemyIsPlayer PlayerAtWoodpile
+	response		CS_ChargingWoodpile
+}
+
+//~ //--------------------------------------------------------------------------------------
+//~ // Cover me at location
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtBricks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_bricks_01" noscene
+//~ }
+//~ rule CS_CoverMeAtBricks
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtBricks
+	//~ response		CS_CoverMeAtBricks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_bridge_01" noscene
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_bridge_01" noscene
+//~ }
+//~ rule CS_CoverMeAtBridge
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtBridge
+	//~ response		CS_CoverMeAtBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtCar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_car_01" noscene
+//~ }
+//~ rule CS_CoverMeAtCar
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtCar
+	//~ response		CS_CoverMeAtCar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtContainer
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_container_01" noscene
+//~ }
+//~ rule CS_CoverMeAtContainer
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtContainer
+	//~ response		CS_CoverMeAtContainer
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtCrane
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_crane_01" noscene
+//~ }
+//~ rule CS_CoverMeAtCrane
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtCrane
+	//~ response		CS_CoverMeAtCrane
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtDoor
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_door_01" noscene
+//~ }
+//~ rule CS_CoverMeAtDoor
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtDoor
+	//~ response		CS_CoverMeAtDoor
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtFence
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_fence_01" noscene
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_fence_01" noscene
+//~ }
+//~ rule CS_CoverMeAtFence
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtFence
+	//~ response		CS_CoverMeAtFence
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtPipes
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_pipes_01" noscene
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_pipes_01" noscene
+//~ }
+//~ rule CS_CoverMeAtPipes
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtPipes
+	//~ response		CS_CoverMeAtPipes
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtShack
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_shack_01" noscene
+//~ }
+//~ rule CS_CoverMeAtShack
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtShack
+	//~ response		CS_CoverMeAtShack
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtStation
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_station_01" noscene
+//~ }
+//~ rule CS_CoverMeAtStation
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtStation
+	//~ response		CS_CoverMeAtStation
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_toilet_01" noscene
+//~ }
+//~ rule CS_CoverMeAtToilet
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtToilet
+	//~ response		CS_CoverMeAtToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtTracks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_tracks_01" noscene
+//~ }
+//~ rule CS_CoverMeAtTracks
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtTracks
+	//~ response		CS_CoverMeAtTracks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_traincar_01" noscene
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_traincar_01" noscene
+//~ }
+//~ rule CS_CoverMeAtTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtTraincar
+	//~ response		CS_CoverMeAtTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtTruck
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_truck_01" noscene
+	//~ speak "ConstructionYard.soldier_context_cover_me_by_truck_01" noscene
+//~ }
+//~ rule CS_CoverMeAtTruck
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtTruck
+	//~ response		CS_CoverMeAtTruck
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_tunnel_01" noscene
+//~ }
+//~ rule CS_CoverMeAtTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtTunnel
+	//~ response		CS_CoverMeAtTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_van_01" noscene
+//~ }
+//~ rule CS_CoverMeAtVan
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtVan
+	//~ response		CS_CoverMeAtVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_wall_01" noscene
+//~ }
+//~ rule CS_CoverMeAtWall
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtWall
+	//~ response		CS_CoverMeAtWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtWindow
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_window_01" noscene
+//~ }
+//~ rule CS_CoverMeAtWindow
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtWindow
+	//~ response		CS_CoverMeAtWindow
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeAtWoodpile
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_at_woodpile_01" noscene
+//~ }
+//~ rule CS_CoverMeAtWoodpile
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsAtWoodpile
+	//~ response		CS_CoverMeAtWoodpile
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeBehindWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_behind_wall_01" noscene
+//~ }
+//~ rule CS_CoverMeBehindWall
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsBehindWall
+	//~ response		CS_CoverMeBehindWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeInTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_in_tunnel_01" noscene
+//~ }
+//~ rule CS_CoverMeInTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsInTunnel
+	//~ response		CS_CoverMeInTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeOnBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_on_bridge_01" noscene
+//~ }
+//~ rule CS_CoverMeOnBridge
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsOnBridge
+	//~ response		CS_CoverMeOnBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_CoverMeOnTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_cover_me_on_traincar_01" noscene
+//~ }
+//~ rule CS_CoverMeOnTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptCoverMe HasOtherSquadMembers IsOnTraincar
+	//~ response		CS_CoverMeOnTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ // Enemy spotted at location
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtBricks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_bricks_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtBricks
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtBricks
+	//~ response		CS_EnemySpottedAtBricks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_bridge_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtBridge
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtBridge
+	//~ response		CS_EnemySpottedAtBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtCar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_by_car_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtCar
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtCar
+	//~ response		CS_EnemySpottedAtCar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtContainer
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_container_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtContainer
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtContainer
+	//~ response		CS_EnemySpottedAtContainer
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtCrane
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_crane_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtCrane
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtCrane
+	//~ response		CS_EnemySpottedAtCrane
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtDoor
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_door_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtDoor
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtDoor
+	//~ response		CS_EnemySpottedAtDoor
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtFence
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_fence_01" noscene
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_by_fence_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtFence
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtFence
+	//~ response		CS_EnemySpottedAtFence
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtPipes
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_pipes_01" noscene
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_by_pipes_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtPipes
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtPipes
+	//~ response		CS_EnemySpottedAtPipes
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtShack
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_shack_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtShack
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtShack
+	//~ response		CS_EnemySpottedAtShack
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtStation
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_station_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtStation
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtStation
+	//~ response		CS_EnemySpottedAtStation
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_toilet_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtToilet
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtToilet
+	//~ response		CS_EnemySpottedAtToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtTracks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_tracks_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtTracks
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtTracks
+	//~ response		CS_EnemySpottedAtTracks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_by_traincar_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtTraincar
+	//~ response		CS_EnemySpottedAtTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtTruck
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_truck_01" noscene
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_by_truck_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtTruck
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtTruck
+	//~ response		CS_EnemySpottedAtTruck
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_van_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtVan
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtVan
+	//~ response		CS_EnemySpottedAtVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_wall_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtWall
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtWall
+	//~ response		CS_EnemySpottedAtWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtWindow
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_window_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtWindow
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtWindow
+	//~ response		CS_EnemySpottedAtWindow
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedAtWoodpile
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_at_woodpile_01" noscene
+//~ }
+//~ rule CS_EnemySpottedAtWoodpile
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerAtWoodpile
+	//~ response		CS_EnemySpottedAtWoodpile
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedBehindWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_behind_wall_01" noscene
+//~ }
+//~ rule CS_EnemySpottedBehindWall
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerBehindWall
+	//~ response		CS_EnemySpottedBehindWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedInToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_in_toilet_01" noscene
+//~ }
+//~ rule CS_EnemySpottedInToilet
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerInToilet
+	//~ response		CS_EnemySpottedInToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedInTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_in_traincar_01" noscene
+//~ }
+//~ rule CS_EnemySpottedInTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerInTraincar
+	//~ response		CS_EnemySpottedInTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedInTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_in_tunnel_01" noscene
+//~ }
+//~ rule CS_EnemySpottedInTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerInTunnel
+	//~ response		CS_EnemySpottedInTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedInVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_in_van_01" noscene
+//~ }
+//~ rule CS_EnemySpottedInVan
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerInVan
+	//~ response		CS_EnemySpottedInVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedOnBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_on_bridge_01" noscene
+//~ }
+//~ rule CS_EnemySpottedOnBridge
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerOnBridge
+	//~ response		CS_EnemySpottedOnBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_EnemySpottedOnTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_enemy_spotted_on_traincar_01" noscene
+//~ }
+//~ rule CS_EnemySpottedOnTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptAnnounceEnemy AnnouncedEnemyIsPlayer PlayerOnTraincar
+	//~ response		CS_EnemySpottedOnTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ // Holding Position At Location
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtBricks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_bricks_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtBricks
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtBricks
+	//~ response		CS_HoldingPositionAtBricks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_bridge_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_bridge_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtBridge
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtBridge
+	//~ response		CS_HoldingPositionAtBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtCar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_car_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtCar
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtCar
+	//~ response		CS_HoldingPositionAtCar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtContainer
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_container_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_container_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtContainer
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtContainer
+	//~ response		CS_HoldingPositionAtContainer
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtCrane
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_crane_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtCrane
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtCrane
+	//~ response		CS_HoldingPositionAtCrane
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtDoor
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_door_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_door_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtDoor
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtDoor
+	//~ response		CS_HoldingPositionAtDoor
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtFence
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_fence_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_fence_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtFence
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtFence
+	//~ response		CS_HoldingPositionAtFence
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtPipes
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_pipes_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_pipes_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtPipes
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtPipes
+	//~ response		CS_HoldingPositionAtPipes
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtShack
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_shack_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtShack
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtShack
+	//~ response		CS_HoldingPositionAtShack
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtStation
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_station_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtStation
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtStation
+	//~ response		CS_HoldingPositionAtStation
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_toilet_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtToilet
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtToilet
+	//~ response		CS_HoldingPositionAtToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtTracks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_tracks_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtTracks
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtTracks
+	//~ response		CS_HoldingPositionAtTracks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_traincar_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_traincar_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtTraincar
+	//~ response		CS_HoldingPositionAtTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtTruck
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_truck_01" noscene
+	//~ speak "ConstructionYard.soldier_context_holding_position_by_truck_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtTruck
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtTruck
+	//~ response		CS_HoldingPositionAtTruck
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_tunnel_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtTunnel
+	//~ response		CS_HoldingPositionAtTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_van_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtVan
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtVan
+	//~ response		CS_HoldingPositionAtVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_wall_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtWall
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtWall
+	//~ response		CS_HoldingPositionAtWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtWindow
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_window_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtWindow
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtWindow
+	//~ response		CS_HoldingPositionAtWindow
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionAtWoodpile
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_at_woodpile_01" noscene
+//~ }
+//~ rule CS_HoldingPositionAtWoodpile
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsAtWoodpile
+	//~ response		CS_HoldingPositionAtWoodpile
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionBehindWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_behind_wall_01" noscene
+//~ }
+//~ rule CS_HoldingPositionBehindWall
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsBehindWall
+	//~ response		CS_HoldingPositionBehindWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionInToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_in_toilet_01" noscene
+//~ }
+//~ rule CS_HoldingPositionInToilet
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsInToilet
+	//~ response		CS_HoldingPositionInToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionInTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_in_traincar_01" noscene
+//~ }
+//~ rule CS_HoldingPositionInTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsInTraincar
+	//~ response		CS_HoldingPositionInTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionInTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_in_tunnel_01" noscene
+//~ }
+//~ rule CS_HoldingPositionInTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsInTunnel
+	//~ response		CS_HoldingPositionInTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionOnBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_on_bridge_01" noscene
+//~ }
+//~ rule CS_HoldingPositionOnBridge
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsOnBridge
+	//~ response		CS_HoldingPositionOnBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_HoldingPositionOnTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_holding_position_on_traincar_01" noscene
+//~ }
+//~ rule CS_HoldingPositionOnTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptOverwatch IsOnTraincar
+	//~ response		CS_HoldingPositionOnTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ // Lost visual of enemy at location
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtBricks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_bricks_01" noscene
+//~ }
+//~ rule CS_LostVisualAtBricks
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtBricks
+	//~ response		CS_LostVisualAtBricks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_bridge_01" noscene
+//~ }
+//~ rule CS_LostVisualAtBridge
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtBridge
+	//~ response		CS_LostVisualAtBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtCar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_by_car_01" noscene
+//~ }
+//~ rule CS_LostVisualAtCar
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtCar
+	//~ response		CS_LostVisualAtCar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtContainer
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_container_01" noscene
+//~ }
+//~ rule CS_LostVisualAtContainer
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtContainer
+	//~ response		CS_LostVisualAtContainer
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtCrane
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_crane_01" noscene
+//~ }
+//~ rule CS_LostVisualAtCrane
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtCrane
+	//~ response		CS_LostVisualAtCrane
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtDoor
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_door_01" noscene
+//~ }
+//~ rule CS_LostVisualAtDoor
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtDoor
+	//~ response		CS_LostVisualAtDoor
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtFence
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_fence_01" noscene
+	//~ speak "ConstructionYard.soldier_context_lost_visual_by_fence_01" noscene
+//~ }
+//~ rule CS_LostVisualAtFence
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtFence
+	//~ response		CS_LostVisualAtFence
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtPipes
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_pipes_01" noscene
+	//~ speak "ConstructionYard.soldier_context_lost_visual_by_pipes_01" noscene
+//~ }
+//~ rule CS_LostVisualAtPipes
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtPipes
+	//~ response		CS_LostVisualAtPipes
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtShack
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_shack_01" noscene
+//~ }
+//~ rule CS_LostVisualAtShack
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtShack
+	//~ response		CS_LostVisualAtShack
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtStation
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_station_01" noscene
+//~ }
+//~ rule CS_LostVisualAtStation
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtStation
+	//~ response		CS_LostVisualAtStation
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_toilet_01" noscene
+//~ }
+//~ rule CS_LostVisualAtToilet
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtToilet
+	//~ response		CS_LostVisualAtToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtTracks
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_tracks_01" noscene
+//~ }
+//~ rule CS_LostVisualAtTracks
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtTracks
+	//~ response		CS_LostVisualAtTracks
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_by_traincar_01" noscene
+//~ }
+//~ rule CS_LostVisualAtTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtTraincar
+	//~ response		CS_LostVisualAtTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtTruck
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_truck_01" noscene
+	//~ speak "ConstructionYard.soldier_context_lost_visual_by_truck_01" noscene
+//~ }
+//~ rule CS_LostVisualAtTruck
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtTruck
+	//~ response		CS_LostVisualAtTruck
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_van_01" noscene
+//~ }
+//~ rule CS_LostVisualAtVan
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtVan
+	//~ response		CS_LostVisualAtVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_wall_01" noscene
+//~ }
+//~ rule CS_LostVisualAtWall
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtWall
+	//~ response		CS_LostVisualAtWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtWindow
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_window_01" noscene
+//~ }
+//~ rule CS_LostVisualAtWindow
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtWindow
+	//~ response		CS_LostVisualAtWindow
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualAtWoodpile
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_at_woodpile_01" noscene
+//~ }
+//~ rule CS_LostVisualAtWoodpile
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerAtWoodpile
+	//~ response		CS_LostVisualAtWoodpile
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualBehindWall
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_behind_wall_01" noscene
+//~ }
+//~ rule CS_LostVisualBehindWall
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerBehindWall
+	//~ response		CS_LostVisualBehindWall
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualInToilet
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_in_toilet_01" noscene
+//~ }
+//~ rule CS_LostVisualInToilet
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerInToilet
+	//~ response		CS_LostVisualInToilet
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualInTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_in_traincar_01" noscene
+//~ }
+//~ rule CS_LostVisualInTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerInTraincar
+	//~ response		CS_LostVisualInTraincar
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualInTunnel
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_in_tunnel_01" noscene
+//~ }
+//~ rule CS_LostVisualInTunnel
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerInTunnel
+	//~ response		CS_LostVisualInTunnel
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualInVan
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_in_van_01" noscene
+//~ }
+//~ rule CS_LostVisualInVan
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerInVan
+	//~ response		CS_LostVisualInVan
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualOnBridge
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_on_bridge_01" noscene
+//~ }
+//~ rule CS_LostVisualOnBridge
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerOnBridge
+	//~ response		CS_LostVisualOnBridge
+//~ }
+
+//~ //--------------------------------------------------------------------------------------
+//~ response CS_LostVisualOnTraincar
+//~ {
+	//~ speak "ConstructionYard.soldier_context_lost_visual_on_traincar_01" noscene
+//~ }
+//~ rule CS_LostVisualOnTraincar
+//~ {
+	//~ criteria		IsCombineS ConceptLostVisual EnemyIsPlayer PlayerOnTraincar
+	//~ response		CS_LostVisualOnTraincar
+//~ }
+
+
+
+
+//========================================================================================================
+// EXAMPLE USAGE OF THE "then" PARAMETER TO DO MULTI STEP SPEECH 
+//		Console command to trigger this in game (while looking at a combine soldier):    npc_speak COMBINESOLDIER_TESTSTEPS
+//		Damage the soldier to 50% of their health to see the branch in action.
+//========================================================================================================
+
+
+// STEP 1: Starts here.
+response CS_TestThen_Step1_Response
+{
+	speak "vo.combine.charger.underattack_01" noscene then self COMBINESOLDIER_TESTSTEPS step:2 2
+}
+rule CS_TestThen_Step1_Rule
+{
+	criteria		IsCombineS Concept_TestCS
+	response		CS_TestThen_Step1_Response
+}
+
+// STEP 2: Then this is spoken
+response CS_TestThen_Step2_Response
+{
+	speak "vo.combine.charger.announceattack_01" noscene then self COMBINESOLDIER_TESTSTEPS step:3 2
+}
+rule CS_TestThen_Step2_Rule
+{
+	criteria		IsCombineS Concept_TestCS Sentence_Step2
+	response		CS_TestThen_Step2_Response
+}
+
+// STEP 3: Then branches to one of the two rules below, based on whether the soldier has >50% health
+response CS_TestThen_Step3_Hurt_Response
+{
+	speak "vo.combine.charger.takingfire_01" noscene
+}
+rule CS_TestThen_Step3_Hurt_Rule
+{
+	criteria		IsCombineS Concept_TestCS Sentence_Step3 SoldierIsHurt
+	response		CS_TestThen_Step3_Hurt_Response
+}
+
+response CS_TestThen_Step3_Unhurt_Response
+{
+	speak "vo.combine.charger.announcekill_01" noscene
+}
+rule CS_TestThen_Step3_Unhurt_Rule
+{
+	criteria		IsCombineS Concept_TestCS Sentence_Step3 SoldierIsUnhurt
+	response		CS_TestThen_Step3_Unhurt_Response
+}

@@ -1,0 +1,1756 @@
+
+//========================================================================================================
+// ADVANCING ON TARGET
+//====================================================================
+response CS_Suppressor_AdvancingOnTarget
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAdvancingOnTarget 
+	
+	speak "vo.combine.suppressor.advancing_on_target_01"
+	speak "vo.combine.suppressor.advancing_on_target_02"
+	speak "vo.combine.suppressor.advancing_on_target_03"
+	speak "vo.combine.suppressor.advancing_on_target_04"
+	speak "vo.combine.suppressor.advancing_on_target_05"
+	speak "vo.combine.suppressor.advancing_on_target_06"
+	speak "vo.combine.suppressor.advancing_on_target_07"
+	speak "vo.combine.suppressor.advancing_on_target_08"
+	speak "vo.combine.suppressor.advancing_on_target_09"
+	speak "vo.combine.suppressor.advancing_on_target_10"
+	speak "vo.combine.suppressor.advancing_on_target_11"
+	speak "vo.combine.suppressor.advancing_on_target_12"
+	speak "vo.combine.suppressor.advancing_on_target_13"
+	speak "vo.combine.suppressor.advancing_on_target_14"
+	speak "vo.combine.suppressor.advancing_on_target_15"
+	speak "vo.combine.suppressor.advancing_on_target_16"
+	speak "vo.combine.suppressor.advancing_on_target_17"
+	speak "vo.combine.suppressor.advancing_on_target_18"
+	speak "vo.combine.suppressor.advancing_on_target_19"
+	speak "vo.combine.suppressor.advancing_on_target_20"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_15"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_16"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_17"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_18"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_19"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.advancing_on_target_20"
+		}
+}
+
+	
+//========================================================================================================
+// ANNOUNCING CHARGE
+//====================================================================
+response CS_Suppressor_Charging
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAnnounceCharge 
+	
+	speak "vo.combine.suppressor.advancing_on_target_01"
+	speak "vo.combine.suppressor.advancing_on_target_02"
+	speak "vo.combine.suppressor.advancing_on_target_03"
+	speak "vo.combine.suppressor.advancing_on_target_04"
+	speak "vo.combine.suppressor.advancing_on_target_05"
+	speak "vo.combine.suppressor.advancing_on_target_06"
+	speak "vo.combine.suppressor.advancing_on_target_07"
+	speak "vo.combine.suppressor.advancing_on_target_08"
+	speak "vo.combine.suppressor.advancing_on_target_09"
+	speak "vo.combine.suppressor.advancing_on_target_10"
+	speak "vo.combine.suppressor.advancing_on_target_11"
+	speak "vo.combine.suppressor.advancing_on_target_12"
+	speak "vo.combine.suppressor.advancing_on_target_13"
+	speak "vo.combine.suppressor.advancing_on_target_14"
+	speak "vo.combine.suppressor.advancing_on_target_15"
+	speak "vo.combine.suppressor.advancing_on_target_16"
+	speak "vo.combine.suppressor.advancing_on_target_17"
+	speak "vo.combine.suppressor.advancing_on_target_18"
+	speak "vo.combine.suppressor.advancing_on_target_19"
+	speak "vo.combine.suppressor.advancing_on_target_20"
+}
+
+//========================================================================================================
+// ANNOUNCING ATTACKS - GRENADE THROW
+//====================================================================
+response CS_Suppressor_AnnounceAttack_Grenade
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptThrowingGrenade
+	
+	speak "vo.combine.suppressor.announceattack_grenade_01" 
+	speak "vo.combine.suppressor.announceattack_grenade_02" 
+	speak "vo.combine.suppressor.announceattack_grenade_03" 
+	speak "vo.combine.suppressor.announceattack_grenade_04" 
+	speak "vo.combine.suppressor.announceattack_grenade_05" 
+	speak "vo.combine.suppressor.announceattack_grenade_06" 
+	speak "vo.combine.suppressor.announceattack_grenade_07"
+	speak "vo.combine.suppressor.announceattack_grenade_08" 
+	speak "vo.combine.suppressor.announceattack_grenade_09" 
+	speak "vo.combine.suppressor.announceattack_grenade_10" 	
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announceattack_grenade_09"
+		}
+}
+
+
+//========================================================================================================
+// ANNOUNCING ENEMY
+//====================================================================
+response CS_Suppressor_AnnounceEnemy
+{	
+	criteria		IsCombineS IsClass_Suppressor ConceptAnnounceEnemy
+	
+	speak "vo.combine.suppressor.announceattack_01"
+	speak "vo.combine.suppressor.announceattack_02"
+	speak "vo.combine.suppressor.announceattack_03"
+	speak "vo.combine.suppressor.announceattack_04"
+	speak "vo.combine.suppressor.announceattack_05"
+	speak "vo.combine.suppressor.announceattack_06"
+	speak "vo.combine.suppressor.announceattack_09"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announceattack_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announceattack_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announceattack_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announceattack_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announceattack_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announceattack_09"
+		}
+	
+	
+	response
+	{
+		criteria		EnemyIsPlayer
+		speak "vo.combine.suppressor.announceattack_01"
+		speak "vo.combine.suppressor.announceattack_02"
+		speak "vo.combine.suppressor.announceattack_03"
+		speak "vo.combine.suppressor.announceattack_04"
+		speak "vo.combine.suppressor.announceattack_05"
+		speak "vo.combine.suppressor.announceattack_06"
+		speak "vo.combine.suppressor.announceattack_09"
+		speak "vo.combine.suppressor.announceattack_11"
+		
+		response 
+		{
+			criteria AlyxIsKnown
+			speak "vo.combine.suppressor.announceattack_alyx_01"
+			speak "vo.combine.suppressor.announceattack_alyx_02"
+			speak "vo.combine.suppressor.announceattack_alyx_03"
+			speak "vo.combine.suppressor.announceattack_alyx_04"
+			speak "vo.combine.suppressor.announceattack_alyx_05"
+			speak "vo.combine.suppressor.announceattack_alyx_06"
+			speak "vo.combine.suppressor.announceattack_alyx_07"
+			speak "vo.combine.suppressor.announceattack_alyx_08"
+			speak "vo.combine.suppressor.announceattack_alyx_09"
+			speak "vo.combine.suppressor.announceattack_alyx_10"
+			speak "vo.combine.suppressor.announceattack_alyx_11"
+		}
+		
+		response
+		{
+			criteria		IsOrderResponse AlyxIsKnown
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announceattack_alyx_09"
+		}
+		
+		response
+		{
+			criteria		PlayerHasUpgrades
+			speak "vo.combine.suppressor.sees_upgrades_01"
+			speak "vo.combine.suppressor.sees_upgrades_02"
+			speak "vo.combine.suppressor.sees_upgrades_03"
+			speak "vo.combine.suppressor.sees_upgrades_04"
+			speak "vo.combine.suppressor.sees_upgrades_05"
+		}
+		
+		response
+		{
+			criteria		PlayerHasGrenades
+			speak "vo.combine.suppressor.sees_grenades_01"
+			speak "vo.combine.suppressor.sees_grenades_02"
+			speak "vo.combine.suppressor.sees_grenades_03"
+			speak "vo.combine.suppressor.sees_grenades_04"
+			speak "vo.combine.suppressor.sees_grenades_05"
+		}
+	}
+	
+	response
+	{
+		criteria		EnemyIsAntlion
+		speak "vo.combine.suppressor.announceenemy_antlion_01" 
+		speak "vo.combine.suppressor.announceenemy_antlion_02" 
+		speak "vo.combine.suppressor.announceenemy_antlion_03" 
+		speak "vo.combine.suppressor.announceenemy_antlion_04" 
+		speak "vo.combine.suppressor.announceenemy_antlion_05" 
+		speak "vo.combine.suppressor.announceenemy_antlion_06" 
+		speak "vo.combine.suppressor.announceenemy_antlion_07" 
+		
+	}
+	
+	response
+	{
+		criteria		EnemyIsZombie
+		speak "vo.combine.suppressor.announceenemy_zombie_01" 
+		speak "vo.combine.suppressor.announceenemy_zombie_02" 
+		speak "vo.combine.suppressor.announceenemy_zombie_03" 
+		speak "vo.combine.suppressor.announceenemy_zombie_04" 
+		speak "vo.combine.suppressor.announceenemy_zombie_05" 
+		speak "vo.combine.suppressor.announceenemy_zombie_08" 
+		speak "vo.combine.suppressor.announceenemy_zombie_09" 
+		speak "vo.combine.suppressor.announceenemy_zombie_10" 
+	}
+	
+	response
+	{
+		criteria		EnemyIsHeadcrab
+		speak "vo.combine.suppressor.announceenemy_headcrabs_01" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_02"  thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+		speak "vo.combine.suppressor.announceenemy_headcrabs_03" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_04" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_05" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_07" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_08" 
+		speak "vo.combine.suppressor.announceenemy_headcrabs_10" 
+	}
+}
+
+//========================================================================================================
+// ANNOUNCE KILL
+//============================
+response CS_Suppressor_AnnounceKill
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAnnounceKill
+	
+	
+		speak "vo.combine.suppressor.announcekill_01" 
+		speak "vo.combine.suppressor.announcekill_02" 
+		speak "vo.combine.suppressor.announcekill_03" 
+		speak "vo.combine.suppressor.announcekill_04" 
+		speak "vo.combine.suppressor.announcekill_05" 
+		speak "vo.combine.suppressor.announcekill_06" 
+		speak "vo.combine.suppressor.announcekill_09" 
+		speak "vo.combine.suppressor.announcekill_11" 
+		speak "vo.combine.suppressor.announcekill_12" 
+		speak "vo.combine.suppressor.announcekill_13" 
+		speak "vo.combine.suppressor.announcekill_14" 
+		speak "vo.combine.suppressor.announcekill_15" 
+		
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announcekill_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announcekill_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announcekill_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announcekill_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announcekill_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announcekill_09"
+		}
+	
+	response
+	{
+		criteria		EnemyIsPlayer AlyxIsKnown
+		speak "vo.combine.suppressor.announcekill_player_01" 
+		speak "vo.combine.suppressor.announcekill_player_03" 
+		speak "vo.combine.suppressor.announcekill_player_04" 
+		speak "vo.combine.suppressor.announcekill_player_05" 
+		speak "vo.combine.suppressor.announcekill_player_06" 
+		speak "vo.combine.suppressor.announcekill_player_07" 
+		speak "vo.combine.suppressor.announcekill_player_08" 
+		speak "vo.combine.suppressor.announcekill_player_09" 
+		speak "vo.combine.suppressor.announcekill_01" 
+		speak "vo.combine.suppressor.announcekill_02" 
+		speak "vo.combine.suppressor.announcekill_03" 
+		speak "vo.combine.suppressor.announcekill_04" 
+		speak "vo.combine.suppressor.announcekill_05" 
+		speak "vo.combine.suppressor.announcekill_06" 
+		speak "vo.combine.suppressor.announcekill_09" 
+		speak "vo.combine.suppressor.announcekill_11" 
+		speak "vo.combine.suppressor.announcekill_12" 
+		speak "vo.combine.suppressor.announcekill_13" 
+		speak "vo.combine.suppressor.announcekill_14" 
+		speak "vo.combine.suppressor.announcekill_15" 
+		
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announcekill_player_01"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announcekill_player_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announcekill_player_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announcekill_player_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announcekill_player_06"
+		}
+		
+	}
+	
+	response
+	{
+		criteria		EnemyIsAntlion
+		speak "vo.combine.suppressor.announcekill_antlion_01" 
+		speak "vo.combine.suppressor.announcekill_antlion_02" 
+		speak "vo.combine.suppressor.announcekill_antlion_03" 
+		speak "vo.combine.suppressor.announcekill_antlion_04" 
+		speak "vo.combine.suppressor.announcekill_antlion_05" 
+		speak "vo.combine.suppressor.announcekill_01" 
+		speak "vo.combine.suppressor.announcekill_02" 
+		speak "vo.combine.suppressor.announcekill_03" 
+		speak "vo.combine.suppressor.announcekill_04" 
+	}
+	
+	response
+	{
+		criteria		EnemyIsZombie
+		speak "vo.combine.suppressor.announcekill_zombie_01" 
+		speak "vo.combine.suppressor.announcekill_zombie_02" 
+		speak "vo.combine.suppressor.announcekill_zombie_03" 
+		speak "vo.combine.suppressor.announcekill_zombie_04" 
+		speak "vo.combine.suppressor.announcekill_zombie_05" 
+		speak "vo.combine.suppressor.announcekill_zombie_06" 
+		speak "vo.combine.suppressor.announcekill_zombie_07" 
+		speak "vo.combine.suppressor.announcekill_05" 
+		speak "vo.combine.suppressor.announcekill_06" 
+		speak "vo.combine.suppressor.announcekill_09" 
+		speak "vo.combine.suppressor.announcekill_11" 
+		
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.announcekill_zombie_06"
+		}
+	}
+	
+	response
+	{
+		criteria		EnemyIsHeadcrab
+		speak "vo.combine.suppressor.announcekill_headcrab_01" 
+		speak "vo.combine.suppressor.announcekill_headcrab_02" 
+		speak "vo.combine.suppressor.announcekill_headcrab_03" 
+		speak "vo.combine.suppressor.announcekill_headcrab_04" 
+		speak "vo.combine.suppressor.announcekill_headcrab_05" 
+		speak "vo.combine.suppressor.announcekill_headcrab_06" 
+		speak "vo.combine.suppressor.announcekill_headcrab_07" 
+		speak "vo.combine.suppressor.announcekill_headcrab_08" 
+		speak "vo.combine.suppressor.announcekill_headcrab_09" 
+		speak "vo.combine.suppressor.announcekill_12" 
+		speak "vo.combine.suppressor.announcekill_13" 
+		speak "vo.combine.suppressor.announcekill_14" 
+		speak "vo.combine.suppressor.announcekill_15" 
+		
+	}
+}
+
+
+//========================================================================================================
+// REQUESTING COVER
+//====================================================================
+response CS_Suppressor_CoverMe
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptCoverMe HasOtherSquadMembers
+	
+	speak "vo.combine.suppressor.coverme_01" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_02" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_03" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_04" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_05" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_06" predelay 1 respeakdelay 15
+	speak "vo.combine.suppressor.coverme_07" predelay 1 respeakdelay 15
+}
+
+
+//========================================================================================================
+// ANNOUNCING DANGER - GRENADE
+//====================================================================
+response CS_Suppressor_AnnounceDanger_Grenade
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptDanger DangerIsGrenade
+	
+	speak "vo.combine.suppressor.danger_grenade_01"
+	speak "vo.combine.suppressor.danger_grenade_02"
+	speak "vo.combine.suppressor.danger_grenade_03"
+	speak "vo.combine.suppressor.danger_grenade_04"
+	speak "vo.combine.suppressor.danger_grenade_05"
+	speak "vo.combine.suppressor.danger_grenade_06"
+	speak "vo.combine.suppressor.danger_grenade_07"
+	speak "vo.combine.suppressor.danger_grenade_08" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.danger_grenade_09"
+	speak "vo.combine.suppressor.danger_grenade_10"
+}
+
+
+//========================================================================================================
+// DEATH
+//==================================
+
+response CS_Suppressor_Die
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptDie
+	
+	speak "vo.combine.suppressor.die_01" noscene
+	speak "vo.combine.suppressor.die_02" noscene
+	speak "vo.combine.suppressor.die_03" noscene
+	speak "vo.combine.suppressor.die_04" noscene
+	speak "vo.combine.suppressor.die_05" noscene
+	speak "vo.combine.suppressor.die_06" noscene
+	speak "vo.combine.suppressor.die_07" noscene
+	speak "vo.combine.suppressor.die_08" noscene
+	speak "vo.combine.suppressor.die_09" noscene
+	speak "vo.combine.suppressor.die_10" noscene
+	
+	response
+	{
+		criteria		enemyisplayerx
+		speak "vo.combine.suppressor.die_01" noscene
+		speak "vo.combine.suppressor.die_02" noscene
+		speak "vo.combine.suppressor.die_03" noscene
+		speak "vo.combine.suppressor.die_04" noscene
+		speak "vo.combine.suppressor.die_05" noscene
+		speak "vo.combine.suppressor.die_06" noscene
+		speak "vo.combine.suppressor.die_07" noscene
+		speak "vo.combine.suppressor.die_08" noscene
+		speak "vo.combine.suppressor.die_09" noscene
+		speak "vo.combine.suppressor.die_10" noscene
+		
+		response
+		{
+			criteria		AlyxIsKnown
+			speak "vo.combine.suppressor.die_by_player_18" noscene
+			speak "vo.combine.suppressor.die_by_player_19" noscene
+			speak "vo.combine.suppressor.die_by_player_20" noscene
+			speak "vo.combine.suppressor.die_by_player_21" noscene
+			speak "vo.combine.suppressor.die_by_player_22" noscene
+			speak "vo.combine.suppressor.die_by_player_23" noscene
+			speak "vo.combine.suppressor.die_01" noscene
+			speak "vo.combine.suppressor.die_02" noscene
+			speak "vo.combine.suppressor.die_03" noscene
+			speak "vo.combine.suppressor.die_04" noscene
+			speak "vo.combine.suppressor.die_05" noscene
+			speak "vo.combine.suppressor.die_06" noscene
+			speak "vo.combine.suppressor.die_07" noscene
+			speak "vo.combine.suppressor.die_08" noscene
+			speak "vo.combine.suppressor.die_09" noscene
+			speak "vo.combine.suppressor.die_10" noscene
+		}
+		
+	}
+}
+
+//========================================================================================================
+// ESTABLISHING LINE OF FIRE
+//====================================================================
+response CS_Suppressor_EstablishingLOF
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptEstablishingLOF
+	
+	speak "vo.combine.suppressor.establishinglof_01" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_02" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_03" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_04" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_05" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_06" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_07" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_08" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_09" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_10" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_11" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_12" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_13" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_14" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_15" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_17" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_18" respeakdelay 11
+	speak "vo.combine.suppressor.establishinglof_19" respeakdelay 11
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.establishinglof_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.establishinglof_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.establishinglof_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.establishinglof_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.establishinglof_05"
+			speak "vo.combine.suppressor.orderresponse_positive_06" thensimple 0 speak "vo.combine.suppressor.establishinglof_06"
+		}
+}
+
+
+
+//========================================================================================================
+// FLUSHING ENEMY OUT OF COVER
+//====================================================================
+response CS_Suppressor_FlushingEnemy
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFlushingEnemy 
+	
+	speak "vo.combine.suppressor.flushing_01"
+	speak "vo.combine.suppressor.flushing_02"
+	speak "vo.combine.suppressor.flushing_03" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.flushing_04"
+	speak "vo.combine.suppressor.flushing_05"
+	speak "vo.combine.suppressor.flushing_06"
+	speak "vo.combine.suppressor.flushing_07"
+}
+
+
+//========================================================================================================
+// GET BACK
+//====================================================================
+response CS_Suppressor_GetBack
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptGetBack 
+	
+	speak "vo.combine.suppressor.getback_01" 
+	speak "vo.combine.suppressor.getback_02" 
+	speak "vo.combine.suppressor.getback_03"
+	speak "vo.combine.suppressor.getback_04" 
+	speak "vo.combine.suppressor.getback_05" 	
+}
+
+
+//========================================================================================================
+// INJURED
+//====================================================================
+response CS_Suppressor_Injured
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptInjured 
+	
+	speak "vo.combine.suppressor.injured_01"
+	speak "vo.combine.suppressor.injured_02"
+	speak "vo.combine.suppressor.injured_03" 
+	speak "vo.combine.suppressor.injured_04" 
+	speak "vo.combine.suppressor.injured_05"
+	speak "vo.combine.suppressor.injured_06"
+	speak "vo.combine.suppressor.injured_07"
+}
+
+
+//========================================================================================================
+// LIMPING
+//====================================================================
+response CS_Suppressor_Limping
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptLimping 
+	
+	speak "vo.combine.suppressor.panting_01"
+}
+
+//========================================================================================================
+// LOST ENEMY 16+ sec
+//====================================================================
+response CS_Suppressor_LostShort
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptLostEnemy LostEnemyShortTime
+	
+	speak "vo.combine.suppressor.lostenemy_01"
+	speak "vo.combine.suppressor.lostenemy_02"
+	speak "vo.combine.suppressor.lostenemy_03"
+	speak "vo.combine.suppressor.lostenemy_04"
+	speak "vo.combine.suppressor.lostenemy_05"
+	speak "vo.combine.suppressor.lostenemy_06"
+	speak "vo.combine.suppressor.lostenemy_07"
+	speak "vo.combine.suppressor.lostenemy_08"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.lostenemy_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.lostenemy_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.lostenemy_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.lostenemy_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.lostenemy_05"
+		}
+}
+
+
+//========================================================================================================
+// LOST VISUAL 3+ sec
+//====================================================================
+response CS_Suppressor_LostVisual
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptLostVisual 
+	
+	speak "vo.combine.suppressor.lostvisual_01" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_02" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_03" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_04" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_06" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_07" respeakdelay 3 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_08" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_09" respeakdelay 3
+	speak "vo.combine.suppressor.lostvisual_10" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_01" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_02" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_03" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_04" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_05" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_06" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_07" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_09" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_10" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_11" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_12" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_13" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_14" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_15" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_16" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_17" respeakdelay 3
+	speak "vo.combine.suppressor.reconnoiter_search_18" respeakdelay 3
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.lostvisual_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.lostvisual_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.lostvisual_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.lostvisual_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.lostvisual_05"
+		}
+	
+	response
+	{
+		criteria		enemyisplayerx
+		speak "vo.combine.suppressor.lostvisual_01" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_02" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_03" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_04" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_06" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_07" respeakdelay 11 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+		speak "vo.combine.suppressor.lostvisual_08" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_09" respeakdelay 11
+		speak "vo.combine.suppressor.lostvisual_10" respeakdelay 11
+		
+		response
+		{
+			criteria		AlyxIsKnown
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_05"
+		}
+		
+		response
+		{
+			criteria		IsOrderResponse AlyxIsKnown
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.lostvisual_player_05"
+		}
+	}
+	
+}
+
+
+//========================================================================================================
+// PANIC ON ENEMY NEAR
+//====================================================================
+response CS_Suppressor_NearPanic
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptNearPanic
+	
+	speak "vo.combine.suppressor.nearpanic_01"
+	speak "vo.combine.suppressor.nearpanic_02"
+	speak "vo.combine.suppressor.nearpanic_03"
+	speak "vo.combine.suppressor.nearpanic_04"
+	speak "vo.combine.suppressor.nearpanic_05"
+	speak "vo.combine.suppressor.nearpanic_06"
+	speak "vo.combine.suppressor.nearpanic_07"
+	speak "vo.combine.suppressor.nearpanic_08"
+	speak "vo.combine.suppressor.nearpanic_09"
+	speak "vo.combine.suppressor.nearpanic_10"
+}
+
+
+//========================================================================================================
+// ENTERING OVERWATCH
+//====================================================================
+
+response CS_Suppressor_Overwatch
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptOverwatch 
+	
+	speak "vo.combine.suppressor.overwatch_01" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_02" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_03" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_04" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_05" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_06" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_07" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_08" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_09" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_10" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_11" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_12" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_13" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_14" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_15" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_16" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_17" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_18" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_19" respeakdelay 5
+	speak "vo.combine.suppressor.overwatch_20" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_01" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_02" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_03" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_04" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_05" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_06" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_07" respeakdelay 5
+	speak "vo.combine.suppressor.lostenemy_08" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_01" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_02" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_03" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_04" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_06" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_07" respeakdelay 5 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.lostvisual_08" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_09" respeakdelay 5
+	speak "vo.combine.suppressor.lostvisual_10" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_01" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_03" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_04" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_05" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_06" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_08" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_09" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_10" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_11" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_12" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_13" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_14" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_15" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_16" respeakdelay 5
+	speak "vo.combine.suppressor.reconnoiter_start_17" respeakdelay 5
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.overwatch_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.overwatch_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.overwatch_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.overwatch_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.overwatch_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.overwatch_06"
+		}
+}
+
+
+//========================================================================================================
+// PAIN 
+//============================
+
+response CS_Suppressor_Pain
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptPain
+	
+	speak "vo.combine.suppressor.pain_02" 
+	speak "vo.combine.suppressor.pain_03" 
+	speak "vo.combine.suppressor.pain_04" 
+	speak "vo.combine.suppressor.pain_05" 
+	speak "vo.combine.suppressor.pain_06" 
+	speak "vo.combine.suppressor.pain_07" 
+	speak "vo.combine.suppressor.pain_08" 
+	speak "vo.combine.suppressor.pain_10" 
+	speak "vo.combine.suppressor.pain_02" thensimple 1 speak "vo.combine.suppressor.underattack_01" respeakdelay 13
+	speak "vo.combine.suppressor.pain_03" thensimple 1 speak "vo.combine.suppressor.underattack_02" respeakdelay 13
+	speak "vo.combine.suppressor.pain_04" thensimple 1 speak "vo.combine.suppressor.underattack_04" respeakdelay 13
+	speak "vo.combine.suppressor.pain_05" thensimple 1 speak "vo.combine.suppressor.underattack_05" respeakdelay 13
+	speak "vo.combine.suppressor.pain_06" thensimple 1 speak "vo.combine.suppressor.underattack_06" respeakdelay 13
+	speak "vo.combine.suppressor.pain_07" thensimple 1 speak "vo.combine.suppressor.underattack_07" respeakdelay 13
+	speak "vo.combine.suppressor.pain_08" thensimple 1 speak "vo.combine.suppressor.underattack_08" respeakdelay 13
+	speak "vo.combine.suppressor.pain_10" thensimple 1 speak "vo.combine.suppressor.underattack_09" respeakdelay 13
+	speak "vo.combine.suppressor.pain_02" thensimple 1 speak "vo.combine.suppressor.underattack_10" respeakdelay 13
+	speak "vo.combine.suppressor.pain_03" thensimple 1 speak "vo.combine.suppressor.underattack_11" respeakdelay 13
+	speak "vo.combine.suppressor.pain_04" thensimple 1 speak "vo.combine.suppressor.underattack_12" respeakdelay 13
+}
+
+
+
+//========================================================================================================
+// PLAYER IS WOUNDED
+//====================================================================
+response CS_Suppressor_PlayerIsHurt
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptPlayerIsHurt 
+	
+	speak "vo.combine.suppressor.playerishurt_01"
+	speak "vo.combine.suppressor.playerishurt_02"
+	speak "vo.combine.suppressor.playerishurt_03"
+	speak "vo.combine.suppressor.playerishurt_04"
+	speak "vo.combine.suppressor.playerishurt_05"
+	speak "vo.combine.suppressor.playerishurt_06"
+	speak "vo.combine.suppressor.playerishurt_07"
+	speak "vo.combine.suppressor.playerishurt_08"
+	speak "vo.combine.suppressor.playerishurt_09"
+	speak "vo.combine.suppressor.playerishurt_10"
+	speak "vo.combine.suppressor.playerishurt_11"
+	speak "vo.combine.suppressor.playerishurt_12"
+	speak "vo.combine.suppressor.playerishurt_13"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.playerishurt_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.playerishurt_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.playerishurt_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.playerishurt_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.playerishurt_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.playerishurt_06"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER END
+//====================================================================
+response CS_Suppressor_ReconnoiterFinish
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterFinish 
+	
+	speak "vo.combine.suppressor.reconnoiter_finish_01"
+	speak "vo.combine.suppressor.reconnoiter_finish_02"
+	speak "vo.combine.suppressor.reconnoiter_finish_03"
+	speak "vo.combine.suppressor.reconnoiter_finish_04"
+	speak "vo.combine.suppressor.reconnoiter_finish_05"
+	speak "vo.combine.suppressor.reconnoiter_finish_06"
+	speak "vo.combine.suppressor.reconnoiter_finish_07"
+	speak "vo.combine.suppressor.reconnoiter_finish_08"
+	speak "vo.combine.suppressor.reconnoiter_finish_09"
+	speak "vo.combine.suppressor.reconnoiter_finish_10"
+	speak "vo.combine.suppressor.reconnoiter_finish_11"
+	speak "vo.combine.suppressor.reconnoiter_finish_12"
+	speak "vo.combine.suppressor.reconnoiter_finish_13"
+	speak "vo.combine.suppressor.reconnoiter_finish_14"
+	speak "vo.combine.suppressor.reconnoiter_finish_15"
+	speak "vo.combine.suppressor.reconnoiter_finish_16"
+	speak "vo.combine.suppressor.reconnoiter_finish_18"
+	speak "vo.combine.suppressor.reconnoiter_finish_19"
+	speak "vo.combine.suppressor.reconnoiter_finish_20"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_finish_06"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER SEARCH
+//====================================================================
+response CS_Suppressor_ReconnoiterSearch
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterSearch 
+	
+	speak "vo.combine.suppressor.reconnoiter_search_01"
+	speak "vo.combine.suppressor.reconnoiter_search_02"
+	speak "vo.combine.suppressor.reconnoiter_search_03"
+	speak "vo.combine.suppressor.reconnoiter_search_04"
+	speak "vo.combine.suppressor.reconnoiter_search_05"
+	speak "vo.combine.suppressor.reconnoiter_search_06"
+	speak "vo.combine.suppressor.reconnoiter_search_07"
+	speak "vo.combine.suppressor.reconnoiter_search_09"
+	speak "vo.combine.suppressor.reconnoiter_search_10"
+	speak "vo.combine.suppressor.reconnoiter_search_11"
+	speak "vo.combine.suppressor.reconnoiter_search_12"
+	speak "vo.combine.suppressor.reconnoiter_search_13"
+	speak "vo.combine.suppressor.reconnoiter_search_14"
+	speak "vo.combine.suppressor.reconnoiter_search_15"
+	speak "vo.combine.suppressor.reconnoiter_search_16"
+	speak "vo.combine.suppressor.reconnoiter_search_17"
+	speak "vo.combine.suppressor.reconnoiter_search_18"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_search_06"
+		}
+}
+
+
+//========================================================================================================
+// RECONNOITER START
+//====================================================================
+response CS_Suppressor_Reconnoiter
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReconnoiterStart 
+	
+	speak "vo.combine.suppressor.reconnoiter_start_01"
+	speak "vo.combine.suppressor.reconnoiter_start_03"
+	speak "vo.combine.suppressor.reconnoiter_start_04"
+	speak "vo.combine.suppressor.reconnoiter_start_05"
+	speak "vo.combine.suppressor.reconnoiter_start_06"
+	speak "vo.combine.suppressor.reconnoiter_start_08"
+	speak "vo.combine.suppressor.reconnoiter_start_09"
+	speak "vo.combine.suppressor.reconnoiter_start_10"
+	speak "vo.combine.suppressor.reconnoiter_start_11"
+	speak "vo.combine.suppressor.reconnoiter_start_12"
+	speak "vo.combine.suppressor.reconnoiter_start_13"
+	speak "vo.combine.suppressor.reconnoiter_start_14"
+	speak "vo.combine.suppressor.reconnoiter_start_15"
+	speak "vo.combine.suppressor.reconnoiter_start_16"
+	speak "vo.combine.suppressor.reconnoiter_start_17"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reconnoiter_start_06"
+		}
+}
+
+
+//========================================================================================================
+// FIND ENEMY
+//====================================================================
+response CS_Suppressor_FindEnemy
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFindEnemy 
+	
+	speak "vo.combine.suppressor.refindenemy_01" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_02" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_03" 
+	speak "vo.combine.suppressor.refindenemy_04"
+	speak "vo.combine.suppressor.refindenemy_05"
+	speak "vo.combine.suppressor.refindenemy_06"
+	speak "vo.combine.suppressor.refindenemy_07"
+	speak "vo.combine.suppressor.refindenemy_08"
+	speak "vo.combine.suppressor.refindenemy_09"
+	speak "vo.combine.suppressor.refindenemy_10" 
+	speak "vo.combine.suppressor.refindenemy_11" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_12"
+	speak "vo.combine.suppressor.refindenemy_13"
+	speak "vo.combine.suppressor.refindenemy_14"
+	speak "vo.combine.suppressor.refindenemy_15"
+	speak "vo.combine.suppressor.refindenemy_16"
+	speak "vo.combine.suppressor.refindenemy_17"
+	speak "vo.combine.suppressor.refindenemy_18"
+	
+	response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.refindenemy_01" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.refindenemy_02" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.refindenemy_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.refindenemy_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.refindenemy_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.refindenemy_06"
+		}
+}
+
+//========================================================================================================
+// RELOADING
+//====================================================================
+response CS_Suppressor_Reload
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptReload 
+	
+	speak "vo.combine.suppressor.reload_01" 
+	speak "vo.combine.suppressor.reload_02" 
+	speak "vo.combine.suppressor.reload_05" 
+	speak "vo.combine.suppressor.reload_06" 
+	speak "vo.combine.suppressor.reload_07" 
+	speak "vo.combine.suppressor.reload_08" 
+	speak "vo.combine.suppressor.reload_09" 
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.reload_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.reload_02"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.reload_07"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reload_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.reload_06"
+		}
+}
+
+
+//====================================================================
+//		SQUAD MEMBER LOST
+//====================================================================
+response CS_Suppressor_SquadMemberLost
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSquadMemberLost 
+	
+	response
+	{
+		criteria		LostSquadSuppressor
+		speak "vo.combine.suppressor.squadmemberlost_01" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_02" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_03" predelay 1
+		speak "vo.combine.suppressor.calloutentity_echoone_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_04"
+		speak "vo.combine.suppressor.squadmemberlost_05" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_06" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_07" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_09" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_10" predelay 1
+		speak "vo.combine.suppressor.calloutentity_echoone_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadsuppressor
+		speak "vo.combine.suppressor.squadmemberlost_01" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_02" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_03" predelay 1
+		speak "vo.combine.suppressor.calloutentity_wallhammer_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_04"
+		speak "vo.combine.suppressor.squadmemberlost_05" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_06" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_07" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_09" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_10" predelay 1
+		speak "vo.combine.suppressor.calloutentity_wallhammer_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadSuppressor
+		speak "vo.combine.suppressor.squadmemberlost_01" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_02" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_03" predelay 1
+		speak "vo.combine.suppressor.calloutentity_apf_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_04"
+		speak "vo.combine.suppressor.squadmemberlost_05" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_06" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_07" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_09" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_10" predelay 1
+		speak "vo.combine.suppressor.calloutentity_apf_01" predelay 1 thensimple 1 speak "vo.combine.suppressor.squadmemberlost_11"
+	}
+	
+	response
+	{
+		criteria		LostSquadLeader
+		speak "vo.combine.suppressor.squadmemberlost_leader_01" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_02" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_03" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_04" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_05" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_06" predelay 1
+		speak "vo.combine.suppressor.squadmemberlost_leader_07" predelay 1
+	}
+	
+}
+
+
+
+//====================================================================
+//		LAST MAN STANDING
+//====================================================================
+response CS_Suppressor_SquadMemberLost_LastManStanding
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSquadMemberLost IsLastSquadMemberLeft
+	
+	speak "vo.combine.suppressor.squadmemberlost_lastman_01" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_02" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_03" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_04" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_05" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_06" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_07" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_08" predelay 1
+	speak "vo.combine.suppressor.squadmemberlost_lastman_09" predelay 1
+}
+
+
+//========================================================================================================
+// SUPPRESSING
+//====================================================================
+response CS_Suppressor_Suppressing
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptSuppressing 
+	
+	speak "vo.combine.suppressor.suppressing_01"
+	speak "vo.combine.suppressor.suppressing_02"
+	speak "vo.combine.suppressor.suppressing_03"
+	speak "vo.combine.suppressor.suppressing_04"
+	speak "vo.combine.suppressor.suppressing_05"
+	speak "vo.combine.suppressor.suppressing_06"
+	speak "vo.combine.suppressor.suppressing_07"
+	
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.suppressing_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.suppressing_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.suppressing_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.suppressing_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.suppressing_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.suppressing_06"
+		}
+}
+
+
+//========================================================================================================
+// I'M TAKING FIRE
+//====================================================================
+response CS_Suppressor_TakingFire
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptTakingFire 
+	
+	speak "vo.combine.suppressor.takingfire_01" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_02" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_03" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_04" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_05" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_06" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_07" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_08" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_09" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_10" respeakdelay 15
+	speak "vo.combine.suppressor.takingfire_11" respeakdelay 15
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.takingfire_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.takingfire_02"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.takingfire_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.takingfire_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.takingfire_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.takingfire_06"
+		}
+}
+
+
+//========================================================================================================
+// SQUAD IS UNDER ATTACK
+//====================================================================
+response CS_Suppressor_UnderAttack
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptUnderAttack 
+	
+	speak "vo.combine.suppressor.underattack_01"
+	speak "vo.combine.suppressor.underattack_02"
+	speak "vo.combine.suppressor.underattack_03" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.underattack_04"
+	speak "vo.combine.suppressor.underattack_05"
+	speak "vo.combine.suppressor.underattack_06"
+	speak "vo.combine.suppressor.underattack_07"
+	speak "vo.combine.suppressor.underattack_08"
+	speak "vo.combine.suppressor.underattack_09"
+	speak "vo.combine.suppressor.underattack_10"
+	speak "vo.combine.suppressor.underattack_11"
+	speak "vo.combine.suppressor.underattack_12"
+}
+
+	
+//========================================================================================================
+// ORDER RESPONSES
+//====================================================================
+response CS_Suppressor_UnableToComply
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptOrderResponse 
+	
+	response
+	{
+		criteria		ResponseIsNegative
+		speak "vo.combine.suppressor.unabletocommence_01"
+		speak "vo.combine.suppressor.unabletocommence_02"
+		speak "vo.combine.suppressor.unabletocommence_03"
+		speak "vo.combine.suppressor.unabletocommence_04"
+		speak "vo.combine.suppressor.unabletocommence_05"
+		speak "vo.combine.suppressor.unabletocommence_06"
+		speak "vo.combine.suppressor.unabletocommence_07"
+	}
+	
+	response
+	{
+		criteria		ResponseIsPositive
+		speak "vo.combine.suppressor.orderresponse_positive_01"
+		speak "vo.combine.suppressor.orderresponse_positive_02"
+		speak "vo.combine.suppressor.orderresponse_positive_03"
+		speak "vo.combine.suppressor.orderresponse_positive_04"
+		speak "vo.combine.suppressor.orderresponse_positive_05"
+		speak "vo.combine.suppressor.orderresponse_positive_06"
+	}
+}
+
+
+//========================================================================================================
+// TAUNT
+//====================================================================
+response CS_Suppressor_Taunt
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptTaunt 
+	
+	speak "vo.combine.suppressor.taunt_010"
+	speak "vo.combine.suppressor.taunt_011"
+	speak "vo.combine.suppressor.taunt_012"
+	speak "vo.combine.suppressor.taunt_020"
+	speak "vo.combine.suppressor.taunt_021"
+	speak "vo.combine.suppressor.taunt_022"
+	speak "vo.combine.suppressor.taunt_030"
+	speak "vo.combine.suppressor.taunt_031"
+	speak "vo.combine.suppressor.taunt_032"
+	speak "vo.combine.suppressor.taunt_040"
+	speak "vo.combine.suppressor.taunt_041"
+	speak "vo.combine.suppressor.taunt_042"
+	speak "vo.combine.suppressor.taunt_050"
+	speak "vo.combine.suppressor.taunt_051"
+	speak "vo.combine.suppressor.taunt_052"
+	speak "vo.combine.suppressor.taunt_060"
+	speak "vo.combine.suppressor.taunt_061"
+	speak "vo.combine.suppressor.taunt_062"
+	speak "vo.combine.suppressor.taunt_070"
+	speak "vo.combine.suppressor.taunt_071"
+	speak "vo.combine.suppressor.taunt_072"
+	speak "vo.combine.suppressor.taunt_080"
+	speak "vo.combine.suppressor.taunt_081"
+	speak "vo.combine.suppressor.taunt_082"
+	speak "vo.combine.suppressor.taunt_090"
+	speak "vo.combine.suppressor.taunt_091"
+	speak "vo.combine.suppressor.taunt_092"
+	speak "vo.combine.suppressor.taunt_100"
+	speak "vo.combine.suppressor.taunt_101"
+	speak "vo.combine.suppressor.taunt_102"
+	speak "vo.combine.suppressor.taunt_110"
+	speak "vo.combine.suppressor.taunt_111"
+	speak "vo.combine.suppressor.taunt_112"
+	speak "vo.combine.suppressor.taunt_120"
+	speak "vo.combine.suppressor.taunt_121"
+	speak "vo.combine.suppressor.taunt_122"
+	speak "vo.combine.suppressor.taunt_130"
+	speak "vo.combine.suppressor.taunt_131"
+	speak "vo.combine.suppressor.taunt_132"
+	speak "vo.combine.suppressor.taunt_140"
+	speak "vo.combine.suppressor.taunt_141"
+	speak "vo.combine.suppressor.taunt_142"
+	speak "vo.combine.suppressor.taunt_150"
+	speak "vo.combine.suppressor.taunt_151"
+	speak "vo.combine.suppressor.taunt_152"
+	speak "vo.combine.suppressor.taunt_160"
+	speak "vo.combine.suppressor.taunt_161"
+	speak "vo.combine.suppressor.taunt_162"
+	speak "vo.combine.suppressor.taunt_170"
+	speak "vo.combine.suppressor.taunt_171"
+	speak "vo.combine.suppressor.taunt_172"
+	speak "vo.combine.suppressor.taunt_180"
+	speak "vo.combine.suppressor.taunt_181"
+	speak "vo.combine.suppressor.taunt_182"
+	speak "vo.combine.suppressor.taunt_190"
+	speak "vo.combine.suppressor.taunt_191"
+	speak "vo.combine.suppressor.taunt_192"
+	speak "vo.combine.suppressor.taunt_200"
+	speak "vo.combine.suppressor.taunt_201"
+	speak "vo.combine.suppressor.taunt_202"
+}
+
+
+//========================================================================================================
+// HEAR SUSPICIOUS
+//====================================================================
+response CS_Suppressor_HearSuspicous
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptHearSuspicious
+	
+	speak "vo.combine.suppressor.hear_suspicious_01" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.hear_suspicious_02"
+	speak "vo.combine.suppressor.hear_suspicious_03"
+	speak "vo.combine.suppressor.hear_suspicious_04"
+	speak "vo.combine.suppressor.hear_suspicious_05"
+	speak "vo.combine.suppressor.hear_suspicious_06"
+}
+
+
+//========================================================================================================
+// ATTACKING PLAYER'S COVER
+//====================================================================
+response CS_Suppressor_AttackingCover
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptAttackingCover
+	
+	speak "vo.combine.suppressor.announceattack_cover_01"
+	speak "vo.combine.suppressor.announceattack_cover_02" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.announceattack_cover_03"
+	speak "vo.combine.suppressor.announceattack_cover_04"
+	speak "vo.combine.suppressor.announceattack_cover_05"
+	speak "vo.combine.suppressor.announceattack_cover_06"
+	speak "vo.combine.suppressor.announceattack_cover_07"
+	speak "vo.combine.suppressor.announceattack_cover_08"
+	speak "vo.combine.suppressor.announceattack_cover_09"
+	speak "vo.combine.suppressor.announceattack_cover_10"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_02" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers" thensimple 0 speak "vo.combine.suppressor.calloutcode_dash_01" thensimple 0 speak "vo.combine.suppressor_numbers"
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.announceattack_cover_06"
+		}
+}
+
+
+//========================================================================================================
+// RETREATING
+//====================================================================
+response CS_Suppressor_Retreating
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptDanger
+	
+	speak "vo.combine.suppressor.retreat_01"
+	speak "vo.combine.suppressor.retreat_02"
+	speak "vo.combine.suppressor.retreat_03"
+	speak "vo.combine.suppressor.retreat_04"
+	speak "vo.combine.suppressor.retreat_05"
+	speak "vo.combine.suppressor.retreat_06"
+	speak "vo.combine.suppressor.retreat_07"
+	speak "vo.combine.suppressor.retreat_08"
+	speak "vo.combine.suppressor.retreat_09"
+	speak "vo.combine.suppressor.retreat_10"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.retreat_10"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.retreat_02" 
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.retreat_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.retreat_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.retreat_05"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.retreat_06"
+		}
+}
+
+
+//========================================================================================================
+// RETREATING DUE TO RELOAD
+//====================================================================
+response CS_Suppressor_RetreatToReload
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptRetreatToReload
+	
+	speak "vo.combine.suppressor.retreat_03" thensimple 2 speak "vo.combine.suppressor.reload_02" 
+	speak "vo.combine.suppressor.retreat_04" thensimple 2 speak "vo.combine.suppressor.reload_01" 
+	speak "vo.combine.suppressor.retreat_05" thensimple 2 speak "vo.combine.suppressor.reload_09"
+	speak "vo.combine.suppressor.retreat_07" thensimple 2 speak "vo.combine.suppressor.reload_08"
+	speak "vo.combine.suppressor.retreat_08" thensimple 2 speak "vo.combine.suppressor.reload_07" 
+	speak "vo.combine.suppressor.coverme_02"  thensimple 2 speak "vo.combine.suppressor.reload_06"
+	speak "vo.combine.suppressor.coverme_03" thensimple 2 speak "vo.combine.suppressor.reload_05" 
+	speak "vo.combine.suppressor.coverme_07" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers" thensimple 2 speak "vo.combine.suppressor.reload_09"
+	speak "vo.combine.suppressor.underattack_02"thensimple 2 speak "vo.combine.suppressor.reload_02" 
+	speak "vo.combine.suppressor.underattack_03" thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers" thensimple 2 speak "vo.combine.suppressor.reload_09"
+	speak "vo.combine.suppressor.underattack_04" thensimple 2 speak "vo.combine.suppressor.reload_01" 
+	speak "vo.combine.suppressor.underattack_05" thensimple 2 speak "vo.combine.suppressor.reload_09"
+	speak "vo.combine.suppressor.underattack_06" thensimple 2 speak "vo.combine.suppressor.reload_08"
+	speak "vo.combine.suppressor.underattack_07" thensimple 2 speak "vo.combine.suppressor.reload_07"
+	speak "vo.combine.suppressor.underattack_08" thensimple 2 speak "vo.combine.suppressor.reload_06" 
+	speak "vo.combine.suppressor.underattack_09" thensimple 2 speak "vo.combine.suppressor.reload_05" 
+	speak "vo.combine.suppressor.underattack_11" thensimple 2 speak "vo.combine.suppressor.reload_02" 
+	speak "vo.combine.suppressor.underattack_12" thensimple 2 speak "vo.combine.suppressor.reload_01" 
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.retreat_04"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.retreat_05" 
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.coverme_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.retreat_07"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.retreat_08"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.retreat_10"
+		}
+}
+
+//========================================================================================================
+// SEES PLAYER IS RELOADING
+//====================================================================
+response CS_Suppressor_SeesPlayerReloading
+{
+	criteria		IsCombineS IsClass_Suppressor PlayerIsReloading 
+	
+	speak "vo.combine.suppressor.sees_reloading_01"
+	speak "vo.combine.suppressor.sees_reloading_02"
+	speak "vo.combine.suppressor.sees_reloading_03"
+	speak "vo.combine.suppressor.sees_reloading_04"
+	speak "vo.combine.suppressor.sees_reloading_05"
+	
+		response
+		{
+			criteria		IsOrderResponse
+			speak "vo.combine.suppressor.orderresponse_positive_01" thensimple 0 speak "vo.combine.suppressor.sees_reloading_01"
+			speak "vo.combine.suppressor.orderresponse_positive_02" thensimple 0 speak "vo.combine.suppressor.sees_reloading_02" 
+			speak "vo.combine.suppressor.orderresponse_positive_03" thensimple 0 speak "vo.combine.suppressor.sees_reloading_03"
+			speak "vo.combine.suppressor.orderresponse_positive_04" thensimple 0 speak "vo.combine.suppressor.sees_reloading_04"
+			speak "vo.combine.suppressor.orderresponse_positive_05" thensimple 0 speak "vo.combine.suppressor.sees_reloading_05"
+		}
+}
+
+
+
+//========================================================================================================
+// IDLE
+//===========================
+response CS_Suppressor_Idle
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptIdle
+	
+	speak "vo.combine.suppressor.idle_01" respeakdelay 11
+	speak "vo.combine.suppressor.idle_02" respeakdelay 11
+	speak "vo.combine.suppressor.idle_03" respeakdelay 11
+	speak "vo.combine.suppressor.idle_04" respeakdelay 11
+	speak "vo.combine.suppressor.idle_05" respeakdelay 11
+	speak "vo.combine.suppressor.idle_06" respeakdelay 11
+	speak "vo.combine.suppressor.idle_07" respeakdelay 11
+	speak "vo.combine.suppressor.idle_08" respeakdelay 11
+	speak "vo.combine.suppressor.idle_09" respeakdelay 11
+	speak "vo.combine.suppressor.idle_10" respeakdelay 11
+	speak "vo.combine.suppressor.idle_11" respeakdelay 11
+	speak "vo.combine.suppressor.idle_12" respeakdelay 11
+	speak "vo.combine.suppressor.idle_13" respeakdelay 11
+	speak "vo.combine.suppressor.idle_14" respeakdelay 11
+	speak "vo.combine.suppressor.idle_15" respeakdelay 11
+	speak "vo.combine.suppressor.idle_16" respeakdelay 11
+	speak "vo.combine.suppressor.idle_17" respeakdelay 11
+	speak "vo.combine.suppressor.idle_18" respeakdelay 11
+	speak "vo.combine.suppressor.idle_19" respeakdelay 11
+	speak "vo.combine.suppressor.idle_20" respeakdelay 11
+}
+
+response CS_Suppressor_IdleCombat
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptIdleCombat
+	
+	speak "vo.combine.suppressor.combat_idle_010" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_011" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_012" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_020" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_021" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_022" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_030" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_031" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_032" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_040" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_041" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_042" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_050" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_051" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_052" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_060" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_061" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_062" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_070" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_071" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_072" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_080" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_081" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_082" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_090" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_091" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_092" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_100" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_101" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_102" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_110" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_111" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_112" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_120" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_121" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_122" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_130" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_131" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_132" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_140" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_141" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_142" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_150" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_151" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_152" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_160" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_161" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_162" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_170" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_171" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_172" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_180" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_181" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_182" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_190" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_191" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_192" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_200" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_201" respeakdelay 8
+	speak "vo.combine.suppressor.combat_idle_202" respeakdelay 8
+}
+
+//======================================================================================
+// FIRING LOCATION CALLOUTS
+//======================================================================================
+
+
+response CS_suppressor_NoSpeech
+{
+}
+
+response CS_Suppressor_Firing
+{
+	criteria		IsCombineS IsClass_Suppressor ConceptFiring
+	
+	speak "vo.combine.suppressor.firing_02" respeakdelay 12
+	speak "vo.combine.suppressor.firing_03" respeakdelay 12
+	speak "vo.combine.suppressor.firing_04" respeakdelay 12
+	speak "vo.combine.suppressor.firing_05" respeakdelay 12
+	speak "vo.combine.suppressor.firing_06" respeakdelay 12
+	speak "vo.combine.suppressor.firing_07" respeakdelay 12
+	speak "vo.combine.suppressor.firing_08" respeakdelay 12
+	speak "vo.combine.suppressor.firing_09" respeakdelay 12
+	speak "vo.combine.suppressor.firing_10" respeakdelay 12 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	
+	speak "vo.combine.suppressor.firing_110" respeakdelay 12
+	speak "vo.combine.suppressor.firing_111" respeakdelay 12
+	speak "vo.combine.suppressor.firing_112" respeakdelay 12
+	speak "vo.combine.suppressor.firing_120" respeakdelay 12
+	speak "vo.combine.suppressor.firing_121" respeakdelay 12
+	speak "vo.combine.suppressor.firing_122" respeakdelay 12
+	speak "vo.combine.suppressor.firing_130" respeakdelay 12
+	speak "vo.combine.suppressor.firing_131" respeakdelay 12
+	speak "vo.combine.suppressor.firing_132" respeakdelay 12
+	speak "vo.combine.suppressor.firing_140" respeakdelay 12
+	speak "vo.combine.suppressor.firing_141" respeakdelay 12
+	speak "vo.combine.suppressor.firing_142" respeakdelay 12
+	speak "vo.combine.suppressor.firing_150" respeakdelay 12
+	speak "vo.combine.suppressor.firing_151" respeakdelay 12
+	speak "vo.combine.suppressor.firing_152" respeakdelay 12
+	speak "vo.combine.suppressor.firing_160" respeakdelay 12
+	speak "vo.combine.suppressor.firing_161" respeakdelay 12
+	speak "vo.combine.suppressor.firing_162" respeakdelay 12
+	speak "vo.combine.suppressor.firing_170" respeakdelay 12
+	speak "vo.combine.suppressor.firing_171" respeakdelay 12
+	speak "vo.combine.suppressor.firing_172" respeakdelay 12
+	speak "vo.combine.suppressor.firing_180" respeakdelay 12
+	speak "vo.combine.suppressor.firing_181" respeakdelay 12
+	speak "vo.combine.suppressor.firing_182" respeakdelay 12
+	speak "vo.combine.suppressor.firing_190" respeakdelay 12
+	speak "vo.combine.suppressor.firing_191" respeakdelay 12
+	speak "vo.combine.suppressor.firing_192" respeakdelay 12
+	speak "vo.combine.suppressor.firing_200" respeakdelay 12
+	speak "vo.combine.suppressor.firing_201" respeakdelay 12
+	speak "vo.combine.suppressor.firing_202" respeakdelay 12
+	speak "vo.combine.suppressor.firing_230" respeakdelay 12
+	speak "vo.combine.suppressor.firing_231" respeakdelay 12
+	speak "vo.combine.suppressor.firing_232" respeakdelay 12
+	
+	speak "vo.combine.suppressor.announceattack_01" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_02" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_03" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_04" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_05" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_06" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_07" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_08" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_09" respeakdelay 12
+	speak "vo.combine.suppressor.announceattack_11" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_01" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_02" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_03" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_04" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_05" respeakdelay 12
+	speak "vo.combine.suppressor.orderresponse_positive_06" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_01" respeakdelay 12 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_02" respeakdelay 12 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_03" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_04" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_05" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_06" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_07" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_08" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_09" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_10" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_11" respeakdelay 12 thensimple 0 speak "vo.combine.suppressor.calloutcode_numbers"
+	speak "vo.combine.suppressor.refindenemy_12" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_13" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_14" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_15" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_16" respeakdelay 12
+	speak "vo.combine.suppressor.refindenemy_17" respeakdelay 12
+	
+	response
+	{
+		criteria		PlayerAtBarrels
+		speak "vo.combine.suppressor.calloutlocation_barrells_01" respeakdelay 17
+	}
+	
+	
+	response
+	{
+		criteria		PlayerAtBricks
+		speak "vo.combine.suppressor.calloutlocation_bricks_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtBuilding
+		speak "vo.combine.suppressor.calloutlocation_building_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtBridge
+		speak "vo.combine.suppressor.calloutlocation_bridge_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtCar
+		speak "vo.combine.suppressor.calloutlocation_car_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtCrane
+		speak "vo.combine.suppressor.calloutlocation_crane_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtDoor
+		speak "vo.combine.suppressor.calloutlocation_door_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtPipes
+		speak "vo.combine.suppressor.calloutlocation_pipes_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtShack
+		speak "vo.combine.suppressor.calloutlocation_shack_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTunnel
+		speak "vo.combine.suppressor.calloutlocation_tunnel_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtHut
+		speak "vo.combine.suppressor.calloutlocation_hut_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrainCar
+		speak "vo.combine.suppressor.calloutlocation_traincar_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrainCar
+		speak "vo.combine.suppressor.calloutlocation_traincar_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTruck
+		speak "vo.combine.suppressor.calloutlocation_truck_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtWoodPile
+		speak "vo.combine.suppressor.calloutlocation_woodpile_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtVan
+		speak "vo.combine.suppressor.calloutlocation_van_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtElevator
+		speak "vo.combine.suppressor.calloutlocation_elevator_01" respeakdelay 17
+	}
+	
+	
+	response
+	{
+		criteria		PlayerAtApartment
+		speak "vo.combine.suppressor.calloutlocation_apartment_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtBelow
+		speak "vo.combine.suppressor.calloutlocation_below_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtAbove
+		speak "vo.combine.suppressor.calloutlocation_above_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtBehind
+		speak "vo.combine.suppressor.calloutlocation_behind_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtToilet
+		speak "vo.combine.suppressor.calloutlocation_toilet_01" respeakdelay 17
+
+	}
+	
+	response
+	{
+		criteria		PlayerAtWheels
+		speak "vo.combine.suppressor.calloutlocation_wheels_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtFront
+		speak "vo.combine.suppressor.calloutlocation_front_01" respeakdelay 17
+	}
+	
+	response
+	{
+		criteria		PlayerAtTrash
+		speak "vo.combine.suppressor.calloutlocation_trash_01" respeakdelay 17
+	}
+}
+
+
+

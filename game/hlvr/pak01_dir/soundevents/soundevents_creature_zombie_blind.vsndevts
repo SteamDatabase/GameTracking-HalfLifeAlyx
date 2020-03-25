@@ -1,0 +1,1624 @@
+{
+	ZombieBlind.Smash_Door = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Smash_Door_Core"
+		use_01 = 1.000000
+		soundevent_02 = "PhysBreak.Plastic_Box"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Smash_Door_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 400.000000
+		occlusion_scale = 0.400000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/door_smash_01.vsnd",
+			"sounds/creatures/zombie_blind/scripted/door_smash_02.vsnd",
+			"sounds/creatures/zombie_blind/scripted/door_smash_03.vsnd",
+		]
+	}
+	ZombieBlind.BodyLoop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 250.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 30.000000
+		spread_min = 10.000000
+		spread_max = 20.000000
+		attachment = "snd_loop"
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/body_loop_close.vsnd",
+		]
+	}
+	ZombieBlind.Final_Spew = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_falloff_min = 300.000000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/final_spew.vsnd",
+		]
+	}
+	ZombieBlind.Crushed_Drip_Parent_A = 
+	{
+		type = "hlvr_rand_parent"
+		random_soundevent_01_name = "ZombieBlind.Crushed_Drip"
+		random_soundevent_01_timer_min = 0.800000
+		random_soundevent_01_timer_max = 1.100000
+	}
+	ZombieBlind.Crushed_Drip_Parent_B = 
+	{
+		base = "ZombieBlind.Crushed_Drip_Parent_A"
+		random_soundevent_01_name = "ZombieBlind.Crushed_Drip"
+		random_soundevent_01_timer_min = 0.800000
+		random_soundevent_01_timer_max = 1.100000
+	}
+	ZombieBlind.Crushed_Drip = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.350000
+		volume_rand_min = -0.100000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		use_hrtf = 1.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 500.000000
+		distance_max = 501.000000
+		occlusion_scale = 0.900000
+		mixgroup = "World"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_01.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_02.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_03.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_04.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_05.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_06.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_07.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_08.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_09.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_10.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_11.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_12.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_13.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_14.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_15.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_16.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_17.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_18.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_18.vsnd",
+			"sounds/creatures/zombie_blind/crushed_drip/gore_drip_20.vsnd",
+		]
+	}
+	ZombieBlind.React_Rage = 
+	{
+		type = "hlvr_start_multi"
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 7.000000
+		soundevent_01 = "ZombieBlind.React_Scream"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.React_Reverb"
+		use_02 = 1.000000
+	}
+	ZombieBlind.React_Scream = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		vsnd_selection_type = "index"
+		volume_falloff_min = 300.000000
+		occlusion_scale = 0.300000
+		position_offset = 
+		[
+			0.000000,
+			0.000000,
+			60.000000,
+		]
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_scream_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_08.vsnd",
+		]
+	}
+	ZombieBlind.React_Reverb = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		vsnd_selection_type = "index"
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 4000.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_reverb_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_reverb_08.vsnd",
+		]
+	}
+	ZombieBlind.React_Minor = 
+	{
+		type = "hlvr_start_multi"
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 2.000000
+		soundevent_01 = "ZombieBlind.React_Minor_Scream"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.React_Minor_Reverb"
+		use_02 = 1.000000
+	}
+	ZombieBlind.React_Minor_Scream = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.400000
+		volume_falloff_min = 400.000000
+		position_offset = 
+		[
+			0.000000,
+			0.000000,
+			60.000000,
+		]
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_minor_scream_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_scream_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_scream_03.vsnd",
+		]
+	}
+	ZombieBlind.React_Minor_Reverb = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.200000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_minor_reverb_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_reverb_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_reverb_03.vsnd",
+		]
+	}
+	ZombieBlind.React_Minor_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.400000
+		volume_falloff_min = 400.000000
+		position_offset = 
+		[
+			0.000000,
+			0.000000,
+			60.000000,
+		]
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_minor_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_grunt_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_grunt_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_minor_grunt_05.vsnd",
+		]
+	}
+	ZombieBlind.Attack_Player = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		use_hrtf = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/vox/attack_player.vsnd"
+	}
+	ZombieBlind.Vox_Relax_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/relax_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/relax_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/relax_grunt_03.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Aware_Growl = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 1500.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/aware_growl_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_08.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_09.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_10.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Aware_Scripted_Intro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.750000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/intro_breath.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Aware_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 1500.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/aware_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_08.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_09.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_10.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_11.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_12.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Wander_Breath_In = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_08.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_09.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_10.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Wander_Breath_Out = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_08.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Wander_Grunt = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_06.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Wander_Grunt_Short = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_short_06.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Wander_Hiss = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		mixgroup = "BlindZombie"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_hiss_06.vsnd",
+		]
+	}
+	ZombieBlind.Vox_Yawn = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_max = 1100.000000
+		mixgroup = "BlindZombie"
+		should_pause = true
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/yawn_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/yawn_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/yawn_03.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+	}
+	ZombieBlind.Jaw_Open_Slow = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/open_slow_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_slow_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_slow_03.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_slow_04.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Open_Fast = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/open_fast_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_fast_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_fast_03.vsnd",
+			"sounds/creatures/zombie_blind/jaws/open_fast_04.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Shut = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/shut_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/shut_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/shut_03.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Shut_Soft = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/shut_soft_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/shut_soft_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/shut_soft_03.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Flap_Long = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/flap_long_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_long_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_long_03.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_long_04.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_long_05.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_long_06.vsnd",
+		]
+	}
+	ZombieBlind.Jaw_Flap_Short = 
+	{
+		base = "ZombieBlind.Jaw_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/jaws/flap_short_01.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_short_02.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_short_03.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_short_04.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_short_05.vsnd",
+			"sounds/creatures/zombie_blind/jaws/flap_short_06.vsnd",
+		]
+	}
+	ZombieBlind.Step_Close = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/step_close_01.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_02.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_03.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_04.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_05.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_06.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_07.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_08.vsnd",
+			"sounds/creatures/zombie_blind/step/step_close_09.vsnd",
+		]
+	}
+	ZombieBlind.Step_Close_Light = 
+	{
+		base = "ZombieBlind.Step_Close"
+		volume = 1.000000
+	}
+	ZombieBlind.Step_Rage = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Step_Rage_Child_Impact"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Step_Rage_Child_Bass"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Foley_Step"
+		use_03 = 1.000000
+		soundevent_04 = "ZombieBlind.Step_Close"
+		use_04 = 1.000000
+	}
+	ZombieBlind.Step_Rage_Child_Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.600000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1200.000000
+		distance_max = 1201.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/step_heavy_01.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_02.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_03.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_04.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_05.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_06.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_07.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_08.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_09.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_10.vsnd",
+			"sounds/creatures/zombie_blind/step/step_heavy_11.vsnd",
+		]
+	}
+	ZombieBlind.Step_Rage_Child_Bass = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		occlusion_max = 0.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 1500.000000
+		distance_max = 1501.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/bass_heavy_01.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_02.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_03.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_04.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_05.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_06.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_heavy_07.vsnd",
+		]
+	}
+	ZombieBlind.Step_Wander = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Step_Wander_Child_Impact"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Step_Wander_Child_Bass"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Foley_Step_Light"
+		use_03 = 1.000000
+		soundevent_04 = "ZombieBlind.Step_Close_Light"
+		use_04 = 1.000000
+	}
+	ZombieBlind.Step_Wander_Child_Impact = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 900.000000
+		distance_max = 901.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/step_soft_01.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_02.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_03.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_04.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_05.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_06.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_07.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_08.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_09.vsnd",
+		]
+	}
+	ZombieBlind.Step_Wander_Child_Bass = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.000000
+		occlusion_max = 0.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/bass_soft_01.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_02.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_03.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_04.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_05.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_06.vsnd",
+			"sounds/creatures/zombie_blind/step/bass_soft_07.vsnd",
+		]
+	}
+	ZombieBlind.Step_Light = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Step_Light_Child"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Foley_Close_Subtle"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Step_Light_Child = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		volume_falloff_max = 700.000000
+		distance_max = 701.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/step/step_soft_01.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_02.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_03.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_04.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_05.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_06.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_07.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_08.vsnd",
+			"sounds/creatures/zombie_blind/step/step_soft_09.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Base = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.900000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		mixgroup = "BlindZombie"
+	}
+	ZombieBlind.Foley = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Foley_Base"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Foley_Close_Subtle"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Foley_Child = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/regular_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_06.vsnd",
+			"sounds/creatures/zombie_blind/foley/regular_07.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Subtle = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		volume = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/subtle_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/subtle_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/subtle_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/subtle_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/subtle_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/subtle_06.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Twitch = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Foley_Twitch_Child"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Foley_Close_Subtle"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Foley_Twitch_Child = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/twitch_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/twitch_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/twitch_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/twitch_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/twitch_05.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Close = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		volume = 1.200000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 200.000000
+		distance_max = 301.000000
+		occlusion_scale = 0.950000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/close_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_06.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_07.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_08.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_09.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_10.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_11.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_12.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Close_Subtle = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		volume = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 200.000000
+		distance_max = 401.000000
+		occlusion_scale = 0.950000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/close_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_06.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_07.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_08.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_09.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_10.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_11.vsnd",
+			"sounds/creatures/zombie_blind/foley/close_12.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Step = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Foley_Step_Child"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Foley_Close"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Foley_Step_Child = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		volume = 0.800000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/step_movement_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_06.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_07.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_08.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_09.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_10.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_11.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_12.vsnd",
+		]
+	}
+	ZombieBlind.Foley_Step_Light = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Foley_Step_Light_Child"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Foley_Close_Subtle"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Foley_Step_Light_Child = 
+	{
+		base = "ZombieBlind.Foley_Base"
+		volume = 0.600000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		distance_max = 401.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/foley/step_movement_01.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_02.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_03.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_04.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_05.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_06.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_07.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_08.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_09.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_10.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_11.vsnd",
+			"sounds/creatures/zombie_blind/foley/step_movement_12.vsnd",
+		]
+	}
+	ZombieBlind.React_Rage_Scripted = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.React_Scream_Scripted"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.React_Reverb_Scripted"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Destruction_Scripted"
+		use_03 = 1.000000
+	}
+	ZombieBlind.React_Scream_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_fade_in = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_min = 600.000000
+		occlusion_scale = 0.600000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/react_scream_scripted.vsnd"
+	}
+	ZombieBlind.React_Reverb_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 1000.000000
+		volume_falloff_max = 4000.000000
+		occlusion_scale = 0.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/react_scream_scripted_reverb.vsnd"
+	}
+	ZombieBlind.Destruction_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		delay = 0.800000
+		volume_falloff_min = 600.000000
+		occlusion_scale = 0.600000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/destruction_scripted.vsnd"
+	}
+	ZombieBlind.React_Rage_Scripted_Intro = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.React_Scream_Scripted_Intro"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.React_Reverb_Scripted_Intro"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Destruction_Scripted_Intro"
+		use_03 = 1.000000
+	}
+	ZombieBlind.React_Scream_Scripted_Intro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.600000
+		volume_fade_in = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_min = 700.000000
+		occlusion_scale = 0.400000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/react_scream_scripted.vsnd"
+	}
+	ZombieBlind.React_Reverb_Scripted_Intro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 2.000000
+		volume_falloff_min = 2000.000000
+		volume_falloff_max = 4000.000000
+		occlusion_scale = 0.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/react_scream_scripted_reverb_intro.vsnd"
+	}
+	ZombieBlind.Destruction_Scripted_Intro = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		delay = 0.800000
+		volume_falloff_min = 700.000000
+		occlusion_scale = 0.300000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/destruction_scripted.vsnd"
+	}
+	ZombieBlind.Freezer_Stinger_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/freezer_door_stinger.vsnd"
+	}
+	ZombieBlind.Freezer_Rip_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "LoudEvents"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/freezer_door_rip.vsnd"
+	}
+	ZombieBlind.Exit_Stinger_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/exit_door_stinger.vsnd"
+	}
+	ZombieBlind.Exit_Rip_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/exit_door_rip.vsnd"
+	}
+	ZombieBlind.Impact_Core = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/impact_core_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_core_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_core_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_core_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_core_05.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_core_06.vsnd",
+		]
+	}
+	ZombieBlind.Impact_Core_Louder = 
+	{
+		base = "ZombieBlind.Impact_Core"
+		volume = 1.600000
+	}
+	ZombieBlind.Trapped_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Trapped_Core"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Trapped_Freezer_Layer"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Trapped_Core = 
+	{
+		base = "ZombieBlind.Impact_Core"
+	}
+	ZombieBlind.Trapped_Freezer_Layer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_05.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Bang_Open_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Trapped_Bang_Open"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Trapped_Core"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Trapped_Freezer_Layer"
+		use_03 = 1.000000
+	}
+	ZombieBlind.Trapped_Bang_Open = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/freezer_door_bang_open.vsnd"
+	}
+	ZombieBlind.Elevator_Bang_Parent = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Trapped_Core"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Elevator_Bang_Layer"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Elevator_Bang_Core = 
+	{
+		base = "ZombieBlind.Impact_Core"
+	}
+	ZombieBlind.Elevator_Bang_Layer = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_05.vsnd",
+		]
+	}
+	ZombieBlind.Attack_ElevatorPanel_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume_rand_min = -0.050000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/impact_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/impact_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/impact_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/impact_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/impact_05.vsnd",
+		]
+	}
+	ZombieBlind.Attack_ElevatorPanel_Rip_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_05.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/rip_06.vsnd",
+		]
+	}
+	ZombieBlind.Attack_ElevatorPanel_Gnaw_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_05.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_06.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_07.vsnd",
+			"sounds/creatures/zombie_blind/impacts/elevator_controls/gnaw_08.vsnd",
+		]
+	}
+	ZombieBlind.Console_Bang = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Console_Bang_Core"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Console_Bang_Layer"
+		use_02 = 1.000000
+	}
+	ZombieBlind.Console_Bang_Core = 
+	{
+		base = "ZombieBlind.Impact_Core"
+	}
+	ZombieBlind.Console_Bang_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		use_hrtf = 1.000000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		mixgroup = "BlindZombie"
+		occlusion_scale = 0.500000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_elevator_05.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_01.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_02.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_03.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_04.vsnd",
+			"sounds/creatures/zombie_blind/impacts/impact_layer_freezer_05.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_React_Rage = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 1.400000
+		use_hrtf = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 1500.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/react_scream_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/react_scream_08.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Aware_Growl = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/aware_growl_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_08.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_09.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_growl_10.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Aware_Grunt = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.500000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/aware_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_07.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_08.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_09.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_10.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_11.vsnd",
+			"sounds/creatures/zombie_blind/vox/aware_grunt_12.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Wander_Breath_In = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_06.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Wander_Breath_Out = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_06.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Wander_Breath_Both = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_in_06.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_breath_out_06.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Wander_Grunt = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/wander_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_03.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_04.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_05.vsnd",
+			"sounds/creatures/zombie_blind/vox/wander_grunt_06.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Vox_Relax_Grunt = 
+	{
+		type = "hlvr_lpf_3d"
+		volume = 0.300000
+		use_hrtf = 1.000000
+		volume_falloff_max = 600.000000
+		mixgroup = "BlindZombie"
+		filter_freq = 2000.000000
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/relax_grunt_01.vsnd",
+			"sounds/creatures/zombie_blind/vox/relax_grunt_02.vsnd",
+			"sounds/creatures/zombie_blind/vox/relax_grunt_03.vsnd",
+		]
+	}
+	ZombieBlind.Trapped_Step = 
+	{
+		base = "ZombieBlind.Step_Rage_Child_Bass"
+		volume = 0.500000
+	}
+	ZombieBlind.Smash_HC_Scripted_A = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Impact_Core_Louder"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Smash_HC_Scripted_A_Body"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Elevator_Bang_Layer"
+		use_03 = 1.000000
+	}
+	ZombieBlind.Smash_HC_Scripted_A_Body = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_smash_a.vsnd",
+		]
+	}
+	ZombieBlind.Smash_HC_Scripted_B = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Impact_Core_Louder"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Smash_HC_Scripted_B_Body"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Elevator_Bang_Layer"
+		use_03 = 1.000000
+	}
+	ZombieBlind.Smash_HC_Scripted_B_Body = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_smash_b.vsnd",
+		]
+	}
+	ZombieBlind.Smash_HC_Scripted_C = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "ZombieBlind.Impact_Core_Louder"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind.Smash_HC_Scripted_C_Body"
+		use_02 = 1.000000
+		soundevent_03 = "ZombieBlind.Elevator_Bang_Layer"
+		use_03 = 1.000000
+	}
+	ZombieBlind.Smash_HC_Scripted_C_Body = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_smash_c.vsnd",
+		]
+	}
+	ZombieBlind.Smash_HC_Scripted_D = 
+	{
+		base = "ZombieBlind.Smash_HC_Scripted_A"
+	}
+	ZombieBlind.Whip_HC_Scripted_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_whoosh_01.vsnd",
+		]
+	}
+	ZombieBlind.Whip_HC_Scripted_B = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_whoosh_02.vsnd",
+		]
+	}
+	ZombieBlind.Whip_HC_Scripted_C = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/scripted/elevator_headcrab_whoosh_03.vsnd",
+		]
+	}
+	ZombieBlind.Attack_HC_Elevator_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/elevator_headcrab_kill.vsnd"
+	}
+	ZombieBlind.Attack_HC_Intro_Scripted = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = "sounds/creatures/zombie_blind/scripted/elevator_headcrab_kill.vsnd"
+	}
+	ZombieBlind_Elevator.React_Rage = 
+	{
+		type = "hlvr_start_multi"
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 7.000000
+		soundevent_01 = "ZombieBlind_Elevator.React_Scream"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind_Elevator.React_Reverb"
+		use_02 = 1.000000
+	}
+	ZombieBlind_Elevator.React_Scream = 
+	{
+		base = "ZombieBlind.React_Scream"
+		volume = 1.100000
+		volume_falloff_min = 200.000000
+	}
+	ZombieBlind_Elevator.React_Reverb = 
+	{
+		base = "ZombieBlind.React_Reverb"
+		volume = 0.450000
+	}
+	ZombieBlind_Elevator.React_Minor = 
+	{
+		type = "hlvr_start_multi"
+		create_shared_vsnd_index = 1.000000
+		use_shared_vsnd_index_for_01 = 1.000000
+		use_shared_vsnd_index_for_02 = 1.000000
+		shared_vsnd_index_max = 2.000000
+		soundevent_01 = "ZombieBlind_Elevator.React_Minor_Scream"
+		use_01 = 1.000000
+		soundevent_02 = "ZombieBlind_Elevator.React_Minor_Reverb"
+		use_02 = 1.000000
+	}
+	ZombieBlind_Elevator.React_Minor_Scream = 
+	{
+		base = "ZombieBlind.React_Minor_Scream"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.React_Minor_Reverb = 
+	{
+		base = "ZombieBlind.React_Minor_Reverb"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Relax_Grunt = 
+	{
+		base = "ZombieBlind.Vox_Relax_Grunt"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Aware_Growl = 
+	{
+		base = "ZombieBlind.Vox_Aware_Growl"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Aware_Grunt = 
+	{
+		base = "ZombieBlind.Vox_Aware_Grunt"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Wander_Breath_In = 
+	{
+		base = "ZombieBlind.Vox_Wander_Breath_In"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Wander_Breath_Out = 
+	{
+		base = "ZombieBlind.Vox_Wander_Breath_Out"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Wander_Grunt = 
+	{
+		base = "ZombieBlind.Vox_Wander_Grunt"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Wander_Grunt_Short = 
+	{
+		base = "ZombieBlind.Vox_Wander_Grunt_Short"
+		occlusion_scale = 0.300000
+	}
+	ZombieBlind_Elevator.Vox_Listen_A = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.300000
+		volume_falloff_max = 1500.000000
+		mixgroup = "BlindZombie"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_a.vsnd",
+		]
+	}
+	ZombieBlind_Elevator.Vox_Listen_B = 
+	{
+		base = "ZombieBlind_Elevator.Vox_Listen_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_b.vsnd",
+		]
+	}
+	ZombieBlind_Elevator.Vox_Listen_C = 
+	{
+		base = "ZombieBlind_Elevator.Vox_Listen_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_c.vsnd",
+		]
+	}
+	ZombieBlind_Elevator.Vox_Listen_D = 
+	{
+		base = "ZombieBlind_Elevator.Vox_Listen_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_d.vsnd",
+		]
+	}
+	ZombieBlind_Elevator.Vox_Listen_E = 
+	{
+		base = "ZombieBlind_Elevator.Vox_Listen_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_e.vsnd",
+		]
+	}
+	ZombieBlind_Elevator.Vox_Listen_F = 
+	{
+		base = "ZombieBlind_Elevator.Vox_Listen_A"
+		vsnd_files = 
+		[
+			"sounds/creatures/zombie_blind/vox/elevator_f.vsnd",
+		]
+	}
+}

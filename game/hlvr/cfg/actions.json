@@ -1,0 +1,322 @@
+{
+   "supports_dominant_hand_setting": true,
+   "action_sets" : [
+      {
+         "name" : "/actions/dev",
+         "usage" : "leftright"
+      },
+      {
+         "name": "/actions/scroll",
+         "usage": "leftright"
+      },
+      {
+         "name" : "/actions/default",
+         "usage" : "leftright"
+      },
+      {
+         "name" : "/actions/move",
+         "usage" : "leftright"
+      },
+      {
+         "name" : "/actions/weapon",
+         "usage" : "leftright"
+      },
+      {
+         "name" : "/actions/interact",
+         "usage" : "leftright"
+      }
+   ],
+   "actions" : [
+      {
+         "name" : "/actions/dev/in/ToggleMenu",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/dev/in/MenuInteract",
+         "requirement" : "mandatory",		 
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/dev/in/MenuDismiss",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name": "/actions/scroll/in/Scroll",
+         "type": "vector2"
+      },
+      {
+         "name": "/actions/scroll/in/ScrollTouchPad",
+         "type": "vector2"
+      },
+      {
+         "name" : "/actions/move/in/Teleport",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/TurnLeft",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/TurnRight",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/MoveBack",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/TeleportTurn",
+         "requirement" : "mandatory",
+         "type": "vector2"
+      },
+      {
+         "name" : "/actions/move/in/Walk",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/ShiftDashJump",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/WalkMantle",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/MoveCrouchToggle",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/MoveStandToggle",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/move/in/AdjustHeight",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/Use",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/UseGrip",
+         "type" : "boolean"
+      },
+      {
+         "name": "/actions/weapon/in/ShowInventory",
+         "requirement" : "mandatory",
+         "type": "boolean"
+      },
+      {
+         "name" : "/actions/default/in/HandCurl",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/TriggerPull",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/FingerCurlThumb",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/FingerCurlIndex",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/FingerCurlMiddle",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/FingerCurlRing",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/default/in/FingerCurlPinky",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/interact/in/SqueezeXenGrenade",
+         "type" : "vector1"
+      },
+      {
+         "name" : "/actions/interact/in/GGLock",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/weapon/in/Fire",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/weapon/in/AltFire",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/weapon/in/Reload",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name": "/actions/weapon/in/EjectClip",
+         "requirement" : "mandatory",
+         "type": "boolean"
+      },
+      {
+         "name" : "/actions/weapon/in/ReleaseSlide",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name": "/actions/weapon/in/OpenChamber",
+         "requirement" : "mandatory",
+         "type": "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/ToggleLaserSight",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/weapon/in/ToggleBurstFire",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/HealthPen",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/ArmGrenade",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/interact/in/ArmXenGrenade",
+         "requirement" : "mandatory",
+         "type" : "boolean"
+      },
+      {
+         "name" : "/actions/default/in/HandPoseLeft",
+         "type" : "pose"
+      },
+      {
+         "name" : "/actions/default/in/HandPoseRight",
+         "type" : "pose"
+      },
+      {
+         "name" : "/actions/default/in/HandSkeletonLeft",
+         "skeleton" : "/skeleton/hand/left",
+         "type" : "skeleton"
+      },
+      {
+         "name" : "/actions/default/in/HandSkeletonRight",
+         "skeleton" : "/skeleton/hand/right",
+         "type" : "skeleton"
+      },
+      {
+         "name" : "/actions/default/in/HapticVibration",
+         "type" : "vibration"
+      }
+   ],
+   "default_bindings" : [
+      {
+         "binding_url" : "bindings_vive_controller.json",
+         "controller_type" : "vive_controller"
+      },
+      {
+         "binding_url" : "bindings_vive_controller_single.json",
+         "controller_type" : "vive_controller"
+      },
+      {
+         "binding_url" : "bindings_knuckles.json",
+         "controller_type" : "knuckles"
+      },
+      {
+         "binding_url" : "bindings_knuckles_single.json",
+         "controller_type" : "knuckles"
+      },
+      {
+         "binding_url" : "bindings_touch.json",
+         "controller_type" : "oculus_touch"
+      },
+      {
+         "binding_url" : "bindings_touch_single.json",
+         "controller_type" : "oculus_touch"
+      },
+      {
+         "binding_url" : "bindings_holographic_controller.json",
+         "controller_type" : "holographic_controller"
+      },
+      {
+         "binding_url" : "bindings_holographic_controller_single.json",
+         "controller_type" : "holographic_controller"
+      },
+      {
+         "binding_url" : "bindings_vive_cosmos.json",
+         "controller_type" : "vive_cosmos_controller"
+      },
+      {
+         "binding_url" : "bindings_vive_cosmos_single.json",
+         "controller_type" : "vive_cosmos_controller"
+      }
+   ],
+   "localization" : [
+    {
+      "/actions/default": "Hand",
+      "/actions/default/in/FingerCurlIndex": "Index Finger Curl",
+      "/actions/default/in/FingerCurlMiddle": "Middle Finger Curl",
+      "/actions/default/in/FingerCurlPinky": "Pinky Finger Curl",
+      "/actions/default/in/FingerCurlRing": "Ring Finger Curl",
+      "/actions/default/in/FingerCurlThumb": "Thumb Finger Curl",
+      "/actions/default/in/HandCurl": "Hand Curl",
+      "/actions/default/in/HandPoseLeft": "Hand Pose (Left)",
+      "/actions/default/in/HandPoseRight": "Hand Pose (Right)",
+      "/actions/default/in/HandSkeletonLeft": "Skeleton (Left)",
+      "/actions/default/in/HandSkeletonRight": "Skeleton (Right)",
+      "/actions/default/in/HapticVibration": "Haptic Vibration",
+      "/actions/default/in/TriggerPull": "Trigger Pull",
+      "/actions/dev": "Dev",
+      "/actions/dev/in/MenuDismiss": "Menu Dismiss",
+      "/actions/dev/in/MenuInteract": "Menu Interact",
+      "/actions/dev/in/ToggleMenu": "Toggle Menu",
+      "/actions/dev/scroll/ScrollMenu": "Scroll Menu",
+      "/actions/dev/scroll/ScrollMenuTouchPad": "Scroll Menu TouchPad",
+      "/actions/interact": "Interact",
+      "/actions/interact/in/ArmGrenade": "Arm Grenade",
+      "/actions/interact/in/ArmXenGrenade": "Arm Xen Grenade",
+      "/actions/interact/in/GGLock": "Grav Glove Lock",
+      "/actions/interact/in/HealthPen": "Toggle Health Pen",
+      "/actions/interact/in/SqueezeXenGrenade": "Squeeze Xen Grenade",
+      "/actions/interact/in/ToggleLaserSight": "Toggle Laser Sight",
+      "/actions/interact/in/Use": "Use",
+      "/actions/interact/in/UseGrip": "Use Grip",
+      "/actions/move": "Move",
+      "/actions/move/in/Teleport": "Teleport",
+      "/actions/move/in/TeleportTurn": "Teleport Turn",
+      "/actions/move/in/TurnLeft": "Turn Left",
+      "/actions/move/in/TurnRight": "Turn Right",
+      "/actions/move/in/MoveBack": "Move Back",
+      "/actions/move/in/Walk": "Walk",
+      "/actions/move/in/ShiftDashJump": "Jump",
+      "/actions/move/in/WalkMantle": "Mantle",
+      "/actions/move/in/MoveCrouchToggle": "Crouch Toggle",
+      "/actions/move/in/MoveStandToggle": "Stand Toggle",
+      "/actions/move/in/AdjustHeight": "Adjust Height",
+      "/actions/weapon": "Weapon",
+      "/actions/weapon/in/EjectClip": "Eject Magazine",
+      "/actions/weapon/in/Fire": "Fire",
+      "/actions/weapon/in/AltFire": "Alt Fire",
+      "/actions/weapon/in/OpenChamber": "Open Chamber",
+      "/actions/weapon/in/ReleaseSlide": "Release Slide",
+      "/actions/weapon/in/Reload": "Reload",
+      "/actions/weapon/in/ShowInventory": "Show Inventory",
+      "/actions/weapon/in/ToggleBurstFire": "Toggle Burst Fire",
+      "language_tag": "en_US"
+    }
+   ]
+}

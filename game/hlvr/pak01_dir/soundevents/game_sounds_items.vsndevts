@@ -1,0 +1,371 @@
+{
+	ItemBattery.Touch = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/battery_pickup.vsnd",
+		]
+	}
+	HealthKit.Touch = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/smallmedkit1.vsnd",
+		]
+	}
+	HealthVial.Touch = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/smallmedkit1.vsnd",
+		]
+	}
+	WallHealth.Deny = 
+	{
+		type = "src1_3d"
+		volume = 0.699707
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/medshotno1.vsnd",
+		]
+	}
+	WallHealth.Start = 
+	{
+		type = "src1_3d"
+		volume = 0.699707
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/medshot4.vsnd",
+		]
+	}
+	WallHealth.LoopingContinueCharge = 
+	{
+		type = "src1_3d"
+		volume = 0.699707
+		pitch = 1.000000
+		soundlevel = 75.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/medcharge4.vsnd",
+		]
+	}
+	WallHealth.Recharge = 
+	{
+		type = "src1_3d"
+		volume = 0.699707
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/medshot4.vsnd",
+		]
+	}
+	SuitRecharge.Deny = 
+	{
+		type = "src1_3d"
+		volume = 0.750000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/suitchargeno1.vsnd",
+		]
+	}
+	SuitRecharge.Start = 
+	{
+		type = "src1_3d"
+		volume = 0.750000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/suitchargeok1.vsnd",
+		]
+	}
+	SuitRecharge.ChargingLoop = 
+	{
+		type = "src1_3d"
+		volume = 0.750000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/suitcharge1.vsnd",
+		]
+	}
+	AmmoCrate.Open = 
+	{
+		type = "src1_3d"
+		volume = 0.449951
+		pitch = 1.000000
+		soundlevel = 75.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/ammocrate_open.vsnd",
+		]
+	}
+	AmmoCrate.Close = 
+	{
+		type = "src1_3d"
+		volume = 0.449951
+		pitch = 1.000000
+		soundlevel = 75.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/ammocrate_close.vsnd",
+		]
+	}
+	ExtinguisherCharger.Use = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 3.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/medshot4.vsnd",
+		]
+	}
+	SprayCan.Paint = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/player/sprayer.vsnd",
+		]
+	}
+	Flare.Touch = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/weapons/flaregun/impact.vsnd",
+		]
+	}
+	Item.Materialize = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.500000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/items/suitchargeok1.vsnd",
+		]
+	}
+	Doll.Squeak = 
+	{
+		type = "src1_3d"
+		volume = 0.500000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/ambient/creatures/teddy.vsnd",
+		]
+	}
+	Missile.Accelerate = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/weapons/rpg/rocket1.vsnd",
+		]
+	}
+	Missile.Ignite = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/weapons/rpg/rocket1.vsnd",
+		]
+	}
+	Missile.ShotDown = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 90.000000
+		event_type = 2.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/weapons/rpg/shotdown.vsnd",
+		]
+	}
+	PortableThumper.ThumpSound = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch = 1.000000
+		soundlevel = 75.000000
+		event_type = 1.000000
+		limiter_on = 1.000000
+		limiter_match_type = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_this = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/ambient/machines/thumper_dust.vsnd",
+		]
+	}
+	Combine_Console.Detach = 
+	{
+		type = "src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 105.000000
+		limiter_on = 0.000000
+		mixgroup = "items"
+		vsnd_files = 
+		[
+			"sounds/physics/metal/metal_box_break1.vsnd",
+			"sounds/physics/metal/metal_box_break2.vsnd",
+		]
+	}
+}

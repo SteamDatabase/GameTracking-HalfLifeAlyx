@@ -1,0 +1,86 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<GameMenuPanel class="game_menu_root" onactivate="GameMenuNavigation_Cmd( 'GoTo Root' )">
+
+    <Panel class="base_container" id="layout_root">
+
+      <Panel class="vr_affordance_container">
+        <Panel id="vr_affordance_left" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+        <Panel id="vr_affordance_right" class="VRaffordance">
+          <Panel id="vr_affordance_interior"/>
+        </Panel>
+      
+        <Panel id="background_panel">
+          <Panel class="header">
+            <Label class="header" />
+          </Panel>
+      
+          <Panel class="empty_row" />
+
+          <Panel class="row pause_menu">
+            <Panel class="col_body">
+
+              <Button id="save_game_btn" class="save_game" onactivate="GameMenu_CmdCloseAndPostEvent( 'save quick', 'game_saved' )" onmouseover="GameMenu_MouseOver( 'show_save_container' )">
+                <Label class="load_item_hover" text="{s:save} {s:slot}"/>
+                <Panel class="button_continue">
+                  <Label class="button_label" text="#HLVR_MainMenu_Save"/>
+                  <Label class="button_continue_line2" text="{s:chapter_number}  |  {s:chapter_name}"/>
+                </Panel>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+              </Button>
+            
+              <Panel class="row_divider">
+                <Panel class="button_label">
+                  <Panel class="row_divider_line" />
+                </Panel>
+                <Panel class="button_bullet" />
+              </Panel>
+
+              <Button id="load_button" onactivate="GameMenuNavigation_CmdButton( 'show_load_container_pause' );" onmouseover="GameMenu_MouseOver( 'show_load_container_pause' )">
+                <Label class="button_label" text="#HLVR_MainMenu_Load"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+						<!--<Button id="photo_mode_button" onactivate="GameMenuNavigation_CmdButton( 'enter_photo_mode' );" onmouseover="GameMenu_MouseOver( 'show_photo_mode_container' )">
+							<Label class="button_label" text="#HLVR_MainMenu_PhotoMode"/>
+							<Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+						</Button>-->
+              <Button id="options_button" onactivate="GameMenuNavigation_CmdButton( 'show_options_container' );" onmouseover="GameMenu_MouseOver( 'show_options_container' )">
+                <Label class="button_label" text="#HLVR_MainMenu_Options"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+              <Button id="mainmenu_button" onactivate="GameMenu_Cmd( map startup )" onmouseover="GameMenu_MouseOver( 'show_mainmenu_container' )">
+                <Label class="button_label" text="#HLVR_MainMenu_MainMenu"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+              </Button>
+              <Button id="quit_button" onactivate="GameMenu_Cmd( quit )" onmouseover="GameMenu_MouseOver( 'show_quit_container' )">
+                <Label class="button_label" text="#HLVR_MainMenu_Quit"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+              </Button>
+            </Panel>
+
+          </Panel>
+
+
+          <Panel class="row skip_credits_panel">
+            <Panel class="col_body">
+              <Button class="button_newgameoptions skip_credits_btn" onactivate="GameMenu_Cmd( 'skip_credits' )">
+                <Label class="cta" text="#HLVR_Skip_Credits" />
+              </Button>
+            </Panel>
+          </Panel>
+          
+          <Panel class="empty_row" />
+          <Panel class="empty_row_bottomR_corner" />
+        </Panel>
+      </Panel>
+    </Panel>
+	</GameMenuPanel>
+</root>
+
+

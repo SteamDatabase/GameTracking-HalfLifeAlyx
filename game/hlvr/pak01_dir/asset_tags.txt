@@ -1,0 +1,123 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	tags = 
+	[
+		{
+			id = "imported"
+			name = "Imported From S1"
+			desc = "This asset was imported from Source1 and hasn't been modified"
+			color = [ 238, 162, 14 ]
+			icon = "tools:images/common/imported_asset.png"
+			reject_asset = true
+		},
+		{
+			id = "otherproject"
+			name = "From Other Project"
+			desc = "This asset was copied from another project"
+			color = [ 15, 150, 240 ]
+			icon = "tools:images/common/otherproject_asset.png"
+		},
+		{
+			id = "ship_complete"
+			name = "Shippable"
+			desc = "This asset is ready to ship"
+			color = [ 50, 200, 50 ]
+		},
+		{
+			id = "ship_unfinished"
+			name = "Unfinished"
+			desc = "This asset will be worked on before shipping"
+			color = [ 255, 255, 100 ]
+		},
+		{
+			id = "tileset"
+			name = "Tileset"
+			desc = "this asset used by a tile system"
+			color = [ 128, 128, 255 ]
+		},
+		{
+			id = "fx_model"
+			name = "FX_model"
+			desc = "this asset used by FX system"
+			color = [ 64, 64, 128]
+		},
+
+		{
+			id = "Furniture"
+			name = "Furniture"
+			desc = "this is furniture"
+			color = [ 150, 106, 44 ]
+		},
+		{
+			id = "food"
+			name = "Food"
+			desc = "this is food"
+			color = [ 230, 183, 178 ]
+		},
+		{
+			id = "Deco"
+			name = "Deco"
+			desc = "decoration"
+			color = [ 181, 138, 77 ]
+		},
+		{
+			id = "Scanned"
+			name = "Scanned"
+			desc = "3dscanned assets"
+			color = [ 144, 216, 222 ]
+		},
+		{
+			id = "debris"
+			name = "Debris"
+			desc = "Various Debris"
+			color = [ 161, 142, 105 ]
+		},
+		{
+			id = "outsourcing"
+			name = "Outsourcing"
+			desc = "The asset has been outsourced"
+			color = [ 255, 174, 0 ]
+		},
+		{
+			id = "storebought"
+			name = "Storebought"
+			desc = "The asset has been bought from an asset store"
+			color = [ 242, 125, 54 ]
+		},
+		{
+			id = "wip"
+			name = "WIP"
+			desc = "This asset is currently being worked on"
+			color = [ 173, 226, 105 ]
+		},
+
+		{
+			id = "Duplicate"
+			name = "Duplicate Asset"
+			desc = "this is quantum duplicate of an existing asset, do not use"
+			color = [ 139, 68, 55 ]
+			reject_asset = true
+		},
+		{
+			id = "ship_none"
+			name = "Not Shipping"
+			desc = "This asset is not intended to ship"
+			color = [ 170, 40, 40 ]
+			reject_asset = true
+		},
+		{
+			id = "Need_LODs"
+			name = "Need LODs"
+			desc = "This asset need level of detail models made"
+			color = [ 255, 132, 0 ]
+		},
+
+		{
+			id = "integ_to_movie"
+			name = "SFM/Movie Asset"
+			desc = "Asset scheduled to be moved into movie branch"
+			color = [ 32, 32, 32 ]
+			reject_asset = true
+		},
+	]
+}

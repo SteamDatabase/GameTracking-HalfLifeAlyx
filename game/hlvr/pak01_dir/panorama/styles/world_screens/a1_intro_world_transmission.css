@@ -1,0 +1,45 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: #000055;
+
+	flow-children: down;
+}
+
+.TextContainer
+{
+	height: 50%;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 128px;
+	color: yellow;
+	margin-left: 0px;
+	margin-top: 768px;
+}
+
+#IncomingText
+{
+	
+	visibility: visible;
+}
+
+#EndedText
+{
+	visibility: collapse;
+}
+
+.TransmissionEnded #EndedText,
+{
+	visibility: visible;
+}
+
+.TransmissionEnded #IncomingText,
+{
+	visibility: collapse;
+}

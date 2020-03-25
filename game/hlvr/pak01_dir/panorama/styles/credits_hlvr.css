@@ -1,0 +1,395 @@
+@define textBase:	#333030;
+@define textLight:	#666058;
+
+//// GLOBAL
+
+HLVRCreditsPanel
+{
+	ui-scale: 50%;
+}
+
+HLVRCreditsPanel,
+.CreditsContainer,
+.CreditsList
+{
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+HLVRCreditsPanel
+{
+	transition-property: opacity;
+	transition-duration: 2s;	
+}
+
+.CreditsContainer
+{
+	flow-children: down;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 2s;
+}
+Label
+{
+	font-size: 190px;
+	color: textBase;
+	font-family: raju;
+	font-weight: semi-bold;
+	text-align: center;
+	text-overflow: shrink;
+}
+.DesignElement
+{
+	width: 100%;
+	height: fit-children;
+	visibility: collapse;
+	horizontal-align: center;
+}
+.TopBar.DesignElement
+{
+	visibility: visible;
+	horizontal-align: center;
+	height: 160px;
+}
+.TopBarFill
+{
+	height: 100%;
+}
+.Header
+{
+	visibility: collapse;
+	height: 200px;
+	text-align: center;
+	margin-top: 80px;
+	horizontal-align: center;
+	margin-bottom: -20px;
+}
+HLVRCreditsPanel .CreditsContainer .Header #HeaderLabel.Disabled
+{
+	visibility: collapse;
+}
+.Header Label
+{
+	text-align: center;
+	horizontal-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 2s;
+}
+.CreditsContainer .Footer
+{
+	width: 100%;
+	height: fit-children;
+	vertical-align: bottom;
+	visibility: visible;
+}
+.ValveLogo
+{
+	opacity: 0;
+	vertical-align: bottom;
+	horizontal-align: center;
+	width: 50%;
+	height: width-percentage(41.832%);
+	wash-color: textBase;
+	horizontal-align: center;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+.Content
+{
+	height: fill-parent-flow(1);
+	width: 100%;
+}
+HLVRCreditsPanel
+{
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+.CreditsList
+{
+	transition-property: width;
+	transition-duration: 1s;
+	horizontal-align: center;
+	flow-children: down;
+	padding-top: 180px;
+}
+#credits_middle .CreditsList,
+#credits_middle .DesignElement
+{
+	width: 66.666666%;
+}
+.Raw
+{
+	visibility: collapse;
+}
+
+//// SHARED TRANSITIONS
+
+.Bar,
+.TopBarFill
+{
+	width: 0%;
+	horizontal-align: right;
+	transition-property: width;
+	transition-duration: 0.4s;
+	background-color: textBase;
+}
+.Covered		.Bar,
+.Dormant		.TopBarFill,
+.Valvers		.TopBarFill,
+.Contractors	.TopBarFill,
+.Cast			.TopBarFill
+{
+	width: 100%;
+	horizontal-align: left;
+}
+
+//// CREDITSLINEDRAWER
+//// BASELINE
+
+HLVRCreditsLineDrawer
+{
+	opacity: 1;
+	margin-bottom: 90px;
+	width: 100%;
+	transition-property: opacity;
+	transition-duration: 0.4s;
+}
+	HLVRCreditsLineDrawer.Empty
+	{
+		width: 0%;
+		horizontal-align: right;
+	}
+Label.Name
+{
+	width: 100%;
+	horizontal-align: center;
+	text-align: center;
+}
+Label.Roles
+{
+	opacity: 0;
+	width: 0%;
+	text-align: right;
+	horizontal-align: left;
+	padding-left: 50px;
+	color: textLight;
+	font-size: 160px;
+	vertical-align: middle;
+}
+Label.Name, Label.Roles
+{
+	transition-property: width, opacity;
+	transition-duration: 0.4s;
+}
+.Bar
+{
+	vertical-align: middle;
+	height: 90%;
+}
+Label.Spacer
+{
+	color: transparent;
+	background-color: transparent;
+}
+
+//// SUPER-STATE:
+/// .StartCredits
+
+	.StartCredits .CreditsContainer
+	{
+		opacity: 1;
+	}
+
+//// STATES:
+/// .Dormant
+/// .Valvers
+/// .Contractors
+/// .Cast
+/// .SpecialThanks
+/// .Finished
+
+//// DORMANT
+/// .Dormant
+
+	
+
+//// VALVERS
+/// .Valvers
+
+	.Valvers #credits_middle .ValveLogo
+	{
+		opacity: 1;
+	}
+
+//// CONTRACTORS
+/// .Contractors
+
+	.Contractors .Header
+	{
+		visibility: visible;
+	}
+	.Contractors .Header Label
+	{
+		opacity: 1;
+	}
+	.Contractors .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+
+//// POSTCONTRACTORS
+/// .PostContractors
+
+	.PostContractors .Header
+	{
+		visibility: visible;
+	}
+	.PostContractors .Header Label
+	{
+		opacity: 0;
+	}
+	.PostContractors .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+
+//// CAST
+/// .Cast
+
+	.Cast .Header
+	{
+		visibility: visible;
+	}
+	.Cast .Header Label
+	{
+		opacity: 1;
+	}
+	.Cast #credits_middle .CreditsList,
+	.Cast #credits_middle .DesignElement
+	{
+		width: 100%;
+	}
+	.Cast #credits_left,
+	.Cast #credits_right
+	{
+		visibility: collapse;
+	}
+	.Cast .Name
+	{
+		width: 50%;
+		text-align: left;
+		horizontal-align: right;
+		padding-left: 50px;
+	}
+	.Cast .Roles
+	{
+		width: 50%;
+		opacity: 1;
+	}
+	.Cast .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+
+//// POSTCAST
+/// .PostCast
+
+	.PostCast .Header
+	{
+		visibility: visible;
+	}
+	.PostCast #credits_middle .CreditsList,
+	.PostCast #credits_middle .DesignElement
+	{
+		width: 100%;
+	}
+	.PostCast .Name
+	{
+		width: 50%;
+		text-align: left;
+		horizontal-align: right;
+		padding-left: 50px;
+	}
+	.PostCast .Roles
+	{
+		width: 50%;
+		opacity: 1;
+	}
+	.PostCast #credits_left,
+	.PostCast #credits_right
+	{
+		visibility: collapse;
+	}
+	.PostCast .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+
+//// SPECIALTHANKS
+/// .SpecialThanks
+
+	.ForJake
+	{
+		opacity: 0;
+		transition-property: opacity;
+		transition-duration: 2s;
+		width: 100%;
+		vertical-align: center;
+		horizontal-align: center;
+	}
+	.ForJake Label
+	{
+		font-size: 300px;	
+		text-align: center;
+		horizontal-align: center;
+		vertical-align: center;
+		text-transform: uppercase;
+	}
+	.SpecialThanks #credits_middle .ForJake
+	{
+		opacity: 1;
+	}
+	.SpecialThanks .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+	.SpecialThanks #credits_left,
+	.SpecialThanks #credits_right
+	{
+		opacity: 0;
+	}
+
+//// FINISHED
+/// .Finished
+
+	.Finished #credits_left,
+	.Finished #credits_right
+	{
+		visibility: collapse;
+	}
+	.Finished #credits_middle .CreditsList,
+	.Finished #credits_middle .DesignElement
+	{
+		width: 100%;
+	}
+	.Finished .CreditsContainer .Footer.DesignElement
+	{
+		visibility: collapse;
+	}
+	.Finished HLVRCreditsPanel
+	{
+		opacity: 0;
+	}
+
+//// SKIPPING
+/// .Skipping
+
+	.Skipping HLVRCreditsPanel,
+	HLVRCreditsPanel.Skipping
+	{
+		opacity: 0;
+	}

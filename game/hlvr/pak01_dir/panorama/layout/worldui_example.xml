@@ -1,0 +1,15 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/worldui_example.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel>
+		<Button class="" onactivate="ToggleStyle('extra_style')">
+			<Label text="Toggle Style"/>
+		</Button>
+		<Button class="" onactivate="ClientUI_FireOutput( 0 )">
+			<Label text="Toggle Brush"/>
+		</Button>
+	</ClientUIDialogPanel>
+</root>

@@ -1,0 +1,89 @@
+import "networkbasetypes.proto";
+
+option optimize_for = SPEED;
+option cc_generic_services = false;
+
+enum EHLVRClientMessages {
+	HLVR_CM_BarnacleDefeated = 500;
+	HLVR_CM_CraftingUpgradeSelected = 501;
+	HLVR_CM_CraftingPrintSubmenu = 502;
+	HLVR_CM_HoloHackPuzzleTurnedOff = 503;
+	HLVR_CM_RespawnDeadPlayer = 504;
+	HLVR_CM_HoloHackPuzzleCompleted = 505;
+	HLVR_CM_CombineConsoleCompleted = 506;
+	HLVR_CM_HoloHackPointSearchCoreSolved = 507;
+	HLVR_CM_SaveSlotSelected = 508;
+	HLVR_CM_XenFoliageEmitSound = 509;
+	HLVR_CM_CraftingUpgradeHover = 510;
+	HLVR_CM_HoloHackPuzzleInteractionStarted = 511;
+	HLVR_CM_CreditsComplete = 512;
+	HLVR_CM_CreditsSkipped = 513;
+}
+
+message CHLVRClientMsg_BarnacleDefeated {
+	optional uint32 barnacle_entindex = 1;
+}
+
+message CHLVRClientMsg_CraftingUpgradeSelected {
+	optional int32 upgrade = 1;
+	optional uint32 ent_ehandle = 2;
+	optional uint32 client_ehandle = 3;
+}
+
+message CHLVRClientMsg_CraftingPrintSubmenu {
+	optional uint32 ent_ehandle = 1;
+	optional uint32 client_ehandle = 2;
+}
+
+message CHLVRClientMsg_HoloHackPuzzleTurnedOff {
+	optional uint32 ent_ehandle = 1;
+	optional uint32 client_ehandle = 2;
+	optional bool hack_succeeded = 3;
+}
+
+message CHLVRClientMsg_RespawnDeadPlayer {
+}
+
+message CHLVRClientMsg_HoloHackPuzzleCompleted {
+	optional uint32 ent_ehandle = 1;
+	optional uint32 client_ehandle = 2;
+	optional bool puzzle_succeeded = 3;
+}
+
+message CHLVRClientMsg_CombineConsoleCompleted {
+	optional uint32 ent_ehandle = 1;
+	optional uint32 client_ehandle = 2;
+}
+
+message CHLVRClientMsg_HoloHackPointSearchCoreSolved {
+	optional uint32 ent_ehandle = 1;
+	optional int32 core_index = 2;
+	optional .CMsgVector core_position = 3;
+}
+
+message CHLVRClientMsg_SaveSlotSelected {
+	optional string save_slot = 1;
+}
+
+message CHLVRClientMsg_XenFoliageEmitSound {
+	optional uint32 xen_foliage_entindex = 1;
+}
+
+message CHLVRClientMsg_CraftingUpgradeHover {
+	optional int32 upgrade = 1;
+	optional bool hover_clear = 2;
+	optional uint32 ent_ehandle = 3;
+	optional uint32 client_ehandle = 4;
+}
+
+message CHLVRClientMsg_HoloHackPuzzleInteractionStarted {
+	optional uint32 ent_ehandle = 1;
+	optional uint32 client_ehandle = 2;
+	optional bool check_fast_completion = 3;
+}
+
+message CHLVRClientMsg_CreditsComplete {
+}
+
+message CHLVRClientMsg_CreditsSkipped {
+}

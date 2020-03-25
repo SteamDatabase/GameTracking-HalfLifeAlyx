@@ -1,0 +1,1390 @@
+@define textBase:			#00c0ffff;
+@define textLight:			#3dfdfcff;
+@define textDim:			#2dedfa99;
+@define textError:			#ec1c23ff;
+
+@define panelBackground:	#11353F10;
+@define panelCraftingStationForeground:	#15485710;
+@define panelForeground:	#154857cc;
+
+@define buttonDefault:		#11353Fff;
+@define buttonHover:		#00C0FFB3;
+@define buttonActive:		#00a4daff;
+@define buttonInactive:		#00C0FF36;
+
+@define paneLeftWidth:			770px;
+// below should be 15 less
+@define paneLeftWidthInner:		755px;
+// below should be 15 more
+@define paneLeftWidthBuffed:	785px;
+
+@define paneMainWidth:		1235px;
+
+@define paneRightWidth:		420px;
+
+@define barTopHeight:		65px;
+@define barMiddleHeight:	526px;
+@define barBottomHeight:	115px;
+@define barMarginVertical:	10px;
+
+@define barLeftWidth:	20px;
+@define mainMarginLeft:	18px;
+@define paddingRight:	25px;
+
+.CraftingStation
+{
+	width: 100%;
+	height: 100%;
+	transition-property: height;
+	transition-duration: 3s;
+	color: textBase;
+}
+
+.IsDormant.CraftingStation,
+.IsDormant.CraftingStation.Background
+{
+	height: 0%;
+}
+
+.IsDormant.CraftingStation.Foreground,
+.IsDormant.CraftingStation.Background
+{
+	opacity: 0;
+}
+
+.Background #PanelContents,
+.Background #DesignElements,
+.Background #FullScreenStates
+{
+	opacity: 0.35;
+}
+
+.CraftingStation.Background
+{
+	opacity: 0.97;
+	height: 100%;
+	blur: gaussian(2);
+	background-color: panelBackground;
+	transition-property: opacity, height;
+	transition-duration: 3s;
+	transition-timing-function: ease-in-out;
+	box-shadow: inset #3fcaed18 0px 0px 90px 10px;
+}
+
+.CraftingStation.Foreground
+{
+	opacity: 1;
+	background-color: panelCraftingStationForeground;
+	box-shadow: inset #3fcaed22 10px 10px 20px 20px;
+}
+
+/* BASE STYLE */
+
+.CraftingStation Label
+{
+	font-family: raju;
+	font-weight: semi-bold;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#scan_line_mask
+{
+	//opacity-mask: url("s2r://panorama/images/upgrade_station_ui/crafting_station_interlace_mask_png.vtex") 0.3;
+	//opacity-mask: url("s2r://panorama/images/upgrade_station_ui/upgrade_station_type_mask_psd.vtex") 0.5;
+}
+
+.CraftingStation Label,
+.CraftingStation TextButton
+{
+	text-shadow: 0px 0px 5px 0 textDim;
+}
+.CraftingStation .SelectionPanel Label
+{
+	text-shadow: 0px 0px 2px 0.2 textDim;
+}
+.CraftingStation Label.noshadow,
+.CraftingStation Label.Heading
+{
+	text-shadow: none;
+}
+
+.Button
+{
+	border: 3px solid textBase;
+	padding: 10px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	transition-property: background-color, border-color, brightness, pre-transform-scale2d;
+	transition-duration: 0.1s;
+}
+.Button.Owned
+{
+	border-color: transparent;
+	background-color: buttonInactive;
+}
+.Button.CannotAfford
+{
+	border-color: buttonInactive;
+}
+.Button.Disabled,
+.Foreground .Button.Disabled:hover,
+.Foreground .Button.Disabled:active
+{
+	border-color: transparent;
+	background-color: buttonInactive;
+	opacity: 0.7;
+}
+
+.Button:hover
+{
+	pre-transform-scale2d: 1.01;
+}
+.Foreground .Button.Usable:hover
+{
+	background-color: buttonHover;
+	border-color: transparent;
+}
+.Foreground .Button.Usable:hover Label
+{
+	color: textLight;
+}
+
+#CraftingStation #CraftingInterior .Button.Usable:active
+{
+	background-color: textLight;
+	border-color: buttonActive;
+	//brightness: 2;
+}
+#CraftingStation #CraftingInterior .Button.Usable:active Label
+{
+	color: buttonActive;
+}
+
+.Foreground .Button.CannotAfford:hover
+{
+	background-color: buttonInactive;
+}
+.Button Label
+{
+	color: textBase;
+	font-size: 36px;
+	transition-property: color;
+	transition-duration: 0.1s;
+}
+
+/* DESIGN-ONLY ELEMENTS */
+
+#LeftBars
+{
+	height: 100%;
+	flow-children: down;
+}
+.LeftBar
+{
+	width: barLeftWidth;
+	height: 200px;
+	background-color: textBase;
+	margin-bottom: barMarginVertical;
+}
+.LeftBar.Top
+{
+	height: barTopHeight;
+}
+.LeftBar.Middle
+{
+	height: barMiddleHeight;
+}
+.LeftBar.Bottom
+{
+	height: barBottomHeight;
+	margin-bottom: 0;
+}
+
+#Lines
+{
+	height: 100%;
+	width: 100%;
+	padding-left: barLeftWidth;
+}
+.Line
+{
+	opacity: 0.6;
+	width: 100px;
+	height: 1px;
+}
+.Line,
+.LineFill
+{
+		background-color: textBase;
+}
+.LineFill
+{
+	width: 100%;
+	height: 100%;
+}
+.Line.Container
+{
+	background-color: transparent;
+}
+#TopDividers
+{
+	width: 100%;
+	margin-top: barTopHeight;
+}
+#TopLine
+{
+	width: 100%;
+	margin-top: 5px;
+	margin-left: mainMarginLeft;
+	padding-left: 4px;
+}
+
+#BottomDividers
+{
+	margin-left: mainMarginLeft;
+	vertical-align: bottom;
+	height: barBottomHeight;
+}
+#BottomDividers .Line
+{
+	
+}
+#BottomDividers #BottomDividerLeft
+{
+	margin-top: 6px;
+	width: paneLeftWidthInner;
+}
+#BottomDividers #BottomRightContainer
+{
+	margin-left: paneLeftWidthInner;
+	width: 470px;
+	height: 114px;
+}
+#BottomDividers #BottomDividerRight
+{
+	width: 600px;
+	transform: rotateZ(12.5deg) translateX(-16px) translateY(54px);
+
+}
+
+/* MAIN PANEL LAYOUT */
+
+#CraftingInterior,
+#scan_line_mask,
+#PanelContents,
+#DesignElements,
+#FullScreenStates,
+.FullScreenState,
+#AnimatedTextureMask
+{
+	width: 100%;
+	height: 100%;
+}
+
+#PanelContents
+{
+	flow-children: down;
+}
+
+.MainLayoutPanel
+{
+	width: 100%;
+}
+#TopBar
+{
+	height: barTopHeight;
+}
+#StatePanelContainer
+{
+	margin-top: barMarginVertical;
+	height: barMiddleHeight;
+}
+#BottomBar
+{
+	height: barBottomHeight;
+	vertical-align: bottom;
+	margin-left: barLeftWidth;
+}
+#BottomBar .InnerContainer
+{
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+.InnerContainer
+{
+	horizontal-align: right;
+	width: paneMainWidth;
+	height: 100%;
+	border-right: paddingRight solid transparent;
+}
+#TopBar .InnerContainer
+{
+	padding-left: mainMarginLeft;
+}
+
+/* MAIN PANEL LAYOUT: FULL SCREEN STATES */
+
+.FullScreenState
+{
+	height: 100%;
+	width: 100%;
+}
+
+#BootUp
+{
+	background-color: panelForeground;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+#BootingTemp
+{
+	color: textError;
+	vertical-align: middle;
+	horizontal-align: center;
+	text-align: center;
+	font-size: 60px;
+}
+
+/* MAIN PANEL LAYOUT: TopBar */
+
+#WeaponZone
+{
+	vertical-align: bottom;
+	opacity: 1;
+	flow-children: right;
+}
+.IDContainer
+{
+	flow-children: right;
+}
+#WeaponIDContainer
+{
+	margin-left: 10px;
+	opacity: 0.5;
+	margin-top: 8px;
+}
+#WeaponIDContainer .UIDPanel
+{
+	width: 17px;
+}
+.IDContainer .UIDPanel Label
+{
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	margin-top: -8px;
+}
+.UIDPanel .BG,
+.UIDPanel .FG
+{
+	opacity: 0;
+}
+.UIDPanel.Unresolved .BG,
+.UIDPanel.Resolved .FG
+{
+	opacity: 1;
+}
+#WeaponIDContainer .UIDPanel Label.BG
+{
+	color: textError;
+}
+.UIDPanel .FG
+{
+	background-color: transparent;
+	color: textBase;
+	brightness: 1;
+}
+#WeaponIDContainer .UIDPanel.Resolved.Anim .FG
+{
+	animation-name: UIDFGIn;
+	animation-duration: 0.7s;
+	animation-iteration-count: 1;
+}
+@keyframes 'UIDFGIn'
+{
+	0%
+	{
+		color: transparent;
+		background-color: transparent;
+		brightness: 1;
+	}
+	20%
+	{
+		color: transparent;
+		background-color: textError;
+		brightness: 2;
+	}
+	21%
+	{
+		color: textError;
+		box-shadow: textError 0px 0px 2px 2px;
+	}
+	30%
+	{
+		background-color: textError;
+	}
+	50%
+	{
+		box-shadow: none;
+	}
+	70%
+	{
+		brightness: 1;
+		background-color: transparent;
+	}
+	100%
+	{
+		color: textBase;
+	}
+}
+
+.IsBootingUp #WeaponZone,
+.IsWaitingForObject #WeaponZone,
+.IsCrafting #WeaponZone,
+.IsFinished #WeaponZone,
+.IsCancelled #WeaponZone 
+{
+	opacity: 0;
+}
+#StatePanelContainer .InnerContainer
+{
+	//border-top: 1px solid textBase;
+}
+
+#LogoZone
+{
+	horizontal-align: right;
+	flow-children: left;
+	height: 80%;
+	vertical-align: bottom;
+}
+
+#CraftingStationTitle
+{
+	vertical-align: bottom;
+	text-align: right;
+	margin-right: 10px;
+	opacity: 0.6;
+	text-shadow: none;
+}
+
+#CraftingStationLogo
+{
+	wash-color: textBase;
+	height: 100%;
+	width: height-percentage(100%);
+}
+
+/* MAIN PANEL LAYOUT: BottomBar */
+
+#BottomBar .InnerContainer
+{
+	border-right: 0;
+}
+#BottomBar .CurrentResinPanel
+{
+	width: 100%;
+	height: 59%;
+	margin-bottom: 30px;
+	margin-right: mainMarginLeft;
+	vertical-align: bottom;
+	horizontal-align: left;
+	flow-children: right;
+}
+#BottomBar .CurrentResinPanel #ResinContainer
+{
+	flow-children: left;
+	horizontal-align: right;
+	width: fill-parent-flow(1);
+	border-bottom: 1px solid textBase;
+	padding-bottom: 2px;
+}
+#BottomBar .CurrentResinPanel #BarcodeZone
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	flow-children: down;
+	height: 100%;
+	width: 0px;
+	transition-property: width, opacity;
+	transition-duration: 0.5s, 0.5s;
+	transition-delay: 0s, 0.3s;
+	padding-right: 15px;
+	opacity: 0;
+}
+.WeaponPresent #BottomBar .CurrentResinPanel #BarcodeZone
+{
+	width: 320px;
+	opacity: 1;
+	transition-delay: 0.5s, 0s;
+}
+#BarcodeZone .BarcodeGraphic
+{
+	// ratio: 0.1763157894736842;
+	background-size: 320px 67px;
+	background-repeat: no-repeat;
+	brightness: 3;
+}
+#BottomBar .CurrentResinPanel #BarcodeZone #SmallPrint
+{
+	width: fit-children;
+	opacity: 1;
+	transition-property: width, opacity;
+	transition-delay: 0.5s, 1s;
+	transition-duration: 0.5s, 0.5s;
+	text-overflow: shrink;
+	overflow: clip;
+	margin-bottom: -8px;
+	padding-right: 4px;
+	padding-left: 3px;
+}
+#BarcodeZone .Barcode.Top
+{
+	width: 100%;
+	height: 50px;
+	background-position: right top;
+	overflow: clip;
+	transition-property: height;
+	transition-duration: 0.5s;
+	transition-delay: 0.2s;
+	transition-timing-function: ease-out;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+}
+#BarcodeZone .Barcode.Bottom
+{
+	height: 17px;
+	flow-children: right;
+}
+#BarcodeZone #BarcodeRemainder
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	background-position: right bottom;
+}
+.HLVR_Weapon_Name_Pistol #BarcodeZone .BarcodeGraphic
+{
+	background-image: url("s2r://panorama/images/upgrade_station_ui/barcode_pistol_png.vtex");
+}
+.HLVR_Weapon_Name_Shotgun #BarcodeZone .BarcodeGraphic
+{
+	background-image: url("s2r://panorama/images/upgrade_station_ui/barcode_shotgun_png.vtex");
+}
+.HLVR_Weapon_Name_RapidFire #BarcodeZone .BarcodeGraphic
+{
+	background-image: url("s2r://panorama/images/upgrade_station_ui/barcode_smg_png.vtex");
+}
+
+#BottomBar .CurrentResinPanel #SmallPrint
+{
+	horizontal-align: left;
+	text-align: left;
+	vertical-align: bottom;
+	margin-bottom: 6px;
+	opacity: 0.6;
+	text-shadow: none;
+}
+#BottomBar .CurrentResinPanel .CurrentResinHeaders
+{
+	flow-children: down;
+}
+#BottomBar .InnerContainer .CurrentResinPanel Label
+{
+	transition-property: color;
+	transition-duration: 0s;
+}
+#BottomBar .CurrentResinPanel .ResinInsufficient
+{
+	padding-top: 8px;
+	font-size: 20px;
+	margin-bottom: -11px;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+	color: textError;
+	text-shadow: 0px 0px 5px 1px textError;
+	horizontal-align: right;
+	text-align: right;
+	padding-right: 4px;
+}
+.InsufficientResin #BottomBar .InnerContainer #ResinContainer Label
+{
+	color: textError;
+	text-shadow: 0px 0px 5px 1px textError;
+}
+.InsufficientResin #BottomBar .CurrentResinPanel .ResinInsufficient
+{
+	opacity: 1;
+}
+
+#BottomBar .CurrentResinPanel .CurrentResinText
+{
+	margin-left: 15px;
+	font-size: 69px;
+	color: textLight;
+	margin-top: -14px;
+}
+
+/* STATE: PANEL SWITCHER */
+
+//.IsBootingUp			#BootUp,
+//.IsCrafting			#Crafting,
+.IsWaitingForObject		#WaitingForObject,
+.HasObject				#HasObject,
+.IsWaitingForCurrency	#WaitingForCurrency,
+.IsViewingUpgrade		#ViewingUpgrade,
+.HasFinished			#Finished,
+.HasCancelled			#Cancelled
+{
+	opacity: 1;
+	pre-transform-scale2d: 1;
+	transition-duration: 0s;
+}
+
+#DesignElements
+{
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 2s;
+	transition-timing-function: ease-in;
+}
+
+.PostBoot.Foreground #DesignElements
+{
+	opacity: 1;
+}
+.PostBoot #BottomBar .InnerContainer
+{
+	opacity: 1;
+}
+
+.HasObject #WaitingForCurrency
+{
+	pre-transform-scale2d: 0.96;
+}
+
+/* STATE: GENERAL */
+
+.StatePanel
+{
+	opacity: 0;
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	overflow: noclip;
+	pre-transform-scale2d: 1;
+	transition-property: pre-transform-scale2d, opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in;
+}
+
+#HasObject
+{
+	pre-transform-scale2d: 0.96;
+	transition-property: pre-transform-scale2d, opacity;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in;
+}
+
+/* STATE PANELS */
+
+.StatePanel.OnePane
+{
+	vertical-align: middle;
+	horizontal-align: center;
+	text-align: center;
+	flow-children: down;
+	padding-right: 20px;
+}
+.StatePanel.OnePane Label
+{
+	horizontal-align: center;
+}
+
+.StatePanel.TwoPane
+{
+	flow-children: none;
+	width: 100%;
+	height: 100%;
+}
+.StatePanel.TwoPane .ContentBody,
+#BottomBar .InnerContainer
+{
+	margin-left: mainMarginLeft;
+	width: paneLeftWidth;
+	height: 100%;
+	horizontal-align: left;
+	flow-children: down;
+}
+#HasObject Panel.ContentBody
+{
+	margin-left: 0;
+	width: paneLeftWidthBuffed;
+}
+.StatePanel.TwoPane .ContentDetail
+{
+	horizontal-align: right;
+	width: paneRightWidth;
+	height: 100%;
+	flow-children: down;
+}
+.StatePanel .Headings
+{
+	width: 100%;
+}
+.StatePanel .Heading
+{
+	padding-top: 30px;
+	font-size: 22px;
+	color: textDim;
+}
+.StatePanel .Headings .Heading
+{
+	padding-left: 18px;
+	padding-right: 18px;
+}
+Label.SmallText
+{
+	font-size: 15px;
+}
+
+/* STATE: WaitingForObject */
+
+#WaitingForObject #InsertWeaponLabel
+{
+	font-size: 50px;
+	margin-top: 30px;
+}
+
+#WaitingForObject .AnimatedChevrons
+{
+	flow-children: right;
+	horizontal-align: center;
+	margin-top: 30px;
+}
+#WaitingForObject .Chevron.C3
+{
+	animation-delay: 0s;
+}
+#WaitingForObject .Chevron.C2
+{
+	animation-delay: 0.3s;
+}
+#WaitingForObject .Chevron.C1
+{
+	animation-delay: 0.6s;
+}
+.IsWaitingForObject #WaitingForObject .Chevron
+{
+	animation-duration: 2s;
+}
+#WaitingForObject .Chevron
+{
+	flow-children: down;
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: panelForeground;
+	height: 140px;
+	width: 90px;
+	opacity-mask: url("s2r://panorama/images/upgrade_station_ui/crafting_station_chevron_mask_psd.vtex");
+	animation-name: AnimateChevron;
+	animation-duration: 1.9s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'AnimateChevron'
+{
+	0%
+	{
+		background-color: panelForeground;
+	}
+	20%
+	{
+		background-color: panelForeground;
+	}
+	50%
+	{
+		background-color: textLight;
+	}
+	80%
+	{
+		background-color: textLight;
+	}
+	90%
+	{
+		background-color: panelForeground;
+	}
+	100%
+	{
+		background-color: panelForeground;
+	}
+}
+
+/* STATE: HasObject */
+
+#HasObject #CostHeading
+{
+	horizontal-align: right;
+}
+
+#HasObject #NoUpgradesPanel
+{
+	visibility: collapse;
+}
+.NoUpgrades #HasObject #NoUpgradesPanel
+{
+	visibility: visible;
+}
+#UpgradeContainerPanel
+{
+	visibility: visible;
+	width: 100%;
+	flow-children: down;
+	margin-top: 0px;
+}
+.NoUpgrades #UpgradeContainerPanel
+{
+	visibility: collapse;
+}
+.UpgradeButton
+{
+	margin-left: mainMarginLeft;
+	margin-right: mainMarginLeft;
+	width: 100%;
+}
+#UpgradeContainerPanel .Button.UpgradeButton.ErrorBlink
+{
+	animation-name: ErrorBlink;
+	animation-duration: 0.3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+@keyframes 'ErrorBlink'
+{
+	0%
+	{
+		background-color: transparent;
+	}
+	25%
+	{
+		background-color: textError;
+	}
+	50%
+	{
+		background-color: transparent;
+	}
+	75%
+	{
+		background-color: textError;
+	}
+	100%
+	{
+		background-color: transparent;
+	}
+}
+.Button.UpgradeButton
+{
+	padding-top: 14px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	animation-name: UpgradeButtonLoadIn;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+}
+	.UpgradeButton.Index0
+	{
+		animation-delay: 0.2s;
+	}
+	.UpgradeButton.Index1
+	{
+		animation-delay: 0.3s;
+	}
+	.UpgradeButton.Index2
+	{
+		animation-delay: 0.4s;
+	}
+	.UpgradeButton.Index3
+	{
+		animation-delay: 0.5s;
+	}
+	.UpgradeButton.Index4
+	{
+		animation-delay: 0.6s;
+	}
+@keyframes 'UpgradeButtonLoadIn'
+{
+	0%
+	{
+		brightness: 1;
+	}
+	20%
+	{
+		brightness: 1;
+		background-color: textBase;
+	}
+	40%
+	{
+		brightness: 2;
+	}
+	100%
+	{
+		brightness: 1;
+		background-color: transparent;
+	}
+}
+.UpgradeButton .UpgradeName
+{
+	background-color: transparent;
+	width: 500px;
+	text-overflow: shrink;
+}
+.UpgradeButton .UpgradeCostContainer
+{
+	flow-children: left;
+}
+.UpgradeButton .UpgradeCost
+{
+	width: 40px;
+	text-align: right;
+	overflow: clip;
+}
+.UpgradeButton.Owned .UpgradeCost
+{
+	width: fit-children;
+}
+.UpgradeButton .CannotAffordAlert
+{
+	vertical-align: top;
+	height: 75%;
+	width: height-percentage(100%);
+	background-color: textError;
+	margin-right: 5px;
+	margin-top: 1px;
+	opacity: 0;
+	opacity-mask: url("s2r://panorama/images/upgrade_station_ui/crafting_station_error_mask_psd.vtex");
+}
+.UpgradeButton.CannotAfford .CannotAffordAlert
+{
+	opacity: 1;
+}
+.UpgradeButton.Owned .CannotAffordAlert
+{
+	opacity: 0;
+}
+.UpgradeButton.Owned .UpgradeCost
+{
+	opacity: 0.9;
+}
+#HasObject #UpgradeDetailContainerPanel
+{
+	opacity: 1;
+	flow-children: none;
+}
+.ContentDetail
+{
+	padding-right: 20px;
+}
+.DetailContainer
+{
+	flow-children: none;
+	border-top: 1px solid textBase;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+.UpgradeDetails
+{
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.1s;
+	flow-children: down;
+	padding-right: 10px;
+}
+.UpgradeDetails Label.UpgradeDescription
+{
+	text-transform: none;
+}
+.UpgradeName
+{
+	color: textLight;
+}
+.UpgradeDetails .UpgradeName
+{
+	margin-bottom: 10px;
+}
+.HoverUpgrade0 #UpgradeDetailContainerPanel #UpgradeDetails0,
+.HoverUpgrade1 #UpgradeDetailContainerPanel #UpgradeDetails1,
+.HoverUpgrade2 #UpgradeDetailContainerPanel #UpgradeDetails2,
+.HoverUpgrade3 #UpgradeDetailContainerPanel #UpgradeDetails3,
+.HoverUpgrade4 #UpgradeDetailContainerPanel #UpgradeDetails4,
+.HoverUpgrade5 #UpgradeDetailContainerPanel #UpgradeDetails5,
+.HoverUpgrade6 #UpgradeDetailContainerPanel #UpgradeDetails6,
+.HoverUpgrade7 #UpgradeDetailContainerPanel #UpgradeDetails7,
+.HoverUpgrade8 #UpgradeDetailContainerPanel #UpgradeDetails8,
+.HoverUpgrade9 #UpgradeDetailContainerPanel #UpgradeDetails9
+{
+	opacity: 1;
+}
+
+/* STATE: WaitingForCurrency */
+
+#WaitingForCurrency	.UpgradeDetails,
+#Crafting			.UpgradeDetails,
+#Finished			.UpgradeDetails
+{
+	opacity: 1;
+}
+
+.SelectionPanel
+{
+	flow-children: down;
+	width: 100%;
+	height: 350px;
+	background-color: panelForeground;
+	border-top: 10px solid textBase;
+	margin-top: 55px;
+	margin-bottom: 25px;
+	margin-right: mainMarginLeft;
+}
+
+.SelectionContent
+{
+	width: 80%;
+	horizontal-align: center;
+	vertical-align: middle;
+	flow-children: down;
+}
+.SelectionContent Label
+{
+	horizontal-align: center;
+	text-align: center;
+}
+.SelectionContent .Highlight
+{
+	font-size: 48px;
+}
+.SelectionContent .CurrencyContainer
+{
+	flow-children: right;
+	horizontal-align: center;
+	margin-top: 11px;
+	margin-bottom: -7px;
+}
+.CurrencyContainer .CurrencyDrawer
+{
+	flow-children: right;
+}
+.CurrencyDrawer .UIDPanel
+{
+	width: 17px;
+	height: 30px;
+	overflow: clip;
+}
+.CurrencyDrawer .UIDPanel.Unresolved
+{
+	opacity: 0.5;
+}
+.CurrencyContainer .CurrencyDrawer .UIDPanel Label,
+.CurrencyContainer #CurrencySlash
+{
+	height: 35px;
+	margin-top: -7px;
+	overflow: clip;
+	vertical-align: top;
+}
+.CurrencyDrawer .UIDPanel.Resolved.Anim .FG
+{
+	animation-name: CurrencyFGIn;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+}
+@keyframes 'CurrencyFGIn'
+{
+	0%
+	{
+		color: transparent;
+		background-color: transparent;
+		brightness: 1;
+	}
+	20%
+	{
+		color: transparent;
+		background-color: textLight;
+		brightness: 1.2;
+	}
+	21%
+	{
+		color: textLight;
+	}
+	30%
+	{
+		background-color: textBase;
+	}
+	50%
+	{
+	}
+	70%
+	{
+		brightness: 1;
+		background-color: transparent;
+	}
+	100%
+	{
+		color: textBase;
+	}
+}
+.SelectionContent #InsertResin
+{
+	horizontal-align: center;
+	margin-bottom: 20px;
+	font-size: 36px;
+	color: textLight;
+	text-shadow: none;
+	margin-top: 5px;
+}
+
+.UpgradeSelection .Cancel
+{
+	horizontal-align: right;
+	padding-top: 4px;
+	margin-bottom: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-right: mainMarginLeft;
+}
+
+#CurrencyBar
+{
+	width: 90%;
+	height: 50px;
+	margin-top: 10px;
+	horizontal-align: center;
+	border: 1px solid textLight;
+	margin-bottom: 20px;
+}
+
+#CurrencyBar .ProgressBarLeft
+{
+	background-color: textBase;
+	transition-property: width;
+	transition-duration: 0.2s;
+}
+
+#CurrencyBar .ProgressBarRight
+{
+	background-color: panelBackground;
+}
+
+/* STATE: Finished */
+
+#FabricationComplete
+{
+	font-size: 38px;
+	margin-bottom: 10px;
+}
+.SelectionContent .BigFlicker
+{
+	color: textLight;
+	font-size: 72px;
+	animation-name: TextBrightFlicker;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes 'TextBrightFlicker'
+{
+	0%
+	{
+		color: textBase;
+	}
+	40%
+	{
+		color: textLight;
+	}
+	100%
+	{
+		color: textBase;
+	}
+}
+
+#StatePanelContainer {
+	animation-name: TextMotionFlicker;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#TopBar {
+	animation-name: TextMotionFlicker;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#BottomBar {
+	animation-name: TextMotionFlicker;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'TextMotionFlicker' 
+{
+	0%
+	{
+		opacity: 0.65;
+	}
+	40%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0.65;
+	}
+}
+
+/* STATE: Cancelled */
+
+#FabricationCancelled {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* VR AFFORDANCE CIRCLES */
+
+.VRaffordance
+{
+	visibility: collapse;
+}
+
+.Foreground.ShowAffordanceLeft #vr_affordance_left
+{
+	visibility: visible;
+}
+.Foreground.ShowAffordanceRight #vr_affordance_right
+{
+	visibility: visible;
+}
+
+#vr_affordance_interior
+{
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	margin-top: -50%;
+	border-radius: 50%;
+	border-color: #54FFF955;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #00000000;
+}
+
+
+
+/* ANIMATED MASK */
+
+#AnimatedTexture{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 120s; 
+	transition-timing-function: ease-out; 
+	opacity: 0; 
+}
+
+.IsWaitingForObject #AnimatedTexture,
+.IsWaitingForPrintSelect #AnimatedTexture,
+.HasObject #AnimatedTexture,
+.IsWaitingForPrintSelect #AnimatedTexture,
+.IsWaitingForCurrency #AnimatedTexture,
+.IsCrafting #AnimatedTexture,
+.HasFinished #AnimatedTexture,
+.HasCancelled #AnimatedTexture,
+.IsViewingUpgrade #AnimatedTexture,
+{
+	opacity: 1; 
+	transform: translateY(2000px);
+	transition-property: transform;
+	transition-duration: 0s; 
+}
+
+#AnimatedTextureAlt{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_alt_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 90s; 
+	opacity: 0; 
+	wash-color: #14c7f4; 
+}
+
+.IsWaitingForObject #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.IsWaitingForPrintSelect #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.HasObject #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.IsWaitingForPrintSelect #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.IsWaitingForCurrency #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.IsViewingUpgrade #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.IsCrafting #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.HasFinished #AnimatedTextureAlt
+{
+	opacity: .2; 
+	transform: translateY(800px);
+}
+
+.HasCancelled #AnimatedTextureAlt {
+    opacity: .2;
+    transform: translateY(800px);
+}

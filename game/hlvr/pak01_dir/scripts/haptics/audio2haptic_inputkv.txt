@@ -1,0 +1,252 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	
+	OutFile = "scripts/haptics/audio2haptics_manifest.txt"
+	haptics = 
+	[
+		// Player Damage
+		{
+			InputWav = "sounds/player/damage/poison_projectile_01.wav"
+			OutputHaptic = "scripts/haptics/poison_projectile_01.hpt"
+			HapticNameEntry = "dmg_poison_projectile"
+		},
+		{
+			InputWav = "sounds/player/damage/claw_01.wav"
+			OutputHaptic = "scripts/haptics/claw_01.hpt"
+			HapticNameEntry = "dmg_claw"
+		},
+		{
+			InputWav = "sounds/player/damage/hc_bite_01.wav"
+			OutputHaptic = "scripts/haptics/hc_bite_01.hpt"
+			HapticNameEntry = "dmg_hc_bite"
+		},
+		{
+			InputWav = "sounds/player/damage/bullet_01.wav"
+			OutputHaptic = "scripts/haptics/bullet_01.hpt"
+			HapticNameEntry = "dmg_bullet"
+		},
+		{
+			InputWav = "sounds/player/damage/electric_01.wav"
+			OutputHaptic = "scripts/haptics/electric_01.hpt"
+			HapticNameEntry = "dmg_electric"
+		},
+		{
+			InputWav = "sounds/player/damage/electric_zap_01.wav"
+			OutputHaptic = "scripts/haptics/electric_zap_01.hpt"
+			HapticNameEntry = "dmg_electric_zap"
+		},
+		{
+			InputWav = "sounds/player/damage/player_heartbeat_ba_01.wav"
+			OutputHaptic = "scripts/haptics/player_heartbeat_ba_01.hpt"
+			HapticNameEntry = "PlayerDamage.HeartbeatBa"
+		},
+		{
+			InputWav = "sounds/player/damage/player_heartbeat_bump_01.wav"
+			OutputHaptic = "scripts/haptics/player_heartbeat_bump_01.hpt"
+			HapticNameEntry = "PlayerDamage.HeartbeatBump"
+		},
+		{
+			InputWav = "sounds/physics/props/flesh/impact_a_01.wav"
+			OutputHaptic = "scripts/haptics/player_physics_impact.hpt"
+			HapticNameEntry = "player_physics_impact"
+		},
+
+		// Reviver Heart
+		{
+			InputWav = "sounds/creatures/headcrab_reviver/heartbeat_01.wav"
+			OutputHaptic = "scripts/haptics/reviver_heartbeat.hpt"
+			HapticNameEntry = "reviver_heartbeat"
+		},
+
+		// Health Station
+		{
+			InputWav = "sounds/mechanical_units/health_station/combine_tech_needle_impacts_01.wav"
+			OutputHaptic = "scripts/haptics/health_station_needles.hpt"
+			HapticNameEntry = "health_station_needles"
+		},
+
+		// Health Pen
+		{
+			InputWav = "sounds/props/health_pen/prop_health_pen_extend_01.wav"
+			OutputHaptic = "scripts/haptics/health_pen_extend.hpt"
+			HapticNameEntry = "health_pen_extend"
+		},
+		{
+			InputWav = "sounds/props/health_pen/prop_health_pen_retract_01.wav"
+			OutputHaptic = "scripts/haptics/health_pen_retract.hpt"
+			HapticNameEntry = "health_pen_retract"
+		},
+		{
+			InputWav = "sounds/props/health_pen/prop_health_pen_stab_01.wav"
+			OutputHaptic = "scripts/haptics/prop_health_pen_stab_01.hpt"
+			HapticNameEntry = "health_pen_stab"
+		},
+		{
+			InputWav = "sounds/props/health_pen/prop_health_pen_inject_success_pt2_01.wav"
+			OutputHaptic = "scripts/haptics/prop_health_pen_inject_success_pt2_01.hpt"
+			HapticNameEntry = "health_pen_disperse"
+		},
+
+		// Grenade
+		{
+			InputWav = "sounds/weapons/grenade/tick1.wav"
+			OutputHaptic = "scripts/haptics/grenade_blip.hpt"
+			HapticNameEntry = "grenade_blip"
+		},
+		{
+			InputWav = "sounds/world/infestation/xen_grenade_blip.wav"
+			OutputHaptic = "scripts/haptics/xen_grenade_blip.hpt"
+			HapticNameEntry = "xen_grenade_blip"
+		},
+
+		// Pistol
+		{
+			InputWav = "sounds/weapons/pistol/pistol_fire2.wav"
+			OutputHaptic = "scripts/haptics/pistolfire.hpt"
+			HapticNameEntry = "PistolFire"
+		},
+		{
+			InputWav = "sounds/weapons/pistol/wpn_pistol_hopper_load_01.wav"
+			OutputHaptic = "scripts/haptics/pistolhoppertick.hpt"
+			HapticNameEntry = "PistolHopperTick"
+		},
+		{
+			InputWav = "sounds/weapons/pistol/wpn_pistol_hopper_load_complete_01.wav"
+			OutputHaptic = "scripts/haptics/pistolhoppercomplete.hpt"
+			HapticNameEntry = "PistolHopperComplete"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_clip_insert_01.wav"
+			OutputHaptic = "scripts/haptics/pistolclipin.hpt"
+			HapticNameEntry = "PistolClipIn"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_clip_release_01.wav"
+			OutputHaptic = "scripts/haptics/pistolclipout.hpt"
+			HapticNameEntry = "PistolClipOut"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_slide_lock_01.wav"
+			OutputHaptic = "scripts/haptics/pistolslidelock.hpt"
+			HapticNameEntry = "PistolSlideLock"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_close_slide_01.wav"
+			OutputHaptic = "scripts/haptics/pistolslideclose.hpt"
+			HapticNameEntry = "PistolSlideClose"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_no_ammo_01.wav"
+			OutputHaptic = "scripts/haptics/pistoldryfire.hpt"
+			HapticNameEntry = "PistolDryFire"
+		},
+		{
+			InputWav = "sounds/weapons/hl1_old/rifle_fullautobutton_1.wav"
+			OutputHaptic = "scripts/haptics/pistolburstselect.hpt"
+			HapticNameEntry = "PistolBurstSelect"
+		},
+		// Shotgun
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_fire_body_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunfire.hpt"
+			HapticNameEntry = "ShotgunFire"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_rack_back_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunslideback.hpt"
+			HapticNameEntry = "ShotgunSlideBack"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_rack_forward_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunslideforward.hpt"
+			HapticNameEntry = "ShotgunSlideForward"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_load_shell_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunloadshell.hpt"
+			HapticNameEntry = "ShotgunLoadShell"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_open_chamber_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunopenchamber.hpt"
+			HapticNameEntry = "ShotgunOpenChamber"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_close_chamber_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunclosechamber.hpt"
+			HapticNameEntry = "ShotgunCloseChamber"
+		},
+		{
+			InputWav = "sounds/weapons/shotgun/wpn_shotgun_foley_lever_stuck_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunslidebackempty.hpt"
+			HapticNameEntry = "ShotgunSlideBackEmpty"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/pistol_foley_slide_lock_01.wav"
+			OutputHaptic = "scripts/haptics/shotgunslidelock.hpt"
+			HapticNameEntry = "ShotgunSlideLock"
+		},
+		{
+			InputWav = "sounds/weapons/hl1_old/rifle_fullautobutton_1.wav"
+			OutputHaptic = "scripts/haptics/shotgunloadspeedloader.hpt"
+			HapticNameEntry = "ShotgunLoadSpeedloader"
+		},
+		{
+			InputWav = "sounds/weapons/hl1_old/shotgun/grenade_launcher1.wav"
+			OutputHaptic = "scripts/haptics/shotgunupgradelaunchgrenade.hpt"
+			HapticNameEntry = "ShotgunUpgradeLaunchGrenade"
+		},
+
+		// RapidFire
+		{
+			InputWav = "sounds/weapons/rapid_fire/wpn_rapid_fire_fire_head_01.wav"
+			OutputHaptic = "scripts/haptics/wpn_rapid_fire_fire_head_01.hpt"
+			HapticNameEntry = "RapidFire.SingleShot"
+		},
+		{
+			InputWav = "sounds/weapons/rapid_fire/wpn_rapid_fire_cartridge_remove_01.wav"
+			OutputHaptic = "scripts/haptics/wpn_rapid_fire_cartridge_remove_01.hpt"
+			HapticNameEntry = "RapidFire.RemovePowerCell"
+		},
+		{
+			InputWav = "sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_open_01.wav"
+			OutputHaptic = "scripts/haptics/wpn_rapid_fire_foley_clip_open_01.hpt"
+			HapticNameEntry = "RapidFire.OpenClipBay"
+		},
+		{
+			InputWav = "sounds/weapons/ar2/ar2_altfire.wav"
+			OutputHaptic = "scripts/haptics/ar2_altfire.hpt"
+			HapticNameEntry = "RapidFire.LastShot"
+		},
+		{
+			InputWav = "sounds/weapons/ar2/ar2_empty.wav"
+			OutputHaptic = "scripts/haptics/ar2_empty.hpt"
+			HapticNameEntry = "RapidFire.EmptyPowerCellDryFire"
+		},
+		{
+			InputWav = "sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_insert_01.wav"
+			OutputHaptic = "scripts/haptics/wpn_rapid_fire_foley_clip_insert_01.hpt"
+			HapticNameEntry = "RapidFire.ReplaceCapsules"
+		},
+		{
+			InputWav = "sounds/weapons/rapid_fire/wpn_rapid_fire_foley_clip_close_01.wav"
+			OutputHaptic = "scripts/haptics/wpn_rapid_fire_foley_clip_close_01.hpt"
+			HapticNameEntry = "RapidFire.CloseClipBay"
+		},
+		{
+			InputWav = "sounds/weapons/ar2/ar2_reload_rotate.wav"
+			OutputHaptic = "scripts/haptics/ar2_reload_rotate.hpt"
+			HapticNameEntry = "RapidFire.CantCyclePowerCell"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/eblaster_screw_in_laser_pod_01.wav"
+			OutputHaptic = "scripts/haptics/eblaster_screw_in_laser_pod_01.hpt"
+			HapticNameEntry = "RapidFire.ClusterExplodeButtonReady"
+		},
+		{
+			InputWav = "sounds/weapons/energy_pistol/eblaster_blast_fire_01.wav"
+			OutputHaptic = "scripts/haptics/eblaster_blast_fire_01.hpt"
+			HapticNameEntry = "RapidFire.ClusterExplodeButtonPressed"
+		},
+	]
+}

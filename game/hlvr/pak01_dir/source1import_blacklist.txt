@@ -1,0 +1,160 @@
+// These are files from the source1 model that will are fail to import\resourcecompile after import
+// or we want to filter out of importing
+// The importer can accept this and not try to import the bad asset by adding it to this list
+
+// "exception" is a special key to mark explicit files as exceptions for the rule. This is used usually when we are importing a mod specific file to a new general name (e.g. surfaceproperties_left4dead.txt -> surfaceproperties.vsurf )
+
+"blacklist"
+{
+	// These are the asset file types we are blacklisting.
+	// If you want to blacklist other asset types, put its extention here as a type, and make its key the extension.
+	// key "mdlnovpram" = import all mdl files needed, but don't write a vpram. This is useful for vprams that have been fixed at a higher level but the imported vpram will not resourcecompile
+	"assettype"	"mdl"
+	"assettype"	"vmt"
+	"assettype"	"vmf"
+	"assettype"	"txt"
+	"assettype"	"nut"
+	"assettype"	"wav"
+	// used by mdls to import. we don't import these explicitly.
+	"assettype"	"ani"
+	"assettype"	"phy"
+	"assettype"	"vtx"
+	"assettype"	"vvd"
+	// used by vmt to import. we don't import these explicitly
+	"assettype"	"vtf"
+	// ignore any minidumps laying around.
+	"assettype"	"mdmp" 
+	"assettype"	"fgd"
+	"assettype"	"bsp"
+	"assettype"	"vmf"
+	"assettype"	"vmx"
+	"assettype"	"gnv"
+	"assettype"	"vmm_prefs"
+	"assettype"	"bin"
+	"assettype"	"log"
+	"assettype"	"prt"
+	"assettype"	"obj"
+	"assettype"	"bak"
+
+	
+
+	// we don't import these explicity. They are handled by importing a mdl
+	"ani"	"\models\" 
+	"phy"	"\models\" 
+	"vvd"	"\models\" 
+	"vtx"	"\models\" 
+
+	// we don't import these explicity. They are handled by importing a vmt
+	"vtf"	".vtf" 
+
+	// ignore any minidumps laying around.
+	"mdmp"	".mdmp"
+
+	// ignores
+	"fgd"	".fgd" 
+	"bsp"	".bsp"
+	
+	
+	"vmx"	".vmx"  // dunno what this is.
+	"gnv"	".gnv"  // dunno what this is.
+	"vmm_prefs"	".vmm_prefs"  // dunno what this is.
+	"bin"	".bin"  
+	"log"	".log"  
+	"prt"	".prt" 
+	"obj"	".obj" 
+	"bak"	".bak"
+
+	// don't import source2 wavs sitting in source 1 (source1 had no 'sounds' dir, it was 'sound')
+	"wav"	"\sounds\" 
+
+	// we don't want to import
+	"mdl"	"models\hybridphysx\"	
+	"vmt"	"materials\models\hybridphysx\"
+
+	// Source 2 has its own debug\dev\editor models
+	"mdl"	"models\editor\" 
+	"vmt"	"materials\models\editor\" 
+
+	// Source 2 has its own debug\dev\editor materials
+	"vmt"	"materials\debug\"
+	"vmt"	"materials\editor\" 
+	"vmt"	"materials\dev\"
+	"vmt"	"materials\tools\"
+
+	// Maps 
+	// directories we don't want to import
+	"vmf"	"maps\personal\"
+	"vmf"	"maps\roughshells\"
+	"vmf"	"maps\styleguides\"
+	"vmf"	"maps\unused\"
+	"vmf"	"maps\work\"
+
+	// we don't import surfaceproperties files, the exception file is imports as surfaceproperties.vsurf
+	"txt"	"surfaceproperties_"
+	// This is a MOD specific file. Put the name of the surfaceproperties file you want to use here.
+	"exception"	"surfaceproperties_dota.txt" 
+
+	//  we don't import this file: TODO: dest mod needs an empty one of this in its game dir.
+	"txt"	"addonlist.txt" 
+
+	// TODO: importing this means changing a cpp file
+	"txt"	"scripts\weapon_manifest.txt" 
+
+	"txt"	"gameinfo.txt"
+
+
+	// Models
+	"mdl"	"models\props_wasteland\bridge_railing.mdl" // this model has a old PHY file that the S2 PHY reader can't handle, but we don't have PHY blacklist support so I'm just disabling the whole model for now
+
+	// Vmts
+	// Importer will look for source .tga\psd. If it is not there it will extract .tgas from the .vtf
+
+
+	// base (include) for other materials
+
+	// Specific to how L4D2/Source works, invalid for Source2
+	"vmt"	"materials\engine\additivevertexcolorvertexalpha.vmt" 
+	"vmt"	"materials\engine\colorcorrection.vmt"
+	"vmt"	"materials\engine\depthwritealphatest.vmt"
+	"vmt"	"materials\engine\depthwritemodel.vmt"
+	"vmt"	"materials\engine\depthwritemodelalphatest.vmt"
+	"vmt"	"materials\engine\filmdust.vmt"
+	"vmt"	"materials\engine\filmgrain.vmt"
+	"vmt"	"materials\engine\framesync.vmt"
+	"vmt"	"materials\engine\lightshaft.vmt"
+	"vmt"	"materials\engine\modulatesinglecolor.vmt"
+	"vmt"	"materials\engine\preloadtexture.vmt"
+	"vmt"	"materials\engine\renderdeferredshadow.vmt"
+	"vmt"	"materials\engine\renderdeferredsimpleshadow.vmt"
+	"vmt"	"materials\engine\shadowbuild.vmt"
+	"vmt"	"materials\engine\singlecolor.vmt"
+	"vmt"	"materials\engine\vmtview_background.vmt"
+	"vmt"	"materials\engine\volumetricfog.vmt"
+	"vmt"	"materials\engine\writestencil.vmt"
+	"vmt"	"materials\engine\writez.vmt"
+	"vmt"	"materials\tools\toolsskyfog.vmt"
+	"vmt"	"materials\decals\rendershadow.vmt"
+	"vmt"	"materials\decals\rendermodelshadow.vmt"
+	"vmt"	"materials\decals\simpleshadow.vmt"
+
+	"pcf"	"combineball" // this doesn't appear to be a particle system...
+
+	// TODO: "ConvertVTFtoSources: using faces" vmt has faces.
+	// None found in src1. If any were found TODO: add support 
+
+	// "ConvertVTFtoSources: cubemap found" vmt  cubemap.
+	// None found in src1. If any were found TODO: add support
+
+	// "ConvertVTFtoSources: found depth" vmt has depth.
+	// None found in src1. If any were found we would blacklist them and remake for src2.
+
+	"contentblacklist"
+	{
+		// Importer will look for source tga\psd. If it is not there it will extract .tgas from the .vtf
+		// You can blacklist content tga/psds. This is useful when the checked in content does not match what is in the compiled vtf and you want the importer to use the compiled one instead.
+		// A blacklisted content file does not apply a file filter when calling from the command line (we only import assets from the game dir)
+		// It comes into play when the importer tries to find the source content internally.
+		// This is very basic, you must use a full relative path with extension here
+		// This is not supported for other asset types than tga\psd.
+	}
+}

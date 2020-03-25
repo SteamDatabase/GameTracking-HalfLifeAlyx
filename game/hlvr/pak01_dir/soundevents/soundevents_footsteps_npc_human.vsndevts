@@ -1,0 +1,272 @@
+{
+	Step_Human.Base = 
+	{
+		type = "hlvr_footstep_npc"
+		volume_mult_step = 0.900000
+		walkspeed_max = 0.900000
+		limiter_on = 1.000000
+		limiter_max = 1.000000
+		limiter_match_entity = 1.000000
+		limiter_match_event = 1.000000
+		limiter_stop_oldest = false
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.800000
+		mixgroup = "NPC_Footsteps"
+		use_foley_layer = 1.000000
+		volume_mult_foley_layer = 0.400000
+		use_foley_falloff = 1.000000
+		foley_falloff_max = 200.000000
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+		vsnd_files_foley_layer = 
+		[
+			"sounds/npc/shared/shared_foley_step_01.vsnd",
+			"sounds/npc/shared/shared_foley_step_02.vsnd",
+			"sounds/npc/shared/shared_foley_step_03.vsnd",
+			"sounds/npc/shared/shared_foley_step_04.vsnd",
+			"sounds/npc/shared/shared_foley_step_05.vsnd",
+			"sounds/npc/shared/shared_foley_step_06.vsnd",
+			"sounds/npc/shared/shared_foley_step_07.vsnd",
+			"sounds/npc/shared/shared_foley_step_08.vsnd",
+			"sounds/npc/shared/shared_foley_step_09.vsnd",
+		]
+	}
+	Step_Human.Default = 
+	{
+		base = "Step_Human.Base"
+	}
+	Step_Human.Concrete = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+	}
+	Step_Human.Dirt = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_01.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_02.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_03.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_04.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_05.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_06.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_07.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_08.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_09.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_10.vsnd",
+			"sounds/physics/footsteps/shared/dirt/shared_dirt_step_11.vsnd",
+		]
+	}
+	Step_Human.Gravel = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_01.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_02.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_03.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_04.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_05.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_06.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_07.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_08.vsnd",
+			"sounds/physics/footsteps/shared/gravel/shared_gravel_step_09.vsnd",
+		]
+	}
+	Step_Human.Metal_Solid = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_08.vsnd",
+		]
+	}
+	Step_Human.Metal_Walkway = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_08.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_09.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_10.vsnd",
+		]
+	}
+	Step_Human.Wood = 
+	{
+		base = "Step_Human.Base"
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_01.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_02.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_03.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_04.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_05.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_06.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_07.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_08.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_09.vsnd",
+			"sounds/physics/footsteps/shared/wood/shared_wood_step_10.vsnd",
+		]
+	}
+	Step_Human.Manual_Default = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_01.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_02.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_03.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_04.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_05.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_06.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_07.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_08.vsnd",
+			"sounds/physics/footsteps/shared/concrete/shared_concrete_step_09.vsnd",
+		]
+	}
+	Step_Eli_Prosthetic.Default = 
+	{
+		base = "Step_Human.Base"
+		volume_mult_step = 0.800000
+		vsnd_files_step = 
+		[
+			"sounds/physics/footsteps/eli_prosthetic/default_01.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_02.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_03.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_04.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_05.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_06.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_07.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_08.vsnd",
+			"sounds/physics/footsteps/eli_prosthetic/default_09.vsnd",
+		]
+	}
+	Step_Scripted.Larry_Catwalk = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_08.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_09.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_10.vsnd",
+		]
+	}
+	Step_Scripted.Larry_Catwalk_Subtle = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.450000
+		pitch = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.700000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_08.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_09.vsnd",
+			"sounds/physics/footsteps/shared/metal_walkway/shared_metal_walkway_step_10.vsnd",
+		]
+	}
+	Step_Scripted.Larry_Metal_Solid = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.600000
+		use_hrtf = 1.000000
+		mixgroup = "NPC_Footsteps"
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_01.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_02.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_03.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_04.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_05.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_06.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_07.vsnd",
+			"sounds/physics/footsteps/shared/metal_solid/shared_metal_solid_step_08.vsnd",
+		]
+	}
+	Step_Scripted.Larry_Metal_Solid_Subtle = 
+	{
+		base = "Step_Scripted.Larry_Metal_Solid"
+		volume = 0.500000
+		pitch = 0.900000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.700000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+	}
+}

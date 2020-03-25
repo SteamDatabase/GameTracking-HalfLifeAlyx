@@ -1,0 +1,632 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	holo_hacking_puzzle_difficulty_values =
+	[
+		{
+			m_strHackDifficultyName = "First"
+
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.0
+			m_flPointsDifficultyMax = 0.0
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = false
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.0
+
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 0
+
+			// Point Match
+			m_nPairCount = 3
+			m_nMaxFails = 0
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+
+			// Point Drag
+			m_flDragLengthMin = 6.0
+			m_flDragLengthMax = 6.0
+			m_nNumCirclesAhead = -1
+			m_flFuseSpeed = 0.0
+		},
+		{
+			m_strHackDifficultyName = "Easy"
+
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.4
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 1.0
+			m_flPointMoveSpeed = 0.5
+
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+
+			// Point Match
+			m_nPairCount = 4
+			m_nMaxFails = 8
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+
+			// Point Drag
+			m_flDragLengthMin = 6.0
+			m_flDragLengthMax = 8.0
+			m_nNumCirclesAhead = -1
+			m_flFuseSpeed = 1.0
+		},
+		{
+			m_strHackDifficultyName = "Medium"
+
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.5
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.7
+
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+
+			// Point Match
+			m_nPairCount = 4
+			m_nMaxFails = 6
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+
+			// Point Drag
+			m_flDragLengthMin = 7.0
+			m_flDragLengthMax = 9.0
+			m_nNumCirclesAhead = 2
+			m_flFuseSpeed = 2.0
+		},
+		{
+			m_strHackDifficultyName = "Hard"
+
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.5
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 1.0
+
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 1
+
+			// Point Match
+			m_nPairCount = 5
+			m_nMaxFails = 8
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+
+			// Point Drag
+			m_flDragLengthMin = 8.0
+			m_flDragLengthMax = 10.0
+			m_nNumCirclesAhead = 1
+			m_flFuseSpeed = 3.0
+		},
+		{
+			m_strHackDifficultyName = "VeryHard"
+
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 4
+			m_flTrailTime = 2.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = -1.0
+			m_flPointMoveSpeed = 1.0
+
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 1
+
+			// Point Match
+			m_nPairCount = 6
+			m_nMaxFails = 10
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+
+			// Point Drag
+			m_flDragLengthMin = 10.0
+			m_flDragLengthMax = 12.0
+			m_nNumCirclesAhead = 0
+			m_flFuseSpeed = 3.0
+		},
+		{
+			m_strHackDifficultyName = "a2_quarantine_entrance_locker_1"
+			// Shield building battery - First hack in the game.
+			// #1
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.0
+			m_flPointsDifficultyMax = 0.0
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = false
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a2_pistol_crafting_station_1"
+			// Inside station locker room. - First crafting station in the game.
+			// #1
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a2_headcrabs_tunnel_crafting_station_1"
+			// Inside toner puzzle room.
+			// #2
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a2_drainage_combine_door_1"
+			// First combine door hack in the game.
+			// #1
+			// Point Match
+			m_nPairCount = 4
+			m_nMaxFails = 0
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a2_train_yard_crafting_station_1"
+			// Inside toner puzzle room.
+			// #3
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a2_train_yard_combine_console_1"
+			// In train control room
+			// #4
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a2_train_yard_combine_door_1"
+			// Near the exit of the map.
+			// #2
+			// Point Match
+			m_nPairCount = 4
+			m_nMaxFails = 6
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_station_street_locker_1"
+			// First Barnacle hallway. Grenades.
+			// #2
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.4
+			m_flPointsDifficultyMax = 0.6
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = false
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_station_street_locker_2"
+			// In room with vent grenade puzzle. Infinite grenades.
+			// #3
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = false
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_station_street_crafting_station_1"
+			// After vent grenade puzzle.
+			// #5
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a3_station_street_locker_4"
+			// Inside toner puzzle area. Horizontal. Grenades + shotgun.
+			// #4
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.8
+			m_flPointsDifficultyMax = 1.0
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = false
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_lobby_basement_locker_1"
+			// Inside toner room. Health + pistol + grenade.
+			// #5
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.3
+			m_flPointsDifficultyMax = 0.4
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 1.0
+			m_flPointMoveSpeed = 0.3
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_door_1"
+			// Near the start of the map.
+			// #3
+			// Point Match
+			m_nPairCount = 5
+			m_nMaxFails = 8
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_locker_1"
+			// In the pit. Health + pistol.
+			// #6
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.4
+			m_flPointsDifficultyMax = 0.6
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.4
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_door_2"
+			// Optional. Opens room with crafting station.
+			// #4
+			// Point Match
+			m_nPairCount = 6
+			m_nMaxFails = 12
+			m_bDiscEnabled = true
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_crafting_station_1"
+			// Optional. Behind hackable door.
+			// #6
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 5
+			m_nNumPortalPoints = 1
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_locker_2"
+			// Near end of map. Ammo + Resin.
+			// #7
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.3
+			m_flPointsDifficultyMax = 0.4
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.4
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_interior_rooftop_locker_1"
+			// Inside rapidfire room. Rapidfire.
+			// #8
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.5
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.5
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_interior_rooftop_locker_2"
+			// Before reviver fight. Health + all ammo + grenade.
+			// #9
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.5
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.7
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_interior_rooftop_locker_3"
+			// Before reviver fight. All ammo.
+			// #10
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.5
+			m_flPointsDifficultyMax = 0.7
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 0.7
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.5
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_interior_rooftop_locker_4"
+			// After reviver fight. Pistol + Rapidfire.
+			// #11
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.5
+			m_flPointMoveSpeed = 0.5
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_street_locker_1"
+			// At the start of the map. Pistol + Rapidfire + Health.
+			// #12
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.4
+			m_flPointsDifficultyMax = 0.6
+			m_nNumValidPointsRequired = 4
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.7
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_street_crafting_station_1"
+			// Optional. Inside subway exit building. Gated by toner puzzle.
+			// #7
+			// Point Search
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 1
+		},
+		{
+			m_strHackDifficultyName = "a3_c17_processing_plant_crafting_station_1"
+			// Near the start of the map.
+			// #8
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 1
+		},
+		{
+			m_strHackDifficultyName = "a3_c17_processing_plant_locker_1"
+			// Inside factory. Health + grenade.
+			// #13
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.8
+		},
+		{
+			m_strHackDifficultyName = "a3_c17_processing_plant_locker_2"
+			// In construction yard. Horizontal. Health + grenades.
+			// #14
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.6
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.5
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.4
+		},
+		{
+			m_strHackDifficultyName = "a3_c17_processing_plant_crafting_station_2"
+			// After shack toner puzzle.
+			// #9
+			// Point Search
+			m_nCoreCount = 3
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a3_c17_processing_plant_locker_3"
+			// After shack toner puzzle. Horizontal. Battery.
+			// #15
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.7
+			m_flPointsDifficultyMax = 0.9
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 0.5
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.8
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_zoo_crafting_station_1"
+			// Near the start of the map.
+			// #10
+			// Point Search
+			m_nCoreCount = 2
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 1
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_tanker_yard_crafting_station_1"
+			// After trip mine & exploding barrel room.
+			// #11
+			// Point Search
+			m_nCoreCount = 4
+			m_nOuterPointCount = 2
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_tanker_yard_locker_1"
+			// Before ladder to bridge crank. Pistol + Rapidfire + Health.
+			// #16
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.0
+			m_flPointsDifficultyMax = 0.0
+			m_nNumValidPointsRequired = 4
+			m_flTrailTime = 3.5
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = -1.0
+			m_flPointMoveSpeed = 0.2
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_water_tower_locker_1"
+			// Before platform pit. Rapidfire + Resin.
+			// #17
+			// Sphere Trace
+			m_flPointsDifficultyMin = 1.0
+			m_flPointsDifficultyMax = 1.0
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = -1.0
+			m_flPointMoveSpeed = 1.0
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_water_tower_crafting_station_1"
+			// #12
+			// Point Search
+			m_nCoreCount = 3
+			m_nOuterPointCount = 3
+			m_nNumPortalPoints = 1
+		},
+		{
+			m_strHackDifficultyName = "a4_c17_parking_garage_locker_1"
+			// In the destroyed section before the elevator. Resin.
+			// #18
+			// Sphere Trace
+			m_flPointsDifficultyMin = 0.7
+			m_flPointsDifficultyMax = 0.9
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = -1.0
+			m_flPointMoveSpeed = 0.8
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_combine_console_hack_preview"
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_crafting_station_hack_preview"
+			m_nCoreCount = 1
+			m_nOuterPointCount = 4
+			m_nNumPortalPoints = 0
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_combine_door_hack_preview"
+			m_nPairCount = 1
+			m_nMaxFails = 4
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_switch_box_hack_preview"
+			m_nPairCount = 1
+			m_nMaxFails = 4
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_locker_hack_preview"
+			m_flPointsDifficultyMin = 0.3
+			m_flPointsDifficultyMax = 0.6
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 1.0
+			m_flPointMoveSpeed = 0.3
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_back_wall_locker_1"
+			m_flPointsDifficultyMin = 0.2
+			m_flPointsDifficultyMax = 0.6
+			m_nNumValidPointsRequired = 2
+			m_flTrailTime = 0.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 1.0
+			m_flPointMoveSpeed = 0.3
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_back_wall_locker_2"
+			m_flPointsDifficultyMin = 0.5
+			m_flPointsDifficultyMax = 0.8
+			m_nNumValidPointsRequired = 3
+			m_flTrailTime = 1.5
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = 0.0
+			m_flPointMoveSpeed = 0.3
+		},
+		{
+			m_strHackDifficultyName = "holo_hacking_test_back_wall_locker_3"
+			m_flPointsDifficultyMin = 1.0
+			m_flPointsDifficultyMax = 1.0
+			m_nNumValidPointsRequired = 6
+			m_flTrailTime = 2.0
+			m_bMoveInvalidPoints = true
+			m_flPointMoveDelay = -1.0
+			m_flPointMoveSpeed = 0.3
+		},
+		{
+			m_strHackDifficultyName = "a3_hotel_underground_pit_door_1_trailer"
+			// Near the start of the map.
+			// #2
+			// Point Match
+			m_nPairCount = 3
+			m_nMaxFails = 6
+			m_bDiscEnabled = false
+			m_bRotateDisc = false
+			m_flDiscRotateMinTime = 0.0
+			m_flDiscRotateMaxTime = 0.0
+		},
+	]
+}

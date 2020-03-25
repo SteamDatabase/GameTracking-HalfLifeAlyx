@@ -1,0 +1,45 @@
+.MessageTitle
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+
+	font-family: Raju;
+	font-weight: semi-bold;
+    color: #666159;
+    font-size: 180px;
+	text-align: center;
+
+	flow-children: down;
+}
+
+.SubjectText
+{
+	horizontal-align: left;
+	text-align: left;
+	margin-top: 0px;
+	opacity: 1;
+
+	flow-children: right;
+
+	transition-property: opacity; 
+	transition-duration: 2s; 
+}
+
+.SubjectText Label
+{
+	text-align: left;
+}
+
+.SubjectText Label.emphasis
+{
+	color: #000;
+}
+
+.FadeOut .SubjectText,
+{
+	opacity: 0;
+	transition-property: opacity; 
+	transition-duration: 1s; 
+}

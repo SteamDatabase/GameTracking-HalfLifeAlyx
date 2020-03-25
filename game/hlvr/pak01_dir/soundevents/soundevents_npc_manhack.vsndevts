@@ -1,0 +1,370 @@
+{
+	NPC_Manhack.Announce_Alarm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.850000
+		volume_falloff_min = 1000.000000
+		volume_falloff_max = 5000.000000
+		pitch_rand_min = -0.020000
+		pitch_rand_max = 0.020000
+		use_hrtf = 1.000000
+		spread_min = 10.000000
+		spread_max = 1000.000000
+		occlusion_scale = 0.000000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/announce_alarm.vsnd"
+	}
+	NPC_Manhack.Unpack = 
+	{
+		type = "hlvr_default_3d"
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3000.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.200000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/deploy.vsnd"
+	}
+	Manhack.Deploy = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Manhack.Unpack"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Manhack.Announce_Alarm"
+		use_02 = 1.000000
+	}
+	Manhack.Retract = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		occlusion_scale = 0.200000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/retract.vsnd"
+	}
+	NPC_Manhack.Die = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Manhack.Die_Explode"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Manhack.Die_Warble"
+		use_02 = 1.000000
+		soundevent_03 = "NPC_Manhack.Die_Sparks"
+		use_03 = 1.000000
+	}
+	NPC_Manhack.Die_Explode = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		use_hrtf = 1.000000
+		use_distance_delay = 1.000000
+		occlusion_scale = 0.200000
+		volume_falloff_min = 400.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/death_explode_01.vsnd",
+			"sounds/npc/manhack/death_explode_02.vsnd",
+		]
+	}
+	NPC_Manhack.Die_Warble = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		delay = 0.400000
+		volume_falloff_max = 600.000000
+		distance_max = 601.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/death_warbling_01.vsnd",
+			"sounds/npc/manhack/death_warbling_02.vsnd",
+			"sounds/npc/manhack/death_warbling_03.vsnd",
+			"sounds/npc/manhack/death_warbling_04.vsnd",
+		]
+	}
+	NPC_Manhack.Die_Sparks = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		use_hrtf = 1.000000
+		delay_rand_min = 0.200000
+		delay_rand_max = 0.500000
+		volume_falloff_max = 800.000000
+		distance_max = 801.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/world/sparks/spark_short_01.vsnd",
+			"sounds/world/sparks/spark_short_02.vsnd",
+			"sounds/world/sparks/spark_short_03.vsnd",
+			"sounds/world/sparks/spark_short_04.vsnd",
+			"sounds/world/sparks/spark_short_05.vsnd",
+			"sounds/world/sparks/spark_short_06.vsnd",
+			"sounds/world/sparks/spark_short_07.vsnd",
+			"sounds/world/sparks/spark_short_08.vsnd",
+			"sounds/world/sparks/spark_short_09.vsnd",
+			"sounds/world/sparks/spark_short_10.vsnd",
+			"sounds/world/sparks/spark_short_11.vsnd",
+			"sounds/world/sparks/spark_short_12.vsnd",
+			"sounds/world/sparks/spark_short_13.vsnd",
+			"sounds/world/sparks/spark_short_14.vsnd",
+		]
+	}
+	NPC_Manhack.Bat = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/bat_away.vsnd"
+	}
+	NPC_Manhack.Slice = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		occlusion_radius = 20.000000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/slice_flesh_01.vsnd",
+			"sounds/npc/manhack/slice_flesh_02.vsnd",
+			"sounds/npc/manhack/slice_flesh_03.vsnd",
+			"sounds/npc/manhack/slice_flesh_04.vsnd",
+			"sounds/npc/manhack/slice_flesh_05.vsnd",
+			"sounds/npc/manhack/slice_flesh_06.vsnd",
+		]
+	}
+	NPC_Manhack.Grind = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		occlusion_scale = 0.700000
+		occlusion_radius = 60.000000
+		volume_falloff_max = 700.000000
+		distance_max = 701.000000
+		use_hrtf = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/grind_01.vsnd",
+			"sounds/npc/manhack/grind_02.vsnd",
+			"sounds/npc/manhack/grind_03.vsnd",
+			"sounds/npc/manhack/grind_04.vsnd",
+			"sounds/npc/manhack/grind_05.vsnd",
+			"sounds/npc/manhack/grind_06.vsnd",
+			"sounds/npc/manhack/grind_07.vsnd",
+			"sounds/npc/manhack/grind_08.vsnd",
+			"sounds/npc/manhack/grind_09.vsnd",
+			"sounds/npc/manhack/grind_10.vsnd",
+			"sounds/npc/manhack/grind_11.vsnd",
+			"sounds/npc/manhack/grind_12.vsnd",
+		]
+	}
+	NPC_Manhack.EngineNoise = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		occlusion_scale = 0.900000
+		occlusion_radius = 20.000000
+		volume_falloff_min = 100.000000
+		volume_falloff_max = 1000.000000
+		distance_max = 1001.000000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/mh_blade_snick1.vsnd"
+	}
+	NPC_Manhack.EngineSound1 = 
+	{
+		type = "hlvr_default_3d"
+		should_pause = 1.000000
+		use_hrtf = 1.000000
+		volume = 1.200000
+		volume_fade_out = 0.500000
+		volume_fade_in = 0.500000
+		occlusion_scale = 0.900000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1500.000000
+		cull_at_distance = 2001.000000
+		use_doppler = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/loop_engine_01.vsnd"
+	}
+	NPC_Manhack.EngineSound2 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Manhack.EngineSound2_Close"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Manhack.EngineSound2_Mid"
+		use_02 = 1.000000
+		soundevent_03 = "NPC_Manhack.EngineSound2_Mid_Synth"
+		use_03 = 1.000000
+		soundevent_04 = "NPC_Manhack.EngineSound2_Legacy"
+		use_04 = 1.000000
+	}
+	NPC_Manhack.EngineSound2_Close = 
+	{
+		type = "hlvr_default_3d"
+		should_pause = 1.000000
+		use_hrtf = 1.000000
+		volume = 1.200000
+		volume_fade_out = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 150.000000
+		cull_at_distance = 800.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 60.000000
+		volume_fade_in = 0.500000
+		use_doppler = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/loop_close_01.vsnd",
+			"sounds/npc/manhack/loop_close_02.vsnd",
+		]
+	}
+	NPC_Manhack.EngineSound2_Mid = 
+	{
+		type = "hlvr_default_3d"
+		should_pause = 1.000000
+		use_hrtf = 1.000000
+		volume = 0.850000
+		volume_fade_out = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		cull_at_distance = 1000.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 60.000000
+		mixgroup = "Manhacks"
+		delay_rand_min = 0.100000
+		delay_rand_max = 0.400000
+		volume_fade_in = 0.500000
+		use_doppler = 1.000000
+		vsnd_files = "sounds/npc/manhack/loop_mid.vsnd"
+	}
+	NPC_Manhack.EngineSound2_Mid_Synth = 
+	{
+		type = "hlvr_default_3d"
+		should_pause = 1.000000
+		use_hrtf = 1.000000
+		volume = 0.800000
+		volume_fade_out = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 400.000000
+		cull_at_distance = 1000.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 60.000000
+		mixgroup = "Manhacks"
+		delay_rand_min = 0.100000
+		delay_rand_max = 0.400000
+		volume_fade_in = 0.500000
+		use_doppler = 1.000000
+		vsnd_files = "sounds/npc/manhack/loop_mid_synth.vsnd"
+	}
+	NPC_Manhack.EngineSound2_Legacy = 
+	{
+		type = "hlvr_default_3d"
+		should_pause = 1.000000
+		use_hrtf = 1.000000
+		volume = 1.200000
+		volume_fade_out = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 800.000000
+		cull_at_distance = 1000.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 60.000000
+		mixgroup = "Manhacks"
+		delay_rand_min = 0.100000
+		delay_rand_max = 0.400000
+		volume_fade_in = 0.500000
+		use_doppler = 1.000000
+		vsnd_files = "sounds/npc/manhack/loop_engine_02.vsnd"
+	}
+	NPC_Manhack.BladeSound = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		distance_max = 401.000000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.900000
+		occlusion_radius = 20.000000
+		mixgroup = "Manhacks"
+	}
+	NPC_Manhack.ChargeAnnounce = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Manhack.ChargeAnnounce_Blades"
+		use_01 = 1.000000
+		soundevent_02 = "NPC_Manhack.ChargeAnnounce_Power"
+		use_02 = 1.000000
+	}
+	NPC_Manhack.ChargeAnnounce_Blades = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.500000
+		use_hrtf = 1.000000
+		mixgroup = "Manhacks"
+		volume_falloff_min = 400.000000
+		distance_max = 1001.000000
+		occlusion_scale = 0.900000
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/charge_announce_01.vsnd",
+			"sounds/npc/manhack/charge_announce_02.vsnd",
+			"sounds/npc/manhack/charge_announce_03.vsnd",
+		]
+	}
+	NPC_Manhack.ChargeAnnounce_Power = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		use_hrtf = 1.000000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.050000
+		delay = 0.250000
+		occlusion_scale = 1.000000
+		distance_max = 1001.000000
+		use_doppler = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/charge_power_01.vsnd",
+			"sounds/npc/manhack/charge_power_02.vsnd",
+			"sounds/npc/manhack/charge_power_03.vsnd",
+		]
+	}
+	NPC_Manhack.ChargeEnd = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.900000
+		delay = 0.500000
+		occlusion_scale = 1.000000
+		distance_max = 1001.000000
+		use_doppler = 1.000000
+		mixgroup = "Manhacks"
+		vsnd_files = 
+		[
+			"sounds/npc/manhack/charge_end_01.vsnd",
+			"sounds/npc/manhack/charge_end_02.vsnd",
+			"sounds/npc/manhack/charge_end_03.vsnd",
+		]
+	}
+	NPC_Manhack.Stunned = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.700000
+		occlusion_scale = 0.900000
+		mixgroup = "Manhacks"
+		vsnd_files = "sounds/npc/manhack/stunned.vsnd"
+	}
+}

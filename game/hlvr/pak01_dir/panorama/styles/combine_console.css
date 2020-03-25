@@ -1,0 +1,263 @@
+/* styles for the crafting station */
+
+.RootPanel {
+}
+
+.RootPanel .CombineConsole {
+}
+
+.IsDormant.CombineConsole  {
+	width: 100%;
+	height: 0%;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	transition-property: height;
+	transition-duration: .75s;
+}
+
+.CombineConsole{
+	width: 100%;
+	height: 100%;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+}
+
+
+.IsDormant.CombineConsole.Foreground{
+	opacity: 0;
+}
+
+.CombineConsole.Foreground{
+	background-color: #ffed5700;
+	opacity: 1;
+	box-shadow: inset #ffed5722 10px 10px 20px 20px;
+	
+	/* blue */
+	box-shadow: inset #3fcaed22 10px 10px 20px 20px;
+	
+	transition-property: opacity;
+    transition-delay: .75s;
+    transition-duration: .75s;
+	transition-timing-function: ease-in-out;	
+}
+
+.IsDormant.CombineConsole.Background{
+	opacity: 0;
+	height: 0%;
+}
+
+.CombineConsole.Background{
+	opacity: 1; 
+	height: 100%;
+	blur: gaussian(2);
+    box-shadow: inset #ffed5733 10px 10px 20px 20px;
+	/* blue */
+	box-shadow: inset #3fcaed18 10px 10px 20px 20px;
+	
+	
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5766 ), color-stop( 0.97, #ffed5711 ), to( #f4d71433 ) );
+	
+	/* Temp background-color, revert once blue combine screen is updated */
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #000000ef ), color-stop( 0.97, #4f3400 ), to( #d9b800 ) );
+	
+	/* blue */
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #000000ef ), color-stop( 0.97, #002d4f ), to( #00b3d9 ) );
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #0b1113fc ), color-stop( 0.97, #002d4f ), to( #00b3d9 ) );
+	
+	
+	transition-property: opacity, height;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+	transition-timing-function: ease-in-out;	
+}
+
+#corner_brackets
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/game_menu_ui/corner_brackets_psd.vtex");
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	wash-color: #ffc600; 
+	
+	/* blue */
+	wash-color: #00f0ff; 
+	opacity: .28; 
+}
+
+
+#ConsoleInterior {
+    width: 100%;
+	height: 100%;
+    opacity: 1;
+    animation-name: DelayApperanceAnimationInterior;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'DelayApperanceAnimationInterior' 
+{
+	0%
+	{
+		opacity: 0; 
+	}
+	
+	80%
+	{
+		opacity: 0; 
+	}
+	
+	100%
+	{
+		opacity: 1; 
+	}
+}
+
+#CombineConsoleTitle {
+    font-size: 20px;
+    text-align: right;
+	
+	color: #ffffff;
+	wash-color: #ffe954;
+	
+	/* blue */
+	wash-color: #54fff9;
+	
+    width: 100%;
+    margin-top: 5px;
+	text-transform: uppercase; 
+	font-family: vt323;
+	font-weight: medium;
+	text-shadow: 0px 0px 10px 3 #f4ec8e11;
+	padding-right: 15px; 
+	padding-top: 8px;
+	overflow: noclip; 
+	
+	animation-name: TextMotionFlicker;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+}
+
+@keyframes 'TextMotionFlicker' 
+{
+	0%
+	{
+		brightness: 2; 
+	}
+	50%
+	{
+		brightness: 4; 
+
+	}
+	100%
+	{
+		brightness: 2; 
+	}
+}	
+
+#scan_line_mask
+{
+	width: 100%;
+	height: 100%; 
+	opacity-mask: url("s2r://panorama/images/upgrade_station_ui/upgrade_station_type_mask_psd.vtex");
+}
+
+#PanelContents{
+	width: 100%;
+	height: 100%;
+}
+
+.Background #PanelContents{
+	opacity: .05;
+}
+
+.FlowRightTextContainer {
+    margin-top: 20px;
+    width: fit-children;
+    height: fit-children;
+    flow-children: right;
+    horizontal-align: center;
+}
+
+.row
+{
+	width: 100%;
+	flow-children: right;
+	horizontal-align: center; 
+}
+
+.row Button
+{
+	width: 50%;
+	
+}
+
+#CombineConsole Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #002d4f;
+	margin-top: 0px;
+	overflow: noclip;
+    horizontal-align: center;
+    vertical-align: center; 
+    color: #ffe954;
+} 
+
+Button
+{
+	pre-transform-scale2d: .8;
+	opacity: .5;
+	transition-property: pre-transform-scale2d, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in; 
+	background-color: #1282ae; 
+	border: 2px solid #4cff00;
+	wash-color: #ffe954; 
+	height: 0%; 
+	margin: 0px;
+    text-align: center;
+	vertical-align: middle; 
+}
+
+.Visible Button 
+{
+	pre-transform-scale2d: 1;
+	height: 100%; 
+}
+
+.Foreground Button
+{
+	background-color: none;
+	opacity: 1;
+	box-shadow: #00b3d9 -5px -5px 10px 10px;
+	brightness: 2; 
+	border: 3px solid #ffffffaa;
+	transition-property: background-color;
+	transition-duration: .2s; 
+}
+
+Button:hover
+{
+	background-color: #287270; 
+}   
+
+.button_small
+{
+	width: 50%; 
+	height: 150px;
+    horizontal-align: center;
+	vertical-align: center;
+}
+
+

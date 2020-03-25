@@ -1,0 +1,57 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+	<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <HLVRMainMenuCarouselPanel class="game_menu_root modal">
+    <Panel id="vr_affordance_left" class="VRaffordance">
+      <Panel id="vr_affordance_interior"/>
+    </Panel>
+    <Panel id="vr_affordance_right" class="VRaffordance">
+      <Panel id="vr_affordance_interior"/>
+    </Panel>
+    <Panel class="base_container" id="layout_root">
+      <Panel id="background_panel">
+        <Panel class="header_info_panel" />
+        <Panel class="empty_row" />
+
+        <Panel class="row">
+          <Panel class="col_body_sibling">
+            <Panel class="info_body">
+              <Panel id="main_confirm" class="row">
+                <Panel class="col_body_sibling">
+                  <Panel class="label">
+                    <Label class="modal_body_copy" text="{s:confirm}"/>
+                  </Panel>
+                </Panel>
+              </Panel>
+              
+              <Panel class="row_divider">
+                <Panel class="button_label">
+                  <Panel class="row_divider_line" />
+                </Panel>
+                <Panel class="button_bullet" />
+              </Panel>
+
+              <Panel class="button_container_left">
+                  <Button class="button_modal" onactivate="GameMenu_Cmd( 'accept' );" onmouseover="GameMenu_MouseOver( '' )" >
+                    <Label class="cta" text="#HLVR_MainMenu_ModalAccept" />
+                  </Button>
+                  <Button class="button_modal modal_cancel" onactivate="GameMenu_Cmd( 'cancel' );" onmouseover="GameMenu_MouseOver( '' )">
+                    <Label class="cta" text="#HLVR_MainMenu_ModalCancel" />
+                  </Button>
+              </Panel>
+            </Panel>
+          </Panel>
+        </Panel>  
+              
+        <Panel class="empty_row" />
+        <Panel class="empty_row_bottomR_corner" />
+        
+      </Panel>
+    </Panel>
+	</HLVRMainMenuCarouselPanel>
+</root>
+
+

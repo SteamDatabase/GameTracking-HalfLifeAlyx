@@ -1,0 +1,25 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/assignment_card.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/assignment_card.vjs_c" />
+	</scripts>
+
+	<Panel class="MessageTitle">
+		<Panel class="SubjectText">
+			<Label id='line1' text="#HLVR_Subject" />
+		</Panel>
+		<Panel class="SubjectText">
+			<Label id='line2' text="#HLVR_Status" />
+		</Panel>
+		<Panel class="SubjectText">
+			<Label id='line3' text="#HLVR_Assignment" />
+		</Panel>
+	</Panel>
+</root>
+
+

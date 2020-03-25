@@ -1,0 +1,184 @@
+.Credits
+{
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	horizontal-align: center;
+
+    flow-children: down;
+    border: 2px;
+}
+
+.LogoContainer
+{
+    width: 1920px;
+    height: 1080px;
+}
+
+.ValveLogoEnd
+{
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+#CreditsContainer
+{
+    flow-children: down;
+    width: 100%;
+	height: fill-parent-flow( 1.0 );
+	overflow: squish scroll;
+}
+
+.HLVRLogo
+{
+    horizontal-align: center;
+    background-size: contain;
+    margin-top: 32px;
+}
+
+.ValveLogo
+{
+    horizontal-align: center;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+#CreditsScroller
+{
+}
+
+.RobotRollCall
+{
+    width: fit-children;
+    height: fit-children;
+    horizontal-align: center;
+	flow-children: down;
+    visibility: collapse;
+    opacity: 0;
+}
+
+.VoicesCredits
+{
+    width: fit-children;
+    height: fit-children;
+    horizontal-align: center;
+    flow-children: down;
+    visibility: collapse;
+    opacity: 0;
+}
+
+.ShowGroup01 #Group01,
+.ShowGroup02 #Group02,
+.ShowGroup03 #Group03,
+.ShowGroup04 #Group04,
+.ShowGroup05 #Group05,
+.ShowGroup06 #Group06,
+.ShowGroup07 #Group07,
+.ShowGroup08 #Group08,
+.ShowGroup09 #Group09,
+{
+    visibility: visible;
+}
+
+.RevealGroup01 #Group01,
+.RevealGroup02 #Group02,
+.RevealGroup03 #Group03,
+.RevealGroup04 #Group04,
+.RevealGroup05 #Group05,
+.RevealGroup06 #Group06,
+.RevealGroup07 #Group07,
+.RevealGroup08 #Group08,
+.RevealGroup09 #Group09,
+{
+    opacity: 1;
+
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition-property: opacity;
+}
+
+@keyframes 'FadeIn'
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.FadeGroup01 #Group01,
+.FadeGroup02 #Group02,
+.FadeGroup03 #Group03,
+.FadeGroup04 #Group04,
+.FadeGroup05 #Group05,
+.FadeGroup06 #Group06,
+.FadeGroup07 #Group07,
+.FadeGroup08 #Group08,
+.FadeGroup09 #Group09,
+{
+    opacity: 0;
+
+    animation-name: FadeOut;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition-property: opacity;
+}
+
+@keyframes 'FadeOut'
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.CreditName
+{
+    horizontal-align: center;
+    font-size: 80px;
+    color: #666159;
+}
+
+.CreditName.ProbablyUnlocalizedText
+{
+    animation-name:none;
+    color: #000000;
+}	
+
+.Character
+{
+    horizontal-align: center;
+	font-size: 80px;
+	color: #000000;
+}
+
+.Character.ProbablyUnlocalizedText
+{
+    animation-name:none;
+	color: #000000;
+}	
+
+.CreditTitle
+{
+    horizontal-align: center;
+    color: #000000;
+    font-size: 96px;
+}
+
+.CreditTitle.ProbablyUnlocalizedText
+{
+    animation-name:none;
+    color: #000000;
+}	

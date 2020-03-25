@@ -1,0 +1,172 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/shared_menu_style.vcss_c" />
+		<include src="s2r://panorama/styles/dev/game_menu_ui.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/game_menu_ui.vjs_c" />
+	</scripts>
+
+	<snippets>
+		<snippet name="MapListItem">
+			<Button class="button_center">
+				<Label text="{s:map_name}"/>
+			</Button>
+		</snippet>		
+	</snippets>
+	
+	<GameMenuPanel class="game_menu_root show_advanced_options">
+		<Panel id="corner_brackets"/>
+		<Panel id="scan_line_mask">
+			<Panel id="layout_root">
+				<Panel id="base_container">
+					<Panel class="row">
+						<Panel class="button_container_full">
+							<Button class="button_center" id="dev_teleport_button" onactivate="GameMenu_CmdAndClose( 'hlvr_toggle_dev_teleport' )">
+								<Label id="dev_teleport_label_off" text="Enable Dev Teleport"/>
+								<Label id="dev_teleport_label_on" text="Disable Dev Teleport"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_container">
+							<Button class="button_left" onactivate="GameMenu_CmdCloseAndPostEvent( 'save quick', 'game_saved' )">
+								<Label text="Quick Save"/>
+							</Button>
+						</Panel>
+						<Panel class="button_container">
+							<Button class="button_right" onactivate="GameMenu_Cmd( load quick )">
+								<Label text="Quick Load"/>
+							</Button>
+						</Panel>
+					</Panel>
+					
+					<Panel class="row">
+						<Panel class="button_container">
+							<Button class="button_left" onactivate="GameMenu_CmdAndClose( hmd_anchor_rotate 90 )">
+								<Label text="Turn Left"/>
+							</Button>
+						</Panel>
+						<Panel class="button_container">
+							<Button class="button_right" onactivate="GameMenu_CmdAndClose( hmd_anchor_rotate -90 )">
+								<Label text="Turn Right"/>
+							</Button>
+						</Panel>
+					</Panel>
+
+					<Panel class="row">
+						<Panel class="button_container">
+							<Button class="button_left" onactivate="GameMenu_BeginBug()">
+								<Label text="File Bug"/>
+							</Button>
+						</Panel>
+						<Panel class="button_container">
+							<Button class="button_right" onactivate="GameMenu_CmdAndClose( vr_swap_logical_hands )">
+								<Label text="Swap Hands"/>
+							</Button>
+						</Panel>
+					</Panel>
+					
+					<Panel class="row">
+						<Panel class="button_container">
+							<Button class="button_left" id="main_menu_button" onactivate="GameMenu_Cmd( map startup )">
+								<Label text="Main Menu"/>
+							</Button>
+						</Panel>
+						<Panel class="button_container">
+							<Button class="button_right" onactivate="$.GetContextPanel().ToggleClass( 'show_maps' );">
+								<Label text="View Maps"/>
+							</Button>
+						</Panel>
+					</Panel>
+				</Panel>
+
+				<Panel id="advanced_container">
+					<Panel class="columns">
+						<Panel class="button_list">
+							<Panel class="header_container_advanced">
+								<Panel id="header_row_backer" class="rows header_left">
+									<Label class="header" text="Cheats"/>
+								</Panel>
+							</Panel>
+							<Button class="button_left" onactivate="GameMenu_Cmd( impulse 101 )">
+								<Label text="impulse 101"/>
+							</Button>
+							<Button class="button_left" onactivate="GameMenu_Cmd( impulse 102 )">
+								<Label text="impulse 102"/>
+							</Button>
+							<Button class="button_left" onactivate="GameMenu_Cmd( notarget )">
+								<Label text="notarget"/>
+							</Button>
+							<Button class="button_left" onactivate="GameMenu_Cmd( god )">
+								<Label text="god"/>
+							</Button>
+							<Button class="button_left" onactivate="GameMenu_Cmd( restart )">
+								<Label text="restart"/>
+							</Button>
+						</Panel>
+						<Panel class="button_list">
+							<Panel class="header_container_advanced">
+								<Panel id="header_row_backer" class="rows header_right">
+									<Label class="header" text="dev"/>
+								</Panel>
+							</Panel>
+							<Button class="button_right" onactivate="GameMenu_Cmd( ent_messages_draw 2 )">
+								<Label text="ent_messages_draw 2"/>
+							</Button>
+							<Button class="button_right" onactivate="GameMenu_Cmd( ent_messages_draw 0 )">
+								<Label text="ent_messages_draw 0"/>
+							</Button>
+							<Button class="button_right" onactivate="GameMenu_Cmd( ent_text )">
+								<Label text="ent_text"/>
+							</Button>
+							<Button class="button_right" onactivate="GameMenu_Cmd( toggle mat_fullbright )">
+								<Label text="TOG mat_fullbright"/>
+							</Button>						
+						</Panel>
+					</Panel>
+				</Panel>
+			
+				<Panel id="bottom_container">			
+					<Button class="button_back" onactivate="GameMenu_Cmd( game_menu )">
+						<Label text="Game Menu"/>
+					</Button>
+				</Panel>
+			</Panel>
+
+			<BugSubmitPanel id="bug_submit_panel" />
+
+			<Panel id="maps">
+				<Panel class="button_list" id="maps_list">
+					<Panel class="header_container_maps">
+						<Panel id="header_row_backer" class="rows header_left">
+							<Label class="header" text="maps"/>
+						</Panel>
+					</Panel>
+				</Panel>
+
+				<Button class="button_back" onactivate="$.GetContextPanel().ToggleClass( 'show_maps' );">
+					<Label text="Back"/>
+				</Button>			
+			</Panel>		
+
+			<Panel id="screenshot_instructions">
+				<Label id="instruction_text" text="Compose the screenshot, then close this panel with the appmenu button. That will take a screenshot."/>
+				<Button onactivate="GameMenu_CancelTransientCmdAndClass()">
+					<Label text="Cancel"/>
+				</Button>
+			</Panel>
+			
+			
+			<Panel id="AnimatedTextureMask" acceptsinput="false" hittest="false">	
+				<Panel id="AnimatedTexture" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureAlt" acceptsinput="false" hittest="false" />
+				<Panel id="AnimatedTextureSpinnerMask" acceptsinput="false" hittest="false" />
+			</Panel>
+		</Panel>
+	</GameMenuPanel>
+</root>
+
+

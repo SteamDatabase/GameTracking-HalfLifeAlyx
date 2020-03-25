@@ -1,0 +1,1194 @@
+.game_menu_root
+{
+	width: 100%;
+	height: 0%;
+	border-radius: 6px;
+
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5788 ), color-stop( 0.97, #ffed5733 ), to( #f4d71455 ) );
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5766 ), color-stop( 0.97, #ffed5711 ), to( #f4d71433 ) );
+	//wash-color: #000000d0;
+	//wash-color: #00000066;
+	
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+	
+	transition-property: height, opacity, opacity-mask;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in; 
+	opacity: 0;
+	opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	//brightness: 20; 
+}
+
+.game_menu_root.Visible
+{
+	opacity: 1;
+	pre-transform-scale2d: 1;
+	height: 100%; 
+	animation-name: SelectionAreaFlicker;
+	animation-duration: 4s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	opacity-mask: none;
+}
+
+.game_menu_root.Visible.Background
+{
+	//wash-color: #000000d0;
+	//background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #00000088 ), color-stop( 0.97, #00000066 ), to( #00000077 ) );
+	//background-color: #00000000;
+    blur: gaussian(2);
+    box-shadow: inset #ffed5711 2px 2px 4px 4px;
+	opacity: 1; 
+}
+
+.game_menu_root.Visible.Foreground
+{
+	background-color: #ffed5700;
+	opacity: 1;
+	box-shadow: inset #ffed5711 10px 10px 20px 20px;
+	animation-name: DelayApperanceAnimation;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: 1; 
+}
+
+@keyframes 'DelayApperanceAnimation' 
+{
+	0%
+	{
+		opacity: 0; 
+	}
+	
+	100%
+	{
+		opacity: 1; 
+	}
+}
+
+#layout_root
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+#corner_brackets
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/game_menu_ui/corner_brackets_psd.vtex");
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	wash-color: #ffc600; 
+	opacity: 1; 
+}
+
+.Foreground #corner_brackets
+{
+	opacity: .4; 
+}
+
+#scan_line_mask
+{
+	width: 100%;
+	height: 100%; 
+	opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+	//opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_finer_lines_psd.vtex");
+}
+
+#CompendiumBackgroundScene
+{
+	width: 100%;
+	height: 120px;
+	horizontal-align: center;
+	pre-transform-scale2d: 1;
+	margin-top: 60px;
+	blur: gaussian ( 0 );
+	transition-property: transform, opacity;
+	transition-duration: 1.8s;
+	transition-timing-function: ease-in-out;	
+	
+	/* Fall 2016 */
+	opacity: .71;
+}
+
+#header_row_backer_options
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer_options
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer_options
+{
+	pre-transform-scale2d: 1;
+}
+
+#header_row_backer_controls
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer_controls
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer_controls
+{
+	pre-transform-scale2d: 1;
+}
+
+#header_row_backer_graphics
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer_graphics
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer_graphics
+{
+	pre-transform-scale2d: 1;
+}
+
+#header_row_backer_audio
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer_audio
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer_audio
+{
+	pre-transform-scale2d: 1;
+}
+
+#header_row_backer_preferences
+{
+	background-color: #f4d714cc;
+	width: 100%; 
+	box-shadow: #ffe74855 -15px -15px 30px 30px;
+	pre-transform-scale2d: .8;
+	transition-property: pre-transform-scale2d; 
+	transition-duration: .3s; 
+}
+
+.Background #header_row_backer_preferences
+{
+	background-color: #f4d71433;
+	box-shadow: #ffe74811 -15px -15px 30px 30px;
+}
+	
+.Visible #header_row_backer_preferences
+{
+	pre-transform-scale2d: 1;
+}
+
+.header
+{
+	margin-top: 6px;
+	font-size: 40px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	color: #6d632c;
+}
+
+.header_left
+{
+	margin-right: 15px;
+	margin-left: 30px; 
+	margin-bottom: 15px; 
+	height: 60px;
+}
+
+#ChapterListPage .header_left
+{
+	margin-left: 21px;
+}
+
+.header_right
+{
+	margin-right: 30px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+	height: 60px;
+}
+
+.category_title
+{
+	margin-top: 6px;
+	font-size: 40px;
+	font-family: Raju;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	color: #332f2f;
+}
+
+#base_container
+{
+	width: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 100%; 
+	padding: 60px;
+}
+
+#base_container Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	overflow: noclip; 
+}
+
+.Foreground Button
+{
+	background-color: none;
+	wash-color: #ffe954;
+	opacity: 1;
+	box-shadow: #ffe74819 -15px -15px 30px 30px;
+	brightness: 2; 
+	animation-name: TextMotionFlicker;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: linear; 
+	animation-iteration-count: infinite; 
+	border: 3px solid #ffffffaa;
+	transition-property: background-color;
+	transition-duration: .2s; 
+}
+
+Button:hover
+{
+	background-color: #ffffff33; 
+}
+
+@keyframes 'TextMotionFlicker' 
+{
+	0%
+	{
+		brightness: 2; 
+	}
+	50%
+	{
+		brightness: 7; 
+
+	}
+	100%
+	{
+		brightness: 2; 
+	}
+}	
+
+.button_container
+{
+	width: 50%; 
+	height: 150px;
+}
+
+.button_large
+{
+	width: 100%; 
+	height: 150px;
+}	
+
+.button_small
+{
+	width: 50%; 
+	height: 150px;
+}
+
+.button_small02
+{
+    width: 50%;
+    height: 100px;
+}
+
+.button_arrow
+{
+    width: 50%;
+    height: 80px;
+}
+
+#base_container Button
+{
+	
+	width: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#base_container .button_left
+{
+	margin-right: 22px;
+}
+
+#base_container .button_right
+{
+	margin-left: 15px;
+}
+
+.button_left
+{
+	margin-right: 15px;
+	margin-left: 30px; 
+	margin-bottom: 15px; 
+}
+
+.button_right
+{
+	margin-right: 30px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+}
+
+.button_center
+{
+	margin-right: 15px;
+	margin-left: 15px; 
+	margin-bottom: 15px; 
+}
+
+.row
+{
+	width: 100%;
+	flow-children: right;
+	horizontal-align: center; 
+}
+
+.row Button
+{
+	width: 50%;
+	
+} 
+
+#dev_menu_row
+{
+	vertical-align: bottom;
+}
+
+#empty_row
+{
+    height: 100px;
+}
+
+Button
+{
+    pre-transform-scale2d: .8;
+    opacity: .5;
+    transition-property: pre-transform-scale2d, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    background-color: #f4d71444;
+    border: 2px solid #f4d71400;
+    wash-color: #f4d714;
+    height: 0%;
+    margin: 0px;
+    //padding: 0px;
+}
+
+.Visible Button 
+{
+	pre-transform-scale2d: 1;
+	height: 100%; 
+}
+
+#dev_menu_row .button_small
+{
+	horizontal-align: center;
+}
+
+#options Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 50px; 
+	horizontal-align: center; 
+	width: 40%;
+	height: 115px;
+}
+
+.ViewOptionsMenu #layout_root
+{
+	visibility: collapse;
+}
+
+#options
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+	
+	padding: 60px; 
+}
+
+#GameMenuOptionsPanel
+{
+	width: 100%;
+	height: 100%;
+}
+
+.ViewOptionsMenu #options
+{
+	height: 100%;
+	opacity: 1;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+}
+
+.header_container
+{
+	width: 40%;
+	height: fit-children;
+	margin-left: -15px;
+	margin-bottom: 15px;
+}
+
+#ChapterListPage .header_container
+{
+	width: 57.3%; 
+}
+
+#options Button
+{
+	width: 100%;
+	//height: 60px;
+	padding: 0px;
+	margin-bottom: 30px;
+}
+#options Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	overflow: noclip; 
+}
+
+#controls Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 40px; 
+	horizontal-align: center; 
+	width: 30%; 
+}
+
+.show_controls #options
+{
+	visibility: collapse;
+}
+
+#controls
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+	
+	padding: 60px;
+}
+
+.show_controls #controls
+{
+	height: 100%;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+#controls Button
+{
+	width: 100%;
+	height: 110px;
+	//padding: 0px;
+}
+
+#controls Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	overflow: noclip; 
+}
+
+#graphics Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 40px; 
+	horizontal-align: center; 
+	width: 30%;
+}
+
+.show_graphics #options
+{
+	visibility: collapse;
+}
+
+#graphics
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+}
+
+.show_graphics #graphics
+{
+	height: 100%;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+#graphics Button
+{
+	width: 100%;
+	height: 60px;
+	padding: 0px;
+}
+#graphics Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 10px;
+	overflow: noclip; 
+}
+
+#audio Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 40px; 
+	horizontal-align: center; 
+	width: 30%;
+}
+
+.show_audio #options
+{
+	visibility: collapse;
+}
+
+#audio
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+}
+
+.show_audio #audio
+{
+	height: 100%;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+#audio Button
+{
+	width: 100%;
+	height: 60px;
+	padding: 0px;
+}
+#audio Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 10px;
+	overflow: noclip; 
+}
+
+#preferences Button.button_back
+{
+	margin-bottom: 15px; 
+	margin-top: 40px; 
+	horizontal-align: center; 
+	width: 30%;
+}
+
+.show_preferences #options
+{
+	visibility: collapse;
+}
+
+#preferences
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	margin-top: 30px;
+	height: 0%;
+	transition-property: height, opacity;
+	transition-duration: .8s; 
+	transition-timing-function: ease-out;
+	opacity: .5; 
+	overflow: noclip; 
+	padding: 60px;
+}
+
+.show_preferences #preferences
+{
+	height: 100%;
+	transition-property: height, opacity;
+	transition-duration: .1s; 
+	transition-timing-function: ease-in;
+	opacity: 1; 
+}
+
+#preferences Button
+{
+	width: 100%;
+	height: 110px;
+}
+
+#preferences Button Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 120px 3 #f4ec8e33;
+	margin-top: 20px;
+	overflow: noclip; 
+}
+
+.show_loadsave #options
+{
+    visibility: collapse;
+}
+
+.show_loadsave #layout_root 
+{
+    visibility: collapse;
+}
+
+.header_container_loadsave
+{
+    width: 30%;
+    height: fit-children;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#loadsave Button
+{
+    width: 60%;
+    height: 80%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+}
+
+#loadsave Button Label 
+{
+    font-size: 36px;
+    font-family: Raju;
+    font-weight: medium;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 120px 3 #f4ec8e33;
+    margin-top: 10px;
+    overflow: noclip;
+}
+
+#loadsave_list
+{
+    height: 980px;
+    width: 840px;
+    overflow: scroll;   
+}
+
+.show_loadsave #loadsave
+{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition-property: height, opacity;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+}
+
+#loadsave
+{
+    width: 100%;
+    height: 100%;
+    flow-children: down;
+    margin-top: 30px;
+    height: 0%;
+    opacity: 0.5;
+    transition-property: height, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease-in;
+}
+
+
+.LoadSaveGameItem
+{
+    height: 270px;
+    width: 700px;
+    border: 5px solid #00000000;
+    margin: 5px;
+    margin-left: 30px;
+    flow-children: down;
+    brightness: 1;
+    opacity: 0.8;
+}
+
+.LoadSaveGameItem:hover
+{
+    brightness: 3;
+    opacity: 1;
+}
+
+#loadsave_desc_container
+{
+    width: 550px;
+    border: 0px solid #00000000;
+    margin-top: -5px;
+    margin-left: 10px;
+    flow-children: down;
+}
+
+.ScreenshotThumb 
+{
+    width: 256px;
+    height: 256px;
+    background-color: #000000;
+}
+
+.ChapterNumber
+{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    wash-color: #ffe954;
+}
+
+.ChapterName
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    wash-color: #ffe954;
+}
+
+.SaveType
+{
+    font-size: 24px;
+    font-weight: bold;
+    wash-color: #ffe954;
+    color: #ffffff;
+}
+
+.IsAutoSave 
+{
+    font-size: 24px;
+    font-weight: bold;
+    wash-color: #0bf517;
+    color: #ffffff;
+}
+
+.ElapsedTimeSince
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    wash-color: #ffe954;
+}
+
+.no_stats .Stats_Container
+{
+    visibility: collapse;
+}
+
+.Stats_Container
+{
+    flow-children: down;
+    font-size: 50px;
+    color: #ffffff;
+    wash-color: #ffe954;
+}
+
+.Stats
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    wash-color: #ffe954;
+}
+
+.Foreground Button:active
+{
+    //pre-transform-scale2d: 1;
+    pre-transform-scale2d: .97;
+    background-color: #f4d71460;
+    wash-color: #fffef9;
+    transition-duration: 0s;
+}
+
+#AnimatedTextureMask{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center; 
+	//opacity-mask: url("s2r://panorama/images/weapon_select_ui/animated_texture_mask_psd.vtex");
+	overflow: noclip; 
+	opacity: 1;
+	transition-property: opacity, pre-transform-scale2d; 
+	transition-duration: .2s; 
+	pre-transform-scale2d: 1; 
+}
+
+
+	
+#AnimatedTexture{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 40s; 
+	//transition-timing-function: ease-out; 
+	opacity: 0; 
+}
+
+.Visible #AnimatedTexture {
+	opacity: 1; 
+	transform: translateY(2000px);
+	transition-property: transform;
+	transition-duration: 0s; 
+}
+
+
+#AnimatedTextureAlt{
+	background-image: url("s2r://panorama/images/weapon_select_ui/full_mask_overlay_alt_png.vtex");
+	width: 1500px;
+	height: 6000px;
+	horizontal-align: center;
+	vertical-align: center; 
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 30s; 
+	//transition-timing-function: ease-out; 
+	wash-color: #f4d714; 
+	opacity: 0; 
+}
+
+.Visible #AnimatedTextureAlt {
+	opacity: .2; 
+	transform: translateY(800px);
+	transition-property: transform;
+	transition-duration: 0s; 
+}
+
+.Foreground #AnimatedTextureAlt {
+	visibility: collapse; 
+}
+
+@keyframes 'SelectionAreaFlicker' 
+{
+	0%
+	{
+	opacity: 1;	
+	}
+	3%
+	{
+	opacity: .95;	
+	}
+	5%
+	{
+	opacity: 1;	
+	}
+	8%
+	{
+	opacity: .93;	
+	}
+	10%
+	{
+	opacity: .97;	
+	}
+	11%
+	{
+	opacity: 1;	
+	}
+	14%
+	{
+	opacity: .92;	
+	}
+	15%
+	{
+	opacity: .95;	
+	}
+	17%
+	{
+	opacity: .95;	
+	}
+	18%
+	{
+	opacity: 1;	
+	}
+	21%
+	{
+	opacity: .92;	
+	}
+	24%
+	{
+	opacity: .95;	
+	}
+	26%
+	{
+	opacity: .93;	
+	}
+	29%
+	{
+	opacity: .88;	
+	}
+	30%
+	{
+	opacity: 1;	
+	}
+	33%
+	{
+	opacity: .99;	
+	}
+	35%
+	{
+	opacity: .94;	
+	}
+	36%
+	{
+	opacity: 1;	
+	}
+	38%
+	{
+	opacity: .9;	
+	}
+	39%
+	{
+	opacity: .95;	
+	}
+	41%
+	{
+	opacity: .9;	
+	}
+	44%
+	{
+	opacity: 1;
+	}
+	46%
+	{
+	opacity: .93;	
+	}
+	48%
+	{
+	opacity: .9;	
+	}
+	50%
+	{
+	opacity: 1;	
+	}
+	53%
+	{
+	opacity: 1;	
+	}
+	55%
+	{
+	opacity: 1;	
+	}
+	58%
+	{
+	opacity: .9;	
+	}
+	59%
+	{
+	opacity: .91;	
+	}
+	61%
+	{
+	opacity: .97;	
+	}
+	65%
+	{
+	opacity: 1;	
+	}
+	68%
+	{
+	opacity: 1;	
+	}
+	73%
+	{
+	opacity: 1;	
+	}
+	75%
+	{
+	opacity: 1;	
+	}
+	80%
+	{
+	opacity: .96;	
+	}
+	82%
+	{
+	opacity: .95;	
+	}
+	85%
+	{
+	opacity: .89;	
+	}
+	88%
+	{
+	opacity: .99;	
+	}
+	90%
+	{
+	opacity: 1;	
+	}
+	92%
+	{
+	opacity: .96;	
+	}
+	95%
+	{
+	opacity: .9;	
+	}
+	96%
+	{
+	opacity: .9;	
+	}
+	98%
+	{
+	opacity: .92;	
+	}
+	100%
+	{
+	opacity: 1;
+	}
+}
+
+/* temp styling for deactivated buttons */
+
+.temp_deactivated
+{
+	border: 3px solid #00000022;
+	box-shadow: #6d632c00 -15px -15px 30px 30px;
+	color: red; 
+	background-color: #00000055;
+}
+
+.Foreground .temp_deactivated 
+{
+	border: 3px solid #000000;
+	box-shadow: #6d632c00 -15px -15px 30px 30px;
+	background-color: #00000055; 
+}
+
+.Foreground .temp_deactivated:active
+{
+	pre-transform-scale2d: 1;
+	background-color: #00000055; 
+	wash-color: #fffef900;
+	transition-duration: 0s;
+}
+
+#base_container .temp_deactivated Label
+{
+	color: #000000;
+	text-shadow: 0px 0px 0px 3 #f4ec8e00;
+	font-weight: medium; 
+}
+
+#options .temp_deactivated Label
+{
+	font-size: 58px;
+	font-family: Raju;
+	font-weight: medium;
+	text-transform: uppercase;
+	margin-top: 20px;
+	overflow: noclip; 
+	color: #000000;
+	text-shadow: 0px 0px 0px 3 #f4ec8e00;
+	font-weight: medium; 
+}

@@ -1,0 +1,1265 @@
+{
+	A2Pistol.RandomMetalStress = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "A2Pistol.RandomMetalStressChild"
+		random_soundevent_01_timer_min = 12.000000
+		random_soundevent_01_timer_max = 18.000000
+	}
+	A2Pistol.RandomMetalStressChild = 
+	{
+		type = "hlvr_simple_voicegraph_filter_dynamics"
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		volume = 0.700000
+		volume_falloff_min = 400
+		volume_falloff_max = 3000
+		occlusion_scale = 0.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_01.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_02.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_03.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_04.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_05.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_06.vsnd",
+			"sounds/ambient/metal/a2_pistol_amb_metal_stress_07.vsnd",
+		]
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		global_opvar_name = "hotel_small_room_proximity_beacon"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 1.000000
+		remap_opvar_to_freq_x2 = 0.300000
+		remap_opvar_to_freq_y2 = 0.700000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.500000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 0.350000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 1.000000
+		remap_opvar_to_vol_x2 = 0.000000
+		remap_opvar_to_vol_y2 = 1.000000
+		remap_opvar_to_vol_x3 = 0.000000
+		remap_opvar_to_vol_y3 = 1.000000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 0.750000
+	}
+	A2Pistol.SteamRush = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "A2Pistol.SteamRushChild"
+		random_soundevent_01_timer_min = 5.000000
+		random_soundevent_01_timer_max = 7.000000
+	}
+	A2Pistol.SteamRushChild = 
+	{
+		type = "hlvr_ambient_rand_child"
+		mixgroup = "Ambient"
+		volume = 0.300000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.050000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.050000
+		position_source = 0.000000
+		volume_falloff_min = 50
+		volume_falloff_max = 350
+		distance_max = 500
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_steam_rush_01.vsnd",
+			"sounds/ambient/air/amb_steam_rush_02.vsnd",
+			"sounds/ambient/air/amb_steam_rush_03.vsnd",
+			"sounds/ambient/air/amb_steam_rush_04.vsnd",
+			"sounds/ambient/air/amb_steam_rush_05.vsnd",
+			"sounds/ambient/air/amb_steam_rush_06.vsnd",
+		]
+	}
+	A2Pistol.SteamRushLine = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "A2Pistol.SteamRushLineChild"
+		random_soundevent_01_timer_min = 5
+		random_soundevent_01_timer_max = 12
+	}
+	A2Pistol.SteamRushLineChild = 
+	{
+		type = "hlvr_ambient_position_on_line"
+		volume = 0.300000
+		volume_falloff_min = 50
+		volume_falloff_max = 350
+		volume_filter_amount = 0.400000
+		mixgroup = "Ambient"
+		use_named_send = "ambient"
+		use_hrtf = 1.000000
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_steam_rush_01.vsnd",
+			"sounds/ambient/air/amb_steam_rush_02.vsnd",
+			"sounds/ambient/air/amb_steam_rush_03.vsnd",
+			"sounds/ambient/air/amb_steam_rush_04.vsnd",
+			"sounds/ambient/air/amb_steam_rush_05.vsnd",
+			"sounds/ambient/air/amb_steam_rush_06.vsnd",
+		]
+	}
+	A2Pistol.BasementLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "A2Pistol.BasementLp_L"
+		soundevent_02 = "A2Pistol.BasementLp_R"
+		soundevent_03 = "A2Pistol.BasementLp_LS"
+		soundevent_04 = "A2Pistol.BasementLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	A2Pistol.BasementLp_L = 
+	{
+		base = "AmbientBase.IntSmallRoomLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_l.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_l.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_l.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_l.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "0.45"
+		vsnd_vol_02 = "0.17"
+		vsnd_vol_03 = "0.22"
+		vsnd_vol_04 = "0.73"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+		remap_filter_freq_opvar_x1 = 0.000000
+		remap_filter_freq_opvar_y1 = 0.650000
+		remap_filter_freq_opvar_x2 = 0.000000
+		remap_filter_freq_opvar_y2 = 0.650000
+		remap_filter_freq_opvar_x3 = 0.500000
+		remap_filter_freq_opvar_y3 = 0.750000
+		remap_filter_freq_opvar_x4 = 1.000000
+		remap_filter_freq_opvar_y4 = 1.000000
+	}
+	A2Pistol.BasementLp_R = 
+	{
+		base = "A2Pistol.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_r.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_r.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_r.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_r.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	A2Pistol.BasementLp_LS = 
+	{
+		base = "A2Pistol.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_ls.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_ls.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_ls.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_ls.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	A2Pistol.BasementLp_RS = 
+	{
+		base = "A2Pistol.BasementLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_a2_headcrabs_tunnel_lp_rs.vsnd"
+		vsnd_file_02 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_03_rs.vsnd"
+		vsnd_file_03 = "sounds/ambient/interior/amb_hotel_basement_quad_lp_01_rs.vsnd"
+		vsnd_file_04 = "sounds/ambient/interior/amb_hotel_room_lfe_quad_lp_01_rs.vsnd"
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	A2Pistol.LowPulse = 
+	{
+		base = "AmbientTenement.LowPulse"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 0.000000
+		remap_global_opvar_01_to_vol_max = 1.000000
+	}
+	A2Pistol.EvoMaraca = 
+	{
+		base = "AmbientCreepy.EvoMaraca"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+	A2Pistol.SkullBreath = 
+	{
+		base = "AmbientCreepy.SkullBreath"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+	A2Pistol.Cymbals = 
+	{
+		base = "AmbientCreepy.Cymbals"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+	A2Pistol.BangAndCreak = 
+	{
+		base = "MetalPipe.BangAndCreak"
+		random_soundevent_01_name = "A2Pistol.BangAndCreakChild"
+		global_volume_opvar_01 = "hotel_small_room_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 1.000000
+	}
+	A2Pistol.BangAndCreakChild = 
+	{
+		base = "MetalPipe.BangAndCreakChild"
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		global_opvar_name = "hotel_small_room_proximity_beacon"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 1.000000
+		remap_opvar_to_freq_x2 = 0.300000
+		remap_opvar_to_freq_y2 = 0.700000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.500000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 0.350000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 1.000000
+		remap_opvar_to_vol_x2 = 0.000000
+		remap_opvar_to_vol_y2 = 1.000000
+		remap_opvar_to_vol_x3 = 0.000000
+		remap_opvar_to_vol_y3 = 1.000000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 0.750000
+	}
+	A2Pistol.InteriorLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.InteriorLp_L"
+		soundevent_02 = "A2Pistol.InteriorLp_R"
+		soundevent_03 = "A2Pistol.InteriorLp_LS"
+		soundevent_04 = "A2Pistol.InteriorLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.InteriorLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 3.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		mixgroup = "Ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_l.vsnd"
+	}
+	A2Pistol.InteriorLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 315.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 3.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		mixgroup = "Ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_r.vsnd"
+	}
+	A2Pistol.InteriorLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 135.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 3.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		mixgroup = "Ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_ls.vsnd"
+	}
+	A2Pistol.InteriorLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300.000000
+		rotation_angle = 225.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 3.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 1.000000
+		mixgroup = "Ambient"
+		vsnd_files = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_rs.vsnd"
+	}
+	A2Pistol.InteriorLpMulti = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "A2Pistol.InteriorLpMulti_L"
+		soundevent_02 = "A2Pistol.InteriorLpMulti_R"
+		soundevent_03 = "A2Pistol.InteriorLpMulti_LS"
+		soundevent_04 = "A2Pistol.InteriorLpMulti_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	A2Pistol.InteriorLpMulti_L = 
+	{
+		base = "AmbientBase.IntMainLp_L"
+		volume = 0.900000
+		vsnd_file_01 = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_l.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "0.9"
+		vsnd_vol_02 = "0.0"
+		vsnd_vol_03 = "0.0"
+		vsnd_vol_04 = "0.0"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+	}
+	A2Pistol.InteriorLpMulti_R = 
+	{
+		base = "A2Pistol.InteriorLpMulti_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_r.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	A2Pistol.InteriorLpMulti_LS = 
+	{
+		base = "A2Pistol.InteriorLpMulti_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_ls.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	A2Pistol.InteriorLpMulti_RS = 
+	{
+		base = "A2Pistol.InteriorLpMulti_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_interior_lp_01_rs.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	A2Pistol.TraincarLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.TraincarLp_L"
+		soundevent_02 = "A2Pistol.TraincarLp_R"
+		soundevent_03 = "A2Pistol.TraincarLp_LS"
+		soundevent_04 = "A2Pistol.TraincarLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.TraincarLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 315.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 135.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 225.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TrainCarIntLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.TrainCarIntLp_L"
+		soundevent_02 = "A2Pistol.TrainCarIntLp_R"
+		soundevent_03 = "A2Pistol.TrainCarIntLp_LS"
+		soundevent_04 = "A2Pistol.TrainCarIntLp_RS"
+		rand_delay_min = 0.000000
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.TrainCarIntLp_L = 
+	{
+		base = "AmbientBase.IntSmallRoomLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_traincar_int_lp_01_l.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		vsnd_vol_01 = "1.0"
+		vsnd_vol_02 = "0.0"
+		vsnd_vol_03 = "0.0"
+		vsnd_vol_04 = "0.00"
+		vsnd_vol_05 = "0.00"
+		vsnd_vol_06 = "0.00"
+		vsnd_vol_07 = "0.00"
+		vsnd_vol_08 = "0.00"
+	}
+	A2Pistol.TrainCarIntLp_R = 
+	{
+		base = "A2Pistol.TrainCarIntLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_traincar_int_lp_01_r.vsnd"
+		rotation_angle = 315.000000
+	}
+	A2Pistol.TrainCarIntLp_LS = 
+	{
+		base = "A2Pistol.TrainCarIntLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_traincar_int_lp_01_ls.vsnd"
+		rotation_angle = 135.000000
+	}
+	A2Pistol.TrainCarIntLp_RS = 
+	{
+		base = "A2Pistol.TrainCarIntLp_L"
+		vsnd_file_01 = "sounds/ambient/train_warehouse/amb_traincar_int_lp_01_rs.vsnd"
+		rotation_angle = 225.000000
+	}
+	A2Pistol.TraincarTransitionLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.TraincarTransitionLp_L"
+		soundevent_02 = "A2Pistol.TraincarTransitionLp_R"
+		soundevent_03 = "A2Pistol.TraincarTransitionLp_LS"
+		soundevent_04 = "A2Pistol.TraincarTransitionLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.TraincarTransitionLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 315.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 135.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 225.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp02 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.TraincarTransitionLp02_L"
+		soundevent_02 = "A2Pistol.TraincarTransitionLp02_R"
+		soundevent_03 = "A2Pistol.TraincarTransitionLp02_LS"
+		soundevent_04 = "A2Pistol.TraincarTransitionLp02_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.TraincarTransitionLp02_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 135.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp02_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp02_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 225.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.TraincarTransitionLp02_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/train_warehouse/trainyard/amb_a2_pistol_traincar_transition_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 300.000000
+		volume_falloff_max = 300
+		rotation_angle = 315.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.600000
+	}
+	A2Pistol.SkylightAddLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.SkylightAddLp_L"
+		soundevent_02 = "A2Pistol.SkylightAddLp_R"
+		soundevent_03 = "A2Pistol.SkylightAddLp_LS"
+		soundevent_04 = "A2Pistol.SkylightAddLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.SkylightAddLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.400000
+	}
+	A2Pistol.SkylightAddLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.400000
+	}
+	A2Pistol.SkylightAddLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 135.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.400000
+	}
+	A2Pistol.SkylightAddLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.400000
+	}
+	AmbientA2Pistol.OpenAirSkylightLp = 
+	{
+		type = "hlvr_start_multi_quad"
+		soundevent_01 = "AmbientA2Pistol.OpenAirSkylightLp_L"
+		soundevent_02 = "AmbientA2Pistol.OpenAirSkylightLp_R"
+		soundevent_03 = "AmbientA2Pistol.OpenAirSkylightLp_LS"
+		soundevent_04 = "AmbientA2Pistol.OpenAirSkylightLp_RS"
+		rand_delay_min = -5.000000
+		rand_delay_max = 0.000000
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_L = 
+	{
+		base = "AmbientBase.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd"
+		vsnd_file_02 = ""
+		vsnd_vol_01 = "0.7"
+		vsnd_vol_02 = "0.00"
+		mixgroup = "Ambient"
+		radius = 250.000000
+		volume_falloff_min = 250
+		volume_falloff_max = 300
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 35.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 250
+		spread_max = 250
+		volume = 0.500000
+		global_opvar_name_01 = "skylight_proximity_beacon"
+		global_opvar_filter_velocity = 2.500000
+		remap_vol_opvar_x1 = 0.000000
+		remap_vol_opvar_y1 = 0.000000
+		remap_vol_opvar_x2 = 0.200000
+		remap_vol_opvar_y2 = 0.650000
+		remap_vol_opvar_x3 = 0.500000
+		remap_vol_opvar_y3 = 0.700000
+		remap_vol_opvar_x4 = 1.000000
+		remap_vol_opvar_y4 = 1.000000
+		opvar_to_volume_multiplier_min = 0.000000
+		opvar_to_volume_multiplier = 1.000000
+		filter_mix = 0.900000
+		remap_filter_freq_opvar_x1 = 0.000000
+		remap_filter_freq_opvar_y1 = 0.600000
+		remap_filter_freq_opvar_x2 = 0.000000
+		remap_filter_freq_opvar_y2 = 0.600000
+		remap_filter_freq_opvar_x3 = 0.500000
+		remap_filter_freq_opvar_y3 = 0.700000
+		remap_filter_freq_opvar_x4 = 1.000000
+		remap_filter_freq_opvar_y4 = 1.000000
+		enable_debug_radius = 0.000000
+		soundname_string = "AmbientA2Pistol.OpenAirSkylightLp_L"
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_R = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 315.000000
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_LS = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 135.000000
+	}
+	AmbientA2Pistol.OpenAirSkylightLp_RS = 
+	{
+		base = "AmbientA2Pistol.OpenAirSkylightLp_L"
+		vsnd_file_01 = "sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd"
+		vsnd_file_02 = ""
+		vsnd_file_03 = ""
+		vsnd_file_04 = ""
+		vsnd_file_05 = ""
+		vsnd_file_06 = ""
+		vsnd_file_07 = ""
+		vsnd_file_08 = ""
+		rotation_angle = 225.000000
+	}
+	A2Pistol.SkylightAddIntroLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.SkylightAddIntroLp_L"
+		soundevent_02 = "A2Pistol.SkylightAddIntroLp_R"
+		soundevent_03 = "A2Pistol.SkylightAddIntroLp_LS"
+		soundevent_04 = "A2Pistol.SkylightAddIntroLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.SkylightAddIntroLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.SkylightAddIntroLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddIntroLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 135.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.SkylightAddIntroLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddOutroLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.SkylightAddOutroLp_L"
+		soundevent_02 = "A2Pistol.SkylightAddOutroLp_R"
+		soundevent_03 = "A2Pistol.SkylightAddOutroLp_LS"
+		soundevent_04 = "A2Pistol.SkylightAddOutroLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.SkylightAddOutroLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddOutroLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.SkylightAddOutroLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 135.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddOutroLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.SkylightAddTransitionLp = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "A2Pistol.SkylightAddTransitionLp_L"
+		soundevent_02 = "A2Pistol.SkylightAddTransitionLp_R"
+		soundevent_03 = "A2Pistol.SkylightAddTransitionLp_LS"
+		soundevent_04 = "A2Pistol.SkylightAddTransitionLp_RS"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	A2Pistol.SkylightAddTransitionLp_L = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_l.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 45.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddTransitionLp_R = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_r.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 315.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.150000
+	}
+	A2Pistol.SkylightAddTransitionLp_LS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_ls.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 135.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.SkylightAddTransitionLp_RS = 
+	{
+		type = "hlvr_ambient_fixed_rotation"
+		vsnd_files = 
+		[
+			"sounds/ambient/air/amb_a2_pistol_skylight_add_lp_01_rs.vsnd",
+		]
+		mixgroup = "Ambient"
+		radius = 400.000000
+		volume_falloff_min = 400
+		volume_falloff_max = 450
+		rotation_angle = 225.000000
+		vertical_rotation_angle = 30.000000
+		volume_fade_in = 2.000000
+		volume_fade_out = 2.000000
+		spread_min = 0
+		spread_max = 300
+		volume = 0.300000
+	}
+	A2Pistol.RandomConcreteFall = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "A2Pistol.RandomConcreteFallChild"
+		random_soundevent_01_timer_min = 7.000000
+		random_soundevent_01_timer_max = 12.000000
+		position = 
+		[
+			-3800.000000,
+			1550.687500,
+			27.767151,
+		]
+		position_target = 
+		[
+			-3800.000000,
+			-2000.718750,
+			25.923401,
+		]
+	}
+	A2Pistol.RandomConcreteFallChild = 
+	{
+		type = "hlvr_ambient_rand_child"
+		mixgroup = "Ambient"
+		volume = 0.750000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.100000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.050000
+		animation_time = 2.500000
+		animation_type = "lerp"
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		distance_max = 1000
+		position = 
+		[
+			-3800.000000,
+			1550.687500,
+			27.767151,
+		]
+		position_target = 
+		[
+			-3800.000000,
+			-2000.718750,
+			25.923401,
+		]
+		vsnd_files = 
+		[
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_01.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_02.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_03.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_04.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_05.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_06.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_07.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_08.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_09.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_10.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_11.vsnd",
+			"sounds/ambient/rocks/amb_tenement_concrete_debris_12.vsnd",
+		]
+		voicegraph_name = "hlvr.hrtf_filter_dynamics"
+		global_opvar_name = "hotel_small_room_proximity_beacon"
+		remap_opvar_to_freq_x1 = 0.000000
+		remap_opvar_to_freq_y1 = 1.000000
+		remap_opvar_to_freq_x2 = 0.300000
+		remap_opvar_to_freq_y2 = 0.700000
+		remap_opvar_to_freq_x3 = 0.500000
+		remap_opvar_to_freq_y3 = 0.500000
+		remap_opvar_to_freq_x4 = 1.000000
+		remap_opvar_to_freq_y4 = 0.350000
+		remap_opvar_to_vol_x1 = 0.000000
+		remap_opvar_to_vol_y1 = 1.000000
+		remap_opvar_to_vol_x2 = 0.000000
+		remap_opvar_to_vol_y2 = 1.000000
+		remap_opvar_to_vol_x3 = 0.000000
+		remap_opvar_to_vol_y3 = 1.000000
+		remap_opvar_to_vol_x4 = 1.000000
+		remap_opvar_to_vol_y4 = 0.750000
+	}
+	A2Pistol.LPFPings = 
+	{
+		type = "hlvr_ambient_rand"
+		random_soundevent_01_name = "A2Pistol.LPFPingsChild"
+		random_soundevent_01_timer_min = 20.000000
+		random_soundevent_01_timer_max = 23.000000
+		position = 
+		[
+			798.987000,
+			884.719543,
+			468.664917,
+		]
+		position_target = 
+		[
+			-1838.841064,
+			900.864502,
+			545.394348,
+		]
+	}
+	A2Pistol.LPFPingsChild = 
+	{
+		type = "hlvr_ambient_rand_child"
+		mixgroup = "Ambient"
+		volume = 0.550000
+		volume_rand_min = -0.100000
+		volume_rand_max = 0.150000
+		pitch_rand_min = -0.150000
+		pitch_rand_max = 0.050000
+		animation_type = "lerp_bounce"
+		position_source = 2.000000
+		animated_source = 0.000000
+		animated_target = 2.000000
+		volume_falloff_min = 800
+		volume_falloff_max = 3500
+		use_doppler = 1.000000
+		doppler_factor = 1.800000
+		vsnd_files = 
+		[
+			"sounds/ambient/abstract/amb_lowpass_ping_01.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_02.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_03.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_04.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_05.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_06.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_07.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_08.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_09.vsnd",
+			"sounds/ambient/abstract/amb_lowpass_ping_10.vsnd",
+		]
+	}
+	AmbA2Pistol.WaterdripSingle = 
+	{
+		base = "AmbientWater.WaterdripSingle"
+		global_volume_opvar_01 = "skylight_proximity_beacon"
+		remap_global_opvar_01_to_vol_min = 1.000000
+		remap_global_opvar_01_to_vol_max = 0.000000
+	}
+}

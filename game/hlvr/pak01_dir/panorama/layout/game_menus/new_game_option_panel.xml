@@ -1,0 +1,37 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <Panel class="col_body child_panel_root">
+    <Panel class="header">
+      <Label class="header" text="#HLVR_MainMenu_StartNewGame" />
+    </Panel>
+    <Panel class="empty_row" />
+
+    <Panel class="row">
+      <Panel class="col_body">
+        <GameMenuOptionCyclePanel id="new01" convar="skill" baseLabel="#HLVR_Options_Diffculty_base" value0="0" value1="1" value2="2" value3="3" label0="#HLVR_Options_Diffculty_story" label1="#HLVR_Options_Diffculty_easy" label2="#HLVR_Options_Diffculty_normal" label3="#HLVR_Options_Diffculty_hard" desc0="#HLVR_Options_Diffculty_story_desc" desc1="#HLVR_Options_Diffculty_easy_desc" desc2="#HLVR_Options_Diffculty_normal_desc" desc3="#HLVR_Options_Diffculty_hard_desc"/>
+        <GameMenuOptionCyclePanel id="new02" convar="hlvr_movetype_default" baseLabel="#HLVR_Options_Movement_Base" label0="#HLVR_Options_Movement_Blink" label1="#HLVR_Options_Movement_Shift" label2="#HLVR_Options_Movement_Continuous" label3="#HLVR_Options_Movement_Continuous_Hand" desc0="#HLVR_Options_Movement_Blink_desc" desc1="#HLVR_Options_Movement_Shift_desc" desc2="#HLVR_Options_Movement_Continuous_desc" desc3="#HLVR_Options_Movement_Continuous_Hand_desc"/>
+        <GameMenuOptionCyclePanel id="new03" convar="hlvr_left_hand_primary" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_LeftHanded_desc' )" label0="#HLVR_Options_RightHanded" label1="#HLVR_Options_LeftHanded" />
+
+        <Panel class="row_divider_line_small" />
+
+        <Panel class="row">
+          <Button class="button_newgameoptions" onactivate="GameMenu_Cmd( 'confirm_new_game' )" onmouseover="GameMenu_MouseOver( 'show_child_newgameoptions' )" >
+            <Label class="cta" text="#HLVR_MainMenu_StartGame" />
+          </Button>
+        </Panel>
+        
+      </Panel>
+    </Panel>
+
+    <Panel class="empty_row" />
+    <Panel class="empty_row_bottomR_corner" />
+  </Panel>
+</root>
+
+
+
+

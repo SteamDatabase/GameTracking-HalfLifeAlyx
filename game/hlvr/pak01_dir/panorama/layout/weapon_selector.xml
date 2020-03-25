@@ -1,0 +1,35 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/weapon_selection.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <ClientUIDialogPanel class="RootPanel">
+	 
+		  <HLVRWorldUITextPanel class="WorldUITextPanel" id="WorldUITextPanel">
+			  <Panel class="SelectionArea" id="SelectionArea">
+				  <Panel id="FlashSpinner" />
+				  <Panel id="ActiveWeaponAnimation" />
+				  <Panel class="AmmoContain" id="AmmoContain">
+					  <Label class="AmmoClip" text="{s:clip}" />
+					  <Label class="AmmoSeperator" text="/" />
+					  <Label class="AmmoReserve" text="{s:total}" />
+				  </Panel>
+			  </Panel>
+			  
+		   </HLVRWorldUITextPanel>
+	 
+	<Panel id="WeaponSwapIcon" />
+	 <Panel id="AnimatedTextureMask" >	
+		<Panel id="AnimatedTexture" />
+		<Panel id="AnimatedTextureAlt" />
+		<Panel id="AnimatedTextureSpinnerMask" />
+		<Panel id="PistolShadow" />
+		<Panel id="ShotgunShadow" />
+		<Panel id="SmgShadow" />
+		<Panel id="ToolShadow" />
+		<Panel id="HandShadow" />
+	 </Panel>
+  </ClientUIDialogPanel>
+</root>

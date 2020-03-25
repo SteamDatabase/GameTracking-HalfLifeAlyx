@@ -1,0 +1,362 @@
+{
+	NPC_Dog_Scripted_Ending.Base_Loud = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.400000
+		volume_falloff_min = 600.000000
+		volume_falloff_max = 3500.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+	}
+	NPC_Dog_Scripted_Ending.Base_Med = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		volume_falloff_min = 400.000000
+		volume_falloff_max = 3500.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+	}
+	NPC_Dog_Scripted_Ending.Base_Quiet = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+	}
+	NPC_Dog_Scripted_Ending.Base_Eye = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.700000
+		volume_falloff_max = 600.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+	}
+	NPC_Dog_Scripted_Ending.Grav_Hand = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		volume_falloff_max = 500.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+		should_pause = true
+		vsnd_files = "sounds/npc/dog/scripted/grav_hand.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Layer = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_min = 200.000000
+		volume_falloff_max = 1500.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence_Loud"
+		vsnd_files = 
+		[
+			"sounds/npc/dog/scripted/step_layer_01.vsnd",
+			"sounds/npc/dog/scripted/step_layer_02.vsnd",
+			"sounds/npc/dog/scripted/step_layer_03.vsnd",
+			"sounds/npc/dog/scripted/step_layer_04.vsnd",
+		]
+	}
+	NPC_Dog_Scripted_Ending.Vox_Sad = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/vox_idle_sad.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Body_Loop = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.600000
+		volume_fade_in = 3.000000
+		volume_fade_out = 3.000000
+		use_hrtf = 1.000000
+		mixgroup = "ScriptedSequence"
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 300.000000
+		should_pause = true
+		attachment = "snd_attach"
+		vsnd_files = "sounds/npc/dog/scripted/body_loop_idle.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Start = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_start.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Swing = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_swing.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Whoosh = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_whoosh.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Land = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Entry_Land_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Entry_Land_Wet"
+		soundevent_03 = "NPC_Dog_Scripted_Ending.Entry_Land_Layer"
+		soundevent_04 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+		use_03 = 1.000000
+		use_04 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Entry_Land_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		volume = 1.800000
+		vsnd_files = "sounds/npc/dog/scripted/entry_land.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Land_Wet = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_land_wet.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Land_Layer = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_land_layer.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Entry_Hop_Down = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/entry_hop_down.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Approach_Hop_Down = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_approach_hop_down.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Approach_Present_Crowbar = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_approach_present_crowbar.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Approach_Walk_01 = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_approach_walk_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Approach_Walk_02 = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_approach_walk_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Approach_Walk_03 = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_approach_walk_03.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Backup_01 = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_backup_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Move_Backup_02 = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/move_backup_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_Hop_Down = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Approach_Hop_Down_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Approach_Hop_Down_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_Hop_Down_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/step_approach_hop_down.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_Hop_Down_Layer = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Step_Layer"
+		vsnd_files = "sounds/npc/dog/scripted/step_layer_hopdown.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_01 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Approach_01_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_01_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_approach_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_02 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Approach_02_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_02_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_approach_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_03 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Approach_03_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Approach_03_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_approach_03.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Foot_01 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Backup_Foot_01_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Foot_01_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_backup_foot_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Foot_02 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Backup_Foot_02_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Foot_02_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_backup_foot_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Hand_01 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Backup_Hand_01_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Hand_01_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_backup_hand_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Hand_02 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "NPC_Dog_Scripted_Ending.Step_Backup_Hand_02_Core"
+		soundevent_02 = "NPC_Dog_Scripted_Ending.Step_Layer"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	NPC_Dog_Scripted_Ending.Step_Backup_Hand_02_Core = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/step_backup_hand_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Entry = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/vox_entry.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Swing = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Loud"
+		vsnd_files = "sounds/npc/dog/scripted/vox_swing.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Hop_Down = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/vox_jumpoff.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Approach = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/vox_approach.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Offer_Crowbar = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/vox_offer.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Vox_Backoff = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Med"
+		vsnd_files = "sounds/npc/dog/scripted/vox_backoff.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Eye_Calibrate_A = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Eye"
+		vsnd_files = "sounds/npc/dog/scripted/eye_calibrate_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Eye_Calibrate_B = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Eye"
+		vsnd_files = "sounds/npc/dog/scripted/eye_calibrate_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Eye_Calibrate_C = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Eye"
+		vsnd_files = "sounds/npc/dog/scripted/eye_calibrate_03.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Eye_Calibrate_D = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Eye"
+		vsnd_files = "sounds/npc/dog/scripted/eye_calibrate_04.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Eye_Calibrate_E = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Eye"
+		vsnd_files = "sounds/npc/dog/scripted/eye_calibrate_05.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Spin_A = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_spin_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Spin_B = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_spin_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Spin_C = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_spin_03.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Sway = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_sway.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Twitch_A = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_twitch_01.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Twitch_B = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_twitch_02.vsnd"
+	}
+	NPC_Dog_Scripted_Ending.Head_Twitch_C = 
+	{
+		base = "NPC_Dog_Scripted_Ending.Base_Quiet"
+		vsnd_files = "sounds/npc/dog/scripted/head_twitch_03.vsnd"
+	}
+}

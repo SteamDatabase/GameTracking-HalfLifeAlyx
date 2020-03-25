@@ -1,0 +1,231 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	SurfacePropertiesList = 
+	[
+		{
+			surfacePropertyName = "default_silent"
+			gamematerial = "X"
+			legacymaterialtag = "no_sound"
+			bulletPenetrationDistanceModifier = 1.0
+			bulletPenetrationDamageModifier = 0.5
+		},
+		{
+			surfacePropertyName = "default"
+			gamematerial = "C"
+			legacymaterialtag = "concrete"
+			jumpfactor = 1.0
+			maxspeedfactor = 1.0
+			climbable = false
+			bulletPenetrationDistanceModifier = 1.0
+			bulletPenetrationDamageModifier = 0.5
+		},
+		{
+			surfacePropertyName = "base.metal"
+			gamematerial = "M"
+			legacymaterialtag = "metal"
+			bulletPenetrationDistanceModifier = 0.5
+			bulletPenetrationDamageModifier = 0.3
+		},
+		{
+			surfacePropertyName = "world.metal_vent"
+			gamematerial = "V"
+			legacymaterialtag = "vent"
+			bulletPenetrationDistanceModifier = 0.5
+			bulletPenetrationDamageModifier = 0.45
+		},
+		{
+			surfacePropertyName = "prop.metal_vent"
+			gamematerial = "V"
+			legacymaterialtag = "vent"
+		},
+		{
+			surfacePropertyName = "base.metal_grate"
+			gamematerial = "G"
+			legacymaterialtag = "grate"
+			bulletPenetrationDistanceModifier = 1.0
+			bulletPenetrationDamageModifier = 0.99
+		},
+		{
+			surfacePropertyName = "base.dirt"
+			gamematerial = "D"
+			legacymaterialtag = "dirt"
+			bulletPenetrationDistanceModifier = 0.5
+			bulletPenetrationDamageModifier = 0.3
+		},
+		{
+			surfacePropertyName = "world.slipperyslime"
+			jumpfactor = 0.7
+		},
+		{
+			surfacePropertyName = "base.wood"
+			gamematerial = "W"
+			legacymaterialtag = "wood"
+			bulletPenetrationDistanceModifier = 1.0
+			bulletPenetrationDamageModifier = 0.6
+		},
+		{
+			surfacePropertyName = "prop.wood_ladder"
+			climbable = true
+			gamematerial = "X"
+			legacymaterialtag = "no_sound"
+		},
+		{
+			surfacePropertyName = "base.water"
+			gamematerial = "S"
+			legacymaterialtag = "slosh"
+		},
+		{
+			surfacePropertyName = "world.slime"
+			gamematerial = "S"
+			legacymaterialtag = "slosh"
+		},
+		{
+			surfacePropertyName = "world.water_shallow"
+			gamematerial = "X"
+			legacymaterialtag = "no_sound"
+		},
+		{
+			surfacePropertyName = "base.glass"
+			gamematerial = "Y"
+			legacymaterialtag = "glass"
+		},
+		{
+			surfacePropertyName = "base.concrete"
+			gamematerial = "C"
+			legacymaterialtag = "concrete"
+			bulletPenetrationDistanceModifier = 0.4
+			bulletPenetrationDamageModifier = 0.25
+		},
+		{
+			surfacePropertyName = "prop.flesh"
+			gamematerial = "F"
+			legacymaterialtag = "flesh"
+		},
+		{
+			surfacePropertyName = "prop.flesh_bloody"
+			gamematerial = "B"
+			legacymaterialtag = "bloodyflesh"
+		},
+		{
+			surfacePropertyName = "prop.flesh_alien"
+			gamematerial = "H"
+			legacymaterialtag = "alienflesh"
+		},
+		{
+			surfacePropertyName = "prop.flesh_armored"
+			gamematerial = "M"
+			legacymaterialtag = "metal"
+		},
+		{
+			surfacePropertyName = "npc_creature_flesh"
+			gamematerial = "H"
+			legacymaterialtag = "alienflesh"
+		},
+		{
+			surfacePropertyName = "npc_antlion_armor"
+			gamematerial = "M"
+			legacymaterialtag = "metal"
+		},
+		{
+			surfacePropertyName = "world.plastic"
+			gamematerial = "L"
+			legacymaterialtag = "plastic"
+		},
+		{
+			surfacePropertyName = "prop.plastic"
+			gamematerial = "L"
+			legacymaterialtag = "plastic"
+		},
+		{
+			surfacePropertyName = "prop.plastic_barrel"
+			gamematerial = "L"
+			legacymaterialtag = "plastic"
+		},
+		{
+			surfacePropertyName = "world.chainlink"
+			gamematerial = "G"
+			legacymaterialtag = "grate"
+		},
+		{
+			surfacePropertyName = "prop.chain"
+			gamematerial = "G"
+			legacymaterialtag = "grate"
+		},
+		{
+			surfacePropertyName = "prop.watermelon"
+			gamematerial = "W"
+			legacymaterialtag = "wood"
+		},
+		{
+			surfacePropertyName = "world.player_control_clip"
+			gamematerial = "I"
+			legacymaterialtag = "clip_brush"
+		},
+		{
+			surfacePropertyName = "no_decal"
+			gamematerial = "-"
+			legacymaterialtag = "no_decal"
+		},
+		{
+			surfacePropertyName = "world.foliage"
+			gamematerial = "O"
+			legacymaterialtag = "foliage"
+		},
+		{
+			surfacePropertyName = "world.tile_floor"
+			gamematerial = "T"
+			legacymaterialtag = "tile"
+			bulletPenetrationDistanceModifier = 0.65
+			bulletPenetrationDamageModifier = 0.3
+		},
+		{
+			surfacePropertyName = "world.ladder"
+			climbable = true
+			gamematerial = "X"
+			legacymaterialtag = "no_sound"
+		},
+		{
+			surfacePropertyName = "prop.computer"
+			gamematerial = "P"
+			legacymaterialtag = "computer"
+			bulletPenetrationDistanceModifier = 0.4
+			bulletPenetrationDamageModifier = 0.45
+		},
+		{
+			surfacePropertyName = "prop.plastic_box"
+			gamematerial = "L"
+			legacymaterialtag = "plastic"
+		},
+		{
+			surfacePropertyName = "npc_headcrab_armor"
+			gamematerial = "M"
+			legacymaterialtag = "metal"
+		},
+		{
+			bulletPenetrationDamageModifier = 0.05
+			surfacePropertyName = "npc_combine_soldier_armor"
+			bulletPenetrationDistanceModifier = 0.25
+		},
+		{
+			legacymaterialtag = "no_physics_dust"
+			surfacePropertyName = "player_hand"
+		},
+		{
+			isstairs = true
+			surfacePropertyName = "world.stairs"
+		},
+		{
+			isstairs = true
+			surfacePropertyName = "stairs.wood"
+		},
+		{
+			isstairs = true
+			surfacePropertyName = "stairs.metal"
+		},
+		{
+			surfacePropertyName = "prop.tabletop_eraser"
+			gamematerial = "L"
+			legacymaterialtag = "plastic"
+		},
+	]
+}

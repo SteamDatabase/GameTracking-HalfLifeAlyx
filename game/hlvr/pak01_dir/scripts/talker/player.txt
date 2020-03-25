@@ -1,0 +1,3560 @@
+criterion "IsPlayer" "classname" "player" "required"
+criterion "Concept_PlayerTalk" "concept" "TLK_PLAYER_MAP_TALK" "required"
+criterion "Concept_PlayerPickup" "concept" "TLK_PLAYER_PICKUP" "required"
+criterion "Concept_PlayerDrop" "concept" "TLK_PLAYER_DROP" "required"
+criterion "Concept_PlayerPullFromBag" "concept" "TLK_PLAYER_PULL_FROM_BAG" "required"
+criterion "Concept_PlayerCombat" "concept" "TLK_PLAYER_COMBAT" "required"
+criterion "Concept_PlayerHurt" "concept" "TLK_PLAYER_HURT" "required"
+criterion "Concept_PlayerDies" "concept" "TLK_PLAYER_DIES" "required"
+criterion "Concept_PlayerDiscovery" "concept" "TLK_PLAYER_DISCOVERY" "required"
+criterion "Concept_PlayerUsedGravityGloves" "concept" "TLK_PLAYER_USEDGG" "required"
+criterion "Concept_PlayerUpgradeComplete" "concept" "TLK_PLAYER_UPGRADE_COMPLETE" "required"
+criterion "Concept_PlayerUpgradePickup" "concept" "TLK_PLAYER_UPGRADE_PICKUP" "required"
+criterion "Concept_PlayerTeleportLethal" "concept" "TLK_PLAYER_TELEPORT_LETHAL" "required"
+
+criterion "Quarantine_AtActiveCombineShield" "quarantine_combine_shield_active" "1" "required"
+criterion "Quarantine_AtDeactivatedCombineShield" "quarantine_combine_shield_active" "0" "required"
+criterion "Quarantine_CommentOnShield" "quarantine_comment_on_shield" "1" "required"
+criterion "Quarantine_ZombieReleased" "quarantine_zombie_released" "1" "required"
+criterion "PlayerCurrency_Pickup_Small" "player_pickup_object_classname" "item_hlvr_crafting_currency_small" required
+criterion "PlayerCurrency_Drop_Small" "player_drop_object_classname" "item_hlvr_crafting_currency_small" required
+criterion "PlayerAmmoFourLeft"	"player_ammo_bag_clip_available" "4" required
+criterion "PlayerAmmoThreeLeft"	"player_ammo_bag_clip_available" "3" required
+criterion "PlayerAmmoTwoLeft"	"player_ammo_bag_clip_available" "2" required
+criterion "PlayerAmmoLast"	"player_ammo_bag_clip_available" "1" required
+criterion "PlayerAmmoEmpty"	"player_ammo_bag_clip_available" "0" required
+criterion "PlayerNeedsFlashlight"		"player_found_flashlight" "0" required
+criterion "PlayerHasResin"			"current_crafting_currency" ">0" required
+criterion "PlayerHasNoResin"		"current_crafting_currency" "0" required
+criterion "PlayerPickupFromWorld"	"player_pickup_from_bag" "!=1" required
+criterion "PlayerPickupFromBag"		"player_pickup_from_bag" "1" required
+criterion "IsPlayerHoldingPistol"		"primaryhand_active_attachment" "hlvr_weapon_energygun" required
+criterion "IsPlayerHoldingShotgun"		"primaryhand_active_attachment" "hlvr_weapon_shotgun" required
+criterion "IsPlayerHoldingRapidFire"	"primaryhand_active_attachment" "hlvr_weapon_rapidfire" required
+criterion "IsPlayerShootingAtZombie" "player_shoot_at_target" "npc_zombie" required
+criterion "IsPlayerShootingAtCloseTarget" "player_shoot_at_distance" "<=128" required
+criterion "IsPlayerShootingAlmostEmptyClip" "player_shoot_bullet_count" "<=3" required
+criterion "FlashlightFailureSmall" "flashlight_failure" "1" "required"
+criterion "FlashlightFailureMedium" "flashlight_failure" "2" "required"
+criterion "FlashlightFailureLarge" "flashlight_failure" "3" "required"															  
+criterion "ItemTooHeavy" "item_too_heavy" "1" "required"
+criterion "Fell" "fell" "1" "required"
+criterion "Shocked" "shocked" "1" "required"
+criterion "Stunned" "stunned" "1" "required"
+criterion "Coughing" "cough" "1" "required"
+criterion "Muffled" "muffled" "1" "required"
+criterion "NotMuffled" "muffled" "!=1" "required"
+criterion "PlayerPickedUpHealthPen" "player_pickup_object_classname" "item_healthvial" required
+criterion "WeaponPistol" "weapon_classname" "hlvr_weapon_energygun" required
+criterion "WeaponShotgun" "weapon_classname" "hlvr_weapon_shotgun" required
+criterion "WeaponRapidFire" "weapon_classname" "hlvr_weapon_rapidfire" required
+
+criterion "InCombat" "in_combat" "1" "required"
+criterion "NotInCombat" "in_combat" "!=1" "required"
+criterion "RecentlyInCombat" "time_since_combat" "<10" "required"
+criterion "NotRecentlyInCombat" "time_since_combat" ">=10" "required"
+
+criterion "InMap_a1_intro_world" "map" "a1_intro_world" "required"
+criterion "NotInMap_a1_intro_world" "map" "!=a1_intro_world" "required"
+criterion "InMap_a5_vault" "map" "a5_vault" "required"
+criterion "NotInMap_a5_vault" "map" "!=a5_vault" "required"
+criterion "InMap_a5_ending" "map" "a5_ending" "required"
+criterion "NotInMap_a5_ending" "map" "!=a5_ending" "required"
+criterion "InMap_a3_distillery" "map" "a3_distillery" "required"
+criterion "NotInMap_a3_distillery" "map" "!=a3_distillery" "required"
+criterion "NotInMap_a4_c17_parking_garage" "map" "!=a4_c17_parking_garage" "required"
+
+
+response PlayerVO_NeedFlashlight_Response
+{
+	speak "alyxtemp_needflashlight_01" noscene
+	speak "alyxtemp_needflashlight_02" noscene
+	speak "alyxtemp_needflashlight_03" noscene
+}
+
+rule PlayerVO_NeedFlashlight_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk PlayerNeedsFlashlight
+	response		PlayerVO_NeedFlashlight_Response
+	matchonce
+}
+
+
+//========================================================================================================
+// a2_quarantine_entrance
+//========================================================================================================
+criterion "InMap_a2_quarantine_entrance" "map" "a2_quarantine_entrance" "required"
+
+criterion "Speech_AlyxRussell_FirstDeadZombie" "speech" "first_dead_zombie" "required"
+response PlayerVO_a2_quarantine_entrance_FirstDeadZombie
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstDeadZombie
+	scene "scenes/act2/quarantine_entrance/alyx_russell_first_dead_zombie" speakonce
+}
+
+criterion "Speech_AlyxRussell_MoveWindowZombie" "speech" "move_window_zombie" "required"
+response PlayerVO_a2_quarantine_entrance_MoveWindowZombie
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_MoveWindowZombie
+	scene "scenes/act2/quarantine_entrance/alyx_react_moving_window_zombie.vcd" speakonce
+}
+
+criterion "Speech_AlyxRussell_Black_Mesa" "speech" "black_mesa" "required"
+
+response PlayerVO_AlyxRussell_BlackMesa
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_Black_Mesa   
+	scene "scenes/alyx_russell_conversations/black_mesa" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_AlyxRussell_SeeQZoneGate" "speech" "see_qzone_gate" "required"
+
+// if the player sneaks around and somehow skips looking at the gate, don't play this if they make it to the console
+criterion "PlayerHasNotSeenCombineConsole" "player_has_seen_console" "!=1" "required"
+
+response PlayerVO_a2_quarantine_entrance_SeeQZoneGate
+{
+	criteria		Concept_PlayerTalk  PlayerHasNotSeenCombineConsole Speech_AlyxRussell_SeeQZoneGate 
+	scene "scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_gate" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_AlyxRussell_SeeQZoneGateConsole" "speech" "see_qzone_gate_console" "required"
+response PlayerVO_a2_quarantine_entrance_SeeQZoneGateConsole
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_SeeQZoneGateConsole
+	scene			"scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_console" speakonce
+	applycontext	"player_has_seen_console:1"
+}
+
+criterion "Speech_AlyxRussell_ConsoleLooking" "speech" "console_looking" "required"
+response PlayerVO_a2_quarantine_entrance_ConsoleLooking
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_ConsoleLooking
+	scene "scenes/act2/quarantine_entrance/alyx_russell_console_looking" interrupt_and_cancel speakonce
+}
+
+// gate opens
+criterion "Speech_AlyxRussell_SeeQZoneGateOpen_Reaction" "speech" "see_qzone_gate_open_reaction" "required"
+response PlayerVO_a2_quarantine_entrance_SeeQZoneGateOpenReaction
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_SeeQZoneGateOpen_Reaction
+	scene "scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_gate_open_reaction"  predelay 2 speakonce
+}
+																											
+// give this a delay so the animation and music can finish
+criterion "Speech_AlyxRussell_SeeQZoneGateOpen" "speech" "see_qzone_gate_open" "required"
+response PlayerVO_a2_quarantine_entrance_SeeQZoneGateOpen
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_SeeQZoneGateOpen
+	scene "scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_gate_open" speakonce
+}
+
+criterion "Speech_AlyxRussell_XenFoliage" "speech" "see_xen_foliage" "required"
+response PlayerVO_a2_quarantine_entrance_XenFoliage
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_XenFoliage
+	scene "scenes/act2/quarantine_entrance/alyx_see_xen_foliage" predelay 1 interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstCombineLock" "speech" "first_combine_lock" "required"
+response PlayerVO_a2_quarantine_entrance_FirstCombineLock
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstCombineLock
+	scene "scenes/act2/quarantine_entrance/alyx_russell_first_combine_lock" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_PortaPotty" "speech" "qz_entrance_porta_potty" "required"
+response PlayerVO_a2_quarantine_entrance_PortaPotty
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_PortaPotty
+	scene "scenes/act2/quarantine_entrance/alyx_russell_porta_potty" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_BarnacleWarning" "speech" "barnacle_warning" "required"
+response PlayerVO_a2_quarantine_entrance_BarnacleWarning
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_BarnacleWarning
+	scene "scenes/act2/quarantine_entrance/alyx_russell_see_barnacle.vcd" predelay 1 interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_DeadBarnacle" "speech" "first_dead_barnacle" "required"
+response PlayerVO_a2_quarantine_entrance_DeadBarnacle
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_DeadBarnacle
+	scene "scenes/act2/quarantine_entrance/alyx_russell_kill_barnacle.vcd" predelay 1 interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_ShotRat" "speech" "alyx_shoot_rat" "required"
+response PlayerVO_a2_quarantine_entrance_ShotRat
+{
+	criteria		Concept_PlayerTalk  Speech_Alyx_ShotRat
+	scene "scenes/act2/quarantine_entrance/alyx_shoot_rat" predelay 0.5 speakonce
+}
+
+
+
+//========================================================================================
+// a2 pistol
+//========================================================================================
+criterion "InMap_a2_pistol" "map" "a2_pistol" "required"
+
+
+// zombie barnacle
+
+criterion "ZombieBarnacleShot" "zombie_barnacle_eaten" "!=1" "required"
+criterion "ZombieBarnacleEaten" "zombie_barnacle_eaten" "1" "required"
+
+criterion "IgnoreZombieDeath" "ignore_zombie_death" "1" "required"
+criterion "DontIgnoreZombieDeath" "ignore_zombie_death" "!=1" "required"
+
+
+criterion "Speech_AlyxRussell_HearZombieBarnacle" "speech" "hear_zombie_barnacle" "required"
+response PlayerVO_AlyxRussell_HearZombieBarnacle
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_HearZombieBarnacle 
+	scene "scenes/act2/pistol/alyx_russell_first_zombie_intro.vcd"  predelay 1.0 interrupt_and_cancel speakonce
+	
+}
+
+criterion "Speech_AlyxRussell_SeeZombieBarnacle" "speech" "see_zombie_barnacle" "required"
+response PlayerVO_AlyxRussell_SeeZombieBarnacle
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_SeeZombieBarnacle 
+	scene "scenes/act2/pistol/alyx_russell_first_zombie.vcd" interrupt_and_cancel speakonce
+} 
+
+criterion "Speech_AlyxRussell_ZombieBarnacleKilled" "speech" "zombie_barnacle_killed" "required"
+response PlayerVO_AlyxRussell_ZombieBarnacleKilled
+{
+	criteria	Concept_PlayerTalk  Speech_AlyxRussell_ZombieBarnacleKilled DontIgnoreZombieDeath 
+	response PlayerVO_AlyxRussell_ZombieBarnacleShot
+	{
+		criteria ZombieBarnacleShot
+		scene "scenes/act2/pistol/alyx_russell_first_zombie_shot.vcd" interrupt_and_cancel speakonce
+	}
+		response PlayerVO_AlyxRussell_ZombieBarnacleEaten
+	{
+		criteria ZombieBarnacleEaten
+		scene "scenes/act2/pistol/alyx_russell_first_zombie_eaten.vcd" interrupt_and_cancel speakonce
+	}
+}
+
+criterion "HasFoundUpgradeStation" "found_upgrade_station" "1" "required"
+criterion "HasNotFoundUpgradeStation" "found_upgrade_station" "!=1" "required"
+criterion "Speech_AlyxRussell_FirstShotZombie" "speech" "first_shot_zombie" "required"
+
+response PlayerVO_AlyxRussell_FirstShotZombieNoFabricator_response
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstShotZombie 
+	scene "scenes/responses/alyx_first_zombie_shot_no_fabricator"	predelay 1	speakonce
+}
+
+response PlayerVO_AlyxRussell_FirstShotZombie_response
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstShotZombie HasFoundUpgradeStation
+	scene "scenes/responses/alyx_first_zombie_shot"	predelay 1	speakonce
+}
+
+criterion "Speech_AlyxRussell_ZombieSubway" "speech" "zombie_subway" "required"
+
+response PlayerVO_AlyxRussell_ZombieSubway
+{
+	criteria	Concept_PlayerTalk  Speech_AlyxRussell_ZombieSubway 
+	scene "scenes/alyx_russell_conversations/alyx_russell_zombie_subway" interrupt_and_cancel  speakonce predelay 1
+}
+
+// no longer needed
+//criterion "Speech_AlyxRussell_LockedInHere" "speech" "locked_in_here" "required"
+//response PlayerVO_AlyxRussell_LockedInHere
+//{
+//	criteria	Concept_PlayerTalk  Speech_AlyxRussell_LockedInHere 
+//	scene "scenes/act2/pistol/alyx_russell_locked_in_there" predelay 1.5	speakonce
+//}
+
+
+criterion "HasSeenSecondHeadcrab" "saw_second_headcrab" "1" "required"
+criterion "HasNotSeenSecondHeadcrab" "saw_second_headcrab" "!=1" "required"
+criterion "Speech_AlyxRussell_FirstHeadCrab" "speech" "first_headcrab" "required"
+response PlayerVO_AlyxRussell_FirstHeadCrab
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_FirstHeadCrab
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab.vcd" 	cancel_existing	  speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstHeadCrabMissed" "speech" "first_headcrab_missed" "required"
+response PlayerVO_AlyxRussell_FirstHeadCrabMissed
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_FirstHeadCrabMissed
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab_if_player_doesnt_see_headcrab.vcd" 	cancel_existing	  speakonce
+}
+
+
+
+criterion "Speech_AlyxRussell_FirstHeadCrab2" "speech" "first_headcrab_2" "required"
+response PlayerVO_AlyxRussell_FirstHeadCrab2
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_FirstHeadCrab2
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab_2.vcd" 	interrupt_and_cancel   speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstHeadCrabKilled" "speech" "first_headcrab_killed" "required"
+
+response PlayerVO_AlyxRussell_FirstHeadCrabKilled
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_FirstHeadCrabKilled 
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab_killed.vcd" 	speakonce interrupt_and_cancel then self TLK_PLAYER_MAP_TALK first_head_crab_killed_2:1 1	
+}
+
+criterion "FirstHeadCrabKilled" "first_headcrab_killed_context" "1" "required"
+criterion "FirstHeadCrabKilled2" "first_head_crab_killed_2" "1" "required"
+
+
+response PlayerVO_AlyxRussell_FirstHeadCrabKilledNoSecond
+{
+	criteria	Concept_PlayerTalk  HasNotSeenSecondHeadcrab FirstHeadCrabKilled2
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab_killed_no_second.vcd" speakonce 
+}
+
+criterion "Speech_AlyxRussell_FirstHeadCrabScare" "speech" "first_headcrab_scare" "required"
+response PlayerVO_AlyxRussell_FirstHeadCrabScare
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_FirstHeadCrabScare
+	scene "scenes/act2/pistol/alyx_russell_headcrab_scare.vcd" 	interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_AlyxRussell_SecondHeadCrabReveal" "speech" "second_headcrab_reveal" "required"
+response PlayerVO_AlyxRussell_SecondHeadCrabReveal
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SecondHeadCrabReveal FirstHeadCrabKilled
+	scene "scenes/act2/pistol/alyx_russell_first_headcrab_killed_second_reveal.vcd" speakonce interrupt_and_cancel
+}
+
+//========================================================================================
+// a2_hideout
+//========================================================================================
+criterion "InMap_a2_hideout" "map" "a2_hideout" "required"
+
+criterion "Speech_AlyxRussell_HealthStationNoBattery" "speech" "health_station_no_battery" "required"
+response PlayerVO_AlyxRussell_HealthStationNoBattery
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_HealthStationNoBattery
+	scene "scenes/act2/hideout/health_station_no_battery" speakonce
+}
+
+
+criterion "Speech_AlyxRussell_ZombieScare" "speech" "zombie_scare" "required"
+response PlayerVO_AlyxRussell_ZombieScare
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_ZombieScare
+	scene "scenes/act2/hideout/zombie_jump_scare" cancel_existing speakonce
+}
+
+criterion "Speech_AlyxRussell_NewsOnDad_1" "speech" "news_on_dad_1" "required"
+response PlayerVO_AlyxRussell_NewsOnDad_1
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_NewsOnDad_1
+	scene "scenes/act2/hideout/news_on_dad_1"  speakonce
+}
+
+
+criterion "Speech_AlyxRussell_SeeEye" "speech" "see_eye" "required"
+response PlayerVO_AlyxRussell_SeeEye_response
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SeeEye
+	scene "scenes/act2/hideout/eye_reveal" 	interrupt_and_cancel speakonce
+}
+
+// mural
+
+criterion "Speech_AlyxRussell_SeeMural" "speech" "see_mural" "required"
+response PlayerVO_AlyxRussell_SeeMural
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SeeMural
+	scene "scenes/act2/hideout/mural_distance" 	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_SeeMuralClose" "speech" "see_mural_close" "required"
+response PlayerVO_AlyxRussell_SeeMuralClose
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SeeMuralClose
+	scene "scenes/act2/hideout/mural_close" 	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_SeeMuralCentral" "speech" "see_mural_central" "required"
+response PlayerVO_AlyxRussell_SeeMuralCentral
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SeeMuralCentral
+	scene "scenes/act2/hideout/mural_central" 	interrupt_and_cancel  speakonce
+}
+
+criterion "Speech_AlyxRussell_SeeMuralCardboard" "speech" "see_mural_cardboard" "required"
+response PlayerVO_AlyxRussell_SeeMuralCardboard
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_SeeMuralCardboard
+	scene "scenes/act2/hideout/mural_cardboard" 	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_RussellCutsOut" "speech" "russell_cuts_out" "required"
+response PlayerVO_AlyxRussell_RussellCutsOut
+{
+	criteria	Concept_PlayerTalk Speech_AlyxRussell_RussellCutsOut
+	scene "scenes/act2/hideout/russell_cuts_out" 	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Vort_Graffitti" "speech" "alyx_vort_graffiti" "required"
+response PlayerVO_Alyx_Vort_Graffiti
+{
+	criteria	Concept_PlayerTalk Speech_Alyx_Vort_Graffitti
+	scene "scenes/act2/hideout/alyx_react_to_vort_graffiti.vcd" speakonce
+}
+
+//========================================================================================
+// a2_headcrabs_tunnel
+//========================================================================================
+ criterion "InMap_a2_headcrabs_tunnel" "map" "a2_headcrabs_tunnel" "required"
+
+criterion "Speech_AlyxRussell_Russell_Cuts_Back_In_A" "speech" "russell_cuts_back_in_a" "required"
+response PlayerVO_A2_Headcrabs_Tunnel_AlyxRussell_Russell_Cuts_Back_In_A
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Russell_Cuts_Back_In_A
+	scene "scenes/act2/headcrabs_tunnel/russell_cuts_back_in_a" speakonce
+}
+
+criterion "Speech_AlyxRussell_Russell_Cuts_Back_In_B" "speech" "russell_cuts_back_in_b" "required"
+response PlayerVO_A2_Headcrabs_Tunnel_AlyxRussell_Russell_Cuts_Back_In_B
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Russell_Cuts_Back_In_B
+	scene "scenes/act2/headcrabs_tunnel/russell_cuts_back_in_b"	interrupt_and_cancel predelay 1 speakonce
+}
+
+criterion "Speech_AlyxRussell_Russell_Cuts_Back_In_C" "speech" "russell_cuts_back_in_c" "required"
+response PlayerVO_A2_Headcrabs_Tunnel_AlyxRussell_Russell_Cuts_Back_In_C
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Russell_Cuts_Back_In_C
+	scene "scenes/act2/headcrabs_tunnel/russell_cuts_back_in_c"	interrupt_and_cancel predelay 1	speakonce
+}
+
+criterion "Speech_AlyxRussell_News_On_Dad_2" "speech" "news_on_dad_2" "required"
+response PlayerVO_A2_Headcrabs_Tunnel_AlyxRussell_News_On_Dad_2
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_News_On_Dad_2
+	scene "scenes/act2/headcrabs_tunnel/news_on_dad_2" speakonce
+}
+
+criterion "Speech_AlyxRussell_Shell_Grabbed" "speech" "shell_grabbed" "required"
+response PlayerVO_A2_Headcrabs_Tunnel_Alyx_PickUp_Armored_Shell
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Shell_Grabbed
+	scene "scenes/act2/headcrabs_tunnel/pickup_armored_shell" speakonce
+}
+
+// these got moved to headcrabs_tunnel
+criterion "Speech_AlyxRussell_DarkConvo_1" "speech" "dark_convo_1" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_DarkConvo_1
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_DarkConvo_1
+	scene "scenes/act2/drainage/dark_convo_1" speakonce
+}
+
+criterion "Speech_AlyxRussell_DarkConvo_2" "speech" "dark_convo_2" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_DarkConvo_2
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_DarkConvo_2
+	scene "scenes/act2/drainage/dark_convo_2"	speakonce
+}
+
+//shotgun zombie
+criterion "Speech_Shotgun_Zombie_See" "speech" "shotgun_zombie_see" "required"
+response PlayerVO_Shotgun_Zombie_See
+{
+	criteria Concept_PlayerTalk Speech_Shotgun_Zombie_See
+	scene "scenes/act2/headcrabs_tunnel/shotgun_zombie_see"	 interrupt_and_cancel  speakonce
+}
+
+criterion "Speech_Shotgun_Zombie_Fall" "speech" "shotgun_zombie_fall" "required"
+response PlayerVO_Shotgun_Zombie_Fall
+{
+	criteria Concept_PlayerTalk Speech_Shotgun_Zombie_Fall
+	scene "scenes/act2/headcrabs_tunnel/shotgun_zombie_fall" interrupt_and_cancel predelay 2 speakonce
+}
+
+criterion "Speech_Shotgun_Zombie_Wall_Noises" "speech" "shotgun_zombie_wall_noise" "required"
+response PlayerVO_Shotgun_Zombie_Wall_Noises
+{
+	criteria Concept_PlayerTalk Speech_Shotgun_Zombie_Wall_Noises
+	scene "scenes/act2/headcrabs_tunnel/shotgun_zombie_wall_noise"	interrupt_and_cancel predelay 2 speakonce
+}
+
+criterion "Speech_Shotgun_Zombie_Solve_Puzzle" "speech" "shotgun_zombie_solve_puzzle" "required"
+response PlayerVO_Shotgun_Zombie_Solve_Puzzle
+{
+	criteria Concept_PlayerTalk Speech_Shotgun_Zombie_Solve_Puzzle
+	scene "scenes/act2/headcrabs_tunnel/shotgun_zombie_solve_puzzle"  interrupt_and_cancel	speakonce
+}
+
+criterion "Speech_Shotgun_Zombie_Kill_Zombies" "speech" "shotgun_zombie_kill_zombies" "required"
+response PlayerVO_Shotgun_Zombie_Kill_Zombies
+{
+	criteria Concept_PlayerTalk Speech_Shotgun_Zombie_Kill_Zombies IsPlayerHoldingShotgun
+	scene "scenes/act2/headcrabs_tunnel/shotgun_zombie_kill_zombies" interrupt_and_cancel speakonce
+}	
+
+criterion "Speech_Alyx_Dark_Response" "speech" "dark_response" "required"
+response PlayerVO_Alyx_Dark_Response
+{
+	scene "scenes/act2/headcrabs_tunnel/darkness_response_1" interrupt_and_cancel speakonce
+}	
+
+rule PlayerVO_Alyx_Dark_Response_Rule
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Dark_Response
+	response PlayerVO_Alyx_Dark_Response
+	applycontext	"darkness_response_2:1"
+}
+
+response PlayerVO_Alyx_Dark_Response_2
+{
+	scene "scenes/act2/headcrabs_tunnel/darkness_response_2" interrupt_and_cancel 
+}	
+
+criterion "DarknessResponse_2" "darkness_response_2" "1" "required"
+
+rule PlayerVO_Alyx_Dark_Response_2_Rule
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Dark_Response  DarknessResponse_2
+	response PlayerVO_Alyx_Dark_Response_2
+	applycontext	"darkness_response_3:1"
+}
+
+criterion "DarknessResponse_3" "darkness_response_3" "1" "required"
+
+response PlayerVO_Alyx_Dark_Response_3
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Dark_Response  DarknessResponse_3
+	scene "scenes/act2/headcrabs_tunnel/darkness_response_3" interrupt_and_cancel
+}
+
+
+criterion "Speech_EnterFlashlightPit" "speech" "enter_flashlight_pit" "required"
+response PlayerVO_EnterFlashlightPit
+{
+	criteria Concept_PlayerTalk Speech_EnterFlashlightPit
+	scene "scenes/act2/headcrabs_tunnel/enter_flashlight_pit" interrupt_and_cancel speakonce
+}	
+
+criterion "Speech_FindFlashLight" "speech" "find_flashlight" "required"
+response PlayerVO_FindFlashLight
+{
+	criteria Concept_PlayerTalk Speech_FindFlashLight
+	scene "scenes/act2/headcrabs_tunnel/find_flashlight" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_FlashLightOn" "speech" "flashlight_on" "required"
+response PlayerVO_FlashLightOn
+{
+	criteria Concept_PlayerTalk Speech_FlashLightOn
+	scene "scenes/act2/headcrabs_tunnel/flashlight_on" interrupt_and_cancel	 speakonce
+}
+
+
+criterion "Speech_HowFlashLightWorks" "speech" "how_flashlight_works" "required"
+response PlayerVO_HowFlashLightWorks
+{
+	criteria Concept_PlayerTalk Speech_HowFlashLightWorks
+	scene "scenes/act2/headcrabs_tunnel/russell_tells_alyx_how_flashlight_works" interrupt_and_cancel speakonce
+}
+
+
+
+//========================================================================================================
+// a2_drainage
+//========================================================================================================
+criterion "InMap_A2_Drainage" "map" "a2_drainage" "required"
+
+criterion "Speech_AlyxRussell_First_Manhack" "speech" "first_manhack" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_First_Manhack
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_First_Manhack
+	scene "scenes/act2/drainage/manhack_intro" speakonce
+}
+
+criterion "Speech_AlyxRussell_First_Dead_Combine" "speech" "first_dead_combine" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_First_Dead_Combine
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_First_Dead_Combine
+	scene "scenes/act2/drainage/first_dead_combine" speakonce
+}
+
+criterion "Speech_AlyxRussell_News_On_Dad_B" "speech" "news_on_dad_b" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_News_On_Dad_B
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_News_On_Dad_B
+	scene "scenes/act2/heard_from_dad_pt2" speakonce
+}
+
+criterion "Speech_AlyxRussell_Manhacks" "speech" "alert_manhacks" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_Manhacks
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Manhacks
+	scene "scenes/act2/drainage/manhacks" speakonce
+}
+
+criterion "Speech_AlyxRussell_OneToTen" "speech" "one_to_ten" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_OneToTen
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_OneToTen
+	scene "scenes/alyx_russell_conversations/earth_before_scale_of_one_to_ten" speakonce
+}
+
+criterion "Speech_AlyxRussell_ThreeYearPlan" "speech" "three_year_plan" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_ThreeYearPlan
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ThreeYearPlan
+	scene "scenes/alyx_russell_conversations/russells_three_year_plan"	predelay 1 speakonce
+}
+
+criterion "Speech_AlyxRussell_SecretLab" "speech" "secret_lab" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_SecretLab
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SecretLab
+	scene "scenes/alyx_russell_conversations/alyx_secret_lab" speakonce
+}
+
+criterion "Speech_AlyxRussell_AlyxJob" "speech" "alyx_job" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_AlyxJob
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_AlyxJob
+	scene "scenes/alyx_russell_conversations/convo_alyx_gets_a_job" speakonce
+}
+
+criterion "Speech_AlyxRussell_GunshotWarning" "speech" "gunshot_warning" "required"
+response PlayerVO_A2_Drainage_AlyxRussell_GunshotWarning
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_GunshotWarning
+	scene "scenes/act2/drainage/barrel_maze_gunshot" speakonce  
+}
+
+
+criterion "Speech_GettingDarkAgain" "speech" "getting_dark_again" "required"
+response PlayerVO_GettingDarkAgain
+{
+	criteria Concept_PlayerTalk Speech_GettingDarkAgain
+	scene "scenes/act2/drainage/getting_dark_again" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_HangingCombine" "speech" "hanging_combine" "required"
+response PlayerVO_HangingCombine
+{
+	criteria Concept_PlayerTalk Speech_HangingCombine
+	scene "scenes/act2/drainage/alyx_react_hanging_dudes.vcd" predelay .5 speakonce
+}
+
+
+
+
+//========================================================================================================
+// a2_trainyard
+//========================================================================================================
+criterion "Speech_ArriveFairview" "speech" "arrive_fairview" "required"
+
+response PlayerVO_A2_Train_Yard_ArriveFairview
+{
+	criteria Concept_PlayerTalk Speech_ArriveFairview
+	scene "scenes/act2/trainyard/arrive_at_fairview" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_ArriveFairviewCombatPlatform" "speech" "arrive_fairview_combat_platform" "required"
+
+response PlayerVO_A2_Train_Yard_ArriveFairviewCombatPlatform
+{
+	criteria Concept_PlayerTalk Speech_ArriveFairviewCombatPlatform
+	scene "scenes/act2/trainyard/arrive_at_fairview_combat_platform" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_Combine_Weapon_Banter" "speech" "combine_weapon_banter" "required"
+
+response PlayerVO_A2_Train_Yard_Combine_Weapon_Banter
+{
+	criteria Concept_PlayerTalk Speech_Combine_Weapon_Banter
+	scene "scenes/act2/trainyard/convo_combine_zombie_automatic_weapon_banter.vcd" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_KeepAnEyeOut" "speech" "keep_an_eye_out" "required"
+response PlayerVO_A2_Trainyard_AlyxRussell_KeepAnEyeOut
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_KeepAnEyeOut
+	scene "scenes/act2/trainyard/keep_an_eye_out"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_SeeCombineShootCitizen" "speech" "see_combine_shoot_citizen" "required"
+
+response PlayerVO_A2_Train_Yard_SeeCombineShootCitizen
+{
+	criteria Concept_PlayerTalk Speech_SeeCombineShootCitizen
+	scene "scenes/act2/trainyard/see_combine" interrupt_and_cancel speakonce
+}
+
+
+//========================================================================================================
+// a3_station_street
+//========================================================================================================
+criterion "Speech_Combine_Looking_For_Us" "speech" "combine_looking_for_us" "required"
+response PlayerVO_A3_Station_Street_Combine_Looking_For_Us
+{
+	criteria Concept_PlayerTalk Speech_Combine_Looking_For_Us
+	scene "scenes/act2/trainyard/convo_combine_are_looking_for_us" speakonce
+}
+
+criterion "Speech_Russell_Pep_Talk" "speech" "russell_pep_talk" "required"
+response PlayerVO_A3_Station_Street_Russell_Pep_Talk
+{
+	criteria Concept_PlayerTalk Speech_Russell_Pep_Talk
+	scene "scenes/act2/trainyard/russell_pep_talk"	 interrupt_and_cancel  speakonce
+}
+
+//criterion "Speech_Alyx_Excuse_me" "speech" "keycard_excuse_me" "required"
+//response PlayerVO_A3_Station_Street_Alyx_Excuse_Me
+//{
+//	criteria Concept_PlayerTalk Speech_Alyx_Excuse_me
+//	scene "scenes/act3/processing_plant/excuse_me" speakonce
+//}
+
+
+criterion "NotRecentlyInCombatStation" "time_since_combat" ">=3" "required"
+criterion "Speech_Russell_DataPod" "speech" "data_pod" "required"
+response PlayerVO_A3_Station_Street_DataPod
+{
+	criteria Concept_PlayerTalk Speech_Russell_DataPod NotInCombat NotRecentlyInCombatStation
+	scene "scenes/act3/station_street/data_pod"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Look_Out_Window" "speech" "russell_look_out_window" "required"
+response PlayerVO_A3_Station_Street_Russell_Look_Out_Window
+{
+	criteria Concept_PlayerTalk Speech_Russell_Look_Out_Window
+	scene "scenes/act3/station_street/see_vault_prompt"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Look_Out_Window_Reminder" "speech" "russell_look_out_window_reminder" "required"
+response PlayerVO_A3_Station_Street_Russell_Look_Out_Window_Reminder
+{
+	criteria Concept_PlayerTalk Speech_Russell_Look_Out_Window_Reminder
+	scene "scenes/act3/station_street/see_vault_reminder" speakonce
+}
+
+criterion "Speech_Russell_Keypad_Prompt" "speech" "russell_keypad_prompt" "required"
+response PlayerVO_A3_Station_Street_Russell_Keypad_Prompt
+{
+	criteria Concept_PlayerTalk Speech_Russell_Keypad_Prompt
+	scene "scenes/act3/station_street/see_vault_keypad_prompt" speakonce
+}
+
+criterion "Speech_AlyxRussell_See_Vault" "speech" "alyx_russell_see_vault" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_Vault
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_See_Vault
+	scene "scenes/act3/station_street/see_vault_conversation" speakonce
+}
+
+criterion "Speech_Alyx_See_Vault_Cables" "speech" "alyx_see_cables" "required"
+response PlayerVO_A3_Station_Street_Alyx_Vault_See_Cables
+{
+	criteria Concept_PlayerTalk Speech_Alyx_See_Vault_Cables
+	scene "scenes/act3/station_street/alyx_look_at_vault_lot_of_cables" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_Leaves_Vault_View" "speech" "alyx_russell_leaves_vault_view" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_Leaves_Vault
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Leaves_Vault_View
+	scene "scenes/act3/station_street/see_vault_refusal"   interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_NewsOnDad3" "speech" "news_on_dad_3" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_NewsOnDad3
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_NewsOnDad3
+	scene "scenes/act3/station_street/news_on_dad_3" interrupt_and_cancel speakonce
+}
+
+// ---- GRENADE TRAINING ----
+criterion "Speech_Alyx_Open_Grenades" "speech" "open_grenades" "required"
+response PlayerVO_A3_Station_Open_Grenades
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Open_Grenades
+	scene "scenes/act3/station_street/grenades_open" speakonce
+}
+
+criterion "Speech_Alyx_Barnacle_Grenade_Feed" "speech" "barnacle_grenade_feed" "required"
+response PlayerVO_A3_Station_Barnacle_Grenade_Feed
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Barnacle_Grenade_Feed
+	scene "scenes/act3/station_street/barnacle_grenade_feed" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Barnacle_Grenade_Death" "speech" "barnacle_grenade_death" "required"
+response PlayerVO_A3_Station_Barnacle_Grenade_Death
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Barnacle_Grenade_Death
+	scene "scenes/act3/station_street/barnacle_grenade_death" interrupt_and_cancel predelay 2 speakonce
+}
+
+criterion "Speech_Alyx_Zombie_Grenade_Drop" "speech" "zombie_grenade_drop" "required"
+response PlayerVO_A3_Station_Zombie_Grenade_Drop
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Zombie_Grenade_Drop
+	scene "scenes/act3/station_street/zombie_grenade_drop" speakonce
+}
+
+criterion "Speech_Alyx_Zombie_Grenade_Death" "speech" "zombie_grenade_death" "required"
+response PlayerVO_A3_Station_Zombie_Grenade_Death
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Zombie_Grenade_Death
+	scene "scenes/act3/station_street/zombie_grenade_death" predelay 2 speakonce
+}
+
+criterion "Speech_Alyx_Grenade_Toss_Success" "speech" "grenade_toss_success" "required"
+response PlayerVO_A3_Station_Grenade_Toss_Succes
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Grenade_Toss_Success
+	scene "scenes/act3/station_street/grenade_toss_success" interrupt_and_cancel speakonce
+}
+
+// missed grenade tosses
+criterion "Speech_Alyx_Grenade_Toss_Fail" "speech" "grenade_toss_fail" "required"
+
+response PlayerVO_Grenade_Toss_Fail
+{
+	criteria	Concept_PlayerTalk Speech_Alyx_Grenade_Toss_Fail
+	scene "scenes/act3/station_street/grenade_toss_fail_1" 
+	scene "scenes/act3/station_street/grenade_toss_fail_2" 
+	scene "scenes/act3/station_street/grenade_toss_fail_3" 
+	scene "scenes/act3/station_street/grenade_toss_fail_4" 
+	scene "scenes/act3/station_street/grenade_toss_fail_5" 
+	sequential
+	norepeat
+}
+
+criterion "Speech_Station_Street_CombineMonitor" "speech" "station_street_monitor" "required"
+response PlayerVO_A3_Station_Street_Monitor
+{
+	criteria Concept_PlayerTalk Speech_Station_Street_CombineMonitor
+	scene "scenes/act3/station_street/see_combine_monitor" speakonce 
+}
+
+criterion "Speech_Station_Street_Overwatch" "speech" "station_street_overwatch" "required"
+response PlayerVO_A3_Station_Street_Overwatch
+{
+	criteria Concept_PlayerTalk Speech_Station_Street_Overwatch
+	scene "scenes/act3/station_street/station_street_overwatch" speakonce 
+}
+
+criterion "Speech_AlyxRussell_Station_Puzzle_Alarm" "speech" "station_street_puzzle_alarm" "required"
+response PlayerVO_A3_Station_Street_Puzzle_Alarm
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Station_Puzzle_Alarm
+	scene "scenes/act3/station_street/alyx_triggers_toner_puzzle_alarm" speakonce 
+}
+
+// ---- HOTEL ----
+criterion "Speech_AlyxRussell_See_Hotel" "speech" "alyx_russell_see_hotel" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_See_Hotel
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_See_Hotel
+	scene "scenes/act3/station_street/see_hotel" speakonce
+}
+
+criterion "Speech_AlyxRussell_See_Substation" "speech" "alyx_russell_see_substation" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_See_Substation
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_See_Substation
+	scene "scenes/act3/station_street/see_substation" speakonce
+}
+
+criterion "Speech_AlyxRussell_See_Substation_Cables" "speech" "alyx_russell_see_substation_cables" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_See_Substation_Cables
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_See_Substation_Cables
+	scene "scenes/act3/station_street/see_substation_cables" speakonce
+}
+
+criterion "Speech_AlyxRussell_Cant_Use_Elevator" "speech" "alyx_russell_cant_use_elevator" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_Cant_Use_Elevator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Cant_Use_Elevator
+	scene "scenes/act3/station_street/cant_use_elevator" speakonce
+}
+
+criterion "Speech_Russell_Cant_Use_Elevator_Hint_2" "speech" "russell_cant_use_elevator_hint_2" "required"
+response PlayerVO_A3_Station_Street_Russell_Cant_Use_Elevator_Hint_2
+{
+	criteria Concept_PlayerTalk Speech_Russell_Cant_Use_Elevator_Hint_2
+	scene "scenes/act3/station_street/cant_use_elevator_hint_2" speakonce
+}
+
+criterion "Speech_AlyxRussell_Elevator_Cuts_Out" "speech" "alyx_russell_elevator_cuts_out" "required"
+response PlayerVO_A3_Station_Street_AlyxRussell_Elevator_Cuts_Out
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Elevator_Cuts_Out
+	scene "scenes/act3/station_street/elevator_russell_cuts_out" speakonce
+}
+
+
+//========================================================================================================
+// a3_hotel_lobby_basement
+//========================================================================================================
+criterion "InMap_A3_Hotel_Lobby_Basement" "map" "a3_hotel_lobby_basement" "required"
+
+// ---- ELEVATOR POWER GOES OUT ----
+criterion "Speech_AlyxRussell_SeeElevator" "speech" "hotel_see_elevator" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_SeeElevator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SeeElevator 
+	scene "scenes/act3/hotel_lobby_basement/see_elevator" speakonce
+}
+
+criterion "Speech_AlyxRussell_See_Hotel_Stairs" "speech" "hotel_see_stairs" "required"
+criterion "Alyx_Not_Entered_Breaker_Room" "entered_breaker_room" "!=1" "required"
+criterion "Alyx_Entered_Breaker_Room" "entered_breaker_room" "1" "required"
+
+response PlayerVO_AlyxRussell_Hotel_LookAtStairs
+{
+	scene "scenes/act3/hotel_lobby_basement/look_at_stairs"	interrupt_and_cancel speakonce
+}
+
+rule PlayerVO_AlyxRussell_Hotel_LookAtStairs_Rule
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_See_Hotel_Stairs Alyx_Not_Entered_Breaker_Room
+	response		PlayerVO_AlyxRussell_Hotel_LookAtStairs
+	applycontext	"saw_hotel_stairs:1"
+}
+
+criterion "Alyx_Not_Saw_Stairs" "saw_hotel_stairs" "!=1" "required"
+criterion "Alyx_Saw_Stairs" "saw_hotel_stairs" "1" "required"
+criterion "Alyx_Solved_BreakerRoom" "solved_breaker_room" "1" "required"	// has completed part 1
+
+criterion "Speech_AlyxRussell_LookForBreakerBox" "speech" "look_for_breaker_box" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_LookForBreakerBox
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_LookForBreakerBox Alyx_Not_Entered_Breaker_Room
+	scene "scenes/act3/hotel_lobby_basement/look_for_breaker_box"  interrupt_and_cancel speakonce
+}
+
+// ---- ENTER BREAKER BOX ROOM ----
+criterion "Speech_AlyxRussell_Enter_Breaker_Room" "speech" "enter_breaker_room" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_Enter_Breaker_Room_Stairs
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Enter_Breaker_Room Alyx_Saw_Stairs
+	scene "scenes/act3/hotel_lobby_basement/breaker_room_saw_stairs"  interrupt_and_cancel speakonce
+}
+
+response PlayerVO_A3_Hotel_Lobby_Basement_Enter_Breaker_Room_No_Stairs
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Enter_Breaker_Room Alyx_Not_Saw_Stairs
+	scene "scenes/act3/hotel_lobby_basement/breaker_room_no_stairs"	 interrupt_and_cancel speakonce
+}
+
+// this never fires, removing and replacing with logic in map
+//response PlayerVO_A3_Hotel_Lobby_Basement_Enter_Breaker_Room_ReEnter
+//{
+//	criteria Concept_PlayerTalk Speech_AlyxRussell_Enter_Breaker_Room Alyx_Entered_Breaker_Room	 Alyx_Solved_BreakerRoom
+//	scene "scenes/act3/hotel_lobby_basement/breaker_room_reenter"  interrupt_and_cancel speakonce
+//}
+
+criterion "Speech_AlyxRussell_Enter_Breaker_RoomSolved" "speech" "enter_breaker_room_solved" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_Enter_Breaker_Room_ReEnter_Solved
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Enter_Breaker_RoomSolved
+	scene "scenes/act3/hotel_lobby_basement/breaker_room_reenter"  interrupt_and_cancel speakonce
+}
+
+// ---- TONER PART 1 STARTED ----
+criterion "Speech_AlyxRussell_StartBreakerRoomToner" "speech" "start_breaker_room_toner" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_StartBreakerRoomToner
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_StartBreakerRoomToner
+	scene "scenes/act3/hotel_lobby_basement/start_breaker_room_toner"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_WiringCommentary" "speech" "wiring_commentary" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_WiringCommentary
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_WiringCommentary
+	scene "scenes/act3/hotel_lobby_basement/breaker_box_intro"	interrupt_and_cancel speakonce
+}
+
+// ---- TONER PART 1 STARTED NOT FINISHED ---
+criterion "Speech_AlyxRussell_CheckElevatorEarly" "speech" "check_elevator_early" "required" // "...rats nest, elevator still not on..."
+response PlayerVO_A3_Hotel_Lobby_Basement_CheckElevator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_CheckElevatorEarly
+	scene "scenes/act3/hotel_lobby_basement/check_elevator_button_after_breaker_puzzle" speakonce
+}
+
+//criterion "Speech_AlyxRussell_ElevatorPowerOff" "speech" "elevator_power_off" "required"
+//response PlayerVO_A3_Hotel_Lobby_Basement_ElevatorPowerOff
+//{
+//	criteria Concept_PlayerTalk Speech_AlyxRussell_ElevatorPowerOff  //Alyx_Entered_Breaker_Room
+//	scene "scenes/act3/hotel_lobby_basement/elevator_power_off" speakonce 
+//}
+
+// ---- TONER PART 1 COMPLETE ----
+criterion "Speech_AlyxRussell_BreakerRoomSolved" "speech" "breaker_room_solved" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_BreakerRoomSolved
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_BreakerRoomSolved
+	scene "scenes/act3/hotel_lobby_basement/breaker_room_solved" interrupt_and_cancel speakonce
+}
+
+// ---- TONER PART 2 COMPLETE ----
+criterion "Speech_AlyxRussell_ElevatorTonerSolved" "speech" "elevator_toner_solved" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_ElevatorTonerSolved
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ElevatorTonerSolved
+	scene "scenes/act3/hotel_lobby_basement/elevator_toner_solved" interrupt_and_cancel	predelay 1 speakonce
+}
+
+// ---- PUSHED BUTTON ----
+criterion "Speech_AlyxRussell_ElevatorButtonPressed" "speech" "elevator_button_pressed" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_ElevatorButtonPressed
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ElevatorButtonPressed
+	scene "scenes/act3/hotel_lobby_basement/elevator_button_pressed" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_UseLadder" "speech" "use_ladder" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_UseLadder
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_UseLadder
+	scene "scenes/act3/hotel_lobby_basement/use_ladder" interrupt_and_cancel speakonce
+}
+
+// ---- PIANO ----
+criterion "Speech_AlyxRussell_Use_Piano" "speech" "use_piano" "required"
+criterion "FirstPianoLinePlayed" "first_piano_line_played" "1" "required"
+
+response PlayerVO_A3_AlyxRussell_Use_Piano
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Use_Piano NotInCombat
+	scene "scenes/act3/hotel/play_piano" interrupt_and_cancel speakonce
+	applycontext "first_piano_line_played:1"
+}
+
+criterion "Speech_AlyxRussell_Use_Piano_Followup" "speech" "use_piano_followup" "required"
+response PlayerVO_A3_AlyxRussell_Use_Piano_Followup
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Use_Piano_Followup FirstPianoLinePlayed NotInCombat
+	scene "scenes/act3/hotel/play_piano_follow_up" interrupt_and_cancel speakonce predelay 3
+}
+
+// ---- XEN FOLIAGE ----
+criterion "Speech_AlyxRussell_XenFoliageElevatorTop" "speech" "xen_foliage_elevator_top" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_XenFoliageElevatorTop
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_XenFoliageElevatorTop
+	scene "scenes/act3/hotel_lobby_basement/xen_foliage_elevator_top" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_ClownDoorKnob" "speech" "clown_door_knob" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_ClownDoorknob
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ClownDoorKnob
+	scene "scenes/act3/hotel_lobby_basement/clown_door_knob" interrupt_and_cancel speakonce 
+}
+
+criterion "Speech_AlyxRussell_TouchBlueXen" "speech" "touch_blue_xen" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_TouchBlueXen
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_TouchBlueXen
+	scene "scenes/act3/hotel_lobby_basement/touch_blue_xen" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_TouchSpikeXen" "speech" "touch_xen_spike" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_TouchSpikeXen
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_TouchSpikeXen
+	scene "scenes/act3/hotel_lobby_basement/touch_xen_tentacle" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_XenPustuleIntro" "speech" "xen_pustule_intro" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_XenPustuleIntro
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_XenPustuleIntro
+	scene "scenes/act3/hotel_lobby_basement/xen_pustule_intro" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_MattressMan" "speech" "mattress_man" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_MattressMan
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_MattressMan
+	scene "scenes/act3/hotel_lobby_basement/mattress_man" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_MattressManClose" "speech" "mattress_man_close" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_MattressManClose
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_MattressManClose
+	scene "scenes/act3/hotel_lobby_basement/mattress_man_close" interrupt_and_cancel predelay 1 speakonce
+}
+
+criterion "Speech_AlyxRussell_XenFoliageSmell" "speech" "xen_foliage_smell" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_XenFoliageSmell
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_XenFoliageSmell
+	scene "scenes/act3/hotel_lobby_basement/touch_xen_foliage_smell" speakonce
+}
+
+criterion "Speech_AlyxRussell_SnatchGrenade" "speech" "snatch_grenade" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_SnatchGrenade
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SnatchGrenade  
+	scene "scenes/act3/hotel_lobby_basement/snatch_grenade" interrupt_and_cancel speakonce 
+}
+
+criterion "Speech_AlyxRussell_FirstReviverIntro" "speech" "first_reviver_intro" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_FirstReviverIntro
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_FirstReviverIntro  
+	scene "scenes/act3/hotel_lobby_basement/first_reviver_intro" interrupt_and_cancel speakonce 
+}
+
+criterion "Speech_AlyxRussell_FirstReviverIntroFollowUp" "speech" "first_reviver_intro_follow_up" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_FirstReviverIntroFollowUp
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_FirstReviverIntroFollowUp  
+	scene "scenes/act3/hotel_lobby_basement/first_reviver_intro_follow_up" interrupt_and_cancel speakonce 
+}
+
+criterion "Speech_AlyxRussell_FirstReviverKilled" "speech" "first_reviver_killed" "required"
+criterion "PlayerPickedUpReviverHeart" "player_pickup_object_classname" "prop_reviver_heart" "required"
+criterion "PlayerHoldingHeart"	"player_picked_up_heart" "1" "required"
+criterion "PlayerNotTalkedAboutHeart"	"player_talked_about_heart" "!=1" "required"
+criterion "ReviverDeadIntroFinished"	"reviver_dead_intro_finished" "1" "required"
+
+// if player is holding the heart play additional line
+criterion "ReviverDead_HeartCheck" "heart_check" "1" "required"
+
+response PlayerVO_A3_Hotel_Lobby_Basement_FirstReviverKilled
+{																								  
+	scene "scenes/act3/hotel_lobby_basement/kill_first_reviver" speakonce then self TLK_PLAYER_MAP_TALK heart_check:1 1
+}
+
+rule PlayerVO_A3_Hotel_Lobby_Basement_FirstReviverKilled_Rule
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_FirstReviverKilled InMap_A3_Hotel_Lobby_Basement
+	response PlayerVO_A3_Hotel_Lobby_Basement_FirstReviverKilled
+	applycontext "reviver_dead_intro_finished:1"
+}
+
+response PlayerVO_A3_Hotel_Lobby_Basement_PickedUpReviverHeart
+{
+	scene "scenes/act3/hotel_lobby_basement/holding_reviver_heart"  
+}																				
+
+rule PlayerVO_A3_Hotel_Lobby_Basement_PickedUpReviverHeart_Rule
+{
+	criteria Concept_PlayerTalk  PlayerHoldingHeart ReviverDead_HeartCheck InMap_A3_Hotel_Lobby_Basement 
+	response PlayerVO_A3_Hotel_Lobby_Basement_PickedUpReviverHeart
+	applycontext "player_talked_about_heart:1"
+}
+
+response  PlayerVO_A3_Hotel_Lobby_Basement_PickedUpReviverHeartLater
+{
+	criteria Concept_PlayerPickup ReviverDeadIntroFinished PlayerNotTalkedAboutHeart PlayerPickedUpReviverHeart  InMap_A3_Hotel_Lobby_Basement
+	scene "scenes/act3/hotel_lobby_basement/pickup_reviver_heart"  
+	norepeat
+}
+
+
+//========================================================================================================
+// a3_hotel_undergound_pit
+//========================================================================================================
+// ---- ELEVATOR SPOTTED ----
+criterion "Speech_AlyxRussell_See_Substation_Elevator" "speech" "see_substation_elevator" "required"
+response PlayerVO_A3_Hotel_Undergound_SubElevator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_See_Substation_Elevator						
+	scene "scenes/act3/hotel/see_substation_elevator" interrupt_and_cancel speakonce
+}
+
+// ---- REVIVER ----
+criterion "Speech_AlyxRussell_SecondReviver_Encounter" "speech" "second_reviver_encounter" "required"
+response PlayerVO_A3_Hotel_Undergound_SecondReviver_Encounter
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SecondReviver_Encounter						
+	scene "scenes/act3/hotel_underground_pit/second_reviver_encounter" speakonce
+}
+
+criterion "Speech_AlyxRussell_SecondReviver_EnterZombie" "speech" "second_reviver_enter_zombie" "required"
+response PlayerVO_A3_Hotel_Undergound_SecondReviver_EnterZombie
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SecondReviver_EnterZombie
+	scene "scenes/act3/hotel_underground_pit/second_reviver_enter_zombie" cancel_existing speakonce
+}
+
+criterion "Speech_AlyxRussell_SecondReviver_Killed" "speech" "second_reviver_killed" "required"
+response PlayerVO_A3_Hotel_Undergound_SecondReviver_Killed
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SecondReviver_Killed
+	scene "scenes/act3/hotel_underground_pit/second_reviver_killed" speakonce
+}
+
+// ---- ELEVATOR ----
+criterion "Speech_AlyxRussell_Hotel_Found_Elevator" "speech" "underground_found_elevator" "required"
+response PlayerVO_A3_Hotel_Undergound_Found_Elevator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_Found_Elevator
+	scene "scenes/act3/hotel_underground_pit/found_elevator_out_of_pit" speakonce
+}
+
+criterion "Speech_AlyxRussell_Hotel_Below_Substation" "speech" "underground_below_substation" "required"
+response PlayerVO_A3_Hotel_Undergound_Below_Substation
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_Below_Substation
+	scene "scenes/act3/hotel_interior_rooftop/just_below_substation" speakonce
+}
+
+// ---- ELEVATOR RIDE ----
+criterion "Speech_AlyxRussell_Hotel_Dad_Back" "speech" "underground_dad_back" "required"
+response PlayerVO_A3_Hotel_Undergound_Dad_Back
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_Dad_Back
+	scene "scenes/act3/hotel_underground_pit/convo_alyx_russell_dad_back_by_now" speakonce
+}
+
+criterion "Speech_AlyxRussell_ShirtlessZombie" "speech" "shirtless_zombie" "required"
+response PlayerVO_A3_Hotel_Lobby_Basement_ShirtlessZombie
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ShirtlessZombie
+	scene "scenes/act3/hotel_lobby_basement/shirtless_zombie" interrupt_and_cancel speakonce 
+}
+
+//========================================================================================================
+// a3_hotel_interior_rooftop
+//========================================================================================================
+criterion "Speech_AlyxRussell_Hotel_Touch_Xen" "speech" "hotel_interior_touch_xen" "required"
+response PlayerVO_A3_Hotel_Interior_Touch_Xen
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_Touch_Xen
+	scene "scenes/act3/hotel/convo_xen_foliage_touching_cancer" speakonce
+}
+
+criterion "Speech_AlyxRussell_Hotel_CombineShield" "speech" "hotel_interior_combine_shield" "required"
+response PlayerVO_A3_Hotel_Interior_CombineShield
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_CombineShield
+	scene "scenes/act3/hotel_interior_rooftop/combine_wall_hotel" speakonce
+}
+
+criterion "Speech_AlyxRussell_Hotel_SeePowerHandle" "speech" "hotel_interior_power_handle" "required"
+response PlayerVO_A3_Hotel_Interior_SeePowerHandle
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_SeePowerHandle
+	scene "scenes/act3/hotel_interior_rooftop/on_see_power_handle" speakonce
+}
+
+criterion "Speech_AlyxRussell_Hotel_LightsOut" "speech" "hotel_interior_lights_out" "required"
+response PlayerVO_A3_Hotel_Interior_LightsOut
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_LightsOut
+	scene "scenes/act3/hotel_interior_rooftop/lights_go_out_reaction" speakonce
+}
+
+criterion "Speech_AlyxRussell_Hotel_FindRapid" "speech" "hotel_find_rapid" "required"
+response PlayerVO_A3_Hotel_Interior_FindRapid
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Hotel_FindRapid
+	scene "scenes/act3/hotel/find_rapidfire.vcd" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_ThirdReviver_Encounter" "speech" "third_reviver_encounter" "required"
+response PlayerVO_A3_Hotel_Interior_ThirdReviver_Encounter
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ThirdReviver_Encounter
+	scene "scenes/act3/hotel_interior_rooftop/third_reviver_encounter" speakonce
+}
+
+criterion "Speech_AlyxRussell_ThirdReviver_Killed" "speech" "third_reviver_killed" "required"
+response PlayerVO_A3_Hotel_Interior_ThirdReviver_Killed
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ThirdReviver_Killed
+	scene "scenes/act3/hotel_interior_rooftop/third_reviver_killed" speakonce
+}
+
+
+//========================================================================================================
+// a3_hotel_street
+//========================================================================================================
+
+// ---- SUBSTATION ----
+criterion "Speech_AlyxRussell_Substation_Arrive" "speech" "substation_arrive" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Arrive
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Substation_Arrive
+	scene "scenes/act3/hotel_interior_rooftop/substation/arrive_at_substation" speakonce
+}
+
+criterion "Speech_AlyxRussell_Sub_Enter" "speech" "substation_enter" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Enter
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Sub_Enter
+	scene "scenes/act3/hotel_interior_rooftop/substation/if_player_enters_vort_room" speakonce
+}
+
+criterion "Speech_AlyxRussell_Sub_Arrive_Controls" "speech" "substation_arrive_controls" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Arrive_Controls
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Sub_Arrive_Controls
+	scene "scenes/act3/hotel_interior_rooftop/substation/arrive_at_cable_controls" speakonce
+}
+
+//criterion "Speech_AlyxRussell_Substation_Shoot_Shielding" "speech" "substation_shoot_shielding" "required"
+//response PlayerVO_A3_AlyxRussell_Substation_Shoot_Shielding
+//{
+//	criteria Concept_PlayerTalk Speech_AlyxRussell_Substation_Shoot_Shielding
+//	scene "scenes/act3/hotel_interior_rooftop/substation/if_player_shoots_shielding" speakonce
+//}
+
+// Delayed after interaction with console.  When played logic removes "substation_enter" so it doesn't trigger
+criterion "Speech_AlyxRussell_Substation_Shoot_Hint" "speech" "substation_shoot_hint" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Shoot_Hint
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Substation_Shoot_Hint
+	scene "scenes/act3/hotel_interior_rooftop/substation/shoot_the_cables_hint" speakonce
+}
+
+criterion "Speech_AlyxRussell_Substation_Shoot_Cable" "speech" "substation_shoot_cable" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Shoot_Cable
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Substation_Shoot_Cable
+	scene "scenes/act3/hotel_interior_rooftop/substation/shoot_first_cable" speakonce
+}
+
+criterion "Speech_AlyxRussell_Substation_Deactivate" "speech" "substation_deactivate" "required"
+response PlayerVO_A3_AlyxRussell_Substation_Deactivate
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Substation_Deactivate
+	scene "scenes/vort_substations/vort_substation_2019_russell_cable_vo" interrupt_and_cancel speakonce
+}
+
+// ---- POST RESCUE ELEVATOR RIDE ----
+criterion "Speech_AlyxRussell_Post_Hotel_Vista_2" "speech" "post_hotel_vista_2" "required"
+response PlayerVO_A3_AlyxRussell_Post_Hotel_Vista_2
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Post_Hotel_Vista_2
+	scene "scenes/act3/hotel/post_hotel_vista_2" speakonce
+}
+
+// ---- HOTEL STREET COMBAT ----
+criterion "Speech_AlyxRussell_Overwatch_Cooperate" "speech" "overwatch_cooperate" "required"
+response PlayerVO_A3_AlyxRussell_Overwatch_Cooperate
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Overwatch_Cooperate
+	scene "scenes/act3/hotel/post_combat_overwatch_cooperate_response" speakonce
+}
+
+// ---- COURTYARD COMBAT ----
+criterion "Speech_AlyxRussell_Post_Hotel_Vista_1" "speech" "post_hotel_vista_1" "required"
+response PlayerVO_A3_AlyxRussell_Post_Hotel_Vista_1
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Post_Hotel_Vista_1
+	scene "scenes/act3/hotel/post_hotel_vista_1" speakonce
+}
+
+criterion "Speech_AlyxRussell_Saying_My_Name" "speech" "saying_my_name" "required"
+response PlayerVO_A3_AlyxRussell_Saying_My_Name
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Saying_My_Name
+	scene "scenes/responses/alyx_first_combine_calls_out_alyx" interrupt_and_cancel speakonce
+}
+
+// ---- BRIDGE CROSSING ----
+criterion "Speech_AlyxRussell_Eli_Returns" "speech" "eli_returns" "required"
+response PlayerVO_A3_AlyxRussell_Eli_Returns
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Eli_Returns
+	scene "scenes/act3/eli_returns" speakonce
+}
+
+
+//========================================================================================================
+// a3_processing_plant
+//========================================================================================================
+criterion "Speech_AlyxRussell_Asks_About_Eli" "speech" "asks_about_eli" "required"
+response PlayerVO_A3_AlyxRussell_Asks_About_Eli
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Asks_About_Eli
+	scene "scenes/act3/processing_plant/convo_alyx_asks_about_eli" speakonce
+}
+
+criterion "Speech_AlyxRussell_Suppressor_Finished" "speech" "suppressor_finished" "required"
+response PlayerVO_A3_AlyxRussell_Suppressor_Finished
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Suppressor_Finished
+	scene "scenes/act3/processing_plant/alyx_react_suppressor_fight.vcd" speakonce
+}
+
+criterion "Speech_AlyxRussell_Post_Hotel_Vista_3" "speech" "post_hotel_vista_3" "required"
+response PlayerVO_A3_AlyxRussell_Post_Hotel_Vista_3
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Post_Hotel_Vista_3
+	scene "scenes/act3/hotel/post_hotel_vista_3" speakonce
+}
+
+// ---- VORT TAKEDOWN ----
+criterion "Speech_AlyxRussell_Construction_Yard_Vista" "speech" "construction_yard_vista" "required"
+response PlayerVO_A3_AlyxRussell_Construction_Yard_Vista
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Construction_Yard_Vista
+	scene "scenes/act3/processing_plant/construction_yard_vista" speakonce
+}
+
+// ---- SMALL COURTYARD ----
+criterion "Speech_AlyxRussell_Got_Company" "speech" "got_company" "required"
+response PlayerVO_A3_AlyxRussell_Got_Company
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Got_Company
+	scene "scenes/act3/processing_plant/russ_youve_got_company" speakonce
+}
+
+// ---- LARGE COURTYARD ----
+criterion "Speech_AlyxRussell_Return_Of_The_Drone" "speech" "return_of_the_drone" "required"
+response PlayerVO_A3_AlyxRussell_Return_Of_The_Drone
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Return_Of_The_Drone
+	scene "scenes/act3/processing_plant/return_of_the_drone" speakonce
+}
+
+criterion "Speech_AlyxRussell_Enter_Distillery" "speech" "enter_distillery" "required"
+response PlayerVO_A3_AlyxRussell_Enter_Distillery
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Enter_Distillery
+	scene "scenes/act3/processing_plant/enter_distillery" interrupt_and_cancel speakonce
+}
+
+
+//========================================================================================================
+// a3_distillery
+//========================================================================================================
+criterion "Speech_AlyxRussell_Vodka_Tutorial" "speech" "distillery_vodka" "required"
+response PlayerVO_A3_Distillery_Vodka_Tutorial
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Vodka_Tutorial
+	scene "scenes/act3/distillery/alyx_russell_vodka_tutorial" speakonce
+}
+
+criterion "Speech_AlyxRussell_Distillery_Vista" "speech" "distillery_vista" "required"
+response PlayerVO_a3_distillery_vista																
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Distillery_Vista
+	scene "scenes/act3/distillery/alyx_russell_distillery_vista" speakonce
+}
+
+criterion "Speech_AlyxRussell_Cuts_Out" "speech" "distillery_russell_cuts_out" "required"
+response PlayerVO_A3_Distillery_AlyxRussell_Cuts_Out
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Cuts_Out
+	scene "scenes/act3/distillery/alyx_russell_cuts_out" speakonce
+}
+
+criterion "Speech_AlyxRussell_Returns" "speech" "distillery_russell_returns" "required"
+response PlayerVO_A3_Distillery_AlyxRussell_Returns
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Returns
+	scene "scenes/act3/distillery/alyx_russell_returns" speakonce
+}
+
+criterion "Speech_AlyxRussell_Map_Data" "speech" "russell_map_data" "required"
+response PlayerVO_A3_Distillery_AlyxRussell_Map_Data
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Map_Data
+	scene "scenes/act3/distillery/russells_map_data" speakonce
+}
+
+criterion "Speech_AlyxRussell_Antlions_1" "speech" "russell_antlions_1" "required"
+response PlayerVO_A3_Distillery_AlyxRussell_Antlions_1
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Antlions_1
+	scene "scenes/act3/distillery/russell_knows_about_antlions_1" speakonce
+}
+
+criterion "Speech_Alyx_Blindzombie_Relieved_04" "speech" "alyx_blindzombie_relieved_04" "required"
+response PlayerVO_A3_Distillery_Alyx_Blindzombie_Relieved_04
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Blindzombie_Relieved_04
+	scene "scenes/act3/distillery/alyx_blindzombie_relieved_04" speakonce
+}
+
+criterion "Speech_Alyx_Blindzombie_Gasp_02" "speech" "alyx_blindzombie_gasp_02" "required"
+response PlayerVO_A3_Distillery_Alyx_Blindzombie_Gasp_02
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Blindzombie_Gasp_02
+	scene "scenes/act3/distillery/alyx_blindzombie_gasp_02" speakonce
+}
+
+criterion "Speech_Alyx_Blindzombie_Relieved_03" "speech" "alyx_blindzombie_relieved_03" "required"
+response PlayerVO_A3_Distillery_Alyx_Blindzombie_Relieved_03
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Blindzombie_Relieved_03
+	scene "scenes/act3/distillery/alyx_blindzombie_relieved_03" speakonce
+}
+
+criterion "Speech_Alyx_Squished_Jeff" "speech" "alyx_squished_jeff" "required"
+response PlayerVO_A3_Distillery_Alyx_Squished_Jeff
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Squished_Jeff
+	scene "scenes/act3/distillery/alyx_squished_jeff" speakonce
+}
+
+criterion "Speech_Alyx_Blindzombie_Relieved_02" "speech" "alyx_blindzombie_relieved_02" "required"
+response PlayerVO_A3_Distillery_Alyx_Blindzombie_Relieved_02
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Blindzombie_Relieved_02
+	scene "scenes/act3/distillery/alyx_blindzombie_relieved_02" speakonce
+}
+
+criterion "Speech_Alyx_Russell_Sees_Jeff" "speech" "alyx_russell_sees_jeff" "required"
+response PlayerVO_A3_Distillery_Alyx_Russell_Sees_Jeff
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Russell_Sees_Jeff
+	scene "scenes/act3/distillery/alyx_russell_sees_jeff" speakonce
+}
+
+criterion "Speech_Russell_Open_The_Plug" "speech" "russell_open_the_plug" "required"
+response PlayerVO_A3_Distillery_Russell_Open_The_Plug
+{
+	criteria Concept_PlayerTalk Speech_Russell_Open_The_Plug
+	scene "scenes/act3/distillery/russell_open_the_plug" speakonce
+}
+
+criterion "Speech_Russell_Find_Console_01" "speech" "russell_find_console_01" "required"
+response PlayerVO_A3_Distillery_Russell_Find_Console_01
+{
+	criteria Concept_PlayerTalk Speech_Russell_Find_Console_01
+	scene "scenes/act3/distillery/russell_find_console_01" speakonce
+}
+
+criterion "Speech_Russell_Find_Console_02" "speech" "russell_find_console_02" "required"
+response PlayerVO_A3_Distillery_Russell_Find_Console_02
+{
+	criteria Concept_PlayerTalk Speech_Russell_Find_Console_02
+	scene "scenes/act3/distillery/russell_find_console_02" speakonce
+}
+
+criterion "Speech_Alyx_Russell_Sees_Jeff_Whispered" "speech" "alyx_russell_sees_jeff_whispered" "required"
+response PlayerVO_A3_Distillery_Alyx_Russell_Sees_Jeff_Whispered
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Russell_Sees_Jeff_Whispered
+	scene "scenes/act3/distillery/alyx_russell_sees_jeff_whispered" speakonce
+}
+
+criterion "Speech_Alyx_Russell_Battery_Insert_01" "speech" "alyx_russell_battery_insert_01" "required"
+response PlayerVO_A3_Distillery_Alyx_Russell_Battery_Insert_01
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Russell_Battery_Insert_01
+	scene "scenes/act3/distillery/alyx_russell_battery_insert_01" speakonce
+}
+
+criterion "Speech_Alyx_Russell_Battery_Insert_02" "speech" "alyx_russell_battery_insert_02" "required"
+response PlayerVO_A3_Distillery_Alyx_Russell_Battery_Insert_02
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Russell_Battery_Insert_02
+	scene "scenes/act3/distillery/alyx_russell_battery_insert_02" speakonce
+}
+
+criterion "Speech_Alyx_Russell_Battery_Insert_03" "speech" "alyx_russell_battery_insert_03" "required"
+response PlayerVO_A3_Distillery_Alyx_Russell_Battery_Insert_03
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Russell_Battery_Insert_03
+	scene "scenes/act3/distillery/alyx_russell_battery_insert_03" speakonce
+}
+
+
+//========================================================================================================
+// a4_c17_zoo
+//========================================================================================================
+criterion "InMap_A4_C17_Zoo" "map" "a4_c17_zoo" "required"
+
+criterion "Speech_AlyxRussell_Antlions_2" "speech" "russell_antlions_2" "required"
+response PlayerVO_A4_C17_Zoo_AlyxRussell_Antlions_2
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Antlions_2
+	scene "scenes/act4/russell_knows_about_antlions_2"	cancel_existing speakonce
+}
+
+// start here
+
+criterion "Speech_AlyxRussell_HoldingVodka" "speech" "radio_holding_vodka" "required"
+criterion "Alyx_Holding_Vodka" "holding_vodka" "1" "required"
+criterion "Alyx_Holding_Vodka_Multi" "holding_vodka_multi" "1" "required"
+
+criterion "Alyx_Not_Holding_Vodka" "holding_vodka" "!=1" "required"
+criterion "Alyx_Not_Holding_Vodka_Multi" "holding_vodka_multi" "!=1" "required"
+
+response PlayerVO_EliPrison_No_Vodka
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_HoldingVodka Alyx_Not_Holding_Vodka Alyx_Not_Holding_Vodka_Multi
+	scene	"scenes/act4/eli_prison_no_vodka" speakonce 
+}
+
+response PlayerVO_EliPrison_Holding_Vodka
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_HoldingVodka Alyx_Holding_Vodka Alyx_Not_Holding_Vodka_Multi
+	scene	"scenes/act4/eli_prison_holding_vodka" speakonce 
+}
+																										 
+response PlayerVO_EliPrison_Holding_Vodka_Multi
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_HoldingVodka Alyx_Holding_Vodka_Multi
+	scene	"scenes/act4/eli_prison_holding_vodka_multi.vcd" speakonce 	
+}
+
+
+criterion "Speech_AlyxRussell_EliVault"  "speech" "eli_vault" "required"
+response PlayerVO_EliVault
+{																						   
+	criteria Concept_PlayerTalk Speech_AlyxRussell_EliVault 
+	scene "scenes/act4/eli_vault"  interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_Gorilla"  "speech" "zoo_gorilla" "required"
+response PlayerVO_ZooGorilla
+{																						   
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Gorilla 
+	scene "scenes/act4/zoo_gorilla"  interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_EliPrison"  "speech" "eli_prison" "required"
+response PlayerVO_EliPrison
+{																						   
+	criteria Concept_PlayerTalk Speech_AlyxRussell_EliPrison 
+	scene "scenes/act4/eli_prison_2"  interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_Antlion_Experiment" "speech" "antlion_experiment" "required"
+response PlayerVO_A4_C17_Water_Tower_Antlion_Experiment
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Antlion_Experiment
+	scene "scenes/act4/water_tower/antlion_experiment" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_Alyx_Asks_About_Data_Pod" "speech" "alyx_asks_about_data_pod" "required"
+response PlayerVO_A4_Zoo_Alyx_Asks_Data_Pod
+{
+	criteria Concept_PlayerTalk Speech_Alyx_Asks_About_Data_Pod
+	scene "scenes/act4/zoo_alyx_asks_about_datapod" interrupt_and_cancel speakonce
+}
+
+
+//========================================================================================================
+// a4_c17_tanker_yard
+//========================================================================================================
+criterion "InMap_A4_C17_Tanker_Yard" "map" "a4_c17_tanker_yard" "required"
+
+criterion "Speech_AlyxRussell_VaultGravityBeams" "speech" "vault_gravity_beams" "required"
+response PlayerVO_A4_C17_Tanker_Yard_VaultGravityBeams
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_VaultGravityBeams
+	scene "scenes/act4/tanker_yard/vault_gravity_beams"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_SeePerson" "speech" "see_person_abandoned_building" "required"
+response PlayerVO_A4_C17_Tanker_Yard_SeePerson
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SeePerson
+	scene "scenes/act4/tanker_yard/see_person_abandoned_building" interrupt_and_cancel speakonce
+}
+
+
+criterion "Speech_AlyxRussell_RadioAboutGordon" "speech" "radio_about_gordon" "required"
+response PlayerVO_A4_C17_Tanker_Yard_RadioAboutGordon
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_RadioAboutGordon
+	scene "scenes/act4/radio_about_gordon"	interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_RadioWheresGordonBeen" "speech" "radio_wheres_gordon_been" "required"
+response PlayerVO_A4_C17_Tanker_Yard_RadioWheresGordonBeen
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_RadioWheresGordonBeen
+	scene "scenes/act4/radio_wheres_gorden_been"   interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_RadioSavingHumanity" "speech" "radio_saving_humanity" "required"
+response PlayerVO_A4_C17_Tanker_Yard_RadioSavingHumanity
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_RadioSavingHumanity
+	scene "scenes/act4/radio_saving_humanity" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_RadioVaultSecurity" "speech" "radio_vault_security" "required"
+response PlayerVO_A4_C17_Tanker_Yard_RadioVaultSecurity
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_RadioVaultSecurity
+	scene "scenes/act4/radio_about_vault_security_access_the_bridge" interrupt_and_cancel speakonce
+}
+
+
+
+criterion "Speech_AlyxRussell_Manhole_Vista_1" "speech" "manhole_vista_1" "required"
+response PlayerVO_A4_C17_Tanker_Yard_AlyxRussell_Manhole_Vista_1
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Manhole_Vista_1
+	scene "scenes/act4/manhole_vista_last_station_falls" speakonce
+}
+
+criterion "Speech_AlyxRussell_Manhole_Vista_2" "speech" "manhole_vista_2" "required"
+response PlayerVO_A4_C17_Tanker_Yard_AlyxRussell_Manhole_Vista_2
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Manhole_Vista_2
+	scene "scenes/act4/manhole_vista_part2" speakonce
+}
+
+criterion "Speech_AlyxRussell_Manhole_Vista_3" "speech" "manhole_vista_3" "required"
+response PlayerVO_A4_C17_Tanker_Yard_AlyxRussell_Manhole_Vista_3
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Manhole_Vista_3
+	scene "scenes/act4/manhole_vista_part3" speakonce
+}
+
+criterion "Speech_AlyxEli_Tanker_Yard_Vista" "speech" "tanker_yard_vista" "required"
+response PlayerVO_A4_C17_Tanker_Yard_AlyxEli_Tanker_Yard_Vista
+{
+	criteria Concept_PlayerTalk Speech_AlyxEli_Tanker_Yard_Vista
+	scene "scenes/act4/eli_tanker_yard_vista" speakonce
+}
+
+criterion "Speech_Alyx_Combine_Wall_Closing_Radio_Reaction" "speech" "combine_wall_closing_radio_reaction" "required"
+response PlayerVO_A4_Alyx_Combine_Wall_Closing_Radio_Reaction
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Combine_Wall_Closing_Radio_Reaction
+    scene "scenes/act4/tanker_yard/combine_wall_closing_radio_reaction" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Substation_Collapse_Radio_Reaction1" "speech" "substation_collapse_radio_reaction1" "required"
+response PlayerVO_A4_Alyx_Substation_Collapse_Radio_Reaction1
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Substation_Collapse_Radio_Reaction1
+    scene "scenes/act4/tanker_yard/substation_collapse_radio_reaction1" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Substation_Collapse_Radio_Reaction2" "speech" "substation_collapse_radio_reaction2" "required"
+response PlayerVO_A4_Alyx_Substation_Collapse_Radio_Reaction2
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Substation_Collapse_Radio_Reaction2
+    scene "scenes/act4/tanker_yard/substation_collapse_radio_reaction2" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Substation_Collapse_Radio_Reaction3" "speech" "substation_collapse_radio_reaction3" "required"
+response PlayerVO_A4_Alyx_Substation_Collapse_Radio_Reaction3
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Substation_Collapse_Radio_Reaction3
+    scene "scenes/act4/tanker_yard/substation_collapse_radio_reaction3" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Crowbar" "speech" "alyx_crowbar" "required"
+response PlayerVO_A4_Alyx_Crowbar
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Crowbar NotInCombat
+    scene "scenes/act4/tanker_yard/alyx_russ_convo_about_the_crowbar" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Gordon_Concern" "speech" "alyx_gordon_concern" "required"
+response PlayerVO_A4_Alyx_Gordon_Concern
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Gordon_Concern NotInCombat
+    scene "scenes/act4/tanker_yard/alyx_russ_convo_what_are_they_doing_to_gordon" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Russ_Come_Fight" "speech" "alyx_russ_come_fight" "required"
+response PlayerVO_A4_Alyx_Russ_Come_Fight
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Russ_Come_Fight
+    scene "scenes/act4/tanker_yard/alyx_reaction_post_antlion_fight" interrupt_and_cancel speakonce
+}
+
+//========================================================================================================
+// a4_c17_water_tower
+//========================================================================================================
+
+
+criterion "Speech_AlyxRussell_SeeControlRoom" "speech" "see_control_room" "required"
+response PlayerVO_A4_C17_Water_Tower_SeeControlRoom
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_SeeControlRoom
+	scene "scenes/act4/water_tower/see_control_room" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_ControlsDeadAhead" "speech" "controls_dead_ahead" "required"
+response PlayerVO_A4_C17_Water_Tower_ControlsDeadAhead
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ControlsDeadAhead
+	scene "scenes/act4/water_tower/controls_dead_ahead" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_ButtonAppears" "speech" "button_appears" "required"
+response PlayerVO_A4_C17_Water_Tower_ButtonAppears
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_ButtonAppears
+	scene "scenes/act4/water_tower/button_appears" interrupt_and_cancel	speakonce
+}
+
+
+criterion "Speech_AlyxRussell_Water_Tower_Generator" "speech" "water_tower_see_generator" "required"
+response PlayerVO_A4_C17_Water_Tower_Generator
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Water_Tower_Generator
+	scene "scenes/act4/water_tower_see_generator" speakonce
+}
+
+
+criterion "Speech_AlyxRussell_Water_Tower_Vault_Falls" "speech" "vault_falls" "required"
+response PlayerVO_A4_C17_Water_Tower_Vault_Falls
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Water_Tower_Vault_Falls
+	scene "scenes/act4/vault_falls" speakonce
+}
+
+criterion "Speech_AlyxRussell_Water_Tower_Vault_Falls_No_Look" "speech" "vault_falls_no_look" "required"
+response PlayerVO_A4_C17_Water_Tower_Vault_Falls_No_Look
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Water_Tower_Vault_Falls_No_Look
+	scene "scenes/act4/vault_falls_no_look" speakonce
+}
+
+criterion "Speech_Alyx_Immediate_Response_To_Overwatch_Alert" "speech" "alyx_immediate_response_to_overwatch_alert" "required"
+response PlayerVO_A4_Alyx_Immediate_Response_To_Overwatch_Alert
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Immediate_Response_To_Overwatch_Alert
+    scene "scenes/act4/control_room/alyx_immediate_response_to_overwatch_alert" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Overload_React1" "speech" "alyx_overload_react1" "required"
+response PlayerVO_A4_Alyx_Overload_React1
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Overload_React1
+    scene "scenes/act4/control_room/alyx_overload_react1" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_Overload_React2" "speech" "alyx_overload_react2" "required"
+response PlayerVO_A4_Alyx_Overload_React2
+{
+    criteria Concept_PlayerTalk Speech_Alyx_Overload_React2
+    scene "scenes/act4/control_room/alyx_overload_react2" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_React_Something_Bad" "speech" "alyx_react_something_bad" "required"
+response PlayerVO_A4_Alyx_React_Something_Bad
+{
+    criteria Concept_PlayerTalk Speech_Alyx_React_Something_Bad
+    scene "scenes/act4/control_room/alyx_react_something_bad" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_When_Bridge_Stops" "speech" "alyx_when_bridge_stops" "required"
+response PlayerVO_A4_Alyx_When_Bridge_Stops
+{
+    criteria Concept_PlayerTalk Speech_Alyx_When_Bridge_Stops
+    scene "scenes/act4/control_room/alyx_when_bridge_stops" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Alyx_When_Bridge_Stops_Expected_Alt" "speech" "alyx_when_bridge_stops_expected_alt" "required"
+response PlayerVO_A4_Alyx_When_Bridge_Stops_Expected_Alt
+{
+    criteria Concept_PlayerTalk Speech_Alyx_When_Bridge_Stops_Expected_Alt
+    scene "scenes/act4/control_room/alyx_when_bridge_stops_expected_alt" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Approach_Controls_Eli_Alyx_Convo" "speech" "approach_controls_eli_alyx_convo" "required"
+response PlayerVO_A4_Approach_Controls_Eli_Alyx_Convo
+{
+    criteria Concept_PlayerTalk Speech_Approach_Controls_Eli_Alyx_Convo
+    scene "scenes/act4/control_room/approach_controls_eli_alyx_convo" cancel_existing speakonce
+}
+
+criterion "Speech_Reaction_To_All_Levers_Appearing" "speech" "reaction_to_all_levers_appearing" "required"
+response PlayerVO_A4_Reaction_To_All_Levers_Appearing
+{
+    criteria Concept_PlayerTalk Speech_Reaction_To_All_Levers_Appearing
+    scene "scenes/act4/control_room/reaction_to_all_levers_appearing" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Reaction_To_All_Levers_Appearing_Dock_Vault_Alt" "speech" "reaction_to_all_levers_appearing_dock_vault_alt" "required"
+response PlayerVO_A4_Reaction_To_All_Levers_Appearing_Dock_Vault_Alt
+{
+    criteria Concept_PlayerTalk Speech_Reaction_To_All_Levers_Appearing_Dock_Vault_Alt
+    scene "scenes/act4/control_room/reaction_to_all_levers_appearing_dock_vault_alt" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Lever_Nag1" "speech" "russell_lever_nag1" "required"
+response PlayerVO_A4_Russell_Lever_Nag1
+{
+    criteria Concept_PlayerTalk Speech_Russell_Lever_Nag1
+    scene "scenes/act4/control_room/russell_lever_nag1" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Lever_Nag2" "speech" "russell_lever_nag2" "required"
+response PlayerVO_A4_Russell_Lever_Nag2
+{
+    criteria Concept_PlayerTalk Speech_Russell_Lever_Nag2
+    scene "scenes/act4/control_room/russell_lever_nag2" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Lever_Nag3" "speech" "russell_lever_nag3" "required"
+response PlayerVO_A4_Russell_Lever_Nag3
+{
+    criteria Concept_PlayerTalk Speech_Russell_Lever_Nag3
+    scene "scenes/act4/control_room/russell_lever_nag3" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Russell_Overload_React1" "speech" "russell_overload_react1" "required"
+response PlayerVO_A4_Russell_Overload_React1
+{
+    criteria Concept_PlayerTalk Speech_Russell_Overload_React1
+    scene "scenes/act4/control_room/russell_overload_react1" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Alyx_Maybe" "speech" "bad_lever_alyx_maybe" "required"
+response PlayerVO_A4_Bad_Lever_Alyx_Maybe
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Alyx_Maybe
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_alyx_maybe" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Alyx_Ooh_Ok_Definitely_Not" "speech" "bad_lever_alyx_ooh_ok_definitely_not" "required"
+response PlayerVO_A4_Bad_Lever_Alyx_Ooh_Ok_Definitely_Not
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Alyx_Ooh_Ok_Definitely_Not
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_alyx_ooh_ok_definitely_not" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Alyx_That_Doesnt_Look_Good" "speech" "bad_lever_alyx_that_doesnt_look_good" "required"
+response PlayerVO_A4_Bad_Lever_Alyx_That_Doesnt_Look_Good
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Alyx_That_Doesnt_Look_Good
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_alyx_that_doesnt_look_good" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Alyx_Thats_Not_It" "speech" "bad_lever_alyx_thats_not_it" "required"
+response PlayerVO_A4_Bad_Lever_Alyx_Thats_Not_It
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Alyx_Thats_Not_It
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_alyx_thats_not_it" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_Alyx_Why_Isnt_Bridge_Moving" "speech" "bad_lever_russell_alyx_why_isnt_bridge_moving" "required"
+response PlayerVO_A4_Bad_Lever_Russell_Alyx_Why_Isnt_Bridge_Moving
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_Alyx_Why_Isnt_Bridge_Moving
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_alyx_why_isnt_bridge_moving" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_Callout_To_Alyx" "speech" "bad_lever_russell_callout_to_alyx" "required"
+response PlayerVO_A4_Bad_Lever_Russell_Callout_To_Alyx
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_Callout_To_Alyx
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_callout_to_alyx" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_No_Not_That_One" "speech" "bad_lever_russell_no_not_that_one" "required"
+response PlayerVO_A4_Bad_Lever_Russell_No_Not_That_One
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_No_Not_That_One
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_no_not_that_one" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_No_Thats_Not_The_Bridge" "speech" "bad_lever_russell_no_thats_not_the_bridge" "required"
+response PlayerVO_A4_Bad_Lever_Russell_No_Thats_Not_The_Bridge
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_No_Thats_Not_The_Bridge
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_no_thats_not_the_bridge" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_Nope" "speech" "bad_lever_russell_nope" "required"
+response PlayerVO_A4_Bad_Lever_Russell_Nope
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_Nope
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_nope" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_Oh_God" "speech" "bad_lever_russell_oh_god" "required"
+response PlayerVO_A4_Bad_Lever_Russell_Oh_God
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_Oh_God
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_oh_god" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Bad_Lever_Russell_Worse_Nope" "speech" "bad_lever_russell_worse_nope" "required"
+response PlayerVO_A4_Bad_Lever_Russell_Worse_Nope
+{
+    criteria Concept_PlayerTalk Speech_Bad_Lever_Russell_Worse_Nope
+    scene "scenes/act4/control_room/lever_pull_reactions/bad_lever_russell_worse_nope" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Entering_Tower_Confirmation" "speech" "alyx_entering_tower_confirmation" "required"
+response PlayerVO_A4_Entering_Tower_Confirmation
+{
+    criteria Concept_PlayerTalk Speech_Entering_Tower_Confirmation
+    scene "scenes/act4/water_tower/alyx_entering_tower_confirmation" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Water_Tower_Post_Combat" "speech" "water_tower_post_combat" "required"
+response PlayerVO_A4_Water_Tower_Post_Combat
+{
+    criteria Concept_PlayerTalk Speech_Water_Tower_Post_Combat
+    scene "scenes/act4/water_tower/watertower_post_combat_getting_close.vcd " interrupt_and_cancel speakonce
+}
+
+criterion "Speech_Water_Tower_Last_Upgrade_Station" "speech" "last_upgrade_station" "required"
+response PlayerVO_A4_Water_Tower_Last_Upgrade_Station
+{
+	criteria Concept_PlayerTalk Speech_Water_Tower_Last_Upgrade_Station
+	scene "scenes/act4/water_tower/convo_see_last_upgrade_station.vcd" speakonce
+}
+
+
+//==================================================
+// russell pull the lever nags
+//==================================================
+criterion "RussellLeverNag" "speech" "russell_lever_nag" "required"
+
+response PlayerVO_RussellLeverNag
+{
+	criteria Concept_PlayerTalk RussellLeverNag
+	scene "scenes/act4/control_room/russell_lever_nag1"   
+	scene "scenes/act4/control_room/russell_lever_nag2"   
+	scene "scenes/act4/control_room/russell_lever_nag3"   
+}
+
+
+
+//========================================================================================================
+// a4_parking_garage
+//========================================================================================================
+criterion "Speech_AlyxRussell_Parking_AfterExplosion" "speech" "after_explosion" "required"
+response PlayerVO_A4_Parking_AfterExplosion
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_AfterExplosion
+	scene "scenes/act4/parking_garage/after_explosion" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Vault_Is_Down" "speech" "vault_is_down" "required"
+response PlayerVO_A4_Parking_Vault_Is_Down
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Vault_Is_Down
+	scene "scenes/act4/vault_is_down" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Arrive_At_Gun" "speech" "arrive_at_gun" "required"
+response PlayerVO_A4_Parking_Arrive_At_Gun
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Arrive_At_Gun
+	scene "scenes/act4/arrive_at_gun" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Arrive_At_Gun_Shooting" "speech" "arrive_at_gun_shooting" "required"
+response PlayerVO_A4_Parking_Arrive_At_Gun_Shooting
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Arrive_At_Gun_Shooting
+	scene "scenes/act4/arrive_at_gun_shooting" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Deactivated_Strider" "speech" "deactivated_strider" "required"
+response PlayerVO_A4_Parking_Deactivated_Strider
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Deactivated_Strider
+	scene "scenes/act4/deactivated_strider" speakonce
+}
+
+criterion "ChanceToPlayGunFirstHit"  "randomnum" "<50" "required"
+criterion "Speech_AlyxRussell_Parking_Gun_First_Hit" "speech" "gun_first_hit" "required"
+response PlayerVO_A4_Parking_Gun_First_Hit
+{
+	criteria Concept_PlayerTalk ChanceToPlayGunFirstHit Speech_AlyxRussell_Parking_Gun_First_Hit
+	scene "scenes/act4/gun_first_hit" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_See_Mounted_Gun" "speech" "see_mounted_gun" "required"
+response PlayerVO_A4_Parking_See_Mounted_Gun
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_See_Mounted_Gun
+	scene "scenes/act4/see_mounted_gun" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Strider_Alive" "speech" "strider_is_alive" "required"
+response PlayerVO_A4_Parking_Strider_Alive
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Strider_Alive
+	scene "scenes/act4/strider_is_alive" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Strider_Owns_Itself" "speech" "strider_owns_itself" "required"
+response PlayerVO_A4_Parking_Strider_Owns_Itself
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Strider_Owns_Itself
+	scene "scenes/act4/strider_owns_itself" speakonce
+}
+
+
+criterion "Speech_AlyxRussell_Parking_TractorBeam" "speech" "see_tractor_beam" "required"
+response PlayerVO_A4_Parking_Russell_TractorBeam
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_TractorBeam
+	scene "scenes/act4/see_tractor_beam" speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Russell_Goodbye" "speech" "russell_goodbye" "required"
+response PlayerVO_A4_Parking_Russell_Goodbye
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Russell_Goodbye
+	scene "scenes/act5/goodbye_russell" cancel_existing speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Eli_Warning" "speech" "eli_warning" "required"
+response PlayerVO_A4_Parking_Eli_Warning
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Eli_Warning
+	scene "scenes/act5/eli_warning" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_StriderDies" "speech" "strider_dies" "required"
+response PlayerVO_A4_Parking_StriderDies
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_StriderDies
+	scene "scenes/act4/strider_dies_alyx_russell_reaction" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_Parking_Strider_ShotAt" "speech" "strider_shot_at" "required"
+response PlayerVO_A4_Parking_Strider_ShotAt
+{
+	criteria Concept_PlayerTalk Speech_AlyxRussell_Parking_Strider_ShotAt
+	scene "scenes/act4/parking_garage/strider_shot_by_gun" interrupt_and_cancel speakonce
+}
+
+//========================================================================================================
+// Alyx & Russell conversations
+//========================================================================================================
+criterion "Speech_AlyxRussell_FirstMultiTool" "speech" "first_multitool_use" "required"
+
+response PlayerVO_AlyxRussell_FirstMultiTool
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstMultiTool
+	scene "scenes/act2/quarantine_entrance/alyx_russell_first_multitool" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstMultiTool_2" "speech" "first_multitool_2" "required"
+
+response PlayerVO_AlyxRussell_FirstMultiTool_2
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstMultiTool_2
+	scene "scenes/act2/quarantine_entrance/alyx_russell_first_multitool_2" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstMultiTool_Solve" "speech" "first_multitool_solve" "required"
+
+response PlayerVO_AlyxRussell_FirstMultiTool_Solve
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstMultiTool_Solve
+	scene "scenes/act2/quarantine_entrance/alyx_russell_first_multitool_solve" speakonce
+}
+
+
+// health station
+criterion "Speech_AlyxRussell_FirstHealthStation" "speech" "first_healthstation" "required"
+criterion "HealthStationOpened" "health_station_open" "1" "required"
+criterion "HealthStationClosed" "health_station_open" "!=1" "required"
+		
+response PlayerVO_AlyxRussell_FirstHealthStation_Rule
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstHealthStation
+	scene "scenes/alyx_russell_conversations/first_health_station" speakonce then self TLK_PLAYER_MAP_TALK health_station_2:1 1
+	applycontext "talked_about_health_station:1"
+}
+
+criterion "TalkedAboutHealthStation" "talked_about_health_station" "1" "required"
+
+criterion "HealthStationNext" "health_station_2" "1" "required"
+
+response PlayerVO_AlyxRussell_FirstHealthStation_Use
+{
+   criteria	Concept_PlayerTalk  HealthStationNext  
+   response PlayerVO_AlyxRussell_FirstHealthStation_Open
+	{
+		criteria	HealthStationOpened
+		scene "scenes/alyx_russell_conversations/first_health_station_open" interrupt_and_cancel speakonce
+	}
+   response PlayerVO_AlyxRussell_FirstHealthStation_Closed
+	{
+		criterion	HealthStationClosed
+		scene "scenes/alyx_russell_conversations/first_health_station_closed" interrupt_and_cancel speakonce
+	}
+}
+
+criterion "Speech_AlyxRussell_FirstHealthStation_Healing" "speech" "first_healthstation_use" "required"
+response PlayerVO_AlyxRussell_FirstHealthStation_Healing
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstHealthStation_Healing TalkedAboutHealthStation
+	scene "scenes/alyx_russell_conversations/first_health_station_use" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_FirstHealthStation_Done" "speech" "first_healthstation_done" "required"
+response PlayerVO_AlyxRussell_FirstHealthStation_Done
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_FirstHealthStation_Done	TalkedAboutHealthStation
+	scene "scenes/alyx_russell_conversations/first_health_station_done" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_PostMultiTool" "speech" "post_multitool_use" "required"
+response PlayerVO_AlyxRussell_PostMultiTool
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_PostMultiTool
+	scene "scenes/act2/quarantine_entrance/alyx_russell_post_multitool" interrupt_and_cancel speakonce
+}
+
+
+// no longer using this
+// use map triggers to apply/remove this context to limit areas where the reponse happens
+//criterion "CanTalkAboutGloves" "can_talk_about_gloves" "1" "required"
+//response PlayerVO_AlyxRussell_GravityGloves
+//{
+//	criteria		IsPlayer CanTalkAboutGloves Concept_PlayerUsedGravityGloves 
+//	scene "scenes/alyx_russell_conversations/gravity_gloves" speakonce 
+//}
+
+// use map triggers to apply/remove this context to limit areas where the reponse happens
+criterion "CanTalkAboutGloveCounters" "can_talk_about_glove_counters" "1" "required"
+response PlayerVO_AlyxRussell_GravityGloveCounters
+{
+	criteria		IsPlayer CanTalkAboutGloveCounters Concept_PlayerUsedGravityGloves 	NotInCombat
+	scene "scenes/alyx_russell_conversations/alyx_russell_glove_counters"
+	norepeat
+}
+
+
+//ammo hint
+criterion "Speech_AlyxRussell_AmmoHint" "speech" "alyx_russell_find_ammo" "required"
+
+response PlayerVO_AlyxRussell_AmmoHint
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_AmmoHint
+	scene "scenes/act2/quarantine_entrance/alyx_russell_find_ammo" interrupt_and_cancel speakonce
+}
+
+criterion "Speech_AlyxRussell_QZoneIntro" "speech" "alyx_russell_qzone_intro" "required"
+
+response PlayerVO_AlyxRussell_QZoneIntro
+{
+	criteria		Concept_PlayerTalk  Speech_AlyxRussell_QZoneIntro
+	scene "scenes/act2/quarantine_entrance/alyx_russell_qzone_intro" interrupt_and_cancel  speakonce predelay 1
+}
+
+//=========================================================================================
+// floppy disk
+//=========================================================================================
+
+criterion "IsDiscovery_Floppy" "modelname" "models/props_discoverable/floppy_disk_download_internet.vmdl" required
+
+response PlayerVO_AlyxRussell_DownLoadInternet
+{
+	scene "scenes/alyx_russell_conversations/russell_downloaded_the_internet" interrupt_and_cancel speakonce
+}
+
+rule PlayerVO_AlyxRussell_DownLoadInternet_rule
+{
+	criteria		IsPlayer Concept_PlayerDiscovery IsDiscovery_Floppy
+	response		PlayerVO_AlyxRussell_DownLoadInternet
+	applycontext	"down_load_internet:1"
+}
+
+										 
+
+//==================================
+// health pen reactions
+//==================================
+criterion "UsedHealthPen" "used_health_pen" "1" "required"
+criterion "NotUsedHealthPen" "used_health_pen" "!=1" "required"
+criterion "Step1NotPlayed" "step_1_played" "!=1" "required"
+
+criterion "HealthPen_Step2" "health_pen_step" "2" "required"
+criterion "HealthPen_Step3" "health_pen_step" "3" "required"
+criterion "HealthPen_Step4" "health_pen_step" "4" "required"
+
+// make step 1 map dependent
+// STEP 1: Starts here.
+response PlayerVO_HealthPen_1_Pistol
+{
+	criteria	IsPlayer Concept_PlayerPickup PlayerPickupFromWorld  PlayerPickedUpHealthPen InMap_a2_pistol Step1NotPlayed	
+	scene	"scenes/responses/alyx_first_healthpen_pickup_a" then self TLK_PLAYER_MAP_TALK health_pen_step:2 1	
+	applycontext "step_1_played:1"
+}
+	
+response PlayerVO_HealthPen_1_Hideout
+{
+	criteria	IsPlayer Concept_PlayerPickup PlayerPickupFromWorld  PlayerPickedUpHealthPen InMap_a2_hideout Step1NotPlayed	
+	scene	"scenes/responses/alyx_first_healthpen_pickup_a" then self TLK_PLAYER_MAP_TALK health_pen_step:2 1	
+	applycontext "step_1_played:1"
+}	
+
+response PlayerVO_HealthPen_1_Tunnels
+{
+	criteria	IsPlayer Concept_PlayerPickup PlayerPickupFromWorld  PlayerPickedUpHealthPen InMap_a2_headcrabs_tunnel Step1NotPlayed
+	scene	"scenes/responses/alyx_first_healthpen_pickup_a" then self TLK_PLAYER_MAP_TALK health_pen_step:2 1	
+	applycontext "step_1_played:1"
+}
+
+response PlayerVO_HealthPen_1_Drainage
+{
+	criteria	IsPlayer Concept_PlayerPickup PlayerPickupFromWorld  PlayerPickedUpHealthPen InMap_a2_drainage Step1NotPlayed	
+	scene	"scenes/responses/alyx_first_healthpen_pickup_a" then self TLK_PLAYER_MAP_TALK health_pen_step:2 1	
+	applycontext "step_1_played:1"
+
+}
+
+response PlayerVO_HealthPen_2
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step2 NotUsedHealthPen	
+	scene			"scenes/responses/alyx_first_healthpen_pickup_b" then self TLK_PLAYER_MAP_TALK health_pen_step:3 1
+}
+
+// if player used pen during conversation
+response PlayerVO_HealthPenQuickUse
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step2 UsedHealthPen	
+	scene			"scenes/responses/alyx_healthpen_quick_use" interrupt_and_cancel
+}
+
+response PlayerVO_HealthPen_3
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step3 	
+	scene			"scenes/responses/alyx_first_healthpen_pickup_c" then self TLK_PLAYER_MAP_TALK health_pen_step:4 1
+}
+
+rule PlayerVO_HealthPen_3_QuickUse_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step3 UsedHealthPen	
+	response		PlayerVO_HealthPenQuickUse
+}
+
+
+response PlayerVO_HealthPen_4
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step4 	
+	scene			"scenes/responses/alyx_first_healthpen_pickup_d" 
+}
+
+rule PlayerVO_HealthPen_4_QuickUse_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk HealthPen_Step4 UsedHealthPen	
+	response		PlayerVO_HealthPenQuickUse
+}
+
+//========================================================================================================
+// Resin Reactions
+//========================================================================================================
+criterion "HasNotPickedUpResin" "resin_picked_up" "!=1" "required"
+
+// First pickup, doesn't matter what type
+response PlayerVO_FirstResinPickup_Response
+{
+	criteria		IsPlayer Concept_PlayerPickup PlayerCurrency_Pickup_Small PlayerPickupFromWorld HasNotPickedUpResin
+	response ResinPickupQZ
+	{
+		criteria InMap_a2_quarantine_entrance
+		scene "scenes/act2/quarantine_entrance/alyx_russell_first_resin" interrupt_and_cancel
+		applycontext "resin_picked_up:1"
+	}
+	response ResinPickupPistol
+	{
+		criteria InMap_a2_pistol
+		scene "scenes/act2/quarantine_entrance/alyx_russell_first_resin" interrupt_and_cancel
+		applycontext "resin_picked_up:1"
+	}
+}														 
+
+
+//===========================================
+// start hacking a trip mine 
+//===========================================
+criterion "Speech_StartTripmineHack" "speech" "start_tripmine_hack" "required"
+response PlayerVO_StartTrimineHack
+{
+	criteria Concept_PlayerTalk Speech_StartTripmineHack 
+	scene "scenes/responses/russell_tripmine_hack.vcd" speakonce
+}
+
+
+//========================================================================================================
+// Upgrade Stations
+//========================================================================================================
+criterion "Speech_AlyxRussell_SeeUpgradeStation" "speech" "see_upgrade_station" "required"
+response PlayerVO_a2_pistol_SeeUpgradeStation
+{
+	scene "scenes/act2/pistol/alyx_russell_first_fabricator" speakonce
+}
+
+rule PlayerVO_a2_pistol_SeeUpgradeStation
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_SeeUpgradeStation NotInCombat
+	response		PlayerVO_a2_pistol_SeeUpgradeStation
+	applycontext	"found_upgrade_station:1"
+}	
+
+criterion "Speech_AlyxRussell_CantAffordUpgrades" "speech" "cant_afford_upgrades" "required"
+criterion "PlayerHasLowResin"			"current_crafting_currency" "<10" required
+response PlayerVO_CantAffordUpgrades
+{
+	criteria		Concept_PlayerTalk Speech_AlyxRussell_CantAffordUpgrades PlayerHasLowResin NotInCombat
+
+	scene "scenes/act2/pistol/player_doesnt_have_enough_resin_first_upgrade.vcd" predelay 3 speakonce
+	applycontext	"found_upgrade_station:1"
+}
+
+//========================================================================================================
+// Upgrade weapons
+//========================================================================================================
+response PlayerVO_PistolUpgrade
+{
+	criteria	IsPlayer  WeaponPistol Concept_PlayerUpgradePickup
+	scene "scenes/responses/upgrade_pistol_1" 
+	scene "scenes/responses/upgrade_pistol_2" 
+	scene "scenes/responses/upgrade_pistol_3" 
+	scene "scenes/responses/upgrade_pistol_4" 
+	sequential
+	norepeat
+}
+
+
+response PlayerVO_ShotgunUpgrade
+{
+	criteria	IsPlayer  WeaponShotgun Concept_PlayerUpgradePickup
+	scene "scenes/responses/upgrade_shotgun_1" 
+	scene "scenes/responses/upgrade_shotgun_2" 
+	scene "scenes/responses/upgrade_shotgun_3" 
+	scene "scenes/responses/upgrade_shotgun_4" 
+	sequential
+	norepeat
+}
+
+response PlayerVO_RapidFireUpgrade
+{
+	criteria	IsPlayer  WeaponRapidFire Concept_PlayerUpgradePickup
+	scene "scenes/responses/upgrade_rifle_1" 
+	scene "scenes/responses/upgrade_rifle_2" 
+	scene "scenes/responses/upgrade_rifle_3" 
+	sequential
+	norepeat
+}
+
+
+//========================================================================================================
+// Headcrab on alyx's head
+//========================================================================================================
+
+criterion "Speech_HeadCrabStruggle" "speech" "headcrab_struggle" "required"
+criterion "Speech_HeadCrabPostStruggle" "speech" "post_headcrab_struggle" "required"
+
+criterion "HeadCrabStruggleLong" "headcrab_struggle_long" "!=1" "required"
+criterion "HeadCrabStruggleShort" "headcrab_struggle_long" "1" "required"
+
+response PlayerVO_HeadCrabOnHead_Struggle
+{
+	criteria		Concept_PlayerTalk 	Speech_HeadCrabStruggle
+	response PlayerVO_HeadCrabOnHead_Struggle_Long
+	{
+		criteria	HeadCrabStruggleLong
+		scene "scenes/responses/headcrab_struggle_long" cancel_existing
+		applycontext "headcrab_struggle_long:1"
+	}
+	response PlayerVO_HeadCrabOnHead_Struggle_Short
+	{																									  
+		criteria	HeadCrabStruggleShort
+		speak "vo.01_00001" cancel_existing
+		speak "vo.01_00002" cancel_existing
+		speak "vo.01_00004" cancel_existing
+		speak "vo.01_00010" cancel_existing
+		speak "vo.01_00012" cancel_existing
+	}
+}
+
+criterion "HeadCrabPostStruggleLong" "headcrab_post_struggle_long" "!=1" "required"
+criterion "HeadCrabPostStruggleShort" "headcrab_post_struggle_long" "1" "required"
+
+response PlayerVO_HeadCrabOnHead_PostStruggle
+{
+	criteria		Concept_PlayerTalk 	Speech_HeadCrabPostStruggle
+	response PlayerVO_HeadCrabOnHead_Post_Struggle_Long
+	{
+		criteria	HeadCrabPostStruggleLong
+		scene "scenes/responses/headcrab_post_struggle_long" interrupt_and_cancel
+		applycontext "headcrab_post_struggle_long:1"
+	}
+	response PlayerVO_HeadCrabOnHead_Post_Struggle_Short
+	{
+		criteria	HeadCrabPostStruggleShort
+		speak "vo.01_99956" interrupt_and_cancel 
+		speak "vo.01_99957" interrupt_and_cancel 
+		speak "vo.01_99966" interrupt_and_cancel 
+		speak "vo.01_99970" interrupt_and_cancel 
+		speak "vo.01_99975" interrupt_and_cancel 
+		speak "vo.01_99976" interrupt_and_cancel 
+	}
+}
+
+
+									
+//========================================================================================================
+// Inventory speech
+//========================================================================================================
+
+response PlayerVO_Pistol_ClipAmmoLow_Response
+{
+	criteria		IsPlayer Concept_PlayerPullFromBag PlayerPickupFromBag IsPlayerHoldingPistol 
+
+	response
+	{
+		criteria NotInCombat
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_70649" noscene weight 48
+			speak "vo.01_70653" noscene weight 36
+			speak "vo.01_70654" noscene weight 36
+			speak "vo.01_70655" noscene weight 36
+			speak "vo.01_70657" noscene weight 36
+			speak "vo.01_71065" noscene weight 36
+			speak "vo.01_71067" noscene weight 36
+			speak "vo.01_71069" noscene weight 36
+			speak "vo.01_20209" noscene weight 36
+			speak "vo.01_20199" noscene weight 36
+			speak "vo.01_71055" noscene weight 12
+			speak "vo.01_71063" noscene weight 12
+			speak "vo.01_71071" noscene weight 12
+			speak "vo.01_20207" noscene weight 4
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_20225" noscene weight 48
+			speak "vo.01_70672" noscene weight 48  
+			speak "vo.01_70664" noscene weight 48
+			speak "vo.01_70835" noscene weight 48
+			speak "vo.01_70838" noscene weight 48  
+			speak "vo.01_20229" noscene weight 36
+			speak "vo.01_70666" noscene weight 36
+			speak "vo.01_70671" noscene weight 36
+			speak "vo.01_70677" noscene weight 36     
+			speak "vo.01_70825" noscene weight 36
+			speak "vo.01_70829" noscene weight 36
+			speak "vo.01_70834" noscene weight 36
+			speak "vo.01_70665" noscene weight 12
+			speak "vo.01_70669" noscene weight 12               
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_20259" noscene weight 48
+			speak "vo.01_20269" noscene weight 48
+			speak "vo.01_20249" noscene weight 36
+			speak "vo.01_20255" noscene weight 36
+			speak "vo.01_20263" noscene weight 36
+			speak "vo.01_20267" noscene weight 36
+			speak "vo.01_70840" noscene weight 36
+			speak "vo.01_70846" noscene weight 36
+			speak "vo.01_70849" noscene weight 36
+			speak "vo.01_70854" noscene weight 36
+			speak "vo.01_20257" noscene weight 12
+			speak "vo.01_20261" noscene weight 12
+			speak "vo.01_70858" noscene weight 12
+		}
+	}
+
+	response
+	{
+		criteria InCombat
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_20181" noscene weight 48
+			speak "vo.01_20183" noscene weight 48
+			speak "vo.01_20185" noscene weight 48
+			speak "vo.01_20179" noscene weight 36
+			speak "vo.01_20187" noscene weight 36
+			speak "vo.01_20189" noscene weight 36
+			speak "vo.01_20191" noscene weight 36
+			speak "vo.01_20193" noscene weight 36
+			speak "vo.01_20195" noscene weight 36
+			speak "vo.01_20197" noscene weight 36
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_70659" noscene weight 48
+			speak "vo.01_20223" noscene weight 36
+			speak "vo.01_20227" noscene weight 36
+			speak "vo.01_70660" noscene weight 36
+			speak "vo.01_70661" noscene weight 36
+			speak "vo.01_70819" noscene weight 36 
+			speak "vo.01_70820" noscene weight 36
+			speak "vo.01_70823" noscene weight 36
+			speak "vo.01_70824" noscene weight 36
+			speak "vo.01_70826" noscene weight 36
+			speak "vo.01_70827" noscene weight 36
+			speak "vo.01_70832" noscene weight 36 
+			speak "vo.01_70662" noscene weight 12
+			speak "vo.01_70663" noscene weight 12   
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_20239" noscene weight 48
+			speak "vo.01_20241" noscene weight 48
+			speak "vo.01_20233" noscene weight 36
+			speak "vo.01_20235" noscene weight 36
+			speak "vo.01_20245" noscene weight 36
+			speak "vo.01_20249" noscene weight 36                    
+			speak "vo.01_20251" noscene weight 36
+			speak "vo.01_20231" noscene weight 12
+			speak "vo.01_20247" noscene weight 12
+		}
+	}
+}
+
+response PlayerVO_Shotgun_ClipAmmoLow_Response
+{
+	criteria		IsPlayer Concept_PlayerPullFromBag PlayerPickupFromBag IsPlayerHoldingShotgun
+
+	response
+	{
+		criteria NotInCombat
+
+		response
+		{
+			criteria PlayerAmmoFourLeft
+
+			speak "vo.01_90007" noscene
+			speak "vo.01_90008" noscene
+			speak "vo.01_90009" noscene
+			speak "vo.01_90010" noscene
+			speak "vo.01_90011" noscene
+			speak "vo.01_90012" noscene
+			speak "vo.01_90013" noscene
+			speak "vo.01_90014" noscene
+			speak "vo.01_90015" noscene
+		}
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_70684" noscene weight 48
+			speak "vo.01_70694" noscene weight 48
+			speak "vo.01_70695" noscene weight 48
+			speak "vo.01_70682" noscene weight 36
+			speak "vo.01_70687" noscene weight 36
+			speak "vo.01_70689" noscene weight 36
+			speak "vo.01_70697" noscene weight 36
+			speak "vo.01_70690" noscene weight 12
+			speak "vo.01_70692" noscene weight 12
+			speak "vo.01_70696" noscene weight 12
+			speak "vo.01_70698" noscene weight 12
+		}
+
+		response
+		{
+			criteria PlayerAmmoTwoLeft
+
+			speak "vo.01_90025" noscene
+			speak "vo.01_90026" noscene
+			speak "vo.01_90027" noscene
+			speak "vo.01_90028" noscene
+			speak "vo.01_90029" noscene
+			speak "vo.01_90030" noscene
+			speak "vo.01_90031" noscene
+			speak "vo.01_90032" noscene
+			speak "vo.01_90033" noscene
+			speak "vo.01_99950" noscene
+			speak "vo.01_99951" noscene
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_70714" noscene weight 48
+			speak "vo.01_70703" noscene weight 36
+			speak "vo.01_70707" noscene weight 36
+			speak "vo.01_70710" noscene weight 36
+			speak "vo.01_70715" noscene weight 36
+			speak "vo.01_70716" noscene weight 36
+			speak "vo.01_70718" noscene weight 36
+			speak "vo.01_70706" noscene weight 12
+			speak "vo.01_70713" noscene weight 12
+			speak "vo.01_70717" noscene weight 12
+			speak "vo.01_70709" noscene weight 4
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_70735" noscene weight 48
+			speak "vo.01_70736" noscene weight 48
+			speak "vo.01_70733" noscene weight 36
+			speak "vo.01_70840" noscene weight 36
+			speak "vo.01_70846" noscene weight 36
+			speak "vo.01_70849" noscene weight 36
+			speak "vo.01_70854" noscene weight 36
+			speak "vo.01_70734" noscene weight 12
+			speak "vo.01_70858" noscene weight 12
+		}
+	}
+
+	response
+	{
+		criteria InCombat
+
+		response
+		{
+			criteria PlayerAmmoFourLeft
+
+			speak "vo.01_90016" noscene
+			speak "vo.01_90017" noscene
+			speak "vo.01_90018" noscene
+			speak "vo.01_90019" noscene
+			speak "vo.01_90020" noscene
+			speak "vo.01_90021" noscene
+			speak "vo.01_90022" noscene
+			speak "vo.01_90023" noscene
+			speak "vo.01_90024" noscene
+		}
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_70679" noscene weight 48
+			speak "vo.01_70680" noscene weight 36
+			speak "vo.01_70799" noscene weight 36
+			speak "vo.01_70801" noscene weight 36
+			speak "vo.01_70802" noscene weight 36
+			speak "vo.01_70803" noscene weight 36
+			speak "vo.01_70806" noscene weight 36   
+		}
+
+		response
+		{
+			criteria PlayerAmmoTwoLeft
+
+			speak "vo.01_90034" noscene
+			speak "vo.01_90035" noscene
+			speak "vo.01_90036" noscene
+			speak "vo.01_90037" noscene
+			speak "vo.01_90038" noscene
+			speak "vo.01_90039" noscene
+			speak "vo.01_90040" noscene
+			speak "vo.01_90041" noscene
+			speak "vo.01_90042" noscene
+			speak "vo.01_99952" noscene
+			speak "vo.01_99953" noscene
+			speak "vo.01_99954" noscene
+			speak "vo.01_99955" noscene
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_70699" noscene weight 48
+			speak "vo.01_70704" noscene weight 48 
+			speak "vo.01_70700" noscene weight 36
+			speak "vo.01_70701" noscene weight 36
+			speak "vo.01_70819" noscene weight 36 
+			speak "vo.01_70820" noscene weight 36
+			speak "vo.01_70823" noscene weight 36
+			speak "vo.01_70824" noscene weight 36
+			speak "vo.01_70826" noscene weight 36
+			speak "vo.01_70827" noscene weight 36
+			speak "vo.01_70832" noscene weight 36 
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_70719" noscene weight 48
+			speak "vo.01_70724" noscene weight 48
+			speak "vo.01_70721" noscene weight 36
+			speak "vo.01_70725" noscene weight 36
+			speak "vo.01_70726" noscene weight 36
+			speak "vo.01_70844" noscene weight 36
+			speak "vo.01_70848" noscene weight 36 
+			speak "vo.01_70723" noscene weight 12
+			speak "vo.01_70727" noscene weight 12
+			speak "vo.01_70728" noscene weight 4
+			speak "vo.01_70845" noscene weight 4
+		}
+	}
+}
+
+response PlayerVO_RapidFire_ClipAmmoLow_Response
+{
+	criteria		IsPlayer Concept_PlayerPullFromBag PlayerPickupFromBag IsPlayerHoldingRapidFire
+
+	response
+	{
+		criteria NotInCombat
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_70750" noscene weight 48
+			speak "vo.01_70752" noscene weight 36
+			speak "vo.01_70757" noscene weight 36
+			speak "vo.01_70810" noscene weight 36
+			speak "vo.01_70816" noscene weight 36
+			speak "vo.01_70817" noscene weight 36
+			speak "vo.01_70749" noscene weight 12
+			speak "vo.01_70755" noscene weight 12
+			speak "vo.01_70758" noscene weight 12
+			speak "vo.01_70811" noscene weight 12
+			speak "vo.01_70812" noscene weight 12
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_70775" noscene weight 48
+			speak "vo.01_70778" noscene weight 48
+			speak "vo.01_70835" noscene weight 48
+			speak "vo.01_70838" noscene weight 48
+			speak "vo.01_70769" noscene weight 36
+			speak "vo.01_70774" noscene weight 36
+			speak "vo.01_70776" noscene weight 36
+			speak "vo.01_70822" noscene weight 36
+			speak "vo.01_70825" noscene weight 36
+			speak "vo.01_70829" noscene weight 36
+			speak "vo.01_70834" noscene weight 36
+			speak "vo.01_70772" noscene weight 12
+			speak "vo.01_70777" noscene weight 12
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_70796" noscene weight 48
+			speak "vo.01_70791" noscene weight 36
+			speak "vo.01_70795" noscene weight 36
+			speak "vo.01_70840" noscene weight 36
+			speak "vo.01_70846" noscene weight 36
+			speak "vo.01_70849" noscene weight 36
+			speak "vo.01_70854" noscene weight 36
+			speak "vo.01_70858" noscene weight 12
+			speak "vo.01_70789" noscene weight 4
+		}
+	}
+
+	response
+	{
+		criteria InCombat
+
+		response
+		{
+			criteria PlayerAmmoThreeLeft
+
+			speak "vo.01_70739" noscene weight 48
+			speak "vo.01_70743" noscene weight 48
+			speak "vo.01_70746" noscene weight 36
+			speak "vo.01_70748" noscene weight 36
+			speak "vo.01_70799" noscene weight 36
+			speak "vo.01_70801" noscene weight 36
+			speak "vo.01_70802" noscene weight 36
+			speak "vo.01_70803" noscene weight 36
+			speak "vo.01_70806" noscene weight 36
+			speak "vo.01_70740" noscene weight 12
+			speak "vo.01_70744" noscene weight 12
+			speak "vo.01_70745" noscene weight 12
+		}
+
+		response
+		{
+			criteria PlayerAmmoLast
+
+			speak "vo.01_70759" noscene weight 48
+			speak "vo.01_70763" noscene weight 48
+			speak "vo.01_70761" noscene weight 36
+			speak "vo.01_70762" noscene weight 36
+			speak "vo.01_70819" noscene weight 36 
+			speak "vo.01_70820" noscene weight 36
+			speak "vo.01_70823" noscene weight 36
+			speak "vo.01_70824" noscene weight 36
+			speak "vo.01_70826" noscene weight 36
+			speak "vo.01_70827" noscene weight 36
+			speak "vo.01_70832" noscene weight 36
+			speak "vo.01_70760" noscene weight 12
+			speak "vo.01_70764" noscene weight 12
+		}
+
+		response
+		{
+			criteria PlayerAmmoEmpty
+
+			speak "vo.01_70783" noscene weight 48
+			speak "vo.01_70779" noscene weight 36
+			speak "vo.01_70782" noscene weight 36
+			speak "vo.01_70844" noscene weight 36
+			speak "vo.01_70848" noscene weight 36
+			speak "vo.01_70787" noscene weight 4
+			speak "vo.01_70845" noscene weight 4
+		}
+	}
+}
+
+
+//==================================================
+// Player Grabbed By Barnacle
+//==================================================
+criterion "PlayerGrabbedByBarnacle" "speech" "player_grabbed_by_barnacle" "required"
+
+response PlayerVO_GrabbedByBarnacle
+{
+	criteria	Concept_PlayerTalk PlayerGrabbedByBarnacle
+	scene "scenes/responses/alyx_grabbed_by_barnacle_1" cancel_existing 
+	scene "scenes/responses/alyx_grabbed_by_barnacle_2" cancel_existing
+	scene "scenes/responses/alyx_grabbed_by_barnacle_3"	cancel_existing 
+	scene "scenes/responses/alyx_grabbed_by_barnacle_4" cancel_existing
+	scene "scenes/responses/alyx_grabbed_by_barnacle_5"	cancel_existing 
+	scene "scenes/responses/alyx_grabbed_by_barnacle_6"	cancel_existing 
+}	
+
+//==================================================
+// Player Released From Barnacle
+//==================================================
+criterion "PlayerReleasedFromBarnacle" "speech" "player_released_by_barnacle" "required"
+
+response PlayerVO_ReleasedByBarnacle
+{
+	criteria	Concept_PlayerTalk PlayerReleasedFromBarnacle
+	scene "scenes/responses/alyx_released_by_barnacle_1"  cancel_existing 
+	scene "scenes/responses/alyx_released_by_barnacle_2"  cancel_existing 
+	scene "scenes/responses/alyx_released_by_barnacle_3"  cancel_existing 
+	scene "scenes/responses/alyx_released_by_barnacle_4"  cancel_existing 
+	scene "scenes/responses/alyx_released_by_barnacle_5"  cancel_existing 
+
+}
+
+
+//==================================================
+// Alyx shotgun struggle
+//==================================================
+criterion "AlyxShotgunStruggle" "speech" "alyx_shotgun_struggle" "required"
+
+response PlayerVO_ShotgunStruggle
+{
+	criteria Concept_PlayerTalk AlyxShotgunStruggle
+	scene "scenes\act2\headcrabs_tunnel\grabbity_glove_shotgun_struggle1.vcd" respeakdelay 2.0
+	scene "scenes\act2\headcrabs_tunnel\grabbity_glove_shotgun_struggle2.vcd" respeakdelay 2.0
+	scene "scenes\act2\headcrabs_tunnel\grabbity_glove_shotgun_struggle3.vcd" respeakdelay 2.0
+}
+
+
+//==================================================
+// Alyx fail
+//==================================================
+criterion "AlyxFail" "speech" "alyx_fail" "required"
+
+response PlayerVO_AlyxFail
+{
+	criteria Concept_PlayerTalk AlyxFail
+	scene "scenes/responses/alyx_fail_1"   
+  	scene "scenes/responses/alyx_fail_2"   
+	scene "scenes/responses/alyx_fail_3"   
+}
+
+//==================================================
+// Alyx OK
+//==================================================
+criterion "AlyxOK" "speech" "alyx_ok" "required"
+
+response PlayerVO_AlyxOK
+{
+	criteria Concept_PlayerTalk AlyxOK
+	scene "scenes/responses/alyx_ok_1"   
+  	scene "scenes/responses/alyx_ok_2"   
+	scene "scenes/responses/alyx_ok_3"   
+}
+
+//==================================================
+// Alyx Gasp
+//==================================================
+criterion "AlyxGasp" "speech" "alyx_gasp" "required"
+
+response PlayerVO_AlyxGasp
+{
+	criteria Concept_PlayerTalk AlyxGasp
+	scene "scenes/responses/alyx_gasp_1"   
+  	scene "scenes/responses/alyx_gasp_2"   
+	scene "scenes/responses/alyx_gasp_3"   
+}
+
+//==================================================
+// Alyx Exhale
+//==================================================
+criterion "AlyxExhale" "speech" "alyx_exhale" "required"
+
+response PlayerVO_AlyxExhale
+{
+	criteria Concept_PlayerTalk AlyxExhale
+	scene "scenes/responses/alyx_exhale_1"   
+  	scene "scenes/responses/alyx_exhale_2"   
+	scene "scenes/responses/alyx_exhale_3"   
+}
+
+
+//==================================================
+// Alyx startled
+//==================================================
+criterion "AlyxStartled" "speech" "alyx_startled" "required"
+
+response PlayerVO_AlyxStartled
+{
+	criteria Concept_PlayerTalk AlyxStartled
+	scene "scenes/responses/alyx_startled_1"   
+  	scene "scenes/responses/alyx_startled_2"   
+	scene "scenes/responses/alyx_startled_3"   
+	scene "scenes/responses/alyx_startled_4" 
+	scene "scenes/responses/alyx_startled_5"      
+}
+
+//==================================================
+// Alyx affirmations
+//==================================================
+
+
+criterion "AlyxTripMineAffirmation" "speech" "alyx_tripmine_affirmation" "required"
+
+response PlayerVO_AlyxTripMineAffirmation
+{
+	criteria Concept_PlayerTalk AlyxTripMineAffirmation
+	speak "vo.01_13140" respeakdelay 1.0
+	speak "vo.01_60007" respeakdelay 1.0
+	speak "vo.01_60009" respeakdelay 1.0  
+	speak "vo.01_60011" respeakdelay 1.0    
+	speak "vo.01_13141" respeakdelay 1.0    
+	speak "vo.01_60013" respeakdelay 1.0    
+	speak "vo.01_60015" respeakdelay 1.0    
+	speak "vo.01_13142" respeakdelay 1.0    
+	speak "vo.01_60017" respeakdelay 1.0    
+ 	speak "vo.01_13143" respeakdelay 1.0  
+	speak "vo.01_13144" respeakdelay 1.0   
+}
+
+//==================================================
+// Alyx Didn't Work
+//==================================================
+criterion "AlyxDidntWork" "speech" "alyx_didnt_work" "required"
+
+response PlayerVO_AlyxDidntWork
+{
+	criteria Concept_PlayerTalk AlyxDidntWork
+	speak "vo.01_01162" respeakdelay 1.0
+	speak "vo.01_01164" respeakdelay 1.0
+	speak "vo.01_01165" respeakdelay 1.0  
+}
+
+
+//==================================================
+// Alyx Combat Relief
+//==================================================
+criterion "AlyxCombatRelief" "speech" "alyx_combat_relief" "required"
+
+response PlayerVO_AlyxCombatRelief
+{
+	criteria Concept_PlayerTalk AlyxCombatRelief
+	speak "vo.01_13140" 
+	speak "vo.01_60007" 
+	speak "vo.01_60009" 
+	speak "vo.01_60011" 
+	speak "vo.01_13141"
+	speak "vo.01_60013"
+	speak "vo.01_60015"
+	speak "vo.01_13142"
+	speak "vo.01_60017"
+	speak "vo.01_13143"
+	speak "vo.01_13144"
+	speak "vo.01_13145"
+	speak "vo.01_60019"
+}
+
+
+
+//==================================================
+// Russell looking
+//==================================================
+criterion "RussellLooking" "speech" "russell_looking" "required"
+
+response PlayerVO_RussellLooking
+{
+	criteria Concept_PlayerTalk RussellLooking NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	scene "scenes/responses/russell_looking_1"   
+	scene "scenes/responses/russell_looking_2"   
+	scene "scenes/responses/russell_looking_3"   
+	scene "scenes/responses/russell_looking_4"   
+}
+
+
+//==================================================
+// Russell hacking
+//==================================================
+criterion "RussellHacking" "speech" "russell_hacking" "required"
+response PlayerVO_RussellHacking
+{
+	criteria Concept_PlayerTalk RussellHacking NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	scene "scenes/responses/russell_hacking_1"   
+	scene "scenes/responses/russell_hacking_2"   
+	scene "scenes/responses/russell_hacking_3"  
+	scene "scenes/responses/russell_hacking_4"   
+}	
+
+criterion "RussellHackFast" "speech" "russell_hack_fast" "required"
+response PlayerVO_RussellHackFast
+{
+	criteria Concept_PlayerTalk RussellHackFast NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery NotInMap_a4_c17_parking_garage
+	speak "vo.05_04566" speakonce
+}
+
+criterion "RussellHackMidPoint" "speech" "russell_hack_mid_point" "required"
+response PlayerVO_RussellHackMidPoint
+{
+	criteria Concept_PlayerTalk RussellHackMidPoint NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	speak "vo.05_04679" speakonce
+}
+
+criterion "RussellHackLastLife" "speech" "russell_hack_last_life" "required"
+response PlayerVO_RussellHacklastLife
+{
+	criteria Concept_PlayerTalk RussellHackLastLife NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	speak "vo.05_04676" speakonce
+}
+
+
+
+
+//==================================================
+// Death Responses by Russell
+//==================================================
+response PlayerVO_DeathWithRus
+{
+	criteria	IsPlayer Concept_PlayerDies NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	
+	speak "vo.05_99003" noscene
+	speak "vo.05_99004" noscene
+	speak "vo.05_99005" noscene
+	speak "vo.05_99006" noscene
+}
+
+//==================================================
+// Death Sounds
+//==================================================
+response PlayerVO_Death
+{
+	criteria	IsPlayer Concept_PlayerDies
+
+	response
+	{
+		criteria InMap_a1_intro_world
+
+		speak "vo.01_20000" noscene
+		speak "vo.01_12755" noscene
+		speak "vo.01_12756" noscene
+	}
+
+	response
+	{
+		criteria InMap_a5_vault
+
+		speak "vo.01_20000" noscene
+		speak "vo.01_12755" noscene
+		speak "vo.01_12756" noscene
+	}
+
+	response
+	{
+		criteria InMap_a5_ending
+
+		speak "vo.01_20000" noscene
+		speak "vo.01_12755" noscene
+		speak "vo.01_12756" noscene
+	}
+
+	response
+	{
+		criteria InMap_a3_distillery
+
+		speak "vo.01_20000" noscene
+		speak "vo.01_12755" noscene
+		speak "vo.01_12756" noscene
+	}
+}
+
+//==================================================
+// Pain Sounds
+//==================================================
+response PlayerVO_Hurt_Fell_Response
+{
+	speak "vo.01_12754" respeakdelay 0.7
+	speak "vo.01_12755" respeakdelay 0.7
+	speak "vo.01_12756" respeakdelay 0.7
+}
+
+rule PlayerVO_Hurt_Fell_Rule
+{
+	criteria		IsPlayer Concept_PlayerHurt Fell
+	response		PlayerVO_Hurt_Fell_Response
+}
+
+
+response PlayerVO_Hurt_Shocked_Response
+{
+	speak "vo.01_12757" respeakdelay 0.7
+	speak "vo.01_12758" respeakdelay 0.7
+	speak "vo.01_12759" respeakdelay 0.7
+}
+
+rule PlayerVO_Hurt_Shocked_Rule
+{
+	criteria		IsPlayer Concept_PlayerHurt Shocked
+	response		PlayerVO_Hurt_Shocked_Response
+}
+
+response PlayerVO_Pain
+{
+	criteria	IsPlayer Concept_PlayerHurt
+	
+	speak "vo.01_00001" respeakdelay 10
+	speak "vo.01_00002" respeakdelay 10
+	speak "vo.01_00003" respeakdelay 10
+	speak "vo.01_00004" respeakdelay 10
+	speak "vo.01_00005" respeakdelay 10
+	speak "vo.01_00006" respeakdelay 10
+	speak "vo.01_00007" respeakdelay 10
+	speak "vo.01_00008" respeakdelay 10
+	speak "vo.01_00009" respeakdelay 10
+	speak "vo.01_00010" respeakdelay 10
+	speak "vo.01_00011" respeakdelay 10
+	speak "vo.01_00012" respeakdelay 10
+	speak "vo.01_00013" respeakdelay 10
+
+}
+
+//==================================================
+// Coughing
+//==================================================
+
+response PlayerVO_AlyxCough
+{
+	criteria		IsPlayer Concept_PlayerHurt Coughing
+
+	response
+	{
+		criteria NotMuffled
+
+		scene "scenes/responses/alyx_cough_0"
+		scene "scenes/responses/alyx_cough_1"
+		scene "scenes/responses/alyx_cough_2"
+		scene "scenes/responses/alyx_cough_3"
+		scene "scenes/responses/alyx_cough_4"
+		scene "scenes/responses/alyx_cough_5"
+		scene "scenes/responses/alyx_cough_6"
+		scene "scenes/responses/alyx_cough_8"
+		scene "scenes/responses/alyx_cough_9"
+	}
+
+	response
+	{
+		criteria Muffled
+
+		scene "scenes/responses/alyx_cough_muffled_11"
+		scene "scenes/responses/alyx_cough_muffled_12"
+		scene "scenes/responses/alyx_cough_muffled_13"
+		scene "scenes/responses/alyx_cough_muffled_14"
+		scene "scenes/responses/alyx_cough_muffled_15"
+		scene "scenes/responses/alyx_cough_muffled_17"
+		scene "scenes/responses/alyx_cough_muffled_18"
+		scene "scenes/responses/alyx_cough_muffled_19"
+	}
+}
+
+//==================================================
+// Stunned
+//==================================================
+
+response PlayerVO_Hurt_Stunned_Response
+{
+	speak "vo.01_12763" respeakdelay 0.7
+	speak "vo.01_12764" respeakdelay 0.7
+	speak "vo.01_12765" respeakdelay 0.7
+}
+
+rule PlayerVO_Hurt_Stunned_Rule
+{
+	criteria		IsPlayer Concept_PlayerHurt Stunned
+	response		PlayerVO_Hurt_Stunned_Response
+}
+
+//==================================================
+// Flashlight
+//==================================================
+
+response PlayerVO_CommentFlashlightFail_Small_Response
+{
+	speak "alyxtemp_flashlightfail_03" noscene
+}
+
+rule PlayerVO_CommentFlashlightFail_Small_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk FlashlightFailureSmall
+	response		PlayerVO_CommentFlashlightFail_Small_Response
+}
+
+response PlayerVO_CommentFlashlightFail_Medium_Response
+{
+	speak "alyxtemp_flashlightfail_05" noscene
+}
+
+rule PlayerVO_CommentFlashlightFail_Medium_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk FlashlightFailureMedium
+	response		PlayerVO_CommentFlashlightFail_Medium_Response
+}
+
+response PlayerVO_CommentFlashlightFail_Large_Response
+{
+	speak "alyxtemp_flashlightfail_06" noscene
+	speak "alyxtemp_flashlightfail_07" noscene
+}
+
+rule PlayerVO_CommentFlashlightFail_Large_Rule
+{
+	criteria		IsPlayer Concept_PlayerTalk FlashlightFailureLarge
+	response		PlayerVO_CommentFlashlightFail_Large_Response
+}
+
+//==================================================
+// Training Gravity Glove
+//==================================================
+
+criterion "Speech_Russell_Training_GG_Intro" "concept" "hlvr_training_gg_intro" "required"
+response PlayerVO_Russell_Training_GG_Intro
+{
+	criteria Speech_Russell_Training_GG_Intro
+	scene "scenes/act1/safehouse_02/russell_glove_intro" speakonce
+}
+
+criterion "Speech_Russell_Training_GG_Aim_Rare" "concept" "hlvr_training_gg_aim_rare" "required"
+response PlayerVO_Russell_Training_GG_Aim_Rare
+{
+	criteria Speech_Russell_Training_GG_Aim_Rare
+	scene "scenes/act1/safehouse_02/russell_glove_aim_3" speakonce
+}
+
+criterion "Speech_Russell_Training_GG_Aim" "concept" "hlvr_training_gg_aim" "required"
+response PlayerVO_Russell_Training_GG_Aim
+{
+	criteria Speech_Russell_Training_GG_Aim
+	scene "scenes/act1/safehouse_02/russell_glove_aim_2"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_4"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_5"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_6"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_7"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_8"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_9"
+	scene "scenes/act1/safehouse_02/russell_glove_aim_10"
+}
+
+criterion "Speech_Russell_Training_GG_Grab" "concept" "hlvr_training_gg_grab" "required"
+response PlayerVO_Russell_Training_GG_Grab
+{
+	criteria Speech_Russell_Training_GG_Grab
+	scene "scenes/act1/safehouse_02/russell_glove_grab_1"
+	scene "scenes/act1/safehouse_02/russell_glove_grab_2"
+	scene "scenes/act1/safehouse_02/russell_glove_grab_3"
+	scene "scenes/act1/safehouse_02/russell_glove_grab_4"
+	scene "scenes/act1/safehouse_02/russell_glove_grab_5"
+	scene "scenes/act1/safehouse_02/russell_glove_trigger_1"
+}
+
+criterion "Speech_Russell_Training_GG_Flick" "concept" "hlvr_training_gg_flick" "required"
+response PlayerVO_Russell_Training_GG_Flick
+{
+	criteria Speech_Russell_Training_GG_Flick
+	scene "scenes/act1/safehouse_02/russell_glove_flick_1"
+	scene "scenes/act1/safehouse_02/russell_glove_flick_2"
+}
+
+criterion "Speech_Russell_Training_GG_Catch" "concept" "hlvr_training_gg_catch" "required"
+response PlayerVO_Russell_Training_GG_Catch
+{
+	criteria Speech_Russell_Training_GG_Catch
+	scene "scenes/act1/safehouse_02/russell_glove_catch_1"
+	scene "scenes/act1/safehouse_02/russell_glove_catch_2"
+	scene "scenes/act1/safehouse_02/russell_glove_catch_3"
+	scene "scenes/act1/safehouse_02/russell_glove_catch_4"
+}
+
+criterion "Speech_Russell_Training_GG_Cheer" "concept" "hlvr_training_gg_cheer" "required"
+response PlayerVO_Russell_Training_GG_Cheer
+{
+	criteria Speech_Russell_Training_GG_Cheer
+	scene "scenes/act1/safehouse_02/russell_glove_cheer_3"
+	scene "scenes/act1/safehouse_02/russell_glove_cheer_4"
+	scene "scenes/act1/safehouse_02/russell_glove_cheer_5"
+	scene "scenes/act1/safehouse_02/russell_glove_success_1"
+	scene "scenes/act1/safehouse_02/russell_glove_success_2"
+	scene "scenes/act1/safehouse_02/russell_glove_success_3"
+}
+
+criterion "Speech_Russell_Training_GG_Repeat" "concept" "hlvr_training_gg_repeat" "required"
+criterion "Speech_Russell_Training_GG_FirstCatch" "count" "1" "required"
+criterion "Speech_Russell_Training_GG_SecondCatch" "count" "2" "required"
+
+response PlayerVO_Russell_Training_GG_Catch_1
+{
+	criteria Speech_Russell_Training_GG_Repeat Speech_Russell_Training_GG_FirstCatch
+	scene "scenes/act1/safehouse_02/russell_glove_cheer_1" predelay 0.25
+	scene "scenes/act1/safehouse_02/russell_glove_repeat_1" predelay 0.25
+}
+
+response PlayerVO_Russell_Training_GG_Catch_2
+{
+	criteria Speech_Russell_Training_GG_Repeat Speech_Russell_Training_GG_SecondCatch
+	scene "scenes/act1/safehouse_02/russell_glove_cheer_2" predelay 0.25
+	scene "scenes/act1/safehouse_02/russell_glove_repeat_2" predelay 0.25
+}
+
+//==================================================
+// Lethal Teleport Warnings
+//==================================================
+
+response PlayerVO_Alyx_Lethal_Teleport
+{
+	scene "scenes/alyx_russell_conversations/first_lethal_teleport_warning" speakonce
+}
+rule PlayerVO_Alyx_Lethal_Teleport_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	response		PlayerVO_Alyx_Lethal_Teleport
+	applycontext	"lethal_teleport:2"
+}
+
+criterion "Lethal_Teleport_2" "lethal_teleport" "2" "required"
+response PlayerVO_Alyx_Lethal_Teleport_2
+{
+	speak "vo.01_12770" noscene respeakdelay 6
+	speak "vo.01_12771" noscene respeakdelay 6
+	speak "vo.01_12772" noscene respeakdelay 6
+	speak "vo.01_12773" noscene respeakdelay 6
+	speak "vo.01_12774" noscene respeakdelay 6
+}
+rule PlayerVO_Alyx_Lethal_Teleport_2_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal Lethal_Teleport_2 NotInMap_a1_intro_world NotInMap_a5_vault NotInMap_a5_ending NotInMap_a3_distillery
+	response		PlayerVO_Alyx_Lethal_Teleport_2
+}
+
+rule PlayerVO_Alyx_Lethal_Teleport_Intro_World_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal InMap_a1_intro_world
+	response		PlayerVO_Alyx_Lethal_Teleport_2
+}
+
+rule PlayerVO_Alyx_Lethal_Teleport_Vault_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal InMap_a5_vault
+	response		PlayerVO_Alyx_Lethal_Teleport_2
+}
+
+rule PlayerVO_Alyx_Lethal_Teleport_Ending_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal InMap_a5_ending
+	response		PlayerVO_Alyx_Lethal_Teleport_2
+}
+
+rule PlayerVO_Alyx_Lethal_Teleport_Distillery_Rule
+{
+	criteria		IsPlayer Concept_PlayerTeleportLethal InMap_a3_distillery
+	response		PlayerVO_Alyx_Lethal_Teleport_2
+}
+
+//========================================================================================================
+// EXAMPLE USAGE OF THE "then" PARAMETER TO DO MULTI STEP SPEECH WITH BRANCHING
+//		Console command to trigger this in game:    player_testresponse TLK_PLAYER_DISCOVERY ""
+//	    Give the player some resin with "hlvr_setresources 50 50 50 50" to see the branch in action.
+//========================================================================================================
+//criterion "Sentence_Step2" "step" "2" "required"
+//criterion "Sentence_Step3" "step" "3" "required"
+
+// STEP 1: Starts here.
+//response PlayerVO_TestThen_Step1_Response
+//{
+	//scene			"scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_gate" then self TLK_PLAYER_MAP_TALK step:2 1
+//}
+//rule PlayerVO_TestThen_Step1_Rule
+//{
+	//criteria		IsPlayer Concept_PlayerDiscovery
+	//response		PlayerVO_TestThen_Step1_Response
+//}
+
+// STEP 2: Then this is spoken
+//response PlayerVO_TestThen_Step2_Response
+//{
+	//scene "scenes/act2/quarantine_entrance/alyx_russell_first_dead_zombie" then self TLK_PLAYER_MAP_TALK step:3 1
+//}
+//rule PlayerVO_TestThen_Step2_Rule
+//{
+	//criteria		IsPlayer Concept_PlayerTalk Sentence_Step2
+	//response		PlayerVO_TestThen_Step2_Response
+//}
+
+// STEP 3: Then branches to one of the two rules below, based on whether the player has any resin
+//response PlayerVO_TestThen_Step3_HasResin_Response
+//{
+	//scene "scenes/act2/quarantine_entrance/alyx_russell_see_barnacle"
+//}
+//rule PlayerVO_TestThen_Step3_HasResin_Rule
+//{
+	//criteria		IsPlayer Concept_PlayerTalk Sentence_Step3 PlayerHasResin
+	//response		PlayerVO_TestThen_Step3_HasResin_Response
+//}
+
+//response PlayerVO_TestThen_Step3_NoResin_Response
+//{
+	//scene "scenes/act2/quarantine_entrance/alyx_see_quarantine_zone_gate_open"
+//}
+//rule PlayerVO_TestThen_Step3_NoResin_Rule
+//{
+	//criteria		IsPlayer Concept_PlayerTalk Sentence_Step3 PlayerHasNoResin
+	//response		PlayerVO_TestThen_Step3_NoResin_Response
+//}
+
+
+

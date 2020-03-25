@@ -1,0 +1,40 @@
+.Container
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+	//background-color: #000000;
+	background-color: gradient( radial, 50% 50%, 0% 0%, 100% 100%, from( #ffed5788 ), color-stop( 0.97, #ffed5733 ), to( #f4d71455 ) );
+	flow-children: down;
+}
+
+.TextLine
+{
+	width: 90%;
+	height: 80%;
+	flow-children: down;
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: down;
+	border: 2px solid yellow;
+	visibility: collapse;
+}
+
+
+.TextBox
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-family: Raju;
+	font-weight: semi-bold;
+	font-size: 96px;
+	color: #f4d714;
+	border: 0px solid white;
+}
+
+.ShowStart #StartText,
+{
+	visibility: visible;
+}

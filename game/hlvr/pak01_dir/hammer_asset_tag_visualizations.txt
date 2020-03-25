@@ -1,0 +1,46 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	tag_visualizations = 
+	[
+		{
+			name = "Shipping Status"
+			fallback_color = [ 128, 128, 128 ]
+			tags =
+			[
+				{
+					tag = "ship_complete"
+					color = [ 50, 200, 50 ]
+				},
+				{
+					tag = "ship_unfinished"
+					color = [ 200, 150, 50 ]
+				},
+				{
+					tag = "ship_none"
+					color = [ 200, 50, 50 ]
+				},
+			]
+		},
+		{
+			name = "Import Status"
+			fallback_color = [ 128, 128, 128 ]
+			tags =
+			[
+				{
+					tag = "otherproject"
+					color = [ 15, 150, 240 ]
+				},
+				{
+					tag = "imported"
+					color = [ 238, 162, 14 ]
+				},
+			]
+		},
+		{
+			name = "Rejected Assets"
+			fallback_color = [ 128, 128, 128 ]
+			match_all_rejected_assets = true
+			rejected_color = [ 200, 50, 50 ]
+		},
+	]
+}

@@ -1,0 +1,399 @@
+{
+	PhysNull.Break = 
+	{
+		type = "hlvr_default_3d"
+		mixgroup = "Physics_Breaking"
+		vsnd_files = 
+		[
+			"sounds/test/null.vsnd",
+		]
+	}
+	PhysBreak.Default = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.200000
+		volume_falloff_max = 1500.000000
+		occlusion_scale = 0.300000
+		use_hrtf = 1.000000
+		limiter_on = 1.000000
+		limiter_max = 0.000000
+		limiter_match_event = 1.000000
+		volume_fade_out = 0.500000
+		mixgroup = "Physics_Breaking"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_plastic_box_01.vsnd",
+			"sounds/physics/breaking/break_plastic_box_02.vsnd",
+		]
+	}
+	PhysBreak.Foliage = 
+	{
+		base = "PhysBreak.Default"
+		volume = 0.450000
+		occlusion_scale = 0.800000
+		use_hrtf = 1.000000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		vsnd_files = 
+		[
+			"sounds/world/foliage/foliage_interact_01.vsnd",
+			"sounds/world/foliage/foliage_interact_02.vsnd",
+			"sounds/world/foliage/foliage_interact_03.vsnd",
+			"sounds/world/foliage/foliage_interact_04.vsnd",
+			"sounds/world/foliage/foliage_interact_05.vsnd",
+		]
+	}
+	PhysBreak.Cardboard_Box = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_cardboard_box_01.vsnd",
+			"sounds/physics/breaking/break_cardboard_box_02.vsnd",
+			"sounds/physics/breaking/break_cardboard_box_03.vsnd",
+		]
+	}
+	PhysBreak.Cardboard_Box_Small = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_cardboard_box_small_01.vsnd",
+			"sounds/physics/breaking/break_cardboard_box_small_02.vsnd",
+			"sounds/physics/breaking/break_cardboard_box_small_03.vsnd",
+		]
+	}
+	PhysBreak.Ceramic_Large = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_ceramic_large_01.vsnd",
+			"sounds/physics/breaking/break_ceramic_large_02.vsnd",
+		]
+	}
+	PhysBreak.Concrete = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_concrete_01.vsnd",
+			"sounds/physics/breaking/break_concrete_02.vsnd",
+			"sounds/physics/breaking/break_concrete_03.vsnd",
+		]
+	}
+	PhysBreak.Concrete_Small = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_concrete_small_01.vsnd",
+			"sounds/physics/breaking/break_concrete_small_02.vsnd",
+			"sounds/physics/breaking/break_concrete_small_03.vsnd",
+		]
+	}
+	PhysBreak.Metal_Box = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_metal_box_01.vsnd",
+			"sounds/physics/breaking/break_metal_box_02.vsnd",
+			"sounds/physics/breaking/break_metal_box_03.vsnd",
+		]
+	}
+	PhysBreak.Metal_Cocktail_Shaker = 
+	{
+		base = "PhysBreak.Default"
+		volume = 0.700000
+		volume_falloff_min = 200.000000
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_metal_cocktail_shaker_01.vsnd",
+			"sounds/physics/breaking/break_metal_cocktail_shaker_02.vsnd",
+		]
+	}
+	PhysBreak.Metal_Paintcan = 
+	{
+		base = "PhysBreak.Default"
+		volume = 0.900000
+		volume_falloff_min = 200.000000
+		vsnd_files = 
+		[
+			"sounds/physics/footsteps/player/mud_puddle/step_01.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_02.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_03.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_04.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_05.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_06.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_07.vsnd",
+			"sounds/physics/footsteps/player/mud_puddle/step_08.vsnd",
+		]
+	}
+	PhysBreak.Plastic_Barrel = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_plastic_barrel_01.vsnd",
+			"sounds/physics/breaking/break_plastic_barrel_02.vsnd",
+		]
+	}
+	PhysBreak.Plastic_Box = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_plastic_box_01.vsnd",
+			"sounds/physics/breaking/break_plastic_box_02.vsnd",
+		]
+	}
+	PhysBreak.Plastic_Lid_Small = 
+	{
+		base = "PhysBreak.Default"
+		volume = 0.700000
+		volume_falloff_min = 200.000000
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_plastic_lid_small_01.vsnd",
+			"sounds/physics/breaking/break_plastic_lid_small_02.vsnd",
+		]
+	}
+	PhysBreak.Pottery = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_pottery_01.vsnd",
+			"sounds/physics/breaking/break_pottery_02.vsnd",
+			"sounds/physics/breaking/break_pottery_03.vsnd",
+			"sounds/physics/breaking/break_pottery_04.vsnd",
+		]
+	}
+	Phys.GlassBreakSm = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.800000
+		mixgroup = "Physics_Breaking"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_phys_small_01.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_02.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_03.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_04.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_05.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_06.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_07.vsnd",
+			"sounds/physics/breaking/break_glass_phys_small_08.vsnd",
+		]
+	}
+	Phys.GlassBreakMd = 
+	{
+		type = "hlvr_default_3d"
+		volume = 0.900000
+		pitch_rand_min = -0.100000
+		pitch_rand_max = 0.100000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.700000
+		mixgroup = "Physics_Breaking"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_phys_medium_01.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_02.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_03.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_04.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_05.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_06.vsnd",
+			"sounds/physics/breaking/break_glass_phys_medium_07.vsnd",
+		]
+	}
+	Phys.GlassBreakLg = 
+	{
+		type = "hlvr_default_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		use_hrtf = 1.000000
+		occlusion_scale = 0.600000
+		mixgroup = "Physics_Breaking"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_phys_large_01.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_02.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_03.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_04.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_05.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_06.vsnd",
+			"sounds/physics/breaking/break_glass_phys_large_07.vsnd",
+		]
+	}
+	PhysBreak.Glass_Bottle_Large = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_bottle_large_01.vsnd",
+			"sounds/physics/breaking/break_glass_bottle_large_02.vsnd",
+			"sounds/physics/breaking/break_glass_bottle_large_03.vsnd",
+		]
+	}
+	PhysBreak.Glass_Bottle_Small = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_bottle_small_01.vsnd",
+			"sounds/physics/breaking/break_glass_bottle_small_02.vsnd",
+			"sounds/physics/breaking/break_glass_bottle_small_03.vsnd",
+		]
+	}
+	PhysBreak.Glass_Jar = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_jar_01.vsnd",
+			"sounds/physics/breaking/break_glass_jar_02.vsnd",
+			"sounds/physics/breaking/break_glass_jar_03.vsnd",
+		]
+	}
+	PhysBreak.Glass_Tumbler = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_tumbler_01.vsnd",
+			"sounds/physics/breaking/break_glass_tumbler_02.vsnd",
+			"sounds/physics/breaking/break_glass_tumbler_03.vsnd",
+		]
+	}
+	PhysBreak.Glass_Vase = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_vase_01.vsnd",
+			"sounds/physics/breaking/break_glass_vase_02.vsnd",
+			"sounds/physics/breaking/break_glass_vase_03.vsnd",
+		]
+	}
+	PhysBreak.Porcelain_Plate = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_glass_vase_01.vsnd",
+			"sounds/physics/breaking/break_glass_vase_02.vsnd",
+			"sounds/physics/breaking/break_glass_vase_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Plank = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_plank_01.vsnd",
+			"sounds/physics/breaking/break_wood_plank_02.vsnd",
+			"sounds/physics/breaking/break_wood_plank_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Box = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_box_01.vsnd",
+			"sounds/physics/breaking/break_wood_box_02.vsnd",
+			"sounds/physics/breaking/break_wood_box_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Crate = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_crate_01.vsnd",
+			"sounds/physics/breaking/break_wood_crate_02.vsnd",
+			"sounds/physics/breaking/break_wood_crate_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Crate_Ammo = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_crate_ammo_01.vsnd",
+			"sounds/physics/breaking/break_wood_crate_ammo_02.vsnd",
+			"sounds/physics/breaking/break_wood_crate_ammo_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Picture_Frame_Large = 
+	{
+		base = "PhysBreak.Default"
+		volume = 1.000000
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_picture_frame_large_01.vsnd",
+			"sounds/physics/breaking/break_wood_picture_frame_large_02.vsnd",
+			"sounds/physics/breaking/break_wood_picture_frame_large_03.vsnd",
+		]
+	}
+	PhysBreak.Wood_Picture_Frame_Small = 
+	{
+		base = "PhysBreak.Default"
+		volume = 0.700000
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_wood_picture_frame_small_01.vsnd",
+			"sounds/physics/breaking/break_wood_picture_frame_small_02.vsnd",
+			"sounds/physics/breaking/break_wood_picture_frame_small_03.vsnd",
+		]
+	}
+	PhysBreak.Ceiling_Tile = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_ceiling_tile_01.vsnd",
+			"sounds/physics/breaking/break_ceiling_tile_02.vsnd",
+		]
+	}
+	PhysBreak.Flesh = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_flesh_01.vsnd",
+			"sounds/physics/breaking/break_flesh_02.vsnd",
+			"sounds/physics/breaking/break_flesh_03.vsnd",
+		]
+	}
+	PhysBreak.Flesh_Small = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_flesh_small_01.vsnd",
+			"sounds/physics/breaking/break_flesh_small_02.vsnd",
+			"sounds/physics/breaking/break_flesh_small_03.vsnd",
+		]
+	}
+	PhysBreak.Body = 
+	{
+		base = "PhysBreak.Default"
+		vsnd_files = 
+		[
+			"sounds/physics/breaking/break_body_01.vsnd",
+			"sounds/physics/breaking/break_body_02.vsnd",
+			"sounds/physics/breaking/break_body_03.vsnd",
+		]
+	}
+	Breakable.Flesh = 
+	{
+		base = "PhysBreak.Flesh"
+	}
+}

@@ -1,0 +1,129 @@
+{
+	Vault.Cable_Electrical_Pulse_1 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Vault.Cable_Electrical_Pulse_Child_1"
+		soundevent_02 = "Music.ext_med_cables_travel_1"
+		use_01 = 1.000000
+		use_02 = 1.000000
+	}
+	Vault.Cable_Electrical_Pulse_2 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Vault.Cable_Electrical_Pulse_Child_2"
+		use_01 = 1.000000
+	}
+	Vault.Cable_Electrical_Pulse_3 = 
+	{
+		type = "hlvr_start_multi"
+		soundevent_01 = "Vault.Cable_Electrical_Pulse_Child_3"
+		use_01 = 1.000000
+	}
+	Vault.Cable_Electrical_Pulse_Child_1 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.200000
+		volume_falloff_min = 4200.000000
+		volume_falloff_max = 10500.000000
+		enable_debug_radius = 0
+		occlusion_scale = 0.400000
+		pitch = 0.700000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/shockwave_shoot_release.vsnd",
+		]
+		reverb_falloff_curve = 
+		[
+			
+			[
+				0.005714,
+				0.300000,
+				1.083000,
+				1.083000,
+				2.000000,
+				3.000000,
+			],
+			
+			[
+				1.000000,
+				1.000000,
+				0.227125,
+				0.227125,
+				2.000000,
+				3.000000,
+			],
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Child_2 = 
+	{
+		base = "Vault.Cable_Electrical_Pulse_Child_1"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/shockwave_projectile_end_01.vsnd",
+			"sounds/mechanical_units/substation/shockwave_projectile_end_02.vsnd",
+			"sounds/mechanical_units/substation/shockwave_projectile_end_03.vsnd",
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Child_3 = 
+	{
+		base = "Vault.Cable_Electrical_Pulse_Child_1"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/shockwave_tell_01.vsnd",
+			"sounds/mechanical_units/substation/shockwave_tell_02.vsnd",
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Warmup_1 = 
+	{
+		type = "hlvr_3d_projectile"
+		volume = 0.200000
+		volume_fade_out = 0.500000
+		volume_falloff_min = 50.000000
+		volume_falloff_max = 500.000000
+		use_hrtf = 1.000000
+		pitch = 0.850000
+		occlusion_scale = 0.400000
+		passby_soundevent_name = "Zombie_Revived.Projectile_Passby"
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/shockwave_projectile_loop.vsnd",
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Warmup_2 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.200000
+		occlusion_scale = 0.400000
+		pitch = 0.850000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/electric_start.vsnd",
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Warmup_3 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 1.200000
+		pitch = 0.850000
+		occlusion_scale = 0.400000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/electric_long.vsnd",
+		]
+	}
+	Vault.Cable_Electrical_Pulse_Warmup_4 = 
+	{
+		type = "hlvr_default_3d"
+		use_hrtf = 1.000000
+		volume = 0.200000
+		occlusion_scale = 0.400000
+		pitch = 0.850000
+		vsnd_files = 
+		[
+			"sounds/mechanical_units/substation/electric_pulse.vsnd",
+		]
+	}
+}

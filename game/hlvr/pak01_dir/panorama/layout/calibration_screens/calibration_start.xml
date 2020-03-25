@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/calibration_screens/calibration_screens.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="Container">
+		<Panel id="StartText" class="TextLine">
+			<Panel class="TextBox">
+				<Label text="#HLVR_Calibration_Start" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>
+
+

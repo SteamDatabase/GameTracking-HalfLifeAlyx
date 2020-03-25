@@ -1,0 +1,22 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/intro_text/intro_text.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<Panel class="TextContainer">
+		<Panel id="IntroText07" class="TextLine">
+			<Panel class="TextBox">
+				<Label text="#HLVR_Intro_Text_01" />
+				<Label class="emphasis" text="#HLVR_Intro_Text_02" />
+			</Panel>
+			<Panel class="TextBox">
+				<Label text="#HLVR_Intro_Text_03" />
+				<Label class="emphasis" text="#HLVR_Intro_Text_04" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>
+
+

@@ -1,0 +1,19 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/subject_card.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<scripts>
+		<include src="s2r://panorama/scripts/subject_card.vjs_c" />
+	</scripts>
+	<Panel class="MessageTitle">
+		<Panel class="SubjectText">
+			<Label id='line1a' text="#HLVR_Intro_World_01a" />
+			<Label id='line1b' class="emphasis" text="#HLVR_Intro_World_01b" />
+		</Panel>
+	</Panel>
+</root>
+
+

@@ -1,0 +1,1050 @@
+
+
+.SpectatorHUD {
+    background-size: 100% 100%;
+    opacity-mask: url("s2r://panorama/images/game_menu_ui/menu_type_mask_psd.vtex");
+    color: #f6c41f;
+    width: 100%;
+    height: 100%;
+	ui-scale: 100%;
+}
+
+.NoSpectatorHUD .SpectatorHUD {
+    visibility: collapse;
+}
+
+
+.HUD_Bottom {
+    vertical-align: bottom;
+    flow-children: down;
+    margin: 45px;
+}
+
+
+    .HUD_Bottom > Panel {
+        margin-top: 20px;
+    }
+
+
+/* Add class RightHanded to root to align HUD for a RIGHT HANDED gun hand */
+
+.RightHanded #HealthAndResin.HUD_Bottom {
+    horizontal-align: left;
+}
+
+.RightHanded #GunsAndAmmo.HUD_Bottom,
+.RightHanded #GunsAndAmmo #container_Guns, 
+.RightHanded #GunsAndAmmo #container_Ammo {
+    horizontal-align: right;
+}
+
+.RightHanded .WristPouch.Left {
+    margin: 45px 45px 45px 347.5px;
+}
+
+.RightHanded .WristPouch.Right {
+    margin: 45px 295px 45px 45px;
+}
+
+.RightHanded .Container_Hand {
+    margin: 45px 295px 203px 45px;
+	horizontal-align: right;
+}
+
+
+
+
+/* Add class LeftHanded to root to align HUD for a LEFT HANDED gun hand */
+
+.LeftHanded #HealthAndResin.HUD_Bottom {
+    horizontal-align: right;
+}
+
+.LeftHanded #GunsAndAmmo.HUD_Bottom {
+    horizontal-align: left;
+}
+
+.LeftHanded .WristPouch.Left {
+    margin: 45px 45px 45px 295px;
+}
+
+.LeftHanded .WristPouch.Right {
+    margin: 45px 347.5px 45px 45px;
+}
+
+.LeftHanded .Container_Hand {
+    margin: 45px 45px 203px 295px;
+	horizontal-align: left;
+}
+
+
+
+/* Add class NoWeaponSelect to root when the player has no weapon select 
+(Should be for the time between getting grav globs and getting the pistol, and the end of the game once teleported to the Vault) */
+
+.NoWeaponSelect .Container_Hand,
+.NoWeaponSelect #GunsAndAmmo.HUD_Bottom {
+	visibility:collapse;
+}
+
+
+.LeftHanded.NoWeaponSelect .WristPouch.Left,
+.RightHanded.NoWeaponSelect .WristPouch.Right {
+        margin-left: 45px;
+		margin-right: 45px;
+}
+
+/* INDIVIDUAL MODULES */
+
+/* Resin */
+
+.Container_Resin {
+    width: 280px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flow-children: right;
+    background-color: #00000099;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.Pulse_ResinBackpack.Container_Resin {
+    animation-name: ResinBackpackAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes
+'ResinBackpackAnimation' {
+    0%
+
+{
+    background-color: #68ffffaa;
+    color: #ffffff;
+    box-shadow: #68ffffaa -7.5px -7.5px 00px 15px;
+    //outer, filled
+}
+
+40% {
+    background-color: #00434a99;
+    color: #68ffff;
+    box-shadow: #00434a99 0px 0px 0px 0px;
+    //outer, filled
+}
+
+
+100% {
+    background-color: #00000099;
+    color: #f6c41f;
+    box-shadow: #00000099 0px 0px 0px 0px;
+    //outer, filled
+}
+
+}
+
+
+/* Health */
+
+.Container_Health {
+    width: 280px;
+    color: #f6c41f;
+    height: 137.5px;
+    padding-top: 11px;
+    padding-bottom: 11.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flow-children: down;
+    background-color: #00000099;
+    border-radius: 10px;
+}
+
+.Container_Hearts {
+    flow-children: right;
+    height: 64px;
+    margin-top: 14px;
+}
+
+.Icon_Heart {
+    width: 64px;
+    height: 64px;
+    background-image: url("s2r://panorama/images/hud/hud_icon_health_heart_sheet_png.vtex");
+    background-size: 384px 64px;
+    wash-color: #f6c41f;
+}
+
+
+#health_heart_2.Icon_Heart {
+    margin-left: 21.5px;
+    margin-right: 21.5px;
+}
+
+
+.health_icon_0 {
+    background-position: 0px 0px;
+}
+
+.health_icon_1 {
+    background-position: -64px 0px;
+}
+
+.health_icon_2 {
+    background-position: -128px 0px;
+}
+
+.health_icon_3 {
+    background-position: -192px 0px;
+}
+
+.health_icon_4 {
+    background-position: -256px 0px;
+}
+
+.health_icon_63 {
+    background-position: -320px 0px;
+}
+
+
+/* Health Animations */
+
+/* +++ Get Health (put hand on charger or inject health syringe) */
+
+
+.Pulse_HealthGet #container_health {
+    animation-name: AnimationActionGet;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes
+'AnimationActionGet' {
+	0% {
+		background-color: #ffcb16FF;
+		color: #ffffff;
+		box-shadow: #ffcb16FF -7.5px -7.5px 00px 15px;
+		//outer, filled
+	}
+
+	50% {
+		background-color: #00000099;
+		box-shadow: #00000099 0px 0px 0px 0px;
+		//outer, filled
+	}
+
+
+	100% {
+		color: #f6c41f;
+	}
+
+}
+
+
+.Pulse_HealthGet #health_heart_1 {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthGet #health_heart_2 {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthGet #health_heart_3 {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes
+'AnimationActionGet_Heart' {
+    0%
+
+{
+    wash-color: #FFFFFF;
+}
+
+
+100% {
+    wash-color: #f6c41f;
+}
+
+}
+
+@keyframes
+'AnimationActionGet_GunAmmo' {
+    0%
+
+{
+    wash-color: #FFFFFF;
+}
+
+
+100% {
+    wash-color: #f6c41f;
+}
+
+}
+
+
+
+/* --- Get Hit */
+
+
+
+.Pulse_HealthHit #container_health {
+    animation-name: AnimationHealthHit;
+    animation-duration: .3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes
+'AnimationHealthHit' {
+    0%
+
+{
+    background-color: #000000CC;
+    color: #ff0000;
+    box-shadow: #000000CC -7.5px -7.5px 00px 15px;
+    //outer, filled
+}
+
+95% {
+    background-color: #00000099;
+    box-shadow: #00000099 0px 0px 0px 0px;
+    //outer, filled
+}
+
+
+100% {
+    color: #f6c41f;
+}
+
+}
+
+
+.Pulse_HealthHit #health_heart_1 {
+    animation-name: AnimationHealthHit_Heart;
+    animation-duration: .3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthHit #health_heart_2 {
+    animation-name: AnimationHealthHit_Heart;
+    animation-duration: .3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthHit #health_heart_3 {
+    animation-name: AnimationHealthHit_Heart;
+    animation-duration: .3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes
+'AnimationHealthHit_Heart' {
+    0%
+
+{
+    wash-color: #FF0000;
+}
+
+
+100% {
+    wash-color: #f6c41f;
+}
+
+}
+
+
+
+
+/* --- Get Hit BIG */
+
+
+
+.Pulse_HealthHitBig #container_health {
+    animation-name: AnimationHealthHitBig;
+    animation-duration: .6s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes
+'AnimationHealthHitBig' {
+    0%
+
+{
+    background-color: #FFFFFFFF;
+    color: #ffffff;
+    box-shadow: #FFFFFFFF -7.5px -7.5px 00px 15px;
+    //outer, filled
+}
+
+5% {
+    background-color: #FFFFFFFF;
+    color: #ffffff;
+    box-shadow: #FFFFFFFF -7.5px -7.5px 00px 15px;
+    //outer, filled
+}
+
+5.1% {
+    background-color: #FF0000FF;
+    color: #000000;
+    box-shadow: #FF0000FF -7.5px -7.5px 00px 15px;
+    //outer, filled
+}
+
+
+25% {
+    color: #000000;
+}
+
+90% {
+    background-color: #00000099;
+    box-shadow: #00000099 0px 0px 0px 0px;
+    //outer, filled
+}
+
+
+100% {
+    color: #f6c41f;
+}
+
+}
+
+
+.Pulse_HealthHitBig #health_heart_1 {
+    animation-name: AnimationHealthHitBig_Heart;
+    animation-duration: .8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthHitBig #health_heart_2 {
+    animation-name: AnimationHealthHitBig_Heart;
+    animation-duration: .8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_HealthHitBig #health_heart_3 {
+    animation-name: AnimationHealthHitBig_Heart;
+    animation-duration: .8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes
+'AnimationHealthHitBig_Heart' {
+    0%
+
+{
+    wash-color: #ffffff;
+}
+
+
+5% {
+    wash-color: #ffffff;
+}
+
+5.1% {
+    wash-color: #000000;
+}
+
+
+25% {
+    wash-color: #000000;
+}
+
+
+100% {
+    wash-color: #f6c41f;
+}
+
+}
+
+
+
+
+
+/* AMMO ZONE */
+
+.Icon_Gun {
+	wash-color: #f6c41f;
+}	
+
+.Icon_Gun_Pistol {
+    width: 36px;
+    height: 39px;
+    background-image: url("s2r://panorama/images/hud/hud_pistol_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 0% 0%;
+    opacity: 0.4;
+
+}
+
+
+    .Icon_Gun_Pistol.active {
+        background-position: 100% 0%;
+        opacity: 1;
+     }
+	
+.Icon_Gun_Shotgun {
+    width: 52px;
+    height: 39px;
+    background-image: url("s2r://panorama/images/hud/hud_shotgun_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 0% 0%;
+    margin-left: 25px;
+    margin-right: 25px;
+    opacity: 0.4;
+
+}
+
+    .Icon_Gun_Shotgun.active {
+        background-position: 100% 0%;
+        opacity: 1;
+
+    }
+
+.Icon_Gun_Rapid_Fire {
+    width: 51.5px;
+    height: 39px;
+    background-image: url("s2r://panorama/images/hud/hud_rapid_fire_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 0% 0%;
+    opacity: 0.4;
+
+}
+
+    .Icon_Gun_Rapid_Fire.active {
+        background-position: 100% 0%;
+        opacity: 1;
+
+    }
+
+
+
+.Container_Guns {
+    width: 230px;
+	height: 63px;
+    padding-top: 11px;
+    padding-bottom: 12.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flow-children: right;
+    background-color: #00000099;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+
+.NoGuns .Container_Guns {
+    visibility: collapse;
+}
+
+.Container_Ammo {
+    width: 230px;
+    height: 137.5px;
+    padding-top: 11px;
+    padding-bottom: 11.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flow-children: down;
+    background-color: #00000099;
+    border-radius: 10px;
+}
+
+
+.HandEquipped .Container_Ammo Panel,
+.HandEquipped .Container_Ammo Label,
+.HandEquipped .Container_Ammo Image
+{
+	opacity:0;
+}
+
+.HandEquipped .Container_Ammo,
+.HandEquipped .Container_Guns
+{
+	box-shadow: inset #00000099 3px 3px 0px 6px;
+    background-color: #00000011;
+}
+
+.HandEquipped .Icon_Gun_Pistol,
+.HandEquipped .Icon_Gun_Shotgun,
+.HandEquipped .Icon_Gun_Rapid_Fire
+{
+		wash-color: #000000;
+		//opacity: .6;
+}
+
+.Selecting.HandEquipped .Container_Guns,
+.Selecting .Container_Guns
+{
+	background-color: #00000099;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+.Selecting.HandEquipped .Icon_Gun_Pistol,
+.Selecting.HandEquipped .Icon_Gun_Shotgun,
+.Selecting.HandEquipped .Icon_Gun_Rapid_Fire
+{
+    wash-color: #f6c41f;
+	
+}
+
+
+.Container_Ammo_Counter {
+    flow-children: right;
+	//padding-top: -5px;
+}
+
+
+
+.Pulse_AmmoGet #container_Ammo {
+    animation-name: AnimationActionGet;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+.Pulse_GunGet #container_Guns {
+    animation-name: AnimationActionGet;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+.Pulse_GunGet #icon_gun_pistol {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_GunGet #icon_gun_shotgun {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+.Pulse_GunGet #icon_gun_rapid_fire {
+    animation-name: AnimationActionGet_Heart;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+#container_Guns .Icon_Gun.Pulse_AmmoGetGunIcon {
+    animation-name: AnimationActionGet_GunAmmo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+
+/* HAND ZONE */
+
+.Container_Hand {
+    width: 70px;
+    background-color: #00000099;
+    border-radius: 10px;
+    vertical-align: bottom;
+	overflow: clip;
+	padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 0px;
+	horizontal-align: left;
+    margin: 0px;
+	opacity: 0;
+	
+	transition-property: opacity;
+	transition-delay: 0s;
+	transition-duration: .25s;	
+}
+
+.Selecting .Container_Hand {
+	opacity: 1;
+}
+
+.HandEquipped .Container_Hand {
+	opacity: 1;
+}
+
+
+.Icon_Hand {
+    width: 24px;
+    height: 43px;
+    background-image: url("s2r://panorama/images/hud/hud_handright_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    opacity: 0.4;
+    wash-color: #f6c41f;
+}
+
+    .Icon_Hand.active {
+        background-position: 0% 0%;
+        opacity: 1;
+        wash-color: #f6c41f;
+    }
+
+	.LeftHanded .Icon_Hand {
+		background-image: url("s2r://panorama/images/hud/hud_handleft_sheet_png.vtex");
+	}
+
+	.RightHanded .Icon_Hand {
+		background-image: url("s2r://panorama/images/hud/hud_handright_sheet_png.vtex");
+	}
+		
+	
+	
+.Icon_Multitool {
+    width: 24px;
+    height: 43px;
+    background-image: url("s2r://panorama/images/hud/hud_multitool_sheet_png.vtex");
+    background-size: auto 100%;
+    background-position: 100% 0%;
+    opacity: 0.4;
+    wash-color: #f6c41f;
+}
+
+    .Icon_Multitool.active {
+        background-position: 0% 0%;
+        opacity: 1;
+        wash-color: #f6c41f;
+    }
+		
+.HandItem {
+}	
+
+
+/* WRIST POUCHES */
+
+.WristPouch {
+    width: 70px;
+    height: 88px;
+    background-color: #00000000;
+    border-radius: 10px;
+    margin: 0px;
+	padding: 0px;
+    vertical-align: bottom;
+	overflow: clip;
+
+	transition-property: background-color;
+	transition-delay: .2s;
+	transition-duration: .1s;
+	
+}
+
+    .WristPouch.Left {
+        horizontal-align: left;
+    }
+
+    .WristPouch.Right {
+        horizontal-align: right;
+    }
+
+/*Wrist Pouch Items */
+
+.WristItem {
+	width: 70px;
+	height: 88px;	
+	opacity: 0;
+	wash-color: #f6c41f;
+    background-repeat: no-repeat;
+	background-image: url("s2r://panorama/images/hud/hud_icon_wristpouch_sheet_png.vtex");
+	background-size: 700px 88px;
+	background-position: 70px 0%;
+
+	transition-property: opacity;
+	transition-delay: .2s;
+	transition-duration: .1s;
+	
+}
+
+	.WristItem.HealthPen {
+		background-position: 0px 0%;
+    }
+
+	.WristItem.HealthVial {
+		background-position: -70px 0%;
+    }
+
+	.WristItem.CombineBattery {
+		background-position: -140px 0%;
+    }
+
+	.WristItem.ReviverHeart {
+		background-position: -210px 0%;
+    }
+
+	.WristItem.Bottle {
+		background-position: -280px 0%;
+    }
+
+	.WristItem.Keycard {
+		background-position: -350px 0%;
+    }
+
+	.WristItem.Grenade {
+		background-position: -420px 0%;
+    }
+
+	.WristItem.XenGrenade {
+		background-position: -490px 0%;
+    }
+
+
+
+
+/* wrist pouch animations in progress */
+
+.WristPouchCircle {
+   // background-image: url("s2r://panorama/images/hud/hud_wristpouch_circle_png.vtex");
+    background-position: center;
+    opacity: 0;
+    wash-color: #f6c41f;
+	width: 140px;
+    height: 140px;
+    horizontal-align: center;
+    vertical-align: center;
+
+}
+
+.WristPouchCircleInverted {
+    //background-image: url("s2r://panorama/images/hud/hud_wristpouch_circle_inverted_png.vtex");
+    background-position: center;
+    opacity: 0;
+    wash-color: #f6c41f;
+	width: 560px;
+    height: 560px; 
+    horizontal-align: center;
+    vertical-align: center;
+
+}
+
+
+
+
+
+.WristPouchItemAdd .WristPouchCircle
+ {
+    animation-name: AnimationWristPouchCircle_appear;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+
+.WristPouchItemAdd .WristPouchCircleInverted
+
+{
+    animation-name: AnimationWristPouchCircleInverted_appear;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+
+.WristPouchItemAdd .WristItem
+ {
+	opacity: 1;
+ }
+
+
+.WristPouchItemAdd 
+{
+	background-color: #00000099;
+	
+    animation-name: AnimationWristPouchBackground_appear;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes 
+'AnimationWristPouchCircleInverted_appear' {
+
+	0%	{
+		pre-transform-scale2d: .25;
+		opacity: 0;	
+
+	}
+
+	49.9%	{
+		opacity: 0;	
+	}
+
+	50%	{
+		pre-transform-scale2d: .25;
+		opacity: 1;
+	}
+
+	100% {
+		pre-transform-scale2d: 1.2;
+		opacity: .5;
+	}
+
+}
+
+
+
+@keyframes 
+'AnimationWristPouchCircle_appear' {
+
+	0%	{
+		opacity: 1;	
+		pre-transform-scale2d: 0;
+
+	}
+
+	49.9%	{
+		opacity: 1;	
+		pre-transform-scale2d: 1;
+	}
+
+	60% {
+		opacity: 0;	
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@keyframes
+'AnimationWristPouchBackground_appear' {
+
+	0% {
+	background-color: #00000000;
+
+	}
+	
+	49.9% {
+    background-color: #00000000;
+
+	}
+	
+	50% {
+    background-color: #00000099;
+
+	}
+	
+		100% {
+    background-color: #00000099;
+
+	}
+}
+
+
+
+
+/* Text Styles */
+
+.TextLabel {
+    font-family: Raju;
+    font-weight: semi-bold;
+    font-size: 30px;
+    height: 30px;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 0px;
+	padding-top: -6px;
+    horizontal-align: left;
+    vertical-align: center;
+	text-transform: uppercase;
+}
+
+.TextResinCount {
+	font-family: Raju;
+	//font-weight: semi-bold;
+    font-size: 40px;
+    height: 42.5px;
+    text-align: right;
+    horizontal-align: right;
+    vertical-align: center;
+	padding-top: -7px;
+}
+
+.TextAmmoClipCount {
+    font-family: Raju;
+	font-weight: light;
+    font-size: 87.5px;
+    height: 87.5px;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: -5px;
+    margin-right: 3.5px;
+    horizontal-align: left;
+    vertical-align: center;
+    width: 45px;
+	padding-top: -10px;
+
+}
+
+#ammoclipcount_100.TextAmmoClipCount {
+	width: 34px;
+	text-align: center;
+}
+
+
+
+
+.TextBackpackCount {
+    font-family: Raju;
+    //font-weight: regular;
+    font-size: 40px;
+    height: 42.5px;
+    text-align: left;
+    horizontal-align: left;
+    vertical-align: bottom;
+    margin-bottom: 2.5px;
+    margin-right: 2.5px;
+    text-overflow: clip;
+	padding-top: -4.5px;
+	margin-left: -4px;
+}
