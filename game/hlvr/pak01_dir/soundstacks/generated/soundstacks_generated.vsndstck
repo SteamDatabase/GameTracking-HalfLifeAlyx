@@ -1,0 +1,1267 @@
+// test_generated
+"test_generated"
+{
+	"opvars"
+	{
+		"operator"		"util_null"
+	}
+	"_system_properties"
+	{
+		"display_game"		"generated"
+	}
+}
+
+// BarnacleIdleClick
+"BarnacleIdleClick"
+{
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"position"
+			{
+				"data_type"		"float3"
+				"value"		"[0.0, 0.0, 0.0]"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_position_editor"
+				}
+			}
+			"block_matching_events"
+			{
+				"data_type"		"bool"
+				"value"		"true"
+			}
+			"block_match_entity"
+			{
+				"data_type"		"bool"
+				"value"		"true"
+			}
+			"block_duration"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"block_distance"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+			}
+			"retrigger_time"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"retrigger_radius"
+			{
+				"data_type"		"float"
+				"value"		"1000.000000"
+			}
+			"volume"
+			{
+				"__customstack_field"		"volume"
+				"value"		"1.000000"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"pitch"
+			{
+				"__customstack_field"		"pitch"
+				"value"		"1.000000"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"vsnd_files_track_01"
+			{
+				"__customstack_field"		"vsnd_files_track_01"
+				"value"		"sounds/common/null.vsnd"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"soundevent_data"		"true"
+				"data_type"		"vsnd"
+			}
+			"playerVelocity"
+			{
+				"__customstack_field"		"playerVelocity"
+				"value"		"0"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"distance_volume_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"playerVelocity_retrigger_time_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"distance_pitch_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.800000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.200000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+		}
+	}
+	"volume_fan"
+	{
+		"operator"		"util_float_to_speakers"
+		"execute_once"		"false"
+		"input"		"@distance_volume_mapping_curve_mult.output"
+		"__remap_input"		"volume"
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"source_info"
+	{
+		"operator"		"game_get_source_info"
+		"source"		"entity"
+	}
+	"use_entity_for_block"
+	{
+		"operator"		"ctrl_switch_float"
+		"input_switch"		"@public.block_match_entity"
+		"input1"		"-1"
+		"input2"		"@source_info.output_entity_index"
+	}
+	"get_entity_info"
+	{
+		"operator"		"game_entity_info"
+		"input_entity_index"		"@source_info.output_entity_index"
+		"input_default_world_position"		"@public.position"
+		"input_default_local_position"		"@globals.output_listener_front"
+	}
+	"distance_to_source"
+	{
+		"operator"		"calc_distance"
+		"input_position1"		"@get_entity_info.output_position"
+		"input_position2"		"@globals.output_listener_position"
+	}
+	"test_soundevent_block"
+	{
+		"operator"		"soundevent_block_test"
+		"execute_once"		"true"
+		"input_execute"		"@public.block_matching_events"
+		"input_entity_index"		"@use_entity_for_block.output"
+		"input_position"		"@get_entity_info.output_position"
+		"match_this_event"		"1"
+	}
+	"set_soundevent_block"
+	{
+		"operator"		"soundevent_block"
+		"execute_once"		"true"
+		"input_execute"		"1.000000"
+		"input_duration"		"@public.block_duration"
+		"input_entity_index"		"@use_entity_for_block.output"
+		"input_position"		"@get_entity_info.output_position"
+		"input_distance"		"@public.block_distance"
+		"match_this_event"		"1"
+		"is_untimed"		"0"
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"unpack_pos"
+	{
+		"input_execute"		"1.000000"
+		"input_execute"		"1"
+		"operator"		"util_elements_float3"
+		"input"		"@get_entity_info.output_position"
+		"__customstack_send_pos"		"1"
+	}
+	"send_voicegraph_pos_x"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_x"
+		"input"		"@unpack_pos.output_0"
+	}
+	"send_voicegraph_pos_y"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_y"
+		"input"		"@unpack_pos.output_1"
+	}
+	"send_voicegraph_pos_z"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_z"
+		"input"		"@unpack_pos.output_2"
+	}
+	"in_retrigger_radius"
+	{
+		"operator"		"math_float"
+		"apply"		"less_than"
+		"input1"		"@distance_to_source.output"
+		"input2"		"@public.retrigger_radius"
+	}
+	"out_of_retrigger_radius"
+	{
+		"operator"		"math_float"
+		"apply"		"sub"
+		"input1"		"1.000000"
+		"input2"		"@in_retrigger_radius.output"
+	}
+	"time_since_last_trigger"
+	{
+		"operator"		"math_float"
+		"apply"		"sub"
+		"input1"		"@get_event_info.output_elapsed_time"
+		"input2"		"@last_trigger_time.output"
+	}
+	"retrigger_time_calc"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.retrigger_time"
+		"input2"		"@playerVelocity_retrigger_time_mapping_curve_mult.output"
+		"__remap_input2"		"retrigger_time"
+	}
+	"retrigger_sound"
+	{
+		"operator"		"math_float"
+		"apply"		"greater_than"
+		"input1"		"@time_since_last_trigger.output"
+		"input2"		"@retrigger_time_calc.output"
+	}
+	"last_trigger_time"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@get_event_info.output_elapsed_time"
+		"input2"		"0.000000"
+		"input_execute"		"@retrigger_sound.output"
+	}
+	"start_retrigger"
+	{
+		"operator"		"soundevent_start"
+		"input_execute"		"@in_retrigger_radius.output"
+		"input_start"		"@retrigger_sound.output"
+		"input_use_parent_seed"		"1"
+		"retrigger_current_event"		"true"
+		"spawn_orphans"		"1"
+		"pass_opvar_args"		"true"
+		"input_update_opvar_args"		"true"
+		"operator_variables"
+		{
+			"public.position"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"float3"
+				"value"		"@public.position"
+			}
+			"public.retrigger_radius"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"float"
+				"value"		"-1.000000"
+			}
+		}
+	}
+	"calc_event_finished"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@out_of_retrigger_radius.output"
+		"input2"		"@start_vsnd.output_vgraph_finished"
+	}
+	"calc_event_finished_or_stopped"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@calc_event_finished.output"
+		"input2"		"@get_event_info.output_stopped"
+	}
+	"event_terminator"
+	{
+		"operator"		"soundevent_control"
+		"input_add_dependent"		"1.000000"
+		"input_clear_dependencies"		"@calc_event_finished_or_stopped.output"
+	}
+	"volume_volume_linear_mult"
+	{
+		"__customstack_curve_input"		"volume"
+		"__customstack_curve_output"		"volume"
+		"__customstack_hidden"		"1"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.volume"
+		"input2"		"1.000000"
+	}
+	"pitch_pitch_linear_mult"
+	{
+		"__customstack_curve_input"		"pitch"
+		"__customstack_curve_output"		"pitch"
+		"__customstack_hidden"		"1"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.pitch"
+		"input2"		"1.000000"
+	}
+	"get_vsnd_track_01"
+	{
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files_track_01"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+		"__customstack_curve_input"		"vsnd_files_track_01"
+		"__customstack_curve_output"		"track_01"
+		"__customstack_vsnd"		"1"
+		"__customstack_hidden"		"1"
+	}
+	"distance_volume_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_to_source.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_volume_mapping_curve"
+	}
+	"distance_volume_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_volume_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"volume"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_volume_mapping_curve.output"
+		"input2"		"@volume_volume_linear_mult.output"
+	}
+	"playerVelocity_retrigger_time_mapping_curve_seek_speed_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@public.playerVelocity"
+		"input_max_velocity"		"1.000000"
+	}
+	"playerVelocity_retrigger_time_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@playerVelocity_retrigger_time_mapping_curve_seek_speed_filter.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.playerVelocity_retrigger_time_mapping_curve"
+	}
+	"playerVelocity_retrigger_time_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"playerVelocity_retrigger_time_mapping_curve"
+		"__customstack_curve_input"		"playerVelocity"
+		"__customstack_curve_output"		"retrigger_time"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_seek_speed"		"1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@playerVelocity_retrigger_time_mapping_curve.output"
+		"input2"		"1.000000"
+	}
+	"distance_pitch_mapping_curve_seek_speed_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@distance_to_source.output"
+		"input_max_velocity"		"1.000000"
+	}
+	"distance_pitch_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_pitch_mapping_curve_seek_speed_filter.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_pitch_mapping_curve"
+	}
+	"distance_pitch_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_pitch_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"pitch"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_seek_speed"		"1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_pitch_mapping_curve.output"
+		"input2"		"@pitch_pitch_linear_mult.output"
+	}
+	"start_vsnd"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"vgraph_name"		"hlvr.hrtf_basic"
+		"execute_once"		"false"
+		"input_execute"		"1"
+		"input_start1"		"1.0"
+		"input_start2"		"0.000000"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_start"		"1"
+		"input_speaker_volumes"		"@volume_fan.output"
+		"input_pitch"		"@distance_pitch_mapping_curve_mult.output"
+		"input_delay"		"0.000000"
+		"input_track1"		"track_01"
+		"input_vsnd1"		"@get_vsnd_track_01.output"
+	}
+	"_system_properties"
+	{
+		"__customstack"		"1"
+		"display_game"		"generated"
+	}
+	"__customstack_layers"
+	{
+		"track_01"		"1"
+	}
+	"__customstack_components"
+	{
+		"main"		"1"
+		"RetriggerSoundEvent"		"1"
+	}
+}
+
+// choreo_3d
+"choreo_3d"
+{
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"position"
+			{
+				"data_type"		"float3"
+				"value"		"[0.0, 0.0, 0.0]"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_position_editor"
+				}
+			}
+			"should_pause"
+			{
+				"data_type"		"bool"
+				"value"		"true"
+			}
+			"block_matching_events"
+			{
+				"data_type"		"bool"
+				"value"		"true"
+			}
+			"block_match_entity"
+			{
+				"data_type"		"bool"
+				"value"		"true"
+			}
+			"block_duration"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"block_distance"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+			}
+			"attachment"
+			{
+				"data_type"		"string_token"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"mixgroup"
+			{
+				"data_type"		"string"
+				"value"		"Dialog"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"doppler_factor"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"doppler_factor_receding"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"use_doppler"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"retrigger_interval_min"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"retrigger_interval_max"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"retrigger_radius"
+			{
+				"data_type"		"float"
+				"value"		"1000.000000"
+			}
+			"volume"
+			{
+				"__customstack_field"		"volume"
+				"value"		"1.000000"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+			}
+			"pitch"
+			{
+				"__customstack_field"		"pitch"
+				"value"		"1.000000"
+				"__customstack_has_random"		"1"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+			}
+			"pitch_random_min"
+			{
+				"value"		"0.000000"
+				"data_type"		"float"
+			}
+			"pitch_random_max"
+			{
+				"value"		"0.000000"
+				"data_type"		"float"
+			}
+			"vsnd_files_track_01"
+			{
+				"__customstack_field"		"vsnd_files_track_01"
+				"value"		"sounds/common/null.vsnd"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"soundevent_data"		"true"
+				"data_type"		"vsnd"
+			}
+			"delay"
+			{
+				"__customstack_field"		"delay"
+				"value"		"0.000000"
+				"__customstack_has_random"		"0"
+				"__customstack_rand_min"		"0.000000"
+				"__customstack_rand_max"		"0.000000"
+				"data_type"		"float"
+			}
+			"distance_volume_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"distance_steamaudio_mix_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"distance_reverb_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"distance_Occlusion_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[1200.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[3000.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"time_volume_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[3.000000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[6.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"fadetime_volume_mapping_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[0.000000,0.000000,0.000000,0.000000,2.000000,3.000000]"
+					"value2"		"[0.500000,0.500000,0.000000,0.000000,2.000000,3.000000]"
+					"value3"		"[1.000000,1.000000,0.000000,0.000000,2.000000,3.000000]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+		}
+	}
+	"mixer"
+	{
+		"operator"		"soundmixer_get_mixgroup"
+		"mixgroup"		"@public.mixgroup"
+	}
+	"mixer_trigger"
+	{
+		"operator"		"soundmixer_set_trigger"
+		"input_trigger"		"@mult_mixer_volume.output"
+		"input_mixgroups"		"@mixer.output_mixgroups"
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"source_info"
+	{
+		"operator"		"game_get_source_info"
+		"source"		"entity"
+	}
+	"use_entity_for_block"
+	{
+		"operator"		"ctrl_switch_float"
+		"input_switch"		"@public.block_match_entity"
+		"input1"		"-1"
+		"input2"		"@source_info.output_entity_index"
+	}
+	"get_entity_info"
+	{
+		"operator"		"game_entity_info"
+		"input_entity_index"		"@source_info.output_entity_index"
+		"input_default_world_position"		"@public.position"
+		"input_default_local_position"		"@globals.output_listener_front"
+		"attachment"		"@public.attachment"
+	}
+	"set_origin"
+	{
+		"operator"		"calc_spatialize_speakers"
+		"input_source_position"		"@get_entity_info.output_position"
+	}
+	"distance_to_source"
+	{
+		"operator"		"calc_distance"
+		"input_position1"		"@get_entity_info.output_position"
+		"input_position2"		"@globals.output_listener_position"
+	}
+	"test_soundevent_block"
+	{
+		"operator"		"soundevent_block_test"
+		"execute_once"		"true"
+		"input_execute"		"@public.block_matching_events"
+		"input_entity_index"		"@use_entity_for_block.output"
+		"input_position"		"@get_entity_info.output_position"
+		"match_this_event"		"1"
+	}
+	"set_soundevent_block"
+	{
+		"operator"		"soundevent_block"
+		"execute_once"		"true"
+		"input_execute"		"1.000000"
+		"input_duration"		"@public.block_duration"
+		"input_entity_index"		"@use_entity_for_block.output"
+		"input_position"		"@get_entity_info.output_position"
+		"input_distance"		"@public.block_distance"
+		"match_this_event"		"1"
+		"is_untimed"		"0"
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"calc_doppler"
+	{
+		"input_execute"		"@public.use_doppler"
+		"operator"		"math_calc_doppler"
+		"input_source_position"		"@get_entity_info.output_position"
+		"input_observer_position"		"@globals.output_listener_position"
+		"input_doppler_factor"		"@public.doppler_factor"
+		"input_doppler_factor_receding"		"@public.doppler_factor_receding"
+		"input_doppler_observer_scale"		"0.050000"
+	}
+	"doppler_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@calc_doppler.output"
+		"input_max_velocity"		"1.000000"
+	}
+	"in_retrigger_radius"
+	{
+		"operator"		"math_float"
+		"apply"		"less_than"
+		"input1"		"@distance_to_source.output"
+		"input2"		"@public.retrigger_radius"
+	}
+	"does_not_retrigger_sound"
+	{
+		"operator"		"math_float"
+		"apply"		"less_than_or_equal"
+		"input1"		"@public.retrigger_radius"
+		"input2"		"0.000000"
+	}
+	"time_since_last_trigger"
+	{
+		"operator"		"math_float"
+		"apply"		"sub"
+		"input1"		"@get_event_info.output_elapsed_time"
+		"input2"		"@last_trigger_time.output"
+	}
+	"retrigger_interval_execute"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@retrigger_interval_is_zero.output"
+		"input2"		"@retrigger_sound.output"
+	}
+	"retrigger_interval_random"
+	{
+		"operator"		"math_random_float"
+		"input_execute"		"@retrigger_interval_execute.output"
+		"input_min"		"@public.retrigger_interval_min"
+		"input_max"		"@public.retrigger_interval_max"
+	}
+	"retrigger_interval_calc"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@retrigger_interval_random.output"
+		"input2"		"1.000000"
+		"__remap_input2"		"retrigger_interval"
+	}
+	"retrigger_interval_is_zero"
+	{
+		"operator"		"math_float"
+		"apply"		"equal"
+		"input1"		"@retrigger_interval_random.output"
+		"input2"		"0.000000"
+		"output"		"1.000000"
+	}
+	"retrigger_sound"
+	{
+		"operator"		"math_float"
+		"apply"		"greater_than"
+		"input1"		"@time_since_last_trigger.output"
+		"input2"		"@retrigger_interval_calc.output"
+	}
+	"last_trigger_time"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@get_event_info.output_elapsed_time"
+		"input2"		"0.000000"
+		"input_execute"		"@retrigger_sound.output"
+	}
+	"start_retrigger"
+	{
+		"operator"		"soundevent_start"
+		"input_execute"		"@in_retrigger_radius.output"
+		"input_start"		"@retrigger_sound.output"
+		"input_use_parent_seed"		"1"
+		"input_spawn_oneshots"		"1"
+		"retrigger_current_event"		"true"
+		"spawn_orphans"		"0"
+		"pass_opvar_args"		"true"
+		"input_update_opvar_args"		"true"
+		"operator_variables"
+		{
+			"public.position"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"float3"
+				"value"		"@public.position"
+			}
+			"public.retrigger_radius"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"float"
+				"value"		"-1.000000"
+			}
+		}
+	}
+	"calc_event_finished"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@does_not_retrigger_sound.output"
+		"input2"		"@start_vsnd.output_vgraph_finished"
+	}
+	"calc_event_finished_or_stopped"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@calc_event_finished.output"
+		"input2"		"@get_event_info.output_stopped"
+	}
+	"event_terminator"
+	{
+		"operator"		"soundevent_control"
+		"input_add_dependent"		"1.000000"
+		"input_clear_dependencies"		"@calc_event_finished_or_stopped.output"
+	}
+	"pitch_random_variance"
+	{
+		"execute_once"		"true"
+		"operator"		"math_random_float"
+		"input_min"		"@public.pitch_random_min"
+		"input_max"		"@public.pitch_random_max"
+	}
+	"pitch_random_add"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@public.pitch"
+		"input2"		"@pitch_random_variance.output"
+	}
+	"volume_volume_linear_mult"
+	{
+		"__customstack_curve_input"		"volume"
+		"__customstack_curve_output"		"volume"
+		"__customstack_hidden"		"1"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.volume"
+		"input2"		"1.000000"
+	}
+	"pitch_pitch_linear_mult"
+	{
+		"__customstack_curve_input"		"pitch"
+		"__customstack_curve_output"		"pitch"
+		"__customstack_hidden"		"1"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@pitch_random_add.output"
+		"input2"		"1.000000"
+	}
+	"get_vsnd_track_01"
+	{
+		"operator"		"opvar_get_vsnd"
+		"execute_once"		"true"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files_track_01"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+		"__customstack_curve_input"		"vsnd_files_track_01"
+		"__customstack_curve_output"		"track_01"
+		"__customstack_vsnd"		"1"
+		"__customstack_hidden"		"1"
+	}
+	"distance_volume_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_to_source.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_volume_mapping_curve"
+	}
+	"distance_volume_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_volume_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"volume"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_volume_mapping_curve.output"
+		"input2"		"@volume_volume_linear_mult.output"
+	}
+	"distance_steamaudio_mix_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_to_source.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_steamaudio_mix_mapping_curve"
+	}
+	"distance_steamaudio_mix_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_steamaudio_mix_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"steamaudio_mix"
+		"__customstack_curve_mixgraph_send"		"1"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_steamaudio_mix_mapping_curve.output"
+		"input2"		"1"
+	}
+	"distance_reverb_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_to_source.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_reverb_mapping_curve"
+	}
+	"distance_reverb_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_reverb_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"reverb"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"1"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_reverb_mapping_curve.output"
+		"input2"		"1"
+	}
+	"distance_Occlusion_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_to_source.output"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.distance_Occlusion_mapping_curve"
+	}
+	"distance_Occlusion_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"distance_Occlusion_mapping_curve"
+		"__customstack_curve_input"		"distance"
+		"__customstack_curve_output"		"Occlusion"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"1"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_Occlusion_mapping_curve.output"
+		"input2"		"1"
+	}
+	"delay_delay_linear_mult"
+	{
+		"__customstack_curve_input"		"delay"
+		"__customstack_curve_output"		"delay"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@public.delay"
+		"input2"		"0.000000"
+	}
+	"time_volume_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@get_event_info.output_elapsed_time"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.time_volume_mapping_curve"
+	}
+	"time_volume_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"time_volume_mapping_curve"
+		"__customstack_curve_input"		"time"
+		"__customstack_curve_output"		"volume"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@time_volume_mapping_curve.output"
+		"input2"		"@distance_volume_mapping_curve_mult.output"
+	}
+	"fadetime_volume_mapping_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@get_event_info.output_stop_elapsed_time"
+		"input_scale_x"		"1.0"
+		"input_scale_y"		"1.0"
+		"public_field_name"		"public.fadetime_volume_mapping_curve"
+	}
+	"fadetime_volume_mapping_curve_mult"
+	{
+		"__customstack_curve_name"		"fadetime_volume_mapping_curve"
+		"__customstack_curve_input"		"fadetime"
+		"__customstack_curve_output"		"volume"
+		"__customstack_curve_mixgraph_send"		"0"
+		"__customstack_curve_submix_send"		"0"
+		"__customstack_seek_speed"		"-1.000000"
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@fadetime_volume_mapping_curve.output"
+		"input2"		"@time_volume_mapping_curve_mult.output"
+	}
+	"mult_mixer_volume"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@mixer.output_volume"
+		"input2"		"@fadetime_volume_mapping_curve_mult.output"
+		"__remap_input2"		"volume"
+	}
+	"volume_non_zero_or_unstopped"
+	{
+		"operator"		"math_float"
+		"apply"		"max"
+		"input1"		"@mult_mixer_volume.output"
+		"input2"		"@get_event_info.output_unstopped"
+		"__move_to_end"		"true"
+	}
+	"should_continue_playing"
+	{
+		"operator"		"math_float"
+		"apply"		"greater_than"
+		"input1"		"@volume_non_zero_or_unstopped.output"
+		"input2"		"0.000000"
+		"__move_to_end"		"true"
+	}
+	"mult_pitch_doppler"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@pitch_pitch_linear_mult.output"
+		"input2"		"@doppler_filter.output"
+		"__remap_input1"		"pitch"
+	}
+	"volume_fan"
+	{
+		"operator"		"util_float_to_speakers"
+		"execute_once"		"false"
+		"input"		"@mult_mixer_volume.output"
+		"__move_to_end"		"true"
+	}
+	"start_vsnd"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"vgraph_name"		"hlvr.hrtf_vo"
+		"execute_once"		"false"
+		"input_execute"		"1"
+		"input_start1"		"1.0"
+		"input_start2"		"0.000000"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_start"		"@should_continue_playing.output"
+		"input_should_pause"		"@public.should_pause"
+		"input_speaker_volumes"		"@volume_fan.output"
+		"input_pitch"		"@mult_pitch_doppler.output"
+		"input_delay"		"@delay_delay_linear_mult.output"
+		"input_track1"		"track_01"
+		"input_vsnd1"		"@get_vsnd_track_01.output"
+	}
+	"unpack_pos"
+	{
+		"input_execute"		"1.000000"
+		"input_execute"		"1"
+		"operator"		"util_elements_float3"
+		"input"		"@get_entity_info.output_position"
+		"__customstack_send_pos"		"1"
+	}
+	"send_voicegraph_pos_x"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_x"
+		"input"		"@unpack_pos.output_0"
+	}
+	"send_voicegraph_pos_y"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_y"
+		"input"		"@unpack_pos.output_1"
+	}
+	"send_voicegraph_pos_z"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_z"
+		"input"		"@unpack_pos.output_2"
+	}
+	"send_voicegraph_steamaudio_mix"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"steamaudio_mix"
+		"input"		"@distance_steamaudio_mix_mapping_curve_mult.output"
+	}
+	"reverb_mult_gamesound_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_reverb_mapping_curve_mult.output"
+		"input2"		"@globals.output_snd_gamesound_convar"
+	}
+	"send_mixgraph_reverb"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"submix_name"		"reverb"
+		"send_type"		"named"
+		"input"		"@reverb_mult_gamesound_convar.output"
+	}
+	"occlusion_mult_gamesound_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@distance_Occlusion_mapping_curve_mult.output"
+		"input2"		"@globals.output_snd_gamesound_convar"
+	}
+	"send_mixgraph_Occlusion"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"submix_name"		"Occlusion"
+		"send_type"		"named"
+		"input"		"@occlusion_mult_gamesound_convar.output"
+	}
+	"_system_properties"
+	{
+		"__customstack"		"1"
+		"display_game"		"generated"
+	}
+	"__customstack_layers"
+	{
+		"track_01"		"1"
+	}
+	"__customstack_components"
+	{
+		"main"		"1"
+		"RetriggerSoundEvent"		"1"
+	}
+}
+

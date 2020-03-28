@@ -1,0 +1,2271 @@
+// hlvr_base_vo
+"hlvr_base_vo"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+		"display_group"		"utility"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"line_text"
+			{
+				"data_type"		"string"
+				"value"		"vo_line_goes_here"
+			}
+			"metadata"
+			{
+				"data_type"		"string"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value"		"vo"
+					"value"		"meta2"
+				}
+			}
+			"position"
+			{
+				"data_type"		"float3"
+				"value"		"[0.0, 0.0, 0.0]"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+					"display_edit_type"		"field_position_editor"
+				}
+			}
+			"use_world_position"
+			{
+				"data_type"		"bool"
+				"value"		"false"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"attachment"
+			{
+				"data_type"		"string_token"
+				"value"		"snd_mouth"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"force_from_player"
+			{
+				"data_type"		"bool"
+				"value"		"false"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"vsnd_files"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+			"vsnd_duration"
+			{
+				"data_type"		"float"
+				"value"		"2.000000"
+			}
+			"mixgroup"
+			{
+				"data_type"		"string"
+				"value"		"Dialog"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"set_mixlayer"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"mixlayer_to_set"
+			{
+				"data_type"		"string"
+				"value"		"0"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"mixlayer_amount_manual"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_rand_min"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_rand_max"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_mult"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_faceposer"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_fade_in"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_fade_out"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, -0.000116, -0.000116, 1.0, 1.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 3.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, -0.001076, 1.0, 1.0 ]"
+					"value4"		"[ 1000.0, 0.0, -0.0002, -0.0002, 2.0, 3.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"volume_falloff_scale_x"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"volume_falloff_scale_y"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"spread_min"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+			}
+			"spread_max"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+			}
+			"block_volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_filter_amount"
+			{
+				"data_type"		"float"
+				"value"		"999.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"pitch"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+			}
+			"pitch_adjust"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"pitch_rand_min"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"pitch_rand_max"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay_rand_min"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay_rand_max"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"distance_max_velocity"
+			{
+				"data_type"		"float"
+				"value"		"20000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"distance_max"
+			{
+				"data_type"		"float"
+				"value"		"-1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"occlusion_scale"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"occlusion_radius"
+			{
+				"data_type"		"float"
+				"value"		"60.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"occlusion_min"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"occlusion_max"
+			{
+				"data_type"		"float"
+				"value"		"0.850000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"occlusion_interval"
+			{
+				"data_type"		"float"
+				"value"		"0.100000"
+			}
+			"stop_at_time"
+			{
+				"data_type"		"float"
+				"value"		"-1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"enable_debug_radius"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"debug_radius_max"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"soundname_string"
+			{
+				"data_type"		"string"
+				"value"		"0"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"use_facing_vol_attenuation"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"use_named_send"
+			{
+				"data_type"		"string"
+				"value"		"vo"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"ambient_ducking_pct"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"reverb_use_curve"
+			{
+				"data_type"		"float"
+				"value"		"1"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"reverb_xfade_value"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"reverb_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 0.061856, 0.00005, 0.00005, 1.0, 1.0 ]"
+					"value2"		"[ 103.297958, 0.06701, 0.00005, 0.00005, 0.0, 3.0 ]"
+					"value3"		"[ 464.84082, 0.252577, 0.000659, 0.000659, 2.0, 3.0 ]"
+					"value4"		"[ 807.355103, 1.0, 0.002125, 0.002125, 2.0, 3.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"eq1_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"eq1_enable"
+			{
+				"data_type"		"bool"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"eq1_freq"
+			{
+				"data_type"		"float"
+				"value"		"1000.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"eq2_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 1.0, 1.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, 0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"eq2_enable"
+			{
+				"data_type"		"bool"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"eq2_freq"
+			{
+				"data_type"		"float"
+				"value"		"1000.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"eq3_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.0, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.0, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.00, -0.0002, 0.0, 0.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"eq3_enable"
+			{
+				"data_type"		"bool"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"eq3_freq"
+			{
+				"data_type"		"float"
+				"value"		"200.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"radio_enable"
+			{
+				"data_type"		"bool"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"normal"
+				}
+			}
+			"radio_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+					"value4"		"[ 810.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"hrtf_falloff_curve"
+			{
+				"data_type"		"float6"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value1"		"[ 0.687743, 0.0, 0.0, 0.0, 1.0, 1.0, ]"
+					"value2"		"[ 30.297958, 0.0, 0.0, 0.0, 0.0, 3.0 ]"
+					"value3"		"[ 61.553036, 0.278351, 0.014365, 0.014365, 2.0, 3.0 ]"
+					"value4"		"[ 81.153725, 1.0, 0.002125, 0.002125, 2.0, 3.0 ]"
+				}
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+					"display_edit_type"		"field_curve_2d_editor"
+				}
+			}
+			"vsnd_sample_rate"
+			{
+				"data_type"		"float"
+				"value"		"44100"
+			}
+			"import_public_opvars"		"hlvr_soundevent_block"
+			"import_public_opvars"		"hlvr_facing_atten"
+			"eq_duck_mult"
+			{
+				"data_type"		"float"
+				"value"		"0.050000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+		}
+	}
+	"source_info"
+	{
+		"operator"		"game_get_source_info"
+		"source"		"entity"
+	}
+	"import_block_stack"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_soundevent_block"
+		"auto_connect_public_fields"		"true"
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"test_from_player_index"
+	{
+		"operator"		"ctrl_switch_float"
+		"input_switch"		"@public.force_from_player"
+		"input2"		"-1"
+		"input1"		"@source_info.output_entity_index"
+	}
+	"get_entity_info"
+	{
+		"input_execute"		"1"
+		"operator"		"game_entity_info"
+		"input_entity_index"		"@test_from_player_index.output"
+		"input_default_world_position"		"@public.position"
+		"input_default_local_position"		"@globals.output_listener_front"
+		"use_world_position"		"@public.use_world_position"
+		"attachment"		"@public.attachment"
+	}
+	"distance_to_source"
+	{
+		"operator"		"calc_distance"
+		"input_position1"		"@get_entity_info.output_position"
+		"input_position2"		"@globals.output_listener_position"
+	}
+	"distance_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@distance_to_source.output"
+		"input_max_velocity"		"@public.distance_max_velocity"
+	}
+	"import_dist_limit"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"core_distance_limiter"
+		"operator_variables"
+		{
+			"distance"
+			{
+				"data_type"		"float"
+				"value"		"@distance_filter.output"
+			}
+			"distance_max"
+			{
+				"data_type"		"float"
+				"value"		"@public.distance_max"
+			}
+		}
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"volume_random"
+	{
+		"operator"		"math_randomize_float"
+		"execute_once"		"true"
+		"input"		"1.000000"
+		"input_rand_min"		"@public.volume_rand_min"
+		"input_rand_max"		"@public.volume_rand_max"
+	}
+	"pitch_random"
+	{
+		"operator"		"math_randomize_float"
+		"execute_once"		"true"
+		"input"		"@public.pitch"
+		"input_rand_min"		"@public.pitch_rand_min"
+		"input_rand_max"		"@public.pitch_rand_max"
+	}
+	"delay_random"
+	{
+		"operator"		"math_randomize_float"
+		"execute_once"		"true"
+		"input"		"@public.delay"
+		"input_rand_min"		"@public.delay_rand_min"
+		"input_rand_max"		"@public.delay_rand_max"
+	}
+	"pitch_adjustment"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.pitch_adjust"
+		"input2"		"@pitch_random.output"
+	}
+	"mixer"
+	{
+		"operator"		"soundmixer_get_mixgroup"
+		"mixgroup"		"@public.mixgroup"
+	}
+	"occlusion_mixer_mult"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.occlusion_scale"
+		"input2"		"@mixer.output_level"
+	}
+	"occlusion"
+	{
+		"operator"		"calc_occlusion_src2"
+		"input_scalar"		"@occlusion_mixer_mult.output"
+		"input_radius"		"@public.occlusion_radius"
+		"min_output"		"@public.occlusion_min"
+		"max_output"		"@public.occlusion_max"
+		"input_source_position"		"@get_entity_info.output_position"
+		"input_listener_position"		"@globals.output_listener_position"
+		"input_trace_interval"		"@public.occlusion_interval"
+	}
+	"occlusion_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@occlusion.output"
+		"input_max_velocity"		"1.000000"
+	}
+	"occlusion_submix_math_invert"
+	{
+		"operator"		"math_float"
+		"apply"		"sub"
+		"input1"		"1.000000"
+		"input2"		"@occlusion_filter.output"
+	}
+	"volume_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.volume_falloff_curve"
+		"input_scale_X"		"@public.volume_falloff_scale_x"
+		"input_scale_Y"		"@public.volume_falloff_scale_y"
+	}
+	"test_debug_radius"
+	{
+		"input_execute"		"@public.enable_debug_radius"
+		"operator"		"util_draw_radius"
+		"input_radius_min"		"@public.enable_debug_radius"
+		"input_radius_max"		"@public.debug_radius_max"
+		"input_name"		"@public.soundname_string"
+		"input_position"		"@get_entity_info.output_position"
+	}
+	"volume_fade_in"
+	{
+		"operator"		"math_remap_float"
+		"input"		"@get_event_info.output_elapsed_time"
+		"input_min"		"0.000000"
+		"input_max"		"@public.volume_fade_in"
+		"input_map_min"		"0.000000"
+		"input_map_max"		"1.000000"
+		"default_to_max"		"true"
+	}
+	"block_volume_atten_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input1"		"@public.volume_atten"
+		"input2"		"1.000000"
+		"input_switch"		"@public.block_volume_atten"
+	}
+	"eq1_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.eq1_falloff_curve"
+	}
+	"eq2_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.eq2_falloff_curve"
+	}
+	"eq3_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.eq3_falloff_curve"
+	}
+	"hlvr_facing_atten"
+	{
+		"input_execute"		"@public.use_facing_vol_attenuation"
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_facing_atten"
+		"auto_connect_public_fields"		"true"
+		"operator_variables"
+		{
+			"listener_forward"
+			{
+				"data_type"		"float3"
+				"value"		"@globals.output_listener_forward"
+			}
+			"listener_position"
+			{
+				"data_type"		"float3"
+				"value"		"@globals.output_listener_position"
+			}
+			"source_position"
+			{
+				"data_type"		"float3"
+				"value"		"@get_entity_info.output_position"
+			}
+		}
+	}
+	"reverb_send_distance_curve"
+	{
+		"operator"		"math_curve_2d"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.reverb_falloff_curve"
+	}
+	"reverb_control_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input1"		"@public.reverb_xfade_value"
+		"input2"		"@reverb_send_distance_curve.output"
+		"input_switch"		"@public.reverb_use_curve"
+	}
+	"reverb_mixer_mult"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@mixer.output_dsp"
+		"input2"		"@reverb_control_switch.output"
+	}
+	"reverb_send_crossfader"
+	{
+		"input_execute"		"1"
+		"operator"		"sos_import_stack"
+		"import_stack"		"send_crossfader"
+		"auto_connect_public_fields"		"false"
+		"operator_variables"
+		{
+			"wet_mix"
+			{
+				"data_type"		"float"
+				"value"		"@reverb_mixer_mult.output"
+			}
+		}
+	}
+	"volume_accumulate_pre_reverb"
+	{
+		"operator"		"math_accumulate12_float"
+		"apply"		"mult"
+		"input1"		"@volume_random.output"
+		"input2"		"@mixer.output_volume"
+		"input3"		"@public.volume"
+		"input4"		"@volume_falloff.output"
+		"input5"		"@volume_fade_in.output"
+		"input7"		"@hlvr_facing_atten::output.scaled_val"
+		"input8"		"@public.volume_mult"
+		"input9"		"@block_volume_atten_switch.output"
+		"input11"		"@occlusion_filter.output"
+		"input12"		"@public.volume_faceposer"
+	}
+	"volume_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@volume_accumulate_pre_reverb.output"
+		"input_max_velocity"		"@public.volume_filter_amount"
+	}
+	"volume_mult_dry"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@volume_filter.output"
+		"input2"		"@reverb_send_crossfader::output.dry"
+	}
+	"reverb_mult_wet_mix"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@volume_filter.output"
+		"input2"		"@reverb_send_crossfader::output.wet"
+	}
+	"mixer_trigger"
+	{
+		"operator"		"soundmixer_set_trigger"
+		"input_trigger"		"@volume_filter.output"
+		"input_mixgroups"		"@mixer.output_mixgroups"
+	}
+	"mixlayer_input_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input_execute"		"@public.set_mixlayer"
+		"input_switch"		"@public.mixlayer_amount_manual"
+		"input1"		"@volume_filter.output"
+		"input2"		"@public.mixlayer_amount_manual"
+	}
+	"mixer_set_mixlayer"
+	{
+		"operator"		"soundmixer_set_mixlayer_amount"
+		"input_execute"		"@public.set_mixlayer"
+		"input"		"@mixlayer_input_switch.output"
+		"mixlayer"		"@public.mixlayer_to_set"
+	}
+	"hlvr_send_selector"
+	{
+		"input_execute"		"1"
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_send_selector"
+		"auto_connect_public_fields"		"false"
+		"operator_variables"
+		{
+			"use_named_send"
+			{
+				"value"		"@public.use_named_send"
+			}
+			"send_volume"
+			{
+				"value"		"@volume_mult_dry.output"
+			}
+		}
+	}
+	"duck_ambient_remap_gamevoice_convar"
+	{
+		"operator"		"math_remap_float"
+		"input"		"@globals.output_snd_gamevoice_convar"
+		"input_min"		"0.200000"
+		"input_max"		"0.800000"
+		"input_map_min"		"0.000000"
+		"input_map_max"		"1.000000"
+		"default_to_max"		"true"
+	}
+	"mult_duck_gamevoice_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@duck_ambient_remap_gamevoice_convar.output"
+		"input2"		"@public.ambient_ducking_pct"
+	}
+	"mult_duck_amount"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@volume_filter.output"
+		"input2"		"@mult_duck_gamevoice_convar.output"
+	}
+	"duck_ambient_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"submix_name"		"DuckAmbient"
+		"input"		"@mult_duck_amount.output"
+		"send_type"		"named"
+	}
+	"eq_ducking_mult"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.eq_duck_mult"
+		"input2"		"@volume_filter.output"
+	}
+	"duck_not_vo_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"execute_once"		"false"
+		"input"		"@eq_ducking_mult.output"
+		"submix_name"		"DuckNotVO"
+		"send_type"		"named"
+	}
+	"reverb_mult_submix_level"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@reverb_mult_wet_mix.output"
+		"input2"		"@hlvr_send_selector::submix_level.output"
+	}
+	"reverb_mult_gamevoice_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@reverb_mult_submix_level.output"
+		"input2"		"@globals.output_snd_gamevoice_convar"
+	}
+	"reverb_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"execute_once"		"false"
+		"input"		"@reverb_mult_gamevoice_convar.output"
+		"submix_name"		"reverb"
+		"send_type"		"named"
+	}
+	"occlusion_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"submix_name"		"Occlusion"
+		"input"		"0"
+		"send_type"		"named"
+	}
+	"get_vsnd"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"unpack_pos"
+	{
+		"input_execute"		"1.000000"
+		"input_execute"		"1"
+		"operator"		"util_elements_float3"
+		"input"		"@get_entity_info.output_position"
+	}
+	"start_vmix"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"input_execute"		"1"
+		"vgraph_name"		"hlvr.hrtf_vo"
+		"input_track1"		"track_01"
+		"input_start2"		"0.000000"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_vsnd1"		"@get_vsnd.output"
+		"execute_once"		"false"
+		"input_should_pause"		"true"
+		"input_should_save"		"true"
+		"input_start"		"@get_event_info.output_unstopped"
+		"input_speaker_volumes"		"[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]"
+		"input_pitch"		"@public.pitch"
+		"input_fade_out"		"@public.volume_fade_out"
+		"input_delay"		"@delay_random.output"
+	}
+	"add_finished_conditions"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input_execute"		"@public.set_mixlayer"
+		"input1"		"0.000000"
+		"input2"		"@start_vmix.output_vgraph_finished"
+	}
+	"reset_mixlayer"
+	{
+		"operator"		"soundmixer_set_mixlayer_amount"
+		"input_execute"		"@add_finished_conditions.output"
+		"input"		"0.000000"
+		"mixlayer"		"@public.mixlayer_to_set"
+	}
+	"send_voicegraph_pos_x"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_x"
+		"input"		"@unpack_pos.output_0"
+	}
+	"send_voicegraph_pos_y"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_y"
+		"input"		"@unpack_pos.output_1"
+	}
+	"send_voicegraph_pos_z"
+	{
+		"input_execute"		"1"
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"pos_z"
+		"input"		"@unpack_pos.output_2"
+	}
+	"send_voicegraph_eq1_mix"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq1_mix"
+		"input"		"@eq1_falloff.output"
+	}
+	"send_voicegraph_eq1_enable"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq1_enable"
+		"input"		"@public.eq1_enable"
+	}
+	"send_voicegraph_eq1_frequency"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq1_frequency"
+		"input"		"@public.eq1_freq"
+	}
+	"send_voicegraph_eq2_freq"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq2_frequency"
+		"input"		"@public.eq2_freq"
+	}
+	"send_voicegraph_eq2_enable"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq2_enable"
+		"input"		"@public.eq2_enable"
+	}
+	"send_voicegraph_eq2_mix"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq2_mix"
+		"input"		"@eq2_falloff.output"
+	}
+	"send_voicegraph_eq3_freq"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq3_frequency"
+		"input"		"@public.eq3_freq"
+	}
+	"send_voicegraph_eq3_enable"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq3_enable"
+		"input"		"@public.eq3_enable"
+	}
+	"send_voicegraph_eq3_mix"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"eq3_mix"
+		"input"		"@eq3_falloff.output"
+	}
+	"steamaudio_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input_execute"		"1"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.hrtf_falloff_curve"
+	}
+	"steamaudio_mix"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"steamaudio_mix"
+		"input"		"@steamaudio_falloff.output"
+	}
+	"radio_falloff"
+	{
+		"operator"		"math_curve_2d"
+		"input_execute"		"@public.radio_enable"
+		"input"		"@distance_filter.output"
+		"public_field_name"		"public.radio_falloff_curve"
+	}
+	"start_radio"
+	{
+		"operator"		"soundevent_start"
+		"execute_once"		"false"
+		"input_spawn_oneshots"		"0.000000"
+		"input_execute"		"@public.radio_enable"
+		"input_start"		"@get_event_info.output_unstopped"
+		"soundevent_name"		"hlvr.hlvr_vo_radio_ext"
+		"pass_opvar_args"		"true"
+		"input_update_opvar_args"		"true"
+		"operator_variables"
+		{
+			"public.volume_ext"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"float"
+				"value"		"@radio_falloff.output"
+			}
+			"public.vsnd_files"
+			{
+				"operator_arg_field"		"true"
+				"data_type"		"vsnd"
+				"value"		"@get_vsnd.output"
+			}
+		}
+	}
+	"has_stop_time"
+	{
+		"operator"		"math_float"
+		"apply"		"greater_than"
+		"input1"		"@public.stop_at_time"
+		"input2"		"0.000000"
+	}
+	"add_stop_time_to_fade_out_time"
+	{
+		"operator"		"math_float"
+		"apply"		"add"
+		"input1"		"@public.stop_at_time"
+		"input2"		"@public.volume_fade_out"
+	}
+	"elapsed_less_than_fade"
+	{
+		"operator"		"math_float"
+		"apply"		"less_than_or_equal"
+		"input1"		"@get_event_info.output_elapsed_time"
+		"input2"		"@add_stop_time_to_fade_out_time.output"
+	}
+	"has_stop_time_and_not_elapsed"
+	{
+		"operator"		"math_float"
+		"apply"		"min"
+		"input1"		"@elapsed_less_than_fade.output"
+		"input2"		"@has_stop_time.output"
+	}
+	"stop_at_time"
+	{
+		"operator"		"soundevent_control"
+		"input_stop_at_time"		"@public.stop_at_time"
+	}
+}
+
+// hlvr_update_vo_default
+"hlvr_update_vo_default"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"import_public_opvars"		"hlvr_base_vo"
+			"mixgroup"
+			{
+				"value"		"Dialog"
+			}
+			"volume_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, -0.000884, -0.000884, 1.0, 1.0 ]"
+					"value2"		"[ 66.282417, 0.941392, -0.000884, -0.000884, 0.0, 3.0 ]"
+					"value3"		"[ 331.412109, 0.494505, -0.001008, -0.001008, 1.0, 1.0 ]"
+					"value4"		"[ 1000.0, 0.0, -0.0002, -0.0002, 2.0, 3.0 ]"
+				}
+			}
+			"reverb_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 0.296703, 0.000871, 0.000871, 1.0, 1.0 ]"
+					"value2"		"[ 807.355103, 1.0, 0.001273, 0.001273, 2.0, 3.0 ]"
+				}
+			}
+			"eq1_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"eq2_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 1.0, 1.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, 0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"eq3_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.0, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.0, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.00, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"radio_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+					"value4"		"[ 810.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+				}
+			}
+			"hrtf_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, ]"
+					"value2"		"[ 81.153725, 1.0, 0.00034, 0.00034, 2.0, 3.0 ]"
+				}
+			}
+		}
+	}
+	"hlvr_base_vo"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_base_vo"
+		"auto_connect_public_fields"		"true"
+	}
+}
+
+// hlvr_update_vo_combine
+"hlvr_update_vo_combine"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"import_public_opvars"		"hlvr_base_vo"
+			"mixgroup"
+			{
+				"value"		"Combine_Dialog"
+			}
+			"volume_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, -0.000116, -0.000116, 1.0, 1.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 3.0 ]"
+					"value3"		"[ 528.645508, 0.465055, -0.000624, -0.000624, 1.0, 1.0 ]"
+					"value4"		"[ 1657.867432, 0.0063, -0.0002, -0.0002, 2.0, 3.0 ]"
+				}
+			}
+			"reverb_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 0.061856, 0.00005, 0.00005, 1.0, 1.0 ]"
+					"value2"		"[ 103.297958, 0.06701, 0.00005, 0.00005, 0.0, 3.0 ]"
+					"value3"		"[ 464.84082, 0.252577, 0.000659, 0.000659, 2.0, 3.0 ]"
+					"value4"		"[ 807.355103, 1.0, 0.002125, 0.002125, 2.0, 3.0 ]"
+				}
+			}
+			"eq1_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"eq2_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 1.0, 1.0 ]"
+					"value2"		"[ 78.905525, 0.990824, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.398041, -0.001076, 0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.000, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"eq3_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.000, -0.000116, 0.0, 0.0 ]"
+					"value2"		"[ 78.905525, 0.0, -0.000116, -0.000116, 0.0, 0.0 ]"
+					"value3"		"[ 290.276886, 0.0, -0.001076, -0.001076, 0.0, 0.0 ]"
+					"value4"		"[ 1000.0, 0.0, 0.00, -0.0002, 0.0, 0.0 ]"
+				}
+			}
+			"radio_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+					"value4"		"[ 810.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]"
+				}
+			}
+			"hrtf_falloff_curve"
+			{
+				"value"
+				{
+					"value1"		"[ 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, ]"
+					"value2"		"[ 81.153725, 1.0, 0.000167, 0.000167, 2.0, 3.0 ]"
+				}
+			}
+			"volume_falloff_scale_x"
+			{
+				"value"		"1"
+			}
+		}
+	}
+	"hlvr_base_vo"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_base_vo"
+		"auto_connect_public_fields"		"true"
+	}
+}
+
+// hlvr_vo_radio_base
+"hlvr_vo_radio_base"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"line_text"
+			{
+				"data_type"		"string"
+				"value"		"vo_line_goes_here"
+			}
+			"metadata"
+			{
+				"data_type"		"string"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value"		"vo"
+					"value"		"meta2"
+				}
+			}
+			"mixgroup"
+			{
+				"data_type"		"string"
+				"value"		"dialog"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_ext"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_fade_out"
+			{
+				"data_type"		"float"
+				"value"		"0.500000"
+			}
+			"volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"block_volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_filter_amount"
+			{
+				"data_type"		"float"
+				"value"		"999.000000"
+			}
+			"pitch"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+			}
+		}
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"mixer"
+	{
+		"operator"		"soundmixer_get_mixgroup"
+		"mixgroup"		"@public.mixgroup"
+		"input_soundlevel"		"60"
+	}
+	"block_volume_atten_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input1"		"@public.volume_atten"
+		"input2"		"1.000000"
+		"input_switch"		"@public.block_volume_atten"
+	}
+	"volume_accumulate"
+	{
+		"operator"		"math_accumulate12_float"
+		"apply"		"mult"
+		"input1"		"@public.volume_ext"
+		"input2"		"@mixer.output_volume"
+		"input3"		"@public.volume"
+		"input4"		"1.000000"
+		"input5"		"1.000000"
+		"input7"		"1.000000"
+		"input8"		"1.000000"
+		"input9"		"@block_volume_atten_switch.output"
+		"input11"		"1.000000"
+		"input12"		"1.000000"
+	}
+	"volume_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@volume_accumulate.output"
+		"input_max_velocity"		"@public.volume_filter_amount"
+	}
+	"vo_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1"
+		"input"		"@volume_filter.output"
+		"submix_name"		"vo"
+		"send_type"		"named"
+	}
+	"facing_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1"
+		"input"		"0"
+		"send_type"		"facing"
+	}
+	"mixer_trigger"
+	{
+		"operator"		"soundmixer_set_trigger"
+		"input_trigger"		"@volume_filter.output"
+		"input_mixgroups"		"@mixer.output_mixgroups"
+	}
+	"speakers_select"
+	{
+		"operator"		"ctrl_switch_speakers"
+		"input_switch"		"1.000000"
+		"left_front2"		"0.000000"
+		"right_front2"		"1.000000"
+		"left_rear2"		"0.000000"
+		"right_rear2"		"0.000000"
+		"center2"		"0.000000"
+		"lfe2"		"0.000000"
+	}
+}
+
+// hlvr_vo_radio
+"hlvr_vo_radio"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"import_public_opvars"		"hlvr_base_vo"
+			"vsnd_files"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+		}
+	}
+	"hlvr_vo_radio_base"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_vo_radio_base"
+		"auto_connect_public_fields"		"true"
+	}
+	"get_vsnd"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"start_vmix"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"vgraph_name"		"hlvr.vo_radio"
+		"input_track1"		"track_01"
+		"input_start2"		"0.000000"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_vsnd1"		"@get_vsnd.output"
+		"execute_once"		"false"
+		"input_should_pause"		"true"
+		"input_should_save"		"true"
+		"input_start"		"@hlvr_vo_radio_base::get_event_info.output_unstopped"
+		"input_speaker_volumes"		"@hlvr_vo_radio_base::speakers_select.output"
+		"input_pitch"		"@public.pitch"
+		"input_fade_out"		"@public.volume_fade_out"
+		"input_delay"		"@public.delay"
+	}
+}
+
+// hlvr_vo_radio_ext
+"hlvr_vo_radio_ext"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"import_public_opvars"		"hlvr_base_vo"
+			"vsnd_files"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"false"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+		}
+	}
+	"hlvr_vo_radio_base"
+	{
+		"operator"		"sos_import_stack"
+		"import_stack"		"hlvr_vo_radio_base"
+		"auto_connect_public_fields"		"true"
+	}
+	"get_vsnd"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"false"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"start_vmix"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"vgraph_name"		"hlvr.vo_radio"
+		"input_track1"		"track_01"
+		"input_start2"		"0.000000"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_vsnd1"		"@get_vsnd.output"
+		"execute_once"		"false"
+		"input_should_pause"		"true"
+		"input_should_save"		"true"
+		"input_start"		"@hlvr_vo_radio_base::get_event_info.output_unstopped"
+		"input_speaker_volumes"		"@hlvr_vo_radio_base::speakers_select.output"
+		"input_pitch"		"@public.pitch"
+		"input_fade_out"		"@public.volume_fade_out"
+		"input_delay"		"@public.delay"
+	}
+}
+
+// hlvr_vo_alyx
+"hlvr_vo_alyx"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"line_text"
+			{
+				"data_type"		"string"
+				"value"		"vo_line_goes_here"
+			}
+			"metadata"
+			{
+				"data_type"		"string"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value"		"vo"
+					"value"		"meta2"
+				}
+			}
+			"mixgroup"
+			{
+				"data_type"		"string"
+				"value"		"alyx_dialog"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume"
+			{
+				"data_type"		"float"
+				"value"		"1"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_fade_out"
+			{
+				"data_type"		"float"
+				"value"		"0.500000"
+			}
+			"volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"block_volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_filter_amount"
+			{
+				"data_type"		"float"
+				"value"		"999.000000"
+			}
+			"pitch"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"vsnd_files"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+			"reverb_send_multiplier"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"eq_duck_mult"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+		}
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"mixer"
+	{
+		"operator"		"soundmixer_get_mixgroup"
+		"mixgroup"		"@public.mixgroup"
+	}
+	"block_volume_atten_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input1"		"@public.volume_atten"
+		"input2"		"1.000000"
+		"input_switch"		"@public.block_volume_atten"
+	}
+	"volume_accumulate"
+	{
+		"operator"		"math_accumulate12_float"
+		"apply"		"mult"
+		"input1"		"1.000000"
+		"input2"		"@mixer.output_volume"
+		"input3"		"@public.volume"
+		"input4"		"1.000000"
+		"input5"		"1.000000"
+		"input7"		"1.000000"
+		"input8"		"1.000000"
+		"input9"		"@block_volume_atten_switch.output"
+		"input11"		"1.000000"
+		"input12"		"1.000000"
+	}
+	"volume_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@volume_accumulate.output"
+		"input_max_velocity"		"@public.volume_filter_amount"
+	}
+	"mixer_trigger"
+	{
+		"operator"		"soundmixer_set_trigger"
+		"input_trigger"		"@volume_filter.output"
+		"input_mixgroups"		"@mixer.output_mixgroups"
+	}
+	"get_vsnd"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"speakers_select"
+	{
+		"operator"		"ctrl_switch_speakers"
+		"input_switch"		"1.000000"
+		"left_front2"		"1.000000"
+		"right_front2"		"1.000000"
+		"left_rear2"		"0.000000"
+		"right_rear2"		"0.000000"
+		"center2"		"0.000000"
+		"lfe2"		"0.000000"
+	}
+	"reverb_mult_volume"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@volume_filter.output"
+		"input2"		"@public.reverb_send_multiplier"
+	}
+	"reverb_mult_gamevoice_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@reverb_mult_volume.output"
+		"input2"		"@globals.output_snd_gamevoice_convar"
+	}
+	"reverb_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"execute_once"		"false"
+		"input"		"@reverb_mult_gamevoice_convar.output"
+		"submix_name"		"reverb"
+		"send_type"		"named"
+	}
+	"vo_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"input"		"@volume_accumulate.output"
+		"submix_name"		"vo"
+		"send_type"		"named"
+	}
+	"eq_ducking_mult"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@public.eq_duck_mult"
+		"input2"		"@volume_accumulate.output"
+	}
+	"duck_not_vo_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"execute_once"		"false"
+		"input"		"@eq_ducking_mult.output"
+		"submix_name"		"DuckNotVO"
+		"send_type"		"named"
+	}
+	"facing_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1"
+		"input"		"0"
+		"send_type"		"facing"
+	}
+	"start_vsnd"
+	{
+		"operator"		"vmix_vsnd_start"
+		"input_vsnd"		"@get_vsnd.output"
+		"execute_once"		"false"
+		"input_execute"		"1.000000"
+		"input_start"		"@get_event_info.output_unstopped"
+		"input_speaker_volumes"		"@speakers_select.output"
+		"input_pitch"		"@public.pitch"
+		"input_delay"		"@public.delay"
+		"input_fade_out"		"@public.volume_fade_out"
+		"input_should_pause"		"true"
+		"input_should_save"		"true"
+	}
+}
+
+// hlvr_vo_alyx_coughing
+"hlvr_vo_alyx_coughing"
+{
+	"_system_properties"
+	{
+		"display_game"		"hlvr"
+	}
+	"public"
+	{
+		"operator"		"util_null"
+		"operator_variables"
+		{
+			"line_text"
+			{
+				"data_type"		"string"
+				"value"		"vo_line_goes_here"
+			}
+			"metadata"
+			{
+				"data_type"		"string"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value"		"vo"
+					"value"		"meta2"
+				}
+			}
+			"mixgroup"
+			{
+				"data_type"		"string"
+				"value"		"alyx_dialog"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume"
+			{
+				"data_type"		"float"
+				"value"		"0.800000"
+				"_system_properties"
+				{
+					"display_edit_type"		"field_linear_atten_editor"
+				}
+			}
+			"volume_fade_out"
+			{
+				"data_type"		"float"
+				"value"		"0.500000"
+			}
+			"volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"locked"
+				}
+			}
+			"block_volume_atten"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"volume_filter_amount"
+			{
+				"data_type"		"float"
+				"value"		"999.000000"
+			}
+			"pitch"
+			{
+				"data_type"		"float"
+				"value"		"1.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"delay"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+			"vsnd_files_clean"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+			"vsnd_files_muffled"
+			{
+				"data_type"		"vsnd"
+				"soundevent_data"		"true"
+				"value"
+				{
+					"value0"		"sounds/common/null.vsnd"
+				}
+			}
+			"reverb_send_multiplier"
+			{
+				"data_type"		"float"
+				"value"		"0.000000"
+				"_system_properties"
+				{
+					"display_group"		"advanced"
+				}
+			}
+		}
+	}
+	"globals"
+	{
+		"operator"		"get_system_globals"
+		"input_execute"		"1"
+		"input_listener_index"		"0"
+	}
+	"get_event_info"
+	{
+		"operator"		"soundevent_get_info"
+	}
+	"mixer"
+	{
+		"operator"		"soundmixer_get_mixgroup"
+		"mixgroup"		"@public.mixgroup"
+	}
+	"block_volume_atten_switch"
+	{
+		"operator"		"ctrl_switch_float"
+		"input1"		"@public.volume_atten"
+		"input2"		"1.000000"
+		"input_switch"		"@public.block_volume_atten"
+	}
+	"volume_accumulate"
+	{
+		"operator"		"math_accumulate12_float"
+		"apply"		"mult"
+		"input1"		"1.000000"
+		"input2"		"@mixer.output_volume"
+		"input3"		"@public.volume"
+		"input4"		"1.000000"
+		"input5"		"1.000000"
+		"input7"		"1.000000"
+		"input8"		"1.000000"
+		"input9"		"@block_volume_atten_switch.output"
+		"input11"		"1.000000"
+		"input12"		"1.000000"
+	}
+	"volume_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@volume_accumulate.output"
+		"input_max_velocity"		"@public.volume_filter_amount"
+	}
+	"mixer_trigger"
+	{
+		"operator"		"soundmixer_set_trigger"
+		"input_trigger"		"@volume_filter.output"
+		"input_mixgroups"		"@mixer.output_mixgroups"
+	}
+	"get_vsnd_clean"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files_clean"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"get_vsnd_muffled"
+	{
+		"execute_once"		"true"
+		"operator"		"opvar_get_vsnd"
+		"check_event_data"		"true"
+		"input_operator_name"		"public"
+		"input_field_name"		"vsnd_files_muffled"
+		"input_use_namespace"		"false"
+		"array_selection_type"		"random_exclusive"
+	}
+	"speakers_select"
+	{
+		"operator"		"ctrl_switch_speakers"
+		"input_switch"		"1.000000"
+		"left_front2"		"1.000000"
+		"right_front2"		"1.000000"
+		"left_rear2"		"0.000000"
+		"right_rear2"		"0.000000"
+		"center2"		"0.000000"
+		"lfe2"		"0.000000"
+	}
+	"reverb_mult_volume"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@volume_filter.output"
+		"input2"		"@public.reverb_send_multiplier"
+	}
+	"reverb_mult_gamevoice_convar"
+	{
+		"operator"		"math_float"
+		"apply"		"mult"
+		"input1"		"@reverb_mult_volume.output"
+		"input2"		"@globals.output_snd_gamevoice_convar"
+	}
+	"reverb_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"execute_once"		"false"
+		"input"		"@reverb_mult_gamevoice_convar.output"
+		"submix_name"		"reverb"
+		"send_type"		"named"
+	}
+	"vo_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1.000000"
+		"input"		"@volume_accumulate.output"
+		"submix_name"		"vo"
+		"send_type"		"named"
+	}
+	"facing_submix_send"
+	{
+		"operator"		"vmix_mixgraph_send"
+		"input_execute"		"1"
+		"input"		"0"
+		"send_type"		"facing"
+	}
+	"get_player_mouth_covered_opvar"
+	{
+		"operator"		"opvar_get_float"
+		"input_stack_name"		"hlvr_global_opvars"
+		"input_operator_name"		"opvars"
+		"input_field_name"		"player_mouth_covered"
+		"input_use_namespace"		"false"
+	}
+	"start_vmix"
+	{
+		"operator"		"vmix_voicegraph_start_8track"
+		"input_execute"		"1.000000"
+		"vgraph_name"		"hlvr.hrtf_alyx_vo_cough"
+		"input_track1"		"track_01"
+		"input_track2"		"track_02"
+		"input_start3"		"0.000000"
+		"input_start4"		"0.000000"
+		"input_start5"		"0.000000"
+		"input_start6"		"0.000000"
+		"input_start7"		"0.000000"
+		"input_start8"		"0.000000"
+		"input_vsnd1"		"@get_vsnd_clean.output"
+		"input_vsnd2"		"@get_vsnd_muffled.output"
+		"execute_once"		"false"
+		"input_start"		"@get_event_info.output_unstopped"
+		"input_speaker_volumes"		"@speakers_select.output"
+		"input_pitch"		"@public.pitch"
+		"input_fade_out"		"@public.volume_fade_out"
+		"input_delay"		"@public.delay"
+	}
+	"cough_filter"
+	{
+		"operator"		"math_filter_float"
+		"input"		"@get_player_mouth_covered_opvar.output"
+		"input_max_velocity"		"1.000000"
+	}
+	"send_voicegraph_cough_covered"
+	{
+		"operator"		"vmix_voicegraph_input"
+		"input_name"		"cough_filter"
+		"input"		"@cough_filter.output"
+	}
+}
+
