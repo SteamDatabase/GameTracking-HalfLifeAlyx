@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"Tu configuración de rendimiento volvió al nivel recomendado."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx puede ser inestable debido al poco espacio disponible en el disco de la unidad de tu sistema operativo, lo que puede limitar el tamaño de tu archivo."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Se ha detectado que la memoria disponible para la unidad de procesamiento de gráficos (GPU) es baja, cierra los programas abiertos innecesarios, para aumentar la disponibilidad de dicha memoria."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"Se detectó que la memoria disponible para la el sistema es baja, cierra los programas abiertos innecesarios, para aumentar la disponibilidad de la memoria."
 
 "HLVR_MainMenu_ModalQuit"						"¿Deseas salir de Half-Life Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"¿Ir al menú principal?"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"Giro del control desactivado"
 "HLVR_Options_Turn_Snap"						"Giro repentino"
 "HLVR_Options_Turn_Continuous"					"Giro continuo"
+
 "HLVR_Options_Turn_Off_desc"					"Establece el giro repentino o continuo para rotar hacia la dirección a la que apuntas con tu control"
 "HLVR_Options_Turn_Snap_desc"					"El giro repentino rota la dirección a la que miras con un cambio hacia el ángulo especificado."
 "HLVR_Options_Turn_Continuous_desc"				"El giro continuo rota suavemente la dirección a la que miras a una velocidad específica."
+
 "HLVR_Options_QuickTurn_Angle_Base"				"Ángulo de giro repentino"
 "HLVR_Options_QuickTurn_Angle_desc"				"Ángulo de rotación para giro repentino."
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"Velocidad de giro continuo"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"Velocidad angular para giro continuo."
-
 
 "HLVR_Options_Subtitles"						"Subtítulos"
 "HLVR_Options_Subtitles_Base"					"Subtítulos"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"Amplio"
 "HLVR_Options_ClosedCaptions_Width_desc"		"El ancho de los subtítulos en pantalla."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"Solo ventana de espectador"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Mostrar subtítulos y CC solamente en la ventana del espectador"
+
 "HLVR_Options_LeftHanded"						"Arma en la mano: izquierda"
 "HLVR_Options_RightHanded"						"Arma en la mano: derecha"
 
 "HLVR_Options_LeftHanded_desc"					"Alterna la mano del arma entre izquierda y derecha."
+
+"HLVR_display_bindings"							"Asignaciones del control"
+"HLVR_display_bindings_desc"					"Ve a la configuración del control en SteamVR para ver o editar las asignaciones del control para Half-Life: Alyx"
+"HLVR_display_bindings_confirm"					"¿Ir a las asignaciones de control en SteamVR?"
+
 
 "HLVR_Options_ToggleCrouch"					"Acción de agacharse"
 "HLVR_Options_ToggleCrouch_desc"		"La acción de agacharse reduce tu altura para agacharse o ajustarse rápidamente a una posición baja cuando sea necesario. Vincula esta acción a la entrada elegida en los ajustes de SteamVR.\n\nCuando esta opción está activada, la acción de agacharse está disponible durante el juego."

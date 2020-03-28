@@ -122,6 +122,8 @@
     width: 100%;
     margin-left: 0px;
     margin-right: 60px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     flow-children: left;
     font-size: 24px;
     color: #FFBE55aa;
@@ -962,6 +964,15 @@ Label.cta
 .button_label
 {
     width: 94%; /* These dimensions are not intuitive */
+    padding-top: 8px;
+    vertical-align: center;
+    horizontal-align: left;
+    text-align: right;
+}
+
+.button_bindings_label 
+{
+    width: 84%;
     padding-top: 8px;
     vertical-align: center;
     horizontal-align: left;

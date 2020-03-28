@@ -65,26 +65,27 @@
             <Panel class="empty_row_bottomR_corner" />
           </Panel>
 
-					<Panel class="col_body child_panel_root" id="child_subtitles_container">
-						<Panel class="header">
-							<Label class="header" text="#HLVR_Options_Subtitles" />
-						</Panel>
-						<Panel class="empty_row" />
+          <Panel class="col_body child_panel_root" id="child_subtitles_container">
+            <Panel class="header">
+              <Label class="header" text="#HLVR_Options_Subtitles" />
+            </Panel>
+            <Panel class="empty_row" />
 
-						<Panel class="row">
-							<Panel class="col_body">
-								<GameMenuOptionCyclePanel id="sub01" convar="hlvr_closed_caption_type" label0="#HLVR_Options_Subtitles_None" label1="#HLVR_Options_Subtitles_On" label2="#HLVR_Options_Subtitles_CC_On" />
-                <GameMenuOptionCyclePanel id="sub02" convar="cc_vr_font_size" baseLabel="#HLVR_Options_Subtitles_Size" label0="#HLVR_Options_Subtitles_Small_Size" label1="#HLVR_Options_Subtitles_Medium_Size" label2="#HLVR_Options_Subtitles_Large_Size" />
-                <GameMenuOptionCyclePanel id="sub03" convar="cc_vr_width" baseLabel="#HLVR_Options_Subtitles_Width" label0="#HLVR_Options_Subtitles_Narrow" label1="#HLVR_Options_Subtitles_Medium" label2="#HLVR_Options_Subtitles_Wide" />
-                <GameMenuOptionCyclePanel id="sub04" convar="cc_vr_caption_speed" baseLabel="#HLVR_Options_Subtitles_Speed" label0="#HLVR_Options_Subtitles_Slow_Speed" label1="#HLVR_Options_Subtitles_Medium_Speed" label2="#HLVR_Options_Subtitles_Fast_Speed" />
-							</Panel>
-						</Panel>
+            <Panel class="row">
+              <Panel class="col_body">
+                <GameMenuOptionCyclePanel id="sub01" convar="hlvr_closed_caption_type" label0="#HLVR_Options_Subtitles_None" label1="#HLVR_Options_Subtitles_On" label2="#HLVR_Options_Subtitles_CC_On" />
+                <GameMenuOptionTogglePanel id="sub02" convar="cc_spectator_only" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Subtitles_Spectator_Only_desc' )" label0="#HLVR_Options_Subtitles_Spectator_Only" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
+                <GameMenuOptionCyclePanel id="sub03" convar="cc_vr_font_size" baseLabel="#HLVR_Options_Subtitles_Size" label0="#HLVR_Options_Subtitles_Small_Size" label1="#HLVR_Options_Subtitles_Medium_Size" label2="#HLVR_Options_Subtitles_Large_Size" />
+                <GameMenuOptionCyclePanel id="sub04" convar="cc_vr_width" baseLabel="#HLVR_Options_Subtitles_Width" label0="#HLVR_Options_Subtitles_Narrow" label1="#HLVR_Options_Subtitles_Medium" label2="#HLVR_Options_Subtitles_Wide" />
+                <GameMenuOptionCyclePanel id="sub05" convar="cc_vr_caption_speed" baseLabel="#HLVR_Options_Subtitles_Speed" label0="#HLVR_Options_Subtitles_Slow_Speed" label1="#HLVR_Options_Subtitles_Medium_Speed" label2="#HLVR_Options_Subtitles_Fast_Speed" />
+              </Panel>
+            </Panel>
 
-						<Panel class="empty_row" />
-						<Panel class="empty_row_bottomR_corner" />
-					</Panel>
+            <Panel class="empty_row" />
+            <Panel class="empty_row_bottomR_corner" />
+          </Panel>
 
-					<Panel class="col_body child_panel_root" id="child_accessibility_container">
+          <Panel class="col_body child_panel_root" id="child_accessibility_container">
             <Panel class="header">
               <Label class="header" text="#HLVR_Options_Accessibility" />
             </Panel>
@@ -94,7 +95,11 @@
               <Panel class="col_body">
                 
                 <GameMenuOptionTogglePanel id="acc01" convar="hlvr_single_controller_mode" class="single_controller" single_controller="true" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_hlvr_single_controller_mode_desc' )" label0="#HLVR_Options_hlvr_single_controller_mode" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
-                <GameMenuOptionCyclePanel id="acc02" convar="hlvr_adjust_height_option" baseLabel="#HLVR_Options_hlvr_adjust_height_mode_base" label0="#HLVR_Options_hlvr_adjust_height_mode_0" label1="#HLVR_Options_hlvr_adjust_height_mode_1" label2="#HLVR_Options_hlvr_adjust_height_mode_2"  label3="#HLVR_Options_hlvr_adjust_height_mode_3" label4="#HLVR_Options_hlvr_adjust_height_mode_4" desc0="HLVR_Options_hlvr_adjust_height_mode_0_desc" desc1="HLVR_Options_hlvr_adjust_height_mode_1_desc" desc2="HLVR_Options_hlvr_adjust_height_mode_2_desc" desc3="HLVR_Options_hlvr_adjust_height_mode_3_desc" desc4="HLVR_Options_hlvr_adjust_height_mode_4_desc"/>
+
+                <GameMenuOptionCyclePanel id="acc02" convar="hlvr_adjust_height_mode" stateful_visible="true" baseLabel="#HLVR_Options_hlvr_adjust_height_mode_base" label0="#HLVR_Options_hlvr_adjust_height_mode_0" label1="#HLVR_Options_hlvr_adjust_height_mode_1" label2="#HLVR_Options_hlvr_adjust_height_mode_2"  label3="#HLVR_Options_hlvr_adjust_height_mode_4" desc0="HLVR_Options_hlvr_adjust_height_mode_0_desc" desc1="HLVR_Options_hlvr_adjust_height_mode_1_desc" desc2="HLVR_Options_hlvr_adjust_height_mode_2_desc" desc3="HLVR_Options_hlvr_adjust_height_mode_4_desc"/>
+                <GameMenuOptionTogglePanel id="acc03" convar="hlvr_crouch_toggle_enable" stateful_visible="true" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ToggleCrouch_desc' )" label0="#HLVR_Options_ToggleCrouch" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
+                <GameMenuOptionTogglePanel id="acc04" convar="hlvr_stand_toggle_enable" stateful_visible="true" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ToggleStand_desc' )" label0="#HLVR_Options_ToggleStand" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
+                
                 <GameMenuOptionTogglePanel id="acc05" convar="r_light_sensitivity_mode" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_r_light_sensitivity_mode_desc' )" label0="#HLVR_Options_r_light_sensitivity_mode" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
 
               </Panel>
@@ -120,6 +125,14 @@
                     <Panel class="horizontal_line" />
                   </Panel>
                   <GameMenuOptionCyclePanel id="int01" convar="hlvr_left_hand_primary" descBase="#HLVR_Options_LeftHanded_desc" label0="#HLVR_Options_RightHanded" label1="#HLVR_Options_LeftHanded" />
+                  
+                  <Panel class="row">
+                    <Button class="button_base" onactivate="GameMenu_Cmd( 'display_bindings' )" onmouseover="GameMenu_OptionMouseOver( '#HLVR_display_bindings_desc' )" >
+                      <Label class="button_bindings_label" text="#HLVR_display_bindings"/>
+                      <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+                    </Button>
+                  </Panel>
+
                   <GameMenuOptionCyclePanel id="int02" convar="hlvr_weaponswitch_orientation" descBase="#HLVR_Options_WeaponSwitch_desc" baseLabel="#HLVR_Options_WeaponSwitch" label0="#HLVR_Options_WeaponSwitch_Hand" label1="#HLVR_Options_WeaponSwitch_HMD" label2="#HLVR_Options_WeaponSwitch_Hybrid" />
 
                   <Panel class="options_divider">
@@ -204,8 +217,8 @@
                     </Panel>
 
                     <GameMenuOptionCycleCondenseTexturePanel id="c_textures" baseLabel="#HLVR_Options_Graphics_Textures_Base" convar="hlvr_option_graphics_textures" cv0="r_texturefilteringquality" cv1="r_texture_stream_max_resolution" cv2="r_texture_stream_resolution_bias_min" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Graphics_Textures_Desc' )" onmouseout="GameMenu_OptionMouseOver( '#HLVR_Options_Graphics_desc' )" label0="#HLVR_Options_Graphics_Textures_Low" label1="#HLVR_Options_Graphics_Textures_Medium" label2="#HLVR_Options_Graphics_Textures_High" label3="#HLVR_Options_Graphics_Textures_Ultra" />
-                    <GameMenuOptionCycleCondensePanel id="c_shadows" baseLabel="#HLVR_Options_Graphics_Shadows_Base" convar="hlvr_option_graphics_shadows" cv0="r_high_quality_shadows" cv1="vr_single_light_fast_path_sun_cascade_0_texels_per_world" cv2="vr_single_light_fast_path_sun_cascade_1_texels_per_world" label0="#HLVR_Options_Graphics_Shadows_Low" label1="#HLVR_Options_Graphics_Shadows_Med" label2="#HLVR_Options_Graphics_Shadows_High" label3="#HLVR_Options_Graphics_Shadows_Ultra"/>
-                    <GameMenuOptionCycleCondensePanel id="c_characters" baseLabel="#HLVR_Options_Graphics_Characters_Base" convar="hlvr_option_graphics_characters" cv0="vr_enable_cached_lights" cv1="vr_aoproxy_enable" label0="#HLVR_Options_Graphics_Characters_Low" label1="#HLVR_Options_Graphics_Characters_Med" label2="#HLVR_Options_Graphics_Characters_High" label3="#HLVR_Options_Graphics_Characters_Ultra"/>
+                    <GameMenuOptionCycleCondensePanel id="c_shadows" baseLabel="#HLVR_Options_Graphics_Shadows_Base" convar="hlvr_option_graphics_shadows" cv0="r_high_quality_shadows" cv1="vr_single_light_fast_path_sun_cascade_0_texels_per_world" cv2="vr_single_light_fast_path_sun_cascade_1_texels_per_world" cv3="vr_shadow_level_placeholder" label0="#HLVR_Options_Graphics_Shadows_Low" label1="#HLVR_Options_Graphics_Shadows_Med" label2="#HLVR_Options_Graphics_Shadows_High" label3="#HLVR_Options_Graphics_Shadows_Ultra"/>
+                    <GameMenuOptionCycleCondensePanel id="c_characters" baseLabel="#HLVR_Options_Graphics_Characters_Base" convar="hlvr_option_graphics_characters" cv0="vr_enable_cached_lights" cv1="vr_aoproxy_enable" cv2="vr_character_level_placeholder" label0="#HLVR_Options_Graphics_Characters_Low" label1="#HLVR_Options_Graphics_Characters_Med" label2="#HLVR_Options_Graphics_Characters_High" label3="#HLVR_Options_Graphics_Characters_Ultra"/>
                     <GameMenuOptionCycleCondensePanel id="c_fog" baseLabel="#HLVR_Options_Graphics_Fog_Base" convar="hlvr_option_graphics_fog" cv0="volume_fog_width" cv1="volume_fog_height" cv2="volume_fog_depth" label0="#HLVR_Options_Graphics_Fog_Low" label1="#HLVR_Options_Graphics_Fog_Med" label2="#HLVR_Options_Graphics_Fog_High" label3="#HLVR_Options_Graphics_Fog_Ultra"/>
 
                     <GameMenuOptionTogglePanel id="adv06" convar="r_light_flickering_enabled" refresh_all="true" label0="#HLVR_Options_r_light_flickering_enabled" on="#HLVR_Options_On" off="#HLVR_Options_Off" />

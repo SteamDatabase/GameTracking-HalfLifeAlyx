@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"Настройки производительности возвращены к рекомендованному уровню."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Из-за недостатка места на диске размер файла подкачки ограничен, поэтому Half-Life: Alyx может работать нестабильно."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Не хватает памяти видеокарты. Закройте все ненужные программы, чтобы увеличить объём доступной памяти."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"Не хватает системной памяти. Закройте все ненужные программы, чтобы увеличить объём доступной памяти."
 
 "HLVR_MainMenu_ModalQuit"						"Выйти из игры?"
 "HLVR_MainMenu_ModalMainMenu"					"Выйти в главное меню?"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"Поворот контроллером отключён"
 "HLVR_Options_Turn_Snap"						"Мгновенный поворот"
 "HLVR_Options_Turn_Continuous"					"Плавный поворот"
+
 "HLVR_Options_Turn_Off_desc"					"Выберите, каким будет поворот с помощью контроллера: мгновенным или плавным"
 "HLVR_Options_Turn_Snap_desc"					"При мгновенном повороте направление вашего обзора немедленно поворачивается на указанный угол."
 "HLVR_Options_Turn_Continuous_desc"				"При плавном повороте направление вашего обзора плавно поворачивается с указанной скоростью."
+
 "HLVR_Options_QuickTurn_Angle_Base"				"Угол мгновенного поворота"
 "HLVR_Options_QuickTurn_Angle_desc"				"Выберите угол для мгновенных поворотов."
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"Скорость плавного поворота"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"Выберите скорость для плавных поворотов."
-
 
 "HLVR_Options_Subtitles"						"Субтитры"
 "HLVR_Options_Subtitles_Base"					"Субтитры"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"Широкие"
 "HLVR_Options_ClosedCaptions_Width_desc"		"Ширина субтитров на экране."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"Только на экране зрителя"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Показывать субтитры реплик и звуков только на экране зрителя"
+
 "HLVR_Options_LeftHanded"						"Рука с оружием: левая"
 "HLVR_Options_RightHanded"						"Рука с оружием: правая"
 
-"HLVR_Options_LeftHanded_desc"					"Выбор положения оружия: в левой или в правой руке."
+"HLVR_Options_LeftHanded_desc"					"Переключение руки с оружием между левой и правой.\n\nВы можете выбрать, какая рука будет управлять движением, выбрав соответствующую раскладку в меню раскладок контроллера SteamVR."
+
+"HLVR_display_bindings"							"Раскладка контроллера"
+"HLVR_display_bindings_desc"					"Откройте настройки контроллера в SteamVR, чтобы изменить раскладку для Half-Life: Alyx"
+"HLVR_display_bindings_confirm"					"Открыть раскладку контроллера в SteamVR?"
+
 
 "HLVR_Options_ToggleCrouch"					"Приседание кнопкой"
 "HLVR_Options_ToggleCrouch_desc"		"Позволяет быстро пригнуться или опустить камеру по нажатию кнопки, назначенной в настройках SteamVR.\n\nЕсли эта опция включена, приседание доступно во время игры."
@@ -187,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"Приседание и вставание"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"Гибрид"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Задаёт то, какими способами контроллер может изменять высоту.\n\nЕсли выключено, контроллер не сможет изменять высоту.\n\nКнопки для этих действий необходимо назначить в настройках SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Только приседание. Вставание выключено.\n\nЕсли эта опция включена, нажмите на кнопку приседания, чтобы быстро пригнуться или опустить камеру.\n\nКнопку для этого действия нужно назначить в настройках SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Только вставание. Приседание выключено.\n\nЕсли эта опция включена, нажмите на кнопку вставания, чтобы поднять камеру при необходимости. Рекомендуется при игре сидя.\n\nКнопку для этого действия нужно назначить в настройках SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Если включена эта опция, вы можете опустить или поднять камеру нажатиями двух отдельных кнопок.\n\nКнопки для этих действий нужно назначить в настройках SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"В гибридном режиме для приседания и вставания используется одна кнопка.\n\nЧтобы присесть, быстро нажмите на назначенную кнопку.\n\nЧтобы встать, зажмите эту кнопку.\n\nКнопку для этих действий нужно назначить в настройках SteamVR."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Задаёт то, какими способами контроллер может изменять высоту.\n\nЕсли выключено, контроллер не сможет изменять высоту."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Только приседание. Вставание выключено.\n\nЕсли эта опция включена, нажмите на кнопку приседания, чтобы быстро пригнуться или опустить камеру."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Только вставание. Приседание выключено.\n\nЕсли эта опция включена, нажмите на кнопку вставания, чтобы поднять камеру при необходимости. \nРекомендуется при игре сидя."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Если включена эта опция, вы можете опустить или поднять камеру нажатиями двух отдельных кнопок."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"В гибридном режиме для приседания и вставания используется одна кнопка.\n\nЧтобы присесть, быстро нажмите на назначенную кнопку.\n\nЧтобы встать, зажмите эту кнопку."
 
 "HLVR_Options_hlvr_single_controller_mode"				"Один контроллер"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"Все действия привязаны к одному контроллеру."
@@ -328,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"Режим одного контроллера включён"
 "HLVR_Lesson_Single_Controller_Off"	"Режим одного контроллера выключен"
+"HLVR_Lesson_Movement_PrimaryHand"	"Движение управляется рукой с оружием.\nМожно изменить в раскладке контроллера SteamVR."
+"HLVR_Lesson_Movement_OffHand"		"Движение управляется рукой без оружия.\nМожно изменить в раскладке контроллера SteamVR."
 "HLVR_Lesson_Teleport"							"Нажмите, чтобы двигаться"
 "HLVR_Lesson_Quick_Turn"						"Нажмите, чтобы быстро повернуться влево или вправо"
 "HLVR_Lesson_GrabTrigger"						"Зажмите, чтобы взять объект"

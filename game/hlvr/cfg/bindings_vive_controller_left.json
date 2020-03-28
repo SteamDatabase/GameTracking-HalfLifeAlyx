@@ -13,11 +13,21 @@
                "path" : "/user/hand/right/pose/raw"
             }
          ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/handskeletonleft",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/default/in/handskeletonright",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
          "sources" : [
             {
                "inputs" : {
                   "pull" : {
-                     "output" : "/actions/default/in/triggerpull"
+                     "output" : "/actions/default/in/handcurl"
                   }
                },
                "mode" : "trigger",
@@ -30,25 +40,25 @@
                   }
                },
                "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/handcurl"
+                  }
+               },
+               "mode" : "trigger",
                "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
+                  "pull" : {
+                     "output" : "/actions/default/in/triggerpull"
                   }
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
             }
          ]
       },
@@ -57,7 +67,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/dev/in/menuinteract"
+                     "output" : "/actions/dev/in/menudismiss"
                   }
                },
                "mode" : "button",
@@ -79,25 +89,25 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/dev/in/menudismiss"
-                  }
-               },
-               "mode" : "button",
                "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
-                  "long" : {
+                  "click" : {
                      "output" : "/actions/dev/in/togglemenu"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
             }
          ]
       },
@@ -106,64 +116,15 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/usegrip"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/usegrip"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
                      "output" : "/actions/interact/in/use"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
+               "parameters" : {
+                  "click_activate_threshold" : "0.85",
+                  "click_deactivate_threshold" : "0.85",
+                  "haptic_amplitude" : "0"
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/use"
-                  }
-               },
-               "mode" : "button",
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -173,48 +134,42 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/left/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/togglelasersight"
+                     "output" : "/actions/interact/in/use"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "parameters" : {
+                  "click_activate_threshold" : "0.85",
+                  "click_deactivate_threshold" : "0.85",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/healthpen"
+                     "output" : "/actions/interact/in/gglock"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/armgrenade"
-                  }
+               "parameters" : {
+                  "force_input" : "",
+                  "haptic_amplitude" : "0"
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
                      "output" : "/actions/interact/in/armxengrenade"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/healthpen"
                   }
                },
                "mode" : "button",
@@ -232,16 +187,77 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/armxengrenade"
+                     "output" : "/actions/interact/in/healthpen"
                   }
                },
                "mode" : "button",
                "path" : "/user/hand/left/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/squeezexengrenade"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/armxengrenade"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/armgrenade"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/healthpen"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/squeezexengrenade"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
             }
          ]
       },
       "/actions/move" : {
          "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/move/in/walk"
+                  },
+                  "position" : {
+                     "output" : "/actions/move/in/teleportturn"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "5",
+                  "maxzone_pct" : "85"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            },
             {
                "inputs" : {
                   "east" : {
@@ -259,31 +275,17 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "55",
-                  "overlap_pct" : "30",
+                  "overlap_pct" : "0",
                   "sticky" : "true",
-                  "sub_mode" : "touch"
+                  "sub_mode" : "click"
                },
-               "path" : "/user/hand/left/input/joystick"
+               "path" : "/user/hand/right/input/trackpad"
             },
             {
                "inputs" : {
-                  "click" : {
+                  "center" : {
                      "output" : "/actions/move/in/adjustheight"
                   },
-                  "position" : {
-                     "output" : "/actions/move/in/teleportturn"
-                  }
-               },
-               "mode" : "joystick",
-               "parameters" : {
-                  "deadzone_pct" : "5",
-                  "maxzone_pct" : "90"
-               },
-               "path" : "/user/hand/left/input/joystick"
-            },
-            {
-               "inputs" : {
                   "east" : {
                      "output" : "/actions/move/in/turnright"
                   },
@@ -299,25 +301,12 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "75",
+                  "deadzone_pct" : "50",
                   "overlap_pct" : "0",
                   "sticky" : "true",
-                  "sub_mode" : "touch"
+                  "sub_mode" : "click"
                },
-               "path" : "/user/hand/right/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/move/in/walk"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "force_input" : "position",
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/joystick"
+               "path" : "/user/hand/left/input/trackpad"
             },
             {
                "inputs" : {
@@ -327,20 +316,11 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "75",
+                  "deadzone_pct" : "50",
                   "overlap_pct" : "0",
                   "sticky" : "true",
-                  "sub_mode" : "touch"
+                  "sub_mode" : "click"
                },
-               "path" : "/user/hand/right/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/move/in/adjustheight"
-                  }
-               },
-               "mode" : "button",
                "path" : "/user/hand/left/input/trackpad"
             },
             {
@@ -349,11 +329,11 @@
                      "output" : "/actions/move/in/continuousturn"
                   }
                },
-               "mode" : "joystick",
+               "mode" : "trackpad",
                "parameters" : {
-                  "deadzone_pct" : "75"
+                  "deadzone_pct" : "60"
                },
-               "path" : "/user/hand/right/input/joystick"
+               "path" : "/user/hand/left/input/trackpad"
             }
          ]
       },
@@ -374,15 +354,6 @@
             },
             {
                "inputs" : {
-                  "position" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "joystick",
-               "path" : "/user/hand/left/input/thumbstick"
-            },
-            {
-               "inputs" : {
                   "scroll" : {
                      "output" : "/actions/scroll/in/scrolltouchpad"
                   }
@@ -393,55 +364,11 @@
                   "smooth_scroll_multiplier" : "70.5"
                },
                "path" : "/user/hand/right/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "position" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "joystick",
-               "path" : "/user/hand/right/input/thumbstick"
-            },
-            {
-               "inputs" : {
-                  "scroll" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "scroll",
-               "parameters" : {
-                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
-                  "discrete_scroll_joystick_ratefactor" : "4"
-               },
-               "path" : "/user/hand/left/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "scroll" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "scroll",
-               "parameters" : {
-                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
-                  "discrete_scroll_joystick_ratefactor" : "4"
-               },
-               "path" : "/user/hand/right/input/joystick"
             }
          ]
       },
       "/actions/weapon" : {
          "sources" : [
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/weapon/in/fire"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
             {
                "inputs" : {
                   "click" : {
@@ -454,11 +381,32 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/weapon/in/showinventory"
+                     "output" : "/actions/weapon/in/fire"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/trackpad"
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/weapon/in/releaseslide"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/weapon/in/reload"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
             },
             {
                "inputs" : {
@@ -480,12 +428,17 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/weapon/in/reload"
+                  "north" : {
+                     "output" : "/actions/weapon/in/showinventory"
                   }
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "50",
+                  "overlap_pct" : "0",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
             },
             {
                "inputs" : {
@@ -495,23 +448,14 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/weapon/in/releaseslide"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
             }
          ]
       }
    },
    "category" : "steamvr_input",
-   "controller_type" : "holographic_controller",
-   "description" : "Default two handed bindings with movement on the off hand",
-   "name" : "Dual Controllers (Movement on Off Hand)",
+   "controller_type" : "vive_controller",
+   "description" : "Default two handed bindings with movement on the weapon hand",
+   "name" : "Dual Controllers (Movement on Weapon Hand)",
    "options" : {},
    "simulated_actions" : []
 }

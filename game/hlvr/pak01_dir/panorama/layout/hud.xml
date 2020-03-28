@@ -2,12 +2,13 @@
 	<styles>
 		<include src="s2r://panorama/styles/hud.vcss_c" />
 		<include src="s2r://panorama/styles/hud_debug.vcss_c" />
+		<include src="s2r://panorama/styles/hud_subtitles.vcss_c" />
     <include src="s2r://panorama/styles/language_shared.vcss_c" />
 	</styles>
 	
 <Panel class="WindowRoot " hittest="false">
 
-<!-- SPECTATOR HUD -->
+<!-- SPECTATOR HUD (hud.css) -->
 	
     <Panel id="SpectatorHUD" class="SpectatorHUD RightHanded" >
       <Panel id="HealthAndResin" class="HUD_Bottom">
@@ -51,18 +52,31 @@
 		<Panel id="WristItemLeft" class="WristItem" />
       </Panel>
 
+
+
       <Panel id="WristPouchRight" class="WristPouch Right">
  		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_inverted_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircleInverted" id="WristPouchCircleInvertedRight" />
 		<Image src="s2r://panorama/images/hud/hud_wristpouch_circle_png.vtex" scaling="stretch-to-fit-preserve-aspect" class="WristPouchCircle" id="WristPouchCircleRight" />
 		<Panel id="WristItemRight" class="WristItem" />
       </Panel>
     </Panel>
-
-
 	
 <!-- end SPECTATOR HUD -->
 
-<!-- DEBUG INFO HUD -->
+
+<!-- SPECTATOR SUBTITLES (hud_spectator.css) -->
+
+<Panel id="SpectatorSubtitles" class="SpectatorSubtitles" >
+
+      <Panel id="Subtitles" class="SubtitleContainer">
+      </Panel>
+
+</Panel>
+
+<!-- end SPECTATOR SUBTITLES -->
+
+
+<!-- DEBUG INFO HUD (hud_debug.css) -->
     <Panel id="DebugHUD" class="Debug">
       <Label class="CurrentTime" text="{t:l:T:current_time}"/>
       <Label class="CurrentMap" text="{s:current_map}"/>

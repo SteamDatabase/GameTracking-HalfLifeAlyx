@@ -4359,7 +4359,7 @@
 		"can_timeout_while_inactive"	"0"
   
 		"vr_panel_type"			"4"				// 0 (default) not VR, 1 dominant, 2 off hand, 3 entity, 4 HMD
-		"vr_offset_z"			"3"
+		"vr_offset_z"			"0"
 		"panorama_layoutfile"	"file://{resources}/layout/world_hint.xml"
 		
 		"open"
@@ -4383,7 +4383,7 @@
 		"can_timeout_while_inactive"	"0"
   
 		"vr_panel_type"			"4"				// 0 (default) not VR, 1 dominant, 2 off hand, 3 entity, 4 HMD
-		"vr_offset_z"			"3"
+		"vr_offset_z"			"0"
 		"panorama_layoutfile"	"file://{resources}/layout/world_hint.xml"
 		
 		"open"
@@ -4409,7 +4409,7 @@
 		"can_timeout_while_inactive"	"0"
   
 		"vr_panel_type"			"4"				// 0 (default) not VR, 1 dominant, 2 off hand, 3 entity, 4 HMD
-		"vr_offset_z"			"3"
+		"vr_offset_z"			"0"
 		"panorama_layoutfile"	"file://{resources}/layout/world_hint.xml"
 		
 		"open"
@@ -4422,6 +4422,80 @@
 		}
 	}
 	
+	//--------------------------------------------------------
+	"Lesson - Movement on Primary Hand"
+	{
+		"priority"			"99"
+		"instance_type"		"1"
+	
+		"caption"			"#HLVR_Lesson_Movement_PrimaryHand"
+
+		"no_icon_target"	"1"
+		"timeout"					"5.0"
+		"can_timeout_while_inactive"	"0"
+		"delayed_show"		"1"
+
+		"vr_panel_type"			"4"				// 0 (default) not VR, 1 dominant, 2 off hand, 3 entity, 4 HMD
+		"vr_offset_z"			"0"
+		"vr_offset_x"			"5"
+
+		"panorama_layoutfile"	"file://{resources}/layout/world_hint.xml"
+		
+		"open"
+		{
+			"movement_hand_changed"
+			{
+				"integer1 set"			"int movement_is_primary_hand"
+				"integer1 is"			"bool 1"
+			}
+		}
+		"close"
+		{
+			"movement_hand_changed"
+			{
+				"integer1 set"			"int movement_is_primary_hand"
+				"integer1 is"			"bool 0"
+			}
+		}
+	}
+	
+		//--------------------------------------------------------
+	"Lesson - Movement on Off Hand"
+	{
+		"priority"			"99"
+		"instance_type"		"1"
+	
+		"caption"			"#HLVR_Lesson_Movement_OffHand"
+
+		"no_icon_target"	"1"
+		"timeout"					"5.0"
+		"can_timeout_while_inactive"	"0"
+		"delayed_show"		"1"
+  
+		"vr_panel_type"			"4"				// 0 (default) not VR, 1 dominant, 2 off hand, 3 entity, 4 HMD
+		"vr_offset_z"			"0"
+		"vr_offset_x"			"5"
+
+		"panorama_layoutfile"	"file://{resources}/layout/world_hint.xml"
+		
+		"open"
+		{
+			"movement_hand_changed"
+			{
+				"integer1 set"			"int movement_is_primary_hand"
+				"integer1 is"			"bool 0"
+			}
+		}
+		"close"
+		{
+			"movement_hand_changed"
+			{
+				"integer1 set"			"int movement_is_primary_hand"
+				"integer1 is"			"bool 1"
+			}
+		}
+	}
+
 	//--------------------------------------------------------
 	"Lesson - Teach Backpack Constraints"
 	{

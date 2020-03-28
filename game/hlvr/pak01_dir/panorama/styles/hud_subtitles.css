@@ -1,0 +1,70 @@
+
+@define fadeDuration: 0.15s;
+
+
+.SpectatorSubtitles {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+	ui-scale: 100%;
+}
+
+
+
+
+/* Subtitle Styles */
+.SubtitleContainer
+{
+	width: 65%;
+	height: 200px;
+	flow-children: down;
+	horizontal-align: center;
+    vertical-align: bottom;
+    opacity-mask: none;
+  	/* background-color: palevioletred; */
+}
+
+.TextSubtitle
+{
+	text-align: center;
+	text-shadow: 1px 1px 3px 2.0 #222222;
+	color: rgb(245, 245, 245);
+	horizontal-align: center;
+	opacity: 1.0;
+	opacity-mask: none;
+	
+	transition-property: opacity, position;
+	transition-duration: fadeDuration;
+	transition-delay: 0.0s;
+	transition-timing-function: ease-in-out;
+
+	font-family: Arial;
+   	font-size: 32px;
+}
+
+.TextSubtitle.FadeOut
+{
+	opacity: 0.0;
+}
+
+.TextSubtitle b
+{
+	font-weight: bold;
+}
+
+.TextSubtitle i
+{
+	font-style: italic;
+}
+
+/* Debug */
+.TextSubtitle.Purple
+{
+	background-color: mediumpurple;
+}
+
+/* Debug */
+.TextSubtitle.Green
+{
+	background-color: darkseagreen;
+}

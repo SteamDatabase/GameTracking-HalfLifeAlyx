@@ -344,7 +344,6 @@
 	worldname
 	wzHc
 	your_info
-	z$lR
      
       
          
@@ -643,7 +642,7 @@
  C_PhysPropClientside::Spawn: SetupPhysicsAsModel() failed for %s.
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;=!@W
+ D;5i
  E;wX
  E;}X
  Failed to pack %s
@@ -1050,6 +1049,7 @@
 #HLVR_MainMenu_Attention_Graphics_Reset
 #HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile
 #HLVR_MainMenu_Attention_Low_GPU_Memory
+#HLVR_MainMenu_Attention_Low_System_Memory
 #HLVR_MainMenu_Attention_MinSpec_CPU
 #HLVR_MainMenu_Attention_MinSpec_GPU
 #HLVR_MainMenu_Attention_MinSpec_RAM
@@ -1086,6 +1086,7 @@
 #HLVR_Weapon_Name_Pistol
 #HLVR_Weapon_Name_RapidFire
 #HLVR_Weapon_Name_Shotgun
+#HLVR_display_bindings_confirm
 #HLVR_single_controller_prompt_activate
 #HLVR_single_controller_prompt_deactivate
 #HL_Name_Change
@@ -1772,11 +1773,11 @@ $z(u&
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%0.2f): %s
-(%TKR
-(%Uv<
+(%4NR
 (%d %d %d %d)
 (%d) Name: %s (%s)
 (%d/%d)%s %s
+(%dER
 (%g %g %g %g)
 (%g %g %g)
 (%g %g)
@@ -1793,7 +1794,6 @@ $z(u&
 (.CPlayer_SetCommunityPreferences_Request
 (.CPlayer_SetPerFriendPreferences_Request
 (0x%08X)'??'
-(5hk-
 (8HXhx
 (9Q@u
 (;^,|
@@ -1804,7 +1804,7 @@ $z(u&
 (;{ |
 (;{H|
 (;~ |
-(=<{o
+(=<so
 (?DispatchVideoPlayerEvent
 (?R or (?[+-]digits must be followed by )
 (@8*t
@@ -2463,6 +2463,7 @@ $z(u&
 )|$@M
 )|$@f
 )|$@t
+)|$@t;H
 )|$PA
 )|$PD
 )|$PE
@@ -2589,7 +2590,7 @@ $z(u&
 +camyawright
 +duck
 +f)>0'
-+fD9-
++fD9-g
 +forward
 +grenade1
 +grenade2
@@ -2872,7 +2873,7 @@ $z(u&
 .	zEuC
 .  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "
 . This will make the proto fail to compile for some languages, such as C#.
-.%0VN
+.%`JN
 .(Optional) Set of tags for the published file.
 ...<truncated>...
 ..CPlayer_GetNewSteamAnnouncementState_Response"_
@@ -2880,10 +2881,11 @@ $z(u&
 .00cfg
 .3333
 .3ugH
-.5	0z
-.5@dH
+.5	(z
+.5=RH
 .<2uL
-.=@az
+.=>wH
+.=@Yz
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -6374,10 +6376,9 @@ $z(u&
 .{0u;
 .|70t"
 .|;4u
-/%O<r
+/%O4r
+/%U}m
 /*.sav
-/-VJi
-/-dPi
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
 // Perfect circular or elliptical panel (circular if box was square)
@@ -6387,12 +6388,13 @@ $z(u&
 /0r0H
 /2GG>!B
 /43sGLc'D;g
-/5PXN
-/5Q<V
-/5W>"
-/5tFs
-/5u%A
-/5{$e
+/5!1"
+/5)_N
+/54HN
+/5A^g
+/5t>s
+/5w0"
+/5~Vg
 /9s2H
 /=$!6
 />58d%
@@ -6600,7 +6602,8 @@ $z(u&
 0: Off, 1: Toggle Crouch, 2: Toggle Stand, 3: Short Press Toggles Crouch and Long Press Toggles Stand
 0: Oriented to the VR Hand, 1: Oriented to the HMD, 2: Combo of HMD, Hand and world orientation
 0: custom accelaration disabled
-0;=4E
+0;=RO
+0;=l>
 0;np|
 0;|$X|
 0;~(|
@@ -6858,7 +6861,7 @@ $z(u&
 20.CUserMsg_ParticleManager.UpdateParticleFallback
 200 200 200 196
 200000
-200324232908Z0#
+200328025206Z0#
 2048.0f
 20971520
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -6992,7 +6995,6 @@ $z(u&
 500.0f
 560.0
 5?Missing file '%s'
-5@85x5
 5@8|$"t.9|
 5Retrieves information about a set of published files.
 5YHe/
@@ -7008,6 +7010,7 @@ $z(u&
 6GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT
 6Returns the URL of the proper cloud server for a user.
 6True if the operation was successful, false otherwise.
+6fkdb
 700PP
 700WP
 7?t$7?
@@ -7110,7 +7113,6 @@ $z(u&
 8du0H
 8fF9|
 8ke?;
-8nn?&
 8w>Hc
 9	t	H
 9	tGH
@@ -7156,7 +7158,7 @@ $z(u&
 9A$t%H
 9A$t4H
 9A$t7H
-9A$t8H9-^
+9A$t8H9-N
 9A$t<H
 9A$t>H
 9A$tIH
@@ -7241,9 +7243,9 @@ $z(u&
 9K$tSH
 9L$8t
 9L$HH
-9M,t;H95
+9M,t;H95z
 9M,t~H
-9M4t-H95
+9M4t-H95=
 9M4t_
 9O$uu;
 9P ~(H
@@ -7302,7 +7304,7 @@ $z(u&
 9^,~#3
 9^0~.H
 9^0~2H
-9^@~Af
+9^@~N
 9^H~"H
 9^h~63
 9^t~x3
@@ -7328,6 +7330,7 @@ $z(u&
 9gCN>
 9hXt3
 9hXt[H
+9hXt`
 9hXt{E
 9i ~I
 9i0~<H
@@ -7354,11 +7357,11 @@ $z(u&
 9pXt7I
 9pXt;D
 9pXt=H
-9pXtF@855
+9pXtF@85
 9pXtID
 9pXtOD
 9q ~{H
-9q8~fH
+9q@~fH
 9rp~&
 9s0~<L
 9sHva
@@ -7507,6 +7510,7 @@ $z(u&
 ;H9>&X
 ;HX|0H
 ;HX~BA
+;I7/z
 ;K0~4
 ;Kl}5
 ;L$0u
@@ -8113,11 +8117,13 @@ $z(u&
 @81u/H
 @83t)
 @84:u
-@853&
-@85;5]
-@85h)
-@85ic
-@85|f
+@85$,
+@85)/
+@85*|
+@85H\
+@85SA
+@85o']
+@85szX
 @87tGH
 @88t*M
 @88t+M
@@ -8126,16 +8132,15 @@ $z(u&
 @89pXu0H
 @89t8@
 @8:t#H
-@8=./
-@8=SK
-@8=YH
-@8=a<w
-@8=vT
-@8=x0
+@8=1}p
+@8=6K
+@8=>#
+@8=Sk
+@8=a]p
 @8D9pXu-H
-@8i)tLH
+@8i*tLH
 @8iht
-@8k)u
+@8k*u
 @8k0t
 @8k0u
 @8k1u
@@ -8143,6 +8148,7 @@ $z(u&
 @8l$X
 @8o0u
 @8o1u
+@8o8u
 @8oLH
 @8oLt
 @8p0u
@@ -8214,7 +8220,6 @@ $z(u&
 @8}ku	H
 @8~	t
 @8~@t
-@:=Ryf
 @;>}G
 @;|$H|
 @<9C<t
@@ -8328,7 +8333,6 @@ $z(u&
 @SUAW
 @SUAWH
 @SUVATAUAVH
-@SUVATAVAWH
 @SUVATAVH
 @SUVATH
 @SUVAUAVAWH
@@ -11385,17 +11389,24 @@ C 9G uN
 C 9G }
 C 9~ ~7H
 C @8-
+C @8-"
+C @8-0
+C @8-7
+C @8-K:
+C @8-O
+C @8-PH
 C @85
-C @85$:
-C @85%
-C @858f
-C @85E
-C @85L
-C @85m5]
-C @85~
+C @85'
+C @85,
+C @851
+C @855
+C @85=']
+C @85[/
+C @85\|
+C @85^
+C @85f[
 C A9F }
 C D85
-C D85W
 C H+C
 C HcG
 C HcH
@@ -14256,6 +14267,7 @@ CreateTimerQueueTimer
 CreateUmsCompletionList
 CreateUmsThreadContext
 CreateVideoPlayer
+Created physics for %s
 Creates a dlight in front of the player
 Creates a new particle effect
 Creates a new particle effect that only plays for the specified player
@@ -14530,7 +14542,7 @@ D$8vTH
 D$<9T$0wE9T$4w?9T$8w9;
 D$<A+
 D$<f;
-D$@95RO
+D$@95
 D$@9qX
 D$@@B
 D$@A;
@@ -14814,6 +14826,7 @@ D8#t&fA
 D8#uGD8#
 D8$8u
 D8$>u
+D8%;v
 D8&t!
 D8&t.H
 D8&t4H
@@ -14824,25 +14837,20 @@ D8(t[H
 D8*u A
 D8,2u
 D8,8u
-D8- d
-D8-A:
-D8-C-
+D8-24W
+D8-A.
+D8-c3W
 D8.tnH
 D80t{H
 D82u&H
 D83t	H
 D84;u
-D85#cr
-D85Hhr
-D85k*U
-D85kd
-D85s*U
+D85Kc
+D85STr
+D85xYr
 D88tT3
 D89uWI
 D8<8u
-D8=dpr
-D8=f8
-D8=q"
 D8>tQL
 D8C0u
 D8G$t
@@ -14939,14 +14947,14 @@ D9#tHH
 D9&t\I
 D9+~?M
 D9,7t
-D9-p"W
+D9-h4W
+D9-k|
 D91~HH
 D93~"I
-D95Nd
+D95.c
 D9:~FH
-D9=?#W
-D9=?H
-D9=}F
+D9=C[
+D9=OH
 D9@ }
 D9@p}
 D9A }
@@ -15032,7 +15040,6 @@ D9xXt'M
 D9xXt1H
 D9xXt3
 D9xXt^H
-D9xXt`
 D9xXu
 D9xXu!H
 D9xXu.H
@@ -15049,7 +15056,7 @@ D9|$
 D9|$ ~?M
 D9|$ ~KM
 D9}dt
-D:5byf
+D;5Hz
 D;@XH
 D;@X|	H
 D;A |
@@ -15693,7 +15700,7 @@ E;~hL
 E<LcO
 E>nEA
 E@)R?
-E@85}
+E@85]
 E@A9D$h
 E@A9v
 E@D	<
@@ -16344,6 +16351,8 @@ Failed to read %s
 Failed to register webui!
 Failed to run entity framework script
 Failed to save Personal settings config to '%s'
+Failed to spawn physics group:%s, lump:%s
+Failed to spawn physics world:%s <%s>
 Failed to spawn script entity %s of type %s: script entity instance is null
 Failed to tokenize command "%s"!
 Failed to update on remove script entity %s of type %s: script entity instance is null
@@ -17289,6 +17298,7 @@ H91u"
 H92u&
 H92u'
 H92u,
+H95,w{
 H97t<
 H98t;H
 H98t?
@@ -17298,6 +17308,7 @@ H99u{
 H9:u`H
 H9;uAA
 H9;v#H
+H9=u^S
 H9A u
 H9A(s
 H9A(u	H9A0
@@ -17436,10 +17447,9 @@ H9~(u
 H:Ly?
 H:Q	t
 H;0u7
-H;5Hk
-H;5xk
+H;5(a
+H;5JP
 H;9tEH
-H;=-[
 H;@0u
 H;@Xu
 H;C u
@@ -17792,7 +17802,7 @@ HcA`H
 HcAdD
 HcAdI
 HcAxE3
-HcB8D
+HcB@D
 HcC 3
 HcC H
 HcC$H
@@ -18365,7 +18375,7 @@ IcV,L
 IcW0H
 IcXpM
 Ic]PA
-Ic^8A;^Hu	I
+Ic^@A;^Pu	I
 IcnxA;
 Icon Target handle went invalid before the lesson started!
 Icon Target is using effect NODRAW and allow_nodraw_target is false!
@@ -19150,12 +19160,11 @@ L38D9pXt4H
 L9	u)H
 L9!u	
 L9!uWH
-L9%+I
 L9&u'H
 L9&us
 L9'uYK
 L9*u&
-L9-)=
+L9-VU
 L90t"
 L92t,H
 L93t)H
@@ -19263,7 +19272,6 @@ L9~@u
 L; u8
 L; u9H
 L;!u8
-L;5uG
 L;9u;
 L;@ s
 L;D$hA
@@ -20596,7 +20604,6 @@ P8H=vpcft
 P8Y^tF
 P;{@|
 P>q_Y~
-P>~f`
 P@H;PHs
 P@HcG
 PAD_DOWN_HAND0
@@ -22899,6 +22906,7 @@ SubmitThreadpoolWork
 SubscribedType
 Subtitle offset distance (forward, in front of player)
 Subtitle vertical offset distance (positive is up)
+Subtitles
 Subtitles and Captions
 Subtract
 Success
@@ -23118,13 +23126,14 @@ T$xH;
 T$xHc
 T$xff
 T$yE3
-T%$9r
-T%:K%
-T%JL%
+T%$1r
+T%J=%
+T%Z>%
 T7 ;T7$t
 T9Tu*H
 T9du*H
 T:V@]
+T=+le
 TChinese
 TD_OFFSET_NORMAL
 TD_OFFSET_PACKED
@@ -23322,6 +23331,7 @@ TextMessageMgr_001
 TextNewLine
 TextScan
 TextScane
+TextSubtitle
 TextTooltip
 TextYPos
 Texture
@@ -23896,6 +23906,7 @@ UpgradeName
 UploadEnvMapConstants
 UploadLightProbeVolumeConstants
 UploadUserApplicationLog
+Ur,=y[
 Usable
 Usage:
 Usage:  %s < entindex [server|client] varname | reset >
@@ -24262,22 +24273,19 @@ VoteData
 VrForward
 Vulkan
 W%8O&t
-W%t)N
-W%~pN
 W(|9L
 W(|=L
-W-}ks
+W-}cs
 W3|Uxa
-W5Q6r
-W5gUN
-W5{#K
+W5	JN
+W5AXi
+W5Q.r
+W5q{T
 W8HcH
 W8KcD
-W=EqN
-W=K;r
-W=_-U
-W=kmN
-W=tlN
+W=2fN
+W=K3r
+W=ueN
 W=vmdlkeys0
 W?,|C
 W@|:L
@@ -24477,6 +24485,7 @@ Writing cubemaps to %s
 Wu4E3
 X A9X
 X E9z
+X UVATAUAWH
 X UVATAVAWH
 X UVWATAUAVAWH
 X UVWAUAVH
@@ -24490,23 +24499,24 @@ X!s"H
 X!t5~
 X(D9y(
 X(Optional) If true, only return the published file ids of files that satisfy this query.
+X-|~.
 X360_DST16
 X360_DST24
 X360_DST24F
-X5	dt
-X54Ll
-X55ft
-X55v}
-X5<Mz
-X5A!j
-X5B`}
-X5Cct
-X5Xn:
-X5a&N
-X5h^q
-X5mnu
-X5pmf
-X5{k~
+X5	\t
+X5"Ve
+X5,O:
+X54Dl
+X55^t
+X55n}
+X5<Ez
+X5BX}
+X5C[t
+X5KSH
+X5eKe
+X5hVq
+X5mfu
+X5{c~
 X=2v?
 XA;w@
 XA\^H
@@ -24564,48 +24574,35 @@ X|$8E
 X|$Hv
 X|$xA
 Y$D;R
-Y%.Tz
-Y%FKN
-Y%P^M
-Y%SlN
-Y%X|N
-Y%ZDw
-Y%b~M
-Y%gON
-Y%g\M
+Y%.Lz
+Y%/\N
+Y%Z<w
+Y%v?N
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-%gM
-Y-G-'
-Y-J)R
-Y-R:M
-Y-uhN
+Y-J R
+Y-U[M
 Y0HcR
 Y0t>H
-Y5%rv
-Y5(6"
-Y54B:
-Y570"
-Y5<%e
-Y5@|@
-Y5CdU
-Y5MGx
-Y5SMM
-Y5UVe
-Y5V$"
-Y5Vtz
-Y5]L:
-Y5`[v
-Y5b;"
-Y5gu>
-Y5m	l
-Y5nZq
-Y5pcN
-Y5x*"
-Y5xQz
-Y5~@A
-Y=*ie
-Y=8}T
-Y=;gN
+Y5%#U
+Y5%jv
+Y5H("
+Y5Lee
+Y5M?x
+Y5Pz+
+Y5Qp>
+Y5Vlz
+Y5W""
+Y5`Sv
+Y5dyT
+Y5nRq
+Y5xIz
+Y5z~q
+Y="kN
+Y=*`N
+Y=D;k
+Y=Nce
+Y=cLe
+Y=k[N
 Y>kX>M
 Y@TD9
 YD$$A
@@ -24852,7 +24849,6 @@ Z~Xff
 \$@L;
 \$@Lc
 \$@f;
-\$@tDH
 \$@tcA
 \$@~?H
 \$AE3
@@ -24934,9 +24930,9 @@ Z~Xff
 \$xE3
 \$xHc
 \$xff
-\%FPz
-\%HNN
-\=[7p
+\%FHz
+\%xBN
+\-	(p
 \C not allowed in lookbehind assertion
 \D$(H
 \D$8H
@@ -25037,8 +25033,8 @@ _ Hc+
 _ Hc3
 _ t(H
 _ t4H
-_-9ki
-_5[|v
+_5QQe
+_5[tv
 _BaseEntity
 _HfA;
 _PrecacheGlowMaterial_client
@@ -25170,7 +25166,6 @@ _xtOD
 `A__]
 `A__^
 `A__^][
-`D:5J
 `E;t$
 `Hc>;~
 `HcY 3
@@ -25560,7 +25555,7 @@ bAllow
 bBlock
 bClampEyeAngles
 bClip3DSkyBoxNearToWorldFar
-bD8%H
+bD8%x
 bDampenEyePosition
 bDh%)
 bEnableIK_Index
@@ -26174,6 +26169,7 @@ cc_sentencecaptionnorepeat
 cc_showblocks
 cc_showmissing
 cc_slave
+cc_spectator_only
 cc_stability_threshold
 cc_subtitles
 cc_usingcombinedfile
@@ -27205,6 +27201,7 @@ disconnect
 displacements
 display
 displayWindow
+display_bindings
 display_limit
 displayprecision
 displaytext
@@ -27571,6 +27568,10 @@ f4v!A
 f93t,
 f94Au
 f94Gu
+f95)rk
+f959pk
+f95mpk
+f95qrk
 f9<Au
 f9<Xu
 f9A tpH
@@ -27655,15 +27656,17 @@ fD9 u
 fD9$Au
 fD9$Hu
 fD9$xu
-fD9%t
+fD9%$
 fD9(u
 fD9,Cu
 fD9,Ku
 fD9,Pu
-fD9-&
-fD9-N
-fD9-V
-fD9-i
+fD9-	
+fD9- 
+fD9--
+fD9-W
+fD9-`
+fD9-e
 fD90t
 fD94Fu
 fD96u
@@ -28565,6 +28568,7 @@ hlvr_crouch_toggle_time
 hlvr_dead_postprocess_fadein
 hlvr_dead_respawn_min_time
 hlvr_debug_hud
+hlvr_did_warn_low_virtual_mem
 hlvr_dry_erase_debug
 hlvr_dry_erase_eraser_grid_size
 hlvr_dry_erase_eraser_height
@@ -28875,7 +28879,6 @@ idle_hacking
 ids_only
 if camera moves this much from last anchor update anchor
 if camera orientation changes this much update orientation
-if95b
 if_split_screen_active
 if_split_screen_horizontal
 if_split_screen_left
@@ -29589,6 +29592,7 @@ l$@L9!u"A
 l$@eH
 l$@fD
 l$@t	H
+l$@tDH
 l$@tc
 l$@tvL
 l$@u2H
@@ -29605,7 +29609,6 @@ l$HHc
 l$HHci
 l$HfA
 l$Hfff
-l$Ht4H
 l$Ht@H
 l$HuG8_)uBH
 l$HxTH
@@ -29658,7 +29661,6 @@ l$`L;mp
 l$`M;
 l$`fA
 l$`fD
-l$`t;H
 l$dE3
 l$hD9xXt1
 l$hE3
@@ -34541,9 +34543,9 @@ numperpage
 numsegments
 o L9s t	H
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
-o%d?=
 o*Ral
 o0H9o
+oC_!dI
 oD$ H
 oD$ f
 oG8-x
@@ -35567,6 +35569,7 @@ q(9YD~tE3
 q0@80u
 q;4,F
 q@Hcs ;s0u
+qH.\L
 qHtGH
 qS>g?h3
 q`H9q
@@ -37033,7 +37036,8 @@ t	8XH
 t	9P A
 t	;F@~
 t	@8+
-t	@85"x
+t	@80
+t	@85
 t	@88
 t	@8>t
 t	D8+t
@@ -37119,7 +37123,7 @@ t$ I;
 t$ Ic
 t$ L+
 t$ L;
-t$ Lc5
+t$ Lc5j
 t$ Mc
 t$ UATAUAVAWH
 t$ UAVAWH
@@ -37484,7 +37488,7 @@ t.@8:t)
 t.@8>t)
 t.E9H
 t.H90t)H
-t.L9%
+t.L9%@
 t/@8}
 t/A8]
 t/D8+t*
@@ -37544,8 +37548,8 @@ t5fff
 t6<&u%
 t6<,uEH
 t6D8egt0H
-t6H959
-t6H95_
+t6H95)
+t6H95O
 t6H98t1H
 t6HcG0
 t6HcO8
@@ -37564,7 +37568,7 @@ t7HcG(
 t7HcW0L
 t7L93t)H
 t7fff
-t8D8%@*
+t8D8%@
 t8D9A
 t8Hc=
 t8HcA
@@ -37695,7 +37699,7 @@ tDD9V
 tDD9{$t
 tDHc^
 tDfff
-tED8%H|
+tED8%
 tEHcT(
 tE~(H
 tFH9\$0u?L
@@ -37719,16 +37723,16 @@ tKD9K
 tKHcE
 tLD9I
 tLL9vxu
-tM@8-i
+tM@8-
 tM@8~
-tND8%C
+tND8%
 tND9C
 tNHcE
 tNIc/A
 tNfff
 tOA9H
 tOD9C
-tOH9=
+tOH9=c
 tOHc;;{
 tOfff
 tP@8|$!u4@8|$"t-
@@ -37747,7 +37751,7 @@ tSD9A
 tSH;X
 tSK;D
 tSKcD0
-tT@8-2
+tT@8-r
 tT@8w0
 tTHcA
 tUD88t6H
@@ -37757,7 +37761,7 @@ tUIcu
 tVD9B
 tVHc3
 tVHc;;{
-tW@8=@
+tW@8=
 tWD9B
 tWHcD$xH
 tWIc@
@@ -37775,6 +37779,7 @@ tYD88tTH
 tYD9I
 tYfff
 tZD9=
+tZD9=;
 tZIcI(E3
 t[Lc3E
 t\@83tWH
@@ -38184,7 +38189,6 @@ t}E9&txL
 u	9w$
 u	@8=
 u	D8%
-u	D8%H
 u	H91
 u	L99
 u D9o
@@ -38209,7 +38213,7 @@ u&@:=
 u'HcG
 u'L;v
 u(;n`u
-u(@:=B
+u(@:=
 u(Hc} ;}0u
 u(Jc|6
 u)!t$(H
@@ -38245,7 +38249,7 @@ u;A8D$
 u<Hc_
 u<fD;
 u=Hc{p;
-u=L95(
+u=L95
 u=L;k
 u=fD;
 u>Hcn03
@@ -38253,20 +38257,19 @@ u?9F$u
 u@@8sTuN
 u@IcH
 uAHcs ;s0u	H
-uAfD9
 uCD8n
 uDfD;
 uE<"tA< ~=B
 uEH9:t@
 uEfD;
-uF@85b~
+uF@85"t
 uFM9/tA
 uFfD;
 uG8G`
 uGHcA ;B u>
 uGfD;
 uGrants an implicit OAuth token (grant type 'token') for the specified client ID on behalf of a user without prompting
-uH8CXuCf95
+uH8CXuCf95Qqk
 uIHc7;w
 uIHc;;{
 uJfff
@@ -38447,6 +38450,7 @@ uxHcOP
 uyHcC
 uz9GxV
 uzKs@>
+u~;=}H^
 v A9~ w
 v axis
 v0t08
@@ -38703,6 +38707,7 @@ vr_chaperone_max_z
 vr_chaperone_min_x
 vr_chaperone_min_y
 vr_chaperone_min_z
+vr_character_level_placeholder
 vr_continuous_aircontrol_scale
 vr_continuous_approach_dampen_speed
 vr_continuous_approach_up_speed
@@ -39299,6 +39304,7 @@ vr_rapidfire_upgrade_cable_highlight_time
 vr_reflex_sight_dampening
 vr_reflex_sight_dampening_range
 vr_screenshake_scale
+vr_shadow_level_placeholder
 vr_shake_gesture_speed
 vr_shotgun_%dshell_idle_l1
 vr_shotgun_bottom_grip_disengage_distance
@@ -39568,7 +39574,6 @@ weaponswitch_test_rotate
 webapi_param
 webroot
 weight
-wfcm8,
 wheat
 when set request key focus when a world panel is enabled
 where x,y,z are direction of screen punch
@@ -39644,7 +39649,6 @@ x!HcI
 x!HcK
 x";C }
 x"A;x
-x$;5F\
 x$HcI
 x$HcK
 x&E;B
@@ -40123,6 +40127,7 @@ zoom_sensitivity_ratio
 |)\A;
 |,D9l
 |=D;-
+|=D;-Cc
 |?5^:+
 |Ifff
 |b=})>

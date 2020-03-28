@@ -3,6 +3,16 @@
    "alias_info" : {},
    "bindings" : {
       "/actions/default" : {
+         "haptics" : [
+            {
+               "output" : "/actions/default/in/hapticvibration",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/in/hapticvibration",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
          "poses" : [
             {
                "output" : "/actions/default/in/handposeleft",
@@ -13,7 +23,62 @@
                "path" : "/user/hand/right/pose/raw"
             }
          ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/handskeletonleft",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/default/in/handskeletonright",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
          "sources" : [
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/handcurl"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlindex"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlmiddle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/middle"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlring"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/ring"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlpinky"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/pinky"
+            },
             {
                "inputs" : {
                   "pull" : {
@@ -26,29 +91,56 @@
             {
                "inputs" : {
                   "pull" : {
+                     "output" : "/actions/default/in/handcurl"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlindex"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlmiddle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/middle"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlring"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/ring"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fingercurlpinky"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/pinky"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
                      "output" : "/actions/default/in/triggerpull"
                   }
                },
                "mode" : "trigger",
                "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
             }
          ]
       },
@@ -57,47 +149,47 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/dev/in/menuinteract"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/dev/in/menuinteract"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/dev/in/menudismiss"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/dev/in/menudismiss"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "long" : {
                      "output" : "/actions/dev/in/togglemenu"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
             }
          ]
       },
@@ -106,38 +198,20 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/usegrip"
+                     "output" : "/actions/interact/in/healthpen"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
+               "path" : "/user/hand/left/input/a"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/usegrip"
+                     "output" : "/actions/interact/in/healthpen"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
+               "path" : "/user/hand/right/input/a"
             },
             {
                "inputs" : {
@@ -146,24 +220,11 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/gglock"
-                  }
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.8",
+                  "haptic_amplitude" : "0"
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/use"
-                  }
-               },
-               "mode" : "button",
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -173,25 +234,82 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.75",
+                  "haptic_amplitude" : "0"
+               },
                "path" : "/user/hand/left/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/togglelasersight"
+                     "output" : "/actions/interact/in/use"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.8",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/interact/in/healthpen"
+                     "output" : "/actions/interact/in/gglock"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.75",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/interact/in/usegrip"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/interact/in/usegrip"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/interact/in/squeezexengrenade"
+                  }
+               },
+               "mode" : "force_sensor",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/interact/in/squeezexengrenade"
+                  }
+               },
+               "mode" : "force_sensor",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/grip"
             },
             {
                "inputs" : {
@@ -200,25 +318,7 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/armxengrenade"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/interact/in/healthpen"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
+               "path" : "/user/hand/left/input/a"
             },
             {
                "inputs" : {
@@ -227,7 +327,7 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
+               "path" : "/user/hand/right/input/a"
             },
             {
                "inputs" : {
@@ -236,7 +336,31 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.8",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/interact/in/armxengrenade"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.9",
+                  "click_deactivate_threshold" : "0.9",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/left/input/thumbstick"
             }
          ]
       },
@@ -264,12 +388,12 @@
                   "sticky" : "true",
                   "sub_mode" : "touch"
                },
-               "path" : "/user/hand/left/input/joystick"
+               "path" : "/user/hand/right/input/thumbstick"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/move/in/adjustheight"
+                     "output" : "/actions/move/in/movecrouchtoggle"
                   },
                   "position" : {
                      "output" : "/actions/move/in/teleportturn"
@@ -278,9 +402,39 @@
                "mode" : "joystick",
                "parameters" : {
                   "deadzone_pct" : "5",
-                  "maxzone_pct" : "90"
+                  "maxzone_pct" : "90",
+                  "sticky_click" : "true"
                },
-               "path" : "/user/hand/left/input/joystick"
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/move/in/walk"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "force_input" : "position",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/move/in/movestandtoggle"
+                  },
+                  "position" : {
+                     "output" : "/actions/move/in/continuousturn"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "deadzone_pct" : "75",
+                  "sticky_click" : "true"
+               },
+               "path" : "/user/hand/left/input/thumbstick"
             },
             {
                "inputs" : {
@@ -304,20 +458,7 @@
                   "sticky" : "true",
                   "sub_mode" : "touch"
                },
-               "path" : "/user/hand/right/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/move/in/walk"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "force_input" : "position",
-                  "haptic_amplitude" : "0"
-               },
-               "path" : "/user/hand/left/input/joystick"
+               "path" : "/user/hand/left/input/thumbstick"
             },
             {
                "inputs" : {
@@ -332,28 +473,7 @@
                   "sticky" : "true",
                   "sub_mode" : "touch"
                },
-               "path" : "/user/hand/right/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/move/in/adjustheight"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "position" : {
-                     "output" : "/actions/move/in/continuousturn"
-                  }
-               },
-               "mode" : "joystick",
-               "parameters" : {
-                  "deadzone_pct" : "75"
-               },
-               "path" : "/user/hand/right/input/joystick"
+               "path" : "/user/hand/left/input/thumbstick"
             }
          ]
       },
@@ -402,32 +522,6 @@
                },
                "mode" : "joystick",
                "path" : "/user/hand/right/input/thumbstick"
-            },
-            {
-               "inputs" : {
-                  "scroll" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "scroll",
-               "parameters" : {
-                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
-                  "discrete_scroll_joystick_ratefactor" : "4"
-               },
-               "path" : "/user/hand/left/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "scroll" : {
-                     "output" : "/actions/scroll/in/scroll"
-                  }
-               },
-               "mode" : "scroll",
-               "parameters" : {
-                  "discrete_scroll_joystick_deadzone_vertical" : "0.25",
-                  "discrete_scroll_joystick_ratefactor" : "4"
-               },
-               "path" : "/user/hand/right/input/joystick"
             }
          ]
       },
@@ -440,16 +534,10 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/weapon/in/ejectclip"
-                  }
+               "parameters" : {
+                  "haptic_amplitude" : "0"
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
+               "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
@@ -458,7 +546,21 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.38",
+                  "click_deactivate_threshold" : "0.3",
+                  "force_input" : "force"
+               },
                "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/weapon/in/ejectclip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
             },
             {
                "inputs" : {
@@ -467,16 +569,7 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/weapon/in/toggleburstfire"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "path" : "/user/hand/right/input/a"
             },
             {
                "inputs" : {
@@ -485,16 +578,7 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/weapon/in/altfire"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "path" : "/user/hand/right/input/b"
             },
             {
                "inputs" : {
@@ -503,15 +587,33 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/weapon/in/toggleburstfire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/weapon/in/altfire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
             }
          ]
       }
    },
    "category" : "steamvr_input",
-   "controller_type" : "holographic_controller",
-   "description" : "Default two handed bindings with movement on the off hand",
-   "name" : "Dual Controllers (Movement on Off Hand)",
+   "controller_type" : "knuckles",
+   "description" : "Default two handed bindings with movement on the weapon hand",
+   "name" : "Dual Controllers (Movement on Weapon Hand)",
    "options" : {},
    "simulated_actions" : []
 }

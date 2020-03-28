@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"Your performance settings have reverted to a recommended level."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half Life: Alyx may be unstable due to low disk space on your operating system drive, which can limit your pagefile size."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Low available GPU memory detected, please close any unnecessary open programs to increase GPU memory availability."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"Low available system memory detected, please close any unnecessary open programs to increase system memory availability."
 
 "HLVR_MainMenu_ModalQuit"						"Quit Half-Life Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"Go to Main Menu?"
@@ -172,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"Wide"
 "HLVR_Options_ClosedCaptions_Width_desc"		"The width of subtitles on screen."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"Spectator window only"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Show Subtitles and Closed Captions only in the spectator window"
+
 "HLVR_Options_LeftHanded"						"Weapon Hand : Left"
 "HLVR_Options_RightHanded"						"Weapon Hand : Right"
 
-"HLVR_Options_LeftHanded_desc"					"Toggles weapon hand as left or right."
+"HLVR_Options_LeftHanded_desc"					"Toggles weapon hand between left and right.\n\nYou can choose which hand controls your movement by selecting the appropriate binding in the SteamVR controller bindings menu."
+
+"HLVR_display_bindings"							"Controller Bindings"
+"HLVR_display_bindings_desc"					"Go to SteamVR controller settings to View or Edit controller bindings for Half-life: Alyx"
+"HLVR_display_bindings_confirm"					"Go to SteamVR Controller bindings?"
+
 
 "HLVR_Options_ToggleCrouch"					"Crouch Action"
 "HLVR_Options_ToggleCrouch_desc"		"The crouch action drops your height to quickly duck or adjust to a lowered positon when needed. Bind this action to your chosen input in SteamVR settings.\n\nWhen this option is on, the crouch action is available during gameplay."
@@ -189,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"Crouch and Stand"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"Hybrid"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"This sets the behavior of the controller-based actions for height adjustment.\n\nWhen off, controller-based height adjustment actions are disabled.\n\nThese actions must be bound in SteamVR settings to function."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Crouch action only. Stand is disabled.\n\nWhen the crouch action is enabled, toggle to quickly duck or adjust to a lowered position.\n\nThis action must be bound to your chosen input in SteamVR settings."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Stand action only. Crouch is disabled.\n\nWhen the stand action is enabled, toggle to raise your position to help with reach. Recommended during seated play.\n\nThis action must be bound to your chosen input in SteamVR settings."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"When the crouch and stand actions are enabled, use them to lower or to raise your position on two separate inputs.\n\nThese actions must be bound to your chosen inputs in SteamVR settings."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"Hybrid uses a single input for both crouch and stand actions.\n\nTo crouch, click to lower your position.\n\nTo stand, press and hold to raise your position.\n\nThese actions must be bound to your chosen input in SteamVR settings."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"This sets the behavior of the controller-based actions for height adjustment.\n\nWhen off, controller-based height adjustment actions are disabled."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Crouch action only. Stand is disabled.\n\nWhen the crouch action is enabled, toggle to quickly duck or adjust to a lowered position."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Stand action only. Crouch is disabled.\n\nWhen the stand action is enabled, toggle to raise your position to help with reach. \nRecommended during seated play."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"When the crouch and stand actions are enabled, use them to lower or to raise your position on two separate inputs."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"Hybrid uses a single input for both crouch and stand actions.\n\nTo crouch, click to lower your position.\n\nTo stand, press and hold to raise your position."
 
 "HLVR_Options_hlvr_single_controller_mode"				"Single Controller"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"All actions are mapped to a single controller."
@@ -330,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"Single Controller Mode Enabled"
 "HLVR_Lesson_Single_Controller_Off"	"Single Controller Mode Disabled"
+"HLVR_Lesson_Movement_PrimaryHand"	"Movement on Weapon Hand\nthis can be modified in SteamVR Controller bindings"
+"HLVR_Lesson_Movement_OffHand"		"Movement on Off Hand\nthis can modified in SteamVR Controller bindings"
 "HLVR_Lesson_Teleport"							"Push to move"
 "HLVR_Lesson_Quick_Turn"						"Push to quick turn left or right"
 "HLVR_Lesson_GrabTrigger"						"Press and Hold to Grab objects"

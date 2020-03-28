@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"Vos paramètres de performance sont revenus à un niveau recommandé."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx peut être instable en raison du faible espace sur le disque de votre système d'exploitation. Cela risque de limiter la taille de votre fichier d’échange."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Faible mémoire graphique disponible détectée. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"Faible mémoire système disponible. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
 
 "HLVR_MainMenu_ModalQuit"						"Quitter Half-Life Alyx ?"
 "HLVR_MainMenu_ModalMainMenu"					"Aller au menu principal ?"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"Rotation du contrôleur désactivée"
 "HLVR_Options_Turn_Snap"						"Rotation rapide"
 "HLVR_Options_Turn_Continuous"					"Rotation continue"
+
 "HLVR_Options_Turn_Off_desc"					"Définissez le type de rotation en « rapide » ou « continue » pour pivoter vers la direction indiquée par votre contrôleur"
 "HLVR_Options_Turn_Snap_desc"					"En activant la rotation rapide, vous pivoterez rapidement dans la direction voulue selon l'angle spécifié."
 "HLVR_Options_Turn_Continuous_desc"				"En activant la rotation continue, vous pivoterez progressivement dans la direction voulue à la vitesse spécifiée."
+
 "HLVR_Options_QuickTurn_Angle_Base"				"Angle de rotation rapide"
 "HLVR_Options_QuickTurn_Angle_desc"				"Angle de rotation pour les rotations rapides."
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"Vitesse de rotation continue"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"Vitesse angulaire pour les rotations continues."
-
 
 "HLVR_Options_Subtitles"						"Sous-titres"
 "HLVR_Options_Subtitles_Base"					"Sous-titres"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"Larges"
 "HLVR_Options_ClosedCaptions_Width_desc"		"Largeur des sous-titres à l'écran."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"Fenêtre spectateur uniquement"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Afficher les sous-titres et les descriptions dans la fenêtre spectateur uniquement"
+
 "HLVR_Options_LeftHanded"						"Main de l'arme : gauche"
 "HLVR_Options_RightHanded"						"Main de l'arme : droite"
 
 "HLVR_Options_LeftHanded_desc"					"Bascule l'arme dans la main gauche ou droite."
+
+"HLVR_display_bindings"							"Configuration des contrôleurs"
+"HLVR_display_bindings_desc"					"Allez dans les paramètres des contrôleurs sur SteamVR pour voir ou modifier les associations pour Half-Life: Alyx"
+"HLVR_display_bindings_confirm"					"Aller dans la configuration des contrôleurs sur SteamVR ?"
+
 
 "HLVR_Options_ToggleCrouch"					"Position accroupie"
 "HLVR_Options_ToggleCrouch_desc"		"Utilisez la position accroupie pour abaisser rapidement votre hauteur ou l'ajuster à une position plus basse. Associez cette action à l'entrée de votre choix dans les paramètres SteamVR.\n\nSi cette option est activée, la position accroupie est disponible en jeu."

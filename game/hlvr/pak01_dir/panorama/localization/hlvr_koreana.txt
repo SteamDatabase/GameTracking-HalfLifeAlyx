@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"성능 설정을 권장 수준으로 되돌렸습니다."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"사용 중인 운영 체제 드라이브의 디스크 공간이 부족하여 페이지 파일 크기가 제한되므로, Half-Life: Alyx 플레이가 불안정할 수 있습니다."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"GPU 메모리 가용량 부족이 감지되었습니다. 필요없는 프로그램을 닫아 GPU 메모리 가용량을 늘려 주세요."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"시스템 메모리 가용량 부족이 감지되었습니다. 필요없는 프로그램을 닫아 시스템 메모리 가용량을 늘려 주세요."
 
 "HLVR_MainMenu_ModalQuit"						"Half-Life Alyx에서 나갈까요?"
 "HLVR_MainMenu_ModalMainMenu"					"메인 메뉴로 갈까요?"
@@ -115,7 +116,7 @@
 "HLVR_Options_Movement_Continuous_desc"				"머리 위치를 기준으로 자연스럽게 움직입니다."
 "HLVR_Options_Movement_Continuous_Hand_desc"		"손의 위치를 기준으로 자연스럽게 움직입니다."
 
-"HLVR_Options_Preferences"						"기본 설정"
+"HLVR_Options_Preferences"						"개인 설정"
 "HLVR_Options_Accessibility"					"접근성"				
 "HLVR_Options_Interface"						"인터페이스"
 "HLVR_Options_Audio"							"음량"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"컨트롤러 회전 꺼짐"
 "HLVR_Options_Turn_Snap"						"즉각 회전"
 "HLVR_Options_Turn_Continuous"					"자연스러운 회전"
+
 "HLVR_Options_Turn_Off_desc"					"즉각 회전 또는 자연스러운 회전으로 설정하여, 얼굴이 향하는 방향을 컨트롤러로 회전시키세요"
 "HLVR_Options_Turn_Snap_desc"					"즉각 회전은 단번에 지정된 각도로 얼굴이 향하는 방향으로 회전합니다."
 "HLVR_Options_Turn_Continuous_desc"				"자연스러운 회전은 지정된 각도로 얼굴이 향하는 방향으로 부드럽게 회전합니다."
+
 "HLVR_Options_QuickTurn_Angle_Base"				"즉각 회전 각도"
 "HLVR_Options_QuickTurn_Angle_desc"				"즉각 회전의 회전 각도입니다."
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"자연스러운 회전 속도"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"자연스러운 회전의 각속도입니다."
-
 
 "HLVR_Options_Subtitles"						"자막"
 "HLVR_Options_Subtitles_Base"					"자막"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"넓게"
 "HLVR_Options_ClosedCaptions_Width_desc"		"화면 상의 자막 너비입니다."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"관전자 창 전용"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"관전자 창에 자막과 폐쇄 자막만 표시됩니다."
+
 "HLVR_Options_LeftHanded"						"무기를 드는 손: 왼손"
 "HLVR_Options_RightHanded"						"무기를 드는 손: 오른손"
 
-"HLVR_Options_LeftHanded_desc"					"무기를 드는 손을 오른손 또는 왼손으로 전환합니다."
+"HLVR_Options_LeftHanded_desc"					"무기를 드는 손을 오른손이나 왼손으로 전환합니다.\n\nSteamVR 컨트롤러 바인딩 메뉴에서 적절한 바인딩을 선택해 동작을 수행하는 손을 정할 수 있습니다."
+
+"HLVR_display_bindings"							"컨트롤러 바인딩"
+"HLVR_display_bindings_desc"					"Half-life: Alyx의 컨트롤러 바인딩을 확인하거나 변경하려면 SteamVR 컨트롤러 설정으로 가세요."
+"HLVR_display_bindings_confirm"					"SteamVR 컨트롤러 바인딩으로 갈까요?"
+
 
 "HLVR_Options_ToggleCrouch"					"웅크리기 동작"
 "HLVR_Options_ToggleCrouch_desc"		"웅크리기 동작은 키를 낮추어 필요할 때 빠르게 몸을 피하거나 낮은 위치로 조정합니다. 이 동작을 SteamVR 설정에서 선택한 입력에 바인딩하세요.\n\n이 옵션을 사용하면, 게임을 플레이하는 동안 웅크리기 동작이 가능합니다."
@@ -187,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"웅크리기 및 일어서기"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"하이브리드"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"컨트롤러 기반 높이 조정 동작을 설정합니다.\n\n꺼짐으로 설정 시 컨트롤러 기반 높이 조정 동작이 비활성화됩니다.\n\n이 동작은 모두 SteamVR 설정과 일치해야만 작동됩니다."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"웅크리기 동작 전용. 일어서기 동작 비활성화.\n\n웅크리기 동작 사용 시 빠르게 몸을 숙이거나 낮은 자세로 바꿀 수 있습니다.\n\n이 동작은 SteamVR 설정에서 선택한 입력과 일치해야 합니다."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"일어서기 동작 전용. 웅크리기 동작 비활성화.\n\n일어서기 동작 사용 시, 더 넓은 행동 반경을 위해 몸을 일으킬 수 있습니다. 앉은 자세로 플레이할 때 사용하는 걸 추천합니다.\n\n이 동작은 SteamVR 설정에서 선택한 입력과 일치해야 합니다."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"웅크리기 및 일어서기 동작 사용 시, 서로 다른 입력을 사용해 몸을 낮추거나 일으킵니다.\n\n이 동작은 모두 SteamVR 설정에서 선택한 입력과 일치해야 합니다."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"하이브리드는 웅크리기와 일어서기 동작에 하나의 입력을 사용합니다.\n\n클릭하면 웅크리기 동작으로 몸을 낮출 수 있습니다.\n\n길게 누르기하면 일어서기 동작으로 몸을 일으킬 수 있습니다.\n\n이 동작은 모두 SteamVR 설정에서 선택한 입력과 일치해야 합니다."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"높이 조정을 위한 컨트롤러 기반 동작의 움직임을 설정합니다.\n\n꺼짐으로 설정 시 컨트롤러 기반 높이 조정 동작이 비활성화됩니다."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"웅크리기 동작 전용. 일어서기 동작 비활성화.\n\n웅크리기 동작 사용 시 빠르게 몸을 숙이거나 자세를 낮출 수 있습니다."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"일어서기 동작 전용. 웅크리기 동작 비활성화.\n\n일어서기 동작 사용 시, 더 넓은 행동 반경을 위해 몸을 일으킬 수 있습니다.\n앉은 자세로 플레이할 때 사용하는 걸 추천합니다."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"웅크리기 동작과 일어서기 동작 모두 사용 시, 서로 다른 입력을 사용해 몸을 낮추거나 일으킵니다."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"하이브리드는 웅크리기와 일어서기 동작에 하나의 입력을 사용합니다.\n\n클릭하면 웅크리기 동작으로 몸을 낮출 수 있습니다.\n\n길게 누르기하면 일어서기 동작으로 몸을 일으킬 수 있습니다."
 
 "HLVR_Options_hlvr_single_controller_mode"				"싱글 컨트롤러"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"모든 액션이 싱글 컨트롤러로 매핑됩니다."
@@ -328,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"싱글 컨트롤러 모드 켜짐"
 "HLVR_Lesson_Single_Controller_Off"	"싱글 컨트롤러 모드 꺼짐"
+"HLVR_Lesson_Movement_PrimaryHand"	"무기를 드는 손의 동작\nSteamVR 컨트롤러 바인딩에서 변경할 수 있습니다"
+"HLVR_Lesson_Movement_OffHand"		"빈 손의 동작\nSteamVR 컨트롤러 바인딩에서 변경할 수 있습니다"
 "HLVR_Lesson_Teleport"							"밀어서 이동하세요"
 "HLVR_Lesson_Quick_Turn"						"왼쪽이나 오른쪽으로 밀어서 빠른 회전을 하세요"
 "HLVR_Lesson_GrabTrigger"						"트리거를 길게 눌러 물체를 잡으세요"

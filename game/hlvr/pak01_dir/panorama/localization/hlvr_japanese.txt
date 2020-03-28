@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"推奨設定が選択されました"
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"ドライブの空き容量が少なく、ページファイルのサイズが制限されるため、『Half Life: Alyx』の動作が不安定になる可能性があります"
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"GPUのメモリが不足しています。必要のないプログラムを閉じてメモリを増やしてください。"
+"HLVR_MainMenu_Attention_Low_System_Memory"						"システムメモリが不足しています。必要のないプログラムを閉じてメモリを増やしてください。"
 
 "HLVR_MainMenu_ModalQuit"						"『Half-Life Alyx』を終了しますか？"
 "HLVR_MainMenu_ModalMainMenu"					"メインメニューに移動しますか？"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"コントローラー・オフ"
 "HLVR_Options_Turn_Snap"						"スナップターン"
 "HLVR_Options_Turn_Continuous"					"スムーズターン"
+
 "HLVR_Options_Turn_Off_desc"					"コントローラーを使って方向転換する際の方式を設定します"
 "HLVR_Options_Turn_Snap_desc"					"スナップターンを選択すると、一瞬で特定の角度に方向転換します"
 "HLVR_Options_Turn_Continuous_desc"				"スムーズターンを選択すると、特定の速度で連続的に方向転換します"
+
 "HLVR_Options_QuickTurn_Angle_Base"				"スナップターンの角度"
 "HLVR_Options_QuickTurn_Angle_desc"				"スナップターン時の角度です"
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"スムーズターンの速度"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"スムーズターン選択時に方向転換する際の速度です"
-
 
 "HLVR_Options_Subtitles"						"字幕"
 "HLVR_Options_Subtitles_Base"					"字幕"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"広い"
 "HLVR_Options_ClosedCaptions_Width_desc"		"字幕の表示される領域の幅です"
 
+"HLVR_Options_Subtitles_Spectator_Only"			"第三者視点ウィンドウのみ"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"第三者視点ウィンドウにのみ字幕とクローズドキャプションを表示する"
+
 "HLVR_Options_LeftHanded"						"武器を持つ手: 左"
 "HLVR_Options_RightHanded"						"武器を持つ手: 右"
 
 "HLVR_Options_LeftHanded_desc"					"武器を持つ手を変更します"
+
+"HLVR_display_bindings"							"コントローラーバインド"
+"HLVR_display_bindings_desc"					"『Half-Life: Alyx』のコントローラーバインドの表示・編集を行うにはSteamVRコントローラー設定を開いてください"
+"HLVR_display_bindings_confirm"					"SteamVRコントローラー設定を開きますか？"
+
 
 "HLVR_Options_ToggleCrouch"					"しゃがみ動作"
 "HLVR_Options_ToggleCrouch_desc"		"素早くしゃがむ、または視点を下げる動作を、SteamVRで設定した入力に割り当てます\n\n この設定をオンにすると、ボタン入力によるしゃがみ動作が可能になります"

@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"Deine Leistungseinstellungen wurden auf das empfohlene Level zurückgesetzt."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx ist möglicherweise instabil, da auf Ihrem Systemlaufwerk wenig Speicherplatz verfügbar ist, wodurch die Größe Ihrer Auslagerungsdatei eingeschränkt werden kann."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Unzureichender Grafikkartenspeicher vorhanden. Bitte schließen Sie unnötige offene Programme, um die Verfügbarkeit von Grafikkartenspeicher zu verbessern."
+"HLVR_MainMenu_Attention_Low_System_Memory"						"Unzureichender Systemspeicher vorhanden. Bitte schließen Sie unnötig offene Programme, um die Verfügbarkeit von Systemspeicher zu verbessern."
 
 "HLVR_MainMenu_ModalQuit"						"Half-Life: Alyx beenden?"
 "HLVR_MainMenu_ModalMainMenu"					"Zum Hauptmenü?"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"Controllerdrehung aus"
 "HLVR_Options_Turn_Snap"						"Sofortige Drehung"
 "HLVR_Options_Turn_Continuous"					"Fortlaufende Drehung"
+
 "HLVR_Options_Turn_Off_desc"					"Setzt die Drehung auf „Sofortige Drehung“ oder „Fortlaufende Drehung“, um die Blickrichtung der Controller zu rotieren."
 "HLVR_Options_Turn_Snap_desc"					"Sofortige Drehung ändert die Blickrichtung augenblicklich zu einem bestimmten Winkel."
 "HLVR_Options_Turn_Continuous_desc"				"Fortlaufende Drehung rotiert die Blickrichtung gleichmäßig und glatt in einer festgelegten Geschwindigkeit."
+
 "HLVR_Options_QuickTurn_Angle_Base"				"Sofortiger Drehwinkel"
 "HLVR_Options_QuickTurn_Angle_desc"				"Der Rotationswinkel für sofortige Drehungen."
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"Fortlaufende Drehgeschwindigkeit"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"Die Winkelgeschwindigkeit der fortlaufenden Drehung."
-
 
 "HLVR_Options_Subtitles"						"Untertitel"
 "HLVR_Options_Subtitles_Base"					"Untertitel"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"Breit"
 "HLVR_Options_ClosedCaptions_Width_desc"		"Die Breite der Untertitel auf dem Bildschirm."
 
+"HLVR_Options_Subtitles_Spectator_Only"			"Nur Zuschauerfenster"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Untertitel und Untertitel für Hörgeschädigte nur im Zuschauerfenster anzeigen"
+
 "HLVR_Options_LeftHanded"						"Waffenhand : Links"
 "HLVR_Options_RightHanded"						"Waffenhand : Rechts"
 
-"HLVR_Options_LeftHanded_desc"					"Wechselt Schusshand zur linken bzw. rechten Hand."
+"HLVR_Options_LeftHanded_desc"					"Schaltet die Waffenhand zwischen links und rechts um.\n\nDu kannst auswählen, welche Hand deine Bewegung kontrolliert, indem du die entsprechende Zuordnung im Menü für die SteamVR-Controllerzuordnungen auswählst."
+
+"HLVR_display_bindings"							"Controllerzuordnungen"
+"HLVR_display_bindings_desc"					"Öffnen Sie die SteamVR-Controller-Einstellungen, um die Controllerzuordnungen für Half-Life: Alyx anzuzeigen und zu bearbeiten."
+"HLVR_display_bindings_confirm"					"SteamVR-Controller-Zuordnungen öffnen?"
+
 
 "HLVR_Options_ToggleCrouch"					"Kriechen"
 "HLVR_Options_ToggleCrouch_desc"		"„Kriechen“ verringert deine Körperhöhe in eine geduckte Haltung. Ordne diese Aktion deiner gewünschten Eingabe in den SteamVR-Einstellungen zu.\n\nBei Auswahl dieser Option ist „Kriechen“ während des Spiels verfügbar."
@@ -187,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"Kriechen und Stehend"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"Hybrid"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Diese Einstellung legt Controlleraktionen für die Größenanpassung fest.\n\nSie muss aktiviert sein, um diese Aktionen anwenden zu können.\n\nDie Aktionen müssen zunächst in den SteamVR-Einstellungen zugeordnet werden."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"„Stehend“ deaktiviert. Nur „Kriechen“ verfügbar.\n\nDrücke die gewählte Taste, um schnell zu einer geduckten Haltung zu wechseln.\n\nDiese Aktion muss zunächst einer Eingabe in den SteamVR-Einstellungen zugeordnet werden."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"„Kriechen“ deaktiviert. Nur „Stehend“ verfügbar.\n\nDrücke die gewählte Taste, um schnell zur Standhöhe zu wechseln.\n\nDiese Aktion muss zunächst einer Eingabe in den SteamVR-Einstellungen zugeordnet werden."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Wenn die Aktionen „Stehend“ und „Kriechen“ aktiviert sind, verwende zwei verschiedene Eingaben, um entweder zur Standhöhe oder zu einer geduckten Haltung zu wechseln.\n\n.Diese Aktionen müssen zunächst zwei Eingaben in den SteamVR-Einstellungen zugeordnet werden."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"„Hybrid“ verwendet eine einzelne Eingabe für „Kriechen“ und „Stehend“.\n\nKlicke, um zu einer geduckten Haltung zu wechseln.\n\nDrücke und halte die Taste, um zur Standhöhe zu wechseln.\n\nDiese Aktion muss zunächst einer Eingabe in den SteamVR-Einstellungen zugeordnet werden."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Diese Einstellung legt Controlleraktionen für die Größenanpassung fest.\n\nSie muss aktiviert sein, um diese Aktionen anwenden zu können."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"„Stehend“ deaktiviert. Nur „Kriechen“ verfügbar.\n\nDrücke die gewählte Taste, um schnell zu einer geduckten Haltung zu wechseln."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"„Kriechen“ deaktiviert. Nur „Stehend“ verfügbar.\n\nDrücke die gewählte Taste, um schnell zur Standhöhe zu wechseln.\nEmpfohlen für sitzende Position beim Spielen."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Wenn die Aktionen „Stehend“ und „Kriechen“ aktiviert sind, verwende zwei verschiedene Eingaben, um entweder zur Standhöhe oder zu einer geduckten Haltung zu wechseln."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"„Hybrid“ verwendet eine einzelne Eingabe für „Kriechen“ und „Stehend“.\n\nKlicke die Taste, um zu einer geduckten Haltung zu wechseln.\n\nDrücke und halte die Taste, um zur Standhöhe zu wechseln."
 
 "HLVR_Options_hlvr_single_controller_mode"				"Einzelcontroller"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"Alle Aktionen sind einem einzelnen Controller zugeordnet."
@@ -328,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"Einzelcontrollermodus aktiviert"
 "HLVR_Lesson_Single_Controller_Off"	"Einzelcontrollermodus deaktiviert"
+"HLVR_Lesson_Movement_PrimaryHand"	"Bewegung über die Waffenhand\nDiese Option kann in den SteamVR-Controllerzuordnungen geändert werden."
+"HLVR_Lesson_Movement_OffHand"		"Bewegung über die waffenlose Hand\nDiese Option kann in den SteamVR-Controllerzuordnungen geändert werden."
 "HLVR_Lesson_Teleport"							"Drücke den Analogstick, um dich zu bewegen."
 "HLVR_Lesson_Quick_Turn"						"Drücke, um dich schnell nach rechts oder links zu bewegen."
 "HLVR_Lesson_GrabTrigger"						"Drücke und halte den Trigger, um nach Objekten zu greifen."

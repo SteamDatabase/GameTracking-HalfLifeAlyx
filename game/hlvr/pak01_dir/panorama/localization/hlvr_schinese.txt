@@ -52,6 +52,7 @@
 "HLVR_MainMenu_Attention_Graphics_Reset"						"您的性能设置已恢复到推荐水平。"
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"操作系统磁盘的空间不足，可能会限制页面文件的大小；这很可能导致《半衰期：爱莉克斯》运行不稳定。"
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"检测到可用GPU内存不足，请关闭所有非必要程序，以提高可用的GPU内存容量。"
+"HLVR_MainMenu_Attention_Low_System_Memory"						"检测到可用系统内存不足，请关闭所有非必要程序，以提高可用的系统内存容量。"
 
 "HLVR_MainMenu_ModalQuit"						"是否要退出《半衰期：爱莉克斯》？"
 "HLVR_MainMenu_ModalMainMenu"					"是否要回到主菜单？"
@@ -137,14 +138,16 @@
 "HLVR_Options_Turn_Off"							"正在关闭控制器"
 "HLVR_Options_Turn_Snap"						"急转"
 "HLVR_Options_Turn_Continuous"					"持续转向"
+
 "HLVR_Options_Turn_Off_desc"					"设置为\"急转”或“持续转向”，通过控制器来控制面对的方向。"
 "HLVR_Options_Turn_Snap_desc"					"急转将按照指定的角度旋转您面对的方向。"
 "HLVR_Options_Turn_Continuous_desc"				"持续依指定的速度，平稳地旋转到您面对的方向。"
+
 "HLVR_Options_QuickTurn_Angle_Base"				"急转角度"
 "HLVR_Options_QuickTurn_Angle_desc"				"急转的指定旋转角度。"
+
 "HLVR_Options_ContinuousTurn_Speed_Base"		"持续转向速度"
 "HLVR_Options_ContinuousTurn_Speed_desc"		"持续转向的角度移动速度。"
-
 
 "HLVR_Options_Subtitles"						"字幕"
 "HLVR_Options_Subtitles_Base"					"字幕"
@@ -170,10 +173,18 @@
 "HLVR_Options_Subtitles_Wide"					"较宽"
 "HLVR_Options_ClosedCaptions_Width_desc"		"字幕在画面中的宽度。"
 
+"HLVR_Options_Subtitles_Spectator_Only"			"仅限旁观者窗口"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"仅在旁观者窗口中显示字幕和隐藏式字幕"
+
 "HLVR_Options_LeftHanded"						"武器使用手：左手"
 "HLVR_Options_RightHanded"						"武器使用手：右手"
 
 "HLVR_Options_LeftHanded_desc"					"切换武器使用手为左手或右手。"
+
+"HLVR_display_bindings"							"控制器按键设置"
+"HLVR_display_bindings_desc"					"前往 SteamVR 控制器设置，以查看或编辑《半衰期：爱莉克斯》的控制器按键设置"
+"HLVR_display_bindings_confirm"					"是否前往 SteamVR 控制器按键设置？"
+
 
 "HLVR_Options_ToggleCrouch"					"蹲伏操作"
 "HLVR_Options_ToggleCrouch_desc"		"蹲伏操作可降低您的高度，以便在需要时快速闪避或蹲到较低的位置。在 SteamVR 设置中将此操作绑定于您所使用的控制器输入。\n\n开启此选项后，游戏中即可使用蹲伏操作。"
@@ -195,8 +206,8 @@
 
 "HLVR_Options_hlvr_single_controller_mode"				"单一控制器"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"所有操作都映射到单个控制器。"
-"HLVR_single_controller_prompt_activate"			"启用单控制器模式需要在 SteamVR 中更改控制器绑定\n是否要访问 SteamVR 绑定页面？"
-"HLVR_single_controller_prompt_deactivate"		"停用单控制器模式需要在 SteamVR 中更改控制器绑定\n是否要访问 SteamVR 绑定页面？"
+"HLVR_single_controller_prompt_activate"			"启用单控制器模式需要在 SteamVR 中更改控制器按键设置\n是否要访问 SteamVR 按键设置页面？"
+"HLVR_single_controller_prompt_deactivate"		"禁用单控制器模式需要在 SteamVR 中更改控制器按键设置\n是否要访问 SteamVR 按键设置页面？"
 
 "HLVR_Options_r_light_sensitivity_mode"				"光敏感"
 "HLVR_Options_r_light_sensitivity_mode_desc"	"光敏感模式会降低灯光的强度和闪烁。"
@@ -327,7 +338,7 @@
 
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"已启用单控制器模式"
-"HLVR_Lesson_Single_Controller_Off"	"已停用单控制器模式"
+"HLVR_Lesson_Single_Controller_Off"	"已禁用单控制器模式"
 "HLVR_Lesson_Teleport"							"推动以进行移动"
 "HLVR_Lesson_Quick_Turn"						"推动以快速往左或往右转"
 "HLVR_Lesson_GrabTrigger"						"按住以抓取物体"
