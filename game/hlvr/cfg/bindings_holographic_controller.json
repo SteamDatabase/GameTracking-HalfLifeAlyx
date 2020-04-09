@@ -2,56 +2,76 @@
    "action_manifest_version" : 0,
    "alias_info" : {},
    "bindings" : {
-      "/actions/default" : {
-         "poses" : [
-            {
-               "output" : "/actions/default/in/handposeleft",
-               "path" : "/user/hand/left/pose/raw"
-            },
-            {
-               "output" : "/actions/default/in/handposeright",
-               "path" : "/user/hand/right/pose/raw"
+    "/actions/default": {
+      "haptics": [
+        {
+          "output": "/actions/default/in/hapticvibration",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/default/in/hapticvibration",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
+      "poses": [
+        {
+          "output": "/actions/default/in/handposeleft",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/default/in/handposeright",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "skeleton": [
+        {
+          "output": "/actions/default/in/HandSkeletonLeft",
+          "path": "/user/hand/left/input/skeleton/left"
+        },
+        {
+          "output": "/actions/default/in/HandSkeletonRight",
+          "path": "/user/hand/right/input/skeleton/right"
+        }
+      ],
+      "sources": [
+        {
+          "inputs": {
+            "pull": {
+              "output": "/actions/default/in/triggerpull"
             }
-         ],
-         "sources" : [
-            {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/triggerpull"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/triggerpull"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/handcurl"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/grip"
+          },
+          "mode": "trigger",
+          "path": "/user/hand/left/input/trigger"
+        },
+        {
+          "inputs": {
+            "pull": {
+              "output": "/actions/default/in/triggerpull"
             }
-         ]
-      },
+          },
+          "mode": "trigger",
+          "path": "/user/hand/right/input/trigger"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/handcurl"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/right/input/grip"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/handcurl"
+            }
+          },
+          "mode": "button",
+          "path": "/user/hand/left/input/grip"
+        }
+      ]
+    },
       "/actions/dev" : {
          "sources" : [
             {

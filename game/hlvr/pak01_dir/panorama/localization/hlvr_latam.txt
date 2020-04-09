@@ -179,7 +179,7 @@
 "HLVR_Options_LeftHanded"						"Arma en la mano: izquierda"
 "HLVR_Options_RightHanded"						"Arma en la mano: derecha"
 
-"HLVR_Options_LeftHanded_desc"					"Alterna la mano del arma entre izquierda y derecha."
+"HLVR_Options_LeftHanded_desc"					"Alterna la mano armada entre izquierda y derecha.\n\nPuedes elegir cual mano controla tus movimientos al seleccionar las asignaciones apropiadas en el menú de asignaciones del control de SteamVR."
 
 "HLVR_display_bindings"							"Asignaciones del control"
 "HLVR_display_bindings_desc"					"Ve a la configuración del control en SteamVR para ver o editar las asignaciones del control para Half-Life: Alyx"
@@ -198,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"Agacharse y levantarse"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"Híbrido"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Esto establece el comportamiento de las acciones basadas en los controles para el ajuste de altura.\n\nCuando están desactivadas, tales acciones no estarán disponibles.\n\nEstas acciones tienen que estar conectadas con la configuración de SteamVR para que funcionen."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Acción de agacharse únicamente. Ponerse de pie está desactivado.\n\nCuando agacharse está activado, alterna para agacharte rápido o ajusta a una posición más baja.\n\nEsta acción tiene que estar conectada con el tipo de entrada elegido en la configuración de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Acción de ponerse de pie únicamente. Agacharse está desactivado.\n\nCuando ponerse de pie está activado, alterna para subir tu posición y ayudar a alcanzar lo que está en alto.\n\nEsta acción tiene que estar conectada con el tipo de entrada elegido en la configuración de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Cuando las acciones de agacharse y ponerse de pie están activadas, úsalas para bajar o subir tu posición en dos entradas separadas.\n\nEstas acciones tienen que estar conectadas con las entradas elegidas en la configuración de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"Híbrido usa una única entrada tanto para la acción de agacharse como para la de ponerse de pie.\n\nPara agacharte, haz clic y baja tu posición.\n\nPara ponerte de pie, mantén presionado y tu posición sube.\n\nEstas acciones tienen que estar conectadas con la entrada elegida en la configuración de SteamVR."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Esto establece el comportamiento de las acciones basadas en los controles para el ajuste de altura.\n\nCuando están desactivadas, tales acciones no estarán disponibles."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Acción de agacharse únicamente. Ponerse de pie está desactivado.\n\nCuando agacharse está activado, alterna para agacharte rápido o ajusta a una posición más baja."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Acción de ponerse de pie únicamente. Agacharse está desactivado.\n\nCuando ponerse de pie está activado, alterna para subir tu posición y ayudar a alcanzar lo que está en alto.\nRecomendado cuando se juega sentado."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Cuando las acciones de agacharse y ponerse de pie estén activadas, úsalas para bajar o subir tu posición en dos entradas separadas."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"Híbrido usa una única entrada tanto para la acción de agacharse como para la de ponerse de pie.\n\nPara agacharte, haz clic y baja tu posición.\n\nPara ponerte de pie, mantén pulsado y tu posición sube."
 
 "HLVR_Options_hlvr_single_controller_mode"				"Un solo control"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"Todas las acciones se asignan a un solo control."
@@ -339,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"Modo de un solo control activado"
 "HLVR_Lesson_Single_Controller_Off"	"Modo de un solo control desactivado"
+"HLVR_Lesson_Movement_PrimaryHand"	"Movimiento en la mano del arma.\nEsto se puede modificar en las asignaciones del control de SteamVR."
+"HLVR_Lesson_Movement_OffHand"		"Movimiento en la mano sin arma.\nEsto se puede modificar en las asignaciones del control de SteamVR."
 "HLVR_Lesson_Teleport"							"Empuja para moverte"
 "HLVR_Lesson_Quick_Turn"						"Presiona para girar rápidamente a la izquierda o a la derecha"
 "HLVR_Lesson_GrabTrigger"						"Mantén pulsado para agarrar objetos"

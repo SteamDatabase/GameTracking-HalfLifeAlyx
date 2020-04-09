@@ -49,7 +49,7 @@
 "HLVR_MainMenu_Attention_MinSpec_GPU"								"Votre périphérique graphique ne correspond pas à la configuration minimale requise pour Half-Life Alyx."
 "HLVR_MainMenu_Attention_Above_Recommended"					"Vos paramètres sont supérieurs aux niveaux recommandés."
 "HLVR_MainMenu_Attention_Warning"										"L'expérience de jeu peut en être réduite."
-"HLVR_MainMenu_Attention_Graphics_Reset"						"Vos paramètres de performance sont revenus à un niveau recommandé."
+"HLVR_MainMenu_Attention_Graphics_Reset"						"Vos paramètres de performances sont revenus à un niveau recommandé."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx peut être instable en raison du faible espace sur le disque de votre système d'exploitation. Cela risque de limiter la taille de votre fichier d’échange."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Faible mémoire graphique disponible détectée. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Faible mémoire système disponible. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
@@ -179,7 +179,7 @@
 "HLVR_Options_LeftHanded"						"Main de l'arme : gauche"
 "HLVR_Options_RightHanded"						"Main de l'arme : droite"
 
-"HLVR_Options_LeftHanded_desc"					"Bascule l'arme dans la main gauche ou droite."
+"HLVR_Options_LeftHanded_desc"					"Fait passer l'arme d'une main à l'autre.\n\nVous pouvez choisir quelle main contrôle vos mouvements en sélectionnant l'association appropriée dans le menu de configuration des contrôleurs dans SteamVR."
 
 "HLVR_display_bindings"							"Configuration des contrôleurs"
 "HLVR_display_bindings_desc"					"Allez dans les paramètres des contrôleurs sur SteamVR pour voir ou modifier les associations pour Half-Life: Alyx"
@@ -198,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"Positions accroupie et debout"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"Hybride"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Définit le comportement des actions effectuées avec le contrôleur pour régler la hauteur.\n\nQuand cette option est désactivée, les actions de réglage de la hauteur avec le contrôleur ne sont pas actives.\n\nLes associations entre actions et entrées doivent être configurées dans les paramètres de SteamVR pour fonctionner."
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Activation ou désactivation de la position accroupie uniquement. La position debout est désactivée.\n\nQuand cette action est activée, elle vous permet de vous baisser ou vous relever rapidement.\n\nCette action doit être associée à l'entrée de votre choix dans les paramètres de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Activation ou désactivation de la position debout uniquement. La position accroupie est désactivée.\n\nQuand cette action est activée, elle vous permet de vous rehausser pour atteindre quelque chose en hauteur, ou revenir à votre hauteur initiale. Recommandé quand vous jouez en position assise.\n\nCette action doit être associée à l'entrée de votre choix dans les paramètres de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Quand les positions accroupie et debout sont activées, vous pouvez abaisser ou rehausser votre position avec deux entrées séparées.\n\nCes actions doivent être associées aux entrées de votre choix dans les paramètres de SteamVR."
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"L'option « hybride » permet d'utiliser une seule entrée pour les positions accroupie et debout.\n\nCliquez pour vous accroupir.\n\nAppuyez et maintenez pour vous mettre debout.\n\nCes actions doivent être associées aux entrées de votre choix dans les paramètres de SteamVR."
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"Définit le comportement des actions effectuées avec le contrôleur pour régler la hauteur.\n\nQuand cette option est désactivée, les actions de réglage de la hauteur avec le contrôleur ne sont pas actives."
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"Position accroupie uniquement. La position debout est désactivée.\n\nQuand cette action est activée, elle vous permet de vous baisser ou vous relever rapidement."
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"Position debout uniquement. La position accroupie est désactivée.\n\nQuand cette action est activée, elle vous permet de vous rehausser pour atteindre quelque chose en hauteur, ou revenir à votre hauteur initiale.\nRecommandé quand vous jouez en position assise."
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"Quand les positions accroupie et debout sont activées, vous pouvez abaisser ou rehausser votre position avec deux entrées séparées."
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"L'option « hybride » permet d'utiliser une seule entrée pour les positions accroupie et debout.\n\nCliquez pour vous accroupir.\n\nAppuyez et maintenez pour vous mettre debout."
 
 "HLVR_Options_hlvr_single_controller_mode"				"Un seul contrôleur"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"Vous pouvez effectuer toutes les actions avec un seul contrôleur."
@@ -339,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"Mode « un seul contrôleur » activé"
 "HLVR_Lesson_Single_Controller_Off"	"Mode « un seul contrôleur » désactivé"
+"HLVR_Lesson_Movement_PrimaryHand"	"Mouvements contrôlés pas la main qui tient l'arme.\nPeut être modifié dans la configuration des contrôleurs dans SteamVR"
+"HLVR_Lesson_Movement_OffHand"		"Mouvements contrôlés par la main qui ne tient pas l'arme.\nPeut être modifié dans la configuration des contrôleurs dans SteamVR"
 "HLVR_Lesson_Teleport"							"Poussez le stick pour avancer"
 "HLVR_Lesson_Quick_Turn"						"Poussez pour tourner rapidement à gauche ou à droite"
 "HLVR_Lesson_GrabTrigger"						"Appuyez et maintenez pour saisir des objets"

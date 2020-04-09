@@ -135,7 +135,7 @@
 "HLVR_Options_Barnacle_Lift"				"藤壺怪拖升"
 "HLVR_Options_Barnacle_Lift_desc"		"開啟後，藤壺怪會將玩家拉離地面。"
 
-"HLVR_Options_Turn_Off"							"控制器關閉中"
+"HLVR_Options_Turn_Off"							"控制器轉向關閉"
 "HLVR_Options_Turn_Snap"						"急轉"
 "HLVR_Options_Turn_Continuous"					"持續轉向"
 
@@ -179,7 +179,7 @@
 "HLVR_Options_LeftHanded"						"武器慣用手：左"
 "HLVR_Options_RightHanded"						"武器慣用手：右"
 
-"HLVR_Options_LeftHanded_desc"					"切換武器慣用手爲左或右。"
+"HLVR_Options_LeftHanded_desc"					"在左右手間切換武器慣用手。\n\n您可在 SteamVR 控制器按鍵配置選單中，選擇合適的按鍵配置來決定使用哪隻手來控制移動。"
 
 "HLVR_display_bindings"							"控制器按鍵配置"
 "HLVR_display_bindings_desc"					"前往 SteamVR 控制器設定，以查看或編輯《戰慄時空：艾莉克絲》的控制器按鍵配置"
@@ -198,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"蹲下和站起"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"混合"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"設定使用控制器動作調整高度時的行為。\n\n此功能關閉時，將無法使用控制器做出調整高度的動作。\n\n這些動作必須在 SteamVR 設定中進行配置才能生效。"
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"僅啟用蹲下動作。停用站起動作。\n\n蹲下動作啟用時，您將能快速低頭閃避或調整到較低位置。\n\n此動作必須配置到您在 SteamVR 設定中選擇的控制器。"
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"僅啟用站起動作。停用蹲下動作。\n\n站起動作啟用時，您將能站起以便觸及遠處。建議在就坐狀態下使用此設定。\n\n此動作必須配置到您在 SteamVR 設定中選擇的控制器。"
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"啟用蹲下和站起動作時，您可使用這兩種不同的動作以降低或提高您的位置。\n\n這些動作必須配置到您在 SteamVR 設定中選擇的控制器。"
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"混合使用單一的輸入做出蹲下和站起動作。\n\n若要蹲下，請點擊以降低您的位置。\n\n若要站起，請按住以提高您的位置。\n\\這些動作必須配置到您在 SteamVR 設定中選擇的控制器。"
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"設定使用控制器動作調整高度時的行為。\n\n此功能關閉時，將無法使用控制器做出調整高度的動作。"
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"僅啟用蹲下動作。停用站起動作。\n\n蹲下動作啟用時，您將能快速低頭閃避或調整到較低位置。"
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"僅啟用站起動作。停用蹲下動作。\n\n站起動作啟用時，您將能站起以便觸及遠處。\n建議在就坐狀態下使用此設定。"
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"啟用蹲下和站起動作時，您可使用這兩種不同的動作以降低或提高您的位置。"
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"混合使用單一的輸入做出蹲下和站起動作。\n\n若要蹲下，請點擊以降低您的位置。\n\n若要站起，請按住以提高您的位置。"
 
 "HLVR_Options_hlvr_single_controller_mode"				"單一控制器"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"所有動作都對應至單一控制器。"
@@ -339,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"單一控制器模式已啟動"
 "HLVR_Lesson_Single_Controller_Off"	"單一控制器模式已關閉"
+"HLVR_Lesson_Movement_PrimaryHand"	"使用武器慣用手進行移動\n此設定可於 SteamVR 控制器按鍵配置中修改"
+"HLVR_Lesson_Movement_OffHand"		"使用副手進行移動\n此設定可於 SteamVR 控制器按鍵配置中修改"
 "HLVR_Lesson_Teleport"							"推動來移動"
 "HLVR_Lesson_Quick_Turn"						"推動以向左或向右快轉"
 "HLVR_Lesson_GrabTrigger"						"按住以抓取物體"

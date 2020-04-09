@@ -174,16 +174,16 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"字幕の表示される領域の幅です"
 
 "HLVR_Options_Subtitles_Spectator_Only"			"第三者視点ウィンドウのみ"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"第三者視点ウィンドウにのみ字幕とクローズドキャプションを表示する"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"字幕とクローズドキャプションの表示を設定します"
 
 "HLVR_Options_LeftHanded"						"武器を持つ手: 左"
 "HLVR_Options_RightHanded"						"武器を持つ手: 右"
 
-"HLVR_Options_LeftHanded_desc"					"武器を持つ手を変更します"
+"HLVR_Options_LeftHanded_desc"					"武器を持つ手を変更します\n\nSteamVRのコントローラー設定を変更することで、左右好きなほうの手に移動操作を割り当てることができます"
 
 "HLVR_display_bindings"							"コントローラーバインド"
-"HLVR_display_bindings_desc"					"『Half-Life: Alyx』のコントローラーバインドの表示・編集を行うにはSteamVRコントローラー設定を開いてください"
-"HLVR_display_bindings_confirm"					"SteamVRコントローラー設定を開きますか？"
+"HLVR_display_bindings_desc"					"SteamVRのコントローラー設定を開いて『Half-Life: Alyx』の操作の割り当てを行います"
+"HLVR_display_bindings_confirm"					"SteamVRのコントローラー設定を開きますか？"
 
 
 "HLVR_Options_ToggleCrouch"					"しゃがみ動作"
@@ -198,11 +198,11 @@
 "HLVR_Options_hlvr_adjust_height_mode_3"		"しゃがみ&立ち上がり"
 "HLVR_Options_hlvr_adjust_height_mode_4"		"ハイブリッド"
 
-"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"コントローラーを使って体および視点の高さの調整をおこなう為の設定です\n\nオフにすると、コントローラーによる高さ設定が無効になります\n\n動作の割り当てはSteamVRの設定でおこなう必要があります"
-"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"立った状態から、ボタンを押すことで視点の高さを変えることができます\n\n動作の割り当てはSteamVRの設定でおこなう必要があります"
-"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"しゃがんだ（あるいは座った）状態から、ボタンを押すことで視点の高さを変えることができます\n\n動作の割り当てはSteamVRの設定でおこなう必要があります"
-"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"2種類のボタンを使い、立った状態またはしゃがんだ状態から視点の高さを変えることができます\n\n動作の割り当てはSteamVRの設定でおこなう必要があります"
-"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"1種類のボタンを使い、立った状態またはしゃがんだ状態から視点の高さを変えることができます\n\nボタンを押すと視点が下がります\n\nボタンを長押しすると視点が上がります\n\n動作の割り当てはSteamVRの設定でおこなう必要があります"
+"HLVR_Options_hlvr_adjust_height_mode_0_desc"		"コントローラーを使って体および視点の高さの調整をおこなう為の設定です\n\nオフにすると、コントローラーによる高さ設定が無効になります"
+"HLVR_Options_hlvr_adjust_height_mode_1_desc"		"立った状態から、ボタンを押すことで視点の高さを変えることができます"
+"HLVR_Options_hlvr_adjust_height_mode_2_desc"		"しゃがんだ（あるいは座った）状態から、ボタンを押すことで視点の高さを変えることができます\n\n座ってプレイする際にお勧めの設定です"
+"HLVR_Options_hlvr_adjust_height_mode_3_desc"		"2種類のボタンを使い、立った状態またはしゃがんだ状態から視点の高さを変えることができます"
+"HLVR_Options_hlvr_adjust_height_mode_4_desc"		"1種類のボタンを使い、立った状態またはしゃがんだ状態から視点の高さを変えることができます\n\nボタンを押すと視点が下がります\n\nボタンを長押しすると視点が上がります"
 
 "HLVR_Options_hlvr_single_controller_mode"				"シングルコントローラー"
 "HLVR_Options_hlvr_single_controller_mode_desc"		"ひとつのコントローラーにすべてのアクションが割り当てられます"
@@ -339,6 +339,8 @@
 // game instructor lessons
 "HLVR_Lesson_Single_Controller_On"	"シングルコントローラーモード有効"
 "HLVR_Lesson_Single_Controller_Off"	"シングルコントローラーモード無効"
+"HLVR_Lesson_Movement_PrimaryHand"	"武器を持つ手による移動\nこちらはSteamVRのコントローラー設定で変更できます"
+"HLVR_Lesson_Movement_OffHand"		"武器を持たない手（オフハンド）による移動\nこちらはSteamVRのコントローラー設定で変更できます"
 "HLVR_Lesson_Teleport"							"押すと移動します"
 "HLVR_Lesson_Quick_Turn"						"押すと左または右に方向転換します"
 "HLVR_Lesson_GrabTrigger"						"長押しで物をつかみます"
@@ -416,7 +418,7 @@
 "HLVR_Lesson_SelectHand"						"素手を選択"
 "HLVR_Lesson_2HLevitate"						"両手でターゲットをロックします"
 "HLVR_Lesson_GravityGloveLockOn"				"押すとターゲットをロックします"
-"HLVR_Lesson_GravityGlovePull"					"手を引くことでオブジェクトを\n引き寄せます"
+"HLVR_Lesson_GravityGlovePull"					"手を素早く引くことで\nオブジェクトを引き寄せます"
 "HLVR_Lesson_GravityGloveCatch"					"オブジェクトをキャッチしましょう"
 "HLVR_Lesson_2HPickup"							"両手を使うと重いオブジェクトを\n持ち上げられます"
 "HLVR_Lesson_UseMultitoolOnDoor"				"マルチツールをターミナルに\n使用しましょう"
@@ -538,7 +540,7 @@
 "HLVR_Chapter_Number_10"							"チャプター 11"
 
 "HLVR_Chapter_Title_00"								"絡まり"
-"HLVR_Chapter_Title_01"								"検疫区画"
+"HLVR_Chapter_Title_01"								"隔離区画"
 "HLVR_Chapter_Title_02"								"あるいは未来に"
 "HLVR_Chapter_Title_03"								"スーパーウェポン"
 "HLVR_Chapter_Title_04"								"北極星"
@@ -620,7 +622,7 @@
 "HLVR_LOADING_SCREEN_TIP_18"						"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_19"						"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_20"						"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_21"						"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_21"						"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_22"						"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 
 "HLVR_LOADING_SCREEN_TIP_MAP_0_COUNT"		"6"		// a1_intro_world
@@ -645,7 +647,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_2_COUNT"		"6"		// a2_quarantine_entrance
 "HLVR_LOADING_SCREEN_TIP_MAP_2_1"					"グラビティグローブ: ラッセルが発明したこのグローブは、離れた場所にあったり、敵が持っているオブジェクトを引き寄せることができます"
 "HLVR_LOADING_SCREEN_TIP_MAP_2_2"					"武器: 武器選択ボタンをタップすることで、素早い武器の切り替えができます"
-"HLVR_LOADING_SCREEN_TIP_MAP_2_3"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_2_3"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_2_4"					"ブラック・メサは研究施設であり、そこでおこなわれた実験によって次元の裂け目が生じたことで、地球と境界「ゼン」が接続する結果となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_2_5"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
 "HLVR_LOADING_SCREEN_TIP_MAP_2_6"					"ヒント: 手首のポケットにもアイテムを収納することができます"
@@ -653,7 +655,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_3_COUNT"		"7"		// a2_pistol
 "HLVR_LOADING_SCREEN_TIP_MAP_3_1"					"グラビティグローブ: ラッセルが発明したこのグローブは、離れた場所にあったり、敵が持っているオブジェクトを引き寄せることができます"
 "HLVR_LOADING_SCREEN_TIP_MAP_3_2"					"武器: 武器選択ボタンをタップすることで、素早い武器の切り替えができます"
-"HLVR_LOADING_SCREEN_TIP_MAP_3_3"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_3_3"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_3_4"					"ゼン: 「共鳴連鎖」の副産物として開いたポータルにより、エイリアンや異世界の植物、胞子などが地球に転送されました"
 "HLVR_LOADING_SCREEN_TIP_MAP_3_5"					"合成樹脂: コンバインは合成樹脂を使って武器やその他のテクノロジーを製造しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_3_6"					"ヒント: 手首のポケットにもアイテムを収納することができます"
@@ -662,7 +664,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_4_COUNT"		"12"	// a2_hideout
 "HLVR_LOADING_SCREEN_TIP_MAP_4_1"					"グラビティグローブ: ラッセルが発明したこのグローブは、離れた場所にあったり、敵が持っているオブジェクトを引き寄せることができます"
 "HLVR_LOADING_SCREEN_TIP_MAP_4_3"					"武器: 武器選択ボタンをタップすることで、素早い武器の切り替えができます"
-"HLVR_LOADING_SCREEN_TIP_MAP_4_4"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_4_4"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_4_5"					"ゼン: 「共鳴連鎖」の副産物として開いたポータルにより、エイリアンや異世界の植物、胞子などが地球に転送されました"
 "HLVR_LOADING_SCREEN_TIP_MAP_4_6"					"合成樹脂: コンバインは合成樹脂を使って武器やその他のテクノロジーを製造しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_4_7"					"ヒント: 手首のポケットにもアイテムを収納することができます"
@@ -674,7 +676,7 @@
 
 "HLVR_LOADING_SCREEN_TIP_MAP_5_COUNT"		"12"	// a2_headcrabs_tunnel
 "HLVR_LOADING_SCREEN_TIP_MAP_5_1"					"武器: 武器選択ボタンをタップすることで、素早い武器の切り替えができます"
-"HLVR_LOADING_SCREEN_TIP_MAP_5_2"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_5_2"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_5_3"					"ゼン: 「共鳴連鎖」の副産物として開いたポータルにより、エイリアンや異世界の植物、胞子などが地球に転送されました"
 "HLVR_LOADING_SCREEN_TIP_MAP_5_4"					"合成樹脂: コンバインは合成樹脂を使って武器やその他のテクノロジーを製造しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_5_5"					"ヒント: 手首のポケットにもアイテムを収納することができます"
@@ -688,7 +690,7 @@
 
 "HLVR_LOADING_SCREEN_TIP_MAP_6_COUNT"		"14"	// a2_drainage
 "HLVR_LOADING_SCREEN_TIP_MAP_6_1"					"武器: 武器選択ボタンをタップすることで、素早い武器の切り替えができます"
-"HLVR_LOADING_SCREEN_TIP_MAP_6_2"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_6_2"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_6_3"					"ゼン: 「共鳴連鎖」の副産物として開いたポータルにより、エイリアンや異世界の植物、胞子などが地球に転送されました"
 "HLVR_LOADING_SCREEN_TIP_MAP_6_4"					"合成樹脂: コンバインは合成樹脂を使って武器やその他のテクノロジーを製造しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_6_5"					"ヒント: 手首のポケットにもアイテムを収納することができます"
@@ -799,7 +801,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_12_15"					"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_12_16"					"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_12_17"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_MAP_12_18"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_12_18"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_12_19"					"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 "HLVR_LOADING_SCREEN_TIP_MAP_12_20"					"コンバインの巨大建造物である「要塞」は、現在建造中です"
 
@@ -821,7 +823,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_13_15"					"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_13_16"					"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_13_17"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_MAP_13_18"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_13_18"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_13_19"					"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 "HLVR_LOADING_SCREEN_TIP_MAP_13_20"					"コンバインの巨大建造物である「要塞」は、現在建造中です"
 
@@ -843,7 +845,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_14_15"					"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_14_16"					"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_14_17"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_MAP_14_18"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_14_18"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_14_19"					"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 "HLVR_LOADING_SCREEN_TIP_MAP_14_20"					"コンバインの巨大建造物である「要塞」は、現在建造中です"
 
@@ -865,7 +867,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_15_15"					"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_15_16"					"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_15_17"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_MAP_15_18"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_15_18"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_15_19"					"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 "HLVR_LOADING_SCREEN_TIP_MAP_15_20"					"コンバインの巨大建造物である「要塞」は、現在建造中です"
 
@@ -887,7 +889,7 @@
 "HLVR_LOADING_SCREEN_TIP_MAP_16_15"					"ボーティガント: かつてコンバインの奴隷だったボーティガントは、全体でひとつの意思を共有しています"
 "HLVR_LOADING_SCREEN_TIP_MAP_16_16"					"ブラック・メサ: アリックス・バンスはブラック・メサ事件の際に一時的に孤児となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_16_17"					"ブラック・メサ: 「共鳴連鎖」が発生した際、イーライ・バンスは家族と共にブラック・メサに住み込んで働いていました"
-"HLVR_LOADING_SCREEN_TIP_MAP_16_18"					"検疫区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は検疫の対象となりました"
+"HLVR_LOADING_SCREEN_TIP_MAP_16_18"					"隔離区画: ブラック・メサ事件によって生じた次元の裂け目は、境界ゼンの動植物を地球に招き入れて生息させたため、こうした一画は隔離の対象となりました"
 "HLVR_LOADING_SCREEN_TIP_MAP_16_19"					"コンバイン: コンバインがどこから来たのか、その最終目的を知る者は誰もいません"
 "HLVR_LOADING_SCREEN_TIP_MAP_16_20"					"コンバインの巨大建造物である「要塞」は、現在建造中です"
 

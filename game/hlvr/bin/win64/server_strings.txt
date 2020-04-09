@@ -1022,7 +1022,6 @@
  A^A\[
  A^A\]
  A^A\^
- A^A\_
  A^A\_][
  A^A]A\^]
  A^A]A\_]
@@ -1094,7 +1093,6 @@
  H;G@u
  Hc)H
  Hc)L
- Hc-s
  Hc1A
  Hc1E3
  Hc1H
@@ -1121,6 +1119,7 @@
  HczxH
  Lc)E3
  Lc1L
+ Lc5k(=
  Lc9L
  LcA 3
  Lct$p3
@@ -1661,7 +1660,6 @@ $~qE3
 %p::%p:%d
 %qVDM
 %s	%32.32s = "%s"
-%s   time: %6.3f   sound name: %s   scene: %s
 %s %.0f%%
 %s %.2f
 %s %.3f
@@ -2009,8 +2007,6 @@ $~qE3
 %s:%s:%s has no sequence for act:%s
 %s:SetKinematic(CVariant::type=%s) expected bool argument
 %s=false
-%sCurrent time: %6.3f
-%sRecent NPC speech:
 %s\%s
 %s\%s_%s_%i.vanimreplay
 %s\Settings
@@ -2596,14 +2592,22 @@ $~qE3
 )#GameUI_Disconnect_SteamDeny_BadAntiCheat
 )$$E3
 )$$fD
+)%U0B
+)%X/B
 ), this value label conflicts with 
-)-8.B
-)-q/B
+)-#0B
+)-O/B
 ).  Contact the program author for an update.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "
 ).>Mj
 )4$H;
+)540B
+)5X/B
+)5_.B
+)5x.B
 )9IYiy
 )9}[p=
+)=/0B
+)=V.B
 )>6{1n
 )?)	@u
 )@8s1u
@@ -2816,7 +2820,7 @@ $~qE3
 )t$ @2
 )t$ A
 )t$ D
-)t$ D9%=B1
+)t$ D9%
 )t$ E
 )t$ E3
 )t$ H
@@ -3089,7 +3093,6 @@ $~qE3
 +C$Lc
 +CClientMsg_DevPaletteVisibilityChangedEvent
 +D$Tt
-+D$dH
 +D$dHc
 +D$pH
 +E$Hc
@@ -3107,7 +3110,7 @@ $~qE3
 +XXxY
 +f)>0'
 +h->|
-, <^w\H
+, <^w]H
 , from: 
 , not just within "
 , relative to sequence start: %f %f
@@ -3262,6 +3265,7 @@ $~qE3
 ..om?
 .00cfg
 .3tRH
+.5%mD
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -6876,13 +6880,14 @@ $~qE3
 .|$Pz
 .|$pz
 .|$tz
+/%uGM
 /2GG>!B
-/5/5u
-/599J
-/5G}S
-/5m!c
-/5ubd
+/5	{S
+/5-af
+/5I,J
+/5gpS
 /=$!6
+/=rCH
 />58d%
 /?O_o
 /@ s&H
@@ -7271,6 +7276,7 @@ $~qE3
 0HcAXH
 0HcD$hI
 0L9e0t	H
+0L9ept	H
 0L;l$x
 0Lc93
 0M9f@I
@@ -7395,7 +7401,7 @@ $~qE3
 2000.0f
 20000.0
 200000
-200328181059Z0#
+200403231124Z0#
 2048.0
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 21.CUserMessageRapidfireBulletManager.CreateCluster
@@ -7538,6 +7544,7 @@ $~qE3
 6=((E
 6GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT
 6I;4$
+6apu8.M}
 70.0f
 700WP
 768.0
@@ -7622,6 +7629,7 @@ $~qE3
 9)~_H
 9)~vH
 9+~/H
+9-}`:
 9.~IL
 9.~ZH
 9/~)L
@@ -7883,10 +7891,10 @@ $~qE3
 ;*t!H
 ;+%@H
 ;2HcG
+;5 I	
 ;8u-3
 ;8urM
 ;9}VH
-;=\ }
 ;@t3H
 ;@}xH
 ;A ~W
@@ -8255,10 +8263,12 @@ $~qE3
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@CUniformRandomStream@@UEAAXH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?StrFormat@CBufferString@@QEAAPEBDPEBDZZ
 ?StripExtension@CBufferString@@QEAAPEBDXZ
+?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
 ?Swap@CBufferString@@QEAAXAEAV1@@Z
 ?TFm,r
 ?TY,>5
@@ -8376,6 +8386,7 @@ $~qE3
 @333333
 @333?
 @6W!?
+@8-R~
 @8/N|
 @8/tjH
 @80u#H
@@ -8384,10 +8395,11 @@ $~qE3
 @83t)
 @84:u
 @84;u
-@858+
-@85A\
-@85m,
-@85{N
+@858F
+@85H$
+@85YU
+@85}%
+@85~V
 @87tGH
 @88t	H
 @89A8
@@ -8397,9 +8409,12 @@ $~qE3
 @89C8
 @89G8
 @8:t#H
-@8=>B
-@8=M=$
-@8=O]&
+@8==+
+@8=N;
+@8=Y_;
+@8=gr
+@8=t=
+@8=zih
 @8H9t
 @8L9x
 @8h0u
@@ -8546,6 +8561,7 @@ $~qE3
 @A__[H
 @A__]
 @A__^
+@CFuncTankTrain
 @CW"P
 @D;e@
 @DD;BDI
@@ -8808,8 +8824,7 @@ $~qE3
 @t:HcG<
 @t:HcG`
 @t:Ic@0
-@t\D9%T
-@tanktrain_ai
+@t\D9%
 @u[D9f
 @vf'(
 A	@8M
@@ -11143,6 +11158,7 @@ A]A\H
 A]A\[
 A]A\[]
 A]A\]
+A]A\^
 A]A\^[]
 A]A\^]
 A]A\^][
@@ -12098,7 +12114,7 @@ C Hc;;{
 C HcH
 C HcS(H
 C$L9l$pt
-C$f!5png
+C$f!5
 C(9C0I
 C(H9u
 C(H;C@u
@@ -12119,7 +12135,7 @@ C0Hc{pH
 C0I;A
 C4;C8}
 C4@tv
-C4f!5	ng
+C4f!5ibg
 C5R?	
 C8<(u
 C8D8t$8t?@
@@ -12958,7 +12974,6 @@ CFuncTankMortar
 CFuncTankPhysCannister
 CFuncTankPulseLaser
 CFuncTankRocket
-CFuncTankTrain
 CFuncTimescale
 CFuncTrackAuto
 CFuncTrackChange
@@ -14928,7 +14943,6 @@ CZombieNoiseGenerator
 C\+ClHc
 C\9G\t
 C\fA+F
-C_8?]
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -15017,7 +15031,7 @@ C_OP_WorldTraceConstraint
 C`+C<f
 C`9C(u^
 C`H+CXH
-C`H9=
+C`H9=.
 C`Lc4
 CalcAnimationState
 CalcAnimationState  
@@ -16052,7 +16066,6 @@ D$pLc
 D$pM+
 D$pM;
 D$pX7
-D$p]:
 D$p^`W
 D$pd2
 D$pdd
@@ -16085,6 +16098,7 @@ D$xt@H
 D$xt~A
 D$|E3
 D$|L9l$pt
+D)%Uq;
 D. Hk
 D.@Hk
 D/8A:
@@ -16099,26 +16113,29 @@ D8"t	H
 D8$0u
 D8$8u
 D8$>u
-D8%&F!
-D8%WS
+D8%\=
+D8)tFI
 D8*u A
 D8,0tbH
-D8-l)(
+D8-#p
+D8-$n
+D8-\z
 D80t*L
 D80t{H
 D82u&H
 D84+u
-D85"2
-D85)9
-D854S
-D85L1
-D85bw
-D85k{
-D85oO
+D85/@
+D85I-
+D85R(
+D85S.9
+D85TE
+D85rp
+D85{t
+D85|'
 D8;tmI
 D8;uMH
-D8=6n
-D8=P[
+D8=Fg
+D8=pM
 D8?tnH
 D8C0u
 D8D$`A
@@ -16147,7 +16164,9 @@ D8cht
 D8d$Bu[D8
 D8d$H
 D8d$Ht
+D8d$`tFD8
 D8d$ht
+D8d$xu
 D8e/u
 D8e8u
 D8eHt}L
@@ -16212,11 +16231,9 @@ D8{Tt@H
 D8|$8ujL
 D8|$Pt
 D8|$`t
-D8|$`tFD8
 D8|$`u
 D8|$`u7H
 D8|$ht	D
-D8|$xu
 D8}(t
 D8}(u
 D8}HuT
@@ -16236,11 +16253,11 @@ D9	~uE
 D9 ~GI
 D9&~(I
 D9,2H
+D9-C	
 D96t-A
 D98~HM
 D9;tGH
 D9;~/A
-D9=y/
 D9@ }
 D9@H~)E3
 D9@XH
@@ -16267,6 +16284,7 @@ D9`Xt-Lc
 D9`Xt1L
 D9`Xt3
 D9`Xt3H
+D9`Xt=H
 D9`Xt@H
 D9`XtG
 D9`XtLH
@@ -16368,14 +16386,13 @@ D9xXt:A
 D9xXt:H
 D9xXt<H
 D9xXt=H
-D9xXt>H
 D9xXt>I
 D9xXt?H
 D9xXtAH
 D9xXtB@
 D9xXtBH
 D9xXtM
-D9xXtND8=m
+D9xXtND8=
 D9xXtSD9
 D9xXt^H
 D9xXtb
@@ -16400,6 +16417,7 @@ D9|$Pu
 D9|$`
 D9|$p
 D9|$p|SH
+D;=B(
 D;@H|
 D;A |
 D;A(|
@@ -16485,6 +16503,7 @@ DAMAGE_YES
 DC,E;
 DD$$H
 DD$(H
+DD8g1u
 DDDDUUUU
 DEATH_INTERRUPTABILITY
 DEBRIS
@@ -17793,8 +17812,8 @@ F(D98~b
 F09F4
 F0IcN
 F4D9~T
+F8$8t>
 F84'u
-F8<(tC
 F8D9`D
 F8H9X
 F8H9h
@@ -18971,6 +18990,7 @@ GunRange
 GunshipTracer
 Gx9Cxt
 G|$8H
+G|$xH
 H	D$(H
 H	E(H
 H	H(D8|$`u
@@ -19039,7 +19059,7 @@ H9*u>
 H9+t4H
 H9+uBH
 H9+uHH
-H9-y#
+H9-\|
 H9.u%H
 H90tZH
 H91t=
@@ -19053,8 +19073,7 @@ H92u&
 H92u'
 H92u,
 H93tZH
-H956?
-H95a?
+H9544
 H97t<
 H98t H
 H98t6A
@@ -19066,7 +19085,8 @@ H99uQH
 H9;t^H
 H9;uAA
 H9;v#H
-H9=I.
+H9=-'}
+H9=9!
 H9>t\H
 H9A t
 H9A t"H
@@ -19144,7 +19164,6 @@ H9_8H
 H9_@H
 H9h(u
 H9i(u
-H9i@uFI
 H9iHu H
 H9k0u
 H9kPu H
@@ -19222,8 +19241,8 @@ H9}Ot	H
 H9}gt	H
 H:Ly?
 H;0u7
-H;5x?
 H;9tEH
+H;=(8
 H;A t
 H;C E
 H;D$0u
@@ -19314,7 +19333,7 @@ HC_BLACK_STATE_PANIC
 HC_BLACK_STATE_SLUGGISH
 HD9JD}
 HD9KD}
-HD;%V
+HD;%f
 HDA9HD}
 HDA9KD}
 HDR Color Scale: %0.3f
@@ -19506,7 +19525,6 @@ Hc/;o
 Hc0;p
 Hc3;s
 Hc3Hc
-Hc5MT
 Hc7;w
 Hc7A+
 Hc8;x
@@ -21764,6 +21782,7 @@ L$0|TH
 L$4;yxu
 L$4;{8u	H
 L$4E3
+L$4Hc
 L$4Lc
 L$8+E$Hc
 L$8E3
@@ -21957,12 +21976,10 @@ L9!t|D
 L9!u	
 L9"uMI
 L9"uQI
-L9%p'
-L9-;@
+L9%pS
 L9/tRH
 L91u?H
 L92t,H
-L95t 
 L96u4H
 L99tz
 L99uKE3
@@ -21985,14 +22002,18 @@ L9d$@
 L9d$@t
 L9d$Ht
 L9d$Pt
+L9d$`
 L9d$`t
 L9d$ht
 L9d$xt
+L9e t	H
+L9e(t	H
 L9e0tjH
 L9e@t	H
 L9eHutH
 L9egt	H
 L9eht	H
+L9ept	H
 L9ewt	H
 L9g@u=
 L9gPu
@@ -22055,13 +22076,8 @@ L9|$(t
 L9|$@t
 L9|$Pt
 L9|$Xt
-L9|$`
 L9|$`t
-L9|$ht
 L9|$pt
-L9|$xt
-L9} t	H
-L9}(t	H
 L9}Pt	H
 L9}Xt	H
 L9}gt	H
@@ -23598,7 +23614,6 @@ O0+W8
 O0HcQ
 O0HcW
 O8+G$
-O=U }
 O?0 ,	f
 OBSTACLE_TOP
 OBSTRUCTED 
@@ -24505,6 +24520,7 @@ PVEC_TYPE_LITERAL_COLOR
 PVS is shared between teams
 PVSManagerGameSystem
 PVSModifier
+PX95:
 P`@8|$PtDA
 PaintInterval
 PaintIntervalVariance
@@ -28294,7 +28310,6 @@ T$@ff
 T$@t?H
 T$@tuH
 T$@v%H
-T$DHc
 T$DHk
 T$Du!
 T$HE3
@@ -30110,6 +30125,7 @@ Userid changed, clearing stats file
 Using Ref Pos: no
 Using Ref Pos: yes
 Using model "%s"
+Ux+D$dH
 V#t!H
 V6E>`"(5
 VALVt
@@ -30243,7 +30259,6 @@ V_SetErrno
 V_StringToColor
 V_StringToFloatArray
 V_StringToVector
-V_StripTrailingSlash
 V_StripTrailingWhitespace
 V_URLDecode
 V_UTF16ToUTF8
@@ -30400,12 +30415,14 @@ VortMagic.ThrowNoHit
 Vortigaunt
 VortigauntHealState_t
 Vulkan
-W%\!I
-W%b`L
+W%BRL
 W(|9L
 W(|=L
 W3|Uxa
+W54zj
+W55sD
 W8KcD
+W=E	L
 W?,|C
 W@|:L
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -30663,16 +30680,14 @@ X VAVAWH
 X VWATAUAWH
 X VWAVH
 X!t5~
-X5#xb
-X5=uh
-X5?DL
-X5JKu
-X5Lrj
+X53mb
+X5:Bu
+X5=0~
+X5Mjh
+X5\gj
 X89X(~(H
-X=	xh
 X=2v?
-X=VgM
-X=m'c
+X=6YM
 XA;w@
 XA]A\][
 XA]A\^[
@@ -30768,23 +30783,20 @@ X|$tA
 X|$xA
 X|( `
 Y HcQ
-Y%3ML
-Y%lZr
-Y-Mw~
+Y%\Qr
+Y--m~
 Y0HcR
-Y5$TL
-Y5*QM
-Y55Y~
-Y5:w~
-Y5<UM
-Y5Nxd
-Y5RIx
-Y5\QM
-Y5nUM
-Y5q+v
-Y=.&c
-Y=Ew~
-Y=Q)v
+Y59P~
+Y5<CM
+Y5B@x
+Y5KtI
+Y5NGM
+Y5Y/~
+Y5^md
+Y5a"v
+Y=%m~
+Y=&|~
+Y=A v
 Y>kX>M
 YAxis
 YD$ 2
@@ -31084,7 +31096,7 @@ Z}uU
 \$:thH
 \$<A;
 \$@@8
-\$@@8=
+\$@@8=9P[
 \$@A+
 \$@A_A^_^]
 \$@D;
@@ -31142,7 +31154,7 @@ Z}uU
 \$XIc
 \$Xt3H
 \$Xu:
-\$Yut
+\$Yun
 \$`A+
 \$`D8e8u
 \$`D;L$l~
@@ -31186,11 +31198,11 @@ Z}uU
 \$xI;
 \$xfD
 \$xff
-\$xt8
+\$xt2
 \$xu!
-\-yv}
-\5@U~
-\=Y_b
+\-im}
+\5oL~
+\=iTb
 \CpD8stt
 \D$(H
 \D$0E3
@@ -31279,10 +31291,9 @@ Z}uU
 ] 9xX
 ] @8u
 ] L9m8t	H
-]%0\r
+]% Sr
 ](D9u
 ])6M>&
-]5=*_
 ]7u%H
 ]>)2X
 ]Gu'H
@@ -31311,8 +31322,6 @@ Z}uU
 _09_4t
 _2~CE
 _49_8t
-_5DJ~
-_5t-l
 _DisableUpdateTarget
 _EnableUpdateTarget
 _HH9k
@@ -33284,6 +33293,7 @@ d$hD8eXt
 d$hE2
 d$hE3
 d$hIc
+d$ht	L
 d$lfD
 d$pHc
 d$pI;
@@ -34036,7 +34046,6 @@ f!D$ZH
 f!D$b
 f!D$jH
 f!D$jL
-f9-H]
 f9Cpu
 f9D$0
 f9D$0u
@@ -34089,7 +34098,6 @@ fB9T
 fCoverOnReload
 fD!t$j
 fD)	H
-fD9-1
 fD90t
 fD94Fu
 fD96u
@@ -35000,7 +35008,6 @@ gunshotsplash
 gustdirchange
 gustduration
 gxXM|Z
-h 95]2
 h ATAVAWH
 h AVH
 h UAVAWH
@@ -35788,7 +35795,6 @@ hurtme
 i(IcM
 i8Hcs ;s0u
 i8Hcs H
-i?<]4f
 iActivity
 iAmmoType
 iAttachment
@@ -36365,7 +36371,6 @@ l$ WH
 l$ fD
 l$ fI
 l$ sS
-l$ |LH
 l$$D;
 l$$Hc
 l$$I;
@@ -45944,7 +45949,6 @@ muzzle_flash_enable
 muzzleflash_particle
 mwheel_down
 mwheel_up
-n#9-z$
 n03>Pu
 n9pXt
 n>#,w>
@@ -46689,7 +46693,7 @@ numselected:%d,useradio:%d%s
 nxXE3
 o*Ral
 o0H9o
-o8D8-Y
+o8D8-
 oD$ H
 oD$ f
 oG8-x
@@ -49732,7 +49736,7 @@ t$ I;
 t$ L+
 t$ L;
 t$ Lc3
-t$ Lc5
+t$ Lc52
 t$ Mc
 t$ UAVAWH
 t$ UH
@@ -50098,6 +50102,7 @@ t&Hc3;s
 t&HcAX
 t&HcG 
 t'< ~
+t'@8kVt
 t'@8sVt
 t'@8wVt
 t'@8{Vt
@@ -50131,6 +50136,7 @@ t(fE9J*t
 t(fE9Q*t
 t(fff
 t)@8kVt
+t)@8wVt
 t)@8{Vt
 t)D8h1u
 t)D9B
@@ -50244,7 +50250,7 @@ t1HcG(
 t1HcG,
 t1HcG0
 t1y4H
-t295M
+t295]
 t2H90t-H
 t2L9(t-H
 t2L90t-H
@@ -50317,7 +50323,7 @@ t9D9C
 t9D9F
 t9D9I
 t9D9Q
-t9H9=Fl
+t9H9=
 t9HcC(A
 t9HcG$H
 t9HcG(
@@ -50400,7 +50406,7 @@ t?fff
 t@<-t<H
 t@A9J
 t@A9P
-t@E89t;M
+t@E8!t;M
 t@H9i@t:
 t@H;w
 t@HcA
@@ -50408,7 +50414,7 @@ t@HcA H
 t@HcH
 t@fff
 tAA9Z
-tAD8=
+tAD8=ww
 tAD9J
 tAHcA
 tAHcA A
@@ -50450,7 +50456,7 @@ tFA9@
 tFA9P
 tFD9B
 tFH9\$0u?L
-tFL9-h
+tFL9-
 tGA9H
 tGA9I
 tGA9P
@@ -50533,7 +50539,7 @@ tSD9J
 tSKcD0
 tTA9H
 tTA9Q
-tTD8%
+tTD8%#|
 tTD9B
 tTD9C
 tTD9I
@@ -50629,6 +50635,7 @@ tangent
 tank%d
 tank%d_start_missing
 tank_projectile
+tanktrain_ai
 tanktrain_aitarget
 target
 target entity not found
@@ -51067,7 +51074,7 @@ u	9o8
 u	9w8
 u	@80u
 u	@88u
-u	@8=M
+u	@8=}
 u	D;=
 u	H9*
 u	H91
@@ -51098,7 +51105,7 @@ u(u%H
 u)Lc3D;s
 u)fA;
 u*Hcw
-u+D;=
+u+D;=r
 u+fA;
 u-D9/
 u-H9)t(H
@@ -51200,7 +51207,7 @@ uYH98tTH
 uYI98tT
 uYLl>
 u[L92tVA
-u\D;=}
+u\D;=m
 u]H9*tX
 u]H91tX
 u^Hc/;o
@@ -52327,11 +52334,10 @@ vscripts
 vsnap
 vstdlib.dll
 vtexH
-vtexI
 v}`[>
 v~Ic.A;n
 w H;C
-w(H95%E
+w(H955>
 w(H;C
 w(Hc+;k
 w(Hc<
@@ -52518,8 +52524,10 @@ x'HcK
 x)HcK
 x*;XZ
 x*D;AH}$Ic
+x+;=$
 x-HcI
 x.Hck
+x/;=Q
 x0=433
 x0D;B0}*H
 x0E;A
@@ -52569,6 +52577,7 @@ xZH;A
 xZH;Q
 xZH;^
 xZIcI
+x\;=a-4
 x\A;@
 x\D;7}WH
 x]/(@
@@ -52825,7 +52834,7 @@ zxuvHcJ
 |$0Hc
 |$0Hc:
 |$0Hc;;{
-|$0Hc=?k4
+|$0Hc=
 |$0Hcy
 |$0Hc{
 |$0Hi
@@ -52956,7 +52965,7 @@ zxuvHcJ
 |$PE;
 |$PH+
 |$PHc
-|$PHc=D
+|$PHc=
 |$PHcy@
 |$PHc{@$
 |$PI;_
@@ -53020,7 +53029,6 @@ zxuvHcJ
 |$hH+
 |$hHc
 |$hff
-|$ht	L
 |$ht=
 |$h|OH
 |$h~oI
@@ -53053,14 +53061,14 @@ zxuvHcJ
 |$xt%H
 |${H+
 |(tFM
-|2;5LP
+|2;5|G
 |9HcC
 |?5^:+
 |AB)H
 |HLcQ
 |b=})>
 |l;K(tgA
-|uD95<
+|uD95L
 } == %s
 }!fA;vFw
 }%;o<w 
@@ -53134,7 +53142,7 @@ zxuvHcJ
 ~+fff
 ~.A9x0
 ~08\$0t
-~0L;=
+~0L;=`
 ~0fff
 ~31]H
 ~3fff
