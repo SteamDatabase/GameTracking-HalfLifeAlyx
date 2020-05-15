@@ -1,6 +1,6 @@
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
   (%s, v. %3d) '%s'
- -disable_qaccessible
+ -enable_qaccessible
  -pid %d
  -retail
  9(X`
@@ -15,6 +15,7 @@
  A_A^_
  open 
  vJH+
+%f %f %f %f
 %i %i %i %i
 (D$ L
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -29,7 +30,7 @@
 ,|%)v
 -LCPP
 -consoleapp
--disable_qaccessible
+-enable_qaccessible
 -nofocus
 -notransport2
 -vconbuffer
@@ -39,7 +40,6 @@
 .?AV?$CBaseAppSystem@VIAppSystem@@@@
 .?AV?$CBaseAppSystem@VIVConComm@@@@
 .?AV?$CConCommandMemberAccessor@VCVConComm@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VIVConComm@@@@
 .?AV?$CTier1AppSystem@VIVConComm@@$0A@@@
 .?AV?$CTier2AppSystem@VIVConComm@@$0A@@@
@@ -122,7 +122,7 @@
 131022120000Z
 141022000000Z
 181004000000Z
-200321043313Z0#
+200515052651Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -137,8 +137,7 @@
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
-9C |I
-9C |q
+9C |K
 9_p~$
 9l$pu
 9qxs	
@@ -166,9 +165,11 @@
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadSyncObject@@QEAA@XZ
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?EnumerateEncodingIndices@CVirtualMachineCallStackTranslationEncoder@@QEAAXP6A_NPEAV1@IPEBD1IPEAX@Z2@Z
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?GetIndexBitMask@CVirtualMachineCallStackTranslationEncoder@@QEAA_KXZ
 ?GetIndexBitShift@CVirtualMachineCallStackTranslationEncoder@@QEAAIXZ
 ?GetLineOffsetBitMask@CVirtualMachineCallStackTranslationEncoder@@QEAA_KXZ
@@ -190,6 +191,7 @@
 ?RemoveToFileBase@CBufferString@@QEAAPEBDXZ
 ?Reset@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadEvent@@QEAA_NXZ
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?Sleep@CThread@@SAXI@Z
 ?Start@CThread@@UEAA_NIW4ThreadPriorityEnum_t@@@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
@@ -211,6 +213,7 @@
 @VWAVH
 @fE9|
 A8H	P(
+A:kx+
 A;^@|
 ADONH
 AINFA
@@ -281,11 +284,11 @@ D$0H3L$0H3
 D$8fH
 D$<9T$0wE9T$4w?9T$8w9;
 D){(t
+D83t!H
 D8t$P
 D9>~WI
 DNMCH
 DebugTextureInfo001
-DevMsg
 DigiCert Assured ID CA-1
 DigiCert Assured ID CA-10
 DigiCert Assured ID Root CA0
@@ -302,11 +305,10 @@ E0C07
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EconItemToolModel_001
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
 F8<+u
 FATAL ERROR: unable to register all schema data: %s
-FONAE
+FONA@
 FindWindowA
 FlattenedSerializersVersion001
 FontManager_001
@@ -353,12 +355,12 @@ InvokeMiniDumpHandler
 K LcC(Ic
 KERNEL32.dll
 KeyValueCache001
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValuesSystem
 L$ E3
 L$ SH
 L$ fI
 L$(fH
+L$(fI
 L$0E3
 L$@H1D$0
 LOG_GENERAL
@@ -419,6 +421,7 @@ Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_WindowToOsSpecificHandle
 PostProcessingSystem_001
 PropertyEditorSystem_001
+Q7n7*
 QWidget
 QueryPerformanceCounter
 QueuedLoaderVersion001
@@ -488,9 +491,8 @@ TextMessageMgr_001
 ThreadGetCurrentProcessId
 ThreadSetDebugNameS2
 ThreadSleep
+TlPOAD
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -562,7 +564,6 @@ V_snprintf
 V_sscanf
 V_stricmp_fast
 V_vsnprintf
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 VisBuilder_001
@@ -594,7 +595,6 @@ _V_strncpy
 `.rdata
 `A^A\_][
 `A_A]A\^]
-arYr#
 arg%d
 c:\buildslave\hlvr_rel_win64\build\src\interfaces\interfaces.cpp
 c:\buildslave\hlvr_rel_win64\build\src\public\ordered_constructor.h
@@ -630,7 +630,6 @@ l$ E3
 l$ VH
 l$0Hc
 l$8fE;
-l$@<"
 l$@tLD9AhA
 m0k0$
 nTries < 10000000
@@ -639,6 +638,7 @@ oO0fI
 p0n05
 p1f3q>
 purecall
+qBFu2
 t!McY
 t$ AVH
 t$ WAVAWH
@@ -654,10 +654,9 @@ t$`Hc
 t9H9=
 tefff
 tier0.dll
-u	@8=5
+u	@8=u
 u.fE;
 uD@8{0t
-uE<"tA< ~=B
 uFfD;
 uGfD;
 v0t08
@@ -691,5 +690,4 @@ z0x0:
 |$`Lc
 |$p@2
 }QfA;
-}x }tm!
 ~ffff

@@ -1,6 +1,6 @@
 						
 								
-																																																																																											
+																																																																																												
 		%.*s
 	 ();,
 	 The lexer was matching from line %d, offset %d, which
@@ -9,6 +9,7 @@
 	%.*s
 	%s at offset %d, 
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	^E5'
 	kE>fvw
       
                           
@@ -41,6 +42,7 @@
  A^A\_
  A^][
  A^_[
+ A^_]
  A^_^
  A^_^[]
  A_A^A\
@@ -102,6 +104,7 @@ $Globals
 'ExternalDescriptorSet'
 'FakeBindlessTexture2D'
 'INCLUDE_BINDLESS_CONSTANTS'
+'PKW	
 'RWBuffer'
 'RWByteAddressBuffer'
 'RWStructuredBuffer'
@@ -112,6 +115,7 @@ $Globals
 'RWTexture3D'
 'SamplerComparisonState'
 'SamplerState'
+'Slot'
 'StructuredBuffer'
 'SubpassInput'
 'SubpassInputMS'
@@ -142,7 +146,6 @@ $Globals
 'layout'
 'linear'
 'matrix'
-'mxTp
 'nointerpolation'
 'noperspective'
 'packoffset'
@@ -284,6 +287,7 @@ $Globals
 ,0<	w
 ,|%)v
 -Stop: 
+-V&|I8S
 -end of input-(
 -memory-
 -sse2
@@ -293,7 +297,6 @@ $Globals
 -unknown source-(
 .00cfg
 .?AUID3DInclude@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AVCExpressionParserCallback@@
 .?AVCFakeSamplerShaderParamBuilder@@
 .?AVCHlslParser@@
@@ -370,9 +373,9 @@ $Globals
 141022000000Z
 181004000000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
-1:1: Tokens : ( T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | CONSTANT_REGISTER | PACK_OFFSET | VECTOR_TYPE | MATRIX_TYPE | STATIC | ID | INTEGERLITERAL | FLOATLITERAL | STRINGLITERAL | WS | LINE | PRAGMA | UNKNOWN );
+1:1: Tokens : ( T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | CONSTANT_REGISTER | PACK_OFFSET | VECTOR_TYPE | MATRIX_TYPE | STATIC | ID | INTEGERLITERAL | FLOATLITERAL | STRINGLITERAL | WS | LINE | PRAGMA | UNKNOWN );
 1<.	/>:
-200321043318Z0#
+200515052655Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -382,7 +385,6 @@ $Globals
 311110000000Z0e1
 3>N;kU
 3>fvw
-48H'^
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -398,12 +400,12 @@ $Globals
 99~BH
 9C |K
 9Y`~.
-9s8~$
-9sh~(ff
 9w ~%
+9w8~$
 9w8~&f
 9wP~#f
 9wP~R3
+9wh~$f
 9y`~q
 : lexer error %d :
 ;#t @
@@ -412,8 +414,9 @@ $Globals
 ;G(uRH
 ;H9>&X
 ;L$0u
-;_0}-
+;_0}*
 ;t$ |
+;xnX[
 <	w	@
 < t;<	t7
 <DOWN>
@@ -430,12 +433,13 @@ $Globals
 ?7zQ6$
 ?:kP<
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?CUtlString::FormatV
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
 ?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -444,6 +448,8 @@ $Globals
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?StripExtension@CBufferString@@QEAAPEBDXZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
@@ -476,7 +482,6 @@ $Globals
 @A^_^
 @A_A]A\_^
 @A_A^A]A\_
-@A_A^A]A\_^]
 @A_A^_
 @SUAVH
 @SUAWH
@@ -488,6 +493,7 @@ $Globals
 @UATAUAVAWH
 @UATAVH
 @UAVAWH
+@USVH
 @USVWATAUAVAWH
 @USVWAVH
 @USWATH
@@ -510,6 +516,7 @@ A;<$|
 A;@X}
 A;BX}
 A;RX}
+A;V8tJ
 A;]0u
 A>pP&
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -530,17 +537,16 @@ ATI_DST16
 ATI_DST24
 AVAWH
 A\_[]
+A\_^]
 A\_^][
-A]A\_^
 A]_^]
-A^A\[]
 A^A\]
-A^A]^]
 A^_^[]
 A_A\^]
 A_A]A\^
 A_A]A\_^
 A_A]A\_^[]
+A_A]_]
 A_A^A\
 A_A^A\_^
 A_A^A]A\]
@@ -669,7 +675,7 @@ D$ E3
 D$(D8#u
 D$(H;
 D$0I;
-D$0t5
+D$0t7
 D$8L9
 D$8L;
 D$@+C
@@ -685,11 +691,12 @@ D$PH+
 D$PI;
 D$`A+
 D$`E#
+D$`E3
 D$`H;
 D$hI;
 D$hL9
 D$hL;
-D$pHi
+D$x@2
 D08@t	
 D15S1
 D16_SHADOW
@@ -785,6 +792,7 @@ FEATURES
 FLOATLITERAL
 FLOATSUFFIX
 FRONT
+Failed to add global variable, see previous warning.
 Failed to retrieve shader constants (hr = 0x%X)
 FakeBindlessTexture2D
 Feature combo %s referenced in expression doesn't exist.
@@ -806,6 +814,7 @@ FreeEnvironmentStringsW
 FreeLibrary
 Friday
 Function %s() expects %d arguments. Found %d.
+GD$hD
 GHt13
 GL$(3
 GL$8I
@@ -815,6 +824,7 @@ GREATER
 GREATER_EQUAL
 GT$XD
 GT$XH
+GT$hA
 GT$hH
 GdA9V
 Genu3
@@ -853,7 +863,6 @@ H9A(u
 H9K@u
 H9l$0t
 H9l$@t
-H9t$@t
 H9|$0t
 H9|$Ht
 H9|$Pt
@@ -870,7 +879,6 @@ Hc/;o
 Hc3;s
 Hc;;{
 HcApD;
-HcD$@
 HcD$X
 HcH<H
 HcL$ H
@@ -880,6 +888,7 @@ HcNxE
 HcS@H
 HcT$HH
 Hc]`M
+Hc^`;^pu	H
 Hc^h;^xu
 Hc_0L
 Hc_@;_Pu
@@ -900,7 +909,7 @@ INV_SRC_ALPHA
 INV_SRC_COLOR
 IOS_VULKAN_4_0
 IPD9q
-IcL$x
+Ic4$M
 IcMxD
 IcNxD
 Ic]PA;]`u
@@ -925,6 +934,7 @@ IsProcessorFeaturePresent
 IsValidCodePage
 January
 K&>.yC
+K8+C$
 KERNEL32.dll
 K~Je#>!
 L$ E3
@@ -944,6 +954,7 @@ L$@H3
 L$HE3
 L$LA;
 L$PE3
+L$`fff
 L$ht	H
 L$pE3
 L9d$0t
@@ -952,14 +963,14 @@ L9d$Ht
 L9d$`tK
 L9d$`u	@
 L9l$ t
+L9l$0t
+L9l$8t
 L9l$`t
 L9l$pt
 L9m(t	H
 L9u0t	H
 L9u@t	H
 L9uHt	H
-L9|$0t
-L9|$8t
 L9|$@t
 L9|$ht
 L9|$pt
@@ -1054,7 +1065,6 @@ NV_NULL
 NV_RAWZ
 November
 O(t(H
-O8+G$
 OCTAL_ESC
 October
 Ordered constructor wrapped type has no default constructor.
@@ -1206,15 +1216,14 @@ StencilRef
 StencilWriteMask
 Sunday
 Swizzle operation only supports up to four channels.
+T$ +G$D
 T$ A;
 T$,u$
 T$0E2
 T$0E3
 T$0Ic
-T$8+G$A
 T$8+G$H
 T$@+G$A
-T$HE3
 T$PE3
 T$PfD
 TRILINEAR
@@ -1242,25 +1251,27 @@ TlsGetValue
 TlsSetValue
 TriangleStream
 Tuesday
+Two external descriptor sets have the same slot '%s' and '%s'
 UATAUAVAWH
 UAVAWH
 UNICODE_ESC
 UNKNOWN
 UNSUPPORTED
 UPDATE_STRING_TOKEN_DATABASE
-USATAVH
 USER_CONFIG
 USVATAUAVAWH
 USVWATAUAVAWH
 USVWATAUAWI
 USVWAVH
+USVWH
 UUUUUU
-UVAUAVH
 UVLX8888
 UVWATAUAVAWH
+UVWATH
 UVWAUH
 UVWAVAWH
 UVWQ8888
+UWAUAWH
 UWAVH
 UWAWH
 Unable to write shader debug source code to file "%s" Compiling from memory instead.!
@@ -1284,7 +1295,6 @@ VFX_PROGRAM_MAX
 VFileSystem017
 VS_INPUT
 VWATAUAWH
-VWATAUH
 VWATAVAW
 VWATAVAWH
 VWAUAVAWH
@@ -1315,7 +1325,6 @@ V_strtoui64
 V_tier0_crc32
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Variable %s with variable source TextureDim is referencing unknown texture %s
@@ -1349,7 +1358,6 @@ X360_DST24
 X360_DST24F
 [Index: 
 [[disable_array_flattening]] Texture2D %s[ %d ] : layout( set = %d, binding = %d );
-[gTD% 
 \$ AVH
 \$ H;
 \$ UATAVH
@@ -1373,6 +1381,7 @@ X360_DST24F
 \$@f;
 \$@uRH
 \$HE3
+\$HHc
 \$pE3
 \src\shaders\
 ^ Hc;;{
@@ -1523,7 +1532,6 @@ compiletargetexprParserNew
 compiletargetexprParserNewSSD
 consumestructuredbuffer
 cs_5_0
-d$0Jc
 d$`L9d$Pt
 d3dcompiler_43.dll
 d3dx9_43.dll
@@ -1592,7 +1600,6 @@ g_vShared__
 gs_4_0
 gs_4_1
 gs_5_0
-h^8?^6
 hlslvariablesLexerNew
 hlslvariablesLexerNewSSD
 hlslvariablesParserNew
@@ -1625,11 +1632,11 @@ l$(E3
 l$0A+
 l$0~8H
 l$8H+
-l$@L+
 l$HHc
 l$PA;
 l$XfD
 l$pL;
+lAA|*{
 layout( std140, row_major ) uniform %s
 layout( std140, row_major, binding=%d ) uniform %s
 length
@@ -1666,6 +1673,7 @@ r:D8v
 random
 range%d
 restrict(
+rq~"=n
 rsqrt
 rwbuffer
 rwbyteaddressbuffer
@@ -1731,14 +1739,15 @@ t$P9E
 t$XIi
 t$`A+
 t$`Hc
+t$pL9m
 t$x;_@u
 t(A8(t
-t.@8+t)
+t/D83t*
 t3@80t
 tAHc3;s
-tBHc>;~
 tCHcP
 tDfff
+tGHc>;~
 tVHcsP;s`u	H
 tWHc@
 t[LcvPD;v`u	H
@@ -1773,7 +1782,7 @@ vs_4_0
 vs_4_1
 vs_5_0
 vstdlib.dll
-w fD;
+w!fE;
 w/fA;
 w@H9w
 wKfA;
@@ -1801,6 +1810,7 @@ z0x0:
 |$(E3
 |$(I;
 |$0E3
+|$0Jc
 |$0fff
 |$8;3
 |$@H;
@@ -1816,7 +1826,7 @@ z0x0:
 |$PE3
 |$\.u
 |b=})>
-}'fD;w
+}(fD;w
 }5f;C
 }OfD;
 }Qf;]
@@ -1824,6 +1834,5 @@ z0x0:
 }YfD;
 }_fA;X
 }bfA;
-~8Hc^`;^pu	H
 ~@Lcg
 ~HHco

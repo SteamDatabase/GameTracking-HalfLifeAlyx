@@ -8,7 +8,6 @@
 	Max size allowed : %d Requested : %d
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	kE>fvw
-	s!Hc
 	|\Hc
                           
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -90,7 +89,6 @@
  Hcy@H
  HcyXH
  LZWSetupDecode
- ReadToken overflow
  Type Descriptor'
  but running with 
  clean
@@ -146,6 +144,7 @@ $Ib?s
 %.100s: Can not read TIFF directory
 %5EUeu
 %GoU?*
+%f %f %f %f
 %i %i %i %i
 %ld%c
 %lu: Row out of range, max %lu
@@ -222,7 +221,6 @@ $Ib?s
 (8HXhx
 (A^A]_^
 (A^^][
-(A_A]][
 (A_A^A\^
 (A_A^A][
 (A_A^_[
@@ -289,7 +287,6 @@ $Ib?s
 (|$@I
 (|$pL
 )9IYiy
-)<$E3
 )>6{1n
 )D$ H
 )D$0A
@@ -358,7 +355,7 @@ $Ib?s
 *:JZjz
 *StO9>T
 +;K[k{
-+C tHH
++C tRH
 +C$Hc
 +D$ fE
 +G$Hc
@@ -468,7 +465,6 @@ $Ib?s
 .?AV?$CBaseAppSystem@VIRenderUtils@@@@
 .?AV?$CConCommandMemberAccessor@VCRenderDeviceBase@@@@
 .?AV?$CConCommandMemberAccessor@VCTextureManagerBase@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CFunctorData1@H@@
 .?AV?$CFunctorData1@PEAUIDirect3DDevice9@@@@
 .?AV?$CInputLayoutDict@VCInputLayoutDx9@@@@
@@ -578,6 +574,7 @@ $Ib?s
 .?AVCIndexBufferBase@@
 .?AVCIndexBufferDx9@@
 .?AVCLayoutInsert@@
+.?AVCNoRefFunctor@@
 .?AVCPixelShaderDx9@@
 .?AVCPlaceholderConVar@@
 .?AVCPostConnectCallback@@
@@ -600,6 +597,8 @@ $Ib?s
 .?AVCSchemaRegistration@@
 .?AVCSchemaRegistration_rendersystemdx9@@
 .?AVCSheetHashConstructor@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
 .?AVCSwapChainBase@@
 .?AVCSwapChainDx9@@
 .?AVCTextureBase@@
@@ -788,13 +787,17 @@ $Ib?s
 0A]^]
 0A]_[
 0A^A\]
+0A^A\^H
 0A^A][
 0A^A]]
 0A^][
 0A^^[
+0A^_[
 0A^_^
 0A_A]_][
+0A_A]_^]
 0A_A^A\
+0A_A^A\^]
 0A_A^A\_^
 0A_A^A\_^][
 0A_A^A]
@@ -830,7 +833,7 @@ $Ib?s
 1D;Ew|
 1eaB@
 1wsHp
-200401233847Z0#
+200515052302Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -858,8 +861,6 @@ $Ib?s
 8A^_^[
 8A_A\
 8A_A\H
-8A_A]
-8A_A]H
 8A_A^A]A\_^][
 8A_A^^[
 8D$ u+I
@@ -939,22 +940,20 @@ $Ib?s
 ;Cxr(H
 ;CxsR
 ;D$@@
-;D$pw
 ;H9>&X
 ;Vl}fD
 ;\$ |
 ;\$p|
 ;k u	H
-;l$@u
 ;t<0u
 ;yPu	H
 ;yhu	H
 ;{ ~@
+;|$@u
 <	vN<
 <	vO<
 <	w	@
 < t;<	t7
-<"uBD
 <$E;Q
 <;CL}_Ic
 <>#n2
@@ -981,7 +980,6 @@ $Ib?s
 =SPB8
 =SPB8t
 =imb;D
->'cum
 >Report the maximum D3D feature level available.
 >WIN32
 >ffffff
@@ -998,21 +996,24 @@ $Ib?s
 ?:kP<
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CThreadSemaphore@@QEAA@HHPEBD_N@Z
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ?@En[vP
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Cu0f9w
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?FindOrCreateCounter@CVProfile@@QEAAPEA_KPEBDW4CounterGroup_t@@@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?FixupResourceName: Illegal full path passed in ("%s")!
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -1028,6 +1029,7 @@ $Ib?s
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
@@ -1035,16 +1037,15 @@ $Ib?s
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?kxG2)
 ?sequence number %d too low in sheet file!!!
 ?sqrtf
 ?u='@
-?vhE3
 ?{Q}<
 @%w	D
 @(A+@4;
@@ -1081,7 +1082,6 @@ $Ib?s
 @A^_^
 @A_A\_
 @A_A]A\_]
-@A_A]A\_^][
 @A_A]^][
 @A_A^A\
 @A_A^A\_^
@@ -1106,13 +1106,13 @@ $Ib?s
 @SUATAUH
 @SUATAVH
 @SUATAW
-@SUAUAWH
 @SUAUH
 @SUAVH
 @SUAWH
 @SUVAUAWH
 @SUVAVH
 @SUVAWH
+@SUVH
 @SUVWATAUAVAWH
 @SUVWATAVAWH
 @SUVWAUH
@@ -1158,8 +1158,10 @@ $Ib?s
 @UVWH
 @UWATH
 @VATAVAWH
+@VATAVH
 @VAVAWH
 @VWATAVAWH
+@VWATAVH
 @VWAVH
 @WATAUAVAWH
 @WAVAWH
@@ -1191,9 +1193,6 @@ A9U8tCMc]<McE@Lc
 A9Z<~bL
 A:(uiI
 A;6}#I
-A;D$8u
-A;E8u
-A;G8u
 A;H$s
 A;H$v}H
 A;L$0v#A
@@ -1225,14 +1224,15 @@ ATI_TC_CalculateBufferSize_Wrapper
 ATI_TC_ConvertTexture_Wrapper
 ATTEMPTED TO DECOMMIT OWNED MEMORY STACK SPACE
 AUAVAWH
-AUAWH
 A\_^[
+A]A\H
 A]A\][
 A]A\^]
-A]_[H
+A]A\^]H
+A]A\_[
+A][]H
 A]_^]
 A^A\]
-A^A\^[]
 A^A\^]
 A^A\_^
 A^A]A\_][
@@ -1244,17 +1244,18 @@ A^A]_^[]
 A^A]_^][
 A^^[]
 A^^][
-A^_]H
 A^_^[
 A^_^[]
 A^_^]
 A^_^][
 A_A\][
+A_A\_H
 A_A\_^[H
 A_A\_^]
 A_A]A\[]
 A_A]A\]
 A_A^A\
+A_A^A\H
 A_A^A\^]
 A_A^A\_]
 A_A^A\_^
@@ -1440,32 +1441,32 @@ CRenderContextDx9::ResolveDepthStencilTarget
 CRenderContextDx9::ResolveRenderTarget
 CRenderContextDx9::SetConstantBufferDataInternal
 CRenderContextDx9::SetTextureDataFromResource
-CRenderDeviceBase::AsyncSetTextureData(3227): 
-CRenderDeviceBase::CreateConstantBuffer(1528): 
-CRenderDeviceBase::FindOrCreateTexture(1692): 
+CRenderDeviceBase::AsyncSetTextureData(3229): 
+CRenderDeviceBase::CreateConstantBuffer(1530): 
+CRenderDeviceBase::FindOrCreateTexture(1694): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(939): 
-CRenderDeviceBase::ForceFlushGPU(956): 
+CRenderDeviceBase::Flush(941): 
+CRenderDeviceBase::ForceFlushGPU(958): 
 CRenderDeviceBase::InitPerFrameMemoryStack
-CRenderDeviceBase::Present(662): 
+CRenderDeviceBase::Present(664): 
 CRenderDeviceDx9::CreateDefaultShaders
 CRenderDeviceDx9::CreatePixelShader: Failed to create Pixel Shader!
 CRenderDeviceDx9::CreateVertexShader: Failed to create Vertex Shader!
-CRenderDeviceDx9::EnableRenderContexts(2317): 
-CRenderDeviceDx9::EnableRenderContexts(2324): 
-CRenderDeviceDx9::ForceDeviceLost(1564): 
+CRenderDeviceDx9::EnableRenderContexts(2328): 
+CRenderDeviceDx9::EnableRenderContexts(2335): 
+CRenderDeviceDx9::ForceDeviceLost(1567): 
 CRenderDeviceDx9::GetQueryData - Bad query
 CRenderDeviceDx9::HandleModeChange
-CRenderDeviceDx9::InternalVaCreateRenderContext(2388): 
+CRenderDeviceDx9::InternalVaCreateRenderContext(2399): 
 CRenderDeviceDx9::InvokeCreateDevice
-CRenderDeviceDx9::OnDeviceCreated(1589): 
-CRenderDeviceDx9::OtherAppInitializing(1456): 
-CRenderDeviceDx9::PerFrameCleanup(1756): 
-CRenderDeviceDx9::ReacquireResources_Internal(1540): 
-CRenderDeviceDx9::ReadTexturePixels(1005): 
-CRenderDeviceDx9::ReleaseResources(1476): 
+CRenderDeviceDx9::OnDeviceCreated(1592): 
+CRenderDeviceDx9::OtherAppInitializing(1459): 
+CRenderDeviceDx9::PerFrameCleanup(1759): 
+CRenderDeviceDx9::ReacquireResources_Internal(1543): 
+CRenderDeviceDx9::ReadTexturePixels(1008): 
+CRenderDeviceDx9::ReleaseResources(1479): 
 CRenderDeviceDx9::ResetDx9StateToDefaults
-CRenderDeviceDx9::ShutdownDevice(484): 
+CRenderDeviceDx9::ShutdownDevice(487): 
 CRenderQueryDx9 - Issued a Begin on a non-occlusion query
 CRenderQueryDx9 - Threadsafety problem with query object state!
 CRenderQueryDx9::BeginQuery - Issued a Begin on a non-occlusion query!
@@ -1483,7 +1484,7 @@ CResourceString
 CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-defined attribute %d!
 CSchemaRegistration::RegisterAllModuleData
 CSheetDataTextureCache::AllocateAndUploadSequenceData
-CSheetDataTextureCache::AllocateAndUploadSequenceData(407): 
+CSheetDataTextureCache::AllocateAndUploadSequenceData(408): 
 CSwapChainBase::QueuePresentAndWait() looped for %d iterations without a present event.
 CTSListBase: Misaligned list
 CTSListBase::CTSListBase
@@ -1650,8 +1651,10 @@ D#K|D
 D$ !\$$H
 D$ 3A
 D$ 9F
+D$ ;D$0u
 D$ ;V
 D$ ='
+D$ E	
 D$ E3
 D$ H;
 D$ I;
@@ -1676,7 +1679,6 @@ D$0+D$(H
 D$0,M
 D$00u
 D$09\$<
-D$0;D$@u
 D$0ATOCL
 D$0C+D0(
 D$0D9
@@ -1755,10 +1757,12 @@ D$`H;
 D$`Hc
 D$`L+
 D$`L;
+D$aE;
 D$dE3
 D$dfff
-D$h;F8u
+D$h9_ t}I
 D$hA;
+D$hD+
 D$hD;
 D$hE;
 D$hHc
@@ -1766,8 +1770,10 @@ D$hu4D
 D$pD;
 D$pE3
 D$pMc
-D$qE;
 D$tA9D$|
+D$tfD
+D$vf9EV
+D$vf;E
 D$xHc
 D$xL+
 D$xfD
@@ -1775,8 +1781,6 @@ D$|A;D$pr
 D$|fE
 D(8Ht}
 D)p(H
-D)v<A
-D)w<u<
 D+D$8
 D08@t	
 D15S1
@@ -1855,7 +1859,6 @@ D8s`D
 D8t$8t
 D8t$Ht
 D8{&t
-D9-Lr
 D90u	9X
 D98Ht;H
 D98tT
@@ -1868,11 +1871,11 @@ D9d$(u
 D9f@~0Hc
 D9s(t)H
 D9s,u
-D9t$0~<
 D9uwu
 D9x(uiE
 D9{(u
 D9|$ 
+D;%a|
 D;C tM
 D;Cx|
 D;D$(|
@@ -1884,7 +1887,6 @@ D;T$8}
 D;[ D
 D;j0v
 D;s8|
-D;t$0|
 D;t$du
 D;uou
 D;z,u
@@ -1892,6 +1894,7 @@ D;z,v
 D;z,v(A
 D;{8|
 D;{Lr
+D;|$0|
 D<P0I
 DATAL
 DCT coefficient out of range
@@ -2062,7 +2065,6 @@ EnumProcessModules
 EnumSystemLocalesEx
 EnumSystemLocalesW
 EnumWindows
-EnvironmentMapBuilder_001
 Error creating D3D texture!
 Error creating depth stencil for swap chain!
 Error creating swap chain!
@@ -2347,6 +2349,7 @@ H;xXu9
 H;|$0
 H=vtex
 HA]_][
+HA^A\_^
 HA^A]A\]
 HA^^][
 HA_A]A\_^[
@@ -2367,9 +2370,6 @@ HcB(H
 HcC H
 HcC$H
 HcC(A
-HcC@A
-HcC@E3
-HcC@L
 HcCxH;
 HcCxL;
 HcD$HE+
@@ -2378,6 +2378,7 @@ HcEgH
 HcFTL
 HcFxH
 HcG(H
+HcG@3
 HcGl;Gh}
 HcH<H
 HcI H
@@ -2402,7 +2403,7 @@ Hc]wL;
 Hc^XH
 Hc_(;_8u	H
 Hcl$0H
-Hcl$0L
+HcnXH
 Hct$8H
 Hcw$H
 HcwXH
@@ -2424,9 +2425,9 @@ I HcH
 I9E(t0I
 I9\$ ~@H
 I9}(t9H
+I;@ v
 IB "%s" : Attempted to create too big of a dynamic index buffer!
 ICC Profile
-ICzVB
 INPUT_LAYOUT_VARIATION_DEFAULT
 INPUT_LAYOUT_VARIATION_MAX
 INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID
@@ -2624,11 +2625,9 @@ KV Conditional Evaluation Error
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValuesSystem
 K~Je#>!
 L!|$(L!
-L$ A;
 L$ E3
 L$ H9
 L$ H;
@@ -2651,7 +2650,6 @@ L$ WATAUAVAWH
 L$ WH
 L$ fI
 L$ iM
-L$ t'
 L$$D;
 L$$E+
 L$&@8t$&t0@8q
@@ -2660,6 +2658,7 @@ L$(E+
 L$(E3
 L$(H3
 L$(fH
+L$(fI
 L$(iM
 L$,=)#
 L$0E+
@@ -2704,6 +2703,7 @@ L$THc
 L$XA;
 L$XE3
 L$XfD
+L$^fA;
 L$`A;
 L$`E3
 L$`E;
@@ -2711,7 +2711,6 @@ L$`H3
 L$`fD
 L$`tcA
 L$hI;
-L$pA;
 L$pD9w8
 L$pD;w8
 L$pE2
@@ -2736,6 +2735,7 @@ L9{Pt	H
 L9|(xu
 L9~ t
 L9~PtgL9~`taL9~ht[H
+L;@ v
 L;D$8v7H
 L;EHt
 L;d$8|
@@ -3024,6 +3024,7 @@ PA^A]A\^[
 PA^_]
 PA^_^
 PA_A\[
+PA_A]A\_^][
 PA_A^A\_]
 PA_A^A]A\_^]
 PA_A^^
@@ -3093,6 +3094,7 @@ Plat_TicksAfterSecsF
 Plat_VirtualAlloc
 Plat_VirtualFree
 Plat_WindowToOsSpecificHandle
+PooledDynamicConstantBuffer
 PostProcessingSystem_001
 Potential overflow in png_zalloc()
 Predictor
@@ -3109,7 +3111,6 @@ Q(HcW
 Q2XXR
 Q5rHg,>
 QAngle
-QTp2f*
 Qkkbal
 Ql;QD
 Quantization table 0x%02x was not defined
@@ -3136,6 +3137,7 @@ RENDER_BUFFER_APPEND_CONSUME_BUFFER
 RENDER_BUFFER_BYTEADDRESS_BUFFER
 RENDER_BUFFER_STRUCTURED_BUFFER
 RENDER_BUFFER_UAV_COUNTER
+RENDER_BUFFER_UAV_DRAW_INDIRECT_ARGS
 RENDER_BUFFER_USAGE_INDEX_BUFFER
 RENDER_BUFFER_USAGE_SHADER_RESOURCE
 RENDER_BUFFER_USAGE_UNORDERED_ACCESS
@@ -3250,7 +3252,6 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterTraceGuidsW
 RegisterWaitForSingleObject
 Registering anonymous field with tag %d (0x%x) failed
-Release
 ReleaseD3DTexture(166): 
 ReleaseSRWLockExclusive
 ReleaseSemaphore
@@ -3272,10 +3273,13 @@ RenderSystem/MaxPreloadTextureResolution
 RenderSystem/MinStreamingPoolSizeMB
 RenderSystemSurface001
 RenderUtils_001
+Rendering/Constant Buffers (MB)
+Rendering/Index Buffers (MB)
 Rendering/Texture Non-Evictable Size (MB)
 Rendering/Texture Pool Size (MB)
 Rendering/Texture Resident Size (MB)
 Rendering/Texture Unthrottle Streaming
+Rendering/Vertex Buffers (MB)
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
 Requested feature was omitted at compile time
@@ -3340,6 +3344,7 @@ SVWATAVAWH
 SVWAVH
 SVWAWH
 SWATAUAWH
+SWATAUH
 SWAUH
 SampleFormat
 SamplesPerPixel
@@ -3428,6 +3433,7 @@ Sunday
 Suspension not allowed here
 SwapChainTexture.vtex
 SwitchToThread
+T$ +G$A
 T$ A3
 T$ A;
 T$ E3
@@ -3436,14 +3442,15 @@ T$ H9
 T$ H;
 T$ Lc
 T$ Mc
+T$(+G$A
 T$(D+
 T$0A;U
 T$0D;
 T$0E3
 T$0H;
 T$4E9
-T$8+G$A
 T$8E3
+T$@+G$A
 T$@A;
 T$@E3
 T$@H+
@@ -3463,7 +3470,9 @@ T$`fD;N
 T$pD+
 T$pE3
 T$pH;
+T$pfA+
 T$pfD
+T$pff
 T$xH;
 TADIt	
 TADIu
@@ -3572,8 +3581,6 @@ Too many color components: %d, max %d
 Too many threads (%d) accessing the render device, need to increase -r_max_device_threads (%d)
 Too much
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -3603,7 +3610,6 @@ USATAUH
 USAUH
 USAVI
 USER32.dll
-USVATAVH
 USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
@@ -3616,6 +3622,7 @@ USWAUAVH
 USWAUAVI
 UUUUUU
 UUUUUUU
+UVATAUH
 UVATAVAWH
 UVATAVH
 UVAUH
@@ -3772,7 +3779,6 @@ V_strtoui64
 V_swscanf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 V`;Ct~bH
@@ -3894,6 +3900,7 @@ Zpm"U
 \$ UH
 \$ UVATH
 \$ UVWATAUAVAWH
+\$ UVWAUAWH
 \$ UVWAVAWH
 \$ UVWH
 \$ UWATAUAWH
@@ -3901,7 +3908,6 @@ Zpm"U
 \$ UWAWH
 \$ VH
 \$ VWAUAVAWH
-\$ WATAUAVAWH
 \$ WATAWH
 \$ WH
 \$(D;
@@ -3918,19 +3924,19 @@ Zpm"U
 \$0Lc
 \$0u!@
 \$4E;O
+\$8Hc
 \$@@8=
 \$@D9
 \$@H+
 \$@H;
-\$@Hc
 \$HH;
+\$HHc
 \$Hu$
 \$PA_A^A]A\_^]
 \$PE3
 \$PE;
 \$PfD
 \$Ptc
-\$PuKA
 \$XH;y
 \$XHc
 \$XIc
@@ -4091,16 +4097,16 @@ c:\buildslave\hlvr_rel_win64\build\src\rendersystem\renderresource.h
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\renderstatehelper.h
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\sheetcache.cpp
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(1858):Error loading texture: %s
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2788):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2811):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2822):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2833):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2844):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2865):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2876):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2887):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2898):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(1861):Error loading texture: %s
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2821):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2832):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2843):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2854):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2875):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2886):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2897):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2908):ResourceHandleToData( %s ) failed! Falling back to error texture!
 c:\buildslave\hlvr_rel_win64\build\src\tier1\configvalue.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\mempool.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\utlbuffer.cpp
@@ -4133,8 +4139,6 @@ d$DE;
 d$HA;
 d$HE3
 d$PfD
-d$`E3
-d$`E;
 d$h9s
 d$hE3
 d3d11
@@ -4192,7 +4196,6 @@ f9G`u1H
 f9G`uCH
 f9\$bu
 f9u"v
-f;1}!
 fA9,Au
 fA9<\u
 fA;0t)fA98t
@@ -4279,6 +4282,7 @@ http://support.steampowered.com/cgi-bin/steampowered.cfg/php/enduser/std_adp.php
 http://support.steampowered.com/cgi-bin/steampowered.cfg/php/enduser/std_adp.php?p_faqid=772
 https://www.digicert.com/CPS0
 i H9i0u
+iRelease
 iW!]4/
 identifier removed
 illegal byte sequence
@@ -4327,15 +4331,14 @@ ios_base::eofbit set
 ios_base::failbit set
 iostream
 iostream stream error
-ipurecall
 is a directory
 ispc_texcomp.dll
-it_+0/
 iu+-,
 j'Vlk
 j>>A?1
 j?V()
 j?{$*
+jSB'bQ
 k0i0$
 k0t$I
 kernel32.dll
@@ -4348,6 +4351,7 @@ l$ E3
 l$ E;G|
 l$ HcA
 l$ Lc
+l$ V3
 l$ VAUAWH
 l$ VH
 l$ VWATAUAVAWE3
@@ -4355,7 +4359,6 @@ l$ VWATAUAWH
 l$ VWATAVAWH
 l$ VWAUH
 l$ VWAVH
-l$ VWAWH
 l$ W3
 l$ WAVAWH
 l$ WH
@@ -4370,6 +4373,7 @@ l$0Hc
 l$0HcA
 l$0ff
 l$8A;
+l$8E3
 l$8HcG
 l$8HcH
 l$@A3
@@ -4385,7 +4389,7 @@ l$PA_A^A]A\_^
 l$PD30A
 l$PE3
 l$PLc
-l$XE)o<L
+l$XE3
 l$XHc
 l$XHk
 l$`C9,
@@ -4395,8 +4399,7 @@ l$`Hc
 l$`u	
 l$hHcH
 l$hM;
-l$p9_ t
-l$pE3
+l$vfD
 l6qnk
 ldexp
 libpng does not support gamma+background+rgb_to_gray
@@ -4481,7 +4484,7 @@ must be either LogLUV or LogL
 mwIcN
 n D9e
 n03>Pu
-nD8-c
+nD8-/
 nSizeInBytes <= RENDER_BUFFER_DYNAMIC_VERTEX_FIXED_SIZE_DX9
 nTries < 10000000
 n]?iJ
@@ -4514,6 +4517,7 @@ not connected
 not enough memory
 not supported
 ntelE
+oBS7n)
 oD$ H
 oD$ f
 oI>O7
@@ -4536,6 +4540,7 @@ p UAVAWH
 p0n05
 p1f3q>
 p?ati_compress_wrapper.dll
+pA]_[
 pA^^]
 pA_A]A\_]
 pA_A^A]A\_^[
@@ -4616,6 +4621,7 @@ ps_3_0
 psapi.dll
 pseudo-
 psize
+purecall
 q(9YD~tE3
 qS>g?h3
 queued
@@ -4737,17 +4743,12 @@ switchState
 t H9X8tN
 t"<.u
 t#fff
-t$ ;C ~
-t$ @2
 t$ ATAVAWH
 t$ AVAWH
 t$ AVAWL
-t$ AVE3
 t$ AVH
 t$ AWH
-t$ E2
 t$ E3
-t$ Hc
 t$ Mc
 t$ UAVAWH
 t$ UH
@@ -4761,7 +4762,6 @@ t$ WAVA
 t$ WAVAWH
 t$ WE3
 t$ WH
-t$(A^
 t$(D;
 t$(Hc
 t$(Lc
@@ -4771,6 +4771,7 @@ t$0+A$t
 t$0A^_
 t$0A_A^
 t$0D;
+t$0E2
 t$0E3
 t$0H+
 t$0H;
@@ -4780,7 +4781,6 @@ t$0M;
 t$8E2
 t$8H+
 t$8Hc
-t$<A9
 t$@9Y8
 t$@A^A]A\_
 t$@E3
@@ -4809,7 +4809,6 @@ t$Xt	H
 t$\D;
 t$`9w
 t$`;w
-t$`E3
 t$h9~
 t$hI;
 t$pHcH
@@ -4898,7 +4897,7 @@ twH;^XtH3
 txH99us
 tyfD9 tsH
 u	9w$
-u	@8=uu
+u	@8=u
 u	IcE0
 u f;N
 u!!D$(H
@@ -4922,13 +4921,13 @@ u@A9l$
 u@E9n
 uBf9l$5t
 uFE9n
-uFHcl$0A
 uGA9l$
 uHfA;
 uLE9n
 uMHcE
 uMfA9h uFfA9h0u?fA9h@u8fA9hPu1fA9h`u*fA9hpu#A
 uNA9l$
+uOHc|$0A
 uRE9n
 uT<0uP
 uUA9l$
@@ -4938,6 +4937,7 @@ uYfA9h uRfA9h0uKfA9h@uDfA9hPu=fA9h`u6fA9hpu/A
 u[Hc}gE3
 u[Lc}WH
 u\A9l$
+u^A;]
 ucA9l$
 uf!T$(H!T$ 
 uf@8t$8t"A
@@ -4975,7 +4975,6 @@ vs_3_0
 vstdlib
 vstdlib.dll
 vtexH
-vtexI
 v}`[>
 w+OQvr
 w1kK0
@@ -4998,7 +4997,7 @@ x AVE3
 x AVH
 x AVHcA
 x AWH
-x Hc=j
+x Hc=
 x UATAUAVAWH
 x!HcI
 x!HcK
@@ -5037,6 +5036,7 @@ zlib version error
 |$ ATAUAVAW
 |$ ATAUAVAWL
 |$ ATAVAWH
+|$ AUAVAW
 |$ AUAVAWH
 |$ AVAW
 |$ AVAWD
@@ -5085,7 +5085,6 @@ zlib version error
 |$@Lc
 |$@t	3
 |$@u.
-|$@u:
 |$HA#
 |$HA;
 |$HHc
@@ -5094,6 +5093,7 @@ zlib version error
 |$PH;
 |$PHcy@
 |$XD;d$h~	D
+|$XE3
 |$XHc
 |$XHcU
 |$\.u
@@ -5102,6 +5102,7 @@ zlib version error
 |$`E3
 |$`Ic
 |$`Lc
+|$`ff
 |$h9i
 |$hD9
 |$hE3
@@ -5114,10 +5115,9 @@ zlib version error
 }UfD	
 }_t!H
 ~ $s%r
-~ fff
 ~(HcNDI
-~*9y0
-~*9yP
+~*9q0
+~*9qP
 ~-LcP
 ~2D8u
 ~:fD9,

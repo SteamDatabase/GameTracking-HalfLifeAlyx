@@ -32,6 +32,7 @@
  A;oX
  A;~X|
  A\_]
+ A^A\^
  A^A\_
  A^A\_^[
  A^A]^
@@ -42,6 +43,8 @@
  A^_]
  A^_^
  A_A\]
+ A_A\^[]
+ A_A\^[]I
  A_A\_
  A_A]A\^[
  A_A]A\^]
@@ -53,7 +56,6 @@
  A_A^A\_^
  A_A^A]A\_
  A_A^A]A\_^]
- A_A^A]][
  A_A^A]^]
  A_A^]
  A_A^^
@@ -70,12 +72,12 @@
  E;}X
  Hc1H
  Hc2L
- Hc5+
+ Hc5;
  Hc9H
  Hc:H
  HcyH3
+ HcyXH
  Lc1H
- ReadToken overflow
  vJH+
 !Hc{@
 "%s" has mismatched retarget rule counts, disabling.
@@ -92,7 +94,6 @@
 #include
 #include is NULL 
 $A;\$
-$oR0F
 %-40.40s %10.10s %10.10s
 %-40.40s %10.2f %10.2f
 %.15lf
@@ -244,6 +245,7 @@ $oR0F
 (4$Mc
 (;l$(u
 (A]A\^]
+(A]A\_]
 (A^A]A\[
 (A^A]A\]
 (A^A]A\_
@@ -251,14 +253,13 @@ $oR0F
 (A_A\
 (A_A\][
 (A_A\_^][
-(A_A]][
 (A_A]_[
 (A_A^
 (A_A^A]A\
+(A_A^A]^][
 (A_A^_[
 (A_A^_^][
 (D" A
-(D$ A
 (D$ H
 (D$ L
 (D$ f
@@ -269,18 +270,17 @@ $oR0F
 (D$@A
 (D$@D
 (D$@H
-(D$@Hc{@
 (D$@L
 (D$@f
 (D$PD
 (D$PH
-(D$PL
+(D$PHc{@D
 (D$`A
 (D$`B
 (D$`D
 (D$`H
 (D$`L
-(D$`t`
+(D$pD
 (D$pH
 (D$pu
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -300,6 +300,7 @@ $oR0F
 (L$PD
 (L$PH
 (L$PH+
+(L$Pt`
 (L$`A
 (L$`D
 (L$`H
@@ -309,11 +310,13 @@ $oR0F
 (L$pD
 (L$pE
 (L$pH
+(L$pL
 (None)
 (T$ D
 (T$ H
 (T$0D
 (T$0H
+(T$0L
 (T$@D
 (T$@H
 (T$PD
@@ -359,8 +362,8 @@ $oR0F
 (l$PA
 (l$PD
 (l$PE
+(l$PH
 (l$`D
-(l$`H
 (l$`L
 (l$pD
 (l$pE3
@@ -377,12 +380,12 @@ $oR0F
 (t$0H
 (t$0L
 (t$@D
-(t$@G
 (t$@H
 (t$@L
 (t$PD
 (t$PH
 (t$PL
+(t$Pfff
 (t$Pt
 (t$`D
 (t$`E
@@ -415,10 +418,9 @@ $oR0F
 (|$PE
 (|$PH
 (|$PI
+(|$`@8
 (|$`A
 (|$`D
-(|$`D8
-(|$`E
 (|$`H
 (|$`I
 (|$`L
@@ -427,16 +429,7 @@ $oR0F
 (|$pH
 (|$pI
 (|$pL
-)%E+%
-)%H*%
-)-?*%
 )4$H;
-)5$+%
-)5H*%
-)5O)%
-)5h)%
-)5o(%
-)=F)%
 )D$ A
 )D$ D
 )D$ E
@@ -448,13 +441,14 @@ $oR0F
 )D$0H
 )D$0L
 )D$0u
-)D$@;P
 )D$@A
 )D$@A;@
 )D$@D
+)D$@D;@
 )D$@H
-)D$P;
+)D$@f
 )D$PD
+)D$PE
 )D$PH
 )D$Pf
 )D$`D
@@ -479,14 +473,15 @@ $oR0F
 )L$0r
 )L$0th
 )L$@D
+)L$@E
 )L$@H
+)L$@L
 )L$PD
-)L$PE
 )L$PH
+)L$PL
 )L$Pt
 )L$`D
 )L$`H
-)L$`L
 )L$`M
 )L$pD
 )L$pE
@@ -499,7 +494,6 @@ $oR0F
 )T$ I
 )T$0;H
 )T$0D
-)T$0E
 )T$@B
 )T$@D
 )T$P3
@@ -530,7 +524,6 @@ $oR0F
 )\$pD
 )\$pE
 )\$pH
-)\$pI
 )\7@A
 )d$@D
 )d$`A
@@ -546,7 +539,6 @@ $oR0F
 )l$`D
 )l$pA
 )m ;H
-)t$ ;A
 )t$ A
 )t$ D
 )t$ E3
@@ -569,6 +561,7 @@ $oR0F
 )t$@3
 )t$@90t/Hc
 )t$@98t0Hc
+)t$@;A
 )t$@;HPs
 )t$@A
 )t$@A;@
@@ -614,13 +607,13 @@ $oR0F
 )|$ I
 )|$ Mc
 )|$ f
+)|$ v:
+)|$03
 )|$0D
 )|$0D;@
 )|$0H
-)|$0L
 )|$0Mc
 )|$0fE
-)|$0v?
 )|$@A8]4
 )|$@D
 )|$@D;H
@@ -628,7 +621,6 @@ $oR0F
 )|$@H
 )|$@L
 )|$@M
-)|$@f
 )|$PA
 )|$PD
 )|$PH
@@ -646,8 +638,8 @@ $oR0F
 )|$pD
 )|$pE
 )|$pH
-)|$pHc
 *Cm_EndEffectorFixedOffsetAttachment
+*t;Vkh
 +A$Hc
 +B$Hc
 +C$Hc
@@ -663,272 +655,295 @@ $oR0F
 ,0<	w
 ,A8~ t&
 ,|%)v
+,}vl\
 - Scripted Sequence: 
 -1 1000
 -180 180
 -animdecodecachemem
+-enable_2gb_morphs
 -sse2
 -sse3
 -sse4
-.?AU?$CFactoryMakerT@VCAddAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCAimMatrixAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCAudioAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCBlend2DAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCBlendAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCBoneMaskAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCAddAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCAimMatrixAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCAudioAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCBlend2DAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCBlendAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCBoneMaskAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCBonePositionMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCBoneVelocityMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCBoolAnimParameter@@@?$CAnimFactoryBaseT@VCAnimParameterBase@@@@
-.?AU?$CFactoryMakerT@VCChoiceAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCChoreoAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCBoolAnimParameter@@@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCChoiceAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCChoreoAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCChoreoAnimNodeInstance@@@CAnimNodeInstanceFactory@@
-.?AU?$CFactoryMakerT@VCClothSettingsAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCControlValueCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
+.?AU?$CFactoryMakerT@VCClothSettingsAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCCommentAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCControlValueCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCCurrentVelocityMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCCycleCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCCycleControlAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCDampedPathAnimMotor@@@?$CAnimFactoryBaseT@VCBaseAnimMotor@@@@
-.?AU?$CFactoryMakerT@VCDirectPlaybackAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCCycleCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCCycleControlAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCDampedPathAnimMotor@@@?$CTypeFactory@VCBaseAnimMotor@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCDirectPlaybackAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCDirectPlaybackAnimNodeInstance@@@CAnimNodeInstanceFactory@@
-.?AU?$CFactoryMakerT@VCDirectionalBlendAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCDirectionalBlendAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCDistanceRemainingMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCEnumAnimParameter@@@?$CAnimFactoryBaseT@VCAnimParameterBase@@@@
-.?AU?$CFactoryMakerT@VCFinishedCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCFloatAnimParameter@@@?$CAnimFactoryBaseT@VCAnimParameterBase@@@@
-.?AU?$CFactoryMakerT@VCFollowAttachmentAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCFollowPathAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCEnumAnimParameter@@@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFacingHeadingCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFinishedCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFloatAnimParameter@@@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFollowAttachmentAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFollowPathAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFootCycleMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCFootLockAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCFootFallAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCFootLockAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFootLockAnimNodeInstance@@@CAnimNodeInstanceFactory@@
 .?AU?$CFactoryMakerT@VCFootPositionMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFootPositionMetricInstance@@@?$CInstanceFactory@VCMotionMetricInstance@@VCMotionMetricBase@@AEBV?$CSmartPtr@VCAnimGraphUpdateContext@@VCRefCountAccessor@@@@V?$CPackedHandle@$$CBVCMotionMetricEvaluator@@@@@Reflection@@
-.?AU?$CFactoryMakerT@VCFootstepLandedAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
+.?AU?$CFactoryMakerT@VCFootstepLandedAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFutureFacingMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFutureFacingMetricInstance@@@?$CInstanceFactory@VCMotionMetricInstance@@VCMotionMetricBase@@AEBV?$CSmartPtr@VCAnimGraphUpdateContext@@VCRefCountAccessor@@@@V?$CPackedHandle@$$CBVCMotionMetricEvaluator@@@@@Reflection@@
 .?AU?$CFactoryMakerT@VCFutureVelocityMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCFutureVelocityMetricInstance@@@?$CInstanceFactory@VCMotionMetricInstance@@VCMotionMetricBase@@AEBV?$CSmartPtr@VCAnimGraphUpdateContext@@VCRefCountAccessor@@@@V?$CPackedHandle@$$CBVCMotionMetricEvaluator@@@@@Reflection@@
-.?AU?$CFactoryMakerT@VCGroundCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCGroundIKSolveAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCHitReactAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCIntAnimParameter@@@?$CAnimFactoryBaseT@VCAnimParameterBase@@@@
-.?AU?$CFactoryMakerT@VCJiggleBoneAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCLeanMatrixAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCLookAtAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCMotionMatchingAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCGroundCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCGroundIKSolveAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCHitReactAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCIntAnimParameter@@@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCJiggleBoneAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCLeanMatrixAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCLookAtAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCLookHeadingCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCLookPitchCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCMotionMatchingAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCMotionMatchingAnimNodeInstance@@@CAnimNodeInstanceFactory@@
-.?AU?$CFactoryMakerT@VCMoverAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCParameterAnimCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCParticleAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCPathAnimMotor@@@?$CAnimFactoryBaseT@VCBaseAnimMotor@@@@
+.?AU?$CFactoryMakerT@VCMoveHeadingCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCMoveSpeedCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCMoverAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCNeuralNetAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCParameterAnimCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCParticleAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCPathAnimMotor@@@?$CTypeFactory@VCBaseAnimMotor@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCPathHelperAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCPathMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCPathMetricInstance@@@?$CInstanceFactory@VCMotionMetricInstance@@VCMotionMetricBase@@AEBV?$CSmartPtr@VCAnimGraphUpdateContext@@VCRefCountAccessor@@@@V?$CPackedHandle@$$CBVCMotionMetricEvaluator@@@@@Reflection@@
-.?AU?$CFactoryMakerT@VCPathStatusCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCPlayerInputAnimMotor@@@?$CAnimFactoryBaseT@VCBaseAnimMotor@@@@
-.?AU?$CFactoryMakerT@VCPostGraphIKChainBlendTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCPostGraphIKTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCRagdollAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCRootAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSelectorAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSequenceAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCPathStatusCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCPostGraphIKChainBlendTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCRagdollAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCRootAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSelectorAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSequenceAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCSequenceAnimNodeInstance@@@CAnimNodeInstanceFactory@@
-.?AU?$CFactoryMakerT@VCSequenceFinishedAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCSetFacingAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSingleFrameAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSkeletalInputAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSlowDownOnSlopesAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCSolveIKChainAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCSequenceFinishedAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSetFacingAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSingleFrameAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSkeletalInputAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSlowDownOnSlopesAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSolveIKChainAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCSolveIKChainAnimNodeInstance@@@CAnimNodeInstanceFactory@@
-.?AU?$CFactoryMakerT@VCSpeedScaleAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCStateMachineAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
+.?AU?$CFactoryMakerT@VCSpeedScaleAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCStateMachineAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCStateMachineAnimNodeInstance@@@CAnimNodeInstanceFactory@@
 .?AU?$CFactoryMakerT@VCStepsRemainingMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCStopAtGoalAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCStringAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCSubtractAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCTagCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
-.?AU?$CFactoryMakerT@VCTaskStatusAnimTag@@@?$CAnimFactoryBaseT@VCAnimTagBase@@@@
-.?AU?$CFactoryMakerT@VCTimeCondition@@@?$CAnimFactoryBaseT@VCAnimStateConditionBase@@@@
+.?AU?$CFactoryMakerT@VCStopAtGoalAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCStringAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCSubtractAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCTagCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCTaskStatusAnimTag@@@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCTimeCondition@@@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
 .?AU?$CFactoryMakerT@VCTimeRemainingMetric@@@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AU?$CFactoryMakerT@VCTurnHelperAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCTwoBoneIKAnimNode@@@?$CAnimFactoryBaseT@VCAnimNodeBase@@@@
-.?AU?$CFactoryMakerT@VCVectorAnimParameter@@@?$CAnimFactoryBaseT@VCAnimParameterBase@@@@
-.?AU?$ToBaseT@VCAddAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAimMatrixAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimGraphGeneralSettings@@VCAnimGraphSettingsGroup@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimGraphNetworkSettings@@VCAnimGraphSettingsGroup@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimGraphSettingsGroup@@VIAnimGraphSettingsGroup@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimNodeBase@@VIAnimNodeBuilder@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimNodeInstanceBase@@VIAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimParameterBase@@VIAnimParameter@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimParameterInstance@@VIAnimParameterInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimState@@VIAnimState@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimStateConditionBase@@VIAnimStateCondition@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimStateTransition@@VIAnimStateTransition@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimTagBase@@VIAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimationGraph@@VIAnimationGraphBuilder@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAnimationGraphInstance@@VIAnimationGraphInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAudioAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCAudioAnimTag@@VIAudioAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBaseAnimMotor@@VIAnimMotor@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBaseAnimMotorInstance@@VIAnimMotorInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBasePathAnimMotor@@VCBaseAnimMotor@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBasePathAnimMotorInstance@@VCBaseAnimMotorInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBlend2DAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBlendAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBlendAnimNode@@VIBlendAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBoneMaskAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBonePositionMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBoneVelocityMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCBoolAnimParameter@@VCAnimParameterBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCChoiceAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCChoiceAnimNode@@VIChoiceAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCChoreoAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCChoreoAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCChoreoAnimNodeInstance@@VIChoreoAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCClothSettingsAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCClothSettingsAnimTag@@VIClothSettingsAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCControlValueCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCCurrentVelocityMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCCycleCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCCycleControlAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDampedPathAnimMotor@@VCBasePathAnimMotor@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDampedPathAnimMotorInstance@@VCBasePathAnimMotorInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDirectPlaybackAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDirectPlaybackAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDirectPlaybackAnimNodeInstance@@VIDirectPlaybackAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDirectionalBlendAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCDistanceRemainingMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCEnumAnimParameter@@VCAnimParameterBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCEnumAnimParameter@@VIEnumAnimParameter@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCEnumAnimParameterInstance@@VCAnimParameterInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCEnumAnimParameterInstance@@VIEnumAnimParameterInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFacingHeadingCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFinishedCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFloatAnimParameter@@VCAnimParameterBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFollowAttachmentAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFollowPathAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootCycleMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootFallAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootFallAnimTag@@VIFootFallAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootLockAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootLockAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootLockAnimNodeInstance@@VIFootLockAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootPositionMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootPositionMetricInstance@@VCMotionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootPositionMetricInstance@@VIFootPositionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootstepLandedAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFootstepLandedAnimTag@@VIFootstepLandedAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureFacingMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureFacingMetricInstance@@VCMotionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureFacingMetricInstance@@VIFutureFacingMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureVelocityMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureVelocityMetricInstance@@VCMotionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCFutureVelocityMetricInstance@@VIFutureVelocityMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCGroundCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCGroundIKSolveAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCHitReactAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCIntAnimParameter@@VCAnimParameterBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCJiggleBoneAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCLeanMatrixAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCLookAtAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCLookHeadingCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCLookPitchCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionClip@@VIMotionClip@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionClipGroup@@VIMotionClipGroup@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMatchingAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMatchingAnimNode@@VIMotionMatchingAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMatchingAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMatchingAnimNodeInstance@@VIMotionMatchingAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMetricBase@@VIMotionMetric@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMotionMetricInstance@@VIMotionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMoveHeadingCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMoveSpeedCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCMoverAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCNeuralNetAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCParameterAnimCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCParticleAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCParticleAnimTag@@VIParticleAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathAnimMotor@@VCBasePathAnimMotor@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathAnimMotorInstance@@VCBaseAnimMotorInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathHelperAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathMetricInstance@@VCMotionMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathMetricInstance@@VIPathMetricInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPathStatusCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPlayerInputAnimMotor@@VCBasePathAnimMotor@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPlayerInputAnimMotorInstance@@VCBasePathAnimMotorInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPostGraphIKChainBlendTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPostGraphIKChainBlendTag@@VIPostGraphIKChainBlendTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPostGraphIKTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCPostGraphIKTag@@VIPostGraphIKTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCRagdollAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCRagdollAnimTag@@VIRagdollAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCRootAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSelectorAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSelectorAnimNode@@VISelectorAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceAnimNode@@VISequenceAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceAnimNodeInstance@@VISequenceAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceFinishedAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSequenceFinishedAnimTag@@VISequenceFinishedAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSetFacingAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSingleFrameAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSkeletalInputAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSlowDownOnSlopesAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSolveIKChainAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSolveIKChainAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSolveIKChainAnimNodeInstance@@VISolveIKChainAnimNodeInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSpeedScaleAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStateMachineAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStateMachineAnimNode@@VIAnimStateMachine@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStateMachineAnimNodeInstance@@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStateMachineAnimNodeInstance@@VIAnimStateMachineInstance@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStepsRemainingMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStopAtGoalAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStringAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCStringAnimTag@@VIStringAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCSubtractAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTagCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTaskStatusAnimTag@@VCAnimTagBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTaskStatusAnimTag@@VIStatusAnimTag@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTimeCondition@@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTimeRemainingMetric@@VCMotionMetricBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTurnHelperAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCTwoBoneIKAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCVectorAnimParameter@@VCAnimParameterBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VCWayPointHelperAnimNode@@VCAnimNodeBase@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimGraphSettingsGroup@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimMotor@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimMotorInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimNode@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimNodeBuilder@@VIAnimNode@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimNodeInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimParameter@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimParameterInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimState@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimStateCondition@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimStateTransition@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimTag@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimationGraph@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimationGraphBuilder@@VIAnimationGraph@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIAnimationGraphInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIEnumAnimParameterInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIMotionClip@@VIAnimTagSpanContainer@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIMotionClip@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIMotionClipGroup@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VIMotionMetricInstance@@VObject@Reflection@@@Detail@Reflection@@
-.?AU?$ToBaseT@VISequenceAnimNode@@VIAnimTagSpanContainer@@@Detail@Reflection@@
+.?AU?$CFactoryMakerT@VCTurnHelperAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCTwoBoneIKAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCVectorAnimParameter@@@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AU?$CFactoryMakerT@VCWayPointHelperAnimNode@@@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUCAnimData@@
 .?AUCAnimationGroup@@
 .?AUCFactoryMaker@?$CInstanceFactory@VCMotionMetricInstance@@VCMotionMetricBase@@AEBV?$CSmartPtr@VCAnimGraphUpdateContext@@VCRefCountAccessor@@@@V?$CPackedHandle@$$CBVCMotionMetricEvaluator@@@@@Reflection@@
+.?AUCFactoryMaker@?$CTypeFactory@VCAnimNodeBase@@$$V@Reflection@@
+.?AUCFactoryMaker@?$CTypeFactory@VCAnimParameterBase@@$$V@Reflection@@
+.?AUCFactoryMaker@?$CTypeFactory@VCAnimStateConditionBase@@$$V@Reflection@@
+.?AUCFactoryMaker@?$CTypeFactory@VCAnimTagBase@@$$V@Reflection@@
+.?AUCFactoryMaker@?$CTypeFactory@VCBaseAnimMotor@@$$V@Reflection@@
 .?AUCFactoryMaker@?$CTypeFactory@VCMotionMetricBase@@$$V@Reflection@@
-.?AUCFactoryMaker@CAnimFactoryBase@@
 .?AUCFactoryMaker@CAnimNodeInstanceFactory@@
 .?AUCSequenceGroupData@@
-.?AUToBase_t@Detail@Reflection@@
 .?AV?$CAnimObjectPool@VCAnimPose@@@@
 .?AV?$CBaseAppSystem@VIAnimationSystem@@@@
+.?AV?$CClassInfoT@VCAddAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAimMatrixAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimGraphGeneralSettings@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimGraphNetworkSettings@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimGraphSettingsGroup@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimNodeBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimNodeInstanceBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimParameterBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimParameterInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimState@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimStateConditionBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimStateTransition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimTagBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimationGraph@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAnimationGraphInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAttribute@Reflection@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCAudioAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBaseAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBaseAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBasePathAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBasePathAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBlend2DAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBlendAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBoneMaskAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBonePositionMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBoneVelocityMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCBoolAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCChoiceAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCChoreoAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCChoreoAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCClothSettingsAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCCommentAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCControlValueCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCCurrentVelocityMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCCycleCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCCycleControlAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDampedPathAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDampedPathAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDirectPlaybackAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDirectPlaybackAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDirectionalBlendAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCDistanceRemainingMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCEnumAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCEnumAnimParameterInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFacingHeadingCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFinishedCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFloatAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFollowAttachmentAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFollowPathAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootCycleMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootFallAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootLockAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootLockAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootPositionMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootPositionMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFootstepLandedAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFutureFacingMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFutureFacingMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFutureVelocityMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCFutureVelocityMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCGroundCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCGroundIKSolveAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCHitReactAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCIntAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCJiggleBoneAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCLeanMatrixAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCLookAtAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCLookHeadingCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCLookPitchCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionClip@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionClipGroup@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionMatchingAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionMatchingAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionMetricBase@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMotionMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMoveHeadingCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMoveSpeedCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCMoverAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCNeuralNetAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCParameterAnimCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCParticleAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathHelperAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPathStatusCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPlayerInputAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPlayerInputAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPostGraphIKChainBlendTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCPostGraphIKTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCRagdollAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCRootAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSelectorAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSequenceAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSequenceAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSequenceFinishedAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSetFacingAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSingleFrameAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSkeletalInputAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSlowDownOnSlopesAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSolveIKChainAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSolveIKChainAnimNodeChainData@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSolveIKChainAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSpeedScaleAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCStateMachineAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCStateMachineAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCStepsRemainingMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCStopAtGoalAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCStringAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCSubtractAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTagCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTaskStatusAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTimeCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTimeRemainingMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTurnHelperAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCTwoBoneIKAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCVectorAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VCWayPointHelperAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VColor@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VDeprecated@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VDescription@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VFriendlyName@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VGroup@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimGraphSettingsGroup@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimMotor@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimMotorInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimParameterInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimState@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimStateCondition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimStateMachine@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimStateMachineInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimStateTransition@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimTagSpanContainer@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimationGraph@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimationGraphBuilder@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAnimationGraphInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIAudioAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIBlendAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIChoiceAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIChoreoAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIClothSettingsAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VICommentAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIDirectPlaybackAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIEnumAnimParameter@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIEnumAnimParameterInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFootFallAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFootLockAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFootPositionMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFootstepLandedAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFutureFacingMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIFutureVelocityMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionClip@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionClipGroup@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionMatchingAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionMatchingAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionMetric@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIMotionMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIParticleAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIPathMetricInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIPostGraphIKChainBlendTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIPostGraphIKTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIRagdollAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VISelectorAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VISequenceAnimNode@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VISequenceAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VISequenceFinishedAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VISolveIKChainAnimNodeInstance@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIStatusAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIStringAnimTag@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VIcon@Attribute@@@Detail@Reflection@@
+.?AV?$CClassInfoT@VObject@Reflection@@@Detail@Reflection@@
 .?AV?$CCompressedAnim@H@@
 .?AV?$CCompressedAnim@M@@
 .?AV?$CCompressedAnim@VColor@@@@
@@ -959,8 +974,6 @@ $oR0F
 .?AV?$CCompressedStatic@VVector2D@@V1@@@
 .?AV?$CCompressedStatic@VVector4D@@V1@@@
 .?AV?$CCompressedStatic@_N_N@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0CAAA@$0A@@@
 .?AV?$CKV3ResourceTypeManager@$0GIHAHCGHGNGOGBHG@@@
 .?AV?$CMutableRefCountBase@$00VCRefMT@@@@
 .?AV?$CMutableRefCounted@V?$CMutableRefCountBase@$00VCRefMT@@@@@@
@@ -1060,174 +1073,9 @@ $oR0F
 .?AV?$CUnregisterReceipt@V?$CSmartPtr@VCAnimGraphDebugReplay@@VCRefCountAccessor@@@@P8CAnimGraphDebugReplay@@EAAXPEAVIAnimReplayListener@@@ZPEAV3@@@
 .?AV?$CUnregisterReceipt@V?$CSmartPtr@VCAnimationGraphInstance@@VCRefCountAccessor@@@@P8CAnimationGraphInstance@@EAAXPEAVIAnimGraphSequenceFinishedListener@@@ZPEAV3@@@
 .?AV?$CUtlVectorDataOps@V?$CUtlVector@HV?$CUtlMemory@HH@@@@$04@@
-.?AV?$TypeInfoT@VCAddAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAimMatrixAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimGraphGeneralSettings@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimGraphNetworkSettings@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimGraphSettingsGroup@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimNodeBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimNodeInstanceBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimParameterBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimParameterInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimState@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimStateConditionBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimStateTransition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimTagBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimationGraph@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAnimationGraphInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCAudioAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBaseAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBaseAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBasePathAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBasePathAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBlend2DAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBlendAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBoneMaskAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBonePositionMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBoneVelocityMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCBoolAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCChoiceAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCChoreoAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCChoreoAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCClothSettingsAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCControlValueCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCCurrentVelocityMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCCycleCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCCycleControlAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDampedPathAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDampedPathAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDirectPlaybackAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDirectPlaybackAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDirectionalBlendAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCDistanceRemainingMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCEnumAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCEnumAnimParameterInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFacingHeadingCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFinishedCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFloatAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFollowAttachmentAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFollowPathAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootCycleMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootFallAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootLockAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootLockAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootPositionMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootPositionMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFootstepLandedAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFutureFacingMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFutureFacingMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFutureVelocityMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCFutureVelocityMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCGroundCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCGroundIKSolveAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCHitReactAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCIntAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCJiggleBoneAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCLeanMatrixAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCLookAtAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCLookHeadingCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCLookPitchCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionClip@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionClipGroup@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionMatchingAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionMatchingAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionMetricBase@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMotionMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMoveHeadingCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMoveSpeedCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCMoverAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCNeuralNetAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCParameterAnimCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCParticleAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathHelperAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPathStatusCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPlayerInputAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPlayerInputAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPostGraphIKChainBlendTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCPostGraphIKTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCRagdollAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCRootAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSelectorAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSequenceAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSequenceAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSequenceFinishedAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSetFacingAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSingleFrameAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSkeletalInputAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSlowDownOnSlopesAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSolveIKChainAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSolveIKChainAnimNodeChainData@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSolveIKChainAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSpeedScaleAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCStateMachineAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCStateMachineAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCStepsRemainingMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCStopAtGoalAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCStringAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCSubtractAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTagCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTaskStatusAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTimeCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTimeRemainingMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTurnHelperAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCTwoBoneIKAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCVectorAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VCWayPointHelperAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimGraphSettingsGroup@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimMotor@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimMotorInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimNodeBuilder@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimParameterInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimState@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimStateCondition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimStateMachine@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimStateMachineInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimStateTransition@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimTagSpanContainer@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimationGraph@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimationGraphBuilder@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAnimationGraphInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIAudioAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIBlendAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIChoiceAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIChoreoAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIClothSettingsAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIDirectPlaybackAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIEnumAnimParameter@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIEnumAnimParameterInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFootFallAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFootLockAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFootPositionMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFootstepLandedAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFutureFacingMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIFutureVelocityMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionClip@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionClipGroup@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionMatchingAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionMatchingAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionMetric@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIMotionMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIParticleAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIPathMetricInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIPostGraphIKChainBlendTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIPostGraphIKTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIRagdollAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VISelectorAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VISequenceAnimNode@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VISequenceAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VISequenceFinishedAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VISolveIKChainAnimNodeInstance@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIStatusAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VIStringAnimTag@@@Detail@Reflection@@
-.?AV?$TypeInfoT@VObject@Reflection@@@Detail@Reflection@@
+.?AV?$_Ref_count@VColor@Attribute@@@std@@
+.?AV?$_Ref_count@VDeprecated@Attribute@@@std@@
+.?AV?$_Ref_count@VFriendlyName@Attribute@@@std@@
 .?AVAnimationResultPoseAccessorWrapper@@
 .?AVCActivityValueList@@
 .?AVCActivityValues@@
@@ -1303,6 +1151,8 @@ $oR0F
 .?AVCAnimationSystem@@
 .?AVCAnimationSystemUtils@@
 .?AVCAnimationTypeManagerV0@@
+.?AVCAttribute@Reflection@@
+.?AVCAttributeContainer@Reflection@@
 .?AVCAudioAnimTag@@
 .?AVCBaseAnimMotor@@
 .?AVCBaseAnimMotorInstance@@
@@ -1328,9 +1178,11 @@ $oR0F
 .?AVCChoreoAnimNode@@
 .?AVCChoreoAnimNodeInstance@@
 .?AVCChoreoUpdateNode@@
+.?AVCClassInfo@Reflection@@
 .?AVCClothAttrSequenceCompiler@@
 .?AVCClothSettingsAnimTag@@
 .?AVCCmdSequence@@
+.?AVCCommentAnimNode@@
 .?AVCCompressedAnimQuaternion@@
 .?AVCCompressedAnimVector3@@
 .?AVCCompressedDeltaVector3@@
@@ -1445,6 +1297,7 @@ $oR0F
 .?AVCIntAnimParameter@@
 .?AVCJiggleBoneAnimNode@@
 .?AVCJiggleBoneUpdateNode@@
+.?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCLabelledDebugHelper@@
 .?AVCLeafUpdateNode@@
@@ -1565,10 +1418,13 @@ $oR0F
 .?AVCVrHandSkeleton@SkeletalCompression@@
 .?AVCWayPointHelperAnimNode@@
 .?AVCWayPointHelperUpdateNode@@
+.?AVColor@Attribute@@
 .?AVConCommand@@
 .?AVConCommandBase@@
 .?AVConVar@@
+.?AVDeprecated@Attribute@@
 .?AVEBoneSetup@@
+.?AVFriendlyName@Attribute@@
 .?AVIActivityValueList@@
 .?AVIActivityValues@@
 .?AVIAnimGraphDebugReplay@@
@@ -1582,7 +1438,6 @@ $oR0F
 .?AVIAnimMovementManagerInstance@@
 .?AVIAnimMovementSettings@@
 .?AVIAnimNode@@
-.?AVIAnimNodeBuilder@@
 .?AVIAnimNodeInstance@@
 .?AVIAnimParameter@@
 .?AVIAnimParameterInstance@@
@@ -1612,6 +1467,7 @@ $oR0F
 .?AVIAnimationSystem@@
 .?AVIAnimationSystemUtils@@
 .?AVIAppSystem@@
+.?AVIAsyncProcessedDataResult@@
 .?AVIAudioAnimTag@@
 .?AVIBaseSequence@@
 .?AVIBlendAnimNode@@
@@ -1619,6 +1475,7 @@ $oR0F
 .?AVIChoreoAnimNodeInstance@@
 .?AVIClothAttrSequenceListener@@
 .?AVIClothSettingsAnimTag@@
+.?AVICommentAnimNode@@
 .?AVICompressorService@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
@@ -1675,7 +1532,7 @@ $oR0F
 .?AVIVConCommDataReceived@@
 .?AVIVSSequence@@
 .?AVObject@Reflection@@
-.?AVTypeInfo@Reflection@@
+.?AV_Ref_count_base@std@@
 .?AV__non_rtti_object@std@@
 .?AVbad_cast@std@@
 .?AVbad_typeid@std@@
@@ -1732,7 +1589,7 @@ $oR0F
 /=$!6
 /C,s3H
 /EPv#A8]7t!I
-/G4vH
+/G4vI
 /G4viH
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
@@ -1753,6 +1610,7 @@ $oR0F
 0A^A\_
 0A^^[
 0A^^]
+0A^_[
 0A^_]
 0A^_^
 0A_A\_
@@ -1766,15 +1624,16 @@ $oR0F
 0A_A^A]A\]
 0A_A^A]A\^
 0A_A^A]A\_
+0A_A^A]A\_^]
 0A_A^A]A\_^]H
 0A_A^A]_]
 0A_A^A]_^
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_][
 0A_A^_^]
-0A__[
 0A__]
 0A__^
 0D;sH|
@@ -1782,9 +1641,7 @@ $oR0F
 0D;{`|
 0H;{0t6H
 0HcypH
-0L9e0t	H
 0L;l$x
-0r!-z
 0v0b1
 131022120000Z
 141022000000Z
@@ -1792,7 +1649,7 @@ $oR0F
 181004000000Z
 1DBlend
 1L9|$Xt
-200407220259Z0#
+200515053806Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1824,14 +1681,11 @@ $oR0F
 8A_A\
 8A_A]^]
 8A_A^
-8A_A^A]A\_^][
 8HcCh
 8J"t3
-8L9e0t	H
 8LcAd3
-8M9't
 8Xet:9_
-8Y tUA
+8Y tR
 8Y"t.
 8Y#t-H
 8Y#tVA9Z
@@ -1839,8 +1693,8 @@ $oR0F
 8Y#tfH
 8Y,te
 8Z!tEHc
-8\$yt-
 8]9t98]:t
+8^Cty
 8_Rtl
 9)~vH
 9)~{H
@@ -1857,12 +1711,11 @@ $oR0F
 9>vTf
 9C |K
 9C`|	H
+9D$@t
 9K$~nL
 9STs	H
 9T$HH
-9XXtnH
 9YTtJ
-9\$8~E
 9\$`~[
 9^ ~7H
 9_0~I3
@@ -1870,7 +1723,8 @@ $oR0F
 9_H~H3
 9_`~J3
 9_p~$
-9h(uOH
+9hHt9H
+9hHuOH
 9k(~PH
 9nPtJ
 9ox~^3
@@ -1883,7 +1737,7 @@ $oR0F
 9{0u1A
 9{`u	H
 9}@~/
-9}H~,D
+9}H~8D
 ::embedded_animation
 :Hc{h;{xu
 ;1}NH
@@ -1900,21 +1754,22 @@ $oR0F
 ;CHs#H
 ;D$0u
 ;D$@@
-;D$Hu
 ;D$XwrA
 ;D$`u
 ;D$hu
+;D$xu
 ;G sjH
 ;G(s(H
+;HPs	D
 ;L$0u
 ;SL|0
 ;\$ |
 ;\$0|
+;\$8|
 ;\$`|
 ;\$x|
 ;]p}~H
 ;l$0|
-;l$8|
 ;s u	H
 ;s0}RL
 ;t$8|
@@ -1925,7 +1780,6 @@ $oR0F
 <	u"H
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 <!-- schema 
-<"uBD
 <(H;_0t6H
 <BAD_KEY>
 <BAD_VAL>
@@ -1947,14 +1801,16 @@ $oR0F
 ?5zlO
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadMutex@@QEAA@XZ
+?A;T$
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?AssertOwnedByCurrentThread@CThreadMutex@@QEBA_NXZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
 ?FindOrCreateCounter@CVProfile@@QEAAPEA_KPEBDW4CounterGroup_t@@@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -1964,15 +1820,17 @@ $oR0F
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?ffffff
 ?labelled_debug_helper_show_text
-?vhE3
 ?vmdlkeys0
 @ A;@
 @ A;A
@@ -1991,17 +1849,18 @@ $oR0F
 @4A;@
 @6W!?
 @81u/H
-@85Na
-@85tG
-@8=0U
-@8=Z+
+@8:t<
+@8=J1
+@8=Pc
+@8=|$
 @8s2t(H
 @8sPt!H
+@8t$0
 @8uHtDH
+@8xxt
 @8y#tNI
 @8{<t
 @8|$0
-@8|$0tjL
 @8~ trA9
 @A\^[
 @A\_^][
@@ -2013,12 +1872,10 @@ $oR0F
 @A^][
 @A^^]
 @A^_]
-@A^_]I
 @A^_^
 @A_A]A\_^][
 @A_A][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A\_^[]
 @A_A^A]
@@ -2029,6 +1886,7 @@ $oR0F
 @A_A^[
 @A_A^]
 @A_A^_
+@A_^]
 @A__^
 @A__^][H
 @HHc,
@@ -2041,18 +1899,15 @@ $oR0F
 @SAUAWH
 @SAVAWH
 @SAVH
+@SAWH
 @SUATAVAWH
 @SUATAWH
-@SUAUAVAWH
-@SUAUAWH
 @SUAVH
 @SUVAUAWH
 @SUVH
-@SUVWATAUAVAWH
 @SUVWATAUAWH
 @SUVWATAVAW
 @SUVWATAVAWH
-@SUVWAUH
 @SUVWH
 @SUWATAUH
 @SUWAUAVAWH
@@ -2070,7 +1925,6 @@ $oR0F
 @SWAUAWH
 @SWAVAWH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
 @UATAUAVH
 @UATAUH
@@ -2085,6 +1939,7 @@ $oR0F
 @USATAVAWH
 @USAVH
 @USVATAUAVAWH
+@USVATAWH
 @USVAWH
 @USVWATAUAVAWH
 @USVWATAVAWH
@@ -2108,12 +1963,15 @@ $oR0F
 @UVWATAWH
 @UVWAUAVAWH
 @UVWH
+@UWATAUAVAWH
+@UWATAUH
 @UWATH
 @UWAVAWH
 @UWAVH
 @UWAWH
 @VATAUH
 @VATAVAWH
+@VAUAVH
 @VAVAWH
 @VAVH
 @VAWH
@@ -2122,6 +1980,7 @@ $oR0F
 @VWAVH
 @VWAWH
 @WATAUAVH
+@WATAUH
 @WATAVH
 @WATH
 @WAUAWH
@@ -2158,10 +2017,8 @@ A8H"t
 A8I"t
 A8Y"t
 A8Zxt
-A8^0t
-A8^0u 
-A8^0u&
 A8^Ut
+A8}RtNA
 A8~4t 
 A8~\tGH
 A9G |	I
@@ -2174,6 +2031,8 @@ A;A(}
 A;APs
 A;A`}
 A;BX}
+A;F s
+A;L$ |
 A;N,u
 A;Q`}
 A;RX}
@@ -2228,6 +2087,7 @@ AE_CL_SET_STATTRAK_GLOW
 AE_CL_SPEECH
 AE_CL_STOPSOUND
 AE_CL_STOP_PARTICLE_EFFECT
+AE_CL_SUPPRESS_EVENTS_WITH_TAG
 AE_COMPANION_PRODUCE_FLARE
 AE_DOG_CATCH
 AE_DOG_PICKUP
@@ -2339,9 +2199,10 @@ A]A\][
 A]A\^[]
 A]A\^]
 A]A\^][
+A]A\_
+A]A\_^[]
 A]A\_^]
 A]_^[]
-A]_^]
 A^A\[]
 A^A\_
 A^A\_^[]
@@ -2352,19 +2213,20 @@ A^A]A\^]
 A^A]A\_]
 A^A]A\_^[]
 A^A]A\_^]
+A^A]^
 A^A]^]
 A^A]_
 A^A]_[
 A^A]_[]
-A^A]_][
 A^A]_^[]
 A^A]_^]
 A^_[]
 A^_][
 A^_^[]
+A^_^]
 A_A\]
 A_A\_[]
-A_A\_^[]
+A_A\_^]
 A_A\_^][
 A_A]A\[]
 A_A]A\]
@@ -2372,8 +2234,11 @@ A_A]A\^[]
 A_A]A\^]
 A_A]A\_^
 A_A]A\_^[]
+A_A]A\_^]
 A_A]^]
 A_A]_]
+A_A]_][
+A_A]_^[
 A_A]_^[]
 A_A]_^]
 A_A^A\
@@ -2410,7 +2275,6 @@ A_^[]
 A_^][
 A__^[
 A__^[]
-A__^][
 Absolute
 AbsolutePoseControl
 Acceleration
@@ -2450,6 +2314,7 @@ Align
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 Always use fallback hinge
+Angle
 Angle Increment
 Angle Traces with Slope
 AnimAddLayer
@@ -2507,6 +2372,7 @@ AnimVrFingerSplay_Ring_Pinky
 AnimVrFingerSplay_Thumb_Index
 AnimVrFingerSplay_t
 Animation
+Animation Clip
 Animation State
 Animation/AccumulatePose
 AnimationDecodeDebugDumpElement_t
@@ -2573,7 +2439,7 @@ Bad %s on sequence %s.%s[%d] expected a table on model: %s
 Bad %s on sequence %s.%s[%d] failed on model: %s
 Bad %s on sequence %s: %s or %s already specified, entryNode: %s, exitNode: %s on model: %s
 Bad AnimEvent, sequence = "%s", AnimEvent = "%s", cycle & frame are both < 0 on model: %s
-Bad KV3 data for resource '%s': %s
+Bad KV3 data for resource: %s
 Bad KV3 data in control block for '%s': %s
 Bad block type for embedded animation data
 Bad data block index for vagrp embedded animation data (%d)
@@ -2778,11 +2644,12 @@ CAnimationGraphVisualizerSphere
 CAnimationGraphVisualizerText
 CAnimationGroup
 CAnimationLayer
+CAttribute
 CAudioAnimTag
 CAuthPhysJoint
 CBaseAnimMotor
 CBaseAnimMotorInstance
-CBaseIntrospectedToKV3TypeManager::AllocateResource
+CBaseIntrospectedToKV3TypeManager::AllocateResourceFromAsyncResult
 CBasePathAnimMotor
 CBasePathAnimMotorInstance
 CBlend2DAnimNode
@@ -2812,6 +2679,7 @@ CClothSettingsAnimTag
 CCmdSequence::InitCmdFromScript
 CCmdSequence::InitCmdsFromScript
 CCmdSequence::InitFromScript
+CCommentAnimNode
 CCompressedAnimQuaternion
 CCompressedAnimVector3
 CCompressedDeltaVector3
@@ -3231,7 +3099,7 @@ Cloth Settings Tag
 ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
-CmdLinkAL
+CmdLinkAH
 Collision point & hit normal
 Collision position
 Color
@@ -3239,6 +3107,7 @@ Command
 CommandLine
 CommandProcedure
 CommandProcedureList
+Comment
 Comparison Value
 CompileScript failed, script not found: %s
 CompileScript failed, scripting disabled or no server running
@@ -3294,6 +3163,7 @@ ControlValue_TotalTranslation_TargetState
 ControlValue_WayPointDistance
 ControlValue_WayPointHeading
 Convar for toggling foot lock ground tracking.
+Couldn't load KV3 for resource: %s
 Counter Rotation Scale
 Create a new sequence on the model by specifying the sequence type (string), name and a table of parameters
 Create the transition graph on the model by specifying a table of parameters
@@ -3317,7 +3187,6 @@ Cycle Control
 Cycle Control node is missing its control parameter
 Cycle or diamond double-reference to '%s'
 CycleOverride
-C}I$y
 D$   
 D$ !>;
 D$ "QT#
@@ -3340,6 +3209,7 @@ D$ GBz
 D$ H;
 D$ H=
 D$ Hc
+D$ HcD$XH
 D$ Hg
 D$ I+
 D$ Icw
@@ -3387,6 +3257,7 @@ D$(Hc
 D$(HcSh
 D$(I;
 D$(Lc
+D$(eH
 D$(fA
 D$(fI
 D$,A;
@@ -3399,6 +3270,7 @@ D$0D;BX
 D$0E3
 D$0H3L$0H3
 D$0Hc
+D$0HcD$hH
 D$0I;
 D$0Ic
 D$0X7
@@ -3419,8 +3291,8 @@ D$8L;
 D$8Xu
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
-D$<A9
 D$<A;
+D$@;D$8
 D$@A+
 D$@A97
 D$@A;
@@ -3429,6 +3301,7 @@ D$@E3
 D$@H9
 D$@H;
 D$@Ic
+D$@X7
 D$@ff
 D$@mp
 D$@r|
@@ -3441,11 +3314,10 @@ D$HH;
 D$HIc
 D$HIcZ
 D$P"ZF
+D$P;u
 D$PA;
-D$PD8h
 D$PD9p
 D$PD9q8
-D$PD;u
 D$PE3
 D$PH;
 D$PHcH
@@ -3455,7 +3327,6 @@ D$PIc
 D$PM;
 D$Pk@_aH
 D$Pmp
-D$X;V
 D$XA+
 D$XA9u
 D$XD9
@@ -3500,25 +3371,24 @@ D$x*>
 D$x;APs
 D$xE3
 D$xL;
+D$zfA#
 D$|v5
-D&oUR
 D+u(Lc}
 D7(Hc
 D8*u A
-D82t7
-D858!
-D8=,b
-D8=T)
+D8-.}
+D8-;~
 D8A"t
 D8I"t
 D8J<t
 D8T$ A
+D8cHtmL
+D8cHtyL
 D8d74t
 D8d75t
 D8d76
 D8mgt
 D8o(t 
-D8pxt
 D8r"t
 D8u_ue
 D8x"t
@@ -3538,18 +3408,17 @@ D8|8)tfH
 D9,2H
 D97~A
 D98t>Hc
-D9G ~
 D9I$~
 D9IL}sL
 D9d$ ~7Lc
 D9d$0~7Hc
 D9e(~cL
 D9g0u
-D9hH|R
+D9hH|T
 D9hXt
 D9l$ 
 D9n(~%I
-D9n(~(I
+D9n(~*I
 D9n(~7H
 D9nL|O
 D9q$~AH
@@ -3573,7 +3442,6 @@ D;L$t~ZH
 D;^@t-
 D;f |
 D;h |
-D;p`|
 D;q8|
 D;sH}JK
 D;t$(r
@@ -3583,6 +3451,7 @@ D;{`}KK
 D;|$l
 D;} u%H
 DATAI
+DATAL
 DINAL
 Damped Path Motor
 DampedPathAnimMotorInstance
@@ -3621,6 +3490,8 @@ Decompression failure
 Default
 Default Value
 DegreeEuler
+Deprecated
+Description
 Destroy
 Detected parallel updates: %p (%i)
 DevMsg
@@ -3670,11 +3541,10 @@ E	47H
 E Lc<
 E0;BPs
 E0C07
-E8A;T$
 E8H8t
 E8u(t
-E8uRtMA
 E9'~yH
+E9D$ ~#A
 E9f(~cH
 E9f(~lH
 E;B0}
@@ -3682,19 +3552,30 @@ E;CX|
 E;Mx|
 E;w |
 E;~(H
-E@A2F$$
+EGHcE
 EINAL
 EINAtP
 EL;APs
 EQD9~8
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 EXPORTSYSTEM_INTERFACE_VERSION_001
-E_E9n`
 E`@O/
 EaseIn
 EaseOut
 EconItemToolModel_001
 EditorDynamicConfig
+Eg Mj
+Eg b~
+Eg([I
+Eg-;[
+Eg9dj
+Eg@-\
+Eg@Xp
+EgN{0
+Egb}7
+Egc+W
+EgsI!
+Egv4L
 EmptyAnim
 Enable Collision
 Enable Distance Scaling
@@ -3721,13 +3602,12 @@ EngineServiceMgr001
 EntryNode
 Enum Parameter
 EnumParameter
-EnvironmentMapBuilder_001
-EoLcE
-EpHcF
+EoHc}
 Error running script named %s
 EtD9y
 Evaluate Pose (ms) : Server:%.3f (Max: %.3f)  Client:%.3f (Max: %.3f)
 EventSystem001
+ExIcE
 Exclusive Root Motion
 Execute a script (internal)
 ExitNode
@@ -3753,6 +3633,7 @@ Expected value.
 Expected {
 Expected }
 Extension Scale
+ExtraSeqFlags
 Extrapolate Movement
 F ;APs
 F HcH
@@ -3762,7 +3643,7 @@ F,u2H
 F0D9;
 F8A9v
 F8H+|$`H
-F@D9p`~FI
+F@9p`~FH
 FABRIK
 FATAL ERROR: unable to register all schema data: %s
 FCVAR_NEVER_AS_STRING
@@ -3966,6 +3847,7 @@ Forward Speed
 ForwardSpeed
 Frame
 Frequency
+FriendlyName
 Future Facing
 Future Facing Metric
 Future Velocity
@@ -3974,19 +3856,22 @@ G(D9
 G(t$H
 G49G0t8
 G8Ic7
+G@A2F$$
 GAMECONSOLE
 GD$8H
 GD$8I
-GD$HH
-GD$`H
-GD$hD
+GD$HD
+GD$pH
 GHNcT
 GPA9@
 GSFailure
 GT$0H
 GT$HH
+GT$XH
 GUPDATE_STRING_TOKEN_DATABASE
+G\$(H
 G\$0H
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -4028,7 +3913,7 @@ GetSequenceList
 GetSystemTimeAsFileTime
 Given a name or a sequence handle, returns an instance of the sequence class
 Given a pose parameter array, return the highest frame number for the sequence
-Gl$8H
+Gl$XH
 Goal Assist
 Goal Assist Distance
 Goal Assist Tolerance
@@ -4044,15 +3929,18 @@ Grip Limit
 Ground Condition
 Ground IK
 GroundIKTiltSource_t
+Group
+Gt$XL
+Gt$x3
 G|$8H
-G|$XI
-G|$xH
+G|$8I
 H HcA
 H HcD1
 H UVAUAVH
 H UVAUAWH
 H UVAVH
 H UWAVAWH
+H UWAVH
 H WATAUAVAWH
 H(A;H
 H)uhL
@@ -4061,6 +3949,7 @@ H+\$hIc<$H
 H0F08
 H1D$0
 H97t<
+H9=qo
 H9D$PuWM
 H9\$8t
 H9\$@t
@@ -4069,41 +3958,39 @@ H9] t	H
 H9]Xt'D
 H9]Xt4D
 H9t$0t
+H9t$Pt
+H9t$Xt
 H9t$ht
 H9uot	H
+H9|$ht
 H9}ot	H
+H;D$0
 H;D$Pu
 H;D$`
+H;L$8
 H;Y t2H
 H;Y8t6H
 H;YHt2H
 H;\$P|
 H;\$`uAE9
 H;^ t2H
-H;^(t2H
-H;^0t6H
-H;^8t2H
-H;^Xt2H
-H;^`t/H
-H;^pt2H
 H;_ t2H
 H;_8t2H
 H;_@t2H
+H;_Ht2H
 H;_Pt2H
 H;_Xt2H
 H;_`t2H
+H;_pt,H
 H;t$H
 H;w@t2H
-H;wHt2H
 H;y0t6H
-H;{`t,H
 H;|$8I
-H;~ t2H
-H;~Ht2H
 HA_A\
 HA_A]A\[
 HA_A]_^][
 HA_A^A\^
+HA_A^A]A\_]
 HA_A^A]A\_^][
 HA_A^^[
 HA_A^_^][
@@ -4119,19 +4006,18 @@ Has a Path
 Hc+;k
 Hc.;n
 Hc/;o
-Hc3;s
 Hc7;w
 Hc8;x
 Hc;;{
 Hc@8Hk
 Hc@@L
 HcA H
-HcA4H
+HcA4E3
+HcA@E3
 HcA@H
 HcAXH
 HcC$H
 HcC(L
-HcC4H
 HcC8Hi
 HcCDH
 HcCXL
@@ -4140,20 +4026,22 @@ HcD$ A
 HcD$ H
 HcD$$9
 HcD$0H
-HcD$8H
 HcD$PH
+HcD$XH
 HcD$dH;
 HcD$dI;
 HcD$lI;
 HcD$tI;
-HcD$xL
+HcD$x
 HcE H
+HcE/H
 HcEXH
 HcExL
 HcF 3
 HcF(Hk
 HcF(L
 HcF8Hi
+HcG H
 HcG(L
 HcGDH
 HcH<H
@@ -4166,11 +4054,11 @@ HcK ;
 HcKp;
 HcKx;
 HcL$ H
-HcL$P
 HcL$P;
 HcL$PL
+HcL$`
 HcL$dH
-HcM|H
+HcL;,Hi
 HcN(L
 HcN,H
 HcNhHc}X;
@@ -4180,7 +4068,6 @@ HcS@H
 HcT$0H
 HcVHL
 HcVLL
-HcW0H
 HcW<H
 HcX@H
 HcX`H
@@ -4192,6 +4079,7 @@ Hc\$`I;
 Hc\$tI
 Hc\$tL
 Hc^0;^@u	H
+Hc^xH
 Hc_0L
 Hc_P;_`u
 HckHL
@@ -4255,12 +4143,19 @@ Hysteresis
 I A+I
 I HcI 
 I(A;I
+I;^(t2H
+I;^0t6H
+I;^8t2H
+I;^Xt2H
+I;^`t/H
+I;^pt2H
+I;~ t2H
+I;~Ht2H
 I@UUU@
 IAnimGraphSettingsGroup
 IAnimMotor
 IAnimMotorInstance
 IAnimNode
-IAnimNodeBuilder
 IAnimNodeInstance
 IAnimParameter
 IAnimParameterInstance
@@ -4279,6 +4174,7 @@ IBlendAnimNode
 IChoiceAnimNode
 IChoreoAnimNodeInstance
 IClothSettingsAnimTag
+ICommentAnimNode
 IDirectPlaybackAnimNodeInstance
 IEnumAnimParameter
 IEnumAnimParameterInstance
@@ -4351,25 +4247,24 @@ Ic@(H
 IcAXM
 IcEDH
 IcEDL
-IcF H
 IcF$I
 IcG I
 IcGDI
 IcGX@
 IcK I
+IcL$0I
+IcL$P;
 IcM8H
 IcNP;
 IcN`D
-IcNpH
 IcO I
 IcO(Hc
-IcO0I
 IcO@H
-IcOP;
+IcOpH
 IcQTD;@
-IcX(L
 Ic]@H
-Ic^xI
+Icx(L
+Ic|$@A;|$Pu
 Ic~HA;~Xu	I
 Ignore Direction
 Ignore Slope
@@ -4400,6 +4295,7 @@ IntParameter
 Intentionally vague touch behavior for %p
 Intercept point.
 InterlockedFlushSList
+Internal Tag
 Interpolate
 Interpolation
 Invalid Bone
@@ -4431,6 +4327,7 @@ IsVScript
 Iterate
 IterateRandom
 J(A;J
+J(D8i
 JTA;@
 JX;JPs
 Jc43E
@@ -4439,23 +4336,23 @@ Jiggle Bone node (%s): No items defined; node will do nothing
 Jiggle Bones
 JiggleBone:m_resetCount
 JiggleBoneSimSpace
+Ju';k
 K 9H 
 K Hcw
 K1?U20
 K8+C$
+K@M9!
 KERNEL32.dll
 KV Conditional Evaluation Error
 KV3 save transfer failed: %s
 K`D9k`
 K`IcE
 KcL/0K
-Kc\,H
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues3
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValuesSystem
-Keyframe Animation
 Keyframed node does not have a valid sequence
 L$ ;H
 L$ AVH
@@ -4467,6 +4364,8 @@ L$ Hi
 L$ Hk
 L$ Ic
 L$ SH
+L$ SUVAUAVAWH
+L$ SVWAVH
 L$ SVWH
 L$ SWH
 L$ UATAUAWH
@@ -4477,9 +4376,6 @@ L$ USWATAUAVAWH
 L$ UVATAUAVH
 L$ UVATAVAWH
 L$ UVWATAUAVAWH
-L$ UWAVH
-L$ VH
-L$ VWAVH
 L$ WAVAWH
 L$ WH
 L$ fA
@@ -4492,20 +4388,19 @@ L$,9_
 L$,A8xQuqA8xPt
 L$,Hc
 L$0E+
-L$0E2
 L$0E3
-L$0E;e@
+L$0E;
 L$0H;
 L$0Hc
 L$0Ic
 L$0L+
 L$0fI
-L$0fff
 L$0u2
 L$4@8~\
 L$8D9A
 L$8D;@Ps	E
 L$8E3
+L$8E;e@
 L$8Ic
 L$8t'A
 L$<Hc
@@ -4515,14 +4410,17 @@ L$@Hc
 L$@Hi
 L$@fA
 L$DA;L$
+L$HH;
 L$L9H<u
 L$L9h
 L$L;H
 L$P;K
 L$PI;
 L$PIc
+L$XA;U
 L$XE3
 L$XHc
+L$XIcE
 L$XLc:
 L$Xfff
 L$\Hc
@@ -4535,7 +4433,6 @@ L$`Hc
 L$dA+
 L$h;C
 L$hE3
-L$hH;
 L$pE3
 L$pE;
 L$pIc
@@ -4548,14 +4445,15 @@ L$xfff
 L' Lc
 L8(E9
 L9#t1L
+L9=0w
+L9={w
 L9d$ t
 L9d$@t
 L9d$Pt
 L9d$pt
-L9e0tjH
 L9ewt	H
 L9g8uC
-L9l$0t
+L9l$@t
 L9m(t	H
 L9mot	H
 L9s H
@@ -4587,8 +4485,8 @@ LOG_GENERAL
 LOWVIOLENCE
 LQHLc
 Last Bone in Chain
-Lc+D;k
 Lc3D;s
+Lc;D;{
 Lc@@M
 Lc@TE
 LcA(L
@@ -4646,6 +4544,7 @@ Lock Blend When Waning
 Lock Blend on Reset
 Lock Breaking
 Lock Clip When Waning
+Lock State when Waning
 Lock To Path
 Lock Value: %.2f
 Lock distance to target: %.2f
@@ -4679,7 +4578,8 @@ LookupPoseSetting
 LookupSequence
 LookupWeightlist
 LrwcE
-M(Hc},
+M(A9M
+M(Hcn,
 M8IcA
 M9&utI
 MATCHFRAMEWORK_001
@@ -4698,6 +4598,7 @@ MPropertyAttributeChoiceName
 MPropertyAttributeEditor
 MPropertyAttributeRange
 MPropertyAutoExpandGroup
+MPropertyColorWithNoAlpha
 MPropertyEditClassAsString
 MPropertyElementNameFn
 MPropertyExtendedEditor
@@ -4776,6 +4677,7 @@ Model reference
 Model to world
 ModelDocUtils001
 Modulate Step Height
+MorphChannel
 Motion Clip
 Motion Clip Group
 Motion Matching
@@ -4824,6 +4726,7 @@ MxA9~(
 N Mc4
 N&B:H
 N@D9y`t
+NLM/T
 NavSystem001
 NcD*8A
 Network
@@ -4842,6 +4745,7 @@ Newline in string literal
 Newly tilted bone.
 Next step normal
 No Buffer
+No DATA block for resource 
 No DATA block for resource '%s'
 No IK rig found, can't initialize ground IK node.
 No conversion from %s to int now
@@ -4868,7 +4772,6 @@ O0A;H
 O4u4H
 O8+G$
 O@9q`
-OTm]YQ
 Object
 Off Before Finished
 Off When Finished
@@ -4904,9 +4807,7 @@ P Lcw
 P(9(t
 P(D;c
 P(HcE
-P(HcM|H
 P(Hc_8H
-P(L9l$8t
 P(Lc3H
 P(LcG83
 P(f!]
@@ -4916,24 +4817,23 @@ P(fD!e
 P(fD!m
 P(fD!t$*H
 P(fD!}
+P09(t
+P098t
 P098t'H
 P0D90t
-P@9(t
 P@HcM
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
 PARTICLE_SET_SCALE_CURRENT_VALUE
 PARTICLE_SET_SCALE_INITIAL_VALUE
-PA]^[
-PA]_^][
+PA^_]
 PA^_^
 PA_A\]
 PA_A\_
 PA_A^A\
 PA_A^A]A\^[]
 PA_A^A]A\_^]
-PA_A^A]][
 PA_A^]
 PA_A^_
 PD9AHM
@@ -5004,6 +4904,7 @@ Plat_GetEnv
 Plat_GetOSType
 Plat_IsHighDPI
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
@@ -5022,9 +4923,12 @@ PlayerMotor:m_vVelocity
 Please add a Skeletal Input Settings node to the model in ModelDoc
 Pole vector (raw dir: {%.2f, %.2f, %.2f})
 Pose Control
+Position
 Post Graph IK Chain Blend Tag
 Post Graph IK Tag
 PostProcessingSystem_001
+PpHcU
+PpHcn ;n0u
 Predicted
 Prediction Time
 Prevent Overshoot
@@ -5036,10 +4940,11 @@ PreviewBoneMergedModel
 PreviewPreset
 PreviewPresetList
 Previous normal
+Procedural Hit Reactions
 Procedural Hit Reacts
 Propagation Scale
 PropertyEditorSystem_001
-PxHcU
+Pu*;w
 Q E;Q
 Q(Lci
 Q@Lcv
@@ -5052,6 +4957,7 @@ QueryPerformanceCounter
 QueuedLoaderVersion001
 R(9_(~:H
 R09_(~:H
+R0Hc+L
 R0JcD
 RESLH
 RESLI
@@ -5059,7 +4965,6 @@ RESOURCE_TYPE_ANIMATION_GROUP_INTERNAL
 RESOURCE_TYPE_ANIMATION_INTERNAL
 RESOURCE_TYPE_ANIMGRAPH
 RESOURCE_TYPE_SEQUENCE_GROUP_INTERNAL
-RHHc+L
 RX;8|
 RadianEuler
 Ragdoll Tag
@@ -5200,13 +5105,12 @@ SUVWAVAWH
 SUVWAWH
 SUVWH
 SUWATAUAVAWH
-SUWATH
-SUWAUAVH
+SUWAUAWH
 SUWAUH
 SUWAVH
 SUWAWH
 SVATAUH
-SVAUH
+SVWAUAWH
 SVWAVH
 SVWAWH
 SWATAUH
@@ -5295,6 +5199,7 @@ Sequence Finished Tag
 Sequence Names Prefix
 Sequence out of range: %d
 Sequence( %s, %.3f ) : %.3f
+Sequence: %s  Sequence Duration: %g  Transition Duration: %g 
 Sequence:m_flCycle
 Sequence:m_flCycleZeroTime
 Sequence:m_flPlaybackRate
@@ -5421,18 +5326,18 @@ Strafe Speed
 StrafeSpeed
 Stretch
 Strider
-String Tag
 Subtract
 Subtract node is missing a child.  Will use t-pose by default
 Sync Cycles
 SyncChildren
 Synchronize Children
 T$ +G$D
+T$ A;
 T$ E3
 T$ Ic
 T$ Lc
 T$$D9
-T$(A;^@
+T$(A;^@|
 T$(D;d$ 
 T$(E3
 T$(E;
@@ -5441,6 +5346,7 @@ T$0D;}
 T$0E3
 T$0M+
 T$4E3
+T$4Ic
 T$8+G$A
 T$8D;
 T$8D;t$(r
@@ -5449,6 +5355,7 @@ T$8E9n
 T$8H;T$P
 T$8fD
 T$8u!I
+T$@+G$A
 T$@+G$H
 T$@9p
 T$@E3
@@ -5471,8 +5378,6 @@ T$pHc
 T$pJc
 T$x;H
 T$x;P
-T$xHc
-T$yE3
 T$|;P
 T:V@]
 TILT_IK
@@ -5522,8 +5427,6 @@ Timing Blend
 Timing Control
 Tolerance
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -5531,6 +5434,8 @@ Total Translation (Source State)
 Total Translation (Target State)
 Trailing Data
 Transition
+Transition from state %s connected to looping animation %s has finished condition; transition will never happen because it will never be finished
+Transition from state %s has an almost finished condition, but the duration of the transition's blend is longer than the node's duration. 
 Treat Translation Separately
 Tried to load a polymorphic pointer with no '%s' key
 Tried to load resource reference '%s' from a value without a resource reference flag.
@@ -5553,6 +5458,7 @@ TypeManager
 U HcH
 U20>,+
 U20>3
+U8A;L$
 UATAUAVAWH
 UATAUAVH
 UATAUH
@@ -5573,12 +5479,10 @@ USVATAUI
 USVATAVH
 USVWATAUAVAWH
 USVWATAUAVH
-USVWATAUAWH
+USVWATAUH
 USVWATAVAWH
 USVWATAVH
-USVWATAWH
 USVWATH
-USVWAUAVAWH
 USVWAUAVH
 USVWAUAWH
 USVWAUH
@@ -5605,11 +5509,12 @@ UVAVI
 UVAWH
 UVWATAUAVAWH
 UVWATAUAVH
+UVWATAUAWH
 UVWATAVH
 UVWAUAVH
 UVWAUAWH
-UVWAUH
 UVWAVAWH
+UVWAVH
 UWATAUAVH
 UWATAUAWH
 UWATAVAWH
@@ -5651,7 +5556,6 @@ UseChild1
 UseChild2
 User Defined Values
 UserInfoChangeService_001
-U|u H
 V09S4s	H
 VATAUAVAWH
 VATAUH
@@ -5739,7 +5643,6 @@ V_strtok
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Validates the animation group channel list against the animations on load for every animation
 Value
@@ -5802,11 +5705,13 @@ World Space
 World space tilt normal
 WorldRendererBuilderMgr001
 WorldRendererMgr001
-X HcY`H
 X USVWATAUAWH
 X UWAWH
+X0Hcx(H
+XA]A\][
 XA]A\^[
 XA]A\_[
+XA^_^[
 XA_A\_[
 XA_A^A]]
 XA_A^A]_][
@@ -5818,14 +5723,14 @@ XGLE3
 XHcCh
 XHcY@L
 XL$\H
-XT$PD
 X_^][
-XsDt!
 Xt$ D
+X|( H
+Y D9Y
 YD$ A
 YD$@A
+YD$@H
 YD$PA
-YD$hH
 YFL;H
 YL$ A
 YL$ E
@@ -5874,31 +5779,30 @@ Yt$`H
 \$0L+
 \$0M+
 \$0Mc
-\$0fA
 \$4E3
 \$8;>
 \$8D	$
-\$8D;
 \$8E3
 \$8Hc
 \$8fD
 \$<;\$H
 \$<;\$Ht|H;
+\$@9\$8
+\$@9\$8~I
 \$@A+
 \$@E3
 \$@Hc
-\$@Hc7D
 \$@I;
 \$@f;
 \$@u	
 \$HHc
+\$Hta
 \$PA+
 \$PE8uI
 \$PE;g,uqIcO
 \$PHc
 \$Pfff
-\$Ptv
-\$X;A
+\$Ptz
 \$`D;L$l~
 \$`E3
 \$`I99u
@@ -5913,24 +5817,21 @@ Yt$`H
 \$pD;T$d~ Hc
 \$pHc
 \$pKc
-\$t;]
 \$tD;
+\$xE8
 \D$0A
-\D$8A
 \D$8H
 \L$$s
 \T$ D
-\t$d3
+\t$t3
 \v@Ic
 ](HcE Hi
-]2ruyA
 ]HHcE@H
 ]hB9t
 _(D9c`u	H
 _(HcG H
 _H9_8~#H
 _HHcG@Hi
-_V_SetExtension
 _V_StringAfterPrefix
 _V_strncat
 _V_strncmp
@@ -6076,6 +5977,12 @@ color
 composite
 concept
 config
+const unsigned int __cdecl Attribute::Color::MyTypeID(void)
+const unsigned int __cdecl Attribute::Deprecated::MyTypeID(void)
+const unsigned int __cdecl Attribute::Description::MyTypeID(void)
+const unsigned int __cdecl Attribute::FriendlyName::MyTypeID(void)
+const unsigned int __cdecl Attribute::Group::MyTypeID(void)
+const unsigned int __cdecl Attribute::Icon::MyTypeID(void)
 const unsigned int __cdecl CAddAnimNode::MyTypeID(void)
 const unsigned int __cdecl CAimMatrixAnimNode::MyTypeID(void)
 const unsigned int __cdecl CAnimGraphGeneralSettings::MyTypeID(void)
@@ -6106,6 +6013,7 @@ const unsigned int __cdecl CChoiceAnimNode::MyTypeID(void)
 const unsigned int __cdecl CChoreoAnimNode::MyTypeID(void)
 const unsigned int __cdecl CChoreoAnimNodeInstance::MyTypeID(void)
 const unsigned int __cdecl CClothSettingsAnimTag::MyTypeID(void)
+const unsigned int __cdecl CCommentAnimNode::MyTypeID(void)
 const unsigned int __cdecl CControlValueCondition::MyTypeID(void)
 const unsigned int __cdecl CCurrentVelocityMetric::MyTypeID(void)
 const unsigned int __cdecl CCycleCondition::MyTypeID(void)
@@ -6197,7 +6105,6 @@ const unsigned int __cdecl IAnimGraphSettingsGroup::MyTypeID(void)
 const unsigned int __cdecl IAnimMotor::MyTypeID(void)
 const unsigned int __cdecl IAnimMotorInstance::MyTypeID(void)
 const unsigned int __cdecl IAnimNode::MyTypeID(void)
-const unsigned int __cdecl IAnimNodeBuilder::MyTypeID(void)
 const unsigned int __cdecl IAnimNodeInstance::MyTypeID(void)
 const unsigned int __cdecl IAnimParameter::MyTypeID(void)
 const unsigned int __cdecl IAnimParameterInstance::MyTypeID(void)
@@ -6216,6 +6123,7 @@ const unsigned int __cdecl IBlendAnimNode::MyTypeID(void)
 const unsigned int __cdecl IChoiceAnimNode::MyTypeID(void)
 const unsigned int __cdecl IChoreoAnimNodeInstance::MyTypeID(void)
 const unsigned int __cdecl IClothSettingsAnimTag::MyTypeID(void)
+const unsigned int __cdecl ICommentAnimNode::MyTypeID(void)
 const unsigned int __cdecl IDirectPlaybackAnimNodeInstance::MyTypeID(void)
 const unsigned int __cdecl IEnumAnimParameter::MyTypeID(void)
 const unsigned int __cdecl IEnumAnimParameterInstance::MyTypeID(void)
@@ -6243,6 +6151,7 @@ const unsigned int __cdecl ISequenceFinishedAnimTag::MyTypeID(void)
 const unsigned int __cdecl ISolveIKChainAnimNodeInstance::MyTypeID(void)
 const unsigned int __cdecl IStatusAnimTag::MyTypeID(void)
 const unsigned int __cdecl IStringAnimTag::MyTypeID(void)
+const unsigned int __cdecl Reflection::CAttribute::MyTypeID(void)
 const unsigned int __cdecl Reflection::Object::MyTypeID(void)
 control_point
 create_particle
@@ -6255,8 +6164,8 @@ d$ UAVAWH
 d$ fC
 d$(A;
 d$(H+
+d$0A;
 d$0E9e
-d$4E3
 d$8E3
 d$8I+
 d$@D;e
@@ -6271,8 +6180,6 @@ d$PtjI
 d$XE3
 d$`;A
 d$`A;
-d$`E3
-d$`E;
 d$`uhM
 d$hE2
 d$hIc
@@ -6325,16 +6232,15 @@ f!D$j
 f!D$r
 f!D$z
 f!E	L
-f!|$:3
+f!T$j
 f!|$J
 f!|$j
-f;9}cH
 f;S|sC
 f;i~spH
 f;t$,u
-fA;6|
 fA;z^
 fD!d$r
+fD!t$:
 fD!|$j
 faceMergeAngle
 fadeintime
@@ -6370,7 +6276,6 @@ ground_virtualplanes
 groundik_enabled
 h UAVAWH
 h VWAWH
-hA\_][
 hA]A\_[
 hA^A\
 hA^A\_[
@@ -6478,15 +6383,16 @@ js_object
 js_raw_args
 js_value
 k HcKX;
+k-*kW
 k0i0$
 k@_aH
-kB>M6
 keyvalues
 l$ 9Q
 l$ A9l$ 
 l$ AVH
 l$ D9l$0|LH
 l$ IcT$
+l$ VATAVH
 l$ VAUAVH
 l$ VAUAWH
 l$ VAVAWH
@@ -6501,7 +6407,6 @@ l$ WAVAWH
 l$ WH
 l$(E3
 l$(Hc
-l$0A+
 l$0D;B
 l$0E3
 l$0E9o
@@ -6513,6 +6418,7 @@ l$0Ic
 l$0Ic.
 l$0ff
 l$0t0H
+l$8A9
 l$8H+
 l$8Hk
 l$8eL
@@ -6534,22 +6440,22 @@ l$PA_A^A]A\_^
 l$PE3
 l$PH+
 l$PLc
+l$PLc$
 l$PfD
 l$XA+
+l$XE3
 l$XL+B
-l$XLc$
 l$`;H
-l$`Hc7D
 l$hIc
 l$p;A
 l'hNct'
-l=!t	
 labelled_debug_helper_arc_segments
 labelled_debug_helper_enabled
 labelled_debug_helper_scale
 labelled_debug_helper_show_position
 labelled_debug_helper_skeleton_show_bone_names
 last_sniff
+layersaffectingmovementandduration
 length
 lineNumber
 lineardelta
@@ -6748,6 +6654,7 @@ m_bLocal
 m_bLocalSpace
 m_bLockBlendOnReset
 m_bLockClipWhenWaning
+m_bLockStateWhenWaning
 m_bLockToPath
 m_bLockWhenWaning
 m_bLoop
@@ -6757,6 +6664,7 @@ m_bMatchChildDuration
 m_bMatchRotation
 m_bMatchTargetOrientation
 m_bMatchTranslation
+m_bModelDoc
 m_bModulateStepHeight
 m_bMulti
 m_bNetwork
@@ -6860,7 +6768,9 @@ m_clipSampleIndex
 m_clips
 m_cmd
 m_cmdLayerArray
+m_color
 m_colorCompressor
+m_commentText
 m_comparisonControlValue
 m_comparisonFixedValue
 m_comparisonOp
@@ -6927,7 +6837,6 @@ m_facingTarget
 m_feet
 m_fetch
 m_fileName
-m_filePath
 m_fingers
 m_flAbsOriginDropHeight
 m_flAbsOriginDropSpringStrength
@@ -7322,6 +7231,7 @@ m_poseRecipeInstanceData
 m_poseSettingArray
 m_position
 m_previewButton
+m_previewModels
 m_previousChoice
 m_previousIndex
 m_processingType
@@ -7361,6 +7271,7 @@ m_sequenceName
 m_sequenceParams
 m_sequences
 m_settingsGroups
+m_size
 m_snapshotName
 m_sourceControlValue
 m_speedFunction
@@ -7529,6 +7440,7 @@ noblend
 numframes
 numsegments
 nwaysequence
+oSj=Y
 open_asset %s
 option
 origin_max_delta
@@ -7539,7 +7451,6 @@ p WAVAWH
 p0n05
 p1f3q>
 p@;1tb
-pA\_[
 pA]A\^
 pA]_^
 pA^A\^[]
@@ -7549,6 +7460,7 @@ pA_A]A\_^
 pA_A]]
 pA_A^A]
 pA_^]
+pA__[
 pXt7H
 parent to constrained
 parent_bone
@@ -7653,11 +7565,10 @@ t!IcW(L
 t!McG`H
 t!McY
 t!fD;
-t"D8p u
+t"@8p u
 t#8_ u
 t#E9C
-t$ ;C ~
-t$ @2
+t$ 9s
 t$ A;
 t$ AVH
 t$ AVHcA
@@ -7693,6 +7604,7 @@ t$,A+
 t$0+A$t
 t$0;{pu
 t$0A;}
+t$0D9t$@|LH
 t$0E3
 t$0H+K
 t$0H;
@@ -7702,6 +7614,8 @@ t$0Hc3;s
 t$0Hi
 t$0Hk
 t$0Lc7A
+t$0fD
+t$0ff
 t$8@2
 t$8A;]
 t$8E3
@@ -7716,6 +7630,7 @@ t$8Lc
 t$8Lk
 t$8Mc
 t$8uVH
+t$@A;
 t$@D;
 t$@E3
 t$@E;
@@ -7728,15 +7643,16 @@ t$@fff
 t$@t+
 t$HD8{
 t$HE3
-t$HE;
 t$HHc
 t$HHcw(H
-t$HHc~@;~Pu	H
+t$HI+
 t$HL;
 t$HM;
 t$Hu'
 t$P;A
+t$PD;p`
 t$PE3
+t$PE9u`
 t$PHcw<H
 t$PLc
 t$PLk
@@ -7744,6 +7660,7 @@ t$PM;
 t$Pu*
 t$P~CH
 t$X8_8t
+t$X;H
 t$XA+
 t$XE3
 t$XLc
@@ -7759,12 +7676,14 @@ t$`Hc
 t$`Hk
 t$`I;
 t$`Lc
+t$`fA;
 t$`xgH
 t$fE;
 t$h;APs
 t$lD9v
 t$pA+
 t$pE;e
+t$pfD
 t$x;HPs
 t$x;_@u
 t$xA;
@@ -7772,7 +7691,7 @@ t%8_!u
 t%HcD(
 t'Hc/;o
 t'HcD
-t'Hc],
+t'Ic_,
 t(Lc7D;w
 t)HcQ(H
 t)fff
@@ -7781,18 +7700,19 @@ t*IcO
 t+HcE(H
 t+HcT
 t,9O0~'I
-t,PKcD,HH
 t-E8gxt'H
 t.@8:t)
 t.LcA
 t/D83t*
 t0@87t+
+t0@8;t+
 t0D8;t+
 t0HcT
 t0HcT(
 t3<{u
+t3fff
 t7IcR
-t9H9=f
+t9H9=
 t9HcT(
 t:Icy
 t=Lc_
@@ -7809,9 +7729,6 @@ tFHc;;{
 tGHcF
 tHE;Z
 tHIc.
-tJ9w(t\H
-tK9w(t]H
-tMD8sDH
 tMHcT
 tMIc.
 tQA;@
@@ -7820,6 +7737,7 @@ tSLcA
 t]<-u
 tailframe
 target
+tc9iHtyLcq(H
 test_angles_relative
 texturescale
 thIc\$
@@ -7837,18 +7755,21 @@ tried to restore a CRelativeOffsetArray, but the number of elements did not matc
 tu+K$3
 turn_rate
 twIcM
+t{@8sDH
 t{L98tvH
 u	@8=
 u!L9g
 u!M9`
-u'HcG
-u,9;~ H
+u#Hc>;~
+u,A9T$
 u98D$`u;H
 u;Ic@
 uMHcE
+uPIcEHH
 uT<0uP
 uUIc}
 uY<0uU
+u\A;v
 u\LcO
 u_Ic}
 u`HcEXH
@@ -7871,7 +7792,7 @@ v0t08
 v6A9R
 v<D;H
 v@D;t$@
-v@Ico A;o0u
+vCIcl$ A;l$0u
 vJOnPlane2
 vJOnPlane3
 vJOnPlane4
@@ -7936,6 +7857,7 @@ weaponType
 weight
 weightlist
 width
+worldrelative
 worldspace
 www.digicert.com1!0
 www.digicert.com1$0"
@@ -7983,6 +7905,7 @@ x_^][
 xc;QH}^Hc
 xcD;	}^H
 xfade
+xrY 8
 xuJE3
 xxD;A
 xyA;C
@@ -8003,6 +7926,7 @@ zero dir
 |$ A+
 |$ A;
 |$ ATAVAWH
+|$ AUAVAWH
 |$ AVAW
 |$ AVE3
 |$ AVH
@@ -8028,6 +7952,7 @@ zero dir
 |$(fA
 |$,E3
 |$0;B
+|$0;D$hu
 |$0A;
 |$0A;H
 |$0A;~
@@ -8044,12 +7969,11 @@ zero dir
 |$0M;
 |$0ff
 |$0fff
-|$0uO
 |$2 v
 |$8).H
-|$8A;
 |$8Hc
 |$8Hc:
+|$8Hcy(H
 |$8Hk
 |$8L;
 |$8ff
@@ -8088,12 +8012,14 @@ zero dir
 |$XI9x 
 |$XIc
 |$XLc
+|$Xff
+|$`@2
 |$`A+
 |$`E3
 |$`Hc
 |$`Lc
 |$`fD
-|$`fff
+|$`ff
 |$h"u
 |$hA+
 |$hD+
@@ -8103,10 +8029,12 @@ zero dir
 |$hff
 |$ht H
 |$lA+
+|$t;}
 |$xE3
 |$xHc_XD
 |$xfD
 |${H+
+|F%A%
 }#HcQ
 }&HcQ
 }(;^Tv
@@ -8132,6 +8060,7 @@ zero dir
 }_t!H
 }iHcG
 }jHcF
+}mfff
 }sIcS
 }wH;}
 ~ 9w 
@@ -8139,19 +8068,19 @@ zero dir
 ~!fff
 ~"fff
 ~(fff
-~+McO 3
 ~+fff
 ~,IcZ
 ~.LcW
-~08\$0t
+~/McL$ 
+~28\$0t
 ~3LcA
 ~3fff
 ~8H;_ t2H
 ~8LcG
 ~@H;{@t2H
-~HH;^ht2H
+~HI;^ht2H
 ~P~%3
 ~XIcj
+~\Ic^
 ~\fff
-~iIc^
 ~pH;_

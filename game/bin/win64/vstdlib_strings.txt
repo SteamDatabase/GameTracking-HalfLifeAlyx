@@ -1,4 +1,5 @@
 	"%s"
+	B"5?
 	Expected %s, encountered %s.
 	Invalid variable type "%s"!
 	Value is actually %s, code is expecting a %s value
@@ -36,7 +37,6 @@
  9(X`
  A\_^][
  A^A]A\_^
- A^A]A\_^][
  A^][
  A^^]
  A^^]H
@@ -57,11 +57,10 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  H3E H3E
- Hc5;d
+ Hc5[Q
  Hc9H
  Hcy H
  LcD$(Hc
- ReadToken overflow
  Type Descriptor'
  [%.3f server clamped to %.3f]
  delete
@@ -90,6 +89,7 @@
 %-80s : %-16s : %-32s : %s
 %3i convars/concommands for [%s]
 %3i total convars/concommands
+%f %f %f %f
 %i %i %i %i
 %p::%p:%d
 %s %c%s
@@ -101,13 +101,14 @@
 %s%s_%d_%02d%02d_%02d%02d%02d_%d.mdmp
 %s: Unable to progress %d jobs to finished state (%llums elapsed)
 %s: string format requested %d chars
+&L9d$Hu
 &YA1A
 &YA1H
 &YA1I
 &YA1L
+'-!hE@
 (*%s*), 
 (A]_^[
-(A_A]][
 (A_A^
 (D$ f
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -142,7 +143,7 @@
 )|$PM
 )|$pE
 *StO9>T
-+C tHH
++C tRH
 +C$Hc
 +C<Hc
 +M<7>
@@ -175,8 +176,6 @@
 .?AV?$CBaseAppSystem@VIUtlStringTokenSystem@@@@
 .?AV?$CConCommandMemberAccessor@VCCvar@@@@
 .?AV?$CDefaultTSHashConstructor@VCEventId@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0EAA@$0A@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
 .?AV?$CRefCounted1@VIRefCounted@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
 .?AV?$CRefCounted1@VIThreadPool@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
@@ -280,6 +279,7 @@
 .idata$5
 .idata$6
 .pdata
+.r4#J>
 .rdata
 .rdata$T
 .rdata$r
@@ -312,13 +312,16 @@
 0123456789abcdef
 061110000000Z
 0A^A\]
+0A^A]A\_^][
+0A^^[
+0A^_[
 0A^_^
 0A_A\_
 0A_A^A\
+0A_A^A]A\_
 0A_A^_
 0A_A^_H
 0A_A^_^]
-0A__[
 0H9+t
 0Hc~TH
 0iN>/
@@ -331,7 +334,7 @@
 181004000000Z
 1<.	/>:
 2) channel names: name1 name2 ...           // Lists channels by name.
-200321041439Z0#
+200515050637Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -341,7 +344,6 @@
 311110000000Z0e1
 3>N;kU
 3>fvw
-3D$x5<
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -354,9 +356,7 @@
 93t>H
 99C }
 99~3H
-9C |I
 9C |K
-9C |q
 9^H~%H
 9_(~*I
 9_@~*I
@@ -374,7 +374,6 @@
 ;y0u	H
 ;{ ~@
 < t;<	t7
-<"uBD
 <$E;Q
 </script>
 <333?
@@ -397,7 +396,7 @@
 ??0CThreadMultiWaitEvent@@QEAA@_N@Z
 ??0CThreadMultiWaitSemaphore@@QEAA@XZ
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CUniformRandomStream@@QEAA@$$QEAV0@@Z
 ??0CUniformRandomStream@@QEAA@AEBV0@@Z
 ??0CUniformRandomStream@@QEAA@XZ
@@ -414,11 +413,13 @@
 ??_7CUniformRandomStream@@6B@
 ??_FCGaussianRandomStream@@QEAAXXZ
 ?Allocate@COneTimeEvent@@SAPEAV1@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?AttachToStream@CGaussianRandomStream@@QEAAXPEAVIUniformRandomStream@@@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ConMsg@@YAXPEBDZZ
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
@@ -453,14 +454,15 @@
 ?RandomInt@CUniformRandomStream@@UEAAHHH@Z
 ?ReachedZeroReferences@CFiber@@AEAAXXZ
 ?Release@CThreadMultiWaitSemaphore@@QEAAXXZ
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
 ?Reset@CThreadEvent@@QEAA_NXZ
 ?Reset@CThreadMultiWaitEvent@@QEAAXXZ
 ?Resume@CThread@@QEAAIXZ
 ?ResumeJob@CFiber@@QEAA_NPEAX@Z
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SetName@CThread@@QEAAXPEBD@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@CUniformRandomStream@@UEAAXH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?Start@CThread@@UEAA_NIW4ThreadPriorityEnum_t@@@Z
@@ -472,7 +474,8 @@
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
-?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_RandomString@@YA?AVCUtlString@@H@Z
 ?V_SplitString2@@YAXPEBDPEAPEBDHAEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
@@ -484,7 +487,6 @@
 ?V_wcsistr@@YAPEB_WPEB_W0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?WaitForCreateComplete@CThread@@MEAA_NPEAVCThreadEvent@@@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?t4A:
 @.data
@@ -508,7 +510,6 @@
 @Lc:E3
 @SAVH
 @SUATAUAVH
-@SUAUAWH
 @SUAVH
 @SUVH
 @SUVWATAUAVH
@@ -516,12 +517,13 @@
 @SUVWH
 @SUWH
 @SVATAVH
+@SVAVH
 @SVWAUH
 @SVWH
-@SWAWH
+@SWAVH
 @UATAUAVAWH
-@UATAUH
 @UATAVH
+@UAUAWH
 @UAUH
 @UAVAWH
 @UAVH
@@ -539,6 +541,7 @@
 @fE9|
 A channel specifier is either:
 A+]8I
+A+v8I
 A8+A(D;
 A81t@@8r
 A84.u
@@ -565,21 +568,21 @@ ATAWH
 ATTEMPTED TO DECOMMIT OWNED MEMORY STACK SPACE
 AVAWH
 AWAVAUATWVUSH
-A]A\]
-A]A\]H
+A\_^[]
 A]A\^]
-A]A\_^[
+A]_^]
 A^A\]
 A^A\^[
 A^A]A\][
-A^A]A\^
+A^A]A\_[
 A^A]_]
+A^^[]
 A^_^[]
 A_A\]
 A_A]A\_^[]
+A_A]]
+A_A]]H
 A_A^A\
-A_A^A\]
-A_A^A\_]
 A_A^A\_^
 A_A^A]A\]
 A_A^A]A\_
@@ -591,7 +594,6 @@ A_A^]
 A_A^^
 A_A^_
 A_A^_^]
-A__^[]
 A__^]
 All functions are case insensitive.
 AnimGraphEditorUtils001
@@ -798,10 +800,10 @@ D$`E#
 D$`E3
 D$`H;
 D$`Hc
-D$xE3
-D)c(L
+D){(L
 D08@t	
 D18 t
+D8-2!
 D82u&H
 D8d$6t4
 D8t$Ht
@@ -809,9 +811,10 @@ D9/}GA
 D9|$ 
 D;C tM
 D;s(|
+D;sXu	H
 D;t$0u
-D;{Xu	H
 D;|$xu 
+DCke_K
 DD$$H
 DEFAULT_WRITE_PATH
 DEVELOPMENTONLY
@@ -822,7 +825,6 @@ DebugTextureInfo001
 December
 DeleteCriticalSection
 DestroyThreadPool
-DevMsg
 DigiCert Assured ID CA-1
 DigiCert Assured ID CA-10
 DigiCert Assured ID Root CA0
@@ -833,8 +835,6 @@ DotaCardGameClient_001
 Dumps information about all logging channels.
 DuplicateHandle
 E$HcE$H
-E+w8I
-E+}8I
 E0C07
 E8,4u
 E8<4u
@@ -852,7 +852,6 @@ EconItemToolModel_001
 Enabling flag '%s' on channel '%s'.
 EngineServiceMgr001
 EnterCriticalSection
-EnvironmentMapBuilder_001
 Error in configuration schema file "%s":
 Error parsing configuration defaults file "cfg/configdefaults.pc.vcfg"!
 Error parsing configuration schema file "cfg/configschema.vcfg"!
@@ -874,6 +873,7 @@ FCVAR_NEVER_AS_STRING
 FCVAR_REPLICATED
 FJc<2A
 FRENCH
+Fdu;3
 February
 Field %s has inverted min/max values![%f->%f]
 Field %s tried to quantize an out-of-range value (%f, range is %f->%f) clamping.
@@ -907,7 +907,10 @@ GAMECONSOLE
 GAMEDLL
 GD$8L+
 GERMAN
+GT$8H
 GT$8I
+GT$xH
+G\$HH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -951,16 +954,18 @@ GetSystemInfo
 GetSystemTimeAsFileTime
 GlobPool
 Global\UtlStringTokenSystemDataBaseWriteMutex
-Gu&o9
+Gt$HH
 H UWAUAVH
 H!D$ E
 H!T$0D
 H0F08
 H3L$0H3
 H3T$0H3
+H9-1-
 H93u(H
 H97t<
 H9;v#H
+H9=<r
 H9E(t6H
 H9E(tIH
 H9E0ryH
@@ -979,6 +984,7 @@ HIGHDPI
 HLc9L
 H_^][
 HammerMapLoader001
+Hc3;s
 Hc7;w
 HcA$H
 HcAHL
@@ -987,7 +993,7 @@ HcD$
 HcD$0
 HcH<H
 HcKX;
-HcL$8H
+HcL$HH
 HcOh3
 HcS@H
 HcSHA
@@ -1004,6 +1010,7 @@ HelpSystem_001
 HostStateMgr001
 Ht)I;
 I#N(H#
+I;@ v
 IOJob
 IQuickTime001
 ITALIAN
@@ -1037,7 +1044,6 @@ KV Conditional: Unknown symbol %s
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValuesSystem
 K~Je#>!
 L$ A;VH|
@@ -1059,28 +1065,28 @@ L$(fH
 L$(fI
 L$0+C<E
 L$0H;
-L$0I;M 
+L$0H;N 
 L$8A+
 L$8H3
 L$@E+
 L$@H3
 L$@I;M
 L$@Ic
-L$HH;N
+L$HH;O
 L$PE3
 L$PHc
 L9t$Xt
 L9{@t]M9~@tWH
+L;@ v
 LCMapStringEx
 LCMapStringW
 LINKED_CONCOMMAND
 LINUX
 LOG_GENERAL
 LOWVIOLENCE
-Lc3D;s
 LcA<E3
 LcCPH
-LcD$@A
+LcD$PA
 LcEWH
 LcQ E3
 LcT$p3
@@ -1112,7 +1118,6 @@ LoggingSystem_SetChannelFlags
 LoggingSystem_SetChannelVerbosity
 LoggingSystem_TagName
 M H1E
-M0I9M
 MATCHFRAMEWORK_001
 MATERIAL_SYSTEM_THREAD
 MM/dd/yy
@@ -1127,6 +1132,7 @@ MiniDumpWriteDump
 ModelDocUtils001
 Monday
 MultiByteToWideChar
+N0H9N
 NEVER_AS_STRING
 NOTIFY
 NOT_CONNECTED
@@ -1253,8 +1259,8 @@ SUBPROCESS CRASH: exception 0x%08X at 0x%llx
 SVATAUH
 SVATH
 SVWATAUAWH
-SVWATAUH
 SVWAUAWH
+SWATAUAVH
 Saturday
 SceneSystem_002
 SceneUtils_001
@@ -1312,12 +1318,12 @@ Sunday
 SystemFunction036
 T$ A;
 T$ Lc
-T$0I;U v
+T$0H;V v
 T$@H;
 T$@I;U
 T$DD;
-T$HE3
-T$HH;V
+T$HH;W
+T$XE3
 T$xH;
 TCHINESE
 TESTSCRIPT: CheckPoint -> '%s'.
@@ -1376,7 +1382,6 @@ ThreadPoolTest: Job distribution speed
 ThreadPoolTest: Jobs doing work, %s main thread
 ThreadSetAffinity
 ThreadSetAffinityPreference
-ThreadSetPriority
 ThreadSetProcessPriority
 ThreadShellExecuteEx
 ThreadSleep
@@ -1390,31 +1395,29 @@ TlsGetValue
 TlsSetValue
 Too many channel specifiers (max: %d).
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
 TransferMemory
 Tried to install the same listener on the same event id + queue twice!
 Tuesday
-UATAVAWH
 UAVAWH
 UNLOGGED
 UPDATE_STRING_TOKEN_DATABASE
 USERINFO
+USVAVH
 USVWATAUAVAWH
+USVWATH
 USVWAVH
-USVWAWH
 USVWH
 UUUUUU
 UVATAUH
 UVAVH
 UVAWH
 UVWATAUAVAWH
+UVWAUH
 UVWAVAWH
 UVWAWH
-UWATAVAWH
 UWAVH
 UnRegisterGlobalObject
 Unable to create multiwait object set
@@ -1430,7 +1433,6 @@ Usage:  findflags <string>
 Usage:  help <cvarname>
 UserInfoChangeService_001
 V6E>`"(5
-VATAUAVH
 VAVAWH
 VApplication001
 VAvi001
@@ -1509,11 +1511,11 @@ V_sscanf
 V_stricmp_fast
 V_stricmp_fast_NegativeForUnequal
 V_strlower_fast
+V_strnlen
 V_strtod
 V_strtoi64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Value
 Valve0
 Valve1
@@ -1566,7 +1568,6 @@ Y8+Y(
 \$0H;
 \$@H;
 \$@f;
-\$Xfff
 \$pfE;
 ]wD8s(
 _$D9s
@@ -1688,8 +1689,6 @@ d$(E3
 d$0H;
 d$PH+
 d$XE3
-d$`E3
-d$`E;
 d$pE3
 d$xH+
 dddd, MMMM dd, yyyy
@@ -1761,8 +1760,9 @@ l$0Hcop;
 l$8E3
 l$8H+
 l$8HcG
-l$@<"
+l$8IcE
 l$PD8/t6Hc
+l$XE3
 l$xE3
 launch
 linked
@@ -1824,13 +1824,10 @@ t!fA;
 t"9N(~
 t"<.u
 t#LcE
-t$ ;C ~
-t$ @2
 t$ ATAVAWH
 t$ AVH
 t$ AWH
 t$ E3
-t$ Hc
 t$ WATAWH
 t$ WAVAWH
 t$ WH
@@ -1841,7 +1838,6 @@ t$0HcK
 t$0Hi
 t$0Mc
 t$0fD;
-t$0uf
 t$89sH~@H
 t$8E2
 t$8E3
@@ -1849,10 +1845,9 @@ t$8H+
 t$8Hc
 t$@D82
 t$@Hc
-t$@Hc7A;
 t$HE3
 t$HHc
-t$P@8
+t$HHc3;
 t$XE3
 t$XMi
 t$XeL
@@ -1867,8 +1862,9 @@ t(H93t
 t(fff
 t.fff
 t2HcxTH
-t9H9=
+t9H9=v^
 t=Lc6D;v
+tI>0[8R
 t]<\u%A8F
 t]fff
 t^<\u%A8G
@@ -1879,7 +1875,7 @@ tfKcD
 threadsafe
 tier0.dll
 tu+K$3
-u	@8=E)
+u	@8=%
 u HcO ;
 u!HcK ;K
 u$HcO ;O
@@ -1888,12 +1884,10 @@ u5Ic>A;~
 u8LcEoL
 u<fD;
 u=fD;
-uE<"tA< ~=B
 uMHcE
 uQ@8|$2t:IcE
 uT<0uP
 u[HcI
-u^~61
 uf!T$(H!T$ 
 uint32
 uint64
@@ -1954,7 +1948,6 @@ z0x0:
 |$ AVH
 |$ E3
 |$ Hc
-|$ Hcy
 |$ UATAWH
 |$ UH
 |$(A^
@@ -1979,6 +1972,7 @@ z0x0:
 |$Xt	H
 |$\.u
 |$`Lc
+|$`ff
 |At.A
 |b=})>
 }+fA;

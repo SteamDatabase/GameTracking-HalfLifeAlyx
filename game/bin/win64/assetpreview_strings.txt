@@ -19,7 +19,6 @@
 	Range min value cannot be greater than max value
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	kE>fvw
-	t.@8;t)
 	w?Hc
 	wGHc
 	~CE3
@@ -27,7 +26,7 @@
   			Pos "300 0 0"
   		Sun
                           
-                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZUPDATE_STRING_TOKEN_DATABASE
+                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZ\'
         %3d %3d %3d %3d %3d %3d %3d %3d
         %4u %4u %4u %4u %4u %4u %4u %4u
       x
@@ -72,6 +71,8 @@
  - pos
  - reindexing from 
  - rot
+ -o "
+ -of 
  -testmode
  0@P`p
  9(X`
@@ -87,15 +88,14 @@
  ?pixel@QImage@@QEBAIHH@Z
  @SUATAUAWH
  @SUH
+ A]A\[
  A]A\_^[
- A]_[
  A]_^
  A]_^][
  A^A\]
  A^A\^
  A^A\_
  A^A\_^[
- A^A][
  A^][
  A^^]
  A^_[
@@ -136,7 +136,6 @@
  A_A^_^]
  A_^[
  A_^]
- A__[
  A__]
  A__^
  Base Class Array'
@@ -181,7 +180,6 @@
  PRESS
  RELEASE
  REPEAT
- ReadToken overflow
  Start- HDR comp: 
  Start- LDR*Mult: 
  Type Descriptor'
@@ -223,6 +221,8 @@
 !?pixmap@QCursor@@QEBA?AVQPixmap@@XZ
 !LcK@
 !T$(H!T$ 
+" -ie 
+" -oe 
 """"UUUU
 "%s" 
 "%s" "
@@ -283,7 +283,7 @@
 "e?<<<<<<l?
 "id" "elementid" 
 "lineOrder" attribute not found in the header.
-"pA3Qp
+"pA3Q
 "pixelAspectRatio" attribute not found in the header.
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
@@ -365,6 +365,7 @@ $~aA;F
 %d %d %d
 %d %d %d %d
 %d (%s)
+%d (s/n %d)
 %d trace results
 %d,%d
 %d,%d,%d
@@ -381,6 +382,7 @@ $~aA;F
 %g %g %g
 %g %g %g %g
 %i %i %i %i
+%i.txt
 %ld%c
 %lluus(%llums) to remap %i faces
 %lu: Row out of range, max %lu
@@ -485,7 +487,6 @@ $~aA;F
 %sEdgeCurveType
 %sEdgeValue
 %sIndices
-%s\%s%i.txt
 %suncompressed data
 %u (0x%x)
 &"?qt_metacall@QAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -632,21 +633,23 @@ $~aA;F
 ( %1, %2, %3, %4% )
 ( 8PX
 (#%d)
-(%4j'
-(%Qj'
+(%4C%
+(%QC%
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
 ('8PW
 (*%s*), 
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-Mj'
-(-hj'
+(-MC%
+(-hC%
 (0?staticMetaObject@QColorDialog@@2UQMetaObject@@B
+(5H*8
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (;s |
 (;~ |
+(=bg+
 (?setColor@QPen@@QEAAXAEBVQColor@@@Z
 (?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
@@ -676,7 +679,6 @@ $~aA;F
 (A^_^[H
 (A_A\_[
 (A_A\_^][
-(A_A]][
 (A_A^
 (A_A^A]A\
 (A_A^A]A\_^][
@@ -703,6 +705,7 @@ $~aA;F
 (D$@A
 (D$@D
 (D$@H
+(D$PA
 (D$PD
 (D$PH
 (D$Pf
@@ -710,7 +713,6 @@ $~aA;F
 (D$`E
 (D$`H
 (D$pD
-(D$pE
 (D$pH
 (D$pL
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -763,6 +765,7 @@ $~aA;F
 (T$pH
 (T+ D
 (T?j?Y
+(U`Lc3
 (\$ D
 (\$0D
 (\$0H
@@ -782,7 +785,6 @@ $~aA;F
 (d$pD
 (d$pH
 (d$pL
-(e`E3
 (l$ D
 (l$ H
 (l$ L
@@ -795,6 +797,8 @@ $~aA;F
 (l$`D
 (l$p3
 (l$pL
+(m0Hc3
+(m0Lc3
 (null)
 (o:R	
 (t$ 2
@@ -817,6 +821,7 @@ $~aA;F
 (t$@L
 (t$@ff
 (t$P3
+(t$P@8
 (t$PD
 (t$PE
 (t$PE3
@@ -836,6 +841,8 @@ $~aA;F
 (t$pH
 (t$pI
 (t$pL
+(u0Lc3
+(upE3
 (|$ D
 (|$ H
 (|$ I
@@ -872,7 +879,6 @@ $~aA;F
 )4$H;
 )9C }
 )9IYiy
-)<$E3
 )>6{1n
 )?setEditTriggers@QAbstractItemView@@QEAAXV?$QFlags@W4EditTrigger@QAbstractItemView@@@@@Z
 )?setEditable@QComboBox@@QEAAX_N@Z
@@ -918,7 +924,6 @@ $~aA;F
 )D$`D
 )D$`H
 )D$`I
-)D$`L
 )D$`fD
 )D$pD
 )D$pE
@@ -944,7 +949,7 @@ $~aA;F
 )L$pA
 )L$pD
 )L$pH
-)MpMc
+)MpIc
 )O@E3
 )T$ D
 )T$0E
@@ -955,6 +960,7 @@ $~aA;F
 )T$`H
 )T$pD
 )T$pH
+)U`E;
 )\$ D
 )\$@H
 )\$@f
@@ -968,7 +974,6 @@ $~aA;F
 )d$PD
 )d$PE
 )d$`D
-)d$`E
 )d$pD
 )l$ A
 )l$ E
@@ -1008,6 +1013,7 @@ $~aA;F
 )t$@A
 )t$@D
 )t$@E
+)t$@E3
 )t$@H
 )t$@Hc
 )t$@I
@@ -1020,12 +1026,12 @@ $~aA;F
 )t$PE
 )t$PE3
 )t$PH
-)t$PHc
 )t$PI
 )t$PL
 )t$`A
 )t$`D
 )t$`H
+)t$`Hc
 )t$`I
 )t$`L
 )t$`Lc
@@ -1050,7 +1056,6 @@ $~aA;F
 )|$0u@H
 )|$@D
 )|$@E
-)|$@E3
 )|$@H
 )|$@L
 )|$PA
@@ -1068,7 +1073,7 @@ $~aA;F
 )|$pIc
 )|$pf
 )|B?d!
-)}pMc
+)}pIc
 * Rehandling active codes
 * { font-size: 10px }
 *"?qt_metacall@QButtonGroup@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -1152,12 +1157,15 @@ $~aA;F
 +D$ H
 +D$ fE
 +D$X+
-+D$tA
-+D$tD
++D$dA
++D$dH
++D$dHc
 +F$Hc
++G$Hc
 +J$+B 
 +J$D8M@
 +L$0A
++L$dHc
 +M<7>
 +T$4E
 +f)>0'
@@ -1206,9 +1214,8 @@ $~aA;F
 ,I<%w
 ,Ic|$
 ,LcD$HH
-,VAd>
 ,t0D9J0v*L
-,u*Ic6A;v
+,u*Ic>A;~
 ,|%)v
 - Add Active Code: %s
 - Remove Active Code: %s
@@ -1238,6 +1245,7 @@ $~aA;F
 -?setTracking@QAbstractSlider@@QEAAX_N@Z
 -?setUnderline@QFont@@QEAAX_N@Z
 -BH>t
+-enable_2gb_morphs
 -min:
 -noassert
 -rgba
@@ -1576,7 +1584,6 @@ $~aA;F
 .?AV?$CDmeTypedLogLayer@_N@@
 .?AV?$CEntityComponentHelperReferenced@VCScriptComponent@@@@
 .?AV?$CEntityComponentHelperT@VCScriptComponent@@V?$CEntityComponentHelperReferenced@VCScriptComponent@@@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor0@PEAVCParticleJobUpdater@?A0xa300dbff@@P812@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor0@V?$CLateBoundPtr@VCBindableCamera@@@@P8CBindableCamera@@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor0@V?$CLateBoundPtr@VCGlobalHotkeyCommands@@@@P8CGlobalHotkeyCommands@@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -2062,6 +2069,7 @@ $~aA;F
 .?AVCModelInstanceManager@@
 .?AVCModelInstanceSceneObjectContainer@@
 .?AVCNewParticleEffect@@
+.?AVCNoRefFunctor@@
 .?AVCNonFatalLoggingResponsePolicy@@
 .?AVCOffscreenToolSceneWindow@@
 .?AVCP4File@@
@@ -2184,6 +2192,10 @@ $~aA;F
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCLightingControlRig@@@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCQToolSceneWidget@@@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_2d9e57603846de8b5694c16539ed7475>@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@PEAVCRenderableBinding@@V?$CMemberFuncJobItemProcessor@PEAVCRenderableBinding@@VCRenderableUpdater@@V2@@@$00@@@@QEAAXXZ@
 .?AVCTonemappingPopupUI@@
 .?AVCToolAxisObjectDesc@@
 .?AVCToolGridObjectDesc@@
@@ -2206,7 +2218,6 @@ $~aA;F
 .?AVCToolSceneDmeNode@@
 .?AVCToolSceneDmePhysicsResource@@
 .?AVCToolSceneDmeSequence@@
-.?AVCToolSceneEnvMap@@
 .?AVCToolSceneGrid@@
 .?AVCToolSceneGridObject@@
 .?AVCToolSceneHitBox@@
@@ -2589,11 +2600,11 @@ $~aA;F
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
 /4+sLLc'D;g
-/5?H$
-/5g{7
+/5x~*
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /<9w-
 /=$!6
+/={j"
 />58d%
 /?O_o
 /?showText@QToolTip@@SAXAEBVQPoint@@AEBVQString@@PEAVQWidget@@@Z
@@ -2635,6 +2646,7 @@ $~aA;F
 0#?qt_metacast@QMenu@@UEAAPEAXPEBD@Z
 0-1.0 (&float)
 0-255 (&integer)
+00000000-0000-0000-0000-000000000000
 00003333
 0123456789ABCDEF
 0123456789ABCDEFundefined
@@ -2684,6 +2696,7 @@ $~aA;F
 0A_A^A]_^][
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_][
 0A_A^_^]
@@ -2698,7 +2711,6 @@ $~aA;F
 0Hc7L
 0Hc9H
 0HcA M
-0L9e0t	H
 0Lc9L
 0X8b?~
 0^][H
@@ -2792,6 +2804,7 @@ $~aA;F
 1OnAlphaChanged()
 1OnAnimationLoopingChanged( bool )
 1OnAnyConfigStateChanged()
+1OnBackgroundColorChanged( const QColor & )
 1OnBodyGroupChoiceChanged(int)
 1OnCancelled()
 1OnChannelIndexChanged( int )
@@ -3076,7 +3089,7 @@ $~aA;F
 2"?qt_metacall@QComboBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200403223610Z0#
+200515053940Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -3096,6 +3109,7 @@ $~aA;F
 2?text@QProgressBar@@UEBA?AVQString@@XZ
 2AnimationLoopingChanged( bool )
 2AnyConfigStateChanged()
+2BackgroundColorChanged( const QColor & )
 2BlendFactorChanged(double)
 2BroadcastColorSet(QVector<QColor>)
 2CalcValueAdded(double)
@@ -3125,6 +3139,7 @@ $~aA;F
 2H9A8t	H
 2HDRmultiplierSetChanged(QVector<double>)
 2I9FPt
+2Ic>A;~
 2L;zPt
 2OffsetPulse(double)
 2OnColorAccepted(FatColor_t)
@@ -3224,6 +3239,7 @@ $~aA;F
 5@8|$"t.9|
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
+5t(jD
 63?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
 64 283 0
 7%?reset@QAbstractItemView@@UEAAXXZ
@@ -3304,19 +3320,16 @@ $~aA;F
 8A__[]
 8A__][
 8A__^[
-8CDmeAxisSystem CUtlMemoryPool
 8CIu	8CJ
 8Csinf
 8D$ u+I
 8D$XuDD
-8DmAttributeList_t CUtlMemoryPool
+8DmElementDeletedListenerInfo_t CUtlMemoryPool
 8GbthH
 8H9}Xtp
 8HcsP;s`u
 8K0u7H
 8L$`t
-8L9e0t	H
-8M9't
 8Y0t]
 8\$`t
 8\$pt
@@ -3327,7 +3340,7 @@ $~aA;F
 8fF9|
 8ke?;
 8vmatt
-8x0ID
+8xxjD
 9"tCeH
 9#tCeH
 9$tCeH
@@ -3360,6 +3373,7 @@ $~aA;F
 9D$ u
 9D$ }(Hc/;o
 9D$(}y
+9D$@t
 9D$`u
 9D$x~
 9Eo~ 3
@@ -3392,7 +3406,6 @@ $~aA;F
 9YD~/3
 9YP~.H
 9Yh~WH
-9\$8~E
 9\$`~[
 9^(~+H
 9^<~.
@@ -3469,9 +3482,8 @@ $~aA;F
 ;/?sizeHint@QDialog@@UEBA?AVQSize@@XZ
 ;1}*H
 ;2HcG
-;5B"#
+;3}cH
 ;7}JH
-;7}cH
 ;A ~W
 ;A;E4~XA
 ;B$vUH
@@ -3508,6 +3520,7 @@ $~aA;F
 ;T$0u
 ;Vl}fD
 ;\$ |
+;\$8|
 ;\$@|
 ;\$`|
 ;\$p|
@@ -3515,7 +3528,6 @@ $~aA;F
 ;]p}~H
 ;_d}:
 ;l$0|
-;l$8|
 ;l$hr
 ;t$0u
 ;t$8u"
@@ -3539,7 +3551,6 @@ $~aA;F
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 <!-- schema 
 <"?qt_metacall@QDialogButtonBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
-<"uBD
 <$E;Q
 <%?reset@QListView@@UEAAXXZ
 <(A9oX
@@ -3573,7 +3584,7 @@ $~aA;F
 <}wWH
 =*?setIconSize@QToolBar@@QEAAXAEBVQSize@@@Z
 =,?setRedF@QColor@@QEAAXN@Z
-=333?333?333?333?@
+=333?333?333?333?p
 =33s?VRenderingSiblingWidget
 ======
 =AuthPhys
@@ -3853,18 +3864,24 @@ $~aA;F
 ??MQTreeWidgetItem@@UEBA_NAEBV0@@Z
 ??YQString@@QEAAAEAV0@AEBV0@@Z
 ?@En[vP
+?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ConColorMsg@@YAXAEBVColor@@PEBDZZ
 ?ConMsg@@YAXPEBDZZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?Cu0f9w
 ?D8gmt#H
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
+?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
+?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Ji@9
@@ -3872,22 +3889,29 @@ $~aA;F
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LockForRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
+?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?Purge@CBufferString@@QEAAXH@Z
 ?QStringList_join@QtPrivate@@YA?AVQString@@PEBVQStringList@@AEBV2@@Z
 ?QY^&
 ?R0I?
+?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Reset@CThreadEvent@@QEAA_NXZ
 ?Reset@CThreadMultiWaitEvent@@QEAAXXZ
 ?SSE and SSE2 are required.
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
+?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?UUUUUU
 ?U[y[
 ?Unknown
@@ -4653,7 +4677,6 @@ $~aA;F
 ?u='@
 ?userType@QVariant@@QEBAHXZ
 ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
-?vhE3
 ?width@QRect@@QEBAHXZ
 ?x@QPoint@@QEBAHXZ
 ?y@QPoint@@QEBAHXZ
@@ -4673,17 +4696,19 @@ $~aA;F
 @80t9H
 @80u#H
 @81u/H
-@85 `*
-@85Ba*
+@85f(>
 @8kut~L
 @8l$8t
-@8l$@tAH
+@8l$Pt-L
+@8l$`tAH
 @8nc@
 @8s0u
 @8sDt
 @8sDu
 @8sDu'E3
+@8t$hu
 @8t$x
+@8wDt
 @8wc@
 @8wuu;
 @8x tF@8
@@ -4735,7 +4760,6 @@ $~aA;F
 @A_A]A\_^
 @A_A]^][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A\_^[]
 @A_A^A\_^][
@@ -4758,6 +4782,7 @@ $~aA;F
 @A__^
 @C;t/
 @D9AHM
+@ErWg
 @HcAp3
 @HcC(H
 @HcD)
@@ -4768,6 +4793,7 @@ $~aA;F
 @JcD!
 @Lc:E3
 @Lcqh3
+@SATAUAV
 @SATAUH
 @SATAVH
 @SATH
@@ -4779,7 +4805,6 @@ $~aA;F
 @SAWH
 @SUATAUH
 @SUATAVH
-@SUAUAWH
 @SUAVH
 @SUAWH
 @SUVATAVH
@@ -4866,15 +4891,17 @@ $~aA;F
 @USWATAUAWH
 @USWATAVH
 @USWATAWH
-@USWAUH
+@USWATH
 @USWAVH
 @USWAWH
 @USWH
 @UVATAUAWH
 @UVATAUH
 @UVATAVAW
+@UVATAVH
 @UVATAWH
 @UVAUAWH
+@UVAUAWL
 @UVAUH
 @UVAVAWH
 @UVAVH
@@ -4885,8 +4912,6 @@ $~aA;F
 @UVWATH
 @UVWAVH
 @UVWH
-@UWATAUH
-@UWATAVH
 @UWATAWH
 @UWATH
 @UWAUH
@@ -4918,7 +4943,6 @@ $~aA;F
 @b;zO]
 @fE9|
 @ffffff
-@m_name
 @modellib
 @spawn
 @t#fA
@@ -5078,28 +5102,27 @@ A]A\][
 A]A\^]
 A]A\_
 A]A\_]
+A]A\_^[
 A]A\_^[]
 A]A\_^]
 A]^[]
-A]_[]
 A]_^[]
 A]_^]
 A^A\[]
 A^A\]
 A^A\^]
 A^A\^][
+A^A\_
 A^A\_[]
-A^A\_]
 A^A\_^[
 A^A\_^[]
 A^A\_^]
+A^A]A\[
 A^A]A\]
 A^A]A\][
 A^A]A\^[]
-A^A]A\_
 A^A]A\_]
 A^A]A\_][
-A^A]A\_^
 A^A]A\_^[
 A^A]A\_^[]
 A^A][
@@ -5126,10 +5149,8 @@ A_A\_^[]
 A_A\_^]
 A_A\_^][
 A_A]A\
-A_A]A\[
 A_A]A\[]
 A_A]A\]
-A_A]A\^
 A_A]A\^]
 A_A]A\_[]
 A_A]A\_]
@@ -5147,8 +5168,10 @@ A_A]_^]
 A_A^A\
 A_A^A\H
 A_A^A\]
+A_A^A\^[
 A_A^A\^]
 A_A^A\^][
+A_A^A\_[
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
@@ -5164,6 +5187,7 @@ A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^]H
 A_A^A]A\_^][
+A_A^A][
 A_A^A][]
 A_A^A]]
 A_A^A]^]
@@ -5186,6 +5210,7 @@ A_A^_^][
 A_^[]
 A__^[
 A__^[]
+A__^]
 A__^][
 A`D9L8
 About...
@@ -5347,6 +5372,7 @@ BackGroundStyle_t
 Background
 Background Fill
 Background Shape
+BackgroundColorChanged(QColor)
 Backing store not supported
 Backspace
 Bad dynamic_cast!
@@ -5447,8 +5473,9 @@ Button_AcceptAndCLose
 Button_Reset
 C H9A
 C$u	H
-C%d (s/n %d)
+C%lld
 C(9C u&
+C(D94(
 C(H9A u
 C(HcC$H
 C(I;A
@@ -5456,7 +5483,6 @@ C(L9<
 C,9C$u
 C,;C(~6H
 C-yh/
-C.fE;
 C09A(
 C09C u
 C0@u3H
@@ -5498,6 +5524,7 @@ CCITT RLE/W
 CD$XD
 CD+B$f
 CD+B$fA
+CD8-$@"
 CDataModel:  %i elements left in memory!!!
 CDataModel: Invalid DMX encoding hint '%s' for file %s
 CDataModel: Unable to determine DMX encoding for file %s
@@ -5548,6 +5575,7 @@ CDmeAssetBonePose CUtlMemoryPool
 CDmeAssetPose CUtlMemoryPool
 CDmeAssetRoot CUtlMemoryPool
 CDmeAttributeReference CUtlMemoryPool
+CDmeAxisSystem CUtlMemoryPool
 CDmeBaseResource CUtlMemoryPool
 CDmeBoneMask CUtlMemoryPool
 CDmeBoneMaskCmd CUtlMemoryPool
@@ -6025,7 +6053,6 @@ CToolSceneDmeModel::BuildPermRenderMeshData
 CToolSceneDmeNode
 CToolSceneDmePhysicsResource
 CToolSceneDmeSequence
-CToolSceneEnvMap
 CToolSceneGrid
 CToolSceneHitBox
 CToolSceneHitBoxes
@@ -6419,7 +6446,6 @@ CreateUmsCompletionList
 CreateUmsThreadContext
 CreateVertexListObject
 CtrlAltV
-Cubemap
 Cull Random
 CurrentFrameChanged(int)
 CurrentICCProfile
@@ -6526,8 +6552,8 @@ D$0fD
 D$0fH
 D$0mp
 D$0r|
-D$0t5
-D$0t9
+D$0t7
+D$0t?
 D$0tHA
 D$0tbA
 D$0xL
@@ -6559,12 +6585,12 @@ D$<t.
 D$@%I
 D$@9D$8
 D$@;0} H
+D$@;D$8
 D$@@8
 D$@A+
 D$@A;
 D$@A;^
 D$@D;
-D$@D;G
 D$@D;s
 D$@E3
 D$@H+
@@ -6577,6 +6603,7 @@ D$@Ic
 D$@L;
 D$@Lc
 D$@csm
+D$@f;
 D$@fA
 D$@fD
 D$@fff
@@ -6595,6 +6622,7 @@ D$FE3
 D$H;D$`
 D$H@8
 D$HD;
+D$HD;G
 D$HE3
 D$HH+
 D$HH;
@@ -6682,13 +6710,12 @@ D$hE9 ud
 D$hE;
 D$hHc
 D$hIc
+D$hff
 D$hu4D
 D$l093
 D$lE3
 D$p 69
-D$p;G
 D$p<L{
-D$pA;F
 D$pD9
 D$pD;
 D$pE3
@@ -6730,17 +6757,41 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
-D8%S_0
+D8%E5.
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-!`$
-D8-b	
+D8- m>
+D8-)n>
+D8-9h>
+D8-9q>
+D8-;r>
+D8-=o>
+D8-=p>
+D8-@u>
+D8-Ax>
+D8-Bw>
+D8-Bz>
+D8-Cy>
+D8-Dt>
+D8-Fi>
+D8-Fv>
+D8-Hs>
+D8-K{>
+D8-T}>
+D8-U|>
+D8-Vj>
+D8-V~>
+D8-Xk>
+D8-ll>
+D8-q@"
+D8-}m>
 D82u&H
-D85[|
 D88Ht!
 D88Hte
+D8=5E*
+D8=D)>
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8D$Q
 D8D)(u
@@ -6785,7 +6836,6 @@ D8|$Pt
 D8}ht
 D9&t\I
 D9,2H
-D9-(+&
 D90u	9X
 D98Ht;H
 D98tT
@@ -6802,7 +6852,7 @@ D9c t
 D9d$ ~-I
 D9d$(u
 D9f@~0Hc
-D9g8u<H
+D9g8u,H
 D9gpt
 D9gputD
 D9i ~NA
@@ -6820,9 +6870,6 @@ D9x(uiE
 D9xXL
 D9{(u
 D9|$ 
-D;%VJ&
-D;%q+&
-D;-"!#
 D;8}aH
 D;AP|
 D;C }
@@ -6834,8 +6881,7 @@ D;D$(}:J
 D;D$0u
 D;D$8|
 D;D$8};J
-D;E8u
-D;EHu
+D;E@u
 D;EPu
 D;G8|
 D;HE3
@@ -6845,6 +6891,8 @@ D;L$`~!Hc
 D;L$d~
 D;L$l~
 D;L$t~ZH
+D;M@u
+D;M`u
 D;O u=
 D;T$8}
 D;[ D
@@ -6853,7 +6901,6 @@ D;j0v
 D;k ~=
 D;l$8u!
 D;s u
-D;s ~
 D;s8|
 D;sXu
 D;sxu
@@ -6868,6 +6915,7 @@ D;xP|
 D;z,u
 D;z,v
 D;z,v(A
+D;{ ~
 D;{8|
 D;{Lr
 D;|$0
@@ -6877,7 +6925,8 @@ D;|$P
 D;|$l
 D;|$xu
 D;} }PIc
-D;}@L
+D;}(u
+D;}8L
 D;}P|
 D<P0I
 D<QD+
@@ -6968,10 +7017,10 @@ Dm Memory usage: type				count	totalsize	wastage %%	outer		inner		datamodel	refs
 Dm Unserialize: Attempted to read an attribute ("%s") of an inappropriate type!
 DmAttributeAddedListenerInfo_t CUtlMemoryPool
 DmAttributeChangedListenerInfo_t CUtlMemoryPool
+DmAttributeList_t CUtlMemoryPool
 DmAttributeRemovedListenerInfo_t CUtlMemoryPool
 DmElement
 DmElementChangedListenerInfo_t CUtlMemoryPool
-DmElementDeletedListenerInfo_t CUtlMemoryPool
 DmSerializers needs the file system to function
 DmeAmalgamatedTexture
 DmeAmbientLight
@@ -7261,6 +7310,7 @@ ENTITY_IO_TARGET_SPECIAL_CALLER
 ENTITY_NOT_DORMANT
 ENTITY_SUSPENDED
 EP*?@
+EPHc<
 EPHc@
 ERROR! LoadFromJPG( %s ) failed!
 ERROR! LoadFromPNG( %s ) failed!
@@ -7286,12 +7336,10 @@ EXEC-END_SUPPRESSED: %s
 EXEC-HELD: %s
 EXEC-INVALID-END: %s
 EXEC-REMOVE-END: %s
-EXHc<
 EXHcH
 EXIFIFDOffset
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EXRHeader variable is not initialized.
-E_;Eo~
 E`+UX
 EarlyRetireParticleSystems
 Ease In
@@ -7359,8 +7407,6 @@ EntityIOQueuePrioritizedEvent_t
 EntityIOTargetType_t
 EnumSystemLocalesEx
 EnumSystemLocalesW
-EnvMap
-EnvironmentMapBuilder_001
 Eo9GXu6Lc
 Eo9Gt
 Eo;Gt
@@ -7562,12 +7608,12 @@ G channel not found!
 G unH
 G#?qt_metacast@QProgressBar@@UEAAPEAXPEBD@Z
 G$;G,
-G%lld
 G'?setAlpha@QColor@@QEAAXH@Z
 G(9G0|
 G(D9p
 G(D9x
 G(D;x
+G+xH5p
 G0D;p
 G0Hc	H
 G3?timerEvent@QToolButton@@MEAAXPEAVQTimerEvent@@@Z
@@ -7575,6 +7621,7 @@ G8?wheelEvent@QComboBox@@MEAAXPEAVQWheelEvent@@@Z
 G8Hc@
 G@H9w8t	H
 GAMECONSOLE
+GD$(H
 GD$8H
 GD$8I
 GL$8I
@@ -7583,8 +7630,13 @@ GP9G@}]HcG@Hk
 GPSIFDOffset
 GT$(H
 GT$8A
+GT$8H
 GT$HD
 GT$HH
+GT$XH
+G\$8H
+G\$hH
+G^r	A
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameStartup
@@ -7679,6 +7731,7 @@ GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserObjectInformationW
 GetVersionExW
+Gl$(H
 GlobalAlloc
 GlobalHotkeys
 GlobalLock
@@ -7725,12 +7778,10 @@ H+\$hIc<$H
 H+|$@H
 H0F08
 H0Hc\$p3
+H3=F. 
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
-H9-[>%
-H9-^P)
-H9-n1(
 H9.u?H
 H97t<
 H97u	D8
@@ -7738,7 +7789,8 @@ H98t%H
 H98tPA
 H98u	H
 H99u{
-H9=^	K
+H9=f)K
+H9=n*K
 H9A u
 H9A(s
 H9A@u
@@ -7832,6 +7884,7 @@ HA_A^A]A\_^][
 HA_A^A]_][
 HA_A^A]_^[
 HA_A^^]
+HBm_name
 HD;u(
 HDR Multiplier
 HDRmultiplierSetChanged(QVector<double>)
@@ -7919,8 +7972,8 @@ HcD$xA
 HcD$xB
 HcD$xL
 HcE0H
-HcE8L
-HcEPH
+HcE@L
+HcEHH
 HcEPL
 HcEhH
 HcF0A
@@ -7980,11 +8033,13 @@ HcT$pt
 HcT$pt	;U
 HcU H
 HcU(A
+HcU(H
 HcU0H
-HcU8H
-HcUHH
-HcUhLc
+HcU0L
+HcU@H
+HcU`H
 HcUpH
+HcUxLc
 HcV0H
 HcW ;
 HcWxL
@@ -8370,7 +8425,7 @@ K~Je#>!
 L!|$(L!
 L#?qt_metacast@QRadioButton@@UEAAPEAXPEBD@Z
 L$ ;1}WH
-L$ ATAUAVAWH
+L$ ;s
 L$ E3
 L$ E;
 L$ H9\$(t
@@ -8379,7 +8434,10 @@ L$ Hc
 L$ I+
 L$ Lc
 L$ Lc9H
+L$ SATAUAVH
 L$ SATAUAWH
+L$ SATAUH
+L$ SAUAVAWH
 L$ SH
 L$ SUVAVH
 L$ SUVWATAUAVAWH
@@ -8400,6 +8458,7 @@ L$ UWAUAVAWH
 L$ UWAVAWH
 L$ VWAVH
 L$ WATAUAVAWH
+L$ WATAVH
 L$ WATH
 L$ WH
 L$ fI
@@ -8423,7 +8482,6 @@ L$(fH
 L$(fI
 L$(iM
 L$,=)#
-L$0;w
 L$0D;
 L$0E+
 L$0E3
@@ -8443,8 +8501,7 @@ L$0fH
 L$0fI
 L$0tIH
 L$0u2
-L$4A;
-L$4D;
+L$4E;
 L$8;L$0
 L$8A;
 L$8D;
@@ -8470,12 +8527,16 @@ L$@H=
 L$@Lc
 L$@Lc9M
 L$@fA
+L$@t^L
+L$@t~L
 L$@uU
 L$D9S$
 L$D;L$T
 L$DD+
 L$DE3
+L$DLc3
 L$HA;
+L$HD+
 L$HD;
 L$HE3
 L$HH3
@@ -8495,11 +8556,9 @@ L$PE;
 L$PH3
 L$PI;
 L$PfD
-L$Pu"H
 L$TE3
 L$XA;
 L$XB;
-L$XD+UxI
 L$XD;
 L$XE3
 L$XE;e$
@@ -8510,8 +8569,6 @@ L$\E3
 L$`9K 
 L$`A;
 L$`D;
-L$`D;N
-L$`D;O
 L$`D;ep
 L$`E3
 L$`E;
@@ -8520,6 +8577,7 @@ L$`H;
 L$`Lc
 L$`fD
 L$`tcA
+L$aE3
 L$dA+
 L$dE3
 L$hD;
@@ -8540,6 +8598,7 @@ L$xAi
 L$xD+
 L$xE3
 L$xIc
+L$xLc
 L$xfA;
 L$|E3
 L(:A:
@@ -8551,6 +8610,7 @@ L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L1HthD
 L9	u4H
 L9*u&
+L9-MX'
 L93u_
 L93uc
 L9Ahs
@@ -8563,7 +8623,6 @@ L9d$0t
 L9d$8t
 L9d$Pt
 L9d$Xt
-L9e0tjH
 L9e@t	H
 L9egt	H
 L9g8t
@@ -8664,9 +8723,8 @@ LcCLC
 LcCP3
 LcCPH
 LcD$|3
-LcE(L
-LcE8M
-LcE@L
+LcE0H
+LcE@H
 LcEoH
 LcFDI
 LcF`D
@@ -8677,6 +8735,7 @@ LcIhM
 LcK$A;
 LcK<L
 LcK\LcU
+LcMPI
 LcMpD
 LcQ|M+
 LcT$p3
@@ -8699,7 +8758,6 @@ Lct$$I;
 Lct$8A
 Lct$H3
 Lct$h3
-Lct$xA
 Lcv D;v$
 LcwHI
 LcyHH
@@ -8771,6 +8829,7 @@ LookAt
 LowPrecisionUv
 LowPrecisionUv1
 LrwcE
+Lu(;{
 M H1E
 M8?wheelEvent@QMenu@@MEAAXPEAVQWheelEvent@@@Z
 M98t^M
@@ -9030,6 +9089,7 @@ OHcs
 OKandClose()
 OX9JXt
 OX9KXu
+O]oHcE
 Obtained EMS handle %u
 Obtained XMS handle %u
 October
@@ -9053,6 +9113,7 @@ OnAbout()
 OnAlphaChanged()
 OnAnimationLoopingChanged(bool)
 OnAnyConfigStateChanged()
+OnBackgroundColorChanged(QColor)
 OnBodyGroupChoiceChanged(int)
 OnCancelled()
 OnChannelIndexChanged(int)
@@ -9306,6 +9367,7 @@ Plat_IsInTestMode
 Plat_LoadModule
 Plat_MSTime
 Plat_MessageBox
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
@@ -9337,7 +9399,7 @@ PosterSettings
 Potential overflow in png_zalloc()
 Powerbar
 Pp9_d~)H
-PpH9|$Ht
+PpH9|$H
 Pre-Age Noise
 Predictor
 PredictorEncodeTile
@@ -9647,6 +9709,7 @@ SUATAUAVH
 SUATAVAWH
 SUATAWH
 SUATH
+SUAUAVH
 SUAUAWH
 SUAVH
 SUAWH
@@ -9667,17 +9730,17 @@ SUVWAVH
 SUVWAWH
 SUVWH
 SUWATAUAVH
-SUWATAUAWH
 SUWAUAVAWH
 SUWAUAWH
 SUWAUH
 SVATAUH
+SVATAVAWH
 SVAUAWH
 SVAUH
-SVAWH
 SVWATAUAVAWH
 SVWATAUAVH
 SVWATAUAWH
+SVWATAUH
 SVWATAVAWH
 SVWATH
 SVWAUAVAWH
@@ -9685,8 +9748,10 @@ SVWAVAWH
 SVWAVH
 SVWAWH
 SWATAUAWH
+SWATAVAWH
 SWAUAVAWH
 SWAUH
+SWAVH
 SWAWH
 S^>#/
 Sample Pixel Color
@@ -10010,6 +10075,7 @@ Slidermulti req offset:
 SmoothLoop
 Smoothing not supported with nonstandard sampling ratios
 SnapCameraToSelection
+SoA}]?
 Software
 SoundGuid_t
 SoundOpSystem001
@@ -10077,6 +10143,7 @@ T$ ;{
 T$ @2
 T$ A3
 T$ A;
+T$ D;s
 T$ E+
 T$ E3
 T$ E;
@@ -10128,6 +10195,7 @@ T$PH3
 T$PHc
 T$PHcD$T
 T$PIc
+T$Pff
 T$QE3
 T$XA;
 T$XE3
@@ -10135,6 +10203,7 @@ T$XHc
 T$XLc
 T$`A;
 T$`D+
+T$`D;s
 T$h;K 
 T$hD9
 T$hD;
@@ -10142,6 +10211,7 @@ T$hE92
 T$hE;
 T$hIc
 T$hff
+T$lD;s
 T$lE;
 T$pA;
 T$pD+
@@ -10151,10 +10221,10 @@ T$pE;
 T$pH;
 T$pM+
 T$pfD
+T$xD;s
 T$xH;
 T$xHc
 T$xLc
-T%*v,
 TADIt	
 TADIu
 TADIu.
@@ -10242,20 +10312,16 @@ Too many color components: %d, max %d
 Too many simultaneously active particle systems!
 Too much
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolObjects
 ToolScene
 ToolSceneBitmapOverlay.vtex
 ToolSceneDebugOverlays
 ToolSceneDmeModel_%s
 ToolSceneDmeModel_%s_Mesh
-ToolSceneLightRigEnvMap
 ToolSceneLightRigSky
 ToolSceneNodeFactory_001
 ToolScenePostProcess
 ToolSceneWidget
-ToolScene_%p
 ToolScriptManager001
 ToolService_001
 ToolWindowGrid
@@ -10305,7 +10371,6 @@ UA>N0Wl
 UATAUAVAWH
 UATAUAVH
 UATAUAWI
-UATAUH
 UATAUI
 UATAVAWH
 UATAVH
@@ -10321,6 +10386,7 @@ UAVAWH
 UAVAWI
 UNKNOWN
 UPA8]Xt
+UPDATE_STRING_TOKEN_DATABASE
 USATAUAVAWH
 USATAUAWH
 USATAUH
@@ -10328,7 +10394,6 @@ USATAVH
 USATH
 USAUAVAWH
 USAUAVH
-USAUAWH
 USAUH
 USAVAWH
 USAVH
@@ -10363,6 +10428,7 @@ UUUUUUUUH
 UUUUUUUUL
 UVATAUAVAWH
 UVATAUAVH
+UVATAUH
 UVATAUI
 UVATAVAWH
 UVATAVH
@@ -10370,8 +10436,7 @@ UVATAWH
 UVATH
 UVATI
 UVAUAVAWH
-UVAUAVH
-UVAUAWI
+UVAUAWH
 UVAUH
 UVAVAWH
 UVAVH
@@ -10388,9 +10453,11 @@ UVWAUAWH
 UVWAUH
 UVWAVAWH
 UVWAVH
+UVWAWH
 UVWQ8888
 UWATAUAVH
 UWATAUAWH
+UWATAUH
 UWATAVAWH
 UWATAWH
 UWATH
@@ -10404,7 +10471,6 @@ UWAVH
 UWAVI
 UWAWH
 Ugx	H
-Uh;Up
 UmsThreadYield
 UnSync()
 Unable find required entry points in %s
@@ -10505,7 +10571,6 @@ V/?sizeHint@QRadioButton@@UEBA?AVQSize@@XZ
 V0;Ct~ZH
 V6E>`"(5
 VATAUAVAWH
-VATAUAWH
 VATAUH
 VAUAWH
 VAVAWH
@@ -10567,7 +10632,6 @@ VWAVAWH
 VWAVH
 VWAWH
 V_CopyMemory3D
-V_FixSlashes
 V_GetErrno
 V_GetFileExtension
 V_IsAbsolutePath
@@ -10614,7 +10678,6 @@ V_tanf
 V_uuid_t
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 V`;Ct~bH
@@ -10656,7 +10719,6 @@ VertexPaintTintColor
 VertexUVPosColorNormalAndTangent_t
 VerticalStrafeCamera
 Vgui editor file
-VirLU
 Virtual array controller messed up
 VirtualAlloc
 VirtualFree
@@ -10735,13 +10797,11 @@ X UVWH
 X!t5~
 X(D9y(
 X)?setFixedHeight@QWidget@@QEAAXH@Z
-X-KM+
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5?V+
-X5_O+
+X5Vo8
 XA;w@
 XA]A\^[
 XA^A\_[
@@ -10774,20 +10834,14 @@ X|$8E
 X|$XH
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%.Q2
-Y%;M+
+Y%ou*
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
-Y-,(+
-Y-,{)
-Y-NM+
+Y-\Z)
 Y0t>H
-Y5	P+
-Y57#	
-Y5Ev,
-Y5WC$
-Y5gO+
-Y5oV+
-Y="v,
+Y51p*
+Y5o1.
+Y=\1.
+Y=fy*
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -10861,6 +10915,7 @@ Zpm"U
 \$ UATAVH
 \$ UAVAWH
 \$ UH
+\$ UVATAVAWH
 \$ UVATH
 \$ UVAVH
 \$ UVAWH
@@ -10879,6 +10934,7 @@ Zpm"U
 \$ WAVAWH
 \$ WH
 \$ t>I
+\$(A_A]^]
 \$(E3
 \$(E;
 \$(Hc|$ H
@@ -10900,14 +10956,16 @@ Zpm"U
 \$0Lc
 \$0t!H
 \$4E;O
+\$4Lc3
 \$8A+
-\$8A;
 \$8E3
 \$8Hc
 \$8Hc_
 \$8fD
 \$<A;
-\$@@8=]
+\$@9\$8
+\$@9\$8~I
+\$@@8=M
 \$@H+
 \$@H;
 \$@Hc
@@ -10916,6 +10974,9 @@ Zpm"U
 \$@u$M
 \$@u+M
 \$@uFM
+\$HA;
+\$HHc
+\$Hta
 \$I;n
 \$L;u$
 \$PA_A^A]A\_^]
@@ -10961,7 +11022,6 @@ Zpm"U
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
 \)?setFixedWidth@QWidget@@QEAAXH@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
-\5v!+
 \D$8H
 \D$8L
 \D$Hf
@@ -10980,7 +11040,8 @@ Zpm"U
 ])6M>&
 ],?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
 ].?setWidth@QPen@@QEAAXH@Z
-]5Qb&
+]5e2$
+]8fff
 ]>)2X
 ]@fff
 ]HE9F
@@ -10991,6 +11052,7 @@ Zpm"U
 ^8?widget@QLayoutItem@@UEAAPEAVQWidget@@XZ
 ^<V7w
 ^RfN>
+^U-W<s
 ^fD9+t
 _ ?paintEvent@QGroupBox@@MEAAXPEAVQPaintEvent@@@Z
 _"?qt_metacall@QGroupBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -11002,11 +11064,7 @@ _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
-_V_ComposeFileName
 _V_ExtractFilePath
-_V_FileBase
-_V_FixupPathName
-_V_MakeAbsolutePath
 _V_SetExtension
 _V_StringAfterPrefix
 _V_StringAfterPrefixCaseSensitive
@@ -11564,20 +11622,19 @@ curvetypes
 custom
 custom_colors
 d ?paintEvent@QListView@@MEAAXPEAVQPaintEvent@@@Z
+d$ ;s
 d$ D9d$0|SH
 d$ E3
-d$ Hc7
 d$ UAVAWH
 d$ fC
 d$(E3
-d$0;w
 d$0A+
 d$0D;u
 d$0E3
 d$0Hc
+d$0Hc3
 d$0Ic\$
 d$0Mc
-d$0fD
 d$8D;
 d$8E3
 d$?raise@QWidget@@QEAAXXZ
@@ -11593,10 +11650,10 @@ d$PfD
 d$XE3
 d$XHc
 d$XLc
+d$`;C
+d$`A;F
 d$`D; 
-d$`D;o
 d$`E3
-d$`E;
 d$`H;
 d$`fff
 d$dD;d$l
@@ -11608,7 +11665,6 @@ d$heL
 d$p9N
 d$pE3
 d$pM+
-d$pfA
 d$tM;
 d$tfff
 d$xE3
@@ -11690,7 +11746,7 @@ dmg.club
 dmg.explosive
 dmg.fire
 dmx file
-dmxconvert -allowdebug -i "%s" -ie %s -o "%s" -oe %s -of %s
+dmxconvert -allowdebug -i "
 dominators
 double
 drawGameRenderablesMask
@@ -11793,6 +11849,7 @@ eventObject
 event_class
 event_keys
 eventindex
+exA_A^A]A\_^[]
 executable format error
 exitNode
 exit_anim
@@ -12016,7 +12073,6 @@ gridSize
 gridspacing
 groupColor
 groupName
-gwUGX
 h ?paintEvent@QMenuBar@@MEAAXPEAVQPaintEvent@@@Z
 h VWAWH
 h WATAUAVAWH
@@ -12033,11 +12089,11 @@ hA]A\[]
 hA^A\
 hA^A\^]
 hA^A]
+hA^A]][
 hA^]H
 hA^_^[
 hA^_^]
 hA_A]A\_[]
-hA_A]A\_][
 hA_A][]
 hA_A]_^
 hA_A^
@@ -12250,14 +12306,17 @@ kochanek_late
 kxu/H
 l ?paintEvent@QRadioButton@@MEAAXPEAVQPaintEvent@@@Z
 l$ 9Q
+l$ ;s
 l$ ATAVAWH
 l$ AVH
 l$ D8|$ tK
 l$ D9l$0|LH
+l$ D;s
 l$ E3
 l$ E;G|
 l$ Hc
 l$ Lc
+l$ V3
 l$ VAUAWH
 l$ VAV
 l$ VAVAWH
@@ -12276,12 +12335,11 @@ l$ eH
 l$$9L$(
 l$$D;
 l$(;i
+l$(A^A]A\[
 l$(E3
 l$(LcI
 l$,A9l$
 l$0;CP}8H
-l$0;w
-l$0A+
 l$0A^^
 l$0E3
 l$0H+
@@ -12293,7 +12351,7 @@ l$0Lc
 l$0ff
 l$0v=fA
 l$0~8H
-l$0~H3
+l$0~K3
 l$4Hc
 l$8;{
 l$8@8
@@ -12351,6 +12409,7 @@ l$`9sX~&H
 l$`C9,
 l$`D9(
 l$`D9f(u
+l$`D;s
 l$`E3
 l$`E9j
 l$`E;j
@@ -12367,12 +12426,14 @@ l$hL;
 l$hM;
 l$hff
 l$ht!H
+l$lD;s
 l$pE3
 l$pHc)
 l$pIc~
 l$pfff
 l$tE3
 l$x@2
+l$xD;s
 l$xE3
 l%?resizeEvent@QDialog@@MEAAXPEAVQResizeEvent@@@Z
 l.?setWindowFlags@QWidget@@QEAAXV?$QFlags@W4WindowType@Qt@@@@@Z
@@ -12884,7 +12945,6 @@ n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
 nAlpha
-nD8-CI&
 nFrame
 nIndex
 nIndex,newColorIn
@@ -13053,6 +13113,7 @@ p ATAVAWH
 p AVH
 p AWH
 p UAVAWH
+p UWATAVAWH
 p"?qt_metacall@QLabel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 p%?resizeEvent@QGroupBox@@MEAAXPEAVQResizeEvent@@@Z
 p)?setFocus@QWidget@@QEAAXW4FocusReason@Qt@@@Z
@@ -13208,6 +13269,7 @@ q%?resizeEvent@QListView@@MEAAXPEAVQResizeEvent@@@Z
 q&?scroll@QPixmap@@QEAAXHHAEBVQRect@@PEAVQRegion@@@Z
 q(9YD~tE3
 q(?setCurrentWidget@QStackedWidget@@QEAAXPEAVQWidget@@@Z
+q(@85
 q/?sizeHintForRow@QTableView@@MEBAHH@Z
 q0@80u
 qS>g?h3
@@ -13674,14 +13736,11 @@ t!McY
 t!fA;
 t"<.u
 t"fff
-t$ ;C ~
-t$ @2
 t$ A;
 t$ ATAVAWH
 t$ AV
 t$ AVAWH
 t$ AVAWL
-t$ AVE3
 t$ AVH
 t$ AWH
 t$ E2
@@ -13712,7 +13771,6 @@ t$$A+
 t$$E3
 t$(;_
 t$(A;
-t$(A^
 t$(D;
 t$(E3
 t$(H;l$@
@@ -13727,6 +13785,7 @@ t$0;{
 t$0A;
 t$0A^_
 t$0A_A^
+t$0D9t$@|LH
 t$0D;
 t$0E3
 t$0H+
@@ -13813,7 +13872,6 @@ t$XE3
 t$XE8
 t$XHc
 t$XHcs8;sHu
-t$Xff
 t$Xt	H
 t$\D;
 t$`9oX~#H
@@ -13840,6 +13898,7 @@ t$hfff
 t$p9u
 t$pA+
 t$pE+
+t$pE3
 t$pHcH
 t$pIk
 t$ptiHcK<L
@@ -13898,6 +13957,7 @@ t0+O$H
 t09+u,9s
 t0?staticMetaObject@QMenu@@2UQMetaObject@@B
 t0@87t+
+t0@8;t+
 t0D8;t+
 t0HcE
 t1+O$H
@@ -13912,7 +13972,7 @@ t5LcF
 t6Hc.D
 t8?width@QFontMetrics@@QEBAHAEBVQString@@H@Z
 t8H9^ t2H
-t9H9=
+t9H9=&b(
 t:D9s
 t:Ic~0I
 t:LcM
@@ -13922,7 +13982,7 @@ t=+O$H
 t>Hc+;k
 t?fff
 t@HcF
-tB@8=U
+tB@8=E
 tBHc/
 tCHcP
 tCfff
@@ -14235,7 +14295,7 @@ tzLcK<L
 tzfff
 t{;Q`svI
 u	9w$
-u	@8=]
+u	@8=
 u ?paintEvent@QTableView@@MEAAXPEAVQPaintEvent@@@Z
 u Hc^
 u f;N
@@ -14315,12 +14375,12 @@ uYfA9h uRfA9h0uKfA9h@uDfA9hPu=fA9h`u6fA9hpu/A
 u[HcI
 u\A9l$
 u`HcL
-u`LcE
 ucA9l$
 ueHcS
 uf!T$(H!T$ 
 uh@8|$!t,
 uhIc4
+uhLcM0I
 uiD9~
 uint32
 uint64
@@ -14509,7 +14569,6 @@ vsnap
 vsndH
 vstdlib.dll
 vsutils_py
-vtexH
 vwnod
 vwrld
 v}`[>
@@ -14583,18 +14642,18 @@ x!HcI
 x!HcK
 x";C }
 x#?qt_metacast@QToolButton@@UEAAPEAXPEBD@Z
-x$H9-x
+x$H9-
 x$fff
 x%E;n
 x.;^x})L
 x.?setWindowOpacity@QWidget@@QEAAXN@Z
 x.HcAhL;
 x0v0$
-x2A;Sp},I
 x7?updateEditorGeometries@QAbstractItemView@@MEAAXXZ
 x9H;H
 x9HcGhH;
 x9HcS
+xA;Qp}<H
 xA]A\[]
 xA]A\_^
 xA]_][
@@ -14604,7 +14663,6 @@ xA^_^[
 xA^_^[H
 xA^_^]
 xA_A]][
-xA_A]^[
 xA_A^A\_^]
 xA_A^A]A\_^][
 xA_A^[]
@@ -14645,7 +14703,6 @@ z/u-A
 z/u-E
 z0x0:
 z:KCAuthPhysBody
-z>00000000-0000-0000-0000-000000000000
 zDCDmeFaceSet CUtlMemoryPool
 zY;>u:m	
 zlib memory error
@@ -14669,6 +14726,7 @@ znear
 {w8&-
 {}[]()=&, 	
 {}[]=, 	
+|	;Eo
 |#tAM
 |$ A+
 |$ A;
@@ -14737,7 +14795,6 @@ znear
 |$0ff
 |$0fff
 |$0s-
-|$0uO
 |$4A;
 |$4E;
 |$4L;
@@ -14748,7 +14805,6 @@ znear
 |$8B8
 |$8E3
 |$8H+
-|$8Hc
 |$8Hc;;{
 |$8Ic
 |$8L;
@@ -14787,11 +14843,9 @@ znear
 |$Hff
 |$Ht#
 |$HtwI
-|$LA;
 |$P9k
 |$PA;^ u
 |$PD9
-|$PD;c
 |$PE3
 |$PE;
 |$PHc
@@ -14808,10 +14862,10 @@ znear
 |$XHcU
 |$XHk
 |$XIc
-|$XLc
 |$\.u
 |$`+Ad
 |$`30
+|$`@2
 |$`CI
 |$`D;
 |$`E3
@@ -14842,12 +14896,7 @@ znear
 |$xLc
 |${H+
 |(tFM
-|+A;F
-|,A;F
-|-A;G
 |2?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z
-|HA;G
-|JA;G
 |_A;^
 |aA;^
 |auK;
@@ -14855,7 +14904,6 @@ znear
 } Hcu`H
 } fE;A
 } fE;H
-} u,H
 } u0M
 }%;Q|
 }&f;{
@@ -14890,12 +14938,12 @@ znear
 ~%?resizeEvent@QTabWidget@@MEAAXPEAVQResizeEvent@@@Z
 ~( ub
 ~(HcNDI
-~*9y0
-~*9yP
+~*9q0
+~*9qP
 ~-?setText@QAction@@QEAAXAEBVQString@@@Z
 ~-fff
-~.HcL$8L
-~08\$0t
+~28\$0t
+~8HcL$`L
 ~?Hc_
 ~BLcK0E3
 ~CModelInstance destructor: leaking softbody because physics world disappeared
@@ -14926,5 +14974,6 @@ znear
 ~fLcM
 ~jLcM
 ~nfff
+~qHc|$8
 ~tfff
 ~xfff

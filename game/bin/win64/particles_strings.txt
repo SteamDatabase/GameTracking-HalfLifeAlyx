@@ -1,6 +1,7 @@
 	"Emit continuously" and "Emit noise" no longer support "scale emission to used control points".
 	"Position from control points" had a max control point added to it.
 	%4d -  %s
+	D;ClD
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	kE>fvw
                           
@@ -10,6 +11,7 @@
  %4i: 
  'L>[
  9(X`
+ ?t$7?
  A;Kl
  A;{l
  A\_^
@@ -64,12 +66,11 @@
 "Remap control point orientation to rotation" rewritten to make more sense.
 "Set control point rotation" pre-emission operator now correctly produces right-handed matrices [previously it would produce left-handed ones].
 "Twist around axis" force now rotates around the specified control point instead of control point 0.
-"pA3Q
+"pA3Q b
 # of children to enable
 # of children to set
 # of control points to set
 #L9A0H
-#u%A9
 $>!@v>
 $AMBIENTSCALE
 $COLORWARPINTENSITY
@@ -83,6 +84,20 @@ $REFLECTIONSTINTBYBASEBLENDTONONE
 $RIMLIGHTCOLOR
 $RIMLIGHTSCALE
 $SELFILLUMBLENDTOFULL
+$SFXColorWarpAmount
+$SFXDetailAmount
+$SFXDetailTextureScale
+$SFXDetailTextureScrollX
+$SFXDetailTextureScrollY
+$SFXDetailTextureScrollZ
+$SFXMetalnessAmount
+$SFXNormalAmount
+$SFXRoughnessAmount
+$SFXSelfIllumAmount
+$SFXTextureScale
+$SFXTextureScrollX
+$SFXTextureScrollY
+$SFXTextureScrollZ
 $SPECULARBLENDTOFULL
 $SPECULARCOLOR
 $SPECULAREXPONENT
@@ -93,7 +108,6 @@ $tIAT	K
 %02x 
 %40s: Age: %6.2f, next sleep %6.2f NumActive: %3d, flags %d, Bounds Center: (%.2f,%.2f,%.2f) (0x%p)
 %i %i %i %i
-%s %d
 %s allocation count overflow
 %s allocation count overflow( %llu > %llu )
 %s allocation count overflow( %llu >= %llu )
@@ -108,14 +122,11 @@ $tIAT	K
 &YA1L
 '":|;
 'Lighten blend mode
-(%;D!
-(%QS"
 ('8PW
-(-ZK!
-(-aD!
 (4$fA
-(5,e"
-(58D!
+(5 / 
+(5m, 
+(5x,#
 (@ Hc
 (A]A\][
 (A]A\^]
@@ -225,6 +236,7 @@ $tIAT	K
 (l$PE
 (l$PH
 (l$`D
+(l$`H
 (l$pD
 (l$pE
 (l$pL
@@ -250,14 +262,13 @@ $tIAT	K
 (t$PL
 (t$`;
 (t$`D
-(t$`E
 (t$`H
 (t$`L
 (t$`Lc
 (t$pD
-(t$pD9
 (t$pH
 (t$pL
+({>=Z
 (|$ A
 (|$ D
 (|$ H
@@ -272,7 +283,6 @@ $tIAT	K
 (|$@I
 (|$@L
 (|$PD
-(|$PH
 (|$PI
 (|$PL
 (|$`D
@@ -292,6 +302,7 @@ $tIAT	K
 )D$ E
 )D$ H
 )D$ I
+)D$ L;
 )D$ f
 )D$ t
 )D$0A
@@ -302,15 +313,12 @@ $tIAT	K
 )D$@A
 )D$@D
 )D$@L
-)D$@L#
 )D$@t
 )D$PA
 )D$PD
-)D$PE
 )D$`A9vp
 )D$`D
 )D$`E
-)D$`H
 )D$pA
 )D$pD
 )D$pH
@@ -319,6 +327,7 @@ $tIAT	K
 )L$ fA
 )L$0A
 )L$0E
+)L$0L;
 )L$@D
 )L$@E
 )L$@L#
@@ -339,7 +348,6 @@ $tIAT	K
 )T$PD
 )T$PH
 )T$`D
-)T$`E
 )T$`F
 )T$`H
 )T$pB
@@ -352,7 +360,7 @@ $tIAT	K
 )\$@D
 )\$@L
 )\$PD
-)\$PL#
+)\$PE
 )\$`A
 )\$`D
 )\$`E
@@ -364,6 +372,7 @@ $tIAT	K
 )d$ E
 )d$0D
 )d$@F
+)d$@L;
 )d$PD
 )d$PF
 )d$Pf
@@ -412,6 +421,7 @@ $tIAT	K
 )t$@E3
 )t$@H
 )t$@L
+)t$@L#
 )t$@Lc
 )t$PE
 )t$PH
@@ -432,7 +442,6 @@ $tIAT	K
 )|$0E
 )|$0H
 )|$0Hc
-)|$0L;
 )|$@D
 )|$@L
 )|$@fA
@@ -455,6 +464,7 @@ $tIAT	K
 +B$Hc
 +C$Hc
 +F$Hc
++G$Hc
 +M<7>
 +f)>0'
 +h->|
@@ -472,6 +482,7 @@ $tIAT	K
 -10 -10 -10
 -128 0 0
 -90.0f
+-enable_2gb_morphs
 -sse2
 -sse3
 -sse4
@@ -483,7 +494,6 @@ $tIAT	K
 .5 .5 .5
 .?AV<lambda_ad753c1e821d108e1a311dfa79cd9d31>@@
 .?AV?$CBaseAppSystem@VIParticleSystemMgr@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CKV3Transfer_UtlSymbolLargeInterface@V?$CUtlSymbolTableLargeBase@$0A@$0IAA@VCThreadNullMutex@@@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_AddVectorToVector@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_AgeNoise@@@@
@@ -580,6 +590,7 @@ $tIAT	K
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SetHitboxToModel@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_SetRigidAttachment@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_StatusEffect@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_INIT_StatusEffectCitadel@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_VelocityFromCP@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_VelocityFromNormal@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_INIT_VelocityRadialRandom@@@@
@@ -750,6 +761,7 @@ $tIAT	K
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderSprites@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderStandardLight@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderStatusEffect@@@@
+.?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderStatusEffectCitadel@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderText@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderTonemapController@@@@
 .?AV?$CParticleFunctionDefinitionTyped@VC_OP_RenderTrails@@@@
@@ -847,6 +859,7 @@ $tIAT	K
 .?AVCGeneralRandomRotation@@
 .?AVCGeneralSpin@@
 .?AVCInputLayoutRegistration_s_hRenderInputLayout@@
+.?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_EmptyResourceLoadInterface@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCParticleCollection@@
@@ -974,6 +987,7 @@ $tIAT	K
 .?AVC_INIT_SetHitboxToModel@@
 .?AVC_INIT_SetRigidAttachment@@
 .?AVC_INIT_StatusEffect@@
+.?AVC_INIT_StatusEffectCitadel@@
 .?AVC_INIT_VelocityFromCP@@
 .?AVC_INIT_VelocityFromNormal@@
 .?AVC_INIT_VelocityRadialRandom@@
@@ -1150,6 +1164,7 @@ $tIAT	K
 .?AVC_OP_RenderSprites@@
 .?AVC_OP_RenderStandardLight@@
 .?AVC_OP_RenderStatusEffect@@
+.?AVC_OP_RenderStatusEffectCitadel@@
 .?AVC_OP_RenderText@@
 .?AVC_OP_RenderTonemapController@@
 .?AVC_OP_RenderTrails@@
@@ -1217,6 +1232,7 @@ $tIAT	K
 .?AVDNameNode@@
 .?AVDNameStatusNode@@
 .?AVIAppSystem@@
+.?AVIAsyncProcessedDataResult@@
 .?AVIBaseSequence@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
@@ -1344,6 +1360,7 @@ $tIAT	K
 0A_A^A]_^
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
 0A__]
@@ -1352,7 +1369,6 @@ $tIAT	K
 0D8y9tJ
 0D;D$8~
 0H;\$Pu
-0L9e0t	H
 0iN>/
 0tt@:
 0t{A+
@@ -1381,7 +1397,7 @@ $tIAT	K
 2.791139
 200000.0
 200000000
-200401233905Z0#
+200515052131Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1421,9 +1437,7 @@ $tIAT	K
 8A_A^A]]
 8A_A^^]
 8Jt/A
-8L9e0t	H
 8L9g(H
-8M9't
 8Xu6H
 8Zu H
 8_^][
@@ -1436,8 +1450,8 @@ $tIAT	K
 99~CH
 9?uP3
 9D$ t
+9D$@t
 9Kl~eL
-9\$8~E
 9\$`~[
 9] ~WH
 9^P~4H
@@ -1470,6 +1484,7 @@ $tIAT	K
 ;XX}+H
 ;\$ }#H
 ;\$0}#H
+;\$8|
 ;\$`|
 ;\$l|
 ;\$p|
@@ -1481,10 +1496,10 @@ $tIAT	K
 ;kl}SH
 ;l$ |
 ;l$0|
-;l$8|
 ;pX}iH
 ;s u	H
 ;t$H|
+;uHVL
 ;w u	H
 ;|$@|
 ;|$H}#H
@@ -1512,6 +1527,7 @@ $tIAT	K
 <unknown>
 =!@f>
 ==)=-=9==<
+=TzL0
 =Z.K>
 =imb;D
 >!@6>
@@ -1534,11 +1550,12 @@ $tIAT	K
 ?????????>&7'7????/?/????>6773???;???;???:
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ConMsg@@YAXPEBDZZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -1548,8 +1565,11 @@ $tIAT	K
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?UUUUUU
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
@@ -1559,7 +1579,6 @@ $tIAT	K
 ?f`Y4
 ?k+"?
 ?nP{<
-?vhE3
 ?w&Hc7;w
 ?w'Hc
 ?w'Hc*;j
@@ -1583,8 +1602,10 @@ $tIAT	K
 @.gfids
 @.tls
 @81u/H
+@8=tq
+@8i9u @
+@8l$`tZ@8l$htIH
 @8{8t
-@8|$Pt,@8|$Xt
 @8|$^t
 @>%>b
 @A]A\^
@@ -1595,7 +1616,6 @@ $tIAT	K
 @A_A]A\_^
 @A_A]A\_^][
 @A_A]^
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]
 @A_A^A]A\]
@@ -1609,7 +1629,7 @@ $tIAT	K
 @SAUH
 @SAVAWH
 @SAVH
-@SUATAUAVH
+@SUATAUAWH
 @SUATAUH
 @SUAVH
 @SUVAVH
@@ -1692,10 +1712,12 @@ A9t$p
 A:(uiI
 A;@X}
 A;@`}
+A;@p}
 A;A`}
 A;BX}
 A;Q`}
 A;RX}
+A;Zl|
 A;^@|
 A;^l|
 A;t$p
@@ -1757,6 +1779,7 @@ A]A\_][
 A]A\_^[
 A]A\_^[]
 A]A\_^]
+A]_[]
 A]_^[
 A]_^[]
 A^A\]
@@ -1803,7 +1826,6 @@ A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
 A_A^A]A\]
-A_A^A]A\^[]
 A_A^A]A\^][
 A_A^A]A\_
 A_A^A]A\_][
@@ -1865,7 +1887,6 @@ Alpha fade out random
 Alpha fade out simple
 Alpha random
 Alpha window threshold random
-Am_bUseShadowFastPath
 Amount of simulation time that can elapse before new systems start falling back to cheaper versions
 Anchor point source
 AnimAddLayer
@@ -1941,7 +1962,7 @@ BLURFILTER_GAUSSIAN
 BONE_INDICES
 BONE_WEIGHTS
 Bad KV3 data (%s)
-Bad KV3 data for resource '%s': %s
+Bad KV3 data for resource: %s
 Bad compression
 Bad dynamic_cast!
 Bad header (unrecognized encoding specifier)
@@ -2202,6 +2223,7 @@ C_INIT_SetHitboxToClosest
 C_INIT_SetHitboxToModel
 C_INIT_SetRigidAttachment
 C_INIT_StatusEffect
+C_INIT_StatusEffectCitadel
 C_INIT_VelocityFromCP
 C_INIT_VelocityFromNormal
 C_INIT_VelocityRadialRandom
@@ -2379,6 +2401,7 @@ C_OP_RenderSound
 C_OP_RenderSprites
 C_OP_RenderStandardLight
 C_OP_RenderStatusEffect
+C_OP_RenderStatusEffectCitadel
 C_OP_RenderText
 C_OP_RenderTonemapController
 C_OP_RenderTrails
@@ -2460,6 +2483,7 @@ ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
 Cluster Cooldown Time
+Collection Age
 CollectionFloatInput()
 CollectionVecInput()
 Collision Disabled
@@ -2610,11 +2634,13 @@ D$$Lc
 D$(9Zl
 D$(@8;t
 D$(A;
+D$(D9jl
 D$(E3
 D$(H;
 D$(Hc
 D$(I	
 D$(Lc
+D$(fA
 D$(u1H
 D$,A;
 D$0+D$`
@@ -2632,7 +2658,7 @@ D$0f+
 D$0ff
 D$0mp
 D$0r|
-D$0t9
+D$0t?
 D$49C
 D$8A;
 D$8D8t$8u_H
@@ -2649,6 +2675,7 @@ D$8t|H
 D$8u4H
 D$<9T$0wE9T$4w?9T$8w9;
 D$@;C
+D$@;D$8
 D$@A+
 D$@D;
 D$@E3
@@ -2721,6 +2748,7 @@ D$hIc
 D$hLc
 D$hff
 D$ls	
+D$lt*A9
 D$p 69
 D$p<L{
 D$pH+
@@ -2729,24 +2757,23 @@ D$pHc
 D$pHi
 D$pL;
 D$pLc
+D$rfA
 D$tD;
 D$x*>
 D$xE3
 D$xLc
 D$xs[
-D$xt*A9
 D$|fD
-D$~fA
 D08@t	
 D18 t
 D8(t[H
 D8*u A
 D8.tnH
 D82u&H
-D857N
+D85WZ
+D85|_
 D88tT3
-D8=1=%
-D8=jW
+D8=:]
 D8?uKH
 D8L$`u;
 D8d$ht
@@ -2769,22 +2796,22 @@ D9Rl~lLc
 D9`Xu
 D9d$p~&
 D9ewA
+D9fl~$A
 D9hXu
 D9jl~0A
 D9kP~M
-D9rl~$A
 D9wlt
 D9|$ 
 D9~(~gM
 D9~@~gM
 D9~X~jM
 D9~p~gM
-D;5Ym
 D;A$|+H
 D;A(|
 D;C }
 D;Cl|
 D;D$0}
+D;Fl|
 D;I@|
 D;Kl|
 D;L$`~!Hc
@@ -2806,7 +2833,12 @@ DETAIL_2_COMBO_MOD2X
 DETAIL_2_COMBO_MUL
 DETAIL_2_COMBO_OFF
 DETAIL_2_COMBO_UNINITIALIZED
+DETAIL_COMBO_ADD
+DETAIL_COMBO_ADD_SELF_ILLUM
+DETAIL_COMBO_MOD2X
+DETAIL_COMBO_OFF
 D\Hf;
+D_DETAIL
 D_DETAIL_2
 Darken
 DebugTextureInfo001
@@ -2820,6 +2852,7 @@ Depth
 Depth buffer control and effects
 Depth feathering mode
 Detail2Combo_t
+DetailCombo_t
 Detect from CP's Object
 DigiCert Assured ID CA-1
 DigiCert Assured ID CA-10
@@ -2855,11 +2888,9 @@ DynamicConfigList
 E+BHI
 E0C07
 E4;T$@u
-E;El|
 E;Fl|
 E;Hl|
 E;Sl|
-E;Zl|
 E;~(H
 ED$8E
 ED$xH
@@ -2870,6 +2901,7 @@ ERROR: SweepRenderer::render_slices got into an infinite loop!
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EconItemToolModel_001
 EditorDynamicConfig
+Ehh4#
 Elapsed time = %f
 Emit continuously
 Emit instantaneously
@@ -2885,7 +2917,6 @@ EngineServiceMgr001
 EnterCriticalSection
 Entire Path
 Entity Hitbox Cache Field (Requires Stick on Collision)
-EnvironmentMapBuilder_001
 Error in child list of particle system %s [%p], parent: %p
 Error initializing particle system %s
 Error: Sort failed
@@ -2942,6 +2973,7 @@ F_NORMAL_MAP
 F_NUM_SEQUENCES_PER_PARTICLE
 F_OPAQUE
 F_PARTICLE_ORIENTATION
+F_PARTICLE_SHADOWS
 F_PER_PIXEL_LIGHTING
 F_REFRACT
 F_REFRACT_BLUR
@@ -3000,10 +3032,9 @@ GD$HI
 GD$`H
 GLOW_ALPHA
 GLOW_RGB
-GT$8H
 GT$HH
 GT$XH
-G\$xH
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -3045,6 +3076,7 @@ Glow Alpha
 Glow RGB
 Gravity
 G|$8H
+G|$HI
 H SUVWATAUAVAWH
 H USVATAWH
 H UVAUAVH
@@ -3059,7 +3091,7 @@ H+\$h+
 H+\$hIc<$H
 H0F08
 H3D$ Hi
-H9=d0
+H9=j&
 H9D$PuCI
 H9H0t
 H9\$8t
@@ -3093,6 +3125,7 @@ Hc.;n
 Hc/;o
 Hc3;s
 Hc<(L
+Hc=>	
 HcA(3
 HcAhHk
 HcApHk
@@ -3114,7 +3147,6 @@ HcHHI
 HcH`I
 HcK ;
 HcK H
-HcK,H
 HcKHM
 HcKx;
 HcL$ H
@@ -3129,7 +3161,7 @@ HcS@H
 HcT$0H
 HcT$0L
 HcT$TI
-HcUpH
+HcU`H
 Hc\$@;\$Pu
 Hc\$`I;
 Hc\$tI
@@ -3186,7 +3218,6 @@ IQuickTime001
 Ic4$A;t$
 Ic>A+
 IcA<I
-IcD$,I
 IcH$H
 IcR I
 IcT$ I
@@ -3194,6 +3225,7 @@ Ict$lI
 IfD9TB
 Ignore delta time (RenderTrails)
 IkLockLocal
+Imodel_default_preview_sequence_name
 InfoForResourceTypeCModel
 InfoForResourceTypeCTextureBase
 InfoForResourceTypeIMaterial2
@@ -3206,6 +3238,7 @@ Init Collection [%p]: %s
 Init Collection: FAILED due to invalid particle system definition '%s'.
 Init Float
 Init Status Effect
+Init Status Effect (Citadel)
 Init System-Wide Float
 Init System-Wide Vec
 Init Vec
@@ -3284,7 +3317,6 @@ L$ fA
 L$ fI
 L$$Mc
 L$&@8t$&t0@8q
-L$(D9jl
 L$(E3
 L$(Hc
 L$(HcD$ M
@@ -3298,7 +3330,6 @@ L$0Ic
 L$0Lc
 L$0fI
 L$0u2
-L$0}B
 L$4fA
 L$4t*E
 L$8A9Ol
@@ -3312,9 +3343,11 @@ L$@9D$ t
 L$@E3
 L$@H3
 L$@Hc
+L$@}B
 L$DD8
 L$DE3
 L$Dt*D
+L$HE+
 L$PD;
 L$PE;gl
 L$PH;
@@ -3344,13 +3377,11 @@ L$xAi
 L$xE3
 L$xHc
 L$xIc
-L958>
 L97taH
 L9:t?
 L9>te
 L9A0H
 L9e0t	H
-L9e0tjH
 L9m(t	H
 L9mot	H
 L9t$0t
@@ -3431,7 +3462,6 @@ Lock vector attribute to a list of values
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
-LpD<)
 LrwcE
 Ltxf;
 M H1E
@@ -3559,7 +3589,7 @@ NetworkSystemVersion001
 New Particle Systems Matching '%s':
 Newline in string literal
 No Buffer
-No DATA block for resource '%s'
+No DATA block for resource 
 No valid format conversion from '%s' to '%s'
 NoPoseControl
 Noise animation time scale
@@ -3640,6 +3670,7 @@ PARTICLE_ORIENTATION_SCREENALIGN_TO_PARTICLE_NORMAL
 PARTICLE_ORIENTATION_SCREEN_ALIGNED
 PARTICLE_ORIENTATION_SCREEN_Z_ALIGNED
 PARTICLE_ORIENTATION_WORLD_Z_ALIGNED
+PARTICLE_PIN_COLLECTION_AGE
 PARTICLE_PIN_DISTANCE_CENTER
 PARTICLE_PIN_DISTANCE_CP
 PARTICLE_PIN_DISTANCE_CP_PAIR_BOTH
@@ -3686,8 +3717,8 @@ PATTACH_RENDERORIGIN_FOLLOW
 PATTACH_ROOTBONE_FOLLOW
 PATTACH_WATERWAKE
 PATTACH_WORLDORIGIN
-PA^A]A\][
 PA^^[
+PA_A]A\][
 PA_A][
 PA_A^]
 PA_A^_
@@ -3760,6 +3791,7 @@ Particle Error: Effect %s, Operator %s (%d, %d)
 Particle ID
 Particle Normal Align
 Particle Operator Perf
+Particle Shadows
 Particle Simulation
 Particle Speed
 Particle System
@@ -3840,6 +3872,7 @@ Plat_GetThreadIndex
 Plat_GetTime
 Plat_IsInDebugSession
 Plat_MSTime
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_USTime
@@ -3997,6 +4030,7 @@ Render Cables
 Render Callback
 Render Flatten Grass
 Render Status Effect
+Render Status Effect (Citadel)
 Render Text
 Render Tree Shake
 Render VR Haptic Event
@@ -4019,7 +4053,7 @@ RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 RenderMeshFile
-RenderOps_Init(7420): 
+RenderOps_Init(7717): 
 RenderService_001
 RenderSystemSurface001
 RenderUtils_001
@@ -4200,6 +4234,7 @@ SetFilePointerEx
 SetLastError
 SetStdHandle
 SetUnhandledExceptionFilter
+Shadow Density
 Sim Time Average: %.2fms
 Sim Time Max: %.2fms
 Sim Time Min: %.2fms
@@ -4272,6 +4307,7 @@ T$8+G$H
 T$8D;
 T$8D;t$(r
 T$8I	
+T$@+G$A
 T$@E3
 T$@Hc
 T$@I	
@@ -4293,6 +4329,7 @@ T$pE3
 T$pE;
 T$pHc
 T$puVL
+T$xE3
 TEXTURE_REPETITION_PARTICLE
 TEXTURE_REPETITION_PATH
 TINT_RGB
@@ -4326,8 +4363,6 @@ TlsFree
 TlsGetValue
 TlsSetValue
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -4371,8 +4406,6 @@ USAUAWH
 USAUH
 USAVAWH
 USAWH
-USAWI
-USVATAUAVAWH
 USVATAUH
 USVWATAUAVAWH
 USVWATAUAWH
@@ -4388,6 +4421,7 @@ USVWI
 USWATAUAVH
 USWAUAVAWH
 USWAUAVH
+USWAUH
 USWAVH
 UUUUUU
 UUUUUUUUH
@@ -4505,7 +4539,6 @@ VWAUAWH
 VWAUH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetFileExtension
 V_IsAbsolutePath
 V_RemoveDotSlashes
@@ -4544,7 +4577,6 @@ V_tanf
 V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 Value at end of cycle
@@ -4610,9 +4642,9 @@ X Dimension Spacing
 X UVWATAUAVAWH
 X axis scaling scalar field
 X offset of center point
-X-AI"
-X-\7"
-X-y%"
+X%YC#
+X%tA#
+X-|p"
 XD$PE
 XIcA<
 XL$ H
@@ -4623,12 +4655,12 @@ XY velocity only
 X\$0D
 Xd$DA
 Xl$`A
-Xt$ A
+X|(pc
 Y Dimension Count
 Y Dimension Spacing
 Y axis scaling scalar field
 Y offset of center point
-Y%oI!
+Y-2B 
 YD$HIc
 YHD9Y@~DE
 YL$@A
@@ -4676,14 +4708,15 @@ Z axis scaling scalar field
 \$0H;
 \$0Hc
 \$0L+
-\$0Lc
 \$0t8H
 \$8A^A\_
 \$8Hc
 \$8fD
 \$8t$
 \$8tX
-\$@@8=
+\$@9\$8
+\$@9\$8~I
+\$@@8=9*	
 \$@A__^]
 \$@E3
 \$@H;
@@ -4691,8 +4724,10 @@ Z axis scaling scalar field
 \$@Ic
 \$@Mc
 \$@fA
+\$HHc
 \$HLc
 \$Ht	H
+\$Hta
 \$PA+
 \$PE3
 \$PLc
@@ -4731,11 +4766,11 @@ Z axis scaling scalar field
 ]4;L$@u
 ]KPLc
 ]T$dHc
+]pu"H
 ^<V7w
 ^EdLc
 ^T$dH
 ^vdHc
-_V_SetExtension
 _V_strncmp
 _V_strncpy
 _V_strnicmp_fast
@@ -4918,6 +4953,7 @@ bouncecolor
 bounding box max
 bounding box min
 bp(=>?g
+break age
 break comparison control point 1
 break comparison control point 2
 break length %
@@ -4933,6 +4969,7 @@ burst_randomize
 burst_scale
 c [1>H'
 c(>\,
+c0u%A9
 c:\buildslave\hlvr_rel_win64\build\src\interfaces\interfaces.cpp
 c:\buildslave\hlvr_rel_win64\build\src\kv3lib\kv3format_manager.cpp
 c:\buildslave\hlvr_rel_win64\build\src\mathlib\mathlib.cpp
@@ -5108,7 +5145,6 @@ d$(E3
 d$(t2H
 d$0D;
 d$0Lc
-d$0fA
 d$8D;
 d$@E8,$
 d$P+A$t
@@ -5152,6 +5188,7 @@ destination scalar field
 destroy all particles immediately
 destroy particles immediately when child is removed
 detail 2 texture
+detail texture
 difference maximum
 difference minimum
 diffuse lighting amount
@@ -5472,7 +5509,6 @@ l$ VWAVH
 l$ WAVAWH
 l$ WH
 l$(E;
-l$0A+
 l$0A_A^
 l$0D;
 l$0H+
@@ -5498,11 +5534,13 @@ l$`D;
 l$d;}
 l$hE3
 l$hHc
+l$hLc
 l$hMc
 l$lE9nl
 l$pD8
 l$pD;
 l$pH+
+l$pt&H
 l$tA;
 l$x@8
 last_sniff
@@ -5860,6 +5898,7 @@ m_bOriginalModel
 m_bOutline
 m_bOverrideTranslucentMaterials
 m_bParticleFeathering
+m_bParticleShadows
 m_bParticles
 m_bPerParticle
 m_bPerParticleTR
@@ -5958,6 +5997,7 @@ m_bUseQuat
 m_bUseRandomCPs
 m_bUseRawMeshGroup
 m_bUseScalarForTextureCoordinate
+m_bUseShadowFastPath
 m_bUseTexture
 m_bUseTopology
 m_bUseVelocity
@@ -6008,6 +6048,7 @@ m_flAParm
 m_flAccel
 m_flAddSelfAmount
 m_flAdjustmentScale
+m_flAge
 m_flAgeMax
 m_flAgeMin
 m_flAggregateRadius
@@ -6329,6 +6370,20 @@ m_flRotRateMin
 m_flRotateRateDegrees
 m_flRotationRandExponent
 m_flRotationStrength
+m_flSFXColorWarpAmount
+m_flSFXMetalnessAmount
+m_flSFXNormalAmount
+m_flSFXRoughnessAmount
+m_flSFXSDetailAmount
+m_flSFXSDetailScale
+m_flSFXSDetailScrollX
+m_flSFXSDetailScrollY
+m_flSFXSDetailScrollZ
+m_flSFXSScale
+m_flSFXSScrollX
+m_flSFXSScrollY
+m_flSFXSScrollZ
+m_flSFXSelfIllumAmount
 m_flSaturationAdjust
 m_flScalarAttributeTextureCoordScale
 m_flScale
@@ -6344,6 +6399,7 @@ m_flSequence0RGBWeight
 m_flSequence1AlphaWeight
 m_flSequence1RGBWeight
 m_flShadowCascadeDistance
+m_flShadowDensity
 m_flShakeDuration
 m_flSimulationScale
 m_flSlideAmount
@@ -6523,6 +6579,7 @@ m_nDesiredVelocityCPField
 m_nDestCP
 m_nDestField
 m_nDetail2Combo
+m_nDetailCombo
 m_nDetailLevel
 m_nDurationField
 m_nDynamicCPCount
@@ -6733,11 +6790,16 @@ m_pParent
 m_pParticles
 m_pPrev
 m_pTextureColorWarp
+m_pTextureDetail
 m_pTextureDetail2
 m_pTextureDiffuseWarp
 m_pTextureEnvMap
 m_pTextureFresnelColorWarp
 m_pTextureFresnelWarp
+m_pTextureMetalness
+m_pTextureNormal
+m_pTextureRoughness
+m_pTextureSelfIllum
 m_pTextureSpecularWarp
 m_pointList
 m_previewModel
@@ -6924,6 +6986,7 @@ mesh_calculate_curvature_smooth_invert
 mesh_calculate_curvature_smooth_pass_count
 mesh_calculate_curvature_smooth_weight
 meshes
+metalness texture
 mid point position
 min column/particle index to affect
 min coords
@@ -6967,7 +7030,6 @@ model override economy loadout slot type
 model override original model only (ignore shapeshift/hex/etc)
 model scale CP
 model size cull bloat
-model_default_preview_sequence_name
 model_name
 modeldoc0
 modeldoc1
@@ -7009,6 +7071,7 @@ nan(ind)
 nan(snan)
 nav_attribute_avoid
 nav_data
+ngZ8L
 noise amount 0
 noise amount 1
 noise amount 2
@@ -7249,6 +7312,7 @@ public:
 purecall
 pvec_color_black
 pvec_color_white
+q(@85
 qmMiL
 r	Vr.>T
 r:D8v
@@ -7367,6 +7431,7 @@ rotation rate min
 rotation speed
 rotation strength
 rotation_speed
+roughness texture
 roundness factor
 s"Hc}
 s$fff
@@ -7421,6 +7486,7 @@ second sequence animation rate
 secondary
 self illum amount
 self illum per-particle
+self illum texture
 sequence
 sequence id override
 sequence max
@@ -7577,6 +7643,7 @@ t$(H+
 t$,A+
 t$,ff
 t$0+A$t
+t$0D9t$@|LH
 t$0E3
 t$0Hc
 t$0Hc2
@@ -7636,6 +7703,7 @@ t*D8#t
 t.@8:t)
 t/D83t*
 t0@87t+
+t0@8;t+
 t0D8;t+
 t1Hc;;{
 t1LcI
@@ -7643,7 +7711,7 @@ t7HcH
 t9H9=
 t9L;Cht(M
 t<D9V
-tBA8]9
+tBA8]=
 tCIcu
 tEIc/A
 tMD8{=t:H
@@ -7720,7 +7788,7 @@ ttfff
 tu+K$3
 turn_rate
 twist axis
-u	@8=%
+u	@8=
 u3HcH<H
 u98D$`u;H
 uFM9/tA
@@ -7864,7 +7932,6 @@ www.digicert.com1!0
 www.digicert.com1$0"
 www.digicert.com110/
 x	HcQ
-x A;@X}
 x ATAVAWH
 x AV3
 x AVH
@@ -7921,14 +7988,12 @@ z:KCAuthPhysBody
 |$ UATAUAVAWH
 |$ UAUAVH
 |$ UH
-|$!_u
 |$$E3
 |$(9sl
 |$(A^
 |$(E3
 |$(Hc
 |$(I;
-|$(fI
 |$,E3
 |$,ff
 |$09s
@@ -7942,9 +8007,9 @@ z:KCAuthPhysBody
 |$0Hc
 |$0Ic
 |$0Ic8A;x
+|$0Lc
 |$0f9EPu
 |$0s-
-|$0uO
 |$0w	
 |$8).H
 |$89^
@@ -7983,6 +8048,7 @@ z:KCAuthPhysBody
 |$XIc
 |$\.u
 |$\D;m
+|$`@2
 |$`A+
 |$`Ic
 |$`Lc
@@ -7991,7 +8057,7 @@ z:KCAuthPhysBody
 |$hE;
 |$hff
 |$lA+
-|$pA8L$(H
+|$pA8M9H
 |$pD;
 |$pD;d$H
 |$pE3
@@ -8010,7 +8076,7 @@ z:KCAuthPhysBody
 ~!A;~
 ~#fff
 ~,IcZ
-~08\$0t
+~28\$0t
 ~4fff
 ~Pfff
 ~^>9cx

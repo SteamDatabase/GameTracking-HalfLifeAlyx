@@ -24,6 +24,8 @@
  <null>
  A\_^
  A^A\_
+ A^A\_[]
+ A^A\_[]H
  A^][
  A^_^
  A_A\_
@@ -51,7 +53,6 @@
  Type Descriptor'
  ]Acosh
  ]Asinh
- _[]H
  at %p
  delete
  delete[]
@@ -70,8 +71,8 @@
 "=#k$
 #D$(t
 #L$(u
-$D;r 
-$D;r s
+$D;z 
+$D;z s
 $`<@u
 $`<`t
 %'&R&s&
@@ -101,6 +102,7 @@ $`<`t
 %s|%d
 %t#<.t
 %t2<.
+&L9%u
 &YA1I
 &YA1L
 '%s' cannot be indexed
@@ -194,7 +196,6 @@ $`<`t
 -uNI;
 .00cfg
 .?AV?$CBaseAppSystem@VIScriptManager@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VIScriptManager@@@@
 .?AV?$CTier1AppSystem@VIScriptManager@@$0A@@@
 .?AV?$CTier2AppSystem@VIScriptManager@@$0A@@@
@@ -322,8 +323,7 @@ $`<`t
 1434713789_main
 181004000000Z
 1<.	/>:
-2+9Pg?Zk
-200327173908Z0#
+200515052831Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -432,6 +432,7 @@ $`<`t
 ?:kP<
 ??0CVirtualMachineCallStackTranslationEncoder@@QEAA@PEBD@Z
 ??1CVirtualMachineCallStackTranslationEncoder@@QEAA@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?DevMsg@@YAXPEBDZZ
 ?EncodeAsNativePointer@CVirtualMachineCallStackTranslationEncoder@@QEAAPEAXPEBD0I@Z
 ?H33H
@@ -453,7 +454,7 @@ $`<`t
 @.tls
 @80t	H
 @80u#H
-@85_I
+@85?R
 @8<)u
 @8l$p
 @8q2u;H
@@ -501,10 +502,9 @@ $`<`t
 @UAVAWH
 @UAWH
 @USVWATAUAVAWH
-@USVWATAVAWH
 @USVWAUAVH
 @USWATAVAWH
-@USWH
+@USWATAVH
 @UVATAUAVH
 @UVAVAWH
 @UVAWH
@@ -570,7 +570,6 @@ A_A]A\_^
 A_A^A\
 A_A^A\_]
 A_A^A\_^
-A_A^A\_^[]
 A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_^[]
@@ -829,6 +828,7 @@ E+BHI
 E0C07
 E0HcH
 E0Lcx
+E0fA;
 E9H8v$
 E9H8w
 E;~(H
@@ -849,7 +849,6 @@ EconItemToolModel_001
 EncodePointer
 EngineServiceMgr001
 EnterCriticalSection
-EnvironmentMapBuilder_001
 Epairs@
 Error: Duplicate command handler registered (%s)!
 Etobit
@@ -895,7 +894,9 @@ G I9G
 G0Hc	H
 G89D$ r
 GCUtlString::FormatV
+GD$HH
 GHD9e
+GT$HH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -938,12 +939,14 @@ GfZ+?p
 GhH+GxH
 Global
 Globals
+G|$8H
+H UWATAVAWH
 H!D$ E
 H!T$0D
 H+\$8H
 H0F08
-H9=>A
-H9=eF
+H9=%J
+H9=jE
 H9A u
 H9Ahu
 H9Chu
@@ -1116,7 +1119,6 @@ Lc	L9
 LcA<E3
 LcCLC
 LcCPH
-LcD$dL
 LeaveCriticalSection
 Length
 Length2D
@@ -1347,8 +1349,6 @@ Too many links
 Too many open files
 Too many open files in system
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1440,7 +1440,6 @@ V_stricmp_fast
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Vector
@@ -1526,7 +1525,6 @@ _LOADLIB
 _NAME
 _PACKAGE
 _PRELOAD
-_T)_:
 _VERSION
 _VMEVENTS
 _V_strncmp
@@ -1788,8 +1786,9 @@ fD9 r
 fD90t
 fD94Fu
 fD96u
-fD98t6
-fD98t:
+fD9e0t6
+fD9e0t8
+fD9e0t:
 fD9t$b
 false
 feature
@@ -1922,6 +1921,7 @@ l$8H+
 l$HA+
 l$P;CDv
 l$XUSRQP
+l$`fD9e0t:
 l$`fff
 language
 lastlinedefined
@@ -1989,7 +1989,6 @@ ntdll.dll
 ntelE
 number
 numchildren
-oZGUw(
 obwQ4
 offsetof
 operator
@@ -2165,15 +2164,13 @@ t$0+A$t
 t$09;
 t$0A_A^
 t$4fA;
-t$8E3
 t$8H+
 t$<L;l$@
-t$@80t
+t$@88t
 t$@;o
 t$@E3
 t$@Hc
-t$HfD98L
-t$PfD98t:
+t$XfD9e0tD
 t$Xt	H
 t$`E3
 t$dsFA
@@ -2185,9 +2182,9 @@ t(A8(t
 t/D8}
 t1@81t,H
 t1fff
-t2@80t-H
 t4McF
 t4fff
+t5@88t0H
 t6D9v8
 t7HcF
 t9H9=f
@@ -2198,7 +2195,7 @@ tE@8{2t
 tHH9\$ uAH9\$(u:
 tIHcP
 tMHcP
-tPH95
+tPH95a
 tUHcP
 tXLcQ
 tY@8p
@@ -2352,7 +2349,7 @@ zsuqD
 |$ UATAUAVAWH
 |$ UAVAWH
 |$ UH
-|$$;=r
+|$$;=2
 |$(9p
 |$(A^
 |$(I;
@@ -2363,6 +2360,7 @@ zsuqD
 |$8-t
 |$8;3
 |$8A_A^A\
+|$8E3
 |$8H+t$8u
 |$@-D
 |$@-H
@@ -2377,7 +2375,6 @@ zsuqD
 |$PIc
 |$XHc
 |$Xff
-|$Xt@
 |$\.u
 |$`Ic
 |$`Lc

@@ -81,7 +81,6 @@
  Hcy@H
  HcyXH
  LZWSetupDecode
- ReadToken overflow
  Type Descriptor'
  but running with 
  clean
@@ -122,11 +121,11 @@
 #include
 #include is NULL 
 $4DTdt
-$BKtz
 $Ib?s
 %.100s: Can not read TIFF directory
 %5EUeu
 %GoU?*
+%f %f %f %f
 %i %i %i %i
 %ld%c
 %lu: Row out of range, max %lu
@@ -199,7 +198,6 @@ $Ib?s
 (8HXhx
 (A^A]_^
 (A^^][
-(A_A]][
 (A_A^A][
 (A_A^_[
 (D$ H
@@ -270,6 +268,7 @@ $Ib?s
 )L$Pf
 )\ZEo^m/
 )d$PE
+)j>N[
 )t$ H
 )t$0H
 )t$@A
@@ -332,7 +331,6 @@ $Ib?s
 .?AV?$CBaseAppSystem@VIRenderUtils@@@@
 .?AV?$CConCommandMemberAccessor@VCRenderDeviceBase@@@@
 .?AV?$CConCommandMemberAccessor@VCTextureManagerBase@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor11@PEAVCTextureManagerBase@@P81@EAAXPEAVCTextureBase@@V?$CWeakHandle@UInfoForResourceTypeCTextureBase@@@@VResourceId_t@@PEAXIPEAVIMemoryMappedFile@@UTextureSpecification_t@@5HW4TextureBitsMemoryType_t@@VCUtlString@@@ZPEAV2@V3@V4@PEAXHPEAV5@U6@U6@HW47@V8@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor5@PEAVCTextureManagerBase@@P81@EAAXPEAVIAsyncResourceDataRequest@@V?$CWeakHandle@UInfoForResourceTypeCTextureBase@@@@PEAVCTextureBase@@UTextureSpecification_t@@H@ZPEAV2@V3@PEAV4@U5@HV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
@@ -496,12 +494,15 @@ $Ib?s
 0A]^]
 0A]_[
 0A^A\]
+0A^A\^H
 0A^A]]
 0A^][
 0A^^[
+0A^_[
 0A^_^
 0A_A]_][
 0A_A^A\
+0A_A^A\^]
 0A_A^A]
 0A_A^A]A\_
 0A_A^A]A\_^[
@@ -532,7 +533,7 @@ $Ib?s
 1D;Ew|
 1eaB@
 1wsHp
-200401233839Z0#
+200515052409Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -549,18 +550,16 @@ $Ib?s
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 700PP
 700WP
-7Gp}K
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 80tWD
 8A^A\][
 8A^_^[
 8A_A\
 8A_A\H
-8A_A]
-8A_A]H
 8A_A^A]A\_^][
 8A_A^^[
 8GbthH
+8K1)@
 8Lc!L
 8_^][
 8b  16-May-2010
@@ -600,18 +599,16 @@ $Ib?s
 ;Cxr(H
 ;CxsR
 ;D$@@
-;D$pw
 ;H9>&X
 ;\$p|
-;l$@u
 ;yPu	H
 ;yhu	H
 ;{ ~@
+;|$@u
 <	vN<
 <	vO<
 <	w	@
 < t;<	t7
-<"uBD
 <$E;Q
 <;CL}_Ic
 <>#n2
@@ -646,19 +643,22 @@ $Ib?s
 ?:kP<
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ?@En[vP
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Cu0f9w
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?FindOrCreateCounter@CVProfile@@QEAAPEA_KPEBDW4CounterGroup_t@@@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?FixupResourceName: Illegal full path passed in ("%s")!
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -669,10 +669,9 @@ $Ib?s
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
-?Set@CThreadEvent@@QEAA_NXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
@@ -680,14 +679,13 @@ $Ib?s
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?kxG2)
 ?u='@
-?vhE3
 ?{Q}<
 @%w	D
 @.data
@@ -733,7 +731,6 @@ $Ib?s
 @SAWH
 @SUATAUH
 @SUATAVH
-@SUAUAWH
 @SUAUH
 @SUAVH
 @SUAWH
@@ -773,7 +770,9 @@ $Ib?s
 @UVAUH
 @UVAVH
 @UVWH
+@VATAVH
 @VAVAWH
+@VWATAVH
 @VWAVH
 @WATAUAVAWH
 @WAVAWH
@@ -795,9 +794,6 @@ A9L$H
 A9U8tCMc]<McE@Lc
 A9Z<~bL
 A:(uiI
-A;D$8u
-A;E8u
-A;G8u
 A;L$0v#A
 A;Z<|
 A;^@|
@@ -822,10 +818,9 @@ ATI2N
 ATI_DST16
 ATI_DST24
 AUAVAWH
-AUAWH
 A]A\][
+A]A\_[
 A^A\]
-A^A\^[]
 A^A]A\_][
 A^A]A\_^[
 A^A]A\_^[]
@@ -851,6 +846,7 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
+A_A^A]_]
 A_A^]
 A_A^^
 A_A^_
@@ -987,18 +983,18 @@ CMemAllocSystemInitialize
 COLORCORRECTION_VERSION_1
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
 CRC error
-CRenderDeviceBase::AsyncSetTextureData(3227): 
-CRenderDeviceBase::CreateConstantBuffer(1528): 
-CRenderDeviceBase::FindOrCreateTexture(1692): 
+CRenderDeviceBase::AsyncSetTextureData(3229): 
+CRenderDeviceBase::CreateConstantBuffer(1530): 
+CRenderDeviceBase::FindOrCreateTexture(1694): 
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
-CRenderDeviceBase::Flush(939): 
-CRenderDeviceBase::ForceFlushGPU(956): 
-CRenderDeviceBase::Present(662): 
+CRenderDeviceBase::Flush(941): 
+CRenderDeviceBase::ForceFlushGPU(958): 
+CRenderDeviceBase::Present(664): 
 CResourceArray
 CResourceString
 CSchemaRegistration::RegisterAllModuleData
 CSheetDataTextureCache::AllocateAndUploadSequenceData
-CSheetDataTextureCache::AllocateAndUploadSequenceData(407): 
+CSheetDataTextureCache::AllocateAndUploadSequenceData(408): 
 CTSListBase: Misaligned list
 CTSListBase::CTSListBase
 CTSQueue: Misaligned queue
@@ -1124,6 +1120,7 @@ D W?{W
 D#C|D
 D#G|D
 D#K|D
+D$ ;D$0u
 D$ E3
 D$ H;
 D$ L;
@@ -1136,7 +1133,6 @@ D$)fD
 D$,D;
 D$0,M
 D$00u
-D$0;D$@u
 D$0D9
 D$0H#
 D$0H+
@@ -1191,7 +1187,9 @@ D$`E3
 D$`H;
 D$`Hc
 D$`L;
-D$h;F8u
+D$aE;
+D$h9_ t}I
+D$hD+
 D$hD;
 D$hE;
 D$hHc
@@ -1199,16 +1197,16 @@ D$hu4D
 D$pD;
 D$pE3
 D$pMc
-D$qE;
 D$tA9D$|
+D$tfD
+D$vf9EV
+D$vf;E
 D$xHc
 D$xfD
 D$|A;D$pr
 D$|fE
 D(8Ht}
 D)p(H
-D)v<A
-D)w<u<
 D+D$8
 D08@t	
 D15S1
@@ -1242,16 +1240,14 @@ D9T$8
 D9c t
 D9s(t)H
 D9s,u
-D9t$0~<
 D9|$ 
-D;-&g
 D;Cx|
 D;G8|
 D;T$8}
 D;[ D
 D;s8|
-D;t$0|
 D;{8|
+D;|$0|
 D<P0I
 DATAL
 DCT coefficient out of range
@@ -1286,7 +1282,6 @@ Deflate
 DegreeEuler
 DeleteCriticalSection
 Deleting texture with outstanding streaming request (%s)
-DevMsg
 DeviceID
 Didn't expect more than one scan
 DigiCert Assured ID CA-1
@@ -1329,6 +1324,7 @@ E;|$4sP
 E>nEA
 E@A8_
 E@t	H
+EFW5)u
 EL$pfA
 EMItu
 EP*?@
@@ -1353,7 +1349,6 @@ EngineServiceMgr001
 EnterCriticalSection
 EnumSystemLocalesEx
 EnumSystemLocalesW
-EnvironmentMapBuilder_001
 Error fetching data for field "%s"
 Error fetching directory count
 Error fetching directory link
@@ -1437,7 +1432,6 @@ G%lld
 G0Hc	H
 G8Hc@
 GAMECONSOLE
-GLZm8
 GPSIFDOffset
 GT$8H
 GT$HH
@@ -1494,11 +1488,9 @@ H*0"ZOW
 H+L$HH
 H0F08
 H3\$HH
-H95KG
 H97t<
 H98t%H
 H98u'
-H9=p>
 H9Ahs
 H9C(t
 H9L$Ht?H
@@ -1520,6 +1512,7 @@ H9~Pu
 H;XXs
 H;xXu9
 H;|$0
+HA^A\_^
 HA^A]A\]
 HA^^][
 HA_A]A\_^[
@@ -1559,7 +1552,6 @@ Hc]wH
 Hc]wL
 Hc]wL;
 Hc^XH
-Hcl$0L
 Hct$8H
 Hcw$H
 Hc}gH
@@ -1755,11 +1747,9 @@ KV Conditional Evaluation Error
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValuesSystem
 K~Je#>!
 L!|$(L!
-L$ A;
 L$ H9
 L$ H;
 L$ Hc
@@ -1776,13 +1766,13 @@ L$ WATAUAVAWH
 L$ WH
 L$ fI
 L$ iM
-L$ t'
 L$$E+
 L$&@8t$&t0@8q
 L$(Ai
 L$(E+
 L$(H3
 L$(fH
+L$(fI
 L$(iM
 L$,=)#
 L$0E+
@@ -1815,10 +1805,10 @@ L$PE;
 L$XA;
 L$XE3
 L$XfD
+L$^fA;
 L$`H3
 L$`fD
 L$hI;
-L$pA;
 L$pD9w8
 L$pD;w8
 L$pE2
@@ -1911,6 +1901,7 @@ MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 MQC,ARD
 MRHcu
+MSBDef
 MakerNoteSafety
 Malformed iCCP chunk
 Malformed iTXt chunk
@@ -2075,7 +2066,6 @@ Overflow of the sheet cache texture. Releasing and starting over. This is ok in 
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
 P8H=vtexH
 P>q_Y~
-PA]A\_^[
 PA]_[
 PA^A]A\
 PA^A]A\^[
@@ -2129,6 +2119,7 @@ Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_VirtualFree
 Plat_WindowToOsSpecificHandle
+PooledDynamicConstantBuffer
 PostProcessingSystem_001
 Potential overflow in png_zalloc()
 Predictor
@@ -2162,6 +2153,7 @@ RENDER_BUFFER_APPEND_CONSUME_BUFFER
 RENDER_BUFFER_BYTEADDRESS_BUFFER
 RENDER_BUFFER_STRUCTURED_BUFFER
 RENDER_BUFFER_UAV_COUNTER
+RENDER_BUFFER_UAV_DRAW_INDIRECT_ARGS
 RENDER_BUFFER_USAGE_INDEX_BUFFER
 RENDER_BUFFER_USAGE_SHADER_RESOURCE
 RENDER_BUFFER_USAGE_UNORDERED_ACCESS
@@ -2290,10 +2282,13 @@ RenderSystem/MaxPreloadTextureResolution
 RenderSystem/MinStreamingPoolSizeMB
 RenderSystemSurface001
 RenderUtils_001
+Rendering/Constant Buffers (MB)
+Rendering/Index Buffers (MB)
 Rendering/Texture Non-Evictable Size (MB)
 Rendering/Texture Pool Size (MB)
 Rendering/Texture Resident Size (MB)
 Rendering/Texture Unthrottle Streaming
+Rendering/Vertex Buffers (MB)
 Rendersystem/SheetCacheTextureCols
 Rendersystem/SheetCacheTextureRows
 Requested feature was omitted at compile time
@@ -2344,6 +2339,7 @@ SVWATAUAWH
 SVWATAUH
 SVWAWH
 SWATAUAWH
+SWATAUH
 SWAUH
 SampleFormat
 SamplesPerPixel
@@ -2418,14 +2414,16 @@ SubfileType
 SubmitThreadpoolWork
 Sunday
 Suspension not allowed here
+T$ +G$A
 T$ A;
 T$ E;
 T$ H9
 T$ Lc
+T$(+G$A
 T$(D+
 T$0D;
 T$4E9
-T$8+G$A
+T$@+G$A
 T$@A;
 T$@E3
 T$HA;
@@ -2437,6 +2435,7 @@ T$PH3
 T$XA;
 T$XE3
 T$`D+
+T$pfA+
 T$xH;
 TADIt	
 TADIu
@@ -2531,8 +2530,6 @@ Too many IDATs found
 Too many color components: %d, max %d
 Too much
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -2557,7 +2554,6 @@ USATAUAWH
 USATAUH
 USAUH
 USAVI
-USVATAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAVAWH
@@ -2576,6 +2572,7 @@ UVWAVAWH
 UVWQ8888
 UWATAUAWH
 UWATH
+UWAUAVAWH
 UWAVH
 UWAWH
 Unable to stream in resource file "%s" (Error: %s)
@@ -2690,7 +2687,6 @@ V_strtoui64
 V_swscanf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 Valve0
@@ -2809,15 +2805,15 @@ Zpm"U
 \$0HcH
 \$0Lc
 \$0u!@
-\$@@8=
+\$8Hc
+\$@@8=-7
 \$@D9
 \$@H;
-\$@Hc
 \$HH;
+\$HHc
 \$PA_A^A]A\_^]
 \$PE;
 \$PfD
-\$PuKA
 \$XH;y
 \$XHc
 \$XIc
@@ -2832,6 +2828,7 @@ Zpm"U
 ^RfN>
 ^fD9+t
 ^oEZ_
+_(^]wj
 _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
@@ -2853,7 +2850,6 @@ __thiscall
 __unaligned
 __vectorcall
 _cabs
-_eut$"k
 _hypot
 _logb
 _nextafter
@@ -2864,6 +2860,7 @@ _tools.txt
 `;k8|
 `A;m8
 `A;n8
+`A]A\_^[
 `A^^]
 `A_A]A\_[
 `A_A^A]A\_^]
@@ -2951,16 +2948,16 @@ c:\buildslave\hlvr_rel_win64\build\src\rendersystem\renderdevicebase.cpp
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\renderstatehelper.h
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\sheetcache.cpp
 c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(1858):Error loading texture: %s
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2788):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2811):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2822):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2833):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2844):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2865):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2876):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2887):ResourceHandleToData( %s ) failed! Falling back to error texture!
-c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2898):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(1861):Error loading texture: %s
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2821):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2832):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2843):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2854):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2875):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2886):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2897):ResourceHandleToData( %s ) failed! Falling back to error texture!
+c:\buildslave\hlvr_rel_win64\build\src\rendersystem\texturebase.cpp(2908):ResourceHandleToData( %s ) failed! Falling back to error texture!
 c:\buildslave\hlvr_rel_win64\build\src\tier1\configvalue.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\mempool.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\utlbuffer.cpp
@@ -2985,8 +2982,6 @@ cross device link
 d$ E3
 d$ fC
 d$PfD
-d$`E3
-d$`E;
 d$h9s
 d?000000`?
 data error
@@ -3027,7 +3022,6 @@ f9G`u1H
 f9G`uCH
 f9\$bu
 f9u"v
-f;1}!
 fA9,Au
 fA9<\u
 fB9,Nu
@@ -3160,7 +3154,6 @@ l$ VWATAUAWH
 l$ VWATAVAWH
 l$ VWAUH
 l$ VWAVH
-l$ VWAWH
 l$ WAVAWH
 l$ WH
 l$(D;
@@ -3170,6 +3163,7 @@ l$0A_A^A]A\
 l$0Hc
 l$0ff
 l$8A;
+l$8E3
 l$8HcG
 l$8HcH
 l$@A3
@@ -3180,10 +3174,10 @@ l$HE3
 l$HLcH
 l$H~&E
 l$PLc
-l$XE)o<L
+l$XE3
 l$XHc
 l$hHcH
-l$p9_ t
+l$vfD
 l6qnk
 ldexp
 libpng does not support gamma+background+rgb_to_gray
@@ -3279,6 +3273,7 @@ o|$0f
 p AWH
 p0n05
 p1f3q>
+pA]_[
 pA^^]
 pA_A]A\_]
 pA_A^A]A\_^[
@@ -3295,7 +3290,6 @@ protocol error
 protocol not supported
 pseudo-
 purecall
-p|!k(
 qS>g?h3
 r	Vr.>T
 r 9_ t
@@ -3384,14 +3378,11 @@ strip
 strips
 t"<.u
 t#fff
-t$ ;C ~
-t$ @2
 t$ ATAVAWH
 t$ AVAWH
 t$ AVAWL
 t$ AVH
 t$ E3
-t$ Hc
 t$ Mc
 t$ UAVAWH
 t$ UH
@@ -3420,7 +3411,6 @@ t$0M;
 t$8E2
 t$8H+
 t$8Hc
-t$<A9
 t$@9Y8
 t$@A^A]A\_
 t$@Hcu
@@ -3438,7 +3428,6 @@ t$XE8
 t$XH+
 t$XH9
 t$Xt	H
-t$`E3
 t$hI;
 t$pHcH
 t'fE9
@@ -3502,7 +3491,7 @@ ttIcF
 tu+K$3
 txH99us
 tyfD9 tsH
-u	@8=
+u	@8=E
 u f;N
 u"D;{
 u"IcF8
@@ -3521,13 +3510,13 @@ u@A9l$
 u@E9n
 uBf9l$5t
 uFE9n
-uFHcl$0A
 uGA9l$
 uHfA;
 uLE9n
 uMHcE
 uMfA9h uFfA9h0u?fA9h@u8fA9hPu1fA9h`u*fA9hpu#A
 uNA9l$
+uOHc|$0A
 uRE9n
 uT<0uP
 uUA9l$
@@ -3535,6 +3524,7 @@ uVfE9M uOfE9M0uHfE9M@uAfE9MPu:fE9M`u3fE9Mpu,A
 uXE9n
 uYfA9h uRfA9h0uKfA9h@uDfA9hPu=fA9h`u6fA9hpu/A
 u\A9l$
+u^A;]
 ucA9l$
 uf!T$(H!T$ 
 uf@8t$8t"A
@@ -3559,6 +3549,7 @@ vQO+t
 value too large
 vector<T> too long
 version
+vi/TI
 video.cfg
 video_version
 vstdlib
@@ -3641,24 +3632,25 @@ zlib version error
 |$@-D
 |$@-H
 |$@A_A^A]A\
-|$@E3
 |$@H;
 |$@HcL$<H
 |$@Hcyp;
 |$@Lc
 |$@t	3
-|$@u:
 |$HA#
 |$HA;
 |$HHc
 |$HtwI
+|$PE3
 |$PH;
 |$PHcy@
+|$XE3
 |$\.u
 |$`CI
 |$`E3
 |$`Ic
 |$`Lc
+|$`ff
 |$pE3
 |$pH;
 |$xLc

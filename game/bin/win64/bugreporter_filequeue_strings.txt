@@ -17,7 +17,6 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  H3E H3E
- ReadToken overflow
  Type Descriptor'
  delete
  delete[]
@@ -36,7 +35,6 @@
 &YA1L
 ( 8PX
 (*%s*), 
-(A_A]][
 (A_A^
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
@@ -57,7 +55,6 @@
 ,I<%w
 ,|%)v
 .00cfg
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AVCBugReporter@@
 .?AVCDefaultKeyValuesErrorSpew@@
 .?AVIBaseInterface@@
@@ -115,12 +112,13 @@
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 061110000000Z
+0A^^[
+0A^_[
 0A^_^
 0A_A^A\
 0A_A^A]A\_^]
 0A_A^_
 0A_A^_^]
-0A__[
 0iN>/
 0v0b1
 1#IND
@@ -130,7 +128,7 @@
 141022000000Z
 181004000000Z
 1<.	/>:
-200321044041Z0#
+200515053433Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -140,7 +138,6 @@
 311110000000Z0e1
 3>N;kU
 3>fvw
-3zUeV
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -161,7 +158,6 @@
 ;H9>&X
 <	w	@
 < t;<	t7
-<"uBD
 <<Invalid>>
 <NULL>
 <htr<jtb<lt6<tt&<wt
@@ -171,11 +167,15 @@
 ?5zlO
 ?7zQ6$
 ?:kP<
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?DevMsg@@YAXPEBDZZ
 ?H33H
+?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
+?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?UUUUUU
 ?f`Y4
 @.data
@@ -191,12 +191,12 @@
 @A_A^_
 @Lc:E3
 @SAVH
-@SUAUAWH
 @SUAVH
 @SUVWATAUAVAWH
 @SUVWH
+@SVAVH
 @SVWH
-@SWAWH
+@SWAVH
 @UATAUAVAWH
 @UATAVH
 @USVWATAUAVAWH
@@ -357,7 +357,7 @@ GetSystemTimeAsFileTime
 H!D$ E
 H!T$0D
 H0F08
-H95kf
+H95kd
 H97t<
 HA_A]A\_^[
 HH:mm:ss
@@ -411,7 +411,7 @@ L(:A:
 L(;A:
 L(;E:
 L(<A:
-L;5Tg
+L;5Te
 LCMapStringEx
 LCMapStringW
 LINUX
@@ -533,7 +533,6 @@ V_strlower_fast
 V_strtod
 V_strtoi64
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 WATAUAVAWH
@@ -559,11 +558,11 @@ XA]A\^[
 \$ WH
 \$0E3
 \$0H;
-\$@@8=%
+\$@@8=e
 \$@H;
 \$@f;
 \\bugbait.valvesoftware.com\bugsub\config.txt
-]*8t":0
+]^Uwp
 ^<V7w
 _V_strncat
 _V_strncmp
@@ -636,8 +635,6 @@ c:\buildslave\hlvr_rel_win64\build\src\utils\bugreporter_filequeue\Retail\win64\
 cAMDD
 config_file
 d$ fC
-d$`E3
-d$`E;
 dddd, MMMM dd, yyyy
 e+000
 e0A_A^A]A\]
@@ -651,9 +648,11 @@ fD96u
 fD9t$b
 ffffff
 fffffff
+gFTp&>
 g_pMemAlloc
 gfffA
 gfffffffH
+h \a;
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0N
@@ -669,7 +668,7 @@ l$ E3
 l$ VWATAVAWH
 l$ WAVAWH
 l$8H+
-lL;EF
+l$XE3
 log10
 m0k0$
 n03>Pu
@@ -697,11 +696,8 @@ stfE;
 stgE;
 t!McY
 t"<.u
-t$ ;C ~
-t$ @2
 t$ AVH
 t$ E3
-t$ Hc
 t$ UH
 t$ WAVAWH
 t$ WH
@@ -767,6 +763,7 @@ z0x0:
 |$XL;
 |$\.u
 |$`Ic
+|$`ff
 |b=})>
 };fD;
 }QfA;

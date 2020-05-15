@@ -145,6 +145,7 @@ $Ib?s
 %s: invalid nOldChars %d (string %d)
 %s: invalid nStart %d (string %d)
 %s: invalid pointer byte count
+%s: invalid string pointer (string chars %d)
 %s: requested conversion of %d chars
 %s: string format requested %d chars
 %s: string length overflows (is %d, adding %d)
@@ -270,12 +271,13 @@ $Ib?s
 'D8l$@
 'f?FO-
 ( 8PX
-(%~V)
+(%=Z)
+(%oX)
 ('8PW
-(-aX)
-(59U)
-(5IX)
-(5pT)
+(-OX)
+(=EX)
+(=]V)
+(=yY)
 (A^_][
 (A_A^
 (A_A^A\_
@@ -398,6 +400,7 @@ $Ib?s
 -9D	/9a
 -?[`/?291?
 -BH>t
+-F[	Lh@v
 -NOPROCESSHEAP
 -PROCESSHEAP
 -PROCESSHEAPZEROMEM
@@ -594,6 +597,7 @@ $Ib?s
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
 061110000000Z
+0<\t"</t
 0><[cZUg^>
 0A\_[
 0A^A]A\
@@ -630,7 +634,7 @@ $Ib?s
 141022000000Z
 181004000000Z
 1<.	/>:
-200321041414Z0#
+200515050552Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -650,6 +654,7 @@ $Ib?s
 5?INF
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5m8>8=t
+6L)=m
 700PP
 700WP
 7h>?8
@@ -688,7 +693,6 @@ $Ib?s
 9A0t@L
 9A\~ D
 9C v/M
-9C8uS
 9X@u4
 9YH~$H
 9Z=K7
@@ -747,11 +751,12 @@ $Ib?s
 <\t	<.u	H
 <\t#</t
 <\t$</t H
-<\t0</t,<.t
 <\t1</t-<:E
+<\t2</t.<.t
 <\t3</t/<.t
 <\t5</t1<.t
 <\t6</t2A
+<\tE</tAE3
 <\tO</tK
 <_uoH
 <`t'!U
@@ -794,7 +799,7 @@ $Ib?s
 =imb;D
 >+>ZQ"v
 >::operator ()
->L)=~
+>L)=^
 >ffffff
 >jtm}S
 >uZ>`
@@ -846,7 +851,7 @@ $Ib?s
 ??0CThreadMultiWaitObject@@QEAA@XZ
 ??0CThreadMultiWaitSemaphore@@QEAA@XZ
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CThreadSemaphore@@QEAA@HHPEBD_N@Z
 ??0CThreadSpinLock@@QEAA@PEBDH@Z
 ??0CThreadSwapContext@@QEAA@PEAVCThreadSwapTarget@@@Z
@@ -938,6 +943,7 @@ $Ib?s
 ??_FCThreadLocalScope@@QEAAXXZ
 ??_FCThreadMultiWaitEvent@@QEAAXXZ
 ??_FCThreadMutex@@QEAAXXZ
+??_FCThreadRWLock_FastRead@@QEAAXXZ
 ??_FCThreadSpinLock@@QEAAXXZ
 ??_FCVProfReporter@@QEAAXXZ
 ?@En[vP
@@ -963,7 +969,7 @@ $Ib?s
 ?AtRoot@CVProfile@@QEBA_NXZ
 ?AttemptToLoad@CDbgHelpFunctionsLoader@@AEAAXXZ
 ?AttemptToLoad@CPSApiFunctionsLoader@@AEAAXXZ
-?BoostPriority@CWorkerThread@@QEAAHXZ
+?BoostPriority@CWorkerThread@@QEAA?AW4ThreadPriorityEnum_t@@XZ
 ?BudgetGroupNameToBudgetGroupID@CVProfile@@QEAAHPEBD@Z
 ?BudgetGroupNameToBudgetGroupID@CVProfile@@QEAAHPEBDH@Z
 ?BudgetGroupNameToBudgetGroupIDNoCreate@CVProfile@@QEAAHPEBD@Z
@@ -1005,6 +1011,7 @@ $Ib?s
 ?E=$% B
 ?EnableVTuneGroup@CVProfile@@QEAAXPEBD@Z
 ?EncodeAsNativePointer@CVirtualMachineCallStackTranslationEncoder@@QEAAPEAXPEBD0I@Z
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?EndsWith@CBufferString@@QEAA_NPEBD@Z
 ?EndsWith_FastCaseInsensitive@CBufferString@@QEAA_NPEBD@Z
 ?EnsureAddedCapacity@CBufferString@@QEAAHHPEAPEAD_N1@Z
@@ -1014,7 +1021,7 @@ $Ib?s
 ?EnsureOwnedAllocation@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?EnsureReady@CDbgHelpFunctionsLoader@@QEAAXXZ
 ?EnsureReady@CPSApiFunctionsLoader@@AEAAXXZ
-?EnsureTrailingSlash@CBufferString@@QEAAPEBDD@Z
+?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
 ?EnterScope@CVProfNode@@QEAAXXZ
 ?EnterScope@CVProfile@@QEAAXPEBDH0_N@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
@@ -1035,8 +1042,9 @@ $Ib?s
 ?FindNode@CVProfile@@QEAAPEAVCVProfNode@@PEAV2@PEBD@Z
 ?FindOrCreateCounter@CVProfile@@QEAAPEA_KPEBDW4CounterGroup_t@@@Z
 ?FindScopeForThreadHandle@CThreadLocalScope@@SAPEAV1@PEAUThreadHandle_t__@@@Z
+?FindScopeForThreadId@CThreadLocalScope@@SAPEAV1@I@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?FreeNodes_R@CVProfile@@IEAAXPEAVCVProfNode@@@Z
 ?FreeTempNode@CEventListNode@@SAXPEAV1@@Z
@@ -1095,7 +1103,7 @@ $Ib?s
 ?GetPrevL2CacheMissLessChildren@CVProfNode@@QEAAHXZ
 ?GetPrevTime@CVProfNode@@QEBANXZ
 ?GetPrevTimeLessChildren@CVProfNode@@QEBANXZ
-?GetPriority@CThread@@QEBAHXZ
+?GetPriority@CThread@@QEBA?AW4ThreadPriorityEnum_t@@XZ
 ?GetReplacePtr@CBufferString@@QEAAPEADHHH_NPEAH@Z
 ?GetResult@CThread@@QEAAHXZ
 ?GetRoot@CVProfile@@QEAAPEAVCVProfNode@@XZ
@@ -1284,7 +1292,7 @@ $Ib?s
 ?SetMaxSpins@CThreadSpinLock@@QEAAXH@Z
 ?SetName@CThread@@QEAAXPEBD@Z
 ?SetOutputStream@CVProfile@@QEAAXP6AXPEBDZZ@Z
-?SetPriority@CThread@@QEAA_NH@Z
+?SetPriority@CThread@@QEAA_NW4ThreadPriorityEnum_t@@@Z
 ?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetTargetThreadId@CVProfile@@QEAAXI@Z
 ?SetThreadFiberMemoryRange@CFiber@@IEAAX_K@Z
@@ -1357,6 +1365,8 @@ $Ib?s
 ?Trim@CBufferString@@QEAAPEBDPEBD@Z
 ?TrimHead@CBufferString@@QEAAPEBDPEBD@Z
 ?TrimTail@CBufferString@@QEAAPEBDPEBD@Z
+?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
+?TruncateAt@CBufferString@@QEAAPEBDPEBD_N@Z
 ?TryLock@CThreadMutex@@QEAA_NPEBDH@Z
 ?TryLock@CThreadMutex@@QEBA_NPEBDH@Z
 ?TryLockForRead@CThreadMutex@@QEAA_NPEBDH@Z
@@ -1375,18 +1385,19 @@ $Ib?s
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
 ?UnlockRead_LockForWrite@CEventRWLock@@QEAA?AW4RWLockTranstionResult_t@@AEAVCEventListNode@@@Z
-?UnlockRead_LockForWrite@CThreadMutex@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockRead_LockForWrite@CThreadMutex@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockRead_LockForWrite@CThreadRWLock@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
-?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockRead_LockForWrite@CThreadSpinRWLock@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockSilent@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadRWLock@@QEAAXPEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockWrite_LockForRead@CEventRWLock@@QEAA?AW4RWLockTranstionResult_t@@AEAVCEventListNode@@@Z
-?UnlockWrite_LockForRead@CThreadMutex@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockWrite_LockForRead@CThreadMutex@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockWrite_LockForRead@CThreadRWLock@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
-?UnlockWrite_LockForRead@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockWrite_LockForRead@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockWrite_LockForRead@CThreadSpinRWLock@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UsePME@CVProfile@@QEAA_NXZ
 ?VTuneGroupEnabled@CVProfile@@IEAA_NXZ
@@ -1438,7 +1449,6 @@ $Ib?s
 ?WaitForMultiple@CThreadSyncObject@@SAIHPEAV1@_NI@Z
 ?WaitForRead@CThreadRWLock@@AEAAXXZ
 ?WaitForReadLockTransition@CEventRWLock@@IEAAXAEAVCEventListNode@@I@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?WaitForReply@CWorkerThread@@IEAAHIP6AIIPEAPEAVCThreadEvent@@HI@Z@Z
 ?WaitForReply@CWorkerThread@@QEAAHI@Z
 ?XuYH
@@ -1512,7 +1522,6 @@ $Ib?s
 @SUWATAUH
 @SUWAVH
 @SUWH
-@SVAUH
 @SVAVH
 @SVWATAUAVAWH
 @SVWATAUH
@@ -1551,6 +1560,7 @@ A81t@@8r
 A84.u
 A86taH
 A8n(u
+A8vqDx
 A:(uiI
 A;]\})I
 A>l$/
@@ -1696,6 +1706,7 @@ CBufferString::ReverseChars
 CBufferString::SetPtr
 CBufferString::ToLowerFast
 CBufferString::ToUpperFast
+CBufferString::TruncateAt
 CBufferString::UnicodeCaseConvert
 CL$0H
 CL:>8
@@ -1874,6 +1885,7 @@ D$Lf;
 D$P I
 D$P8QhtGH
 D$PA#
+D$PE2
 D$PE3
 D$PH%
 D$PH+
@@ -1921,7 +1933,6 @@ D82u&H
 D83t	H
 D84+u
 D84;u
-D85"L
 D87t	H
 D88Ht!
 D88Hte
@@ -1930,15 +1941,16 @@ D8V!tD
 D8Y:uEH
 D8a:uDH
 D8c:u
+D8cPt
+D8d$@t
 D8d$H
 D8d$Ht
 D8d$ht
+D8gIt
 D8i2u;H
 D8k2u
-D8kPt
 D8l$@t
 D8l$ht
-D8oIt
 D8sIt
 D8t$8t
 D8t$Ht
@@ -2015,7 +2027,7 @@ ERROR: Alloc exceeded allocation limit /+/ %llu > %llu
 ERROR: Hang watchdog thread exceeded the maximum number of allowed nested scopes!
 ERROR: Hang watchdog thread scope underrun! (Did someone forget to call EndWatchdogHangScope?)
 ERROR: Virtual reservation exceeded limit /+/ %llu > %llu
-ET$8H
+ET$(H
 ETWBegin
 ETWEnd
 ETWGetRenderFrameNumber
@@ -2058,7 +2070,7 @@ EnumerateLoadedModulesW64
 Error
 Error reading args file
 Error setting dss
-Et$8H
+Et$(I
 Et$`L
 EventRegister
 EventUnregister
@@ -2100,12 +2112,15 @@ Friday
 Ft4D+
 G(H9(t
 G0Hc	H
-GD$8@88t
-GD$8H
+GD$(H
+GD$88
+GD$8@88t#
+GD$8I
 GD$xH
 GDI32.dll
 GL$8A
 GL$8H
+GL$8Ic
 GL$HH
 GL$XH
 GL$xH
@@ -2217,6 +2232,7 @@ GfZ+?p
 Gl$HI
 GlobalMemoryStatusEx
 GrJoq>@
+Gt$(H
 G|$8H
 G|$hH
 H SVH
@@ -2233,7 +2249,6 @@ H9)u!
 H9/t1H
 H9/t=H
 H91u"
-H9= U
 H9A A
 H9A u
 H9C s#H
@@ -2244,6 +2259,7 @@ H9L$xt
 H9P s
 H9Q(t
 H9Q8t
+H9l$@uK
 H9{(u
 H;8u0H
 H;>u7H
@@ -2280,6 +2296,7 @@ HangWatchdog_SetHangImageRGBA
 HangWatchdog_SetMainThreadWindow
 HangWatchdog_Shutdown
 HasExpandedResources
+Hc-GH
 Hc;9E0t
 HcC H
 HcC0H
@@ -2425,7 +2442,8 @@ L$0fH
 L$0fI
 L$0|+L;
 L$4f;
-L$4t?
+L$4t=
+L$4tD
 L$8E3
 L$8H3
 L$8H9L$0t-H
@@ -2450,7 +2468,6 @@ L$HfA
 L$Lf;
 L$P+L$8
 L$P+L$H
-L$PE2
 L$PE3
 L$Pf;
 L$XE3
@@ -2468,11 +2485,10 @@ L9&u'H
 L9&us
 L9*u&
 L948u
+L95x"
 L97taH
 L9:t?
-L9=18
-L9=Ah	
-L9=a:
+L9=aj	
 L9>te
 L9@ s
 L9B8u
@@ -2558,7 +2574,7 @@ LoggingSystem_TagName
 LoggingSystem_UnregisterLoggingListener
 M H1E
 M'y>0y
-M(f95h
+M(f95
 M0H+M(H
 M9.tqA
 M9/t,
@@ -2817,6 +2833,8 @@ Plat_LoadModule
 Plat_LoadModuleRaw
 Plat_LoadOleAut
 Plat_LoadSDL
+Plat_LowMemoryWarning
+Plat_LowMemoryWarning()
 Plat_MSTime
 Plat_MSTime64
 Plat_MessageBox
@@ -2927,7 +2945,6 @@ PushThread
 P|> ,o
 Q5rHg,>
 Q>.3Z<
-QgWL)]
 Qkkbal
 Qt_GetCustomAllocators
 Quantum size
@@ -2950,8 +2967,8 @@ RegQueryValueExA
 RegSetValueExA
 RegisterAssertionFailureListener
 RegisterClassExA
-RegisterHibernationListener
 RegisterKeyValuesSystem
+RegisterMobileEventListener
 Release
 ReleaseMutex
 ReleaseSRWLockExclusive
@@ -3084,6 +3101,7 @@ SDL_SetCursor
 SDL_SetHint
 SDL_SetRelativeMouseMode
 SDL_SetTextInputRect
+SDL_SetThreadPriority
 SDL_SetWindowBordered
 SDL_SetWindowDisplayMode
 SDL_SetWindowFullscreen
@@ -3124,6 +3142,7 @@ SUVAVH
 SUVWATAUAVAWH
 SUVWATAVAWH
 SUVWAVH
+SVATH
 SVWATAUAVAWH
 SVWATAUAWH
 SVWATH
@@ -3292,7 +3311,7 @@ T$HL;
 T$Hf97
 T$Hfff
 T$PD+
-T$PD8-|y
+T$PD8-
 T$PE3
 T$PH3
 T$Pf;
@@ -3311,7 +3330,7 @@ T$pfff
 T$pkD$x<
 T$xE3
 T$xHc
-T=yX)
+T=	Z)
 TASK8
 TASKD
 TASKl
@@ -3349,6 +3368,8 @@ ThreadCloseProcess
 ThreadGetCurrentHandle
 ThreadGetCurrentProcessHandle
 ThreadGetCurrentProcessId
+ThreadGetDebugNameForThreadHandle
+ThreadGetDebugNameForThreadId
 ThreadGetPriority
 ThreadGetProcessExitCode
 ThreadGetProcessPriority
@@ -3469,7 +3490,7 @@ Unknown exception
 Unknown return value (%lu) from WaitForMultipleObjects
 UnknownOS
 UnregisterAssertionFailureListener
-UnregisterHibernationListener
+UnregisterMobileEventListener
 UpdateWindow
 V6E>`"(5
 VALVE-MODULE-DEBUG-%08X
@@ -3759,7 +3780,6 @@ VirtualFree
 VirtualProtect
 VirtualQuery
 W H;V
-W==X)
 WARNING: Large alloc of %llu bytes of memory (limit %llu)
 WARNING: Large virtual reservation of %llu bytes of memory (limit %llu)
 WARNING: there were errors during information capture, this report may be incomplete
@@ -3830,8 +3850,9 @@ Wu4E3
 X 843"8
 X fff
 X!t5~
-X5,T)
-X5HW)
+X5LU)
+X5MV)
+X5hX)
 X?fff?
 XA\_^[
 XA]_^[
@@ -3874,7 +3895,6 @@ ZwQueryInformationProcess
 \$ E3
 \$ H;
 \$ UH
-\$ UVAVH
 \$ UVWATAUAVAWH
 \$ UVWAVAWH
 \$ UVWH
@@ -3897,7 +3917,6 @@ ZwQueryInformationProcess
 \$@H;
 \$@M+
 \$D@81
-\$Hu_
 \$P@8u
 \$`A+
 \$`H;=
@@ -4109,7 +4128,7 @@ c:\buildslave\hlvr_rel_win64\build\src\tier0\hangwatchdogthread.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier0\hibernate.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier0\logging.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier0\mem_helpers.cpp
-c:\buildslave\hlvr_rel_win64\build\src\tier0\memprocessheap.cpp(372):***** OUT OF MEMORY! attempted allocation size: %I64d ****
+c:\buildslave\hlvr_rel_win64\build\src\tier0\memprocessheap.cpp(379):***** OUT OF MEMORY! attempted allocation size: %I64d ****
 c:\buildslave\hlvr_rel_win64\build\src\tier0\memstd.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier0\minidump.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier0\platform.cpp
@@ -4349,7 +4368,6 @@ l$ WH
 l$(E3
 l$(E;
 l$0eH
-l$8@2
 l$8E3
 l$@E3
 l$@fff
@@ -4403,6 +4421,7 @@ muzzy_npurge
 muzzy_purged
 n03>Pu
 n>log2
+nD$ f
 nTries < 10000000
 n]?iJ
 nan(ind)
@@ -4664,12 +4683,12 @@ t$(I;
 t$0A;
 t$0E3
 t$8	|
+t$8E2
 t$8H+
 t$8H;
 t$8Mi
 t$@A:
 t$@Li
-t$@fff
 t$@t1H
 t$Hff
 t$Hfff
@@ -4680,6 +4699,7 @@ t$XE3
 t$Xt.H
 t$huyA
 t$pE3
+t$xE3
 t%</t!<\t
 t&< t
 t&< ~
@@ -4687,7 +4707,6 @@ t'fE9
 t(<\t
 t(A8(t
 t)D8l$@t
-t)fff
 t/D8e
 t/D8}
 t4McF
@@ -4701,9 +4720,9 @@ tE@8{2t
 tHfA;
 tI@8{:t
 tK@8{:t
-tMD;%+}-
-tOH9=
-tPH95Q
+tMD;%
+tOH9=Os
+tPH95
 tQ</t
 tVf9p
 tX9x0tO
@@ -4755,7 +4774,7 @@ uD;\$D}P
 uDL9L$`u=
 uE;\$@}Q
 uFM9/tA
-uIH;=v
+uIH;=
 uOL9L$PuH
 uP;l$@}\
 uPH9{
@@ -4835,6 +4854,7 @@ z`%1Is}
 {for 
 {puIH
 {w8&-
+|	@CI@
 |#tAM
 |$ ATAUAVAW3
 |$ ATAVAWH
@@ -4885,10 +4905,10 @@ z`%1Is}
 |>fj;
 |b=})>
 }%fff
-}1D85!B
+}1D85
 }tg<(u
 ~ $s%r
 ~ HcE
 ~0D85
-~0D85pD
+~0D85`F
 ~0D8=

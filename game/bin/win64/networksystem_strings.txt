@@ -37,6 +37,7 @@
 	proximity
 	s9Ic@<
 	s:HcF<
+	s:HcG@
 	s:HcGT
 	s:HcGl
 	signature
@@ -180,6 +181,7 @@
  serializer(%s)
  t1HcG4
  t4HcF,
+ t7HcG8
  t9HcGPA
  t:HcG0
  t:HcG4
@@ -295,7 +297,7 @@
 "e?<<<<<<l?
 "eQueryCvarValueStatus_CvarNotFound
 "host_computationtime_std_deviation
-"pA3Q
+"pA3Q8
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
@@ -368,7 +370,6 @@ $0message $1
 $0oneof $1 {
 $0option $1;
 $A8@)
-$A9|$
 $HcA,H
 $Ib?s
 $NETWORK_DISCONNECT_REJECT_SERVERFULL
@@ -529,7 +530,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 '#GameUI_Disconnect_BadSpectatorPassword
 '#GameUI_Disconnect_DifferentClassTables
 '#GameUI_ServerRejectInvalidSteamCertLen
-'D;l$`}
+'D;l$\}
 'NETWORK_DISCONNECT_BADSPECTATORPASSWORD
 'NETWORK_DISCONNECT_CLIENT_DIFFERENT_MAP
 'NETWORK_DISCONNECT_CREATE_SERVER_FAILED
@@ -635,11 +636,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )D$`L
 )D$pD
 )L$0E
-)L$PA
 )L$`D
 )NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
 )NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
+)T$@A
 )T$PE
 )T$pD
 )\$`D
@@ -705,6 +706,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ,NETWORK_DISCONNECT_STEAM_DENY_BAD_ANTI_CHEAT
 ,NETWORK_DISCONNECT_STEAM_LOGGED_IN_ELSEWHERE
 ,|%)v
+,}v41
 - %d Scratch Buffers in use (%llu bytes)
 - Config: %s, %i connections
 - Data:    net total out  %.1f, in %.1f kB/s
@@ -755,8 +757,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AV?$CBaseAppSystem@VINetworkSystemUtils@@@@
 .?AV?$CCallbackImpl@$0CMI@@@
 .?AV?$CConCommandMemberAccessor@VCNetworkMessages@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0EAA@$0A@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@UBuildEntry_t@CBuildNetworkSerializerHierarchyOrder@@V?$CMemberFuncJobItemProcessor@UBuildEntry_t@CBuildNetworkSerializerHierarchyOrder@@V2@V2@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@UBuildFlattenedSerializerInfo_t@@V?$CMemberFuncJobItemProcessor@UBuildFlattenedSerializerInfo_t@@VCBuildNetworkSerializerHierarchyOrder@@V2@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CNetMessagePB@$02VCNETMsg_SplitScreenUser@@$0L@$00$0A@@@
@@ -838,6 +838,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCNetworkSerializerPB@@
 .?AVCNetworkSystem@@
 .?AVCNetworkSystemUtils@@
+.?AVCNoRefFunctor@@
 .?AVCPlaceholderConVar@@
 .?AVCPostConnectCallback@@
 .?AVCSVCMsgList_GameEvents@@
@@ -864,6 +865,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCSVCMsg_HLTVStatus@@
 .?AVCSVCMsg_Menu@@
 .?AVCSVCMsg_PacketEntities@@
+.?AVCSVCMsg_PacketEntities_command_queue_info_t@@
 .?AVCSVCMsg_PacketReliable@@
 .?AVCSVCMsg_PeerList@@
 .?AVCSVCMsg_Prefetch@@
@@ -889,6 +891,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCSendSerializerStack@@
 .?AVCSerializedEntities@@
 .?AVCSerializerStack@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@UBuildEntry_t@CBuildNetworkSerializerHierarchyOrder@@V?$CMemberFuncJobItemProcessor@UBuildEntry_t@CBuildNetworkSerializerHierarchyOrder@@V2@V2@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@UBuildFlattenedSerializerInfo_t@@V?$CMemberFuncJobItemProcessor@UBuildFlattenedSerializerInfo_t@@VCBuildNetworkSerializerHierarchyOrder@@V2@@@$00@@@@QEAAXXZ@
 .?AVCUtlSlot@@
 .?AVConCommand@@
 .?AVConCommandBase@@
@@ -1077,6 +1081,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 0D;w4L
 0E;gl
 0HcA H
+0L9d$@t
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0_^[H
@@ -1103,7 +1108,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#.CSVCMsg_GameEventList.descriptor_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200401233930Z0#
+2,.CSVCMsg_PacketEntities.command_queue_info_t
+200515051906Z0#
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 211007120000Z0M1
 211110000000Z0b1
@@ -1122,8 +1128,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 3>fvw
 3D$P5<
 3D$p5<
-3H9upt	H
-3Hcs(;s8u	H
 456789:;<=
 4BMcH
 4DMcH
@@ -1155,9 +1159,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 8A_A^^[
 8A_A^_^][
 8A__][
-8L9d$@t
-8L9u0t	H
-8L9u8t	H
 8M9,$t
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 8O0u]A
@@ -1180,11 +1181,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9B(|(
 9C }(H
 9D$0u&O
+9D$@t
 9X@u4
 9Z,~43
 9Z8~<
 9Zp~@3
-9\$8~E
 9\$`~[
 9^,~#3
 9^h~63
@@ -1222,7 +1223,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9{t~93
 9{|~;3
 9|$@H
-9|$TuGI
+9|$PuFI
 : Protocol message serialized to a size different from what was originally expected.  Perhaps it was modified by another thread during serialization?
 : Tried to copy from a message with a different type. to: 
 : Tried to merge from a message with a different type.  to: 
@@ -1234,12 +1235,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;1}jH
 ;A ~W
 ;Ah}5
-;C0}	H
 ;D$0u
 ;D$@@
 ;D$Pt
 ;D$XwrA
-;D$`}
+;D$\}
 ;D$hu
 ;D;(|
 ;D;8u
@@ -1248,17 +1248,17 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;H9}`t	H
 ;H9}ht	H
 ;H9}pt	H
-;J0}OHc
 ;Kl}5
 ;L$0u
+;L$8}
 ;L$@u
 ;S }EH
 ;\$0|
+;\$8|
 ;\$`|
 ;\$h|
 ;_8~.H
 ;l$0|
-;l$8|
 ;s u	H
 ;t$8|
 ;t$H|
@@ -1307,15 +1307,18 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?8bunz8
 ?:kP<
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CUniformRandomStream@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ??1CThreadSyncObject@@QEAA@XZ
 ?@En[vP
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -1327,20 +1330,22 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
-?Set@CThreadEvent@@QEAA_NXZ
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
+?Trim@CBufferString@@QEAAPEBDPEBD@Z
 ?UUUUUU
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
-?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@XZ
+?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?kxG2)
 ?{Q}<
@@ -1350,17 +1355,15 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @.tls
 @0;B0u
 @4A;A4u
+@8-C'
 @80u#H
 @81u/H
 @84(u
-@88t.
-@88t9H
 @8k<t
 @8q<u
 @8xAuAA
 @8y:t
 @8|$9t
-@8|$@u*D
 @8|$PtN
 @8|$PtP
 @8|$^t
@@ -1371,7 +1374,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @A^A]A\
 @A^A]A\^]
 @A^A]A\_]
-@A^_]
 @A^_^
 @A_A\]
 @A_A\_
@@ -1387,7 +1389,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @A_A^_^[
 @A_A^_^]
 @A__]
-@D;t$@
+@D;|$@
 @DD;BDI
 @H9nHu
 @HcC(H
@@ -1491,6 +1493,8 @@ A8@*uMA8@+u4H
 A8H	P(
 A8Zxt
 A9B(|
+A9FTu
+A9FTuL
 A9P }
 A9Q }
 A9R }
@@ -1511,6 +1515,7 @@ A;@`}
 A;@p}
 A;A`}
 A;BX}
+A;C0}	H
 A;D$0
 A;E$u
 A;E<u
@@ -1590,7 +1595,6 @@ ANIMATION_TYPE_FIT_LIFETIME
 ANIMATION_TYPE_FIXED_RATE
 APA;F
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-ATAUAVAWH
 ATAUAVH
 ATAUH
 ATAVAWH
@@ -1598,10 +1602,10 @@ ATAVH
 ATAWH
 AUAVAWH
 AVAWH
+A\_[]
 A\_^[
 A\_^[]
 A]A\[
-A]A\_]
 A]A\_^[
 A]A\_^]
 A^A\]
@@ -1618,25 +1622,23 @@ A^_[]
 A^_^[]
 A^_^][
 A_A]A\^]
-A_A]A\_]
 A_A]A\_^[]
 A_A^A\
-A_A^A\[
 A_A^A\]
 A_A^A\^
+A_A^A\^[]
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
 A_A^A\_^][
 A_A^A]
-A_A^A]A\
 A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_[]
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
-A_A^A]^[]
+A_A^A]_
 A_A^A]_^
 A_A^A]_^[]
 A_A^A]_^][
@@ -1645,6 +1647,7 @@ A_A^^
 A_A^_
 A_A^_[]
 A_A^_]
+A_A^_^[]
 A_A^_^]
 A_A^_^][
 A`H+AXH
@@ -2261,7 +2264,6 @@ Closing Steam Net Connection on socket '%s' to %s, handle #%u (%d %s)
 ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
-CmdLinkAH
 CmdLinkAL
 Color
 CommandLine
@@ -2350,6 +2352,7 @@ D$0fA;
 D$0mp
 D$0r|
 D$49C
+D$4fA;
 D$8@8xBu
 D$8A;
 D$8D8
@@ -2363,9 +2366,11 @@ D$8L+
 D$8L9
 D$8L;
 D$8L;E
+D$8fA;
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
 D$<fE
+D$@;D$8
 D$@A+
 D$@E3
 D$@H+
@@ -2383,6 +2388,8 @@ D$D+D$T
 D$D+D$THc
 D$DA+
 D$DLcR(I
+D$H	{
+D$HD2
 D$HE3
 D$HH+
 D$HH;
@@ -2409,7 +2416,7 @@ D$XD90}
 D$XH;
 D$XIc
 D$XfD
-D$`9D$d}
+D$\9D$X}
 D$`;XtL
 D$`@2
 D$`A;
@@ -2434,6 +2441,7 @@ D$hHc
 D$hIc
 D$hL;
 D$hMc
+D$lA;
 D$p 69
 D$p;D$0|
 D$p<L{
@@ -2450,39 +2458,40 @@ D$xL+
 D$xfD
 D08@t	
 D18 t
-D8-"g
-D8-#Q
-D8-4R
-D8-=S
+D8-	_
+D8-'a
+D8-2e
+D8-4b
+D8-7[
+D8-7c
+D8-:v
 D8->h
-D8-MM
-D8-MV
-D8-OW
-D8-QT
-D8-QU
-D8-TZ
-D8-U]
-D8-V\
-D8-V_
-D8-W^
-D8-XY
-D8-ZN
-D8-Z[
-D8-\X
-D8-_`
-D8-hb
-D8-he
-D8-ia
-D8-jO
-D8-jc
-D8-lP
-D8-ld
-D8-uf
-D8-ug
+D8-?k
+D8-@j
+D8-@m
+D8-Ad
+D8-Al
+D8-Bg
+D8-Bn
+D8-D\
+D8-Ff
+D8-Gi
+D8-M]
+D8-Oo
+D8-Qw
+D8-Rp
+D8-Tq
+D8-Us
+D8-V^
+D8-Vr
+D8-Xt
+D8-bu
+D8-c_
+D8-t`
+D8-}a
+D8-~v
 D82u&H
 D847u
-D88t$I
-D88t5I
 D8B<t
 D8Y:uEH
 D8a:uDH
@@ -2491,25 +2500,26 @@ D8d$H
 D8d$Ht
 D8d$ht
 D8d$z
+D8d$zL
 D8i*t E
 D8l$ht
-D8p<t0H
+D8p@t0H
 D8t$Ht
-D8uZH
+D8ubH
 D8x)u#H
 D8x)u%A
 D8y*t
 D8|$Pt
-D8~@t
+D8~\t
 D9	~SE
 D9	~UE
 D9	~rE3
 D9	~sE
 D9	~uE
-D9*~%A
-D9+~XI
 D9,2H
 D9/t2H
+D92~!A
+D93~XI
 D9@ }
 D9A }
 D9C0~+f
@@ -2522,20 +2532,20 @@ D9l$4u
 D9l$Ht	H
 D9pXtj
 D9pXu	
-D9t$0
 D9|$ 
 D;(Hc
 D;B }
 D;BDI
 D;C }JH
 D;C0|
+D;E }
 D;I$wyL
 D;JD}!fff
 D;L$`~!Hc
 D;L$d~
 D;L$l~
 D;L$t~ZH
-D;T$`}
+D;T$\}
 D;T$x|
 D;d$pH
 D;mHu
@@ -2651,7 +2661,6 @@ EnumReservedRange
 EnumValueDescriptorProto
 EnumValueOptions
 Enums must contain at least one value.
-EnvironmentMapBuilder_001
 EoA;Hh|
 EoHcHh
 Error
@@ -2706,18 +2715,19 @@ F =>1
 F A9D$@|
 F HcN
 F8HcN0H
-F8t 8
 F>qUxv
 F@L9n(u
 FALSE
 FATAL
 FATAL ERROR: unable to register all schema data: %s
 FCVAR_NEVER_AS_STRING
+FDp~L
 FI	N(H
 FK	N(H
 FL	N(H
 FP	N(H
 FPH;C
+FXA;@
 Failed to complete WSACleanup = 0x%x.
 Failed to create poll group for socket '%s'?
 Failed to install message handler for message %s in channel %s!
@@ -2797,19 +2807,24 @@ FreeEnvironmentStringsW
 FreeLibrary
 FreeLibraryWhenCallbackReturns
 Friday
+Fuk T
 G 9F |
 G HcO
-G fff
 G t/J
 G(?t	3
 G0Hc	H
 G4A9D$4
+GD$(D
+GD$(H
 GD$8H
 GD$8I
 GPH+H(
 GPH+x(H
 GPH9L
 GPIcM 
+GT$8H
+GT$8L
+GT$XH
 GTEND
 GVLcE
 GameResourceServiceClientV001
@@ -2882,7 +2897,9 @@ Got ISteamNetworkingSockets user interfaces from standalone lib
 Got ISteamNetworkingSockets user interfaces from steam client
 Got message on poll group for socket %s, but cannot find connection in table?
 Groups are not supported in proto3 syntax.
+Gt$HH
 G|$8H
+G|$XH
 H 8YK
 H 8YKt
 H D8iKt
@@ -2910,7 +2927,6 @@ H0F08
 H0Jc<!H
 H0Lc$1H
 H8fA;
-H9-mc
 H92u&
 H92u'
 H92u,
@@ -2918,7 +2934,6 @@ H93t9H
 H93taH
 H9;tKH
 H9;uAA
-H9=|d
 H9A u
 H9A(t
 H9C s(H
@@ -2935,7 +2950,7 @@ H9\$p
 H9\$pu
 H9_ t
 H9_ tPA
-H9_ u>H
+H9_ u6H
 H9k0u
 H9kPu H
 H9n u
@@ -2949,12 +2964,11 @@ H9o`u
 H9ohu
 H9s t
 H9sHtQ
-H9t$Xt
-H9t$pt
 H9u8t
 H9uXt	H
 H9uot	H
 H9w0tgH
+H9wHu
 H9wxt+H
 H9|$(t
 H9|$@t
@@ -3063,10 +3077,12 @@ HcPhI
 HcQ(3
 HcS@H
 HcT$$
+HcT$pH
 Hc\$0
 Hc\$`I;
 Hc\$tI
 Hc\$tL
+Hc]@L
 Hc]WH
 Hc]`M
 Hc_0L
@@ -3088,7 +3104,6 @@ Hcup;
 Hcw I
 Hcw0H
 HcwPH
-Hc|$pI
 HelpSystem_001
 Hex and octal numbers must be integers.
 Host game server ip
@@ -3096,6 +3111,7 @@ HostStateMgr001
 How long p2p connection requests should linger before we completely ignore them
 Ht)I;
 Ht4<Xu[
+I9FLu
 I9HPt
 I9IPt
 I9P s
@@ -3207,12 +3223,12 @@ L$ 9D$ H
 L$ ;h
 L$ ATAUAVAWH
 L$ D8I	tQ
+L$ E3
 L$ H+
 L$ SH
 L$ SUVWH
 L$ SUWAWH
 L$ SVWH
-L$ SWH
 L$ UATAUAVAWH
 L$ UAVAWH
 L$ UVWATAUAVAWH
@@ -3310,6 +3326,7 @@ L$`;{||
 L$`A+
 L$`A8
 L$`A9
+L$`E3
 L$`H+
 L$`H+L$XH
 L$`H3
@@ -3323,21 +3340,22 @@ L$h9Kt
 L$h9Yh
 L$h@2
 L$hA#
+L$hA+
 L$hD;Ax
 L$hE3
 L$hH+
 L$hH3
 L$hH=
-L$hI+
 L$hL+
+L$hL;]
 L$hfA;
-L$pA+
 L$pE3
 L$pE;
 L$pH3
 L$pH=
-L$pL;\$x}
+L$tE3
 L$tHc
+L$tfE;e
 L$x;whL
 L$xAi	
 L$xH3
@@ -3359,8 +3377,8 @@ L9m(t	H
 L9s(tXI
 L9s0u+H
 L9ugt	H
-L9uht	H
 L9upt	H
+L9uxt	H
 L9v u
 L9v0u
 L9v8u
@@ -3368,12 +3386,6 @@ L9w u
 L9w(u
 L9{ t!@8k1t
 L9{ t@@8k1t:
-L9} t	H
-L9}(t	H
-L9}0t	H
-L9}8t	H
-L9}@t	H
-L9}Ht	H
 L; u8
 L; u9H
 L;!u8
@@ -3382,7 +3394,6 @@ L;@ s
 L;D$8L
 L;H s
 L;R s
-L;l$x
 L;t$P
 L;|$p
 L?UUUUUUU?
@@ -3397,9 +3408,9 @@ Label
 Lc3D;s
 LcA<E3
 LcCPH
-LcD$4I
+LcD$4H
 LcD$8D;D$4|
-LcD$8H
+LcD$8I
 LcD$`D;D$\|
 LcG0H
 LcL$DI
@@ -3471,10 +3482,10 @@ MNetworkVarsAtomic
 MNetworkVarsDisable
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
-MPfD;
 MResourceTypeForInfoType
 MSG_SPLITSCREEN_ADDUSER
 MSG_SPLITSCREEN_REMOVEUSER
+MXfD;
 MakeSerializersMatchByMeta failed for %s
 MapKey::GetBoolValue
 MapKey::GetInt32Value
@@ -3501,7 +3512,7 @@ MathLib_Init
 Max # of seconds we can wait for next packets to be sent based on rate setting (0 == no limit).
 Maximum amount of foreign packets (no established connection) allowed per frame before we discard
 Mc&E;f
-Mc<$E;|$
+Mc4$E;t$
 Mc>E;~
 McEPI
 Mcp0E;q0
@@ -3676,7 +3687,6 @@ PA_A^A]A\_^]
 PA_A^]
 PA_A^_
 PA_A^_^]
-PD8l7<tI
 PE;~0|
 PF_BIAS_TYPE_EXPONENTIAL
 PF_MAP_TYPE_MULT
@@ -3861,7 +3871,6 @@ S(IcH
 S,, <Zw
 S>$hkDh$h>[2
 SATAUAWH
-SATAVAWH
 SDR connect
 SNAN)
 SPAWN_GROUP_BLOCK_UNTIL_LOADED
@@ -4045,7 +4054,7 @@ SteamNetworkingSockets_Lib
 SteamNetworkingUtils003
 SteamNetworkingUtils_Lib
 SteamNetworkongSockets not yet initialized.  Queuing command '%s'
-SteamUser020
+SteamUser021
 SteamUtils009
 String field
 String literals cannot cross line boundaries.
@@ -4073,7 +4082,6 @@ T$(H;
 T$(L+
 T$,A;
 T$09Q }
-T$0A;
 T$0D9T$P
 T$0E3
 T$0H;
@@ -4102,6 +4110,7 @@ T$PE3
 T$PH3
 T$PH9s t,A
 T$PH;
+T$PIc
 T$XE3
 T$XH+
 T$XHcF8H
@@ -4122,7 +4131,6 @@ T$pA;
 T$pD;
 T$pE3
 T$pE;
-T$pfA;}
 T$xH;
 T$xIc
 TCP/UDP Disabled.
@@ -4170,8 +4178,6 @@ TlsSetValue
 Toggle field path tracing to file
 Too many proxies for serializer %s.
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -4196,14 +4202,16 @@ UNKNOWN_ENUM_VALUE_%s_%d
 UPDATE_STRING_TOKEN_DATABASE
 USAUH
 USAWH
-USVAUAVAWH
+USVATAVAWH
 USVWATAUAVAWH
 USVWATAUAWH
 USVWATH
 USVWAUAVH
+USVWAVAWH
 USVWAVH
 USVWH
 USWATAUAVAWH
+USWATH
 USWAUAVH
 USWAVAWH
 USWAVH
@@ -4225,6 +4233,7 @@ UWATAUAVH
 UWATAUAWH
 UWATAUH
 UWATAVAWH
+UWATH
 UWAVAWH
 UWAVH
 UWAWH
@@ -4307,7 +4316,6 @@ VWAUAVAWH
 VWAUH
 VWAVH
 VWAWH
-V_FixSlashes
 V_atan2f
 V_atof
 V_atofloat32
@@ -4327,7 +4335,6 @@ V_stricmp_fast
 V_strnlen
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Validate
 ValidateSerializedEntity:  %s [ent %d] invalid change '%s' for field %s (value '%s') on array that has metadata with only %d array elements!
@@ -4361,6 +4368,7 @@ W@|:L
 WARNING
 WATAUAVAWH
 WATAWH
+WAUAVAWH
 WAVAWH
 WDA9PD}
 WS2_32.dll
@@ -4388,7 +4396,6 @@ XA]A\
 XA]A\_]
 XA^A]A\^][
 XA_A\_^][
-XA_A]A\[
 XA_A^A]^][
 XA_A^][
 Y0HcR
@@ -4472,14 +4479,15 @@ Zod(^?
 \$8H;
 \$8I9HPt
 \$<A;
+\$@9\$8
+\$@9\$8~I
 \$@@8=
 \$@H;
 \$@Hc
 \$@f;
 \$DD9l$Ht	H
-\$DE3
+\$HE3
 \$HHc
-\$Ht!
 \$P;op
 \$PI;
 \$Pu!H
@@ -4523,7 +4531,6 @@ Zod(^?
 ^<V7w
 ^RfN>
 _ fA;
-_V_SetExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -4789,6 +4796,10 @@ collision_prop
 color
 command
 command_number
+command_queue_desired_size
+command_queue_info
+command_queue_info_t
+commands_queued
 composite
 computer_guid
 connection aborted
@@ -4817,8 +4828,8 @@ d$ fI
 d$(E3
 d$(H;
 d$(fI
-d$0fff
 d$8H+
+d$8H;
 d$8I;
 d$8fD
 d$P+A$t
@@ -4829,8 +4840,8 @@ d$PH;
 d$XE3
 d$XH91u 
 d$XHc
-d$\fD;!
 d$`fD
+d$`fD;!
 d$hE3
 d$hIc
 d$pI;
@@ -4919,9 +4930,9 @@ explosive_radius
 extend .$0 {
 extendee
 extension_range
+f9D$p
 f9K f
 f9_ f
-f;1}WL
 fA1@ 
 fA;\$
 fD90t
@@ -5108,12 +5119,13 @@ l$ VH
 l$ VLcA
 l$ VWATAVAWH
 l$ VWAVH
+l$ WATAVH
 l$ WAVAWH
 l$ WH
 l$(E3
 l$(HcV
 l$(fA
-l$,E8f
+l$,u	Ic
 l$0E3
 l$0H+
 l$0Hc
@@ -5136,19 +5148,19 @@ l$HA_A^A]A\_^
 l$PH;
 l$PHc
 l$PL;
+l$Tt	H
 l$XA+
 l$XL+
 l$Xfff
-l$Xt	H
 l$`E3
 l$`L+
 l$`M;
 l$h9i
+l$hE3
 l$hE;H
 l$hHc
 l$hL9jxu	
 l$hfA
-l$pA9
 l$pA;
 l$pI;
 l$xE2
@@ -5591,6 +5603,7 @@ pose_control
 pose_control_type
 positive_int_value
 posttoserver
+prediction_errors
 preferred_carryangles
 prevhopcount
 previous only
@@ -5686,7 +5699,6 @@ s:HcFP
 s:HcF`
 s:HcFd
 s:HcFh
-s:HcG8
 s:HcGP
 s:HcGh
 s<HcF\
@@ -5719,6 +5731,8 @@ serializer_version
 serializers
 serializing
 server
+server_cmd_queue
+server_cmd_queue_desired
 server_count
 server_framerate
 server_framerate_stddev
@@ -5763,6 +5777,8 @@ stCD;
 stED;
 st`D;
 start
+starved_command_ticks
+starved_ticks
 state
 state not recoverable
 status_code
@@ -5870,6 +5886,7 @@ t$00A
 t$09t$@|NH
 t$0A;
 t$0A__
+t$0D9t$@|LH
 t$0E3
 t$0H+
 t$0Hc
@@ -5897,12 +5914,13 @@ t$@Hi
 t$@Ic
 t$@fE;
 t$@fff
+t$DD;
 t$DH;
 t$D~U
 t$H;i
-t$HD8~@t$H
+t$HD8~\t$H
 t$HE3
-t$HI+
+t$HH+
 t$HLc
 t$HLi
 t$HM;
@@ -5934,7 +5952,6 @@ t$hA3
 t$hE3
 t$hE;H
 t$hH9r u
-t$hfA;
 t$hff
 t$hfff
 t$p9t$0~`E3
@@ -5950,14 +5967,15 @@ t$tt	H
 t$x;_@u
 t$xA;
 t$xH;
+t$xfA
 t$xt	H
 t'y*H
 t(A8(t
 t);Fh
+t)D82t$H
 t)y,L
 t*@8}
 t*D8#t
-t*D82t%H
 t*fff
 t+D8d$z
 t+fff
@@ -5971,6 +5989,7 @@ t/HcG0H
 t/HcV ;
 t/HcV8;
 t0@87t+
+t0D87t+
 t0D8;t+
 t0H9Bxt
 t0H9S0u*
@@ -5989,7 +6008,6 @@ t4McF
 t5HcA
 t5HcA A
 t5HcG H
-t6HcG0
 t6HcO8
 t7HcA$H
 t7HcG A
@@ -5997,6 +6015,8 @@ t7fff
 t8HcA
 t8HcA$H
 t8HcA,H
+t8HcA0H
+t8HcA4
 t8HcG
 t8HcG M
 t8HcG$H
@@ -6006,7 +6026,6 @@ t9HcC(A
 t9HcG0
 t9IcA
 t:HcA
-t:HcA,
 t:HcC,I
 t:HcG$H
 t:HcG(
@@ -6042,7 +6061,7 @@ tBHcA M
 tBHcA(M
 tBHcG8M
 tCHcP
-tEL9-	
+tEL9-I
 tFH9\$0u?L
 tFLc&E
 tGHc;;{
@@ -6059,7 +6078,7 @@ t[HcCH3
 t\LcFL
 t]<-u
 t]fff
-t^xGA
+t]xFA
 t_fff
 t`xLA
 taD9A
@@ -6087,10 +6106,10 @@ thxQ3
 ti<	u#
 tick_interval
 tier0.dll
+time_dilation_percent
 timed out
 tkfff
 tkxWA
-tmxY3
 too many files open
 too many files open in system
 too many links
@@ -6108,20 +6127,17 @@ tsHcT$xH
 ttIcF
 turn_rate
 twfff
-twx]3
 tx<	u#
 type or int32).
 type.googleapis.com/
 type.googleprod.com/
 tzHcG
 t|xYE3
-t}xaA
-u	@8=5
+u	@8=
 u IcH
 u!9p }
 u$H;|$Hu
 u%H99u
-u'*o~]
 u'L;v
 u*Hc{H;{Xu
 u*Hc{`;{pu
@@ -6131,11 +6147,11 @@ u.LcG
 u.fE;
 u3HcH<H
 u4E;H
-u5Hcs
 u7fD9
 u7fff
 u9fff
 u;IcE
+u<Lc|
 u=L;k
 u>D8}
 uAfD9
@@ -6295,6 +6311,7 @@ z0x0:
 zY;>u:m	
 { HcC8
 {8HcCP
+{M/uC
 {YIN?
 |$ A;
 |$ ATAVAWH
@@ -6371,7 +6388,6 @@ zY;>u:m
 |$@fA
 |$@t%
 |$@t3
-|$DE3
 |$H	u H
 |$HH;
 |$HHc
@@ -6392,9 +6408,9 @@ zY;>u:m
 |$PI;_
 |$PMc>M
 |$Pff
+|$Tt	H
 |$XH;
 |$XHcU
-|$Xt	H
 |$\.u
 |$`E3
 |$`H+
@@ -6404,11 +6420,11 @@ zY;>u:m
 |$`Ic
 |$`L9g
 |$`Lc
-|$`fA
 |$hA+
 |$hD+
 |$hE3
 |$hE;
+|$hH;
 |$lA+
 |$lA;
 |$p	u
@@ -6417,11 +6433,12 @@ zY;>u:m
 |$pf9}
 |$pt	H
 |$x	u H
+|$xE3
 |$xLc
 |$xf9}
 |$xt	H
 |${H+
-|7, }(
+|>, }*
 |b=})>
 |l;K(tgA
 }%;o<w 
@@ -6446,15 +6463,15 @@ zY;>u:m
 ~ E8q
 ~ H;C
 ~!A;~
-~%D8=VZ
+~%D8=
 ~'D8u
 ~(@8|$jH
-~*9y0
+~*9q0
 ~+fff
-~.A9x0
-~08\$0t
+~.A9p0
 ~0H9>t
 ~0H;C
+~28\$0t
 ~8H;C
 ~9D8A
 ~>@8}
@@ -6464,6 +6481,5 @@ zY;>u:m
 ~H@8l$2H
 ~L@8}
 ~N@8}
-~RD8d$zL
 ~Wfff
 ~^L;H

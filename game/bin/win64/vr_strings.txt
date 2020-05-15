@@ -11,6 +11,10 @@
     %u iterated blocks
     %u unfinished blocks
   (H/V): 
+  -nohmd      Renders through the VR code paths without using the HMD's tracking or display
+  -scale [x]  Available with either -vrdebug or -nohmd. Will scale window by float amount (0.5 is half width & height)
+  -vr         Enable VR (can be automatically enabled if launched from Steam in VR mode)
+  -vrdebug    Renders to the primary monitor, but still uses the HMD's tracking if available
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  'L>[
@@ -21,6 +25,7 @@
  0@P`p
  9(X`
  A^][
+ A^_]
  A^_^
  A_A]_
  A_A^A\
@@ -37,7 +42,7 @@
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;5e#
+ D;5u
  H3E H3E
  Hc)H
  Hc9H
@@ -69,13 +74,13 @@
 !4gpu
 !>6'Y
 !gathersysteminfo
+" -file "
 """"UUUU
 ""\\//b
-"%s" -file "%s"
 "2BRbr
 "[BINARY BLOB]"
 "e?<<<<<<l?
-"pA3Q(L
+"pA3Q
 # Positions
 # Texture Coords
 # Triangles
@@ -110,7 +115,6 @@ $Ib?s
 %s_%u.vmdl
 %u,%u,%f,%f,%f,%f,%i
 &6FVfv
-&>Yyp\
 &?PPPPPPP?
 &D;j0u
 &YA1D
@@ -147,11 +151,12 @@ $Ib?s
 (T$ H
 (T$0D
 (T$`L
+(T$pD
 (T?j?Y
 (\$ D
 (\$PH
-(\$pD
-(d$`D)g<H
+(\$`D
+(d$PE
 (null)
 (o:R	
 (t$ D
@@ -184,9 +189,7 @@ $Ib?s
 (|$pL
 )4$H;
 )9IYiy
-)<$E3
 )>6{1n
-)D$ E
 )D$0A
 )D$0D
 )D$0E
@@ -204,11 +207,12 @@ $Ib?s
 )L$pD
 )T$`D
 )T$`y
+)T$pD
 )\$PJ
-)\$pD
+)\$`D
 )d$0E
+)d$Pv
 )d$`D
-)d$`v
 )d$pD
 )l$ E
 )l$0z
@@ -279,13 +283,16 @@ $Ib?s
 -BH>t
 -autofidelityconfig
 -cyclerandom
+-enable_2gb_morphs
 -forcefidelitylevel
+-fullscreen
 -headsetview
 -height
 -msaa
 -noaq
 -noautofidelity
 -nohackstartup
+-nohmd
 -nomultiview
 -sse2
 -sse3
@@ -299,7 +306,11 @@ $Ib?s
 -vr_minigames_transition
 -vr_recommended_height
 -vr_recommended_width
+-vrcompdebug
+-vrdebug
 -vrdev
+-vrperftest
+-vrperftesthmd
 -width
 . Pixels per eye after stencil mask: 
 . Renderer now requires 
@@ -350,7 +361,6 @@ $Ib?s
 .?AV<lambda_f25c37099038263181b5186a3fa41b37>@@
 .?AV<lambda_fac74c1338e5afbc2423a21681fc11b7>@@
 .?AV?$CBaseAppSystem@VIVr@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor6@PEAVCSOAContainer@@P81@EAAXHHHHHT__m128@@@ZHHHHHT2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -419,11 +429,14 @@ $Ib?s
 .?AVCEmptySequence@@
 .?AVCEndRenderingSceneCallback@@
 .?AVCFunctor@@
+.?AVCNoRefFunctor@@
 .?AVCPlaceholderConVar@@
 .?AVCPostConnectCallback@@
 .?AVCPresentRenderTrackingCallback@@
 .?AVCSchemaInstallCallback@@
 .?AVCSignalFrameDiscontinuityCallback@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
 .?AVCUpdateHmdDataFromHardwareCallback@@
 .?AVCVRFly_InputHandler@@
 .?AVCVRSetOverlayTextureCallback@@
@@ -656,7 +669,7 @@ $Ib?s
 1<.	/>:
 1DBlend
 1eaB@
-200401234000Z0#
+200515052824Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -679,6 +692,7 @@ $Ib?s
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 700WP
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+8(@yC@YJ
 80tWD
 8;o |
 8A^_^[
@@ -691,9 +705,9 @@ $Ib?s
 8\$xt
 8_^][
 8ke?;
+8uLC[
 91t0H
 91~/E3
-95A+q
 99~-H
 99~BH
 9:u4H
@@ -751,6 +765,7 @@ $Ib?s
 <null>
 <sqrt
 <unconnected>
+<~uEP
 =)\O?
 =33s?
 =imb;D
@@ -770,17 +785,20 @@ $Ib?s
 ?8bunz8
 ?:kP<
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
 ?@En[vP
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?AppendFormattedComment@CMiniDumpComment@@QEAAXPEBDZZ
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
-?DevMsg@@YAXPEBDZZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
 ?FindOrCreateCounter@CVProfile@@QEAAPEA_KPEBDW4CounterGroup_t@@@Z
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?FloatBitMap_t::ConvertGammaToLinear(338): Conversion not supported yet!
 ?H33H
 ?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
@@ -794,19 +812,19 @@ $Ib?s
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
-?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?UUUUUU
 ?U[y[
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?W(~N
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?kxG2)
 ?sqrtf
@@ -818,9 +836,11 @@ $Ib?s
 @09D$0
 @80u#H
 @81u/H
-@8=]~	
+@8=]v	
 @8y4u
 @8y:t
+@8{4ud@8{5u
+@8{4uo
 @8|$Pt
 @8|$PtN
 @8|$PtP
@@ -905,7 +925,6 @@ A;@X}
 A;@`}
 A;A`}
 A;BX}
-A;G8u
 A;H$s
 A;H$v}H
 A;Q`}
@@ -953,6 +972,7 @@ AK>(v
 ANIMATION_TYPE_FIT_LIFETIME
 ANIMATION_TYPE_FIXED_RATE
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
+APhysics
 ARGB8888
 ATAUAVH
 ATAUAWH
@@ -968,7 +988,6 @@ ATI_TC_ConvertTexture_Wrapper
 AUAVAWH
 AVAWH
 A]A\[]
-A]A\]
 A]_^]
 A^A\]
 A^A\^]
@@ -1144,40 +1163,39 @@ CUtlMemoryPoolBase: Cannot specify 0 elements to grow each time!
 CUtlMemoryPoolBase::CUtlMemoryPoolBase
 CUtlRBTree overflow with %u elements!
 CUtlRBTree<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int,class CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CUtlString,class IVrMailboxMessageHandler *,int,class CDefLess<class CUtlString> >::Node_t,int>,int> >::NewNode
-CVr::CreateRenderModel(9780): 
-CVr::DisableMotionSmoothingForThisFrame(3533): 
+CVr::CreateRenderModel(9811): 
+CVr::DisableMotionSmoothingForThisFrame(3561): 
 CVr::GetOutputDevice not supported for this rendersystem API.
-CVr::MarkGamePhase(5317): 
-CVr::MarkGamePhase(5324): 
-CVr::PollHMDStateForRenderThread(5405): 
-CVr::PollHMDStateForRenderThread(5417): 
-CVr::PollHMDStateForRenderThread(5441): 
-CVr::PreShutdown(1252): 
-CVr::SampleAxisControllerState(4557): ERROR! Unknown controller axis type %d!
-CVr::SetDashBoardUserToggleEnabled: 
-CVr::SetOverlayTexture(10979): 
-CVr::SetSkyboxOverride(2373): 
-CVr::UpdateGhostCorrectionTexture(1106): 
+CVr::MarkGamePhase(5348): 
+CVr::MarkGamePhase(5355): 
+CVr::PollHMDStateForRenderThread(5436): 
+CVr::PollHMDStateForRenderThread(5448): 
+CVr::PollHMDStateForRenderThread(5472): 
+CVr::PreShutdown(1251): 
+CVr::SampleAxisControllerState(4575): ERROR! Unknown controller axis type %d!
+CVr::SetOverlayTexture(11010): 
+CVr::SetSkyboxOverride(2401): 
+CVr::UpdateGhostCorrectionTexture(1105): 
 CVrReconstructionRenderer
-CVrReconstructionRenderer::Render(7307): VR - Destroying old VB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7314): VR - Destroying old IB for reconstruction eye %d!
-CVrReconstructionRenderer::Render(7335): VR - Destroying old IB for reconstruction!
-CVrReconstructionRenderer::Render(7475): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
-CVrReconstructionRenderer::Render(7484): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7338): VR - Destroying old VB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7345): VR - Destroying old IB for reconstruction eye %d!
+CVrReconstructionRenderer::Render(7366): VR - Destroying old IB for reconstruction!
+CVrReconstructionRenderer::Render(7506): VR - Error! VB handle is invalid in CVrReconstructionRenderer!
+CVrReconstructionRenderer::Render(7515): VR - Error! IB handle is invalid in CVrReconstructionRenderer!
 CVrReconstructionRendererIB
 CVrReconstructionRendererVB
 CVrStencilRenderer
-CVrStencilRenderer::Render(6358): VR - Destroying old VB for Stenciling!
-CVrStencilRenderer::Render(6403): VR - Error! VB handle is invalid in CVrStencilRenderer!
+CVrStencilRenderer::Render(6389): VR - Destroying old VB for Stenciling!
+CVrStencilRenderer::Render(6434): VR - Error! VB handle is invalid in CVrStencilRenderer!
 CVrStencilRendererVB
 CVrSubviewStencilRenderer
-CVrSubviewStencilRenderer::Render(6547): VR - Destroying old VB for SubviewStenciling!
-CVrSubviewStencilRenderer::Render(6889): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
+CVrSubviewStencilRenderer::Render(6578): VR - Destroying old VB for SubviewStenciling!
+CVrSubviewStencilRenderer::Render(6920): VR - Error! VB handle is invalid in CVrSubviewStencilRenderer!
 CVrSubviewStencilRendererVB
 CVrWarpRenderer
-CVrWarpRenderer::Render(7070): VR - Destroying old IB for warping!
-CVrWarpRenderer::Render(7148): VR - Error! VB handle is invalid in CVrWarpRenderer!
-CVrWarpRenderer::Render(7157): VR - Error! IB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7101): VR - Destroying old IB for warping!
+CVrWarpRenderer::Render(7179): VR - Error! VB handle is invalid in CVrWarpRenderer!
+CVrWarpRenderer::Render(7188): VR - Error! IB handle is invalid in CVrWarpRenderer!
 CVrWarpRendererIB
 CVrWarpRendererVB
 CWD>~3
@@ -1336,7 +1354,6 @@ D$ E3
 D$ H;
 D$ Hc
 D$ I;
-D$ L;
 D$ N&B:H
 D$ P-
 D$ d=
@@ -1357,7 +1374,6 @@ D$0H#
 D$0H;G
 D$0Hc
 D$0HcH
-D$0I;
 D$0L;
 D$0f;UPu
 D$0mp
@@ -1377,8 +1393,10 @@ D$@H+
 D$@H;
 D$@H;G
 D$@Hc
+D$@I;
 D$@Ic
 D$@csm
+D$@f;
 D$@mp
 D$@r|
 D$H;F
@@ -1442,39 +1460,38 @@ D24S8
 D24X4S4
 D24X8
 D24X8_SHADOW
-D8--C
-D8--L
-D8-/M
-D8-1J
-D8-1K
-D8-2B
-D8-4P
-D8-5S
-D8-6R
-D8-6U
-D8-7T
-D8-8O
-D8-:D
-D8-:Q
+D8-!A
+D8-'B
+D8-*;
+D8-,E
+D8-4C
+D8-7<
+D8-7D
+D8-9F
+D8-9K
+D8-:I
+D8-;H
 D8-<N
-D8-?V
-D8-HX
-D8-H[
-D8-IW
-D8-JE
-D8-JY
-D8-LF
-D8-LZ
-D8-U\
-D8-U]
-D8-_]
-D8-`G
-D8-b^
-D8-cA
-D8-qH
-D8-wI
-D8-zB
-D8-|L
+D8-=J
+D8-=M
+D8-><
+D8-?G
+D8-@=
+D8-BL
+D8-EO
+D8-FV
+D8-KT
+D8-NQ
+D8-OP
+D8-P>
+D8-PR
+D8-RS
+D8-XU
+D8-Y?
+D8-]W
+D8-j@
+D8-o;
+D8-wA
 D82u&H
 D8M@t
 D8M@t^
@@ -1493,7 +1510,7 @@ D8o(t4
 D8sAt
 D8t$Ht
 D8|$Pt
-D9-hB
+D9-t<
 D90u	9X
 D9B,t
 D9G$s5
@@ -1502,7 +1519,7 @@ D9TA;
 D9c t
 D9d$(u
 D9f@~0Hc
-D9oh~dI
+D9oh~]I
 D9x(uiE
 D9{(u
 D9|$ 
@@ -1578,7 +1595,6 @@ Encountered unknown vr::EVRInputError value.
 EngineServiceMgr001
 EnterCriticalSection
 EnterUmsSchedulingMode
-EnvironmentMapBuilder_001
 Et$hL
 EventSystem001
 ExIcPpHi
@@ -1662,6 +1678,9 @@ GAMEROOT
 GCUtlString::FormatV
 GPU Memory
 GPU: 
+GT$H@
+GT$XH
+G\$XH
 Game CPU time
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1728,6 +1747,7 @@ GetResourceManifests
 GetStartupInfoW
 GetStdHandle
 GetStringTypeW
+GetSystemMetrics
 GetSystemTimeAsFileTime
 GetSystemTimePreciseAsFileTime
 GetThreadGroupAffinity
@@ -1746,6 +1766,7 @@ Ghost Correction Table:
 Ghost correction editor - %d -> %d = %d, %d, %d
 Ghost correction editor - Editing %d -> %d = %d, %d, %d
 Green
+G|$HA
 H SVWH
 H SWH
 H!D$ E
@@ -1766,7 +1787,7 @@ H3\$HH
 H97t<
 H98u	H
 H99u{
-H9=lx
+H9=|q
 H9A u
 H9A(s
 H9BhuTH
@@ -2127,7 +2148,6 @@ PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
 ParticleSystemMgr003
-Physics
 Physics2 Interface Old v0.5
 PhysicsBodyMarkup
 PhysicsBoneMarkup
@@ -2154,6 +2174,7 @@ Plat_GlobalMemoryStatus
 Plat_IsInDebugSession
 Plat_LoadModule
 Plat_MessageBox
+Plat_NeedsLowFragmentation
 Plat_RelativeTicks
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -2284,6 +2305,9 @@ ServerUploadGameStats001
 Set to 1 when you want frames to be captured by the SteamVR perf test.
 SetAssertionCallback
 SetEvent
+SetExplicitTimingMode to VRCompositorTimingMode_Explicit_ApplicationPerformsPostPresentHandoff
+SetExplicitTimingMode to VRCompositorTimingMode_Explicit_RuntimePerformsPostPresentHandoff
+SetExplicitTimingMode to VRCompositorTimingMode_Implicit
 SetFileInformationByHandle
 SetFilePointerEx
 SetLastError
@@ -2371,6 +2395,8 @@ T$PA"
 T$PE3
 T$PH3
 T$PIc
+T$TE3
+T$XE3
 T$`Hc
 T$pD+
 T$pE3
@@ -2405,8 +2431,6 @@ TlsFree
 TlsGetValue
 TlsSetValue
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -2420,7 +2444,6 @@ Two Bone
 U0Hcu
 UA>N0Wl
 UATAUAVAWH
-UATAUH
 UAVAWH
 UPDATE_STRING_TOKEN_DATABASE
 USATAUI
@@ -2428,6 +2451,7 @@ USAUAVH
 USAUH
 USAVH
 USAVI
+USER32.dll
 USVATAWH
 USVAVH
 USVWATAUAVAWH
@@ -2479,7 +2503,7 @@ UpdateProcThreadAttribute
 Use: vr_dump_render_model <obj_filename> <tga_filename>
 UserInfoChangeService_001
 V0;Ct~ZH
-V0H9-[j
+V0H9-
 V6E>`"(5
 VAVAWH
 VApplication001
@@ -2578,7 +2602,6 @@ VWAVH
 VWAWH
 V_CopyMemory3D
 V_FixInvalidPathCharacters
-V_FixSlashes
 V_FixupPathCharToUnderscore
 V_PrettifyNum
 V_RemoveDotSlashes
@@ -2602,7 +2625,6 @@ V_sscanf
 V_stricmp_fast
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 V`;Ct~bH
 Valve
@@ -2612,6 +2634,7 @@ VertexUVPosColorNormalAndTangent_t
 Vertical split full resolution.
 Viewport Left Eye:  
 Viewport Right Eye: 
+Virtual reality command line args:
 VirtualAlloc
 VirtualFree
 VirtualProtect
@@ -2680,7 +2703,7 @@ XA_A^A\_^[
 XL$tL
 X|$ A
 X|$8E
-X|(xM
+X|(XM
 Y$D;R
 Y0t>H
 Y>kX>M
@@ -2729,7 +2752,7 @@ Zod(^?
 \$8A+
 \$8Hc
 \$<A;
-\$@@8=mf
+\$@@8=
 \$@E3
 \$@H+
 \$@H;
@@ -2845,7 +2868,6 @@ bad exception
 bad file descriptor
 bad function call
 bad message
-bddja3N
 bin\tools\bin\win32\vrperftestviewer.exe
 blendamount
 blendindices
@@ -3060,6 +3082,7 @@ l$ 9Q
 l$ AVH
 l$ D9l$0|LH
 l$ E3
+l$ V3
 l$ VH
 l$ VWATAUAVAWE3
 l$ VWATAVAWH
@@ -3091,6 +3114,7 @@ l$`C9,
 l$`E9j
 l$`E;j
 l$hM;
+l=!lb
 last_sniff
 length
 lighthouse
@@ -3455,6 +3479,7 @@ switchState
 system
 system.HeadsetView
 system.desktop.1
+t	D8=
 t	H9s
 t	L9c
 t D8o(u
@@ -3462,11 +3487,11 @@ t H9X8tN
 t HcH
 t"<.u
 t$ A;
-t$ AVE3
 t$ AVH
 t$ AWH
 t$ E3
 t$ Mi
+t$ UATAVH
 t$ UH
 t$ UWATAUAVH
 t$ UWATAVAWH
@@ -3476,11 +3501,11 @@ t$ WAUAWH
 t$ WAV
 t$ WAVAWH
 t$ WH
-t$(A^
 t$(D;
 t$0+A$t
 t$0@2
 t$0A^_
+t$0D9t$@|LH
 t$0HcK
 t$0Hi
 t$8H+
@@ -3490,6 +3515,7 @@ t$@E3
 t$@Hc
 t$H;^Xt
 t$HE3
+t$HHc
 t$LD;
 t$PHc
 t$PL+
@@ -3518,10 +3544,11 @@ t.@8:t)
 t/D83t*
 t/D8e
 t0@87t+
+t0@8;t+
 t0D8;t+
 t4McF
 t5;_`}
-t9H9=V
+t9H9=F
 t:LcM
 t;A9;
 tCHcP
@@ -3541,7 +3568,7 @@ text file busy
 texturescale
 tier0.dll
 timed out
-tj95*,
+tj95z)
 tlLcA
 tlMcH
 too many files open
@@ -3558,7 +3585,7 @@ turn_rate
 tvLcK
 twH;^XtH3
 u	9w$
-u	@8=-
+u	@8=
 u!!D$(H
 u%!D$@H
 u)!t$(H
@@ -3800,7 +3827,6 @@ zY;>u:m
 |$4E;
 |$89^
 |$8;3
-|$8Hc
 |$8fD
 |$@-D
 |$@-H
@@ -3829,8 +3855,8 @@ zY;>u:m
 ~ $s%r
 ~!A;~
 ~(HcNDI
-~*9y0
-~*9yP
+~*9q0
+~*9qP
 ~QLc]
 ~]Lc]
 ~`8A!t

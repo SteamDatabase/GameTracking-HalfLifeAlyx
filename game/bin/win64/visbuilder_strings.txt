@@ -227,7 +227,7 @@
 "e" must be followed by exponent.
 "e?<<<<<<l?
 "host_computationtime_std_deviation
-"pA3Qp
+"pA3Q
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
@@ -295,6 +295,7 @@ $0enum $1 {
 $0message $1
 $0oneof $1 {
 $0option $1;
+$6139
 $A8@)
 $HcA,H
 $Ib?s
@@ -396,6 +397,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (D$ H
 (D$ L
 (D$ f
+(D$0A
 (D$0H
 (D$0f
 (D$@A
@@ -404,9 +406,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (D$PA
 (D$PH
 (D$Pf
-(D$`A
 (D$`H
 (D$`f
+(D$pA
 (D$pH
 (D$pf
 (D;v,}e
@@ -427,7 +429,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (\$`D
 (cannot determine missing fields for lite message)
 (d$0D
-(d$@E3
 (d$pD
 (l$ D
 (l$@D
@@ -488,6 +489,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )NETWORK_DISCONNECT_PURESERVER_CLIENTEXTRA
 )NETWORK_DISCONNECT_REQUEST_HOSTSTATE_IDLE
 )O@E3
+)T$@A
 )T$@D
 )T$`H
 )T$p3
@@ -500,6 +502,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )l$ A
 )l$PD
 )l$pD
+)t$ H
 )t$ I
 )t$03
 )t$0A
@@ -536,7 +539,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 *NETWORK_DISCONNECT_REJECT_INVALIDKEYLENGTH
 *NETWORK_DISCONNECT_STRINGTABLEMSG_OVERFLOW
 *StO9>T
-*dC0*TB0*4A0*
+*dE0*TD0*4C0*
 +A$Hc
 +A,+A
 +B$Hc
@@ -592,7 +595,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .>PJ;I:qE>
 .?AV?$CBaseAppSystem@VIMapBuilderMgr@@@@
 .?AV?$CBaseAppSystem@VIResourceTypeCompiler@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_4ca8ec93892c43afe601791bcfa645d4>@@@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@Uregion_status_t@@V?$CMemberFuncJobItemProcessor@Uregion_status_t@@VCVoxelSampler@@V2@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -653,6 +655,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCNETMsg_SplitScreenUser@@
 .?AVCNETMsg_StringCmd@@
 .?AVCNETMsg_Tick@@
+.?AVCNoRefFunctor@@
 .?AVCPlaceholderConVar@@
 .?AVCPostConnectCallback@@
 .?AVCRandomRayGenerator@@
@@ -670,6 +673,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCSchemaInstallCallback@@
 .?AVCSchemaRegistration@@
 .?AVCSchemaRegistration_visbuilder@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_4ca8ec93892c43afe601791bcfa645d4>@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@Uregion_status_t@@V?$CMemberFuncJobItemProcessor@Uregion_status_t@@VCVoxelSampler@@V2@@@$00@@@@QEAAXXZ@
 .?AVCThreadedJob@@
 .?AVCUtlMultiJobProcessor@@
 .?AVCVertColorHalfLambert@@
@@ -802,6 +808,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 0A_A^A]A\_^[
 0A_A^A]A\_^]
 0A_A^A]_^
+0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
 0A_^[
@@ -811,7 +819,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 0D;ul|
 0D;w4L
 0E;gl
-0L9e0t	H
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0_^[H
@@ -832,7 +839,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 1I9p 
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200327174048Z0#
+200515054207Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -852,6 +859,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+5fpG~PK
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 700WP
 7HcD$P
@@ -868,8 +876,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 8A_A^
 8A_A^^[
 8A_A^_^][
-8L9e0t	H
-8M9't
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 8O0u]A
 8Y*t'D
@@ -892,13 +898,13 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9B(|(
 9C |K
 9C }(H
+9D$@t
 9UxvY
 9X@u4
 9Y ~C
 9Z,~43
 9Z8~<
 9Zp~@3
-9\$8~E
 9\$`~[
 9^,~#3
 9^h~63
@@ -919,6 +925,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9o0~{
 9rp~&
 9sp~OH
+9w0~$H
 9x|uhA9n<ub9xxu]9xpuX9xtuS
 9y`t*H
 9z8~>
@@ -956,9 +963,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;Kl}5
 ;L$0u
 ;S }EH
+;\$8|
 ;\$`|
 ;l$0|
-;l$8|
 ;t$@u
 ;t$H|
 ;{$}"H
@@ -1006,10 +1013,14 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ??1CThreadMutex@@QEAA@XZ
 ?@En[vP
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -1019,8 +1030,14 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
+?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Reset@CThreadMultiWaitEvent@@QEAAXXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?UUUUUU
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
@@ -1048,7 +1065,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @A^A]A\^]
 @A^_^
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\]
 @A_A^A]A\_
@@ -1752,8 +1768,8 @@ D$0I;
 D$0Ic
 D$0mp
 D$0r|
-D$0t5
-D$0t9
+D$0t7
+D$0t?
 D$49C
 D$8@8xBu
 D$8A;
@@ -1769,8 +1785,9 @@ D$8L;E
 D$8VBKV
 D$8fH
 D$8r|
-D$8s5
+D$8sDE
 D$<9T$0wE9T$4w?9T$8w9;
+D$@;D$8
 D$@A+
 D$@A;|$
 D$@E3
@@ -1790,6 +1807,7 @@ D$@r|
 D$D+D$T
 D$D+D$THc
 D$DA+
+D$H=@B
 D$HE3
 D$HH+
 D$HH;
@@ -1858,36 +1876,29 @@ D08@t
 D18 t
 D7\A9|3
 D8*u A
-D8-	9
-D8-(&
-D8-1'
-D8-2<
-D8-A!
-D8-A*
-D8-C+
-D8-E(
-D8-E)
-D8-H.
-D8-I1
-D8-J0
-D8-J3
-D8-K2
-D8-L-
-D8-N"
-D8-N/
-D8-P,
-D8-S4
-D8-\6
-D8-\9
-D8-]5
-D8-^#
-D8-^7
-D8-`$
-D8-`8
-D8-i:
-D8-i;
-D8-t%
-D8-v<
+D8-+ 
+D8-6$
+D8-8!
+D8-;"
+D8->5
+D8-B'
+D8-C*
+D8-D)
+D8-D,
+D8-E#
+D8-E+
+D8-F&
+D8-F-
+D8-J%
+D8-K(
+D8-S.
+D8-U6
+D8-V/
+D8-X0
+D8-Y2
+D8-Z1
+D8-\3
+D8-f4
 D82u&H
 D8d$H
 D8d$Ht
@@ -1972,7 +1983,6 @@ Double-save to Member '%s'
 DynamicConfigList
 E @8xHt
 E H;C
-E Ics
 E+BHI
 E.E;fx
 E0C07
@@ -2016,7 +2026,6 @@ EnumReservedRange
 EnumValueDescriptorProto
 EnumValueOptions
 Enums must contain at least one value.
-EnvironmentMapBuilder_001
 EoA;Hh|
 EoHcHh
 Error loading %s!
@@ -2076,6 +2085,7 @@ ExtraVertexStreamOverride_t
 F 9C@|
 F A9D$@|
 F HcN
+F-enable_2gb_morphs
 F8HcN0H
 F>qUxv
 FATAL
@@ -2137,7 +2147,6 @@ FlsGetValue
 FlsSetValue
 FlushFileBuffers
 FlushProcessWriteBuffers
-Fm_bUseShadowFastPath
 FontManager_001
 Found invalid proto option data for: 
 FreeEnvironmentStringsW
@@ -2157,6 +2166,8 @@ GPH+H(
 GPH+x(H
 GPH9L
 GPIcM 
+GT$XH
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -2251,6 +2262,8 @@ H0Lc$1H
 H92u&
 H92u'
 H92u,
+H95Kq
+H95oq
 H97t<
 H9;uAA
 H9C s(H
@@ -2261,7 +2274,6 @@ H9H s*
 H9P A
 H9Q s
 H9Z s
-H9\$0~
 H9\$8t
 H9\$p
 H9\$pu
@@ -2632,7 +2644,6 @@ L9B s
 L9J s
 L9`8tA
 L9d$ A
-L9e0tjH
 L9m(t	H
 L9mot	H
 L9ugt	H
@@ -2643,6 +2654,7 @@ L9w(u
 L; u8
 L; u9H
 L;!u8
+L;54r
 L;9u;
 L;@ s
 L;D$8L
@@ -2804,6 +2816,7 @@ NETWORK_DISCONNECT_USERCMD
 NET_Messages
 NH+VP
 NO_SIDE_EFFECTS
+NV6Fj"
 N`+Vh
 NamePart
 NavSystem001
@@ -2868,8 +2881,9 @@ Option must not use reserved name "uninterpreted_option".
 Options could not be fully parsed using the proto descriptors compiled into this binary. Missing required fields: 
 Ordered constructor wrapped type has no default constructor.
 Outside detection took %.2f seconds
+P%"kv
 P>q_Y~
-PARALLEL_PROCESS CVisibilitySampler::FastMergeClustersUntil(), c:\buildslave\hlvr_rel_win64\build\src\utils\visbuilder\vis2.cpp:2137
+PARALLEL_PROCESS CVisibilitySampler::FastMergeClustersUntil(), c:\buildslave\hlvr_rel_win64\build\src\utils\visbuilder\vis2.cpp:2139
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
@@ -2922,6 +2936,7 @@ Plat_FloatTime
 Plat_GetEnv
 Plat_IsInDebugSession
 Plat_MSTime
+Plat_NeedsLowFragmentation
 Plat_RelativeTicks
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -3111,6 +3126,7 @@ Successfully unserialized ray tracing environment.
 Sunday
 Sw[Hc
 Symbol name "
+T$ +G$D
 T$ A;
 T$ E3
 T$ H+
@@ -3211,8 +3227,6 @@ TlsGetValue
 TlsSetValue
 Too many clusters (%s) at grid resolution %.0f, reducing resolution!
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -3341,7 +3355,6 @@ VWAUAVAWH
 VWAVH
 VWAWH
 VXVSD
-V_FixSlashes
 V_PrettifyMem
 V_PrettifyNum
 V_StringToVector
@@ -3368,7 +3381,6 @@ V_strtoi64
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
@@ -3444,9 +3456,7 @@ X\$8H
 Y0HcR
 Y>kX>M
 YD$@f
-Y\$pA
 You must build with -world before you can build with -vis!  Couldn't find raytrace.rte
-Yt$pD
 Z\>z8
 Zod(^?
 [*ncd>0
@@ -3489,11 +3499,14 @@ Zod(^?
 \$8I9HPt
 \$8fD
 \$<A;
-\$@@8=
+\$@9\$8
+\$@9\$8~I
+\$@@8=m
 \$@H;
 \$@Hc
 \$D;\$H
-\$HH;
+\$HHc
+\$Hta
 \$PA+
 \$PHc
 \$PI;
@@ -3525,9 +3538,6 @@ Zod(^?
 ^A(Lc
 ^C(Lc
 ^RfN>
-_V_FixupPathName
-_V_SetExtension
-_V_StrSubst
 _V_strncmp
 _V_strncpy
 __based(
@@ -3540,6 +3550,7 @@ __pascal
 __ptr64
 __restrict
 __stdcall
+__temp_unserialization_member__
 __thiscall
 __unaligned
 __vectorcall
@@ -3725,6 +3736,7 @@ d$(E3
 d$(H;
 d$8H+
 d$8I;
+d$8Lc;D;{
 d$P+A$t
 d$PD;
 d$PE9~0~QE3
@@ -3940,7 +3952,6 @@ l$ WAVAWH
 l$ WH
 l$(;i
 l$(HcV
-l$0A+
 l$0H+
 l$0Hc
 l$0HcA
@@ -3948,7 +3959,6 @@ l$0Ic
 l$0Ic.
 l$0ff
 l$8Hc.H
-l$8Lc;D;{
 l$8t+H
 l$8t6
 l$@H9^
@@ -4070,6 +4080,7 @@ m_bScalePerParticle
 m_bTrailBias
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 m_bWrapInAtlas
 m_blockOffset
@@ -4586,7 +4597,6 @@ t$ Mc
 t$ UH
 t$ UWATAUAVH
 t$ UWATAVAWH
-t$ UWAVH
 t$ WATAUAVAWH
 t$ WATAWH
 t$ WAUAWH
@@ -4601,6 +4611,7 @@ t$(E3
 t$(H+
 t$,A+
 t$0+A$t
+t$0D9t$@|LH
 t$0E3
 t$0H+
 t$0Hc2
@@ -4662,6 +4673,7 @@ t.@8:t)
 t/D83t*
 t/HcV ;
 t0@87t+
+t0@8;t+
 t0D8;t+
 t0H9Bxt
 t1H9uxt
@@ -4677,8 +4689,7 @@ t7HcA$H
 t7HcG A
 t8HcA
 t8HcG M
-t8Lc?D;
-t9H9=f
+t9H9=
 t9IcA
 t:HcA
 t:HcG(
@@ -4687,6 +4698,7 @@ t:HcG<
 t:IcA H
 t:IcA$H
 t<IcA H
+t=Hc/;o
 t=HcA
 t=HcG(H
 t>HcA H
@@ -4860,7 +4872,6 @@ yaw_end
 yaw_start
 z0x0:
 z:KCAuthPhysBody
-z>__temp_unserialization_member__
 zY;>u:m	
 { HcC8
 {8HcCP
@@ -4880,7 +4891,6 @@ zY;>u:m
 |$ HcA
 |$ HcA 
 |$ UATAUAVAWH
-|$ UH
 |$$H9y
 |$$H;
 |$$HcA
@@ -4905,7 +4915,6 @@ zY;>u:m
 |$0s-
 |$0t?H
 |$0tXI
-|$0uO
 |$0|<M
 |$89^
 |$8;3
@@ -4945,6 +4954,7 @@ zY;>u:m
 |$XHcU
 |$XIc
 |$\.u
+|$`@2
 |$`E3
 |$`H+
 |$`H;
@@ -4975,8 +4985,8 @@ zY;>u:m
 }wy5Ic
 ~ $s%r
 ~!A;~
-~*9y0
+~*9q0
 ~+fff
-~08\$0t
+~28\$0t
 ~GLc7M
 ~^L;H

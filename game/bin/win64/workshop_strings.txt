@@ -56,12 +56,13 @@
  - added %s
  - pos
  - rot
+ -o "
+ -of 
  -testmode
  0@P`p
  9(X`
  9D$pu/L
  ;_h|
- ;t$P
  ?IsFBX@FbxImporter@fbxsdk@@QEAA_NXZ
  AGenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
  A]A\_^[
@@ -96,6 +97,7 @@
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
+ D;t$h
  H3E H3E
  Hc)3
  Hc1H
@@ -115,7 +117,6 @@
  HcypH
  Lc	M
  LcR M
- ReadToken overflow
  Type Descriptor'
  [ %f %f %f %f  %f %f %f %f  %f %f %f %f  %f %f %f %f ]
  [curvetype %s]
@@ -134,6 +135,8 @@
 !?Normalize@FbxVector4@fbxsdk@@QEAAXXZ
 !?ObjectType@FbxCriteria@fbxsdk@@SA?AV12@AEBVFbxClassId@2@@Z
 !LcK@
+" -ie 
+" -oe 
 " couldn't be read
 " doesn't exist
 " is not a DMX, FBX or SMD file
@@ -197,6 +200,7 @@ $~aA;F
 %05d,     0x%p,     %5d,      '%s'
 %5EUeu
 %?SetAt@FbxLayerElementArray@fbxsdk@@QEAAXHPEBXW4EFbxType@2@@Z
+%CK_-
 %GoU?*
 %d %d %d
 %d %d %d %d
@@ -213,6 +217,7 @@ $~aA;F
 %f,%f
 %f,%f,%f,%f
 %i %i %i %i
+%i.txt
 %s (%s -> %s)
 %s (%s) = remove( pos %i, count %i )
 %s + %-8s %s
@@ -232,7 +237,6 @@ $~aA;F
 %sEdgeCurveType
 %sEdgeValue
 %sIndices
-%s\%s%i.txt
 %s\bin\%s\bin
 %s_%03d.vpk
 %s_%d
@@ -254,7 +258,6 @@ $~aA;F
 (A^A\
 (A^A]_[H
 (A^_^[H
-(A_A]][
 (A_A^
 (A_A^A]A\_^][
 (A_A^^]
@@ -367,6 +370,7 @@ $~aA;F
 )D$ f
 )D$0E
 )D$@B
+)D$@D
 )D$@H
 )D$@ff
 )D$PD
@@ -382,7 +386,7 @@ $~aA;F
 )L$`E
 )L$`H
 )L$pH
-)MpMc
+)MpIc
 )T$0Hc
 )T$pD
 )T$pH
@@ -414,12 +418,12 @@ $~aA;F
 )t$PD
 )t$PE3
 )t$PH
-)t$PHc
 )t$PI
 )t$PL
 )t$`A
 )t$`D
 )t$`H
+)t$`Hc
 )t$`Lc
 )t$pH
 )u(Hc+;k
@@ -437,7 +441,7 @@ $~aA;F
 )|$pIc
 )|B?d!
 )} A9>
-)}pMc
+)}pIc
 *** Converter error - element "%s" already has a non-int attribute "%s"!
 *** Element "%s" has attribute "%s" with an unexpected type!
 *** Log "%s" has attribute "%s" with an unexpected type (expected int array)!
@@ -468,6 +472,7 @@ $~aA;F
 +D$dH
 +D$dHc
 +F$Hc
++G$Hc
 +M<7>
 +f)>0'
 +h->|
@@ -719,9 +724,6 @@ $~aA;F
 .?AV?$CDmeTypedLogLayer@VVector@@@@
 .?AV?$CDmeTypedLogLayer@_K@@
 .?AV?$CDmeTypedLogLayer@_N@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0BAAAA@$0A@@@
-.?AV?$CFmtStrN@$0CAAA@$0A@@@
 .?AV?$CTier0AppSystem@VIWorkshopSetup@@@@
 .?AV?$CTier1AppSystem@VIWorkshopSetup@@$0A@@@
 .?AV?$CTier2AppSystem@VIWorkshopSetup@@$0A@@@
@@ -881,6 +883,19 @@ $~aA;F
 .?AV?$CUndoLayerAdded@VVector@@@@
 .?AV?$CUndoLayerAdded@_K@@
 .?AV?$CUndoLayerAdded@_N@@
+.?AV?$RemapIndexFunctor@$00$01VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$RemapIndexFunctor@$00$0A@VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$RemapIndexFunctor@$01$01VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$RemapIndexFunctor@$01$0A@VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$RemapIndexFunctor@$04$0A@VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$RemapIndexFunctor@$0A@$0A@VFbxLayerElementUserData@fbxsdk@@@@
+.?AV?$_Func_base@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$00$01VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$00$0A@VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$01$01VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$01$0A@VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$04$0A@VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
+.?AV?$_Func_impl@V?$RemapIndexFunctor@$0A@$0A@VFbxLayerElementUserData@fbxsdk@@@@V?$allocator@H@std@@HPEBVFbxLayerElementUserData@fbxsdk@@HH@std@@
 .?AV?$_Ref_count_obj@V__ExceptionPtr@@@std@@
 .?AV?$_Ref_count_obj_alloc@V__ExceptionPtr@@U?$_StaticAllocator@H@@@std@@
 .?AVCAsset@@
@@ -1089,6 +1104,7 @@ $~aA;F
 .?AVbad_alloc@std@@
 .?AVbad_cast@std@@
 .?AVbad_exception@std@@
+.?AVbad_function_call@std@@
 .?AVbad_typeid@std@@
 .?AVexception@std@@
 .?AVtype_info@@
@@ -1195,6 +1211,7 @@ $~aA;F
 0A]A\_][
 0A]^[
 0A^^[
+0A^_[
 0A^_^
 0A^_^][
 0A_A]A\_^
@@ -1214,7 +1231,6 @@ $~aA;F
 0A_A^_][
 0A_A^_^]
 0A_^]
-0A__[
 0A__]
 0D9qhu
 0Hc2A
@@ -1242,7 +1258,7 @@ $~aA;F
 1eaB@
 1sAL"
 2%?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-200327173911Z0#
+200515052840Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1263,7 +1279,6 @@ $~aA;F
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
 64 283 0
-6E-coU
 6L9l$Pt
 700WP
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
@@ -1281,6 +1296,7 @@ $~aA;F
 8A_A^_[
 8A_A^_]
 8A__][
+8CDmeSource CUtlMemoryPool
 8L$`t
 8\$pt
 8\$xt
@@ -1310,9 +1326,7 @@ $~aA;F
 99~-H
 99~EH
 9:~Nfff
-9C |I
 9C |K
-9C |q
 9D$ }(Hc/;o
 9Eo~ 3
 9Eo~83
@@ -1336,6 +1350,7 @@ $~aA;F
 9_<~HH
 9_<~LH
 9_<~fH
+9_@~)I
 9_p~$
 9i<~O
 9i@~VH
@@ -1416,7 +1431,6 @@ $~aA;F
 < tH<	tD<
 <!-- DMXVersion
 <!-- dmx
-<"uBD
 <$E;Q
 <2t	<3u	A
 <>#n2
@@ -1470,6 +1484,7 @@ $~aA;F
 ?<"t>H
 ?<%u	H
 ??$EvaluateValue@M@FbxProperty@fbxsdk@@QEAAMAEBVFbxTime@1@_N@Z
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0FbxAMatrix@fbxsdk@@QEAA@AEBV01@@Z
 ??0FbxAxisSystem@fbxsdk@@QEAA@W4EUpVector@01@W4EFrontVector@01@W4ECoordSystem@01@@Z
 ??0FbxAxisSystem@fbxsdk@@QEAA@XZ
@@ -1488,6 +1503,8 @@ $~aA;F
 ??0FbxVector2@fbxsdk@@QEAA@XZ
 ??0FbxVector4@fbxsdk@@QEAA@NNNN@Z
 ??0FbxVector4@fbxsdk@@QEAA@XZ
+??1CThreadSemaphore@@QEAA@XZ
+??1CThreadSyncObject@@QEAA@XZ
 ??1FbxAMatrix@fbxsdk@@QEAA@XZ
 ??1FbxAxisSystem@fbxsdk@@UEAA@XZ
 ??1FbxColor@fbxsdk@@QEAA@XZ
@@ -1515,6 +1532,8 @@ $~aA;F
 ??YFbxString@fbxsdk@@QEAAAEBV01@PEBD@Z
 ?@En[vP
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
+?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?BeginGetMeshEdgeVertices@FbxMesh@fbxsdk@@QEAAXXZ
 ?Bind@FbxPathUtils@fbxsdk@@SA?AVFbxString@2@PEBD0_N@Z
 ?Buffer@FbxString@fbxsdk@@QEAAPEADXZ
@@ -1549,6 +1568,7 @@ $~aA;F
 ?EvaluateGlobalTransform@FbxNode@fbxsdk@@QEAAAEAVFbxAMatrix@2@VFbxTime@2@W4EPivotSet@12@_N2@Z
 ?Exist@FbxPathUtils@fbxsdk@@SA_NPEBD@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
 ?ExtractFileExtension@CBufferString@@QEAAPEBDPEBD@Z
 ?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
@@ -1561,7 +1581,7 @@ $~aA;F
 ?FindAndReplace@FbxString@fbxsdk@@QEAA_NPEBD0_K@Z
 ?FindHierarchical@FbxProperty@fbxsdk@@QEBA?AV12@PEBDAEBVFbxDataType@2@_N@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?GenerateNormals@FbxMesh@fbxsdk@@QEAA_N_N00@Z
 ?Get@FbxProperty@fbxsdk@@IEBA_NPEAXAEBW4EFbxType@2@@Z
@@ -1579,9 +1599,12 @@ $~aA;F
 ?GetControlPointIndicesCount@FbxCluster@fbxsdk@@QEBAHXZ
 ?GetControlPointWeights@FbxCluster@fbxsdk@@QEBAPEANXZ
 ?GetCount@FbxLayerElementArray@fbxsdk@@QEBAHXZ
+?GetDataName@FbxLayerElementUserData@fbxsdk@@QEBAPEBDH@Z
+?GetDataType@FbxLayerElementUserData@fbxsdk@@QEBA?AVFbxDataType@2@H@Z
 ?GetDeformer@FbxGeometry@fbxsdk@@QEBAPEAVFbxDeformer@2@HW4EDeformerType@32@PEAVFbxStatus@2@@Z
 ?GetDeformerCount@FbxGeometry@fbxsdk@@QEBAHW4EDeformerType@FbxDeformer@2@@Z
 ?GetDeformerCount@FbxGeometry@fbxsdk@@QEBAHXZ
+?GetDirectArrayVoid@FbxLayerElementUserData@fbxsdk@@QEBAPEBV?$FbxLayerElementArrayTemplate@PEAX@2@HPEA_N@Z
 ?GetDocumentInfo@FbxDocument@fbxsdk@@QEBAPEAVFbxDocumentInfo@2@XZ
 ?GetDstObjectCount@FbxProperty@fbxsdk@@QEBAHAEBVFbxCriteria@2@@Z
 ?GetDuration@FbxTimeSpan@fbxsdk@@QEBA?AVFbxTime@2@XZ
@@ -1591,6 +1614,8 @@ $~aA;F
 ?GetElementNormalCount@FbxGeometryBase@fbxsdk@@QEBAHXZ
 ?GetElementUV@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementUV@2@HW4EType@FbxLayerElement@2@@Z
 ?GetElementUVCount@FbxGeometryBase@fbxsdk@@QEBAHW4EType@FbxLayerElement@2@@Z
+?GetElementUserData@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementUserData@2@H@Z
+?GetElementUserDataCount@FbxGeometryBase@fbxsdk@@QEBAHXZ
 ?GetElementVertexColor@FbxGeometryBase@fbxsdk@@QEAAPEAVFbxLayerElementVertexColor@2@H@Z
 ?GetElementVertexColorCount@FbxGeometryBase@fbxsdk@@QEBAHXZ
 ?GetElements@FbxMatrix@fbxsdk@@QEBAXAEAVFbxVector4@2@AEAVFbxQuaternion@2@00AEAN@Z
@@ -1672,6 +1697,8 @@ $~aA;F
 ?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
 ?RemoveFirstDir@CBufferString@@QEAAPEBDPEAV1@@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?StripExtension@CBufferString@@QEAAPEBDXZ
@@ -1679,6 +1706,7 @@ $~aA;F
 ?Swap@CBufferString@@QEAAXAEAV1@@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
+?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?UUUUUU
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
@@ -1687,7 +1715,6 @@ $~aA;F
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
 ?kxG2)
-?vhE3
 ?{Q}<
 @.data
 @.gfids
@@ -1695,7 +1722,6 @@ $~aA;F
 @80t9H
 @80tUH
 @80u#H
-@854]
 @8t$x
 @8y:t
 @8{QH
@@ -1729,7 +1755,6 @@ $~aA;F
 @SAVAWH
 @SAVH
 @SAWH
-@SUAUAWH
 @SUAVH
 @SUVH
 @SUVWATAUAVAWH
@@ -1758,7 +1783,6 @@ $~aA;F
 @SWAUAVH
 @SWAVAWH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
 @UATAVH
 @UATAWH
@@ -1778,12 +1802,12 @@ $~aA;F
 @USWAVH
 @USWH
 @UVATAUH
+@UVATAVH
 @UVAVAWH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
 @UVWH
-@UWATAVH
 @UWATAWH
 @UWATH
 @UWAVAWH
@@ -1819,6 +1843,7 @@ A;>|SA;~
 A;?|XA;
 A;@X}
 A;BX}
+A;Fp}
 A;HH}aI
 A;RX}
 A;^p|
@@ -1847,14 +1872,16 @@ AX9GXu
 A\^[]
 A\_^[]
 A]A\]
+A]A\^]
 A]A\_
+A]A\_]
 A]^[]
 A]_^[]
 A]_^]
 A^A\[]
 A^A\]
+A^A\^]
 A^A\_[]
-A^A\_]
 A^A\_^[
 A^A\_^]
 A^A]A\]
@@ -1862,11 +1889,9 @@ A^A]A\_]
 A^A]A\_^[]
 A^A][
 A^A]]
-A^A]^]
 A^A]^][
 A^^[]
 A^_^[]
-A^_^]
 A_A\]
 A_A\^]
 A_A\_]
@@ -1882,11 +1907,11 @@ A_A^A\^]
 A_A^A\^][
 A_A^A\_]
 A_A^A\_^
+A_A^A\_^[]
 A_A^A\_^]
 A_A^A]A\]
 A_A^A]A\^
 A_A^A]A\^[
-A_A^A]A\^[]
 A_A^A]A\^]
 A_A^A]A\_
 A_A^A]A\_^[
@@ -1904,7 +1929,6 @@ A_A^_
 A_A^_]
 A_A^_^]
 A_^[]
-A__^[]
 Aborting - cannot delete file: %s
 Aborting - cannot write to VPK: %s
 Access violation - no RTTI data!
@@ -2101,7 +2125,6 @@ CDmeSingleIndexedComponent CUtlMemoryPool
 CDmeSound CUtlMemoryPool
 CDmeSound::Resolve
 CDmeSoundClip CUtlMemoryPool
-CDmeSource CUtlMemoryPool
 CDmeSourceDCCFile CUtlMemoryPool
 CDmeSourceMayaAnimationFile CUtlMemoryPool
 CDmeSourceMayaFile CUtlMemoryPool
@@ -2401,8 +2424,8 @@ D$0L;
 D$0Lc
 D$0PK
 D$0fA
-D$0t5
-D$0t9
+D$0t7
+D$0t?
 D$0tHA
 D$49C
 D$4;|$@u)
@@ -2444,6 +2467,7 @@ D$HL;
 D$HLc
 D$HMc
 D$P I
+D$P;D$p
 D$PA#
 D$PA;
 D$PE3
@@ -2455,20 +2479,19 @@ D$PIc
 D$PL;
 D$PLc
 D$Pt$A
-D$T;D$x
+D$T;D$t
 D$TA;
-D$TE3
 D$X98
-D$X;D$\
 D$X;u
+D$XD8=-
 D$XD8p
 D$XD90}
 D$XE3
 D$XH;
 D$XHc
 D$XHc>
+D$XHcJ
 D$XKc
-D$\;G
 D$`A+
 D$`B;D
 D$`D+
@@ -2479,13 +2502,12 @@ D$`E3
 D$`H9t$ht
 D$`H;
 D$`Hc
-D$`HcJ
+D$`Hc8;x
 D$`L;
 D$`PK
 D$hA+
 D$hH;
 D$hHc
-D$hHc8;x
 D$hIc
 D$lE3
 D$pD9
@@ -2495,6 +2517,7 @@ D$pHc
 D$pL;
 D$tE3
 D$xE3
+D$xH;
 D$xHc
 D$xI;
 D$xL;
@@ -2538,7 +2561,6 @@ D9d$0
 D9l$0
 D9l$@uC
 D9m`u*Ic
-D9n`~rE
 D9pXu
 D9p`t
 D9phtrA
@@ -2549,30 +2571,31 @@ D9wXt
 D9wXt/H
 D9xXL
 D9|$ 
-D;-r#
 D;8}aH
+D;=LP
 D;D$0u
-D;E8u
-D;EHu
+D;E@u
 D;EPu
-D;H0|@H
+D;H0|p
 D;K4u
 D;L$0u
+D;M@u
+D;M`u
 D;d$H
 D;d$Xu
 D;g`|
 D;k ~=
 D;l$8u!
-D;s ~
 D;sXu
-D;t$0
 D;u0u
 D;v(|
 D;wXu
+D;{ ~
 D;|$0
 D;|$H
 D;|$Hu'A
 D;|$xu
+D;}(u
 D<P0I
 DD$$H
 DDDDUUUU
@@ -2804,7 +2827,6 @@ ERROR: Specified path %s could not be made content-relative
 ERROR: Specified texture file (%s) Size %dx%d dimensions not powers of two, perhaps resize to %dx%d
 ERROR: Unable to create an attribute handle! Save, quit, restart and clean up your file to have fewer elements!
 EXPORTSYSTEM_INTERFACE_VERSION_001
-E_;Eo~
 E`+UX
 Ease In
 Ease In/Out
@@ -2821,7 +2843,6 @@ Encountered invalid element ID data!
 EngineServiceMgr001
 EngineVer
 EnterCriticalSection
-EnvironmentMapBuilder_001
 Eo9GXu6Lc
 Error
 Error adding %s
@@ -2907,15 +2928,16 @@ G8@84
 G8Hc@
 GAMECONSOLE
 GAMEROOT
+GD$(H
+GD$8H
 GD$xM
 GL$8A
 GL$HD
+GL$XA
 GL$XE3
 GL$XL
-GL$hA
-GL$hH
-GL$hL
-GL$hM
+GL$XM
+GT$(H
 GT$8A
 GT$8H
 GT$HD
@@ -2924,7 +2946,8 @@ GT$XH
 GT$`A
 G\$8A
 G\$8H
-G\$hH
+G\$8I
+G\$XH
 G\$xH
 Ga=UU
 GameResourceServiceClientV001
@@ -2994,12 +3017,14 @@ GetThreadTimes
 GetTickCount
 GetTickCount64
 GetUserNameA
+Gl$(H
 GlobalAlloc
 GlobalLock
 GlobalSize
 GlobalUnlock
 Gt$8H
 Gt$XI
+G|$8H
 G|$H3
 G|$HH
 H SVH
@@ -3090,14 +3115,11 @@ HcD$X
 HcD$XA
 HcD$XH
 HcD$XL
-HcD$hH
 HcD$pA
 HcD$pH
 HcD$xL
-HcE0H
-HcE0M
-HcE8L
-HcEPH
+HcE8H
+HcE@L
 HcEPL
 HcF L
 HcF0A
@@ -3121,9 +3143,9 @@ HcL$H
 HcL$HH
 HcL$XA
 HcL$XH
+HcL$`
 HcL$`I;
 HcL$hA
-HcL$p
 HcN(;
 HcQ(Mc
 HcR ;
@@ -3135,10 +3157,12 @@ HcT$@L
 HcT$XLc
 HcT$hH
 HcU H
+HcU(H
 HcU0H
-HcU8H
-HcUHH
-HcUhLc
+HcU0L
+HcU@H
+HcU`H
+HcUxLc
 HcV0H
 HcW ;
 Hc\$@3
@@ -3168,7 +3192,7 @@ Hc|$ 3
 Hc}HE3
 Hc~`;~pu
 HelpSystem_001
-HiL$`
+HiL$X
 HostStateMgr001
 Ht)I;
 I 9i u
@@ -3271,7 +3295,6 @@ KeyValues2 (no ids)
 KeyValues: Can't serialize attribute of type %s into KeyValues files!
 KeyValues: Element uses unknown element type %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 Kochanek-Bartels
@@ -3291,7 +3314,6 @@ L$ SATAUAWH
 L$ SH
 L$ SUVWATAVAWH
 L$ SVWH
-L$ SWH
 L$ UATAUAVAWH
 L$ UH
 L$ UVWATAUAVAWH
@@ -3338,6 +3360,7 @@ L$@Lc9M
 L$@uU
 L$D;L$T
 L$DE3
+L$HD+
 L$HD;
 L$HH3
 L$HHc
@@ -3351,18 +3374,19 @@ L$PE3
 L$PM+
 L$VfA
 L$XB;
-L$XD+UxI
 L$XE3
 L$XH;M
 L$`D;
 L$`D;ep
 L$`E3
 L$`H;
+L$aE3
 L$hD;
 L$hE3
 L$hHc
 L$pE3
 L$pH;M
+L$xHcE8H
 L$xfA;
 L$|E3
 L(:A:
@@ -3371,14 +3395,14 @@ L(;E:
 L(<A:
 L9`8tA
 L9d$ t
-L9d$8t
 L9ext	H
+L9l$ t
 L9l$0t
 L9mwt	H
 L9t$ t
 L9t$0t
 L9t$8t
-L9t$`
+L9t$@
 L9uot	H
 L9|$0t
 L9|$@t
@@ -3416,20 +3440,19 @@ LcCPH
 LcCXD
 LcD$PH
 LcD$|3
-LcE(L
-LcE8M
-LcE@L
+LcE0H
+LcE@H
 LcF`D
 LcG$H
 LcK$A;
 LcK<L
+LcMPI
 LcT$p3
 Lcd$8H
 LceWH
 LcsHH
 Lct$H3
 Lct$h3
-Lct$xA
 LcwHI
 Lc|$@L
 Lc|$XL
@@ -3532,6 +3555,7 @@ OF>;^
 OHcs 
 OX9JXt
 OX9KXu
+O]oHcE
 October
 OpenClipboard
 Operator cycle found during dependency graph traversal!
@@ -3542,7 +3566,6 @@ Oscillate Vector
 Other
 P Lce
 P Lc}
-P(Hc]
 P(Hcu
 P(Lc]
 P(Lc}
@@ -3607,6 +3630,7 @@ PropertyEditorSystem_001
 Proxies
 Q,A3P
 Q5rHg,>
+Q`--u
 QueryPerformanceCounter
 QueuedLoaderVersion001
 RHcs 
@@ -3796,7 +3820,7 @@ SteamMatchGameSearch001
 SteamMatchMaking009
 SteamMatchMakingServers002
 SteamNetworking005
-SteamUser020
+SteamUser021
 SteamUtils009
 StereoFlip
 SubmitThreadpoolWork
@@ -3819,6 +3843,7 @@ T$8Lc
 T$<D;
 T$<H;
 T$<Ic
+T$@+G$A
 T$@@2
 T$@E3
 T$@Ic
@@ -3827,6 +3852,7 @@ T$HIc
 T$PD+
 T$PE3
 T$PH3
+T$Pff
 T$X9:
 T$XH+
 T$XHc
@@ -3857,8 +3883,6 @@ TongueH
 TongueV
 TongueWidth
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -3881,6 +3905,7 @@ UATAVH
 UATAVI
 UATAWI
 UAUAVAWH
+UAUAVH
 UAUAVI
 UAUAWH
 UAUAWI
@@ -3894,16 +3919,16 @@ USAVAWH
 USAVH
 USAWH
 USER32.dll
-USVATAUAVAWH
 USVATI
 USVAUI
 USVAVH
 USVAWH
 USVWATAUAVAWH
+USVWATAUAVH
+USVWATAVAWH
 USVWATH
 USVWAUAVAWH
 USVWAVH
-USVWAWH
 USVWH
 USWATAUH
 UTF-16LEUNICODE
@@ -3911,13 +3936,13 @@ UTF-8
 UUUUUU
 UVATAUAVAWH
 UVATAUAWH
+UVATAUH
 UVATAVAWH
 UVATAWH
 UVATH
 UVATI
 UVAUAVAWH
-UVAUAVH
-UVAUAWI
+UVAUAWH
 UVAUH
 UVAVAWH
 UVAVH
@@ -3929,9 +3954,10 @@ UVWATAWH
 UVWATH
 UVWAUAVAWH
 UVWAUAWH
+UVWAUH
 UVWAVAWH
-UVWAVH
 UWATAUAVH
+UWATAUH
 UWATAVAWH
 UWATAWH
 UWATH
@@ -3940,7 +3966,6 @@ UWAVH
 UWAVI
 UWAWH
 Ugx	H
-Uh;Up
 Unable to create new frame.
 Unable to create new sequence.
 Unable to create unknown element %s!
@@ -4075,7 +4100,6 @@ V_tier0_ispunct
 V_tmpnam
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 Valve Make Sheet File
@@ -4195,6 +4219,7 @@ Zod(^?
 \$ H;
 \$ UAVAWH
 \$ UH
+\$ UVATAVAWH
 \$ UVWATAUAVAWH
 \$ UVWAUAWH
 \$ UVWAVAWH
@@ -4211,36 +4236,37 @@ Zod(^?
 \$0Hc
 \$0Ic
 \$8A+
-\$8A;
 \$8E3
+\$8Hc
 \$8uIH
 \$<A;
 \$@;\$`
-\$@@8=Y
-\$@A#
+\$@@8=
+\$@H9t$Pt
 \$@H;
 \$@Hc
 \$@Ic
-\$@IcM
 \$@f;
 \$@u$M
 \$@u+M
 \$@uFM
-\$HH9t$ht
+\$HA;
+\$HHc
+\$Hta
 \$PH+
 \$PHc
 \$Pfff
 \$Xt+H
-\$`D;l$D
 \$gm?
 \$hA;
+\$hD;l$H
 \$p;D$0u'
 \$pA;
+\$pD;
 \$pE3
+\$pHcD$hL
 \$pu+H
 \$xD8}
-\$xD;
-\$xE3
 \$xv.
 \D$8H
 \D$8L
@@ -4251,6 +4277,7 @@ Zod(^?
 \studiomdl.exe
 \vtex.exe
 ])6M>&
+]8fff
 ]>)2X
 ]@fff
 ]HE9F
@@ -4266,7 +4293,6 @@ _V_ExtractFileExtension
 _V_ExtractFilePath
 _V_FileBase
 _V_FixupPathName
-_V_MakeAbsolutePath
 _V_SetExtension
 _V_StringAfterPrefix
 _V_StringAfterPrefixCaseSensitive
@@ -4296,6 +4322,7 @@ __unspecified_texture
 __vectorcall
 _addons
 _anim
+_bakeresourcecache
 _color.
 _color_blue
 _color_red
@@ -4310,6 +4337,7 @@ _normal
 _oD>Kg
 _specmask_specexp
 _trans
+_vrad3
 _zero
 `+!]?
 `.rdata
@@ -4424,6 +4452,7 @@ bad address
 bad allocation
 bad exception
 bad file descriptor
+bad function call
 bad message
 balance
 balance$0
@@ -4605,7 +4634,6 @@ d$PfD
 d$XLc
 d$`D9
 d$`E3
-d$`E;
 d$`fff
 d$hE3
 d$heL
@@ -4654,7 +4682,7 @@ displaytime
 dmemesh
 dmfbxserializer
 dmx file
-dmxconvert -allowdebug -i "%s" -ie %s -o "%s" -oe %s -of %s
+dmxconvert -allowdebug -i "
 dominators
 drawGameRenderablesMask
 drawToolRenderablesMask
@@ -4703,6 +4731,7 @@ env_global_light
 env_sky
 error
 error opening required file %s
+exA_A^A]A\_^[]
 executable format error
 exit_anim
 exit_sequence
@@ -4932,7 +4961,6 @@ l$8HcO
 l$8Hk
 l$8fE;
 l$@9k
-l$@<"
 l$@@2
 l$@H;
 l$@Hc
@@ -4945,6 +4973,7 @@ l$PHcl$X
 l$PLc
 l$PfA
 l$Pff
+l$XE3
 l$`E3
 l$`Ic
 l$`M;
@@ -5390,14 +5419,11 @@ t!LcO
 t!McY
 t!fA;
 t"<.u
-t$ ;C ~
-t$ @2
 t$ A;
 t$ AVH
 t$ AWH
 t$ E2
 t$ E3
-t$ Hc
 t$ Lc
 t$ UH
 t$ UWATAVAWH
@@ -5438,10 +5464,12 @@ t$8Ic
 t$8Lc
 t$8Lc3D;s
 t$@;_
+t$@A#
 t$@E3
 t$@Hc
 t$@Hk
 t$@Ic
+t$@IcM
 t$@fE;
 t$@tsLcK<L
 t$@ttLcK<L
@@ -5459,13 +5487,13 @@ t$PE3
 t$PLk
 t$Pff
 t$Puw
+t$`@8q
 t$`E3
+t$`Hc
 t$`Mcm
 t$`t	H
 t$`uDH
 t$fE;
-t$h@8q
-t$hHc
 t$hL;|$H
 t$hfI
 t$pE3
@@ -5497,7 +5525,7 @@ t2HcE
 t4HcE
 t4McF
 t8H9^ t2H
-t9H9=V}
+t9H9=v
 t:LcM
 t;D9wXu5H
 t<fff
@@ -5611,19 +5639,18 @@ u;fD;
 u<fD;
 u=Hc3;s
 u=L;k
-uE<"tA< ~=B
 uEHc3;s
 uFfD;
 uGfD;
 uMHcE
+uSHcEXH
 uT<0uP
-uUHcEPH
 u[HcI
 u`HcL
-u`LcE
 ueHcS
 uf!T$(H!T$ 
 uhIc4
+uhLcM0I
 uint64
 uint64 log
 uint64_array
@@ -5760,6 +5787,7 @@ x$H9-
 x%E;n
 x'D;A`}!H
 x.HcAhL;
+x.fff
 x0v0$
 x9H;H
 x9HcGhH;
@@ -5789,6 +5817,7 @@ z0x0:
 zY;>u:m	
 znear
 {(H9;t
+|	;Eo
 |#tAM
 |$ 9n(~^L
 |$ A+
@@ -5866,23 +5895,17 @@ znear
 |$XE3
 |$XHcU
 |$XHk
-|$XLc
 |$\.u
 |$`E3
 |$`Hc
 |$`Ic
 |$`IcF
 |$`Lc
+|$`ff
 |$hL;
 |$p9:~JL
 |$pE3
 |$pt	H
-|+A;F
-|,A;F
-|-A;G
-|@q`+3
-|HA;G
-|JA;G
 |_A;^
 |aA;^
 |auK;
@@ -5890,7 +5913,6 @@ znear
 } Hcu`H
 } fE;A
 } fE;H
-} u,H
 }"fA;
 }%;Q|
 }&f;{

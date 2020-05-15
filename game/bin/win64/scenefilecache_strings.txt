@@ -1,4 +1,3 @@
-	7mx7
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
                 AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZ
   %20s = '%s'
@@ -60,7 +59,6 @@ $fA;P
 .?AV?$CBaseAppSystem@VIAppSystem@@@@
 .?AV?$CBaseAppSystem@VIResponseRulesFileCache@@@@
 .?AV?$CBaseAppSystem@VISceneFileCache@@@@
-.?AV?$CFmtStrN@$0EAA@$0A@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
 .?AV?$CRefCounted@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
 .?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@PEBDV?$CUtlMemory@PEBDH@@@@PEBD@@
@@ -144,7 +142,8 @@ $fA;P
 131022120000Z
 141022000000Z
 181004000000Z
-200327173839Z0#
+1_tuHF(
+200515052403Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -167,7 +166,6 @@ $fA;P
 :LZMAu
 ;A ~W
 ;C ~M
-;fD9{
 <"u,H
 <$fE;Q
 <deferred>
@@ -178,6 +176,7 @@ $fA;P
 ?5zlO
 ??0CUniformRandomStream@@QEAA@XZ
 ???CRR_Response bogus index
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?D+}X%
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -186,6 +185,7 @@ $fA;P
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?StripExtension@CBufferString@@QEAAPEBDXZ
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
@@ -201,9 +201,8 @@ $fA;P
 @SUVWH
 @SUWAVAWH
 @SVWATAWH
-@UATAWH
+@UATAUAVH
 @UAVAWH
-@UAWH
 @USVWATAUAVAWH
 @UVWATAUAVAWH
 @VAVH
@@ -228,14 +227,14 @@ ATAVH
 AU$?<
 AU2BU$?0AUH
 AVAWH
-A_A\]
+A^A]A\]
 A_A]A\_]
+A_A^A\_]
 A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^]
-A_A^_
 AcquireSRWLockExclusive
 An RR_Concept couldn't find its string in the symbol table!
 AnimGraphEditorUtils001
@@ -350,7 +349,6 @@ EconItemToolModel_001
 Embedded criteria Generated: rule '%s' pointing to response '%s'.
 Embedded response receiving name: '%s'.
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
 Expecting '{' in enumeration '%s', got '%s'
 Expecting '{' in rule '%s', got '%s'
@@ -363,6 +361,7 @@ FontManager_001
 Found %i matching rules, selecting slot %i
 GD$8D
 GSFailure
+GT$(H
 GT$8H
 GU2CU$
 G\$8L
@@ -431,8 +430,8 @@ L$PE3
 L$PHc
 L$XE3
 L$pE3
-L9d$ t
-L9d$(t
+L9l$0t
+L9l$8t
 L9t$0t
 L9t$8t
 LOG_GENERAL
@@ -605,8 +604,6 @@ TextLayout_001
 TextMessageMgr_001
 ThenSimple rule Generated: rule '%s' with criteria '%s' pointing to response '%s'.
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -616,9 +613,11 @@ UPDATE_STRING_TOKEN_DATABASE
 USAUH
 UVAVH
 UWATAUAWH
+UWATAVAWH
 UWAUH
 Unable to load #included script %s
 UserInfoChangeService_001
+V!!Ee
 VAVAWH
 VApplication001
 VAvi001
@@ -669,7 +668,6 @@ V_strlower_fast
 V_strtod
 V_strtok
 V_vsnprintf
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Vector
@@ -736,7 +734,6 @@ displaylast
 enumeration
 error
 fD;7}?I
-fD;;}
 fD;a2
 fD;j2
 failed
@@ -772,6 +769,7 @@ l$8H+
 l$8HcO
 l$8fD
 l$PxxHc
+l$pE3
 l$pE9
 m0k0$
 m_Followup
@@ -828,7 +826,6 @@ t!McY
 t!fA;
 t!fff
 t$ AVH
-t$ WAVAWH
 t$ WH
 t$0+A$t
 t$0H+
@@ -844,7 +841,7 @@ t$fE;
 t$x;_@u
 t/D8?t*
 t0E84$t*
-t9H9=
+t9H9=v4
 t=</u
 tED80t@H
 tKD88tFH
@@ -854,7 +851,7 @@ targetclassname
 thensimple
 tier0.dll
 trfff
-u	@8=
+u	@8==#
 u0fA;
 u;fD;
 u<fD;
@@ -884,7 +881,7 @@ xRHcQ
 xZIcI
 x^HcG
 z0x0:
-{PH9=
+{PH9=n
 {}()':
 |$ ATAVAWH
 |$ AVH
@@ -900,7 +897,6 @@ z0x0:
 |$PHc
 |$Xff
 |$`Lc
-}(;=?
 }3fD;C.w,
 }:IcI
 }JfA;

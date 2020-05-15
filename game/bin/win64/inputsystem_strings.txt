@@ -2,18 +2,15 @@
                 AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZ
  9(X`
  A^][
- A^_]
  A_A^A\
  A_A^A]A\_
  A_A^^
  A_A^_
- A_^]
  A__^
  HcA(3
  HcA(H
  Hci03
  LcI(H
- ReadToken overflow
  vJH+
 #base
 #base is NULL 
@@ -27,7 +24,6 @@
 'is NOT active'
 'is active'
 (*%s*), 
-(A_A]][
 (A_A^
 (D$PD
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -47,6 +43,7 @@
 )t$@I
 )t$pH
 )t$pM
+*7zKP-
 +C$Hc
 ,0<	w
 ,|%)v
@@ -62,7 +59,6 @@
 -pass_vk_processkey
 .?AV?$CBaseAppSystem@VIInputStackSystem@@@@
 .?AV?$CBaseAppSystem@VIInputSystem@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VIInputStackSystem@@@@
 .?AV?$CTier0AppSystem@VIInputSystem@@@@
 .?AV?$CTier1AppSystem@VIInputStackSystem@@$0A@@@
@@ -98,6 +94,7 @@
 .CRT$XPZ
 .CRT$XTA
 .CRT$XTZ
+.^Ur 
 .data
 .data$r
 .edata
@@ -128,13 +125,14 @@
 0 => Cross-shaped deadzone (default), 1 => Square deadzone.
 00000409
 061110000000Z
-0A__[
+0A^^[
+0A^_[
 0uU9rDu
 0v0b1
 131022120000Z
 141022000000Z
 181004000000Z
-200321045204Z0#
+200515054544Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -147,7 +145,6 @@
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
-6z|n8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8A]_H
 8QRtv
@@ -155,27 +152,32 @@
 99~3H
 9C |K
 9\$`t
-9_N,j
 9_p~$
 :^MtA
 ;A ~W
 ;D$@@
-<"uBD
-<CGs`K
 <NULL>
 <deferred>
 <no failure reason set>
 <null>
 <unconnected>
 ?5zlO
+?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ConMsg@@YAXPEBDZZ
 ?DevMsg@@YAXPEBDZZ
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?ShortenPath@CBufferString@@QEAAPEBD_N@Z
+?StripExtension@CBufferString@@QEAAPEBDXZ
+?ToLowerFast@CBufferString@@QEAAXH@Z
 @.data
 @.tls
 @A^A\_^]
@@ -187,18 +189,18 @@
 @A__^][
 @Lc:E3
 @SAVH
-@SUAUAWH
 @SUAVH
 @SUVWAWH
 @SUVWH
-@SWAWH
+@SVAVH
+@SWAVH
 @UATAUAVAWH
 @UAVAWH
 @UAWH
+@USAVAWH
 @USVWATAUAVAWH
 @UVAUAVAWH
 @UVWATAUAVAWH
-@UWAVH
 @WAUH
 @tBE8g@t"D8
 A8H	P(
@@ -232,6 +234,7 @@ AVAWH
 A_A^A]A\]
 A_A^A]A\_^[]
 A_A^A]A\_^]
+A_A^[]
 A_A^]
 A_A^^
 A_A^_
@@ -313,14 +316,14 @@ ConfigurationSystem_001
 ConnectInterfaces
 CreateInterface
 CreateWindowExA
-Ct'G2
 Current coordinate bias %s: %g,%g scale %g,%g
 Cursor size scaling factor.
-D$ E3
 D$(fI
 D$0E3
 D$0H3L$0H3
 D$0f;
+D$4t3
+D$4u4
 D$8+C$H
 D$8A;
 D$<9T$0wE9T$4w?9T$8w9;
@@ -350,6 +353,7 @@ DotaCardGameClient_001
 E0C07
 E8g@t
 E;~(H
+EHfA;
 EJECT
 EJt2Li
 ENTER
@@ -372,7 +376,6 @@ EconItemToolModel_001
 EnableMouseCapture:  enabling capture of 0x%p
 EnableMouseCapture:  releasing capture of 0x%p
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
 FALSE
 FATAL ERROR: unable to register all schema data: %s
@@ -384,9 +387,14 @@ FindWindowA
 FlattenedSerializersVersion001
 FontManager_001
 GAMECONSOLE
+GD$8D
+GD$8I
+GL$8L
+GL$8M
 GREATER
 GRegisterConfigValue: Unknown error constructing config value "%s"!
 GSFailure
+GT$8H
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -409,6 +417,9 @@ GetTickCount
 GetWindowLongPtrW
 GetWindowTextA
 GetWindowThreadProcessId
+Gt$8H
+Gt$8I
+G|$8L
 H0F08
 H1D$0
 H97t<
@@ -573,14 +584,13 @@ KP_TAB
 KP_VERTICALBAR
 KP_XOR
 KV Conditional Evaluation Error
-KX*+'!}8
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValuesSystem
 L$ SH
-L$ SWH
 L$ fI
+L$0E3
 L$@H1D$0
 L;ghu>fA
 LEFTARROW
@@ -883,8 +893,6 @@ TestScriptMgr001
 TextLayout_001
 TextMessageMgr_001
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -954,11 +962,9 @@ VWAWH
 V_AXIS
 V_AXIS_NEG
 V_AXIS_POS
-V_FixSlashes
 V_GetErrno
 V_GetRtSupportFunctions
 V_SetErrno
-V_StripFilename
 V_UTF16ToUTF8
 V_UTF8ToUTF32
 V_atof
@@ -969,14 +975,10 @@ V_qsort_s
 V_snprintf
 V_sscanf
 V_stricmp_fast
-V_strlower_fast
 V_strtod
 V_strtoi64
 V_tier0_memset
-V_vscprintf
-V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Valve0
 Valve1
@@ -1008,6 +1010,7 @@ X_AXIS_NEG
 X_AXIS_POS
 X_BUTTON
 YEN_SIGN
+YMi3`)
 Y_AXIS
 Y_AXIS_NEG
 Y_AXIS_POS
@@ -1018,15 +1021,12 @@ Z_AXIS
 Z_AXIS_NEG
 Z_AXIS_POS
 \$ A!T
-\$ UVAWH
 \$ UVWATAVH
 \$ VH
 \$ WH
 \$0Hc_0;_@u	H
 \$8;>
 _V_FileBase
-_V_SetExtension
-_V_StripExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -1048,8 +1048,6 @@ cl_auto_cursor_scale
 cl_cursor_scale
 d$ fC
 d$0E3
-d$`E3
-d$`E;
 disabled
 disabling
 disallowed
@@ -1087,6 +1085,7 @@ l$0Hc
 l$8H+
 l$8t>H
 l$8tC
+l$XE3
 m0k0$
 mouse %d %s (%d) at %d %d on window %d
 mouse motion %d %d at %d %d with buttons "%s" on window %d
@@ -1101,17 +1100,14 @@ p0n05
 p1f3q>
 purecall
 quit_x360
-q},;65
 shown
 t	fA	
 t!fA;
 t#E8g@t
-t$ ;C ~
-t$ @2
 t$ AVH
 t$ AWH
-t$ Hc
 t$ WH
+t$(E3
 t$0E3
 t$0H;
 t$0Hc
@@ -1131,11 +1127,11 @@ tBE8g@t"D8
 tEE8g@t
 tPL;Ihu@f
 tRE8g@t
-tVD8%
+tVD8%B
 t[L9c
 tier0.dll
 tu+K$3
-u	@8=uR
+u	@8=%R
 u#D8%
 u)fA;
 u+fA;
@@ -1146,6 +1142,7 @@ unknown event
 unset
 using
 v0t08
+vDzKL
 visible
 vstdlib
 vstdlib.dll
@@ -1172,8 +1169,8 @@ z0x0:
 |$@Hcyp;
 |$@t	3
 |$PA;^ u
-|$PHc
 |$PHc{@$
 |$`Lc
+|$`ff
 }YfA;
 }_t!H

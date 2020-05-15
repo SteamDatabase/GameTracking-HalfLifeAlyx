@@ -7,7 +7,7 @@
   Panel will be created where the menu was opened.
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
- !"#$%&'()*+,-./012355554
+ !"#$%&'()*+,-./012355554jE
  !"#$%&'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000()*+,-./
  'L>[
  9(X`
@@ -39,7 +39,6 @@
  H3E H3E
  Hc9H
  Hct$PH
- ReadToken overflow
  Type Descriptor'
  _][H
  _^]H
@@ -110,7 +109,6 @@ $fA;P
 (A\^][
 (A^A\
 (A_A]A\[H
-(A_A]][
 (A_A^
 (A_[H
 (A_^][
@@ -189,8 +187,6 @@ $fA;P
 -vguimessages
 .00cfg
 .?AV?$CBaseAppSystem@VIVGuiRenderSurface@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0EAA@$0A@@@
 .?AV?$CTier0AppSystem@VIVGuiRenderSurface@@@@
 .?AV?$CTier1AppSystem@VIVGuiRenderSurface@@$0A@@@
 .?AV?$CTier2AppSystem@VIVGuiRenderSurface@@$0A@@@
@@ -375,6 +371,7 @@ $fA;P
 0A^A][
 0A^^[
 0A^^]
+0A^_[
 0A^_]
 0A^_^
 0A^_^[]
@@ -395,6 +392,7 @@ $fA;P
 0A_A^_^]
 0A__[
 0A__^
+0Cor5T
 0_^[H
 0iN>/
 0v0b1
@@ -407,8 +405,7 @@ $fA;P
 1<.	/>:
 2 - bottom-left
 2 - resize down
-2,R-}
-200327173905Z0#
+200515052729Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -422,7 +419,6 @@ $fA;P
 3>N;kU
 3>fvw
 4 - no pin
-4XC\"[F
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -431,10 +427,8 @@ $fA;P
 5555555555555
 55555555555555555555555555555
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
-6Se$D>e
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
-8#u2H
-8#u;H
+8#u.H
 8%uiH
 8A	t"H
 8A^^][
@@ -448,7 +442,6 @@ $fA;P
 99C }
 99~;H
 99~cH
-9:~^d
 9A9G0u!D;
 9C |K
 9D$<t
@@ -466,7 +459,7 @@ $fA;P
 9|$Tu
 9|$Xu
 9|$\u
-;#uSH
+;#u2H
 ;A ~W
 ;D$@@
 ;D$@t
@@ -475,7 +468,7 @@ $fA;P
 ;D$`@
 ;H9>&X
 ;L$Hu
-;L$T}
+;L$L}
 ;T$0u
 ;T$@t
 ;T$Pu
@@ -487,29 +480,29 @@ $fA;P
 ;|$X|
 <	w	@
 < t;<	t7
-<"uBD
+<#uPH
 <$E;Q
 <%u!fE	
 <NULL>
 <deferred>
+<f+h0
 <no failure reason set>
 <null>
 <unconnected>
 =imb;D
 >jtm}S
-?#u5A
-?#u5H
-?#uIH
 ?)tuf97tf
 ?5zlO
 ?7zQ6$
 ?:kP<
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadMutex@@QEAA@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?CircularProgressBar
 ?DevMsg@@YAXPEBDZZ
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -521,6 +514,8 @@ $fA;P
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?SSE and SSE2 are required.
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?UUUUUU
@@ -528,16 +523,16 @@ $fA;P
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
-?vhE3
 @.data
 @.reloc
 @.tls
 @8(tNH
 @80u#H
-@857K	
-@859k
-@85PQ
-@85`\
+@85	n
+@85 U
+@85 _
+@85GN	
+@85Zn
 @8iht
 @8q<u;H
 @8uot
@@ -574,9 +569,7 @@ $fA;P
 @SATAWH
 @SAUAVH
 @SAUAWH
-@SAUH
 @SAVH
-@SUAUAWH
 @SUAVH
 @SUVATAVH
 @SUVAUAWH
@@ -585,6 +578,7 @@ $fA;P
 @SUVH
 @SUVW
 @SUVWATAVAWH
+@SUVWAVAWH
 @SUVWAVH
 @SUVWH
 @SUWATAVH
@@ -622,7 +616,6 @@ $fA;P
 @UVWAVAWH
 @UVWAVH
 @UVWH
-@UWAUH
 @UWAVH
 @UWAWH
 @VATH
@@ -630,6 +623,7 @@ $fA;P
 @VAVH
 @VWAVH
 @VWAWH
+@WAUAVH
 @WAVH
 @WAWH
 @^8U)zj
@@ -669,6 +663,7 @@ A^A\_[]
 A^A]A\[
 A^A]]
 A^A]^]
+A^A]_
 A^A]_^[]
 A^^[]
 A^_]H
@@ -690,6 +685,7 @@ A_A^^
 A_A^_
 A_A^_^[]
 A_A^_^]
+A_^]H
 AbfA;
 Access violation - no RTTI data!
 ActivateItem
@@ -756,13 +752,12 @@ ButtonDepressedBorder
 ButtonKeyFocusBorder
 ButtonToggled
 C @8-
+C @8-'
 C @85
-C @85,Q
-C @85-
-C @85A\
-C @85M
-C @85iK	
-C @85kk
+C @85;n
+C @85=
+C @85\
+C @85yN	
 C&opy
 C(HcC$H
 C-yh/
@@ -994,6 +989,7 @@ D+w<D
 D+|$lD9s
 D08@t	
 D18 t
+D8%Ri
 D82u&H
 D8Y:uEH
 D8a:uDH
@@ -1022,6 +1018,7 @@ D;l$LD
 D;s@|
 D;t$ 
 D;t$P
+D;|$0D
 DD$$H
 DebugTextureInfo001
 December
@@ -1119,7 +1116,6 @@ EnableSaveButton
 Engine2
 EngineServiceMgr001
 EnterCriticalSection
-EnvironmentMapBuilder_001
 Error: Could not save changes.  File is most likely read only.
 EventSystem001
 Ew;Gpu
@@ -1185,7 +1181,10 @@ FreeLibrary
 Friday
 G@A9G0u
 GAMECONSOLE
+GD$8E3
+GD$XE3
 GDI32.dll
+GT$(H
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUI
@@ -1225,10 +1224,12 @@ GetStdHandle
 GetStringTypeW
 GetSystemTimeAsFileTime
 GetText
+Gl$XA
 GraphPanel
 GraphPanel.BgColor
 GraphPanel.FgColor
 GxHcQ
+G|$8H
 H!D$ E
 H!T$0D
 H0F08
@@ -1236,7 +1237,8 @@ H9)u!
 H91u"
 H97t<
 H9;t<H
-H9=)i
+H9=Gx
+H9=Yx
 H9A u
 H9Cht\H
 H9D$PuCI
@@ -1251,7 +1253,8 @@ H;D$`
 H;L$0|bD;
 H;T$0}
 H;l$x|
-H=vmattXH=vtexuqH
+H=vmat
+H=vtex
 HA\_^]
 HA]A\_[
 HA]^][
@@ -1280,12 +1283,12 @@ HcC$H
 HcC0H
 HcD$P
 HcH<H
+HcL$`H
 HcMXA
 HcS@H
 HcT$8D
 HcT$@H
 HcU0H
-Hc\$`H
 Hc]`M
 Hc_0L
 Hcl$TH
@@ -1347,7 +1350,6 @@ KeyTyped
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 KillFocus
@@ -1372,6 +1374,7 @@ L$$A+
 L$$f;
 L$&@8t$&t0@8q
 L$(A+
+L$(fI
 L$,f;
 L$0E+
 L$0H;
@@ -1413,8 +1416,6 @@ L9&u'H
 L9&us
 L9*u&
 L90t"
-L9f8ujH
-L9f@umH
 L9{ t	H
 L;d$ 
 L;d$H}
@@ -1571,9 +1572,10 @@ PA^_^[]
 PA^_^][
 PA_A]A\_^[]H
 PA__^[]
+PGQDX
 PHc_@;_Pu
 POSIX
-P`H95V
+P`H95
 PaintBackgroundType
 Panel
 Panel.BgColor
@@ -1869,8 +1871,6 @@ ToggleButton.SelectedTextColor
 ToggleColumnVisible
 Too many popups! Rendering will be bad!
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1976,7 +1976,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-VXrj>Q
 V_FixSlashes
 V_GetErrno
 V_GetFileExtension
@@ -2005,7 +2004,6 @@ V_swscanf
 V_tanf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcsicmp
 V_wcsnicmp_cch
 V_wcstod
@@ -2039,6 +2037,7 @@ Warning:  %s = '%s' is infinite, clamping value.
 Wednesday
 WideCharToMultiByte
 WindowDisabledBgColor
+Wm,[6
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
@@ -2083,7 +2082,7 @@ X_^[]
 \$8A+
 \$8D+
 \$<A;
-\$@@8=>
+\$@@8=^
 \$@H;
 \$@Hc
 \$@f;
@@ -2119,6 +2118,7 @@ __vectorcall
 _hidef
 _lodef
 _minmode
+` @VH
 ` HcA
 `.rdata
 `@HcA
@@ -2126,7 +2126,6 @@ _minmode
 `A]A\]
 `A^A\^][
 `A^_^[]
-`A_A^A\_^][
 `A_A^A]A\_^]
 `A_A^_^]
 `A__]
@@ -2242,8 +2241,6 @@ d$@u}H
 d$X@8
 d$XE3
 d$XLcB
-d$`E3
-d$`E;
 d$hE3
 d$xuiH
 dddd, MMMM dd, yyyy
@@ -2275,7 +2272,6 @@ e0A_A^A]A\]
 e@A_A^A]A\_^]
 eLK(w
 e`A_A^A]A\_^]
-edc4/"
 editable
 enabled
 english
@@ -2350,6 +2346,7 @@ group
 h VWAVH
 hA\_H
 hA_A^A]A\_^[]
+hA_A^_^][
 handle
 hfD9T
 hslider
@@ -2390,7 +2387,6 @@ l$ VWAUAVAWH
 l$ VWAVH
 l$ WAVAWH
 l$ WH
-l$ uBH
 l$(@2
 l$(E3
 l$0Hc
@@ -2410,6 +2406,7 @@ l$PD8|$pt
 l$PE3
 l$PudI
 l$THc
+l$XE3
 l$pLc
 l$xE3
 labelText
@@ -2459,6 +2456,7 @@ north
 north-east
 north-west
 ntelE
+o%$#	
 obwQ4
 oldtall
 oldwide
@@ -2577,9 +2575,7 @@ t }	;
 t ~	;
 t!McY
 t"<.u
-t$ ;C ~
 t$ ;{
-t$ @2
 t$ AVH
 t$ E3
 t$ Hc
@@ -2679,12 +2675,12 @@ titlebardisabledfgcolor_override
 titlebarfgcolor_override
 titletextinsetX
 titletextinsetY
+tjD8;te
 tlD80tgH
 tooltip
 tooltiptext
 tsHc(3
 ttA94
-ttD8;to
 tu+K$3
 tvHcH
 twD80trH
@@ -2790,7 +2786,6 @@ z0x0:
 |$(I;
 |$0@2
 |$0A+
-|$0A;
 |$0E3
 |$0H;
 |$0Hc
@@ -2844,9 +2839,10 @@ z0x0:
 |$`E3
 |$`HcP
 |$`Lc
+|$`ff
 |$h@8
 |$hLcB
-|$p@85
+|$p@85Z
 |$pE3
 |(tFM
 |b=})>

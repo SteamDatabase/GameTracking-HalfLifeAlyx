@@ -71,7 +71,6 @@
  A_A^^
  A_A^_
  A_^]
- A__]
  A__^
  Base Class Array'
  Base Class Descriptor at (
@@ -84,7 +83,6 @@
  H9n@u
  H;G@u
  Hc9H
- Hc=o9
  HcA H
  Hcl$p3
  Hcq(H
@@ -96,7 +94,6 @@
  NETWORK_DISCONNECT_SNAPSHOTERROR
  NETWORK_DISCONNECT_STEAM_DROPPED
  Outdent() without matching Indent().
- ReadToken overflow
  Tokenizer::ParseFloat() passed text that could not have been tokenized as a float: 
  Tokenizer::ParseStringAppend() passed text that could not have been tokenized as a string: 
  Type Descriptor'
@@ -224,7 +221,7 @@
 "e" must be followed by exponent.
 "e?<<<<<<l?
 "host_computationtime_std_deviation
-"pA3Q 
+"pA3Q
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
@@ -302,6 +299,7 @@ $Ib?s
 $NETWORK_DISCONNECT_REJECT_SERVERFULL
 $NETWORK_DISCONNECT_STEAM_AUTHINVALID
 $NETWORK_DISCONNECT_STEAM_VACBANSTATE
+$XfR,
 $gender
 %#GameUI_Disconnect_BadClientDeltaTick
 %#GameUI_Disconnect_ConnectionOverflow
@@ -328,7 +326,6 @@ $gender
 %NETWORK_DISCONNECT_SOUNDSMSG_OVERFLOW
 %d.%d.%d
 %i %i %i %i
-%s%s%s
 %s:  IGameSystem::LoopActivateAllSystems {
 %s:  IGameSystem::LoopDeactivateAllSystems {
 %s:  IGameSystem::LoopInitAllSystems(finish)
@@ -379,7 +376,6 @@ $gender
 (;s,|
 (A^^][
 (A_A\_^][
-(A_A]][
 (A_A^
 (A_A^A\_^[
 (A_A^_^][
@@ -472,6 +468,7 @@ $gender
 +B$Hc
 +C$Hc
 +F$Hc
++G$Hc
 +K,+K
 +M<7>
 +NETWORK_DISCONNECT_CLIENT_UNABLE_TO_CRC_MAP
@@ -525,7 +522,6 @@ $gender
 .?AV?$CBaseAppSystem@VIPredictionDiffMgr@@@@
 .?AV?$CBaseAppSystem@VISaveRestoreDataMgr@@@@
 .?AV?$CBaseAppSystem@VISource2Host@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CGameAppSystem@VIDebugDrawQueueMgr@@$0A@@@
 .?AV?$CGameAppSystem@VIGameSystem2HostHook@@$0A@@@
 .?AV?$CGameAppSystem@VIHostUtils@@$0A@@@
@@ -569,8 +565,6 @@ $gender
 .?AVCEntityMsg@@
 .?AVCFootstepSoundsTable@@
 .?AVCGameModelInfo@@
-.?AVCGameModelInfoClient@@
-.?AVCGameModelInfoServer@@
 .?AVCGameSystem2HostHook@@
 .?AVCGameSystemEventDispatcher@@
 .?AVCHostUtils@@
@@ -720,6 +714,7 @@ $gender
 0A^A\_
 0A^^[
 0A^^]
+0A^_[
 0A^_^
 0A^_^][
 0A_A\]
@@ -735,17 +730,17 @@ $gender
 0A_A^A]A\_^[
 0A_A^A]A\_^]
 0A_A^A]_^
+0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
 0A_^[
-0A__[
 0A__]
 0A__^
 0D;Bl
 0D;ul|
 0D;w4L
 0E;gl
-0L9e0t	H
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0_^[H
@@ -766,7 +761,7 @@ $gender
 1I9p 
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200403223713Z0#
+200515054526Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -801,8 +796,6 @@ $gender
 8A_A^^[
 8A_A^_^][
 8JcD	
-8L9e0t	H
-8M9't
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 8O0u]A
 8Y*t'D
@@ -882,7 +875,6 @@ $gender
 <	w*H
 < t;<	t7
 <!-- schema 
-<"uBD
 <$E;Q
 <$uFA
 <*tq</tm<
@@ -914,10 +906,12 @@ $gender
 ?8bunz8
 ?:kP<
 ?@En[vP
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -926,7 +920,11 @@ $gender
 ?QY^&
 ?R0I?
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Truncated data
@@ -934,25 +932,25 @@ $gender
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
 ?kxG2)
-?vhE3
+?model_default_preview_sequence_name
 ?{Q}<
 @ I+@
 @.data
 @.reloc
 @.tls
 @81u/H
+@85vi	
+@8=<(
 @8xAuAA
 @8|$9t
 @8|$^t
 @8~	t
 @>%>b
-@A]A\^
 @A^A\^
 @A^A]A\
 @A^A]A\^]
 @A^_^
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\]
 @A_A^A]A\_
@@ -975,7 +973,6 @@ $gender
 @SAVAWH
 @SAVH
 @SUATAVAWH
-@SUAUAWH
 @SUAVAWH
 @SUAVH
 @SUVATAUAVH
@@ -999,7 +996,7 @@ $gender
 @SVWAVAWH
 @SVWAVH
 @SVWH
-@SWAWH
+@SWAVH
 @UATAUAVAWH
 @UATAVH
 @UAUH
@@ -1042,6 +1039,7 @@ A(I;E
 A+F$D
 A+G$E
 A+S A;S
+A-enable_2gb_morphs
 A03>A|
 A0I;E
 A81t@@8r
@@ -1062,7 +1060,6 @@ A9^h~F3
 A9n4~yE3
 A9q }EI
 A9}8~L3
-A:(uiI
 A;@X}
 A;@`}
 A;A`}
@@ -1520,7 +1517,6 @@ C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 C_OP_WorldTraceConstraint
-C__temp_unserialization_member__
 C`9C(u^
 C`H+CXH
 Call set methods to initialize MapKey.
@@ -1604,7 +1600,7 @@ D$0HcH
 D$0I;
 D$0mp
 D$0r|
-D$0t9
+D$0t?
 D$49C
 D$8+C$H
 D$8@8xBu
@@ -1686,8 +1682,9 @@ D08@t
 D18 t
 D8*u A
 D82u&H
-D85;H	
-D8="A
+D857%	
+D8=;0	
+D8=Tj	
 D8d$H
 D8d$Ht
 D8d$ht
@@ -1789,7 +1786,6 @@ EnumReservedRange
 EnumValueDescriptorProto
 EnumValueOptions
 Enums must contain at least one value.
-EnvironmentMapBuilder_001
 EoA;Hh|
 EoHcHh
 Error loading %s: %s
@@ -1958,9 +1954,10 @@ GPH+H(
 GPH+x(H
 GPH9L
 GPIcM 
+GT$XH
+G\$hH
 Game System %s is defined twice!
-GameModelInfoClient001
-GameModelInfoServer001
+GameModelInfo001
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameSystem2HostHook
@@ -1993,7 +1990,6 @@ GetInt64
 GetLastError
 GetLocaleInfoEx
 GetMessage
-GetModelMaterialColor:  Available on client only!
 GetModuleFileNameA
 GetModuleHandleExW
 GetModuleHandleW
@@ -2055,6 +2051,7 @@ H92u'
 H92u,
 H97t<
 H9;uAA
+H9=tL
 H9C s(H
 H9CPu H
 H9D$ 
@@ -2167,6 +2164,7 @@ Hcw0H
 HcwPH
 HelpSystem_001
 Hex and octal numbers must be integers.
+Hlsgi
 HostStateMgr001
 HostUtils001
 Ht)I;
@@ -2382,7 +2380,6 @@ L9B s
 L9J s
 L9`8tA
 L9d$ A
-L9e0tjH
 L9m(t	H
 L9mot	H
 L9ugt	H
@@ -2532,7 +2529,6 @@ NO_SIDE_EFFECTS
 N`+Vh
 NamePart
 NavSystem001
-NbjZ8
 Need space between identifier and decimal point.
 Need space between number and identifier.
 NetworkClientService_001
@@ -2839,6 +2835,7 @@ T$8+G$A
 T$8+G$H
 T$8A+
 T$<D;
+T$@+G$A
 T$@E3
 T$@H+
 T$@H;
@@ -2896,8 +2893,6 @@ TlsFree
 TlsGetValue
 TlsSetValue
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -2953,7 +2948,6 @@ Unsupported
 Unsupported: type mismatch
 UserInfoChangeService_001
 V6E>`"(5
-VATAUH
 VAVAWH
 VApplication001
 VAvi001
@@ -2999,7 +2993,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetErrno
 V_GetFileExtension
 V_IsAbsolutePath
@@ -3019,13 +3012,10 @@ V_qsort_s
 V_snprintf
 V_sscanf
 V_stricmp_fast
-V_strnlen
 V_strtod
 V_strtoi64
 V_strtoui64
-V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
 Value must be identifier for enum-valued option "
@@ -3125,6 +3115,8 @@ Zod(^?
 \$@@8=
 \$@H;
 \$@Hc
+\$HHc
+\$Hta
 \$PI;
 \$XE2
 \$`A+
@@ -3139,7 +3131,6 @@ Zod(^?
 ^<V7w
 ^RfN>
 _V_FileBase
-_V_SetExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -3154,6 +3145,7 @@ __pascal
 __ptr64
 __restrict
 __stdcall
+__temp_unserialization_member__
 __thiscall
 __unaligned
 __vectorcall
@@ -3238,7 +3230,6 @@ attachment
 attachment_offset
 attachment_type
 auto_unragdoll_duration
-b.2R}
 b?^Cy
 bUpdate
 bad address
@@ -3327,8 +3318,6 @@ d$8I;
 d$PE9~0~QE3
 d$PH;
 d$XH91u 
-d$`E3
-d$`E;
 d$hE2
 d$hE3
 d$pI;
@@ -3389,6 +3378,7 @@ explosive_radius
 extend .$0 {
 extendee
 extension_range
+f?+(hwt
 fD90t
 fD94Fu
 fD96u
@@ -3441,7 +3431,6 @@ h(HcH
 h>1my
 hA^A\
 hA_A^A]A\_^][
-h_^[]
 h_^][
 handindex
 headtype
@@ -3492,6 +3481,7 @@ is_multiplayer
 is_transition
 ishltv
 iu+-,
+j(07K
 j>>A?1
 j?V()
 j?{$*
@@ -3520,7 +3510,6 @@ l$ VWAVH
 l$ WAVAWH
 l$ WH
 l$(HcV
-l$0A+
 l$0H+
 l$0Hc
 l$0Ic
@@ -3535,7 +3524,9 @@ l$@L9!u"A
 l$HA_A^A]A\_^
 l$HfA
 l$PH;
+l$PHc=E 
 l$XA+
+l$XE3
 l$XL+
 l$`L+
 l$`M;
@@ -3682,6 +3673,7 @@ m_nControlPoint
 m_nControlPointNumber
 m_nCount
 m_nCurrentTick
+m_nCurrentTickThisFrame
 m_nDummy0
 m_nEntityIndex
 m_nFeatheringMode
@@ -3747,7 +3739,6 @@ message_type
 method
 min_angle
 min_client_limit
-model_default_preview_sequence_name
 model_name
 modeldoc0
 modeldoc1
@@ -3871,6 +3862,7 @@ pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^_^[
 pA_A^_^]
+pA__^[]
 p_^]H
 package
 packed
@@ -3948,7 +3940,6 @@ s HcC8H
 s&fff
 s1_mapname
 s4+sP+
-s6LS y
 s8HcCP
 s8fff
 s:HcEp
@@ -4019,7 +4010,6 @@ t!IcUP
 t"<.u
 t"fff
 t#@8(t
-t$ ;C ~
 t$ @2
 t$ A;
 t$ AVH
@@ -4027,7 +4017,6 @@ t$ AWH
 t$ E3
 t$ H+
 t$ H9qxt
-t$ Hc
 t$ HcA
 t$ HcA 
 t$ L;
@@ -4035,7 +4024,6 @@ t$ Mc
 t$ UH
 t$ UWATAUAVH
 t$ UWATAVAWH
-t$ UWAVH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
@@ -4043,7 +4031,7 @@ t$ fA
 t$$@8q@uPA
 t$$I;
 t$(E3
-t$(Hc5E?
+t$0D9t$@|LH
 t$0E3
 t$0H+
 t$0H;
@@ -4058,7 +4046,6 @@ t$@H+
 t$@Hc
 t$@Hk
 t$@I;
-t$@Ic
 t$DH;
 t$H;i
 t$HD8{
@@ -4084,7 +4071,6 @@ t$x;_@u
 t$xH;
 t'McY
 t'y*H
-t(A8(t
 t)y,L
 t*D8#t
 t*fff
@@ -4094,6 +4080,7 @@ t.@8:t)
 t/D83t*
 t/HcV ;
 t0@87t+
+t0@8;t+
 t0D8;t+
 t0H9Bxt
 t1H9uxt
@@ -4246,7 +4233,6 @@ www.digicert.com1$0"
 www.digicert.com110/
 x	HcG
 x	HcQ
-x A;@X}
 x ATAVAWH
 x AV3
 x AVH
@@ -4287,7 +4273,6 @@ zY;>u:m
 |$ HcA
 |$ HcA 
 |$ UATAUAVAWH
-|$ UH
 |$$H9y
 |$$H;
 |$$HcA
@@ -4309,7 +4294,6 @@ zY;>u:m
 |$0s-
 |$0t?H
 |$0tXI
-|$0uO
 |$0|<M
 |$89^
 |$8;3
@@ -4339,6 +4323,7 @@ zY;>u:m
 |$XHcU
 |$XIc
 |$\.u
+|$`@2
 |$`E3
 |$`H+
 |$`H;
@@ -4346,6 +4331,7 @@ zY;>u:m
 |$`Ic
 |$`L9g
 |$`Lc
+|$`ff
 |$hA+
 |$p	u
 |$pE3

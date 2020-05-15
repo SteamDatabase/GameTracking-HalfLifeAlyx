@@ -117,7 +117,7 @@
  mat_print_shader_info <file.vfx> [options]
  using substring "%s"
  vJH+
-"pA3Q
+"pA3Q`
 #include
 #line
 $A*G0A*G,A*G4
@@ -165,7 +165,6 @@ $IcD$
 (A_A^A]]
 (A_A^A]^
 (A_A^_^][
-(D$ H
 (D$0H
 (D$PH
 (D$`H
@@ -193,7 +192,6 @@ $IcD$
 (|$`H
 (|$pE
 );f){
-)D$ E
 )D$0H
 )D$PI
 )D$pH
@@ -202,7 +200,6 @@ $IcD$
 )t$ H
 )t$ I
 )t$0L
-)t$0v
 )t$@%
 )t$PH
 )t$`H
@@ -307,11 +304,13 @@ $IcD$
 , at offset %d
 , near %s
 ,0<	w
+,5II4
 ,L$0H
 ,|%)v
 -----
 ----------
 --------------------------------------------------
+-CT#OH_
 -Stop: 
 -VUUUH
 -asyncfeatureload
@@ -335,13 +334,13 @@ $IcD$
 -unknown source-(
 -vulkan_use_android_vcs
 -vulkan_use_ios_vcs
+.?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AV<lambda_b941524bda65c007b960207a584dce78>@@
 .?AV?$CBaseAppSystem@VIFontManager@@@@
 .?AV?$CBaseAppSystem@VIMaterialSystem2@@@@
 .?AV?$CBaseAppSystem@VIMaterialSystem2Utils@@@@
 .?AV?$CBaseAppSystem@VIPostProcessingSystem@@@@
 .?AV?$CBaseAppSystem@VITextLayout@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_097631f6c3afa302f6a84e1c91d50335>@@@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor7@PEAVCMaterial2@@P81@EAAXPEAVIAsyncResourceDataRequest@@PEAEHPEAUMaterialStaticComboLoadRequest_t@@HV?$CWeakHandle@UInfoForResourceTypeIMaterial2@@@@G@ZPEAV2@$$THPEAU3@HV4@GV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -392,6 +391,7 @@ $IcD$
 .?AVCFunctorData0@@
 .?AVCFunctorData@@
 .?AVCIntOpEvaluator@@
+.?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCLineBatchLayoutInfo@@
 .?AVCLineLayoutInfo@@
@@ -402,6 +402,7 @@ $IcD$
 .?AVCMaterialSystem2Utils@@
 .?AVCMaterialTypeManager@@
 .?AVCMeshLayoutInfo@@
+.?AVCNoRefFunctor@@
 .?AVCNullShaderCreateCallbacks@@
 .?AVCPlaceholderConVar@@
 .?AVCPlatformFont@@
@@ -417,6 +418,8 @@ $IcD$
 .?AVCSchemaRegistration@@
 .?AVCSchemaRegistration_materialsystem2@@
 .?AVCShaderCreateCallbacks@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_097631f6c3afa302f6a84e1c91d50335>@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
 .?AVCTextLayout@@
 .?AVCTextureDictionary@@
 .?AVCUtlRenderShaderBuffer@@
@@ -426,6 +429,7 @@ $IcD$
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVIAppSystem@@
+.?AVIAsyncProcessedDataResult@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
 .?AVIFontManager@@
@@ -488,12 +492,12 @@ $IcD$
 .vpk:
 .vtex
 .xdata
-.z0wr
 // %s - %s
 // Dynamic Shader Compile Enabled
 // Reloading all shaders -----------------------------------------------------
 //-----------------------------------
 //---------------------------------------------------------------------------//
+/5'`	
 /=$!6
 /H9{ t	H
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
@@ -520,13 +524,13 @@ $IcD$
 0A_A^A]_^
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_][
 0A_A^_^]
 0A__]
 0A__^
 0HcD$`L
-0L9e0t	H
 0v0b1
 1.0 0.5 0.25
 131022120000Z
@@ -534,8 +538,7 @@ $IcD$
 181004000000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
 1DBlend
-1cRZ`
-200401234303Z0#
+200515055033Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -544,7 +547,6 @@ $IcD$
 2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
 311110000000Z0e1
 33333333H+
-3Og0&
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -555,24 +557,18 @@ $IcD$
 8A_A\
 8A_A^
 8HcD$HI
-8L9e0t	H
-8M9't
 8_^][
 9"u3H
 9)~vH
-93~!Ic
-93~#f
-93~eL
-93~rL
+9+~#f
+9+~eL
 99C }
 99~-H
 99~CH
 99~HH
 9;~oH
 9;~qH
-9C |I
 9C |K
-9C |q
 9D$dtf
 9\$`u
 9_p~$
@@ -585,6 +581,7 @@ $IcD$
 9w,uQH
 9y`~q
 9{\v+f
+9}1#g
 : lexer error %d :
 :Hc\$8;\$Hu
 :Hc\$p;]
@@ -644,10 +641,11 @@ $IcD$
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?ExtractFirstDir@CBufferString@@QEAAPEBDPEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
@@ -660,19 +658,22 @@ $IcD$
 ?Purge@CBufferString@@QEAAXH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?SSE and SSE2 are required.
 ?SeriousWarning@@YAXHPEBDZZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?StripExtension@CBufferString@@QEAAPEBDXZ
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
-?vhE3
 @.data
 @.tls
 @0H9}
@@ -684,12 +685,11 @@ $IcD$
 @81u/H
 @84:u
 @89tDI
-@8l$ht
 @8p$A
 @8t$H
 @8|$Pu
+@>Xm1O
 @A;>|
-@A]A\^
 @A^A\^
 @A^A]A\
 @A^A]A\^]
@@ -697,7 +697,6 @@ $IcD$
 @A^_^
 @A_A]A\_^][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\]
 @A_A^A]A\_
@@ -707,12 +706,11 @@ $IcD$
 @A_A^_
 @A_A^_^[
 @A_A^_^]
+@A__^][
 @SATH
 @SAUAVAWH
 @SAUAWH
 @SAVAWH
-@SAVH
-@SAWH
 @SUAUH
 @SUAVH
 @SUAWH
@@ -747,7 +745,6 @@ $IcD$
 @UVAWH
 @UVWATAUAVAWH
 @UVWATAUH
-@UVWAWH
 @UVWH
 @UWAUAWH
 @UWAVH
@@ -764,7 +761,6 @@ $IcD$
 @WATH
 A +B 
 A HcC
-A&%[c
 A(HcA
 A(I;E
 A*G,I
@@ -776,7 +772,7 @@ A0L9m
 A81teM
 A8H	P(
 A8Zxt
-A96~W
+A96~M
 A9D>Hu
 A9Fhw0E9~d
 A;@X}
@@ -787,6 +783,7 @@ A;D>Ht
 A;Q`}
 A;RX}
 A;^@|
+A;t$`
 A;|$(|
 A@9B@u2
 ABGR8888
@@ -841,7 +838,6 @@ ATI2N
 ATI_DST16
 ATI_DST24
 AUAVAWH
-AUAVH
 AVAWH
 AXL+BX3
 A\_[]
@@ -867,6 +863,7 @@ A_A]^]
 A_A]_^]
 A_A^A\
 A_A^A\^]
+A_A^A\_]
 A_A^A\_^[]
 A_A^A]A\]
 A_A^A]A\^
@@ -883,21 +880,20 @@ A_A^^
 A_A^^[]
 A_A^_
 A__^[]
-A__^]
 AbfA;
 AbsolutePoseControl
 AcquireSRWLockExclusive
 Actually dude, we didn't seem to be expecting anything here, or at least
 AddFontMemResourceEx
 AddLayer
-AddRenderStateValueLoadToCommandBuffer(1639): Invalid data type for render state variable %s in material "%s"!
-AddRenderStateValueLoadToCommandBuffer(1675): Invalid data type for render state variable %s in material "%s"!
-AddRenderStateValueLoadToCommandBuffer(1761): Invalid data type for render state variable %s in material "%s"!
-AddRenderStateValueLoadToCommandBuffer(1769): Invalid variable source type for render state variable %s in material "%s"!
-AddRenderStateVariableToCommandBuffer(1867): Unsupported render state type in material "%s"!
-AddRenderStateVariableToCommandBuffer(1954): Unsupported render state in material "%s"!
-AddSamplerStateVariableToCommandBuffer(2027): Unsupported sampler state type for "%s" in material "%s"!
-AddSamplerStateVariableToCommandBuffer(2049): Unsupported sampler state type for "%s" in material "%s"!
+AddRenderStateValueLoadToCommandBuffer(1641): Invalid data type for render state variable %s in material "%s"!
+AddRenderStateValueLoadToCommandBuffer(1677): Invalid data type for render state variable %s in material "%s"!
+AddRenderStateValueLoadToCommandBuffer(1763): Invalid data type for render state variable %s in material "%s"!
+AddRenderStateValueLoadToCommandBuffer(1771): Invalid variable source type for render state variable %s in material "%s"!
+AddRenderStateVariableToCommandBuffer(1869): Unsupported render state type in material "%s"!
+AddRenderStateVariableToCommandBuffer(1956): Unsupported render state in material "%s"!
+AddSamplerStateVariableToCommandBuffer(2029): Unsupported sampler state type for "%s" in material "%s"!
+AddSamplerStateVariableToCommandBuffer(2051): Unsupported sampler state type for "%s" in material "%s"!
 Align
 All Bad! Talk to Brian and Alex. g_pRenderHardwareConfig is NULL which means we won't load this material correctly: %s
 All static combo permutations currently loaded:
@@ -934,7 +930,7 @@ Animation
 AnimationList
 AnimationSystemUtils_001
 AnimationSystem_001
-ApplySamplerStateFromVariableDescriptionToSamplerStateDesc(3952): Unsupported sampler state type for "%s"!
+ApplySamplerStateFromVariableDescriptionToSamplerStateDesc(3990): Unsupported sampler state type for "%s"!
 Arial
 Assert on shader used based on substring of shader name
 AssertMsg_ConditionFailed
@@ -968,7 +964,7 @@ BP8AP
 BP9AP
 BX9AXu
 B`9A`u
-Bad KV3 data for resource '%s': %s
+Bad KV3 data for resource: %s
 Bad header (unrecognized encoding specifier)
 Bad header format (expected ':'
 Bad header format (expected '<!--'
@@ -1034,7 +1030,7 @@ C@A9D>@
 CAnimMotorList
 CAnimMovementManager
 CAuthPhysJoint
-CBaseIntrospectedToKV3TypeManager::AllocateResource
+CBaseIntrospectedToKV3TypeManager::AllocateResourceFromAsyncResult
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
 CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 CE`H;M
@@ -1062,18 +1058,18 @@ CMaterial2::LoadShadersAndSetupModes(1246): Error creating fallback shader %s fo
 CMaterial2::LoadShadersAndSetupModes(1276): Error creating shader %s for material %s!
 CMaterial2::LoadShadersAndSetupModes(1281): Error creating shader %s and cannot load error.vfx instead!
 CMaterial2::LoadShadersAndSetupModes(1289): Error creating static combos for shader %s and error.vfx instead!
-CMaterialLayer::ComputeWorkItemsToSetupStaticCombosForMode(2492): Failed call to FindOrLoadStaticComboData()!
-CMaterialLayer::CreateCommandBuffer(3458): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s
-CMaterialMode::ComputeRenderablePassesForContext(2703): Too many passes for caller! Ignoring layer %d pass %d
-CMaterialMode::ComputeRenderablePassesForContext(2788): All bad! The error material failed in dynamic shader compile!
-CMaterialSystem2::DynamicShaderCompile_UnloadAllMaterials(854): ERROR!!! Shaders not freed before shader reload! (See spew above)
-CMaterialSystem2::GetErrorMaterial(385): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
+CMaterialLayer::ComputeWorkItemsToSetupStaticCombosForMode(2530): Failed call to FindOrLoadStaticComboData()!
+CMaterialLayer::CreateCommandBuffer(3496): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s
+CMaterialMode::ComputeRenderablePassesForContext(2741): Too many passes for caller! Ignoring layer %d pass %d
+CMaterialMode::ComputeRenderablePassesForContext(2826): All bad! The error material failed in dynamic shader compile!
+CMaterialSystem2::DynamicShaderCompile_UnloadAllMaterials(855): ERROR!!! Shaders not freed before shader reload! (See spew above)
+CMaterialSystem2::GetErrorMaterial(386): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
 CMaterialSystem2::Init
-CMaterialSystem2::Init(145): ERROR! Empty shader mode string found! Use "Default" instead!
-CMaterialSystem2::Init(161): ERROR! Shader mode "%s" has unsupported type "%s" specified gameinfo.gi!
+CMaterialSystem2::Init(146): ERROR! Empty shader mode string found! Use "Default" instead!
+CMaterialSystem2::Init(162): ERROR! Shader mode "%s" has unsupported type "%s" specified gameinfo.gi!
 CMaterialSystem2::ReloadMaterials
-CMaterialSystem2::Shutdown(366): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
-CMaterialSystem2::Shutdown(371): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
+CMaterialSystem2::Shutdown(367): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
+CMaterialSystem2::Shutdown(372): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
 CMaterialSystem2Utils
 CMaterialSystem2Utils::DrawNDCSpaceUntexturedPolygon GetMode == NULL? Can't Render
 CMaterialSystem2Utils::DrawScreenSpaceRectangle GetMode == NULL? Can't Render
@@ -1178,7 +1174,7 @@ CVfx::CreateFromVcs(6928): VCS %s Unserialize hit EOF
 CVfx::ValidateMD5FromVcs(7066): Error opening file %s
 CVfx::ValidateMD5FromVcs(7073): Error calling SkipAndValidateVCSHeader() for %s
 CVfxConstructor::Construct
-CVfxConstructor::Construct(1812): DxSupportLevel %d not supported!
+CVfxConstructor::Construct(1850): DxSupportLevel %d not supported!
 CVfxProgramData::CalcStaticComboIdFromValues
 CVfxProgramData::FindOrAddVsInputSignatureToArray
 CVfxProgramData::FindOrCreateStaticComboDataInCache(3678): Error! Ref count !=0 for static combo data cache entry!
@@ -1289,9 +1285,9 @@ CommandProcedure
 CommandProcedureList
 Compile Target Expression
 Compile Targets
-CompileComboAndGetVariables_DynamicShaderCompile(2115): Dynamic Combos should be assumed to be unique for dynamic shader compile! %d != %d
-CompileComboAndGetVariables_DynamicShaderCompile(2198): Dynamic shader compile failed for %s in material "%s"!
-CompileComboAndGetVariables_DynamicShaderCompile::<lambda_097631f6c3afa302f6a84e1c91d50335>::operator ()(2147): Dynamic shader compile failed for %s in material "%s"!
+CompileComboAndGetVariables_DynamicShaderCompile(2153): Dynamic Combos should be assumed to be unique for dynamic shader compile! %d != %d
+CompileComboAndGetVariables_DynamicShaderCompile(2236): Dynamic shader compile failed for %s in material "%s"!
+CompileComboAndGetVariables_DynamicShaderCompile::<lambda_097631f6c3afa302f6a84e1c91d50335>::operator ()(2185): Dynamic shader compile failed for %s in material "%s"!
 CompileShadersForFeatureCombo
 CompileTargets
 Compiled 
@@ -1344,8 +1340,8 @@ D$0H9C
 D$0I;
 D$0mp
 D$0r|
-D$0t5
-D$0t9
+D$0t7
+D$0t?
 D$4fE
 D$8E2
 D$8E3
@@ -1354,6 +1350,7 @@ D$8Hc
 D$8L;
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
+D$<@2
 D$@+C
 D$@E2
 D$@E3
@@ -1412,48 +1409,39 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D8*u A
-D8-	,
-D8- 3
-D8-!6
-D8-"5
-D8-"8
-D8-#7
-D8-$2
-D8-&'
-D8-&4
-D8-(1
-D8-+9
-D8-4;
-D8-4>
-D8-5:
-D8-6(
-D8-6<
-D8-8)
-D8-8=
-D8-A?
-D8-A@
-D8-L*
-D8-NA
-D8-]+
-D8-c,
-D8-f%
-D8-h/
-D8-p-
-D8-s&
-D8-s.
-D8-u0
-D8-u5
-D8-v3
-D8-w2
-D8-x8
-D8-y4
-D8-y7
-D8-{1
-D8-|'
-D8-~6
+D8--7
+D8-38
+D8-61
+D8-8;
+D8-@9
+D8-C2
+D8-C:
+D8-E<
+D8-EA
+D8-F?
+D8-G>
+D8-HD
+D8-I@
+D8-IC
+D8-K=
+D8-L3
+D8-NB
+D8-QE
+D8-RL
+D8-WJ
+D8-ZG
+D8-[F
+D8-\4
+D8-\H
+D8-^I
+D8-dK
+D8-e5
+D8-iM
+D8-v6
 D848u
 D8T$Pu
 D8d$tt	H
+D8t$ht
 D8x8t	
 D9	~oH
 D9$;~3M
@@ -1472,7 +1460,6 @@ D9mgtKHc>A
 D9oXu\D9o`uVH
 D9t$h
 D9w@~*I
-D9xXtm
 D9|5Lt
 D;@`t
 D;BLu
@@ -1544,7 +1531,6 @@ EconItemToolModel_001
 EditorDynamicConfig
 EmptyAnim
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 Error decompressing static combo data
 Error finding static combo data in VCS file!
 Error loading static combo data from VCS file!
@@ -1607,22 +1593,28 @@ G 8B
 G 8C 
 G(knN
 G,9w(uMH
-G@H9)t
+G0L9{
 GAMEROOT
 GCUtlString::FormatV
 GD$8A
 GD$HA
-GD$`H
-GD$hD
+GD$HD
+GD$XE3
+GD$pH
 GDI32.dll
 GSFailure
+GT$(H
 GT$8H
 GT$HA
 GT$HH
+GT$XD8
+GT$XH
 GT$xH
 G\$(A
 G\$8H
 G\$HH
+G\$XL
+G\$hH
 G\$xD
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -1635,27 +1627,27 @@ GetCharABCWidthsW
 GetCurrentProcessId
 GetCurrentThreadId
 GetDefaultMiniDumpTypeFlags
-GetDefaultValueFromVariableDescription(369): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
-GetDefaultValueFromVariableDescription(374): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
+GetDefaultValueFromVariableDescription(371): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
+GetDefaultValueFromVariableDescription(376): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
 GetGlyphOutlineA
-GetRenderStateValue(1000): Invalid data type for render state variable %s in material "%s"!
-GetRenderStateValue(1007): Error evaluating expression for render state variable %s in material "%s"!
-GetRenderStateValue(1013): Invalid variable source type for render state variable %s in material "%s"!
-GetRenderStateValue(958): Invalid data type for render state variable %s in material "%s"!
+GetRenderStateValue(1002): Invalid data type for render state variable %s in material "%s"!
+GetRenderStateValue(1009): Error evaluating expression for render state variable %s in material "%s"!
+GetRenderStateValue(1015): Invalid variable source type for render state variable %s in material "%s"!
+GetRenderStateValue(960): Invalid data type for render state variable %s in material "%s"!
 GetResourceManifestCount
 GetResourceManifests
 GetSystemTimeAsFileTime
 GetTextMetricsA
-GetValueFromDynamicMaterialParam(511): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
-GetValueFromDynamicMaterialParam(516): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
-GetValueFromMaterialParam(429): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
-GetValueFromMaterialParam(434): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
-GetValueFromMaterialParamAsVector4D(1335): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
-GetValueFromMaterialParamAsVector4D(1340): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
+GetValueFromDynamicMaterialParam(513): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
+GetValueFromDynamicMaterialParam(518): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
+GetValueFromMaterialParam(431): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
+GetValueFromMaterialParam(436): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
+GetValueFromMaterialParamAsVector4D(1337): Trying to set VFX_VARIABLE_TYPE_MATRIX_* but this isn't supported yet! In material "%s"
+GetValueFromMaterialParamAsVector4D(1342): Bad VFX_VARIABlE type for VFX_VARIABLE_SOURCE_SET_BY_ARTIST %s in material "%s"!
 GetVariableTextureValue
 Glyph Miss: FontHandle_t:0x%8.8llx (%s), %s
 Gt$8A
-G|$xH
+G|$8H
 H SUWH
 H UVAUAVH
 H UVAUAWH
@@ -1667,6 +1659,8 @@ H0F08
 H1D$0
 H9(t{A
 H93t6H
+H9532
+H95:'
 H9;t<H
 H9A(u
 H9M(t
@@ -1678,7 +1672,6 @@ H9t$8t
 H9t$xt
 H9uot	H
 H9{ t	H
-H9|$Ht
 H9|$`t
 H9|$pt
 H9~XtOA
@@ -1687,7 +1680,6 @@ H;D$puk
 H;M`H
 H;\$P|
 H=vmat
-H=vmattXH=vtexuqH
 H=vmatuEH
 H=vtex
 HA_A\
@@ -1700,6 +1692,7 @@ HORIZ_JUSTIFICATION_LEFT
 HORIZ_JUSTIFICATION_NONE
 HORIZ_JUSTIFICATION_RIGHT
 H_^][
+H`lum
 HammerMapLoader001
 HangWatchdogInternal_BeginScope
 HangWatchdogInternal_EndScope
@@ -1735,13 +1728,12 @@ HcS@H
 HcUgI
 Hc\$@;\$Pu
 Hc\$xI
-Hc](;]8u	H
 Hc_(;_8u	H
 Hc_0L
 Hc_HH
 HckHL
 Hco`D
-Hct$H
+Hcw(;w8u	H
 Hc{x;
 Hc|$8H
 HelpSystem_001
@@ -1775,6 +1767,7 @@ IcF$H
 IcF@H
 IcGPL
 IcV@H
+Ic|$`+
 Ic~ I
 If we should use multithreaded shader recompilation during mat_reloadshaders.
 IkLockLocal
@@ -1815,13 +1808,11 @@ L$ UH
 L$ USWATAUAVAWH
 L$ UVAVH
 L$ UVWATAVH
-L$ UWAVH
 L$ VATAUAVAWH
 L$ WATAUAVAWH
 L$ WH
 L$ fI
 L$(fH
-L$0@8
 L$0E+
 L$0E3
 L$0H;
@@ -1838,24 +1829,24 @@ L$@H1D$0
 L$HfD;I
 L$PD;f
 L$PE3
-L$Pu/A
+L$PtrL
+L$Pu.
 L$Pu0
+L$PuG
 L$TD9'
 L$XE3
 L$XHcG@H
 L$hD9
+L$hLc
 L$p;M
 L$pE3
 L$pHcG@H
 L$pI;
 L$xD9
 L2DHc
-L9)t	
 L9L$xt
 L9U(t
 L9d$Xt
-L9d$ht
-L9e0tjH
 L9e@t	H
 L9m(t	H
 L9m@t	H
@@ -1863,6 +1854,7 @@ L9mot	H
 L9t$Xt
 L9ugt	H
 L9{ t	H
+L9|$ht
 L9}@t	H
 LAYOUTPOSITIONTYPE_FRACTIONAL
 LAYOUTPOSITIONTYPE_NONE
@@ -1894,6 +1886,7 @@ LcK$A;
 LcUpI
 Lcl$ A
 Lcm0D
+Lct$HB
 Lcup3
 Lc~0D
 Lexer encountered %i errors parsing compile targets expression "%s"
@@ -1924,9 +1917,9 @@ MODES
 MXHcUpH
 MapListService_001
 Marlett
-MatPrintShaderInfo(3109): Error reading index!
-MatPrintShaders(2788): pVfx == NULL!
-MatPrintShaders(2837): pVfx == NULL!
+MatPrintShaderInfo(3110): Error reading index!
+MatPrintShaders(2789): pVfx == NULL!
+MatPrintShaders(2838): pVfx == NULL!
 MatUtilsRenderMesh
 MatUtilsRenderOutlinedRect
 MatUtilsRenderPrimitives
@@ -1988,6 +1981,7 @@ NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 Newline in string literal
 No Buffer
+No DATA block for resource 
 No DATA block for resource '%s'
 No valid format conversion from '%s' to '%s'
 No valid vcs file found for shader %s
@@ -2008,7 +2002,7 @@ P8H=vmatu4
 P8H=vmatu5
 P8H=vmatug
 P8H=vtext
-PARALLEL_PROCESS CompileComboAndGetVariables_DynamicShaderCompile(), c:\buildslave\hlvr_rel_win64\build\src\materialsystem2\material2.cpp:2134
+PARALLEL_PROCESS CompileComboAndGetVariables_DynamicShaderCompile(), c:\buildslave\hlvr_rel_win64\build\src\materialsystem2\material2.cpp:2172
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
@@ -2195,6 +2189,7 @@ SUVWATAUAWH
 SUVWATAVH
 SUVWATAWH
 SUVWAVAWH
+SUVWAWH
 SUVWH
 SVATH
 SVAUAVAWH
@@ -2220,16 +2215,16 @@ ServerUploadGameStats001
 SetBkColor
 SetBkMode
 SetMapMode
-SetRenderStateValueFromVariable(1084): Unsupported render state type in material "%s"!
-SetSamplerStateValueFromVariable(1102): Sampler index %d out of bounds for "%s" in material "%s"!
-SetSamplerStateValueFromVariable(1175): Unsupported sampler state type for "%s" in material "%s"!
+SetRenderStateValueFromVariable(1086): Unsupported render state type in material "%s"!
+SetSamplerStateValueFromVariable(1104): Sampler index %d out of bounds for "%s" in material "%s"!
+SetSamplerStateValueFromVariable(1177): Unsupported sampler state type for "%s" in material "%s"!
 SetSubTextureRGBA: Invalid texture id %i
 SetTextAlign
 SetTextColor
 SetTextureRGBA: Invalid texture id %i
-SetVariable(1258): Could not bind constant buffer "%s" because the constant buffer handle was invalid in material "%s"!
-SetVariable(1273): Error setting constant for REGISTER_FLOAT4 for "%s" in material "%s"! Talk to a programmer!
-SetVariableValue(912): Unknown variable type for %s in material "%s"!
+SetVariable(1260): Could not bind constant buffer "%s" because the constant buffer handle was invalid in material "%s"!
+SetVariable(1275): Error setting constant for REGISTER_FLOAT4 for "%s" in material "%s"! Talk to a programmer!
+SetVariableValue(914): Unknown variable type for %s in material "%s"!
 Shader %s doesn't support compile target %s
 Shader attribute "%s" has inconsistent value or type across multiple shaders of a feature combo!
 Shader expected %d bytes of push constants but got %d (%s)!
@@ -2283,17 +2278,20 @@ T$0L+
 T$8+G$A
 T$8+G$H
 T$8E3
+T$@+G$A
 T$@E3
+T$H+D$tA
 T$HfD
 T$TM+
+T$X+C$A
 T$XE3
-T$XH;T$p
 T$`E3
+T$`H;T$p
 T$`Hc
 T$`fD;
 T$hfD;
 T$pE3
-T$pL9d$ht
+T$pL9|$ht
 T$pLc
 T$xH;
 Tag: %s 
@@ -2316,8 +2314,6 @@ ThreadInMainThread
 ThreadSleep
 Times New Roman
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -2388,7 +2384,6 @@ UpL9U(t
 Usage: mat_assert_on_shader_use [shader_substring]
 UserInfoChangeService_001
 Uv scale variable %s referenced by texture %s doesn't evaluate to a constant value at material load time (%s).
-VATAUH
 VAVAWH
 VApplication001
 VAvi001
@@ -2448,7 +2443,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetFileExtension
 V_GetRtSupportFunctions
 V_Get_stderr
@@ -2491,7 +2485,6 @@ V_strtoui64
 V_towupper32
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Valve0
 Valve1
@@ -2536,12 +2529,10 @@ WorldRendererMgr001
 X360_DST16
 X360_DST24
 X360_DST24F
-XA^A]
 Y@D;Z@u
 [ mat_print_material_info ] Error! Cannot find material '%s'!
 [Dynamic shader compile] Reloading %d material(s)
 [Dynamic shader compile] Warning: %d material(s) are not reloaded because they have outstanding file I/O requests
-[Fe7~
 [Index: 
 \$ ATAVAWH
 \$ AVH
@@ -2565,7 +2556,6 @@ Y@D;Z@u
 \$0Hi
 \$0L+
 \$0L9Fxt,
-\$0fA
 \$4H+
 \$8;>
 \$8D;
@@ -2577,7 +2567,9 @@ Y@D;Z@u
 \$@Hc
 \$@f;
 \$HE3
+\$HHc
 \$HLi
+\$Hta
 \$PHcV 
 \$TD;
 \$`D+
@@ -2589,10 +2581,8 @@ Y@D;Z@u
 \0bf;
 \error.vmat
 \uUA;
-]LDHn
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
 ^^^ Constant buffer warning is now disabled after outputting 50 warnings.
-_V_SetExtension
 _V_StringAfterPrefix
 _V_strcspn
 _V_strncmp
@@ -2782,11 +2772,8 @@ d$XE9e
 d$`D9fH
 d$hA9
 d$hE2
-d$hL+
 d$h|JH
 d$p@8
-d$pD3
-d$pfA
 d$pt#H
 d$xH;
 d$xtb
@@ -2824,10 +2811,7 @@ explosion_type
 explosive_damage
 explosive_radius
 externaldescriptorset
-f;9}&
-f;9}'
 f;L$p}[
-fA;6|
 fA;t$
 fB;L3
 fB;\/
@@ -2902,6 +2886,7 @@ l$ Lc
 l$ VATAUAWL
 l$ VAUAVH
 l$ VAUAWH
+l$ VAVAWH
 l$ VH
 l$ VWATAUAWH
 l$ VWAVH
@@ -2921,16 +2906,15 @@ l$8HcG
 l$8Hi
 l$8Hk
 l$@;{
-l$@<"
 l$HHc
 l$HfA
-l$JE3
 l$TH;
 l$XA+
 l$XI;
 l$XfD
 l$`E3
 l$`u>A
+l$pE3
 l$pH+
 l$pL;
 l$pLcepL
@@ -2947,6 +2931,7 @@ loop_break_on_damage
 loop_break_on_flashlight
 loop_in_action
 looping
+ltk-=
 m0k0$
 m_Bone
 m_ChainData
@@ -3357,6 +3342,7 @@ t$(LcC
 t$0+A$t
 t$0@8
 t$0A^_
+t$0D9t$@|LH
 t$0E3
 t$0Hc
 t$0Hc2
@@ -3366,13 +3352,12 @@ t$0xBHc
 t$0|aH
 t$8;Upr4I
 t$8E2
-t$8E3
 t$8Hc
 t$8Hk
 t$8Ic
 t$8Mc
+t$8f9Y
 t$8|QH
-t$8}%H+
 t$<L+
 t$@A+
 t$@E3
@@ -3408,10 +3393,12 @@ t$hD9E
 t$hE3
 t$pE3
 t$pHi
+t$pfff
 t$p|KH
 t$x;0
 t$x;_@u
 t$xHc1+
+t$xfA
 t'McC
 t)McC
 t*D8#t
@@ -3428,11 +3415,12 @@ t/D8#t*
 t/D83t*
 t/LcC
 t0@87t+
+t0@8;t+
 t0D8;t+
 t1LcC
 t2D8 t-
 t2Lc>L
-t9H9=&	
+t9H9=
 t9Lc&A
 t<E8!t7A
 t=IcD$
@@ -3472,12 +3460,11 @@ t{LcC
 t|LcC
 u	8BTu
 u	@8,
-u	@8=
+u	@8==
 u	D99
 u0|IH
 u1M9o
 u98D$`u;H
-uE<"tA< ~=B
 u^fA;
 u_fA;
 ueHcS
@@ -3486,7 +3473,6 @@ use_additional_offset
 v ;kx|
 v0t08
 vHHc;;{
-vMp0*
 value
 vanmgrph
 version
@@ -3567,9 +3553,9 @@ y$Hcw@;wPu	H
 yMHc_@;_Pu	H
 yaw_end
 yaw_start
-yf@?eB
 z0x0:
 z:KCAuthPhysBody
+{ AVH
 {YIN?
 {hHcKP
 {}()':
@@ -3599,7 +3585,6 @@ z:KCAuthPhysBody
 |$0Ic
 |$0fff
 |$0t4
-|$0uO
 |$8).H
 |$8H9|$@t
 |$8Hc
@@ -3630,16 +3615,16 @@ z:KCAuthPhysBody
 |$XLi
 |$Xff
 |$\fD;y
+|$`@2
 |$`Lc
-|$`fA
 |$hA+
+|$pD3
 |$pE3
 |$tu	3
 |$xH9]
 } fA;
 } fA;P"w
 }$fA;
-}*fff
 }9fD;[
 }?fD;[
 }I;o$wD
@@ -3650,7 +3635,5 @@ z:KCAuthPhysBody
 ~ HcB 
 ~ fD9
 ~!A;~
-~*9yP
-~*fff
+~*9qP
 ~,IcZ
-~@fff

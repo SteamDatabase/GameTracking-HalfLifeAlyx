@@ -15,7 +15,6 @@
  HcyH3
  vJH+
 !0V[$0
-"U#{2
 "pA3Q
 #jJ^A
 #~@iDi
@@ -72,12 +71,12 @@
 )|$`H
 )|$pD
 +'?Nbp?#
-+.	@Z
 +A$Hc
 +B$Hc
 +C$Hc
 +D$dH
 +F$Hc
++G$Hc
 ,0<	w
 ,|%)v
 -buildmachine
@@ -87,7 +86,6 @@
 .$!Di
 .0-G/0]T30
 .?AV?$CBaseAppSystem@VISteamAudio@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CSurfacePropDataTable@VCSteamAudioMaterial@@@@
 .?AV?$CTier0AppSystem@VISteamAudio@@@@
 .?AV?$CTier1AppSystem@VISteamAudio@@$0A@@@
@@ -171,17 +169,18 @@
 0A_A^A\
 0A_A^A]A\]
 0A_A^A]_^
+0A_A^^
+0A_A^^H
 0A_A^_
 0A__]
 0A__^
 0H9+t
-0L9e0t	H
 0v0b1
 131022120000Z
 141022000000Z
 181004000000Z
 1DBlend
-200403223350Z0#
+200515052556Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -209,8 +208,6 @@
 7vQfA
 8A_A\
 8A_A^
-8L9e0t	H
-8M9't
 9)~vH
 93~}H
 99C }
@@ -218,6 +215,7 @@
 99~CH
 9Q(~cH
 9T$ ~
+9^1@T
 9_p~$
 :Hc{h;{xu
 ;A ~W
@@ -230,6 +228,7 @@
 ;|$@|
 <	u"H
 <!-- schema 
+<${l'
 <deferred>
 <no failure reason set>
 <null>
@@ -241,15 +240,22 @@
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?B`e>o
 ?Check@CThreadEvent@@QEAA_NXZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
+?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Reset@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadEvent@@QEAA_NXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?Truncated data
 ?TryLock@CThreadMutex@@QEAA_NPEBDH@Z
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
@@ -261,11 +267,10 @@
 @.data
 @.tls
 @81u/H
-@85Z9
+@85J7
 @A]A\^
 @A^A]A\
 @A^A]A\^]
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\_
 @A_A^[
@@ -581,7 +586,7 @@ D$0H3L$0H3
 D$0I;
 D$0mp
 D$0r|
-D$0t9
+D$0t?
 D$8H;
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
@@ -604,20 +609,24 @@ D$`Ll
 D$`r|
 D$hE3
 D$p 69
+D$p8MxA
 D$p<L{
 D$pHK8
 D$pL;
 D$x*>
 D8*u A
-D8-*~
-D8-Gy
-D8-Tz
-D8-]{
-D8-f|
-D8-s}
-D8=8:
+D8-&z
+D8-3{
+D8-D|
+D8-M}
+D8-]w
+D8-a~
+D8-jx
+D8-zy
+D8-|z
+D8=(8
 D9pXt$H
-D9pXt8L9w
+D9pXt4L9w
 D9pXu
 D;C }
 DebugTextureInfo001
@@ -643,7 +652,6 @@ EditorDynamicConfig
 EmptyAnim
 Enable hybrid reverb.
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
 Expected "="after member '%s'
 Expected '#'
@@ -672,10 +680,11 @@ FontManager_001
 GN1HA
 GRegisterConfigValue: Unknown error constructing config value "%s"!
 GSFailure
+GT$XH
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
-Gcs4M0
 Generate Halton Sequence for a given order and number of samples.
 Generated %d probes with %.2f spacing and %.2f height.
 Generating Halton Sequence of %d order for %d samples.
@@ -709,6 +718,7 @@ HcKx;
 HcL$ H
 HcL$HL
 HcL$P;
+HcS@H
 Hc\$@;\$Pu
 HckHL
 Hcs@H
@@ -753,6 +763,7 @@ Invalid header
 Invalid member name '%s'
 InvokeMiniDumpHandler
 KERNEL32.dll
+Ka 5o
 KeyValueCache001
 KeyValuesSystem
 L$ SH
@@ -766,12 +777,13 @@ L$@E3
 L$@H1D$0
 L$PHc
 L$pE3
-L9e0tjH
 L9m(t	H
 L9mot	H
+L9t$0t
+L9t$8t
 L9t$@t
-L9t$Ht
-L9t$Pt
+L9u@t	H
+L9uXt	H
 L9ugt	H
 LOG_GENERAL
 Lc3D;s
@@ -819,6 +831,7 @@ O8+G$
 ON=fA
 Offset
 Ordered constructor wrapped type has no default constructor.
+P-5EUd
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
@@ -972,7 +985,6 @@ T$@+G$A
 T$@E3
 T$XE3
 T$pE3
-T=0?2,
 TestFormatA
 TestFormatB
 TestFormatC
@@ -991,8 +1003,6 @@ The number of rays to trace for reflection modeling by Steam Audio.
 The time delay between a sound being emitted and the last audible reflection in Steam Audio.
 This variable is checked by soundstack to globally enabling pathing for audio processing.
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1018,7 +1028,6 @@ UVAVH
 UVAWH
 UVWATAUAVAWH
 UWATAUAWH
-UWATAVAWH
 UWAVH
 UWAWH
 Unable to create custom environment: %d.
@@ -1083,7 +1092,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetRtSupportFunctions
 V_UTF16ToUTF8
 V_atof
@@ -1103,9 +1111,7 @@ V_strnlen
 V_strtod
 V_strtoi64
 V_strtoui64
-V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 Valve0
@@ -1122,7 +1128,7 @@ WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
 X UVWH
-X3xfCL
+X|(`z
 [Zf:Di
 \$ ATAVAWH
 \$ Hi
@@ -1140,10 +1146,11 @@ X3xfCL
 \$8fD
 \$@Hc
 \$HE3
+\$HHc
+\$Hta
 \?X94?%
 \content\
 \game\
-_V_SetExtension
 _V_strncmp
 _V_strncpy
 __oldschema_object_name
@@ -1151,7 +1158,6 @@ __temp_unserialization_member__
 _class
 _test_conversion_counter
 `.rdata
-`7@*uI
 `A_A^A]A\_[]
 ai_model_info
 allowstatic
@@ -1354,11 +1360,11 @@ k0i0$
 k@_aH
 l$ 9Q
 l$ D9l$0|LH
+l$ VAVAWH
 l$ VH
 l$ VWAVH
 l$ WH
 l$(E3
-l$0A+
 l$0H+
 l$0Hc
 l$0Ic
@@ -1643,11 +1649,11 @@ t$ AWH
 t$ Mc
 t$ UH
 t$ UWATAUAVH
-t$ UWAVH
 t$ WATAUAVAWH
 t$ WATAWH
 t$ WAVAWH
 t$ WH
+t$0D9t$@|LH
 t$0Hc
 t$8Ic
 t$8Mc
@@ -1665,6 +1671,7 @@ t*D8#t
 t.@8:t)
 t/D83t*
 t0@87t+
+t0@8;t+
 t0D8;t+
 t9H9=
 tXLc3D;s
@@ -1675,7 +1682,7 @@ tier0.dll
 trD8(tmH
 tu+K$3
 turn_rate
-u	@8=
+u	@8=U
 u98D$`u;H
 uniform_burst
 use_additional_offset
@@ -1739,13 +1746,11 @@ z:KCAuthPhysBody
 |$ AVH
 |$ E3
 |$ UATAUAVAWH
-|$ UH
 |$,ff
 |$0A_A^
 |$0E3
 |$0Hc
 |$0Ic
-|$0uO
 |$8I+
 |$8Icu
 |$@Hc
@@ -1756,6 +1761,7 @@ z:KCAuthPhysBody
 |$PE3
 |$PHc{@$
 |$XIc
+|$`@2
 |$`Lc
 |$hA+
 }G1rGP1

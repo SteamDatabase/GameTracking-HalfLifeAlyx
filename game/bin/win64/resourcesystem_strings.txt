@@ -21,10 +21,8 @@
  A_A^A\
  A_A^A]A\_
  A_A^A]A\_^]
- A_A^^
  A_A^_
  A_^]
- A__]
  A__^
  Hc9E3
  Hc9H
@@ -32,7 +30,7 @@
  vJH+
 !LcK@
 !m_bNeedsSort
-"pA3Q
+"pA3Q@w
 %d General references (More ResourceAddRef() calls than ResourceRelease())
 %d Manifest references (Still holding onto a HResourceManifest somewhere)
 %d Schema references (Most likely a resource referring to another resource)
@@ -58,6 +56,7 @@
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
 (None)
+(a!H8
 (l$pH
 (o:R	
 (t$ H
@@ -91,6 +90,7 @@
 +B$Hc
 +C$Hc
 +F$Hc
++G$Hc
 ,0<	w
 ,|%)v
 - CStrongHandle, %d operations: %s
@@ -112,7 +112,6 @@
 -start_resource_profiling
 .?AV?$CBaseAppSystem@VIResourceSystem@@@@
 .?AV?$CConCommandMemberAccessor@VCResourceSystemProfiler@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor0@PEAVCAsyncResourceDataRequest@@P81@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCLoadingResource@@P81@EAAXPEAVCAsyncResourceDataRequest@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
@@ -217,17 +216,18 @@
 0A_A^A\
 0A_A^A]A\]
 0A_A^A]_^
+0A_A^^
+0A_A^^H
 0A_A^^][
 0A_A^_
 0A__]
 0A__^
-0L9e0t	H
 0v0b1
 131022120000Z
 141022000000Z
 181004000000Z
 1DBlend
-200327173839Z0#
+200515052358Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -245,12 +245,11 @@
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8A_A\
 8A_A^
-8L9e0t	H
-8M9't
 92tXH
 99C }
 99~-H
 9_p~$
+9lp56
 9w@~qH
 9y@~)H
 :Hc{h;{xu
@@ -281,12 +280,13 @@
 ??0CThreadEvent@@QEAA@_N@Z
 ??1CStackTop_Base@@IEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?LockForRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
@@ -297,10 +297,12 @@
 ?Purge@CBufferString@@QEAAXH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Set@CThreadEvent@@QEAA_NXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
-?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?StripExtension@CBufferString@@QEAAPEBDXZ
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Truncated data
@@ -308,19 +310,17 @@
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
-?vhE3
 @.data
 @.tls
 @81u/H
+@8=xm
 @8pDu
 @8rFt
 @8{Eu	H
 @8{Gu
-@A]A\^
 @A^A]A\
 @A^A]A\^]
 @A^_^
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\_
 @A_A^[
@@ -353,11 +353,10 @@
 @UWAWH
 @VAUH
 @VAVH
-@VWAWH
+@VWATAVH
 @WATAVH
 @WATH
 @WAUAWH
-@WAVH
 A(I;E
 A+F$D
 A+G$E
@@ -418,8 +417,10 @@ AUAVH
 AVAWH
 A\_^]
 A]A\_^]
+A]_^]
 A^A\_
 A^A\_[]
+A^A\_^
 A^A\_^[]
 A^A]A\^]
 A^A]A\_]
@@ -427,7 +428,6 @@ A^A]^]
 A^A]_^[]
 A^A]_^]
 A_A\]
-A_A]A\]
 A_A]_^[
 A_A^A\
 A_A^A\_^[]
@@ -435,6 +435,7 @@ A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
+A_A^A]_^[]
 A_A^]
 A_A^_
 A_A^_[]
@@ -476,10 +477,10 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
-AtA9D;
 Attempted to register duplicate manifest name %s!
 AutoLayer
 Available resource leak tracking configuration aliases:
+A|A9D;
 Bad header (unrecognized encoding specifier)
 Bad header format (expected ':'
 Bad header format (expected '<!--'
@@ -499,12 +500,12 @@ Bad header: unrecognized encoding id
 BakedLODBuilderMgr001
 BaseIKRig
 BasePhysicsShape
-Bd9Ad
 Bellevue1
 BenchmarkService001
 BentNormalData
 Bhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0
 BinaryProperties_GetValue
+Bl9Al
 BlendLayer
 BlendLayerBase
 BlendLayerPoseParam
@@ -519,8 +520,8 @@ C(I;A
 C-yh/
 C0I;A
 C8H!o
-C8Hco
 C940t%G
+C@Hco
 CAnimMotorList
 CAnimMovementManager
 CAsyncResourceDataRequest
@@ -709,7 +710,6 @@ D$ P-
 D$ d=
 D$ fH
 D$ r|
-D$(;D$<
 D$(@8;t
 D$(E3
 D$(H;
@@ -723,7 +723,7 @@ D$0I;
 D$0fI
 D$0mp
 D$0r|
-D$0t9
+D$0t?
 D$8?	
 D$8H;
 D$8HcH
@@ -755,8 +755,9 @@ D$pHK8
 D$pL;
 D$x*>
 D8*u A
-D8-]	
-D8="y
+D8--	
+D85't
+D85{r
 D9IL}sL
 D;C }
 D;[$t#A
@@ -798,7 +799,6 @@ EditorDynamicConfig
 EmptyAnim
 Encountered nonexistent %s: %016llX (file "%s")
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 Error initializing resource manager for resource type "%lld"!
 Error loading resource "%s" (Invalid header version: %d != %d)
 Error loading resource file "%s" (Error: %s)
@@ -837,13 +837,18 @@ FourVectors
 G<Hc/;o
 GCUtlBuffer::VaPrintf: String overflowed buffer [%llu]
 GD$(H
+GD$8I
 GD$XD
-GL$hH
+GD$XH
+GD$hH
 GSFailure
 GT$(H
+GT$(L
 GT$8E3
+GT$XH
 G\$(H
 G\$HL
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -861,7 +866,8 @@ GetResourceStatus( resourceName ) == RESOURCE_STATUS_RESIDENT
 GetSystemTimeAsFileTime
 Gt$(H
 Gt$8H
-Gt$XI
+Gt$hI
+G|$(H
 G|$8H
 G|$XD
 H UVAUAVH
@@ -870,10 +876,8 @@ H+\$hIc<$H
 H0F08
 H1D$0
 H93t6H
-H95[.
-H9=7h
 H9uot	H
-H9{0~
+H9{8~
 H9~XtNA
 H;T$@H
 H;\$P|
@@ -886,7 +890,7 @@ Hc3;s
 Hc;;{
 HcA$H
 HcC$H
-HcC8H
+HcC@H
 HcD$ H
 HcH<H
 HcI8;
@@ -894,9 +898,10 @@ HcK ;
 HcKx;
 HcL$ H
 HcL$P;
-HcQ0H
+HcQ8H
 HcS@H
-HcW03
+HcW83
+HcW8A
 Hc\$@;\$Pu
 Hc\$DH
 Hc_0L
@@ -917,7 +922,6 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 IQuickTime001
-Ic4$A;
 Ic4$A;t$
 Idle (ResourceSystemSleep)
 IkLockLocal
@@ -974,12 +978,12 @@ KeyValuesSystem
 L$ E3
 L$ SH
 L$ SUVAVAWH
-L$ SWH
 L$ USWATAUAVAWH
 L$ UVAVH
 L$ WH
 L$ fI
 L$$D9L
+L$(;L$,
 L$(fH
 L$0E+
 L$0E3
@@ -992,7 +996,6 @@ L$@E3
 L$@H1D$0
 L$HE3
 L$pE3
-L9e0tjH
 L9m(t	H
 L9mot	H
 L9ugt	H
@@ -1000,13 +1003,14 @@ L;l$h
 LIGHT_SOURCE_SHAPE_SPHERE
 LOG_GENERAL
 Lc3D;s
+Lc6E;
 LcA<E3
 LcA@H
-LcC0H+
+LcC8H+
 LcCLC
 LcCPH
-LcK0L
-LcO0D
+LcK8L
+LcO8D
 Lc\$hI
 Lcl$ A
 Lc~0D
@@ -1028,6 +1032,7 @@ LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LoggingSystem_SetChannelVerbosity
 LrwcE
+Lu(D;v
 MATCHFRAMEWORK_001
 MATERIAL_LIGHT_DIRECTIONAL
 MATERIAL_LIGHT_DISABLE
@@ -1082,7 +1087,6 @@ PF_TYPE_CONTROL_POINT_COMPONENT
 PF_TYPE_LITERAL
 PF_TYPE_PARTICLE_AGE_NORMALIZED
 PF_TYPE_RANDOM_UNIFORM
-PPHcW0E3
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 PanoramaTextServices001
@@ -1122,6 +1126,7 @@ PreviewBoneMergedModel
 PreviewPreset
 PreviewPresetList
 PropertyEditorSystem_001
+Pu*;w
 QAngle
 Quaternion
 QueryPerformanceCounter
@@ -1213,6 +1218,7 @@ T$0Hi
 T$8+G$A
 T$8+G$H
 T$8f#
+T$@+G$A
 T$@E3
 T$HA;
 T$HHc
@@ -1233,8 +1239,6 @@ ThreadNanoSleep
 ThreadSleep
 TimestampedEvent_RegisterListenerAndFlushBuffer
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1246,12 +1250,11 @@ Tried to install two resource managers for the same resource type "%lld"!
 Tried to release UGC that hasn't been referenced: %lld
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
-Ty~nL
 UATAUAVAWH
-UATAUAWH
 UAVAWH
 UPDATE_STRING_TOKEN_DATABASE
 USVWATAUAVAWH
+USVWAUAVAWH
 USVWAUAVH
 USWATAVH
 USWAVAWH
@@ -1262,9 +1265,9 @@ UVAVH
 UVAWH
 UVWATAUAVAWH
 UVWAUAVH
+UVWAUH
 UVWAVAWH
 UWATAUAWH
-UWATAVAWH
 UWAVH
 UWAWH
 Unable to determine buffer encoding.
@@ -1277,8 +1280,6 @@ Unresolved object reference '%s'
 Usage: resource_leaks <resource_name>
 Usage: resource_repeated_reload <count> <resource_name>
 UserInfoChangeService_001
-VATAUH
-VAVAWH
 VApplication001
 VAvi001
 VBAllocTracker001
@@ -1317,7 +1318,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetFileExtension
 V_GetRtSupportFunctions
 V_IsAbsolutePath
@@ -1336,13 +1336,11 @@ V_qsort_s
 V_snprintf
 V_sscanf
 V_stricmp_fast
-V_strnlen
 V_strtod
 V_strtoi64
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Valve0
 Valve1
@@ -1368,9 +1366,7 @@ WeightList
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
-X UVWATAUH
-X|(@y
-Y@D9Y0~&A
+YHD9Y8~
 [refcount % 4d] 
 \$ ATAVAWH
 \$ Hi
@@ -1392,12 +1388,12 @@ Y@D9Y0~&A
 \$@A;K
 \$@Hc
 \$@HcK
-\$HH;\$`
+\$HHc
+\$Hta
 \$Hu"
 \$XHc
 \$`fD
 _GetCallStack
-_V_SetExtension
 _V_StringAfterPrefix
 _V_strncat
 _V_strncmp
@@ -1525,7 +1521,6 @@ explosion_delay
 explosion_type
 explosive_damage
 explosive_radius
-fD95]
 faceMergeAngle
 falloff
 false
@@ -1569,12 +1564,11 @@ keepall
 l$ 9Q
 l$ AVH
 l$ D9l$0|LH
-l$ H;
+l$ VAVAWH
 l$ VH
 l$ VWAVH
 l$ WATAWH
 l$ WH
-l$0A+
 l$0H+
 l$0Hc
 l$0Ic
@@ -1596,6 +1590,7 @@ loop_break_on_flashlight
 loop_in_action
 looping
 m0k0$
+mU[Wu
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -1810,7 +1805,7 @@ outerconeangle
 p UWAVH
 p0n05
 p1f3q>
-pHD8=
+pHD8=ID
 parent_bone
 particle
 particles/
@@ -1857,7 +1852,6 @@ resourcesystem.dll
 rootNode
 rs_dump_stats
 rs_dump_stats - Dump resourcesystem stats.
-r{6T9=V~
 s0HcC(H
 schema
 schemasystem
@@ -1890,39 +1884,38 @@ t$ Lcq
 t$ Mc
 t$ UH
 t$ UWATAUAVH
-t$ UWAVH
 t$ WATAUAVAWH
 t$ WATAVH
 t$ WAVAWH
 t$ WH
+t$(Hc
 t$0+A$t
+t$0D9t$@|LH
+t$0H;
 t$0Hi
 t$8E2
 t$8Ic
 t$8Mc
-t$8ff
 t$@Hc
-t$@Ic
 t$HD8{
 t$Ht	H
 t$Hu'
 t$PE3
 t$Pt%@
 t$XE3
-t$Xff
 t$Xt	H
 t$`D8
 t$`Hc
 t$`I;
 t$pE3
 t$x;_@u
-t$xff
 t*D8#t
 t.@8:t)
 t/D83t*
 t0@87t+
+t0@8;t+
 t0D8;t+
-t9H9=
+t9H9=&	
 tJIc}
 t]<-u
 test_angles_relative
@@ -1932,13 +1925,12 @@ trD8(tmH
 trIc^
 tu+K$3
 turn_rate
-t~H+{(H
-u	@8=-
-u(@8=
-u*A;u
+t~H+{0H
+u	@8=
+u(@8=[
+u)HcH
 u*Hc\$ ;\$0u
 u,Hc+;k
-u,HcH
 u-fff
 u98D$`u;H
 uint64
@@ -2005,14 +1997,15 @@ www.digicert.com1!0
 www.digicert.com1$0"
 www.digicert.com110/
 x	HcQ
-x A;@X}
 x UATAWH
 x!HcI
 x!HcK
 x";C }
+x";Ep}
 x0v0$
 xRHcQ
 x_^][
+xwIc4$;
 yaw_end
 yaw_start
 z0x0:
@@ -2027,18 +2020,17 @@ z:KCAuthPhysBody
 |$ E3
 |$ Hc
 |$ UATAUAVAWH
-|$ UH
+|$ ff
 |$(Hc
 |$(ff
 |$,ff
 |$0A9{
 |$0E3
 |$0Hc
-|$0Hc3D
 |$0Ic
-|$0uO
+|$8H;|$H
+|$8tsH
 |$@Hc
-|$@fff
 |$@t	3
 |$HHc7;w
 |$PA;^ u
@@ -2047,10 +2039,10 @@ z:KCAuthPhysBody
 |$Pfff
 |$PxcHc
 |$XIc
+|$`@2
 |$`Lc
 |$hA+
 }7A8~Ht
-}8@8xzD
 }bfA;
 ~!A;~
 ~#fff

@@ -13,16 +13,16 @@
 																									
 																												
 																																													
-																																																																																											
+																																																																																												
+																																																																																																		
 																																																																																																																																																			
-				@WH
 		%.*s
 		Exits: 
 	 ();,
 	 The lexer was matching from line %d, offset %d, which
 	 This indicates a poorly specified lexer RULE
 	 or unterminated input element such as: "STRING["]
-	!	&	+	0	6	;	@	F	K	P	U	[	a	g	m	s	y	
+	!	'	-	3	9	?	E	K	Q	W	]	c	g	k	o	t	z	
 	%.*s
 	%s at offset %d, 
 	D$0H
@@ -52,6 +52,7 @@
     near %s
     vec4  gl_ClipVertex;out vec4  gl_FrontColor;out vec4  gl_BackColor;out vec4  gl_FrontSecondaryColor;out vec4  gl_BackSecondaryColor;out vec4  gl_TexCoord[];out float gl_FogFragCoord;
     xfb_buffer 
+   !!!"#
    $%d = 
    ---User Time---
    ---Wall Time---
@@ -79,7 +80,7 @@
  !"#$%&'()*+,-./0123456789;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:
  !"#$%&'()*+,-./0123458688888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888887
  !"#$%&'()*+,-./701777723456H
- !"#$%&'()*+,-./:012345678:9
+ !"#$%&'()*+,-./;0123456789:H
  !(("#$%&&((&&&&&((
  $$$$$$$$$$$!!!$$$$$$$$$"#
  %s_%s
@@ -169,6 +170,7 @@
  A_A\_
  A_A\_^]
  A_A]A\][
+ A_A]A\^]
  A_A]A\_^
  A_A]A\_^][
  A_A^A\
@@ -314,6 +316,7 @@
  components, but given only 
  components.
  constant_id=
+ construct headed by 
  construct with the 
  construct, but not to the 
  containing: 
@@ -386,6 +389,7 @@
  in  
  in Vertex or Tessellation execution model requires the ShaderViewportIndexLayerEXT capability.
  in function <
+ in semantic instruction cannot be a non-semantic instruction
  in the structure <id> '
  inbounds
  index=
@@ -401,9 +405,12 @@
  is already a merge block for another header
  is banned when using the Vulkan memory model.
  is being used for 
+ is contained in the 
  is decorated with BuiltIn. BuiltIn decoration should only be applied to struct types, variables and constants.
  is defined more than once
  is disallowed
+ is invalid
+ is not
  is not a bool scalar.
  is not a constant.
  is not a float scalar.
@@ -413,6 +420,7 @@
  is not a scalar numeric type
  is not a type
  is not a type id
+ is not a valid debug type
  is not aligned to 
  is not aligned to scalar element size 
  is not allowed by OpenCL 1.2 
@@ -420,6 +428,7 @@
  is not allowed by OpenCL 2.2 
  is not allowed by Vulkan 1.0 specification
  is not allowed by Vulkan 1.1 specification
+ is not allowed by Vulkan 1.2 specification
  is not allowed by WebGPU specification
  is not allowed.
  is not an OpLabel.
@@ -450,6 +459,8 @@
  must appear in a block
  must be 0 for a floating-point type, 
  must be a memory object declaration
+ must be a result id of 
+ must be a result id of a lexical scope
  must be an OpLabel
  must be explicitly laid out with ArrayStride decorations.
  must be explicitly laid out with MatrixStride decorations.
@@ -484,6 +495,7 @@
  overlaps previous member ending at offset 
  passthrough
  patch
+ permitted by WebGPU: got 
  perprimitiveNV
  personality 
  pervertexNV
@@ -520,6 +532,7 @@
  seq_cst
  set=
  shaderRecordNV
+ shadercallcoherent
  singlethread
  slow queries.
  smax 
@@ -623,7 +636,6 @@
  xfb_stride=
  yielding Result Id 
  | E3
-!!!!!!!!!!!!!!!!!!"""######"""###$$$"""###%%%&&&&&&!!!!!!!!!!!'''''''''''''''''''''''''''''''''''!!!!!!!!!!!''''''!!BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB())))*+,BBB-BB.
 !""""""
 !,X< w
 !>6'Y
@@ -639,20 +651,18 @@
 ")" expected to end 'debug' pragma
 ")" expected to end 'optimize' pragma
 "D) A
+"H;C(u
 "H;L$hu
 "H;Npu
 "H;\$Pu
 "I;Gxu
+"RHrtjW
 "defined" can't be (un)defined:
 "e?<<<<<<l?
 "on" or "off" expected after '(' for 'debug' pragma
 "on" or "off" expected after '(' for 'optimize' pragma
 "wBHc
 ####### !###""""""""""""f
-#########
-#################
-######################
-#########################
 ########################################################################################################################################################################
 #4o>w
 #H;L$@u
@@ -660,6 +670,8 @@
 #Ib?AG
 #define
 #define %s (%s.%s)
+#define E_GL_EXT_ray_query 1
+#define E_GL_EXT_ray_tracing 1
 #define E_GL_EXT_shader_atomic_int64 1
 #define E_GL_EXT_shader_realtime_clock 1
 #define GL_AMD_gcn_shader 1
@@ -680,8 +692,10 @@
 #define GL_ARB_explicit_uniform_location 1
 #define GL_ARB_fragment_shader_interlock 1
 #define GL_ARB_gpu_shader5 1
+#define GL_ARB_gpu_shader_fp64 1
 #define GL_ARB_gpu_shader_int64 1
 #define GL_ARB_post_depth_coverage 1
+#define GL_ARB_sample_shading 1
 #define GL_ARB_separate_shader_objects 1
 #define GL_ARB_shader_atomic_counters 1
 #define GL_ARB_shader_ballot 1
@@ -697,7 +711,9 @@
 #define GL_ARB_tessellation_shader 1
 #define GL_ARB_texture_cube_map_array 1
 #define GL_ARB_texture_gather 1
+#define GL_ARB_texture_multisample 1
 #define GL_ARB_texture_rectangle 1
+#define GL_ARB_uniform_buffer_object 1
 #define GL_ARB_viewport_array 1
 #define GL_ES 1
 #define GL_EXT_YUV_target 1
@@ -705,6 +721,7 @@
 #define GL_EXT_buffer_reference2 1
 #define GL_EXT_buffer_reference_uvec2 1
 #define GL_EXT_control_flow_attributes 1
+#define GL_EXT_debug_printf 1
 #define GL_EXT_demote_to_helper_invocation 1
 #define GL_EXT_device_group 1
 #define GL_EXT_frag_depth 1
@@ -744,6 +761,7 @@
 #define GL_FRAGMENT_PRECISION_HIGH 1
 #define GL_GOOGLE_cpp_style_line_directive 1
 #define GL_GOOGLE_include_directive 1
+#define GL_INTEL_shader_integer_functions2 1
 #define GL_KHR_blend_equation_advanced 1
 #define GL_KHR_shader_subgroup_arithmetic 1
 #define GL_KHR_shader_subgroup_ballot 1
@@ -872,17 +890,24 @@ $$$$$
 $$$$$$
 $$$$$$$
 $$$$$$$$
+$$$$$$$$$
+$$$$$$$$$$$
 $$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$ !"#
 $$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$%%%&&&&&&%%%&&&'''%%%&&&((())))))$$$$$$$$$$$
+$$DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*++++,-.DDD/DD0
 $&,V,S
 $&,V,S,V
 $&2,S
 $2,>S,,
 $;Y0r
-$@t	A
 $Global
 $Globals
 $H;8u5A
+$H;C(u
 $Hc3D+
 $I9L$
 $Ib?s
@@ -916,6 +941,7 @@ $undefined
 %@,S,V,V
 %@,V,V
 %GoU?*
+%H;F(u
 %H;FPu
 %H;Fpu
 %H;GHu
@@ -1039,6 +1065,7 @@ $undefined
 ' decorated with 
 ' decorated with both 
 ' default value must be at least 1.
+' default value must be at least 1: found 
 ' defined more than once!
 ' does not match Pointer <id> '
 ' does not match the Function Type's return type <id> '
@@ -1104,6 +1131,7 @@ $undefined
 ' on Loop '
 ' on Module '
 ' on Region '
+' size exceeds max value 
 ' storage class is read-only
 ' to '
 ' type does not match Result Type <id> '
@@ -1119,6 +1147,7 @@ $undefined
 ', type<
 '. This structure has 
 ':' missing after extension name
+'AccelerationS'
 'Alignment'
 'AppendStructuredBuffer'
 'Argument 0', +
@@ -1142,6 +1171,7 @@ $undefined
 'Column Type'
 'Column'
 'Columns'
+'Committed'
 'Comparator'
 'Component Count'
 'Component Type'
@@ -1156,6 +1186,7 @@ $undefined
 'Coordinate'
 'Count'
 'Cull Mask'
+'CullMask'
 'D8l$@
 'Decoration Group'
 'Default'
@@ -1240,6 +1271,7 @@ $undefined
 'Operand'
 'Operands'
 'Operation'
+'Origin'
 'Packed Indices'
 'Packet Alignment'
 'Packet Size'
@@ -1267,6 +1299,8 @@ $undefined
 'Ray Direction'
 'Ray Flags'
 'Ray Origin'
+'RayFlags'
+'RayQuery'
 'Reserve Id'
 'Resident Code'
 'Ret Event'
@@ -1291,6 +1325,7 @@ $undefined
 'Signed Value'
 'Signedness'
 'Size'
+'Slot'
 'Source'
 'Specialization Constant ID'
 'Status'
@@ -1304,6 +1339,7 @@ $undefined
 'StructuredBuffer'
 'SubpassInput'
 'SubpassInputMS'
+'THit'
 'TMax'
 'TMin'
 'Target Label'
@@ -1322,6 +1358,8 @@ $undefined
 'Texture3DArray'
 'TextureCube'
 'TextureCubeArray'
+'Tmax'
+'Tmin'
 'True Label'
 'Type'
 'Unequal'
@@ -1435,9 +1473,12 @@ $undefined
 ((((((((((((
 (((((((((((((((((((
 ()$^.*+?[]|\-{},:=!
+(-Bf'
+(-Xf'
 (...)
 (9+u9L
 (9Q u
+(;t}I
 (;uKI
 (;|$ |
 (=umL
@@ -1460,6 +1501,7 @@ $undefined
 (A_A^_[
 (A_A^_]
 (A__^[
+(D$ A
 (D$ E3
 (D$ H
 (D$ I
@@ -1607,6 +1649,7 @@ $undefined
 )D$`H
 )D$`L
 )D$`f
+)H;t$Hu
 )L$ f
 )L$0H
 )L$@L
@@ -1719,7 +1762,7 @@ $undefined
 ***COULDNOTCOMPUTE***
 ***Error! Variable %s is not an input texture
 ***Unsupported functionality: 
-*+&',-)./00011123456782349567:::;;;<=>?@ABCDD<=>?@ABCDD<=>?@ABCDD88^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^EFGHIJKL^^^^^^^MNOPQRSTUVWXYZ^^^^^^^[\^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^]]]]]]]]]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^8f
+*+&',-)./00011123456782349567:::;;;<=>?@ABCDD<=>?@ABCDD<=>?@ABCDD88^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^EFGHIJKL^^^^^^^MNOPQRSTUVWXYZ^^^^^^^[\^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^]]]]]]]]]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^8
 *.vshadercache
 *H+H(H
 *H+J8
@@ -1764,7 +1807,9 @@ $undefined
 , binding = %d 
 , but access index is 
 , but does not immediately precede it in the OpSwitch's target list
+, but its merge block 
 , but not via a structured exit
+, but with an element size of 
 , ccw
 , components (1/4 stride) needed are 
 , enc 
@@ -1795,6 +1840,7 @@ $undefined
 , which cannot be used with the current execution model:
 , which cannot be used with the current execution modes:
 , xfb_stride 
+, zero found
 ,,,,,,,
 ,,,,;;;
 ,,,,YYYY;;;;JJJJ,,,
@@ -1860,6 +1906,7 @@ $undefined
 ... Pass execution timing report ...
 ..om?
 .00cfg
+.5\j'
 .>PJ;I:qE>
 .?AUID3DInclude@@
 .?AUTDefaultHlslIoResolver@glslang@@
@@ -1869,13 +1916,17 @@ $undefined
 .?AUTextureUpgradeAndSamplerRemovalTransform@glslang@@
 .?AU_Crt_new_delete@std@@
 .?AUctype_base@std@@
+.?AV<lambda_005eeeb76ae2e3a0345b1141ca5e6342>@@
 .?AV<lambda_01ffc428251c6591efb952aeb1f1fe30>@@
+.?AV<lambda_025c65610b12c40407345690b921ac63>@@
 .?AV<lambda_036b0122324b0f501a4f4434e8d9e6f9>@@
+.?AV<lambda_03b94b1c011dcbe9802c1df8e9a33c9d>@@
 .?AV<lambda_0411141248eba77a9c463639a47389bc>@@
+.?AV<lambda_048af14c2b58df19418814a8d27bf2d6>@@
+.?AV<lambda_04efe99ec9f0d41f6da4bdf0793a3aeb>@@
 .?AV<lambda_0503ff8393ee71d69aa5d1d706ab6f8b>@@
 .?AV<lambda_05f9bd4027382ebf40db2bd2119ed3cb>@@
 .?AV<lambda_062288c46b63d9d2693a7d9de05a087e>@@
-.?AV<lambda_06280039500469c79ecb9c9278f0ac32>@@
 .?AV<lambda_0792047c7417a5ff41aaedb49c967ed0>@@
 .?AV<lambda_07d27ee33325dbe64a8f1f07a4fe3c2d>@@
 .?AV<lambda_07f817dbeaf3d9865bacbf61add338cb>@@
@@ -1883,8 +1934,8 @@ $undefined
 .?AV<lambda_0984ec0b6499bfe7d8ddeb05cdce8d0c>@@
 .?AV<lambda_0ac3814df1aa0a69b33cf6811becd7ad>@@
 .?AV<lambda_0c07e5c7eabbcd8231c1a22a360c6d81>@@
+.?AV<lambda_0c1b783d10cacbbe6f5de69f36338529>@@
 .?AV<lambda_0c3eabeb4e438c0c0e13986942eded5e>@@
-.?AV<lambda_0d6a2685008b0b2d993b877bc8fea32a>@@
 .?AV<lambda_0e1db1da1c34d1a32c2b345482de753d>@@
 .?AV<lambda_10716b643b72583dd3a820e8b57cf86e>@@
 .?AV<lambda_10f8b2f722ec3835f69c42965f1dad8b>@@
@@ -1902,6 +1953,7 @@ $undefined
 .?AV<lambda_19af8b2f1a485c112cbf0670da392a4a>@@
 .?AV<lambda_19cc5b875c4a787d3645ba75376ed3e0>@@
 .?AV<lambda_1a19116cc31da7702b1400d4782171fa>@@
+.?AV<lambda_1aa07e6380d6cd1f1a79f740844872d6>@@
 .?AV<lambda_1ac62b890c8265586dd91620ae40c22c>@@
 .?AV<lambda_1ba44d20c2086e8a69084c83a0d2c5f6>@@
 .?AV<lambda_1bbdb9660ae6df668031b5dcebb82ee0>@@
@@ -1912,6 +1964,7 @@ $undefined
 .?AV<lambda_1e317395c7f6af9a7e631f6d271dd772>@@
 .?AV<lambda_1e71e7034f1d44785f047e2810a6eadc>@@
 .?AV<lambda_1f0107248d1007b98fb1bc2e829af92b>@@
+.?AV<lambda_1ff1259975d47a2b25d36f7f80219776>@@
 .?AV<lambda_20d7f077accd1788ec43e4841d711de2>@@
 .?AV<lambda_20faf938f82734fd864f99b72fd734c6>@@
 .?AV<lambda_22b7c53d205bb0e082c6c45a327eb8a1>@@
@@ -1920,38 +1973,41 @@ $undefined
 .?AV<lambda_24d49e2023121e234443d7934b0ad15e>@@
 .?AV<lambda_25177d6fcde1e1af1d8e7722d7123895>@@
 .?AV<lambda_252cab0c7cab4dd1b5cdc3bfda1935e8>@@
-.?AV<lambda_25d8229d993b8a3afea4bdd447121f58>@@
 .?AV<lambda_25fca9fd8570c56c8bb6a44415401f25>@@
-.?AV<lambda_261a3e6e1ec3e4437012e89924706a04>@@
 .?AV<lambda_26540fe2da4c07d0acbda1620bfe4b93>@@
 .?AV<lambda_2780c4e9ddc8b129b840b3fbb49b67ee>@@
 .?AV<lambda_27875edbc1ca260bd0dbc37981fbfca8>@@
+.?AV<lambda_281d65a66a8167bcdd00ef7cc3d13d49>@@
 .?AV<lambda_29ec1c9eaf1275f3393e110e141fe32b>@@
 .?AV<lambda_2b40bba6e8bcb88a2135854a4a7aae87>@@
 .?AV<lambda_2b7abdc7110501d2321c069909dcb6fa>@@
 .?AV<lambda_2b9c55c142b3aab4657f9db3933b91bf>@@
 .?AV<lambda_2d1aa8c8b8a31672a9acd714dff00ff6>@@
 .?AV<lambda_2e0006f00d05a5e71d996e7ca1d428aa>@@
+.?AV<lambda_2e8e3c8f93933e261bf956436b782a3e>@@
 .?AV<lambda_2e9c004cb7c0f18ea777bd1128413ba4>@@
 .?AV<lambda_2f23002ed3cff2ed437d30eaf5b18ae4>@@
 .?AV<lambda_302d23ed0309ef191e9bb931824eadd5>@@
+.?AV<lambda_3054a39053a6e39b9efa4e787d0d3c78>@@
 .?AV<lambda_30f08908363f2362ab0102c9e171bcbb>@@
+.?AV<lambda_31749762f40e7bedd128225efca1a632>@@
 .?AV<lambda_31acd0ab0ab80592e3293f3b0d7d534c>@@
 .?AV<lambda_32279f51d3979f8f19efec8095eeae74>@@
+.?AV<lambda_335158413cc86b24fcf4da81453f8c48>@@
 .?AV<lambda_340c6aa19c18458fb3b046edf57a5725>@@
-.?AV<lambda_34146174d9393249fe4e8f86965a5f60>@@
 .?AV<lambda_343eb728bd434940d770b6aab7059d44>@@
 .?AV<lambda_3490bb01f8cd1c756f671c034b3c8e6d>@@
 .?AV<lambda_34b741d09247c474a01a026e22213061>@@
-.?AV<lambda_362f13e0d7944f853ddeccf3a9fe5b40>@@
 .?AV<lambda_3661e5d99fba800218ded5d504aa578e>@@
 .?AV<lambda_36c822da39e07217ddda3468d22e7af8>@@
 .?AV<lambda_36e8d35ca455e35cc0873497151b3e10>@@
 .?AV<lambda_36f031ab63ab8369c348433b96d0b293>@@
 .?AV<lambda_370b69eadd70f22054b1c30c1dc51758>@@
 .?AV<lambda_370cfa714bd2c94f87caeac6d78ccecd>@@
+.?AV<lambda_37ccf95f861dd58125807a1cf0735760>@@
 .?AV<lambda_37d5734cce75b6a6e819db22ed23c3e2>@@
 .?AV<lambda_391427bec0e80f65e9c551df35100038>@@
+.?AV<lambda_395fd5629772cd97303d8df52416d12e>@@
 .?AV<lambda_39ab6c89a8d28eed07ccfdb91d8058e4>@@
 .?AV<lambda_3a2d7c6535cbd4a2a51799c921a5b22c>@@
 .?AV<lambda_3be5fb318978bac395152b41025a3909>@@
@@ -1968,39 +2024,50 @@ $undefined
 .?AV<lambda_43c7876dbf18a782dacb3a40118d3662>@@
 .?AV<lambda_442253c6c6bc742da1f5915a6b1df96e>@@
 .?AV<lambda_4482818b4ee06e2bdb585dfce3428ff3>@@
+.?AV<lambda_4539c2e9e32e41afa363fe8b721f1c26>@@
 .?AV<lambda_45a5fd75ceea63f9d6cfba4c1ffed6f7>@@
 .?AV<lambda_477d6dc9f5db073226e24bf3420e5439>@@
-.?AV<lambda_49d682f1cbbed649429b725cf69f6363>@@
+.?AV<lambda_48199e4802e8dad4b894ff20077fa3cc>@@
 .?AV<lambda_4a49bb9d7a4049809f2bc554c4c3c3e5>@@
+.?AV<lambda_4a97af72b33f64336616a1ff479fe7de>@@
 .?AV<lambda_4ac7d3f9b4580f17091aaca25b7bd86f>@@
 .?AV<lambda_4bcf1410f105d72114e98eec19f131a8>@@
 .?AV<lambda_4df0f3992474302eace6a0f68ea42ff8>@@
 .?AV<lambda_4fb1f45682f18b56ab6ff42084b9d2d3>@@
-.?AV<lambda_4ff8dc3560ca2860d9f7020b0dde7262>@@
 .?AV<lambda_50533d45351b0870252aba24ee3420e9>@@
+.?AV<lambda_5192d63a1f8e031015e198d34e1a0679>@@
 .?AV<lambda_51bfecc9feb95cf49d4bc900e463652d>@@
 .?AV<lambda_51c48863abd211425f8d88fd7a2dee83>@@
 .?AV<lambda_522f1522a06425135eaaee35f4fba59f>@@
 .?AV<lambda_53cc4d1233d5656f9f5dfb5ccde26041>@@
+.?AV<lambda_5505b0c227f3f17589850f91a3c5e0e6>@@
 .?AV<lambda_5821416b0a0bfcab2bfc9554b085b5ce>@@
+.?AV<lambda_5856eeedb0b735cfe2c8d4ce569bca76>@@
+.?AV<lambda_591f9e7e28c5ed6d56592f8425b23639>@@
 .?AV<lambda_5a9befa26e0425846056061cbcae7bb3>@@
 .?AV<lambda_5ae77915c9f5a5e775fbeedeca03b605>@@
 .?AV<lambda_5b53e61450e62cd9feacd922abb7a0f3>@@
 .?AV<lambda_5bc762e90a021a1da765756da98dd9a6>@@
 .?AV<lambda_5c69c7837308a99573bb50dfee2d77c5>@@
+.?AV<lambda_5ce5a918b9e8c1f01b6892417fdd3926>@@
 .?AV<lambda_5ea627c122ca41b71bb9501e08f0e010>@@
 .?AV<lambda_5f4ea400e0ddbd6755db6901cc98d660>@@
 .?AV<lambda_5f8eb249afcfd55bfc1e1be03f58d69e>@@
 .?AV<lambda_5fa3b6280f053d5825d8cbbd090a7170>@@
 .?AV<lambda_60a344ece223c9d2b9f0eb34acd70c85>@@
+.?AV<lambda_61a0f6aa08a0763e12d577ab926918fc>@@
 .?AV<lambda_61de584c4ffdfb505b8eeaf633c2da3b>@@
 .?AV<lambda_63b7608ec24adbb4d4a5cda9355ef017>@@
 .?AV<lambda_63df440b627fe3b66920486c6a4a4f03>@@
 .?AV<lambda_653be034a8f76f8784719f9d0505e140>@@
 .?AV<lambda_65a49533954e833ab4661c42a56341e5>@@
 .?AV<lambda_65cf23f6c5d75970d8e858261ef648f6>@@
+.?AV<lambda_65ebe68ab2fc7142c88e731308e6b990>@@
 .?AV<lambda_661abbfbc0170f20ffc70e7331b8e395>@@
+.?AV<lambda_666ffc38f5069668c1ebbb5522ee58cc>@@
 .?AV<lambda_6722a7ce5d359a6c81b89f4fa4d3d1ae>@@
+.?AV<lambda_67eb9fe6ca3b839be674bc81c7f775de>@@
+.?AV<lambda_6890f404a8bc7ffca5ee86855138d0ad>@@
 .?AV<lambda_6908682808afd58985c7c7f4846ef48a>@@
 .?AV<lambda_69cf2512ec1d31cf461ac23e263cea3e>@@
 .?AV<lambda_69f44845bb24918cf4f0b193e6016e32>@@
@@ -2015,11 +2082,11 @@ $undefined
 .?AV<lambda_6e68544d38f2eaddd8ed2eec5ba6ccbf>@@
 .?AV<lambda_6f294285e33e7c263c1752ff23cabb55>@@
 .?AV<lambda_6f57a0b4562e0e24aeae17185d9fe66a>@@
-.?AV<lambda_701806cccde7a1cccab79c3f0bd849b3>@@
 .?AV<lambda_70695ccc602e271d61c9f163429eaee7>@@
 .?AV<lambda_706f5418d0eb52208014b0cf64da94b1>@@
 .?AV<lambda_71715a81194b36ac84f4ca6de376ca3d>@@
 .?AV<lambda_72004a64182b4cb0dcbab34f65f5fea6>@@
+.?AV<lambda_7288a49a0f2c79497acd2a78ee12497a>@@
 .?AV<lambda_72beae9e6848c4b6d0fa97d3ea5c8957>@@
 .?AV<lambda_736311db28f9dc546d2697742bbb82a2>@@
 .?AV<lambda_73716f6ee8f23dc8fece4ff79772f154>@@
@@ -2032,6 +2099,7 @@ $undefined
 .?AV<lambda_77c673e4a3f31836b25db14c560c99c8>@@
 .?AV<lambda_7992c64b7c8bba8096b295e144d58f5d>@@
 .?AV<lambda_7bd8837d05ad10c21a5a9e82ebb97ca1>@@
+.?AV<lambda_7c2e89e83bd5aeed7ded72e022e8f41e>@@
 .?AV<lambda_7c75f19d35dc15769e9d10f113aa6a27>@@
 .?AV<lambda_7d1aa0756ca7d77abb30b0d9bf0e97aa>@@
 .?AV<lambda_7d62b5eae68b1ec07b84993c7238bda7>@@
@@ -2042,21 +2110,20 @@ $undefined
 .?AV<lambda_8203fb147847308a614da2019ca5ec8e>@@
 .?AV<lambda_829c6792a011d6912cee5ac4c3ce7717>@@
 .?AV<lambda_8400c9e298ae4004f54bedc65f5688b8>@@
-.?AV<lambda_8405988000d592c8bb318c31d188d44a>@@
 .?AV<lambda_863a96988a0d4d997a327bb5821c7d91>@@
 .?AV<lambda_866bd0d718fdb6078d0720ded39fcfe1>@@
 .?AV<lambda_87d58d4b4ac63515e503f036475ab536>@@
 .?AV<lambda_8823ce76b6a799c1d3a47fdbf2402f00>@@
 .?AV<lambda_8a6d3e888e42001b1c775c12340ad4e7>@@
-.?AV<lambda_8aeeb3be0360b2292a89781e92765f05>@@
 .?AV<lambda_8b3bd07082e685ed39dd8313736aa419>@@
 .?AV<lambda_8bea274c30fee273fa7c52ee649dcdf5>@@
-.?AV<lambda_8bf87c5ed827dbeb735303469d7ad79e>@@
 .?AV<lambda_8c20947c49e79f408e04181559b5e404>@@
 .?AV<lambda_8c335f050ce4ae0f7d64fc361919c995>@@
 .?AV<lambda_8cb1225ab70e46ffb2468e5e374f5af7>@@
 .?AV<lambda_8daace18515ebd8766fa02300b8beac9>@@
 .?AV<lambda_8e7a7d5c2721dcd9a525913659a11afd>@@
+.?AV<lambda_8faeede5a32d41666aaf6de4a2644ccd>@@
+.?AV<lambda_91fe58472eb9a634015b0501dd2062eb>@@
 .?AV<lambda_920470c98a7299e6099f79150ecef4f5>@@
 .?AV<lambda_92087d7cff5973ca54cc61431b9c4be4>@@
 .?AV<lambda_924a05e004da9b6e7bf01385df9c5614>@@
@@ -2068,7 +2135,10 @@ $undefined
 .?AV<lambda_93eca927d10293567694d3d90c8f4d45>@@
 .?AV<lambda_94823a752238d95b4a0c6a25072b5a0a>@@
 .?AV<lambda_956b2d023e429dafd24c05ff68b4ab70>@@
+.?AV<lambda_95cdecee5dd691b821ca85f9eed26f35>@@
 .?AV<lambda_963319738e0d8c2ada194af552add1e1>@@
+.?AV<lambda_969650e45d32240d0d326cb17864bb9e>@@
+.?AV<lambda_978125765cb0824d32536c293669a2f6>@@
 .?AV<lambda_97c10da097dc246e45540f12187a6a9d>@@
 .?AV<lambda_97c31520b716ada2abcfd96063dc812e>@@
 .?AV<lambda_98026a82ba23c51f2904fb9d9b555cb4>@@
@@ -2076,52 +2146,64 @@ $undefined
 .?AV<lambda_995834119c8cd4d77d33c0453322c501>@@
 .?AV<lambda_999ad67b4551f8eba12c9acc66459e0e>@@
 .?AV<lambda_9a0581c3afe3f86dd461d08bdb54a5d0>@@
+.?AV<lambda_9c070f89d7943dc547eee22d9cd0e9eb>@@
+.?AV<lambda_9c5438f8ef0af4f713f2e1adf78f7d97>@@
 .?AV<lambda_9d37987cd1408589cc718c11aa45cebf>@@
 .?AV<lambda_9d4d115a05a33ef1a04962e67662efa9>@@
 .?AV<lambda_9d7b874c18a31c2cfd1a053e340f8caa>@@
+.?AV<lambda_9e11e1b7c4b7e8d37a87b4a56d109e68>@@
 .?AV<lambda_9e5f7ef39f67170e4bc18b123f4a11fa>@@
-.?AV<lambda_9ed7022c78caf3e364b68e2a58727d60>@@
 .?AV<lambda_9efc63f929498b7c2a58743de0a5009a>@@
+.?AV<lambda_9f67749b75cf2f30e58e84027c44ce54>@@
 .?AV<lambda_9fdd24e47da11df9a85b9c398cd749e8>@@
 .?AV<lambda_a1c13600da47b7f3b868360a4728392e>@@
-.?AV<lambda_a1f0188f5582b0a3ce6348bcd61879d4>@@
 .?AV<lambda_a1f9fd54ad97dbb89411f34fc679d30a>@@
 .?AV<lambda_a23da230d44deb90b24f8e3ffb2d2f0e>@@
 .?AV<lambda_a2bd8d6171d9d4eb196fe1fe40af23f3>@@
 .?AV<lambda_a2c49d1c64f313e0f5442d36615f0970>@@
 .?AV<lambda_a2d719a2bdfc26725c8e7a7bc0e668da>@@
 .?AV<lambda_a4e706d0e89efdc5fdaa5887fa0a91d6>@@
-.?AV<lambda_a541e2493269ea02d579134ecff861a5>@@
 .?AV<lambda_a625787163a827b34adc9d37af4f5015>@@
 .?AV<lambda_a7d7a1ea8f50b1a4f181568b24f193f5>@@
 .?AV<lambda_a8958dfd16014aa445e5f04fcd6953dc>@@
 .?AV<lambda_a9f83ffd4858fb9a05ae5cbc0782b60e>@@
 .?AV<lambda_aa029af28ac5dbb7b3d79a3066171f8f>@@
+.?AV<lambda_aa57f881619cc834a9e62a17a56f2494>@@
 .?AV<lambda_aa7a07c9f0fca2dbf25755e77c13c866>@@
+.?AV<lambda_aacace3f73c62fbe87e01066d2b0e2ce>@@
+.?AV<lambda_ab11369c517d6e192ae9b1a07a9aa6e0>@@
 .?AV<lambda_abe24b5a300fed7bf4460a0f57ec95c4>@@
 .?AV<lambda_ae229126bdd0e6bd2c9c09927f8bc2cb>@@
 .?AV<lambda_ae34c7888503b2594012e04b23aec424>@@
+.?AV<lambda_b0c044f38cf6f9d3862c005272a46f30>@@
 .?AV<lambda_b137a0a97c239f0430aec971e5c0ea91>@@
 .?AV<lambda_b24c75b79e2cb76f89ff7304e786770b>@@
 .?AV<lambda_b259b4d5852fe1044349fc3b57fb2e74>@@
 .?AV<lambda_b3e332b63f865ca53a0afe1c246aa1a1>@@
+.?AV<lambda_b3f496b3dc3f623dd7a360e5c1230f8c>@@
 .?AV<lambda_b425c593b3d7da4fb0bd491d3999b45a>@@
 .?AV<lambda_b475553a12d831cfa4f6231633905074>@@
+.?AV<lambda_b50334cc2458ca7055080ef34dc7b2f3>@@
 .?AV<lambda_b522294996e2c97f9922f8403868f6f7>@@
 .?AV<lambda_b525a7f4ea3217679bd3bcdc0af29188>@@
 .?AV<lambda_b61727b5629d3f2904f12a33f98ec2aa>@@
 .?AV<lambda_b6d60654ddb6767d886de4b94b3013e5>@@
-.?AV<lambda_b73d8282cf09cfaddcd064ec244fe3d3>@@
 .?AV<lambda_b77debf4353e319f811a60c0589594d4>@@
 .?AV<lambda_b7ecfd73dd291c3ad9ea0c46e181100f>@@
 .?AV<lambda_b7f8cb0c8cc66132c23918eef857c1ad>@@
+.?AV<lambda_b8e5f9812517cc12478cfb449cddd667>@@
+.?AV<lambda_b92d0b0d1ebce1ff9c36537d30e6c61b>@@
+.?AV<lambda_b9a7139a531c234a2114fac15cb2d328>@@
 .?AV<lambda_baea9d5bd3f3a596b0e3fbb492b9979e>@@
 .?AV<lambda_bbf9dee55213fd1547b1a8fa978bbf50>@@
+.?AV<lambda_bd2a45e93e51cdfa5e01615e871f699c>@@
 .?AV<lambda_bd4eef13987434eafc3bc93c0f827c39>@@
 .?AV<lambda_bdd9827a4a336eebb62ca7865bdc6d6f>@@
 .?AV<lambda_be46c0af90919a18f1986b5d9b53c923>@@
 .?AV<lambda_be80022a55897b5a5fd86c47ec498ba0>@@
 .?AV<lambda_be8cb7d76c4b5ac16ee557374337e850>@@
+.?AV<lambda_bf06c54d012bedab0ffa1b1268c4bb87>@@
+.?AV<lambda_c0adafca6dfa34dbfaa80dcb457cba5d>@@
 .?AV<lambda_c0e83da0bf2772c0cb8c9d27ec15bb8b>@@
 .?AV<lambda_c176fed0d246e6d32a46e518fe40da15>@@
 .?AV<lambda_c17efbb09d7a2e573b2731e3a18e58b4>@@
@@ -2133,6 +2215,7 @@ $undefined
 .?AV<lambda_c59a645df007c94cc90294ba17d8f048>@@
 .?AV<lambda_c8320ee4f3749878690a96a8764b3afd>@@
 .?AV<lambda_c874111fe549042d84de9366378b3909>@@
+.?AV<lambda_c8d2e88f20f452ea14e9a89d63bbf206>@@
 .?AV<lambda_c922c10d00445d1864098cace0215add>@@
 .?AV<lambda_c94942080aa4bef67bdd1e3c2b57d6fa>@@
 .?AV<lambda_c9a760d9d66599a613a2b4f43eacf297>@@
@@ -2141,6 +2224,8 @@ $undefined
 .?AV<lambda_cad2f68fd17da95f214394ac88507ed5>@@
 .?AV<lambda_cadf9a7c0a9a48b2973c35b3073213e3>@@
 .?AV<lambda_cc593e800dea0eaa4e243b2f04fb6bdd>@@
+.?AV<lambda_ccb926d4f798d5c1a35b7df7717f17bf>@@
+.?AV<lambda_ccf10aa3b24b48413ed4e4b0ab0017ef>@@
 .?AV<lambda_cd3e2fc2020a3a0e7095808ea5ea1075>@@
 .?AV<lambda_ce6003c0d18fbc8e971dd4fddbb030b4>@@
 .?AV<lambda_cee96e50ebd2ccfe9b4a886374be4c3c>@@
@@ -2149,6 +2234,7 @@ $undefined
 .?AV<lambda_d25df1932b73922ec64c87a0e6d3cee0>@@
 .?AV<lambda_d2debe841b156100770a356060ba3309>@@
 .?AV<lambda_d30a3c7d8d071fd8ad14e562a7390e3d>@@
+.?AV<lambda_d334adbb68f0761d9e7e5099ebd4d4f1>@@
 .?AV<lambda_d38c58a4ba11b0ddfb6efdff1d25afb8>@@
 .?AV<lambda_d3aeb95d7ad19adefcd39a99507ca4c5>@@
 .?AV<lambda_d4282bc1c30d60c850c997232050960d>@@
@@ -2156,18 +2242,19 @@ $undefined
 .?AV<lambda_d4c13c055296cc3f0f372cc07a6dd62a>@@
 .?AV<lambda_d5ed91c87dab26dead301cd56f036ea2>@@
 .?AV<lambda_d61d9be295fb9564c197038b008b38d1>@@
-.?AV<lambda_d64e4adb0f77e9154acb6a8759922310>@@
 .?AV<lambda_d75fe7aa8a46eff945457ee1f3622143>@@
 .?AV<lambda_d7a06087342bc567669ac6231c659b2a>@@
 .?AV<lambda_d8ba002339af58495815303bad35aacc>@@
 .?AV<lambda_d8fc16f5e31991cf01dada3d69129c65>@@
 .?AV<lambda_d9231b5d3c00eb724b37d8bae33cf148>@@
+.?AV<lambda_d95e8ea7a5c8a74ad93a2787f49b033a>@@
 .?AV<lambda_d99d59b990d3a72ce75812e6c9562807>@@
 .?AV<lambda_d9a3bfb820364132dc9ffebe479a9270>@@
 .?AV<lambda_da7376a42906a93590e09d6a61289d2a>@@
 .?AV<lambda_daa3bf1adbed79e9ffeaa4f9b2225c4d>@@
 .?AV<lambda_dad8c3d0dcd034e04683c27674c4b373>@@
 .?AV<lambda_db8b3257dda4a6180359ce7af5b30405>@@
+.?AV<lambda_db902b727bd780ead84e0e90531c1c5d>@@
 .?AV<lambda_dc41538dbe6f41001e4442372a856620>@@
 .?AV<lambda_dcb7f621d48d829353d5bbd01bb3abdb>@@
 .?AV<lambda_dcc99e0db608dc23fc72a9e2a32a50ce>@@
@@ -2181,21 +2268,24 @@ $undefined
 .?AV<lambda_e21f653c67f262e33e69d132bc515dd6>@@
 .?AV<lambda_e2f496aaa00a260d65b837f3686f5ccc>@@
 .?AV<lambda_e3ae43eb6d5dfad18df17d54b1617745>@@
+.?AV<lambda_e4150481766c3b9349868818b5d7b81e>@@
 .?AV<lambda_e43a73ea13a53bf6127a7da185761b1f>@@
 .?AV<lambda_e495fe2bdc48d4f9e5cdc8f3aa07eba6>@@
 .?AV<lambda_e4fc45e14be4e6a3d4540031311acd64>@@
 .?AV<lambda_e5267a1a7ae0de147e41df50075e0231>@@
 .?AV<lambda_e593c26e18c9aa9a737d03e07d304668>@@
+.?AV<lambda_e77e8ca692428c3a9a3ef66acafb54a1>@@
 .?AV<lambda_e790478f58af5fa6a03d36914f4c8fac>@@
 .?AV<lambda_e8b3d6c17a137f553b762b1468e8e274>@@
 .?AV<lambda_e9b2fa05b69ad318456ccd0881aaf04d>@@
-.?AV<lambda_e9c936cb93c6671e8303a180044e9b47>@@
 .?AV<lambda_ead18916832bed4b770811689fc4a172>@@
 .?AV<lambda_ee7e5973d0031afdb7c7341041506ab6>@@
 .?AV<lambda_ef3e14b66c1beb77699f812282f54486>@@
+.?AV<lambda_ef48beab8c131a24ad2d7ce89f824dd2>@@
 .?AV<lambda_f00d22e87ab49c41fd33e5728eb20288>@@
 .?AV<lambda_f069030dab28c5d7b0da7c60889effce>@@
 .?AV<lambda_f085be6385708b574f76b75238f496ad>@@
+.?AV<lambda_f0af9f27e92146485984da27da20a867>@@
 .?AV<lambda_f10ab3304ff1ffe3fd1b809e45980764>@@
 .?AV<lambda_f22b123cc92db1a759a8cdd451463f54>@@
 .?AV<lambda_f26ff537cf3e5ac2c268f26cf2368f66>@@
@@ -2203,8 +2293,10 @@ $undefined
 .?AV<lambda_f4642c729abc98c1e08ad1de1f2deff0>@@
 .?AV<lambda_f88e22d98dadda0f2976808fedf0ae91>@@
 .?AV<lambda_fa07fca1029f4ecef374e9b13837a8ce>@@
+.?AV<lambda_fa38b2d7e58f528a5f52adbe07c250a1>@@
 .?AV<lambda_fa84d0676fe9158ce1e653456c993ac3>@@
 .?AV<lambda_fa94c8d664a772f6ffda43941dd657d5>@@
+.?AV<lambda_fb25124ae9463b307af0d321ef3486da>@@
 .?AV<lambda_fe3aa2a41614c51afa978d6d360dd9e7>@@
 .?AV<lambda_feb28a8fc1d136f28c08dbfc9b18f561>@@
 .?AV<lambda_febccfbcc58b95efa7e80f2f3c87dcf4>@@
@@ -2214,7 +2306,6 @@ $undefined
 .?AV<lambda_ff61b666811aed06f4e22bed8b5e77b5>@@
 .?AV<lambda_ffa1bef1e94074a3f33f3ed63b690dea>@@
 .?AV<lambda_ffd3c9ba70f65cd0e524b13530faa5fa>@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$IntrusiveList@VInstruction@opt@spvtools@@@utils@spvtools@@
 .?AV?$IntrusiveNodeBase@VInstruction@opt@spvtools@@@utils@spvtools@@
 .?AV?$SmallVector@I$01@utils@spvtools@@
@@ -2239,7 +2330,9 @@ $undefined
 .?AV?$_Func_base@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@34@PEAVInstruction@34@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@std@@@std@@
 .?AV?$_Func_base@PEBVConstant@analysis@opt@spvtools@@PEBVType@234@PEBV1234@PEAVConstantManager@234@@std@@
 .?AV?$_Func_base@PEBVConstant@analysis@opt@spvtools@@PEBVType@234@PEBV1234@PEBV1234@PEAVConstantManager@234@@std@@
+.?AV?$_Func_base@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$$V@std@@
 .?AV?$_Func_base@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@std@@
+.?AV?$_Func_base@W4PropStatus@SSAPropagator@opt@spvtools@@PEAVInstruction@34@PEAPEAVBasicBlock@34@@std@@
 .?AV?$_Func_base@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
 .?AV?$_Func_base@W4spv_result_t@@AEBVInstruction@val@spvtools@@@std@@
 .?AV?$_Func_base@XAEAI@std@@
@@ -2248,7 +2341,7 @@ $undefined
 .?AV?$_Func_base@XI@std@@
 .?AV?$_Func_base@XPEAI@std@@
 .?AV?$_Func_base@XPEAVBasicBlock@opt@spvtools@@@std@@
-.?AV?$_Func_base@XPEAVBlock@spv@@@std@@
+.?AV?$_Func_base@XPEAVBlock@spv@@W4ReachReason@2@PEAV12@@std@@
 .?AV?$_Func_base@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_base@XPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_base@XPEAVTIntermTyped@glslang@@PEAV12@PEAV12@PEAV12@_N@std@@
@@ -2279,19 +2372,24 @@ $undefined
 .?AV?$_Func_base@_NPEBI@std@@
 .?AV?$_Func_base@_NPEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_base@_NW4Op@spv@@I@std@@
+.?AV?$_Func_base@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_base@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@
 .?AV?$_Func_impl@P6A?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@ZV?$allocator@H@2@V12@I@std@@
 .?AV?$_Func_impl@P6APEBVConstant@analysis@opt@spvtools@@PEAVIRContext@34@PEAVInstruction@34@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@std@@@ZV?$allocator@H@8@PEBV1234@PEAV534@PEAV634@AEBV78@@std@@
 .?AV?$_Func_impl@P6APEBVConstant@analysis@opt@spvtools@@PEBVType@234@PEBV1234@1PEAVConstantManager@234@@ZV?$allocator@H@std@@PEBV1234@PEBV5234@PEBV1234@PEBV1234@PEAV6234@@std@@
 .?AV?$_Func_impl@P6AXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZV?$allocator@H@2@XAEBV12@@std@@
 .?AV?$_Func_impl@P6A_NPEAVIRContext@opt@spvtools@@PEAVInstruction@23@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@std@@@ZV?$allocator@H@6@_NPEAV123@PEAV423@AEBV56@@std@@
+.?AV?$_Func_impl@V<lambda_005eeeb76ae2e3a0345b1141ca5e6342>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_01ffc428251c6591efb952aeb1f1fe30>@@V?$allocator@H@std@@XI@std@@
+.?AV?$_Func_impl@V<lambda_025c65610b12c40407345690b921ac63>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_036b0122324b0f501a4f4434e8d9e6f9>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
+.?AV?$_Func_impl@V<lambda_03b94b1c011dcbe9802c1df8e9a33c9d>@@V?$allocator@H@std@@XPEAVBlock@spv@@W4ReachReason@5@PEAV45@@std@@
 .?AV?$_Func_impl@V<lambda_0411141248eba77a9c463639a47389bc>@@V?$allocator@H@std@@_NI@std@@
+.?AV?$_Func_impl@V<lambda_048af14c2b58df19418814a8d27bf2d6>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_04efe99ec9f0d41f6da4bdf0793a3aeb>@@V?$allocator@H@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@$$V@std@@
 .?AV?$_Func_impl@V<lambda_0503ff8393ee71d69aa5d1d706ab6f8b>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_05f9bd4027382ebf40db2bd2119ed3cb>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_062288c46b63d9d2693a7d9de05a087e>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
-.?AV?$_Func_impl@V<lambda_06280039500469c79ecb9c9278f0ac32>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_0792047c7417a5ff41aaedb49c967ed0>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_07d27ee33325dbe64a8f1f07a4fe3c2d>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_07f817dbeaf3d9865bacbf61add338cb>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
@@ -2299,8 +2397,8 @@ $undefined
 .?AV?$_Func_impl@V<lambda_0984ec0b6499bfe7d8ddeb05cdce8d0c>@@V?$allocator@H@std@@XPEBUDominatorTreeNode@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_0ac3814df1aa0a69b33cf6811becd7ad>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_0c07e5c7eabbcd8231c1a22a360c6d81>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_0c1b783d10cacbbe6f5de69f36338529>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_0c3eabeb4e438c0c0e13986942eded5e>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
-.?AV?$_Func_impl@V<lambda_0d6a2685008b0b2d993b877bc8fea32a>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_0e1db1da1c34d1a32c2b345482de753d>@@V?$allocator@H@std@@_NAEBVTType@glslang@@AEBV45@W4TOperator@5@H@std@@
 .?AV?$_Func_impl@V<lambda_10716b643b72583dd3a820e8b57cf86e>@@V?$allocator@H@std@@XAEAI@std@@
 .?AV?$_Func_impl@V<lambda_10f8b2f722ec3835f69c42965f1dad8b>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
@@ -2318,6 +2416,7 @@ $undefined
 .?AV?$_Func_impl@V<lambda_19af8b2f1a485c112cbf0670da392a4a>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_19cc5b875c4a787d3645ba75376ed3e0>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_1a19116cc31da7702b1400d4782171fa>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_1aa07e6380d6cd1f1a79f740844872d6>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_1ac62b890c8265586dd91620ae40c22c>@@V?$allocator@H@std@@_NAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_1ba44d20c2086e8a69084c83a0d2c5f6>@@V?$allocator@H@std@@XI@std@@
 .?AV?$_Func_impl@V<lambda_1bbdb9660ae6df668031b5dcebb82ee0>@@V?$allocator@H@std@@XPEAI@std@@
@@ -2328,6 +2427,7 @@ $undefined
 .?AV?$_Func_impl@V<lambda_1e317395c7f6af9a7e631f6d271dd772>@@V?$allocator@H@std@@XW4Extension@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_1e71e7034f1d44785f047e2810a6eadc>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_1f0107248d1007b98fb1bc2e829af92b>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_1ff1259975d47a2b25d36f7f80219776>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_20d7f077accd1788ec43e4841d711de2>@@V?$allocator@H@std@@XW4SpvCapability_@@@std@@
 .?AV?$_Func_impl@V<lambda_20faf938f82734fd864f99b72fd734c6>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@PEBV456@@std@@
 .?AV?$_Func_impl@V<lambda_22b7c53d205bb0e082c6c45a327eb8a1>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@@std@@
@@ -2336,38 +2436,41 @@ $undefined
 .?AV?$_Func_impl@V<lambda_24d49e2023121e234443d7934b0ad15e>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_25177d6fcde1e1af1d8e7722d7123895>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_252cab0c7cab4dd1b5cdc3bfda1935e8>@@V?$allocator@H@std@@_NI@std@@
-.?AV?$_Func_impl@V<lambda_25d8229d993b8a3afea4bdd447121f58>@@V?$allocator@H@std@@XPEAVBlock@spv@@@std@@
 .?AV?$_Func_impl@V<lambda_25fca9fd8570c56c8bb6a44415401f25>@@V?$allocator@H@std@@XPEAI@std@@
-.?AV?$_Func_impl@V<lambda_261a3e6e1ec3e4437012e89924706a04>@@V?$allocator@H@std@@XAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_26540fe2da4c07d0acbda1620bfe4b93>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_2780c4e9ddc8b129b840b3fbb49b67ee>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_27875edbc1ca260bd0dbc37981fbfca8>@@V?$allocator@H@std@@XAEAI@std@@
+.?AV?$_Func_impl@V<lambda_281d65a66a8167bcdd00ef7cc3d13d49>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_29ec1c9eaf1275f3393e110e141fe32b>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_2b40bba6e8bcb88a2135854a4a7aae87>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
 .?AV?$_Func_impl@V<lambda_2b7abdc7110501d2321c069909dcb6fa>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_2b9c55c142b3aab4657f9db3933b91bf>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_2d1aa8c8b8a31672a9acd714dff00ff6>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_2e0006f00d05a5e71d996e7ca1d428aa>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_2e8e3c8f93933e261bf956436b782a3e>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_2e9c004cb7c0f18ea777bd1128413ba4>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_2f23002ed3cff2ed437d30eaf5b18ae4>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_302d23ed0309ef191e9bb931824eadd5>@@V?$allocator@H@std@@XI@std@@
+.?AV?$_Func_impl@V<lambda_3054a39053a6e39b9efa4e787d0d3c78>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_30f08908363f2362ab0102c9e171bcbb>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_31749762f40e7bedd128225efca1a632>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_31acd0ab0ab80592e3293f3b0d7d534c>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_32279f51d3979f8f19efec8095eeae74>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_335158413cc86b24fcf4da81453f8c48>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_340c6aa19c18458fb3b046edf57a5725>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
-.?AV?$_Func_impl@V<lambda_34146174d9393249fe4e8f86965a5f60>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_343eb728bd434940d770b6aab7059d44>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_3490bb01f8cd1c756f671c034b3c8e6d>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_34b741d09247c474a01a026e22213061>@@V?$allocator@H@std@@_NPEBVInstruction@opt@spvtools@@@std@@
-.?AV?$_Func_impl@V<lambda_362f13e0d7944f853ddeccf3a9fe5b40>@@V?$allocator@H@std@@XPEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_3661e5d99fba800218ded5d504aa578e>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_36c822da39e07217ddda3468d22e7af8>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_36e8d35ca455e35cc0873497151b3e10>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_36f031ab63ab8369c348433b96d0b293>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_370b69eadd70f22054b1c30c1dc51758>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_370cfa714bd2c94f87caeac6d78ccecd>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
+.?AV?$_Func_impl@V<lambda_37ccf95f861dd58125807a1cf0735760>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
 .?AV?$_Func_impl@V<lambda_37d5734cce75b6a6e819db22ed23c3e2>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_391427bec0e80f65e9c551df35100038>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_395fd5629772cd97303d8df52416d12e>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_39ab6c89a8d28eed07ccfdb91d8058e4>@@V?$allocator@H@std@@XW4SpvCapability_@@@std@@
 .?AV?$_Func_impl@V<lambda_3a2d7c6535cbd4a2a51799c921a5b22c>@@V?$allocator@H@std@@_NPEAI@std@@
 .?AV?$_Func_impl@V<lambda_3be5fb318978bac395152b41025a3909>@@V?$allocator@H@std@@XPEBVBasicBlock@opt@spvtools@@@std@@
@@ -2384,39 +2487,50 @@ $undefined
 .?AV?$_Func_impl@V<lambda_43c7876dbf18a782dacb3a40118d3662>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_442253c6c6bc742da1f5915a6b1df96e>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_4482818b4ee06e2bdb585dfce3428ff3>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_4539c2e9e32e41afa363fe8b721f1c26>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_45a5fd75ceea63f9d6cfba4c1ffed6f7>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_477d6dc9f5db073226e24bf3420e5439>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
-.?AV?$_Func_impl@V<lambda_49d682f1cbbed649429b725cf69f6363>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_48199e4802e8dad4b894ff20077fa3cc>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_4a49bb9d7a4049809f2bc554c4c3c3e5>@@V?$allocator@H@std@@XI@std@@
+.?AV?$_Func_impl@V<lambda_4a97af72b33f64336616a1ff479fe7de>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_4ac7d3f9b4580f17091aaca25b7bd86f>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_4bcf1410f105d72114e98eec19f131a8>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_4df0f3992474302eace6a0f68ea42ff8>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_4fb1f45682f18b56ab6ff42084b9d2d3>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
-.?AV?$_Func_impl@V<lambda_4ff8dc3560ca2860d9f7020b0dde7262>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_50533d45351b0870252aba24ee3420e9>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_5192d63a1f8e031015e198d34e1a0679>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_51bfecc9feb95cf49d4bc900e463652d>@@V?$allocator@H@std@@_NAEAVTType@glslang@@AEAV45@@std@@
 .?AV?$_Func_impl@V<lambda_51c48863abd211425f8d88fd7a2dee83>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_522f1522a06425135eaaee35f4fba59f>@@V?$allocator@H@std@@XAEAI@std@@
 .?AV?$_Func_impl@V<lambda_53cc4d1233d5656f9f5dfb5ccde26041>@@V?$allocator@H@std@@_NAEBVValidationState_t@val@spvtools@@PEBVFunction@56@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_5505b0c227f3f17589850f91a3c5e0e6>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_5821416b0a0bfcab2bfc9554b085b5ce>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_5856eeedb0b735cfe2c8d4ce569bca76>@@V?$allocator@H@std@@_NPEAI@std@@
+.?AV?$_Func_impl@V<lambda_591f9e7e28c5ed6d56592f8425b23639>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_5a9befa26e0425846056061cbcae7bb3>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_5ae77915c9f5a5e775fbeedeca03b605>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_5b53e61450e62cd9feacd922abb7a0f3>@@V?$allocator@H@std@@_NAEBVValidationState_t@val@spvtools@@PEBVFunction@56@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_5bc762e90a021a1da765756da98dd9a6>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_5c69c7837308a99573bb50dfee2d77c5>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_5ce5a918b9e8c1f01b6892417fdd3926>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_5ea627c122ca41b71bb9501e08f0e010>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@PEAIPEAIPEAI@std@@
 .?AV?$_Func_impl@V<lambda_5f4ea400e0ddbd6755db6901cc98d660>@@V?$allocator@H@std@@PEBV?$vector@PEAVBasicBlock@opt@spvtools@@V?$allocator@PEAVBasicBlock@opt@spvtools@@@std@@@3@PEBVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_5f8eb249afcfd55bfc1e1be03f58d69e>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_5fa3b6280f053d5825d8cbbd090a7170>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_60a344ece223c9d2b9f0eb34acd70c85>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_61a0f6aa08a0763e12d577ab926918fc>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_61de584c4ffdfb505b8eeaf633c2da3b>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_63b7608ec24adbb4d4a5cda9355ef017>@@V?$allocator@H@std@@_NAEBVTType@glslang@@AEBV45@W4TOperator@5@H@std@@
 .?AV?$_Func_impl@V<lambda_63df440b627fe3b66920486c6a4a4f03>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_653be034a8f76f8784719f9d0505e140>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_65a49533954e833ab4661c42a56341e5>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_65cf23f6c5d75970d8e858261ef648f6>@@V?$allocator@H@std@@XPEAI@std@@
+.?AV?$_Func_impl@V<lambda_65ebe68ab2fc7142c88e731308e6b990>@@V?$allocator@H@std@@_NPEAI@std@@
 .?AV?$_Func_impl@V<lambda_661abbfbc0170f20ffc70e7331b8e395>@@V?$allocator@H@std@@PEBV?$vector@PEAUDominatorTreeNode@opt@spvtools@@V?$allocator@PEAUDominatorTreeNode@opt@spvtools@@@std@@@3@PEBUDominatorTreeNode@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_666ffc38f5069668c1ebbb5522ee58cc>@@V?$allocator@H@std@@XPEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_6722a7ce5d359a6c81b89f4fa4d3d1ae>@@V?$allocator@H@std@@_NI@std@@
+.?AV?$_Func_impl@V<lambda_67eb9fe6ca3b839be674bc81c7f775de>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_6890f404a8bc7ffca5ee86855138d0ad>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_6908682808afd58985c7c7f4846ef48a>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_69cf2512ec1d31cf461ac23e263cea3e>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_69f44845bb24918cf4f0b193e6016e32>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
@@ -2431,11 +2545,11 @@ $undefined
 .?AV?$_Func_impl@V<lambda_6e68544d38f2eaddd8ed2eec5ba6ccbf>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_6f294285e33e7c263c1752ff23cabb55>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_6f57a0b4562e0e24aeae17185d9fe66a>@@V?$allocator@H@std@@XPEAVBasicBlock@opt@spvtools@@@std@@
-.?AV?$_Func_impl@V<lambda_701806cccde7a1cccab79c3f0bd849b3>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_70695ccc602e271d61c9f163429eaee7>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_706f5418d0eb52208014b0cf64da94b1>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_71715a81194b36ac84f4ca6de376ca3d>@@V?$allocator@H@std@@_NPEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_72004a64182b4cb0dcbab34f65f5fea6>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_7288a49a0f2c79497acd2a78ee12497a>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_72beae9e6848c4b6d0fa97d3ea5c8957>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_736311db28f9dc546d2697742bbb82a2>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_73716f6ee8f23dc8fece4ff79772f154>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
@@ -2448,6 +2562,7 @@ $undefined
 .?AV?$_Func_impl@V<lambda_77c673e4a3f31836b25db14c560c99c8>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_7992c64b7c8bba8096b295e144d58f5d>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_7bd8837d05ad10c21a5a9e82ebb97ca1>@@V?$allocator@H@std@@XPEBVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_7c2e89e83bd5aeed7ded72e022e8f41e>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_7c75f19d35dc15769e9d10f113aa6a27>@@V?$allocator@H@std@@PEBV?$vector@PEAVBasicBlock@val@spvtools@@V?$allocator@PEAVBasicBlock@val@spvtools@@@std@@@3@PEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_7d1aa0756ca7d77abb30b0d9bf0e97aa>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_7d62b5eae68b1ec07b84993c7238bda7>@@V?$allocator@H@std@@_NI@std@@
@@ -2458,21 +2573,20 @@ $undefined
 .?AV?$_Func_impl@V<lambda_8203fb147847308a614da2019ca5ec8e>@@V?$allocator@H@std@@_NAEBVTType@glslang@@AEBV45@AEBV45@@std@@
 .?AV?$_Func_impl@V<lambda_829c6792a011d6912cee5ac4c3ce7717>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_8400c9e298ae4004f54bedc65f5688b8>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEAVConstantManager@567@@std@@
-.?AV?$_Func_impl@V<lambda_8405988000d592c8bb318c31d188d44a>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_863a96988a0d4d997a327bb5821c7d91>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_866bd0d718fdb6078d0720ded39fcfe1>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_87d58d4b4ac63515e503f036475ab536>@@V?$allocator@H@std@@XAEAI@std@@
 .?AV?$_Func_impl@V<lambda_8823ce76b6a799c1d3a47fdbf2402f00>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_8a6d3e888e42001b1c775c12340ad4e7>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
-.?AV?$_Func_impl@V<lambda_8aeeb3be0360b2292a89781e92765f05>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_8b3bd07082e685ed39dd8313736aa419>@@V?$allocator@H@std@@_NPEBI@std@@
 .?AV?$_Func_impl@V<lambda_8bea274c30fee273fa7c52ee649dcdf5>@@V?$allocator@H@std@@_NPEBI@std@@
-.?AV?$_Func_impl@V<lambda_8bf87c5ed827dbeb735303469d7ad79e>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_8c20947c49e79f408e04181559b5e404>@@V?$allocator@H@std@@XAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_8c335f050ce4ae0f7d64fc361919c995>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_8cb1225ab70e46ffb2468e5e374f5af7>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_8daace18515ebd8766fa02300b8beac9>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_8e7a7d5c2721dcd9a525913659a11afd>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_8faeede5a32d41666aaf6de4a2644ccd>@@V?$allocator@H@std@@_NI@std@@
+.?AV?$_Func_impl@V<lambda_91fe58472eb9a634015b0501dd2062eb>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_920470c98a7299e6099f79150ecef4f5>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_92087d7cff5973ca54cc61431b9c4be4>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_924a05e004da9b6e7bf01385df9c5614>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
@@ -2484,7 +2598,10 @@ $undefined
 .?AV?$_Func_impl@V<lambda_93eca927d10293567694d3d90c8f4d45>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_94823a752238d95b4a0c6a25072b5a0a>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_956b2d023e429dafd24c05ff68b4ab70>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_95cdecee5dd691b821ca85f9eed26f35>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_963319738e0d8c2ada194af552add1e1>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_969650e45d32240d0d326cb17864bb9e>@@V?$allocator@H@std@@XPEAVBlock@spv@@W4ReachReason@5@PEAV45@@std@@
+.?AV?$_Func_impl@V<lambda_978125765cb0824d32536c293669a2f6>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_97c10da097dc246e45540f12187a6a9d>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_97c31520b716ada2abcfd96063dc812e>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_98026a82ba23c51f2904fb9d9b555cb4>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
@@ -2492,52 +2609,64 @@ $undefined
 .?AV?$_Func_impl@V<lambda_995834119c8cd4d77d33c0453322c501>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_999ad67b4551f8eba12c9acc66459e0e>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_9a0581c3afe3f86dd461d08bdb54a5d0>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
+.?AV?$_Func_impl@V<lambda_9c070f89d7943dc547eee22d9cd0e9eb>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_9c5438f8ef0af4f713f2e1adf78f7d97>@@V?$allocator@H@std@@XAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_9d37987cd1408589cc718c11aa45cebf>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_9d4d115a05a33ef1a04962e67662efa9>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_9d7b874c18a31c2cfd1a053e340f8caa>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_9e11e1b7c4b7e8d37a87b4a56d109e68>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_9e5f7ef39f67170e4bc18b123f4a11fa>@@V?$allocator@H@std@@XI@std@@
-.?AV?$_Func_impl@V<lambda_9ed7022c78caf3e364b68e2a58727d60>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_9efc63f929498b7c2a58743de0a5009a>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_9f67749b75cf2f30e58e84027c44ce54>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_9fdd24e47da11df9a85b9c398cd749e8>@@V?$allocator@H@std@@_NAEBVValidationState_t@val@spvtools@@PEBVFunction@56@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_a1c13600da47b7f3b868360a4728392e>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
-.?AV?$_Func_impl@V<lambda_a1f0188f5582b0a3ce6348bcd61879d4>@@V?$allocator@H@std@@XPEAVBlock@spv@@@std@@
 .?AV?$_Func_impl@V<lambda_a1f9fd54ad97dbb89411f34fc679d30a>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_a23da230d44deb90b24f8e3ffb2d2f0e>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_a2bd8d6171d9d4eb196fe1fe40af23f3>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_a2c49d1c64f313e0f5442d36615f0970>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_a2d719a2bdfc26725c8e7a7bc0e668da>@@V?$allocator@H@std@@XI@std@@
 .?AV?$_Func_impl@V<lambda_a4e706d0e89efdc5fdaa5887fa0a91d6>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
-.?AV?$_Func_impl@V<lambda_a541e2493269ea02d579134ecff861a5>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_a625787163a827b34adc9d37af4f5015>@@V?$allocator@H@std@@XW4SpvCapability_@@@std@@
 .?AV?$_Func_impl@V<lambda_a7d7a1ea8f50b1a4f181568b24f193f5>@@V?$allocator@H@std@@_NAEBVTType@glslang@@AEBV45@W4TOperator@5@H@std@@
 .?AV?$_Func_impl@V<lambda_a8958dfd16014aa445e5f04fcd6953dc>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_a9f83ffd4858fb9a05ae5cbc0782b60e>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_aa029af28ac5dbb7b3d79a3066171f8f>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_aa57f881619cc834a9e62a17a56f2494>@@V?$allocator@H@std@@W4PropStatus@SSAPropagator@opt@spvtools@@PEAVInstruction@67@PEAPEAVBasicBlock@67@@std@@
 .?AV?$_Func_impl@V<lambda_aa7a07c9f0fca2dbf25755e77c13c866>@@V?$allocator@H@std@@XPEAI@std@@
+.?AV?$_Func_impl@V<lambda_aacace3f73c62fbe87e01066d2b0e2ce>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@I@std@@
+.?AV?$_Func_impl@V<lambda_ab11369c517d6e192ae9b1a07a9aa6e0>@@V?$allocator@H@std@@XAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_abe24b5a300fed7bf4460a0f57ec95c4>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_ae229126bdd0e6bd2c9c09927f8bc2cb>@@V?$allocator@H@std@@XAEAI@std@@
 .?AV?$_Func_impl@V<lambda_ae34c7888503b2594012e04b23aec424>@@V?$allocator@H@std@@XPEAI@std@@
+.?AV?$_Func_impl@V<lambda_b0c044f38cf6f9d3862c005272a46f30>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_b137a0a97c239f0430aec971e5c0ea91>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_b24c75b79e2cb76f89ff7304e786770b>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_b259b4d5852fe1044349fc3b57fb2e74>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_b3e332b63f865ca53a0afe1c246aa1a1>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_b3f496b3dc3f623dd7a360e5c1230f8c>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_b425c593b3d7da4fb0bd491d3999b45a>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_b475553a12d831cfa4f6231633905074>@@V?$allocator@H@std@@_NPEBI@std@@
+.?AV?$_Func_impl@V<lambda_b50334cc2458ca7055080ef34dc7b2f3>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_b522294996e2c97f9922f8403868f6f7>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_b525a7f4ea3217679bd3bcdc0af29188>@@V?$allocator@H@std@@PEBV?$vector@PEAVBasicBlock@val@spvtools@@V?$allocator@PEAVBasicBlock@val@spvtools@@@std@@@3@PEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_b61727b5629d3f2904f12a33f98ec2aa>@@V?$allocator@H@std@@_NPEAVBasicBlock@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_b6d60654ddb6767d886de4b94b3013e5>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
-.?AV?$_Func_impl@V<lambda_b73d8282cf09cfaddcd064ec244fe3d3>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
 .?AV?$_Func_impl@V<lambda_b77debf4353e319f811a60c0589594d4>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_b7ecfd73dd291c3ad9ea0c46e181100f>@@V?$allocator@H@std@@XI@std@@
 .?AV?$_Func_impl@V<lambda_b7f8cb0c8cc66132c23918eef857c1ad>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_b8e5f9812517cc12478cfb449cddd667>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_b92d0b0d1ebce1ff9c36537d30e6c61b>@@V?$allocator@H@std@@_NW4SpvExecutionModel_@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_b9a7139a531c234a2114fac15cb2d328>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_baea9d5bd3f3a596b0e3fbb492b9979e>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_bbf9dee55213fd1547b1a8fa978bbf50>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_bd2a45e93e51cdfa5e01615e871f699c>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_bd4eef13987434eafc3bc93c0f827c39>@@V?$allocator@H@std@@XPEBVBasicBlock@opt@spvtools@@PEBV456@@std@@
 .?AV?$_Func_impl@V<lambda_bdd9827a4a336eebb62ca7865bdc6d6f>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_be46c0af90919a18f1986b5d9b53c923>@@V?$allocator@H@std@@XPEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_be80022a55897b5a5fd86c47ec498ba0>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_be8cb7d76c4b5ac16ee557374337e850>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_bf06c54d012bedab0ffa1b1268c4bb87>@@V?$allocator@H@std@@XPEAI@std@@
+.?AV?$_Func_impl@V<lambda_c0adafca6dfa34dbfaa80dcb457cba5d>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_c0e83da0bf2772c0cb8c9d27ec15bb8b>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_c176fed0d246e6d32a46e518fe40da15>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_c17efbb09d7a2e573b2731e3a18e58b4>@@V?$allocator@H@std@@XAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
@@ -2549,6 +2678,7 @@ $undefined
 .?AV?$_Func_impl@V<lambda_c59a645df007c94cc90294ba17d8f048>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_c8320ee4f3749878690a96a8764b3afd>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_c874111fe549042d84de9366378b3909>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
+.?AV?$_Func_impl@V<lambda_c8d2e88f20f452ea14e9a89d63bbf206>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_c922c10d00445d1864098cace0215add>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_c94942080aa4bef67bdd1e3c2b57d6fa>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_c9a760d9d66599a613a2b4f43eacf297>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
@@ -2557,6 +2687,8 @@ $undefined
 .?AV?$_Func_impl@V<lambda_cad2f68fd17da95f214394ac88507ed5>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_cadf9a7c0a9a48b2973c35b3073213e3>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_cc593e800dea0eaa4e243b2f04fb6bdd>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
+.?AV?$_Func_impl@V<lambda_ccb926d4f798d5c1a35b7df7717f17bf>@@V?$allocator@H@std@@XI@std@@
+.?AV?$_Func_impl@V<lambda_ccf10aa3b24b48413ed4e4b0ab0017ef>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_cd3e2fc2020a3a0e7095808ea5ea1075>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_ce6003c0d18fbc8e971dd4fddbb030b4>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_cee96e50ebd2ccfe9b4a886374be4c3c>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
@@ -2565,6 +2697,7 @@ $undefined
 .?AV?$_Func_impl@V<lambda_d25df1932b73922ec64c87a0e6d3cee0>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@PEAIPEAIPEAI@std@@
 .?AV?$_Func_impl@V<lambda_d2debe841b156100770a356060ba3309>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_d30a3c7d8d071fd8ad14e562a7390e3d>@@V?$allocator@H@std@@PEBV?$vector@PEAVBasicBlock@opt@spvtools@@V?$allocator@PEAVBasicBlock@opt@spvtools@@@std@@@3@PEBVBasicBlock@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_d334adbb68f0761d9e7e5099ebd4d4f1>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_d38c58a4ba11b0ddfb6efdff1d25afb8>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_d3aeb95d7ad19adefcd39a99507ca4c5>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_d4282bc1c30d60c850c997232050960d>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
@@ -2572,18 +2705,19 @@ $undefined
 .?AV?$_Func_impl@V<lambda_d4c13c055296cc3f0f372cc07a6dd62a>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_d5ed91c87dab26dead301cd56f036ea2>@@V?$allocator@H@std@@_NPEBI@std@@
 .?AV?$_Func_impl@V<lambda_d61d9be295fb9564c197038b008b38d1>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
-.?AV?$_Func_impl@V<lambda_d64e4adb0f77e9154acb6a8759922310>@@V?$allocator@H@std@@XAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_d75fe7aa8a46eff945457ee1f3622143>@@V?$allocator@H@std@@XPEAVTIntermTyped@glslang@@PEAV45@PEAV45@PEAV45@_N@std@@
 .?AV?$_Func_impl@V<lambda_d7a06087342bc567669ac6231c659b2a>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_d8ba002339af58495815303bad35aacc>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_d8fc16f5e31991cf01dada3d69129c65>@@V?$allocator@H@std@@_NAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_d9231b5d3c00eb724b37d8bae33cf148>@@V?$allocator@H@std@@XAEAI@std@@
+.?AV?$_Func_impl@V<lambda_d95e8ea7a5c8a74ad93a2787f49b033a>@@V?$allocator@H@std@@II@std@@
 .?AV?$_Func_impl@V<lambda_d99d59b990d3a72ce75812e6c9562807>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_d9a3bfb820364132dc9ffebe479a9270>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@PEBV456@@std@@
 .?AV?$_Func_impl@V<lambda_da7376a42906a93590e09d6a61289d2a>@@V?$allocator@H@std@@XI@std@@
 .?AV?$_Func_impl@V<lambda_daa3bf1adbed79e9ffeaa4f9b2225c4d>@@V?$allocator@H@std@@_NPEAI@std@@
 .?AV?$_Func_impl@V<lambda_dad8c3d0dcd034e04683c27674c4b373>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_db8b3257dda4a6180359ce7af5b30405>@@V?$allocator@H@std@@_NPEAI@std@@
+.?AV?$_Func_impl@V<lambda_db902b727bd780ead84e0e90531c1c5d>@@V?$allocator@H@std@@_NPEAI@std@@
 .?AV?$_Func_impl@V<lambda_dc41538dbe6f41001e4442372a856620>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_dcb7f621d48d829353d5bbd01bb3abdb>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_dcc99e0db608dc23fc72a9e2a32a50ce>@@V?$allocator@H@std@@_NI@std@@
@@ -2597,21 +2731,24 @@ $undefined
 .?AV?$_Func_impl@V<lambda_e21f653c67f262e33e69d132bc515dd6>@@V?$allocator@H@std@@XW4spv_message_level_t@@PEBDAEBUspv_position_t@@PEBD@std@@
 .?AV?$_Func_impl@V<lambda_e2f496aaa00a260d65b837f3686f5ccc>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_e3ae43eb6d5dfad18df17d54b1617745>@@V?$allocator@H@std@@XAEAI@std@@
+.?AV?$_Func_impl@V<lambda_e4150481766c3b9349868818b5d7b81e>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_e43a73ea13a53bf6127a7da185761b1f>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_e495fe2bdc48d4f9e5cdc8f3aa07eba6>@@V?$allocator@H@std@@PEBV?$vector@PEAVBasicBlock@val@spvtools@@V?$allocator@PEAVBasicBlock@val@spvtools@@@std@@@3@PEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_e4fc45e14be4e6a3d4540031311acd64>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_e5267a1a7ae0de147e41df50075e0231>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_e593c26e18c9aa9a737d03e07d304668>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
+.?AV?$_Func_impl@V<lambda_e77e8ca692428c3a9a3ef66acafb54a1>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_e790478f58af5fa6a03d36914f4c8fac>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_e8b3d6c17a137f553b762b1468e8e274>@@V?$allocator@H@std@@W4spv_result_t@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@std@@
 .?AV?$_Func_impl@V<lambda_e9b2fa05b69ad318456ccd0881aaf04d>@@V?$allocator@H@std@@_NPEAVIRContext@opt@spvtools@@PEAVInstruction@56@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
-.?AV?$_Func_impl@V<lambda_e9c936cb93c6671e8303a180044e9b47>@@V?$allocator@H@std@@XPEAI@std@@
 .?AV?$_Func_impl@V<lambda_ead18916832bed4b770811689fc4a172>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
 .?AV?$_Func_impl@V<lambda_ee7e5973d0031afdb7c7341041506ab6>@@V?$allocator@H@std@@XAEAI@std@@
 .?AV?$_Func_impl@V<lambda_ef3e14b66c1beb77699f812282f54486>@@V?$allocator@H@std@@_NPEAVFunction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_ef48beab8c131a24ad2d7ce89f824dd2>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_f00d22e87ab49c41fd33e5728eb20288>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEBVType@567@PEBV4567@PEBV4567@PEAVConstantManager@567@@std@@
 .?AV?$_Func_impl@V<lambda_f069030dab28c5d7b0da7c60889effce>@@V?$allocator@H@std@@XW4SpvCapability_@@@std@@
 .?AV?$_Func_impl@V<lambda_f085be6385708b574f76b75238f496ad>@@V?$allocator@H@std@@_NPEAVInstruction@opt@spvtools@@@std@@
+.?AV?$_Func_impl@V<lambda_f0af9f27e92146485984da27da20a867>@@V?$allocator@H@std@@_NW4OpenCLDebugInfo100Instructions@@@std@@
 .?AV?$_Func_impl@V<lambda_f10ab3304ff1ffe3fd1b809e45980764>@@V?$allocator@H@std@@XAEBVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_f22b123cc92db1a759a8cdd451463f54>@@V?$allocator@H@std@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@I@std@@
 .?AV?$_Func_impl@V<lambda_f26ff537cf3e5ac2c268f26cf2368f66>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
@@ -2619,8 +2756,10 @@ $undefined
 .?AV?$_Func_impl@V<lambda_f4642c729abc98c1e08ad1de1f2deff0>@@V?$allocator@H@std@@_NI@std@@
 .?AV?$_Func_impl@V<lambda_f88e22d98dadda0f2976808fedf0ae91>@@V?$allocator@H@std@@XPEBI@std@@
 .?AV?$_Func_impl@V<lambda_fa07fca1029f4ecef374e9b13837a8ce>@@V?$allocator@H@std@@XI@std@@
+.?AV?$_Func_impl@V<lambda_fa38b2d7e58f528a5f52adbe07c250a1>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@I@std@@
 .?AV?$_Func_impl@V<lambda_fa84d0676fe9158ce1e653456c993ac3>@@V?$allocator@H@std@@PEBVConstant@analysis@opt@spvtools@@PEAVIRContext@67@PEAVInstruction@67@AEBV?$vector@PEBVConstant@analysis@opt@spvtools@@V?$allocator@PEBVConstant@analysis@opt@spvtools@@@std@@@3@@std@@
 .?AV?$_Func_impl@V<lambda_fa94c8d664a772f6ffda43941dd657d5>@@V?$allocator@H@std@@_NW4Op@spv@@I@std@@
+.?AV?$_Func_impl@V<lambda_fb25124ae9463b307af0d321ef3486da>@@V?$allocator@H@std@@XPEAVInstruction@opt@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_fe3aa2a41614c51afa978d6d360dd9e7>@@V?$allocator@H@std@@_NPEAI@std@@
 .?AV?$_Func_impl@V<lambda_feb28a8fc1d136f28c08dbfc9b18f561>@@V?$allocator@H@std@@XPEBVBasicBlock@val@spvtools@@@std@@
 .?AV?$_Func_impl@V<lambda_febccfbcc58b95efa7e80f2f3c87dcf4>@@V?$allocator@H@std@@II@std@@
@@ -2677,6 +2816,7 @@ $undefined
 .?AVBoolConstant@analysis@opt@spvtools@@
 .?AVBottomTranslator@?A0xba436a1f@@
 .?AVBuilder@spv@@
+.?AVCCPPass@opt@spvtools@@
 .?AVCExpressionParserCallback@@
 .?AVCFGCleanupPass@opt@spvtools@@
 .?AVCFakeSamplerShaderParamBuilder@@
@@ -2705,6 +2845,7 @@ $undefined
 .?AVConstantFoldingRules@opt@spvtools@@
 .?AVConvertToHalfPass@opt@spvtools@@
 .?AVCooperativeMatrixNV@analysis@opt@spvtools@@
+.?AVCopyPropagateArrays@opt@spvtools@@
 .?AVDataLayout@llvm@@
 .?AVDeadBranchElimPass@opt@spvtools@@
 .?AVDeadInsertElimPass@opt@spvtools@@
@@ -2777,8 +2918,10 @@ $undefined
 .?AVPipeStorage@analysis@opt@spvtools@@
 .?AVPointer@analysis@opt@spvtools@@
 .?AVPrivateManager@gla@@
+.?AVPrivateToLocalPass@opt@spvtools@@
 .?AVProcessLinesPass@opt@spvtools@@
 .?AVQueue@analysis@opt@spvtools@@
+.?AVRayQueryProvisionalKHR@analysis@opt@spvtools@@
 .?AVRedundancyEliminationPass@opt@spvtools@@
 .?AVRelaxFloatOpsPass@opt@spvtools@@
 .?AVReserveId@analysis@opt@spvtools@@
@@ -2860,6 +3003,7 @@ $undefined
 .?AVVectorConstant@analysis@opt@spvtools@@
 .?AVVectorDCE@opt@spvtools@@
 .?AVVoid@analysis@opt@spvtools@@
+.?AVWrapOpKill@opt@spvtools@@
 .?AV_Facet_base@std@@
 .?AV_Generic_error_category@std@@
 .?AV_Iostream_error_category@std@@
@@ -2901,6 +3045,7 @@ $undefined
 .?AVtUngotTokenInput@TPpContext@glslang@@
 .?AVtZeroInput@TPpContext@glslang@@
 .?AVtype_info@@
+.@8s-t#@8s,H
 .CRT$XCA
 .CRT$XCC
 .CRT$XCL
@@ -3036,11 +3181,16 @@ $undefined
 .vrmpy
 .vsat
 .w.ph
+.wBHc
 .xJ>Hf
 .xacc
 .xdata
 .xdata$x
+/%8#'
+/%eO&
 /*BEGIN_UNIFORMBINDINGS
+/-;N&
+/-WK&
 // LunarGOO output
 // OpModuleProcessed 
 //////
@@ -3051,8 +3201,13 @@ $undefined
 //ATTRIBMAP
 //o/'
 /2GG>!B
+/5J#'
+/5wO&
 /<vu	
 /=$!6
+/=>3'
+/=ZB'
+/=\B'
 />58d%
 /H3L$(I
 /L3D$HL3
@@ -3115,6 +3270,7 @@ $undefined
 0A__^
 0D9sTu
 0H;K8vPH
+0H;t$Pu
 0L9D$(u%
 0X8b?~
 0fD9V
@@ -3144,9 +3300,9 @@ $undefined
 1/4 stride is too large:
 12.and.pi
 12.cvt
-1234BBBBBBBB56
 131022120000Z
 141022000000Z
+14^+!
 16-bit  literal
 16-bit arrays not supported
 16-bit hexadecimal literal
@@ -3163,7 +3319,7 @@ $undefined
 16.sat.
 181004000000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
-1:1: Tokens : ( T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | CONSTANT_REGISTER | PACK_OFFSET | VECTOR_TYPE | MATRIX_TYPE | STATIC | ID | INTEGERLITERAL | FLOATLITERAL | STRINGLITERAL | WS | LINE | PRAGMA | UNKNOWN );
+1:1: Tokens : ( T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | T__62 | T__63 | T__64 | T__65 | T__66 | T__67 | T__68 | T__69 | T__70 | T__71 | T__72 | T__73 | T__74 | T__75 | T__76 | T__77 | T__78 | T__79 | T__80 | T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | CONSTANT_REGISTER | PACK_OFFSET | VECTOR_TYPE | MATRIX_TYPE | STATIC | ID | INTEGERLITERAL | FLOATLITERAL | STRINGLITERAL | WS | LINE | PRAGMA | UNKNOWN );
 1<.	/>:
 1A9p 
 1H;>u?I
@@ -3179,7 +3335,7 @@ $undefined
 2.pd.256
 2.ps.256
 2.vrcmpys.s1rp
-200321043410Z0#
+200515052832Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -3213,10 +3369,11 @@ $undefined
 33333333I
 33333333L+
 3333A
+34567DDDDDDDD89
 3>N;kU
 3>fvw
 4 argument intrinsic
-4.60 glslang Khronos. 13.3381
+4.60 glslang Khronos. 13.3727
 4.fastcorner9
 4.fastcorner9.not
 4.round.r
@@ -3225,7 +3382,7 @@ $undefined
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
-5 !"55#$%5&55555555555555555'55555555()55555*5+,5-55.5555////0551235555555555555555555555555555554
+5 !"55#$%5&55555555555555555'55555555()55555*5+,5-55.5555////0551235555555555555555555555555555554t
 5555555555555
 555555555555555555555
 5@8t$xH
@@ -3258,7 +3415,6 @@ $undefined
 777777777777777777777777777
 7777777777777777777777777777
 777777777777777777777777777777777
-789:;<;;;;;;;;=>?@@@A
 79:1: element : ( struct_decl | function_definition | variable_definition[ false ] | constant_buffer | type_def | bindless_constant_def | auto_bindless_texture2d_binding | semicolon= ';' );
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8 t6H
@@ -3284,7 +3440,6 @@ $undefined
 86.int
 86.xend
 86.xtest
-8=$KD-
 8@8:t
 8@t)M
 8@v	H
@@ -3325,10 +3480,13 @@ $undefined
 8L;|$pu'
 8T$tu
 8T$ut
+8Y,t	3
 8Z(t%
 8\$ t
 8\$ u
 8\$(t
+8\$0t
+8\$0u
 8\$@H
 8\$Ht
 8\$pt
@@ -3361,6 +3519,7 @@ $undefined
 9@w^H
 9A }qf
 9A0t	
+9Blt~H
 9C s(H
 9C s)H
 9C |K
@@ -3383,20 +3542,21 @@ $undefined
 9\u-H
 9\u.H
 9^ ~6f
+9^$vG
 9_$~jD
 9_,~lA
 9g>@3
 9l>Lt
-9s8~$
-9sh~(ff
 9t$(t0L
 9t$P~58
 9t$x~2L
 9u'v	H
 9w ~%
+9w8~$
 9w8~&f
 9wP~#f
 9wP~R3
+9wh~$f
 9y u.
 9y4v'3
 9y`~q
@@ -3412,6 +3572,7 @@ $undefined
 9}Xv	H
 : 64-bit atomics require the Int64Atomics capability
 : CommandLine Error: Argument '
+: Component Count must be positive 
 : Dependency 
 : DontFlatten
 : DontUnroll
@@ -3440,8 +3601,6 @@ $undefined
 : expected AliasedPointerEXT or RestrictPointerEXT for 
 : expected AliasedPointerEXT or RestrictPointerEXT for PhysicalStorageBufferEXT pointer.
 : expected Comparator to be of type Result Type
-: expected Execution Scope to be a 32-bit int
-: expected Memory Scope to be a 32-bit int
 : expected Memory Semantics to be a 32-bit int
 : expected Memory Semantics to include a Vulkan-supported storage class
 : expected Memory Semantics to include a storage class
@@ -3462,14 +3621,18 @@ $undefined
 : expected Value type and the type pointed to by Pointer to be the same
 : expected more operands after 
 : expected no more operands after 
+: expected operand Size is a 
+: expected scope to be a 32-bit int
 : for the -
 : in Vulkan 1.0 environment Memory Scope is limited to 
-: in Vulkan 1.1 environment Memory Scope is limited to 
+: in Vulkan 1.1 and 1.2 environment Memory Scope is limited 
 : in Vulkan environment Execution Scope is limited to 
 : in Vulkan environment Execution scope is limited to 
 : in Vulkan environment, Memory Scope cannot be CrossDevice
 : in WebGPU environment Execution Scope is limited to 
 : in WebGPU environment Memory Scope is limited to 
+: in WebGPU environment, Workgroup Execution Scope is limited to GLCompute execution model
+: in WebGPU environment, Workgroup Memory Scope is limited to GLCompute execution model
 : lexer error %d :
 : missing 
 : no shortcircuit
@@ -3482,10 +3645,7 @@ $undefined
 :#u@I
 :6t=M
 :9uKI
-::::::::::
-:::::::::::::::::::::::::::
-::::::::::::::::::::::::::::
-:::::::::::::::::::::::::::::::::
+:;<=>=========?@ABBBC
 :>)*	v
 :>t6k'
 :@8q,t	3
@@ -3513,9 +3673,12 @@ $undefined
 ; may be removed in future release
 ;#t @
 ;(uAH
-;-1F>
 ;.u1L
 ;8u*I
+;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;zzz
 ;;;;J,,JJ;;JJ;;JJ,,JJ;;JJ;;J;,,
 ;;;;JJJJ;;;;JJJJUD
@@ -3540,7 +3703,7 @@ $undefined
 ;H9>&X
 ;H;T$@r
 ;I9|$
-;K sEH
+;K sCH
 ;L$hu
 ;P,v	
 ;Q(w	I
@@ -3564,9 +3727,10 @@ $undefined
 ;\$`u
 ;\$p|
 ;]/t4L
-;_0}-
+;_0}*
 ;l$Pu
 ;p0t#H
+;uwu!@8{-t
 ;y8u*H
 ;|$ u
 ;|$4u
@@ -3687,7 +3851,6 @@ $undefined
 > which is called with execution model 
 >+>ZQ"v
 >, but is not listed as an interface
->4TBY
 >>  #uses=
 >@v	H
 >@v	I
@@ -3719,19 +3882,20 @@ $undefined
 ?@w	M9o
 ?@w3D
 ?A8u,t
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?CUtlString::FormatV
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?Cu0f9w
 ?E=$% B
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?H9kPt
 ?H;|$X
-?I;~`t~
-?I;~`u
+?I;~Ht~
+?I;~Hu
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?JV8f
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -3742,6 +3906,8 @@ $undefined
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?StripTrailingSlash@CBufferString@@QEAAPEBDXZ
 ?TY,>5
@@ -3805,6 +3971,7 @@ $undefined
 @0;C0r
 @0A9A0
 @0H+F(H
+@0L+@(I
 @1,S,>S,,
 @2,S,>S,,,
 @30t'H
@@ -3819,7 +3986,11 @@ $undefined
 @80tG
 @80tZH
 @80tc
-@87t/@8s
+@85	_=
+@85#`=
+@85Yb=
+@85be=
+@85df=
 @88t'L
 @88t5
 @88tWH
@@ -3840,29 +4011,31 @@ $undefined
 @8q$t
 @8q-t
 @8r,t
+@8r-t
 @8s,H
+@8s,tY3
 @8s-t
 @8sat
 @8t$0
 @8t$0t]E
 @8t$@
-@8t$@t]H
-@8t$AtbI
 @8t$Xt*
-@8t$[I
-@8t$]A
+@8t$bI
+@8t$dA
 @8t$xt'I
 @8uwL
 @8uwtD
 @8uwtJ
 @8uwu
+@8w,@
 @8w,t
+@8w-t
 @8x u
 @8x-t
 @8y u
 @8y-t
+@8z,@
 @8z,t
-@8z,t~3
 @8z-t
 @8{,@
 @8{,H
@@ -3870,6 +4043,7 @@ $undefined
 @8{-t
 @8{-u
 @8|$0
+@8|$1
 @8|$4t
 @8|$8uVH
 @8|$Pt
@@ -3893,6 +4067,7 @@ $undefined
 @@H9X@H
 @A\_^
 @A]A\^
+@A]_[
 @A]_^][
 @A^A\_
 @A^A]A\
@@ -3907,7 +4082,6 @@ $undefined
 @A_A\_^]
 @A_A]A\_[
 @A_A]A\_^
-@A_A]A\_^][
 @A_A]_
 @A_A^A\
 @A_A^A\][
@@ -3916,6 +4090,7 @@ $undefined
 @A_A^A\_^[]
 @A_A^A]
 @A_A^A]A\]
+@A_A^A]A\^][
 @A_A^A]A\_
 @A_A^A]A\_][
 @A_A^A]A\_^[
@@ -3929,6 +4104,7 @@ $undefined
 @A_^]
 @A__^
 @A__^][
+@D8s-t
 @D;GD
 @D;GDu
 @D;t$8
@@ -4172,6 +4348,7 @@ A FunctionCall must happen within a function body.
 A H+A
 A H9G u
 A H;O
+A I+A
 A L+A
 A block must end with a branch instruction.
 A function (
@@ -4206,6 +4383,7 @@ A,A9h
 A03>A|
 A09B0
 A0E+A(t
+A0H+A(H
 A3D$ 
 A3F8%
 A3G8I
@@ -4233,7 +4411,6 @@ A8v-t
 A8w*t
 A8w,@
 A8w-t
-A8~,t
 A8~-t
 A9@ }
 A9A u
@@ -4249,28 +4426,30 @@ A9q sEI
 A9q }EI
 A9v@t	H
 A:(uiI
+A:fA;
 A;@ }
 A;@X}
 A;A }
 A;B }
 A;BX}
 A;RX}
+A;V8tJ
+A;X(r
 A;]0u
 A;q s?I
 A;q }?I
-A;x(r
 A>l$/
 A>pP&
 A@8APtMD
 A@9APt/H
 A@9APtBD
 A@H9A
-A@H9A8t	I
 A@L;A
 AA,A$
 AA<Fu
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ABGR8888
+ACCSTRUCTEXT
 ACCSTRUCTNV
 ADD_ASSIGN
 AHH+A@H
@@ -4307,12 +4486,12 @@ AVAWH
 AXH9AP
 A\_[]
 A\_^[]
+A\_^]
 A\_^][
 A]A\]
-A]A\][
 A]A\^[]
 A]A\^]
-A]A\_^
+A]A\_[
 A]A\_^[]
 A]A\_^]
 A]^[]
@@ -4328,7 +4507,7 @@ A^A\_]
 A^A\_^[]
 A^A\_^]
 A^A]A\]
-A^A]A\^
+A^A]A\^[
 A^A]A\^]
 A^A]A\_[]
 A^A]A\_^
@@ -4486,6 +4665,7 @@ AlphaTestRef
 AlphaToCoverageEnable
 Android SM 4.0 (VULKAN)
 Annotation %s doesn't have any values. Ignoring annotation.
+AnyHitKHR
 AnyHitNV
 AoS other than size 4 or 1 in middle end: 
 ApH9A@t
@@ -4543,6 +4723,7 @@ AtomicSMin
 AtomicStorage
 AtomicStorageOps
 AtomicStore
+AtomicType
 AtomicUMax
 AtomicUMin
 AtomicXor
@@ -4565,7 +4746,6 @@ B$H;A
 B'H;A
 B'H;G
 B(A9@(|
-B(H9B 
 B(H9C
 B(H9G
 B(H;A
@@ -4588,13 +4768,15 @@ B8H;NHt
 B8L;A
 B8|09
 B98C9uQ
+B:fE+
 B<9C<uI
 B>H;C
 B@9C@uA
+B@H9B8
 B@H9C@
 BC?>6t9^	c:>
 BD$0M
-BD$8M
+BD$@M
 BD9CDu9H
 BF>^G
 BGR565
@@ -4661,6 +4843,7 @@ BaryCoordSmoothCentroid
 BaryCoordSmoothCentroidAMD
 BaryCoordSmoothSample
 BaryCoordSmoothSampleAMD
+Base Type
 Base recognizer function 'alreadyParsedRule' called by unknown parser type - provide override for this function
 Base recognizer function 'consumeUntil' called by unknown parser type - provide override for this function
 Base recognizer function 'consumeUntilSet' called by unknown parser type - provide override for this function
@@ -4729,7 +4912,6 @@ ByteAddressBuffer
 C	2G	
 C	2G	$
 C	:E	
-C D8`
 C D8h
 C D9A s
 C H+C
@@ -4738,6 +4920,7 @@ C H9B0
 C H9C
 C H;C u
 C I+C
+C$ t1H
 C$9C w&H
 C$A9@
 C$L9e
@@ -4782,6 +4965,8 @@ C@H;A
 C@I;@Ht
 C@L90t%H
 CA< t(<#t
+CALLDATAEXT
+CALLDATAINEXT
 CALLDATAINNV
 CALLDATANV
 CARET
@@ -4861,7 +5046,7 @@ CVfxGL::CompileShaderAndGetVariables(3018): ERROR! Failed to convert GLSL to SPI
 CVfxGL::Init
 CVfxGL::Init() - fsFactory can't get '%s' interface.
 CVfxShaderFile::Unserialize
-CVfxShaderValidatorGLslang::GetBinaryShader::<lambda_b73d8282cf09cfaddcd064ec244fe3d3>::operator ()
+CVfxShaderValidatorGLslang::GetBinaryShader::<lambda_37ccf95f861dd58125807a1cf0735760>::operator ()
 CVfxShaderValidatorGLslang::Initialize
 CWD>~3
 CXA8pXt
@@ -4880,7 +5065,9 @@ CallGraph Construction
 CallGraph Pass Manager
 CallGraph Root is: 
 CallableData ID
+CallableDataKHR
 CallableDataNV
+CallableKHR
 CallableNV
 Calling D3DPreprocess()
 Can not compute
@@ -4935,6 +5122,7 @@ Capability StorageImageWriteWithoutFormat is required to write
 CapabilityFragmentShaderPixelInterlockEXT
 CapabilityFragmentShaderSampleInterlockEXT
 CapabilityFragmentShaderShadingRateInterlockEXT
+CapabilityIntegerFunctions2INTEL
 CaptureEventProfilingInfo
 Case construct that targets 
 Cd$XL
@@ -4947,6 +5135,7 @@ ChH;Q
 ChH;^
 CheckAccessFullyMapped
 CheckBox
+Child
 Cl$ H
 Cl$@A
 Cl$PH
@@ -4966,6 +5155,7 @@ CloseHandle
 CloseThreadpoolTimer
 CloseThreadpoolWait
 CloseThreadpoolWork
+ClosestHitKHR
 ClosestHitNV
 Clspv
 ClusteredReduce
@@ -5004,6 +5194,7 @@ Compilation failed; no code produced.  Log string from glslang:
 Compile Targets
 CompileTargets
 Component
+Component Count
 Component decoration specified for type 
 Component index 
 Component literal at operand 
@@ -5346,9 +5537,13 @@ CrossWorkgroupMemory
 Ct$0I
 CubeFaceCoordAMD
 CubeFaceIndexAMD
+CullBackFacingTrianglesKHR
 CullDistance
 CullDistancePerViewNV
+CullFrontFacingTrianglesKHR
 CullMode
+CullNoOpaqueKHR
+CullOpaqueKHR
 Currently unhandled instruction 
 Currently unsupported instruction: 
 Cx<au
@@ -5367,6 +5562,7 @@ D$ 9YTu
 D$ ;D$X
 D$ ;V
 D$ <9w
+D$ @2
 D$ A3
 D$ A;
 D$ A;E(
@@ -5374,8 +5570,6 @@ D$ D8
 D$ D91H
 D$ D9uTu
 D$ D:	
-D$ D;
-D$ D;l$(teM
 D$ E3
 D$ H+
 D$ H98
@@ -5460,7 +5654,7 @@ D$0;D$4u
 D$0;D$8|
 D$0;D$P|
 D$0;D$P}
-D$0=1
+D$0=2
 D$0@2
 D$0A;
 D$0D#
@@ -5492,7 +5686,7 @@ D$0M9N
 D$0M;
 D$0fD
 D$0fH
-D$0t5
+D$0t7
 D$0tu
 D$0uuH+
 D$0w-
@@ -5508,7 +5702,6 @@ D$3L3
 D$49C
 D$49D$8tBL
 D$49D$Dta
-D$4D;E0
 D$4H+
 D$4H3
 D$4H;
@@ -5603,9 +5796,13 @@ D$@fD
 D$@t/H+
 D$@tU
 D$A+L
+D$A@8|$@
 D$AH3
+D$AL3
 D$BH3
+D$BL3
 D$CH3
+D$CL3
 D$D9D$HuP
 D$DH3
 D$DH;EP
@@ -5692,7 +5889,6 @@ D$VH3
 D$WH3
 D$X%	
 D$X9<
-D$X9Y$
 D$X;E
 D$XA3
 D$XD8
@@ -5733,6 +5929,7 @@ D$`H9h
 D$`H;
 D$`H;A
 D$`H;D$hr%A
+D$`H;t$Hu
 D$`Hc
 D$`HcH
 D$`HcK`
@@ -5752,8 +5949,11 @@ D$cL3
 D$d;\$t
 D$h$?<
 D$h9A
+D$h9^$
+D$h9x
 D$h;D$8
 D$h;E
+D$h@8{-t
 D$hA+
 D$hD;
 D$hE2
@@ -5784,7 +5984,7 @@ D$hL;
 D$hL;	
 D$hL;y
 D$hff
-D$p9D$t
+D$jH3
 D$p;E
 D$p;]
 D$p@8t$@ti
@@ -5798,7 +5998,6 @@ D$pH;
 D$pH;D$0u
 D$pH;E
 D$pHcH
-D$pHi
 D$pI;
 D$pIc
 D$pL+
@@ -5806,12 +6005,12 @@ D$pL;
 D$pfA
 D$pff
 D$x9<
+D$x@2
 D$xA;
 D$xD;
 D$xE3
 D$xH+
 D$xH9
-D$xH9D$8ufH
 D$xH9D$p
 D$xH;
 D$xH;E
@@ -5859,6 +6058,7 @@ D80t{3
 D82u&H
 D88Ht!
 D88Hte
+D8==}
 D8?tnH
 D8A,A
 D8A-t
@@ -5898,6 +6098,7 @@ D8egt	I
 D8eoL
 D8eou5E3
 D8f-t
+D8g	t4
 D8g,t
 D8g-A
 D8g-t
@@ -5911,16 +6112,16 @@ D8l$@t
 D8l$ht
 D8n,t
 D8n-t
-D8o	t4
 D8o-t
 D8o-u
 D8p,A
 D8q	t4
 D8q-t
-D8r-t
+D8s,H
 D8s,t
 D8s-A
 D8s-t
+D8s-tsD8s,H
 D8t$8t
 D8t$Ht
 D8uPt
@@ -6009,13 +6210,11 @@ D9|$ ~{H
 D9|$$t}
 D9|$0v
 D9|$8tKM
-D9|$x
 D9|5Lt
 D:\dev\source2\main\src\thirdparty\glslang\External\spirv-tools\source\opt\type_manager.cpp
-D;-j~
 D;@ s
 D;@ }
-D;C sOH
+D;C sMH
 D;C };H
 D;C }FH
 D;C }IH
@@ -6047,9 +6246,7 @@ D;y u	E
 D;{ }CH
 D;|$ 
 D;|$P
-D;|$l
 D;|$p
-D;|$|t~H
 D<P0I
 D@8~-t
 DCE Vars: 
@@ -6212,12 +6409,16 @@ Data Layout
 Dd$pH
 Dd$pL
 Dead Store Elimination
+Debug info extension instruction other than DebugScope, DebugNoScope, DebugDeclare, and DebugValue found inside function
+Debug info extension instructions other than 
+Debug printf
 DebugCompilationUnit
 DebugDeclare
 DebugExpression
 DebugFunction
 DebugFunctionDeclaration
 DebugGlobalVariable
+DebugImportedEntity
 DebugInfo
 DebugInfoNone
 DebugInlinedAt
@@ -6230,6 +6431,8 @@ DebugMacroUndef
 DebugNoScope
 DebugOperation
 DebugScope
+DebugScope, DebugNoScope, DebugDeclare, DebugValue 
+DebugSource
 DebugTypeArray
 DebugTypeBasic
 DebugTypeComposite
@@ -6247,8 +6450,8 @@ DebugTypeTemplateTemplateParameter
 DebugTypeVector
 DebugTypedef
 DebugValue
-Debugging instructions are not allowed in the WebGPU execution 
 December
+Declaration
 DecodePointer
 Decompose instructions for LunarGLASS
 Decorate
@@ -6353,6 +6556,7 @@ Duplicate return instructions into unconditional branches
 Dynamic combo %s referenced in expression doesn't exist.
 E 9\$8
 E H+E
+E H;C
 E H;E`t3L
 E L; t*I
 E$Ic] A
@@ -6361,6 +6565,7 @@ E(H94
 E(H9E 
 E(H9E H
 E(H9E r
+E(H;E
 E(H;E0r
 E(H;F
 E(I9E 
@@ -6422,6 +6627,7 @@ E9>wGD9?wBH
 E9X s
 E9X8t
 E9g4tYA
+E;D$@
 E;~(H
 E>nEA
 E?H9C
@@ -6464,7 +6670,7 @@ EXH;x
 EXI9EPr
 EXPLICITINTERPAMD
 EXPONENT
-EXfD9H:
+EXfD9X:
 E_;Eg
 Early CSE
 Early exit
@@ -6547,6 +6753,7 @@ Exact SIV independence
 Exact SIV successes
 ExclusiveScan
 Exec format error
+ExecuteCallableKHR
 ExecuteCallableNV
 Executing Pass '
 Execution mode can only be used with a Geometry or tessellation execution model.
@@ -6673,6 +6880,7 @@ Expected a struct as Result Type:
 Expected arithmetic operands to be of Result Type: 
 Expected arithmetic operands to have the same bit width 
 Expected arithmetic operands to have the same dimension 
+Expected at least one index to Op
 Expected bool scalar or vector type as Result Type: 
 Expected bool scalar or vector type as condition: 
 Expected bool scalar type as Result Type: 
@@ -6706,6 +6914,7 @@ Expected float vector type as Result Type:
 Expected float vector type as left operand: 
 Expected float vector type as right operand: 
 Expected floating scalar or vector type as Result Type: 
+Expected hex value in escape sequence
 Expected input and Result Type to point to the same type: 
 Expected input to be a pointer or int or float vector 
 Expected input to be a pointer or int scalar if Result Type is pointer: 
@@ -6915,6 +7124,7 @@ FDA;ED
 FEATURES
 FHH9BHu
 FHH9CHu
+FHI9F@u
 FHI9GH
 FHI9GHu
 FIU,I
@@ -6998,16 +7208,19 @@ F`H+FXH
 F`H9F0t
 F`M+FXI
 FaceForward
+Failed to add global variable, see previous warning.
 Failed to optimize shader.
 Failed to translate partitioning or outputtoplogy HLSL attributes.
 Failed to translate semantic '%s' BuildMetaDataComments(2129): 
 FakeBindlessTexture2D
 False
+Fd9GdH
 Feature combo %s referenced in expression doesn't exist.
 Features
 February
 Fetch
 Fetch4
+Fh9GhH
 FhH+F`H
 FhH9F`
 FhI9F`r
@@ -7026,11 +7239,13 @@ FindNextFileA
 FindSMsb
 FindUMsb
 First block 
+Fl9GlH
 FlagArtificial
 FlagExplicit
 FlagFwdDecl
 FlagIndirectVariable
 FlagIsDefinition
+FlagIsEnumClass
 FlagIsLocal
 FlagIsOptimized
 FlagIsPrivate
@@ -7041,6 +7256,8 @@ FlagObjectPointer
 FlagPrototyped
 FlagRValueReference
 FlagStaticMember
+FlagTypePassByReference
+FlagTypePassByValue
 Flatten
 Flatten conditional assignments into select instructions
 Float
@@ -7153,7 +7370,6 @@ FunctionPass Manager
 Fwidth
 FwidthCoarse
 FwidthFine
-F|9G|H
 G	 t<H
 G	2C	$
 G	2F	H
@@ -7174,7 +7390,6 @@ G(@80tGH
 G(A;F(
 G(D8g]t
 G(H+G H
-G(H9G 
 G(H9G0uPI
 G(H9p
 G(H;p
@@ -7206,6 +7421,7 @@ G@H;A
 GCD applications
 GCD independence
 GCD successes
+GD$hD
 GE_OP
 GHH9G@u
 GHH;FHu
@@ -7250,8 +7466,10 @@ GL_ARB_explicit_attrib_location
 GL_ARB_explicit_uniform_location
 GL_ARB_fragment_shader_interlock
 GL_ARB_gpu_shader5
+GL_ARB_gpu_shader_fp64
 GL_ARB_gpu_shader_int64
 GL_ARB_post_depth_coverage
+GL_ARB_sample_shading
 GL_ARB_separate_shader_objects
 GL_ARB_shader_atomic_counters
 GL_ARB_shader_ballot
@@ -7269,13 +7487,16 @@ GL_ARB_sparse_texture_clamp
 GL_ARB_tessellation_shader
 GL_ARB_texture_cube_map_array
 GL_ARB_texture_gather
+GL_ARB_texture_multisample
 GL_ARB_texture_rectangle
+GL_ARB_uniform_buffer_object
 GL_ARB_viewport_array
 GL_EXT_YUV_target
 GL_EXT_buffer_reference
 GL_EXT_buffer_reference2
 GL_EXT_buffer_reference_uvec2
 GL_EXT_control_flow_attributes
+GL_EXT_debug_printf
 GL_EXT_demote_to_helper_invocation
 GL_EXT_device_group
 GL_EXT_frag_depth
@@ -7287,6 +7508,8 @@ GL_EXT_multiview
 GL_EXT_nonuniform_qualifier
 GL_EXT_post_depth_coverage
 GL_EXT_primitive_bounding_box
+GL_EXT_ray_query
+GL_EXT_ray_tracing
 GL_EXT_samplerless_texture_functions
 GL_EXT_scalar_block_layout
 GL_EXT_shader_16bit_storage
@@ -7316,6 +7539,7 @@ GL_EXT_texture_buffer
 GL_EXT_texture_cube_map_array
 GL_GOOGLE_cpp_style_line_directive
 GL_GOOGLE_include_directive
+GL_INTEL_shader_integer_functions2
 GL_KHR_blend_equation_advanced
 GL_KHR_memory_scope_semantics
 GL_KHR_shader_subgroup_arithmetic
@@ -7368,6 +7592,7 @@ GREATER
 GREATER_EQUAL
 GT$XD
 GT$XH
+GT$hA
 GXH9GPr
 GXI9FXu
 GXI9GPr
@@ -7401,6 +7626,7 @@ Geometry
 Geometry Shader
 Geometry execution model entry points must specify exactly one of InputPoints, InputLines, InputLinesAdjacency, Triangles or InputTrianglesAdjacency execution modes.
 Geometry execution model entry points must specify exactly one of OutputPoints, OutputLineStrip or OutputTriangleStrip execution modes.
+GeometryIndexEXT
 GeometryPointSize
 GeometryShaderPassthroughNV
 GeometryStreams
@@ -7566,8 +7792,8 @@ H L9!
 H L;9uHH
 H SATAWH
 H SAWH
+H SVATAUAVH
 H UATAUAVAWH
-H VATAUAVH
 H VWAUAVAWH
 H VWAVH
 H!D$ E
@@ -7581,7 +7807,6 @@ H!T$H
 H!T$h
 H!|$(
 H"8K"
-H#L$`H
 H#N0H
 H#Q0H
 H#T$8
@@ -7591,10 +7816,12 @@ H#T$XD
 H#T$h
 H#T$hD
 H#t$H<
+H(3N(
 H(H91
 H(H94
 H(L91
 H(L;	u
+H(L;H t
 H)_0H
 H+A(H
 H+A(L
@@ -7618,7 +7845,6 @@ H+GHL
 H+H(H
 H+H(I
 H+H0H
-H+J8H
 H+K0H
 H+L$ x;H
 H+L$(xAH
@@ -7630,6 +7856,7 @@ H+L$pH
 H+L$xH
 H+NPH
 H+O8A+
+H+O8I
 H+T$pH+\$pH
 H+V8H
 H+\$HH
@@ -7709,7 +7936,6 @@ H9A`t
 H9Ahs
 H9B r
 H9B s
-H9B u
 H9BXH
 H9C s(H
 H9C t
@@ -7726,9 +7952,9 @@ H9D$8r
 H9D$8t
 H9D$@u
 H9D$@u!
+H9D$@w
 H9D$H
 H9D$P
-H9D$Pw
 H9D$X
 H9D$`u)
 H9D$h
@@ -7753,6 +7979,7 @@ H9HPt
 H9JHu
 H9KPt
 H9L$8u
+H9L$H
 H9L$Ht?H
 H9L$Xu
 H9L$h
@@ -7790,9 +8017,11 @@ H9Y s/L
 H9Y0u/
 H9Y0u;
 H9\$ 
+H9\$(
 H9\$(ugA
 H9\$0H
 H9\$8
+H9\$@H
 H9\$@t
 H9\$@t=H
 H9\$@tJA
@@ -7800,7 +8029,9 @@ H9\$@tYH
 H9\$@u:H
 H9\$HuNH
 H9\$Pt+L
+H9\$Pt7H
 H9\$PtYH
+H9\$Pu
 H9\$X
 H9\$`u
 H9] t
@@ -7840,7 +8071,6 @@ H9t$(
 H9t$0u
 H9t$8
 H9t$@H
-H9t$@t
 H9t$@tWH
 H9t$@u
 H9t$@v#H
@@ -7866,19 +8096,17 @@ H9|$0
 H9|$0t
 H9|$8t
 H9|$8t.
-H9|$Ht
 H9} t
 H;0u7
 H;9t%
 H;9toH
-H;9u!H;
 H;>t 
 H;>tA
 H;>uBI
 H;A L
-H;A`t
-H;A`t!
-H;A`u
+H;AHt
+H;AHt!
+H;AHu
 H;C sCH
 H;C t>
 H;C(u
@@ -7998,6 +8226,7 @@ H;\$XH
 H;\$Xu
 H;\$`H
 H;\$pI
+H;\$xu
 H;] r
 H;](H
 H;](I
@@ -8014,13 +8243,11 @@ H;^`M
 H;^`u
 H;_ u
 H;_(H
-H;_(t7H
 H;_8u
 H;_Ht'L
 H;_Xu
 H;h r
 H;j s
-H;l$ 
 H;l$(u
 H;l$0u
 H;l$8M
@@ -8053,7 +8280,6 @@ H;|$Xu
 H;|$`
 H;|$p
 H;|$x
-H;}(tmH
 H;}wu
 H;~8H
 H;~Hu
@@ -8090,6 +8316,7 @@ HEX_DIGIT
 HH:mm:ss
 HHH9HPu&
 HIGH_PRECISION
+HITATTREXT
 HITATTRNV
 HLSL lexer encountered %d %s
 HLSL parser encountered %d %s
@@ -8125,33 +8352,38 @@ HcG H
 HcG(H
 HcH<H
 HcK H
-HcK8;
 HcL$4I
+HcN8;
 HcNxA
 HcNxD
 HcNxE
-HcS8I;
 HcS@H
 HcT$$
 HcT$0
+HcV8H;
 Hc\$@I
 Hc]OH
 Hc]`*
 Hc]`M
 Hc]wH
+Hc^`;^pu	H
 Hc^h;^xu
 Hc_0L
 Hc_@;_Pu
+Hcn8I
 Hco`D
-Hcs8I
 Hct$,
 Hcx H
 Hc|$@I
 Hc}@;}Pu
+Header block 
 HelperInvocation
 HighPrecisionBlendEnable
+HitAttributeKHR
 HitAttributeNV
+HitKindKHR
 HitKindNV
+HitTKHR
 HitTNV
 HlslCounterBufferGOOGLE
 HlslSemanticGOOGLE
@@ -8247,16 +8479,17 @@ I;](I
 I;]Ht
 I;^(H
 I;^8M
+I;^HtY
+I;^Htdf
+I;^HtoH
+I;^Ht{M
+I;^Hu
+I;^Hu>I
 I;^PI
 I;^Xu
 I;^`H
-I;^`tY
-I;^`tdf
-I;^`toH
-I;^`t{M
-I;^`u
-I;^`u>I
 I;^pt
+I;^xt
 I;_HA
 I;_pL
 I;q s<I
@@ -8373,13 +8606,13 @@ IVEC3
 IVEC4
 IVfxShaderValidator::GetActiveUniforms failed.
 IVfxShaderValidator::GetActiveUniformsBlocks failed.
-IXE8aXt
+IXE8iXt
 IXH;OHr
+Ic4$M
 Ic?A;
 IcD$ 
 IcFtI
 IcH A
-IcL$x
 IcMxD
 IcNxD
 IcP McH
@@ -8388,6 +8621,7 @@ Ic]hA;]xu
 Id is 0
 Identify the structures in a structured-cfg
 If OpTypeBool is stored in conjunction with OpVariable, it 
+IgnoreIntersectionKHR
 IgnoreIntersectionNV
 Il?333333c?
 Illegal byte sequence
@@ -8482,6 +8716,8 @@ Imagination
 ImplicitLod instructions require DerivativeGroupQuadsNV or DerivativeGroupLinearNV execution mode for GLCompute execution model: 
 ImplicitLod instructions require Fragment or GLCompute execution model: 
 Import
+ImportedDeclaration
+ImportedModule
 Improper link
 In Logical addressing with variable pointers, variables 
 In Logical addressing, variables may not allocate a pointer 
@@ -8496,8 +8732,11 @@ InBoundsAccessChain
 InBoundsPtrAccessChain
 Inappropriate I/O control operation
 InclusiveScan
+IncomingCallableDataKHR
 IncomingCallableDataNV
+IncomingRayFlagsKHR
 IncomingRayFlagsNV
+IncomingRayPayloadKHR
 IncomingRayPayloadNV
 IncrementCounter
 IndependentBlendEnable
@@ -8520,6 +8759,7 @@ Initializer type must match the type pointed to by the Result Type
 Initializers must match:
 Inline
 Inline Cost Analysis
+Inlined At
 Inliner for always_inline functions
 Inorder Dominator Tree: 
 Inorder PostDominator Tree: 
@@ -8536,6 +8776,7 @@ InputLinesAdjacency
 InputPatch
 InputPoints
 InputTrianglesAdjacency
+InstanceCustomIndexKHR
 InstanceCustomIndexNV
 InstanceId
 InstanceIndex
@@ -8573,6 +8814,7 @@ Interpolation and auxiliary storage qualifiers must match:
 InterpolationFunction
 Interprocedural Sparse Conditional Constant Propagation
 Interrupted function call
+IntersectionKHR
 IntersectionNV
 Intrinsic in Bottom IR
 InvTextureDim
@@ -8593,6 +8835,7 @@ Invalid argument
 Invalid binding: 
 Invalid character '%c' in swizzle operation. Only xyzw or rgba are allowed.
 Invalid descriptor set name used in layout specifier
+Invalid escape sequence
 Invalid extended instruction import '
 Invalid extended instruction number: 
 Invalid initializer for spec onstant.
@@ -8666,15 +8909,17 @@ JJJJJJJ
 JJJJYJJYYJJYJJJJYJJYYJJYJ;;J;;;;J;;J;;;;J;;JJ;;J,,,,,,,
 January
 Jun 27 2016
-Jw!Hc
 JwdtNA
 K 9J s
 K H9H0t
 K H9s0t?H
+K WATAUAWH
 K&>.yC
 K(L9$
 K(fD;
 K0D8:u
+K0H+K(H
+K8+C$
 K8H;^Ht
 K8L9c t$
 K8fD;
@@ -8688,7 +8933,7 @@ K@H+K8I
 KERNEL32.dll
 KXE8AXt
 Kernel
-Kh9|$Xt
+Kh9|$X
 Khronos
 Khronos Glslang Reference Front End
 Khronos LLVM/SPIR-V Translator
@@ -8858,7 +9103,9 @@ L$DE3
 L$H;J
 L$HE2
 L$HE3
+L$HH#
 L$HH+
+L$HH+L$8I
 L$HH3
 L$HH9L$@
 L$HH9M
@@ -8896,7 +9143,6 @@ L$PM+
 L$X@2
 L$XD+
 L$XE3
-L$XH#
 L$XH+
 L$XH+L$HH
 L$XH3
@@ -8927,6 +9173,8 @@ L$`L;
 L$`M;
 L$`fH
 L$`fI
+L$`ff
+L$`fff
 L$h;\$ u
 L$hE3
 L$hH+
@@ -8937,7 +9185,6 @@ L$hH;L$pr
 L$hH=
 L$hHi
 L$hI;
-L$hL+
 L$hL;
 L$hM;
 L$ht	H
@@ -8964,13 +9211,13 @@ L$xH3
 L$xH;
 L$xH=
 L$xL+
-L$xL;
 L$xM9N
 L$|E3
 L(:A:
 L(;A:
 L(;E:
 L(<A:
+L+B8E3
 L+I(H
 L+I(I
 L+J8H
@@ -8996,6 +9243,7 @@ L9&uBH;|$Xr
 L9(t!H
 L9*t!H
 L9*u&
+L91t	H
 L92t$H
 L92u'
 L92u,
@@ -9015,7 +9263,7 @@ L9D$(u'
 L9D$0
 L9D$0t0
 L9D$0u
-L9D$8L
+L9D$@L
 L9E(u@M
 L9H A
 L9I s
@@ -9036,6 +9284,7 @@ L9d$ t3L
 L9d$0
 L9d$0t
 L9d$@t
+L9d$@uNH
 L9d$Ht
 L9d$`u)@
 L9d$ht+H
@@ -9044,6 +9293,8 @@ L9g0t
 L9h0t	H
 L9i s
 L9l$ t
+L9l$0t
+L9l$8t
 L9l$@I
 L9l$`t
 L9l$pt
@@ -9065,8 +9316,6 @@ L9x0t	H
 L9{ u
 L9{Hu
 L9{xu
-L9|$0t
-L9|$8t
 L9|$@t
 L9|$H
 L9|$ht
@@ -9074,7 +9323,6 @@ L9|$pt
 L9|$xt
 L9}@t	H
 L;	r!HcC
-L;	r(HcC
 L;	r)HcC
 L;	t(
 L; u9H
@@ -9082,6 +9330,7 @@ L; u;
 L; u<H
 L;!u8
 L;!u9H
+L;%$H
 L;)t2H
 L;)t5H
 L;1t9f
@@ -9091,6 +9340,7 @@ L;C sAH
 L;C sCH
 L;D$8
 L;D$ht
+L;D$p
 L;F u
 L;F`u
 L;Fpu
@@ -9113,6 +9363,7 @@ L;P A
 L;P s%
 L;Q s
 L;R s
+L;T$(
 L;WHu
 L;b s
 L;d$ 
@@ -9126,6 +9377,7 @@ L;r s
 L;s v
 L;s(H
 L;s(L
+L;t$(
 L;t$0u
 L;t$H
 L;t$XH
@@ -9169,7 +9421,9 @@ LOG_GENERAL
 LOW_PRECISION
 Label
 Label instructions must be in a function body
+LaunchIdKHR
 LaunchIdNV
+LaunchSizeKHR
 LaunchSizeNV
 Layer
 LayerPerViewNV
@@ -9183,6 +9437,7 @@ LcA L
 LcA<E3
 LcC D
 LcC D;C
+LcC E;
 LcC LcK
 LcG$H
 LcH LcP
@@ -9208,6 +9463,7 @@ Linear
 Link failed; no code produced.  Log string from glslang:
 Linkage
 Linkage Attributes
+Linkage Name
 LinkageAttributes
 Linked 
 Linker Objects
@@ -9221,6 +9477,7 @@ Load3
 Load4
 LoadLibraryExW
 Loading cached shader: %s
+Local Variable
 LocalFree
 LocalInvocationID
 LocalInvocationId
@@ -9423,6 +9680,7 @@ Minus
 MipBias
 Mismatched Token Exception
 Mismatched set
+MissKHR
 MissNV
 Missing OpFunctionEnd at end of module.
 Missing SourceArg() annotation for variable %s with source type TextureDim
@@ -9466,7 +9724,6 @@ N D8T$xu\M
 N D8T$xueM
 N H+N
 N I+N
-N L+N
 N uRI;
 N$3H$
 N(H;9u
@@ -9541,6 +9798,7 @@ NoAlias
 NoCapture
 NoContraction
 NoLine
+NoOpaqueKHR
 NoPerspective
 NoReadWrite
 NoSignedWrap
@@ -9550,6 +9808,8 @@ NoWrite
 Non-L-value cannot be passed for 'out' or 'inout' parameters.
 Non-OpFunctionParameter (opcode: %d) found inside function but outside basic block
 Non-constant-index-expression
+Non-semantic OpExtInst must not appear before types 
+Non-semantic OpExtInst within function definition must appear in a block
 Non-supported terminator
 Non-unique OpEntryPoint interface 
 NonPrivatePointer
@@ -9560,9 +9820,13 @@ NonPrivatePointerKHR requires a pointer in Uniform,
 NonPrivateTexel
 NonPrivateTexelKHR
 NonReadable
+NonSemantic extended instruction sets cannot be declared without SPV_KHR_non_semantic_info.
+NonSemantic.
+NonSemantic.DebugPrintf
 NonUniform
 NonUniformEXT
 NonWritable
+NoneKHR
 Nonlinear subscript pairs
 Nontemporal
 Normal
@@ -9715,7 +9979,6 @@ O ;H s
 O H+O
 O I+O
 O L+O
-O(3H(
 O(H;1t
 O(Hcs
 O(fff
@@ -9735,6 +9998,7 @@ O@H+O8H
 O@H+O8I
 O@H;MHt
 O@H;OHt
+O@I+O8H
 O@I;HHt
 OCTAL_ESC
 OD;HD
@@ -9745,17 +10009,20 @@ OPTIONS:
 OR_ASSIGN
 OR_OP
 OVERVIEW: 
-O`8O,tNE
 O`H9Ohu)
 O`M;OXt
+ObjectRayDirectionKHR
 ObjectRayDirectionNV
+ObjectRayOriginKHR
 ObjectRayOriginNV
 ObjectRayTmaxNV
 ObjectRayTminNV
+ObjectToWorldKHR
 ObjectToWorldNV
 October
 Offset
 Offsets
+Oh8O,tDE
 OhI;}
 Only one push_constant block is allowed per stage
 Only one shaderRecordNV buffer block is allowed per stage
@@ -9860,7 +10127,7 @@ OpEntryPoint
 OpEntryPoint Entry Point <id> '
 OpEntryPoint interfaces must be OpVariables with Storage Class of Input(1) or Output(3). Found Storage Class 
 OpEntryPoint interfaces should only list global variables
-OpExecuteCallableNV
+OpExecuteCallableKHR
 OpExecutionMode
 OpExecutionMode Entry Point <id> '
 OpExecutionMode is only valid when the Mode operand is an execution mode that takes no Extra Operands, or takes Extra Operands that are not id operands.
@@ -9993,7 +10260,7 @@ OpIMul
 OpINotEqual
 OpISub
 OpISubBorrow
-OpIgnoreIntersectionNV
+OpIgnoreIntersectionKHR
 OpImage
 OpImageDrefGather
 OpImageFetch
@@ -10094,10 +10361,33 @@ OpPhi's result type <id>
 OpPtrAccessChain
 OpPtrCastToGeneric
 OpQuantizeToF16
+OpRayQueryConfirmIntersectionKHR
+OpRayQueryGenerateIntersectionKHR
+OpRayQueryGetIntersectionBarycentricsKHR
+OpRayQueryGetIntersectionCandidateAABBOpaqueKHR
+OpRayQueryGetIntersectionFrontFaceKHR
+OpRayQueryGetIntersectionGeometryIndexKHR
+OpRayQueryGetIntersectionInstanceCustomIndexKHR
+OpRayQueryGetIntersectionInstanceIdKHR
+OpRayQueryGetIntersectionInstanceShaderBindingTableRecordOffsetKHR
+OpRayQueryGetIntersectionObjectRayDirectionKHR
+OpRayQueryGetIntersectionObjectRayOriginKHR
+OpRayQueryGetIntersectionObjectToWorldKHR
+OpRayQueryGetIntersectionPrimitiveIndexKHR
+OpRayQueryGetIntersectionTKHR
+OpRayQueryGetIntersectionTypeKHR
+OpRayQueryGetIntersectionWorldToObjectKHR
+OpRayQueryGetRayFlagsKHR
+OpRayQueryGetRayTMinKHR
+OpRayQueryGetWorldRayDirectionKHR
+OpRayQueryGetWorldRayOriginKHR
+OpRayQueryInitializeKHR
+OpRayQueryProceedKHR
+OpRayQueryTerminateKHR
 OpReadClockKHR
 OpReadPipe
 OpReleaseEvent
-OpReportIntersectionNV
+OpReportIntersectionKHR
 OpReserveReadPipePackets
 OpReserveWritePipePackets
 OpReservedReadPipe
@@ -10152,10 +10442,10 @@ OpSubgroupBallotKHR
 OpSubgroupFirstInvocationKHR
 OpSubgroupReadInvocationKHR
 OpSwitch
-OpTerminateRayNV
-OpTraceNV
+OpTerminateRayKHR
+OpTraceRayKHR
 OpTranspose
-OpTypeAccelerationStructureNV
+OpTypeAccelerationStructureKHR
 OpTypeArray
 OpTypeArray Element Type <id> '
 OpTypeArray Length <id> '
@@ -10182,6 +10472,7 @@ OpTypePipe
 OpTypePointer
 OpTypePointer Type <id> '
 OpTypeQueue
+OpTypeRayQueryProvisionalKHR
 OpTypeReserveId
 OpTypeRuntimeArray
 OpTypeRuntimeArray Element Type <id> '
@@ -10190,7 +10481,7 @@ OpTypeRuntimeArray must be decorated with BufferBlock
 OpTypeRuntimeArray must have storage class of 
 OpTypeRuntimeArray.
 OpTypeSampledImage
-OpTypeSampledImage, OpTypeAccelerationStructureNV, 
+OpTypeSampledImage, OpTypeAccelerationStructureNV, OpTypeAccelerationStructureKHR, OpTypeRayQueryProvisionalKHR, 
 OpTypeSampledImage.
 OpTypeSampler
 OpTypeStruct
@@ -10224,10 +10515,18 @@ OpVectorTimesMatrix
 OpVectorTimesScalar
 OpWritePackedPrimitiveIndices4x8NV
 OpWritePipe
+OpaqueKHR
 Opaque_
 Opcode 
 Opcode in Bottom IR: 
 OpenCL
+OpenCL.DebugInfo.100
+OpenCL.DebugInfo.100 debug base type encoding
+OpenCL.DebugInfo.100 debug composite type
+OpenCL.DebugInfo.100 debug imported entity
+OpenCL.DebugInfo.100 debug info flags
+OpenCL.DebugInfo.100 debug operation
+OpenCL.DebugInfo.100 debug type qualifier
 OpenCL.std
 OpenCL_C
 OpenCL_CPP
@@ -10235,6 +10534,7 @@ OpenGL
 OpenGL: Compiling GLSL Shader
 Operand 
 Operand type must be a pointer
+Operation
 Operation not permitted
 Optional Image Operands are not allowed in the OpenCL 
 Ordered
@@ -10270,9 +10570,10 @@ P@H92u
 PACKED
 PACK_OFFSET
 PATCH
+PAYLOADEXT
+PAYLOADINEXT
 PAYLOADINNV
 PAYLOADNV
-PA]A\^
 PA^A\[
 PA^A\_^]
 PA^A]A\
@@ -10283,6 +10584,7 @@ PA^_]
 PA^_^
 PA^_^[]
 PA^_^][
+PA_A\[
 PA_A\_][
 PA_A\_^[
 PA_A]A\_]
@@ -10292,7 +10594,6 @@ PA_A]_
 PA_A^A\[]
 PA_A^A\_]
 PA_A^A\_^][
-PA_A^A]
 PA_A^A]A\]
 PA_A^A]A\_^[
 PA_A^A]A\_^]
@@ -10332,6 +10633,7 @@ PERTASKNV
 PERVERTEXNV
 PERVIEWNV
 PHL9}0t	H
+PLK57
 POINT
 POSITION
 POSITIONT
@@ -10350,6 +10652,8 @@ PackSnorm2x16
 PackSnorm4x8
 PackUnorm2x16
 PackUnorm4x8
+Parameter Types
+Parent
 PartialCount
 PartialCount and DontUnroll loop controls must not both be specified
 Partially defined aggregate type
@@ -10495,6 +10799,7 @@ R32ui
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 R8Snorm
+RAYQUERYEXT
 READONLY
 REPLACE
 RESOURCE
@@ -10539,15 +10844,53 @@ RWTexture1DArray
 RWTexture2D
 RWTexture2DArray
 RWTexture3D
-RX9D$ht1H
+RX9D$`t1H
 Radians
 RaiseException
 RandomFloat
+RayGenerationKHR
 RayGenerationNV
+RayGeometryIndexKHR
+RayPayloadKHR
 RayPayloadNV
+RayQueryCandidateIntersectionAABBKHR
+RayQueryCandidateIntersectionKHR
+RayQueryCandidateIntersectionTriangleKHR
+RayQueryCommittedIntersectionGeneratedKHR
+RayQueryCommittedIntersectionKHR
+RayQueryCommittedIntersectionNoneKHR
+RayQueryCommittedIntersectionTriangleKHR
+RayQueryConfirmIntersectionKHR
+RayQueryGenerateIntersectionKHR
+RayQueryGetIntersectionBarycentricsKHR
+RayQueryGetIntersectionCandidateAABBOpaqueKHR
+RayQueryGetIntersectionFrontFaceKHR
+RayQueryGetIntersectionGeometryIndexKHR
+RayQueryGetIntersectionInstanceCustomIndexKHR
+RayQueryGetIntersectionInstanceIdKHR
+RayQueryGetIntersectionInstanceShaderBindingTableRecordOffsetKHR
+RayQueryGetIntersectionObjectRayDirectionKHR
+RayQueryGetIntersectionObjectRayOriginKHR
+RayQueryGetIntersectionObjectToWorldKHR
+RayQueryGetIntersectionPrimitiveIndexKHR
+RayQueryGetIntersectionTKHR
+RayQueryGetIntersectionTypeKHR
+RayQueryGetIntersectionWorldToObjectKHR
+RayQueryGetRayFlagsKHR
+RayQueryGetRayTMinKHR
+RayQueryGetWorldRayDirectionKHR
+RayQueryGetWorldRayOriginKHR
+RayQueryInitializeKHR
+RayQueryProceedKHR
+RayQueryProvisionalKHR
+RayQueryTerminateKHR
+RayTmaxKHR
 RayTmaxNV
+RayTminKHR
 RayTminNV
 RayTracingNV
+RayTracingProvisionalKHR
+RayTraversalPrimitiveCullingProvisionalKHR
 Reached non-composite type while indexes still remain to be traversed.
 Read-only file system
 ReadClockKHR
@@ -10582,6 +10925,7 @@ RemoveDirectoryW
 Removing Dead Functions: 
 Repeat
 RepeatMirrored
+ReportIntersectionKHR
 ReportIntersectionNV
 Requested 
 Required
@@ -10620,9 +10964,12 @@ Result Type:
 Result id of OpDecorationGroup can only 
 Result too large
 Result type (Op
+Result type cannot be Op
+Result type component width must be 32 bits
 Result type is not defined.
 RetainEvent
 Return
+Return Type
 ReturnValue
 Rg16Snorm
 Rg16f
@@ -10673,6 +11020,7 @@ S0HcU
 S8H;A
 S8H;HHt
 S8H;Y
+S:fA;
 S;\$0tH
 S>$hkDh$h>[2
 SAMPLE
@@ -10702,6 +11050,7 @@ SATAUAVH
 SATAUAWH
 SATAUH
 SATAVH
+SATAWH
 SAUAVAWH
 SAUAVH
 SAUAWH
@@ -10726,6 +11075,7 @@ SDL_WasInit
 SEMICOLON
 SGreaterThan
 SGreaterThanEqual
+SHADERCALLCOHERENT
 SHADER_MODEL
 SHADER_SOURCE
 SHARED
@@ -10765,6 +11115,7 @@ SPIR-V 1.3 (under WIP WebGPU semantics)
 SPIR-V 1.4
 SPIR-V 1.4 (under Vulkan 1.1 semantics)
 SPIR-V 1.5
+SPIR-V 1.5 (under Vulkan 1.2 semantics)
 SPIR-V Tools Assembler
 SPIR-V Tools Linker
 SPIR-V requires location for user input/output
@@ -10802,8 +11153,11 @@ SPV_KHR_device_group
 SPV_KHR_float_controls
 SPV_KHR_multiview
 SPV_KHR_no_integer_wrap_decoration
+SPV_KHR_non_semantic_info
 SPV_KHR_physical_storage_buffer
 SPV_KHR_post_depth_coverage
+SPV_KHR_ray_query
+SPV_KHR_ray_tracing
 SPV_KHR_shader_atomic_counter_ops
 SPV_KHR_shader_ballot
 SPV_KHR_shader_clock
@@ -10837,9 +11191,9 @@ SSE and SSE2 are required.
 SSign
 STATIC
 STRINGLITERAL
+STRING_LITERAL
 STRUCT
 SUATAUAVAWH
-SUATAUH
 SUATAVH
 SUATH
 SUAUAVAWH
@@ -10984,8 +11338,10 @@ Scalarize instruction on a non-per-component intrinsic
 Scalarize the IR
 Scalarizing stores/geps
 Scalarizing struct/array ops
+Scope
 Scope ids must be OpConstant when Shader capability is 
 Scope ids must be constant or specialization constant when 
+Scope must be Subgroup or Device
 SecondaryColor
 SecondaryPositionNV
 SecondaryViewportMaskNV
@@ -10995,6 +11351,7 @@ See <<Decoration,'Decoration'>>.
 See <<Execution_Mode,Execution Mode>>
 Select
 Selection header 
+Selection must be structured
 SelectionMerge
 Semantics must include exactly one of gl_SemanticsRelease, gl_SemanticsAcquire, or gl_SemanticsAcquireRelease
 Semantics must not include multiple of gl_SemanticsRelease, gl_SemanticsAcquire, or gl_SemanticsAcquireRelease
@@ -11023,11 +11380,13 @@ Shader contains too many uniform buffers.  Has: %d Maximum: %d
 Shader file version mismatch.  Expected (%d), Got (%d).
 Shader variable %s is illegal to use in expression. Only artist-editable variables are usable.
 Shader version: 
+ShaderCallKHR
 ShaderClockKHR
 ShaderIDColor
 ShaderLayer
 ShaderNonUniform
 ShaderNonUniformEXT
+ShaderRecordBufferKHR
 ShaderRecordBufferNV
 ShaderSMBuiltinsNV
 ShaderStereoViewNV
@@ -11061,6 +11420,9 @@ Simplify the CFG
 Sink common instructions down to the end block
 Size operand <id> '
 SizeOf
+SkipAABBsKHR
+SkipClosestHitShaderKHR
+SkipTrianglesKHR
 SleepConditionVariableCS
 SleepConditionVariableSRW
 Slider
@@ -11076,7 +11438,6 @@ Source operand <id> '
 SourceContinued
 SourceExtension
 SpHcU
-SpN#E
 SpacingEqual
 SpacingFractionalEven
 SpacingFractionalOdd
@@ -11340,6 +11701,7 @@ SwizzleInvocationsAMD
 SwizzleInvocationsMaskedAMD
 Symbolic RDIV applications
 Symbolic RDIV independence
+T$ +G$D
 T$ A;
 T$ E3
 T$ H+
@@ -11416,6 +11778,7 @@ T$HA;
 T$HD;
 T$HE3
 T$HH;
+T$HM;
 T$PA;
 T$PD;l$@
 T$PE3
@@ -11459,6 +11822,8 @@ T$xH+A
 T$xH;
 T$xL+
 T$xL9
+T%l#'
+T-CN&
 TANGENT
 TEXCOORD
 TEXTURE1D
@@ -11489,7 +11854,9 @@ Target operand <id> '
 Target version for SPIRV-Tools validator
 TaskCountNV
 TaskNV
+TerminateOnFirstHitKHR
 TerminateProcess
+TerminateRayKHR
 TerminateRayNV
 TessCoord
 TessLevelInner
@@ -11573,6 +11940,7 @@ Too many open files
 Too many open files in system
 Total
 TraceNV
+TraceRayKHR
 TransformFeedback
 Transpose
 Treat error-reporting calls as cold
@@ -11582,9 +11950,11 @@ Trunc
 Try to delinearize array references.
 TryAcquireSRWLockExclusive
 Tuesday
+Two external descriptor sets have the same slot '%s' and '%s'
 Two passes with the same argument (-
 Type Id 
 Type-Based Alias Analysis
+TypeAccelerationStructureKHR
 TypeAccelerationStructureNV
 TypeArray
 TypeAvcImeDualReferenceStreaminINTEL
@@ -11615,6 +11985,7 @@ TypePipe
 TypePipeStorage
 TypePointer
 TypeQueue
+TypeRayQueryProvisionalKHR
 TypeReserveId
 TypeRuntimeArray
 TypeSampledImage
@@ -11708,7 +12079,6 @@ USAMPLERBUFFER
 USAMPLERCUBE
 USAMPLERCUBEARRAY
 USATAUH
-USATAVH
 USAUAVH
 USAUAVI
 USAUH
@@ -11765,10 +12135,10 @@ UUUUUUU
 UUUUUUUUH
 UUUUUUUUI
 UVATAUAVH
+UVATAUAWH
 UVATAUH
 UVATAVAWH
 UVAUAVAWH
-UVAUAVH
 UVAVH
 UVAWH
 UVEC2
@@ -11780,6 +12150,7 @@ UVWATAUAVAWH
 UVWATAUAWH
 UVWATAUH
 UVWATAVH
+UVWATH
 UVWAUAVH
 UVWAUAWH
 UVWAUH
@@ -11797,11 +12168,13 @@ UWAUH
 UWAVAWH
 UWAVH
 UWAWH
+UWAWI
 Unable to determine source language
 Unable to parse built-ins
 Unable to translate Geometry Shader input primitive type '%s'
 Unable to translate Geometry Shader output primitive type '%s'
 Undef
+Underlying Types
 Unexpected character
 Unexpected node
 Unexpected token
@@ -11935,7 +12308,6 @@ VUUUA
 VUUUH
 VWATAUAVH
 VWATAUAWH
-VWATAUH
 VWATAVAW
 VWATAVAWH
 VWAUAVAWH
@@ -11966,8 +12338,8 @@ V_strtoi64
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Validation failed after pass 
+Value
 Value Propagation
 Value Unknown
 Valve
@@ -12167,8 +12539,11 @@ WorkgroupMemory
 WorkgroupMemoryBarrier
 WorkgroupMemoryBarrierWithGroupSync
 WorkgroupSize
+WorldRayDirectionKHR
 WorldRayDirectionNV
+WorldRayOriginKHR
 WorldRayOriginNV
+WorldToObjectKHR
 WorldToObjectNV
 WriteConsoleW
 WriteFile
@@ -12178,10 +12553,18 @@ WritePackedPrimitiveIndices4x8NV
 WritePipe
 Wrong number of items in value for annotation %s. Ignoring annotation.
 Wu4E3
+Ww!Hc
+X UATAWH
 X!t5~
-X(H;X t
+X% "'
+X%2/'
+X%r-'
+X-&Z'
+X-8"'
 X-LEGEND
 X-LEGEND Mesa-IR/SPIR-V Translator
+X-\Z'
+X0H+X(H
 X360_DST16
 X360_DST24
 X360_DST24F
@@ -12202,8 +12585,15 @@ X_^][
 Xderef
 XfbBuffer
 XfbStride
+Y%*)'
+Y%BA'
+Y%^J&
+Y-L.'
+Y-UD"
 Y0;Z0
 Y0H;Y8t
+Y5sA'
+Y8H;Y@t/H
 Y>kX>
 Y>kX>M
 YD$@f
@@ -12324,6 +12714,7 @@ ZwMHc
 \$(L;
 \$(L;s
 \$(M;
+\$0$ 
 \$0@2
 \$0D;
 \$0E2
@@ -12339,6 +12730,7 @@ ZwMHc
 \$0HcH
 \$0Hk
 \$0I+
+\$0Lc
 \$0Mc
 \$0^]
 \$0ff
@@ -12367,10 +12759,9 @@ ZwMHc
 \$8fff
 \$8t A
 \$<A;
-\$@$_
 \$@;]
 \$@@2
-\$@@8=9
+\$@@8=
 \$@@8o,t
 \$@D;
 \$@E3
@@ -12393,8 +12784,10 @@ ZwMHc
 \$HE3
 \$HH+
 \$HH;
+\$HHc
 \$HI;
 \$Ht7H
+\$Hta
 \$HuqH
 \$P@8~	t1
 \$PE2
@@ -12451,6 +12844,8 @@ ZwMHc
 \$xM+
 \$xr$I
 \$|D;m
+\%3$'
+\-q''
 \>$hkDh$h>
 \ffff
 \src\shaders\
@@ -12472,7 +12867,6 @@ ZwMHc
 ^@I;]
 ^DtTI
 ^HH9J@u,
-^PI;^X
 ^RfN>
 ^\s*layout\s*\(\s*binding\s*=\s*[0-9]+\s*\)\s*uniform\s+sampler
 ^\s*uniform\s+sampler
@@ -12490,6 +12884,7 @@ _Globals_
 _IO_getc
 _IO_putc
 _PH;t$8
+_PI;_X
 _SrgbRead
 _UvScaleVar
 _V_strcspn
@@ -12645,12 +13040,15 @@ _typeProxy
 `A^_^
 `A^_^][
 `A_A\[
+`A_A]A\
 `A_A]A\_^][
 `A_A][
 `A_A]]
+`A_A^A\
 `A_A^A\^]
 `A_A^A\_]
 `A_A^A\_^
+`A_A^A\_^[]
 `A_A^A\_^][
 `A_A^A]A\^][
 `A_A^A]A\_^]
@@ -12711,10 +13109,12 @@ abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 abort
+absoluteDifference
 ac.s0
 ac.sat.
 ac.up.s1.sat
 ac2es
+accelerationStructureEXT
 accelerationStructureNV
 accelerationStructureNV can only be used in uniform variables or function parameters:
 access
@@ -12749,6 +13149,7 @@ addInvocationsInclusiveScanNonUniform
 addInvocationsInclusiveScanNonUniformAMD
 addInvocationsNonUniform
 addInvocationsNonUniformAMD
+addSaturate
 addconv
 additive_expression
 address family not supported
@@ -12770,7 +13171,6 @@ aggregate
 aggregate in vector constructor
 aggregate metadata for type
 agressive_dce_pass
-agressive_dce_pass1
 agressive_dce_pass2
 agressive_dce_pass3
 alias 
@@ -13047,6 +13447,7 @@ athlon64
 atoll
 atomic counter types
 atomic counters can only be highp
+atomic counters offset should align based on 4:
 atomic counters sharing the same offset:
 atomicAdd
 atomicAnd
@@ -13094,6 +13495,8 @@ aturate.ftz.f
 auroraux
 auto-map-bindings
 available_externally 
+average
+averageRounded
 b.128
 b.nopack
 b9{Tu
@@ -13206,6 +13609,7 @@ block storage qualification
 block without member remapping
 block-
 block_merge_pass
+block_merge_pass2
 block_structure
 blockaddress(
 bm.bextri.u
@@ -13217,7 +13621,7 @@ bool anyInvocation(bool);bool allInvocations(bool);bool allInvocationsEqual(bool
 bool anyInvocationARB(bool);bool allInvocationsARB(bool);bool allInvocationsEqualARB(bool);
 bool gl_HelperInvocation;flat in highp int gl_PrimitiveID;flat in highp int gl_Layer;
 bool helperInvocationEXT();
-bool reportIntersectionNV(float, uint);
+bool reportIntersectionNV(float, uint);bool reportIntersectionEXT(float, uint);
 bool sparseTexelsResidentARB(int code);
 bool1
 bool1x1
@@ -13315,6 +13719,8 @@ c[subcomponent][.component]
 call argument
 callable
 callable data number
+callableDataEXT
+callableDataInEXT
 callableDataInNV
 callableDataInNV block
 callableDataNV
@@ -13375,6 +13781,7 @@ can't modify gl_FrontFace
 can't modify gl_InstanceID
 can't modify gl_PointCoord
 can't modify gl_VertexID
+can't modify rayQueryEXT
 can't modify shader input
 can't modify void
 can't read from explicitly-interpolated object: 
@@ -13523,6 +13930,7 @@ cbuffer %s {
 cc.s0
 cc.sat.
 ccccccccc
+ccp_pass
 ceilf
 ceill
 centroid
@@ -13575,6 +13983,7 @@ combined tokens are too long
 comineq.sd
 comineq.ss
 comment
+committed
 common
 common 
 compatibility
@@ -13620,6 +14029,7 @@ const int  gl_MaxClipPlanes = %d;
 const int  gl_MaxCombinedTextureImageUnits = %d;
 const int  gl_MaxDrawBuffers = %d;
 const int  gl_MaxFragmentUniformComponents = %d;
+const int  gl_MaxFragmentUniformVectors = %d;
 const int  gl_MaxLights = %d;
 const int  gl_MaxTextureCoords = %d;
 const int  gl_MaxTextureImageUnits = %d;
@@ -13628,6 +14038,7 @@ const int  gl_MaxVaryingFloats = %d;
 const int  gl_MaxVertexAttribs = %d;
 const int  gl_MaxVertexTextureImageUnits = %d;
 const int  gl_MaxVertexUniformComponents = %d;
+const int  gl_MaxVertexUniformVectors = %d;
 const int gl_MaxAtomicCounterBindings = %d;
 const int gl_MaxAtomicCounterBufferSize = %d;
 const int gl_MaxClipDistances = %d;
@@ -13692,6 +14103,7 @@ const int gl_MaxViewports = %d;
 const int gl_ScopeDevice      = 1;
 const int gl_ScopeInvocation  = 4;
 const int gl_ScopeQueueFamily = 5;
+const int gl_ScopeShaderCallEXT = 6;
 const int gl_ScopeSubgroup    = 3;
 const int gl_ScopeWorkgroup   = 2;
 const int gl_SemanticsAcquire         = 0x2;
@@ -13727,7 +14139,8 @@ const mediump int  gl_MaxVertexTextureImageUnits = %d;
 const mediump int  gl_MaxVertexUniformVectors = %d;
 const mediump int  gl_MinProgramTexelOffset = %d;
 const uint
-const uint gl_RayFlagsNoneNV = 0U;const uint gl_RayFlagsOpaqueNV = 1U;const uint gl_RayFlagsNoOpaqueNV = 2U;const uint gl_RayFlagsTerminateOnFirstHitNV = 4U;const uint gl_RayFlagsSkipClosestHitShaderNV = 8U;const uint gl_RayFlagsCullBackFacingTrianglesNV = 16U;const uint gl_RayFlagsCullFrontFacingTrianglesNV = 32U;const uint gl_RayFlagsCullOpaqueNV = 64U;const uint gl_RayFlagsCullNoOpaqueNV = 128U;
+const uint gl_RayFlagsNoneNV = 0U;const uint gl_RayFlagsNoneEXT = 0U;const uint gl_RayFlagsOpaqueNV = 1U;const uint gl_RayFlagsOpaqueEXT = 1U;const uint gl_RayFlagsNoOpaqueNV = 2U;const uint gl_RayFlagsNoOpaqueEXT = 2U;const uint gl_RayFlagsTerminateOnFirstHitNV = 4U;const uint gl_RayFlagsTerminateOnFirstHitEXT = 4U;const uint gl_RayFlagsSkipClosestHitShaderNV = 8U;const uint gl_RayFlagsSkipClosestHitShaderEXT = 8U;const uint gl_RayFlagsCullBackFacingTrianglesNV = 16U;const uint gl_RayFlagsCullBackFacingTrianglesEXT = 16U;const uint gl_RayFlagsCullFrontFacingTrianglesNV = 32U;const uint gl_RayFlagsCullFrontFacingTrianglesEXT = 32U;const uint gl_RayFlagsCullOpaqueNV = 64U;const uint gl_RayFlagsCullOpaqueEXT = 64U;const uint gl_RayFlagsCullNoOpaqueNV = 128U;const uint gl_RayFlagsCullNoOpaqueEXT = 128U;const uint gl_HitKindFrontFacingTriangleEXT = 254U;const uint gl_HitKindBackFacingTriangleEXT = 255U;
+const uint gl_RayQueryCandidateIntersectionEXT = 0U;const uint gl_RayQueryCommittedIntersectionEXT = 1U;const uint gl_RayQueryCommittedIntersectionNoneEXT = 0U;const uint gl_RayQueryCommittedIntersectionTriangleEXT = 1U;const uint gl_RayQueryCommittedIntersectionGeneratedEXT = 2U;const uint gl_RayQueryCandidateIntersectionTriangleEXT = 0U;const uint gl_RayQueryCandidateIntersectionAABBEXT = 1U;
 const uint16_t
 const uint64_t
 const uint8_t
@@ -13744,6 +14157,7 @@ constructor argument does not have a type
 consumestructuredbuffer
 containing OpTypeRuntimeArray must have storage class of 
 contains an array with stride 
+contains an array with stride 0
 context-insensitive value
 continue
 continue statement only allowed in loops
@@ -13761,6 +14175,8 @@ coopMatMulAddNV
 coopMatStoreNV
 coordTemp
 copy object
+copy-propagate-arrays
+copy_propagate_pass
 copysign
 copysignf
 copysignl
@@ -13814,6 +14230,8 @@ cospi
 could not create assignment
 could not start LunarGLASS in multi-threaded mode
 couldn't get metadata for input instruction
+countLeadingZeros
+countTrailingZeros
 countbits
 cp.approx.ftz.d
 cp.ps.256
@@ -13842,11 +14260,9 @@ d$0E3
 d$0H;
 d$0I+
 d$0I;
-d$0Jc
 d$0L+
 d$0L;
 d$0M;
-d$0ff
 d$8D9o0uiH
 d$8E3
 d$8L9d$0t
@@ -13875,6 +14291,7 @@ d$XH9
 d$XL+
 d$XL;
 d$Xfff
+d$`D8"u
 d$`E3
 d$`H;
 d$`Hk
@@ -13932,8 +14349,9 @@ ddx_fine
 ddy_coarse
 ddy_fine
 dead_branch_elim_pass
-dead_insert_elim_pass1
-dead_insert_elim_pass2
+dead_branch_elim_pass2
+dead_branch_elim_pass3
+dead_insert_elim_pass
 debug
 debug base type encoding
 debug composite type
@@ -13942,10 +14360,13 @@ debug operation
 debug pragma syntax is incorrect
 debug type qualifier
 debug-pass
+debugPrintfEXT
+debugPrintfEXT(
 declaration
 declaration in annotation
 declaration list
 declaration_statement
+declarations)
 declare 
 decompose-insts
 decomposition of gla_Fma
@@ -14216,6 +14637,7 @@ exclusive or second child into first child
 exclusive-or
 exclusive_or_expression
 executable format error
+executeCallableEXT
 executeCallableNV
 execution mode
 execution model
@@ -14287,11 +14709,13 @@ expected literal N to be equal to the number of components of Result Type
 expected newline after header name:
 expected no arguments
 expected number after 'c'
+expected operand 
 expected operand A type to be equal to Result Type
 expected operand B type to be equal to Result Type
 expected operand C to be an int scalar or vector
 expected operand C to have the same bit width as Result Type
 expected operand C to have the same number of components as Result Type
+expected operand Child must be class or struct debug type
 expected operand Eta to be a float scalar
 expected operand Exp data type to be a 
 expected operand Exp data type to have the same component 
@@ -14302,6 +14726,7 @@ expected operand Format to be a pointer
 expected operand I data type to be equal to Result Type
 expected operand I to be a pointer
 expected operand I to be of type equal to Result Type
+expected operand Members 
 expected operand N to be of type equal to Result Type
 expected operand Num Elements to be of type size_t (
 expected operand Offset to be of type size_t (
@@ -14321,6 +14746,7 @@ expected operand P0 to be of float scalar or vector type
 expected operand P0 to have no more than 4 components
 expected operand P1 component type to be equal to 
 expected operand P1 to be of float scalar or vector type
+expected operand Parent must be class or struct debug type
 expected operand Ptr storage class to be CrossWorkgroup
 expected operand Ptr to be a pointer
 expected operand Shuffle Mask components to have the same bit width as Result Type components
@@ -14330,6 +14756,7 @@ expected operand V to be a 32-bit float vector of size 2
 expected operand V to be a 32-bit float vector of size 4
 expected operand V to be a 32-bit int vector of size 2
 expected operand V to be a 64-bit float scalar
+expected operand Variable must be a result id of OpVariable or OpFunctionParameter
 expected operand X and Result Type to have equal component types
 expected operand X component type to be equal to 
 expected operand X component type to be equal to Result Type
@@ -14348,6 +14775,7 @@ expected operands P0 and P1 to have the same number of
 expected operands X and Y to be of the same type
 expected register number after register type
 expected register type
+expected result type must be a result id of 
 expected spaceN
 expected storage class of the pointer to be Generic, CrossWorkgroup, Workgroup or Function
 expected symbol, not user-defined type
@@ -14495,13 +14923,12 @@ f9)uTH
 f9,Ju
 f9,~u
 f9<Bu
-f9C:u	E9>
 f9H:t
 f9O:u?H
 f9\$bu
 f;B:uq
 f;H:u
-f;P:u=H
+f;P:u<H
 f;\$p
 f;\$~
 f;^ r
@@ -14512,7 +14939,7 @@ fA	D$
 fA!L$
 fA9,Au
 fA9<\u
-fA9@:u$H
+fA9@:u#H
 fA9B:
 fA9\$
 fA;Ox
@@ -14537,7 +14964,8 @@ fD9;u
 fD9<Au
 fD9<Xu
 fD9?t&
-fD9M:
+fD9K:u	A9/
+fD9^:
 fD9f:
 fD9p:
 fD9t$b
@@ -14613,7 +15041,8 @@ firstbitlow
 fixed
 flat 
 flat  in lowp     int gl_SampleID;      in mediump vec2 gl_SamplePosition;flat  in highp    int gl_SampleMaskIn[];     out highp    int gl_SampleMask[];
-flat in  int  gl_SampleID;     in  vec2 gl_SamplePosition;flat in  int  gl_SampleMaskIn[];     out int  gl_SampleMask[];
+flat in  int  gl_SampleID;     in  vec2 gl_SamplePosition;     out int  gl_SampleMask[];
+flat in  int  gl_SampleMaskIn[];
 flat in highp int gl_DeviceIndex;flat in highp int gl_ViewIndex;
 flat in highp uint gl_ViewID_OVR;
 flat in int gl_Layer;flat in int gl_ViewportIndex;
@@ -14853,6 +15282,7 @@ fwidthFine
 fwrite
 fwrite$UNIX2003
 fwvHc
+g	v!7
 g.value
 g2.approx.
 g2.approx.ftz.f
@@ -15012,18 +15442,25 @@ gl_FragmentSizeNV
 gl_FrontColor
 gl_FrontFacing
 gl_FrontSecondaryColor
+gl_GeometryIndexEXT
 gl_GlobalInvocationID
 gl_HelperInvocation
+gl_HitKindEXT
 gl_HitKindNV
+gl_HitTEXT
 gl_HitTNV
+gl_IncomingRayFlagsEXT
 gl_IncomingRayFlagsNV
+gl_InstanceCustomIndexEXT
 gl_InstanceCustomIndexNV
 gl_InstanceID
 gl_InstanceId
 gl_InstanceIndex
 gl_InvocationID
 gl_InvocationsPerPixelNV
+gl_LaunchIDEXT
 gl_LaunchIDNV
+gl_LaunchSizeEXT
 gl_LaunchSizeNV
 gl_Layer
 gl_Layer = int( streamName.%s ); \
@@ -15071,8 +15508,12 @@ gl_Normal
 gl_NumSamples
 gl_NumSubgroups
 gl_NumWorkGroups
+gl_ObjectRayDirectionEXT
 gl_ObjectRayDirectionNV
+gl_ObjectRayOriginEXT
 gl_ObjectRayOriginNV
+gl_ObjectToWorld3x4EXT
+gl_ObjectToWorldEXT
 gl_ObjectToWorldNV
 gl_PatchVertices
 gl_PatchVerticesIn
@@ -15090,7 +15531,9 @@ gl_PrimitiveID
 gl_PrimitiveID = int( streamName.%s ); \
 gl_PrimitiveIDIn
 gl_PrimitiveIndicesNV
+gl_RayTmaxEXT
 gl_RayTmaxNV
+gl_RayTminEXT
 gl_RayTminNV
 gl_SIMDGroupSizeAMD
 gl_SMCountNV
@@ -15161,8 +15604,12 @@ gl_WarpIDNV
 gl_WarpsPerSMNV
 gl_WorkGroupID
 gl_WorkGroupSize
+gl_WorldRayDirectionEXT
 gl_WorldRayDirectionNV
+gl_WorldRayOriginEXT
 gl_WorldRayOriginNV
+gl_WorldToObject3x4EXT
+gl_WorldToObjectEXT
 gl_WorldToObjectNV
 gl_in
 gl_out
@@ -15199,6 +15646,7 @@ global binding
 global const initializers must be constant
 global storage input qualifier cannot be used in a compute shader
 global storage output qualifier cannot be used in a compute shader
+global variables) and section 10 (function 
 global_cbuffer_binding
 globallycoherent
 globalopt
@@ -15237,13 +15685,13 @@ hA^A\_[
 hA^A]^[
 hA^_][
 hA^_^[
+hA_A]A\_
 hA_A]_^][
 hA_A^A]A\
 hA_A^A]A\_^[]
 hA_A^A]A\_^][
 hA_A^_^][
 hA__[]
-h_^[]
 h_^][
 ha1msg
 haiku
@@ -15317,6 +15765,7 @@ highp uint packSnorm2x16(vec2);      vec2 unpackSnorm2x16(highp uint);highp uint
 highp uint packSnorm4x8(vec4);highp uint packUnorm4x8(vec4);
 highp uint packUnorm2x16(vec2);vec2 unpackUnorm2x16(highp uint);
 highp vec4  gl_Position;highp float gl_PointSize;
+hitAttributeEXT
 hitAttributeNV
 hitAttributeNV block
 hj>>d
@@ -15371,7 +15820,7 @@ identifier not previously declared
 identifier removed
 identifier_list
 identifiers containing consecutive underscores ("__") are reserved
-identifiers containing consecutive underscores ("__") are reserved, and an error if version <= 300
+identifiers containing consecutive underscores ("__") are reserved, and an error if version < 300
 identifiers starting with "gl_" are reserved
 identify-structures
 if ( gl_InvocationID == 0 )
@@ -15384,6 +15833,7 @@ ifetime.start
 ifmerge
 ifndef
 iglongjmp
+ignoreIntersectionEXT
 ignoreIntersectionNV
 ignored
 ignoring shader_profile
@@ -15455,10 +15905,10 @@ immediate sampler state
 implicitly-sized array
 imulExtended
 in    highp uvec3 gl_NumWorkGroups;const highp uvec3 gl_WorkGroupSize = uvec3(1,1,1);in highp uvec3 gl_WorkGroupID;in highp uvec3 gl_LocalInvocationID;in highp uvec3 gl_GlobalInvocationID;in highp uint gl_LocalInvocationIndex;
-in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;
-in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;in     int   gl_PrimitiveID;in     int   gl_InstanceID;in     int   gl_InstanceCustomIndexNV;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayDirectionNV;in    float  gl_RayTminNV;in    float  gl_RayTmaxNV;in    float  gl_HitTNV;in    uint   gl_HitKindNV;in    mat4x3 gl_ObjectToWorldNV;in    mat4x3 gl_WorldToObjectNV;in    uint   gl_IncomingRayFlagsNV;
-in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;in     int   gl_PrimitiveID;in     int   gl_InstanceID;in     int   gl_InstanceCustomIndexNV;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayDirectionNV;in    float  gl_RayTminNV;in    float  gl_RayTmaxNV;in    mat4x3 gl_ObjectToWorldNV;in    mat4x3 gl_WorldToObjectNV;in    uint   gl_IncomingRayFlagsNV;
-in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayDirectionNV;in    float  gl_RayTminNV;in    float  gl_RayTmaxNV;in    uint   gl_IncomingRayFlagsNV;
+in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchIDEXT;in    uvec3  gl_LaunchSizeNV;in    uvec3  gl_LaunchSizeEXT;
+in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchIDEXT;in    uvec3  gl_LaunchSizeNV;in    uvec3  gl_LaunchSizeEXT;in     int   gl_PrimitiveID;in     int   gl_InstanceID;in     int   gl_InstanceCustomIndexNV;in     int   gl_InstanceCustomIndexEXT;in     int   gl_GeometryIndexEXT;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayOriginEXT;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_WorldRayDirectionEXT;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayOriginEXT;in    vec3   gl_ObjectRayDirectionNV;in    vec3   gl_ObjectRayDirectionEXT;in    float  gl_RayTminNV;in    float  gl_RayTminEXT;in    float  gl_RayTmaxNV;in    float  gl_RayTmaxEXT;in    float  gl_HitTNV;in    float  gl_HitTEXT;in    uint   gl_HitKindNV;in    uint   gl_HitKindEXT;in    mat4x3 gl_ObjectToWorldNV;in    mat4x3 gl_ObjectToWorldEXT;in    mat3x4 gl_ObjectToWorld3x4EXT;in    mat4x3 gl_WorldToObjectNV;in    mat4x3 gl_WorldToObjectEXT;in    mat3x4 gl_WorldToObject3x4EXT;in    uint   gl_IncomingRayFlagsNV;in    uint   gl_IncomingRayFlagsEXT;
+in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchIDEXT;in    uvec3  gl_LaunchSizeNV;in    uvec3  gl_LaunchSizeEXT;in     int   gl_PrimitiveID;in     int   gl_InstanceID;in     int   gl_InstanceCustomIndexNV;in     int   gl_InstanceCustomIndexEXT;in     int   gl_GeometryIndexEXT;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayOriginEXT;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_WorldRayDirectionEXT;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayOriginEXT;in    vec3   gl_ObjectRayDirectionNV;in    vec3   gl_ObjectRayDirectionEXT;in    float  gl_RayTminNV;in    float  gl_RayTminEXT;in    float  gl_RayTmaxNV;in    float  gl_RayTmaxEXT;in    mat4x3 gl_ObjectToWorldNV;in    mat4x3 gl_ObjectToWorldEXT;in    mat3x4 gl_ObjectToWorld3x4EXT;in    mat4x3 gl_WorldToObjectNV;in    mat4x3 gl_WorldToObjectEXT;in    mat3x4 gl_WorldToObject3x4EXT;in    uint   gl_IncomingRayFlagsNV;in    uint   gl_IncomingRayFlagsEXT;
+in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchIDEXT;in    uvec3  gl_LaunchSizeNV;in    uvec3  gl_LaunchSizeEXT;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayOriginEXT;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_WorldRayDirectionEXT;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayDirectionNV;in    float  gl_RayTminNV;in    float  gl_RayTminEXT;in    float  gl_RayTmaxNV;in    float  gl_RayTmaxEXT;in    uint   gl_IncomingRayFlagsNV;in    uint   gl_IncomingRayFlagsEXT;
 in Function or Private storage classes or as function parameters
 in Vulkan evironment, OpControlBarrier execution scope must be Subgroup for Fragment, Vertex, Geometry and TessellationEvaluation execution models
 in bool gl_FragFullyCoveredNV;
@@ -15596,6 +16046,7 @@ int8_t
 int8_t abs(int8_t);i8vec2 abs(i8vec2);i8vec3 abs(i8vec3);i8vec4 abs(i8vec4);int8_t sign(int8_t);i8vec2 sign(i8vec2);i8vec3 sign(i8vec3);i8vec4 sign(i8vec4);int8_t min(int8_t x, int8_t y);i8vec2 min(i8vec2 x, int8_t y);i8vec3 min(i8vec3 x, int8_t y);i8vec4 min(i8vec4 x, int8_t y);i8vec2 min(i8vec2 x, i8vec2 y);i8vec3 min(i8vec3 x, i8vec3 y);i8vec4 min(i8vec4 x, i8vec4 y);uint8_t min(uint8_t x, uint8_t y);u8vec2 min(u8vec2 x, uint8_t y);u8vec3 min(u8vec3 x, uint8_t y);u8vec4 min(u8vec4 x, uint8_t y);u8vec2 min(u8vec2 x, u8vec2 y);u8vec3 min(u8vec3 x, u8vec3 y);u8vec4 min(u8vec4 x, u8vec4 y);int8_t max(int8_t x, int8_t y);i8vec2 max(i8vec2 x, int8_t y);i8vec3 max(i8vec3 x, int8_t y);i8vec4 max(i8vec4 x, int8_t y);i8vec2 max(i8vec2 x, i8vec2 y);i8vec3 max(i8vec3 x, i8vec3 y);i8vec4 max(i8vec4 x, i8vec4 y);uint8_t max(uint8_t x, uint8_t y);u8vec2 max(u8vec2 x, uint8_t y);u8vec3 max(u8vec3 x, uint8_t y);u8vec4 max(u8vec4 x, uint8_t y);u8vec2 max(u8vec2 x, u8vec2 y);u8vec3 max(u8vec3 x, u8vec3 y);u8vec4 max(u8vec4 x, u8vec4 y);int8_t    clamp(int8_t x, int8_t minVal, int8_t maxVal);i8vec2  clamp(i8vec2  x, int8_t minVal, int8_t maxVal);i8vec3  clamp(i8vec3  x, int8_t minVal, int8_t maxVal);i8vec4  clamp(i8vec4  x, int8_t minVal, int8_t maxVal);i8vec2  clamp(i8vec2  x, i8vec2  minVal, i8vec2  maxVal);i8vec3  clamp(i8vec3  x, i8vec3  minVal, i8vec3  maxVal);i8vec4  clamp(i8vec4  x, i8vec4  minVal, i8vec4  maxVal);uint8_t   clamp(uint8_t x, uint8_t minVal, uint8_t maxVal);u8vec2  clamp(u8vec2  x, uint8_t minVal, uint8_t maxVal);u8vec3  clamp(u8vec3  x, uint8_t minVal, uint8_t maxVal);u8vec4  clamp(u8vec4  x, uint8_t minVal, uint8_t maxVal);u8vec2  clamp(u8vec2  x, u8vec2  minVal, u8vec2  maxVal);u8vec3  clamp(u8vec3  x, u8vec3  minVal, u8vec3  maxVal);u8vec4  clamp(u8vec4  x, u8vec4  minVal, u8vec4  maxVal);int8_t  mix(int8_t,  int8_t,  bool);i8vec2  mix(i8vec2,  i8vec2,  bvec2);i8vec3  mix(i8vec3,  i8vec3,  bvec3);i8vec4  mix(i8vec4,  i8vec4,  bvec4);uint8_t mix(uint8_t, uint8_t, bool);u8vec2  mix(u8vec2,  u8vec2,  bvec2);u8vec3  mix(u8vec3,  u8vec3,  bvec3);u8vec4  mix(u8vec4,  u8vec4,  bvec4);bvec2 lessThan(i8vec2, i8vec2);bvec3 lessThan(i8vec3, i8vec3);bvec4 lessThan(i8vec4, i8vec4);bvec2 lessThan(u8vec2, u8vec2);bvec3 lessThan(u8vec3, u8vec3);bvec4 lessThan(u8vec4, u8vec4);bvec2 lessThanEqual(i8vec2, i8vec2);bvec3 lessThanEqual(i8vec3, i8vec3);bvec4 lessThanEqual(i8vec4, i8vec4);bvec2 lessThanEqual(u8vec2, u8vec2);bvec3 lessThanEqual(u8vec3, u8vec3);bvec4 lessThanEqual(u8vec4, u8vec4);bvec2 greaterThan(i8vec2, i8vec2);bvec3 greaterThan(i8vec3, i8vec3);bvec4 greaterThan(i8vec4, i8vec4);bvec2 greaterThan(u8vec2, u8vec2);bvec3 greaterThan(u8vec3, u8vec3);bvec4 greaterThan(u8vec4, u8vec4);bvec2 greaterThanEqual(i8vec2, i8vec2);bvec3 greaterThanEqual(i8vec3, i8vec3);bvec4 greaterThanEqual(i8vec4, i8vec4);bvec2 greaterThanEqual(u8vec2, u8vec2);bvec3 greaterThanEqual(u8vec3, u8vec3);bvec4 greaterThanEqual(u8vec4, u8vec4);bvec2 equal(i8vec2, i8vec2);bvec3 equal(i8vec3, i8vec3);bvec4 equal(i8vec4, i8vec4);bvec2 equal(u8vec2, u8vec2);bvec3 equal(u8vec3, u8vec3);bvec4 equal(u8vec4, u8vec4);bvec2 notEqual(i8vec2, i8vec2);bvec3 notEqual(i8vec3, i8vec3);bvec4 notEqual(i8vec4, i8vec4);bvec2 notEqual(u8vec2, u8vec2);bvec3 notEqual(u8vec3, u8vec3);bvec4 notEqual(u8vec4, u8vec4);  int8_t bitfieldExtract(  int8_t, int8_t, int8_t);i8vec2 bitfieldExtract(i8vec2, int8_t, int8_t);i8vec3 bitfieldExtract(i8vec3, int8_t, int8_t);i8vec4 bitfieldExtract(i8vec4, int8_t, int8_t); uint8_t bitfieldExtract( uint8_t, int8_t, int8_t);u8vec2 bitfieldExtract(u8vec2, int8_t, int8_t);u8vec3 bitfieldExtract(u8vec3, int8_t, int8_t);u8vec4 bitfieldExtract(u8vec4, int8_t, int8_t);  int8_t bitfieldInsert(  int8_t base,   int8_t, int8_t, int8_t);i8vec2 bitfieldInsert(i8vec2 base, i8vec2, int8_t, int8_t);i8vec3 bitfieldInsert(i8vec3 base, i8vec3, int8_t, int8_t);i8vec4 bitfieldInsert(i8vec4 base, i8vec4, int8_t, int8_t); uint8_t bitfieldInsert( uint8_t base,  uint8_t, int8_t, int8_t);u8vec2 bitfieldInsert(u8vec2 base, u8vec2, int8_t, int8_t);u8vec3 bitfieldInsert(u8vec3 base, u8vec3, int8_t, int8_t);u8vec4 bitfieldInsert(u8vec4 base, u8vec4, int8_t, int8_t);  int8_t bitCount(  int8_t);i8vec2 bitCount(i8vec2);i8vec3 bitCount(i8vec3);i8vec4 bitCount(i8vec4);  int8_t bitCount( uint8_t);i8vec2 bitCount(u8vec2);i8vec3 bitCount(u8vec3);i8vec4 bitCount(u8vec4);  int8_t findLSB(  int8_t);i8vec2 findLSB(i8vec2);i8vec3 findLSB(i8vec3);i8vec4 findLSB(i8vec4);  int8_t findLSB( uint8_t);i8vec2 findLSB(u8vec2);i8vec3 findLSB(u8vec3);i8vec4 findLSB(u8vec4);  int8_t findMSB(  int8_t);i8vec2 findMSB(i8vec2);i8vec3 findMSB(i8vec3);i8vec4 findMSB(i8vec4);  int8_t findMSB( uint8_t);i8vec2 findMSB(u8vec2);i8vec3 findMSB(u8vec3);i8vec4 findMSB(u8vec4);int16_t abs(int16_t);i16vec2 abs(i16vec2);i16vec3 abs(i16vec3);i16vec4 abs(i16vec4);int16_t sign(int16_t);i16vec2 sign(i16vec2);i16vec3 sign(i16vec3);i16vec4 sign(i16vec4);int16_t min(int16_t x, int16_t y);i16vec2 min(i16vec2 x, int16_t y);i16vec3 min(i16vec3 x, int16_t y);i16vec4 min(i16vec4 x, int16_t y);i16vec2 min(i16vec2 x, i16vec2 y);i16vec3 min(i16vec3 x, i16vec3 y);i16vec4 min(i16vec4 x, i16vec4 y);uint16_t min(uint16_t x, uint16_t y);u16vec2 min(u16vec2 x, uint16_t y);u16vec3 min(u16vec3 x, uint16_t y);u16vec4 min(u16vec4 x, uint16_t y);u16vec2 min(u16vec2 x, u16vec2 y);u16vec3 min(u16vec3 x, u16vec3 y);u16vec4 min(u16vec4 x, u16vec4 y);int16_t max(int16_t x, int16_t y);i16vec2 max(i16vec2 x, int16_t y);i16vec3 max(i16vec3 x, int16_t y);i16vec4 max(i16vec4 x, int16_t y);i16vec2 max(i16vec2 x, i16vec2 y);i16vec3 max(i16vec3 x, i16vec3 y);i16vec4 max(i16vec4 x, i16vec4 y);uint16_t max(uint16_t x, uint16_t y);u16vec2 max(u16vec2 x, uint16_t y);u16vec3 max(u16vec3 x, uint16_t y);u16vec4 max(u16vec4 x, uint16_t y);u16vec2 max(u16vec2 x, u16vec2 y);u16vec3 max(u16vec3 x, u16vec3 y);u16vec4 max(u16vec4 x, u16vec4 y);int16_t    clamp(int16_t x, int16_t minVal, int16_t maxVal);i16vec2  clamp(i16vec2  x, int16_t minVal, int16_t maxVal);i16vec3  clamp(i16vec3  x, int16_t minVal, int16_t maxVal);i16vec4  clamp(i16vec4  x, int16_t minVal, int16_t maxVal);i16vec2  clamp(i16vec2  x, i16vec2  minVal, i16vec2  maxVal);i16vec3  clamp(i16vec3  x, i16vec3  minVal, i16vec3  maxVal);i16vec4  clamp(i16vec4  x, i16vec4  minVal, i16vec4  maxVal);uint16_t   clamp(uint16_t x, uint16_t minVal, uint16_t maxVal);u16vec2  clamp(u16vec2  x, uint16_t minVal, uint16_t maxVal);u16vec3  clamp(u16vec3  x, uint16_t minVal, uint16_t maxVal);u16vec4  clamp(u16vec4  x, uint16_t minVal, uint16_t maxVal);u16vec2  clamp(u16vec2  x, u16vec2  minVal, u16vec2  maxVal);u16vec3  clamp(u16vec3  x, u16vec3  minVal, u16vec3  maxVal);u16vec4  clamp(u16vec4  x, u16vec4  minVal, u16vec4  maxVal);int16_t  mix(int16_t,  int16_t,  bool);i16vec2  mix(i16vec2,  i16vec2,  bvec2);i16vec3  mix(i16vec3,  i16vec3,  bvec3);i16vec4  mix(i16vec4,  i16vec4,  bvec4);uint16_t mix(uint16_t, uint16_t, bool);u16vec2  mix(u16vec2,  u16vec2,  bvec2);u16vec3  mix(u16vec3,  u16vec3,  bvec3);u16vec4  mix(u16vec4,  u16vec4,  bvec4);float16_t frexp(float16_t, out int16_t);f16vec2   frexp(f16vec2,   out i16vec2);f16vec3   frexp(f16vec3,   out i16vec3);f16vec4   frexp(f16vec4,   out i16vec4);float16_t ldexp(float16_t, int16_t);f16vec2   ldexp(f16vec2,   i16vec2);f16vec3   ldexp(f16vec3,   i16vec3);f16vec4   ldexp(f16vec4,   i16vec4);int16_t halfBitsToInt16(float16_t);i16vec2 halfBitsToInt16(f16vec2);i16vec3 halhBitsToInt16(f16vec3);i16vec4 halfBitsToInt16(f16vec4);uint16_t halfBitsToUint16(float16_t);u16vec2  halfBitsToUint16(f16vec2);u16vec3  halfBitsToUint16(f16vec3);u16vec4  halfBitsToUint16(f16vec4);int16_t float16BitsToInt16(float16_t);i16vec2 float16BitsToInt16(f16vec2);i16vec3 float16BitsToInt16(f16vec3);i16vec4 float16BitsToInt16(f16vec4);uint16_t float16BitsToUint16(float16_t);u16vec2  float16BitsToUint16(f16vec2);u16vec3  float16BitsToUint16(f16vec3);u16vec4  float16BitsToUint16(f16vec4);float16_t int16BitsToFloat16(int16_t);f16vec2   int16BitsToFloat16(i16vec2);f16vec3   int16BitsToFloat16(i16vec3);f16vec4   int16BitsToFloat16(i16vec4);float16_t uint16BitsToFloat16(uint16_t);f16vec2   uint16BitsToFloat16(u16vec2);f16vec3   uint16BitsToFloat16(u16vec3);f16vec4   uint16BitsToFloat16(u16vec4);float16_t int16BitsToHalf(int16_t);f16vec2   int16BitsToHalf(i16vec2);f16vec3   int16BitsToHalf(i16vec3);f16vec4   int16BitsToHalf(i16vec4);float16_t uint16BitsToHalf(uint16_t);f16vec2   uint16BitsToHalf(u16vec2);f16vec3   uint16BitsToHalf(u16vec3);f16vec4   uint16BitsToHalf(u16vec4);int      packInt2x16(i16vec2);uint     packUint2x16(u16vec2);int64_t  packInt4x16(i16vec4);uint64_t packUint4x16(u16vec4);i16vec2  unpackInt2x16(int);u16vec2  unpackUint2x16(uint);i16vec4  unpackInt4x16(int64_t);u16vec4  unpackUint4x16(uint64_t);bvec2 lessThan(i16vec2, i16vec2);bvec3 lessThan(i16vec3, i16vec3);bvec4 lessThan(i16vec4, i16vec4);bvec2 lessThan(u16vec2, u16vec2);bvec3 lessThan(u16vec3, u16vec3);bvec4 lessThan(u16vec4, u16vec4);bvec2 lessThanEqual(i16vec2, i16vec2);bvec3 lessThanEqual(i16vec3, i16vec3);bvec4 lessThanEqual(i16vec4, i16vec4);bvec2 lessThanEqual(u16vec2, u16vec2);bvec3 lessThanEqual(u16vec3, u16vec3);bvec4 lessThanEqual(u16vec4, u16vec4);bvec2 greaterThan(i16vec2, i16vec2);bvec3 greaterThan(i16vec3, i16vec3);bvec4 greaterThan(i16vec4, i16vec4);bvec2 greaterThan(u16vec2, u16vec2);bvec3 greaterThan(u16vec3, u16vec3);bvec4 greaterThan(u16vec4, u16vec4);bvec2 greaterThanEqual(i16vec2, i16vec2);bvec3 greaterThanEqual(i16vec3, i16vec3);bvec4 greaterThanEqual(i16vec4, i16vec4);bvec2 greaterThanEqual(u16vec2, u16vec2);bvec3 greaterThanEqual(u16vec3, u16vec3);bvec4 greaterThanEqual(u16vec4, u16vec4);bvec2 equal(i16vec2, i16vec2);bvec3 equal(i16vec3, i16vec3);bvec4 equal(i16vec4, i16vec4);bvec2 equal(u16vec2, u16vec2);bvec3 equal(u16vec3, u16vec3);bvec4 equal(u16vec4, u16vec4);bvec2 notEqual(i16vec2, i16vec2);bvec3 notEqual(i16vec3, i16vec3);bvec4 notEqual(i16vec4, i16vec4);bvec2 notEqual(u16vec2, u16vec2);bvec3 notEqual(u16vec3, u16vec3);bvec4 notEqual(u16vec4, u16vec4);  int16_t bitfieldExtract(  int16_t, int16_t, int16_t);i16vec2 bitfieldExtract(i16vec2, int16_t, int16_t);i16vec3 bitfieldExtract(i16vec3, int16_t, int16_t);i16vec4 bitfieldExtract(i16vec4, int16_t, int16_t); uint16_t bitfieldExtract( uint16_t, int16_t, int16_t);u16vec2 bitfieldExtract(u16vec2, int16_t, int16_t);u16vec3 bitfieldExtract(u16vec3, int16_t, int16_t);u16vec4 bitfieldExtract(u16vec4, int16_t, int16_t);  int16_t bitfieldInsert(  int16_t base,   int16_t, int16_t, int16_t);i16vec2 bitfieldInsert(i16vec2 base, i16vec2, int16_t, int16_t);i16vec3 bitfieldInsert(i16vec3 base, i16vec3, int16_t, int16_t);i16vec4 bitfieldInsert(i16vec4 base, i16vec4, int16_t, int16_t); uint16_t bitfieldInsert( uint16_t base,  uint16_t, int16_t, int16_t);u16vec2 bitfieldInsert(u16vec2 base, u16vec2, int16_t, int16_t);u16vec3 bitfieldInsert(u16vec3 base, u16vec3, int16_t, int16_t);u16vec4 bitfieldInsert(u16vec4 base, u16vec4, int16_t, int16_t);  int16_t bitCount(  int16_t);i16vec2 bitCount(i16vec2);i16vec3 bitCount(i16vec3);i16vec4 bitCount(i16vec4);  int16_t bitCount( uint16_t);i16vec2 bitCount(u16vec2);i16vec3 bitCount(u16vec3);i16vec4 bitCount(u16vec4);  int16_t findLSB(  int16_t);i16vec2 findLSB(i16vec2);i16vec3 findLSB(i16vec3);i16vec4 findLSB(i16vec4);  int16_t findLSB( uint16_t);i16vec2 findLSB(u16vec2);i16vec3 findLSB(u16vec3);i16vec4 findLSB(u16vec4);  int16_t findMSB(  int16_t);i16vec2 findMSB(i16vec2);i16vec3 findMSB(i16vec3);i16vec4 findMSB(i16vec4);  int16_t findMSB( uint16_t);i16vec2 findMSB(u16vec2);i16vec3 findMSB(u16vec3);i16vec4 findMSB(u16vec4);int16_t  pack16(i8vec2);uint16_t pack16(u8vec2);int32_t  pack32(i8vec4);uint32_t pack32(u8vec4);int32_t  pack32(i16vec2);uint32_t pack32(u16vec2);int64_t  pack64(i16vec4);uint64_t pack64(u16vec4);int64_t  pack64(i32vec2);uint64_t pack64(u32vec2);i8vec2   unpack8(int16_t);u8vec2   unpack8(uint16_t);i8vec4   unpack8(int32_t);u8vec4   unpack8(uint32_t);i16vec2  unpack16(int32_t);u16vec2  unpack16(uint32_t);i16vec4  unpack16(int64_t);u16vec4  unpack16(uint64_t);i32vec2  unpack32(int64_t);u32vec2  unpack32(uint64_t);float64_t radians(float64_t);f64vec2   radians(f64vec2);f64vec3   radians(f64vec3);f64vec4   radians(f64vec4);float64_t degrees(float64_t);f64vec2   degrees(f64vec2);f64vec3   degrees(f64vec3);f64vec4   degrees(f64vec4);float64_t sin(float64_t);f64vec2   sin(f64vec2);f64vec3   sin(f64vec3);f64vec4   sin(f64vec4);float64_t cos(float64_t);f64vec2   cos(f64vec2);f64vec3   cos(f64vec3);f64vec4   cos(f64vec4);float64_t tan(float64_t);f64vec2   tan(f64vec2);f64vec3   tan(f64vec3);f64vec4   tan(f64vec4);float64_t asin(float64_t);f64vec2   asin(f64vec2);f64vec3   asin(f64vec3);f64vec4   asin(f64vec4);float64_t acos(float64_t);f64vec2   acos(f64vec2);f64vec3   acos(f64vec3);f64vec4   acos(f64vec4);float64_t atan(float64_t, float64_t);f64vec2   atan(f64vec2,   f64vec2);f64vec3   atan(f64vec3,   f64vec3);f64vec4   atan(f64vec4,   f64vec4);float64_t atan(float64_t);f64vec2   atan(f64vec2);f64vec3   atan(f64vec3);f64vec4   atan(f64vec4);float64_t sinh(float64_t);f64vec2   sinh(f64vec2);f64vec3   sinh(f64vec3);f64vec4   sinh(f64vec4);float64_t cosh(float64_t);f64vec2   cosh(f64vec2);f64vec3   cosh(f64vec3);f64vec4   cosh(f64vec4);float64_t tanh(float64_t);f64vec2   tanh(f64vec2);f64vec3   tanh(f64vec3);f64vec4   tanh(f64vec4);float64_t asinh(float64_t);f64vec2   asinh(f64vec2);f64vec3   asinh(f64vec3);f64vec4   asinh(f64vec4);float64_t acosh(float64_t);f64vec2   acosh(f64vec2);f64vec3   acosh(f64vec3);f64vec4   acosh(f64vec4);float64_t atanh(float64_t);f64vec2   atanh(f64vec2);f64vec3   atanh(f64vec3);f64vec4   atanh(f64vec4);float64_t pow(float64_t, float64_t);f64vec2   pow(f64vec2,   f64vec2);f64vec3   pow(f64vec3,   f64vec3);f64vec4   pow(f64vec4,   f64vec4);float64_t exp(float64_t);f64vec2   exp(f64vec2);f64vec3   exp(f64vec3);f64vec4   exp(f64vec4);float64_t log(float64_t);f64vec2   log(f64vec2);f64vec3   log(f64vec3);f64vec4   log(f64vec4);float64_t exp2(float64_t);f64vec2   exp2(f64vec2);f64vec3   exp2(f64vec3);f64vec4   exp2(f64vec4);float64_t log2(float64_t);f64vec2   log2(f64vec2);f64vec3   log2(f64vec3);f64vec4   log2(f64vec4);
 intBitsToFloat
 integer
+integer less than or equal to 4
 integer scalar or vector: 
 integer_expression
 intel_ocl_bicc
@@ -15741,6 +16192,7 @@ k0i0$
 k8-sse3
 k>4	F
 k@L;i
+kA-{>
 k`H9k0t
 keep-uncalled
 kernel enqeue flags
@@ -15800,11 +16252,13 @@ l$@A;
 l$@D+
 l$@E3
 l$@H9E
+l$@H;
 l$@I+
 l$@L+
 l$@Lk
 l$@M+
 l$@M;
+l$@fff
 l$H@8*u
 l$HE2
 l$HE3
@@ -15831,6 +16285,7 @@ l$XD;m
 l$XH+
 l$XH;C
 l$XH;G
+l$XI+
 l$XI;
 l$XL+
 l$XM;
@@ -15856,6 +16311,7 @@ l$pH;
 l$pH;oX
 l$pL;
 l$pM;
+l$pfD
 l$ptYH
 l$xH+
 l$xff
@@ -19711,8 +20167,10 @@ llvm.xcore.zext
 local function declaration
 local_access_chain_convert_pass
 local_multi_store_elim_pass
+local_multi_store_elim_pass2
 local_single_block_load_store_elim_pass
 local_single_store_elim_pass
+local_single_store_elim_pass2
 local_size
 local_size = (
 local_size id
@@ -20022,8 +20480,11 @@ multiple post-dominance frontier entries for a discarding block
 multiple prototypes for same function
 multiplicative_expression
 multiply second child into first child
+multiply32x16
 multisample count
+must appear between section 9 (types, constants, 
 must be 0, 1, 2, or 3:
+must be DebugTypeMember, DebugFunction, or DebugTypeInheritance
 must be a compile-time constant:
 must be a constant integer expression
 must be a multiple of size of first component
@@ -20057,7 +20518,7 @@ name too long
 named_barrier
 nameless block contains a member that already has a name at global scope
 names beginning with "GL_" can't be (un)defined:
-names containing consecutive underscores are reserved, and an error if version <= 300:
+names containing consecutive underscores are reserved, and an error if version < 300:
 names containing consecutive underscores are reserved:
 namespace
 namespace name
@@ -20223,6 +20684,7 @@ nvptx
 nvptx64
 nwind.init
 nzi.b
+o5o )
 o@H;i
 oHM9}H
 oI>O7
@@ -20233,6 +20695,7 @@ octal literal digit too large
 octal literal too big
 odwrapu
 of Result Type struct
+of debug info extension must appear in a function 
 of right matrix to be equal: 
 of the left operand: 
 offset
@@ -20261,7 +20724,7 @@ only allowed when generating SPIR-V
 only allowed when using GLSL for Vulkan
 only applies to block members, not blocks
 only apply to images
-only one coherent/devicecoherent/queuefamilycoherent/workgroupcoherent/subgroupcoherent qualifier allowed
+only one coherent/devicecoherent/queuefamilycoherent/workgroupcoherent/subgroupcoherent/shadercallcoherent qualifier allowed
 only one precision qualifier allowed
 only outermost dimension of an array of arrays can be a specialization constant
 only outermost dimension of an array of arrays can be implicitly sized
@@ -20423,7 +20886,6 @@ pA^_^][
 pA_A\]
 pA_A\_^[
 pA_A]A\_^][
-pA_A]_
 pA_A]_][
 pA_A^A\_^[]
 pA_A^A\_^[]H
@@ -20521,6 +20983,7 @@ pointer definition.
 points
 popcount
 popen
+positive integer
 posix_memalign
 possibly multi-word literal integer
 possibly multi-word literal number
@@ -20574,6 +21037,8 @@ printf
 printing a <null> value
 private
 private 
+private-to-local
+private_to_local_pass
 product
 profile
 projection with arrayed sampler
@@ -20666,11 +21131,42 @@ rameaddress
 random
 range
 range%d
+ray flags
+ray query candidate intersection type
+ray query committed intersection type
+ray query intersection
 ray-generation
+rayPayloadEXT
+rayPayloadInEXT
 rayPayloadInNV
 rayPayloadInNV block
 rayPayloadNV
 rayPayloadNV block
+rayQueryConfirmIntersectionEXT
+rayQueryEXT
+rayQueryGenerateIntersectionEXT
+rayQueryGetIntersectionBarycentricsEXT
+rayQueryGetIntersectionCandidateAABBOpaqueEXT
+rayQueryGetIntersectionFrontFaceEXT
+rayQueryGetIntersectionGeometryIndexEXT
+rayQueryGetIntersectionInstanceCustomIndexEXT
+rayQueryGetIntersectionInstanceIdEXT
+rayQueryGetIntersectionInstanceShaderBindingTableRecordOffsetEXT
+rayQueryGetIntersectionObjectRayDirectionEXT
+rayQueryGetIntersectionObjectRayOriginEXT
+rayQueryGetIntersectionObjectToWorldEXT
+rayQueryGetIntersectionPrimitiveIndexEXT
+rayQueryGetIntersectionTEXT
+rayQueryGetIntersectionTypeEXT
+rayQueryGetIntersectionWorldToObjectEXT
+rayQueryGetRayFlagsEXT
+rayQueryGetRayTMinEXT
+rayQueryGetWorldRayDirectionEXT
+rayQueryGetWorldRayOriginEXT
+rayQueryInitializeEXT
+rayQueryProceedEXT
+rayQueryProvisionalKHR
+rayQueryTerminateEXT
 rch64.neon.
 rch64.neon.v
 rcolumn
@@ -20735,6 +21231,7 @@ remove
 remquo
 rename
 replicated qualifiers
+reportIntersectionEXT
 reportIntersectionNV
 require
 required extension not requested:
@@ -20964,6 +21461,7 @@ s WATAUAVAWH
 s WAVAWH
 s sEH
 s%fff
+s(D8k,t
 s*fff
 s,fff
 s/H9{
@@ -21069,6 +21567,7 @@ scalar-evolution-max-iterations
 scalar-replacement=
 scalarCopy
 scalar_replacement_pass
+scalar_replacement_pass2
 scalarize
 scalarrepl
 scalarrepl-ssa
@@ -21077,6 +21576,7 @@ scevgep
 scope ID
 se42.pcmp
 secondary_view_offset
+section
 select
 selecting output stream
 selection
@@ -21095,9 +21595,13 @@ setbuf
 setitimer
 setvbuf
 shader input/output
+shader record EXT
+shader record NV
 shader stage
 shaderRecordNV
 shadercache
+shadercallcoherent
+shaderrecordext
 shaderrecordnv
 shading_rate_interlock_ordered
 shading_rate_interlock_unordered
@@ -21141,6 +21645,8 @@ signed
 signext
 simple_statement
 simplification_pass
+simplification_pass2
+simplification_pass3
 simplify-instructions
 simplifycfg
 simplifycfg-dup-ret
@@ -21316,7 +21822,7 @@ stream timeout
 streamName = v; \
 stride is too large:
 string
-string literals not supported
+string literal
 string too long
 strip-dead-prototypes
 strlen
@@ -21458,6 +21964,7 @@ subroutine
 substituting 'mediump'
 subtract
 subtract second child into first child
+subtractSaturate
 superp
 suppress-warnings
 swap.
@@ -21486,6 +21993,7 @@ swizzleInvocationsAMD
 swizzleInvocationsMasked
 swizzleInvocationsMaskedAMD
 swizzleInvocationsWithPatternAMD
+swizzleTemp
 sxD8k,t
 syntax error
 syntax error, unexpected %s
@@ -21532,7 +22040,7 @@ t$ H+
 t$ H9
 t$ H98
 t$ H;
-t$ L9
+t$ L9qp
 t$ L;
 t$ M+
 t$ UH
@@ -21561,6 +22069,8 @@ t$(M;
 t$(ff
 t$(fff
 t$0+A$t
+t$08H
+t$08Y-t
 t$0;|$P
 t$0@2
 t$0@8
@@ -21571,7 +22081,6 @@ t$0H+
 t$0H+\$pE2
 t$0H9
 t$0H9G
-t$0H9L$H
 t$0H;
 t$0H;E
 t$0H;t$8
@@ -21581,7 +22090,6 @@ t$0I;
 t$0L+
 t$0M+
 t$0M+t$(I
-t$0M;
 t$0ff
 t$0fff
 t$0txH
@@ -21621,13 +22129,13 @@ t$@Hk
 t$@I+
 t$@Ic
 t$@L+
+t$@L;t$8
 t$@fE
 t$@ff
 t$@un
 t$AE2
 t$DE3
 t$H9G
-t$H@8w-t
 t$HE2
 t$HE3
 t$HH+
@@ -21657,8 +22165,8 @@ t$PI;
 t$PIc
 t$PIi
 t$PIk
-t$PL+
 t$PL;
+t$PfD
 t$Pff
 t$TE3
 t$XD;u
@@ -21673,6 +22181,7 @@ t$XtJH
 t$`;h(H
 t$`A+
 t$`D#
+t$`D8s-t
 t$`D9e
 t$`E3
 t$`H+
@@ -21680,6 +22189,7 @@ t$`H;
 t$`Hi
 t$`I;
 t$`L+
+t$`fD
 t$`t+H
 t$fE;
 t$hD;
@@ -21700,6 +22210,8 @@ t$pH9\$ u
 t$pH;
 t$pHcH
 t$pI9D$ t
+t$pL9
+t$pL9m
 t$pM;
 t$pff
 t$x;_@u
@@ -21733,17 +22245,16 @@ t)y,H
 t*@8n-t
 t*fff
 t+@8=
-t+L91t	H
 t+y.H
 t,D8m
 t,D9{Hu&
 t,H;D$8t%H+
 t-H98t H
 t-H99
-t.@8+t)
 t.H99
 t.trampoline
 t/<"t
+t/D83t*
 t/H91
 t/H99
 t/H99t	H
@@ -21794,7 +22305,6 @@ t8fff
 t9D9P
 t9H9{
 t9H;E
-t9L9k
 t9fD;p:u2H
 t9fff
 t:D9H
@@ -21806,6 +22316,8 @@ t;9T$0t5H
 t;D9H
 t;H9x
 t;H;M
+t<@8w-t
+t<D9@
 t<H;U
 t<L9"t
 t<fD9f:@
@@ -21826,7 +22338,6 @@ t@y%H
 tAHc3;s
 tBA8v-t
 tBH;h v
-tBHc>;~
 tC@8t;
 tCH9{
 tCHcP
@@ -21844,6 +22355,7 @@ tFL9#t5I;
 tFfD;p:u?
 tFy+I
 tGH;H
+tGHc>;~
 tGL;wHu
 tH9L$$tBM
 tH9T$$tBM
@@ -21858,7 +22370,6 @@ tKfff
 tLyOH
 tME8fhuGH
 tMH99t
-tO@8{,t
 tOD;m
 tQH9.t!H
 tQH9q8tKH
@@ -21918,6 +22429,7 @@ target-env spirv1.5
 target-env spirvUnknown
 target-env vulkan1.0
 target-env vulkan1.1
+target-env vulkan1.2
 target-env vulkanUnknown
 targetlibinfo
 task shaders
@@ -21941,6 +22453,7 @@ tempArg
 tempColumn
 tempReturn
 template
+terminateRayEXT
 terminateRayNV
 terminator instruction outside basic block
 terminator instruction outside function
@@ -22101,6 +22614,7 @@ tmpfile
 tmpfile64
 tnL9x
 tnfff
+to Device, Workgroup and Invocation
 to be the reverse of those of Result Type
 to storage image
 to the number of columns of Result Type matrix
@@ -22134,11 +22648,13 @@ tqL9a
 tqfff
 tr.annotation.
 traceNV
+traceRayEXT
 track-memory
 transform feedback qualifier
 translation_unit
 transpose
 trexd
+trfff
 triangle
 triangle order = 
 triangle_ccw
@@ -22212,7 +22728,6 @@ u	D8k-A
 u	D8n-A
 u	D8o-A
 u	D8o-E
-u	D8r-A
 u	D8s-A
 u	D8z-A
 u	D8{-A
@@ -22262,9 +22777,8 @@ u.H9~ u
 u.H;U
 u.h.qb
 u.ph.qb
-u/@8{-t
+u/@8s-t
 u092u,H
-u0H+u(H
 u0Hc7;w
 u0Ic@ I
 u1!D$0H
@@ -22288,6 +22802,7 @@ u64vec4
 u6D97w
 u6D;C
 u78C,t
+u8H+u0H
 u8H9Q
 u8Hcu
 u8vec2
@@ -22400,6 +22915,7 @@ uint   subgroupBallotInclusiveBitCount(uvec4);
 uint atomicAdd(coherent volatile inout uint, uint, int, int, int); int atomicAdd(coherent volatile inout  int,  int, int, int, int);uint atomicMin(coherent volatile inout uint, uint, int, int, int); int atomicMin(coherent volatile inout  int,  int, int, int, int);uint atomicMax(coherent volatile inout uint, uint, int, int, int); int atomicMax(coherent volatile inout  int,  int, int, int, int);uint atomicAnd(coherent volatile inout uint, uint, int, int, int); int atomicAnd(coherent volatile inout  int,  int, int, int, int);uint atomicOr (coherent volatile inout uint, uint, int, int, int); int atomicOr (coherent volatile inout  int,  int, int, int, int);uint atomicXor(coherent volatile inout uint, uint, int, int, int); int atomicXor(coherent volatile inout  int,  int, int, int, int);uint atomicExchange(coherent volatile inout uint, uint, int, int, int); int atomicExchange(coherent volatile inout  int,  int, int, int, int);uint atomicCompSwap(coherent volatile inout uint, uint, uint, int, int, int, int, int); int atomicCompSwap(coherent volatile inout  int,  int,  int, int, int, int, int, int);uint atomicLoad(coherent volatile in uint, int, int, int); int atomicLoad(coherent volatile in  int, int, int, int);void atomicStore(coherent volatile out uint, uint, int, int, int);void atomicStore(coherent volatile out  int,  int, int, int, int);
 uint atomicCounterAdd(atomic_uint, uint);uint atomicCounterSubtract(atomic_uint, uint);uint atomicCounterMin(atomic_uint, uint);uint atomicCounterMax(atomic_uint, uint);uint atomicCounterAnd(atomic_uint, uint);uint atomicCounterOr(atomic_uint, uint);uint atomicCounterXor(atomic_uint, uint);uint atomicCounterExchange(atomic_uint, uint);uint atomicCounterCompSwap(atomic_uint, uint, uint);
 uint atomicCounterIncrement(atomic_uint);uint atomicCounterDecrement(atomic_uint);uint atomicCounter(atomic_uint);
+uint countLeadingZeros(uint);uvec2 countLeadingZeros(uvec2);uvec3 countLeadingZeros(uvec3);uvec4 countLeadingZeros(uvec4);uint countTrailingZeros(uint);uvec2 countTrailingZeros(uvec2);uvec3 countTrailingZeros(uvec3);uvec4 countTrailingZeros(uvec4);uint absoluteDifference(int, int);uvec2 absoluteDifference(ivec2, ivec2);uvec3 absoluteDifference(ivec3, ivec3);uvec4 absoluteDifference(ivec4, ivec4);uint16_t absoluteDifference(int16_t, int16_t);u16vec2 absoluteDifference(i16vec2, i16vec2);u16vec3 absoluteDifference(i16vec3, i16vec3);u16vec4 absoluteDifference(i16vec4, i16vec4);uint64_t absoluteDifference(int64_t, int64_t);u64vec2 absoluteDifference(i64vec2, i64vec2);u64vec3 absoluteDifference(i64vec3, i64vec3);u64vec4 absoluteDifference(i64vec4, i64vec4);uint absoluteDifference(uint, uint);uvec2 absoluteDifference(uvec2, uvec2);uvec3 absoluteDifference(uvec3, uvec3);uvec4 absoluteDifference(uvec4, uvec4);uint16_t absoluteDifference(uint16_t, uint16_t);u16vec2 absoluteDifference(u16vec2, u16vec2);u16vec3 absoluteDifference(u16vec3, u16vec3);u16vec4 absoluteDifference(u16vec4, u16vec4);uint64_t absoluteDifference(uint64_t, uint64_t);u64vec2 absoluteDifference(u64vec2, u64vec2);u64vec3 absoluteDifference(u64vec3, u64vec3);u64vec4 absoluteDifference(u64vec4, u64vec4);int addSaturate(int, int);ivec2 addSaturate(ivec2, ivec2);ivec3 addSaturate(ivec3, ivec3);ivec4 addSaturate(ivec4, ivec4);int16_t addSaturate(int16_t, int16_t);i16vec2 addSaturate(i16vec2, i16vec2);i16vec3 addSaturate(i16vec3, i16vec3);i16vec4 addSaturate(i16vec4, i16vec4);int64_t addSaturate(int64_t, int64_t);i64vec2 addSaturate(i64vec2, i64vec2);i64vec3 addSaturate(i64vec3, i64vec3);i64vec4 addSaturate(i64vec4, i64vec4);uint addSaturate(uint, uint);uvec2 addSaturate(uvec2, uvec2);uvec3 addSaturate(uvec3, uvec3);uvec4 addSaturate(uvec4, uvec4);uint16_t addSaturate(uint16_t, uint16_t);u16vec2 addSaturate(u16vec2, u16vec2);u16vec3 addSaturate(u16vec3, u16vec3);u16vec4 addSaturate(u16vec4, u16vec4);uint64_t addSaturate(uint64_t, uint64_t);u64vec2 addSaturate(u64vec2, u64vec2);u64vec3 addSaturate(u64vec3, u64vec3);u64vec4 addSaturate(u64vec4, u64vec4);int subtractSaturate(int, int);ivec2 subtractSaturate(ivec2, ivec2);ivec3 subtractSaturate(ivec3, ivec3);ivec4 subtractSaturate(ivec4, ivec4);int16_t subtractSaturate(int16_t, int16_t);i16vec2 subtractSaturate(i16vec2, i16vec2);i16vec3 subtractSaturate(i16vec3, i16vec3);i16vec4 subtractSaturate(i16vec4, i16vec4);int64_t subtractSaturate(int64_t, int64_t);i64vec2 subtractSaturate(i64vec2, i64vec2);i64vec3 subtractSaturate(i64vec3, i64vec3);i64vec4 subtractSaturate(i64vec4, i64vec4);uint subtractSaturate(uint, uint);uvec2 subtractSaturate(uvec2, uvec2);uvec3 subtractSaturate(uvec3, uvec3);uvec4 subtractSaturate(uvec4, uvec4);uint16_t subtractSaturate(uint16_t, uint16_t);u16vec2 subtractSaturate(u16vec2, u16vec2);u16vec3 subtractSaturate(u16vec3, u16vec3);u16vec4 subtractSaturate(u16vec4, u16vec4);uint64_t subtractSaturate(uint64_t, uint64_t);u64vec2 subtractSaturate(u64vec2, u64vec2);u64vec3 subtractSaturate(u64vec3, u64vec3);u64vec4 subtractSaturate(u64vec4, u64vec4);int average(int, int);ivec2 average(ivec2, ivec2);ivec3 average(ivec3, ivec3);ivec4 average(ivec4, ivec4);int16_t average(int16_t, int16_t);i16vec2 average(i16vec2, i16vec2);i16vec3 average(i16vec3, i16vec3);i16vec4 average(i16vec4, i16vec4);int64_t average(int64_t, int64_t);i64vec2 average(i64vec2, i64vec2);i64vec3 average(i64vec3, i64vec3);i64vec4 average(i64vec4, i64vec4);uint average(uint, uint);uvec2 average(uvec2, uvec2);uvec3 average(uvec3, uvec3);uvec4 average(uvec4, uvec4);uint16_t average(uint16_t, uint16_t);u16vec2 average(u16vec2, u16vec2);u16vec3 average(u16vec3, u16vec3);u16vec4 average(u16vec4, u16vec4);uint64_t average(uint64_t, uint64_t);u64vec2 average(u64vec2, u64vec2);u64vec3 average(u64vec3, u64vec3);u64vec4 average(u64vec4, u64vec4);int averageRounded(int, int);ivec2 averageRounded(ivec2, ivec2);ivec3 averageRounded(ivec3, ivec3);ivec4 averageRounded(ivec4, ivec4);int16_t averageRounded(int16_t, int16_t);i16vec2 averageRounded(i16vec2, i16vec2);i16vec3 averageRounded(i16vec3, i16vec3);i16vec4 averageRounded(i16vec4, i16vec4);int64_t averageRounded(int64_t, int64_t);i64vec2 averageRounded(i64vec2, i64vec2);i64vec3 averageRounded(i64vec3, i64vec3);i64vec4 averageRounded(i64vec4, i64vec4);uint averageRounded(uint, uint);uvec2 averageRounded(uvec2, uvec2);uvec3 averageRounded(uvec3, uvec3);uvec4 averageRounded(uvec4, uvec4);uint16_t averageRounded(uint16_t, uint16_t);u16vec2 averageRounded(u16vec2, u16vec2);u16vec3 averageRounded(u16vec3, u16vec3);u16vec4 averageRounded(u16vec4, u16vec4);uint64_t averageRounded(uint64_t, uint64_t);u64vec2 averageRounded(u64vec2, u64vec2);u64vec3 averageRounded(u64vec3, u64vec3);u64vec4 averageRounded(u64vec4, u64vec4);int multiply32x16(int, int);ivec2 multiply32x16(ivec2, ivec2);ivec3 multiply32x16(ivec3, ivec3);ivec4 multiply32x16(ivec4, ivec4);uint multiply32x16(uint, uint);uvec2 multiply32x16(uvec2, uvec2);uvec3 multiply32x16(uvec3, uvec3);uvec4 multiply32x16(uvec4, uvec4);
 uint fragmentMaskFetchAMD(sampler2DMS,       ivec2);uint fragmentMaskFetchAMD(isampler2DMS,      ivec2);uint fragmentMaskFetchAMD(usampler2DMS,      ivec2);uint fragmentMaskFetchAMD(sampler2DMSArray,  ivec3);uint fragmentMaskFetchAMD(isampler2DMSArray, ivec3);uint fragmentMaskFetchAMD(usampler2DMSArray, ivec3);vec4  fragmentFetchAMD(sampler2DMS,       ivec2, uint);ivec4 fragmentFetchAMD(isampler2DMS,      ivec2, uint);uvec4 fragmentFetchAMD(usampler2DMS,      ivec2, uint);vec4  fragmentFetchAMD(sampler2DMSArray,  ivec3, uint);ivec4 fragmentFetchAMD(isampler2DMSArray, ivec3, uint);uvec4 fragmentFetchAMD(usampler2DMSArray, ivec3, uint);
 uint fragmentMaskFetchAMD(subpassInputMS);uint fragmentMaskFetchAMD(isubpassInputMS);uint fragmentMaskFetchAMD(usubpassInputMS);vec4  fragmentFetchAMD(subpassInputMS,  uint);ivec4 fragmentFetchAMD(isubpassInputMS, uint);uvec4 fragmentFetchAMD(usubpassInputMS, uint);
 uint gl_InstanceID
@@ -22651,6 +23167,8 @@ uwtable
 uxD9D$huqE;
 uyL9E
 uzKs@>
+v!v!7
+v!v!v!v!v!v!v!v!v!v!v!v!v!v!v!v!v!v!v!7
 v&L+E
 v'H+M
 v'H+U
@@ -22729,7 +23247,6 @@ variables with qualifier 'const' must be initialized
 variables with reference type can't have qualifier 'const'
 varying
 varying vec4  gl_Color;varying vec4  gl_SecondaryColor;varying vec4  gl_TexCoord[];varying float gl_FogFragCoord;
-vb'vb'v
 vbroadcastf128.p
 ve.float
 vec2 gl_PointCoord;
@@ -22772,8 +23289,7 @@ vector-scale
 vector-times-matrix
 vector<T> too long
 vector<bool> too long
-vector_dce_pass1
-vector_dce_pass2
+vector_dce_pass
 vectors
 verify-dom-info
 verify-indvars
@@ -22888,20 +23404,24 @@ void coopMatStoreNV(ucoopmatNV m, volatile coherent uint8_t[] buf, uint element,
 void coopMatStoreNV(ucoopmatNV m, volatile coherent uint[] buf, uint element, uint stride, bool colMajor);
 void coopMatStoreNV(ucoopmatNV m, volatile coherent uvec2[] buf, uint element, uint stride, bool colMajor);
 void coopMatStoreNV(ucoopmatNV m, volatile coherent uvec4[] buf, uint element, uint stride, bool colMajor);
-void executeCallableNV(uint, int);
+void debugPrintfEXT();
+void executeCallableNV(uint, int);void executeCallableEXT(uint, int);
 void function cannot return a value
-void ignoreIntersectionNV();void terminateRayNV();
+void ignoreIntersectionNV();void ignoreIntersectionEXT();void terminateRayNV();void terminateRayEXT();
 void imageAtomicStore(volatile coherent 
 void imageStore(writeonly volatile coherent 
 void imageStoreLodAMD(writeonly volatile coherent 
 void main()
 void memoryBarrier();
 void memoryBarrier(int, int, int);
-void memoryBarrierAtomicCounter();void memoryBarrierBuffer();void memoryBarrierImage();
+void memoryBarrierAtomicCounter();
+void memoryBarrierBuffer();
+void memoryBarrierImage();
 void memoryBarrierShared();void groupMemoryBarrier();
+void rayQueryInitializeEXT(rayQueryEXT, accelerationStructureEXT, uint, uint, vec3, float, vec3, float);void rayQueryTerminateEXT(rayQueryEXT);void rayQueryGenerateIntersectionEXT(rayQueryEXT, float);void rayQueryConfirmIntersectionEXT(rayQueryEXT);bool rayQueryProceedEXT(rayQueryEXT);uint rayQueryGetIntersectionTypeEXT(rayQueryEXT, bool);float rayQueryGetRayTMinEXT(rayQueryEXT);uint rayQueryGetRayFlagsEXT(rayQueryEXT);vec3 rayQueryGetWorldRayOriginEXT(rayQueryEXT);vec3 rayQueryGetWorldRayDirectionEXT(rayQueryEXT);float rayQueryGetIntersectionTEXT(rayQueryEXT, bool);int rayQueryGetIntersectionInstanceCustomIndexEXT(rayQueryEXT, bool);int rayQueryGetIntersectionInstanceIdEXT(rayQueryEXT, bool);uint rayQueryGetIntersectionInstanceShaderBindingTableRecordOffsetEXT(rayQueryEXT, bool);int rayQueryGetIntersectionGeometryIndexEXT(rayQueryEXT, bool);int rayQueryGetIntersectionPrimitiveIndexEXT(rayQueryEXT, bool);vec2 rayQueryGetIntersectionBarycentricsEXT(rayQueryEXT, bool);bool rayQueryGetIntersectionFrontFaceEXT(rayQueryEXT, bool);bool rayQueryGetIntersectionCandidateAABBOpaqueEXT(rayQueryEXT);vec3 rayQueryGetIntersectionObjectRayDirectionEXT(rayQueryEXT, bool);vec3 rayQueryGetIntersectionObjectRayOriginEXT(rayQueryEXT, bool);mat4x3 rayQueryGetIntersectionObjectToWorldEXT(rayQueryEXT, bool);mat4x3 rayQueryGetIntersectionWorldToObjectEXT(rayQueryEXT, bool);
 void subgroupBarrier();void subgroupMemoryBarrier();void subgroupMemoryBarrierBuffer();void subgroupMemoryBarrierImage();bool subgroupElect();bool   subgroupAll(bool);
 void subgroupMemoryBarrierShared();
-void traceNV(accelerationStructureNV,uint,uint,uint,uint,uint,vec3,float,vec3,float,int);void executeCallableNV(uint, int);
+void traceNV(accelerationStructureNV,uint,uint,uint,uint,uint,vec3,float,vec3,float,int);void traceRayEXT(accelerationStructureEXT,uint,uint,uint,uint,uint,vec3,float,vec3,float,int);void executeCallableNV(uint, int);void executeCallableEXT(uint, int);
 void writePackedPrimitiveIndices4x8NV(uint, uint);
 volatile
 vpL;t$8
@@ -22928,6 +23448,7 @@ vttss2si64
 vulkan1.0
 vulkan1.1
 vulkan1.1spv1.4
+vulkan1.2
 vvm.atomic.load.add.f32.
 vvm.atomic.load.dec.32.
 vvm.atomic.load.inc.32.
@@ -22977,7 +23498,7 @@ w	H;]Hu
 w	L;E
 w HcD$lH
 w HcD$tH
-w fD;
+w!fE;
 w'H9W t!A
 w'I9V t!A
 w)@8k-t
@@ -23000,6 +23521,7 @@ wKfA;
 wOfD;
 wQH;]
 wXfA+
+w\D8s-t
 warf.cfa
 warning: 
 warpid
@@ -23019,6 +23541,8 @@ with ExplicitLod
 with bias argument
 woH9{
 workgroupcoherent
+wrap-opkill
+wrap_op_kill_pass
 write
 writeInvocation
 writeInvocationAMD
@@ -23079,8 +23603,7 @@ x8@weL
 x8@wtH
 x9HcS
 x: t3L
-x: uhI
-x<xtbA
+x<xtdA
 x<xt{I
 x@8{-t
 xA	L$
@@ -23136,6 +23659,7 @@ xtractup.rp
 xtraiter
 xwpwpp
 y H+y
+y(;u6H
 y(Gu(
 y(Gu3
 y(JuA
@@ -23145,6 +23669,7 @@ y4	v$
 y4	vB
 y4	vb
 y4	vi
+yD8s-t
 yE>cb
 yGH;H
 yHH9F
@@ -23156,11 +23681,13 @@ yri.addr.u2
 ysu.up
 yx\uUH
 yxxxxxxxA
+yxxxxxxxD
 yxxxxxxxH
 yxxxxxxxH+
 yxxxxxxxI
 yxxxxxxxI+
 yxxxxxxxL
+yxxxxxxxM
 yxxxxxxxfff
 z H+z
 z H;C
@@ -23249,6 +23776,7 @@ zzzz{{{{||||
 |$ HcZ
 |$ Hk
 |$ I+
+|$ I+|$
 |$ Ic
 |$ L+
 |$ L;eou
@@ -23291,6 +23819,7 @@ zzzz{{{{||||
 |$0Hc
 |$0Hc{t
 |$0Ic
+|$0Jc
 |$0L+
 |$0L;
 |$0M+
@@ -23425,7 +23954,6 @@ zzzz{{{{||||
 |$`@w
 |$`A;
 |$`CI
-|$`D8:u
 |$`E3
 |$`H+
 |$`H;
@@ -23441,6 +23969,7 @@ zzzz{{{{||||
 |$dat-
 |$dct\
 |$h9p4
+|$h@2
 |$h@D
 |$h@H
 |$h@v
@@ -23467,7 +23996,6 @@ zzzz{{{{||||
 |$pH;
 |$pI+
 |$pI;
-|$pL9
 |$pM;
 |$pfD
 |$pff
@@ -23485,7 +24013,7 @@ zzzz{{{{||||
 |$xbt"
 |$xdtQ
 |$xff
-|$x{u
+|$x~u
 |$|"w HcD$|H
 |>fj;
 |b=})>
@@ -23499,15 +24027,14 @@ zzzz{{{{||||
 }'@v	H
 }'@v.H
 }'@w,
-}'fD;w
 }(;u1L
 }(@v	H
+}(fD;w
 }+L9	v
 }.L9	v
 }/@v	H
 }0@v	H
 }0M+}(I
-}1L9	v
 }5f;C
 }7@v	H
 }7@w0
@@ -23522,7 +24049,6 @@ zzzz{{{{||||
 }H@v	H
 }OfD;
 }P@v	H
-}PL;p(
 }Qf;]
 }QfA;
 }X@v	H
@@ -23538,15 +24064,14 @@ zzzz{{{{||||
 }w u`H
 ~ $s%r
 ~ @v	H
-~ I+~
 ~!%^&*()-+=|,.<>/?;:[]{}#\
+~"@87t/@8s
 ~$fff
 ~'HcC@H
 ~(2uZH
 ~(Gu:
 ~(H+~ H
 ~*1,V
-~.fff
 ~0H+~(H
 ~8@v	H
 ~8@w	L9n@
@@ -23555,7 +24080,6 @@ zzzz{{{{||||
 ~8@w	M9n@
 ~8@wqL
 ~8H+~0H
-~8Hc^`;^pu	H
 ~8L9g
 ~8fff
 ~;fff

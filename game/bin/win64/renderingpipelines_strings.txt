@@ -14,7 +14,9 @@
  HcyH3
  Not Depth Pre-passed
  vJH+
-"pA3Q
+"pA3Q(
+#K1kI
+#K1kL
 %f %f %f %f
 %i %i %i %i
 %s (mat_fullbright: %d)
@@ -68,14 +70,13 @@
 )|$@H
 )|$@L
 )|$pD
-+"'yDO
 ,|%)v
+-enable_2gb_morphs
 -sse2
 -sse3
 -sse4
 .?AV<lambda_0ffa585b374ea2b965c8e3d3a764e9ec>@@
 .?AV?$CBaseAppSystem@VIAppSystem@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CRenderingPipelineFactory@VCRenderingPipelineForward@@@@
 .?AV?$CRenderingPipelineFactory@VCRenderingPipelineLightSetup@@@@
 .?AV?$CRenderingPipelineFactory@VCRenderingPipelineOvertopMenu@@@@
@@ -112,6 +113,8 @@
 .?AVCRenderingPipelines@@
 .?AVCSchemaInstallCallback@@
 .?AVCScreenSpaceReflectionsRenderer@@
+.?AVCShadowMapTextureBarrierLayer@@
+.?AVCSignalSemaphoreLayer@@
 .?AVCTemplateSceneViewFactory_RenderVRMonitors@@
 .?AVCVR3DSkyboxRenderer@@
 .?AVCVROvertopMenuRenderer@@
@@ -189,8 +192,7 @@
 141022000000Z
 181004000000Z
 1DBlend
-1a<Yc
-200401233902Z0#
+200515052339Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -225,6 +227,7 @@
 ;T$x};Hc
 ;T$x}J
 ;T$x}P
+;kSeu-yZc
 ;l$0|
 ;|$@|
 <	u"H
@@ -239,9 +242,11 @@
 ?8\$i
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadMutex@@QEAA@XZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?D8D$bH
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
@@ -250,14 +255,16 @@
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?SSE and SSE2 are required.
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@VCUtlString@@V?$CUtlMemory@VCUtlString@@H@@@@_N@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
-?vhE3
 @.data
 @.tls
 @81u/H
+@85KC
 @8t$h
 @8t$ht,@8u
 @8t$l
@@ -283,6 +290,7 @@
 @USVAVAWH
 @USVWATAUAVAWH
 @USVWATAVH
+@USVWAUAVAWH
 @USVWAVH
 @USVWAWH
 @USVWH
@@ -343,7 +351,6 @@ ATI_DST24
 AVAWH
 A\_[]
 A^A\_^[]
-A^A\_^]
 A^A]A\_]
 A^A]_^[]
 A^_^[]
@@ -354,6 +361,7 @@ A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^]H
 A_A^A]_]
+A_A^A]_^[]
 A_A^]
 A_A^^[]
 A_A^_
@@ -603,7 +611,7 @@ D$`H;
 D$`Ll
 D$`r|
 D$aE3
-D$dE3
+D$eE3
 D$hE3
 D$hZ]
 D$p 69
@@ -619,20 +627,27 @@ D24S8
 D24X4S4
 D24X8
 D24X8_SHADOW
-D8-	%
-D8-2(
-D8-S 
-D8-\"
-D8-\%
-D8-]!
-D8-^#
-D8-`$
-D8-i&
-D8-i'
-D8-v(
+D8-	/
+D8-	0
+D8-= 
+D8-=%
+D8->#
+D8-?"
+D8-@(
+D8-A$
+D8-A'
+D8-C!
+D8-F&
+D8-I)
+D8-J0
+D8-O.
+D8-R+
+D8-S*
+D8-T,
+D8-V-
+D8-\/
+D8-a1
 D8D$gH
-D8t$atWH
-D8t$it
 D8u`u	H	
 D8vQt
 D8vRteH	
@@ -642,8 +657,6 @@ D9l$XE
 D9l$\E
 D9l$`u
 D9pXt
-D9pXt(H
-D9pXt.
 D9pXtKH
 D;l$X
 D;t$TuTH
@@ -684,7 +697,6 @@ DotaCardGameClient_001
 DownsampleDepth
 DrawDepth Fade
 DrawDepth%s
-Dt$pA
 Dynamic AlphaTest Forward
 Dynamic Decals
 Dynamic Opaque Forward
@@ -719,7 +731,6 @@ Engine2/RenderingPipeline/RetinaBurnFx
 Engine2/RenderingPipeline/SkipPostProcessing
 Engine2/RenderingPipeline/ToolsVisModes
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EnvironmentalInteractionLayer
 EventSystem001
 FATAL ERROR: unable to register all schema data: %s
@@ -761,9 +772,11 @@ GetSystemTimeAsFileTime
 GroundFog
 H	C8A
 H	C8H
+H	C8L
 H	F8A
 H	G8H
 H	G8H9
+H	G8L
 H	H8H	
 H+\$h+
 H+\$hIc<$H
@@ -909,7 +922,6 @@ OvertopMenuLightBinnerVr
 OvertopMenuRender
 OvertopMenuRendererTemplate
 P(D8vPu
-P@D8mDt
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
@@ -939,6 +951,7 @@ PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
 ParticleSystemMgr003
+Ph8\$h
 Physics
 Physics2 Interface Old v0.5
 PhysicsBodyMarkup
@@ -958,6 +971,7 @@ Plat_ExitProcess
 Plat_GetEnv
 Plat_GetThreadIndex
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 PostDecalForwardDynamic
@@ -1075,6 +1089,7 @@ SequenceMarkup
 SequenceMarkupList
 SerializedEntitiesVersion001
 ServerUploadGameStats001
+ShadowMap Texture Barrier
 ShadowTemplate
 ShadowVisLayer
 SleepConditionVariableSRW
@@ -1111,6 +1126,7 @@ T$055
 T$0E3
 T$0H;
 T$@E3
+T$hE3
 T$pE3
 T$xE3
 TestFormatA
@@ -1124,8 +1140,6 @@ TextMessageMgr_001
 Tonemap
 TonemapManifest
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1242,7 +1256,6 @@ VWAUAVAWH
 VWAVH
 VWAWH
 V]_E3
-V_FixSlashes
 V_GetFileExtension
 V_GetRtSupportFunctions
 V_IsAbsolutePath
@@ -1266,9 +1279,7 @@ V_snprintf
 V_sscanf
 V_stricmp_fast
 V_tanf
-V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Valve0
 Valve1
@@ -1278,6 +1289,13 @@ ViewModelGBuffer
 ViewModelTranslucent
 VisBuilder_001
 VisualizeQuads
+VolumeFogComputeSignalGraphics
+VolumeFogComputeSignaledLeft
+VolumeFogComputeSignaledRight
+VolumeFogGraphicsSignalComputeLeft
+VolumeFogGraphicsSignalComputeRight
+VolumeFogGraphicsSignaledLeft
+VolumeFogGraphicsSignaledRight
 VolumetricFog
 VolumetricFogManifest
 VrPerfHUD
@@ -1312,7 +1330,6 @@ YT$TL
 \$ ATAVAWH
 \$ Hi
 \$ Ic
-\$ UVWATAVH
 \$ UVWH
 \$ UWATH
 \$ WH
@@ -1321,11 +1338,8 @@ YT$TL
 \$0L+
 \$0t	H
 \$8;>
-\$Hff
 \$`E3
 \T$83
-_V_SetExtension
-_V_strncmp
 _V_strncpy
 _class
 _test_conversion_counter
@@ -1463,7 +1477,6 @@ l$0Hc
 l$8fD
 l$@E3
 l$XA+
-l$xfA
 last_sniff
 length
 lockRotationAlpha
@@ -1782,13 +1795,13 @@ t$ UWATAUAVH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
+t$0D9t$@|LH
 t$8Ic
 t$@Hc
 t$XE3
 t$`Hc
 t$`I;
 t$pE3
-t$pfff
 t*D8#t
 t.@8:t)
 t/D83t*
@@ -1810,6 +1823,7 @@ textures/dev/ggx_integrate_brdf_lut_schlick.vtex
 textures/dev/reflectivity_scale.vtex
 texturescale
 tier0.dll
+tn8\$buhH
 trD8(tmH
 turn_rate
 u	@8=
@@ -1851,6 +1865,8 @@ vpcf8
 vpcf9
 vr_aoproxy_debug
 vr_aoproxy_enable
+vr_aoproxy_stencil_hidden_pixels
+vr_async_compute_fog
 vr_carry_type
 vr_cubemap_normalization
 vr_custom_msaa_resolve
@@ -1903,6 +1919,7 @@ x_^][
 yaw_end
 yaw_start
 z0x0:
+z}aE]p
 {YIN?
 |$ A;
 |$ ATAVAWH
@@ -1915,5 +1932,4 @@ z0x0:
 |$PA;^ u
 |$`Lc
 |$hA+
-|mkyv&
 ~!A;~

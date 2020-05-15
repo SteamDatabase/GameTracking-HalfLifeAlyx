@@ -3,8 +3,6 @@
 							
 								
 													
-																	
-																					
 																									
 																													
 																															
@@ -56,7 +54,6 @@
     +- 
     Component %d: %dhx%dv q=%d
     Component %d: dc=%d ac=%d
-    Loading entity '%s'...
     near %s
     with %d x %d thumbnail image
    -changelist <name>:  use named changelist for p4 operations
@@ -115,11 +112,10 @@
  "u'A
  'L>[
  (%lu = 0x%lx)
- (%s)
  (%u = 0x%x)
  (Start: 
  * Requested DmAttribute of value of type "%s" From DmAttribute "%s" which is type "%s"
- - Failed to write %s!
+ - Failed to write %s! [%s bytes]
  - Next resource references external resource %016llX (%s)
  - Wrote to: %s
  - pos
@@ -127,6 +123,8 @@
  -> %4.1fMB %s
  -> [ FAIL ] %s - Failed to read
  -> [FAIL] %s - Code %d
+ -o "
+ -of 
  -testmode
  0@P`p
  9(X`
@@ -155,23 +153,22 @@
  A	L$X
  A\_[
  A\_^
- A]A\_
+ A]A\[
  A]A\_][
  A]A\_^]
- A]_[
  A]_^
  A]_^][
  A^A\]
  A^A\^
  A^A\_
  A^A\_^]
- A^A]A\
  A^A]A\^[
- A^A]A\_[
  A^A][
+ A^A]]
  A^A]^
  A^A]_
  A^][
+ A^^[
  A^^]
  A^_[
  A^_]
@@ -181,7 +178,6 @@
  A_A\^
  A_A\^][
  A_A\_
- A_A]A\
  A_A]A\][
  A_A]A\^[
  A_A]A\^]
@@ -232,7 +228,8 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  D8'tZL
- D;5yAT
+ D;5	fT
+ D;=%
  Done.
  ERROR: 
  Encountered errors:
@@ -251,9 +248,10 @@
  HcA0H
  HcAPH
  HcD$
- HcD$\I
+ HcD$TI
  HcD$hLcD$pI
  HcZ M
+ HcZHI
  HciH3
  HciHH
  HciX3
@@ -273,7 +271,7 @@
  HcyXH
  Hcy`3
  Hcy`H
- HczxH
+ HczpH
  Ic8I
  LZWSetupDecode
  Lc	M
@@ -285,7 +283,6 @@
  Max: ( %.1f, %.1f, %.1f )
  Min: ( %.1f, %.1f, %.1f )
  OK: 
- ReadToken overflow
  Took %0.2f seconds to destroy existing data.
  Took %0.2f seconds to load or copy file data.
  Took %0.2f seconds to update %i references
@@ -325,6 +322,8 @@
 !>6'Y
 !LcK@
 !T$(H!T$ 
+" -ie 
+" -oe 
 """"UUUU
 ""\\//b
 "%s" 
@@ -346,7 +345,6 @@
 "2BRbr
 "?433?t$7?
 "ActBusy.txt"
-"F[	8
 "GAMEROOT" search path not set!
 "Predictor" value %d not supported
 "Proxies"
@@ -382,12 +380,14 @@
 #include
 #include is NULL 
 #line
+$.fD9f
 $4DTdt
 $@8|$h
 $A;\$
 $D8J4t
 $E9D$
 $E9l$
+$HcL$
 $HcT$@H
 $IH+N 
 $Ib?s
@@ -444,6 +444,7 @@ $~aA;F
 %i compiled, 
 %i failed, 
 %i skipped, 
+%i.txt
 %i: %s;
 %ld%c
 %lldms
@@ -470,6 +471,7 @@ $~aA;F
 %s compression support is not configured
 %s encoding %s %d format %s %d %s
 %s restored from text format, should be converted to keyvalues3 text format using sceneimagebuilder -kv3convert -game <dota, etc.>
+%s#%d
 %s#%i
 %s#%s
 %s#%s#%s
@@ -490,8 +492,6 @@ $~aA;F
 %s(): Trying to add an empty VS input signature
 %s.%u
 %s.vsvg
-%s/%s
-%s/%s/%s
 %s/content/%s
 %s/content/%s/%s
 %s/valve/rc_mapbld_%d
@@ -566,7 +566,6 @@ $~aA;F
 %sTriangleIndices
 %sVertices
 %s[line %d:%d] 
-%s\%s%i.txt
 %s_%03d.vpk
 %s_%s.%s
 %s_%s.vtex
@@ -581,6 +580,7 @@ $~aA;F
 &6FVfv
 &?PPPPPPP?
 &D;j0u
+&L9d$@t
 &YA1D
 &YA1E2
 &YA1H
@@ -588,9 +588,9 @@ $~aA;F
 &YA1L
 '":|;
 '%s' is not a valid variable type
-'%s:%s' is not a valid variable type
 ', type<
 '7GWgw
+'A8FIt!I
 'D8l$@
 'Hc*;j
 'Hc+;k
@@ -604,22 +604,21 @@ $~aA;F
 ("%s")
 ($key_name)
 ($key_value)
-(%59l
-(%<_<
-(%GQX
-(%TGX
+(%'{X
+(%4qX
+(%<Y<
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
+(%xhX
 ('8PW
 (*%s*), 
-(-x:l
-(5H^X
+(5`PX
 (8HXhx
 (;^ |
-(A]A\
+(=":Y
 (A]A\^]
 (A]A\_[
 (A]A\_^
@@ -637,7 +636,7 @@ $~aA;F
 (A_A\
 (A_A\[]
 (A_A\_^][
-(A_A]][
+(A_A]
 (A_A]_]
 (A_A^
 (A_A^A]A\
@@ -890,7 +889,6 @@ $~aA;F
 )4$H;
 )9C }
 )9IYiy
-)<$E3
 )>6{1n
 )D$ =
 )D$ A
@@ -927,6 +925,7 @@ $~aA;F
 )D$PE
 )D$PH
 )D$PI
+)D$`A
 )D$`D
 )D$`H
 )D$`I
@@ -944,7 +943,6 @@ $~aA;F
 )L$0fD
 )L$@A
 )L$@D
-)L$@H
 )L$@f
 )L$@fD
 )L$@fff
@@ -957,7 +955,7 @@ $~aA;F
 )L$pA
 )L$pD
 )L$pH
-)MpMc
+)MpIc
 )O@E3
 )T$ D
 )T$ E
@@ -984,6 +982,7 @@ $~aA;F
 )\ZEo^m/
 )d$0D
 )d$@3
+)d$@D
 )d$@D8D$(u
 )d$P3
 )d$PD
@@ -996,6 +995,7 @@ $~aA;F
 )l$ A
 )l$ E
 )l$ fA
+)l$0A
 )l$0D
 )l$0z
 )l$@D
@@ -1038,6 +1038,7 @@ $~aA;F
 )t$@A
 )t$@D
 )t$@E
+)t$@E3
 )t$@H
 )t$@Hc
 )t$@I
@@ -1051,7 +1052,6 @@ $~aA;F
 )t$PD
 )t$PE3
 )t$PH
-)t$PHc
 )t$PI
 )t$PL
 )t$PM
@@ -1063,6 +1063,7 @@ $~aA;F
 )t$`D
 )t$`E
 )t$`H
+)t$`Hc
 )t$`I
 )t$`L
 )t$`Lc
@@ -1085,7 +1086,6 @@ $~aA;F
 )|$0H
 )|$0I;
 )|$@D
-)|$@E3
 )|$@H
 )|$@L
 )|$PA
@@ -1108,7 +1108,7 @@ $~aA;F
 )|$pM
 )|$pf
 )|B?d!
-)}pMc
+)}pIc
 * - Match Any
 *** %s "%s" in %s does not follow the 0..N format!
 *** %s "%s" in %s has max(%d) > 254!
@@ -1217,6 +1217,7 @@ $~aA;F
 *9sP~
 *:JZjz
 *Hc3;s
+*HcD$`I
 *Hck8;kHu
 *LANGUAGE*
 *LcD$0A
@@ -1233,6 +1234,7 @@ $~aA;F
 +D$HH
 +D$X+
 +D$tA
++D$tH
 +D$tHc
 +E$Hc
 +E,Hc
@@ -1242,7 +1244,7 @@ $~aA;F
 +G,Hc
 +J$D8M@
 +L$0A
-+L9l$pt
++L9l$`t
 +Lc;D;{
 +M<7>
 +O$Lc
@@ -1258,7 +1260,6 @@ $~aA;F
 , height = 
 , near %s
 ,.D;(
-,.fD9o
 ,/<-w
 ,/D;(
 ,/D;)
@@ -1279,7 +1280,6 @@ $~aA;F
 ,LcD$HH
 ,Q9bH
 ,t0D9J0v*L
-,xHcD$`I
 ,|%)v
 --  Increase the size of the resource stream   --
 --  Need %d bytes, but only have %d bytes
@@ -1327,6 +1327,7 @@ $~aA;F
 -dxlevel
 -dxwarp
 -empty
+-enable_2gb_morphs
 -end of input-(
 -extract_sentence
 -fastpack
@@ -1407,10 +1408,9 @@ $~aA;F
 -vwatch_disabled
 -vwatch_locking
 -width
-.%(0`
+.%hI`
 .%s%s
 ... Building '%s'
-...done
 ..Done.
 ..\content
 ..\src\shaders\
@@ -1472,16 +1472,16 @@ $~aA;F
 .?AV<lambda_7a64351339404d7c272e9cbb666424bc>@@
 .?AV<lambda_84f963861dffe6b6b7a4cba1c7a1dfac>@@
 .?AV<lambda_85226a1ade6d27c19b16702c44b1a394>@@
-.?AV<lambda_9d51f794d6f65a179fa2b1d30c20b787>@@
 .?AV<lambda_ad753c1e821d108e1a311dfa79cd9d31>@@
 .?AV<lambda_b941524bda65c007b960207a584dce78>@@
 .?AV<lambda_dc37bdb35edf75872f22ec4c6cad54c3>@@
+.?AV<lambda_df9f2652f459d0e67aa7e6dc86a6fa52>@@
 .?AV<lambda_e0b623a606acfd10554dbddbb0c1a7da>@@
-.?AV<lambda_e24f388245c7afe6bcbac5ee72d79b26>@@
 .?AV<lambda_e7905d7dbd7cab7f9b19199433c4f5d3>@@
 .?AV<lambda_f25c37099038263181b5186a3fa41b37>@@
 .?AV<lambda_fac74c1338e5afbc2423a21681fc11b7>@@
 .?AV<lambda_fd71c935fd7795d0ff8d159bddfc1ad2>@@
+.?AV<lambda_fe27f7a47376988b07f380e0ed8248be>@@
 .?AV?$CBaseAppSystem@VIAppSystem@@@@
 .?AV?$CBaseAppSystem@VIApplication@@@@
 .?AV?$CBaseAppSystem@VIDataModel@@@@
@@ -1820,9 +1820,6 @@ $~aA;F
 .?AV?$CDmeTypedLogLayer@_N@@
 .?AV?$CEntityComponentHelperReferenced@VCScriptComponent@@@@
 .?AV?$CEntityComponentHelperT@VCScriptComponent@@V?$CEntityComponentHelperReferenced@VCScriptComponent@@@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrN@$0CAAA@$0A@@@
-.?AV?$CFmtStrN@$0EAA@$0A@@@
 .?AV?$CMemberFunctor0@PEAVCP4FileInfoCache@@P81@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor0@PEAVCParticleJobUpdater@?A0xa300dbff@@P812@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_2d9e57603846de8b5694c16539ed7475>@@@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -2091,16 +2088,16 @@ $~aA;F
 .?AV?$_Func_impl@V<lambda_7a64351339404d7c272e9cbb666424bc>@@V?$allocator@H@std@@XAEAH@std@@
 .?AV?$_Func_impl@V<lambda_84f963861dffe6b6b7a4cba1c7a1dfac>@@V?$allocator@H@std@@_NVCUtlStringToken@@@std@@
 .?AV?$_Func_impl@V<lambda_85226a1ade6d27c19b16702c44b1a394>@@V?$allocator@H@std@@X$$V@std@@
-.?AV?$_Func_impl@V<lambda_9d51f794d6f65a179fa2b1d30c20b787>@@V?$allocator@H@std@@_NPEBD@std@@
 .?AV?$_Func_impl@V<lambda_ad753c1e821d108e1a311dfa79cd9d31>@@V?$allocator@H@std@@X$$V@std@@
 .?AV?$_Func_impl@V<lambda_b941524bda65c007b960207a584dce78>@@V?$allocator@H@std@@XAEAH@std@@
 .?AV?$_Func_impl@V<lambda_dc37bdb35edf75872f22ec4c6cad54c3>@@V?$allocator@H@std@@XAEAH@std@@
+.?AV?$_Func_impl@V<lambda_df9f2652f459d0e67aa7e6dc86a6fa52>@@V?$allocator@H@std@@_NPEBD@std@@
 .?AV?$_Func_impl@V<lambda_e0b623a606acfd10554dbddbb0c1a7da>@@V?$allocator@H@std@@E$$V@std@@
-.?AV?$_Func_impl@V<lambda_e24f388245c7afe6bcbac5ee72d79b26>@@V?$allocator@H@std@@_NPEBD@std@@
 .?AV?$_Func_impl@V<lambda_e7905d7dbd7cab7f9b19199433c4f5d3>@@V?$allocator@H@std@@X$$V@std@@
 .?AV?$_Func_impl@V<lambda_f25c37099038263181b5186a3fa41b37>@@V?$allocator@H@std@@X$$V@std@@
 .?AV?$_Func_impl@V<lambda_fac74c1338e5afbc2423a21681fc11b7>@@V?$allocator@H@std@@XAEAH@std@@
 .?AV?$_Func_impl@V<lambda_fd71c935fd7795d0ff8d159bddfc1ad2>@@V?$allocator@H@std@@X$$V@std@@
+.?AV?$_Func_impl@V<lambda_fe27f7a47376988b07f380e0ed8248be>@@V?$allocator@H@std@@_NPEBD@std@@
 .?AV?$_Func_impl@V?$_Fake_no_copy_callable_adapter@P8Image@Etc@@EAAIIII@ZQEAV12@AEAIAEAHAEAI@std@@V?$allocator@H@2@I$$V@std@@
 .?AV?$_Func_impl@V?$_Fake_no_copy_callable_adapter@P8Image@Etc@@EAAXII@ZQEAV12@AEAHAEAI@std@@V?$allocator@H@2@X$$V@std@@
 .?AV?$_Iosb@H@std@@
@@ -2498,6 +2495,7 @@ $~aA;F
 .?AVCNavPoly@@
 .?AVCNavPrecacheInfo@@
 .?AVCNewParticleEffect@@
+.?AVCNoRefFunctor@@
 .?AVCNonFatalLoggingResponsePolicy@@
 .?AVCObjectSelectionSet@@
 .?AVCObjectSelectionSetDataElement@@
@@ -2568,6 +2566,14 @@ $~aA;F
 .?AVCSimpleWindowsLoggingListener@@
 .?AVCSkyboxHelper@@
 .?AVCSphereHelper@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_2d9e57603846de8b5694c16539ed7475>@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelLoopProcessor@UFloatBitmapResampleInfo_t@@V?$CLoopFuncJobItemProcessor@UFloatBitmapResampleInfo_t@@@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelLoopProcessor@VFloatBitMap_t@@V?$CLoopMemberFuncJobItemProcessor@VFloatBitMap_t@@V1@V1@@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@PEAVIProceduralUpdateJob@@V?$CFuncJobItemProcessor@PEAVIProceduralUpdateJob@@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@UChoreoSceneFileEntry_t@@V?$CMemberFuncJobItemProcessor@UChoreoSceneFileEntry_t@@VCResourceCompilerChoreoSceneFileData@@V2@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@USerializeInputDependencyWorkItem_t@@V?$CMemberFuncJobItemProcessor@USerializeInputDependencyWorkItem_t@@VCResourceCompilerContext@@V2@@@$00@@@@QEAAXXZ@
 .?AVCStaticOverlayInstanceUpdateJob@@
 .?AVCSteamAudioProbeNode@@
 .?AVCStoredCamera@@
@@ -2859,6 +2865,7 @@ $~aA;F
 .tls$
 .tls$ZZZ
 .vcd files
+.vdacdefs_balance
 .vdacdefs_staging
 .vhcg
 .vmat
@@ -2871,6 +2878,8 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
+/%;C&
+/-nZ_
 /....vcd
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
@@ -2888,9 +2897,12 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
+/5KJ+
+/5LB&
 /7w$M
 /84_>
 /=$!6
+/=fnM
 />58d%
 /?O_o
 /D$0v
@@ -2948,6 +2960,7 @@ $~aA;F
 0A^A]_^[
 0A^][
 0A^^[
+0A^_[
 0A^_]
 0A^_^
 0A^_^][
@@ -2980,6 +2993,7 @@ $~aA;F
 0A_A^A]_^][
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_][
 0A_A^_^]
@@ -2995,12 +3009,8 @@ $~aA;F
 0Hc7L
 0Hc9H
 0Hc:H
-0HcZHI
 0Hcqh3
 0L93t
-0L9e0t	H
-0L9l$0t
-0L9|$0t
 0Lc2E3
 0X8b?~
 0_^[H
@@ -3029,7 +3039,6 @@ $~aA;F
 1280x720
 131022120000Z
 141022000000Z
-15:32:43
 16-byte data pool
 181004000000Z
 1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | T__26 | T__27 | T__28 | T__29 | T__30 | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | BOOLLITERAL | ID | INTEGERLITERAL | HEXINTEGERLITERAL | FLOATLITERAL | COMMENT | WS );
@@ -3044,9 +3053,10 @@ $~aA;F
 1u1;S
 1usD;C
 1wsHp
-200403223633Z0#
+200515054208Z0#
 211007120000Z0M1
 211110000000Z0b1
+22:40:27
 241022000000Z0G1
 255 255 255 255
 281022120000Z0r1
@@ -3075,8 +3085,8 @@ $~aA;F
 3A8A#
 3D Skybox
 3D Views
-3D$Dk
-3D$H5<
+3D$Hk
+3D$L5<
 3H97t 
 3H9t$Pt
 3JcD7
@@ -3098,15 +3108,16 @@ $~aA;F
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
 64 283 0
+6>@G^
 6FaceSkyBox
-6Hc^0;^@u
 6Lc>D;~
 700PP
 700WP
+78ky;nrR
 7H9u(t	H
 7HcD$P
-7L9@ u6Lc
 7Lcw E3
+7M9f H
 7h>?8
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8#uaH
@@ -3116,6 +3127,7 @@ $~aA;F
 8-byte data pool
 80tWD
 8A;>|
+8A\_][
 8A]A\
 8A]_^[
 8A^A\
@@ -3146,6 +3158,7 @@ $~aA;F
 8A_A^_]
 8A_A^_^][
 8A__][
+8CDmeUnpackVMatrixOperator CUtlMemoryPool
 8Csinf
 8D$ u+I
 8D$!t
@@ -3167,6 +3180,7 @@ $~aA;F
 8D;l$ 
 8EIt3f
 8GbthH
+8H9t$@t
 8Hc*H
 8HcQ L
 8IcG0H
@@ -3181,9 +3195,7 @@ $~aA;F
 8L$Pt
 8L$Yt)f
 8L$`t
-8L9e0t	H
 8LcQ`3
-8M9't
 8T$)t*f
 8T$)t+f
 8Y0t]
@@ -3206,13 +3218,14 @@ $~aA;F
 9'tCeH
 9(tCeH
 9)tCeH
-9)~.H
 9)~ZH
 9)~nH
 9)~vH
 9)~~H
 9*tCeH
 9+tCeH
+9+~#f
+9+~eL
 9,tCeH
 9-tCeH
 9.tCeH
@@ -3222,14 +3235,10 @@ $~aA;F
 91t0H
 91vXH
 91~/E3
+91~IH
 91~YH
 91~gH
-93~!Ic
-93~#f
 93~(H
-93~eL
-93~rL
-95"xP
 98~03
 99C }
 99~-H
@@ -3245,18 +3254,17 @@ $~aA;F
 9;~<ff
 9;~oH
 9;~qH
-9C |I
 9C |K
-9C |q
 9Cdt#H
 9D$ u
 9D$ }(Hc/;o
 9D$(}y
+9D$@t
 9D$x~
 9D7Ht3D
 9D9 u
 9E0u"
-9ELuW
+9E\uR
 9Eo~ 3
 9Eo~83
 9G$vAD
@@ -3287,14 +3295,13 @@ $~aA;F
 9Yh~WH
 9\$(~
 9\$8~-H
-9\$8~E
 9\$HtlH
 9\$P~PH
 9\$`~'
 9\$`~'H
 9\$`~[
+9] ~wI
 9]0~^H
-9]8~wI
 9^<~.
 9^<~0f
 9^<~1
@@ -3315,7 +3322,6 @@ $~aA;F
 9i(~"
 9i<~O
 9i@~VH
-9k u-9k
 9k8~FH
 9k8~QH
 9k8~_H
@@ -3353,12 +3359,12 @@ $~aA;F
 9w@~IH
 9w@~QH
 9wP~IL
-9xH~PD
 9xKHc
 9y8~53
 9y8~YM
 9y@~ZL
 9y`~q
+9{ u-9{
 9{H~$H
 9{\~9H
 9|$ t&I
@@ -3393,11 +3399,11 @@ $~aA;F
 ;1}*H
 ;2HcG
 ;7}JH
-;9}FHc
+;8u-3
+;9}CH
 ;9}lHc
 ;9}|H
 ;<	u5H
-;=('Q
 ;=u~H
 ;A ~W
 ;B$vUH
@@ -3412,6 +3418,7 @@ $~aA;F
 ;D$0u
 ;D$4H
 ;D$4u+
+;D$8t,E;
 ;D$8u"
 ;D$8u$
 ;D$8u%
@@ -3429,7 +3436,8 @@ $~aA;F
 ;G$u5
 ;G(uRH
 ;H9>&X
-;HcOxH
+;H9|$@t
+;HcOpH
 ;J t3
 ;L$0u
 ;L$@u
@@ -3445,8 +3453,8 @@ $~aA;F
 ;T$`u
 ;T$du
 ;T$xu
+;V(s'Hc
 ;Vl}fD
-;W(s'Hc
 ;W0sFfH
 ;\$ |
 ;\$(|
@@ -3454,6 +3462,7 @@ $~aA;F
 ;\$0u
 ;\$0|
 ;\$0}(H
+;\$8|
 ;\$@u
 ;\$@|
 ;\$Pu
@@ -3467,12 +3476,12 @@ $~aA;F
 ;\$x|
 ;k`to
 ;l$0|
-;l$8|
 ;l$hr
 ;s`tA
 ;s`tt
 ;t$ |
 ;t$0u
+;t$0|
 ;t$8u"
 ;t$Hu 
 ;t$H|
@@ -3502,7 +3511,6 @@ $~aA;F
 <!-- DMXVersion
 <!-- dmx
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
-<"uBD
 <$E;Q
 <$Lc;H
 <(A9oX
@@ -3545,6 +3553,7 @@ $~aA;F
 <no failure reason set>
 <no text for the token>
 <null>
+<position
 <unconnected>
 <unknown hash %u>
 <unknown>
@@ -3563,7 +3572,7 @@ $~aA;F
 =SPB8t
 =imb;D
 =nI-$
->L9|$Ht
+>L9@ u;Lc
 >ff&?
 >ffffff
 >jtm}S
@@ -3597,9 +3606,11 @@ $~aA;F
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMultiWaitEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CUniformRandomStream@@QEAA@XZ
 ??1CThreadMultiWaitEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
+??1CThreadSemaphore@@QEAA@XZ
 ??1CThreadSyncObject@@QEAA@XZ
 ?@En[vP
 ?AFxD
@@ -3607,6 +3618,7 @@ $~aA;F
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?CVertexListSceneObject
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ConColorMsg@@YAXAEBVColor@@PEBDZZ
 ?ConMsg@@YAXPEBDZZ
@@ -3618,6 +3630,8 @@ $~aA;F
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
+?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
@@ -3626,10 +3640,11 @@ $~aA;F
 ?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?ExtractFirstDir@CBufferString@@QEAAPEBDPEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?GetTotalSecondsSampled@CVProfile@@QEBANXZ
 ?H33H
+?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
 ?HideBudgetGroup@CVProfile@@QEAAXPEBD_N@Z
 ?I_C.
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -3663,6 +3678,8 @@ $~aA;F
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@CUniformRandomStream@@UEAAXH@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
@@ -3674,6 +3691,9 @@ $~aA;F
 ?Swap@CBufferString@@QEAAXAEAV1@@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
+?Trim@CBufferString@@QEAAPEBDPEBD@Z
+?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
+?TruncateAt@CBufferString@@QEAAPEBDPEBD_N@Z
 ?TryLock@CThreadMutex@@QEAA_NPEBDH@Z
 ?Tu7R
 ?UNKNOWN
@@ -3681,14 +3701,16 @@ $~aA;F
 ?U[y[
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
+?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
+?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
 ?UnlockWrite@CThreadRWLock@@QEAAXPEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?W(~N
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?WaitForRead@CThreadRWLock@@AEAAXXZ
-?[ufI
 ?c:\buildslave\hlvr_rel_win64\build\src\public\tier2\fileutils.h
 ?f`Y4
 ?gibQ^AX>
@@ -3698,7 +3720,6 @@ $~aA;F
 ?rmMx
 ?sqrtf
 ?u='@
-?vhE3
 ?wVt/=
 ?{Q}<
 @ H9D
@@ -3714,6 +3735,7 @@ $~aA;F
 @8(t7H
 @8(tPH
 @8,2u
+@8-^!
 @80t#H
 @80t9H
 @80tG
@@ -3721,16 +3743,15 @@ $~aA;F
 @80u#H
 @81u/H
 @83t)
-@85L4W
-@85OyW
-@85rS
+@85(&
+@85l?
 @89tDI
-@8=	2
+@8:t|H
 @8iHt
 @8kut~L
 @8k|t"HcK
 @8l$8t
-@8ol~?H
+@8oh~?H
 @8pPu
 @8qHt
 @8t$Dto
@@ -3740,7 +3761,7 @@ $~aA;F
 @8u	u0H
 @8ugt
 @8uwt
-@8wl~5H
+@8wh~5H
 @8x tF@8
 @8x u
 @8x|H
@@ -3767,7 +3788,7 @@ $~aA;F
 @8|0(t,H
 @8}ju0H
 @8}ku	H
-@8~l~'Hc
+@8~h~'Hc
 @;k@|
 @>%>b
 @@D;O@|
@@ -3801,7 +3822,6 @@ $~aA;F
 @A_A]A\_^][
 @A_A]^][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A\_^[]
 @A_A^A\_^][
@@ -3836,6 +3856,7 @@ $~aA;F
 @Integer overflow in %s
 @Lc!H
 @Lc:E3
+@SATAUAV
 @SATAUAVAWH
 @SATAUH
 @SATAVAWH
@@ -3846,10 +3867,9 @@ $~aA;F
 @SAVAWH
 @SAVH
 @SAWH
-@SUATAUAWH
 @SUATAUH
 @SUATAVH
-@SUAUAWH
+@SUAUAVAWH
 @SUAUH
 @SUAVH
 @SUAWH
@@ -3893,7 +3913,6 @@ $~aA;F
 @SVWAVH
 @SVWAWH
 @SVWH
-@SWATAUAVH
 @SWATAUAWH
 @SWATAUH
 @SWATAVH
@@ -3935,7 +3954,6 @@ $~aA;F
 @USVWATAUAVAWH
 @USVWATAVAWH
 @USVWATAVH
-@USVWATAWH
 @USVWAUH
 @USVWAVH
 @USVWAWH
@@ -3950,13 +3968,16 @@ $~aA;F
 @UVATAUH
 @UVATAVAW
 @UVATAVAWH
+@UVATAVH
 @UVATAWH
+@UVAUAWL
 @UVAUH
 @UVAVAWH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
 @UVWATAUH
+@UVWATAVH
 @UVWATH
 @UVWAUAVH
 @UVWAUAWH
@@ -3983,6 +4004,7 @@ $~aA;F
 @VATH
 @VAUAVAWH
 @VAUAVH
+@VAUAWH
 @VAVAWH
 @VAVH
 @VAWH
@@ -3990,7 +4012,9 @@ $~aA;F
 @VWATAUAWH
 @VWATAUH
 @VWATAVAWH
+@VWATAVH
 @VWATH
+@VWAUAVH
 @VWAUH
 @VWAVH
 @VWAWH
@@ -4046,8 +4070,8 @@ A86taH
 A8H	P(
 A8H+A0H
 A8Zxt
-A8l$l
-A96u.f
+A8l$h
+A96u(
 A96~W
 A96~_M
 A97~7H
@@ -4065,7 +4089,6 @@ A9FHtQI
 A9L$H
 A9N A
 A9N(t
-A9P0~\3
 A9U8tCMc]<McE@Lc
 A9Z<~bL
 A9^ ~\
@@ -4074,6 +4097,9 @@ A9t$$~'
 A9v@t
 A9vP~o
 A9w@t
+A9|$0t
+A9~(~sA
+A9~(~vA
 A:(uiI
 A;	}*I
 A;6}#I
@@ -4085,6 +4111,7 @@ A;A`}
 A;BX}
 A;D$(
 A;D>Ht
+A;Fp}
 A;H$s
 A;H$v}H
 A;L$0v#A
@@ -4096,8 +4123,8 @@ A;U`sCH
 A;Z<|
 A;^ |
 A;^@|
-A;mP|
 A;p0|
+A;t$`
 A;v I
 A;vP|
 A;|$8u
@@ -4108,7 +4135,6 @@ A>l$/
 A>pP&
 A@9B@u2
 A@H98t%H
-A@Hcs ;s0u
 AA,A$
 AA<Fu
 AABB_t
@@ -4152,7 +4178,7 @@ AE_ZOMBIE_TOGGLE_HEAD
 AH+A<
 AH9A8}QHcA8Hk
 AH;BHu*D
-AHD;}
+AHD;u
 AHH+A@H
 AIWalkable
 AK>(v
@@ -4211,7 +4237,6 @@ A\_^[
 A\_^[]
 A\_^]
 A]A\[
-A]A\[]
 A]A\]
 A]A\][
 A]A\^[]
@@ -4219,6 +4244,7 @@ A]A\^]
 A]A\_
 A]A\_[]
 A]A\_]
+A]A\_^[
 A]A\_^]
 A]^[]
 A]^][
@@ -4229,6 +4255,7 @@ A]_^][
 A^A\[
 A^A\[]
 A^A\]
+A^A\^[]
 A^A\^]
 A^A\_
 A^A\_[
@@ -4240,6 +4267,7 @@ A^A\_^]
 A^A]A\[
 A^A]A\[]
 A^A]A\]
+A^A]A\^
 A^A]A\^]
 A^A]A\_
 A^A]A\_[
@@ -4252,9 +4280,9 @@ A^A]A\_^]
 A^A][
 A^A]]
 A^A]^
-A^A]^[
 A^A]^]
 A^A]_[]
+A^A]_]
 A^A]_^
 A^A]_^[
 A^A]_^[]
@@ -4273,7 +4301,6 @@ A_A\^[]
 A_A\^]
 A_A\^][
 A_A\_
-A_A\_[
 A_A\_[]
 A_A\_]
 A_A\_^[
@@ -4283,7 +4310,6 @@ A_A]A\
 A_A]A\[
 A_A]A\[]
 A_A]A\]
-A_A]A\][
 A_A]A\^
 A_A]A\^]
 A_A]A\_[]
@@ -4294,16 +4320,17 @@ A_A]A\_^][
 A_A]]
 A_A]^
 A_A]^]
-A_A]_][
+A_A]_^[
 A_A]_^[]
 A_A]_^]
 A_A]_^][
 A_A^A\
 A_A^A\H
 A_A^A\]
-A_A^A\^
+A_A^A\^[
 A_A^A\^]
 A_A^A\^][
+A_A^A\_[
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
@@ -4316,12 +4343,16 @@ A_A^A]A\]
 A_A^A]A\^
 A_A^A]A\^]
 A_A^A]A\_
+A_A^A]A\_]
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
+A_A^A][
 A_A^A][]
 A_A^A]]
+A_A^A]][
 A_A^A]^]
+A_A^A]_[]
 A_A^A]_]
 A_A^A]_^
 A_A^A]_^[
@@ -4335,6 +4366,7 @@ A_A^^
 A_A^^[
 A_A^^[]
 A_A^_
+A_A^_H
 A_A^_[]
 A_A^_]
 A_A^_^[
@@ -4362,21 +4394,17 @@ Activity Weights keys not allocated!
 Actually dude, we didn't seem to be expecting anything here, or at least
 AdaptFacesToDisplacement
 Add Custom Tag...
-Add an output
 AddEdgeToFace
 AddExtraAttributeStream
 AddLayer
 AddManifest: SaveToFile "%s" failed!
 AddNewLayer
-AddOnInfo
-AddOutput
-AddResource
 AddUndoElement '%s'
 AddVertexToEdge
 Adding %s helper key at %d value 
 AdditionalVertexData
-AddonInfo
 AddonMapCommand
+AddonMapCommandIsAddonImplied
 AddonsChangeDefaultWritePath
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 AdobeDeflate
@@ -4490,8 +4518,8 @@ AssignMaterialToFaces
 AssignSmoothingModeToEdges
 Assigned %d Baked Light Indices [%d - %d].
 At marker 0x%02x, recovery action %d
+AtA;D$t
 Attachments
-Attempted to ConvertToCopiedData for unsupported type (%d)
 Attempted to add two format updaters with the same file format (%s)!
 Attempted to add two legacy updaters with the same file format (%s)!
 Attempted to add two serializers with the same file encoding (%s)!
@@ -4519,7 +4547,6 @@ AutoUpdateEnvironmentMaps
 Automatically generated 'dota_minimap_boundary' entities:
 Automatically generated 'world_bounds':
 Aw9Hc
-A|A;D$|
 B	8A	u
 B 9A 
 B channel not found!
@@ -4592,9 +4619,11 @@ Bad header: invalid binary marker
 Bad header: invalid compression header
 Bad header: unrecognized encoding id
 Bad input/output type '%s'
+Bad keyname
 Bad nav mesh:  only 90-degree vertical rotations are allowed. The source nav mesh has been discarded.
 Bad sequence in GetSequenceActivityName() for model '%s'!
 Bad type %d in saved CVariant
+Bad value
 Bad variable description
 Bad variable long name
 BadFaxLines
@@ -4692,7 +4721,6 @@ BreakPieceEmbedded
 BreakPieceExternal
 BreakpadAppId
 BreakpadAppId_Tools
-Breaks in the debugger
 Brightness/Contrast %d
 BrowInV
 Bskybox
@@ -4724,7 +4752,7 @@ BuildParticleSimList
 BuildRenderDataForPolygonGroup(319): 
 BuildSAPathing
 BuildSAReverb
-BuildSolidRenderData(327): 
+BuildSolidRenderData(334): 
 BuildSteamAudio
 BuildUseMPI
 Building force dirty file list...
@@ -4745,9 +4773,7 @@ C(I;A
 C(L9p
 C,9C$u
 C,;C(~6H
-C-side of entity framework
 C-yh/
-C.fA;
 C09CT
 C0;C,s
 C0@u3H
@@ -4784,7 +4810,6 @@ C@9G@u
 C@A9D>@
 C@D9C0~ A
 C@H90t%H
-C@Hcs ;s0u
 C@L90t%H
 C@L9<
 CA< t(<#t
@@ -4823,6 +4848,8 @@ CColorCorrectionLayer
 CColorLookupColorCorrectionLayer
 CColorTintColorCorrectionLayer
 CCurvesColorCorrectionLayer
+CD$HD
+CD$X@
 CD$XD
 CD8GDt'
 CDataModel:  %i elements left in memory!!!
@@ -5037,7 +5064,6 @@ CDmeUint8LogLayer CUtlMemoryPool
 CDmeUnpackColorOperator CUtlMemoryPool
 CDmeUnpackQAngleOperator CUtlMemoryPool
 CDmeUnpackQuaternionOperator CUtlMemoryPool
-CDmeUnpackVMatrixOperator CUtlMemoryPool
 CDmeUnpackVector2Operator CUtlMemoryPool
 CDmeUnpackVector3Operator CUtlMemoryPool
 CDmeUnpackVector4Operator CUtlMemoryPool
@@ -5078,7 +5104,6 @@ CEntityKeyValues::Serialize: Unable to write into a text-based utlbuffer!
 CEntityKeyValues::Serialize: Unsupported keyvalue variant type! (%s) type=%d
 CEntityKeyValues::SerializeKeys
 CEntityOutputTemplate
-CEntityScriptFramework
 CEntitySystem
 CExternalToolInfo
 CFALayout
@@ -5098,8 +5123,9 @@ CHueSaturationColorCorrectionLayer
 CIconHelper::SetMaterialByName
 CImagePlaneNode
 CImagePlaneNode CUtlMemoryPool
-CImagePlaneNode::RebuildRenderBuffers(316): 
+CImagePlaneNode::RebuildRenderBuffers(315): 
 CKV3FormatManager::RegisterFormatConversion
+CL$8@
 CL$H@
 CL:>8
 CLD;CP|
@@ -5218,7 +5244,6 @@ CMesh Cannot create packed input layout, because the bone indices are out of ran
 CModelHelper::UpdateMaterialOverride
 CModelPreviewAttachedModel
 CMotionTransform
-CNativeOutputs
 CNavArea::PostLoad: Corrupt navigation data. Cannot connect Navigation Areas.
 CNavArea::PostLoad: Corrupt navigation ladder data. Cannot connect Navigation Areas.
 CNavGenParams - Nav mesh requests project default generation parameters but actual parameters
@@ -5251,7 +5276,6 @@ CPackedStore::AddFile
 CPackedStore::AddFileToDirectory
 CPackedStore::BuildHashTables
 CPackedStore::CPackedStore
-CPackedStore::GetFileHandle
 CPackedStore::Write
 CParticleHelper::SetDefinitionByName
 CParticleProperty::AddControlPoint
@@ -5342,9 +5366,6 @@ CScriptComponent
 CScriptComponent::Storage_t
 CScriptComponentReferenced
 CScriptComponentReferencedPtr
-CScriptKeyValues
-CScriptNativeOutputs
-CScriptPrecacheContext
 CSelectionSetDataElement
 CSelectionSetDataElement CUtlMemoryPool
 CSequenceListHelper::GetSequenceNames
@@ -5377,60 +5398,60 @@ CTextureFrame::ApplyImageProcessor(67): Unknown image processing algorithm "%s"!
 CTextureFrame::ApplyImageProcessor_LegacySource1InvertNormals(112): Normal map face %d, mip %d has %d input channels (requires at least 3 in RGB)!
 CTextureFrame::ApplyImageProcessor_NormalizeNormals(229): Normal map face %d, mip %d has %d input channels (requires at least 3 in RGB)!
 CTextureFrame::GenerateMips(177): Unknown mip algorithm "%s"!
-CTextureFrame::GenerateMips_AlphaWeighted(1994): Expecting 2 input textures, found %d!
-CTextureFrame::GenerateMips_AlphaWeighted(2010): Cannot filter 3D texture %dx%dx%d!
-CTextureFrame::GenerateMips_AlphaWeighted(2016): Cannot filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_AnisoNormal_Internal(1464): Expecting 2 input textures, found %d!
-CTextureFrame::GenerateMips_AnisoNormal_Internal(1488): Cannot filter 3D texture %dx%dx%d!
-CTextureFrame::GenerateMips_AnisoNormal_Internal(1494): Cannot filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_AnisoNormal_Internal(1613): Error calculating src pixel dimensions!
+CTextureFrame::GenerateMips_AlphaWeighted(1993): Expecting 2 input textures, found %d!
+CTextureFrame::GenerateMips_AlphaWeighted(2009): Cannot filter 3D texture %dx%dx%d!
+CTextureFrame::GenerateMips_AlphaWeighted(2015): Cannot filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_AnisoNormal_Internal(1463): Expecting 2 input textures, found %d!
+CTextureFrame::GenerateMips_AnisoNormal_Internal(1487): Cannot filter 3D texture %dx%dx%d!
+CTextureFrame::GenerateMips_AnisoNormal_Internal(1493): Cannot filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_AnisoNormal_Internal(1612): Error calculating src pixel dimensions!
 CTextureFrame::GenerateMips_AutoLevels(630): Expecting 1 input texture, found %d!
 CTextureFrame::GenerateMips_Box(268): Expecting 1 input texture, found %d!
 CTextureFrame::GenerateMips_Box(287): This game does not have non-power-of-two texture support enabled! (dimensions: %dx%dx%d)
 CTextureFrame::GenerateMips_BoxInverse(335): Expecting 1 input texture, found %d!
 CTextureFrame::GenerateMips_BoxInverse(354): Cannot box filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_GGXCubeMapBlur(2320): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_GGXCubeMapBlur(2328): GGX Cubemap Blur mip filter: Expecting 6 input faces (cubemap), found %d!
-CTextureFrame::GenerateMips_GGXCubeMapBlur(2334): GGX Cubemap Blur mip filter: Input texture data must be square!
-CTextureFrame::GenerateMips_GGXCubeMapBlur(2339): GGX Cubemap Blur mip filter: Volume textures not supported!
-CTextureFrame::GenerateMips_GGXCubeMapBlur(2344): Cannot GGX-mip-filter non-power-of-two texture!
-CTextureFrame::GenerateMips_Gaussian(2852): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_Gaussian(2882): Cannot box filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_Gradient2D(1815): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_Gradient2D(1834): Cannot gradient filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_GGXCubeMapBlur(2319): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_GGXCubeMapBlur(2327): GGX Cubemap Blur mip filter: Expecting 6 input faces (cubemap), found %d!
+CTextureFrame::GenerateMips_GGXCubeMapBlur(2333): GGX Cubemap Blur mip filter: Input texture data must be square!
+CTextureFrame::GenerateMips_GGXCubeMapBlur(2338): GGX Cubemap Blur mip filter: Volume textures not supported!
+CTextureFrame::GenerateMips_GGXCubeMapBlur(2343): Cannot GGX-mip-filter non-power-of-two texture!
+CTextureFrame::GenerateMips_Gaussian(2851): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_Gaussian(2881): Cannot box filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_Gradient2D(1814): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_Gradient2D(1833): Cannot gradient filter non-power-of-two texture %dx%dx%d!
 CTextureFrame::GenerateMips_HeightCombine(522): Expecting 2 input textures, found %d!
 CTextureFrame::GenerateMips_HeightCombine(549): This game does not have non-power-of-two texture support enabled! (dimensions: %dx%dx%d)
 CTextureFrame::GenerateMips_HemiOctAnisoRoughness(1145): Error calculating src pixel dimensions!
 CTextureFrame::GenerateMips_HemiOctAnisoRoughness(939): Expecting 1 or 2 input texture, found %d!
 CTextureFrame::GenerateMips_HemiOctAnisoRoughness(972): Cannot filter 3D texture %dx%dx%d!
 CTextureFrame::GenerateMips_HemiOctAnisoRoughness(978): Cannot filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_HemiOctNormal(1348): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_HemiOctNormal(1369): Cannot box filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_MipSize(1926): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_MipSize(1945): Cannot filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_HemiOctNormal(1347): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_HemiOctNormal(1368): Cannot box filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_MipSize(1925): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_MipSize(1944): Cannot filter non-power-of-two texture %dx%dx%d!
 CTextureFrame::GenerateMips_Multiply(410): Expecting 2 input textures, found %d!
 CTextureFrame::GenerateMips_Multiply(431): Cannot filter 3D texture %dx%dx%d!
 CTextureFrame::GenerateMips_Multiply(439): Cannot filter non-power-of-two texture when creating mips %dx%dx%d!
-CTextureFrame::GenerateMips_Nice(2664): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_PreserveCoverage(2221): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_PreserveCoverage(2237): Cannot box filter non-power-of-two texture %dx%dx%d!
-CTextureFrame::GenerateMips_RGBM(2534): Expecting 1 input texture, found %d!
-CTextureFrame::GenerateMips_RGBM(2553): Cannot RGBM filter non-power-of-two texture %dx%dx%d!
-CTextureObject::IsImageType(2917): Error! Unknown ImageType_t %d specified!
+CTextureFrame::GenerateMips_Nice(2663): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_PreserveCoverage(2220): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_PreserveCoverage(2236): Cannot box filter non-power-of-two texture %dx%dx%d!
+CTextureFrame::GenerateMips_RGBM(2533): Expecting 1 input texture, found %d!
+CTextureFrame::GenerateMips_RGBM(2552): Cannot RGBM filter non-power-of-two texture %dx%dx%d!
+CTextureObject::IsImageType(2916): Error! Unknown ImageType_t %d specified!
 CTextureObject::ReadFromFile(2104): Error! ( pVtexInputTexture == NULL )!
 CTextureObject::ReadFromFile(2110): Error! pVtexInputTexture has an empty string!
 CTextureObject::ReadFromFile(2167): Error! Cannot parse element %d from color for texture "%s"!
 CTextureObject::ReadFromFile(2220): Error! pVtexInputTexture cannot be an absolute path! Found "%s"
 CTextureObject::ReadFromFile(2227): Error reading texture options txt file for "%s"
 CTextureObject::ReadFromFile(2316): Error calling LoadFromFile() for texture "%s"!
-CTextureObject::ReadFromFile(2390): Error! Trying to load a second sheet "%s"!
-CTextureObject::ReadFromFile(2403): Error getting image out of the .mks sheet for "%s"!
-CTextureObject::ReadFromFile(2431): Mip 0 of face %d in frame %d has dimensions %dx%dx%d instead of %dx%dx%d for "%s"!
-CTextureObject::ReadFromFile(2447): Error applying image processor Brightness to input texture "%s" for file "%s"!
-CTextureObject::ReadFromFile(2459): Error applying image processor HeightToNormal to input texture "%s" for file "%s"!
-CTextureObject::ReadFromFile(2823): Error 3DSliceWidth %d exceeds input texture "%s" width %d for file "%s"!
-CTextureObject::ReadFromFile(2834): Error 3DSliceHeight %d exceeds input texture "%s" height %d for file "%s"!
-CTextureObject::ReadFromFile(2845): Error 3DSliceCount %d exceeds input texture "%s" maximum %dx%d slice count %d for file "%s"!
+CTextureObject::ReadFromFile(2389): Error! Trying to load a second sheet "%s"!
+CTextureObject::ReadFromFile(2402): Error getting image out of the .mks sheet for "%s"!
+CTextureObject::ReadFromFile(2430): Mip 0 of face %d in frame %d has dimensions %dx%dx%d instead of %dx%dx%d for "%s"!
+CTextureObject::ReadFromFile(2446): Error applying image processor Brightness to input texture "%s" for file "%s"!
+CTextureObject::ReadFromFile(2458): Error applying image processor HeightToNormal to input texture "%s" for file "%s"!
+CTextureObject::ReadFromFile(2822): Error 3DSliceWidth %d exceeds input texture "%s" width %d for file "%s"!
+CTextureObject::ReadFromFile(2833): Error 3DSliceHeight %d exceeds input texture "%s" height %d for file "%s"!
+CTextureObject::ReadFromFile(2844): Error 3DSliceCount %d exceeds input texture "%s" maximum %dx%d slice count %d for file "%s"!
 CThreadedFileLogger
 CThreadedJob
 CThreadedLogger
@@ -5594,7 +5615,6 @@ CVWatchClient::GetFileCRC() write
 CVWatchClient::IsWatchingDir()
 CVariantBase
 CVariantDefaultAllocator
-CVertexListSceneObject
 CVertexSelectionSetDataElement
 CVertexSelectionSetDataElement CUtlMemoryPool
 CVfx::CreateFromVcs(6840): Error opening file %s
@@ -5738,7 +5758,6 @@ Cannot quantize to more than %d colors
 Cannot read TIFF header
 Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
-Cannot run script: NULL script name
 Cannot save KV3 text to a non-text buffer!
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot transcode due to multiple use of quantization table %d
@@ -5757,7 +5776,6 @@ Centeroncamera
 ChangeAccessorFieldPathIndex_t
 ChangeTimerQueueTimer
 Checking existing compile file '%s'
-Checks to see if the given hScript is a valid entity
 CheekH
 Child resource is MISSING: %s
 Child resource is present: %s
@@ -5834,8 +5852,10 @@ CompileImages: Error unserializing dmevtex "%s"!
 CompileImages: Error! %s - "%s"!
 CompileImages: Error: Failed to find CONTENT image file "%s" referenced by "%s"
 CompileImages: Failed to create child compiler context for "%s"
+CompileImages: Failed to create sister compiler context for "%s"
 CompileImages: Failed to decode as a known image file "%s"
 CompileImages: Failed to serialize a buffer for "%s"
+CompileImages: Sister compile failed for "%s"
 CompileImagesPassThroughMode
 CompileKV3
 CompileLayoutResource: Failed to parse XML
@@ -5874,8 +5894,6 @@ CompileVMix
 CompileVPhysXData
 CompileVectorGraphic
 CompileWorld
-CompileWorldEnvironmentMaps
-CompileWorldEnvironmentMapsV001RESOURCE_TYPE_COMPILER_002
 CompileWorldNode
 Compiled GUI file
 CompilerArgs
@@ -5890,9 +5908,6 @@ Compression
 Compression algorithm does not support random access
 Compression scheme %u %s decoding is not implemented
 Compression scheme %u %s encoding is not implemented
-ComputeOutputFileName:: game root dir name is greater than %d! gameroot: %s modname: %s
-ComputeOutputFileName:: output full path with extensionandprefix is greater than %d! outputpath %s extensionandprefix %s
-ComputeOutputFileName:: resulting path name is greater than %d! gamedir: %s resourcename: %s
 Computing irradiance for lower mip levels
 ConVar(%s) defined with infinite float value (%s)
 ConVarRef %s doesn't point to an existing ConVar
@@ -5911,9 +5926,6 @@ Constrain Rotation
 Constrain Velocity
 ConstructFromArrays
 ConstructFromDmeMesh
-Container to hold context published to precache functions in script
-Container to hold keyvalues published to spawn functions in script
-Container to hold outputs published by script to game
 ContextPriority
 ContextStackSize
 Control Clip
@@ -6068,12 +6080,12 @@ D$$A;
 D$$E3
 D$$E;
 D$$fA9
+D$$fA;
 D$(8L$(u
 D$(;E
 D$(@8;t
 D$(A;
 D$(D8T$(u
-D$(D;
 D$(D;E
 D$(E2
 D$(E3
@@ -6083,8 +6095,8 @@ D$(H;
 D$(Hc
 D$(Ic
 D$(L9
+D$(M;
 D$(fI
-D$(fff
 D$(tn
 D$(zEuC
 D$)fD
@@ -6100,7 +6112,6 @@ D$01u<
 D$09(tSH
 D$09\$<
 D$0;(}#H
-D$0;+uZ;
 D$0;0}
 D$0;0}'H
 D$0< u
@@ -6120,7 +6131,6 @@ D$0H;A t
 D$0H;G
 D$0HH
 D$0Hc
-D$0Hc>
 D$0HcC(I
 D$0HcH
 D$0Hk
@@ -6135,13 +6145,12 @@ D$0f;UPu
 D$0fA
 D$0fD
 D$0fH
-D$0ff
 D$0fff
 D$0mp
 D$0r|
 D$0t2H
-D$0t5
 D$0t9
+D$0t?
 D$0tHA
 D$0tbA
 D$0v4
@@ -6149,19 +6158,18 @@ D$0xL
 D$4+D$8A
 D$49C
 D$4;|$@u)
-D$4D;
 D$4E3
 D$4I;
+D$4t.
 D$4t>
 D$4tc
+D$4ti
 D$8+C$H
 D$8;D$@
 D$8A+
 D$8A;
 D$8D8m
-D$8D;
 D$8E3
-D$8E;
 D$8H;
 D$8Hc
 D$8HcD$H
@@ -6169,14 +6177,11 @@ D$8HcJ
 D$8Ic
 D$8L9
 D$8L9gH
-D$8L9t$0t
 D$8L;
 D$8Lc;D
-D$8Li
 D$8M+
 D$8Mc
 D$8VBKV
-D$8fD
 D$8fH
 D$8ff
 D$8r|
@@ -6190,6 +6195,7 @@ D$@+C
 D$@9D$Xt
 D$@9] ~V3
 D$@;0} H
+D$@;D$8
 D$@;V 
 D$@< u
 D$@@8
@@ -6199,7 +6205,6 @@ D$@A;
 D$@A;^
 D$@Ai
 D$@D;E
-D$@D;G
 D$@E3
 D$@H+
 D$@H9
@@ -6207,6 +6212,7 @@ D$@H;
 D$@H;G
 D$@Hc
 D$@Hk
+D$@I;
 D$@Ic
 D$@IcF
 D$@L;
@@ -6214,9 +6220,10 @@ D$@L;u@
 D$@Lc
 D$@Xu
 D$@csm
+D$@e}<[H
+D$@f;
 D$@fA
 D$@fD
-D$@fI
 D$@fff
 D$@mp
 D$@r|
@@ -6227,7 +6234,9 @@ D$D+D$T
 D$D+D$THc
 D$D9D$\u
 D$DA+
+D$DA9v
 D$DE3
+D$DH;
 D$DHc
 D$H8L$Hu
 D$H;D$`
@@ -6236,6 +6245,7 @@ D$HA;M
 D$HD8
 D$HD:
 D$HD;
+D$HD;G
 D$HE3
 D$HH;
 D$HHc
@@ -6250,13 +6260,14 @@ D$HMc
 D$H\A
 D$HfA
 D$HfH
+D$HfI
 D$Ht)H
+D$Lff
 D$P I
 D$P"ZF
 D$P8B
 D$P9A
 D$P;C
-D$P;E
 D$P;Fpu
 D$P;L$H
 D$P;L$L
@@ -6267,7 +6278,6 @@ D$PAi
 D$PD;
 D$PD;{
 D$PE3
-D$PE;
 D$PE;O
 D$PH+
 D$PH9C0
@@ -6279,6 +6289,7 @@ D$PL;
 D$PLc
 D$PN6
 D$P]:
+D$Pf;
 D$PfD
 D$Pk@_aH
 D$Pmp
@@ -6287,14 +6298,13 @@ D$Pt(
 D$QfD
 D$RfD
 D$TA;
-D$TD;
 D$TE3
 D$THcC`H
 D$X8]
 D$X;u
 D$XA+
 D$XA;
-D$XB94(
+D$XB;D+
 D$XD8p
 D$XD90}
 D$XE3
@@ -6307,10 +6317,11 @@ D$XKc
 D$XL+
 D$XL;
 D$XMc
-D$\A;
+D$Xf;
 D$\E3
 D$\Hc
 D$\Hk
+D$\L+
 D$`9D$Hs$H
 D$`@2
 D$`A+
@@ -6331,18 +6342,20 @@ D$`L+
 D$`L;
 D$`LcL$lHcT$xHcL$tH
 D$`Ll
+D$`f;
+D$`fA;
 D$`fD
 D$`r|
 D$`xxx
 D$dA;
-D$dD;
 D$dE3
-D$dL+
 D$dLc
 D$dfff
+D$h;E
 D$h@2
 D$hA+
 D$hA;
+D$hA;<$
 D$hD;
 D$hE3
 D$hE9 ud
@@ -6352,6 +6365,7 @@ D$hHc
 D$hI;
 D$hIc
 D$hL;
+D$hfA;
 D$hr!
 D$hu,H
 D$hu4D
@@ -6363,7 +6377,6 @@ D$p;G
 D$p<L{
 D$p@:
 D$pA;
-D$pA;F
 D$pD9
 D$pD;
 D$pE3
@@ -6377,9 +6390,11 @@ D$pIc
 D$pL;
 D$pLc
 D$pMc
+D$pfA;
 D$pfD
 D$pxH
 D$qE3
+D$qHc
 D$qu	D:
 D$tA9D$|
 D$tE3
@@ -6404,6 +6419,7 @@ D$xfD
 D$xfff
 D$xtN
 D$|A;D$pr
+D$|D9
 D$|fE
 D$|v5
 D( H9D
@@ -6433,26 +6449,50 @@ D24X8
 D24X8_SHADOW
 D8#t*
 D8$8u
-D8%Y1
-D8%iv
-D8%k2
+D8%O3
 D8&t!
 D8&t4H
 D8't(Ic
 D8't)
 D8*u A
-D8-F`T
-D8-w_T
+D8-"e
+D8-$o
+D8-,m
+D8-/f
+D8-/n
+D8-1p
+D8-1u
+D8-2s
+D8-3r
+D8-4x
+D8-5t
+D8-5w
+D8-7q
+D8-8g
+D8-:v
+D8-=y
+D8-C~
+D8-F{
+D8-Gz
+D8-Hh
+D8-H|
+D8-J}
+D8-Qi
+D8-bj
+D8-ok
+D8-zo
+D8-|l
 D80t.
 D82u&H
 D84;u
-D85'c
-D85sc
 D88Ht!
 D88Hte
 D8:u7H
 D8<;u
-D8=wn
+D8=!J
+D8=75
+D8=FH
+D8=`'
 D8?tnH
 D8D$)t)f
 D8D$9t
@@ -6489,7 +6529,6 @@ D8d$8t
 D8d$H
 D8d$Ht
 D8d$ht
-D8e u7
 D8l$ 
 D8l$@t
 D8l$`
@@ -6505,22 +6544,25 @@ D8s`A
 D8s`D
 D8t$8t
 D8t$Ht
-D8t$`u2
 D8t$d
 D8u0t"A
 D8{&t
-D8|$ItI
+D8|$Ati
+D8|$L
 D8|$Pt
 D8|00t
 D8|80t
+D8}Ht
+D8}Htf
 D8}ht
 D9	~oH
 D9"}+
-D9&~;
+D9&~5f
 D9'u$H
-D9+~#
+D9*~;Hc
+D9+~!H
 D9,2H
-D9-|`T
+D9-tfT
 D9.ue
 D9/~ML
 D90u	9X
@@ -6528,6 +6570,7 @@ D91~YH
 D97tuD
 D98Ht;H
 D98tT
+D9=CgT
 D9A t
 D9A ~
 D9B,t
@@ -6539,25 +6582,27 @@ D9H$t
 D9I$t
 D9IL}sL
 D9Ip~
-D9I|tYH
+D9IttYH
 D9J,w
 D9K$~iE3
 D9L$h~L
 D9O@~(L
-D9Pxu
+D9Ppu
 D9Q$t
 D9T$8
 D9TA;
-D9`xu
+D9`pu
 D9c t
 D9d$ ~-I
 D9d$(u
 D9d$0
 D9d$0t
+D9d$<u:
 D9d$P~=
 D9d$Xt=Hc
 D9d$`
-D9e4tEA
+D9eP~
+D9ettEA
 D9f ~CI
 D9f ~PM
 D9f ~dI
@@ -6580,7 +6625,6 @@ D9s,u
 D9t$ t
 D9t$0ui
 D9t$0um
-D9t$@
 D9t$X
 D9t. 
 D9w u
@@ -6589,17 +6633,17 @@ D9wXt.H
 D9wXt/H
 D9wXt0H
 D9x(uiE
+D9xH~YE
 D9xXL
-D9xxu
+D9xpu
 D9{(u
 D9|$ 
 D9|$x}
 D9|5Lt
-D:5	jq
-D:5*kq
-D:5}kq
-D;%-BT
+D:- >i
+D:-BAi
 D;09F0t5A
+D;2u\;
 D;8}aH
 D;B s
 D;BLu
@@ -6613,8 +6657,7 @@ D;D$8|
 D;D$8};J
 D;D$Hu
 D;D$x
-D;E8u
-D;EHu
+D;E@u
 D;EPu
 D;G8|
 D;I8t
@@ -6625,15 +6668,15 @@ D;L$`~!Hc
 D;L$d~
 D;L$l~
 D;L$t~ZH
+D;M@u
+D;M`u
 D;O u=
 D;T$8}
 D;T$Xu
 D;[ D
 D;[$|
 D;\$ v
-D;d$0
 D;d$Pu 
-D;d$T
 D;d$X
 D;e8u
 D;fh|8I
@@ -6646,17 +6689,16 @@ D;l$(t{A
 D;l$0
 D;l$8
 D;l$8u!
+D;l$`u
 D;l$pu
 D;mpu
 D;o }
 D;s u
-D;s ~
 D;s(u
 D;s8|
 D;sXu
 D;t$(r
 D;t$P
-D;t$Pu
 D;t$du
 D;t$x~1
 D;u(u
@@ -6668,6 +6710,7 @@ D;wXu
 D;z,u
 D;z,v
 D;z,v(A
+D;{ ~
 D;{8|
 D;{Lr
 D;|$0
@@ -6680,6 +6723,7 @@ D;|$P
 D;|$l
 D;|$t
 D;|$xu
+D;}(u
 D;}ou 
 D<P0I
 D<QD+
@@ -6738,7 +6782,6 @@ DateTime
 Dd$pH
 Dd$pL
 Deactivate all instances
-DebugBreak
 DebugTextureInfo001
 DebugVisGeometry
 December
@@ -6762,6 +6805,7 @@ DefaultScale
 DefaultSolidEntity
 DefaultTextureScale
 DefaultToVr
+Default_Keys
 Define Arithmetic Table 0x%02x: 0x%02x
 Define Huffman Table 0x%02x
 Define Quantization Table %d  precision %d
@@ -6783,7 +6827,6 @@ Derived must implement
 Description
 DestroyThreadPool
 DetailDistance
-DevMsg
 DevShader
 Developer
 DeveloperConsole
@@ -6989,7 +7032,6 @@ DmeVertexDataBase
 DmeVertexDeltaData
 DmeXSIMakefile
 Do not load vmf files in hammer, import to a vmap first!
-DoIncludeScript
 DoTransform
 DocumentName
 Done (%2.1f sec: %2.1fms read, %2.1fms write %.1fmb).
@@ -7063,6 +7105,7 @@ E9&t+A
 E9.~>I
 E9/t+A
 E94$u
+E9l$,
 E9l$H
 E9u0~VK
 E:<0uhA
@@ -7075,13 +7118,14 @@ E;E0|
 E;F$w
 E;H s
 E;P sSI
+E;t$,
 E;|$4sP
 E;~(H
 E>nEA
 E@9GXu7Lc
 E@A8_
 E@t	H
-ED$lfA
+ED$hfA
 EHH+E@H
 EHH9uPt&Lc
 EHH9uPt/Lc
@@ -7106,6 +7150,7 @@ ENTITY_NOT_DORMANT
 ENTITY_SUSPENDED
 EP*?@
 EPHc@
+EP~#b
 ERROR calling AddSystem( "vr" )! SteamVR not loaded!
 ERROR loading vr.dll!
 ERROR!
@@ -7149,7 +7194,6 @@ EXRReadFile() - G channel not found!
 EXRReadFile() - R channel not found!
 EXfD9$xt?H
 E\$0H
-E_;Eo~
 E`+UX
 E`Ic4$
 E`Lc|$@L
@@ -7176,6 +7220,7 @@ Egfff
 Egv3A
 Eh+U`
 Eh;D$pu
+Ehammer_parallel_procedural_update
 Element uses unknown element type %s
 EmbeddedProperty.angles
 EmbeddedProperty.editor_only
@@ -7215,7 +7260,6 @@ Entity System
 Entity lump compiler was not passed a entity_lump_pointer!
 Entity: %s
 EntityDormancyType_t
-EntityFramework
 EntityIOConnectionData_t
 EntityIOConnectionDesc_t
 EntityIOConnection_t
@@ -7227,7 +7271,6 @@ EntityLumpFlags_t
 EntityUtils
 EnumSystemLocalesEx
 EnumSystemLocalesW
-EnvironmentMapBuilder_001
 Eo9GXu6Lc
 EoD;u
 EoIc8A;x
@@ -7255,10 +7298,10 @@ Error importing vmt shader parameter %s
 Error in .VMT file: error parsing vector element "%s" in "%s"
 Error in the undo system! Grab a programmer!
 Error including file: %s
+Error loading base data: "%s"
 Error loading image file header %s
 Error loading kv3 data: "%s"
-Error loading normal data: "%s"
-Error loading staging data: "%s"
+Error loading optional data (%s): "%s"
 Error loading static combo data from VCS file!
 Error opening image file %s
 Error parsing class '%s'
@@ -7272,7 +7315,6 @@ Error reading in array attribute "%s" element %d
 Error reading sub-version number.
 Error reading texture compile settings file "%s"!
 Error resolving symbol "%s"
-Error running script named %s
 Error writing KV3 data: "%s"
 Error writing TIFF header
 Error writing data for field "%s"
@@ -7291,7 +7333,6 @@ Error, duplicate class '%s'. Use @OverrideClass to add keys to an existing class
 Error: Bad resource reference "%s"!
 Error: Missing dependency: %s (%s).
 Error: failed to write SHT - the total sequence length of sequence %d was 0!
-Es\nK
 EstimateStripByteCounts
 Et$$E
 Et$hL
@@ -7355,10 +7396,8 @@ EventTileGridTileSetMapChanged_t
 EventTileSetModified_t
 Ew+Uo
 EwLcm
-Exceeded limit of number of vpk files supported (%d)!
 Exceeded size limit while expanding chunk
 Exclude from VIS
-Execute a script (internal)
 ExecuteUmsThread
 Existing file invalid - Additional dependency mismatch
 Existing file invalid - Argument dependency mismatch
@@ -7397,7 +7436,11 @@ Expected string (member name) or '}'
 Expected string literal for include directive
 Expected token
 Expected type of next member
+Expected value after =
 Expected value or ']'
+Expected value.
+Expected {
+Expected }
 Expecting %s
 Expecting '('
 Expecting '(' <edgesize> ',' <offsetx> ',' <offsety> ',' <pickheight> ')'
@@ -7420,8 +7463,6 @@ Expecting 'output'
 Expecting '{', didn't find it!
 Expecting '}', didn't find it!
 Expecting <metadata keyname>
-Expecting <subtype identifier> after ':'
-Expecting <type identifier>
 Expecting a string
 Expecting array attribute value, didn't find it!
 Expecting attribute name, didn't find it!
@@ -7433,6 +7474,7 @@ Expecting compressed combo data
 Expecting element reference, didn't find it!
 Expecting element type name, didn't find it!
 Expecting element type, didn't find it!
+Expecting group name following @entitygroup
 Expecting identifier
 Expecting identifier (variable name)
 Expecting integers 'r' 'g' 'b'
@@ -7463,10 +7505,10 @@ Extraneous token
 F +F(
 F 9F(r
 F @8{ru
-F A9E
+F A9D$
 F H;G t
 F"9D9
-F$A9E
+F$A9D$
 F()h(H
 F(@8{Yu)H
 F(D)p(H
@@ -7557,6 +7599,7 @@ FIELD_VMATRIX_WORLDSPACE
 FIELD_VOID
 FLOATLITERAL
 FLOATSUFFIX
+F_TEXTURE_FORMAT
 Face %d, %dx%d
 Face did not have enough at least 3 vertices.
 Face specified a vertex that had multiple open edges and did not connect to and existing edge.
@@ -7579,6 +7622,7 @@ Failed to compile resource manifest %s
 Failed to compute channel layout.
 Failed to convert KV1 sound script '%s' to KV3: %s
 Failed to convert KV3 to string; error: %s
+Failed to convert compressed sky texture: %s
 Failed to create resource-type compiler "%s"
 Failed to create resource-type compiler "%s" from %s in %s.dll
 Failed to create temporary file %s
@@ -7593,7 +7637,6 @@ Failed to find the Hammer block in the gameinfo.gi file!
 Failed to get search path "%s"
 Failed to grok "%s" for computing VPK name
 Failed to grok %s in %s for zip to VPK %s
-Failed to include script "%s"
 Failed to initialize video!
 Failed to load %s: %s
 Failed to load FGD file '%s'.
@@ -7603,12 +7646,10 @@ Failed to load map "%s"!
 Failed to load or init SteamVR!
 Failed to load rendersystemvulkan.dll.  Likely missing Vulkan loader (vulkan-1.dll) that is installed by drivers supporting Vulkan.  Falling back to DX9.
 Failed to load required extra system "%s" from %s in %s.dll
-Failed to load scripted entity classes
 Failed to load vpost file: '%s'
 Failed to parse channel info.
 Failed to read %d bytes
 Failed to read attribute.
-Failed to run entity framework script
 Failed to serialize KV3 block: %s
 Failed to write nav dbg file "%s"!
 Failed to write temporary vpk output file "%s"!
@@ -7659,7 +7700,6 @@ Fingers_R
 Finished %d Blocks out of %d
 Fire Completion
 Fire Trigger
-Fivtr
 Fixup Entity Names By Default
 Fixup entity names
 FixupResourceName: Illegal full path passed in ("%s")!
@@ -7716,6 +7756,7 @@ Found file to force dirty %s
 Fractional sampling not implemented yet
 Frame %d, Face %d, %dx%d
 Frame %d, Face %d, %dx%d, %lldms
+Free space available %s bytes
 FreeByteCounts
 FreeEnvironmentStringsW
 FreeLibrary
@@ -7749,11 +7790,15 @@ GD$(H
 GD$8A
 GD$8H
 GD$8I
+GD$8L
 GD$HA
+GD$HD
 GD$HH
 GD$HI
 GD$XA
+GD$XE3
 GD$XH
+GD$hD
 GD$xH
 GGXCubeMapBlur
 GGXCubeMapBlur_DestCubemapArray.vtex
@@ -7763,6 +7808,8 @@ GGXMipBlur
 GGXMipBlurRT.vtex
 GHHcH@
 GL$8A
+GL$8E3
+GL$8H
 GL$8I
 GL$8L
 GL$HD
@@ -7773,21 +7820,33 @@ GL$hA
 GL$xH
 GMHE3
 GPSIFDOffset
-GPu)H
 GT$(@
+GT$(D
+GT$(E3
 GT$(H
 GT$(I
 GT$0H
 GT$8A
+GT$8E3
 GT$8H
+GT$8I
+GT$8L
 GT$HA
 GT$HD
 GT$HH
+GT$HLc
+GT$XD8
+GT$XH
+GT$XI
 GT$XL
+GT$hA
 GT$hD
+GT$hE3
 GT$hH
+GT$hI
 GT$xH
 GT$xI
+GU8E3
 G\$(H
 G\$0H
 G\$8A
@@ -7795,13 +7854,14 @@ G\$8H
 G\$HH
 G\$XH
 G\$XL
+G\$hH
 G\$xD
 G\$xE
 G\$xH
 G\$xI
 G\9C\
+G^r	A
 Game info file does not specify a steam app id!
-GameData
 GameFeatureSet
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -7853,6 +7913,7 @@ GetCurrentThreadId
 GetCurrentUmsThread
 GetDefaultMiniDumpTypeFlags
 GetDesktopWindow
+GetDiskFreeSpaceExA
 GetDmElementTypeSymbolMap
 GetDotaSkyMaterialHandle
 GetEnvironmentStringsW
@@ -7921,10 +7982,10 @@ GetUmsCompletionListEvent
 GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserObjectInformationW
-GetValue
 GetVersionExW
 GetWin32ConsoleCursorColumnIndex
 Gl$(H
+Gl$XH
 Global
 GlobalAlloc
 GlobalLock
@@ -7932,6 +7993,7 @@ GlobalSize
 GlobalUnlock
 Global\vwatch_mutex
 Global\vwatch_shared_data
+Gpu)H
 GradientFog
 Graphs
 Grass Tile
@@ -7959,15 +8021,21 @@ Group4Options
 GroupCarve
 Gt$8A
 Gt$8H
+Gt$8L
 Gt$HH
-Gt$XI
 Gt$hH
+Gt$x3
+Gt$xE3
 G|$8E
 G|$8H
+G|$8L
+G|$HD
 G|$HH
 G|$hH
+G|$hL
 G|$xH
 G|3F|%
+G}8E3
 H SVH
 H SVWH
 H UAUAVAWH
@@ -7975,6 +8043,7 @@ H UAWH
 H USH
 H USVWATAUAVH
 H UVAUAVH
+H WATAUAVAWH
 H!D$ E
 H!T$0D
 H!\$(L
@@ -8003,10 +8072,8 @@ H0Hc\$p3
 H3\$HH
 H9(t{A
 H9+uHH
-H957mP
-H95Fq
-H95[mP
-H95oa
+H9-9O
+H9-^gV
 H97t<
 H98t%H
 H98tPA
@@ -8015,8 +8082,7 @@ H98t|A
 H98u	H
 H99u0H
 H99u{
-H9=&S
-H9=.T
+H9=V!
 H9A u
 H9A(s
 H9A(u
@@ -8063,8 +8129,7 @@ H9khH
 H9l$ t
 H9l$Ht
 H9l$Xt
-H9l$pt
-H9l$xt
+H9l$`tj
 H9qPu6
 H9s H
 H9s8H
@@ -8072,8 +8137,7 @@ H9s@H
 H9s@u
 H9sHH
 H9sHu>L
-H9sxu
-H9t$ t
+H9spu
 H9t$0t
 H9t$8t
 H9t$Ht
@@ -8085,11 +8149,12 @@ H9upu@
 H9w t
 H9w t#
 H9wPH
-H9xxu
+H9xpu
 H9y tYH
 H9|$ t
 H9|$(t
 H9|$0t
+H9|$8t
 H9|$@t
 H9|$Ht
 H9~Pu
@@ -8107,6 +8172,7 @@ H;D$h
 H;D$huyI
 H;D$puk
 H;Ehu
+H;H v
 H;L$x
 H;T$(
 H;T$`}9H
@@ -8127,7 +8193,6 @@ H;t$8|
 H;t$@|
 H;t$H
 H;t$H|
-H;t$P
 H;t$P|
 H;t$X
 H;ug|
@@ -8147,6 +8212,7 @@ H;}gu
 H;}o|
 H=vcssuOH
 H=vjs
+H=vmdl
 H=vmdlu
 H=vpdi
 H=vxmlu7H
@@ -8156,6 +8222,7 @@ HA]A\H
 HA]A\][
 HA]A\_[
 HA]_][
+HA^A\_^
 HA^A]A\]
 HA^A]_^][
 HA^^][
@@ -8233,8 +8300,8 @@ HcA0E3
 HcA0H
 HcA0L
 HcAPH
+HcAp;
 HcApD;
-HcAx;
 HcAxD
 HcC H
 HcC$H
@@ -8261,6 +8328,7 @@ HcD$$
 HcD$$HcL$ H
 HcD$(
 HcD$(A
+HcD$(E
 HcD$(H
 HcD$,
 HcD$,A
@@ -8278,14 +8346,16 @@ HcD$8HcT$4I
 HcD$<
 HcD$@
 HcD$@3
-HcD$@HcT$PI
+HcD$@HcT$TI
 HcD$@L
+HcD$DHcT$@I
 HcD$HE+
 HcD$HH
 HcD$HHcU
 HcD$P3
 HcD$PA
 HcD$PH
+HcD$PHcT$LI
 HcD$PHk
 HcD$PI
 HcD$PL
@@ -8294,7 +8364,6 @@ HcD$X
 HcD$XA
 HcD$XH
 HcD$XL
-HcD$`E3
 HcD$`H
 HcD$`Hk
 HcD$`I
@@ -8315,13 +8384,15 @@ HcE H
 HcE(H
 HcE0H
 HcE0L;
-HcE8L
 HcE@H
+HcE@L
+HcEHE3
 HcEHL
 HcEPI
 HcEPL
 HcETH
 HcETL
+HcE`E3
 HcEgD
 HcEhH
 HcEoA
@@ -8355,6 +8426,7 @@ HcK8H
 HcKHE3
 HcKh;
 HcKhH
+HcKpH
 HcKx;
 HcKxH
 HcL$ 
@@ -8384,6 +8456,7 @@ HcL$X
 HcL$XA
 HcL$XH
 HcL$\D+
+HcL$`A
 HcL$`D+
 HcL$`I;
 HcL$dD+
@@ -8413,11 +8486,10 @@ HcT$ H
 HcT$0H
 HcT$@H
 HcT$@Hk
-HcT$@I
 HcT$@L
 HcT$DHcL$PIc
 HcT$HA
-HcT$LL
+HcT$LI
 HcT$PH
 HcT$XH
 HcT$XLc
@@ -8430,13 +8502,16 @@ HcU 3
 HcU H
 HcU'H
 HcU(A
+HcU(H
 HcU0H
-HcU8H
+HcU0L
+HcU@H
 HcUHH
+HcU`H
 HcUgI
-HcUhLc
 HcUoH
 HcUpH
+HcUxLc
 HcV0H
 HcW ;
 HcWPA
@@ -8444,7 +8519,6 @@ HcWxL
 HcX A
 HcX8A
 HcXPH
-HcY H
 HcY\E
 HcYhI
 HcYxM
@@ -8492,6 +8566,7 @@ Hc]wL
 Hc]wL;
 Hc]x;
 Hc^8H
+Hc^PIcO
 Hc^`;^pu
 Hc_ ;_0u
 Hc_0;_@u
@@ -8557,12 +8632,12 @@ Hct$0Mc4$H
 Hct$8E3
 Hct$8H
 Hct$@
-Hct$H
 Hct$H3
 Hct$PD
 Hct$`D
 Hct$`H
 Hct$hH
+Hct$p3
 Hct$tH
 Hcu'H
 HcuhH
@@ -8572,6 +8647,7 @@ Hcw8;wHu
 Hcw@;wPu
 HcwH;wXu
 Hcx E
+Hcy H
 Hcy0L
 HcyxE
 HcyxHcJ
@@ -8617,6 +8693,7 @@ Hc~,H
 Hc~@H
 Hc~X%
 Hc~XH
+Hc~`;~pu
 Hc~hH
 Hc~lH
 Hc~pH
@@ -8638,6 +8715,7 @@ HostComputer
 HostStateMgr001
 Ht)I;
 Ht4<Xu[
+Hu';n
 Hue/Saturation %d
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
@@ -8705,15 +8783,12 @@ Ic>A;~
 Ic?A;
 Ic@4=
 IcA(H
-IcD$ D
 IcE<H
 IcExH
 IcF A9E un
 IcF0;
 IcF0A
-IcFHE3
 IcFTH
-IcF`E3
 IcG A9F ui
 IcG A;F 
 IcI A
@@ -8726,14 +8801,14 @@ IcVpH
 IcW,H
 IcXpM
 Ic] H
-Ic]PIcO
 Ic^ A;^0u
 Ic_ H
 Ic_8H
 Icn HcL
 IcuHI
+IcuhH
 Icw H
-Ic}hH
+Ic|$`+
 Ic~ H
 Ic~(H
 Ic~(M
@@ -8779,8 +8854,6 @@ Improper call to JPEG library in state %d
 Improper number of values for crop coordinates. Need 4 in the format of ( xstart, ystart, xend, yend )!
 In-Memory-Buffer
 Inappropriate photometric interpretation %d for SGILog compression; %s
-IncludeScript Warning - Script %s either missing or empty
-IncludeScript stack overflow
 Incoming Tangent Type
 Incomplete compressed datastream
 Inconsistent progression sequence for component %d coefficient %d
@@ -8822,7 +8895,6 @@ Initial Scalar Noise
 Initial Velocity Noise
 Initial Window
 InitialInputAsTexture
-Initialize with number of outputs
 InitializeConditionVariable
 InitializeCriticalSectionAndSpinCount
 InitializeCriticalSectionEx
@@ -8974,7 +9046,7 @@ IsValidLocaleName
 ItemFile
 Items
 ItemsFiles
-Iv[A$
+J/*,)
 J@UE3
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
 JFIF extension marker: JPEG-compressed thumbnail image, length %u
@@ -9012,6 +9084,7 @@ KERNEL32.dll
 KV Conditional Evaluation Error
 KV3 Compiler Version
 KV3 syntax error: %s
+KV3 syntax error: %s while parsing @entitygroup %s
 KX9KT~
 KXt'A
 KXt*A
@@ -9025,10 +9098,10 @@ KeyValues Error: %s in file %s
 KeyValues2
 KeyValues2 (flat)
 KeyValues2 (no ids)
+KeyValues3
 KeyValues: Can't serialize attribute of type %s into KeyValues files!
 KeyValues: Element uses unknown element type %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValuesSystem
 Kochanek-Bartels
 Kochanek-Bartels Early
@@ -9040,8 +9113,8 @@ L!|$(L!
 L$ ;1}WH
 L$ A;
 L$ A;Q
-L$ ATAUAVAWH
 L$ D;E
+L$ E2
 L$ E3
 L$ E;
 L$ E;A
@@ -9056,7 +9129,10 @@ L$ Jc
 L$ L;
 L$ Lc
 L$ Lc9H
+L$ SATAUAVH
 L$ SATAUAWH
+L$ SATAUH
+L$ SAUAVAWH
 L$ SH
 L$ SUATAVAWH
 L$ SUAVAWH
@@ -9087,6 +9163,7 @@ L$ UWATAVAWH
 L$ UWAUAVAWH
 L$ VAUAVAWH
 L$ WATAUAVAWH
+L$ WATAVH
 L$ WATAWH
 L$ WATH
 L$ WH
@@ -9095,6 +9172,7 @@ L$ fI
 L$ iM
 L$$D;
 L$$E+
+L$$E3
 L$$Ic
 L$$Ik
 L$&@8t$&t0@8q
@@ -9118,7 +9196,7 @@ L$(fI
 L$(iM
 L$(t'A
 L$,=)#
-L$,fA
+L$,E3
 L$0A;
 L$0D3
 L$0D;
@@ -9135,6 +9213,7 @@ L$0Ic
 L$0L;
 L$0Lc
 L$0M;
+L$0fA;
 L$0fH
 L$0fI
 L$0fff
@@ -9144,7 +9223,6 @@ L$4H9T$(
 L$4H;
 L$8+E$Hc
 L$8;L$0
-L$8A3
 L$8A;
 L$8D;}`
 L$8E3
@@ -9161,11 +9239,11 @@ L$8fA
 L$9D:
 L$9E8
 L$:E3
+L$@;D$0
 L$@;|
 L$@;}
 L$@A+N|+
 L$@A9	
-L$@A;
 L$@A;l$
 L$@D9
 L$@D9c<
@@ -9194,10 +9272,9 @@ L$H;H(s	D
 L$H;H8s	D
 L$HA+
 L$HA;
+L$HD+
 L$HD;
-L$HD;D$0
 L$HE3
-L$HE;
 L$HH3
 L$HH;
 L$HHc
@@ -9205,36 +9282,32 @@ L$HI;
 L$HLc
 L$HMc
 L$Hff
-L$LA;
 L$P+L$8
 L$P+L$H
 L$PA;
 L$PA;^
-L$PD;
 L$PE3
 L$PE;
 L$PH3
 L$PHc
 L$PHcl$P
 L$PI;
-L$PLi
 L$PfD
 L$PfH
-L$Pu/A
+L$PtrL
+L$Pu.
 L$Pu0
+L$PuG
 L$QD:
 L$QE8
 L$TD;
 L$TE3
-L$X;V
 L$XA;
 L$XB;
-L$XD+UxI
 L$XE3
 L$XE;e$
 L$XH9
 L$XH99t
-L$XH;
 L$XH;M
 L$XHc
 L$XHcT$`
@@ -9242,10 +9315,11 @@ L$XfD
 L$\;^
 L$\H+
 L$`A;
+L$`D9,
 L$`D90
+L$`D9F
 L$`D;
-L$`D;N
-L$`D;O
+L$`D;F
 L$`D;ep
 L$`D;u
 L$`E3
@@ -9261,21 +9335,20 @@ L$`fD
 L$`fH
 L$`fff
 L$`tcA
+L$aE3
 L$dA+
 L$dA;^
 L$dIc
-L$hA;
 L$hD;
 L$hE3
-L$hHc
 L$hI;
 L$hIc
 L$hLc
+L$hfA;
 L$hff
 L$iA:
 L$iD:
 L$iu1B
-L$lD;
 L$p8]
 L$p9M
 L$p;U
@@ -9294,12 +9367,12 @@ L$pH;M
 L$pI;
 L$pJc
 L$pLc
-L$pfA;
 L$qA:
 L$qF8
 L$tE;
 L$tHc
 L$tLc3
+L$xA;
 L$xA;A8}
 L$xA;Y8}
 L$xAi	
@@ -9311,7 +9384,7 @@ L$xL9
 L$xLc
 L$xfA;
 L$xfff
-L$xu$H
+L$xu!H
 L$|E3
 L$|fA
 L(:A:
@@ -9328,15 +9401,11 @@ L0hE3
 L1HthD
 L2DHc
 L80Hc3+
-L9%XUo
 L9(uP
 L9*u&
-L9-PH
-L9-^yV
 L91uAH
 L93u_
 L93uc
-L95RlF
 L9<8u7
 L9Ahs
 L9B A
@@ -9346,7 +9415,6 @@ L9HtzE
 L9`8tA
 L9d$ t
 L9d$0t
-L9d$8t
 L9d$Ht
 L9d$Pt
 L9d$Xt
@@ -9354,30 +9422,27 @@ L9d$pt
 L9d$x
 L9e(t	H
 L9e0t	H
-L9e0tjH
+L9ewt	H
 L9g@u=
-L9l$ 
 L9l$ t
 L9l$(t4H
-L9l$0
 L9l$0t
 L9l$`t
 L9m(t	H
 L9m0t	H
 L9mHt	H
 L9mXt	H
+L9mgt
+L9mgt	H
 L9mot	H
 L9mpt	H
 L9o(H
 L9t$(t
-L9t$0
-L9t$0t
-L9t$8
-L9t$8t
 L9t$@t
 L9t$`t
 L9u t	H
-L9u8tIH
+L9u't	H
+L9u8tJH
 L9ugt	H
 L9w t#H
 L9{ H
@@ -9387,17 +9452,13 @@ L9{xH
 L9|$0t
 L9|$8
 L9|$8t
-L9|$@t
-L9|$@taH
+L9|$Ht
 L9|$Pt
-L9|$Xt
 L9|$pt
-L9}8t	H
 L9}@t	H
 L9}gt	H
 L9~ t
 L9~PtgL9~`taL9~ht[H
-L;5 nP
 L;6uk
 L;AHM
 L;D$8L
@@ -9409,8 +9470,10 @@ L;d$(
 L;d$8|
 L;d$@
 L;d$H
+L;d$P
 L;d$x
 L;l$ 
+L;l$H
 L;l$Ht
 L;l$p
 L;n8I
@@ -9491,7 +9554,6 @@ Lc3Hc
 Lc3HcL8
 Lc3HcL88I
 Lc3HcL8HI
-Lc5+G
 Lc6D;v
 Lc7D;w
 Lc9E3
@@ -9510,10 +9572,10 @@ LcC,I
 LcCLC
 LcCP3
 LcCPH
-LcD$ J
 LcD$ Lc
 LcD$(L
 LcD$03
+LcD$0J
 LcD$DH
 LcD$P
 LcD$PH
@@ -9523,9 +9585,8 @@ LcD$ht
 LcD$pI
 LcD$|3
 LcE I
-LcE(L
-LcE8M
-LcE@L
+LcE0H
+LcE@H
 LcETH
 LcEoH
 LcEwH
@@ -9543,6 +9604,7 @@ LcK\LcU
 LcL$$H
 LcL$hA
 LcL$pLc
+LcMPI
 LcMpD
 LcQ|M+
 LcT$H
@@ -9562,7 +9624,6 @@ Lcah3
 Lcd$ 
 Lcd$ A
 Lcd$ E
-Lcd$8E2
 Lcd$8H
 Lcd$HLct$`A
 Lcd$pH
@@ -9577,6 +9638,7 @@ Lcg`L
 LckHL
 Lcl$ A
 Lcl$(3
+Lcl$8E2
 Lcl$@3
 Lcl$PA
 Lcl$XIc1A
@@ -9599,6 +9661,7 @@ Lct$@
 Lct$@A
 Lct$@I
 Lct$H3
+Lct$HB
 Lct$HM
 Lct$P
 Lct$TE3
@@ -9608,8 +9671,8 @@ Lct$dM
 Lct$h3
 Lct$hD
 Lct$pM
-Lct$xA
 Lct$xI
+Lcu$H
 LcuP3
 LcuPE
 Lcv D;v$
@@ -9653,6 +9716,7 @@ Lc|$@Hcl$ L
 Lc|$@M
 Lc|$P
 Lc|$`E
+Lc|$`I
 Lc|$hD
 Lc|$hH
 Lc|$hI
@@ -9690,7 +9754,9 @@ LightingBasis
 Lightmap Space
 LightmapUV
 LightmapUVW
+Line %d at "%s": 
 Line %d at "%s": %s
+Line %d: 
 Line %d: %s
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
@@ -9707,14 +9773,12 @@ LipUpV
 LipsV
 Lj[;>
 Lkh9Fgc^A
-Lnp'w
 Load Default Positions
 Load at runtime
 Load if nested
 LoadAtiCompress
 LoadEXRImageFromMemory failed! Error message: %s
 LoadEXRImageFromMemory() failed! Error message: %s
-LoadEntityClasses
 LoadFromBuffer: expected '{', found '%s'
 LoadFromInMemoryEXR( %s ) failed.
 LoadISPCTexComp
@@ -9722,14 +9786,12 @@ LoadKV3Object error: %s
 LoadLibraryA
 LoadLibraryExW
 LoadLibraryW
-LoadScriptEntities
 LoadVfxAndFeatureCombo(1420): Error opening shader "%s" from mod "%s"
 LoadVfxAndFeatureCombo(1467): ERROR! Can't load vfx_dx dll, dynamic shader compile failed loading!
 LoadVfxAndFeatureCombo(1492): Error calling GetAllShaderVariables() on %s!
 LoadVfxAndFeatureCombo(1504): Error adding variables in %s!
 Loading map: %s
 Loading prefab: %s
-Loading scripted entity classes...
 LocalContextCacheSize
 LocaleNameToLCID
 Localize_001
@@ -9761,13 +9823,13 @@ Look At
 Lookup Table %d
 Loop Point
 LrwcE
+Lu(;{
 M H1E
 M fff
 M,t]Hc
 M98t^M
 M99tIM
 M9>t(I
-M9e H
 M9l$ u@I
 M9}ht
 M9~ I
@@ -9815,7 +9877,6 @@ MX9OX
 MXD9	t
 Main 3D Window
 Make sheet file
-MakeStringToken
 MakerNoteSafety
 Malformed fieldName in mesh: %s
 Malformed iCCP chunk
@@ -9840,8 +9901,6 @@ MapNode
 MapPoint
 MapViewOfFile
 MapVisibilityV001RESOURCE_TYPE_COMPILER_002
-Mar 20 2020
-Mar 22 2020
 March
 MaskedAreas
 Match Particle Velocities
@@ -9875,7 +9934,7 @@ MaxPolicyElementKey
 MaxSampleValue
 Maximum Size Scale
 Maximum supported image dimension is %u pixels
-MbP?h
+May 14 2020
 Mbp?333333
 Mc$$A
 Mc&E;f
@@ -9902,7 +9961,8 @@ McNpD
 McOpE3
 Mce E;e$
 McgPM
-Mcl$ E;l$0u
+Mcn D
+Mcn E;n0u
 Mcn@3
 McsLA
 Mct$ A
@@ -9912,6 +9972,7 @@ MemAlloc_FreeFunc
 MemAlloc_ReallocFunc
 MemAlloc_StrDupWrapperFunc
 Memory allocation failed while processing sCAL
+MergeAdditionalOptionalSet
 MergeMesh
 MergeVertices
 MergeVerticesWithinDistance
@@ -10051,7 +10112,6 @@ NV_RAWZ
 NX9KXuRH
 Name					Count		Particle Count
 NamedPaths
-NativeFunctions
 Nav Clip
 Nav Markup
 Nav mesh
@@ -10095,7 +10155,6 @@ NavSystem
 NavSystem001
 NavTileSize
 NavVertsPerPoly
-Nc,;F;l;
 NeXTDecode: Not enough data for scanline %ld
 NearPlane
 NetworkClientService_001
@@ -10118,7 +10177,6 @@ No MP3 support, can't compile!
 No Tile Set
 No conversion from %s to string at the moment!
 No display adapters found. Falling back to software rasterizer
-No free conversion of %s variant to %s right now
 No free conversion of %s variant to Vector right now
 No game entities will be available for creation.
 No image in file
@@ -10191,7 +10249,6 @@ O,D9O(vcH
 O0HcQ
 O1FTH
 O8+G$
-O=!'Q
 O@t$A
 O@t(A
 O@t(B
@@ -10216,6 +10273,7 @@ OPTIONS
 OX9JXt
 OX9KXu
 OZw3(?
+O]oHcE
 ObjectTypeFlags_t
 Objects
 Obtained EMS handle %u
@@ -10228,6 +10286,7 @@ Oj 9r$
 Old Auto Hidden
 Old-style JPEG
 Old-style LZW codes, convert file
+OldCollisionPath
 OldSubfileType
 One of the client procedures is NULL pointer.
 Only DXT1/DXT5 online texture compression supported.
@@ -10278,14 +10337,12 @@ OverlaySurfaceVertices
 Oz 9Z$
 P Lce
 P Lc}
-P(9.vIf
+P(97vBf
 P(@8>t
 P(HcE
 P(Hcu
-P(L9t$ t
 P(Lc]
 P(Lc}
-P(f!]
 P(fD!#L
 P(fD!d$J
 P(fD!d$ZH
@@ -10385,7 +10442,6 @@ PS_RENDER_STATE
 PSnapV001RESOURCE_TYPE_COMPILER_002
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
-PXD8}
 PXHc7;w
 PXIc|$(H
 P`Hc}
@@ -10403,15 +10459,14 @@ Panorama Layout Compiler Version
 Panorama Script Compiler Version
 Panorama Style Compiler Version
 PanoramaCompiler
+PanoramaStartup
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
 Parallel_SerializeInputDepenency
 Parameter '%s' corresponds to an entity target name, but is sent to input '%s' on '%s' which is not marked as being a target name. (FGD Error?)
-Parse Entity
 ParseEXRHeaderFromMemory failed! Error message: %s
 ParseEXRHeaderFromMemory() failed! Error message: %s
-ParseScriptedClass
 Parsed MP3 with sample rate %d, estimated duration %.2fs
 Parser encountered %i errors parsing compile targets expression "%s"
 Particle
@@ -10526,6 +10581,7 @@ Plat_LoadSDL
 Plat_MSTime
 Plat_MessageBox
 Plat_MinimizeWindow
+Plat_NeedsLowFragmentation
 Plat_Printf
 Plat_RelativeTicks
 Plat_RequireSDL
@@ -10590,7 +10646,6 @@ PpD9m
 PpHcC
 PrD8|
 Pre-Age Noise
-Precaches a specific resource
 Precipitation
 Precompute Light Probes
 Predictor
@@ -10670,6 +10725,7 @@ QueryUmsThreadInformation
 QueueUserWorkItem
 QueuedLoaderVersion001
 Qxfff
+R IcT
 R channel not found!
 R$McC
 R(A9P4A
@@ -10748,7 +10804,6 @@ ReadConsoleW
 ReadFile
 Reading Input Texture: 
 Reading probes...
-Reads a spawn key
 RecastDebugData
 Recognition Exception
 Reconnect
@@ -10778,6 +10833,7 @@ Remap Noise to Scalar
 Remap Scalar
 Removable
 RemoveAll
+RemoveBadFaces
 RemoveBoneAndChildren
 RemoveConnection
 RemoveDirectoryA
@@ -10885,7 +10941,6 @@ S89S4
 S89SD|
 S;\$0tH
 S>$hkDh$h>[2
-SATAUAVH
 SATAUAWH
 SATAUH
 SATAVAWH
@@ -10919,6 +10974,7 @@ SSE and SSE2 are required.
 STEAMUGC_INTERFACE_VERSION013
 SUATAUH
 SUATAWH
+SUAUAVH
 SUAUAWH
 SUAVH
 SUAWH
@@ -10946,13 +11002,14 @@ SUVWH
 SUWATAUAVH
 SUWATAUAWH
 SUWATAVAWH
+SUWATH
 SUWAUAVAWH
 SUWAUAWH
 SUWAUH
 SUWAWH
 SVATAUAVH
 SVATAUH
-SVAUAVH
+SVATAVAWH
 SVAUAWH
 SVAUH
 SVAVAWH
@@ -10963,7 +11020,6 @@ SVWATAUAVH
 SVWATAUAWH
 SVWATAUH
 SVWATAVAWH
-SVWATAVH
 SVWATAWH
 SVWATH
 SVWAUAVAWH
@@ -10976,9 +11032,8 @@ SVWAWH
 SWATAUAVH
 SWATAUAWH
 SWATAUH
+SWATAVAWH
 SWATAVH
-SWATAWH
-SWATH
 SWAUAVAWH
 SWAUAVH
 SWAUH
@@ -11022,12 +11077,6 @@ SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
 Script
-Script not found (%s) 
-ScriptVmKeyValueFromVariant failed to unpack parameter variant type %d
-ScriptVmStringFromVariant failed to unpack parameter variant type %d
-Script_DebugBreak
-Script_MakeStringToken
-Scripting disabled or no server running
 Scrollbars
 SearchPaths
 Section Pause
@@ -11133,7 +11182,7 @@ Size mismatch determining size of signed data block (%d vs %d)
 Skipping file in read-only search path: "%s"
 Skipping file:
 Sky Box
-Sky texture %s must be a 2:1 lat-long, 4:3 H-cross, or 3:4 V-cross format!
+Sky texture %s must be a 2:1 lat-long, 4:3 H-cross, 3:4 V-cross, or 1:6 V-strip format!
 SkyTexture
 Skybox
 Skybox Map 0
@@ -11186,7 +11235,6 @@ Special-dep calculation failure for '%s'
 Special-dep matches old: %08X for '%s'
 Special-dep mismatch: disk %08X != %08X for '%s'
 Specific Impulse
-Specification
 Specified class '%s' is a base class, @exclude cannot be used for base classes
 Specified too high an adapter number on the command line (%d/%d)!
 Spline
@@ -11250,6 +11298,7 @@ Swizzle operation only supports up to four channels.
 Symbol table:  %d entries %llu bytes
 SystemAttributes
 T$ #n
+T$ +G$A
 T$ +G$D
 T$ +G$H
 T$ A	N
@@ -11272,8 +11321,9 @@ T$ fD
 T$ fH
 T$$D9
 T$$Lc
-T$$fD
-T$$ff
+T$(+C$A
+T$(+G$A
+T$(9B
 T$(;B
 T$(;K
 T$(A;
@@ -11285,19 +11335,17 @@ T$(H+
 T$(Hc
 T$(Hc|$ I
 T$(I+
-T$(Ic
 T$(Lct$ I
 T$(ff
 T$(fff
 T$(t+L
 T$,u$
+T$0+C$A
 T$0;H
 T$0A;
-T$0D8
 T$0D8l$?H
 T$0D;
 T$0E3
-T$0H+
 T$0H;
 T$0H;L$H
 T$0H;T$`
@@ -11311,6 +11359,7 @@ T$4E9
 T$8+G$A
 T$8+G$H
 T$88E
+T$89B
 T$8;B
 T$8A+
 T$8A;
@@ -11326,8 +11375,11 @@ T$8fff
 T$<D;
 T$<H;
 T$<Ic
+T$@+B
+T$@+D$tH
 T$@+G$A
 T$@@2
+T$@A9P0~a3
 T$@A;
 T$@D3
 T$@E3
@@ -11340,6 +11392,7 @@ T$@Ic
 T$@Lc
 T$@ff
 T$DLc
+T$H+D$tA
 T$HA;
 T$HD;
 T$HD;F 
@@ -11348,10 +11401,8 @@ T$HH;
 T$HHc
 T$HHk
 T$HIc
-T$Hff
 T$HtCH
 T$LD9R$
-T$LE;
 T$PA;
 T$PD+
 T$PD:
@@ -11367,9 +11418,10 @@ T$PI+
 T$PIc
 T$PLc'Ic
 T$PLi
+T$Pff
 T$QE3
 T$TM+
-T$X9q
+T$X+C$A
 T$XA;
 T$XE3
 T$XHc
@@ -11378,18 +11430,19 @@ T$XM+
 T$\E3
 T$`A;
 T$`D+
+T$`D9
 T$`E3
-T$`fA
 T$`fD
 T$dA;
+T$hD8}
 T$hD9
 T$hD;
 T$hE3
 T$hE92
 T$hE;
-T$hH+
 T$hIc
 T$hL;u
+T$hfA
 T$lE;
 T$p;J
 T$pA;
@@ -11404,7 +11457,7 @@ T$pHc
 T$pLc
 T$pM+
 T$pfD
-T$tE3
+T$pff
 T$xA9
 T$xE3
 T$xH;
@@ -11412,9 +11465,6 @@ T$xHc
 T$xI9
 T$xL9#t
 T$xLc
-T$xff
-T%j{+
-T%z|+
 TADIt	
 TADIu
 TADIu.
@@ -11600,8 +11650,6 @@ ToolAttributes
 ToolDrag
 ToolEvents
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolSelect
@@ -11690,8 +11738,10 @@ USAVI
 USAWH
 USER32.dll
 USVATAUH
+USVATAVH
 USVATAWH
 USVATI
+USVAUH
 USVAUI
 USVAVH
 USVAWH
@@ -11706,7 +11756,6 @@ USVWATH
 USVWAUAVAWH
 USVWAUAVH
 USVWAUAWH
-USVWAUH
 USVWAVAWH
 USVWAVH
 USVWH
@@ -11738,9 +11787,7 @@ UVATAWH
 UVATH
 UVATI
 UVAUAVAWH
-UVAUAVH
 UVAUAWH
-UVAUAWI
 UVAUH
 UVAVAWH
 UVAVH
@@ -11748,7 +11795,6 @@ UVAWH
 UVLX8888
 UVWATAUAVAW
 UVWATAUAVAWH
-UVWATAUAVH
 UVWATAUAVI
 UVWATAUH
 UVWATAVAWH
@@ -11766,27 +11812,30 @@ UVWAVAWH
 UVWAVH
 UVWAWH
 UVWQ8888
+UWATAUAVAWH
 UWATAUAVH
 UWATAUAWH
 UWATAUH
 UWATAUI
 UWATAVAWH
 UWATAVI
+UWATAWH
 UWATH
 UWAUAVAWH
+UWAUAVH
 UWAUH
 UWAUI
 UWAVAWH
 UWAVH
 UWAVI
 UWAWH
+UXE;:
 UXL;m
 U`;]Hu
-UgA8T$l
+UgA8T$h
 UgH9U
 UgH;U
 Ugx	H
-Uh;Up
 UmsThreadYield
 UnRegisterGlobalObject
 Unable find required entry points in %s
@@ -11939,9 +11988,8 @@ V0;Ct~ZH
 V6E>`"(5
 VALUES
 VATAUAVAWH
-VATAUAWH
+VATAUAVH
 VATAUH
-VATAVAWH
 VAUAVH
 VAUAWH
 VAVAWH
@@ -12008,6 +12056,7 @@ VStringTokenSystem001
 VT$PD
 VTEX_LOGICAL_CRC_VERSION = %d
 VULKAN
+VUUU9
 VUUUA
 VUUUD
 VUUUH
@@ -12052,14 +12101,13 @@ V_MakeAbsolutePathBuffer
 V_PathContainsPath
 V_PathNamesAreEquivalent
 V_PrettifyMem
+V_PrettifyNum
 V_RemoveDotSlashes
 V_SetErrno
 V_StringToColor
 V_StringToFloatArray
 V_StringToVector
-V_StripFilename
 V_StripLeadingWhitespace
-V_StripTrailingWhitespace
 V_UTF16ToUTF8
 V_UTF32ToUTF16
 V_UTF8ToUTF16
@@ -12117,7 +12165,6 @@ V_uuid_t
 V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 V`;Ct~bH
@@ -12183,25 +12230,19 @@ Visible Map Errors
 VolumetricFog
 Vwatch Retrieval of synchronization handle through app signal pipe failed with error code %d
 W!t/H
-W%NC`
-W-tOe
+W%4 `
+W%~\`
+W-t}e
 W0]7H
 W0]7L
-W5G-`
-W5P/o
-W5W]u
+W5wF`
 W8HcH
-W=:hY
-W=;&o
-W=;@`
-W=D?`
-W=DhY
-W=qQ`
+W=E]`
+W=kY`
+W=tX`
 W=vmdlkeys0
 WARNING: Could not fit padded images for "%s" - alpha crop forced on - dual sequences will not work
 WARNING: Could not fit padded images for "%s" - sequence images may experience color bleeding
-WARNING: FGD Bad input/output type '%s'
-WARNING: FGD I/O Missing name
 WARNING: Failed to parse class '%s'.
 WARNING: Map %s has more than one nav mesh. Maps can have at most one nav mesh. Look for nodes starting with "nav" and delete them
 WARNING: Mod %d with tie break %d for both: best index %d and current index %d. The %d paths are:
@@ -12303,21 +12344,18 @@ Wrong JPEG library version: library is %d, caller expects %d
 Wrong alignment %d
 Wrote symbol stats to file: %s
 Wu4E3
-Wx22~
 X E9z
 X HcE
 X UWAVH
 X!t5~
-X%'`x
-X%{CV
-X%{^<
+X%{X<
 X(D9y(
-X-/`x
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5l1+
+X52ot
+X=_/N
 XA;6|
 XA;w@
 XA\^][
@@ -12352,7 +12390,6 @@ XClipPathUnits
 XD$HH
 XD$XHc
 XD$dL
-XD$pHc
 XD$tH
 XHciHH
 XHcqHH
@@ -12372,6 +12409,7 @@ XT$XL
 XYZ, Luv
 X\$HH
 X_^][
+Xd$pt
 Xl$\B
 Xl$`A
 Xl=hs>
@@ -12379,31 +12417,28 @@ Xt$dE
 X|$ A
 X|$8E
 X|$xA
-X|^[M2
+X|(PH^
 Y$D;R
-Y%C7q
-Y%_Hm
-Y%vcL
-Y-1U9
-Y-3HV
-Y-: X
-Y-GHm
-Y-l4=
+Y%-]?
+Y%5g`
+Y%wzH
+Y-.:X
+Y-nDX
+Y-skV
 Y0t>H
-Y5#U2
-Y5B5K
-Y5SHm
-Y5T<`
-Y5[eH
-Y5c2K
-Y5gA`
-Y5lJ\
-Y5xPh
-Y=+7`
-Y=?\?
-Y=ZM`
-Y=_v9
-Y=g~+
+Y53/H
+Y5BQK
+Y5QJ+
+Y5T5s
+Y5ZJ+
+Y5cNK
+Y5f<=
+Y=!/H
+Y=%Mw
+Y=D$M
+Y=OZ`
+Y=SU`
+Y=gP`
 Y>kX>M
 Y@D;Z@u
 YCbCrCoefficients
@@ -12415,13 +12450,11 @@ YD$8K
 YD$@H
 YD$@f
 YD$DA
-YD$XD
 YD$hD
 YD$hI
 YD/HI
 YL$ H
 YL$PE
-YL$Pf
 YL$TA
 YL$TH
 YPosition
@@ -12432,6 +12465,7 @@ YT$HA
 YT$Pf
 YT$dI
 YT$hD
+YT$hI
 Yd$`E
 YpU_Z
 YuXHcU
@@ -12491,6 +12525,7 @@ Zpm"U
 \$ UATAWH
 \$ UAVAWH
 \$ UH
+\$ UVATAVAWH
 \$ UVATH
 \$ UVAWH
 \$ UVWATAUAVAWH
@@ -12522,11 +12557,11 @@ Zpm"U
 \$ t>I
 \$(9l$ ~
 \$(@2
+\$(A_A]^]
 \$(A_A^A]A\
 \$(D;
 \$(E3
 \$(E;
-\$(Hc
 \$(HcD$ H
 \$(Hc|$ H
 \$(I;
@@ -12534,7 +12569,6 @@ Zpm"U
 \$(L#
 \$(fD;
 \$(t-E3
-\$,Hc
 \$0).H
 \$0)p(H
 \$09^
@@ -12561,13 +12595,11 @@ Zpm"U
 \$0t!H
 \$0tBH
 \$0u!@
-\$0u(
 \$1Ic
 \$4;\$8
 \$4E;O
 \$4t&H
 \$8A+
-\$8A;
 \$8D;
 \$8E3
 \$8H+
@@ -12581,10 +12613,11 @@ Zpm"U
 \$8uIH
 \$<A;
 \$@8E
+\$@9\$8
+\$@9\$8~I
 \$@;B
-\$@;l$0
 \$@@2
-\$@@8=q
+\$@@8=
 \$@A_A^A]A\
 \$@E3
 \$@H+
@@ -12598,16 +12631,20 @@ Zpm"U
 \$@u$M
 \$@u+M
 \$@uFM
+\$DE;
 \$HA;
 \$HD;
 \$HE3
+\$HHc
 \$HHi
 \$HLi
 \$Hff
+\$Hta
 \$I;n
 \$L;u$
 \$PA+
 \$PA_A^A]A\_^]
+\$PD;
 \$PE3
 \$PE;
 \$PHc
@@ -12624,7 +12661,6 @@ Zpm"U
 \$XIc
 \$Xt+H
 \$`9\$p|QH
-\$`A9
 \$`A;
 \$`D+
 \$`D8c
@@ -12638,11 +12674,11 @@ Zpm"U
 \$`t0H
 \$dD;
 \$gm?
+\$h9B
 \$hA;
 \$hD9t$`t
 \$hD;T$d~!Hc
 \$hE3
-\$hE;
 \$hHc
 \$hHc;;{
 \$hHcZ@H
@@ -12666,9 +12702,8 @@ Zpm"U
 \$xff
 \$xu+M
 \$xv.
-\%<,`
-\%b7q
 \%lld.vpk
+\%|E`
 \/HcD$0
 \D$8H
 \D$8L
@@ -12678,6 +12713,7 @@ Zpm"U
 \L$dHc
 \T$HMc
 \T$Hf
+\T$Xf
 \T$`Hc
 \T$lHc
 \\.\pipe\vwatch_appsignal
@@ -12689,14 +12725,14 @@ Zpm"U
 \u must be followed by exactly 4 hex digits
 \uUA;
 \|$`I
-] 8Yl
-] L9=Z	
+] 8Yh
+] L9=
 ])6M>&
 ]-?Z8
 ]09]@|EH
 ]0;S s[I
-]5be5
 ]8A;u8~
+]8fff
 ]>)2X
 ]@fff
 ]A_A^A]A\_^[
@@ -12704,7 +12740,6 @@ Zpm"U
 ]HcD$ I
 ]T$(H
 ]_E;C`
-^ Hc;;{
 ^0IcW
 ^8U)zj
 ^<V7w
@@ -12715,7 +12750,7 @@ Zpm"U
 ^hHcF`
 ^hHcF`H
 ^oEZ_
-_-9]_
+_-)w_
 _8H+_0H
 _8tDH
 _Description
@@ -12730,14 +12765,9 @@ _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
-_V_ComposeFileName
-_V_ExtractFileExtension
-_V_ExtractFilePath
 _V_FileBase
 _V_FixupPathName
 _V_MakeAbsolutePath
-_V_MakeRelativePath
-_V_SetExtension
 _V_StrSubst
 _V_StringAfterPrefix
 _V_StringAfterPrefixCaseSensitive
@@ -12796,6 +12826,7 @@ _dotatilegrid_heightshift
 _dotatilegrid_maxheight
 _dotatilegrid_minheight
 _dotatilegrid_stepheight
+_english.txt
 _feature
 _flt.vpk
 _height.
@@ -12807,12 +12838,14 @@ _interface_relay_connection
 _light
 _linked_type_
 _logb
+_m_bool
 _name
 _nextafter
 _oD>Kg
 _pHc_`Hc
 _prefab_interface
 _psrs
+_root_keyname
 _sentinel.vtex
 _tempcontent
 _test_conversion_counter
@@ -13027,6 +13060,7 @@ areasUniqueId
 areasVertices
 argument list too long
 argument out of domain
+array
 arrayEntries
 aspectRatio
 asset
@@ -13054,6 +13088,7 @@ auto_unragdoll_duration
 autovisgroup
 axies
 axisSystem
+b<eE3
 b?^Cy
 bShowSelectionModeChangeNotificationIcons
 bShowToolChangeNotificationIcons
@@ -13098,7 +13133,6 @@ baseSize
 baseStateName
 baseStates
 baseclass
-bases
 basic_movement
 beCloseStream
 beDeinitStream
@@ -13140,6 +13174,7 @@ blendindex3
 blendindices
 blendindices$0
 blendindices$0Indices
+blendtobackground
 blendweight
 blendweight0
 blendweight1
@@ -13277,6 +13312,7 @@ c:\buildslave\hlvr_rel_win64\build\src\public\fbxsystem\fbxsystem.cpp
 c:\buildslave\hlvr_rel_win64\build\src\public\movieobjects\dmerigconstraintoperators.h
 c:\buildslave\hlvr_rel_win64\build\src\public\ordered_constructor.h
 c:\buildslave\hlvr_rel_win64\build\src\public\scenesystem\vertexformat.h
+c:\buildslave\hlvr_rel_win64\build\src\public\tier0\threadtools.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier0\tslist.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier1\utlblockmemory.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier1\utlfixedmemory.h
@@ -13317,6 +13353,9 @@ c:\buildslave\hlvr_rel_win64\build\src\vpklib\packedstore.cpp
 c?FA@s}
 cAMDD
 cable
+cable_dynamic
+cable_static
+cableclass
 cached %d files from '%s', took %.3f msecs
 camera
 cameras
@@ -13534,7 +13573,7 @@ d$(A;
 d$(E3
 d$(Hc
 d$(fI
-d$)u	D:%)iq
+d$)u	D:%
 d$,H9D$P
 d$0A+
 d$0E3
@@ -13542,17 +13581,17 @@ d$0H;
 d$0Lcb
 d$0Mc
 d$0uRH
+d$4I;
 d$8D;
 d$8E3
-d$8Ic
 d$8fD
 d$8ff
 d$8~7H
 d$@A9~
 d$@A;
 d$@D;e
-d$@E3
 d$@ff
+d$@fff
 d$@u$H
 d$@~#
 d$DE;
@@ -13560,33 +13599,29 @@ d$HA;
 d$HE3
 d$HHc
 d$HI;
-d$HLc
 d$LfA
 d$P+A$t
 d$P;{
 d$PD;
 d$PE3
-d$PE9&
 d$PHc
 d$PHcG(
 d$PfA
 d$PfD
 d$Pt*H
-d$Pu.A
+d$X97
 d$XD9hXt
 d$XE3
 d$XE;
 d$XE;$
-d$XE;h
-d$XE;k
 d$XHcJ
 d$XLc
-d$Xu/
 d$XuvM
+d$`;C
+d$`A;F
+d$`D8
 d$`D; 
-d$`D;o
 d$`E3
-d$`E;
 d$`Lcm
 d$`Lk
 d$`fA
@@ -13609,7 +13644,6 @@ d$pD9d$0
 d$pE3
 d$pHc
 d$pM+
-d$pfA
 d$pt#H
 d$tM;
 d$tfff
@@ -13664,7 +13698,6 @@ deltaStates
 densityValues
 depth
 depthOfFieldSamples
-description
 descriptions
 destination address required
 destruction
@@ -13699,7 +13732,7 @@ dmg.club
 dmg.explosive
 dmg.fire
 dmx file
-dmxconvert -allowdebug -i "%s" -ie %s -o "%s" -oe %s -of %s
+dmxconvert -allowdebug -i "
 doesn't contain
 dominators
 dota.tile_path.falloff
@@ -13734,7 +13767,7 @@ e A_A^A]A\]
 e A_A^A]A\_^]
 e _^]
 e(A_A^A]A\_^[]
-e)u	D:%
+e)u	D:%5Ai
 e+000
 e0A_A^A]A\]
 e0A_A^A]A\_^]
@@ -13742,15 +13775,16 @@ e0A_A^]
 e8A_A^A]A\_^[]
 e8u~f
 e@A_A^A]A\]
+e@A_A^A]A\_^]
 e@A_A^]
 eHA_A^A]A\_^[]
 eLK(w
 ePA_A^A]A\_^]
 ePA_A^]
+ePL9e(
 ePLcU`L
 eXA_A^A]A\_^[]
 e`A_A^A]A\]
-e`L9e8
 easeIn
 easeOut
 easein
@@ -13822,6 +13856,7 @@ entity_component_error_class_decl_says_contained_but_impl_is_referenced
 entity_log_load_unserialize
 entity_lump_pointer
 entity_properties
+entitygroup
 entry_anim
 entry_sequence
 env_combined_light_probe_volume
@@ -13830,8 +13865,6 @@ env_global_light
 env_light_probe_volume
 env_sky
 env_volumetric_fog_volume
-environmentmapbuilder
-envmap
 epA_A^A]A\]
 epA_A^A]A\_^]
 error
@@ -13846,6 +13879,7 @@ eventindex
 events
 ewLcm
 ewh/?y
+exA_A^A]A\_^[]
 exclude
 executable format error
 exit_anim
@@ -13879,6 +13913,7 @@ extracted_motion
 extreme cHRM chunk cannot be converted to tristimulus values
 eyeOffset
 eyelid
+e}<[H
 f!C"3
 f!D$J
 f9)u H
@@ -13888,13 +13923,12 @@ f9,Ju
 f9,~u
 f9<Au
 f9<Bu
+f9D$@t
 f9G`u1H
 f9G`uCH
-f9\$(t5H
 f9\$bu
 f9k*t
 f9k*u
-f9t$8
 f9u"v
 f;S|sC
 f;i~spH
@@ -13913,6 +13947,7 @@ fD9 t
 fD9 tMH
 fD9 u
 fD9$Hu
+fD9(u
 fD9(u.
 fD9,Au
 fD9,Cu
@@ -13929,7 +13964,6 @@ fD9<Xu
 fD9?t&
 fD9Ab
 fD9I*t
-fD9Q*t
 fD9c*t
 fD9c*u
 fD9m*t
@@ -13945,6 +13979,7 @@ fE9,tu
 fE94(t/E
 fE98t'
 fE9J*t
+fE9Q*t
 fF9<qu
 fG9$Ou
 fG9,wu
@@ -14094,6 +14129,7 @@ g_VProfCurrentProfile
 g_flBrightnessExposureBias
 g_pMemAlloc
 g_pThreadPool
+g_tSkyTexture
 g_vTexCoordScale
 g`;_pu
 ga_frame
@@ -14159,6 +14195,7 @@ h>1my
 hA\_^]
 hA]_^[
 hA^A\
+hA^A]][
 hA^_^[
 hA^_^]
 hA_A]
@@ -14197,7 +14234,6 @@ hammer_gridnav_show_obstructions
 hammer_gridnav_show_ward_blocking
 hammer_nav_attrib_color
 hammer_overlay_draw_projection_triangles
-hammer_parallel_procedural_update
 hammer_raytrace_debug_draw
 hammer_render_model_bounding_spheres
 hammer_show_light_truncation_error
@@ -14219,7 +14255,7 @@ heightValues
 helperColor
 helperName
 helperOffset
-helpers
+hero_picker
 heroes
 hidden
 hiddenFlags
@@ -14229,6 +14265,7 @@ hideValue
 hintDxt5Compression
 hitNormal
 hitbox
+hmu\E
 hold_left
 hold_right
 horizontal differencing 
@@ -14281,13 +14318,11 @@ info_hlvr_toner_path_node
 info_node
 info_node_link
 info_particle_system
-infodecal
 initialMass
 inity
 innerconeangle
 input
 inputName
-inputs
 inputsystem
 insert
 instance_file
@@ -14406,6 +14441,7 @@ k@_aH
 kK`8H
 kN`8H
 kU!W>
+kernel32.dll
 key_name_strip_prefix
 key_path
 key_subkey
@@ -14437,6 +14473,7 @@ kv 0x%p Release refcount == %d
 kxu/H
 l!;b	F
 l$ 9Q
+l$ A;
 l$ ATAVAWH
 l$ AVH
 l$ D8|$ tK
@@ -14450,6 +14487,7 @@ l$ Lc
 l$ Lc!L
 l$ M;
 l$ UAVAWH
+l$ V3
 l$ VATAUAWL
 l$ VATAVH
 l$ VATAWH
@@ -14482,7 +14520,8 @@ l$(;i
 l$(@2
 l$(A)u
 l$(A;
-l$(D:-R
+l$(A^A]A\[
+l$(D:-
 l$(D;
 l$(E3
 l$(Ei
@@ -14491,7 +14530,7 @@ l$(Hc
 l$(HcL
 l$(L+
 l$(LcI
-l$)u	@:-pkq
+l$)u	@:-
 l$,A9l$
 l$,Lc
 l$09s
@@ -14519,7 +14558,6 @@ l$0ff
 l$0v=fA
 l$0~8H
 l$4Hc
-l$4I;
 l$8).H
 l$8;{
 l$8@2
@@ -14538,7 +14576,6 @@ l$8fE;
 l$8u&H
 l$<;{
 l$@9k
-l$@<"
 l$@@2
 l$@A3
 l$@A;
@@ -14563,14 +14600,12 @@ l$HHc/H
 l$HHci
 l$HIc
 l$HIc.H
-l$HLc
 l$HLcH
 l$HMc
 l$HfA
 l$Ht#
 l$H~&E
 l$LD;s
-l$LE;
 l$P9s
 l$P@2
 l$PA_A^A]A\_^
@@ -14589,8 +14624,7 @@ l$X;M
 l$XA+
 l$XA;
 l$XD;
-l$XD;a
-l$XD;|$
+l$XD;t$
 l$XE3
 l$XE;
 l$XHc
@@ -14599,7 +14633,6 @@ l$XJc
 l$XL9e
 l$XL;
 l$XfD
-l$Xu`A
 l$\E3
 l$`A;
 l$`C9,
@@ -14621,6 +14654,7 @@ l$hL;
 l$hM;
 l$hff
 l$htHMc
+l$p I
 l$pD9m
 l$pE3
 l$pH+
@@ -14944,7 +14978,6 @@ m_bloomParams
 m_boneHashes
 m_boneOverrides
 m_boneTransforms
-m_bool
 m_boundsGroups
 m_builderParams
 m_child
@@ -15089,6 +15122,7 @@ m_intAttributes
 m_intParams
 m_iszPrivateVScripts
 m_keyValuesData
+m_kv3Settings
 m_layerNames
 m_layers
 m_lightCookie
@@ -15395,6 +15429,7 @@ mapNodeName
 mapUsageType
 mapVariables
 map_asset_references
+map_options
 map_sg_%s
 mapbuilder.blocklos
 mapbuilder.blocksound
@@ -15535,6 +15570,7 @@ model_attachment
 model_bodygroup
 model_bone
 model_breakpiece
+model_cloth_effect
 model_default_preview_sequence_name
 model_dump_convert_info
 model_morphchannel
@@ -15633,7 +15669,6 @@ nD$`fD
 nD$xL
 nLayoffState
 nN0fA
-nT$@E
 nT$dfA
 nTries < 10000000
 n]?iJ
@@ -15805,7 +15840,7 @@ p ATAVAWH
 p AVH
 p AWH
 p UAVAWH
-p UWATAVAWH
+p UWATH
 p UWAWH
 p WATAUAVAWH
 p)9t$ 
@@ -16021,7 +16056,6 @@ ps_4_1
 ps_5_0
 pseudo-
 publiccontent
-publish
 publish_data
 publish_data.txt
 purecall
@@ -16121,7 +16155,7 @@ resampleinterval
 resource
 resource deadlock would occur
 resource unavailable try again
-resource/localization/%s_english.txt
+resource/localization/
 resource/localization/abilities_english.txt
 resource/localization/dota_english.txt
 resourceFileNameList
@@ -16266,6 +16300,7 @@ scale_world
 scales
 scalesettings
 scanline
+scattering
 scene
 scene_ramp
 scenes
@@ -16282,10 +16317,10 @@ scripts/hammerinfo.txt
 scripts/npc/npc_heroes.txt
 scripts/population.txt
 scripts/vscripts/
-scripts/vscripts/%s
 sdkassettypes.txt
 second_sequence_random
 secondary
+secondary_material
 section
 selectable
 selectedControls
@@ -16309,8 +16344,9 @@ sequences
 sequential position along path
 sequential row overflow
 sessionSettings
-set_normal
-set_staging
+set_balance
+set_balance_staging
+set_base
 setting.coop_fullscreen
 setting.defaultres
 setting.defaultresheight
@@ -16483,6 +16519,7 @@ startJoint
 startOffset
 startTime
 startUp
+start_expanded
 start_time
 startdelay
 startframe
@@ -16562,16 +16599,14 @@ t	IcH I
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=
+t!@:=d
 t!D93t
 t!D:%
-t!H9t$@
 t!HcC
 t!HcL$`
 t!LcO
 t!McY
 t!fA;
-t!fff
 t"<.u
 t"D9gh
 t"D9ih
@@ -16580,16 +16615,13 @@ t"fff
 t#9_4u
 t#H9^ t
 t#LcD$dA
-t$ ;C ~
 t$ ;ug
 t$ ;w
-t$ @2
 t$ A;
 t$ ATAVAWH
 t$ AVAW
 t$ AVAWH
 t$ AVAWL
-t$ AVE3
 t$ AVH
 t$ AWH
 t$ A^
@@ -16605,6 +16637,7 @@ t$ Lcu M
 t$ Lk
 t$ Mc
 t$ Mc.E;n
+t$ UATAVH
 t$ UAVAWH
 t$ UH
 t$ UWATAUAVH
@@ -16625,13 +16658,13 @@ t$ WAVAWH
 t$ WE3
 t$ WH
 t$ fD
+t$ fE9Q*t
 t$ x*H
 t$!Ic
 t$$A+
 t$$ff
 t$(;_
 t$(;{
-t$(A^
 t$(D;
 t$(D;w
 t$(E3
@@ -16640,7 +16673,6 @@ t$(H;l$@
 t$(Hc
 t$(I;
 t$(Lc
-t$(Li
 t$(Mc
 t$(fA;
 t$(tFH
@@ -16655,6 +16687,7 @@ t$0A9?
 t$0A;
 t$0A^_
 t$0A_A^
+t$0D9t$@|LH
 t$0D;
 t$0E3
 t$0H+
@@ -16677,6 +16710,7 @@ t$0Hi
 t$0Hk
 t$0I;
 t$0Ic
+t$0L9
 t$0Lc
 t$0M;
 t$0fD;
@@ -16688,9 +16722,11 @@ t$0u'
 t$0u*H
 t$0u@H
 t$0xBHc
+t$0|	
 t$48D$`u
 t$8;Upr4I
 t$8;}8u
+t$8A3
 t$8A;F
 t$8A;O
 t$8A_A]_
@@ -16708,7 +16744,6 @@ t$8Hcw(H
 t$8Hcw0H
 t$8Hk
 t$8Ic
-t$8L9|$0t
 t$8Lc
 t$8Lc3D;s
 t$8Li
@@ -16793,6 +16828,7 @@ t$P9O
 t$P@2
 t$P@8l
 t$PA+
+t$PA94$
 t$PA;
 t$PD8T$0u
 t$PD;
@@ -16801,6 +16837,7 @@ t$PE;
 t$PH;t$h
 t$PIc?Hc
 t$PL+
+t$PL9
 t$PL;
 t$PLcu
 t$PLi
@@ -16810,7 +16847,6 @@ t$Pt!
 t$Pu	
 t$Pu*
 t$Pu1H
-t$PuRH
 t$Puw
 t$P|LH
 t$TA9
@@ -16831,12 +16867,13 @@ t$XLc
 t$XLi
 t$XLk
 t$XMc
-t$Xff
 t$Xfff
 t$Xt	H
 t$XtGH
 t$Xu?H
+t$XuX
 t$YD:
+t$\9q
 t$\D;
 t$`9w
 t$`;w
@@ -16850,39 +16887,36 @@ t$`E3
 t$`H;
 t$`Hc
 t$`I;
-t$`L9l$0t
 t$`Mc
 t$`Mcm
 t$`ff
 t$`fff
-t$`u$H
 t$`uDH
 t$aMc
 t$fE;
 t$h9~
 t$h;\$0u
+t$hA;m
 t$hD8T$0u
 t$hD9E
 t$hE3
 t$hI;
 t$hLc
 t$hfI
-t$hff
 t$hfff
 t$p9u
 t$pA+
+t$pA;
 t$pD9
 t$pE+
 t$pE3
 t$pHcH
 t$pHi
-t$pI;
 t$pIk
 t$pL+
 t$ptiHcK<L
 t$ptkLcK<L
 t$ptsLcK<L
-t$puOH
 t$x9N
 t$x;_@u
 t$xA;
@@ -16903,10 +16937,11 @@ t%D9s4u
 t%DkD$h,L
 t&=$^
 t&D9ih
-t&D:-\
+t&D:-,
 t&H;y
 t'8D$8u
 t'8D$`u
+t';\$0t!I
 t'@8x0u!H
 t'B;| 
 t'H9s
@@ -16934,6 +16969,7 @@ t)Lc6D;v
 t)Lc?D;
 t*D8#t
 t*H9X8u$@8
+t*HcN 
 t*HcsH;sXu
 t*Hcs`;spu
 t*Ic.A;n
@@ -16956,10 +16992,8 @@ t-Hc7;w
 t-Hc;;{
 t-HcT;
 t-Lc6D;v
-t-fE9J*t
 t-~"A
 t.8\$P
-t.@8+t)
 t.@80t)
 t.@82t)
 t.@88t)
@@ -16970,6 +17004,7 @@ t.H=vpcft
 t.Ic>A;~
 t/D83t*
 t/D8e
+t/E8>t*
 t/Hc+;k
 t/Ic4$A;t$
 t/Ic?A;
@@ -16979,9 +17014,9 @@ t0+O$H
 t09+u,9s
 t0@8+t+
 t0@87t+
+t0@8;t+
 t0D88t+
 t0D8;t+
-t0E8<$t*
 t0H9^ t*H
 t0HcE
 t0Lct$ D;t$0u
@@ -16989,6 +17024,8 @@ t0fff
 t1+O$H
 t1HcE
 t1IcI
+t1fE9Q*t
+t2D8't-
 t2Hc/;o
 t2Hc9;y
 t2HcE
@@ -17018,8 +17055,9 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=
+t9H9=vnX
 t9fff
+t:,!<
 t:D9s
 t:LcM
 t;A9;
@@ -17045,15 +17083,14 @@ t@Hc3;s
 t@Hc;;{
 t@HcD$0H
 t@HcW
+tAD8 t<H
 tAHcT;
 tAHcw
 tAIc7A;w
-tBD80t=H
 tBHc/
 tBHc7
 tBLc+D;k
 tC;S`s>I
-tCB9\>
 tCHcD$ H
 tCHcP
 tCfff
@@ -17229,6 +17266,7 @@ tNHc1
 tNHcD$$
 tNHcK
 tNLcu'
+tNMc>
 tO;WhsJL
 tOA;OhsIH
 tOD;G(sIH
@@ -17243,7 +17281,7 @@ tPD;A(sJI
 tPD;C
 tPD;K`sJL
 tPD;s`sJI
-tPH95
+tPH95=
 tPHc|$,
 tPIcN
 tPfE;
@@ -17344,8 +17382,6 @@ tZA;WhsTI
 tZA;^`sTM
 tZA;whsTM
 tZD;C`sTI
-tZH9\$htSL
-tZH9t$@tSL
 t[93tW
 t[;S`sDI
 t[A;P
@@ -17374,7 +17410,6 @@ t^E;H
 t_;VhsZL
 t_="V
 t_D9s
-t_fff
 t`E;B`sZI
 t`Hc;
 t`Hc}
@@ -17427,6 +17462,8 @@ tbA;v
 tbD9R
 tbD9o
 tbD;o
+tbH9\$Xt[L
+tbH9t$8t[L
 tbHc|$ H
 tbHc~
 tbIc8
@@ -17434,7 +17471,6 @@ tcHcE
 tdE;Z
 tdHc;;{
 tdHc>;~
-tdHcN0M
 teD;C
 teD;G
 teE;w
@@ -17541,7 +17577,6 @@ too many files open in system
 too many length or distance symbols
 too many links
 too many symbolic link levels
-tool_hammer
 toolimages:assettypes/generic_lg.png
 toolimages:assettypes/generic_sm.png
 tools.tilebase
@@ -17593,7 +17628,7 @@ tuA;U
 tuD;AhsoI
 turn_rate
 tvHcE
-tvL9%v
+tvL9%	1
 tvLcK
 twH;^XtH3
 twistJoints
@@ -17606,7 +17641,6 @@ tzD9(uu
 tzLcK<L
 tzfff
 t{;Q`svI
-t|D80twH
 t|Mc/Lc7A
 t|fA;
 t}E;E
@@ -17614,15 +17648,12 @@ t~LcL$PE
 u	8Fp
 u	9w$
 u	@8,
-u	@8=
+u	@8=m.V
 u	@:-
-u	@:-"kq
 u	D:%
-u	D:%5
-u	D:%F
-u	D:%L)r
-u	D:%_
-u	D:%`
+u	D:%'
+u	D:%(gr
+u	D:%v
 u	D:-
 u	D:5
 u D8p
@@ -17639,13 +17670,12 @@ u%!D$@H
 u%HcWxH
 u&A;^
 u&HcQ
-u&L9x0u H
 u'A;^
 u'H$>
 u(Hc+;k
 u(Hc3;s
 u(Hc>;~
-u(L;uH
+u(L;uP
 u)!t$(H
 u*D8uwt$E
 u*Hc_ ;_0u
@@ -17671,7 +17701,6 @@ u2HcB
 u2HcU
 u2fff
 u3HcH<H
-u3{c=-|+
 u4D9~
 u4HcE
 u5A;A
@@ -17699,7 +17728,6 @@ u@L;uH
 uBHc;;{
 uBLcL$`H
 uBf9l$5t
-uE<"tA< ~=B
 uEHc3;s
 uFE9n
 uFHc;;{
@@ -17717,7 +17745,6 @@ uM9|$`u-
 uMHcE
 uMfA9h uFfA9h0u?fA9h@u8fA9hPu1fA9h`u*fA9hpu#A
 uNA9l$
-uO@85NRP
 uPfff
 uQLc}
 uRE9n
@@ -17727,13 +17754,13 @@ uT<0uP
 uUA9l$
 uVfE9M uOfE9M0uHfE9M@uAfE9MPu:fE9M`u3fE9Mpu,A
 uXE9n
+uY<0uU
 uYfA9h uRfA9h0uKfA9h@uDfA9hPu=fA9h`u6fA9hpu/A
 u[HcI
 u\A9l$
 u\Hc.;n
-u`D9e
+u`D9eP
 u`HcL
-u`LcE
 u`fff
 u`|JH
 uaHc;L
@@ -17745,6 +17772,7 @@ ugD8p
 ugfff
 uh@8|$!t,
 uhIc4
+uhLcM0I
 uiD9~
 uint32
 uint64
@@ -17792,7 +17820,8 @@ useedgeinfo
 usesLaggedValues
 utlstringtoken
 uuHcF
-uwHc_ ;_0u
+uvHc_ ;_0u
+ux@85
 uxHcOP
 uzKs@>
 v A9~ w
@@ -17881,19 +17910,17 @@ visible
 visoccluder
 visualize_ambient_occlusion
 vl$0f
-vmap@
 vmatH
 vmatL
 vmatrix
 vmatrix log
-vmatt,H
-vmdl@
+vmatt"H
 vmdlH
 vmdl_c
 vmdlkeys1
 vmdlkeys2
 vmdlkeys3
-vmdlt9H
+vmdlt0H
 vmesh
 vmtFallback
 vmtProxy
@@ -17935,7 +17962,7 @@ vpcf7
 vpcf8
 vpcf9
 vpcfH
-vpcftFH
+vpcft>H
 vphysics2
 vphzc
 vpks/
@@ -17997,13 +18024,13 @@ width
 window
 wirebox
 wirebox_local
+wn+:E
 wn>Jj
 world
 world.vrman
 world.vwrld
 worldLayerName
 world_bounds
-world_environmentmaps.vwenvmap
 world_layer_%s
 world_node_pointer
 world_physics.vrman
@@ -18027,11 +18054,13 @@ www.digicert.com1$0"
 www.digicert.com110/
 wxH9wXH
 x	;G }
+x	;O$
 x	HcG
 x	HcK
 x	HcM
 x	HcQ
 x ;7}
+x ;Fx}
 x A;@X}
 x ATAVA
 x ATAVAWH
@@ -18046,40 +18075,40 @@ x Hcy`L
 x UATAUAVAWH
 x UAUAVH
 x UAVAWH
+x!A;Fp}
+x!A;Fx}
 x!HcI
 x!HcK
 x";C }
+x#;Gx}
 x$H9-
 x&;+}"H
 x&E;B
 x'D;'}"H
-x'L9=
+x'L9=Y
 x'fff
-x(/u$H
+x(/u'H
 x)A;M
 x)E;0}$I
-x+;uP}&H
 x+D;s
 x-;^(}(
 x.HcAhL;
 x0v0$
-x0vmdl
 x3HcG
 x7A;O
 x9H;H
 x9HcGhH;
 x9HcS
 x?A;M
+xA;Qp}<H
 xAHcG
 xA]A\[]
 xA]A\_^
 xA]A\_^[]
 xA^A][]
 xA_A\_]
-xA_A\_^[]
 xA_A]A\[
 xA_A]][
-xA_A]^[
 xA_A^A\_^]
 xA_A^A]A\_^[]
 xA_A^A]A\_^][
@@ -18098,8 +18127,10 @@ xMSAA
 xNHcC
 xOD;K }>H
 xPHcQ
+xRA;Gp}LI
 xRHcQ
 xSH;H
+xU;oP}PH
 xWHcG
 xWI96tRI
 xZH;A
@@ -18164,6 +18195,7 @@ znear
 {}[]:,
 {}[]=, 	
 |	9KX
+|	;Eo
 |#tAM
 |$ @2
 |$ A+
@@ -18215,12 +18247,12 @@ znear
 |$ u"I
 |$ ukM
 |$ utM
+|$ |AH
 |$ ~-H
-|$$;=.
+|$$;=
 |$$D;
 |$$M+
 |$$fE;
-|$("u8I
 |$(A;
 |$(A^
 |$(D9yp~ H
@@ -18258,7 +18290,6 @@ znear
 |$0Hi
 |$0I;
 |$0Ic
-|$0Ik
 |$0L;
 |$0L;l$x
 |$0Lk
@@ -18270,7 +18301,6 @@ znear
 |$0u#H
 |$0u$H
 |$0u2
-|$0uO
 |$2*u
 |$28E
 |$4A;
@@ -18353,18 +18383,16 @@ znear
 |$HIc
 |$HIk
 |$HL+
+|$Hf;
 |$HfD
-|$HfE9J*t
 |$Hfff
 |$Ht#
 |$HtwI
 |$HuPH
 |$P9E
 |$P9k
-|$PA9>
-|$PA;>
+|$PA9<$
 |$PA;^ u
-|$PD;c
 |$PE2
 |$PE3
 |$PE;
@@ -18376,15 +18404,15 @@ znear
 |$Pfff
 |$Pt&H
 |$Pu%H
+|$PuRH
 |$T0H
 |$XA+
 |$XD;
+|$XD;d$h~	D
 |$XE+
-|$XE;c
 |$XHc
 |$XHcU
 |$XIc
-|$XLc
 |$XLi
 |$XLk
 |$XMc
@@ -18394,6 +18422,7 @@ znear
 |$Xu#H
 |$\.u
 |$`30
+|$`@2
 |$`A+
 |$`A9~
 |$`A;
@@ -18405,6 +18434,7 @@ znear
 |$`Lc
 |$`ff
 |$`fff
+|$`u$H
 |$h9i
 |$h@2
 |$hA+
@@ -18414,25 +18444,25 @@ znear
 |$hH;
 |$hHc
 |$hIc?
-|$hf;
 |$hfff
 |$hwr
+|$iu+
 |$lA+
 |$lE3
-|$mu+
 |$nE3
 |$p9:~JL
 |$pA+
+|$pA9>
 |$pD9
 |$pE3
 |$pH+
 |$pH;
 |$pHc
-|$pHcn
 |$pIc
 |$pff
 |$pt :
 |$puFH
+|$puOH
 |$xA9>
 |$xA;
 |$xD98~=
@@ -18441,14 +18471,9 @@ znear
 |$xt!H
 |$x~+H
 |${H+
-|$|;}
+|$|;}P
 |(tFM
-|+A;F
-|,A;F
-|-A;G
 |;HcL
-|HA;G
-|JA;G
 |Z9sHL
 |_A;^
 |aA;^
@@ -18457,7 +18482,6 @@ znear
 } Hcu`H
 } fE;A
 } fE;H
-} u,H
 }$D;A
 }%;Q|
 }&f;{
@@ -18508,42 +18532,41 @@ znear
 ~"Hc|$ 
 ~"fff
 ~#fff
-~$A;nP}
 ~$LcL$4
 ~$LcT$4
 ~$fff
 ~%LcE
 ~&fff
 ~'fff
-~(7u4
+~(8u4
 ~(HcNDI
-~*9y(
-~*9y0
-~*9yP
-~+A9y0
+~*9q(
+~*9q0
+~*9qP
+~+A9q0
 ~,IcZ
 ~,L94
 ~-LcP
 ~-fff
-~.A9xH
+~.A9pH
 ~.fff
-~08\$0t
 ~0fff
+~28\$0t
 ~2D8u
 ~6fff
 ~:fD9,
 ~:fff
 ~=fff
-~?Hc3;s
 ~?Hc_
+~Afff
 ~BLcK0E3
 ~CMapDoc destructor: Leaking physics world because there are still ModelInstances that use it.
 ~CModelInstance destructor: leaking softbody because physics world disappeared
-~Cfff
 ~EI9|$
 ~FHc+;k
 ~Hfff
 ~IHc+;k
+~J;nP}EH
 ~L$XH
 ~L$pA
 ~L@8~8u

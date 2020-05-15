@@ -56,19 +56,18 @@
  ?pixelMetric@QWindowsXPStyle@@UEBAHW4PixelMetric@QStyle@@PEBVQStyleOption@@PEBVQWidget@@@Z
  @SUATAUAWH
  @SUH
- A]_[
+ A]A\[
  A]_^
  A]_^][
- A^A][
  A^][
  A^^]
  A^_[
- A^_]
  A^_^
  A^_^][
  A_A]A\][
  A_A]A\_^
  A_A]^
+ A_A]^][
  A_A^A\
  A_A^A\][
  A_A^A\_^
@@ -82,8 +81,8 @@
  A_A^^
  A_A^_
  A_A^_^]
+ A_^[
  A_^]
- A__[
  A__]
  A__^
  Base Class Array'
@@ -104,7 +103,6 @@
  PRESS
  RELEASE
  REPEAT
- ReadToken overflow
  Type Descriptor'
  [%1]
  but running with 
@@ -157,7 +155,7 @@
 "displayWindow" attribute not found in the header.
 "e?<<<<<<l?
 "lineOrder" attribute not found in the header.
-"pA3QP#
+"pA3Q
 "pixelAspectRatio" attribute not found in the header.
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
@@ -184,6 +182,7 @@ $?removeColumns@QStandardItemModel@@UEAA_NHHAEBVQModelIndex@@@Z
 $Ib?s
 %+?setModel@QTableView@@UEAAXPEAVQAbstractItemModel@@@Z
 %.100s: Can not read TIFF directory
+%.15lf
 %/?size@QWidget@@QEBA?AVQSize@@XZ
 %1	%2
 %1 -> %2 (%3)
@@ -207,6 +206,7 @@ $Ib?s
 %GoU?*
 %d CONTENT Search Paths:
 %d GAME Search Paths:
+%f %f %f %f
 %i %i %i %i
 %ld%c
 %lu: Row out of range, max %lu
@@ -214,7 +214,7 @@ $Ib?s
 %s %s decoding is not implemented
 %s %s encoding is not implemented
 %s compression support is not configured
-%s%s/%s/%ssettings.txt
+%s#%d
 %s.%s
 %s/cone_cone_union_z%04i.tga
 %s/ellipse_to_cone_z%04i.tga
@@ -320,6 +320,7 @@ $Ib?s
 (*%s*), 
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
+(9='G
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
 (?setColumnCount@QTableWidget@@QEAAXH@Z
 (?setData@QSortFilterProxyModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -332,7 +333,6 @@ $Ib?s
 (A^^][
 (A_A\_[
 (A_A\_^][
-(A_A]][
 (A_A^
 (A_A^A]A\
 (A_A^A][
@@ -353,7 +353,6 @@ $Ib?s
 (L$PD
 (L$`D
 (L$pD
-(None)
 (T$ D
 (T$@D
 (T$PD
@@ -414,7 +413,6 @@ $Ib?s
 (|$pL
 )8?visualRect@QStyle@@SA?AVQRect@@W4LayoutDirection@Qt@@AEBV2@1@Z
 )9IYiy
-)<$E3
 )>6{1n
 )?setEditTriggers@QAbstractItemView@@QEAAXV?$QFlags@W4EditTrigger@QAbstractItemView@@@@@Z
 )?setEnabled@QWidget@@QEAAX_N@Z
@@ -517,8 +515,10 @@ $Ib?s
 +A$Hc
 +B$Hc
 +C$Hc
++C$Lc
 +D$ fE
 +F$Hc
++G$Hc
 +H;t$@u
 +J$D8M@
 +L$0A
@@ -547,7 +547,7 @@ $Ib?s
 ,Ic|$
 ,LcD$HH
 ,t0D9J0v*L
-,u*Ic6A;v
+,u*Ic>A;~
 ,|%)v
 - Add Active Code: %s
 - Remove Active Code: %s
@@ -569,8 +569,8 @@ $Ib?s
 -addon
 -debug_open_all_tools
 -disable_asset_autorecompile
--disable_qaccessible
 -disableassetsystem
+-enable_qaccessible
 -multiple_tools_instances
 -nostyle
 -recompile_special_dependency_mismatches
@@ -631,9 +631,6 @@ $Ib?s
 .?AV<lambda_fac74c1338e5afbc2423a21681fc11b7>@@
 .?AV?$CBaseAppSystem@VIToolFramework2@@@@
 .?AV?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
-.?AV?$CFmtStrN@$0BAA@$00@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFmtStrQuietTruncationN@$0BAA@@@
 .?AV?$CMemberFunctor0@V?$CLateBoundPtr@VCGlobalHotkeyCommands@@@@P8CGlobalHotkeyCommands@@EAAXXZV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_e2072a02847de5edcf3715551e8d3f4c>@@@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -719,6 +716,7 @@ $Ib?s
 .?AVCDefaultKeyValuesErrorSpew@@
 .?AVCFunctor@@
 .?AVCGlobalHotkeyCommands@@
+.?AVCNoRefFunctor@@
 .?AVCPlaceholderConVar@@
 .?AVCPostConnectCallback@@
 .?AVCQBindNameFilterWidget@@
@@ -740,6 +738,9 @@ $Ib?s
 .?AVCRegistry@@
 .?AVCSchemaInstallCallback@@
 .?AVCSpecificTargetBindableCommand@?$CBindTargetDescriptor@VCGlobalHotkeyCommands@@@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CFunctorParallelController@V<lambda_e2072a02847de5edcf3715551e8d3f4c>@@@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CLambdaJobItemProcessor@H@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
 .?AVCToolFramework2@@
 .?AVCToolFrameworkTabletInfo@@
 .?AVCacheLocalScheduleGroup@details@Concurrency@@
@@ -964,7 +965,7 @@ $Ib?s
 /?startDrag@QAbstractItemView@@MEAAXV?$QFlags@W4DropAction@Qt@@@@@Z
 /?startDrag@QListView@@MEAAXV?$QFlags@W4DropAction@Qt@@@@@Z
 /TF<)VGy#WH
-/e,/select,"%s"
+/e,/select,"
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 0!?polish@QProxyStyle@@UEAAXPEAVQWidget@@@Z
@@ -992,6 +993,7 @@ $Ib?s
 0A^A][
 0A^A]]
 0A^^[
+0A^_[
 0A^_^
 0A_A]A\_]
 0A_A]]
@@ -1007,13 +1009,14 @@ $Ib?s
 0A_A^A]_^
 0A_A^A]_^][
 0A_A^]
+0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
 0A__[
 0A__]
 0A__^
 0D8aDt
-0L9e0t	H
 0X8b?~
 0iN>/
 0v0b1
@@ -1061,7 +1064,7 @@ $Ib?s
 1setFilterWildcard(QString)
 2#?qt_metacast@QMessageBox@@UEAAPEAXPEBD@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
-200403223415Z0#
+200515052727Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1088,6 +1091,8 @@ $Ib?s
 33333
 33333333H+
 38?warning@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
+3;D$@wpA
+3;D$DwuA
 3>N;kU
 3>fvw
 3?toolTip@QAction@@QEBA?AVQString@@XZ
@@ -1096,6 +1101,7 @@ $Ib?s
 3H9t$ht
 3H9t$pt
 3H9t$xt
+3vOV	
 4,?setReadOnly@QTextEdit@@QEAAX_N@Z
 4HA;x
 4ND;{
@@ -1147,9 +1153,8 @@ $Ib?s
 8Csinf
 8D$ u+I
 8GbthH
-8L9&t
-8L9e0t	H
-8M9't
+8L9't
+8M9&t
 8Y0t]
 8\$`t
 8\$pt
@@ -1171,6 +1176,7 @@ $Ib?s
 9C |K
 9D$ u
 9D$(}y
+9D$@t
 9D$`u
 9D$x~
 9G$vAD
@@ -1185,16 +1191,17 @@ $Ib?s
 9WP~HM
 9WP~KM
 9X@u4
-9Y ~|H
 9YD~/3
+9\$P~1
+9\$`~[
 9_8~h
-9_@~9
+9_@~5ff
 9_D~/3
 9_D~H3
 9_P~OE3
-9_X~8
+9_X~5ff
 9_`~&f
-9_`~1
+9_`~.
 9_p~$
 9_x~!H
 9_x~$
@@ -1223,6 +1230,7 @@ $Ib?s
 ;"?qt_metacall@QDialog@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ;.u1L
 ;/?sizeHint@QDialog@@UEBA?AVQSize@@XZ
+;8u-3
 ;A ~W
 ;B$vUH
 ;B$vvI
@@ -1235,7 +1243,9 @@ $Ib?s
 ;CxsR
 ;D$0u
 ;D$@@
+;D$XwrA
 ;D$`u
+;D$hu
 ;G$u5
 ;H9>&X
 ;L$0u
@@ -1243,19 +1253,23 @@ $Ib?s
 ;Vl}fD
 ;\$ |
 ;\$0u
+;\$8|
+;\$`|
 ;\$p|
 ;l$0|
+;t$H|
 ;yXu	H
+;|$0|
 ;|$@|
 ;|$P|
 ;|$`|
-;|$p|
 <	u"H
 <	vN<
 <	vO<
 <	w	@
 < t;<	t7
-<"uBD
+<!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
+<!-- schema 
 <%?reset@QListView@@UEAAXXZ
 <,?setRed@QColor@@QEAAXH@Z
 <-?setStyle@QFont@@QEAAXW4Style@1@@Z
@@ -1265,6 +1279,7 @@ $Ib?s
 << none >>
 <>#n2
 <DuBfff
+<NONE>
 <NULL>
 <atc<r
 <deferred>
@@ -1280,7 +1295,7 @@ $Ib?s
 =imb;D
 >	?grow@QVectorData@@SAHHHH_N@Z
 >                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZRegisterConfigValue: Unknown error constructing config value "%s"!
-><!-- schema 
+>MClassHasCustomAlignedNewDelete
 >ffffff
 >jtm}S
 ? ?paint@QIcon@@QEBAXPEAVQPainter@@AEBVQRect@@V?$QFlags@W4AlignmentFlag@Qt@@@@W4Mode@1@W4State@1@@Z
@@ -1447,15 +1462,21 @@ $Ib?s
 ??MQTableWidgetItem@@UEBA_NAEBV0@@Z
 ??YQString@@QEAAAEAV0@PEBD@Z
 ?@En[vP
+?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?Cu0f9w
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
+?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?ExtractFileBase@CBufferString@@QEAAPEBDPEBD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?ExtractFileExtension@CBufferString@@QEAAPEBDPEBD@Z
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -1463,14 +1484,22 @@ $Ib?s
 ?LockForRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@PEBDZZ
+?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?MakeRelativePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
 ?RandomFloat@CUniformRandomStream@@UEAAMMM@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
+?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHDD@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?UUUUUU
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
@@ -1823,6 +1852,7 @@ $Ib?s
 ?lessThan@QSortFilterProxyModel@@MEBA_NAEBVQModelIndex@@0@Z
 ?load@QPixmap@@QEAA_NAEBVQString@@PEBDV?$QFlags@W4ImageConversionFlag@Qt@@@@@Z
 ?loadResource@QTextEdit@@UEAA?AVQVariant@@HAEBVQUrl@@@Z
+?m_nGroup
 ?mapFromSource@QSortFilterProxyModel@@UEBA?AVQModelIndex@@AEBV2@@Z
 ?mapSelectionFromSource@QSortFilterProxyModel@@UEBA?AVQItemSelection@@AEBV2@@Z
 ?mapSelectionToSource@QSortFilterProxyModel@@UEBA?AVQItemSelection@@AEBV2@@Z
@@ -1969,16 +1999,13 @@ $Ib?s
 @09D$0
 @8,2u
 @81u/H
+@88u H
+@8=,2
 @8l$8t
 @8s0u
 @8sDt
 @8sDu
 @8sDu'E3
-@8wlH
-@8wmH
-@8wnH
-@8woH
-@8wpH
 @8x tF@8
 @8x u
 @8{Xu
@@ -1992,7 +2019,6 @@ $Ib?s
 @8|$^t
 @8|$ju2H
 @8|$ku	H
-@<NONE>
 @>%>b
 @@H9(t%I
 @A\^]
@@ -2008,9 +2034,9 @@ $Ib?s
 @A^_]
 @A^_^
 @A_A\_
+@A_A]A\_[
 @A_A]^][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A\_^[]
 @A_A^A\_^][
@@ -2026,6 +2052,7 @@ $Ib?s
 @Integer overflow in %s
 @Lc:E3
 @Lcqh3
+@SATAUAV
 @SAUAVAWH
 @SAUAVH
 @SAUH
@@ -2035,7 +2062,6 @@ $Ib?s
 @SUATAUH
 @SUATAVH
 @SUATH
-@SUAUAWH
 @SUAVH
 @SUAWH
 @SUVAUAWH
@@ -2049,18 +2075,19 @@ $Ib?s
 @SVAUH
 @SVAVAWH
 @SVAVH
+@SVAWH
 @SVWATAUAVAWH
 @SVWAUAVAWH
 @SVWAVAWH
 @SVWAVH
 @SVWH
+@SWATAUAWH
 @SWATAVH
 @SWAUH
 @SWAVH
 @SWAWH
 @UATAUAVAWH
 @UATAUAWH
-@UATAUH
 @UATAVH
 @UATH
 @UAUAWH
@@ -2070,7 +2097,7 @@ $Ib?s
 @UAVH
 @UAWH
 @USAVH
-@USVAUAWH
+@USVATAWH
 @USVWATAUAVAWH
 @USVWATAVAWH
 @USVWATAVH
@@ -2081,6 +2108,7 @@ $Ib?s
 @USWH
 @UVATAUAWH
 @UVATAVAW
+@UVAUAWL
 @UVAUH
 @UVAWH
 @UVWATAUAVAWH
@@ -2088,7 +2116,6 @@ $Ib?s
 @UVWAVAWH
 @UVWH
 @UWATH
-@UWAVH
 @UWAWH
 @VAVAWH
 @VWATAVAWH
@@ -2110,6 +2137,7 @@ A'?setAlignment@QTextOption@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
 A(98~HH
 A(9B(D
 A(I;E
+A+@$H
 A+F$D
 A+G$E
 A+G$Hc
@@ -2136,6 +2164,7 @@ A;H$s
 A;H$v}H
 A;Q`}
 A;Z<|
+A;^ |
 A;^@|
 A;oP|
 A>l$/
@@ -2199,17 +2228,20 @@ ATI_TC_CalculateBufferSize_Wrapper
 ATI_TC_ConvertTexture_Wrapper
 AUAVAWH
 AVAWH
+A\_^[]
 A]A\[
-A]A\]
 A]A\][
+A]A\_^[
 A]A\_^]
 A]_^]
 A^A\]
 A^A\^[]
 A^A\^]
+A^A\_
 A^A\_^[]
+A^A]A\[
+A^A]A\]
 A^A]A\][
-A^A]A\_
 A^A]A\_]
 A^A]A\_][
 A^A]A\_^[
@@ -2221,17 +2253,17 @@ A^_^[
 A^_^[]
 A^_^]
 A^_^][
+A_A\^[]
 A_A\_^]
-A_A]A\[
 A_A]A\[]
 A_A]A\]
-A_A]A\^
 A_A]A\^]
 A_A]^
-A_A]^[]
 A_A^A\
 A_A^A\]
+A_A^A\^[
 A_A^A\^]
+A_A^A\_[
 A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
@@ -2244,7 +2276,9 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
+A_A^A][
 A_A^A][]
+A_A^A]^]
 A_A^A]_]
 A_A^A]_^
 A_A^A]_^[
@@ -2252,7 +2286,6 @@ A_A^A]_^[]
 A_A^]
 A_A^^
 A_A^_
-A_A^_]
 A_A^_^[
 A_A^_^]
 A_A^_^][
@@ -2269,7 +2302,6 @@ Active Window Widget
 ActiveArea
 AddLayer
 Adding external tool for extension:      %s
-AddonInfo
 Address
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 AdobeDeflate
@@ -2334,7 +2366,6 @@ August
 AuthE
 AutoLayer
 B channel not found!
-B'NEmS
 B(I9A(
 B,?setRenderHint@QPainter@@QEAAXW4RenderHint@1@_N@Z
 B.f?y
@@ -2380,6 +2411,8 @@ Bad header format (no closing marker)
 Bad header: invalid binary marker
 Bad header: invalid compression header
 Bad header: unrecognized encoding id
+Bad keyname
+Bad value
 BadFaxLines
 BakedLODBuilderMgr001
 BaseIKRig
@@ -2434,6 +2467,7 @@ C$+CX;C,
 C$u	H
 C(9C u&
 C(D90
+C(D94(
 C(I;A
 C,9C$u
 C,;C(~6H
@@ -2459,6 +2493,7 @@ CCITT Group 3
 CCITT Group 4
 CCITT RLE
 CCITT RLE/W
+CD$X@
 CD$XD
 CFALayout
 CFAPlaneColor
@@ -2511,6 +2546,8 @@ CToolFramework2::ErrorBoxWithHTML()
 CToolFramework2::RegisterToolsFromManifest
 CToolFramework2::Tools_RunFrame
 CToolsConfig
+CUtlBuffer::VaPrintf
+CUtlBuffer::VaPrintf: String overflowed buffer [%llu]
 CUtlMemoryPoolBase: Cannot specify 0 elements to grow each time!
 CUtlMemoryPoolBase::CUtlMemoryPoolBase
 CUtlRBTree overflow with %u elements!
@@ -2605,7 +2642,6 @@ C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 C_OP_WorldTraceConstraint
-C__temp_unserialization_member__
 Calculate a skin diffusion profile using scattering constants.
 CalibrationIlluminant1
 CalibrationIlluminant2
@@ -2615,6 +2651,7 @@ CameraCalibration2
 CameraSerialNumber
 Can not read scanlines from a tiled image
 Can't set both read_data_fn and write_data_fn in the same structure
+Can't write binary data to a text buffer.
 Cannot allocate abstract class
 Cannot handle different per-sample values for field "%s"
 Cannot quantize more than %d color components
@@ -2623,6 +2660,8 @@ Cannot quantize to more than %d colors
 Cannot read TIFF header
 Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
+Cannot save KV3 text to a non-text buffer!
+Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot transcode due to multiple use of quantization table %d
 Cannot write directory, out of space
 CapToggle
@@ -2742,6 +2781,7 @@ D$$9D$(u
 D$$A;
 D$$E;
 D$(@8;t
+D$(A;
 D$(E3
 D$(H9
 D$(H;
@@ -2749,7 +2789,9 @@ D$(Hc
 D$(L9
 D$(L;
 D$)fD
+D$,A;
 D$,D;
+D$0+D$`
 D$0,M
 D$00u
 D$09\$<
@@ -2772,7 +2814,7 @@ D$0fD
 D$0fH
 D$0mp
 D$0r|
-D$0t9
+D$0t?
 D$0tbA
 D$0xL
 D$4+D$8A
@@ -2789,6 +2831,7 @@ D$8HcH
 D$8HcJ
 D$8Ic
 D$8L9
+D$8L;
 D$8fA
 D$8fH
 D$8ff
@@ -2797,9 +2840,11 @@ D$<+D$4
 D$<9T$0wE9T$4w?9T$8w9;
 D$@%I
 D$@9X
-D$@D;G
+D$@;D$8
+D$@A+
 D$@E3
 D$@H+
+D$@H9
 D$@H;
 D$@H;G
 D$@Hc
@@ -2811,10 +2856,14 @@ D$@mp
 D$@r|
 D$A+L
 D$BE3
+D$D+D$T
+D$D+D$THc
+D$DA+
 D$DE3
 D$DHc
 D$FE3
 D$H;D$`
+D$HD;G
 D$HE3
 D$HH+
 D$HH;
@@ -2839,6 +2888,7 @@ D$Pk@_aH
 D$Pmp
 D$RE3
 D$VIc
+D$XA+
 D$XD8p
 D$XD90}
 D$XE3
@@ -2850,10 +2900,12 @@ D$\Hc
 D$`9D$Hs$H
 D$`@2
 D$`A+
+D$`A;
 D$`E#
 D$`E3
 D$`H;
 D$`Hc
+D$`Ic
 D$`L+
 D$`L;
 D$`Ll
@@ -2870,16 +2922,16 @@ D$hE;
 D$hHcAxL;
 D$hu4D
 D$p 69
-D$p;G
 D$p<L{
 D$pA+
-D$pA;F
 D$pD;
 D$pE3
+D$pH;
 D$pHK8
 D$pL;
 D$pMc
 D$x*>
+D$xE3
 D$xHc
 D$xL+
 D$xfD
@@ -2903,13 +2955,12 @@ D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D80u!H
 D82u&H
-D85KL	
+D85Ca
+D85hf
 D88Ht!
 D88Hte
 D8<;u
-D8=OW	
 D8?tnH
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8M@t
@@ -2925,19 +2976,17 @@ D8l$`
 D8l$ht
 D8m!u0H
 D8m"u	H
-D8mPu
-D8mXu
+D8m`u
 D8sAt
 D8s`A
 D8s`D
 D8t$8t
 D8t$Ht
 D8{&t
+D9,2H
 D90u	9X
 D98Ht;H
 D98tT
-D98~bH
-D9=|b
 D9B,t
 D9G$s5
 D9J,w
@@ -2946,9 +2995,9 @@ D9c t
 D9d$(u
 D9f@~0Hc
 D9fxv@J
+D9l$0~)I
+D9l$0~5I
 D9l$P~)I
-D9l$P~3I
-D9l$p~)I
 D9t$@
 D9x(uiE
 D9{(u
@@ -2960,6 +3009,10 @@ D;D$(}:J
 D;D$8|
 D;D$8};J
 D;G8|
+D;L$`~!Hc
+D;L$d~
+D;L$l~
+D;L$t~ZH
 D;O u=
 D;T$8}
 D;[ D
@@ -2967,8 +3020,10 @@ D;j0v
 D;l$@
 D;l$H
 D;s8|
+D;t$(r
 D;t$du
 D;t$t
+D;t$x~1
 D;xP|
 D;z,u
 D;z,v
@@ -2976,6 +3031,7 @@ D;z,v(A
 D;{8|
 D;{Lr
 D;|$P
+D;|$l
 D;}P|
 D<P0I
 DCT coefficient out of range
@@ -3124,7 +3180,6 @@ EnterCriticalSection
 EnterUmsSchedulingMode
 EnumSystemLocalesEx
 EnumSystemLocalesW
-EnvironmentMapBuilder_001
 Eo9Gt
 Eo;Gt
 EoHcH
@@ -3166,7 +3221,11 @@ Expected hex byte (eg. 00-FF)
 Expected member name or '}'
 Expected token
 Expected type of next member
+Expected value after =
 Expected value or ']'
+Expected value.
+Expected {
+Expected }
 External Tool Debug
 Extra compressed data
 Extra compression data
@@ -3175,6 +3234,7 @@ F +F(
 F 9F(r
 F @8{ru
 F(@8{Yu)H
+F(D;p
 F(LcF I
 F.?setWeight@QFont@@QEAAXH@Z
 F0LcFDI
@@ -3202,11 +3262,13 @@ Failed to create temporary file %s
 Failed to get p4 file info for %s
 Failed to initialize tool system for module '%1'
 Failed to load bindings (%s)
+Failed to load settings: %s (%s)
 Failed to load tool system for module '%1'
 Failed to open %s
 Failed to parse channel info.
 Failed to read attribute.
 Failed to run external tool
+Failed to save settings: %s (%s)
 Failed to start buildwatch.exe
 Failed to write %s
 Fax3Decode1D
@@ -3292,12 +3354,23 @@ GAMEBIN
 GAMECONSOLE
 GAMEROOT
 GCUtlString::FormatV
-GD$H@
+GD$8E3
+GD$8H
+GD$8I
+GD$8L
+GL$HH
 GPSIFDOffset
+GT$(H
 GT$0H
+GT$8E3
 GT$8H
+GT$HH
+GT$XH
+GT$xE3
+G\$(H
 G\$0H
 G\$8H
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -3318,6 +3391,7 @@ GetActiveWindow
 GetAsyncKeyState
 GetCPInfo
 GetCPUInformation
+GetCStringCharConversion
 GetCommandLineA
 GetCommandLineW
 GetConsoleCP
@@ -3392,12 +3466,16 @@ GetUserDefaultLCID
 GetUserDefaultLocaleName
 GetUserObjectInformationW
 GetVersionExW
+Gl$XH
 GlobalHotkeys
 GlobalTopLevel
 GrayResponseCurve
 GrayResponseUnit
 Group3Options
 Group4Options
+Gt$(H
+Gt$x3
+G|$8H
 H SVWH
 H UAVH
 H UVAUAVH
@@ -3426,7 +3504,6 @@ H98t%H
 H98u	H
 H99t	M
 H99u{
-H9=&:
 H9A(s
 H9Ahs
 H9BhuTH
@@ -3434,10 +3511,10 @@ H9C0w<
 H9D$PuCI
 H9J t1
 H9K u
-H9L$8t
 H9L$Ht?H
 H9L$`t
 H9Qhv
+H9\$8t
 H9\$X
 H9_ht0H
 H9k0H
@@ -3447,6 +3524,7 @@ H9s@H
 H9s@u
 H9sHH
 H9uot	H
+H9|$0t
 H9~Pu
 H;@0u
 H;@Xu
@@ -3455,9 +3533,11 @@ H;D$`
 H;XXs
 H;YXt 
 H;\$P|
+H;\$`uAE9
 H;t$@u
 H;xXu9
 H;|$0
+H;|$8I
 HA]_][
 HA^A]A\]
 HA^A]A\_
@@ -3470,7 +3550,6 @@ HKEY_CLASSES_ROOT\
 HKEY_CURRENT_USER\
 HKEY_LOCAL_MACHINE\
 HL;l$Ht
-HW8/(
 H[><y5
 HalftoneHints
 HammerMapLoader001
@@ -3501,6 +3580,11 @@ HcD$8H
 HcD$HE+
 HcD$X
 HcD$XH
+HcD$dH;
+HcD$dI;
+HcD$lI;
+HcD$tI;
+HcD$x
 HcFTL
 HcFxH
 HcFxI
@@ -3517,7 +3601,9 @@ HcKxH
 HcL$ H
 HcL$(L
 HcL$P;
+HcL$dH
 HcR4L
+HcS@H
 HcS\LcU
 HcT$8IcA
 HcT$HH
@@ -3526,7 +3612,10 @@ HcWxL
 Hc\$0
 Hc\$@;\$Pu
 Hc\$@H
+Hc\$`I;
 Hc\$`L
+Hc\$tI
+Hc\$tL
 Hc]P;]`u
 Hc]`M
 Hc]wD
@@ -3538,9 +3627,12 @@ Hc^8;^Hu
 HckHL
 Hcl$0H
 Hcn(;n8u
+Hcs`;spu
+Hct$$I;
+Hct$,I;
 Hct$8H
+Hct$tH
 Hcyx;
-Hc{`;{pu
 Hc|$4H
 Hc}PL
 Hc}gH
@@ -3577,6 +3669,7 @@ ISO JBIG
 IToolFrameListener
 Ic4$A;t$
 IcA(H
+IcAx3
 IcE<H
 IcExH
 IcI A
@@ -3768,6 +3861,7 @@ K&>.yC
 K/?sizeHint@QLabel@@UEBA?AVQSize@@XZ
 K0u,H
 K4A+H 
+K8+C$
 K@H;KHs
 KERNEL32.dll
 KV Conditional Evaluation Error
@@ -3777,18 +3871,18 @@ KeyState[%1]
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 K~Je#>!
 L!|$(L!
-L$ ATAUAVAWH
 L$ E3
 L$ E;F
 L$ H;
 L$ Hc
 L$ Lc9H
-L$ SATAUAWH
+L$ SATAUAVH
+L$ SATAUH
+L$ SAUAVAWH
 L$ SH
 L$ SUVAVH
 L$ SUVWATAUAVAWH
@@ -3801,6 +3895,7 @@ L$ USWATAUAVAWH
 L$ UVWATAUAVAWH
 L$ UWAUAVAWH
 L$ WATAUAVAWH
+L$ WATAVH
 L$ WH
 L$ fI
 L$ iM
@@ -3815,16 +3910,18 @@ L$(fH
 L$(fI
 L$(iM
 L$,=)#
-L$0D80H
+L$0@88H
 L$0E3
 L$0E;
 L$0H+
 L$0H3
 L$0H;
+L$0Ic
 L$0M;
 L$0fH
 L$0fI
 L$0ff
+L$0u2
 L$8;L$0
 L$8H3
 L$8Lc
@@ -3856,6 +3953,7 @@ L$P+L$H
 L$PE3
 L$PE;
 L$PH3
+L$PI;
 L$PfD
 L$TE3
 L$XA;
@@ -3863,22 +3961,25 @@ L$XE3
 L$XfD
 L$`)K
 L$`A;
-L$`D;N
-L$`D;O
 L$`E3
 L$`E;
 L$`H3
 L$`fD
 L$`tcA
+L$dA+
 L$hI;
 L$pD9w8
 L$pD;w8
 L$pE2
 L$pE3
+L$pE;
 L$pH3
 L$pJc
+L$tHc
+L$xAi	
 L$xD+
 L$xI+
+L$xIc
 L(:A:
 L(;A:
 L(;E:
@@ -3888,26 +3989,28 @@ L+l$HH
 L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L7?unpolish@QWindowsXPStyle@@UEAAXPEAVQApplication@@@Z
 L9	u)H
+L9%^e
 L9*u&
 L93u_
 L93uc
 L9Ahs
 L9`8tA
+L9d$0t
 L9d$Pt
 L9d$Xt
-L9e0tjH
+L9e@t	H
+L9ePt	H
 L9egt	H
 L9g`t A
 L9m(t	H
 L9mot	H
-L9t$0t
 L9t$@t
 L9t$`t
 L9u`t	H
 L9ugt	H
 L9w t#H
-L9|$ t
 L9~ t
+L;D$8L
 L;D$8v7H
 L;EHt
 L;d$8|
@@ -3966,11 +4069,14 @@ Lc\$XH
 Lcew3
 Lcl$ A
 Lcl$xfff
+Lct$$I;
 Lct$8A
 LeaveCriticalSection
 LensInfo
 LighterToolbar
+Line %d at "%s": 
 Line %d at "%s": %s
+Line %d: 
 Line %d: %s
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
@@ -4012,7 +4118,6 @@ M8?wheelEvent@QMenu@@MEAAXPEAVQWheelEvent@@@Z
 M9}ht
 MATCHFRAMEWORK_001
 MAX_ALLOC_CHUNK is wrong, please fix
-MClassHasCustomAlignedNewDelete
 MLc3D;s
 MM/dd/yy
 MMouse
@@ -4030,7 +4135,6 @@ MakerNoteSafety
 Malformed iCCP chunk
 Malformed iTXt chunk
 MapListService_001
-Mar 20 2020
 March
 MaskedAreas
 MaterialUtils_001
@@ -4043,6 +4147,7 @@ MaxPolicyElementKey
 MaxSampleValue
 Maximum
 Maximum supported image dimension is %u pixels
+May 14 2020
 Mbp?333333
 Mc>Hc
 McGHH
@@ -4324,7 +4429,7 @@ Please choose a valid image file
 Position
 PostProcessingSystem_001
 Potential overflow in png_zalloc()
-Pp9\$`t-
+Pp9\$`t+
 Predictor
 PredictorEncodeTile
 PredictorSetup
@@ -4344,6 +4449,7 @@ Product Name: %s
 Profile size field missing from iCCP chunk
 Properties
 PropertyEditorSystem_001
+PxH9t$0t
 Q2XXR
 Q5rHg,>
 Q8?wheelEvent@QWidget@@MEAAXPEAVQWheelEvent@@@Z
@@ -4485,7 +4591,6 @@ S;\$0tH
 S>$hkDh$h>[2
 SATAUH
 SATAWH
-SAUAVH
 SGILog
 SGILog compression cannot handle non-contiguous data
 SGILog compression supported only for %s, or raw data
@@ -4515,22 +4620,22 @@ SUVWAVAWH
 SUVWAVH
 SUVWH
 SUWATAUAVH
-SUWATAUAWH
 SUWAUAWH
 SUWAUH
 SVATAUH
+SVATAVAWH
 SVAUH
-SVAWH
 SVWATAUAVAWH
 SVWATAUAVH
 SVWATAUAWH
+SVWATAUH
 SVWATAVAWH
 SVWAVH
 SVWAWH
 SWATAUAWH
+SWATAVAWH
 SWAUH
 SWAVH
-SWAWH
 SampleFormat
 SamplesPerPixel
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 1
@@ -4640,9 +4745,11 @@ T$ H;
 T$ Ic
 T$ Lc
 T$ Mc
+T$$D9
 T$(9t$ t
 T$(D+
 T$(E3
+T$(E;
 T$0D;
 T$0E3
 T$0H;
@@ -4652,8 +4759,11 @@ T$4E9
 T$8+G$A
 T$8+G$H
 T$8A+
+T$8D;
+T$8D;t$(r
 T$8E3
 T$<D;
+T$@+G$A
 T$@A;
 T$@E3
 T$@H+
@@ -4675,10 +4785,18 @@ T$XLc
 T$`D+
 T$`E3
 T$`E;hx
+T$`Hc
+T$hD;
+T$hE;
+T$lE;
+T$pA;
 T$pD+
+T$pD;
 T$pE3
+T$pE;
 T$pH;
 T$pfD
+T$xE3
 T$xLc
 TADIt	
 TADIu
@@ -4754,8 +4872,6 @@ Tool Frame Listeners - RunFrame
 Tool Framework
 ToolFramework2
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -4802,6 +4918,7 @@ USVATAVH
 USVWATAUAVAWH
 USVWATAVAWH
 USVWATAVH
+USVWATH
 USVWAUAVAWH
 USVWAUAVH
 USVWAVH
@@ -4816,6 +4933,7 @@ UUUUUUUUL
 UVATAUAVAWH
 UVATAUAVH
 UVATAVH
+UVAUAVAWH
 UVAVH
 UVAWH
 UVLX8888
@@ -4830,7 +4948,6 @@ UVWQ8888
 UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
-UWAVAWH
 UWAVH
 UWAWH
 UmsThreadYield
@@ -4872,8 +4989,10 @@ Unsupported ETC image format %d.
 Unsupported JPEG data precision %d
 Unsupported JPEG process: SOF type 0x%02x
 Unsupported PSD color mode!
+Unsupported binary encoding id.
 Unsupported color conversion request
 Unsupported marker type 0x%02x
+Unsupported text encoding id.
 UoA+v
 UokOP
 UpdateButtonStatusFromAction()
@@ -4887,7 +5006,6 @@ UserInfoChangeService_001
 V0;Ct~ZH
 V6E>`"(5
 VATAUAVAWH
-VATAUAWH
 VATAUH
 VAUAWH
 VAVAWH
@@ -4925,7 +5043,7 @@ VScriptDbg
 VScriptManager010
 VStringTokenSystem001
 VT$PD
-VTools_%s
+VTools_
 VUUUA
 VUUUH
 VWATAUAVAWL
@@ -4941,12 +5059,10 @@ VWAVAWH
 VWAVH
 VWAWH
 V_CopyMemory3D
-V_FixSlashes
 V_GetErrno
 V_IsAbsolutePath
 V_RemoveDotSlashes
 V_SetErrno
-V_StripFilename
 V_UTF16ToUTF8
 V_UnqualifiedFileName
 V_acos
@@ -4980,10 +5096,8 @@ V_strnlen
 V_strtod
 V_strtoi64
 V_strtoui64
-V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 V`;Ct~bH
@@ -5056,7 +5170,6 @@ X(D9y(
 X360_DST16
 X360_DST24
 X360_DST24F
-X56C	
 XA\^][
 XA]A\^[
 XA^A\_[
@@ -5074,7 +5187,9 @@ X|$ A
 X|$8E
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
+Y%eg	
 Y0t>H
+Y=1l	
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -5127,6 +5242,7 @@ Zpm"U
 \$ VWAUAVAWH
 \$ WAVAWH
 \$ WH
+\$(A_A]^]
 \$(Hc|$ H
 \$(I;
 \$(L#
@@ -5136,8 +5252,10 @@ Zpm"U
 \$09i8
 \$0;^
 \$0A;
+\$0D;
 \$0E3
 \$0H;
+\$0Hc
 \$0HcH
 \$0L+
 \$0Lc
@@ -5147,7 +5265,9 @@ Zpm"U
 \$8fD
 \$<A;
 \$?question@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
-\$@@8==c
+\$@9\$8
+\$@9\$8~I
+\$@@8==
 \$@A).H
 \$@D;
 \$@H+
@@ -5155,6 +5275,8 @@ Zpm"U
 \$@Hc
 \$@f;
 \$H9.
+\$HHc
+\$Hta
 \$L;u$
 \$PA_A^A]A\_^]
 \$PE3
@@ -5164,11 +5286,16 @@ Zpm"U
 \$XH;y
 \$XHc
 \$XIc
+\$`D;L$l~
 \$`E3
 \$`Hc
 \$gm?
+\$hD;T$d~!Hc
 \$hHcZ@H
+\$pD+
+\$pD;T$d~ Hc
 \$pE3
+\$tD;
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
 \ffff
@@ -5183,20 +5310,14 @@ Zpm"U
 ^RfN>
 ^fD9+t
 _	?hasPendingEvents@QCoreApplication@@SA_NXZ
+_(None)
 _L$DI
 _TIFFMergeFieldInfo
 _TIFFSetupFieldInfo
 _TIFFVGetField
 _TIFFVSetField
-_V_AppendSlash
-_V_ComposeFileName
-_V_ExtractFileExtension
 _V_ExtractFilePath
-_V_FileBase
-_V_FixupPathName
 _V_MakeAbsolutePath
-_V_SetExtension
-_V_StrSubst
 _V_StringAfterPrefix
 _V_strncat
 _V_strncmp
@@ -5212,6 +5333,7 @@ __pascal
 __ptr64
 __restrict
 __stdcall
+__temp_unserialization_member__
 __thiscall
 __unaligned
 __vectorcall
@@ -5222,6 +5344,7 @@ _logb
 _nextafter
 _oD>Kg
 _p)_tH
+_root_keyname
 _test_conversion_counter
 _toolsettings
 ` UAVAWH
@@ -5402,6 +5525,7 @@ c:\buildslave\hlvr_rel_win64\build\src\qcontrols\qinputbindmanager.cpp
 c:\buildslave\hlvr_rel_win64\build\src\schemalib\schemaclassinfo.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\configvalue.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\mempool.cpp
+c:\buildslave\hlvr_rel_win64\build\src\tier1\utlbuffer.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\utlstring.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier1\utlsymbol.cpp
 c:\buildslave\hlvr_rel_win64\build\src\tier2\schemabindings.cpp
@@ -5475,22 +5599,24 @@ d$ UAVAWH
 d$ fC
 d$(E3
 d$0E3
-d$8D9d$@
 d$8E3
 d$?raise@QWidget@@QEAAXXZ
 d$@D;e
-d$@E3
 d$DE;
 d$HA;
 d$HHc
+d$P+A$t
+d$PD;
 d$PfD
+d$XE3
 d$XHc
-d$`D;o
-d$`E3
-d$`E;
+d$`;C
+d$`A;F
 d$h9s
 d$hE2
 d$hE3
+d$hIc
+d$tfff
 d%?resizeEvent@QAbstractItemView@@MEAAXPEAVQResizeEvent@@@Z
 d&?screenGeometry@QDesktopWidget@@QEBA?BVQRect@@PEBVQWidget@@@Z
 d?000000`?
@@ -5720,14 +5846,13 @@ greedy
 green
 grumpy
 gyrating
-h Lcx
+h Lc`
 h#?qt_metacast@QTableView@@UEAAPEAXPEBD@Z
 h*?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
 h8?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
 h>1my
 hA^A\
 hA_A]A\_[]
-hA_A]A\_][
 hamster
 handindex
 handleDelta
@@ -5836,7 +5961,9 @@ l$ AVH
 l$ D9l$0|LH
 l$ E3
 l$ E;G|
+l$ V3
 l$ VAUAWH
+l$ VAVAWH
 l$ VH
 l$ VWATAUAVAWE3
 l$ VWATAVAWH
@@ -5847,15 +5974,16 @@ l$ WAVAWH
 l$ WH
 l$$9L$(
 l$$D;
+l$(A^A]A\[
 l$(E3
 l$(LcI
-l$0A+
 l$0E3
 l$0H+
 l$0H9_
 l$0Hc
 l$0HcA
 l$0Ic
+l$0ff
 l$0v=fA
 l$0~8H
 l$8A;
@@ -5875,6 +6003,7 @@ l$PD30A
 l$PI+
 l$PLc
 l$XA+
+l$XE3
 l$XHc
 l$`C9,
 l$`E9j
@@ -5889,7 +6018,6 @@ l$xE3
 l%?resizeEvent@QDialog@@MEAAXPEAVQResizeEvent@@@Z
 l.?setWindowFlags@QWidget@@QEAAXV?$QFlags@W4WindowType@Qt@@@@@Z
 l/?sizeHintForColumn@QAbstractItemView@@UEBAHH@Z
-l=!D9
 large
 last_sniff
 lavender
@@ -5907,6 +6035,7 @@ little
 llama
 loathsome
 lobster
+localize
 lockRotationAlpha
 locust
 log10
@@ -6030,6 +6159,7 @@ m_flStartTime
 m_flStartTimeMax
 m_flTailAlphaScale
 m_hSnapshot
+m_kv3Settings
 m_nAnimationType
 m_nAttributeToWrite
 m_nBehaviorVersion
@@ -6043,7 +6173,6 @@ m_nControlPoint
 m_nControlPointNumber
 m_nFeatheringMode
 m_nFirstMultipleOverride_BackwardCompat
-m_nGroup
 m_nIncrement
 m_nMapType
 m_nMinParticlesToEmit
@@ -6129,6 +6258,7 @@ must be either LogLUV or LogL
 n D9e
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
+nD8-k
 nTries < 10000000
 n]?iJ
 nan(ind)
@@ -6189,7 +6319,6 @@ oypfD
 oyster
 o|$0f
 p AWH
-p Lcx
 p UAVAWH
 p UWAVH
 p"?qt_metacall@QLabel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -6215,6 +6344,7 @@ pPrevFocusWidget,pCurrentFocusWidget
 pScheduler
 pThreadProxy
 panda
+panorama/localization/core_tools_%language%.txt
 panther
 parent_bone
 parrot
@@ -6314,7 +6444,10 @@ rotating
 s	A9;A
 s WATAUAVAWH
 s"?qt_metacall@QLineEdit@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+s"Hc}
+s$fff
 s%D;k
+s&Hc}
 s0H9s
 s4+sP+
 s@H9s H
@@ -6344,6 +6477,7 @@ sequence_name
 sequence_number
 sequential row overflow
 serious
+settings.txt
 shader
 shallow
 shapeType
@@ -6405,24 +6539,18 @@ switchState
 t H9X8tN
 t!McY
 t"<.u
-t#Hc3;s
-t$ ;C ~
-t$ @2
 t$ A;
 t$ ATAVAWH
 t$ AVAWH
 t$ AVAWL
-t$ AVE3
 t$ AVH
 t$ AWH
 t$ E3
-t$ Hc
 t$ Mc
 t$ UAVAWH
 t$ UH
 t$ UWATAUAVH
 t$ UWATAVAWH
-t$ UWAVH
 t$ WATAUAVAWD
 t$ WATAUAVAWH
 t$ WATAUAVD
@@ -6433,16 +6561,18 @@ t$ WAVAWH
 t$ WE3
 t$ WH
 t$ t4A
+t$$A+
 t$(A;
-t$(A^
 t$(D;
 t$(E3
 t$(Lc
 t$(Mc
 t$(ff
+t$,A+
 t$0+A$t
 t$0A^_
 t$0A_A^
+t$0D9t$@|LH
 t$0D;
 t$0E3
 t$0H+
@@ -6474,6 +6604,7 @@ t$HA_A^A]A\_
 t$HD8{
 t$HE3
 t$HHc
+t$HM;
 t$Hff
 t$LD;
 t$PE3
@@ -6487,21 +6618,25 @@ t$Xt	H
 t$\D;
 t$`9w
 t$`;w
-t$`;|$@
+t$`A+
 t$`D8
+t$`E3
 t$`Hc
 t$`I;
 t$fE;
 t$h9~
-t$hD9p
 t$hI;
 t$hL9ewt	H
+t$p;|$P
+t$pA+
 t$pH+
 t$pHcH
+t$xA;
 t'B;| 
 t'fE9
 t(A8(t
 t(D9&}#H
+t(Hc3;s
 t)D8l$@t
 t)D96}$H
 t*D8#t
@@ -6520,11 +6655,12 @@ t/HcT$8I
 t09+u,9s
 t0?staticMetaObject@QMenu@@2UQMetaObject@@B
 t0@87t+
+t0@8;t+
 t0D8;t+
 t4McF
 t4fff
 t5LcF
-t9H9=v
+t9H9=V>
 t:D9s
 t:LcM
 t;A9;
@@ -6643,7 +6779,6 @@ turquoise
 turtle
 tvLcK
 twH;^XtH3
-txE8(tgI
 txH99us
 tyfD9 tsH
 tyrannosaur
@@ -6691,6 +6826,7 @@ uT<0uP
 uUA9l$
 uVfE9M uOfE9M0uHfE9M@uAfE9MPu:fE9M`u3fE9Mpu,A
 uXE9n
+uY<0uU
 uYfA9h uRfA9h0uKfA9h@uDfA9hPu=fA9h`u6fA9hpu/A
 u\A9l$
 ucA9l$
@@ -6866,10 +7002,13 @@ zlib version error
 |$ UAVAWH
 |$ UH
 |$ ff
+|$ fff
+|$ |AH
 |$$M+
 |$(A^
 |$(E3
 |$(I;
+|$,E3
 |$0;}`u
 |$0@"
 |$0A+
@@ -6878,19 +7017,21 @@ zlib version error
 |$0A_A^
 |$0B+
 |$0E3
+|$0E;
 |$0H+
+|$0H;}
 |$0Hc
 |$0Ic
 |$0fD
 |$0fff
 |$0s-
-|$0uO
 |$4E;
 |$89^
 |$8;3
 |$8@8h
 |$8D9>~pL
 |$8H+
+|$8L;
 |$8Lc
 |$8t,H
 |$<;{0
@@ -6910,28 +7051,35 @@ zlib version error
 |$HE3
 |$HHc
 |$HHc7;w
+|$Ht#
 |$HtwI
 |$PA;^ u
-|$PD;c
 |$PE3
-|$PHc
+|$PE;
 |$PHc{@$
 |$XHc
 |$XHcU
 |$XIc
 |$\.u
 |$`30
+|$`@2
 |$`CI
 |$`Ic
 |$`Lc
+|$`ff
 |$h9i
+|$h9x
 |$hA+
+|$hD+
 |$hE3
+|$hE;
+|$lA+
 |$pE3
 |$pH;
 |$pHc
 |$xH;
 |$xLc
+|${H+
 |(tFM
 |2?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z
 |b=})>
@@ -6939,13 +7087,15 @@ zlib version error
 }QfA;
 }UfD	
 }_t!H
+}hD9|$P
 ~ $s%r
 ~!A;~
 ~#?qt_metacast@QVBoxLayout@@UEAAPEAXPEBD@Z
 ~(HcNDI
-~*9y0
-~*9yP
+~*9q0
+~*9qP
 ~-?setText@QAction@@QEAAXAEBVQString@@@Z
+~28\$0t
 ~EI9|$
 ~L@8~8u
 ~QLc]

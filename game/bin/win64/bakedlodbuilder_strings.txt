@@ -11,6 +11,8 @@
  * Requested DmAttribute of value of type "%s" From DmAttribute "%s" which is type "%s"
  - pos
  - rot
+ -o "
+ -of 
  -testmode
  0@P`p
  9(X`
@@ -57,7 +59,6 @@
  HcyH3
  Lc	M
  LcR M
- ReadToken overflow
  Type Descriptor'
  [ %f %f %f %f  %f %f %f %f  %f %f %f %f  %f %f %f %f ]
  [curvetype %s]
@@ -73,6 +74,8 @@
 !1AQaq
 !>6'Y
 !LcK@
+" -ie 
+" -oe 
 """"UUUU
 "%s" 
 "%s" "
@@ -110,6 +113,7 @@ $~aA;F
 %05d,     0x%p,     %5d,      '%s'
 %5EUeu
 %GoU?*
+%O!nF
 %d %d %d
 %d %d %d %d
 %d,%d
@@ -124,6 +128,7 @@ $~aA;F
 %f,%f
 %f,%f,%f,%f
 %i %i %i %i
+%i.txt
 %s (%s -> %s)
 %s (%s) = remove( pos %i, count %i )
 %s - %s
@@ -142,7 +147,6 @@ $~aA;F
 %sEdgeValue
 %sIndices
 %s\%s
-%s\%s%i.txt
 %s\Settings
 &6FVfv
 &?PPPPPPP?
@@ -162,7 +166,6 @@ $~aA;F
 (A^A\
 (A^A]_[H
 (A^_^[H
-(A_A]][
 (A_A^
 (A_A^A]A\_^][
 (A_A^^]
@@ -267,6 +270,7 @@ $~aA;F
 )D$0E
 )D$0H
 )D$@B
+)D$@D
 )D$@H
 )D$@ff
 )D$PD
@@ -282,7 +286,7 @@ $~aA;F
 )L$`E
 )L$`H
 )L$pH
-)MpMc
+)MpIc
 )T$0Hc
 )T$pD
 )T$pH
@@ -314,12 +318,12 @@ $~aA;F
 )t$PD
 )t$PE3
 )t$PH
-)t$PHc
 )t$PI
 )t$PL
 )t$`A
 )t$`D
 )t$`H
+)t$`Hc
 )t$`Lc
 )t$pE
 )t$pH
@@ -340,7 +344,7 @@ $~aA;F
 )|$pE
 )|$pIc
 )|B?d!
-)}pMc
+)}pIc
 *** Converter error - element "%s" already has a non-int attribute "%s"!
 *** Element "%s" has attribute "%s" with an unexpected type!
 *** Log "%s" has attribute "%s" with an unexpected type (expected int array)!
@@ -365,6 +369,7 @@ $~aA;F
 +D$ H
 +D$X+
 +F$Hc
++G$Hc
 +M<7>
 +f)>0'
 +h->|
@@ -380,7 +385,7 @@ $~aA;F
 ,HR>O
 ,I<%w
 ,|%)v
-,}v,&
+,}v,6
 ---- dmxconvert cmdline ----
 ---- dmxconvert output ----
 ---------------------------
@@ -601,7 +606,6 @@ $~aA;F
 .?AV?$CDmeTypedLogLayer@VVector@@@@
 .?AV?$CDmeTypedLogLayer@_K@@
 .?AV?$CDmeTypedLogLayer@_N@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VIMapBuilderMgr@@@@
 .?AV?$CTier1AppSystem@VIMapBuilderMgr@@$0A@@@
 .?AV?$CTier2AppSystem@VIMapBuilderMgr@@$0A@@@
@@ -1033,6 +1037,7 @@ $~aA;F
 0A]^[
 0A^A\_
 0A^^[
+0A^_[
 0A^_^
 0A^_^][
 0A_A]A\_]
@@ -1053,7 +1058,6 @@ $~aA;F
 0A_A^_][
 0A_A^_^]
 0A_^]
-0A__[
 0A__]
 0Hc3H
 0Hc7L
@@ -1076,7 +1080,7 @@ $~aA;F
 1DBlend
 1eaB@
 1sAL"
-200401234054Z0#
+200515053435Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1095,7 +1099,6 @@ $~aA;F
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
-5zQ	+W
 64 283 0
 700WP
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
@@ -1110,7 +1113,6 @@ $~aA;F
 8A_A^_[
 8A_A^_]
 8A__][
-8CDmeJoint CUtlMemoryPool
 8ClipBoard
 8L$`t
 8\$pt
@@ -1219,7 +1221,6 @@ $~aA;F
 < tH<	tD<
 <!-- DMXVersion
 <!-- dmx
-<"uBD
 <$E;Q
 <>#n2
 <NULL>
@@ -1232,7 +1233,6 @@ $~aA;F
 <xuCA
 ======
 =imb;D
-=yp@Rx3
 >FixupResourceName: Illegal full path passed in ("%s")!
 >ffffff
 >jtm}S
@@ -1251,35 +1251,45 @@ $~aA;F
 ?<"t>H
 ?<%u	H
 ?@En[vP
+?AppendFormat@CBufferString@@QEAAHPEBDZZ
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ConColorMsg@@YAXAEBVColor@@PEBDZZ
 ?ConMsg@@YAXPEBDZZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
+?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
+?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?ToLowerFast@CBufferString@@QEAAXH@Z
+?TruncateAt@CBufferString@@QEAAPEBDH_N@Z
 ?UUUUUU
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
 ?false
 ?kxG2)
-?vhE3
 ?{Q}<
 @                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZUPDATE_STRING_TOKEN_DATABASE
 @.data
@@ -1288,6 +1298,7 @@ $~aA;F
 @80t9H
 @80u#H
 @81u/H
+@85Dz
 @8t$x
 @8y:t
 @8|$PtN
@@ -1321,7 +1332,6 @@ $~aA;F
 @SAVAWH
 @SAVH
 @SAWH
-@SUAUAWH
 @SUAVH
 @SUVH
 @SUVWATAVAWH
@@ -1345,7 +1355,6 @@ $~aA;F
 @SWAUAVH
 @SWAVAWH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
 @UATAVH
 @UATAWH
@@ -1365,11 +1374,11 @@ $~aA;F
 @USWAVH
 @USWH
 @UVATAUH
+@UVATAVH
 @UVAVAWH
 @UVAWH
 @UVWATAUAVAWH
 @UVWH
-@UWATAVH
 @UWATAWH
 @UWATH
 @UWAVAWH
@@ -1388,6 +1397,7 @@ $~aA;F
 A+F$H
 A+F$Hc
 A+U$H
+A-enable_2gb_morphs
 A03>A|
 A81t@@8r
 A84.u
@@ -1460,13 +1470,15 @@ AX9GXu
 A\^[]
 A\_^[]
 A]A\]
+A]A\^]
 A]A\_
+A]A\_]
 A]^[]
 A]_^[]
 A^A\[]
 A^A\]
+A^A\^]
 A^A\_[]
-A^A\_]
 A^A\_^[
 A^A\_^[]
 A^A\_^]
@@ -1474,7 +1486,6 @@ A^A]A\]
 A^A]A\_]
 A^A][
 A^A]]
-A^A]^]
 A^A]_^[]
 A^^[]
 A^_^[]
@@ -1677,6 +1688,7 @@ CDmeGameSound CUtlMemoryPool
 CDmeIntCurveInfo CUtlMemoryPool
 CDmeIntLog CUtlMemoryPool
 CDmeIntLogLayer CUtlMemoryPool
+CDmeJoint CUtlMemoryPool
 CDmeLog: interpolable type %s doesn't have an interpolation function!
 CDmeMaterial CUtlMemoryPool
 CDmeMesh CUtlMemoryPool
@@ -2040,8 +2052,8 @@ D$0Lc
 D$0fA
 D$0mp
 D$0r|
-D$0t5
-D$0t9
+D$0t7
+D$0t?
 D$0tHA
 D$49C
 D$4;|$@u)
@@ -2132,8 +2144,9 @@ D);A+
 D08@t	
 D18 t
 D82u&H
-D85C6
-D8=$B
+D85_6
+D8=cA
+D8=|{
 D8Y:uEH
 D8a:uDH
 D8c:u
@@ -2156,21 +2169,24 @@ D9wXt/H
 D9xXL
 D9|$ 
 D;8}aH
+D;=L'
 D;D$0u
-D;E8u
-D;EHu
+D;E@u
 D;EPu
 D;K4u
 D;L$0u
+D;M@u
+D;M`u
 D;k ~=
 D;l$8u!
-D;s ~
 D;sXu
 D;u0u
 D;wXu
+D;{ ~
 D;|$H
 D;|$Hu'A
 D;|$xu
+D;}(u
 D<P0I
 DD$$H
 DDDDUUUU
@@ -2369,7 +2385,6 @@ ERROR: Sequence %d is missing, total of %d sequences!
 ERROR: Sequence number %d is too big!
 ERROR: Unable to create an attribute handle! Save, quit, restart and clean up your file to have fewer elements!
 EXPORTSYSTEM_INTERFACE_VERSION_001
-E_;Eo~
 E`+UX
 Ease In
 Ease In/Out
@@ -2387,7 +2402,6 @@ Encountered an element attribute '%s' while reading the prefix element
 Encountered invalid element ID data!
 EngineServiceMgr001
 EnterCriticalSection
-EnvironmentMapBuilder_001
 Eo9GXu6Lc
 Error
 Error importing actbusy element %s
@@ -2452,9 +2466,14 @@ GAMECONSOLE
 GBuffer
 GBufferNormalSpecExp
 GCUtlBuffer::VaPrintf: String overflowed buffer [%llu]
+GD$(H
+GD$8H
+GT$(H
 GT$8A
+GT$8H
 GT$HD
 GT$HH
+G\$8H
 Ga=UU
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -2505,6 +2524,7 @@ GetSystemTimePreciseAsFileTime
 GetThreadTimes
 GetTickCount
 GetTickCount64
+Gl$(H
 GlobalAlloc
 GlobalLock
 GlobalSize
@@ -2519,7 +2539,6 @@ H+\$hIc<$H
 H0F08
 H0Hc\$p3
 H3\$HH
-H9-aM
 H97t<
 H98tPA
 H9A u
@@ -2593,7 +2612,7 @@ HcD$XL
 HcD$pA
 HcD$pH
 HcD$xL
-HcE8L
+HcE@L
 HcEPL
 HcF0A
 HcG(H
@@ -2621,10 +2640,12 @@ HcT$@H
 HcT$@L
 HcT$XLc
 HcU H
+HcU(H
 HcU0H
-HcU8H
-HcUHH
-HcUhLc
+HcU0L
+HcU@H
+HcU`H
+HcUxLc
 HcV0H
 HcW ;
 Hc\$@3
@@ -2780,6 +2801,7 @@ L$@Lc9M
 L$@uU
 L$D;L$T
 L$DE3
+L$HD+
 L$HD;
 L$HHc
 L$HLc
@@ -2790,13 +2812,13 @@ L$P+L$H
 L$PA;
 L$PE3
 L$XB;
-L$XD+UxI
 L$XE3
 L$XH;M
 L$`D;
 L$`D;ep
 L$`E3
 L$`H;
+L$aE3
 L$hD;
 L$hE3
 L$pE3
@@ -2804,7 +2826,6 @@ L$pH;M
 L$xfA;
 L$|E3
 L9`8tA
-L9d$8t
 L9m(t	H
 L9ugt	H
 L;d$ 
@@ -2831,13 +2852,13 @@ LcA<E3
 LcCLC
 LcCPH
 LcD$|3
-LcE(L
-LcE8M
-LcE@L
+LcE0H
+LcE@H
 LcF`D
 LcG$H
 LcK$A;
 LcK<L
+LcMPI
 LcT$p3
 Lcd$8H
 LceWH
@@ -2845,7 +2866,6 @@ Lcl$ A
 LcsHH
 Lct$H3
 Lct$h3
-Lct$xA
 LcwHI
 Lc|$hH
 Lc|$hI
@@ -2945,6 +2965,7 @@ OF>;^
 OHcs 
 OX9JXt
 OX9KXu
+O]oHcE
 October
 Offset
 OpenClipboard
@@ -3018,6 +3039,7 @@ Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_MessageBox
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Position Along Path Random
@@ -3114,6 +3136,7 @@ S89SD|
 S>$hkDh$h>[2
 SATAVAWH
 SAUAVH
+SFM Session
 SFM Settings
 SFM TrackGroup
 SNAN)
@@ -3140,6 +3163,7 @@ SVWATH
 SVWAUAVAWH
 SVWAVAWH
 SWAUAVAWH
+S^[,?
 Saturday
 ScalpD
 SceneSystem_002
@@ -3217,6 +3241,7 @@ T$8Hc
 T$<D;
 T$<H;
 T$<Ic
+T$@+G$A
 T$@@2
 T$@E3
 T$@Ic
@@ -3224,6 +3249,7 @@ T$HHc
 T$HIc
 T$PE3
 T$PH3
+T$Pff
 T$XHc
 T$`A;
 T$hD9
@@ -3255,8 +3281,6 @@ TongueH
 TongueV
 TongueWidth
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -3271,7 +3295,6 @@ Two Bone
 UA>N0Wl
 UATAUAVAWH
 UATAUAVH
-UATAUH
 UATAUI
 UATAVH
 UATAVI
@@ -3305,12 +3328,12 @@ UUUUUUUUH
 UUUUUUUUL
 UVATAUAVAWH
 UVATAUAVH
+UVATAUH
 UVATAVAWH
 UVATAWH
 UVATH
 UVATI
-UVAUAVH
-UVAUAWI
+UVAUAWH
 UVAUH
 UVAVAWH
 UVAVH
@@ -3324,13 +3347,13 @@ UVWAUAVAWH
 UVWAUAWH
 UVWAVAWH
 UWATAUAWH
+UWATAUH
 UWATH
 UWAVAWH
 UWAVH
 UWAVI
 UWAWH
 Ugx	H
-Uh;Up
 Unable to create new frame.
 Unable to create new sequence.
 Unable to create unknown element %s!
@@ -3408,7 +3431,6 @@ VWAUAWH
 VWAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetErrno
 V_GetFileExtension
 V_IsAbsolutePath
@@ -3447,7 +3469,6 @@ V_strtoui64
 V_tanf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
 Valve Make Sheet File
@@ -3529,6 +3550,7 @@ Zod(^?
 \$ Ic
 \$ UAVAWH
 \$ UH
+\$ UVATAVAWH
 \$ UVWATAUAVAWH
 \$ UVWAUAWH
 \$ UVWAVAWH
@@ -3549,10 +3571,10 @@ Zod(^?
 \$0Ic
 \$0L+
 \$8A+
-\$8A;
 \$8E3
+\$8Hc
 \$<A;
-\$@@8=],
+\$@@8=},
 \$@H;
 \$@Hc
 \$@Ic
@@ -3560,6 +3582,9 @@ Zod(^?
 \$@u$M
 \$@u+M
 \$@uFM
+\$HA;
+\$HHc
+\$Hta
 \$PHc
 \$Pfff
 \$Xt+H
@@ -3576,20 +3601,14 @@ Zod(^?
 \T$Hf
 \ffff
 ])6M>&
+]8fff
 ]>)2X
 ]@fff
 ]HE9F
 ]HcD$ I
 ^<V7w
-^BJ+VN
 ^RfN>
 _8tDH
-_SFM Session
-_V_ComposeFileName
-_V_ExtractFilePath
-_V_FixupPathName
-_V_MakeAbsolutePath
-_V_SetExtension
 _V_StringAfterPrefix
 _V_StringAfterPrefixCaseSensitive
 _V_strncat
@@ -3838,7 +3857,6 @@ catmullrom_tangent
 cellConfiguration
 cellsNodeID
 center
-cfpLi
 changeColorChannels
 channel
 channels
@@ -3928,7 +3946,6 @@ d$8E3
 d$P+A$t
 d$XLc
 d$`E3
-d$`E;
 d$`fff
 d$hE3
 d$heL
@@ -3986,7 +4003,7 @@ dmg.club
 dmg.explosive
 dmg.fire
 dmx file
-dmxconvert -allowdebug -i "%s" -ie %s -o "%s" -oe %s -of %s
+dmxconvert -allowdebug -i "
 dominators
 drawGameRenderablesMask
 drawToolRenderablesMask
@@ -4037,6 +4054,7 @@ error
 event_class
 event_keys
 eventindex
+exA_A^A]A\_^[]
 executable format error
 exit_anim
 exit_sequence
@@ -4274,6 +4292,7 @@ l$PHcl$X
 l$PLc
 l$PfA
 l$XA+
+l$XE3
 l$`E3
 l$`Ic
 l$`Mc?H
@@ -4738,7 +4757,6 @@ r 9_ t
 r'Hc.;n
 r:D8v
 rLp>B
-r\JE[4wr
 radius
 radius0
 radius1
@@ -4939,14 +4957,11 @@ t!+S$L
 t!McY
 t!fA;
 t"<.u
-t$ ;C ~
-t$ @2
 t$ A;
 t$ AVH
 t$ AWH
 t$ E2
 t$ E3
-t$ Hc
 t$ Lc
 t$ UH
 t$ UWATAUAVH
@@ -4962,6 +4977,7 @@ t$(H;l$@
 t$0+A$t
 t$09O
 t$0A;
+t$0D9t$@|LH
 t$0E3
 t$0H;
 t$0Hc
@@ -5139,10 +5155,10 @@ uMHcE
 uT<0uP
 u[HcI
 u`HcL
-u`LcE
 ueHcS
 uf!T$(H!T$ 
 uhIc4
+uhLcM0I
 uint64
 uint64 log
 uint64_array
@@ -5167,6 +5183,7 @@ uuHcF
 uzKs@>
 v0t08
 v2!L.2
+v]M7cs
 value
 value too large
 valueDeltaRotation
@@ -5288,7 +5305,7 @@ x AVH
 x AWH
 x!HcI
 x!HcK
-x$H9-0M
+x$H9-
 x.HcAhL;
 x0v0$
 x9H;H
@@ -5316,6 +5333,7 @@ z0x0:
 zY;>u:m	
 znear
 {YIN?
+|	;Eo
 |#tAM
 |$ A+
 |$ A;
@@ -5379,17 +5397,12 @@ znear
 |$Pu%H
 |$XA+
 |$XE+
-|$XLc
 |$\.u
 |$`E3
 |$`Hc
 |$`Lc
+|$`ff
 |$hA+
-|+A;F
-|,A;F
-|-A;G
-|HA;G
-|JA;G
 |_A;^
 |aA;^
 |auK;
@@ -5397,7 +5410,6 @@ znear
 } Hcu`H
 } fE;A
 } fE;H
-} u,H
 }%;Q|
 }&f;{
 }(D8o

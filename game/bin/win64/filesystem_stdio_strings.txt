@@ -11,20 +11,17 @@
  A^_]
  A^_^
  A_A^A\
- A_A^A\_^
  A_A^A]A\^
  A_A^]
  A_A^]H
  A_A^_
  A_A^_H
  A_A^_^]
- A_A^_^]H
  A_^]
  A__]
  CAsyncRequestQueue destructor called while queue was not empty
  Hc)L
  HcyHH
- ReadToken overflow
  vJH+
 !pRequest->m_bUsedAsContext
 !pRequestBase->m_bUsedAsContext
@@ -44,10 +41,12 @@
 %s: request %llu has op %d
 %s: string format requested %d chars
 %s_%03d.vpk
+&YA1H
 &YA1L
 (*%s*), 
+(A^_^[
 (A_A\_[
-(A_A]][
+(A_A]A\_^[
 (A_A^
 (D$ H
 (DigiCert SHA2 Assured ID Code Signing CA
@@ -92,7 +91,6 @@
 .?AUFileAsyncRequest_t@@
 .?AV?$CBaseAppSystem@VIAsyncFileSystem@@@@
 .?AV?$CBaseAppSystem@VIFileSystem@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
 .?AV?$CRefCountServiceBase@$0A@VCRefMT@@@@
 .?AV?$CRefCounted1@VIRefCounted@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
@@ -193,12 +191,14 @@
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 /u	A:
-0++K{
 061110000000Z
 0:Off, 1:All (for tracking accumulated duplicate read times), >1:Microsecond threashold
 0:Off, 1:Always, 2:Not during load
 0:Off, 1:Any, 2:Sync only
 0:Off, 1:Warn main thread, 2:Warn other threads
+0A^A\]
+0A^^[
+0A^_[
 0A^_^
 0A_A\^H
 0A_A\_^]
@@ -210,12 +210,11 @@
 0A_A^_
 0A_A^_^]
 0A_^[
-0A__[
 0v0b1
 131022120000Z
 141022000000Z
 181004000000Z
-200401233824Z0#
+200515050808Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -228,6 +227,7 @@
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+5GfB0
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8#uaH
@@ -241,8 +241,6 @@
 99~EH
 9C |K
 9_p~$
-9t$Ht)H
-9t$Ht}H
 9xX~?
 9|$X}
 9|$h}
@@ -256,7 +254,6 @@
 ;yXu	H
 ;{ ~@
 ;|$8|
-<"uBD
 <+F$H
 </u3ff
 <2t	<3u	A
@@ -271,16 +268,21 @@
 ??0CThread@@QEAA@XZ
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??1CThread@@UEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMutex@@QEAA@XZ
 ??1CThreadSemaphore@@QEAA@XZ
+??1CThreadSyncObject@@QEAA@XZ
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
+?ConvertIn@CBufferString@@QEAAPEBDPEB_WH_N@Z
 ?DevMsg@@YAXPEBDZZ
-?EnsureTrailingSlash@CBufferString@@QEAAPEBDD@Z
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
+?EnsureCapacity@CBufferString@@QEAAHHPEAPEAD_N1@Z
+?EnsureTrailingSlash@CBufferString@@QEAAPEBDD_N@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
 ?ExtendPath@CBufferString@@QEAAPEBDPEBDD@Z
@@ -289,7 +291,7 @@
 ?ExtractFilePath@CBufferString@@QEAAPEBDPEBD_N@Z
 ?ExtractFirstDir@CBufferString@@QEAAPEBDPEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
 ?Init@CThread@@MEAA_NXZ
@@ -302,14 +304,12 @@
 ?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?OnExit@CThread@@MEAAXXZ
 ?Purge@CBufferString@@QEAAXH@Z
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?RemoveDotSlashes@CBufferString@@QEAAPEBDD@Z
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
-?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?ShortenPath@CBufferString@@QEAAPEBD_N@Z
 ?Sleep@CThread@@SAXI@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
@@ -320,17 +320,16 @@
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
+?UnlockRead_LockForWrite@CThreadRWLock_FastRead@@QEAA?AW4RWLockTranstionResult_t@@PEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
-?V_UnicodeBufferLength@@YAHPEB_WHAEA_N@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?WaitForCreateComplete@CThread@@MEAA_NPEAVCThreadEvent@@@Z
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 @.data
 @.tls
 @8,;u
 @8s(t
-@8t$@
 @8t$t
 @8{pt7H9{Pu1H
 @8{st
@@ -345,23 +344,24 @@
 @A__^
 @Lc:E3
 @SAVH
-@SUAUAWH
 @SUAVH
 @SUVWAVH
 @SUVWH
 @SUWH
 @SVAVH
 @SVAWH
+@SVWATAUAWH
+@SVWAVH
 @SVWH
 @SWATAVAWH
 @SWATAWH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
+@UATAVH
 @UAVAWH
 @USVWATAUAVAWH
+@USVWAWH
 @UVWATAUAVAWH
-@UVWH
 @UWATAUAVH
 @UWATAUAWH
 @UWAVH
@@ -375,26 +375,25 @@ A8F`A
 A8H	P(
 A8Zxt
 A;@X}
+A;@`}
+A;A`}
 A;BX}
-A;F8u
-A;G8u
+A;Q`}
 A;RX}
-A;V(|,Icv(A;v8u
+A;V(|2Icv(A;v8u
 A;^@|
 A;v I
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 ATAUAVH
 AVAWH
 AWATING_FINISH
+A\_^[]
 A]A\_^[]
-A^A\_^[]
-A^A]A\_[]
+A^A\_^]
 A^A]A\_]
 A^A]_^[]
-A^A]_^]
-A_A\]
-A_A\_
 A_A]]
+A_A^A\_[]
 A_A^A\_]
 A_A^A\_^
 A_A^A]A\]
@@ -402,10 +401,13 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]_^
+A_A^A]_^[]
 A_A^]
 A_A^^
 A_A^_
 A_A^_^[]
+A_A^_^]
+A__^[]
 Aborting IO request for %s
 AcquireSRWLockExclusive
 Add N ms of delay to every low-level read operation, to simulate a slow disk
@@ -416,6 +418,7 @@ Allow AsyncBegin/EndRead()
 AnimGraphEditorUtils001
 AnimationSystemUtils_001
 AnimationSystem_001
+ApaHFCH
 AssertMsg_ConditionFailed
 Assertion Failed in function %s():
 AssetBrowserSystem_001
@@ -500,7 +503,6 @@ COM_TimestampedLog
 COrderedConstructor_Create<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,class CResolveOrderedFunc<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>,&void __cdecl _ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)>(class COrderedConstructor_DependencyManagement<class COrderedInitShutdownRefWrapper<&void __cdecl EarlyInit_Common(bool,class COrderedConstructor_DependencyManagement<void> &)> > &)>,0>::AddRef
 CPackedStore::BuildHashTables
 CPackedStore::CPackedStore
-CPackedStore::GetFileHandle
 CSchemaRegistration::RegisterAllModuleData
 CTSListBase::CTSListBase
 CTSQueue corruption
@@ -551,7 +553,6 @@ CreateFileW
 CreateInterface
 CreateNewThreadPool
 D$ E2
-D$ E3
 D$ \H
 D$ \M
 D$ fA
@@ -562,7 +563,6 @@ D$08XHu
 D$0E3
 D$0H3L$0H3
 D$0PK
-D$0fD
 D$8+C$H
 D$8A;
 D$8L9<
@@ -571,36 +571,35 @@ D$@I;F
 D$@eH
 D$H8F	t
 D$HA8F	t
+D$HE3
 D$HH;
-D$IE3
 D$X:A
 D$XL;
 D$`E#
 D$`H;
+D$`L;
 D$`PK
-D$pL;
-D$xH9pPt#@
+D$pH9pPt#@
 D+t$0Hc
 D8$8u
-D81u!L
+D840u
+D89u!L
 D8<+u
-D8c_t
 D8crt'L
 D8cst
 D8ePu
 D8f	t
 D8f	u
 D8f`t
-D8n]t
-D8s_u
+D8k_t
 D8sst
 D8wst
-D9d$Ht)H
+D8{_u
 D9t$X
 D;v u
+D;w@u
 D>@fA
 DEFAULT_WRITE_PATH
-D\$0H
 DataOffset
 DebugTextureInfo001
 DeviceIoControl
@@ -615,7 +614,6 @@ DisableThreadLibraryCalls
 DotaCardGameClient_001
 E0C07
 E8u	t
-E9&~oH
 E;~(H
 ERROR_ALIGNMENT
 ERROR_ALREADYSERVICED
@@ -650,9 +648,7 @@ EXECUTABLE_PATH
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EconItemToolModel_001
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
-Exceeded limit of number of vpk files supported (%d)!
 FAJbH
 FAJbu
 FATAL ERROR: unable to register all schema data: %s
@@ -695,22 +691,29 @@ GD$HL
 GD$hL
 GL$83
 GL$HD
+GL$X3
 GL$`L
-GL$hH
-GL$hI
+GL$hD
 GL$hJ
+GL$xH
+GL$xI
 GSFailure
 GT$(H
 GT$8H
 GT$8I
 GT$8L
 GT$HH
-GT$HI
 GT$hE3
 GT$hH
 GT$hI
+GT$xE3
 GT$xH
+GT$xI
 GU8E3
+GUHE3
+GUXE3
+G\$8L
+G\$HH
 G\$HI
 G\$XL
 GameResourceServiceClientV001
@@ -732,23 +735,24 @@ GetResourceManifests
 GetSystemInfo
 GetSystemTimeAsFileTime
 GetWaitForResourcesProgress (stdio)
+Gl$HH
 Gt$8A
-Gt$h3
 Gt$hL
+Gt$x3
 G|$8A
 G|$8H
+G|$HH
 G|$hH
 H+D$PH+
 H0F08
 H1D$0
-H9(u=
-H95;S
 H97t<
-H9=!*
-H9kPu2
+H9=!$
+H9YPu
+H9kPu,
 H9l$pt
-H9qPud3
-H9{Pt
+H9s@t6
+H9t$Ht|H
 H9|$p
 H;0te
 H;0tg
@@ -771,7 +775,6 @@ HcL$@H
 HcL$p
 HcS@H
 Hc_0L
-Hcs ;s0u
 Hct$ H
 HelpSystem_001
 HostStateMgr001
@@ -802,7 +805,6 @@ L$ Hc
 L$ SH
 L$ SUVW
 L$ UVWATAUAVAWH
-L$ UVWAUAVH
 L$ fI
 L$(E3
 L$(fH
@@ -813,16 +815,13 @@ L$0Hc
 L$0Hc{
 L$8Hc
 L$@E3
-L$@H+
 L$@H1D$0
 L$HA9
 L$HH;
-L$PE3
 L$hHc
 L$pD+
-L9aPu
-L9bPu
 L9d$0t
+L9qPu]3
 L;l$`}
 LINUX
 LOG_GENERAL
@@ -831,6 +830,7 @@ LcA<E3
 LcCPH
 LcD$PH
 LcT$p3
+Lcw0D
 Length
 LengthOfMatchingPaths
 LoadFromBuffer: expected '{', found '%s'
@@ -843,6 +843,7 @@ M9>t(I
 MATCHFRAMEWORK_001
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
+Manually releasing a completed request that has autorelease set
 MapListService_001
 MapViewOfFile
 MaterialUtils_001
@@ -923,7 +924,6 @@ RecursiveLoadFromBuffer:  recursion overflow
 RegisterConfigValue: Unknown error constructing config value "%s"!
 Release
 ReleaseSRWLockExclusive
-Releasing a completed request
 Removing VPK file: %s
 RenderDevice003
 RenderDeviceMgr001
@@ -988,7 +988,7 @@ SteamInternal_ContextInit
 SteamInternal_FindOrCreateUserInterface
 T$ Lc
 T$0E3
-T$8A9
+T$@A9
 T$`E3
 TestScriptMgr001
 TextLayout_001
@@ -999,8 +999,6 @@ ThreadSetPriority
 ThreadSleep
 Times Opened: %3i		Accumulated Time: %10.5fms		Average Time per Open: %13.8fms		File: %s
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1010,30 +1008,31 @@ Tried to close unknown file pointer 0x%llX
 Tried to read %i bytes from unknown file pointer 0x%llX
 Tried to write %i bytes from unknown file pointer 0x%llX
 UATAUAVAWH
-UATAWH
 UAUAWH
 UAVAWH
 UNDEFINED
 UNKNOWN
 UNKNOWN VALUE
-USATH
-USAUH
 USAVH
+USAWH
 USVWATAUAVAWH
 USVWATAUH
-USVWATAVH
+USVWATH
+USVWAUAVAWH
 USVWAUAVH
 USVWAVAWH
 USVWH
-USWATAUAVH
+USWATAVAWH
+UVAWH
 UVWATAUAVAWH
+UVWATAVH
 UVWATAWH
 UVWAUAWH
 UVWAVAWH
 UWATAUAVH
 UWATAUAVI
 UWATAVAWH
-UWAVH
+UWATH
 UWAWH
 Unable to determine async job type (%d)
 Unable to remove %s!
@@ -1094,7 +1093,6 @@ V_RemoveDotSlashes
 V_SetErrno
 V_StripFilename
 V_StripTrailingSlash
-V_UTF16CharsToUTF8
 V_UTF16ToUTF8
 V_UTF8ToUTF16
 V_UnqualifiedFileName
@@ -1128,7 +1126,6 @@ V_tmpnam
 V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Version
@@ -1161,31 +1158,29 @@ ZIP_LocalFileHeader
 ZIP_PreloadDirectoryEntry
 ZIP_PreloadHeader
 \$ @8l$ 
-\$ AVH
 \$ UH
 \$ UVAWH
 \$ UVWATAUAVAWH
 \$ VATAUAVAWH
+\$ VH
 \$ WH
+\$(E3
 \$0E3
 \$0H;
 \$0L;
 \$8;>
 \$8uIH
 \$@;\$`
-\$@Hc
 \$@f;
 \$Xu#H
 \$`fD
 \$`ff
 \$pE3
-\$xuI
 \u	A:
-^h9-s@
+\u%A8O
 _%s.tmp
 _V_ComposeFileName
 _V_ExtractFilePath
-_V_FixupPathName
 _V_MakeAbsolutePath
 _V_StringAfterPrefix
 _V_strncat
@@ -1200,6 +1195,7 @@ _flt.vpk
 `A_A^_
 `HcY 3
 `LcA H
+`u+H9s
 async
 async_allow_held_files
 async_mode
@@ -1218,6 +1214,7 @@ c:\buildslave\hlvr_rel_win64\build\src\filesystem\filesystemasync.h
 c:\buildslave\hlvr_rel_win64\build\src\filesystem\filetracker.cpp
 c:\buildslave\hlvr_rel_win64\build\src\interfaces\interfaces.cpp
 c:\buildslave\hlvr_rel_win64\build\src\public\ordered_constructor.h
+c:\buildslave\hlvr_rel_win64\build\src\public\tier0\threadtools.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier0\tslist.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier1\utlblockmemory.h
 c:\buildslave\hlvr_rel_win64\build\src\public\tier1\utlfixedmemory.h
@@ -1241,12 +1238,10 @@ console.log
 crc32
 d$ fC
 d$(E3
-d$@D8
 d$HHc
 d$PfD
-d$`E3
-d$`E;
 d$hA;n
+d$pt	H
 diskNumberStart
 error
 externalFileAttribs
@@ -1286,9 +1281,8 @@ g_Tier1_CRC32Table
 g_VProfCurrentProfile
 g_pMemAlloc
 g_pThreadPool
-hA;.|
 hA_A^A]A\_^][
-hHcD$PHk
+hHcD$8Hk
 http://ocsp.digicert.com0A
 http://ocsp.digicert.com0C
 http://ocsp.digicert.com0N
@@ -1302,8 +1296,8 @@ l$ 9Q
 l$ AVH
 l$ H+
 l$ VAV
+l$ VH
 l$ VWAVH
-l$ WATAWH
 l$ WAVAWH
 l$ WH
 l$(E3
@@ -1312,9 +1306,8 @@ l$0A^^
 l$0Hc
 l$8H+
 l$8fE;
-l$@@8
 l$PE3
-l$XuVD
+l$XE3
 lastModifiedDate
 lastModifiedTime
 m0k0$
@@ -1349,46 +1342,45 @@ startOfCentralDirOffset
 steam_api64.dll
 t!LcG
 t!McY
-t$ ;C ~
-t$ @2
+t"H9~
 t$ AUAVAWH
 t$ AVH
 t$ AWH
-t$ Hc
 t$ UH
 t$ UWAVH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
 t$ fff
+t$(E3
 t$0+A$t
 t$0E3
 t$0H;
 t$0HcC
 t$0HcK
 t$0Hk
-t$0IcF(3
 t$8E3
 t$8f#
 t$@@8
-t$@D;
 t$@E3
 t$@Hc
 t$@Ic
+t$@IcF(3
 t$@fE;
+t$HE3
 t$Hf;
+t$PD;
 t$XA;
 t$Xt	H
 t$x;_@u
 t%<\t
+t'H9+t
 t4A;w t
-t9H9=
+t9H9=V:
 tHIc/
 tOD8)tJ
-tQHcK
 t\9\$0uVH
 t\<\u$8E
-t]<\u%A8F
 t^<\u%A8F
 t^<\u%A8G
 tbHcD
@@ -1397,18 +1389,18 @@ tgL9s
 tier0.dll
 tsHcL$h
 tu+K$3
-u	@8=
+u	@8=e
 u	E8u
 u IcC
 u.fE;
+u@@8kq
 uFfD;
 uGfD;
 uMHcE
 uT<0uP
 uWHcC$H
-ujD9!ueL
+uhD9 ucL
 uncompressedSize
-urH9{@ulH
 v0t08
 versionMadeBy
 versionNeededToExtract
@@ -1423,6 +1415,7 @@ x	HcQ
 x A;@X}
 x!HcI
 x!HcK
+x";G`}
 x0v0$
 x9H;H
 xLHcK
@@ -1446,17 +1439,17 @@ z0x0:
 |$(E3
 |$(Hc
 |$*A;
+|$0E3
 |$0Hc
-|$0fA
 |$0ff
 |$0fff
-|$0t	H
 |$8).H
 |$8I;
 |$@9s
 |$@Hcyp;
 |$@I;
 |$@Ic>A;~
+|$@fA
 |$@t	3
 |$H@8srt'L
 |$HPK
@@ -1466,8 +1459,8 @@ z0x0:
 |$PHc{@$
 |$PLc
 |$T0H
-|$Xfff
 |$`Lc
+|$`ff
 }QfA;
 }_t!H
 }zD;E

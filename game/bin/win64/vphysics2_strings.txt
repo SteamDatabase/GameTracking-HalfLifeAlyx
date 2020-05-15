@@ -20,7 +20,7 @@
 	%d. %4x - %s
 	IcA4=
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZCUtlBuffer::VaPrintf: String overflowed buffer [%llu]
+                AAAAAAAAAAAAAAAAZZZZZZZZZZZZZZZZ\"
      *Broadphase Update: %6.3f [ms] (%6.3f [ms]
      *Finalize Constraints: %6.3f [ms]
      *Move Proxies: %6.3f [ms]
@@ -80,17 +80,18 @@
  A^_]
  A^_^
  A_A\]
+ A_A\_
  A_A]A\^]
  A_A]A\_[
  A_A]^
  A_A]_
+ A_A]_^]
  A_A^A\
  A_A^A\_^
  A_A^A\_^][
  A_A^A]
  A_A^A]A\]
  A_A^A]A\_
- A_A^A]A\_^[
  A_A^A]A\_^]
  A_A^A]^]
  A_A^A]_^
@@ -142,7 +143,7 @@
 "A97t
 "Lc3D;s
 "Lc;D
-"pA3Q
+"pA3Q0
 # Faces: %d
 # Vertices: %d
 ##Unexpected## (%d)
@@ -187,6 +188,7 @@ $tIs1
 %s : %s [%d hitboxes]
 %s F=%d V=%d hE=%d
 %s [%u valid / %u bones]
+%s could not allocate (pre-acquire) layer name '%s'. It was expected to be #%d. %d names already used.
 %s(%d traces, %d repeats) %.1f us/trace; kernel: %.0f ticks (%.1f mcs) * %lld calls
 %s(): Bone referenced by collision mesh not found in render skeleton. Skipping collision mesh.
 %s, unexpectedly, %s
@@ -200,19 +202,19 @@ $tIs1
 %s_color
 %s_matgrp
 %u.%u
+&HcT$PL
 &YA1+
 &YA1D
 &YA1E2
 &YA1H
 &YA1I
 &YA1L
-' $d%
 '":|;
 ( + %d more)
 (%.4g,%.4g)
 (%d) %s
-(5@V"
 (;^ |
+(=';$
 (A\_][
 (A]A\^]
 (A]A\_[
@@ -231,7 +233,6 @@ $tIs1
 (A_A^A]A\_^][
 (A_A^A]]
 (A_A^A]^
-(A_A^][
 (A_A^_^][
 (A__][
 (A__^[
@@ -300,7 +301,6 @@ $tIs1
 (T$0D
 (T$@A
 (T$@D
-(T$@H
 (T$@f
 (T$PA
 (T$PD
@@ -314,6 +314,7 @@ $tIs1
 (\$ D
 (\$ H
 (\$0D
+(\$0H
 (\$0f
 (\$@D
 (\$@L
@@ -351,6 +352,7 @@ $tIs1
 (l$PL
 (l$`A
 (l$`D
+(l$`L
 (l$pD
 (l$pH
 (l$pL
@@ -374,6 +376,7 @@ $tIs1
 (t$PA
 (t$PD
 (t$PH
+(t$PI
 (t$PL
 (t$`D
 (t$`H
@@ -395,11 +398,14 @@ $tIs1
 (|$0H
 (|$0I
 (|$0L
+(|$@A
 (|$@D
 (|$@H
 (|$@I
 (|$@L
+(|$@f
 (|$P;
+(|$PA
 (|$PD
 (|$PH
 (|$PI
@@ -450,12 +456,11 @@ $tIs1
 )L$ A
 )L$ D
 )L$0A
-)L$0D
 )L$0E
 )L$0H
 )L$0f;q<sC
 )L$0f;yBs@
-)L$0tK
+)L$0tN
 )L$@A
 )L$@D
 )L$@D9{`~KH
@@ -478,7 +483,6 @@ $tIs1
 )T$0A
 )T$0D
 )T$@D
-)T$@H
 )T$@fD
 )T$PH
 )T$PL
@@ -495,6 +499,7 @@ $tIs1
 )\$ H
 )\$ I
 )\$0E
+)\$0H
 )\$0M
 )\$0fD
 )\$@D
@@ -507,7 +512,6 @@ $tIs1
 )\$`E
 )\$pA
 )\$pD
-)\$pE
 )] t	
 )d$0I
 )d$@D
@@ -518,7 +522,6 @@ $tIs1
 )d$`E
 )d$pD
 )d$pE
-)d$pL
 )d$pt
 )d$pt	
 )l$ A
@@ -576,7 +579,6 @@ $tIs1
 )t$`A
 )t$`D
 )t$`H
-)t$`L
 )t$`M
 )t$`f
 )t$pA
@@ -637,6 +639,7 @@ $tIs1
 +D$P;D$\v
 +D$x;E
 +F$Hc
++G$Hc
 +HcD;0H
 +N$Hc
 , %d capsules
@@ -647,7 +650,6 @@ $tIs1
 , miss: 
 ,0<	w
 ,|%)v
-,}v,d%
 --  Increase the size of the resource stream   --
 --  Need %d bytes, but only have %d bytes
 -----------------
@@ -667,8 +669,8 @@ $tIs1
 -touch
 -unittest
 -validate
+.?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUCMorphSetData@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
 .?AV?$CRefCounted@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
 .?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@EV?$CUtlMemory@EH@@@@E@@
@@ -742,6 +744,7 @@ $tIs1
 .?AVCDualHullAgglomerator@@
 .?AVCEmptySequence@@
 .?AVCFeAgglomerator@@
+.?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCModelConfigElement@@
 .?AVCModelConfigElement_AttachedModel@@
@@ -771,6 +774,7 @@ $tIs1
 .?AVConCommand@@
 .?AVConCommandBase@@
 .?AVConVar@@
+.?AVIAsyncProcessedDataResult@@
 .?AVIBaseSequence@@
 .?AVIConCommandBaseAccessor@@
 .?AVIConVar@@
@@ -795,7 +799,6 @@ $tIs1
 .CRT$XTZ
 .D;4ux
 .I(tD
-.\	$uGE
 .data
 .data$r
 .edata
@@ -822,10 +825,13 @@ $tIs1
 .vmdl
 .xdata
 /%u.rnsave
+/-H,	
 /=$!6
 /@Tv|D
 /BTwG
 /C,wo
+/CLs-
+/CLs/
 /CLsOI
 /CPs7H
 /D$ ww
@@ -870,7 +876,6 @@ $tIs1
 0A_A]A\_]
 0A_A]]
 0A_A]^
-0A_A]_
 0A_A^A\
 0A_A^A]
 0A_A^A]A\[
@@ -881,19 +886,17 @@ $tIs1
 0A_A^A]_^
 0A_A^]
 0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
 0A_^]
 0A__]
 0A__^
-0A__^][
-0D;Sl
 0E;L$@
 0Hc1H
 0Hc3;s
 0HcA@E
 0Hcy0H
-0L9e0t	H
 0L;|$x
 0v0b1
 0x%08X 
@@ -905,10 +908,9 @@ $tIs1
 141022000000Z
 181004000000Z
 1DBlend
-1E;Qhs+
 1HcC0H
 1L;|$P
-200327173841Z0#
+200515051125Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -946,6 +948,7 @@ $tIs1
 6gJ&L
 6tTB9D6
 7HcD$P
+7Mx>k09[P
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8-t~H
 8A^A\
@@ -960,8 +963,6 @@ $tIs1
 8A_A^A]A\_^][
 8A_A^A]]
 8A__^[
-8L9e0t	H
-8M9't
 8M9.t
 8_^[]
 8_^][
@@ -987,10 +988,9 @@ $tIs1
 9A(~&D
 9A@~6D
 9A@~<D
-9AlvGI
 9C |K
+9D$@t
 9G }5
-9Khv;
 9S(~,A
 9S0~1Lc
 9X@~3H
@@ -1011,7 +1011,6 @@ $tIs1
 9Y@~8H
 9Y@~9H
 9Y@~aL
-9\$8~E
 9\$H~CH
 9]@~QH
 9^@~0
@@ -1029,7 +1028,6 @@ $tIs1
 9oh~,H
 9oh~-H
 9q@~LH
-9s(|AH
 9s(~(H
 9sX~0H
 9t$h~(H
@@ -1059,7 +1057,7 @@ $tIs1
 9{X~1H
 9}@~fH
 9~@~%H
-9~@~OH
+9~@~MH
 :Hc3;s
 :HckX+
 :Hckp+
@@ -1069,7 +1067,6 @@ $tIs1
 :Lcs@A+
 ; tris:
 ;"><b>Trigger</b> Touch
-;5XA(
 ;A ~W
 ;B u2A
 ;C ~M
@@ -1087,9 +1084,9 @@ $tIs1
 ;T$`u
 ;T$du
 ;\$8u$
+;\$8|
 ;\$H|
 ;l$0|
-;l$8|
 ;shu	H
 ;t$Xu$
 ;whu	H
@@ -1114,6 +1111,7 @@ $tIs1
 </ul>
 <@HcA,H
 <@JcD
+<cloth_iteration_multiplier
 <deferred>
 <div align=center style="padding:3px;font-size:15px;text-align:center;background-color:#
 <div align=center style="padding:3px;font-size:15px;text-align:center;background-color:#ff9966;">
@@ -1174,11 +1172,12 @@ $tIs1
 ?A;\$
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?DevWarning@@YAXPEBDZZ
 ?ExtractFileExtension@CBufferString@@QEAAPEBDPEBD@Z
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?L#>H
@@ -1189,21 +1188,24 @@ $tIs1
 ?Purge@CBufferString@@QEAAXH@Z
 ?Relinquish@CBufferString@@QEAAPEADW4EAllocationOption_t@1@@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@CUniformRandomStream@@UEAAXH@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
 ?Truncated data
 ?Unknown
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
-?fff?
-?m_nCollisionAttribute
+?fff? /
+?m_shape
 ?phys_res
 ?unsupported?
 ?vQfff
-?vhE3
 @ %.2f, %.2f, %.2f
 @(fA9
 @.data
@@ -1211,115 +1213,93 @@ $tIs1
 @333?
 @4f9A4~
 @81u/H
-@8="T+
-@8=#>+
-@8=$.+
-@8=&6+
-@8='I+
-@8=(U+
-@8=(]+
-@8=(f+
-@8=(o+
-@8=*J+
-@8=+?+
-@8=,V+
-@8=,w+
-@8=-7+
-@8=.A+
-@8=/@+
-@8=0/+
-@8=0^+
-@8=2'+
-@8=3p+
-@8=4g+
-@8=5K+
-@8=5W+
-@8=88+
-@8=:(+
-@8=:B+
-@8=<_+
-@8=<x+
-@8==L+
-@8=>q+
-@8=@0+
-@8=A +
-@8=D)+
-@8=DX+
-@8=Dh+
-@8=Er+
-@8=G!+
-@8=G:+
-@8=GM+
-@8=H1+
-@8=H9+
-@8=Hy+
-@8=L`+
-@8=NC+
-@8=O2+
-@8=Ps+
-@8=Pz+
-@8=QD+
-@8=QN+
-@8=Qi+
-@8=R"+
-@8=RE+
-@8=Ta+
-@8=UY+
-@8=Uj+
-@8=W;+
-@8=X*+
-@8=X{+
-@8=Y3+
-@8=YO+
-@8=[<+
-@8=[t+
-@8=\b+
-@8=^Q+
-@8=`P+
-@8=`Z+
-@8=aF+
-@8=ak+
-@8=b|+
-@8=d4+
-@8=dc+
-@8=eB
-@8=eD
-@8=el+
-@8=f#+
-@8=fR+
-@8=g++
-@8=h[+
-@8=ju+
-@8=j}+
-@8=k=+
-@8=km+
-@8=ld+
-@8=n$+
-@8=nS+
-@8=qG+
-@8=r%+
-@8=r,+
-@8=r~+
-@8=s5+
-@8=te+
-@8=vn+
-@8=wH+
-@8=x-+
-@8=x\+
-@8=yv+
-@8=z&+
-@8={>+
-@8={I+
-@8={T+
-@8=|.+
-@8=|U+
-@8=}J+
-@8=~6+
+@8= ),
+@8= 0,
+@8= >,
+@8= K,
+@8="6,
+@8=#b,
+@8=$N,
+@8=%M,
+@8=&Y,
+@8='L,
+@8=(*,
+@8=(P,
+@8=+Q,
+@8=,1,
+@8=,O,
+@8=.7,
+@8=/Z,
+@8=1	,
+@8=1?,
+@8=2R,
+@8=3 ,
+@8=4+,
+@8=8!,
+@8=:[,
+@8==",
+@8==@,
+@8=>2,
+@8=?,,
+@8=@\,
+@8=AA,
+@8=B#,
+@8=D8,
+@8=FS,
+@8=G$,
+@8=K],
+@8=L%,
+@8=L-,
+@8=Q&,
+@8=R3,
+@8=SB,
+@8=T9,
+@8=TT,
+@8=V',
+@8=W{
+@8=W}
+@8=Z^,
+@8=\.,
+@8=^4,
+@8=_D,
+@8=_U,
+@8=aG,
+@8=aH,
+@8=b:,
+@8=bE,
+@8=cC,
+@8=dI,
+@8=eV,
+@8=f(,
+@8=fF,
+@8=g_,
+@8=i;,
+@8=j5,
+@8=n`,
+@8=p/,
+@8=pW,
+@8=sK,
+@8=t=,
+@8=tJ,
+@8=u<,
+@8=uX,
+@8=ua,
+@8=x),
+@8=x0,
+@8=y>,
+@8=z6,
+@8={P,
+@8=|N,
+@8=|b,
+@8=}M,
+@8=~L,
+@8=~Y,
 @8t$@u
 @8t$Pu
 @8t$hu
-@@phys_validate
+@@cloth_approximate_collide
 @A;?|
+@A;n 
 @A\^[
 @A\_^][
 @A]A\^
@@ -1330,9 +1310,9 @@ $tIs1
 @A^A]A\
 @A^A]A\^]
 @A^A]^
+@A^_^][
 @A_A]A\][
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\]
 @A_A^A]A\^
@@ -1348,7 +1328,6 @@ $tIs1
 @IcA@N
 @L99t
 @Mc0L
-@PfA;h
 @SATAUAVAWH
 @SATAVAWH
 @SAUAVH
@@ -1357,7 +1336,6 @@ $tIs1
 @SAVH
 @SAWH
 @SUATAWH
-@SUAVAWH
 @SUAVH
 @SUVATH
 @SUVAVH
@@ -1369,7 +1347,6 @@ $tIs1
 @SUVWAUAWH
 @SUVWAUH
 @SUVWAVH
-@SUVWAWH
 @SUVWH
 @SUWATH
 @SUWAVAWH
@@ -1378,11 +1355,9 @@ $tIs1
 @SVATH
 @SVAVH
 @SVAWH
-@SVWATAUAVAWH
 @SVWATAUAVH
 @SVWATAUH
 @SVWAUH
-@SVWAVAWH
 @SVWAWH
 @SVWH
 @SWATAUAWH
@@ -1421,7 +1396,6 @@ $tIs1
 @USWAVAWH
 @USWH
 @UUUUUUUUUUUUUUUU
-@UVATAUAVH
 @UVATAUAWH
 @UVATAUH
 @UVATAWH
@@ -1463,12 +1437,12 @@ $tIs1
 @WATAVH
 @WATAWH
 @WATH
-@WAUAWH
 @WAVAWH
 @WAVH
 @WAWH
 @dA9AHt
 @fD9t
+@pfA;h
 A(HcJ
 A(I;E
 A(IcI
@@ -1488,15 +1462,15 @@ A8H+A0H
 A8Zxt
 A9/~mL
 A96~FH
+A97~&fff
 A9>~:
 A9>~F
-A9A@u6H
+A9A`u6H
 A9E`u
 A9\$0
 A9^@~+
 A9t$$~'
 A9}`~7
-A9~H~`
 A:H	u	A
 A;@X}
 A;@`}
@@ -1591,7 +1565,6 @@ A^A\_
 A^A\_]
 A^A\_^[]
 A^A\_^]
-A^A]A\^]
 A^A]A\_]
 A^A]A\_^[
 A^A][]
@@ -1638,7 +1611,6 @@ A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
 A_A^A]A\_^][
-A_A^A]]
 A_A^A]_]
 A_A^A]_^
 A_A^A]_^[]
@@ -1753,7 +1725,7 @@ BODY_KEYFRAMED
 BODY_STATIC
 BODY_TYPE_COUNT
 BRHPA
-Bad KV3 data for resource '%s': %s
+Bad KV3 data for resource: %s
 Bad header (unrecognized encoding specifier)
 Bad header format (expected ':'
 Bad header format (expected '<!--'
@@ -1808,6 +1780,7 @@ BroadphaseProxyDataRefl_t
 BroadphaseProxyNodeRefl_t
 BroadphaseRefl_t
 BroadphaseUpdate
+BrxMt
 Bt333?H
 Buffer overflow
 Build Mass Unit Test centroid/floating-point-induced Max error: %f, %f, %f
@@ -1818,7 +1791,6 @@ C$;/|
 C(I;A
 C,to;
 C-yh/
-C.fE;
 C0I;A
 C8H!o
 C8Hc|$X
@@ -1830,7 +1802,7 @@ CAnimMovementManager
 CAttachment
 CAuthPhysJoint
 CBaseConstraint
-CBaseIntrospectedToKV3TypeManager::AllocateResource
+CBaseIntrospectedToKV3TypeManager::AllocateResourceFromAsyncResult
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -1915,7 +1887,6 @@ COrientConstraint
 CParallelForAndPostProcessor
 CParentConstraint
 CParticleSystemDefinition
-CPfD9@l
 CPhysSurfaceProperties
 CPhysSurfacePropertiesAudio
 CPhysSurfacePropertiesPhysics
@@ -1999,6 +1970,7 @@ CResourceArray< RecordedHitboxCastRefl_t > WorldDebugPayloadContainerRefl_t::m_C
 CResourceArray< RecordedHitboxStateRefl_t > WorldDebugPayloadContainerRefl_t::m_HitboxState
 CResourceArray< RecordedTraceResultRefl_t > RnWorldRefl_t::m_RecordedTraceResults
 CResourceArray< ReflId_t > ContactArrayRefl_t::m_Contacts
+CResourceArray< ReflId_t > ISoftbodyEffect_GlobalRefl_t::m_Connected
 CResourceArray< ReflId_t > RnBodyRefl_t::m_Shapes
 CResourceArray< ReflId_t > RnWorldRefl_t::m_ActiveBodyList
 CResourceArray< ReflId_t > RnWorldRefl_t::m_ActiveContactList
@@ -2011,6 +1983,7 @@ CResourceArray< ReflId_t > RnWorldRefl_t::m_DelayedDeleteShapes
 CResourceArray< ReflId_t > RnWorldRefl_t::m_Joints
 CResourceArray< ReflId_t > RnWorldRefl_t::m_NullJoints
 CResourceArray< ReflId_t > RnWorldRefl_t::m_Softbodies
+CResourceArray< ReflId_t > RnWorldRefl_t::m_SoftbodyEffects
 CResourceArray< ReflId_t > RnWorldRefl_t::m_TOIList
 CResourceArray< RnBlendVertex_t > ConnHierarchyRefl_t::m_BlendsArray
 CResourceArray< RnCollisionEventRefl_t > RnWorldRefl_t::m_CollisionEvents
@@ -2147,6 +2120,10 @@ CRnWorld::RecordApiCall
 CSceneObjectData
 CSchemaClassInfo::ReportClassError
 CSchemaRegistration::RegisterAllModuleData
+CSoftbodyEffectGlobalWind
+CSoftbodyEffectLocalWind
+CSoftbodyEffectProperty
+CSoftbodyEffectProperty::Array_t SoftbodyEffectPropertyRefl_t::m_Effects
 CSolveIKChainAnimNode
 CStrongHandle
 CTSListBase: Misaligned list
@@ -2162,11 +2139,13 @@ CTwistConstraint
 CUtlBlockMemory overflow!
 CUtlBlockMemory<float const *,int>::ChangeSize
 CUtlBuffer::VaPrintf
+CUtlBuffer::VaPrintf: String overflowed buffer [%llu]
 CUtlHashtable
 CUtlIncrementalVector< CRnBody, CRnBody::CWorldIndexPred >
 CUtlIncrementalVector< CRnContact, CRnContact::CWorldIndexPred >
 CUtlIncrementalVector< CRnJoint, CRnJoint::CWorldIndexPred >
 CUtlIncrementalVector< CRnSoftbody, CRnSoftbody::CWorldIndexPred >
+CUtlIncrementalVector< ISoftbodyEffect_Global, ISoftbodyEffect_Global::CWorldIndexPred >
 CUtlLinkedList overflow! (exhausted index range)
 CUtlLinkedList overflow! (exhausted memory allocator)
 CUtlLinkedList<class CUtlKeyValuePair<class CEntIndexPair,class CEntPairTouchTracker>,unsigned short,0,unsigned short,class CUtlMemory<struct UtlLinkedListElem_t<class CUtlKeyValuePair<class CEntIndexPair,class CEntPairTouchTracker>,unsigned short>,unsigned short> >::AllocInternal
@@ -2193,6 +2172,7 @@ CUtlVector< CRnBody* >
 CUtlVector< CRnContact* >
 CUtlVector< CRnJoint* >
 CUtlVector< CRnShape* >
+CUtlVector< CRnSoftbody* >
 CUtlVector< CRnSoftbody::CDelayedFloatAttr >
 CUtlVector< RecordedCaspuleSweepResult_t >
 CUtlVector< RecordedEntityDesc_t >
@@ -2213,6 +2193,7 @@ CVPhysXSurfacePropertiesList
 CVPhysics2Interface::CreateDebugSceneObject(998): 
 CVrSkeletalInputSettings
 CWristBone
+C^r	A
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -2371,6 +2352,7 @@ ConfigurationSystem_001
 ConnHierarchyRefl_t
 ConnMatrixFillRefl_t
 ConnectInterfaces
+Connected
 ContactArrayRefl_t
 ContactArrayRefl_t RnWorldRefl_t::m_ReportContacts
 ContactArrayRefl_t RnWorldRefl_t::m_SolverContacts
@@ -2385,10 +2367,11 @@ Could not create phys debug IB for %d elements
 Could not create phys debug VB for %d elements
 Could not lock phys debug IB for %d elements
 Could not lock phys debug VB for %d elements
-Could not pre-acquire name '%s' %d names already used.
 Could not read %u bytes @0x%llx, error %d
+Couldn't load KV3 for resource: %s
 Counter reset
 CovMatrix3
+CpfD9@l
 Create Flags
 CreateFileMappingA
 CreateInterface
@@ -2411,7 +2394,6 @@ D$ !>;
 D$ #C
 D$ &^
 D$ (H
-D$ ;{
 D$ BR
 D$ E3
 D$ H;
@@ -2436,7 +2418,6 @@ D$ pvk
 D$ r|
 D$ xi
 D$(9(|
-D$(;_
 D$(;{
 D$(;~
 D$(@8;t
@@ -2456,7 +2437,6 @@ D$(fI
 D$,67Q
 D$03E
 D$0A9Z@
-D$0B	4
 D$0D;F
 D$0E3
 D$0H3L$0H3
@@ -2472,7 +2452,8 @@ D$0iw4
 D$0mp
 D$0r|
 D$0t0L
-D$0t9
+D$0t?
+D$4Lk
 D$8;\$Pu
 D$8;{Xu	H
 D$8E3
@@ -2485,6 +2466,7 @@ D$8Lc+D
 D$8o<
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
+D$@;D$8
 D$@E3
 D$@H9
 D$@H9\$@tg
@@ -2493,6 +2475,7 @@ D$@H;
 D$@Hc
 D$@Ic
 D$@fA
+D$@fA;
 D$@mp
 D$@r|
 D$@|R
@@ -2532,7 +2515,6 @@ D$`Ll
 D$`Mc
 D$`fI
 D$`r|
-D$dHc;H
 D$hA;E(
 D$hE3
 D$hH;
@@ -2543,7 +2525,6 @@ D$p;G
 D$p<L{
 D$pE3
 D$pHK8
-D$pHc;H
 D$pL+
 D$pL;
 D$pfA;
@@ -2553,22 +2534,56 @@ D$xH;
 D$xHc
 D$|v5
 D+l$XA
+D8%7!
+D8%[ 
 D8*u A
-D853;$
+D8-"6%
+D8-#5%
+D8-$#%
+D8-$7%
+D8-&8%
+D8-,:%
+D8--$%
+D8-1<%
+D8->%%
+D8-K&%
+D8-V*%
+D8-X'%
+D8-[ %
+D8-[(%
+D8-^;%
+D8-b-%
+D8-c0%
+D8-d/%
+D8-d2%
+D8-e)%
+D8-e1%
+D8-f,%
+D8-f3%
+D8-h!%
+D8-j+%
+D8-k.%
+D8-q"%
+D8-s4%
+D8-u<%
+D8-v5%
+D8-x6%
+D8-y8%
+D8-z#%
+D8-z7%
+D8-|9%
 D8s!u
 D8t$@u
 D8wJu/H
 D8wKu	H
 D9&~:E
-D97~4I
+D97~<I
+D9>~/
 D9B@~(E3
 D9C(~9I
 D9C@~!3
 D9CX~ 3
-D9Chv:
-D9ChvL
 D9GX~%3
-D9IhvW
 D9J(~:M
 D9J0~@H
 D9J@~&E3
@@ -2580,7 +2595,6 @@ D9KX~+
 D9Kp~*H
 D9L$h~wE3
 D9W@~%A
-D9[hvzfff
 D9c0t
 D9c4~GIc
 D9cdL
@@ -2604,7 +2618,6 @@ D;C@|
 D;CPszH
 D;CP|
 D;CX|
-D;Chr
 D;Cp|
 D;D$0u
 D;D$0|
@@ -2618,20 +2631,15 @@ D;J@|
 D;JH|
 D;JX|
 D;J`|
-D;Jhr
 D;Jp|
 D;K |
 D;K@|
 D;KX|
-D;Khr
-D;Kh|
 D;Kp|
 D;L$h|
 D;N |
-D;Ohr
 D;T$0u
 D;W@|
-D;[hr
 D;l$@u^
 D;l$`u
 D;n@|
@@ -2650,6 +2658,7 @@ D;~ u	H
 D;~0|
 D;~@u
 DATAI
+DATAL
 DE9AD~&H
 DEACTIVATED
 DISCRETE_SIM
@@ -2727,6 +2736,7 @@ Dynamic
 Dynamic-only 
 DynamicConfigList
 DynamicNodeFlags
+E Lc6D;v
 E&8Aht
 E(Lc6D;v
 E0C07
@@ -2746,6 +2756,7 @@ E0H9}0tjE
 E0H9}0twE
 E0H9}0tzE
 E0Lc6D;v
+E0fA;
 E8e2|
 E9&~zI
 E9l$H
@@ -2755,14 +2766,13 @@ E;>}OH
 E;AD|
 E;D$$|
 E;E0|
-E;Qhr
-E;fH|
+E;g0|
 E;}@|
 E;~(H
 E@L9}@
-E@L9}@tY
-E@L9}@tb
-E@L9}@tr
+E@L9}@t]
+E@L9}@tc
+E@L9}@tm
 E@L9}@ty
 EHH+E@H
 EHL9}H
@@ -2770,14 +2780,17 @@ ENCODING_TYPE_COUNT
 ENCODING_TYPE_OBJECT_SPACE
 ENCODING_TYPE_TANGENT_SPACE
 EPMcihM
+EPfA;
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 EWD9y
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E`HcF4
 EarlyComputeNodeBaseCount
 EconItemToolModel_001
+EdHc;H
 Edges
 EditorDynamicConfig
+Effects
 EmptyAnim
 EnableWorldShapeCollision
 Enabled
@@ -2790,9 +2803,10 @@ EntityClass
 EntityClassDesc
 EntityDesc
 EntityId
-EntityIdToIgnore
-EnvironmentMapBuilder_001
+EntityIdToIgnore0
+EntityIdToIgnore1
 Eo9Ch
+EpHc;H
 Et$hL
 EventSystem001
 ExLc;
@@ -2821,6 +2835,7 @@ ExtraGoalIterations
 ExtraIterations
 ExtraPressureIterations
 F H9P
+F Hc+;k
 F(Hc+;k
 F0Hc+;k
 F8D9p
@@ -2852,9 +2867,6 @@ FLEX_OP_REMAPVALCLAMPED
 FLEX_OP_SIN
 FLEX_OP_SQRT
 FLEX_OP_SUB
-FPHc;H
-FPfD;
-FPfD;h|
 FUSION_ENABLED
 Face %d
 Face Fit
@@ -2884,6 +2896,7 @@ FeCtrlOffset_t
 FeCtrlOsOffset_t
 FeCtrlSoftOffset_t
 FeEdgeDesc_t
+FeEffectDesc_t
 FeFitInfluence_t
 FeFitMatrix_t
 FeFitWeight_t
@@ -2946,26 +2959,30 @@ FourCovMatrices3
 FourQuaternions
 FourVectors
 FourVectors2D
+FpHc;H
+FpfD;
+FpfD;h|
 Fraction
 FreeNodeCount
 FreeNodes
 Friction
 FrictionNotifications
-G H9_
 G wRA
-G.fA;
 G@9G<
 G@D9@
-GD$HH
+GD$8H
+GD$HD
 GD$`H
-GD$hD
+GD$pH
 GENERIC_JOINT
 GEOVH
 GP9GT|	H
-GPIc>
 GSFailure
 GT$HH
+GT$XH
 GUPDATE_STRING_TOKEN_DATABASE
+GVH bi
+G\$hH
 Game Debug Payload
 GameFlags
 GameIndex
@@ -2988,16 +3005,18 @@ GetSystemTimeAsFileTime
 GoalDampedSpringIntegrators
 GoalDamping
 GoalStrength
+GpIc>
 Gravity
 GravityScale
 GroupIndex
+Gt$8Hc
 Gt333?H
-G|$xH
+G|$8Hc
+H ATAVAWH
 H SWH
 H UATAWH
 H USVWATAVAWH
 H UVAUAVH
-H WATAUAVAWH
 H"fA;
 H#C0I
 H+A@H
@@ -3009,13 +3028,12 @@ H+\$h+
 H+\$hIc<$H
 H0F08
 H1D$0
-H9-N(#
+H95Z\*
 H97t<
 H98t]A
-H9APu2I
+H9Apu2I
 H9JXu=H
 H9JXu}
-H9QPt
 H9Qpt
 H9\$ t[H9\$(tTH
 H9\$8t
@@ -3028,6 +3046,7 @@ H9sXH
 H9uot	H
 H;9tEH
 H;D$P
+H;H v
 H;M(}^H
 H;MX}bH
 H;YHH
@@ -3038,8 +3057,7 @@ H;|$0
 HA^A]A\]
 HA^^][
 HA_A\
-HA_A^A]A\_^[]
-HBm_bUseShadowFastPath
+HB-enable_2gb_morphs
 HELPER_BONE
 HHc/;o
 HJfA;
@@ -3058,10 +3076,12 @@ Hc2;r
 Hc3;s
 Hc7;w
 Hc;;{
+Hc>;~
 Hc>Hc
 HcA I
 HcA L
 HcA$H
+HcA$I
 HcA(H
 HcA0H
 HcA<K
@@ -3104,13 +3124,10 @@ HcD$`H
 HcE4H
 HcE@H
 HcE@L
-HcEXI
 HcF$Hi
 HcF0A
 HcF@A
 HcF@Hk
-HcFlH
-HcFtH
 HcG H
 HcG$H
 HcG(I
@@ -3187,6 +3204,8 @@ HierarchicalBitVectorRefl_t
 HierarchicalBitVectorRefl_t BroadphaseRefl_t::m_MoveBuffer
 Hierarchy id is the same on both shapes (%d)
 HierarchyId
+HierarchyId0
+HierarchyId1
 Hinged
 Hit %s %s frac %g point {%g,%g,%g} normal {%g,%g,%g}
 Hit Solid
@@ -3222,9 +3241,14 @@ IKRigSimple
 INVALID
 IQuickTime001
 IReflectedValueSetter
+ISoftbodyEffect
+ISoftbodyEffectRefl_t
+ISoftbodyEffect_Global
+ISoftbodyEffect_GlobalRefl_t
 Ic,$A;l$
 Ic4$A;t$
 Ic6A;v
+Ic>A;~
 Ic@4=
 IcA H
 IcAXJ
@@ -3325,6 +3349,7 @@ JointMotion_t
 Joints
 Joints: %d
 JpHcY0H
+K/).-
 K8+C$
 K89K(~
 KERNEL32.dll
@@ -3351,7 +3376,6 @@ L$ SUVAVH
 L$ SVWH
 L$ SWH
 L$ USWATAUAVAWH
-L$ UWAVH
 L$ WH
 L$ fD
 L$ fI
@@ -3359,7 +3383,6 @@ L$ ff
 L$ fff
 L$$Hc7A
 L$$I;
-L$(;^
 L$(;_
 L$(;{
 L$(A+
@@ -3367,7 +3390,7 @@ L$(E3
 L$(H;
 L$(I;
 L$,t#L
-L$0;.
+L$0;w
 L$0E+
 L$0E2
 L$0E3
@@ -3396,26 +3419,28 @@ L$PLc$
 L$`HcnP;n`u
 L$dJcD
 L$hD;o,
+L$hE3
 L$hIc
 L$hJcD
 L$hLc
 L$pE3
+L$pE9
 L$pIc
 L$pMcF@3
 L$pfD
 L$pfI
 L$tfA#
+L$xD;
 L$xHc
 L+A0I
 L+A@L
-L9%Ou"
-L9=!X"
+L9%0\!
+L95.Z(
 L9?u#Hc+;k
 L9BXt
 L9RXt
 L9Y u
 L9e t
-L9e0tjH
 L9g(H
 L9l$xt
 L9m(t	H
@@ -3444,6 +3469,7 @@ LastTimestep
 LayerIndex
 Lc	E3
 Lc#D;c
+Lc'E;
 Lc+D;k
 Lc.D;n
 Lc3A+
@@ -3451,6 +3477,7 @@ Lc3D;s
 Lc6D;v
 Lc;D;{
 Lc?D;
+Lc?E;
 LcA(HcQ,M
 LcA0H
 LcA<E3
@@ -3460,7 +3487,6 @@ LcCPH
 LcD$0H
 LcE8M
 LcFDH
-LcFdH
 LcG A
 LcH0M;
 LcI@3
@@ -3471,17 +3497,16 @@ LcKxD
 LcL$hA
 LcMx3
 LcO83
-LcOhH
 LcQ D;Q
 LcR<H
 Lc\$ E
 Lc`hM
-LcahH
 Lch@M
 Lck8H
 Lcl$ A
 Lco@H
 Lco@I
+LcsHL
 Lct$0A
 LcvLH
 Lc{ L
@@ -3517,7 +3542,7 @@ LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LrwcE
-M(IcW
+Lu(;{
 M(s A
 MATCHFRAMEWORK_001
 MClassHasCustomAlignedNewDelete
@@ -3668,16 +3693,15 @@ Mp9{p~$H
 Multiply air drag
 N&B:H
 N(Hc]hL
-N0;Y }'H
+N(IcT$
 NHHcN@I
-NHLc{H
 NO Hit ray from {%g,%g,%g} delta {%g,%g,%g}
 NPH9NH
 NPHcFHH
 NPI9NH
 NPI9NHuyH+
-NPfD;q\
 NULL_JOINT
+NXLc~H
 NameHash
 NameIndex:AcquireName( %x ) without name string
 NameIndex:PreacquireName( %x ) without name string
@@ -3702,6 +3726,7 @@ Next edge before queue update
 Next edge error %.1f inch, collapse angle %.1f deg
 NextFreeIndex
 No Buffer
+No DATA block for resource 
 No DATA block for resource '%s'
 No Reason To Hit
 No Self Collision
@@ -3729,11 +3754,16 @@ Notify
 Notify Found
 Notify Lost
 Notify Persist
+NpfD;q\
+Nu);w
 NullJoints
 O H9O
 O I9O
+O Lc#D;c
+O fff
 O(Lc#D;c
 O(t(H
+O0;Y }'H
 O0Lc#D;c
 O8+G$
 O@IcZ
@@ -3766,15 +3796,15 @@ PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
 PARTICLE_SET_SCALE_CURRENT_VALUE
 PARTICLE_SET_SCALE_INITIAL_VALUE
-PA\_^
 PA^A\]
-PA^A\_
 PA^A]A\_^][
 PA^_^
 PA_A\]
-PA_A\_[]
+PA_A\^
 PA_A^A]A\_^]
+PA_A^]
 PA__[
+PA__^[]
 PF_BIAS_TYPE_EXPONENTIAL
 PF_MAP_TYPE_MULT
 PF_MAP_TYPE_REMAP
@@ -3804,6 +3834,7 @@ PairCount
 PairFlags
 PairFlags =
 PairList
+Pair_t
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
@@ -3889,6 +3920,7 @@ Plat_GetEnv
 Plat_GetPlatformError
 Plat_GetThreadIndex
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_USTime
@@ -4160,9 +4192,12 @@ RopeNodeFlipsStorage
 Ropes
 RotLockStaticNodes
 RtlUnwindEx
+Rubikon Collsion Group name dictionary
+Rubikon Collsion Layer name dictionary
 Rubikon Release
 Rubikon%s
 SATAUAVAWH
+SATAUAVH
 SATCacheHit
 SATQuery
 SCSBL
@@ -4174,9 +4209,9 @@ SOFTBODY_ATTR_VEL_ATTRACTION_BIAS
 SOFTBODY_ATTR_VEL_ATTRACTION_SCALE
 SPHERICAL_JOINT
 SPRING
-SPfD;R\sI
 SSE and SSE2 are required.
 SUAUAVAWH
+SUAUAVH
 SUAVH
 SUVATAVAWH
 SUVAUAVAWH
@@ -4189,8 +4224,6 @@ SUVWAVH
 SUVWH
 SUWATAUH
 SUWAUH
-SVATAWH
-SVAUAWH
 SVAVH
 SWAUH
 Same body
@@ -4264,6 +4297,11 @@ Snooper could not lock snooper mutex proc %d addr %llx in %ums, snoop is unsafe 
 Softbodies
 Softbody
 Softbody #%d %s.%d %s (%.4g,%.4g)
+SoftbodyEffectGlobalWindRefl_t
+SoftbodyEffectLocalWindRefl_t
+SoftbodyEffectPropertyRefl_t
+SoftbodyEffectPropertyRefl_t RnSoftbodyRefl_t::m_Effects
+SoftbodyEffects
 SoftbodyGroundTraceRaise
 SoftbodyIterations
 SoftbodyProcessor
@@ -4304,6 +4342,7 @@ Source2Server001
 Source2ServerSerializers002
 SourceElems
 SourceElemsCount
+SpfD;R\sI
 Sphere
 Sphere r=%g
 SphereRigidCount
@@ -4335,6 +4374,7 @@ StreamToPhysicsDebugger: Stream started
 StreamToPhysicsDebugger: Stream stoped
 StreamToPhysicsDebugger: already not streaming
 StreamToPhysicsDebugger: already streaming
+Strength
 String Array
 SubResult
 Subtract
@@ -4361,7 +4401,6 @@ T$,A;
 T$0D9~
 T$0E3
 T$0Hc
-T$0Hk
 T$0fD
 T$4;_pu
 T$8+G$A
@@ -4370,6 +4409,7 @@ T$8E3
 T$8H+
 T$8Lc
 T$8Mc
+T$@+G$A
 T$@E3
 T$@E;
 T$@H+
@@ -4383,7 +4423,7 @@ T$PE3
 T$PE;
 T$PHc
 T$PLc'Ic
-T$PfA;
+T$PfD;NL
 T$XE3
 T$`E3
 T$`IcP
@@ -4400,7 +4440,6 @@ T$qtG
 T$xAi
 T$xH;
 T$xf3
-T=	I"
 TILT_TWIST
 TOI: Count
 TOI: Failures
@@ -4429,8 +4468,6 @@ Thickness
 Thumb
 TickCount
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -4526,6 +4563,8 @@ UVATAUAVH
 UVATAUAWH
 UVATAVAWH
 UVAUAVH
+UVAUAWH
+UVAUH
 UVAVH
 UVAVI
 UVAWH
@@ -4539,11 +4578,11 @@ UVWAVAWH
 UVWAWH
 UWATAUAWH
 UWATAVAWH
-UWATAWH
 UWATH
 UWAUAVAWH
 UWAUAVAWI
 UWAUAVH
+UWAUH
 UWAVH
 UWAVI
 UWAWH
@@ -4563,6 +4602,8 @@ Unsupported leaf class presumably derived from CRnContact, hash 0x%08X
 Unsupported leaf class presumably derived from CRnJoint, hash 0x%08X
 Unsupported leaf class presumably derived from CRnOverlappingPair, hash 0x%08X
 Unsupported leaf class presumably derived from CRnShape, hash 0x%08X
+Unsupported leaf class presumably derived from ISoftbodyEffect, hash 0x%08X
+Unsupported leaf class presumably derived from ISoftbodyEffect_Global, hash 0x%08X
 Unsupported version %d for resource '%s' (Expected %d)
 Update Collision Threads
 UpdateNotifications
@@ -4580,7 +4621,6 @@ Used Groups:
 Used Layers:
 UserData
 UserInfoChangeService_001
-V3(RJs)
 VATAUH
 VATAWH
 VAVAWH
@@ -4609,7 +4649,7 @@ VNewAsyncFileSystem001
 VP4003
 VPhysX Interface ResourceMgr v0.1
 VPhysXAggregateData_t
-VPhysXAggregateData_t::FLAG_IGNORE_SCALE
+VPhysXAggregateData_t::FLAG_IGNORE_SCALE_OBSOLETE_DO_NOT_USE
 VPhysXAggregateData_t::FLAG_IS_POLYSOUP_GEOMETRY
 VPhysXAggregateData_t::FLAG_LEVEL_COLLISION
 VPhysXAggregateData_t::VPhysXFlagEnum_t
@@ -4703,7 +4743,6 @@ V_tanf
 V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Vector
@@ -4756,10 +4795,11 @@ Vector RnSphericalJointRefl_t::m_vMotorTargetVelocity
 Vector RnWeldJointRefl_t::m_vAngularImpulse
 Vector RnWeldJointRefl_t::m_vLinearImpulse
 Vector RnWorldRefl_t::m_vGravity
+Vector RnWorldRefl_t::m_vWind
+Vector SoftbodyEffectGlobalWindRefl_t::m_vWind
+Vector SoftbodyEffectLocalWindRefl_t::m_vWind
 Vector2D
 Vector4D
-Vector4D RnWorldRefl_t::m_vWindDesc
-Vector4DAligned
 VectorAligned
 VelAirDrag
 VelQuadAirDrag
@@ -4777,8 +4817,6 @@ Vertices
 VisBuilder_001
 Visited: Nodes/Tris/Mesh
 Volume
-W%)J(
-W-<{	
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
 WARNING: Trying to create a CRenderContextPtr without a valid context.
@@ -4816,13 +4854,13 @@ X USVWATAUAVAWH
 X USVWATAVAWH
 X UVWATAVAWH
 X UVWAVAWH
-X(tV;_hspH
 X2:jL
-X=>m#
+XA^A]A\[
 XA_A\
-XA_A\^[
 XA_A\_]
+XA_A]^]
 XA_A]_^][
+XA_A^A]A\_^[]
 XD$$E
 XD$(A
 XD$,E
@@ -4850,8 +4888,9 @@ Xt$`D
 X|$ A
 X|$,A
 Y seIc
-Y5-h#
-Y5Y}#
+Y%y%#
+Y5%L$
+Y5UP$
 Y@HcA8Hi
 YD$ A
 YD$ D
@@ -4862,15 +4901,15 @@ YD$@A
 YD$DA
 YD$HD
 YD$TD
-YD$`A
 YD$`D
 YD$dA
+YD$lA
 YD$pE
 YD$xA
 YD$|A
 YD$|D
 YD, H
-YHTE;Qh
+YHTE;
 YHcC0
 YL$ A
 YL$$D
@@ -4879,6 +4918,7 @@ YL$,D
 YL$8A
 YL$DA
 YL$LE
+YL$lA
 YT$$D
 YT$<A
 YT$HA
@@ -4917,8 +4957,6 @@ Yl$,A
 Yl$DE
 Yl$XA
 Yl$hE
-YqpfA
-Ysp9hX
 Yt$@E
 Yt$`E
 Yt$dI
@@ -4931,7 +4969,6 @@ Y|$8A
 Y|$HH
 Y|$hA
 Y|$xA
-Z?Zg#
 Zd?es-8R
 [ %d ]
 [ %d empty ]
@@ -4952,6 +4989,7 @@ Zd?es-8R
 [CRnShape]
 [CRnSolverJoint]
 [Hc3;s
+[ISoftbodyEffect]
 [empty]
 [hLcH(
 [in %.2f] VSets(0x%X) -> %.2f @ %.2f
@@ -5000,6 +5038,8 @@ Zd?es-8R
 \$8H9
 \$8Hc
 \$8fD
+\$@9\$8
+\$@9\$8~I
 \$@A+
 \$@H9
 \$@Hc
@@ -5007,7 +5047,9 @@ Zd?es-8R
 \$DE3
 \$HD;
 \$HH9
+\$HHc
 \$Hfff
+\$Hta
 \$P@2
 \$PH9
 \$PHk
@@ -5015,7 +5057,6 @@ Zd?es-8R
 \$PM;
 \$Pyk
 \$P|LH
-\$TfA;wF
 \$XE;
 \$XH9
 \$XHc
@@ -5043,7 +5084,6 @@ Zd?es-8R
 \D$`M
 \D$pH
 \D$xD
-\D6PA
 \L$(A
 \L$4H
 \L$LD
@@ -5082,15 +5122,14 @@ Zd?es-8R
 ] Lcs0D;s@u
 ] LcsHD;sXu	H
 ]PIcEHH
+^8IcF0H
 ^HHcF@Hk
 ^`Hc~XH
-^qp9YlvS
 _(D9w |AH
 _(McN
 _2fA;
 _8H+_0H
 _D$TH
-_V_SetExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -5235,6 +5274,7 @@ bool RnSoftbodyRefl_t::m_bSleepEnabled
 bool RnWorldRefl_t::m_bParallelIslands
 bool RnWorldRefl_t::m_bParallelSolver
 bool RnWorldRefl_t::m_bSleeping
+bool SoftbodyEffectLocalWindRefl_t::m_bOverrideWorld
 break
 break_create_joint_revolute
 break_list
@@ -5250,7 +5290,6 @@ burst
 burstRandomize
 burst_randomize
 burst_scale
-c A;.
 c L9d$ t
 c%d m%d pt%d
 c(3K,
@@ -5305,7 +5344,6 @@ client
 client 
 cloth_airdrag
 cloth_airdrag_override
-cloth_approximate_collide
 cloth_batch
 cloth_collide
 cloth_collision_layer0
@@ -5322,7 +5360,6 @@ cloth_ground_offset
 cloth_ground_plane_thickness
 cloth_guard_threshold
 cloth_interpolation_strategy
-cloth_iteration_multiplier
 cloth_legacy_stretch_force
 cloth_legacy_support
 cloth_max_ticks_per_frame
@@ -5360,9 +5397,7 @@ create_particle
 d$ A+
 d$ E3
 d$ UAVAWH
-d$(;{
-d$(A+
-d$(D9Kh~~3
+d$(D9
 d$(D9d$8|LH
 d$(E3
 d$(fI
@@ -5371,21 +5406,20 @@ d$0A;^
 d$0D9d$@|LH
 d$0E3
 d$4D9
-d$8;{
 d$@tM
 d$Df3
-d$H;{
 d$HE3
 d$HL9@
 d$P+A$t
 d$PE3
-d$PHc
 d$XE3
 d$XE;
+d$XMc&E+
 d$`E3
 d$`t<
 d$hE2
 d$pL;
+d$p|FH
 damage
 dampening
 debris
@@ -5416,6 +5450,7 @@ e A_A^A]A\_^]
 e%d:%d, %g deg
 e:%d, %g deg
 e@A_A^A]A\]
+eP|EH
 ehA_A^A]A\_^[]
 elasticity
 emitFromWorld
@@ -5425,7 +5460,6 @@ error
 event_class
 event_keys
 eventindex
-ex<d%
 explosion_behavior
 explosion_buildup
 explosion_delay
@@ -5449,12 +5483,14 @@ f4Weight0
 f4Weights
 f9sRtC
 f;G0u L
+f;O"u
 f;i~spH
 f;k~sv
-f;p\sML
+f;p\sKL
 f;p`sSL
 f;q0snf
 f;q6s]f
+f;z t7f;z"t1
 fA1A,
 fA1A,A
 fA1A<A
@@ -5462,30 +5498,11 @@ fA3A,
 fA3A,f#
 fA3A,fA
 fA;(sGL
-fA;G>
-fA;w,
-fA;w8
-fA;wHssE3
-fA;wJ
-fA;wN
-fA;wPsvE3
-fA;wTs~E3
-fA;wVsuE3
-fA;w\suE3
-fA;w^swE3
-fA;w`
-fA;wbssE3
-fA;wdsyE3
-fA;whsvE3
-fA;wj
-fA;wn
-fA;wpsvE3
-fA;wrsvE3
 fA;z^
 fD	LQ
 fD!LQ
 fD; sFHc
-fD; sQfff
+fD; sK
 fD;;sJL
 fD;AF
 fD;AJ
@@ -5493,6 +5510,10 @@ fD;AP
 fD;Bj
 fD;IL
 fD;IZ
+fD;N,
+fD;N8
+fD;NJ
+fD;Q2
 fD;YN
 fD;a,
 fD;a2
@@ -5507,32 +5528,45 @@ fD;sns~f
 fD;sp
 fD;sr
 fD;xJsWE
-fD;y2
 fD;{Vs5
 fD;{\s{I
 fD;{^s{I
-fE;,$
-fE;7sn
-fE;7s~E3
-fE;G,
-fE;G8
+fD;~F
+fE;<$
 fE;P`s?I
-fE;o2
-fE;oF
-fE;oJ
-fE;oL
-fE;wDstf
-fE;wZsu
-fE;wlswf
-fE;wzstf
-fE;w|sx
-fE;w~spf
+fE;f,
+fE;f2
+fE;f8
+fE;f>
+fE;fJ
+fE;nD
+fE;nF
+fE;nH
+fE;nL
+fE;nN
+fE;nP
+fE;nT
+fE;nV
+fE;nZ
+fE;n\
+fE;n^
+fE;n`
+fE;nb
+fE;nd
+fE;nh
+fE;nj
+fE;nl
+fE;nn
+fE;np
+fE;nr
+fE;nz
+fE;n|
+fE;n~
 faceMergeAngle
 fademaxdist
 fademindist
 fadetime
 false
-femodel
 ff9966;">Can <b>Not</b> Collide: same body</div><span>Both shapes belong to the same body %d <i>%s</i>. Do not collide.</span>
 ff9966;">Can <b>Not</b> Collide: same shape</div><span>Hm, it's the same shape, it cannot collide with itself</span>
 fff?+
@@ -5730,12 +5764,11 @@ gfffffffM
 gffffffff
 gfffffffff
 gravity
-h VWATH
-h WATAVH
-h(D;oh
+h VATAWH
 hA]A\_[
 hA]_][
 hA^A\
+hA^A]][
 hA_A\
 hA_A]
 hA_A^A]^][
@@ -5847,13 +5880,13 @@ k@_aH
 keyframed_bodies
 l$ 9Q
 l$ AVH
-l$ D+
 l$ D9l$0|LH
 l$ E3
 l$ H+
 l$ VATAUAVAWH
 l$ VAUAVH
 l$ VAUAWH
+l$ VAVAWH
 l$ VH
 l$ VWATAUAWH
 l$ VWATAVAWH
@@ -5865,6 +5898,7 @@ l$ WATAUAVAWH
 l$ WATAVH
 l$ WAUAVH
 l$ WAUAWH
+l$ WAVAWH
 l$ WH
 l$(;{
 l$(A+
@@ -5872,7 +5906,6 @@ l$(Hc
 l$(L+
 l$(fI
 l$09}@
-l$0A+
 l$0A_A^A]A\
 l$0E3
 l$0H+
@@ -5890,6 +5923,7 @@ l$8Hk
 l$8Lc#D;c
 l$8uT
 l$@9^@~!H
+l$@Hc
 l$@Hck
 l$@Hk
 l$@fA#
@@ -5910,11 +5944,9 @@ l$XL+
 l$XfD;a
 l$`E3
 l$`t.
-l$hMc/E
 l$pD;
 l$pE3
 l$pI;
-l$pfff
 ladder
 last_sniff
 layer
@@ -5968,6 +6000,7 @@ m_DefaultTargetSettings
 m_DynNodeFriction
 m_DynNodeVertexSet
 m_Edges
+m_Effects
 m_ElementName
 m_Elements
 m_Emitters
@@ -6039,6 +6072,7 @@ m_NodeInvMasses
 m_Nodes
 m_OpCode
 m_Operators
+m_Params
 m_ParticleBoneHash
 m_ParticleBoneName
 m_Particles
@@ -6148,6 +6182,7 @@ m_bTranslationOnly
 m_bUseBlockSolver
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUseShadowFastPath
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_bVisible
@@ -6443,6 +6478,7 @@ m_nChildren
 m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionAttribute
 m_nCollisionAttributeIndex
 m_nCollisionMask
 m_nCollisionMode
@@ -6532,7 +6568,6 @@ m_nStartInstance
 m_nStaticNodeFlags
 m_nStaticNodes
 m_nSurfacePropertyIndex
-m_nSurfacepropertyIndices
 m_nTaperedCapsuleRigidIndex
 m_nTargetAxis
 m_nTargetIndex
@@ -6668,7 +6703,6 @@ m_sTargetMorph
 m_sceneObjects
 m_scrapeRough
 m_scrapeSmooth
-m_shape
 m_skeleton
 m_slaves
 m_snapshotName
@@ -6841,6 +6875,7 @@ nEdge
 nListBegin
 nListEnd
 nMatrixNode
+nNameHash
 nNode
 nNodeX0
 nNodeX1
@@ -6853,6 +6888,7 @@ nReserved
 nSide
 nTargetNode
 nTries < 10000000
+nType
 nVertexNode
 nVirtElem
 nWeight
@@ -6869,8 +6905,8 @@ npc_scripted
 npcclip
 npu!H
 numsegments
-o A;4$
 o H9/t
+o%Uu#
 o@H9)t
 oD$ H
 oO0fI
@@ -6895,9 +6931,9 @@ pA_A\^
 pA_A\_
 pA_A]A\_^
 pA_A^A]A\_^]
-pA_A^_^[
 pA_A^_^]
 pA_^]
+pHcA@H
 parent_bone
 particle
 particles/
@@ -6913,6 +6949,7 @@ phys_debug_draw
 phys_debug_showdefaultmaterial
 phys_drag_multiplier
 phys_fast_report_contacts
+phys_fastaddcloneshape
 phys_implicit_integarator
 phys_jiggle_bone_enable
 phys_old_contact_draw
@@ -6920,6 +6957,7 @@ phys_position_iterations
 phys_reload_immediately
 phys_sphere_cast_version
 phys_step_threaded
+phys_validate
 phys_velocity_iterations
 physgun_interactions
 physib
@@ -6955,6 +6993,7 @@ purecall
 pushaway
 pz_clip
 q%d.%d
+q9gh>
 qAdjust
 qHH+q@H
 qHHcA@I
@@ -6993,9 +7032,11 @@ rubikon_joint_deepdebugging
 s AVH
 s WATAVH
 s off
+s09sH|AH
 s@Hc{(;{8u
 sHH9s0H
 sHHck(
+sName
 sXHc7;w
 scale=%g;
 scale={%g,%g,%g};
@@ -7049,11 +7090,11 @@ t$ A;
 t$ AVH
 t$ AVLc
 t$ AWH
+t$ D+
 t$ D9t$0|UH
 t$ E3
 t$ Hc
 t$ L;
-t$ Li
 t$ Mc
 t$ UH
 t$ UWATAUAVH
@@ -7067,6 +7108,7 @@ t$ WAVHc
 t$ WH
 t$ r"
 t$(;_
+t$(;{
 t$(A;Y
 t$(A^
 t$(A_A^
@@ -7074,17 +7116,17 @@ t$(E3
 t$(H+
 t$(Mc
 t$0+A$t
-t$0@85j7
-t$0@85j9
+t$0@85
 t$0A^_
+t$0D9t$@|LH
 t$0E3
 t$0Hc
 t$0Hc	H
 t$0Hc2
 t$0Hc3
-t$0Hc;D
 t$0Hcs
 t$0Hcw@;wPu
+t$0Hi
 t$0Hk
 t$0Ic.A;n
 t$0fI
@@ -7096,6 +7138,7 @@ t$8D9t$H|LH
 t$8D;6|
 t$8H+
 t$8H;
+t$8Hc
 t$8Hc3;s
 t$8Hk
 t$8Ic
@@ -7107,6 +7150,7 @@ t$@9}0~hE3
 t$@E3
 t$@H+
 t$@Hc
+t$@Hc7H
 t$@Ic
 t$@L+
 t$@u 3
@@ -7116,6 +7160,7 @@ t$HD8{
 t$HE3
 t$HH+
 t$HHc
+t$HHc.;n
 t$HHcs
 t$HHct$@
 t$HHk
@@ -7129,13 +7174,12 @@ t$PE3
 t$PH9_
 t$PH9w
 t$PLc
-t$PLi
 t$XA+
 t$XE3
 t$XL;
 t$XLc
-t$XLi
 t$XfA
+t$Xff
 t$Xt	H
 t$`9x@
 t$`A+
@@ -7146,7 +7190,10 @@ t$`I;
 t$`Lk
 t$`M;
 t$`fI
+t$hE3
 t$hHc
+t$pA+
+t$pE3
 t$x;_@u
 t$xHi
 t$xff
@@ -7168,6 +7215,7 @@ t/LcG
 t/fff
 t0+O$H
 t0@87t+
+t0@8;t+
 t0D8;t+
 t1+O$H
 t2@8;t-
@@ -7179,8 +7227,9 @@ t6LcuHHc
 t7fff
 t8fff
 t99_@~4
-t9H9=6,
+t9H9=V:
 t:HcH
+t;D9G
 t;Lcu
 t;Lcu0Hc
 t=+O$H
@@ -7189,11 +7238,13 @@ tAD;C
 tAfff
 tBD8!t=H
 tBD;C
+tBE;o
 tCHc7
 tCfff
 tD+O$H
 tDA;P
 tDD;C
+tDD;G
 tE;S(s@I
 tED8 t@D8d
 tED;C
@@ -7209,7 +7260,10 @@ tFD;K
 tFD;S
 tFE;E
 tFE;N
+tFE;Q
 tG;NPsBL
+tG;OPsBH
+tG;OPsBL
 tG;QPsBL
 tGA;K
 tGA;S
@@ -7218,14 +7272,12 @@ tGD8!tBH
 tGD;C
 tGD;C(sAH
 tGD;F(sAI
-tGD;G
 tGD;S
 tGE;F
 tGE;H
 tH;KPsCL
 tH;S(sCI
 tH;SPsCL
-tHA;HPsBM
 tHA;N
 tHA;P
 tHA;P`sBI
@@ -7233,21 +7285,19 @@ tHA;~
 tHD;CPsBH
 tHD;c
 tHE;APsBI
-tHE;OPsBM
 tHE;X
 tHE;{
 tHc3;s
 tI;JPsDH
 tI;JPsDL
+tI;OPsDH
 tI;SPsDI
 tI;S`sDI
 tI;U`sDI
 tI;VPsDI
 tI;W`sDI
-tIA;OPsCI
 tIA;PPsCM
 tIA;R(sCI
-tIA;WPsCM
 tID8!tDH
 tID9c
 tIE;F
@@ -7264,10 +7314,9 @@ tJD80tEH
 tJD;BPsDL
 tJD;C
 tJD;C`sDH
+tJD;GPsDL
 tJD;K
 tJD;s`sDI
-tJE;GPsDM
-tJE;OPsDI
 tKD8!tFH
 tKD;BPsEI
 tKD;C
@@ -7294,12 +7343,12 @@ tN;Q`sII
 tNE;C
 tNHcH
 tOD8=
+tOE;Q
 tPD;C
 tPD;K`sJL
 tPD;s`sJI
 tR;Q(sMI
 tRD;[
-tRE;L$
 tS@8(tNH
 tSD;K
 tSD;[
@@ -7311,10 +7360,9 @@ tZD;C`sTI
 tZE;H
 t[;S`sDI
 t]<-u
+t]A;w
 t]D9%
-t]E;o
 t^E;H
-t_A;w
 t`E;B`sZI
 ta;Q(s\I
 tangent
@@ -7337,7 +7385,6 @@ tkHc\$PA
 tmFrame
 touchall
 tpLcu@3
-tqfff
 trD8(tmH
 transparent
 transparent %d 
@@ -7347,16 +7394,15 @@ tu+K$3
 turn_rate
 txE;E
 tyD;C(ssH
-u	@8=E
+u	@8=
 u 9Q@u
 u D;H
-u(Lc'E
 u)Hc.;n
 u+C9\
 u+G9\
-u/Lcg0D;g@u
+u.Hco0;o@u
 u0E94$
-u0H9pDu*Hc
+u0H9pdu*Hc
 u1H9ptu+Lc
 u5Hct$P;t$`u
 u98D$`u;H
@@ -7365,6 +7411,7 @@ uCD8k<t=L
 uHHcK
 uNfff
 uPHcW
+uPIcEHL
 uPfD;s\
 uPfD;s`
 uQHc/;o
@@ -7427,6 +7474,7 @@ uint16 FeModelRefl_t::m_nTreeDepth
 uint16 FeModelRefl_t::m_nTriCount[ 3 ]
 uint16 FeModelRefl_t::m_nWorldCollisionNodeCount
 uint16 FeModelRefl_t::m_nWorldCollisionParamCount
+uint16 ISoftbodyEffect_GlobalRefl_t::m_nIndexInWorld
 uint16 RnContactRefl_t::m_nCollideFlags
 uint16 RnContactRefl_t::m_nPairFlags
 uint16 RnSoftbodyDescRefl_t::m_nCapsuleCount
@@ -7498,6 +7546,8 @@ uint8 FeModelRefl_t::m_nExtraGoalIterations
 uint8 FeModelRefl_t::m_nExtraIterations
 uint8 FeModelRefl_t::m_nExtraPressureIterations
 uint8 FeModelRefl_t::m_nVertexSetCount
+uint8 ISoftbodyEffect_GlobalRefl_t::m_nCaps
+uint8 ISoftbodyEffect_GlobalRefl_t::m_nType
 uint8 RecordedTraceResultRefl_t::m_nExtraFlags
 uint8 RecordedTraceResultRefl_t::m_nSubResult
 uint8 RecordedTraceResultRefl_t::m_nType
@@ -7516,7 +7566,6 @@ use_additional_offset
 usemtl initialShadingGroup
 v %f %f %f
 v %g %g %g
-v!fff
 v%d:%d
 v(;.|
 v0t08
@@ -7557,7 +7606,7 @@ vSimOrigin
 vSize
 vTargetPosition
 vTorqueAccum
-vWindDesc
+vWind
 value
 vanmgrph
 vb phys
@@ -7627,13 +7676,12 @@ vr_carry_type
 vsnap
 vstdlib.dll
 vsurf
+w!f;O t
 w-HcO
 w1HcO
 w8#_p
 w=fA;H
 wIHcN
-wJQO0
-wPIcGHL
 wTH9w8t	H
 wakeup
 water
@@ -7662,7 +7710,6 @@ x0v0$
 x7fff
 xA^A][]
 xA_A\_[
-xA_A]^[
 xA_A^A]A\_^[]
 xHcL0pH
 xRHcQ
@@ -7675,7 +7722,7 @@ yHHco0;o@u
 yHHcoH;oXu	H
 yaw_end
 yaw_start
-y|AE^
+z#u!H
 z0x0:
 z:KCAuthPhysBody
 { AVH
@@ -7709,10 +7756,8 @@ z:KCAuthPhysBody
 |$ E3
 |$ H+
 |$ Hc
-|$ Hc;D
 |$ Icx$I
 |$ L;
-|$ Li
 |$ Lk
 |$ UATAUAVAWH
 |$ UATAVH
@@ -7736,12 +7781,11 @@ z:KCAuthPhysBody
 |$0E3
 |$0H+
 |$0Hc
-|$0Hc;D
 |$0Hcy H
 |$0Hk
 |$0Ic
 |$0Lc
-|$0uO
+|$0fff
 |$8D9y
 |$8Hc
 |$8Hc:
@@ -7755,17 +7799,18 @@ z:KCAuthPhysBody
 |$@A;
 |$@H+
 |$@Hc
-|$@Hc;D
 |$@Hcyp;
 |$@Jc
 |$@Lcy8E
 |$@fA
+|$@ff
 |$@t	3
 |$HA+
 |$HD9
 |$HD9~X
 |$HE3
 |$HHc7;w
+|$HHi
 |$HL+
 |$Hfff
 |$Ht#
@@ -7786,6 +7831,7 @@ z:KCAuthPhysBody
 |$XMk
 |$Xff
 |$`9nH~KH
+|$`@2
 |$`A+
 |$`E3
 |$`H9
@@ -7796,28 +7842,23 @@ z:KCAuthPhysBody
 |$hA+
 |$hD9
 |$hD;
-|$p9~
+|$pA9
 |$pLc
 |$pfff
 |$x@8
 |$xM+
 |$xfff
-|E;Qhsv
 } HcO@;
 }7fff
 }HHc|$@H
-}HLc/E
-}Hfff
 }_H;}
 }_u~A
 }`A;_
 }afA;
 ~!A;~
-~'4d%
 ~,IcZ
-~08\$0t
+~28\$0t
 ~<Mc	E3
-~?Pair_t
 ~HIcF@Hk
 ~Hull id %llx local %p
 ~Rfff

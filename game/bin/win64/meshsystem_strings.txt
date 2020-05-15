@@ -6,7 +6,7 @@
  ;x8|
  A]][
  A^A\]
- A^A\_
+ A^A\^
  A^A]^
  A^A]_
  A^][
@@ -37,9 +37,9 @@
  Hcy H
  HcyH3
  Lcy@3
- fD	`(H
+ fD	`XH
  vJH+
-"pA3Q 
+"pA3Q
 #D$(t
 #L$(u
 %f %f %f
@@ -74,9 +74,10 @@
 (D$@D
 (D$`E
 (D$`H
+(D$pH
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
-(H99t
+(H91t
 (L$ H
 (L$0D
 (L$PD
@@ -103,7 +104,6 @@
 (t$`D
 (t$`E
 (t$`H
-(t$pH
 (t$pL
 (|$ D
 (|$0D
@@ -120,7 +120,7 @@
 )D$`I
 )D$pD
 )E@IcM4
-)Hc>;~
+)FG\a.
 )L$ D
 )L$0E
 )L$@H
@@ -162,6 +162,7 @@
 +B$Hc
 +C$Hc
 +F$Hc
++G$Hc
 +HcD;0H
 +|$PH
 ,0<	w
@@ -169,11 +170,12 @@
 -sse2
 -sse3
 -sse4
+.?AUAsyncProcessDataResult@CRenderMeshManager@@
+.?AUAsyncProcessResult@CBaseIntrospectedToKV3TypeManager@@
 .?AUCMorphSetData@@
 .?AV<lambda_a5b7478f043ce4d3b345c24503a9d138>@@
 .?AV?$CBaseAppSystem@VIMeshSystem@@@@
 .?AV?$CBaseAppSystem@VIMeshUtils@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor8@PEAVRayTracingEnvironment@@P81@EAAXHPEBHHPEBUTriangleBounds_t@@VVector@@2HPEAVCUtlMultiJobProcessor@@@ZHPEAHHPEAU2@V3@V3@HPEAV4@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor8@PEAVRayTracingEnvironment@@P81@EAAXHPEBHHPEBUTriangleBounds_t@@VVector@@2HPEAVCUtlMultiJobProcessor@@@ZHPEAHHPEBU2@V3@V3@HPEAV4@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -255,6 +257,7 @@
 .?AV?$ISceneObjectDescBase@VCSceneSkeletonObject@@@@
 .?AV?$_Func_base@X$$V@std@@
 .?AV?$_Func_impl@V<lambda_a5b7478f043ce4d3b345c24503a9d138>@@V?$allocator@H@std@@X$$V@std@@
+.?AVAsyncProcessDataResults@CModelTypeManager@@
 .?AVCAimConstraint@@
 .?AVCAllocatorUtils@?1??AllocateAndLoad@?$CTypesafeIntrospectedToKV3TypeManager@$0GGHCGPGNHG@UCMorphSetData@@@@UEAAPEAXAEAVCKV3TransferLoadContext@@PEBUResourceBindingBase_t@@PEAVIRD_RegisterResourceDataUtils@@@Z@
 .?AVCAllocatorUtils@?1??AllocateAndLoad@?$CTypesafeIntrospectedToKV3TypeManager@$0GMGEGNHG@UPermModelData_t@@@@UEAAPEAXAEAVCKV3TransferLoadContext@@PEBUResourceBindingBase_t@@PEAVIRD_RegisterResourceDataUtils@@@Z@
@@ -269,6 +272,7 @@
 .?AVCEmptySequence@@
 .?AVCFunctor@@
 .?AVCInputLayoutRegistration_g_hSkeletonMeshLayout@@
+.?AVCKV3ResourceBlockHelper@@
 .?AVCKV3Transfer_ResourceLoadInterface@@
 .?AVCMeshInstance@@
 .?AVCMeshInstance_Imp@@
@@ -285,11 +289,11 @@
 .?AVCModelConfigElement_SetMaterialGroup@@
 .?AVCModelConfigElement_SetRenderColor@@
 .?AVCModelConfigElement_UserPick@@
-.?AVCModelMemoryPool@@
 .?AVCModelTypeManager@@
 .?AVCModel_Imp@@
 .?AVCMorphConstraint@@
 .?AVCMorphSetManagerV0@@
+.?AVCNoRefFunctor@@
 .?AVCOrientConstraint@@
 .?AVCParentConstraint@@
 .?AVCPointConstraint@@
@@ -303,6 +307,7 @@
 .?AVCSchemaRegistration@@
 .?AVCSchemaRegistration_meshsystem@@
 .?AVCSchemaRegistration_modellib@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
 .?AVCTiltTwistConstraint@@
 .?AVCTwistConstraint@@
 .?AVCUtlMultiJobProcessor@@
@@ -310,6 +315,7 @@
 .?AVConCommandBase@@
 .?AVConVar@@
 .?AVIAppSystem@@
+.?AVIAsyncProcessedDataResult@@
 .?AVIBaseSequence@@
 .?AVIConVar@@
 .?AVIGenericInterface@@
@@ -372,6 +378,7 @@
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 00000000-0000-0000-0000-000000000000
 061110000000Z
+0A\_[
 0A\_]
 0A]^[
 0A^A\]
@@ -382,19 +389,18 @@
 0A_A\_
 0A_A]A\_]
 0A_A]]
-0A_A]_
 0A_A^A\
 0A_A^A\_^
 0A_A^A]
 0A_A^A]A\]
 0A_A^A]A\_
 0A_A^A]_^
+0A_A^^
+0A_A^^H
 0A_A^_
 0A_A^_^]
-0A__[
 0A__]
 0A__^
-0L9e0t	H
 0v0b1
 1 1 1
 131022120000Z
@@ -402,13 +408,14 @@
 181004000000Z
 1DBlend
 1HcC0H
-1IcXxH
-200327174133Z0#
+1Ic]xH
+200515051851Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
 281022120000Z0r1
 2HcC0I
+2Ic>A;~
 2_BONE_IK
 2http://crl3.digicert.com/DigiCertAssuredIDCA-1.crl08
 2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
@@ -426,27 +433,23 @@
 8A_A\
 8A_A^
 8A_A^A\[
-8L9e0t	H
-8M9't
-8\$ t-
-8\$yt-
 8vIML
 9)~vH
 91~bH
 91~mH
+91~vH
 99C }
 99~-H
 99~3H
 99~CH
+9D$@t
 9P ~(H
 9S0~1Lc
-9\$8~E
 9_H~+fff
 9_p~$
 9p ~DH
 :Hc{h;{xu
 :Lc7D;w
-:~^94
 ;8u-3
 ;9}mHc
 ;A ~W
@@ -457,9 +460,10 @@
 ;P u`E3
 ;T$ }
 ;T$0}
+;\$8|
 ;]p}~H
 ;l$0|
-;l$8|
+;w u	H
 ;{ u	H
 ;{ ~@
 ;|$@|
@@ -476,9 +480,10 @@
 ??1CThreadMutex@@QEAA@XZ
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?DevMsg@@YAXPEBDZZ
 ?FixSlashes@CBufferString@@QEAAPEBDD@Z
-?FixupPathName@CBufferString@@QEAAPEBDXZ
+?FixupPathName@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -487,23 +492,26 @@
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?RemoveAt@CBufferString@@QEAAPEBDHH@Z
+?Replace@CBufferString@@QEAAHPEBD0_N@Z
 ?Reset@CThreadMultiWaitEvent@@QEAAXXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
 ?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?ToLowerFast@CBufferString@@QEAAXH@Z
+?TruncateAt@CBufferString@@QEAAPEBDPEBD_N@Z
 ?Truncated data
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?posxyz
-?vhE3
 @.data
 @.tls
 @81u/H
-@85>]
-@85D9	
+@85M{
+@8=Hr
 @8}ju0H
 @8}ku	H
 @:iOu
@@ -515,7 +523,6 @@
 @A^^]
 @A_A]A\_^
 @A_A^A\
-@A_A^A\_]
 @A_A^A\_^
 @A_A^A]A\_
 @A_A^[
@@ -542,8 +549,8 @@
 @SVAWH
 @SVWH
 @SWATAUAWH
+@SWATH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
 @UATAUAVH
 @UATAVH
@@ -560,7 +567,6 @@
 @USVWAVAWH
 @USVWAWH
 @USVWH
-@USWATAWH
 @USWH
 @UVATAUH
 @UVATAVH
@@ -574,6 +580,7 @@
 @UWAVH
 @UWAWH
 @VATAUAVH
+@VATAVH
 @VATAWH
 @VAUAVAWH
 @VAVH
@@ -585,7 +592,6 @@
 @WATAVH
 @WATAWH
 @WATH
-@WAUAWH
 @WAVAWH
 @WAVH
 @fA9l
@@ -595,6 +601,7 @@ A	N I;
 A(I;E
 A+F$D
 A+G$E
+A-enable_2gb_morphs
 A0I9@0u
 A0I;E
 A8A9@8u
@@ -641,11 +648,11 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-AGRPuM
+AGRPuL
 AIWalkable
 ANIMATION_TYPE_FIT_LIFETIME
 ANIMATION_TYPE_FIXED_RATE
-ANIMu'A
+ANIMu&
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 APu[H
 ASEQt%
@@ -668,16 +675,17 @@ A^A]^]
 A^A]_]
 A^A]_^[]
 A^_^[]
-A_A\_
 A_A]A\^[
 A_A][
 A_A^A\
+A_A^A\_]
 A_A^A\_^
 A_A^A\_^[]
 A_A^A]A\]
 A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
+A_A^A]A\_^][
 A_A^A]^[
 A_A^[
 A_A^]
@@ -685,7 +693,6 @@ A_A^_
 A_A^_[
 A_A^_][
 A_A^_^[]
-A_A^_^]
 A_^][
 A__[]
 A__][
@@ -696,10 +703,8 @@ AddLayer
 Align
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
-AllocateResource: Cannot find DATA block in resource %s!
-AllocateResource: Cannot find VBIB block in resource %s!
 AllocateResource: Error creating data for %s!
-Am_bUseShadowFastPath
+AllocateResource: Error loading async data for %s
 AnimAddLayer
 AnimAlign
 AnimAutoLayer
@@ -742,13 +747,15 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
+AsyncProcessData: Cannot find data/vbib block in resource!
 AutoLayer
 B;|5h|
 B;|6h|
 B;|>h|
-Bad KV3 data for resource '%s': %s
+Bad KV3 data for resource: %s
 Bad KV3 data in control block for '%s': %s
-Bad KV3 mesh data for mesh '%s': %s
+Bad KV3 mesh data for mesh ('%s': %d): %s
+Bad KV3 mesh data for mesh: %s
 Bad VBIB block index for mesh (%s: %d)
 Bad VBIB block type for mesh (%s: %d)
 Bad block type for embedded animation data
@@ -776,7 +783,7 @@ Bad header: unrecognized encoding id
 Bad keyname
 Bad morph block index for mesh (%s: %d)
 Bad morph block type for mesh (%s: %d)
-Bad morph data for mesh (%s: %d)
+Bad morph data for mesh (%s)
 Bad sequence in GetSequenceActivityName() for model '%s'!
 Bad value
 BakedLODBuilderMgr001
@@ -799,7 +806,7 @@ BreakCommand
 BreakPieceEmbedded
 BreakPieceExternal
 Browse to the corresponding model in asset browser, right click and select Full Recompile.
-C Hc>;~
+C Ic>A;~
 C$z!u
 C(I;A
 C-yh/
@@ -817,7 +824,7 @@ CAnimMovementManager
 CAttachment
 CAuthPhysJoint
 CBaseConstraint
-CBaseIntrospectedToKV3TypeManager::AllocateResource
+CBaseIntrospectedToKV3TypeManager::AllocateResourceFromAsyncResult
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -850,8 +857,8 @@ CKV3FormatManager::RegisterFormatConversion
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMeshInstance_Imp::AppendDrawCallMeshHelper
-CMeshSystem::CreateSceneObjectForDecal(936): 
-CMeshSystem::GetDecalIB(1177): 
+CMeshSystem::CreateSceneObjectForDecal(1026): 
+CMeshSystem::GetDecalIB(1267): 
 CModelConfig
 CModelConfigElement
 CModelConfigElement_AttachedModel
@@ -865,7 +872,6 @@ CModelConfigElement_UserPick
 CModelConfigList
 CModelTypeManager::FinalizeResource
 CModelTypeManager::GetErrorResource(152): GetErrorModel() called before error model exists!
-CModel_Imp::~CModel_Imp
 CMorphBundleData
 CMorphConstraint
 CMorphData
@@ -887,7 +893,7 @@ CPhysSurfacePropertiesSoundNames
 CPointConstraint
 CRenderBufferBinding
 CRenderMesh
-CRenderMesh::CreateBufferResources(712): 
+CRenderMesh::CreateBufferResources(736): 
 CRenderSkeleton
 CResourceArray
 CSceneObjectData
@@ -1029,7 +1035,7 @@ ConVar(%s) defined with infinite float value (%s)
 ConfigAttachedModel
 ConfigurationSystem_001
 ConnectInterfaces
-Control block error for '%s': %s
+Control block error for '%s'
 CreateInterface
 Cycle or diamond double-reference to '%s'
 CycleOverride
@@ -1070,12 +1076,13 @@ D$0iw4
 D$0mp
 D$0r|
 D$0t0L
-D$0t9
+D$0t?
 D$8H;
 D$8Ic
 D$8fH
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
+D$@;D$8
 D$@E3
 D$@H9
 D$@Ic
@@ -1101,6 +1108,7 @@ D$`Ll
 D$`r|
 D$hE3
 D$hHcN(
+D$hIcA
 D$p 69
 D$p<L{
 D$pH;
@@ -1109,16 +1117,15 @@ D$pL;
 D$x*>
 D$xH9
 D8*u A
-D8-$}	
-D8-5~	
-D8->x	
-D8-Ky	
-D8-Tz	
-D8-d{	
-D8-m|	
-D8-~}	
-D8=|:	
+D8-(}	
+D8-1~	
+D8-Ax	
+D8-Ny	
+D8-^z	
+D8-`{	
+D8-t|	
 D8s!u
+D9'~4L
 D97tuD
 D9c4~GIc
 D;C }
@@ -1146,7 +1153,6 @@ Double-save to Member '%s'
 DrawIndexedTriangles(160): 
 DynamicConfigList
 E0C07
-E9.~0I
 E9|. t
 E;}H|
 E;~(H
@@ -1161,7 +1167,6 @@ EconItemToolModel_001
 EditorDynamicConfig
 EmptyAnim
 EngineServiceMgr001
-EnvironmentMapBuilder_001
 EventSystem001
 Expected "="after member '%s'
 Expected '#'
@@ -1289,15 +1294,18 @@ FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FlattenedSerializersVersion001
 FlexOpCode_t
 FontManager_001
-G H9_
 GCUtlString::FormatV
-GD$`H
-GD$hD
+GD$8H
+GD$HD
+GD$pH
+GL$8H
+GL$@H
 GL$HH
 GSFailure
+GT$8H
 GT$HH
-GT$xH
-G\$xL
+GT$XH
+G\$hH
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameStartup
@@ -1311,7 +1319,9 @@ GetDefaultMiniDumpTypeFlags
 GetResourceManifestCount
 GetResourceManifests
 GetSystemTimeAsFileTime
-G|$xH
+Gl$XH
+Gt$8H
+Gt$x3
 H USH
 H UVAUAVH
 H+D$0H
@@ -1325,9 +1335,6 @@ H9s(H
 H9sPH
 H9sXH
 H9uot	H
-H9|$0t
-H;>t;H
-H;>tEH
 H;UXH
 H;\$P|
 H=vmatu
@@ -1356,7 +1363,7 @@ HcC@Hk
 HcCHM
 HcC|L
 HcD$ H
-HcD$xL
+HcD$x
 HcF@Hk
 HcG H
 HcG$H
@@ -1410,14 +1417,13 @@ IKRigBug
 IKRigSimple
 INVALID
 IQuickTime001
-I]zk/
 Ic4$A;t$
 IcE0H
 IcF@A
 IcF@Lk
 Icm E3
+IcuhH
 Icw H
-Ic}hH
 Identity
 IfG9t
 IkLockLocal
@@ -1458,12 +1464,10 @@ L$ UATAUAVAWH
 L$ USWATAUAVAWH
 L$ USWAWH
 L$ UVWH
-L$ UWAVH
 L$ WH
 L$ fD
 L$ fI
 L$(fH
-L$0;.
 L$0E+
 L$0E3
 L$0H;
@@ -1472,17 +1476,16 @@ L$8Ic
 L$8vD
 L$@E3
 L$@H1D$0
-L$HfD	c(L
+L$HfD	cXL
 L$L;{
 L$TE3
 L$`H;
 L$`HcnP;n`u
 L$pE3
 L$pHcA H
-L9d$@t
 L9e t
-L9e0tjH
 L9g(H
+L9l$0t
 L9m(t	H
 L9mot	H
 L9ugt	H
@@ -1493,7 +1496,6 @@ LOOKUP_TYPE_TEXCOORD
 LOOKUP_TYPE_VERTEX_ID
 Lc#D;c
 Lc3D;s
-Lc6D;v
 Lc7D;w
 LcA J
 LcA<E3
@@ -1504,8 +1506,8 @@ LcIhM
 LcL$4
 LcL$4D
 Lc\; M
-Lcc D;c0u
 LcehE
+Lck D;k0u
 Lck8H
 Lcl$ A
 Lcl$HHct$LLcd$0LcD$DLcL$4
@@ -1537,10 +1539,11 @@ LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 LrwcE
+Lu(;{
 MATCHFRAMEWORK_001
-MBUFt5
+MBUFt#
 MClassHasCustomAlignedNewDelete
-MDATt5
+MDATtH
 MDefaultString
 MESH_DRAW_FLAGS_CAN_BATCH_WITH_DYNAMIC_SHADER_CONSTANTS
 MESH_DRAW_FLAGS_DRAW_LAST
@@ -1577,7 +1580,7 @@ MORPH_FLEXCONTROLLER_REMAP_EYELID
 MORPH_FLEXCONTROLLER_REMAP_NWAY
 MORPH_FLEXCONTROLLER_REMAP_PASSTHRU
 MPropertyFriendlyName
-MRPHt5
+MRPHt*
 MapListService_001
 MaterialGroup_t
 MaterialUtils_001
@@ -1594,6 +1597,7 @@ MeshSystem::InitPosedProp: Bone mismatch between transforms out (%d) and transfo
 MeshTranslucencyType_t
 MeshUtils001
 Middle
+Missing resource blocks for mesh (%s: %d)
 Model %s: Attempted to attach attachment %s to an unknown bone %s!
 Model conversion: %d conversions in %.3fsec (%.3fms each)
 ModelBoneFlexComponent_t
@@ -1643,11 +1647,12 @@ NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 Newline in string literal
 No Buffer
+No DATA block for resource 
 No DATA block for resource '%s'
-No VBIB data for mesh %s!
 No valid format conversion from '%s' to '%s'
 NoPoseControl
 Not safe to 'new' this class due to alignment requirements
+Nu);w
 O(t(H
 O8+G$
 O@IcZ
@@ -1665,12 +1670,11 @@ PARTICLE_SET_REPLACE_VALUE
 PARTICLE_SET_SCALE_CURRENT_VALUE
 PARTICLE_SET_SCALE_INITIAL_VALUE
 PA^A]A\_^][
-PA^_^
-PA_A\_[]
 PA_A^A]A\]
 PA_A^A]_^][
 PA_A^^][
 PA_A^_
+PA__^[]
 PD9AHM
 PF_BIAS_TYPE_EXPONENTIAL
 PF_MAP_TYPE_MULT
@@ -1739,6 +1743,7 @@ Plat_GetCPUFrequency
 Plat_GetEnv
 Plat_GetThreadIndex
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
@@ -1801,17 +1806,17 @@ RtlUnwindEx
 SATAVH
 SAUAWH
 SSE and SSE2 are required.
+SUAUAVH
 SUAVH
 SUVAVAWH
 SUVAWH
+SUVWATAUAVAWH
 SUVWATAWH
 SUVWAUAVAWH
 SUVWAVAWH
 SUWAWH
 SVATAUAWH
 SVAUAVAWH
-SVAUAWH
-SVAVH
 SWATAUAVH
 SWATAUH
 SWATH
@@ -1860,6 +1865,7 @@ T$0H;L$H
 T$8+G$A
 T$8+G$H
 T$8E3
+T$@+G$A
 T$@E3
 T$HE3
 T$HHc
@@ -1869,7 +1875,6 @@ T$PIc
 T$XE3
 T$pE3
 T$xH;
-T$yE3
 T;(OcD
 THcD$\
 TILT_TWIST
@@ -1885,8 +1890,6 @@ TextMessageMgr_001
 ThreadMultiWaitObjectSetDestroy
 Thumb
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1906,7 +1909,6 @@ USVWATAUAVAWH
 USVWAUAVH
 USVWAVH
 USVWH
-USWAWH
 UUUUUUUUH
 UUUUUUUUL
 UVATAUAVH
@@ -1936,6 +1938,7 @@ VAVAWH
 VApplication001
 VAvi001
 VBAllocTracker001
+VBIBH
 VBaseFileSystem011
 VBik001
 VConComm001
@@ -1958,7 +1961,7 @@ VNewAsyncFileSystem001
 VP4003
 VPhysX Interface ResourceMgr v0.1
 VPhysXAggregateData_t
-VPhysXAggregateData_t::FLAG_IGNORE_SCALE
+VPhysXAggregateData_t::FLAG_IGNORE_SCALE_OBSOLETE_DO_NOT_USE
 VPhysXAggregateData_t::FLAG_IS_POLYSOUP_GEOMETRY
 VPhysXAggregateData_t::FLAG_LEVEL_COLLISION
 VPhysXAggregateData_t::VPhysXFlagEnum_t
@@ -2043,7 +2046,6 @@ V_strtoi64
 V_strtoui64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 Valve0
 Valve1
 Vector
@@ -2096,9 +2098,13 @@ YxHcApH
 \$8;>
 \$8Hc
 \$8fD
+\$@9\$8
+\$@9\$8~I
 \$@A+
 \$@Hc
 \$@f;
+\$HHc
+\$Hta
 \$XHc
 \$hHco ;o0u
 \$xD9eXt
@@ -2108,7 +2114,6 @@ YxHcApH
 ^HHcF@Hk
 ^`Hc~XH
 _(D9w |AH
-_V_SetExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -2190,7 +2195,6 @@ c:\buildslave\hlvr_rel_win64\build\src\meshsystem\Retail\win64\meshsystem.pdb
 c:\buildslave\hlvr_rel_win64\build\src\meshsystem\meshinstance_imp.cpp
 c:\buildslave\hlvr_rel_win64\build\src\meshsystem\meshsystem.cpp
 c:\buildslave\hlvr_rel_win64\build\src\meshsystem\meshutils.cpp
-c:\buildslave\hlvr_rel_win64\build\src\meshsystem\model_imp.cpp
 c:\buildslave\hlvr_rel_win64\build\src\meshsystem\rendermeshmgr.cpp
 c:\buildslave\hlvr_rel_win64\build\src\modellib\model_old_disk.cpp
 c:\buildslave\hlvr_rel_win64\build\src\public\ordered_constructor.h
@@ -2229,8 +2233,8 @@ create_particle
 curvature
 d$ A+
 d$ UAVAWH
-d$(A+
 d$(Lc` M
+d$0;xX
 d$0E3
 d$0HcD1
 d$@Hcw
@@ -2243,7 +2247,6 @@ d$PHc
 d$XE3
 d$`E3
 d$hE2
-d$hu*H
 d$pE3
 damage
 data_block
@@ -2263,6 +2266,7 @@ e A_A^A]A\_^]
 e L9e
 e(A_A^A]A\_^[]
 e(D9e@t:H
+e@A_A^A]A\_^]
 eHA_A^A]A\_^[]
 ePA_A^A]A\]
 e`A_A^A]A\_^]
@@ -2284,10 +2288,10 @@ explosive_damage
 explosive_radius
 eye_data
 eye_data_list
-f	C(H
-f!C(H
-fD	c(
-fD!k(H
+f	CXH
+f!CXH
+fD	cX
+fD!kXH
 fE94(t/E
 faceMergeAngle
 fademaxdist
@@ -2320,6 +2324,7 @@ h(B9|5h~/H
 hA]^H
 hA^A\
 hA^A\^]
+hA^A]][
 hA^_^]
 handindex
 headtype
@@ -2349,6 +2354,7 @@ l$ AVH
 l$ D9l$0|LH
 l$ VAUAVH
 l$ VAUAWH
+l$ VAVAWH
 l$ VH
 l$ VWAVH
 l$ VWAWH
@@ -2360,7 +2366,6 @@ l$ WH
 l$(;i
 l$(A+
 l$(Hc
-l$0A+
 l$0E3
 l$0H+
 l$0Hc
@@ -2374,11 +2379,11 @@ l$8Hi
 l$8Hk
 l$8fD
 l$8fE;
+l$@Hc
 l$@Hch H
 l$@Lc
 l$HHc
 l$HfA
-l$X;xX
 l$XA+
 l$XHi
 l$XHk
@@ -2551,6 +2556,7 @@ m_bTrailBias
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUseShadowFastPath
 m_bUserSpecifiedColor
 m_bUserSpecifiedMaterialGroup
 m_bUsesIndexedBakedLighting
@@ -2805,7 +2811,6 @@ m_nSlaveAxis
 m_nSlaveChannel
 m_nStartIndex
 m_nStartInstance
-m_nSurfacepropertyIndices
 m_nTargetAxis
 m_nTranslateMotion
 m_nType
@@ -2826,7 +2831,6 @@ m_outputWeightList
 m_pBody
 m_pFeModel
 m_pJointConstraintData
-m_pMemPool == nullptr
 m_pModelConfigList
 m_pMovementManager
 m_pParent
@@ -3018,7 +3022,6 @@ optionallycompressedtangentframe
 origin_max_delta
 origin_relative
 outerconeangle
-p WATAWH
 p(B9|6h~.H
 p(B9|6h~.I
 p(B9|6h~/H
@@ -3026,6 +3029,7 @@ p(B9|6h~/I
 p(B9|>h~/H
 p0n05
 p1f3q>
+pA^][
 parent_bone
 particle
 particles/
@@ -3050,7 +3054,6 @@ priority
 projectedDecal
 prop_data
 purecall
-r7G,oF
 radius
 radius0
 radius1
@@ -3066,6 +3069,7 @@ resource
 resourcesystem
 rootNode
 sHH9s0H
+sQ_ht
 schema
 secondary
 seqgroup_data_block
@@ -3089,7 +3093,7 @@ stop_on_seq_change
 suppress
 surface_prop
 sxK;4&t=H
-t!HcO
+t!IcO
 t!McY
 t#fff
 t$ A+
@@ -3098,20 +3102,19 @@ t$ AVH
 t$ AWH
 t$ E3
 t$ Ii
-t$ Li
 t$ Mc
 t$ UH
 t$ UWATAUAVH
-t$ UWAVH
 t$ WATAUAVAWH
 t$ WAVAWH
 t$ WH
 t$0+A$t
+t$0D9t$@|LH
 t$0H+
 t$0Hc
 t$0Hc2
-t$0Hc;D
 t$0Hcw@;wPu
+t$0Hi
 t$0Hk
 t$0M;
 t$8E2
@@ -3136,13 +3139,11 @@ t$HLcw
 t$Hf;
 t$Hu'
 t$PE3
-t$PLi
 t$PfD;
 t$XA+
 t$XE3
 t$XHc
 t$XLc
-t$XLi
 t$Xt	H
 t$`A+
 t$`D8
@@ -3164,12 +3165,14 @@ t.@8:t)
 t/D80t*
 t/D83t*
 t0@87t+
+t0@8;t+
 t0D8;t+
+t4Ic>A;~
 tAfff
 tCHc7
 tDLcp
 tEHc7
-tFHcO
+tFIcO
 tHcD$$H
 tJD80tEH
 tS@8(tNH
@@ -3187,6 +3190,7 @@ trD8(tmH
 ttHcK0H
 tu+K$3
 turn_rate
+t~IcO
 u H9u
 u$Lc3D;s
 u'Lc6D;v
@@ -3196,11 +3200,13 @@ u4fD;
 u98D$`u;H
 uFfD;
 uGfD;
+uPIcEHL
 uY<0uU
+u`J	\8(3
+u`L;uh
 ulfD;
 uniform_burst
 use_additional_offset
-u}Hc{
 v0t08
 v@Icv
 vagrp
@@ -3252,7 +3258,6 @@ vseqH
 vsnap
 vstdlib.dll
 vtexH
-wPIcGHL
 width
 www.digicert.com1!0
 www.digicert.com1$0"
@@ -3269,10 +3274,9 @@ x";C }
 x*D;AH}$Ic
 x-A;G }'Hi
 x0v0$
-xA_A]^[
 xRHcQ
 x_^][
-xt$L9
+xlHcu
 y0HcA(M
 yaw_end
 yaw_start
@@ -3295,13 +3299,13 @@ z:KCAuthPhysBody
 |$ E3
 |$ H;
 |$ Hc
-|$ Li
 |$ Lk
 |$ M+
 |$ UATAUAVAWH
 |$ UAVAWH
 |$ UH
 |$ ff
+|$ u*H
 |$ |AH
 |$(HcD$ H
 |$0A_A^
@@ -3312,7 +3316,8 @@ z:KCAuthPhysBody
 |$0Hk
 |$0Ic
 |$0Lcx M
-|$0uO
+|$0fff
+|$8E3
 |$8Hc:
 |$8Hk
 |$@A;
@@ -3329,6 +3334,7 @@ z:KCAuthPhysBody
 |$HE3
 |$HHc
 |$HHc7;w
+|$HHi
 |$Ht#
 |$P;|$T
 |$PA;^ u
@@ -3339,20 +3345,21 @@ z:KCAuthPhysBody
 |$XHc
 |$XIc
 |$XLcx M
-|$XMi
 |$XMk
+|$`@2
 |$`A+
 |$`Lc
 |$hA+
 |;HcL
 }7fff
 }:HcQ
-}NfD;
+}OfD;
 }QfA;
 }WIcU
 }afA;
 ~!A;~
-~*9y0
+~*9q0
 ~,IcZ
-~08\$0t
+~28\$0t
+~8HcMPA
 ~HIcF@Hk

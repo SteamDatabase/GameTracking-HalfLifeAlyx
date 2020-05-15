@@ -172,6 +172,7 @@ $s=M;
 )l$0L
 )l$PD
 )l$`;
+)l$`A
 )t$ I
 )t$ L
 )t$0A
@@ -180,7 +181,7 @@ $s=M;
 )t$@%
 )t$@D
 )t$@H
-)t$PD
+)t$PE
 )t$PH
 )t$`E
 )t$`H
@@ -189,7 +190,6 @@ $s=M;
 )t$pE
 )|$0H
 )|$@D
-)|$@E
 )|$@L
 )|$P3
 )|$PA
@@ -403,7 +403,7 @@ $s=M;
 181004000000Z
 1<.	/>:
 1DBlend
-200403223331Z0#
+200515051939Z0#
 2048.0f
 211007120000Z0M1
 211110000000Z0b1
@@ -506,12 +506,16 @@ $s=M;
 ?<?t[
 ??0CThreadMutex@@QEAA@PEBD@Z
 ??1CThreadMutex@@QEAA@XZ
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TestBoxHullForClipDir - polyBack is empty
 ?UUUUUU
 ?V_stristr_fast@@YAPEBDPEBD0@Z
@@ -562,6 +566,7 @@ $s=M;
 @USVWATAVH
 @USVWH
 @USWH
+@UVAWH
 @UVWATAUAVAWH
 @UVWH
 @UWAVH
@@ -915,6 +920,7 @@ D$8H;
 D$8Hc
 D$8L9
 D$8L;
+D$8fD
 D$8ff
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
@@ -933,8 +939,8 @@ D$HE;
 D$HH;
 D$HHc
 D$Hff
-D$OE3
 D$P I
+D$P!0
 D$P"ZF
 D$PA;
 D$PD;i
@@ -944,6 +950,7 @@ D$PHc
 D$PI;
 D$Pk@_aH
 D$Pmp
+D$WE3
 D$X!0
 D$X+D$\H
 D$XA;
@@ -951,7 +958,6 @@ D$XH;
 D$XHc
 D$XIcE
 D$XL;
-D$_E3
 D$`9yXH
 D$`E#
 D$`E3
@@ -961,9 +967,7 @@ D$`Hc
 D$`L;
 D$`Ll
 D$`r|
-D$h!0
-D$h9xXH
-D$h9yXH
+D$gE3
 D$hA;
 D$hE3
 D$hE;u
@@ -978,15 +982,16 @@ D$pH;
 D$pHK8
 D$pHc
 D$pIc
+D$wE3
 D$x*>
 D$xLc
 D08@t	
 D18 t
 D6pD98~NI
+D8-Y	
 D82u&H
-D85/R
-D85TW
-D8=p_
+D85+q
+D8=/|
 D8`I;
 D8d$H
 D8d$Ht
@@ -1052,7 +1057,6 @@ Enable/disable overhang detection
 EncodePointer
 EngineServiceMgr001
 EnterCriticalSection
-EnvironmentMapBuilder_001
 EventSystem001
 ExitProcess
 F 90t;H
@@ -1115,7 +1119,6 @@ H!T$0D
 H+\$h+
 H+\$hIc<$H
 H0F08
-H9=N2
 H9D$P~*f
 H9]ot	H
 H9l$Xt
@@ -1205,6 +1208,7 @@ IsDebuggerPresent
 IsProcessorFeaturePresent
 IsValidCodePage
 IslandRemoval
+J@jLN#
 January
 K&>.yC
 KERNEL32.dll
@@ -1259,11 +1263,11 @@ L$XE;
 L$XH9
 L$\D;
 L$\D;w
+L$`9yXH
 L$`D;
 L$`L;l$0
 L$`Lc9A
 L$dE3
-L$h9yXH
 L$hE3
 L$hH9
 L$hfff
@@ -1523,6 +1527,7 @@ SetFilePointerEx
 SetLastError
 SetStdHandle
 SetUnhandledExceptionFilter
+Sg#~0
 Show areas that are potentially visible from the current nav area
 Show current player counts in each area.
 SleepConditionVariableCS
@@ -1594,8 +1599,6 @@ TlsGetValue
 TlsSetValue
 Too much Recast debug data; skipping tile
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1685,7 +1688,6 @@ VWAUAVAWH
 VWAUH
 VWAVH
 VWAWH
-V_FixSlashes
 V_atof
 V_atofloat32
 V_atofloat64
@@ -1765,9 +1767,9 @@ Yt$HA
 \$@I+
 \$HE3
 \$XtUL
+\$`9yXH
 \$`E3
 \$`fA
-\$p9yXH
 \$xHc
 \$xtUL
 \B(Lc
@@ -1778,9 +1780,7 @@ Yt$HA
 \|$(f
 ]0HcL
 ^<V7w
-^\$(fA
-_V_SetExtension
-_V_strncmp
+^\$0fA
 _V_strncpy
 __based(
 __cdecl
@@ -1932,6 +1932,7 @@ d$XD;
 d$`E3
 d$`Hc
 d$pHc
+d(|Op
 damage
 dddd, MMMM dd, yyyy
 debris
@@ -2049,6 +2050,7 @@ l$`fff
 l$`~bD
 l$xA9
 l8pfH
+l=!$8
 last_sniff
 length
 lockRotationAlpha
@@ -2057,7 +2059,7 @@ loop_break_on_damage
 loop_break_on_flashlight
 loop_in_action
 looping
-m 9E0
+m D9m0
 m0k0$
 m_Bone
 m_ChainData
@@ -2425,6 +2427,7 @@ t$(E2
 t$(E3
 t$(H+
 t$(Hc;;{
+t$0D9t$@|LH
 t$89YH
 t$8H+
 t$8I;
@@ -2445,11 +2448,11 @@ t$Pu#H
 t$XE3
 t$XIk
 t$Xfff
-t$`9yXH
 t$`A;
 t$`H+
 t$`Hc
 t$`I;
+t$h9yXH
 t$hA+
 t$hH;
 t$hHc

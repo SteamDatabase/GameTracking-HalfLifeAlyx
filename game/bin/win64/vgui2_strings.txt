@@ -32,7 +32,6 @@
  HcApA
  HcApE3
  Lcy03
- ReadToken overflow
  Type Descriptor'
  delete
  delete[]
@@ -46,8 +45,10 @@
 #base is NULL 
 #include
 #include is NULL 
+$rZrU
 %d %d
 %d %d %d %d
+%f %f %f %f
 %i %i %i %i
 %s Queue dispatching command( %s, %s -- %i )
 %s Queue dispatching( %s -- %i )
@@ -63,7 +64,6 @@
 () ,+-
 (*%s*), 
 (A]A\][
-(A_A]][
 (A_A^
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
@@ -85,20 +85,19 @@
 )t$0H
 )t$@H
 )t$pH
-)tNE3
 )|$`u
 **KEY_PAD_MULTIPLY
 *StO9>T
 ++KEY_PAD_PLUS
 +C$Hc
 +M<7>
++Qv}S
 +f)>0'
 +h->|
 ,/<-w
 ,0<	w
 ,<KEY_COMMA
 ,I<%w
-,tJE3
 ,|%)v
 --KEY_PAD_MINUS
 -_KEY_MINUS
@@ -113,7 +112,6 @@
 .?AV?$CBaseAppSystem@VIPanel@vgui@@@@
 .?AV?$CBaseAppSystem@VISurface@vgui@@@@
 .?AV?$CBaseAppSystem@VIVGui@vgui@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VIInputInternal@vgui@@@@
 .?AV?$CTier0AppSystem@VIPanel@vgui@@@@
 .?AV?$CTier0AppSystem@VIVGui@vgui@@@@
@@ -227,16 +225,16 @@
 0 0 0 255
 0)KEY_0
 061110000000Z
+0A^^[
+0A^_[
 0A^_^
 0A_A^A\
 0A_A^A\_^
 0A_A^A]A\_
 0A_A^A]A\_^]
 0A_A^]
-0A_A^^
 0A_A^_
 0A_A^_^]
-0A__[
 0A__]
 0A__^][
 0iN>/
@@ -252,7 +250,7 @@
 181004000000Z
 1<.	/>:
 200 200 200 196
-200321043406Z0#
+200515052803Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -290,9 +288,8 @@
 9G(~lf
 9M@~oH
 9_p~$
-9~h~P3
+9~x~S3
 :active
-:d=AV
 :disabled
 :focus
 :hover
@@ -309,23 +306,23 @@
 ;|$8|
 <	w	@
 < t;<	t7
-<"uBD
 <$E;Q
-<0t	<1u
-<0ta<1tPE3
 <NULL>
 <deferred>
 <htr<jtb<lt6<tt&<wt
 <no failure reason set>
 <null>
 <unconnected>
+<wjJg
 =+KEY_EQUAL, L
 =imb;D
 >jtm}S
 ?5zlO
 ?7zQ6$
 ?:kP<
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
 ?DevMsg@@YAXPEBDZZ
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -333,6 +330,7 @@
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@AEBULeafCodeInfo_t@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
+?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
 ?UUUUUU
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
@@ -341,8 +339,6 @@
 ?V_UnicodeBufferLength@@YAHPEB_WHAEA_N@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?f`Y4
-?i6=I
-@+nw%9
 @.data
 @.gfids
 @.tls
@@ -368,16 +364,15 @@
 @Lc:E3
 @SAVH
 @SUATAUH
-@SUAUAWH
 @SUAVH
 @SUVWATAUAVAWH
 @SUVWAWH
 @SUVWH
 @SUWAVAWH
+@SVAVH
 @SVWH
 @SWATAUH
 @SWAVH
-@SWAWH
 @UATAUAVAWH
 @UATAVAWH
 @UATAVH
@@ -408,7 +403,7 @@ A;RX}
 A;T$(|
 A;^ u	I
 A;^@|
-A;~h|
+A;~x|
 A>pP&
 AA,A$
 AA<Fu
@@ -421,7 +416,7 @@ AVAWH
 A^A\]
 A^A\_[]
 A^_^[]
-A_A\^[]
+A_A]_[]
 A_A^A\
 A_A^A\]
 A_A^A\_]
@@ -438,7 +433,6 @@ A__^[]
 AcceptPanel
 ActivateKeyboardLayout
 AddFontMemResourceEx
-AkQ{_&S
 AnimGraphEditorUtils001
 AnimationSystemUtils_001
 AnimationSystem_001
@@ -620,10 +614,9 @@ D$pE3
 D$pff
 D$pfff
 D$xfD
-D, C9D,
-D,$C9D,
-D,0C9D,(uRC
-D,4C9D,,uRC
+D' C9D'
+D'$C9D'
+D'4C9D',uxC
 D08@t	
 D18 t
 D82u&H
@@ -684,7 +677,7 @@ DrawIconEx
 E+BHI
 E0C07
 E9L$,
-E9~h~5I
+E9~x~8I
 E;L$,
 E;~(H
 EP*?@
@@ -695,7 +688,6 @@ EndPaint
 EngineServiceMgr001
 EnterCriticalSection
 EnumWindows
-EnvironmentMapBuilder_001
 Error parsing 'render' key in a style definition
 Error parsing 'render_bg' key in a style definition
 Error: texture file '%s' does not exist or is invalid
@@ -748,7 +740,6 @@ FreeLibrary
 Friday
 GAMECONSOLE
 GDI32.dll
-GRegisterConfigValue: Unknown error constructing config value "%s"!
 GT$8H
 G\$0H
 G\$83
@@ -822,7 +813,7 @@ H0F08
 H90t$H
 H90t;H
 H97t<
-H9=Ra
+H9=Bj
 H9A u
 H9HpD
 H9w(H
@@ -849,7 +840,7 @@ HcE0H;
 HcG$H
 HcG(H
 HcH<H
-HcIhH
+HcIxH
 HcMoL
 HcS@H
 HcT$@H
@@ -967,7 +958,6 @@ KeyTyped
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
-KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 KillFocus
@@ -983,6 +973,7 @@ L$ fI
 L$&@8t$&t0@8q
 L$(E3
 L$(fH
+L$(fI
 L$0E3
 L$0H;
 L$0H;K
@@ -1003,6 +994,8 @@ L$X;Vhu
 L$`E3
 L$pD;e@|
 L$pE3
+L'@E3
+L'DE3
 L;t$P
 LBUTTONDBLCLK
 LCMapStringEx
@@ -1104,6 +1097,7 @@ OnMovedPopupToFront
 OpenClipboard
 Ordered constructor wrapped type has no default constructor.
 OutputDebugStringW
+PA^_^
 PA_A^A]A\_^]
 PA_A^A]_^][
 POSIX
@@ -1157,6 +1151,7 @@ RegOpenKeyExA
 RegQueryValueExA
 RegSetValueExA
 RegisterClassA
+RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterDragDrop
 RegisterWindowMessageA
 Release
@@ -1308,7 +1303,6 @@ Sunday
 Surface
 SystemParametersInfoA
 T$ A;
-T$ E3
 T$ Lc
 T$0E3
 T$8A+
@@ -1350,8 +1344,6 @@ TlsGetValue
 TlsSetValue
 ToggleButton.SelectedTextColor
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1363,12 +1355,12 @@ Tuesday
 UATAUAVAWH
 UAVAWH
 USER32.dll
-USVATAWH
 USVWATAUAVAWH
 USVWAVH
 USVWAWH
 USVWH
 USWATAVH
+USWAUAWH
 UUUUUU
 UVAVH
 UVWATAUAVAWH
@@ -1442,7 +1434,6 @@ V_strtod
 V_strtoi64
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_vsnwprintf_cch
 V_wcstod
 V_wcstoi64
@@ -1451,6 +1442,7 @@ Valve Client
 Valve0
 Valve1
 VisBuilder_001
+W1fd@
 WATAUAVAWH
 WAVAWH
 WIN32
@@ -1483,7 +1475,6 @@ XA]A\^[
 XC943t+G
 XIct*
 XJcD	
-Y&^)0
 You need to name the scheme (%s)!
 [%s] unexpected parameter for height="%s" - must be either a number, or "max"
 [%s] unexpected parameter for width="%s" - must be either a number, or "max"
@@ -1508,17 +1499,19 @@ You need to name the scheme (%s)!
 \$8A+
 \$8Hc
 \$<A;
-\$@@8==
+\$@@8=
 \$@D;
 \$@H;
 \$@f;
 \$PE3
 \$`fD
 \$pD9gLu	
+\$xIc
 \uI8H
 \|KEY_BACKSLASH
 ]}KEY_RBRACKET
 ^<V7w
+^[apS
 _V_ExtractFileExtension
 _V_MakeAbsolutePath
 _V_strncat
@@ -1618,7 +1611,6 @@ c:\buildslave\hlvr_rel_win64\build\src\vgui2\src\surface.cpp
 c:\buildslave\hlvr_rel_win64\build\src\vgui2\src\vgui.cpp
 cAMDD
 cCKEY_C
-ch.s_
 changing kb focus from %s to %s
 changing mouse focus from %s to %s
 cl_hud_minmode
@@ -1632,8 +1624,6 @@ custom
 d$ E3
 d$ fC
 d$(E3
-d$`E3
-d$`E;
 dDKEY_D
 danish
 dashedrect
@@ -1666,6 +1656,7 @@ fD9t$b
 fFKEY_F
 ffffff
 fffffff
+fi_PQ*
 files
 filesystem_stdio
 finnish
@@ -1717,7 +1708,6 @@ koreana
 l$ 9Q
 l$ AVH
 l$ E3
-l$ VAVAWH
 l$ VH
 l$ VWATAVAWH
 l$ WAVAWH
@@ -1731,6 +1721,7 @@ l$@E3
 l$PE3
 l$PHc
 l$PeL
+l$XE3
 l$xE3
 lLKEY_L, L
 layout
@@ -1767,6 +1758,7 @@ newPanel
 no such file '%s'
 norwegian
 ntelE
+o=:t)
 oOKEY_O
 obwQ4
 offset
@@ -1865,12 +1857,9 @@ t	L9c
 t!McY
 t"<.u
 t#E9<$~
-t$ ;C ~
-t$ @2
 t$ AVH
 t$ AWH
 t$ E3
-t$ Hc
 t$ UH
 t$ UWATAVAWH
 t$ WATAUAVAWH
@@ -1881,7 +1870,7 @@ t$0H;
 t$0Hc
 t$0HcC
 t$0HcK
-t$0Hcsh;sxu	H
+t$0Hcsx;
 t$0Hk
 t$0u H
 t$8H+
@@ -1908,7 +1897,7 @@ tCIc6
 tI@8{:t
 tK@8{:t
 tPD;5
-tPH95
+tPH95Q
 tTKEY_T
 tY@8p
 tchinese
@@ -1926,7 +1915,6 @@ u3HcH<H
 u=L;k
 uBB9D;,u;3
 uMHcE
-uOC9\,0uHE3
 uT<0uP
 uUKEY_U
 uY8D$PuSH
@@ -1984,7 +1972,6 @@ y\PD>!
 z0x0:
 zZKEY_Z
 { AVH
-{}()'
 {}()':
 |$ ATAVAWH
 |$ AVH
@@ -2001,7 +1988,7 @@ zZKEY_Z
 |$8;3
 |$@-D
 |$@-H
-|$@9^h~1
+|$@9^x~4
 |$@H;
 |$@Hcyp;
 |$@ff
@@ -2015,6 +2002,7 @@ zZKEY_Z
 |$XE3
 |$\.u
 |$`Lc
+|$`ff
 |88E3
 |b=})>
 },A;@t

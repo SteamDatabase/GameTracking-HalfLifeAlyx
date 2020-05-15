@@ -6,10 +6,8 @@
  (Abstract)
  - %s
  9(X`
- :~^Z7
  A^][
  A^_[
- A^_]
  A^_^
  A_A\_
  A_A^A\
@@ -24,7 +22,7 @@
  Lc9L
  vJH+
 !GlobalTypes
-"pA3Q 
+"pA3Q
 %-10s%-10s %-8s %-40s %-40s %-40s
 %-10s%-10u %-8u %-40s %-40s %-40s
 %-10s[ Inline %s ]
@@ -70,7 +68,11 @@
 &YA1L
 (A;l$
 (A_A^
+(A_A^^[
 (D$0H
+(D$@A
+(D$@H
+(D$@L
 (D$`H
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
@@ -116,7 +118,6 @@
 -use_tier3_bundle
 .?AV?$CBaseAppSystem@VISchemaSystem@@@@
 .?AV?$CConCommandMemberAccessor@VCSchemaSystem@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
 .?AV?$CTier0AppSystem@VISchemaSystem@@@@
 .?AV?$CTier1AppSystem@VISchemaSystem@@$0A@@@
 .?AV?$CTier2AppSystem@VISchemaSystem@@$0A@@@
@@ -213,7 +214,7 @@
 141022000000Z
 181004000000Z
 1DBlend
-200327173841Z0#
+200515052444Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -233,12 +234,12 @@
 93t8H
 99~-H
 9;~)H
+9DLCm
 9_p~$
 ;A ~W
 ;C ~M
 ;D$0u
 ;L$0u
-;UQsp
 ;l$0|
 ;t$4|
 ;|$@|
@@ -251,6 +252,9 @@
 <null>
 <unconnected>
 ?5zlO
+?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
 ?Format@CBufferString@@QEAAHPEBDZZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
@@ -259,7 +263,9 @@
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
 ?Purge@CBufferString@@QEAAXH@Z
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
@@ -268,7 +274,6 @@
 @.reloc
 @.tls
 @81u/H
-@85vO
 @8t$0t 
 @8y#vIH
 @A^A]A\
@@ -283,9 +288,10 @@
 @SUAVH
 @SUVWH
 @SUWH
+@SVAVAWH
 @SVAVH
 @SWAVH
-@UATAUH
+@UAUAWH
 @UAUH
 @UAVAWH
 @UAVH
@@ -299,8 +305,8 @@
 @UVWATAWH
 @UVWH
 @UWATAWH
-@UWAVH
 @UWAWH
+@VWAVAWH
 @VWAVH
 @WATAVH
 @WAVH
@@ -360,12 +366,12 @@ ATAVAWH
 ATAVH
 ATAWH
 AVAWH
-A]A\]
+A]A\_^]
 A^A\_^[]
 A^A]A\_]
 A^A]_^[]
-A_A]A\
 A_A]]
+A_A^A\
 A_A^A\_^
 A_A^A]A\]
 A_A^A]A\_^[]
@@ -373,6 +379,7 @@ A_A^A]A\_^]
 A_A^[
 A_A^]
 A_A^_
+A_A^_^
 AbsolutePoseControl
 AcquireSRWLockExclusive
 AddLayer
@@ -597,6 +604,7 @@ ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
 CmdLinkAH
+CmdLinkAL
 Color
 CommandLine
 CommandProcedure
@@ -635,16 +643,17 @@ D$HD;M
 D$HE3
 D$HH;
 D$HHc|$0A
+D$Hf;
 D$P"ZF
 D$PE3
 D$Pk@_aH
 D$Pmp
 D$XE3
 D$XH;
-D$`A2E`
 D$`E#
 D$`H;
 D$`Ll
+D$`fA;
 D$`r|
 D$hE3
 D$hH;
@@ -652,7 +661,7 @@ D$p 69
 D$p<L{
 D$pHK8
 D$x*>
-D8=TP
+D8=\$
 DebugTextureInfo001
 Default
 DegreeEuler
@@ -681,6 +690,7 @@ ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeS
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but derives from locally-scoped class '%s'
 ERROR: Schema registration error - subclass '%s' registered before base class '%s'
 EXPORTSYSTEM_INTERFACE_VERSION_001
+E`A2G`
 EconItemToolModel_001
 EditorDynamicConfig
 EmptyAnim
@@ -693,7 +703,6 @@ Enum name collision: '%s' and '%s' (%d)
 Enum: %3d enumerators 
 Enumerator Name
 Enumerator Value
-EnvironmentMapBuilder_001
 EventSystem001
 ExternalReference
 FATAL ERROR: unable to register all schema data: %s
@@ -717,6 +726,7 @@ FourVectors
 G#+E3
 GRegisterConfigValue: Unknown error constructing config value "%s"!
 GSFailure
+GT$(H
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
@@ -731,6 +741,9 @@ GetResourceManifestCount
 GetResourceManifests
 GetSystemTimeAsFileTime
 GetWindowRect
+Gl$HH
+Gs$ST
+G|$(H
 H AUAVH
 H AUAWH
 H UWH
@@ -758,7 +771,6 @@ HcD$ H
 HcH<H
 HcK ;
 HcL$ H
-HcL$@H
 HcS@H
 Hc_0L
 HckHL
@@ -789,6 +801,7 @@ InterlockedFlushSList
 Invalid
 InvokeMiniDumpHandler
 Is Polymorphic: %s
+Ju';w
 KERNEL32.dll
 KeyValueCache001
 KeyValues
@@ -802,6 +815,8 @@ L$8Lc
 L$<;D$4
 L$@E3
 L$@H1D$0
+L$xE3
+L$xfff
 L9m(t	H
 L9ugt	H
 LOG_GENERAL
@@ -997,8 +1012,6 @@ TextLayout_001
 TextMessageMgr_001
 ThreeState_t
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -1006,7 +1019,6 @@ Top %u metadata item counts:
 Two Bone
 Type '%s' was unresolved at local scope, but already exists at global scope!
 UATAUAVAWH
-UAUAWH
 UAVAWH
 UPDATE_STRING_TOKEN_DATABASE
 USER32.dll
@@ -1017,7 +1029,7 @@ UUUUUUUUL
 UVATAUAVH
 UVAWH
 UVWATAUAVAWH
-UWATAUAVH
+UVWATAUH
 UWATAUAWH
 UWAWH
 Unaccounted
@@ -1067,7 +1079,6 @@ VWATAVAWH
 VWAUAVAWH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetRtSupportFunctions
 V_PrettifyNum
 V_atof
@@ -1086,7 +1097,6 @@ V_stricmp_fast
 V_uuid_t
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 ValidateAtomicType
 Valve0
 Valve1
@@ -1123,11 +1133,8 @@ Y09Y ~
 \$8;>
 \$8Dk
 \$@f;
-\$HD;
-\jqvP
 ]PA9]@~
 ]pA9]`~ H
-_V_SetExtension
 _V_strncmp
 _V_strncpy
 _V_strnicmp_fast
@@ -1230,7 +1237,6 @@ explosion_type
 explosive_damage
 explosive_radius
 fA9,2t&A
-fA9D$
 fE94(t/E
 faceMergeAngle
 false
@@ -1289,10 +1295,7 @@ l$0I;
 l$8H+
 l$8HcG
 l$8fE;
-l$@Hc;D
 l$@fD;
-l$HD9l$@~2
-l$PHc]
 l$XA+
 l$xE3
 last_sniff
@@ -1563,11 +1566,13 @@ t"H9M
 t$ A;
 t$ AVH
 t$ AWH
+t$ UH
 t$ UWATAUAVH
 t$ WATAWH
 t$ WAVAWH
 t$ WH
 t$0+A$t
+t$0D9t$@|LH
 t$0fD;
 t$0fff
 t$0u*H
@@ -1597,7 +1602,7 @@ t/D83t*
 t0@87t+
 t0D8;t+
 t9@8;t4
-t9H9=V
+t9H9=
 t]<-u
 t]fff
 taD9A
@@ -1610,7 +1615,7 @@ tier3_bundle
 trD8(tmH
 trHcD$@H
 turn_rate
-u	@8=m
+u	@8=
 u.fE;
 u;HcG
 u<fD;
@@ -1662,15 +1667,13 @@ vr_carry_type
 vrman
 vsnap
 vstdlib.dll
-wSpfDFtX
 width
 worldrenderer
 www.digicert.com1!0
 www.digicert.com1$0"
 www.digicert.com110/
 x	HcQ
-x A;@X}
-x ATAUAWH
+x ATAVAWH
 x!HcI
 x!HcK
 x0v0$
@@ -1679,7 +1682,6 @@ x_^][
 yaw_end
 yaw_start
 z0x0:
-{FH,Wg
 {YIN?
 |$ A;
 |$ ATAVAWH
@@ -1700,6 +1702,7 @@ z0x0:
 |$XIc
 |$`Lc
 |$hA+
+|s;ZU
 }LfA;
 }QfA;
 ~!A;~

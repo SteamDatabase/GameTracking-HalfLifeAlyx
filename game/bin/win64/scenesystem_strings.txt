@@ -106,7 +106,6 @@
  9(X`
  = { <proto text format> }". To set fields within it, use syntax like "
  A\^]
- A]A\_^]H
  A^A\[
  A^A\^
  A^A]A\_^
@@ -122,13 +121,16 @@
  A_A]^
  A_A^A\
  A_A^A\_^
+ A_A^A\_^H
  A_A^A]
  A_A^A]A\_
  A_A^A]A\_^]
+ A_A^A]^]
  A_A^A]_^
  A_A^]
  A_A^^
  A_A^_
+ A_A^_H
  A_^[
  A_^]
  A__]
@@ -162,7 +164,6 @@
  NETWORK_DISCONNECT_SNAPSHOTERROR
  NETWORK_DISCONNECT_STEAM_DROPPED
  Outdent() without matching Indent().
- ReadToken overflow
  Render %d specific objects
  Render world : %s
  Someone needed to call WaitForRenderingToComplete()!!!!!
@@ -508,31 +509,28 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%3.3f - %3.3f)
+(%7*#
+(%H8#
 ('8PW
 (*%s*), 
-(-Pt"
-(-SL#
-(5	i!
-(5@Z"
-(5V_#
-(5Yh!
+(-i}"
+(5D*#
+(5S8#
 (8HXhx
 (;QPt
 (;^,|
 (;s,|
-(=%L#
-(=)A"
+(=	q"
+(=\F#
+(=aF#
 (A^A\_[
 (A^^][
-(A_A]][
 (A_A]][H
 (A_A^
 (A_A^A\_^[
-(A_^H
 (A__][
 (A__^[
 (D$ A
-(D$ D
 (D$ H
 (D$ f
 (D$ v
@@ -545,11 +543,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (D$@D
 (D$@H
 (D$@f
-(D$PA
 (D$PH
 (D$Pf
 (D$`A
-(D$`D
 (D$`H
 (D$`f
 (D$pf
@@ -610,20 +606,18 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (t$0D
 (t$0H
 (t$0L
+(t$@A
 (t$@D
 (t$@H
 (t$@L
 (t$PA;
 (t$PH
-(t$PI
 (t$PL
-(t$`A
 (t$`D
 (t$`H
 (t$`I
 (t$`L
 (t$`f#
-(t$pD
 (t$pH
 (t$pI
 (t$pL
@@ -634,6 +628,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (|$0H
 (|$0I
 (|$0L
+(|$0M
 (|$0ssH
 (|$@D
 (|$@H
@@ -642,7 +637,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (|$PD
 (|$PH
 (|$PI
-(|$PM
 (|$`D
 (|$`E
 (|$`H
@@ -665,7 +659,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )D$ H
 )D$ L
 )D$ f
-)D$ v9
 )D$0D
 )D$0H
 )D$@A
@@ -675,13 +668,13 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )D$`E
 )D$`H
 )D$`L
+)D$p3
 )D$pD
 )D$pH
 )L$ D
 )L$0E
 )L$@A
 )L$PD
-)L$PH
 )L$`D
 )L$pA
 )NETWORK_DISCONNECT_NO_PEER_GROUP_HANDLERS
@@ -715,7 +708,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )t$@J
 )t$@L
 )t$P%
-)t$P3
 )t$PA
 )t$PH
 )t$PI
@@ -727,7 +719,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )t$pD
 )t$pE
 )t$pH
-)v &v
 )|$ A
 )|$ D
 )|$ H
@@ -735,13 +726,13 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 )|$0D
 )|$0H
 )|$0I;
-)|$0L
 )|$@D
 )|$@L
 )|$PE
 )|$PH
 )|$`H
 )|$pD
+)|$pE
 )|$pH
 )|B?d!
 *#GameUI_Disconnect_LocalProblem_ManyRelays
@@ -757,7 +748,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 *StO9>T
 +;K[k{
 +A,+A
-+C tHH
++C tRH
 +C$Hc
 +C$Lc
 +K,+K
@@ -825,34 +816,27 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ...<truncated>...
 ..om?
 .00cfg
-.5D9	
-.5W?	
 .>N^n~
 .>PJ;I:qE>
 .?AU_Crt_new_delete@std@@
 .?AUctype_base@std@@
 .?AV<lambda_145fd1566b925bb31c026bba78f0ae0f>@@
-.?AV<lambda_20e5aa45c77454285cddbca1a87880b9>@@
 .?AV<lambda_35e59b4fa46750667b16a5f083517ec0>@@
 .?AV<lambda_462384bc7051fa324bde30a2217a88a2>@@
 .?AV<lambda_54bdb0e6d13ab997513b7a0d64625e9f>@@
+.?AV<lambda_6137690851670156ed27a617be10ccd1>@@
 .?AV<lambda_8f92e1a87b129f052e6d88e8cb55ce04>@@
+.?AV<lambda_9e84c756f3e50235311531c606078739>@@
 .?AV<lambda_a434b47959dd3d9ddee38632336775b2>@@
-.?AV<lambda_bdfe5fb47bd4977f73c0f40832b6ff3a>@@
 .?AV<lambda_d66357f1dcc33d128de5810280b7464f>@@
 .?AV<lambda_e21fb7c176450106e4dde344651ee958>@@
 .?AV?$CBaseAppSystem@VISceneSystem@@@@
 .?AV?$CBaseAppSystem@VISceneUtils@@@@
 .?AV?$CBaseNonPooledSceneObjectDesc@VC6FaceSkyboxObject@@@@
 .?AV?$CConCommandMemberAccessor@VCSceneSystem@@@@
-.?AV?$CFmtStrN@$0BAA@$0A@@@
-.?AV?$CFunctor3@P6AXPEAVCSceneView@@PEAVCSceneLayer@@_N@ZPEAV1@PEAV2@_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@PEAVCSceneObject@@V?$CFuncJobItemProcessor@PEAVCSceneObject@@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@UPerTaskData2@DepthBufferRasterizerSSEMT@@V?$CMemberFuncJobItemProcessor@UPerTaskData2@DepthBufferRasterizerSSEMT@@V2@V2@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
-.?AV?$CMemberFunctor1@PEAVCSceneSystem@@P81@EAAXPEAVCSceneView@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
-.?AV?$CMemberFunctor5@PEAVCSceneSystem@@P81@EAAXPEAVCSceneView@@HH_K1@ZPEAV2@HHHHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
-.?AV?$CMemberFunctor5@PEAVCSceneSystem@@P81@EAAXPEAVCSceneView@@PEAVCSceneLayer@@PEAVCSceneDrawList@@PEAVCRenderBatchList@@W4EBatchStartFlags_t@@@ZPEAV2@PEAV3@PEAV4@PEAV5@W46@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor6@PEAVCSOAContainer@@P81@EAAXHHHHHT__m128@@@ZHHHHHT2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CRefCountServiceBase@$00VCRefMT@@@@
 .?AV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@
@@ -884,13 +868,13 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AV?$_Func_base@XPEAVCSceneObject@@@std@@
 .?AV?$_Func_impl@P6AXPEAVCSceneObject@@@ZV?$allocator@H@std@@XPEAV1@@std@@
 .?AV?$_Func_impl@V<lambda_145fd1566b925bb31c026bba78f0ae0f>@@V?$allocator@H@std@@XPEAVCEnvMapSceneObject@@@std@@
-.?AV?$_Func_impl@V<lambda_20e5aa45c77454285cddbca1a87880b9>@@V?$allocator@H@std@@XPEAVCEnvMapSceneObject@@@std@@
 .?AV?$_Func_impl@V<lambda_35e59b4fa46750667b16a5f083517ec0>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
 .?AV?$_Func_impl@V<lambda_462384bc7051fa324bde30a2217a88a2>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
 .?AV?$_Func_impl@V<lambda_54bdb0e6d13ab997513b7a0d64625e9f>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
+.?AV?$_Func_impl@V<lambda_6137690851670156ed27a617be10ccd1>@@V?$allocator@H@std@@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl@V<lambda_8f92e1a87b129f052e6d88e8cb55ce04>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
+.?AV?$_Func_impl@V<lambda_9e84c756f3e50235311531c606078739>@@V?$allocator@H@std@@XPEAVCEnvMapSceneObject@@@std@@
 .?AV?$_Func_impl@V<lambda_a434b47959dd3d9ddee38632336775b2>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
-.?AV?$_Func_impl@V<lambda_bdfe5fb47bd4977f73c0f40832b6ff3a>@@V?$allocator@H@std@@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl@V<lambda_d66357f1dcc33d128de5810280b7464f>@@V?$allocator@H@std@@XPEAVCSceneLightProbeVolumeObject@@@std@@
 .?AV?$_Func_impl@V<lambda_e21fb7c176450106e4dde344651ee958>@@V?$allocator@H@std@@XPEAVCSceneLightObjectInternal@@@std@@
 .?AV?$_Iosb@H@std@@
@@ -935,6 +919,10 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCFilterLayerRenderer@@
 .?AVCFullscreenQuadRenderer@@
 .?AVCFunctor@@
+.?AVCFunctor_SceneSystem_Thread_DrawDrawList@@
+.?AVCFunctor_SceneSystem_Thread_ProcessProceduralLayer@@
+.?AVCFunctor_SceneSystem_Thread_RenderOccludersAndQueueRenderPartitions@@
+.?AVCFunctor_SceneSystem_Thread_RenderPartition@@
 .?AVCGenerateMipsProceduralLayer@@
 .?AVCInputLayoutRegistration_sm_hLayout@@
 .?AVCLightBinner2@@
@@ -965,6 +953,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCNETMsg_SplitScreenUser@@
 .?AVCNETMsg_StringCmd@@
 .?AVCNETMsg_Tick@@
+.?AVCNoRefFunctor@@
 .?AVCOccluderSceneObject@@
 .?AVCOccluderSceneObjectDesc@@
 .?AVCPlaceholderConVar@@
@@ -1010,6 +999,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .?AVCSpotLightObjectDesc@@
 .?AVCSpotLightObjectDescCsgo@@
 .?AVCSpotLightObjectDescVr@@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@HV?$CMemberFuncJobItemProcessor@HV?$CCallQueueT@V?$CTSQueue@PEAVCFunctor@@$0A@@@@@V1@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@PEAVCSceneObject@@V?$CFuncJobItemProcessor@PEAVCSceneObject@@@@$00@@@@QEAAXXZ@
+.?AVCStackFunctor@?1??Run@?$CParallelProcessorAbstract@V?$CParallelProcessor@UPerTaskData2@DepthBufferRasterizerSSEMT@@V?$CMemberFuncJobItemProcessor@UPerTaskData2@DepthBufferRasterizerSSEMT@@V2@V2@@@$00@@@@QEAAXXZ@
 .?AVCSunLightManager@@
 .?AVCTextureBarrierLayerRenderer@@
 .?AVCTextureDisplayLayerRenderer@@
@@ -1156,9 +1148,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .text$yd
 .tls$
 .tls$ZZZ
+.vtex
 .xJ>Hf
 .xdata
 .xdata$x
+/%Y@!
 /2GG>!B
 /=$!6
 />58d%
@@ -1184,7 +1178,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 /D$pv
 /D$tv
 /D$xv
-/H9/t
 /http://crl3.digicert.com/sha2-assured-cs-g1.crl05
 /http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 00000000-0000-0000-0000-000000000000
@@ -1236,13 +1229,13 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 0A_A^_
 0A_A^_^]
 0A_^[
-0A__[
 0A__]
 0A__^
 0D;Bl
 0D;ul|
 0D;w4L
 0E;gl
+0L9#t
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0X8b?~
 0_^[H
@@ -1261,19 +1254,20 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 1<.	/>:
 1A9p 
 1DBlend
+1H9~pu
 1H;>u>I
 1H;>u?I
 1I9p 
 1eaB@
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200403223357Z0#
+200515052907Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
 241022000000Z0G1
 281022120000Z0r1
-2Ic]`
+2Ic_`
 2http://crl3.digicert.com/DigiCertAssuredIDCA-1.crl08
 2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
 311110000000Z0e1
@@ -1284,12 +1278,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 3>N;kU
 3>fvw
 3H93t
-4)	0U
 4096.0f
-43	@(
 456789:;<=
 4HfA;
 4HfE;
+4`h=e
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -1313,10 +1306,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 8A_A^_^][
 8Csinf
 8HcEpH
-8HcQHL
-8L9#t
-8L96t
+8L9{8t	H
 8L9~@u
+8M9&t
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 8O0u]A
 8Y*t'D
@@ -1326,13 +1318,14 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 8\$xt
 8_^][
 8ke?;
-9(t4A
-9(t;A
+8x`&%
+9(t1A
+9(t9A
 9(~QH
 9)~SL
 9)~vH
-9+uZH
 90u,H
+93uZH
 98~+H
 99C }
 99~-H
@@ -1348,9 +1341,12 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9C }(H
 9D$4u
 9D$4uOH
+9D$@t
 9D$DH
 9D$Pu
+9D$pt
 9HXt!H
+9Hc|$`H
 9S v"
 9X@u4
 9XXtx
@@ -1358,8 +1354,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9Z,~43
 9Z8~<
 9Zp~@3
-9\$8~
-9\$8~E
 9\$`~[
 9]0tTI
 9]p~%
@@ -1375,6 +1369,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 9_p~$
 9_x|.3
 9hXt[H9
+9l$8~
 9n ~]3
 9o$~>I
 9o(~GI
@@ -1413,6 +1408,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;Ah}5
 ;D$0u
 ;D$@@
+;D$@u
 ;D$XwrA
 ;D$`u
 ;D$`|
@@ -1427,17 +1423,18 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;S }EH
 ;T$pu
 ;T0@uAH
+;\$8|
+;\$`u
 ;\$`|
-;\$h|
-;\$pu
 ;\$p|
 ;]p}~H
 ;_D}DH
 ;k u	H
 ;k }Z
 ;l$0|
-;l$8|
+;l$hD
 ;s u	H
+;t$@u
 ;t$H|
 ;w(u	H
 ;{ u	H
@@ -1445,6 +1442,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ;|$@H
 ;|$@|
 ;|$X|
+;} u	H
 ;~ u	H
 ;~h}8
 <	u"H
@@ -1452,7 +1450,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 <	w*H
 < t;<	t7
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
-<"uBD
 <$E;Q
 <$uFA
 <*tq</tm<
@@ -1511,7 +1508,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 <td>IS_DYNAMIC_DECAL</td>
 <td>IS_ENV_MAP</td>
 <td>IS_HAMMER_GEOMETRY</td>
-<td>IS_LIGHT</td>
 <td>IS_LIGHT_VOLUME</td>
 <td>IS_LOADED</td>
 <td>IS_OCCLUDER</td>
@@ -1609,10 +1605,11 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?7{KV
 ?8bunz8
 ?:kP<
+?<td>IS_LIGHT</td>
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMultiWaitEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
-??0CThreadRWLock_FastRead@@QEAA@XZ
+??0CThreadRWLock_FastRead@@QEAA@_N@Z
 ??0CUniformRandomStream@@QEAA@XZ
 ??1CThreadEvent@@QEAA@XZ
 ??1CThreadMultiWaitEvent@@QEAA@XZ
@@ -1622,11 +1619,15 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?AppendConcat@CBufferString@@QEAAPEBDHPEBQEBDPEBH_N@Z
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?Concat@CBufferString@@QEAAPEBDPEBD0ZZ
 ?Cu0f9w
 ?DevMsg@@YAXPEBDZZ
 ?E=$% B
+?EncounteredComplexReadLockOperation@CThreadRWLock_FastRead@@IEAA_NI_NPEBDH@Z
 ?EnterScope@CVProfile@@QEAAXPEBDH0_NH@Z
 ?ExitScope@CVProfile@@QEAAXXZ
+?FixSlashes@CBufferString@@QEAAPEBDD@Z
+?Format@CBufferString@@QEAAHPEBDZZ
 ?H33H
 ?HandleFirstWriteLockTransition@CThreadRWLock_FastRead@@IEAAXXZ
 ?Insert@CBufferString@@QEAAPEBDHPEBDH_N@Z
@@ -1642,28 +1643,29 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?QY^&
 ?R0I?
 ?RandomFloat@CUniformRandomStream@@UEAAMMM@Z
-?Release@CThreadSemaphore@@QEAA_NHPEAH@Z
+?RemoveAt@CBufferString@@QEAAPEBDHH@Z
 ?Reset@CThreadMultiWaitEvent@@QEAAXXZ
 ?Set@CThreadEvent@@QEAA_NXZ
 ?Set@CThreadMultiWaitEvent@@QEAAXXZ
+?SetExtension@CBufferString@@QEAAPEBDPEBD@Z
 ?SetLength@CBufferString@@QEAAPEADH_NPEAH@Z
+?SetPtr@CBufferString@@QEAAXPEADHH_N1@Z
 ?SetSeed@CUniformRandomStream@@UEAAXH@Z
 ?SpinLockForWrite@CThreadSpinRWLock@@AEAAXPEBDHI@Z
+?StartsWith@CBufferString@@QEAA_NPEBD@Z
 ?TY,>5
 ?UUUUUU
 ?Unlock@CThreadMutex@@QEAAXPEBDH@Z
 ?UnlockRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?UnlockReadAccounting@CThreadRWLock_FastRead@@IEAAXPEBDHI@Z
 ?UnlockWrite@CThreadRWLock@@QEAAXPEBDH@Z
+?UnlockWrite@CThreadRWLock_FastRead@@QEAAXPEBDH@Z
 ?UnlockWrite@CThreadSpinRWLock@@QEAAXPEBDH@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?Wait@CThreadSyncObject@@QEAA_NI@Z
 ?WaitForRead@CThreadRWLock@@AEAAXXZ
-?WaitForReadLockTransition@CThreadRWLock_FastRead@@IEAAXIPEBDH@Z
 ?f`Y4
 ?kxG2)
-?sc_use_clear_subrect
-?sqrtf
 ?{Q}<
 @  t	A
 @ H9A@uHE
@@ -1672,11 +1674,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @.data
 @.reloc
 @.tls
-@8-j4"
+@8-Z]"
 @80u#H
 @81u/H
-@85dt
-@8=XA
 @8H9AXu#A
 @8kDt
 @8l$8t
@@ -1692,7 +1692,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @8~	t
 @>%>b
 @A]A\^
-@A]_[
 @A^A\^
 @A^A]A\
 @A^A]A\^]
@@ -1776,7 +1775,8 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @UAVAWH
 @UAVH
 @UAWH
-@USATAWH
+@USATAVH
+@USAUAWH
 @USAVH
 @USVATAUAWH
 @USVWATAUAVAWH
@@ -1793,11 +1793,9 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
-@UVWATAUH
 @UVWAVAWH
 @UVWH
 @UWATAUH
-@UWATAVH
 @UWATH
 @UWAVAWH
 @UWAVH
@@ -1809,7 +1807,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @VWATAVAWH
 @VWAVH
 @WATAUAVAWH
-@WATAUAVH
 @WATAUH
 @WATAVH
 @WATH
@@ -1826,16 +1823,17 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @t/H9w8t)H
 @t3HcGH
 A	G@H
+A  t	A
 A file with this name is already in the pool.
 A protocol message was rejected because it was too big (more than 
 A sceneobject (perhaps a decal) is still in the world that needs to be deleted before deleting the world.
-A$fD;
 A(9A0
 A(A9A0
+A)7E3
 A+S A;S
-A02B0$
+A-enable_2gb_morphs
 A03>A|
-A2H0A
+A2H`A
 A81t@@8r
 A84.u
 A86taH
@@ -1845,6 +1843,7 @@ A8L$f
 A8Zxt
 A8f9B8u(
 A8f9B8u0
+A8fA9
 A96~FH
 A9B(|
 A9P }
@@ -1862,7 +1861,7 @@ A9}8~L3
 A:(uiI
 A:f9B:u
 A:f9B:u&
-A:f9F
+A:fA9F
 A:|$f
 A;.}]M
 A;>~TH
@@ -1893,7 +1892,6 @@ A;q }?I
 A;vh}8
 A;}8|
 A;~ r
-A;~ u	I
 A>l$/
 A>pP&
 A@H+A8H
@@ -1983,28 +1981,29 @@ AUAWH
 AUUUUUU
 AVAWH
 A\9B\u
+A\^[]
 A\_[]
-A\_][
 A\_^[
 A\_^[]
 A\_^]
 A\_^][
 A]A\_]
 A]A\_][I
+A]_^[
 A]_^[H
 A]_^[]
+A]_^]
 A^A\[]
 A^A\]
-A^A\_]
+A^A\_^[
 A^A\_^[]
-A^A]A\^]
+A^A]A\[]
 A^A]A\^][
-A^A]A\_
 A^A]A\_]
 A^A]A\_^
 A^A]A\_^[]
 A^A]]
-A^A]_[
+A^A]^]
 A^A]_[]
 A^A]_]
 A^A]_^[]
@@ -2013,7 +2012,6 @@ A^_^[]
 A^_^]
 A^_^][
 A_A\[
-A_A\[]
 A_A\^]
 A_A\_[
 A_A\_[]
@@ -2023,10 +2021,11 @@ A_A]A\
 A_A]A\[]
 A_A]A\^[]
 A_A]A\^]
+A_A]A\_^
 A_A]A\_^[]
+A_A][]
 A_A]]
-A_A]^[]
-A_A]_]
+A_A]_[]
 A_A^A\
 A_A^A\[]
 A_A^A\]
@@ -2055,7 +2054,6 @@ A_A^[
 A_A^]
 A_A^^
 A_A^^[]
-A_A^^]
 A_A^_
 A_A^_[]
 A_A^_^[]
@@ -2064,6 +2062,7 @@ A_A^_^][
 A__[]
 A__^[]
 A__^]
+A`2B`$
 A`H+AXH
 AbsolutePoseControl
 Access violation - no RTTI data!
@@ -2143,6 +2142,7 @@ August
 AuthE
 AutoLayer
 Available
+B  t	A
 B(A9A
 B(A9C
 B(I9A(
@@ -2181,6 +2181,7 @@ BaseIKRig
 BasePhysicsShape
 BaseSceneObjectDesc
 Bc:\buildslave\hlvr_rel_win64\build\src\public\tier1\memstack.h
+BdIc9
 Begin has already been called without an intervening render
 Begin to finish rendering views : %f
 Bellevue1
@@ -2208,7 +2209,6 @@ C 9~ ~7H
 C ;E@uD;
 C H+C
 C HcC
-C( t-
 C(9C0I
 C(H9k0t	H
 C(kV hI
@@ -2238,9 +2238,9 @@ CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (1)
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (2)
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (3)
 CBaseSceneObjectDesc
-CBindlessFastPathPartition::AddMaterial(232): 
+CBindlessFastPathPartition::AddMaterial(233): 
 CBindlessFastPathSceneObjectDesc
-CBindlessFastPathSceneObjectDesc::UpdateBoundingBoxToMatchTransform(1273): 
+CBindlessFastPathSceneObjectDesc::UpdateBoundingBoxToMatchTransform(1343): 
 CBlitTextureToBackBufferLayer
 CCharacterDecalRendererDesc
 CD$8@
@@ -2254,6 +2254,10 @@ CDirectionalLightObjectDesc
 CEntityIndex
 CEntityMsg
 CEnvMapLightObjectDesc
+CFunctor_SceneSystem_Thread_DrawDrawList CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_ProcessProceduralLayer CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_RenderOccludersAndQueueRenderPartitions CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_RenderPartition CUtlMemoryPoolMT
 CGlobalConfigValueRegistry::HookUpConfigValue
 CHECK failed: !coded_out.HadError(): 
 CHECK failed: !descriptor_: 
@@ -2396,24 +2400,25 @@ CSceneObject
 CSceneObjectExtraData_t
 CSceneObjectReference_t
 CSceneSkyBoxObject::m_LightQueryMutex
-CSceneSystem::AllocateScratchRenderTargets(1361): 
+CSceneSystem::AllocateScratchRenderTargets(1476): 
 CSceneSystem::BeginRenderingViews
 CSceneSystem::ChangeObjectPartition
-CSceneSystem::CompletionWaitJob(7735): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
-CSceneSystem::CreateStaticShape(308): 
+CSceneSystem::CompletionWaitJob(7847): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
+CSceneSystem::CreateStaticShape(309): 
 CSceneSystem::DeleteObjectForReal
 CSceneSystem::DeleteSceneObject
 CSceneSystem::FindRefInfo
 CSceneSystem::FinishRenderingViews
-CSceneSystem::GenerateCompositeMorphTextureAtlas(6419): Expecting 1 renderable pass for material "%s" but found %d!
+CSceneSystem::GenerateCompositeMorphTextureAtlas(6531): Expecting 1 renderable pass for material "%s" but found %d!
 CSceneSystem::Init
-CSceneSystem::InitGfxObjects(714): 
-CSceneSystem::InitGfxObjects(871): 
-CSceneSystem::InitializeRenderAttributes(4521): 
+CSceneSystem::InitGfxObjects(715): 
+CSceneSystem::InitGfxObjects(872): 
+CSceneSystem::InitializeRenderAttributes(4627): 
 CSceneSystem::InstallTemplateViewFactory
 CSceneSystem::SetLightCookieTexture, trying to set texture %s that has no sheet data!
 CSceneSystem::Thread_RenderOccludersAndQueueRenderPartitions
 CSceneSystem::Thread_RenderPartition
+CSceneSystem::m_hDefaultPerLayerConstants
 CSceneView::CopyRenderTargetOutputsAndViewportFromPreviousLayer
 CSceneView::CreateRenderPasses
 CSceneView::MoveLayerToBeAfterLabel
@@ -2517,7 +2522,10 @@ CVH9W0
 CVolumetricFog::SetupConstantBuffer
 CVolumetricFogClipmapRenderer::Render
 CWD>~3
+CX t-
 CXHc8H
+C^r	A
+C^r	D
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -2637,6 +2645,7 @@ CloseThreadpoolWork
 ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
+CmdLinkAD
 CmdLinkAH
 CmdLinkAL
 Color
@@ -2669,8 +2678,8 @@ CreateEventExW
 CreateEventW
 CreateFileW
 CreateInterface
-CreateManyQuadsIndexBuffer(487): 
-CreateNxNTesselatedIndexBuffer(465): 
+CreateManyQuadsIndexBuffer(488): 
+CreateNxNTesselatedIndexBuffer(466): 
 CreatePerViewLightingConstantBuffer
 CreatePerViewLightingConstantBufferCsgo
 CreateSemaphoreExW
@@ -2697,7 +2706,6 @@ D$ D9A
 D$ DA
 D$ DE
 D$ E3
-D$ H+
 D$ H;
 D$ Hc
 D$ I;
@@ -2707,9 +2715,7 @@ D$ P-
 D$ d=
 D$ fA
 D$ fH
-D$ fI
 D$ r|
-D$$ff
 D$()L$0
 D$(;SP~
 D$(A;
@@ -2741,8 +2747,8 @@ D$0H;C
 D$0Hc
 D$0HcF8
 D$0HcH
+D$0Hi
 D$0I;
-D$0Lc
 D$0fA
 D$0fD
 D$0fH
@@ -2772,21 +2778,20 @@ D$8fH
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
 D$@%I
+D$@;D$8
 D$@A+
 D$@E3
 D$@H+
 D$@H+D$8H
 D$@H9
-D$@H98tSH
+D$@H98tTH
 D$@H;
 D$@H;C
 D$@H;G
 D$@H=
-D$@Hi
-D$@I+
+D$@Hc
 D$@I;
 D$@L;D$Hu
-D$@Lc
 D$@csm
 D$@fA
 D$@fD
@@ -2794,7 +2799,6 @@ D$@fff
 D$@mp
 D$@r|
 D$A+L
-D$A;M
 D$D+D$T
 D$D+D$THc
 D$DA+
@@ -2821,11 +2825,11 @@ D$PE8h
 D$PE9HH~3
 D$PF9
 D$PH+
+D$PH9
 D$PH;
 D$PH;F
 D$PHc
 D$PI;
-D$PIcMH3
 D$PK)
 D$PL9r@tDH
 D$PL;
@@ -2834,7 +2838,6 @@ D$PZC
 D$PfA
 D$Pk@_aH
 D$Pmp
-D$Pu=3
 D$P~m
 D$X;F
 D$XA+
@@ -2845,9 +2848,13 @@ D$XE9E
 D$XH;
 D$XHcL$PH
 D$XIc
+D$XIcOH3
+D$XfA
 D$XfD
 D$`;XtL
+D$`A9G
 D$`A;
+D$`A;G
 D$`D;Kh}M
 D$`E#
 D$`E3
@@ -2861,7 +2868,6 @@ D$`Ll
 D$`M+
 D$`r|
 D$dD;
-D$h9]
 D$hA+
 D$hA;HxI
 D$hD;
@@ -2875,13 +2881,17 @@ D$hL;
 D$hMc
 D$h[k
 D$hfA
+D$hff
 D$l-%m
+D$l;M
+D$lD9E
 D$p 69
 D$p-%m
 D$p<L{
 D$pH;
 D$pH;GHu
 D$pHK8
+D$pL+
 D$pL;
 D$pM;
 D$pRU
@@ -2894,8 +2904,8 @@ D$xH+
 D$xH;
 D$xL+
 D$x]:
+D$xfA;
 D$xfD
-D$xfff
 D+d$PD
 D+l$XD
 D+|$TD
@@ -2911,45 +2921,48 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D7HE3
+D8%N'#
 D8&t!
 D8&t4H
-D8-	g
-D8-!o
-D8-.X
-D8-;Y
-D8-F]
-D8-HZ
-D8-KS
-D8-K[
-D8-Nn
-D8-R`
-D8-Sc
-D8-Tb
-D8-Te
-D8-U\
-D8-Ud
-D8-V_
-D8-Vf
-D8-XT
-D8-Z^
-D8-[a
-D8-aU
-D8-cg
-D8-eo
-D8-fh
-D8-hi
-D8-ik
-D8-jV
-D8-jj
-D8-ll
-D8-vm
-D8-wW
+D8-$f
+D8-&}
+D8-5g
+D8-;h
+D8->a
+D8-@k
+D8-Hi
+D8-Kb
+D8-Kj
+D8-Ml
+D8-Mq
+D8-No
+D8-On
+D8-Pt
+D8-Qp
+D8-Qs
+D8-Sm
+D8-Tc
+D8-Vr
+D8-Yu
+D8-Z|
+D8-_z
+D8-bw
+D8-cv
+D8-dd
+D8-dx
+D8-fy
+D8-l{
+D8-me
+D8-q}
+D8-~f
 D82u&H
-D8=sm
-D8=un
+D85,r
+D85x0
 D8A%L
 D8KDA
 D8L7@t
+D8U$u
+D8U4u
 D8Y:uEH
 D8a:uDH
 D8c:u
@@ -2984,30 +2997,29 @@ D9;|DH
 D9@ }
 D9A }
 D9C0~+f
-D9CH~4H
 D9D$0u
 D9D$0uX
 D9D$pH
+D9GH~5H
 D9`Xt
 D9`Xt<I
 D9`Xu
-D9`Xu	
 D9c t
 D9c,~1
 D9c0t
 D9c0t	H
-D9d$`~
-D9d$h
 D9d$pH
 D9hXt
 D9hXt?E8
+D9hXu
+D9iXD
 D9pXt$H
-D9t$8~
-D9t$<
+D9v8L
 D9vDu
 D9xXt]E
 D9xXtaE
 D9xXu
+D9xXu	
 D9|$ 
 D9|$X~EI
 D;B }
@@ -3017,7 +3029,7 @@ D;C tM
 D;C }JH
 D;C0|
 D;CD|
-D;CH|
+D;GH|
 D;JD}!fff
 D;L$`~!Hc
 D;L$d~
@@ -3081,7 +3093,7 @@ Draw everything normal and ignore the source for rendering
 DrawDepth Fade
 DrawDepth%s
 DrawList : 
-DrawMaterialQuad(2919): Material %s cannot render in mode %s but is being asked to
+DrawMaterialQuad(2916): Material %s cannot render in mode %s but is being asked to
 DrawShadowMapsForLight
 Dump a list of the objects in a sceneworld (Usage: sc_dumpworld <world_index>)
 Dump debug info
@@ -3098,7 +3110,7 @@ E8,$t
 E9.t^I
 E9;td
 E9A(|
-E9CH~BI
+E9CH~@I
 E;CH|
 E;Fl|
 E;HH|
@@ -3107,7 +3119,8 @@ E;~(H
 E;~,}5
 E;~hL
 E>nEA
-E@A;?
+E@A;]
+E@A;}
 ED$(H
 ED9'~@M
 EGHcEoL
@@ -3146,7 +3159,6 @@ EnumValueDescriptorProto
 EnumValueOptions
 Enums must contain at least one value.
 EnvMap
-EnvironmentMapBuilder_001
 EoA;Hh|
 EoHcHh
 Error parsing text-format 
@@ -3286,11 +3298,16 @@ GAMECONSOLE
 GD$8H
 GD$8I
 GEOVH
+GL$hA
 GPH+H(
 GPH+x(H
 GPH9L
 GPIcM 
 GT$(H
+GT$XH
+G\$8H
+G\$xI
+G^r	D
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameStartup
@@ -3367,13 +3384,19 @@ GetUserDefaultLCID
 GetUserDefaultLocaleName
 Gh9GX
 GhiQ 
+Gl$HI
+Gl$PH
+Gl$xH
 Got request to send CSceneSystemStats to vconsole
 GpHcT
 Groups are not supported in proto3 syntax.
+Gt$8I
+Gt$HI
 G|$8H
+G|$HI
+G|$XI
 H	C8H
-H	H8H
-H	X8A
+H	E H
 H 8YK
 H 8YKt
 H D8iKt
@@ -3381,12 +3404,11 @@ H D8qKt
 H SWH
 H USVWATAUAVAWH
 H UVWATAWH
-H VWAUH
+H UVWAUH
 H!D$ E
 H!T$0D
 H#V0H
 H#W0H
-H$fD;
 H+H0H
 H+H0I
 H+P0H
@@ -3408,10 +3430,11 @@ H90t%H
 H92u&
 H92u'
 H92u,
+H95Km
 H97t<
 H9;uAA
 H9;v#H
-H9=D*
+H9=t4
 H9A u
 H9Ahs
 H9C s(H
@@ -3445,6 +3468,7 @@ H9uot	H
 H9} H
 H9}0tfL
 H9}Ht
+H9~pu
 H;0u7
 H;D$8t^H
 H;D$Pu
@@ -3492,12 +3516,10 @@ HasField
 Hc.;n
 Hc/;o
 Hc7;w
-Hc=C2"
 Hc>;~
 HcA E3
 HcA$H
 HcA,A
-HcALHcI(H
 HcAxE3
 HcC H
 HcC$H
@@ -3517,10 +3539,10 @@ HcD$PL
 HcD$`H
 HcD$dH;
 HcD$dI;
-HcD$hH
 HcD$lI;
 HcD$pH
 HcD$tI;
+HcD$xA
 HcD$xH
 HcD$xL
 HcF8A
@@ -3533,7 +3555,6 @@ HcGXH
 HcH<H
 HcHh;Jh
 HcI H
-HcI(A
 HcI(H
 HcK ;
 HcK H
@@ -3544,8 +3565,8 @@ HcL$ H
 HcL$0L
 HcL$HH
 HcL$XL
+HcL$`H
 HcL$dH
-HcL$hH
 HcM H
 HcN H
 HcN L
@@ -3556,12 +3577,13 @@ HcQ E3
 HcQ M
 HcS@H
 HcT$$
+HcT$p
 HcU`L
 Hc\$ H
 Hc\$0
 Hc\$@;\$Pu
 Hc\$DH
-Hc\$`H
+Hc\$PH
 Hc\$`I;
 Hc\$tI
 Hc\$tL
@@ -3580,28 +3602,31 @@ Hct$ H
 Hct$$I;
 Hct$,I;
 Hct$0
+Hct$0;t$@u
+Hct$0Ic
 Hct$tH
 Hcw I
 Hcw0H
 HcwH;wXu
 HcwPH
 Hc|$ ;|$0u
-Hc|$`A
+Hc|$PA
 Hc|$pH
 HelpSystem_001
 Hex and octal numbers must be integers.
-Hhu(E
+Hhu)E
 HostStateMgr001
 Ht)I;
 Ht4<Xu[
 I	F8I
 I(IcL
-I9Fxu
+I9Fpu
 I9HPt
 I9IPt
 I9P s
 I9q sEI
 I9}(t9H
+I;@ v
 I;\$ t
 I;^hu
 I;q s?I
@@ -3620,16 +3645,17 @@ INVALID_CPPTYPE
 IQuickTime001
 ISceneObjectDesc
 Ic4$A;t$
-Ic6A;v
 Ic>A;~
+Ic?A;
 IcA H
 IcE8A
 IcM I
 IcM8I
-Ic]HA;]Xu	I
 Ic]PA
+Ic_HA;_Xu	I
 IcnhH
-Icvpf#
+IcohH
+Icupf#
 IdempotencyLevel
 If enabled, the camera's translation will be included in the projection matrix.
 IfD9T
@@ -3680,14 +3706,13 @@ IsValidCodePage
 IsValidLocale
 IsValidLocaleName
 J H+J
-J0A2H0
 JD9KD|
 JSType
+J`A2H`
 January
 Jc<+;<
 K H+K
 K SUAVH
-K UAWH
 K USWAWI
 K&>.yC
 K8+C$
@@ -3705,6 +3730,7 @@ KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValuesSystem
 K~Je#>!
 L	p8H
+L	x8A
 L!|$(L!
 L#Q0L
 L$ 9D$ H
@@ -3756,7 +3782,6 @@ L$0I9HPt
 L$0I;
 L$0Ic
 L$0L+
-L$0Lc
 L$0Lk
 L$0M;
 L$0fH
@@ -3774,7 +3799,6 @@ L$8I9HPt
 L$8Ic
 L$8Lc
 L$8M;
-L$<fA
 L$@;|
 L$@A;
 L$@E3
@@ -3784,13 +3808,12 @@ L$@H;
 L$@H=
 L$@L#
 L$@LcD$0K
-L$@fA
 L$@fI
-L$@ff
 L$@uGfH
 L$@uU
 L$D;L$T
 L$DE3
+L$DfA
 L$HE3
 L$HH3
 L$HH=
@@ -3799,14 +3822,16 @@ L$HI;
 L$HM;
 L$P+L$8
 L$P+L$H
+L$P;8|
+L$PA9
 L$PE3
 L$PH3
 L$PH;
 L$PH=
 L$PI;
+L$PLc
 L$TE3
 L$THc
-L$X;8|
 L$XE+
 L$XE3
 L$XH+
@@ -3814,9 +3839,9 @@ L$XH3
 L$XH;
 L$XH;L$h
 L$XH=
+L$XIc
 L$XL+
 L$Xf;T$`
-L$\D;
 L$`9Y ~S3
 L$`9Y8~O3
 L$`9YP~S3
@@ -3832,7 +3857,6 @@ L$`;{||
 L$`A+
 L$`A8
 L$`A9
-L$`A;P
 L$`E3
 L$`E;
 L$`H+
@@ -3840,7 +3864,6 @@ L$`H+L$XH
 L$`H3
 L$`H;
 L$`H=
-L$`Hk
 L$`L;
 L$`fD
 L$d	L
@@ -3853,9 +3876,8 @@ L$hH
 L$hH+
 L$hH3
 L$hH=
-L$hIc
+L$hHk
 L$hL+
-L$pD;
 L$pE3
 L$pE;
 L$pH	
@@ -3878,17 +3900,16 @@ L+H0I
 L+P0H
 L9*u&
 L9+t#fff
-L95&}%
-L95\E"
+L95|o"
+L97t!
+L9=8<"
 L9Ahs
 L9B s
 L9J s
 L9`8tA
 L9c@u#D9khu
 L9d$ A
-L9d$h
 L9e@t	H
-L9kxt$L9kxu
 L9m(t	H
 L9m@t	H
 L9p u
@@ -3903,10 +3924,10 @@ L; u9H
 L;!u8
 L;9u;
 L;@ s
+L;@ v
 L;D$8L
 L;H s
 L;R s
-L;d$0
 L;d$@
 L;|$@
 L?UUUUUUU?
@@ -3937,9 +3958,9 @@ LOWVIOLENCE
 LQHLc
 Label
 Layer: %s
+Lc$>D;d>
 Lc3D;s
 Lc7D;w
-Lc>D;~
 Lc?D;
 LcA L
 LcA<E3
@@ -3948,7 +3969,7 @@ LcD$PI
 LcG0H
 LcM0K
 LcO0fff
-LcT$4H
+LcT$,H
 LcT$p3
 LcfHD;fXu
 Lcf`D;fpu
@@ -3996,6 +4017,7 @@ LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 Low level command to set the flags byte associated with an object class. sc_SetClassFlags <classname> <value>
 LrwcE
+Lv8Mc
 M H1E
 M H;K
 M#A0I
@@ -4009,7 +4031,6 @@ M@H;K
 MATCHFRAMEWORK_001
 MD$pH
 MHH;K
-MHHc8I
 MLc3D;s
 MM/dd/yy
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
@@ -4041,9 +4062,11 @@ MaterialUtils_001
 MathLib_Init
 MaxConcurrency
 MaxPolicyElementKey
+Mc&E;f
+Mc,>E;l>
 Mc.E;n
-Mc44M
 Mc47M
+Mc>E;~
 McEPI
 McgHE;gXu
 Mcg`E;gpu
@@ -4130,7 +4153,6 @@ NV_RAWZ
 N`+Vh
 NamePart
 NavSystem001
-Nc4&M
 Need space between identifier and decimal point.
 Need space between number and identifier.
 NetworkClientService_001
@@ -4191,9 +4213,10 @@ O0+W8
 O0HcQ
 OF>;^
 OH+WP
+O\$h@
 O`+Wh
 Object %4d: 0x%p, class=%20s, origin=(%13g,%13g,%13g), bounds=(%13g,%13g,%13g):(%13g,%13g,%13g), desc=0x%p, flags=0x%016llX
-Oc$.M
+Oc$/M
 Oc<4M
 OccluderOverlay
 OccluderVisualization
@@ -4230,6 +4253,7 @@ PARTICLE_SET_REPLACE_VALUE
 PARTICLE_SET_SCALE_CURRENT_VALUE
 PARTICLE_SET_SCALE_INITIAL_VALUE
 PA\_[H
+PA^^[
 PA^^]
 PA^_]
 PA^_^
@@ -4291,6 +4315,7 @@ Plat_GetThreadIndex
 Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_MSTime
+Plat_NeedsLowFragmentation
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDToString
@@ -4324,7 +4349,7 @@ Q(9Q0A
 Q0HcAP
 Q5rHg,>
 Q8L;P
-Q?33s?
+Q?33s?w
 QAngle
 QDA9PD}5O
 QHt<H
@@ -4431,11 +4456,11 @@ S,, <Zw
 S: %7.3f
 S;\$0tH
 S>$hkDh$h>[2
+SATAUH
 SATAWH
 SAVAWH
 SCENESYSTEMMAT_OCCLUSION_PROXY material has pass count %d, expected 1!
 SCENESYSTEMMAT_OCCLUSION_PROXY_COUNT_DRAW material has pass count %d, expected 1!
-SD8%*
 SDSSH
 SDSSL
 SMNAH
@@ -4450,8 +4475,6 @@ SSE and SSE2 are required.
 STRING
 STRING_PIECE
 SUATAUAVAWH
-SUAUH
-SUAVH
 SUAWH
 SUVATAUAVH
 SUVWATAUAVAWH
@@ -4459,13 +4482,14 @@ SUVWATH
 SUVWAVH
 SUVWAWH
 SUVWH
-SUWAT
 SUWATAUH
 SUWAUH
 SVATAUH
+SVAVH
 SVWATAUAVAWH
 SVWATAUAWH
 SVWATAVAWH
+SVWATAVH
 SVWATH
 SVWAUH
 SVWAVAWH
@@ -4473,8 +4497,6 @@ SVWAVH
 SWATAVH
 SWATH
 SWAUAVH
-SWAUH
-SWAVH
 SWAWH
 S_BINDLESS_RUNTIME
 Saturday
@@ -4696,7 +4718,6 @@ T$4I+
 T$8A+
 T$8D;
 T$8D;t$(r
-T$8E3
 T$8Hc
 T$<D;
 T$@@2
@@ -4706,6 +4727,7 @@ T$@H;
 T$@Hc
 T$@tuH
 T$HE3
+T$HH;
 T$P9PXtv8
 T$P;D$p
 T$PD+
@@ -4715,12 +4737,15 @@ T$PH;
 T$PHc
 T$PIc
 T$PfA
-T$XE;H
 T$XH+
 T$XHcF8H
+T$\9T$`
+T$\E3
 T$`;Kt
+T$`E3
 T$`H;
 T$`Hc
+T$`Mi
 T$`fff
 T$`tuH
 T$hD;
@@ -4735,8 +4760,9 @@ T$pE3
 T$pE;
 T$pH;
 T$pL9v@tKH
-T$xE3
+T$tE3
 T$xH;
+T,y|c
 T: %7.3f
 TINTRGBA32
 TINTRGBA8_ENVMAPIDX
@@ -4798,8 +4824,6 @@ Too many cached shadows requested (max %d) this frame (%d).
 Too many shadowed spot lights in the scene!  Some will be removed!
 TooSmall
 ToolFramework2_002
-ToolGameSimulationDispatcher_001
-ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
@@ -4833,17 +4857,20 @@ UHH;S
 UNKNOWN
 UNKNOWN_ENUM_VALUE_%s_%d
 UPDATE_STRING_TOKEN_DATABASE
+USATAUAVH
 USATAUAWH
 USATAUH
 USATAVAWH
 USATAVAWI
 USATAVH
 USATH
+USAUH
 USAVH
 USAWH
+USVATH
 USVAUAVAWH
-USVAUAWH
 USVAVAWH
+USVAVH
 USVWATAUAVAWH
 USVWATAUAVH
 USVWATAUAWH
@@ -4853,6 +4880,7 @@ USVWATAWH
 USVWATH
 USVWAUAVH
 USVWAUH
+USVWAVAWH
 USVWAVH
 USVWAWH
 USVWH
@@ -4860,6 +4888,7 @@ USWATAWH
 USWATH
 USWAUAVAWH
 USWAUAVH
+USWAUAWH
 USWAVAWI
 USWAWH
 UTF-8 data when 
@@ -4872,7 +4901,7 @@ UVATAUAWH
 UVATAVAWH
 UVATAWH
 UVATAWI
-UVAVAWH
+UVAUAVH
 UVAVH
 UVAWH
 UVLX8888
@@ -4889,12 +4918,10 @@ UWATAUAWH
 UWATAUH
 UWATAUI
 UWATAVAWH
-UWATH
+UWATAVAWI
 UWATI
 UWAUAVAWH
 UWAUAVH
-UWAUAWH
-UWAUI
 UWAVH
 UWAVI
 UWAWH
@@ -4920,6 +4947,7 @@ Unsupported: type mismatch
 Update 
 UpdateBinTexture
 UpdateDirtyObjects
+UpdateLightProbeConstants
 UpdateOccluderDebugTexture
 Usage is sc_setfloatattr <attrname> <value>
 Usage is sc_setintattr <attrname> <value>
@@ -4982,7 +5010,6 @@ VWAUAVAWH
 VWAUH
 VWAVH
 VWAWH
-V_FixSlashes
 V_GetErrno
 V_PrettifyNum
 V_SetErrno
@@ -5017,7 +5044,6 @@ V_strtoi64
 V_tanf
 V_vsnprintf
 V_vsnprintfSize
-V_vsnprintfWarnTrunc
 V_wcstoi64
 Value must be "true" or "false" for boolean option "
 Value must be identifier for boolean option "
@@ -5067,7 +5093,6 @@ WDA9PD}
 WIN32
 WINDOWS
 WINXP
-W`;T$`u
 WaNd?
 WaitForSingleObjectEx
 WaitForThreadpoolTimerCallbacks
@@ -5103,8 +5128,6 @@ X0~zM
 X360_DST16
 X360_DST24
 X360_DST24F
-X5 u!
-X5n/"
 XA]A\^[
 XA^A]A\^][
 XA^A]A\_][
@@ -5116,22 +5139,20 @@ XL$XD;l$h
 XL$hH
 XT$PD
 XT$xH
-X\$|H
 Xt$ Ic
 Xt$$H
 Xt$TH
-Y%p)"
+Y%PY"
 Y0HcR
-Y53[#
-Y=2l!
+Y5)?!
+Y5d6!
+Y=I]"
 Y>kX>M
 YD$@f
 YD$pA
 YD$pD
 YD$pL
-YT$`D
-YT$pE
-Y|$pD
+Ye(uvI
 Z\>z8
 Zod(^?
 [*ncd>0
@@ -5147,6 +5168,7 @@ Zod(^?
 \$ UATAWH
 \$ UH
 \$ UVATH
+\$ UVAUAVAWH
 \$ UVAUH
 \$ UVWATAUAVAWH
 \$ UVWAVAWH
@@ -5155,7 +5177,6 @@ Zod(^?
 \$ VATAVH
 \$ VATAWH
 \$ VH
-\$ VWATAUAWH
 \$ VWAUAVAWH
 \$ VWAVH
 \$ WH
@@ -5172,64 +5193,63 @@ Zod(^?
 \$0A8
 \$0D;
 \$0E2
+\$0E3
 \$0H;
 \$0Hc
 \$0L+
 \$0L9Fxt%
+\$0fA
 \$0s	
 \$0t0H
-\$4A;]pu
+\$4A;_pu
 \$4E2
 \$4E9} 
 \$4I;
 \$4Mc
 \$8A+
-\$8E3
 \$8I9HPt
 \$<A;
-\$<E3
-\$@9=
-\$@@8==X	
+\$@9=X2$
+\$@9\$8
+\$@9\$8~I
+\$@@8=
 \$@E3
 \$@H;
 \$@Hc
 \$@f;
 \$@fH
+\$@ff
 \$HE3
 \$HHc
 \$Hf;
 \$H|TH
 \$P8\$xu5
+\$PE+
 \$PE3
 \$PHcD$HL
 \$PI;
 \$XE2
-\$Xt/
-\$\8]
 \$`A+
 \$`D;L$l~
-\$`E+
 \$`H;\$h
 \$`L+
 \$`fD
 \$`tFH
 \$`tL
 \$gm?
-\$hD;
 \$hD;T$d~!Hc
+\$hE;
 \$p9D$D|
 \$pD+
 \$pD;T$d~ Hc
-\$pE3
 \$pHk
 \$pI+
 \$pM;
+\$pf9}
 \$pff
 \$tD;
 \$xH;y
-\$xL+
-\$xfA
-\L$lA
+\L$tA
 \U%08x
 \ffff
 \t$8A
@@ -5241,12 +5261,13 @@ Zod(^?
 ^(Lc3D;s
 ^8Hc;;{
 ^<V7w
-^@t E
 ^RfN>
 ^fD9+t
+_%k>!
+_-c>!
+_=2?!
 _BoundTexture%d
 _BoundTextureSrgb%d
-_V_SetExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
@@ -5273,10 +5294,12 @@ _test_conversion_counter
 ` t3I
 `+!]?
 `.rdata
+`A]A\[
 `A^][
 `A^^[
 `A^_^
 `A_A\[
+`A_A^A\][
 `A_A^A\^]
 `A_A^A]A\_^]
 `A_A^]
@@ -5544,30 +5567,25 @@ d$(E3
 d$(H+
 d$(H;
 d$8H+
-d$8Hc
-d$8Hi
 d$8I;
+d$8Ic
 d$@D9d$P|QH
 d$@E3
+d$HH;
 d$P+A$t
-d$PD9d$`|LH
 d$PD;
 d$PE9~0~QE3
 d$PH;
 d$XH91u 
-d$`E3
 d$`E9
-d$`E;
 d$`H;
-d$bfD
 d$dD;
 d$hE3
 d$hIc
+d$pE3
 d$pI;
 d$tfff
 d$xIc
-d(	]U
-d2	m(
 d?000000`?
 damage
 dddd, MMMM dd, yyyy
@@ -5644,10 +5662,9 @@ f9,~u
 f9<Bu
 f9\$bu
 f9^Bu,H
-f;)}GH
 fA9,Au
 fA9<\u
-fA9Ylt
+fA9qlt
 fB9,Nu
 fB94Ou
 fB9<@u
@@ -5658,6 +5675,7 @@ fD9 t
 fD9 tMH
 fD9 u
 fD9$Hu
+fD9'}vH
 fD9,Au
 fD9,Hu0
 fD90t
@@ -5732,8 +5750,11 @@ go_package
 gravity
 group
 h(HcH
+h/8:(
 h>1my
+hA\^[]
 hA^A\
+hA^^[]
 hA^_^[
 hA_A^A]A\_^][
 hA_A^_]
@@ -5825,6 +5846,7 @@ l$ VAUAVH
 l$ VAUAWH
 l$ VAVAWH
 l$ VH
+l$ VWATAUAWH
 l$ VWATAVAWH
 l$ VWAVH
 l$ W3
@@ -5839,6 +5861,7 @@ l$0Hc
 l$0HcA
 l$0Ic.
 l$0Lca
+l$0fA
 l$0ff
 l$0|AH
 l$8H+
@@ -5857,29 +5880,31 @@ l$DD;
 l$HA_A^A]A\_^
 l$HHc*H
 l$HIk
-l$PE3
 l$PH;
 l$PIk
 l$PL;
-l$PfD9s
+l$PLc
+l$PM9
 l$Pu,L;
-l$PuOA
+l$P~;H
 l$XA+
 l$XD;
+l$XE3
 l$XL+
 l$X|LH
 l$\E3
+l$`E3
 l$`Ic/H
 l$`L+
 l$`M;
+l$`fD9s
 l$hI;
 l$hL9jxu	
 l$pHc
 l$pI;
-l$ttG
+l$xE3
 l$xE;
 l$xI;
-l$xfA
 label
 label: 
 landmarkname
@@ -5905,8 +5930,12 @@ loop_break_on_damage
 loop_break_on_flashlight
 loop_in_action
 looping
+m A;>
+m0A;>
 m0k0$
 m8L9c
+mHL;mh
+mHL;mp
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -6000,6 +6029,7 @@ m_decodeOps
 m_decodedAnims
 m_displayText
 m_elems
+m_fAlpha
 m_fForceAmount
 m_fForceAmountMin
 m_fLifespanScaleExp
@@ -6051,7 +6081,6 @@ m_internalOps
 m_lightCookie
 m_masks
 m_modelName
-m_nAlphaFade
 m_nAnimationType
 m_nAttributeToWrite
 m_nBakeLightIndex
@@ -6383,7 +6412,6 @@ pA^^]
 pA^_^
 pA^_^[]
 pA^_^][
-pA_A]A\_^
 pA_A^A\][
 pA_A^A\_^
 pA_A^A\_^[]
@@ -6501,7 +6529,7 @@ relative_origin
 renderdiffuse
 renderingpipelines
 renderspecular
-rendertarget_%s.vtex
+rendertarget_
 rendertarget_dscratch_%d_%d.vtex
 rendertarget_scratch_1010102_mip_%d_%d
 rendertarget_scratch_16161616F_mip_%d_%d
@@ -6537,6 +6565,7 @@ s:HcGP
 s<HcFl
 s>HcFp
 s@fff
+s@tIE
 sHfff
 sPHcCh
 s_flSizeCullBloatScale
@@ -6621,6 +6650,7 @@ sc_skip_identical_rt_binds
 sc_skip_traversal
 sc_spew_cmt_usage
 sc_throw_away_all_layers
+sc_use_clear_subrect
 sc_visualize_batches
 sc_visualize_sceneobjects
 scene_quadindexbuffer
@@ -6725,7 +6755,6 @@ t"fff
 t#@8(t
 t#A81t
 t$ 9t$0|TH
-t$ ;C ~
 t$ @2
 t$ A;
 t$ ATAVAWH
@@ -6736,10 +6765,9 @@ t$ D;
 t$ E3
 t$ H+
 t$ H9qxt
-t$ Hc
 t$ HcA
 t$ HcA 
-t$ Lc
+t$ I#
 t$ UH
 t$ UWATAUAVH
 t$ UWATAVAWH
@@ -6750,7 +6778,6 @@ t$ WATAWH
 t$ WAV
 t$ WAVAWH
 t$ WH
-t$ uND
 t$$@8q@uPA
 t$$A+
 t$$I;
@@ -6761,6 +6788,7 @@ t$(t	H
 t$,A+
 t$0+A$t
 t$0A^_
+t$0D9t$@|LH
 t$0E3
 t$0H+
 t$0H;
@@ -6774,12 +6802,14 @@ t$0M;
 t$0fA
 t$0ff
 t$0tRH
+t$0uHH
 t$89~|~
 t$8E2
 t$8E3
 t$8H+
 t$8Hcsp;
 t$8Ic
+t$8Li
 t$@8+t
 t$@D;_
 t$@E3
@@ -6801,11 +6831,11 @@ t$HM;
 t$HcS
 t$Hff
 t$PD+
-t$PE;
 t$PH+
 t$PH;
 t$PHc
 t$PI;
+t$PIc
 t$PM9
 t$PM;
 t$PfD
@@ -6813,30 +6843,31 @@ t$Pff
 t$XE3
 t$Xt	H
 t$`A+
-t$`D+
-t$`E3
+t$`A;
 t$`Hc
 t$`I;
 t$`fA;
 t$`fD
 t$`ff
+t$bfD
 t$hH9r u
 t$hIc
 t$hIc7H
-t$hL;
 t$hLc4
 t$hLk
-t$hfA
 t$hff
 t$hfff
 t$pA+
 t$pH+
 t$pH;
 t$pI;
+t$pfD
 t$tE3
+t$ttG
 t$x;_@u
 t$xA;
 t$xH;
+t$xfA
 t$|fE
 t%@8}
 t%D8|$`A
@@ -6870,12 +6901,13 @@ t5HcA
 t5Hc|$X;|$hu
 t5LcF
 t6HcO8
+t6fff
 t7HcA$H
 t7HcG A
 t8Hc/;o
 t8HcA
 t8HcG M
-t9H9=V5
+t9H9=fB
 t9Hc\$pE
 t9IcA
 t:HcA
@@ -6885,10 +6917,10 @@ t:HcG<
 t:IcA H
 t:IcA$H
 t:LcM
-t;Hc]
 t<IcA H
 t=HcA
 t=HcG(H
+t=Hc\$pE
 t>HcA H
 t>Hc]
 t?H9\$0u8H
@@ -6917,7 +6949,9 @@ tRLcx|3
 tSf91tNH
 tTE9x
 tTHcA
+tTfff
 tVf91tQH
+tVfff
 tWHcI
 tXLcQ
 tYfff
@@ -6925,7 +6959,7 @@ t[H;J
 t\LcFL
 t\fA;
 t]<-u
-t_D9#uZH
+t_D9+uZH
 t`fD9+tZ
 taHcK
 tangent
@@ -6958,23 +6992,24 @@ transformtexture_.vtex
 ttIcF
 tu+K$3
 turn_rate
-twf9sluq3
 tx<	u#
+txf9slur3
 tyfD9 tsH
 type or int32).
 type.googleapis.com/
 type.googleprod.com/
-u	;y\
-u	@8=
+u	9~ 
+u	;q\
+u	@8=EX
 u!9p }
 u!fD;
 u$H;|$Hu
+u$fD;
 u%H99u
 u'L;v
-u'fD;
-u/fA9Nj}(
+u+fA9Mj}$
+u.fD;
 u1!D$0H
-u1fD;
 u3HcH<H
 u4D9~
 u6D9P
@@ -6982,7 +7017,7 @@ u7@8=
 u7fff
 u9fff
 u:9sxu59
-u;Hcu
+u:Hct$0L
 u=L;k
 uB9Q\r=A;
 uKD+\$@D+
@@ -6991,7 +7026,7 @@ uND;y
 uNM9h uHM9`(uBI
 uT<0uP
 uVLcF
-u[f9Clu
+uWf9Clu
 uf!T$(H!T$ 
 uiD9~
 uint32
@@ -7040,6 +7075,7 @@ volume_fog_height
 volume_fog_intermediate_textures_hdr
 volume_fog_jitter_offset_random
 volume_fog_show_volumes
+volume_fog_vr_single_dispatch
 volume_fog_width
 volumetric_fog.vtex
 vpcf1
@@ -7132,6 +7168,7 @@ x UAVAWH
 x!HcI
 x!HcK
 x";Mp}
+x.82(
 x/HcA
 x0=433
 x0v0$
@@ -7140,6 +7177,7 @@ x<;;}8Hc
 x=A;U }7H
 xA]A\[]
 xA_A]_[
+xA_A^
 xA_A^A]A\_^][
 xA_A^_^][
 xL;t$H
@@ -7156,10 +7194,12 @@ yaw_end
 yaw_start
 z0x0:
 zY;>u:m	
+z~2/kq
 { ATAVAWH
 { AUAVAWH
 { AVH
 { HcC8
+{ UAVAWI
 {8HcCP
 {YIN?
 |#tAM
@@ -7229,10 +7269,10 @@ zY;>u:m
 |$8A_A^A\
 |$8Hc
 |$8Hc:
+|$8Hi
 |$8L;
 |$8Lk
 |$8fff
-|$8uQ
 |$@	u
 |$@-D
 |$@-H
@@ -7257,7 +7297,7 @@ zY;>u:m
 |$P	u H
 |$P;^,}}
 |$PA;^ u
-|$PD;
+|$PD9|$`|LH
 |$PE3
 |$PE;
 |$PH+
@@ -7267,7 +7307,6 @@ zY;>u:m
 |$PI+
 |$PI;
 |$PI;_
-|$PL9
 |$PMc>M
 |$PfE
 |$Pff
@@ -7285,44 +7324,46 @@ zY;>u:m
 |$`Ic
 |$`L9g
 |$`Lc
+|$`fA
+|$`ff
 |$hA+
 |$hD+
 |$hE3
 |$hE;
 |$hH+
+|$hKcD
 |$hM;
 |$hff
 |$lA+
 |$p	u
+|$p9]
 |$pE3
 |$pHc
 |$pfE
 |$pfff
 |$pt	H
 |$p|FH
-|$tA9
 |$tfA
 |$x	u H
+|$xE3
 |${H+
 |(tFM
 |b=})>
 |l;K(tgA
-}"fff
 }$f;y
 }'Ic@
-}:fff
-}HL;}p
+}(;}0
 }_t!H
 }ifff
-}nfff
 ~ $s%r
 ~!A;~
-~*9y(
-~*9y0
+~*9q(
+~*9q0
 ~+L93u#H
 ~+fff
-~.A9xH
+~.A9pH
 ~.fff
-~08\$0t
+~28\$0t
 ~4fff
+~HIc.L
 ~^L;H
