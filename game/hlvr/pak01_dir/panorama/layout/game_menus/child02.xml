@@ -4,6 +4,16 @@
     <include src="s2r://panorama/styles/language_shared.vcss_c" />
   </styles>
 
+  <snippets>
+    <snippet name="SlotOverwriteHeader">
+      <Panel class="overwrite_header">
+        <Label class="overwrite_header" text="{s:header}" />
+        <Panel class="row_divider_line_small" />
+      </Panel>
+    </snippet>
+
+  </snippets>
+  
   <GameMenuPanel class="game_menu_root" onactivate="GameMenuNavigation_Cmd( 'GoTo Child02' )">
     <Panel class="base_container" id="layout_root">
       <Panel class="vr_affordance_container">
@@ -25,12 +35,18 @@
             <Panel class="row">
               <Panel class="col_body">
                 <Panel id="child_panel_list_02" class="base_list"></Panel>
+                
                 <Panel id="chapter_list_02" class="base_list">
                   <Panel class="overwrite_header">
                     <Label class="overwrite_header" text="{s:chapter_slot}" />
                     <Panel class="row_divider_line_small" />
                   </Panel>
                 </Panel>
+
+                <Panel id="workshop_item_list" class="base_list"></Panel>
+
+                <Panel id="addon_item_list_02" class="base_list" />
+                
               </Panel>
             </Panel>
 
@@ -38,9 +54,9 @@
             <Panel class="empty_row_bottomR_corner" />
           </Panel>
 
-          <Panel class="col_body child_panel_root" id="child_newgameoptions_container_02">
-
-          </Panel>
+          <Panel class="col_body child_panel_root" id="child_newgameoptions_container_02"></Panel>
+  
+          <HLVRAddonInformationPanel id="addon_info_panel_02" />
           
           <Panel class="col_body child_panel_root" id="child_preferences_container">
             <Panel class="header">
@@ -73,11 +89,11 @@
 
             <Panel class="row">
               <Panel class="col_body">
-                <GameMenuOptionCyclePanel id="sub01" convar="hlvr_closed_caption_type" label0="#HLVR_Options_Subtitles_None" label1="#HLVR_Options_Subtitles_On" label2="#HLVR_Options_Subtitles_CC_On" />
+                <GameMenuOptionCyclePanel id="sub01" convar="hlvr_closed_caption_type" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Subtitles_desc' )" label0="#HLVR_Options_Subtitles_None" label1="#HLVR_Options_Subtitles_On" label2="#HLVR_Options_Subtitles_CC_On" />
                 <GameMenuOptionTogglePanel id="sub02" convar="cc_spectator_only" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Subtitles_Spectator_Only_desc' )" label0="#HLVR_Options_Subtitles_Spectator_Only" on="#HLVR_Options_On" off="#HLVR_Options_Off" />
-                <GameMenuOptionCyclePanel id="sub03" convar="cc_vr_font_size" baseLabel="#HLVR_Options_Subtitles_Size" label0="#HLVR_Options_Subtitles_Small_Size" label1="#HLVR_Options_Subtitles_Medium_Size" label2="#HLVR_Options_Subtitles_Large_Size" />
-                <GameMenuOptionCyclePanel id="sub04" convar="cc_vr_width" baseLabel="#HLVR_Options_Subtitles_Width" label0="#HLVR_Options_Subtitles_Narrow" label1="#HLVR_Options_Subtitles_Medium" label2="#HLVR_Options_Subtitles_Wide" />
-                <GameMenuOptionCyclePanel id="sub05" convar="cc_vr_caption_speed" baseLabel="#HLVR_Options_Subtitles_Speed" label0="#HLVR_Options_Subtitles_Slow_Speed" label1="#HLVR_Options_Subtitles_Medium_Speed" label2="#HLVR_Options_Subtitles_Fast_Speed" />
+                <GameMenuOptionCyclePanel id="sub03" convar="cc_vr_font_size" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ClosedCaptions_Size_desc' )" baseLabel="#HLVR_Options_Subtitles_Size" label0="#HLVR_Options_Subtitles_Small_Size" label1="#HLVR_Options_Subtitles_Medium_Size" label2="#HLVR_Options_Subtitles_Large_Size" />
+                <GameMenuOptionCyclePanel id="sub04" convar="cc_vr_width" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ClosedCaptions_Width_desc' )" baseLabel="#HLVR_Options_Subtitles_Width" label0="#HLVR_Options_Subtitles_Narrow" label1="#HLVR_Options_Subtitles_Medium" label2="#HLVR_Options_Subtitles_Wide" />
+                <GameMenuOptionCyclePanel id="sub05" convar="cc_vr_caption_speed" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ClosedCaptions_Speed_desc' )" baseLabel="#HLVR_Options_Subtitles_Speed" label0="#HLVR_Options_Subtitles_Slow_Speed" label1="#HLVR_Options_Subtitles_Medium_Speed" label2="#HLVR_Options_Subtitles_Fast_Speed" />
               </Panel>
             </Panel>
 
@@ -180,7 +196,9 @@
               <Panel class="col_body">
                 <GameMenuOptionCyclePanel id="spec01" convar="hlvr_spectator_hud_size" descBase="#HLVR_Options_SpectatorHud_desc" baseLabel="#HLVR_Options_SpectatorHud_base" label0="#HLVR_Options_SpectatorHud_off" label1="#HLVR_Options_SpectatorHud_small" label2="#HLVR_Options_SpectatorHud_med" label3="#HLVR_Options_SpectatorHud_large" value0="0" value1="70" value2="100" value3="120"/>
                 <GameMenuOptionCyclePanel id="spec02" convar="vr_spectator_roll" descBase="#HLVR_Options_SpectatorCamera_desc" baseLabel="#HLVR_Options_SpectatorCamera_base" label0="#HLVR_Options_SpectatorCamera_off" label1="#HLVR_Options_SpectatorCamera_low" label2="#HLVR_Options_SpectatorCamera_med" label3="#HLVR_Options_SpectatorCamera_high" value0="0" value1="1" value2="2" value3="3" value4="4"/>
-                <GameMenuOptionTogglePanel id="spec03" convar="vr_spectator_show_left_eye" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Spectator_Eye_desc' )" label0="#HLVR_Options_Spectator_Eye_Base" on="#HLVR_Options_Eye_Left" off="#HLVR_Options_Eye_Right" />
+                <GameMenuOptionCyclePanel id="spec03" convar="vr_companion_window_zoom_level" descBase="#HLVR_Options_SpectatorZoom_desc" baseLabel="#HLVR_Options_SpectatorZoom_base" label0="#HLVR_Options_SpectatorZoom_low" label1="#HLVR_Options_SpectatorZoom_high" value0="1.2" value1="1.4" />
+                <GameMenuOptionTogglePanel id="spec04" convar="vr_spectator_show_left_eye" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_Spectator_Eye_desc' )" label0="#HLVR_Options_Spectator_Eye_Base" on="#HLVR_Options_Eye_Left" off="#HLVR_Options_Eye_Right" />
+                <GameMenuOptionTogglePanel id="spec05" convar="hlvr_spectator_hud_render_to_steamvr_overlay" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_SpectatorSteamVR_desc' )" label0="#HLVR_Options_SpectatorSteamVR_Base" on="#HLVR_Options_SpectatorSteamVR_On" off="#HLVR_Options_SpectatorSteamVR_Off" />
               </Panel>
             </Panel>
             
@@ -245,6 +263,8 @@
                     <GameMenuOptionTogglePanel id="adv21" convar="cloth_rigid_update" refresh_all="true" label0="#HLVR_Options_cloth_rigid_update_Base" on="#HLVR_Options_On" off="#HLVR_Options_Off" value0="1" value1="0" />
                     <GameMenuOptionCyclePanel id="adv22" convar="g_ragdoll_maxcount" refresh_all="true" baseLabel="#HLVR_Options_g_ragdoll_maxcount_Base" label0="#HLVR_Options_g_ragdoll_maxcount_Base_Low" value0="2" label1="#HLVR_Options_g_ragdoll_maxcount_Base_Med" value1="5" label2="#HLVR_Options_g_ragdoll_maxcount_Base_High" value2="8" label3="#HLVR_Options_g_ragdoll_maxcount_Base_Ultra" value3="12" />
                     <GameMenuOptionTogglePanel id="adv23" convar="vr_fast_hologram" refresh_all="true" label0="#HLVR_Options_High_Quality_Holograms" on="#HLVR_Options_High_Quality_Holograms_on" off="#HLVR_Options_High_Quality_Holograms_off" value0="1" value1="0" />                    
+
+                    <GameMenuOptionRenderingAPICyclePanel id="c_rendering_api" convar="hlvr_option_graphics_rendering_api" refresh_all="false" baseLabel="#HLVR_Options_Rendering_API" label0="#HLVR_Options_Rendering_API_D3D11" label1="#HLVR_Options_Rendering_API_Vulkan" value0="0" value1="1" />
                   </Panel>
                 </Panel>
               </Panel>

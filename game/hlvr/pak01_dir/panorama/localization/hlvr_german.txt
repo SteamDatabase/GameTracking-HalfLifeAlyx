@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Spiele"
 "HLVR_MainMenu_StartNewGame"	  	"Neues Spiel starten"
 "HLVR_MainMenu_StartGame"	  			"Spiel starten"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Spiel ohne Addons starten"
+"HLVR_MainMenu_StartGameAddon"	  	"Spiel mit Addons starten"
 "HLVR_MainMenu_CreateNewGame"	  	"Neues Spiel erstellen"
 
 "HLVR_MainMenu_Start"							"Start"
 
 "HLVR_MainMenu_LoadSlot"					"Speicherplatz %s laden"
 "HLVR_MainMenu_GameSlotHeader"		"Speicherplatz %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nSpeicherplatz %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Speicherplatz"
 "HLVR_MainMenu_GameSlot"    	  	"Speicherplatz"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"Abspann überspringen"
 "HLVR_Skip_Credits_Confirm"				"Abspann überspringen?"
 
+"HLVR_Addons"							"Addons"
+"HLVR_MainMenu_ManageAddons"			"Addons verwalten"
+"HLVR_MainMenu_AddonsToolsMode"			"Karte mit Addons kann im Werkzeugmodus nicht geladen werden."
+"HLVR_MainMenu_StartAddonGame"			"Spiel mit folgenden Addons starten:"
+"HLVR_MainMenu_AddonDisabled"			"Zugehöriges Addon deaktiviert"
+
+"HLVR_browse_workshop_label"			"Workshop durchsuchen"
+"HLVR_browse_workshop_confirm"			"Den Workshop über Steam Overlay durchsuchen?"
+"HLVR_browse_workshop_desc"				"Den Workshop für Half-Life: Alyx über Steam Overlay durchsuchen"
+
+"HLVR_local_addons"				"Lokale Addons"
+"HLVR_downloaded_addons"		"Heruntergeladene Addons"
+"HLVR_enabled_addons"			"Aktivierte Addons:"
+"HLVR_addon_game"				"Spiel mit aktivierten Addons"
+
 "HLVR_MainMenu_Attention"												"Achtung"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Deine CPU liegt unterhalb der Mindestanforderungen für Half-Life: Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"Der Systemspeicher liegt unterhalb der Mindestanforderungen für Half-Life: Alyx."
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx ist möglicherweise instabil, da auf Ihrem Systemlaufwerk wenig Speicherplatz verfügbar ist, wodurch die Größe Ihrer Auslagerungsdatei eingeschränkt werden kann."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Unzureichender Grafikkartenspeicher vorhanden. Bitte schließen Sie unnötige offene Programme, um die Verfügbarkeit von Grafikkartenspeicher zu verbessern."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Unzureichender Systemspeicher vorhanden. Bitte schließen Sie unnötig offene Programme, um die Verfügbarkeit von Systemspeicher zu verbessern."
+"HLVR_MainMenu_Old_Driver_Version"								"Die Treiberversion Ihres Grafikprozessors entspricht nicht den empfohlenen Mindestanforderungen für Half-Life: Alyx auf Vulkan. Bitte installieren Sie den neuesten Treiber für Ihren Grafikprozessor."
 
 "HLVR_MainMenu_ModalQuit"						"Half-Life: Alyx beenden?"
 "HLVR_MainMenu_ModalMainMenu"					"Zum Hauptmenü?"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"Untertitel Aus"
 "HLVR_Options_Subtitles_On"						"Untertitel An"
 "HLVR_Options_Subtitles_CC_On"					"Untertitel & Untertitel für Hörgeschädigte"
+"HLVR_Options_Subtitles_desc"					"Untertitel & Untertitel für Hörgeschädigte anzeigen"
 
 "HLVR_Options_Subtitles_Speed"					"Geschwindigkeit"
 "HLVR_Options_Subtitles_Slow_Speed"				"Langsam"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"Mittel"
 "HLVR_Options_SpectatorHud_large"				"Groß"
 
-"HLVR_Options_SpectatorCamera_desc"				"Höhe der Kameraglättung im Zuschauerfenster einstellen"
+"HLVR_Options_SpectatorCamera_desc"				"Höhe der Kameraglättung im Zuschauerfenster einstellen.\n\nErfordert hohes Zoomlevel."
 "HLVR_Options_SpectatorCamera_base"				"Zuschauerkameraglättung"
 "HLVR_Options_SpectatorCamera_off"				"Aus"
 "HLVR_Options_SpectatorCamera_low"				"Niedrig"
 "HLVR_Options_SpectatorCamera_med"				"Mittel"
-"HLVR_Options_SpectatorCamera_high"			"Hoch"
+"HLVR_Options_SpectatorCamera_high"				"Hoch"
+
+"HLVR_Options_SpectatorZoom_desc"				"Zuschauerzoomlevel"
+"HLVR_Options_SpectatorZoom_Base"				"Zuschauerzoom"
+"HLVR_Options_SpectatorZoom_low"				"Niedrig"
+"HLVR_Options_SpectatorZoom_high"				"Hoch"
 
 "HLVR_Options_Spectator_Eye_desc"				"Schaltet für die Zuschauerkamera zwischen rechtem und linkem Auge des Spielers um."
 "HLVR_Options_Spectator_Eye_Base"				"Zuschauerkameraauge"
-"HLVR_Options_Eye_Left"									"Links"
-"HLVR_Options_Eye_Right"								"Rechts"
+"HLVR_Options_Eye_Left"							"Links"
+"HLVR_Options_Eye_Right"						"Rechts"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"HUD im SteamVR-Fenster anzeigen.\n\nDies erhöht die Leistungsanforderungen."
+"HLVR_Options_SpectatorSteamVR_Base"			"Zuschauer-HUD in SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"An"
+"HLVR_Options_SpectatorSteamVR_Off"				"Aus"
 
 "HLVR_Options_SpectatorEye_desc"				"Wähle eine Perspektive für gespiegelte nicht-VR-Bildschirme wie einen Monitor oder Fernsehbildschirm aus.\n\nStandardmäßig entspricht die Perspektive deiner aktuellen Waffenhand, aber andere Optionen sind möglich."
 "HLVR_Options_SpectatorEye_base"				"Zuschaueransicht"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"Aus"
 "HLVR_Options_r_light_flickering_enabled"			"Flackernde Beleuchtung"
 
+"HLVR_Options_Rendering_API"					"Rendering-API"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"Aktuelle API:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"Die Rendering-API wurde in den Startoptionen angegeben. Entfernen Sie die Option, um eine Rendering-API auszuwählen."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nErfordert zur Übernahme Neustart des Spiels.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"Wenn das Spiel nach der Änderung dieser Einstellung nicht ordnungsgemäß startet, fügen Sie Ihren Startoptionen -safe_mode hinzu, um mit einer Standard-Rendering-API zu beginnen."
+
 "HLVR_Options_cloth_rigid_update_Base"			"Fließende Kleidung"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"Anzahl Ragdolls"
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"Bewegung über die Waffenhand\nDiese Option kann in den SteamVR-Controllerzuordnungen geändert werden."
 "HLVR_Lesson_Movement_OffHand"		"Bewegung über die waffenlose Hand\nDiese Option kann in den SteamVR-Controllerzuordnungen geändert werden."
 "HLVR_Lesson_Teleport"							"Drücke den Analogstick, um dich zu bewegen."
-"HLVR_Lesson_Quick_Turn"						"Drücke, um dich schnell nach rechts oder links zu bewegen."
+"HLVR_Lesson_Quick_Turn"						"Drücke die Taste, um dich sofort nach rechts oder links zu drehen."
 "HLVR_Lesson_GrabTrigger"						"Drücke und halte den Trigger, um nach Objekten zu greifen."
 "HLVR_Lesson_GrabHands"							"Greife nach Objekten mit den Händen."
 "HLVR_Lesson_GrabHandsSingleController"			"Greife mit der Hand nach Objekten."

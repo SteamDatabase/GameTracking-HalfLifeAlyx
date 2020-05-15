@@ -11,6 +11,14 @@
         <Panel class="row_divider_line_small" />
       </Panel>
     </snippet>
+
+    <snippet name="SaveSlotFilter">
+      <Panel>
+        <GameMenuOptionCyclePanel convar="hlvr_saveslot_filter" label0="Original Game" label1="Addon Games"/>
+        <Panel class="row_divider_line_small" />
+      </Panel>
+    </snippet>
+
   </snippets>
   
   <GameMenuPanel class="game_menu_root" onactivate="GameMenuNavigation_Cmd( 'GoTo Child01' )">
@@ -36,13 +44,16 @@
 
             <Panel class="row">
               <Panel class="col_body">               
+                
                 <Panel id="child_panel_list" class="base_list"></Panel>
+                
                 <Panel id="chapter_list" class="base_list">
                   <Panel class="overwrite_header">
                     <Label class="overwrite_header" text="{s:chapter_slot}" />
                     <Panel class="row_divider_line_small" />
                   </Panel>
                 </Panel>
+                
 								<Panel id="save_slot_list" class="base_list"></Panel>
                 
 								<Panel id="override_save_slot_list" class="base_list">
@@ -51,6 +62,8 @@
                     <Panel class="row_divider_line_small" />
                   </Panel>
                 </Panel>
+
+                <Panel id="addon_item_list_01" class="base_list" />
                 
               </Panel>
             </Panel>

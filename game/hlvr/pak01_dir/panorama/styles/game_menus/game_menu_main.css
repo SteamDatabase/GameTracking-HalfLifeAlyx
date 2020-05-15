@@ -395,6 +395,7 @@ GameMenuOptionTogglePanel:active .switch_image
 
 
 /* GameMenuOptionCyclePanel ***************************************************/
+GameMenuOptionRenderingAPICyclePanel,
 GameMenuOptionCycleCondenseTexturePanel,
 GameMenuOptionCycleCondensePanel,
 GameMenuOptionCyclePanel
@@ -898,10 +899,10 @@ Button:active #save_type_quick_save
     text-overflow: shrink;
 }
 
-.button_newgameoptions
+.button_newgameoptions 
 {
     horizontal-align: center;
-    width: 500px;
+    width: 700px;
     min-height: 108px;
     margin-top: 24px;
     margin-left: 24px;
@@ -910,8 +911,12 @@ Button:active #save_type_quick_save
     border: 2px solid #FFBE55;
 }
 
+.ShowOriginalMaps .button_newgameoptions
+{
+    visibility: visible;
+}
 
-.button_modal
+.button_modal 
 {
     width: 300px;
     min-height: 108px;
@@ -920,13 +925,15 @@ Button:active #save_type_quick_save
     padding-top: 8px;
     background-color: #FFBE5533;
     border: 2px solid #FFBE55;
+    text-align: center;
 }
 
-Label.cta
+Label.cta 
 {
     width: 100%;
     text-align: center;
     text-overflow: shrink;
+    min-height: 54px;
 }
 
 .Japanese Label.cta
@@ -1239,8 +1246,7 @@ HorizontalScrollBar .ScrollThumb, HTMLHorizontalScrollBar .ScrollThumb
 }
 
 /* ========== Load Save Game ========== */
-#loadsave_list
-{
+#loadsave_list {
     width: 100%;
     flow-children: down;
     overflow: scroll;
@@ -1336,6 +1342,166 @@ Label.save_type
     padding-right: 8px;
     padding-left: 8px;
     color: #FFDE80;
+}
+
+/********************************* Workshop and Addon UI Elements *********************************/
+HLVRAddonTogglePanel
+{
+    width: 100%;
+    min-height: 116px;
+    
+    flow-children: right;
+    horizontal-align: left;
+    text-align: right;
+    /* Hover 'Off' values */
+    background-color: #FFBE5500;
+    transition-property: background-color;
+    transition-duration: 0s;
+}
+
+.inactiveAddonMap
+{
+    color: #FFBE5555;
+}
+
+
+.addon_item
+{
+    min-height: 100px;
+}
+
+.addon_item:hover {
+    color: #fff;
+    background-color: #FFBE5588;
+    transition-property: background-color;
+    transition-duration: .38s;
+    transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );
+}
+
+.addon_item:active 
+{
+    background-color: #FFBE55;
+    color: #000;
+    transition-property: background-color;
+    transition-duration: 0s;
+}
+
+HLVRAddonTogglePanel Label 
+{
+    width: 92%;
+    vertical-align: center;
+    horizontal-align: left;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.addon_row 
+{
+    width: 84.5%;
+    flow-children: right;
+    vertical-align: center;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.addon_toggle_container
+{
+    width: 15.5%;
+    vertical-align: center;
+    horizontal-align: left;
+    margin-top: 4px;
+}
+
+.addon_divider 
+{
+    width: 95%;
+}
+
+/*********************** Addon Info Panel **********************/
+.addon_info_panel
+{
+    width: 100%;
+    min-height: 710px;
+    flow-children: down;
+    horizontal-align: left;
+    vertical-align: center;
+    text-align: right;
+    border-right: 1px solid #FFBE5566;
+}
+
+.addon_col_body 
+{
+    width: 50%;
+    min-height: 580px;
+    
+    flow-children: down;
+}
+
+.addon_credits
+{
+    font-size: 36px;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+.addon_list 
+{
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.addon_body_copy
+{
+    font-size: 40px;
+    line-height: 36px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+
+.addon_vote_button
+{
+    horizontal-align: center;
+    width: 200px;
+    padding-top: 8px;
+    background-color: #FFBE5533;
+    border: 2px solid #FFBE55;
+}
+
+.addon_spacer
+{
+    width: 100%;
+    height: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.addon_screenshot 
+{
+    horizontal-align: right;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 24px;
+    background-color: #000000;
+}
+
+.OriginalSaveSlot,
+.AddonSaveSlot,
+.OriginalMap,
+.AddonMap 
+{
+    visibility: collapse;
+}
+
+.ShowOriginalSaveSlots .OriginalSaveSlot,
+.ShowAddonSaveSlots .AddonSaveSlot,
+.ShowOriginalMaps .OriginalMap,
+.ShowAddonMaps .AddonMap 
+{
+    visibility: visible;
 }
 
 /* ========== Icons ========== */
@@ -1696,6 +1862,7 @@ Label.save_type
 .show_override_slots_container #child_save_slot_override_container,
 .show_child_list_container #child_list_container,
 .show_child02_list_container #child02_list_container,
+.show_child03_list_container #child03_list_container,
 .show_child_newgameoptions_01 #child_newgameoptions_container_01,
 .show_child_newgameoptions_02 #child_newgameoptions_container_02,
 .show_child_newgameoptions_03 #child_newgameoptions_container_03
@@ -1724,7 +1891,7 @@ Label.save_type
     visibility: visible;
 }
 
-#advance_graphics_panel
+#advance_graphics_panel 
 {
     visibility: collapse;
 }
@@ -1734,49 +1901,36 @@ Label.save_type
     visibility: visible;
 }
 
+#addon_info_panel_02,
+#addon_item_list_01,
+#addon_item_list_02,
+#addon_item_list_03,
+#workshop_item_list,
 #child_panel_list,
 #child_panel_list_02,
 #override_save_slot_list,
 #save_slot_list,
 #chapter_list,
-#chapter_list_02
+#chapter_list_02 
 {
-	visibility: collapse;
+    visibility: collapse;
 }
 
-.show_load_container #child_panel_list_02
-{
-	visibility: visible;
-}
-
-.show_load_container_pause #child_panel_list
-{
-	visibility: visible;
-}
-
-
-.show_chapter_container_01 #chapter_list
-{
-	visibility: visible;
-}
-
-.show_chapter_container_02 #chapter_list_02
-{
-	visibility: visible;
-}
-
-
-.show_saved_slots_container #save_slot_list
-{
-	visibility: visible;
-}
-
-
-
+.show_addon_info_02 #addon_info_panel_02,
+.show_addon_container_01 #addon_item_list_01,
+.show_addon_container_02 #addon_item_list_02,
+.show_addon_container_03 #addon_item_list_03,
+.show_browse_workshop_container #workshop_item_list,
+.show_load_container #child_panel_list_02,
+.show_load_container_pause #child_panel_list,
+.show_chapter_container_01 #chapter_list,
+.show_chapter_container_02 #chapter_list_02,
+.show_saved_slots_container #save_slot_list,
 .show_override_slots_container #override_save_slot_list
 {
-	visibility: visible;
+    visibility: visible;
 }
+
 
 /* = Main Menu Visibility =============================================== */
 .has_save_games #start_new_game,
@@ -1958,6 +2112,7 @@ Label.save_type
     background-color: #FFBE55;
 }
 
+#cta_manage_addons,
 #cta_dev_menu,
 #cta_back,
 #cta_reset_graphics,
@@ -1971,6 +2126,7 @@ Label.save_type
 .show_load_item #cta_delete_slot.Visible,
 .show_graphics_container #cta_adv_graphics.Visible,
 .show_graphics_container #cta_reset_graphics.Visible,
+#cta_manage_addons.Visible,
 #cta_reload_map.Visible,
 #cta_mainmenu_button.Visible,
 #cta_dev_menu.Visible,
@@ -1982,9 +2138,15 @@ Label.save_type
 /* = ScrollWindows ============ */
 .hasScrollWindow .load_saveitem,
 .hasScrollWindow .save_slot_item,
-.hasScrollWindow .chapter_item
+.hasScrollWindow .chapter_item,
+.hasScrollWindow .scroll_item
 {
     width: 95%;
+}
+
+.hasScrollWindow .addon_divider 
+{
+    width: 88%;
 }
 
 /* = Backgrounds ============ */

@@ -1,0 +1,35 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/base_styles.vcss_c" />
+		<include src="s2r://panorama/styles/commentary_hud.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+	<ClientUIDialogPanel class="RootPanel">
+		<HLVRCommentaryHUD class="CommentaryHUD" id="CommentaryHUD">
+      <Panel class ="PlayBox" id="Play">
+        <Panel class ="PlayBoxInternal">
+          <Panel class ="PlayBoxIcon" />
+        </Panel>
+      </Panel>
+      <Panel class ="CurrentNodeBox">
+        <Panel class ="CurrentNodeInternal">
+          <Panel class ="CurrentNodeTitleLine">
+            <Label class="CurrentNodeTitleText" id="NodeCount" text="{s:NodeCount}" />
+            <Label class="CurrentNodeTitleText" id="Separator" text="-" />
+            <Label class="CurrentNodeTitleText" id="NodeAuthor" text="{s:NodeAuthor}" />
+            <Panel class ="CurrentNodeIcon" />
+          </Panel>
+          <Panel class ="CurrentNodeProgressBox">
+            <ProgressBar id="CurrentNodeProgressBar" min="0" max="1" />
+          </Panel>
+        </Panel>
+      </Panel>
+      <Panel class ="PlayBox" id="Stop">
+        <Panel class ="PlayBoxInternal">
+          <Panel class ="PlayBoxIcon" />
+        </Panel>
+      </Panel>
+		</HLVRCommentaryHUD>
+	</ClientUIDialogPanel>
+</root>

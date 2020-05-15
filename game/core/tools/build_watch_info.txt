@@ -1,0 +1,498 @@
+//===============================================================================
+// Build Manager Settings
+//===============================================================================
+
+"BuildManager"
+{
+	"BuildDirectories"
+	{
+		"Src"
+		{
+			Description		"Sync source code."
+			
+			"Don't Sync"
+			{
+			}
+			"Sync"
+			{
+				Argument		"--src"
+				IsDefault		"1"
+			}
+		}
+		"Game"
+		{
+			Description		"Sync game binaries."
+			
+			"Don't Sync"
+			{
+			}
+			"Sync"
+			{
+				Argument		"--game"
+				IsDefault		"1"
+			}
+		}
+		"Content"
+		{
+			"Don't Sync"
+			{
+				Description		"Don't sync any content."
+			}
+			"Sync Dev Content"
+			{
+				Argument		"--devcontent"
+				Description		"Sync core content and content required to run unit tests only."
+			}
+			"Sync All Content"
+			{
+				Argument		"--content"
+				Description		"Sync all content."
+				IsDefault		"1"
+			}
+			"Sync All Source and Compiled Content to HEAD"
+			{
+				Argument		"--mixed"
+				Description		"Sync all compiled and source content to HEAD revision."
+			}
+			"Sync All Source and Compiled Content to HEAD (w/scripts)"
+			{
+				Argument		"--mixed --mixed_scripts"
+				Description		"Sync all compiled and source content to HEAD revision, as well as the scripts directory."
+			}
+		}
+	}
+	"BuildLabels"
+	{
+		"L4D3 Succeeded"
+		{
+			Argument		"--label left4dead3"
+			Description		"All binaries built. Unit tests for Left4Dead3 and the Source 2 game engine succeeded."
+			Project			"left4dead3"
+			LabelPriority	"0"
+		}
+		"Code Compiled"
+		{
+			Argument		"--label code"
+			Description		"Code binaries built successfully on all platforms. Content binaries from HEAD of time of checkin, may be out-of-date. Untested."
+			Warning			"Content binaries may be out-of-date, and unit tests have not been run for this label. Are you sure you want to sync?"
+			LabelFile		"game/bin/source2_latest_good.txt"
+			LabelPriority	"0"
+		}
+		"Content Compiled"
+		{
+			Argument		"--label content"
+			Description		"Code binaries built successfully on all platforms. Content binaries built successfully on all platforms. Untested."
+			Warning			"Unit tests have not been run for this label. Are you sure you want to sync?"
+			LabelFile		"game/bin/source2_latest_good_content.txt"
+			LabelPriority	"1"
+		}
+		"Tests Succeeded"
+		{
+			Argument		"--label tested"
+			Description		"Code binaries built successfully on all platforms. Content binaries built successfully on all platforms. Unit tests passed on all platforms."
+			LabelFile		"game/bin/source2_latest_good_tested.txt"
+			LabelPriority	"2"
+		}
+	}
+	
+	"DepotBuilders"
+	{
+		"csgo_main"
+		{
+			FriendlyName		"CSGO Main Depot"
+			BuilderURL			"http://buildmaster.valvesoftware.com:8181/builders/csgo_main_depot/force"
+			ProgressURL			"http://buildmaster.valvesoftware.com:8181/builders/csgo_main_depot"			
+			ForceScheduler		"csgo_main_depot_force"
+			BuildLabel			"Content Compiled"
+			CriticalBuilders	"source2_win64 source2_content"
+		}
+	}
+	
+	"KnownBuilders"
+	{
+		//===============================================================================
+		// Source2 Main
+		//===============================================================================
+		"source2_all_platforms"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"source2_win32"
+		{
+			FriendlyName	"Win32"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		"source2_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		"source2_win64_profile"
+		{
+			FriendlyName	"Win64 (Profile)"
+			Hidden			"1"
+		}
+		"source2_linuxsteamrt64"
+		{
+			FriendlyName	"Linux"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		"source2_androidarm32"
+		{
+			FriendlyName	"Android ARM 32bit"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		"source2_androidarm64"
+		{
+			FriendlyName	"Android ARM 64bit"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		"source2_iosarm64"
+		{
+			FriendlyName	"iOS ARM 64bit"
+			ParentBuilderName	"source2_all_platforms"
+		}
+		//"source2_swf"
+		//{
+		//	FriendlyName	"SWF"
+		//	ParentBuilderName	"source2_all_platforms"
+		//}
+		"source2_label"
+		{
+			FriendlyName	"Code Label"
+			Hidden			"1"
+		}
+		"source2_alt_platforms"
+		{
+			FriendlyName	"Alt"
+		}	
+		"source2_osx64"
+		{
+			FriendlyName	"OS X 64"
+			ParentBuilderName	"source2_alt_platforms"
+		}
+		"source2_androidx8632"
+		{
+			FriendlyName	"Android x86 32bit"
+			ParentBuilderName	"source2_alt_platforms"
+		}
+		"source2_androidx8664"
+		{
+			FriendlyName	"Android x86 64bit"
+			ParentBuilderName	"source2_alt_platforms"
+		}
+		"source2_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"source2_test_all"
+		{
+			FriendlyName	"Test"
+			SuccessLabel	"Tests Succeeded"
+		}
+		"source2_test_win32"
+		{
+			FriendlyName	"Win32"
+			ParentBuilderName	"source2_test_all"
+		}
+		"source2_test_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"source2_test_all"
+		}
+		"source2_test_dota"
+		{
+			FriendlyName	"DOTA"
+			ParentBuilderName	"source2_test_all"
+		}
+		"source2_test_hlvr"
+		{
+			FriendlyName	"HLVR"
+			ParentBuilderName	"source2_test_all"
+		}
+		"source2_test_dcg"
+		{
+			FriendlyName	"DCG"
+			ParentBuilderName	"source2_test_all"
+		}
+		"source2_test_l4d3"
+		{
+			FriendlyName	"L4D3"
+			SuccessLabel	"L4D3 Succeeded"
+				ParentBuilderName	"source2_test_all"
+		}
+		"source2_analyzebuild_win32"
+		{
+			FriendlyName	"Win32"
+		}
+		"source2_analyzebuild_win64"
+		{
+			FriendlyName	"Win64"
+			Hidden			"1"
+		}
+		"source2_generate_breakpad_symbols"
+		{
+			FriendlyName	"Breakpad Symbols"
+		}
+
+		//===============================================================================
+		// Dota2 Staging
+		//===============================================================================
+		"dota_staging_all"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"dota_staging_win32"
+		{
+			FriendlyName	"Win32"
+			ParentBuilderName	"dota_staging_all"
+		}
+		"dota_staging_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"dota_staging_all"
+		}
+		"dota_staging_osx64"
+		{
+			FriendlyName	"OS X 64"
+			ParentBuilderName	"dota_staging_all"
+		}
+		"dota_staging_label"
+		{
+			FriendlyName	"Code Label"
+			Hidden			"1"
+		}
+		"dota_staging_linuxsteamrt64"
+		{
+			FriendlyName	"Linux"
+			ParentBuilderName	"dota_staging_all"
+		}
+		"source2_dota_staging_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"dota_staging_test_all"
+		{
+			FriendlyName	"Test"
+			SuccessLabel	"Tests Succeeded"
+		}
+		"dota_staging_test_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"dota_staging_test_all"
+		}
+		"dota_staging_test_win32"
+		{
+			FriendlyName	"Win32"
+			ParentBuilderName	"dota_staging_test_all"
+		}
+		"dota_staging_breakpad"
+		{
+			FriendlyName	"Breakpad Symbols"
+		}
+		"source2_dota_staging_analyzebuild_win64"
+		{
+			FriendlyName	"Win64"
+		}
+
+		//===============================================================================
+		// Dota2 Rel
+		//===============================================================================
+		"source2_dota_rel_all_platforms"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"source2_dota_rel_win32"
+		{
+			FriendlyName	"Win32"
+			ParentBuilderName	"source2_dota_rel_all_platforms"
+		}
+		"source2_dota_rel_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"source2_dota_rel_all_platforms"
+		}
+		"source2_dota_rel_osx64"
+		{
+			FriendlyName	"OS X 64"
+			ParentBuilderName	"source2_dota_rel_all_platforms"
+		}
+		"source2_dota_rel_linuxsteamrt64"
+		{
+			FriendlyName	"Linux"
+			ParentBuilderName	"source2_dota_rel_all_platforms"
+		}
+		"source2_dota_rel_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"source2_dota_rel_label"
+		{
+			FriendlyName	"Code Label"
+			Hidden			"1"
+		}
+		"dota_rel_test_all"
+		{
+			FriendlyName	"Test"
+			SuccessLabel	"Tests Succeeded"
+		}
+		"dota_rel_test_win"
+		{
+			FriendlyName	"Windows"
+			ParentBuilderName	"dota_rel_test_all"
+		}
+		"source2_dota_rel_generate_breakpad_symbols"
+		{
+			FriendlyName	"Breakpad Symbols"
+		}
+
+		//===============================================================================
+		// Underlords Staging
+		//===============================================================================
+		"dac_staging_all_platforms"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"dac_staging_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_linuxsteamrt64"
+		{
+			FriendlyName	"Linux"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_osx64"
+		{
+			FriendlyName	"OSX"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_androidarm32"
+		{
+			FriendlyName	"Android ARM 32"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_androidarm64"
+		{
+			FriendlyName	"Android ARM 64"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_iosarm64"
+		{
+			FriendlyName	"iOS ARM 64"
+			ParentBuilderName	"dac_staging_all_platforms"
+		}
+		"dac_staging_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"dac_staging_label"
+		{
+			FriendlyName	"Code Label"
+			Hidden			"1"
+		}
+
+		//===============================================================================
+		// Underlords Rel
+		//===============================================================================
+		"dac_rel_all_platforms"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"dac_rel_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_linuxsteamrt64"
+		{
+			FriendlyName	"Linux"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_osx64"
+		{
+			FriendlyName	"OSX"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_androidarm32"
+		{
+			FriendlyName	"Android ARM 32"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_androidarm64"
+		{
+			FriendlyName	"Android ARM 64"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_iosarm64"
+		{
+			FriendlyName	"iOS ARM 64"
+			ParentBuilderName	"dac_rel_all_platforms"
+		}
+		"dac_rel_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"dac_rel_label"
+		{
+			FriendlyName	"Code Label"
+			Hidden			"1"
+		}
+
+		//===============================================================================
+		// VR GDC2015 Aperture Demo Staging
+		//===============================================================================
+		"vrgdc2015_staging_all"
+		{
+			FriendlyName	"Code"
+			SuccessLabel	"Code Compiled"
+		}
+		"vrgdc2015_staging_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"vrgdc2015_staging_all"
+		}
+		"source2_vrgdc2015_staging_content"
+		{
+			FriendlyName	"Content"
+			SuccessLabel	"Content Compiled"
+		}
+		"vrgdc2015_staging_test_all"
+		{
+			FriendlyName	"Test"
+			SuccessLabel	"Tests Succeeded"
+		}
+		"vrgdc2015_staging_test_win64"
+		{
+			FriendlyName	"Win64"
+			ParentBuilderName	"vrgdc2015_staging_test_all"
+		}
+		"vrgdc2015_staging_breakpad"
+		{
+			FriendlyName	"Breakpad Symbols"
+		}
+		"source2_vrgdc2015_staging_analyzebuild_win64"
+		{
+			FriendlyName	"Win64"
+		}
+	}
+	
+	// MySqlQuery has moved to //Steam/main/tools/buildbot/buildwatch_service.py
+	// You can test changes by:
+	//  -running buildwatch_service.py locally (must have Twisted-16.3.0 and zope.interface-3.6.3-py2.6-win32.egg in your PYTHONPATH)
+	//  -running buildwatch with the -localhostservice command line arg
+	//  -emailing Perforce Admins about refreshing the script on buildmaster
+	
+	BuildNotesPath	"\\fileserver\user\buildwatch\notes"
+}

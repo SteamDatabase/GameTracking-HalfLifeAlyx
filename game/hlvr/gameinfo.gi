@@ -31,6 +31,7 @@
 			Game				core
 			Mod					hlvr
 			Write				hlvr
+			AddonRoot			hlvr_addons
 		}
 	}
 	
@@ -171,6 +172,8 @@
 		{
 			"0"	"prop_ragdoll"
 		}
+		"AddonMapCommand"				"addon_tools_map"
+		"AddonMapCommandIsAddonImplied"	"1"
 	}
 	
 	ModelDoc
@@ -180,11 +183,6 @@
 		"features"					"animgraph;modelconfig"
 	}
 	
-	AssetSystem
-	{
-		"disable_readonly_assets"	"1"
-	}
-
 	RenderPipelineAliases
 	{
 		"Tools"			"VR"
@@ -299,7 +297,6 @@
 		"EnvironmentMapFaceSize" "256"
 		"EnvironmentMapRenderSize" "1024"
 		"EnvironmentMapFormat" "BC6H"
-		"EnvironmentMapPreviewFormat" "RGBA16161616F"
 		"EnvironmentMapColorSpace" "linear"
 		"EnvironmentMapMipProcessor" "GGXCubeMapBlur"
 		// Build cubemaps into a cube array instead of individual cubemaps.
@@ -371,6 +368,10 @@
 		"VulkanUseStreamingTextureManager" "1"
 		"VulkanMutableSwapchain" "1"
 		"VulkanSteamShaderCache" "1"
+		"VulkanSteamAppShaderCache" "1"
+		"VulkanSteamDownloadedShaderCache" "0"
+		"VulkanAdditionalShaderCache" "vulkan_shader_cache.foz"
+		"VulkanStagingPMBSizeLimitMB" "128"
 	}
 	
 	Particles

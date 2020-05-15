@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Partidas"
 "HLVR_MainMenu_StartNewGame"	  	"Iniciar nueva partida"
 "HLVR_MainMenu_StartGame"	  			"Iniciar partida"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Iniciar partida sin complementos"
+"HLVR_MainMenu_StartGameAddon"	  	"Iniciar partida con complementos"
 "HLVR_MainMenu_CreateNewGame"	  	"Crear nueva partida"
 
 "HLVR_MainMenu_Start"							"Iniciar"
 
 "HLVR_MainMenu_LoadSlot"					"Cargar archivo %s"
 "HLVR_MainMenu_GameSlotHeader"		"Archivo %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nArchivo%s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Archivo"
 "HLVR_MainMenu_GameSlot"    	  	"Archivo"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"Saltar los créditos"
 "HLVR_Skip_Credits_Confirm"				"¿Quieres saltar los créditos?"
 
+"HLVR_Addons"							"Complementos"
+"HLVR_MainMenu_ManageAddons"			"Administrar complementos"
+"HLVR_MainMenu_AddonsToolsMode"			"No se puede cargar un mapa con complementos mientras se está en el modo Herramientas."
+"HLVR_MainMenu_StartAddonGame"			"Iniciar la partida con los siguientes complementos:"
+"HLVR_MainMenu_AddonDisabled"			"Complemento asociado deshabilitado"
+
+"HLVR_browse_workshop_label"			"Explorar el Workshop"
+"HLVR_browse_workshop_confirm"			"¿Explorar el Workshop a través de la interfaz de Steam?"
+"HLVR_browse_workshop_desc"				"Explorar el Workshop de Half-Life: Alyx a través de la interfaz de Steam"
+
+"HLVR_local_addons"				"Complementos locales"
+"HLVR_downloaded_addons"		"Complementos descargados"
+"HLVR_enabled_addons"			"Complementos activados:"
+"HLVR_addon_game"				"Partida con complementos"
+
 "HLVR_MainMenu_Attention"												"Atención"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Tu CPU está por debajo de los requisitos mínimos para Half-Life Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"La memoria del sistema está por debajo de los requisitos mínimos para Half-Life Alyx."
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx puede ser inestable debido al poco espacio disponible en el disco de la unidad de tu sistema operativo, lo que puede limitar el tamaño de tu archivo."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Se ha detectado que la memoria disponible para la unidad de procesamiento de gráficos (GPU) es baja, cierra los programas abiertos innecesarios, para aumentar la disponibilidad de dicha memoria."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Se detectó que la memoria disponible para la el sistema es baja, cierra los programas abiertos innecesarios, para aumentar la disponibilidad de la memoria."
+"HLVR_MainMenu_Old_Driver_Version"								"La versión del controlador de tu GPU es inferior a la versión recomendada para Half-Life: Alyx en Vulkan. Instala el controlador más reciente para tu GPU."
 
 "HLVR_MainMenu_ModalQuit"						"¿Deseas salir de Half-Life Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"¿Ir al menú principal?"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"Sin subtítulos"
 "HLVR_Options_Subtitles_On"						"Con subtítulos"
 "HLVR_Options_Subtitles_CC_On"					"Subtítulos y CC"
+"HLVR_Options_Subtitles_desc"					"Configurar para mostrar subtítulos y CC."
 
 "HLVR_Options_Subtitles_Speed"					"Velocidad"
 "HLVR_Options_Subtitles_Slow_Speed"				"Lenta"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"El ancho de los subtítulos en pantalla."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"Solo ventana de espectador"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"Mostrar subtítulos y CC solamente en la ventana del espectador"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Mostrar subtítulos y CC solamente en la ventana del espectador."
 
 "HLVR_Options_LeftHanded"						"Arma en la mano: izquierda"
 "HLVR_Options_RightHanded"						"Arma en la mano: derecha"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"Mediano"
 "HLVR_Options_SpectatorHud_large"				"Grande"
 
-"HLVR_Options_SpectatorCamera_desc"				"Define la cantidad para el suavizado de cámara en la ventana de espectador."
+"HLVR_Options_SpectatorCamera_desc"				"Define la cantidad de suavizado de cámara en la ventana de espectador.\n\nRequiere un nivel de zoom alto."
 "HLVR_Options_SpectatorCamera_base"				"Suavizado de cámara del espectador"
 "HLVR_Options_SpectatorCamera_off"				"Apagado"
 "HLVR_Options_SpectatorCamera_low"				"Bajo"
 "HLVR_Options_SpectatorCamera_med"				"Mediano"
-"HLVR_Options_SpectatorCamera_high"			"Alto"
+"HLVR_Options_SpectatorCamera_high"				"Alto"
+
+"HLVR_Options_SpectatorZoom_desc"				"Nivel de zoom del espectador."
+"HLVR_Options_SpectatorZoom_Base"				"Zoom del espectador"
+"HLVR_Options_SpectatorZoom_low"				"Bajo"
+"HLVR_Options_SpectatorZoom_high"				"Alto"
 
 "HLVR_Options_Spectator_Eye_desc"				"Cambia entre los ojos derecho e izquierdo de los jugadores para la ventana del espectador"
 "HLVR_Options_Spectator_Eye_Base"				"Vista del espectador"
-"HLVR_Options_Eye_Left"									"Izquierda"
-"HLVR_Options_Eye_Right"								"Derecha"
+"HLVR_Options_Eye_Left"							"Izquierda"
+"HLVR_Options_Eye_Right"						"Derecha"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"Dibuja el HUD en la ventana del StreamVR.\n\nEsto tendrá un efecto en el rendimiento."
+"HLVR_Options_SpectatorSteamVR_Base"			"HUD del espectador en SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"Activado"
+"HLVR_Options_SpectatorSteamVR_Off"				"Desactivado"
 
 "HLVR_Options_SpectatorEye_desc"				"Selecciona la perspectiva que se mostrará en el duplicado en las pantallas que no son de RV como tu monitor o tu televisor.\n\nPor defecto, este ajuste coincide con mano del arma, pero puede cambiarse."
 "HLVR_Options_SpectatorEye_base"				"Vista de espectador"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"Apagado"
 "HLVR_Options_r_light_flickering_enabled"			"Luces parpadeantes"
 
+"HLVR_Options_Rendering_API"					"API de renderizado"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"API actual:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"La API de renderizado se especificó en los parámetros de lanzamiento. Elimina el parámetro de lanzamiento para elegir una API de renderizado."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nRequiere reiniciar el juego para que surta efecto.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"Si el juego no se inicia correctamente después de cambiar esta configuración, puedes agregar -safe_mode a tus parámetros de lanzamiento para comenzar con una API de representación predeterminada."
+
 "HLVR_Options_cloth_rigid_update_Base"			"Tejido flexible"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"Número de ragdoll"
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"Movimiento en la mano del arma.\nEsto se puede modificar en las asignaciones del control de SteamVR."
 "HLVR_Lesson_Movement_OffHand"		"Movimiento en la mano sin arma.\nEsto se puede modificar en las asignaciones del control de SteamVR."
 "HLVR_Lesson_Teleport"							"Empuja para moverte"
-"HLVR_Lesson_Quick_Turn"						"Presiona para girar rápidamente a la izquierda o a la derecha"
+"HLVR_Lesson_Quick_Turn"						"Presiona para hacer un giro repentino a la izquierda o a la derecha"
 "HLVR_Lesson_GrabTrigger"						"Mantén pulsado para agarrar objetos"
 "HLVR_Lesson_GrabHands"							"Agarra objetos usando tus manos"
 "HLVR_Lesson_GrabHandsSingleController"			"Agarra objetos usando tu mano"

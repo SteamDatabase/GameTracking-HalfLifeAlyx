@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Partidas"
 "HLVR_MainMenu_StartNewGame"	  	"Iniciar partida nueva"
 "HLVR_MainMenu_StartGame"	  			"Iniciar partida"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Iniciar partida sin complementos"
+"HLVR_MainMenu_StartGameAddon"	  	"Iniciar partida con complementos"
 "HLVR_MainMenu_CreateNewGame"	  	"Crear nueva partida"
 
 "HLVR_MainMenu_Start"							"Iniciar"
 
 "HLVR_MainMenu_LoadSlot"					"Carga la ranura de partida %s"
 "HLVR_MainMenu_GameSlotHeader"		"Ranura de partida %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nRanura de partida %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Ranura"
 "HLVR_MainMenu_GameSlot"    	  	"Ranura de partida"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"Saltar los créditos"
 "HLVR_Skip_Credits_Confirm"				"¿Quieres saltar los créditos?"
 
+"HLVR_Addons"							"Complementos"
+"HLVR_MainMenu_ManageAddons"			"Administrar complementos"
+"HLVR_MainMenu_AddonsToolsMode"			"No se puede cargar un mapa con complementos mientras se está en el modo Herramientas."
+"HLVR_MainMenu_StartAddonGame"			"Iniciar la partida con los siguientes complementos:"
+"HLVR_MainMenu_AddonDisabled"			"Complemento asociado deshabilitado"
+
+"HLVR_browse_workshop_label"			"Explorar el Workshop"
+"HLVR_browse_workshop_confirm"			"¿Explorar el Workshop a través de la interfaz de Steam?"
+"HLVR_browse_workshop_desc"				"Explorar el Workshop de Half-Life: Alyx a través de la interfaz de Steam"
+
+"HLVR_local_addons"				"Complementos locales"
+"HLVR_downloaded_addons"		"Complementos descargados"
+"HLVR_enabled_addons"			"Complementos activados:"
+"HLVR_addon_game"				"Partida con complementos"
+
 "HLVR_MainMenu_Attention"												"Atención"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Tu CPU está por debajo de los requisitos mínimos para Half-Life Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"La memoria del sistema está por debajo de los requisitos mínimos para Half-Life Alyx."
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half Life: Alyx puede ser inestable debido al poco espacio disponible en el disco duro de tu sistema operativo, lo que puede limitar el tamaño de tu archivo de paginación."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Se ha detectado que la memoria disponible para la unidad de procesamiento de gráficos (GPU) es baja, cierra los programas abiertos que no sean necesarios para aumentar la disponibilidad de dicha memoria."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Se ha detectado que la memoria del sistema disponible es baja, cierra los programas abiertos que no sean necesarios para aumentar la disponibilidad de dicha memoria."
+"HLVR_MainMenu_Old_Driver_Version"								"La versión del controlador de tu GPU es inferior a la versión recomendada para Half-Life: Alyx en Vulkan. Instala el controlador más reciente para tu GPU."
 
 "HLVR_MainMenu_ModalQuit"						"¿Deseas salir de Half-Life Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"¿Deseas ir al menú principal?"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"Sin subtítulos"
 "HLVR_Options_Subtitles_On"						"Con subtítulos"
 "HLVR_Options_Subtitles_CC_On"					"Subtítulos y CC"
+"HLVR_Options_Subtitles_desc"					"Configurar para mostrar subtítulos y CC."
 
 "HLVR_Options_Subtitles_Speed"					"Velocidad"
 "HLVR_Options_Subtitles_Slow_Speed"				"Lenta"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"Ancho de los subtítulos en la pantalla."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"Solo ventana de espectador"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"Mostrar subtítulos y CC solamente en la ventana del espectador"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Mostrar subtítulos y CC solamente en la ventana del espectador."
 
 "HLVR_Options_LeftHanded"						"Arma en la mano: Izquierda"
 "HLVR_Options_RightHanded"						"Arma en la mano: Derecha"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"Mediano"
 "HLVR_Options_SpectatorHud_large"				"Grande"
 
-"HLVR_Options_SpectatorCamera_desc"				"Define la cantidad para suavizado de cámara en la ventana de espectador"
+"HLVR_Options_SpectatorCamera_desc"				"Define la cantidad de suavizado de cámara en la ventana de espectador.\n\nRequiere un nivel de zoom alto."
 "HLVR_Options_SpectatorCamera_base"				"Suavizado de cámara del espectador"
 "HLVR_Options_SpectatorCamera_off"				"Desactivado"
 "HLVR_Options_SpectatorCamera_low"				"Bajo"
 "HLVR_Options_SpectatorCamera_med"				"Medio"
-"HLVR_Options_SpectatorCamera_high"			"Alto"
+"HLVR_Options_SpectatorCamera_high"				"Alto"
+
+"HLVR_Options_SpectatorZoom_desc"				"Nivel de zoom del espectador."
+"HLVR_Options_SpectatorZoom_Base"				"Zoom del espectador"
+"HLVR_Options_SpectatorZoom_low"				"Bajo"
+"HLVR_Options_SpectatorZoom_high"				"Alto"
 
 "HLVR_Options_Spectator_Eye_desc"				"Cambia entre el ojo derecho e izquierdo del jugador para la ventana del espectador"
 "HLVR_Options_Spectator_Eye_Base"				"Ojo espectador"
-"HLVR_Options_Eye_Left"									"Izquierdo"
-"HLVR_Options_Eye_Right"								"Derecho"
+"HLVR_Options_Eye_Left"							"Izquierdo"
+"HLVR_Options_Eye_Right"						"Derecho"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"Dibuja el HUD en la ventana del StreamVR.\n\nEsto añade un coste de rendimiento."
+"HLVR_Options_SpectatorSteamVR_Base"			"HUD del espectador en SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"Activado"
+"HLVR_Options_SpectatorSteamVR_Off"				"Desactivado"
 
 "HLVR_Options_SpectatorEye_desc"				"Elige la perspectiva visual que se muestra reflejada en pantallas que no son de RV, como tu monitor o tu televisión.\n\nDe forma predeterminada coincide con la mano actual que tiene el arma, pero se puede cambiar."
 "HLVR_Options_SpectatorEye_base"				"Vista de espectador"
@@ -257,7 +287,7 @@
 "HLVR_Options_Fidelity_Ultra"							"Fidelidad ultra"
 "HLVR_Options_Fidelity_Custom"						"Fidelidad personalizada"
 
-"HLVR_Options_Graphics_Adv_desc" "Mostrar/esconder configuraciones de rendimiento avanzados"
+"HLVR_Options_Graphics_Adv_desc" "Mostrar/ocultar las configuraciones de rendimiento avanzadas"
 
 "HLVR_Options_Graphics_Reset"					"Restablecer"
 "HLVR_Options_Graphics_Reset_desc"				"Restablecer la configuración de rendimiento a un nivel recomendado"
@@ -266,7 +296,7 @@
 "HLVR_Options_Graphics_desc"					 "Los ajustes de rendimiento del juego se establecen automáticamente. Modificar estos ajustes puede afectar a la frecuencia de los fotogramas."
 
 "HLVR_Options_Graphics_Textures_Base"			"Texturas"
-"HLVR_Options_Graphics_Textures_Desc"			"Establece la calidad de la textura\n\nLa calidad de la textura se configura independientemente de la configuración de fidelidad de rendimiento"
+"HLVR_Options_Graphics_Textures_Desc"			"Establece la calidad de las texturas\n\nLa calidad de las texturas y la fidelidad de rendimiento se configuran por separado"
 "HLVR_Options_Graphics_Textures_Low"			"Bajo"
 "HLVR_Options_Graphics_Textures_Medium"	"Medio"
 "HLVR_Options_Graphics_Textures_High"		"Alto"
@@ -303,9 +333,17 @@
 "HLVR_Options_Graphics_Audio_Ultra"			"Ultra"
 
 "HLVR_Options_High_Quality_Holograms"			"Hologramas de alta calidad"
-"HLVR_Options_High_Quality_Holograms_on"			"Activado"
-"HLVR_Options_High_Quality_Holograms_off"			"Desactivado"
+"HLVR_Options_High_Quality_Holograms_on"			"Activados"
+"HLVR_Options_High_Quality_Holograms_off"			"Desactivados"
 "HLVR_Options_r_light_flickering_enabled"			"Luces parpadeantes"
+
+"HLVR_Options_Rendering_API"					"API de renderizado"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"API actual:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"La API de renderizado se ha especificado en los parámetros de lanzamiento. Elimina el parámetro de lanzamiento para elegir una API de renderizado."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nRequiere reiniciar el juego para que surta efecto.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"Si el juego no se inicia correctamente después de cambiar esta configuración, puedes añadir -safe_mode a los parámetros de lanzamiento para iniciarlo con una API de renderizado predeterminada."
 
 "HLVR_Options_cloth_rigid_update_Base"			"Tejido flexible"
 
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"Movimiento en la mano del arma.\nEsto se puede modificar en las asignaciones del mando de SteamVR."
 "HLVR_Lesson_Movement_OffHand"		"Movimiento en la mano sin arma.\nEsto se puede modificar en las asignaciones del mando de SteamVR."
 "HLVR_Lesson_Teleport"							"Presiona para moverte"
-"HLVR_Lesson_Quick_Turn"						"Presiona para girar rápidamente a la izquierda o a la derecha"
+"HLVR_Lesson_Quick_Turn"						"Presiona para girar bruscamente a la izquierda o a la derecha"
 "HLVR_Lesson_GrabTrigger"						"Mantén pulsado para agarrar objetos"
 "HLVR_Lesson_GrabHands"							"Coge objetos usando tus manos"
 "HLVR_Lesson_GrabHandsSingleController"			"Coge objetos usando tu mano"
@@ -387,8 +425,8 @@
 "HLVR_Lesson_ShotgunUpgradeGrenade"				"Coloca una granada en la boca de la escopeta"
 "HLVR_Lesson_ShotgunUpgradeGrenadePump"			"Empuja la manilla hacia adelante para dejar listo el lanzagranadas\no dispara para atacar normalmente"
 "HLVR_Lesson_ShotgunUpgradeGrenadePumpSingleController"			"Presiona para dejar listo el lanzagranadas\no dispara para atacar normalmente"
-"HLVR_Lesson_ShotgunUpgradeGrenadeFire"			"Pulsa para lanzar la granada\no saca la granada para desarmar el lanzagranadas"
-"HLVR_Lesson_ShotgunUpgradeGrenadeFireSingleController"			"Presiona para armar el lanzagranadas\no dispara para lanzar la granada"
+"HLVR_Lesson_ShotgunUpgradeGrenadeFire"			"Presiona para lanzar la granada\no saca la granada para desarmar el lanzagranadas"
+"HLVR_Lesson_ShotgunUpgradeGrenadeFireSingleController"			"Presiona para desarmar el lanzagranadas\no dispara para lanzar la granada"
 
 "HLVR_Lesson_Rapidfire_InsertCapsule_Gun"		"Inserta la pila de energía en el arma"
 "HLVR_Lesson_Rapidfire_InsertCapsule_Clip"		"Inserta la pila de energía en el arma"
@@ -539,7 +577,7 @@
 "HLVR_Chapter_Number_09"							"CAPÍTULO 10"
 "HLVR_Chapter_Number_10"							"CAPÍTULO 11"
 
-"HLVR_Chapter_Title_00"								"Enredo"
+"HLVR_Chapter_Title_00"								"Entrelazamiento"
 "HLVR_Chapter_Title_01"								"Zona de cuarentena"
 "HLVR_Chapter_Title_02"								"Es o será"
 "HLVR_Chapter_Title_03"								"Superarma"

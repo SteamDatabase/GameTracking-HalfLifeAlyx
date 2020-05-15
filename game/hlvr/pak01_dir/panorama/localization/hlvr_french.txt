@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Parties"
 "HLVR_MainMenu_StartNewGame"	  	"Commencer une nouvelle partie"
 "HLVR_MainMenu_StartGame"	  			"Commencer la partie"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Lancer le jeu sans extensions"
+"HLVR_MainMenu_StartGameAddon"	  	"Lancer le jeu avec les extensions"
 "HLVR_MainMenu_CreateNewGame"	  	"Créer une nouvelle partie"
 
 "HLVR_MainMenu_Start"							"Commencer"
 
 "HLVR_MainMenu_LoadSlot"					"Charger la sauvegarde %s"
 "HLVR_MainMenu_GameSlotHeader"		"Sauvegarde %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nSauvegarde %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Emplacement"
 "HLVR_MainMenu_GameSlot"    	  	"Sauvegarde"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"Passer les crédits"
 "HLVR_Skip_Credits_Confirm"				"Passer les crédits ?"
 
+"HLVR_Addons"							"Extensions"
+"HLVR_MainMenu_ManageAddons"			"Gérer les extensions"
+"HLVR_MainMenu_AddonsToolsMode"			"Impossible de charger une carte avec des extensions en mode Outils."
+"HLVR_MainMenu_StartAddonGame"			"Lancer le jeu avec les extensions suivantes :"
+"HLVR_MainMenu_AddonDisabled"			"Extension associée désactivée"
+
+"HLVR_browse_workshop_label"			"Parcourir le Workshop"
+"HLVR_browse_workshop_confirm"			"Parcourir le Workshop depuis l'overlay Steam ?"
+"HLVR_browse_workshop_desc"				"Parcourir le Workshop de Half-Life: Alyx depuis l'overlay Steam"
+
+"HLVR_local_addons"				"Extensions locales"
+"HLVR_downloaded_addons"		"Extensions téléchargées"
+"HLVR_enabled_addons"			"Extensions actives :"
+"HLVR_addon_game"				"Partie avec extensions actives"
+
 "HLVR_MainMenu_Attention"												"Attention"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Votre processeur ne correspond pas à la configuration minimale requise pour Half-Life Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"Votre mémoire système ne correspond pas à la configuration minimale requise pour Half-Life Alyx."
@@ -53,8 +71,9 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx peut être instable en raison du faible espace sur le disque de votre système d'exploitation. Cela risque de limiter la taille de votre fichier d’échange."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Faible mémoire graphique disponible détectée. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Faible mémoire système disponible. Veuillez fermer tous les programmes non essentiels pour augmenter la disponibilité de la mémoire."
+"HLVR_MainMenu_Old_Driver_Version"								"La version de votre pilote graphique est inférieure à celle recommandée pour Half-Life: Alyx sur Vulkan. Veuillez installer le pilote le plus récent pour votre processeur graphique."
 
-"HLVR_MainMenu_ModalQuit"						"Quitter Half-Life Alyx ?"
+"HLVR_MainMenu_ModalQuit"						"Quitter Half-Life: Alyx ?"
 "HLVR_MainMenu_ModalMainMenu"					"Aller au menu principal ?"
 "HLVR_MainMenu_ModalLoadGame"					"Charger la partie sauvegardée ?"
 "HLVR_MainMenu_ModalNewGame"					"Créer une nouvelle partie ?"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"Sous-titres désactivés"
 "HLVR_Options_Subtitles_On"						"Sous-titres activés"
 "HLVR_Options_Subtitles_CC_On"					"Sous-titres et descriptions"
+"HLVR_Options_Subtitles_desc"					"Paramétrez l'affichage des sous-titres et descriptions."
 
 "HLVR_Options_Subtitles_Speed"					"Vitesse"
 "HLVR_Options_Subtitles_Slow_Speed"				"Lente"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"Largeur des sous-titres à l'écran."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"Fenêtre spectateur uniquement"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"Afficher les sous-titres et les descriptions dans la fenêtre spectateur uniquement"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Afficher les sous-titres et les descriptions dans la fenêtre spectateur uniquement."
 
 "HLVR_Options_LeftHanded"						"Main de l'arme : gauche"
 "HLVR_Options_RightHanded"						"Main de l'arme : droite"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"Moyen"
 "HLVR_Options_SpectatorHud_large"				"Grand"
 
-"HLVR_Options_SpectatorCamera_desc"				"Définissez la qualité de la stabilisation du mouvement de la caméra dans la vue du mode spectateur"
+"HLVR_Options_SpectatorCamera_desc"				"Définissez le niveau de stabilisation du mouvement de la caméra dans la fenêtre spectateur.\n\nUn niveau de zoom élevé est nécessaire."
 "HLVR_Options_SpectatorCamera_base"				"Stabilisation du mouvement de la caméra en mode spectateur"
 "HLVR_Options_SpectatorCamera_off"				"Désactivée"
 "HLVR_Options_SpectatorCamera_low"				"Faible"
 "HLVR_Options_SpectatorCamera_med"				"Moyenne"
-"HLVR_Options_SpectatorCamera_high"			"Élevée"
+"HLVR_Options_SpectatorCamera_high"				"Élevée"
+
+"HLVR_Options_SpectatorZoom_desc"				"Niveau de zoom du spectateur."
+"HLVR_Options_SpectatorZoom_Base"				"Zoom du spectateur"
+"HLVR_Options_SpectatorZoom_low"				"Faible"
+"HLVR_Options_SpectatorZoom_high"				"Élevé"
 
 "HLVR_Options_Spectator_Eye_desc"				"Modifiez l'affichage de la fenêtre spectateur en basculant entre l'œil droit et l'œil gauche du joueur"
 "HLVR_Options_Spectator_Eye_Base"				"Vue spectateur"
-"HLVR_Options_Eye_Left"									"Œil gauche"
-"HLVR_Options_Eye_Right"								"Œil droit"
+"HLVR_Options_Eye_Left"							"Œil gauche"
+"HLVR_Options_Eye_Right"						"Œil droit"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"Afficher l'écran spectateur dans la fenêtre de SteamVR.\n\nCette option réduit les performances."
+"HLVR_Options_SpectatorSteamVR_Base"			"Écran spectateur dans SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"Activé"
+"HLVR_Options_SpectatorSteamVR_Off"				"Désactivé"
 
 "HLVR_Options_SpectatorEye_desc"				"Choisissez l'angle de vue qui s'affichera sur les écrans non VR comme votre écran d'ordinateur ou votre téléviseur.\n\nPar défaut, ce sera l'œil du même côté que votre main avec laquelle vous tenez votre arme, mais cela peut être modifié."
 "HLVR_Options_SpectatorEye_base"				"Vue du spectateur"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"Désactivés"
 "HLVR_Options_r_light_flickering_enabled"			"Lumières scintillantes"
 
+"HLVR_Options_Rendering_API"					"API de rendu"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"API actuelle :"
+"HLVR_Options_Rendering_API_Desc_Locked"		"L'API de rendu a été spécifiée dans les options de lancement. Supprimez cette option de lancement pour choisir votre API de rendu."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nL'option sera appliquée après redémarrage du jeu.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"Si le lancement du jeu ne se fait pas correctement après modification de ce paramètre, vous pouvez ajouter « -safe_mode » dans vos options de lancement afin de démarrer le jeu avec l'API de rendu par défaut."
+
 "HLVR_Options_cloth_rigid_update_Base"			"Tissu souple"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"Nombre de ragdolls"
@@ -341,8 +379,8 @@
 "HLVR_Lesson_Single_Controller_Off"	"Mode « un seul contrôleur » désactivé"
 "HLVR_Lesson_Movement_PrimaryHand"	"Mouvements contrôlés pas la main qui tient l'arme.\nPeut être modifié dans la configuration des contrôleurs dans SteamVR"
 "HLVR_Lesson_Movement_OffHand"		"Mouvements contrôlés par la main qui ne tient pas l'arme.\nPeut être modifié dans la configuration des contrôleurs dans SteamVR"
-"HLVR_Lesson_Teleport"							"Poussez le stick pour avancer"
-"HLVR_Lesson_Quick_Turn"						"Poussez pour tourner rapidement à gauche ou à droite"
+"HLVR_Lesson_Teleport"							"Faites glisser pour avancer"
+"HLVR_Lesson_Quick_Turn"						"Glissez pour tourner rapidement à gauche ou à droite"
 "HLVR_Lesson_GrabTrigger"						"Appuyez et maintenez pour saisir des objets"
 "HLVR_Lesson_GrabHands"							"Saisissez des objets avec vos mains"
 "HLVR_Lesson_GrabHandsSingleController"			"Saisissez des objets avec votre main"

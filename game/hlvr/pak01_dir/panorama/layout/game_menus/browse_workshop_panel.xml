@@ -1,0 +1,15 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <Panel>
+    <GameMenuOptionCyclePanel convar="hlvr_workshop_sort" baseLabel="Sort By" label0="Popular" label1="Recent" label2="Recommended" />
+    <Panel class="row_divider_line_small" />      
+  </Panel>
+</root>
+
+
+
+

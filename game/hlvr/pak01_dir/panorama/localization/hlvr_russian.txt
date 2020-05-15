@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Игры"
 "HLVR_MainMenu_StartNewGame"	  	"Начать новую игру"
 "HLVR_MainMenu_StartGame"	  			"Начать игру"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Начать игру без аддонов"
+"HLVR_MainMenu_StartGameAddon"	  	"Начать игру с аддонами"
 "HLVR_MainMenu_CreateNewGame"	  	"Создать новую игру"
 
 "HLVR_MainMenu_Start"							"Начать"
 
 "HLVR_MainMenu_LoadSlot"					"Загрузить сохранение %s"
 "HLVR_MainMenu_GameSlotHeader"		"Сохранение %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nСохранение %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Сохранение"
 "HLVR_MainMenu_GameSlot"    	  	"Сохранение"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"Пропустить титры"
 "HLVR_Skip_Credits_Confirm"				"Пропустить титры?"
 
+"HLVR_Addons"							"Аддоны"
+"HLVR_MainMenu_ManageAddons"			"Управление аддонами"
+"HLVR_MainMenu_AddonsToolsMode"			"Невозможно загрузить карту с аддонами в режиме инструментов."
+"HLVR_MainMenu_StartAddonGame"			"Начать игру со следующими аддонами:"
+"HLVR_MainMenu_AddonDisabled"			"Связанный аддон выключен"
+
+"HLVR_browse_workshop_label"			"Мастерская Steam"
+"HLVR_browse_workshop_confirm"			"Открыть мастерскую Steam в оверлее?"
+"HLVR_browse_workshop_desc"				"Открыть мастерскую Steam для Half-Life: Alyx в оверлее"
+
+"HLVR_local_addons"				"Локальные аддоны"
+"HLVR_downloaded_addons"		"Загруженные аддоны"
+"HLVR_enabled_addons"			"Работающие аддоны:"
+"HLVR_addon_game"				"Игра с аддонами"
+
 "HLVR_MainMenu_Attention"												"Внимание"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Ваш процессор не отвечает минимальным требованиям для Half-Life Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"Оперативная память не отвечает минимальным требованиям для Half-Life Alyx."
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Из-за недостатка места на диске размер файла подкачки ограничен, поэтому Half-Life: Alyx может работать нестабильно."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Не хватает памяти видеокарты. Закройте все ненужные программы, чтобы увеличить объём доступной памяти."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Не хватает системной памяти. Закройте все ненужные программы, чтобы увеличить объём доступной памяти."
+"HLVR_MainMenu_Old_Driver_Version"								"Версия драйвера вашей видеокарты ниже рекомендуемой для Half-Life: Alyx с использованием Vulkan. Пожалуйста, установите последнюю версию драйвера."
 
 "HLVR_MainMenu_ModalQuit"						"Выйти из игры?"
 "HLVR_MainMenu_ModalMainMenu"					"Выйти в главное меню?"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"Без субтитров"
 "HLVR_Options_Subtitles_On"						"Субтитры реплик"
 "HLVR_Options_Subtitles_CC_On"					"Субтитры реплик и звуков"
+"HLVR_Options_Subtitles_desc"					"Показывать обычные субтитры и субтитры звуковых эффектов."
 
 "HLVR_Options_Subtitles_Speed"					"Скорость"
 "HLVR_Options_Subtitles_Slow_Speed"				"Низкая"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"Ширина субтитров на экране."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"Только на экране зрителя"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"Показывать субтитры реплик и звуков только на экране зрителя"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Показывать субтитры реплик и звуков только на экране зрителя."
 
 "HLVR_Options_LeftHanded"						"Рука с оружием: левая"
 "HLVR_Options_RightHanded"						"Рука с оружием: правая"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"Средний"
 "HLVR_Options_SpectatorHud_large"				"Большой"
 
-"HLVR_Options_SpectatorCamera_desc"				"Задаёт степень сглаживания камеры в окне зрителя"
+"HLVR_Options_SpectatorCamera_desc"				"Задаёт степень сглаживания камеры в окне зрителя.\n\nТребуется сильное приближение."
 "HLVR_Options_SpectatorCamera_base"				"Сглаживание обзора зрителя"
 "HLVR_Options_SpectatorCamera_off"				"Выкл."
 "HLVR_Options_SpectatorCamera_low"				"Низкое"
 "HLVR_Options_SpectatorCamera_med"				"Среднее"
-"HLVR_Options_SpectatorCamera_high"			"Высокое"
+"HLVR_Options_SpectatorCamera_high"				"Высокое"
+
+"HLVR_Options_SpectatorZoom_desc"				"Приближение для зрителей."
+"HLVR_Options_SpectatorZoom_Base"				"Приближение зрителей"
+"HLVR_Options_SpectatorZoom_low"				"Слабое"
+"HLVR_Options_SpectatorZoom_high"				"Сильное"
 
 "HLVR_Options_Spectator_Eye_desc"				"Смена между правым и левым глазом игрока в окне зрителя"
 "HLVR_Options_Spectator_Eye_Base"				"Обзор зрителя"
-"HLVR_Options_Eye_Left"									"Левый глаз"
-"HLVR_Options_Eye_Right"								"Правый глаз"
+"HLVR_Options_Eye_Left"							"Левый глаз"
+"HLVR_Options_Eye_Right"						"Правый глаз"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"Отображать интерфейс в окне SteamVR.\n\nНемного понижает производительность."
+"HLVR_Options_SpectatorSteamVR_Base"			"Интерфейс зрителя в SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"Вкл."
+"HLVR_Options_SpectatorSteamVR_Off"				"Выкл."
 
 "HLVR_Options_SpectatorEye_desc"				"Выберите, изображение для какого глаза будет отображаться на экранах не для виртуальной реальности: например, мониторе или телевизоре.\n\nПо умолчанию он соответствует выбранной руке для оружия, но это можно изменить."
 "HLVR_Options_SpectatorEye_base"				"Обзор зрителя"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"Выкл."
 "HLVR_Options_r_light_flickering_enabled"			"Мерцание источников света"
 
+"HLVR_Options_Rendering_API"					"API рендеринга"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"Текущий API:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"Эта настройка игнорируется, так как API рендеринга задан в параметрах запуска игры."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nИзменения вступят в силу после перезапуска игры.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"Если после изменения этой настройки игра не запускается должным образом, задайте параметр запуска -safe_mode для возврата к стандартному API."
+
 "HLVR_Options_cloth_rigid_update_Base"			"Мягкая ткань"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"Макс. количество трупов"
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"Движение управляется рукой с оружием.\nМожно изменить в раскладке контроллера SteamVR."
 "HLVR_Lesson_Movement_OffHand"		"Движение управляется рукой без оружия.\nМожно изменить в раскладке контроллера SteamVR."
 "HLVR_Lesson_Teleport"							"Нажмите, чтобы двигаться"
-"HLVR_Lesson_Quick_Turn"						"Нажмите, чтобы быстро повернуться влево или вправо"
+"HLVR_Lesson_Quick_Turn"						"Нажмите, чтобы мгновенно повернуться влево или вправо"
 "HLVR_Lesson_GrabTrigger"						"Зажмите, чтобы взять объект"
 "HLVR_Lesson_GrabHands"							"Берите предметы с помощью рук"
 "HLVR_Lesson_GrabHandsSingleController"			"Берите предметы с помощью руки"

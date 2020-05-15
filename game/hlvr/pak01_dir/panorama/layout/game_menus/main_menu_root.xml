@@ -62,7 +62,12 @@
                 <Label class="button_label" text="#HLVR_MainMenu_Options"/>
                 <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
               </Button>
-            
+
+              <Button id="addon_button" onactivate="GameMenuNavigation_CmdButton( 'show_addon_container_01' );" onmouseover="GameMenu_MouseOver( 'show_addon_container_01' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
+                <Label class="button_label" text="#HLVR_Addons"/>
+                <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+              </Button>
+              
               <Button id="quit_button" onactivate="GameMenu_Cmd( quit )" onmouseover="GameMenu_MouseOver( 'show_quit_container' )" onmouseout="GameMenu_MouseOut( 'show_save_container', 0 )">
                 <Label class="button_label" text="#HLVR_MainMenu_Quit"/>
                 <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />

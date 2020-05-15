@@ -1,0 +1,28 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <Panel class="chapter_item">
+
+    <Button id="occupied_save_slot" onactivate="AddonMapSelected()" onmouseover="AddonMapMouseOver()">
+      <!--<Label class="load_item_hover" text="{s:new_game} {s:slot}"/>-->
+      <Panel class="row">
+        <Panel class="button_label_single">
+          <Label class="text_xsmall" text="{s:chapter_number}"/>
+          <Label class="text_small" text="{s:chapter_name}"/>
+        </Panel>
+        <Panel class="button_bullet">
+          <Image src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+        </Panel>
+      </Panel>
+    </Button>
+
+  </Panel>
+
+</root>
+
+
+
+

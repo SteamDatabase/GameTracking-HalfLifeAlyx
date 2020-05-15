@@ -1,0 +1,54 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <HLVRAddonInformationPanel class="addon_info_panel">
+    
+    <Panel class="col_body">
+      <Panel class="header">
+        <Label class="header" text="TODO: Header : Addon Info" />
+      </Panel>
+
+      <Panel class="addon_spacer" />
+
+      <Panel class="row">
+        <Panel class="addon_col_body">
+          <Label class="addon_body_copy" text="PlaceHolder : Addon Description Text here Addon Description Text hereAddon Description Text hereAddon Description Text here" />
+        </Panel>
+
+        <Panel class="addon_col_body">
+          <Image id="ItemThumbImage" class="addon_screenshot" />
+
+          <Label class="addon_credits" text="Author : Gordon" />
+
+          <Label class="addon_credits" text="Tags : TEMP" />
+
+          <Panel class="addon_spacer" />
+          
+          <Label class="addon_credits" text="Subscribers : 9001" />
+
+          <Label class="addon_credits" text="Favorites : 777" />
+          
+          <Panel class="row">
+            <Button class="addon_vote_button" >
+              <Label class="cta" text="UpVote" onactivate="AddonUpVoteButton()"/>
+            </Button>
+            <Button class="addon_vote_button" onactivate="AddonDownVoteButton()">
+              <Label class="cta" text="DnVote" />
+            </Button>
+          </Panel>
+          
+        </Panel>
+
+       
+      </Panel>
+
+      <Panel class="addon_spacer" />
+
+      <Panel class="addon_spacer" />
+    </Panel>
+    
+  </HLVRAddonInformationPanel>
+</root>

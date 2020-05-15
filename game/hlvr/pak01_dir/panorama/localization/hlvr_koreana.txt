@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"저장된 게임"
 "HLVR_MainMenu_StartNewGame"	  	"새 게임 시작하기"
 "HLVR_MainMenu_StartGame"	  			"게임 시작하기"
+"HLVR_MainMenu_StartGameNoAddon"	  	"애드온이 없는 게임 시작"
+"HLVR_MainMenu_StartGameAddon"	  	"애드온이 있는 게임 시작"
 "HLVR_MainMenu_CreateNewGame"	  	"새 게임 만들기"
 
 "HLVR_MainMenu_Start"							"시작"
 
 "HLVR_MainMenu_LoadSlot"					"게임 슬롯 %s 불러오기"
 "HLVR_MainMenu_GameSlotHeader"		"게임 슬롯 %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\n게임 슬롯 %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"슬롯"
 "HLVR_MainMenu_GameSlot"    	  	"게임 슬롯"
@@ -43,18 +46,34 @@
 "HLVR_Skip_Credits"								"크레딧 건너뛰기"
 "HLVR_Skip_Credits_Confirm"				"크레딧을 건너뛸까요?"
 
+"HLVR_Addons"							"애드온"
+"HLVR_MainMenu_ManageAddons"			"애드온 관리"
+"HLVR_MainMenu_AddonsToolsMode"			"도구 모드에서는 애드온이 있는 맵을 불러올 수 없습니다."
+"HLVR_MainMenu_StartAddonGame"			"다음 애드온이 있는 게임 시작하기:"
+"HLVR_MainMenu_AddonDisabled"			"관련 애드온 비활성화됨"
+
+"HLVR_browse_workshop_label"			"창작마당 둘러보기"
+"HLVR_browse_workshop_confirm"			"Steam 오버레이에서 창작마당을 둘러볼까요?"
+"HLVR_browse_workshop_desc"				"Steam 오버레이에서 Half-Life: Alyx 창작마당 둘러보기"
+
+"HLVR_local_addons"				"로컬 애드온"
+"HLVR_downloaded_addons"		"다운로드된 애드온"
+"HLVR_enabled_addons"			"활성화된 애드온:"
+"HLVR_addon_game"				"애드온이 활성화된 게임"
+
 "HLVR_MainMenu_Attention"												"주목"
-"HLVR_MainMenu_Attention_MinSpec_CPU"								"CPU가 Half-Life Alyx의 최소 요구 사항보다 낮습니다."
-"HLVR_MainMenu_Attention_MinSpec_RAM"								"시스템 메모리가 Half-Life Alyx의 최소 요구 사항보다 낮습니다."
-"HLVR_MainMenu_Attention_MinSpec_GPU"								"그래픽 장치가 Half-Life Alyx의 최소 요구 사항보다 낮습니다."
+"HLVR_MainMenu_Attention_MinSpec_CPU"								"CPU가 Half-Life: Alyx의 최소 요구 사항보다 낮습니다."
+"HLVR_MainMenu_Attention_MinSpec_RAM"								"시스템 메모리가 Half-Life: Alyx의 최소 요구 사항보다 낮습니다."
+"HLVR_MainMenu_Attention_MinSpec_GPU"								"그래픽 장치가 Half-Life: Alyx의 최소 요구 사항보다 낮습니다."
 "HLVR_MainMenu_Attention_Above_Recommended"					"설정이 권장 수준 이상입니다."
 "HLVR_MainMenu_Attention_Warning"										"게임 플레이에 영향을 줄 수 있습니다."
 "HLVR_MainMenu_Attention_Graphics_Reset"						"성능 설정을 권장 수준으로 되돌렸습니다."
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"사용 중인 운영 체제 드라이브의 디스크 공간이 부족하여 페이지 파일 크기가 제한되므로, Half-Life: Alyx 플레이가 불안정할 수 있습니다."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"GPU 메모리 가용량 부족이 감지되었습니다. 필요없는 프로그램을 닫아 GPU 메모리 가용량을 늘려 주세요."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"시스템 메모리 가용량 부족이 감지되었습니다. 필요없는 프로그램을 닫아 시스템 메모리 가용량을 늘려 주세요."
+"HLVR_MainMenu_Old_Driver_Version"								"사용하고 계신 GPU 드라이버 버전이 Vulkan용 Half-Life: Alyx의 권장 버전보다 낮습니다. GPU의 최신 드라이버를 설치하세요."
 
-"HLVR_MainMenu_ModalQuit"						"Half-Life Alyx에서 나갈까요?"
+"HLVR_MainMenu_ModalQuit"						"Half-Life: Alyx에서 나갈까요?"
 "HLVR_MainMenu_ModalMainMenu"					"메인 메뉴로 갈까요?"
 "HLVR_MainMenu_ModalLoadGame"					"저장 파일을 불러올까요?"
 "HLVR_MainMenu_ModalNewGame"					"새 게임을 만들까요?"
@@ -67,7 +86,7 @@
 
 "HLVR_MainMenu_Init_desc"		    			"주로 사용할 손을 선택하세요\n\n이 설정은 설정 메뉴에서 언제든지 변경할 수 있습니다."
 
-"HLVR_MainMenu_NewGame_desc" 					"Half-Life Alyx의 새 게임을 시작합니다."
+"HLVR_MainMenu_NewGame_desc" 					"Half-Life: Alyx의 새 게임을 시작합니다."
 "HLVR_MainMenu_SaveGame_desc" 					"현재 진행 상황을 빠르게 저장합니다."
 
 "HLVR_MainMenu_Resin"							"레진"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"자막 표시 안 함"
 "HLVR_Options_Subtitles_On"						"자막 표시"
 "HLVR_Options_Subtitles_CC_On"					"자막 및 폐쇄 자막 표시"
+"HLVR_Options_Subtitles_desc"					"자막 및 폐쇄 자막 표시로 설정합니다."
 
 "HLVR_Options_Subtitles_Speed"					"속도"
 "HLVR_Options_Subtitles_Slow_Speed"				"느림"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"화면 상의 자막 너비입니다."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"관전자 창 전용"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"관전자 창에 자막과 폐쇄 자막만 표시됩니다."
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"관전자 창에만 자막과 폐쇄 자막이 표시됩니다."
 
 "HLVR_Options_LeftHanded"						"무기를 드는 손: 왼손"
 "HLVR_Options_RightHanded"						"무기를 드는 손: 오른손"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"보통"
 "HLVR_Options_SpectatorHud_large"				"크게"
 
-"HLVR_Options_SpectatorCamera_desc"				"관전자 창의 카메라 스무딩 정도를 설정합니다."
+"HLVR_Options_SpectatorCamera_desc"				"관전자 창의 카메라 스무딩 정도를 설정합니다.\n\n높은 확대/축소 수준이 요구됩니다."
 "HLVR_Options_SpectatorCamera_base"				"관전자 카메라 스무딩"
 "HLVR_Options_SpectatorCamera_off"				"꺼짐"
 "HLVR_Options_SpectatorCamera_low"				"낮음"
 "HLVR_Options_SpectatorCamera_med"				"보통"
-"HLVR_Options_SpectatorCamera_high"			"높음"
+"HLVR_Options_SpectatorCamera_high"				"높음"
+
+"HLVR_Options_SpectatorZoom_desc"				"관전자 창의 확대/축소 수준입니다."
+"HLVR_Options_SpectatorZoom_Base"				"관전자 창 확대/축소"
+"HLVR_Options_SpectatorZoom_low"				"낮음"
+"HLVR_Options_SpectatorZoom_high"				"높음"
 
 "HLVR_Options_Spectator_Eye_desc"				"관전자 창에서 플레이어의 오른쪽 눈이나 왼쪽 눈 시점으로 전환합니다."
 "HLVR_Options_Spectator_Eye_Base"				"관전자 시점"
-"HLVR_Options_Eye_Left"									"왼쪽"
-"HLVR_Options_Eye_Right"								"오른쪽"
+"HLVR_Options_Eye_Left"							"왼쪽"
+"HLVR_Options_Eye_Right"						"오른쪽"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"StreamVR 창에 헤드업 디스플레이를 표시합니다.\n\n성능 비용이 다소 추가됩니다."
+"HLVR_Options_SpectatorSteamVR_Base"			"SteamVR 내 관전자 헤드업 디스플레이"
+"HLVR_Options_SpectatorSteamVR_On"				"켜짐"
+"HLVR_Options_SpectatorSteamVR_Off"				"꺼짐"
 
 "HLVR_Options_SpectatorEye_desc"				"모니터나 텔레비전과 같이 미러링된 비 VR 화면에 표시할 시점을 선택합니다.\n\n기본적으로 현재 무기를 든 손과 일치하지만, 재정의할 수 있습니다."
 "HLVR_Options_SpectatorEye_base"				"관전자 시점"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"꺼짐"
 "HLVR_Options_r_light_flickering_enabled"			"깜빡이는 불빛"
 
+"HLVR_Options_Rendering_API"					"렌더링 API"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"현재 API:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"렌더링 API가 실행 옵션에 지정되었습니다. 렌더링 API를 선택하려면 실행 옵션을 제거하세요."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\n변경 사항을 적용하려면 게임을 다시 시작해야 합니다.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"이 설정을 변경한 후 게임이 제대로 실행되지 않는다면, 실행 옵션에 -safe_mode를 추가하여 기본 렌더링 API로 실행할 수 있습니다."
+
 "HLVR_Options_cloth_rigid_update_Base"			"부드러운 옷감"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"시체 숫자"
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"무기를 드는 손의 동작\nSteamVR 컨트롤러 바인딩에서 변경할 수 있습니다"
 "HLVR_Lesson_Movement_OffHand"		"빈 손의 동작\nSteamVR 컨트롤러 바인딩에서 변경할 수 있습니다"
 "HLVR_Lesson_Teleport"							"밀어서 이동하세요"
-"HLVR_Lesson_Quick_Turn"						"왼쪽이나 오른쪽으로 밀어서 빠른 회전을 하세요"
+"HLVR_Lesson_Quick_Turn"						"밀어서 왼쪽이나 오른쪽으로 즉각 회전을 하세요"
 "HLVR_Lesson_GrabTrigger"						"트리거를 길게 눌러 물체를 잡으세요"
 "HLVR_Lesson_GrabHands"							"두 손을 사용해 물체를 잡으세요"
 "HLVR_Lesson_GrabHandsSingleController"			"손으로 물체를 잡으세요"

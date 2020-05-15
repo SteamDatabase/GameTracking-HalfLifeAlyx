@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"游戏存档"
 "HLVR_MainMenu_StartNewGame"	  	"开始新游戏"
 "HLVR_MainMenu_StartGame"	  			"开始游戏"
+"HLVR_MainMenu_StartGameNoAddon"	  	"不使用加载项开始游戏"
+"HLVR_MainMenu_StartGameAddon"	  	"使用加载项开始游戏"
 "HLVR_MainMenu_CreateNewGame"	  	"创建新游戏"
 
 "HLVR_MainMenu_Start"							"开始"
 
 "HLVR_MainMenu_LoadSlot"					"加载存档栏 %s"
 "HLVR_MainMenu_GameSlotHeader"		"存档栏 %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\n游戏存档栏 %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"存档栏"
 "HLVR_MainMenu_GameSlot"    	  	"游戏存档栏"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"跳过制作团队名单"
 "HLVR_Skip_Credits_Confirm"				"跳过制作团队名单？"
 
+"HLVR_Addons"							"加载项"
+"HLVR_MainMenu_ManageAddons"			"管理加载项"
+"HLVR_MainMenu_AddonsToolsMode"			"在工具模式下无法载入有加载项的地图。"
+"HLVR_MainMenu_StartAddonGame"			"使用以下加载项开始游戏："
+"HLVR_MainMenu_AddonDisabled"			"关联加载项已禁用"
+
+"HLVR_browse_workshop_label"			"浏览创意工坊"
+"HLVR_browse_workshop_confirm"			"通过 Steam 界面浏览创意工坊？"
+"HLVR_browse_workshop_desc"				"通过 Steam 界面浏览《半衰期：爱莉克斯》创意工坊"
+
+"HLVR_local_addons"				"本地加载项"
+"HLVR_downloaded_addons"		"已下载的加载项"
+"HLVR_enabled_addons"			"已启用的加载项："
+"HLVR_addon_game"				"启用了加载项的游戏"
+
 "HLVR_MainMenu_Attention"												"注意"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"您的 CPU 低于《半衰期：爱莉克斯》的最低配置要求。"
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"系统内存低于《半衰期：爱莉克斯》的最低配置要求。"
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"操作系统磁盘的空间不足，可能会限制页面文件的大小；这很可能导致《半衰期：爱莉克斯》运行不稳定。"
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"检测到可用GPU内存不足，请关闭所有非必要程序，以提高可用的GPU内存容量。"
 "HLVR_MainMenu_Attention_Low_System_Memory"						"检测到可用系统内存不足，请关闭所有非必要程序，以提高可用的系统内存容量。"
+"HLVR_MainMenu_Old_Driver_Version"								"您的 GPU 驱动程序版本低于《半衰期：爱莉克斯》在 Vulkan 上运行的推荐版本。请为您的 GPU 安装最新版本的驱动程序。"
 
 "HLVR_MainMenu_ModalQuit"						"是否要退出《半衰期：爱莉克斯》？"
 "HLVR_MainMenu_ModalMainMenu"					"是否要回到主菜单？"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"关闭字幕"
 "HLVR_Options_Subtitles_On"						"开启字幕"
 "HLVR_Options_Subtitles_CC_On"					"字幕与隐藏式字幕"
+"HLVR_Options_Subtitles_desc"					"设置以显示字幕和隐藏式字幕"
 
 "HLVR_Options_Subtitles_Speed"					"速度"
 "HLVR_Options_Subtitles_Slow_Speed"				"慢速"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"字幕在画面中的宽度。"
 
 "HLVR_Options_Subtitles_Spectator_Only"			"仅限旁观者窗口"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"仅在旁观者窗口中显示字幕和隐藏式字幕"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"只在旁观者窗口中显示字幕和隐藏式字幕"
 
 "HLVR_Options_LeftHanded"						"武器使用手：左手"
 "HLVR_Options_RightHanded"						"武器使用手：右手"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"中等"
 "HLVR_Options_SpectatorHud_large"				"较大"
 
-"HLVR_Options_SpectatorCamera_desc"				"设置旁观者窗口中视角平滑的程度"
+"HLVR_Options_SpectatorCamera_desc"				"设置旁观者窗口中视角平滑的程度。\n\n需要高缩放级别。"
 "HLVR_Options_SpectatorCamera_base"				"旁观者视角平滑"
 "HLVR_Options_SpectatorCamera_off"				"关闭"
 "HLVR_Options_SpectatorCamera_low"				"较低"
 "HLVR_Options_SpectatorCamera_med"				"中等"
-"HLVR_Options_SpectatorCamera_high"			"较高"
+"HLVR_Options_SpectatorCamera_high"				"较高"
+
+"HLVR_Options_SpectatorZoom_desc"				"旁观者缩放级别。"
+"HLVR_Options_SpectatorZoom_Base"				"旁观者缩放"
+"HLVR_Options_SpectatorZoom_low"				"较低"
+"HLVR_Options_SpectatorZoom_high"				"较高"
 
 "HLVR_Options_Spectator_Eye_desc"				"旁观者窗口在玩家左眼和右眼之间切换"
 "HLVR_Options_Spectator_Eye_Base"				"旁观者眼睛"
-"HLVR_Options_Eye_Left"									"左眼"
-"HLVR_Options_Eye_Right"								"右眼"
+"HLVR_Options_Eye_Left"							"左眼"
+"HLVR_Options_Eye_Right"						"右眼"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"在 SteamVR 窗口中绘制 HUD。\n\n这会增加一些性能开销。"
+"HLVR_Options_SpectatorSteamVR_Base"			"SteamVR 中的旁观者 HUD"
+"HLVR_Options_SpectatorSteamVR_On"				"开启"
+"HLVR_Options_SpectatorSteamVR_Off"				"关闭"
 
 "HLVR_Options_SpectatorEye_desc"				"选择在映射的非 VR 屏幕（如显示器或电视机）上显示哪一只眼睛的视角。\n\n默认与您当前的武器使用手匹配，但可被强制替代。"
 "HLVR_Options_SpectatorEye_base"				"旁观者视角眼睛"
@@ -307,6 +337,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"关闭"
 "HLVR_Options_r_light_flickering_enabled"			"闪烁光"
 
+"HLVR_Options_Rendering_API"					"渲染 API"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"当前 API："
+"HLVR_Options_Rendering_API_Desc_Locked"		"渲染 API 已在启动选项中指定。移除启动选项以选择一个渲染 API。"
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\n需要重启游戏才能生效。\n\n"
+"HLVR_Options_Rendering_API_Desc"				"如果更改此设置后游戏未正确启动，您可以将 -safe_mode 添加至启动选项，即可以默认渲染 API 启动。"
+
 "HLVR_Options_cloth_rigid_update_Base"			"软布料"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"布娃娃计数"
@@ -342,7 +380,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"用武器使用手来移动\n可在 SteamVR 控制器按键设置中修改"
 "HLVR_Lesson_Movement_OffHand"		"用非武器使用手来移动\n可在 SteamVR 控制器按建设置中修改"
 "HLVR_Lesson_Teleport"							"推动以进行移动"
-"HLVR_Lesson_Quick_Turn"						"推动以快速往左或往右转"
+"HLVR_Lesson_Quick_Turn"						"推动以向左或向右急转"
 "HLVR_Lesson_GrabTrigger"						"按住以抓取物体"
 "HLVR_Lesson_GrabHands"							"用您的双手抓取物体"
 "HLVR_Lesson_GrabHandsSingleController"			"用您的手抓取物体"

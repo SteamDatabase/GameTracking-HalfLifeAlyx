@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"ゲーム"
 "HLVR_MainMenu_StartNewGame"	  	"新規に開始"
 "HLVR_MainMenu_StartGame"	  			"ゲームを開始"
+"HLVR_MainMenu_StartGameNoAddon"	  	"アドオンを使わずにゲームを開始"
+"HLVR_MainMenu_StartGameAddon"	  	"アドオンを使用してゲームを開始"
 "HLVR_MainMenu_CreateNewGame"	  	"新規にゲームを作成"
 
 "HLVR_MainMenu_Start"							"開始"
 
 "HLVR_MainMenu_LoadSlot"					"ゲームスロット %s をロード"
 "HLVR_MainMenu_GameSlotHeader"		"ゲームスロット %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nゲームスロット %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"スロット"
 "HLVR_MainMenu_GameSlot"    	  	"ゲームスロット"
@@ -43,6 +46,21 @@
 "HLVR_Skip_Credits"								"クレジットをスキップ"
 "HLVR_Skip_Credits_Confirm"				"クレジットをスキップしますか？"
 
+"HLVR_Addons"							"アドオン"
+"HLVR_MainMenu_ManageAddons"			"アドオンを管理"
+"HLVR_MainMenu_AddonsToolsMode"			"ツールモードではアドオンを使用したマップをロードできません"
+"HLVR_MainMenu_StartAddonGame"			"以下のアドオンを使用してゲームを開始:"
+"HLVR_MainMenu_AddonDisabled"			"関連付けされたアドオンが無効になっています"
+
+"HLVR_browse_workshop_label"			"ワークショップを閲覧"
+"HLVR_browse_workshop_confirm"			"Steam オーバーレイを介してワークショップを閲覧しますか？"
+"HLVR_browse_workshop_desc"				"Steam オーバーレイを介して『Half-Life: Alyx』のワークショップを閲覧"
+
+"HLVR_local_addons"				"ローカルアドオン"
+"HLVR_downloaded_addons"		"ダウンロードしたアドオン"
+"HLVR_enabled_addons"			"有効化されたアドオン:"
+"HLVR_addon_game"				"アドオンを有効にしたゲーム"
+
 "HLVR_MainMenu_Attention"												"注意"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"CPUが『Half-Life Alyx』の必要最低スペックを満たしていません"
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"システムメモリが『Half-Life Alyx』の必要最低スペックを満たしていません"
@@ -53,6 +71,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"ドライブの空き容量が少なく、ページファイルのサイズが制限されるため、『Half Life: Alyx』の動作が不安定になる可能性があります"
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"GPUのメモリが不足しています。必要のないプログラムを閉じてメモリを増やしてください。"
 "HLVR_MainMenu_Attention_Low_System_Memory"						"システムメモリが不足しています。必要のないプログラムを閉じてメモリを増やしてください。"
+"HLVR_MainMenu_Old_Driver_Version"								"お使いのGPUドライバーのバージョンは、Vulkanを使用して『Half-Life: Alyx』を実行する際に推奨されたバージョンを下回っています。最新のGPUドライバーをインストールしてください。"
 
 "HLVR_MainMenu_ModalQuit"						"『Half-Life Alyx』を終了しますか？"
 "HLVR_MainMenu_ModalMainMenu"					"メインメニューに移動しますか？"
@@ -154,6 +173,7 @@
 "HLVR_Options_Subtitles_None"					"字幕　オフ"
 "HLVR_Options_Subtitles_On"						"字幕　オン"
 "HLVR_Options_Subtitles_CC_On"					"字幕とクローズドキャプション"
+"HLVR_Options_Subtitles_desc"					"字幕とクローズドキャプションの表示を設定します。"
 
 "HLVR_Options_Subtitles_Speed"					"速度"
 "HLVR_Options_Subtitles_Slow_Speed"				"遅い"
@@ -174,7 +194,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"字幕の表示される領域の幅です"
 
 "HLVR_Options_Subtitles_Spectator_Only"			"第三者視点ウィンドウのみ"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"字幕とクローズドキャプションの表示を設定します"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"字幕とクローズドキャプションをSpectator （第三者視点）ウィンドウのみに表示します。"
 
 "HLVR_Options_LeftHanded"						"武器を持つ手: 左"
 "HLVR_Options_RightHanded"						"武器を持つ手: 右"
@@ -228,17 +248,27 @@
 "HLVR_Options_SpectatorHud_med"					"中"
 "HLVR_Options_SpectatorHud_large"				"大"
 
-"HLVR_Options_SpectatorCamera_desc"				"Spectator （第三者視点）ウィンドウにおけるカメラスムージング効果を設定します"
+"HLVR_Options_SpectatorCamera_desc"				"第三者視点ウィンドウにおけるカメラスムージング効果を設定します\n\n高いズームレベルが必要となります"
 "HLVR_Options_SpectatorCamera_base"				"第三者視点スムージング"
 "HLVR_Options_SpectatorCamera_off"				"オフ"
 "HLVR_Options_SpectatorCamera_low"				"低"
 "HLVR_Options_SpectatorCamera_med"				"中"
-"HLVR_Options_SpectatorCamera_high"			"高"
+"HLVR_Options_SpectatorCamera_high"				"高"
+
+"HLVR_Options_SpectatorZoom_desc"				"第三者視点ズームレベル"
+"HLVR_Options_SpectatorZoom_Base"				"第三者視点ズーム"
+"HLVR_Options_SpectatorZoom_low"				"低"
+"HLVR_Options_SpectatorZoom_high"				"高"
 
 "HLVR_Options_Spectator_Eye_desc"				"Spectator （第三者視点）ウィンドウにおいてプレイヤーの右目と左目の視点を切り替えます"
 "HLVR_Options_Spectator_Eye_Base"				"第三者視点"
-"HLVR_Options_Eye_Left"									"左"
-"HLVR_Options_Eye_Right"								"右"
+"HLVR_Options_Eye_Left"							"左"
+"HLVR_Options_Eye_Right"						"右"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"SteamVR ウィンドウにHUDを表示します\n\nただしパフォーマンスの負荷は増加します"
+"HLVR_Options_SpectatorSteamVR_Base"			"SteamVRにおける第三者視点HUD"
+"HLVR_Options_SpectatorSteamVR_On"				"オン"
+"HLVR_Options_SpectatorSteamVR_Off"				"オフ"
 
 "HLVR_Options_SpectatorEye_desc"				"モニターやテレビ画面などの非VRスクリーンに、どちらの目の視点を表示させるか選択してください\n\n初期設定では武器の持ち手側になっています"
 "HLVR_Options_SpectatorEye_base"				"第三者視点"
@@ -306,6 +336,14 @@
 "HLVR_Options_High_Quality_Holograms_on"			"オン"
 "HLVR_Options_High_Quality_Holograms_off"			"オフ"
 "HLVR_Options_r_light_flickering_enabled"			"光のちらつき"
+
+"HLVR_Options_Rendering_API"					"レンダリングAPI"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"現在のAPI:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"起動オプションにて特定のレンダリングAPIが選択されています。レンダリングAPIを選択する場合は、既存の入力内容を削除してください。"
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\n設定を有効にするには、ゲームを再起動する必要があります。\n\n"
+"HLVR_Options_Rendering_API_Desc"				"この設定を変更した後にゲームが正常に起動しなかった場合は、起動オプションに「-safe_mode」を追加し、デフォルトのレンダリングAPIで起動してください。"
 
 "HLVR_Options_cloth_rigid_update_Base"			"Soft Cloth"
 

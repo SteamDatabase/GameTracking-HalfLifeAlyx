@@ -1,0 +1,16 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <Panel>
+    <GameMenuOptionCyclePanel id="saveslotfilter" convar="hlvr_saveslot_filter" label0="Original Game" label1="Addon Games"/>
+    <Panel class="row_divider_line_small" />
+  </Panel>
+
+</root>
+
+
+
+

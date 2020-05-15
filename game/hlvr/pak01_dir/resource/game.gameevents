@@ -714,6 +714,21 @@
 		"userid"			"short"
 	}
 
+	// Client events for commentary start/stop
+	"commentary_started"
+	{
+		"speaker"			"string"
+		"nodeid"			"short"
+		"nodeidmax"			"short"
+		"start_time"		"float"
+		"end_time"			"float"
+	}
+
+	"commentary_stopped"
+	{
+		"nodeid"			"short"
+	}
+
 //////////////////////////////////////////////////////////////////////
 // Instructor / Hint Events
 //////////////////////////////////////////////////////////////////////

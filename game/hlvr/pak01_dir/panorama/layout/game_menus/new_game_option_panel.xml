@@ -19,9 +19,14 @@
         <Panel class="row_divider_line_small" />
 
         <Panel class="row">
-          <Button class="button_newgameoptions" onactivate="GameMenu_Cmd( 'confirm_new_game' )" onmouseover="GameMenu_MouseOver( 'show_child_newgameoptions' )" >
-            <Label class="cta" text="#HLVR_MainMenu_StartGame" />
-          </Button>
+          <Panel class="col_body">
+            <Button class="button_newgameoptions Hidden" onactivate="GameMenu_Cmd( 'confirm_new_game' )" onmouseover="GameMenu_OptionMouseOver( '#HLVR_MainMenu_StartGameNoAddon' )" >
+              <Label class="cta" text="#HLVR_MainMenu_StartGame" />
+            </Button>
+            <Button class="button_newgameoptions" onactivate="GameMenu_Cmd( 'confirm_new_addon_game' )" onmouseover="GameMenu_StartAddonGameMouseOver()" >
+              <Label class="cta" text="#HLVR_MainMenu_StartGameAddon" />
+            </Button>  
+          </Panel>
         </Panel>
         
       </Panel>

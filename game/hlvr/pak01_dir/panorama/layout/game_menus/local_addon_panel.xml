@@ -1,0 +1,48 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+  
+  <snippets>
+    <snippet name="BrowseWorkshopButton">
+      <Panel class="col_body">
+        <Panel class="row scroll_item">
+          <Button class="scroll_item" onactivate="GameMenu_Cmd( 'browse_workshop' )" onmouseover="GameMenu_OptionMouseOver( '#HLVR_browse_workshop_desc' )">
+            <Label class="button_label" text="#HLVR_browse_workshop_label"/>
+            <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
+          </Button>
+
+          <Panel></Panel>
+          
+        </Panel>
+      </Panel>
+    </snippet>
+    
+    <snippet name="WorkshopAddonDividerLocal">
+      <Panel class="row">
+        <Panel class="options_divider addon_divider">
+          <Label text="#HLVR_local_addons" />
+          <Panel class="horizontal_line" />
+        </Panel>
+      </Panel>
+    </snippet>
+
+    <snippet name="WorkshopAddonDividerDownloaded">
+      <Panel class="row">
+        <Panel class="options_divider addon_divider">
+          <Label text="#HLVR_downloaded_addons" />
+          <Panel class="horizontal_line" />
+        </Panel>
+      </Panel>
+    </snippet>
+  </snippets>
+  
+  <Panel class="col_body">
+    
+  </Panel>
+</root>
+
+
+
+

@@ -21,12 +21,15 @@
 "HLVR_MainMenu_SavedGames"				"Games"
 "HLVR_MainMenu_StartNewGame"	  	"Start New Game"
 "HLVR_MainMenu_StartGame"	  			"Start Game"
+"HLVR_MainMenu_StartGameNoAddon"	  	"Start Game without Addons"
+"HLVR_MainMenu_StartGameAddon"	  	"Start Game with Addons"
 "HLVR_MainMenu_CreateNewGame"	  	"Create New Game"
 
 "HLVR_MainMenu_Start"							"Start"
 
 "HLVR_MainMenu_LoadSlot"					"Load Game Slot %s"
 "HLVR_MainMenu_GameSlotHeader"		"Game Slot %s"
+"HLVR_MainMenu_GameSlotConfirm"		"\nGame Slot %s"
 
 "HLVR_MainMenu_SaveSlot"    	  	"Slot"
 "HLVR_MainMenu_GameSlot"    	  	"Game Slot"
@@ -43,6 +46,22 @@
 "HLVR_Skip_Credits"								"Skip Credits"
 "HLVR_Skip_Credits_Confirm"				"Skip Credits?"
 
+"HLVR_Addons"							"Addons"
+"HLVR_MainMenu_ManageAddons"			"Manage Addons"
+"HLVR_MainMenu_AddonsToolsMode"			"Cannot load a map with addons while in Tools Mode."
+"HLVR_MainMenu_StartAddonGame"			"Start Game with the Following Addons:"
+"HLVR_MainMenu_AddonDisabled"			"Associated Addon Disabled"
+"HLVR_MainMenu_AddonNotAvailable"		"Associated Addon is no longer available for this map.\nResubscribe and enable this addon to continue"
+
+"HLVR_browse_workshop_label"			"Browse Workshop"
+"HLVR_browse_workshop_confirm"			"Browse the Workshop via Steam Overlay?"
+"HLVR_browse_workshop_desc"				"Browse the Half-Life: Alyx Workshop via Steam Overlay"
+
+"HLVR_local_addons"				"Local Addons"
+"HLVR_downloaded_addons"		"Downloaded Addons"
+"HLVR_enabled_addons"			"Enabled Addons:"
+"HLVR_addon_game"				"Addon Enabled Game"
+
 "HLVR_MainMenu_Attention"												"Attention"
 "HLVR_MainMenu_Attention_MinSpec_CPU"								"Your CPU is below minimum requirements for Half-Life: Alyx."
 "HLVR_MainMenu_Attention_MinSpec_RAM"								"System Memory is below minimum requirements for Half-Life: Alyx."
@@ -53,6 +72,7 @@
 "HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile"				"Half-Life: Alyx may be unstable due to low disk space on your operating system drive, which can limit your pagefile size."
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Low available GPU memory detected, please close any unnecessary open programs to increase GPU memory availability."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Low available system memory detected, please close any unnecessary open programs to increase system memory availability."
+"HLVR_MainMenu_Old_Driver_Version"								"Your GPU driver version is below the recommended version for Half-Life: Alyx on Vulkan. Please install the latest driver for your GPU."
 
 "HLVR_MainMenu_ModalQuit"						"Quit Half-Life: Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"Go to Main Menu?"
@@ -79,7 +99,7 @@
 "HLVR_MainMenu_Days"							"D"		// Short hand for Days
 "HLVR_MainMenu_Hrs"								"H"		// Short Hand for Hours
 
-"HLVR_MainMenu_DeleteSlot_desc"				"Remove all save games from this game slot"
+"HLVR_MainMenu_DeleteSlot_desc"				"Remove all saved games from this game slot"
 "HLVR_MainMenu_DeleteSlot_Confirm"		"Permanently remove all save games from this game slot?"
 
 "HLVR_NoSaving"			"Saving is not available at this time"
@@ -154,6 +174,7 @@
 "HLVR_Options_Subtitles_None"					"Subtitles Off"
 "HLVR_Options_Subtitles_On"						"Subtitles On"
 "HLVR_Options_Subtitles_CC_On"					"Subtitles & Closed Captions"
+"HLVR_Options_Subtitles_desc"					"Set to display Subtitles and Closed Captions."
 
 "HLVR_Options_Subtitles_Speed"					"Speed"
 "HLVR_Options_Subtitles_Slow_Speed"				"Slow"
@@ -174,7 +195,7 @@
 "HLVR_Options_ClosedCaptions_Width_desc"		"The width of subtitles on screen."
 
 "HLVR_Options_Subtitles_Spectator_Only"			"Spectator window only"
-"HLVR_Options_Subtitles_Spectator_Only_desc"	"Show Subtitles and Closed Captions only in the spectator window"
+"HLVR_Options_Subtitles_Spectator_Only_desc"	"Show Subtitles and Closed Captions only in the spectator window."
 
 "HLVR_Options_LeftHanded"						"Weapon Hand : Left"
 "HLVR_Options_RightHanded"						"Weapon Hand : Right"
@@ -228,17 +249,27 @@
 "HLVR_Options_SpectatorHud_med"					"Medium"
 "HLVR_Options_SpectatorHud_large"				"Large"
 
-"HLVR_Options_SpectatorCamera_desc"				"Set the amount of camera smoothing in the Spectator window"
+"HLVR_Options_SpectatorCamera_desc"				"Set the amount of camera smoothing in the Spectator window.\n\nRequires high zoom level."
 "HLVR_Options_SpectatorCamera_base"				"Spectator Camera Smoothing"
 "HLVR_Options_SpectatorCamera_off"				"Off"
 "HLVR_Options_SpectatorCamera_low"				"Low"
 "HLVR_Options_SpectatorCamera_med"				"Medium"
-"HLVR_Options_SpectatorCamera_high"			"High"
+"HLVR_Options_SpectatorCamera_high"				"High"
 
-"HLVR_Options_Spectator_Eye_desc"				"Switch between the players right and left eye for the Spectator window"
+"HLVR_Options_SpectatorZoom_desc"				"Spectator zoom level."
+"HLVR_Options_SpectatorZoom_Base"				"Spectator Zoom"
+"HLVR_Options_SpectatorZoom_low"				"Low"
+"HLVR_Options_SpectatorZoom_high"				"High"
+
+"HLVR_Options_Spectator_Eye_desc"				"Switch between the player's right and left eye for the Spectator window"
 "HLVR_Options_Spectator_Eye_Base"				"Spectator Eye"
-"HLVR_Options_Eye_Left"									"Left"
-"HLVR_Options_Eye_Right"								"Right"
+"HLVR_Options_Eye_Left"							"Left"
+"HLVR_Options_Eye_Right"						"Right"
+
+"HLVR_Options_SpectatorSteamVR_desc"			"Draw HUD in SteamVR window.\n\nThis adds some performance cost."
+"HLVR_Options_SpectatorSteamVR_Base"			"Spectator HUD in SteamVR"
+"HLVR_Options_SpectatorSteamVR_On"				"On"
+"HLVR_Options_SpectatorSteamVR_Off"				"Off"
 
 "HLVR_Options_SpectatorEye_desc"				"Choose which eye's perspective is displayed on mirrored non-VR screens like your monitor or television.\n\nBy default this matches your current weapon hand, but can be overridden."
 "HLVR_Options_SpectatorEye_base"				"Spectator View Eye"
@@ -307,6 +338,14 @@
 "HLVR_Options_High_Quality_Holograms_off"			"Off"
 "HLVR_Options_r_light_flickering_enabled"			"Flickering Lights"
 
+"HLVR_Options_Rendering_API"					"Rendering API"
+"HLVR_Options_Rendering_API_D3D11"				"Direct3D 11"
+"HLVR_Options_Rendering_API_Vulkan"				"Vulkan"
+"HLVR_Options_Rendering_API_Current"			"Current API:"
+"HLVR_Options_Rendering_API_Desc_Locked"		"Rendering API was specified in launch options. Remove launch option to choose a rendering API."
+"HLVR_Options_Rendering_API_Desc_Restart"		"\n\nRequires game restart to take effect.\n\n"
+"HLVR_Options_Rendering_API_Desc"				"If the game does not launch properly after changing this setting you can add -safe_mode to your launch options to start with a default rendering API."
+
 "HLVR_Options_cloth_rigid_update_Base"			"Soft Cloth"
 
 "HLVR_Options_g_ragdoll_maxcount_Base"			"Ragdoll Count"
@@ -342,7 +381,7 @@
 "HLVR_Lesson_Movement_PrimaryHand"	"Movement on Weapon Hand\nthis can be modified in SteamVR Controller bindings"
 "HLVR_Lesson_Movement_OffHand"		"Movement on Off Hand\nthis can modified in SteamVR Controller bindings"
 "HLVR_Lesson_Teleport"							"Push to move"
-"HLVR_Lesson_Quick_Turn"						"Push to quick turn left or right"
+"HLVR_Lesson_Quick_Turn"						"Push to snap turn left or right"
 "HLVR_Lesson_GrabTrigger"						"Press and Hold to Grab objects"
 "HLVR_Lesson_GrabHands"							"Grab objects using your hands"
 "HLVR_Lesson_GrabHandsSingleController"			"Grab objects using your hand"

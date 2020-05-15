@@ -16,9 +16,21 @@
 
         <Panel id="background_panel">
 
-          <Panel class="col_body child_panel_root" id="child_newgameoptions_container_03">
-          </Panel>
+          <Panel class="col_body child_panel_root" id="child_newgameoptions_container_03"></Panel>
 
+          <Panel class="col_body child_panel_root" id="child03_list_container">
+            <Panel class="header">
+              <Label class="header" text="{s:list_header}" />
+            </Panel>
+            <Panel class="empty_row" />
+            
+            <Panel id="addon_item_list_03" class="base_list" />
+          
+
+            <Panel class="empty_row" />
+            <Panel class="empty_row_bottomR_corner" />
+          </Panel>
+        
         </Panel>
       </Panel>
     </Panel>

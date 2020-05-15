@@ -1,0 +1,27 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+    <Panel class="load_saveitem">
+        <Button>          
+          <Panel class="button_label_col1">
+            <Label class="text_xsmall" text="Fake Workshop"/>
+            <Label class="text_small" text="Fake Workshop Item"/>
+            <Label class="text_xsmall" text=""/>
+          </Panel>
+          <Panel class="button_label_col2">
+            <Label class="text_xsmall" text="Place Holder"/>
+            <Label class="text_small no_capitalization" text="Place Holder"/>
+          </Panel>
+          <Panel class="button_bullet">
+            <Image src="s2r://panorama/images/game_menu_ui/btn_bullet_png.vtex" />
+          </Panel>
+        </Button>
+    </Panel>
+</root>
+
+
+
+

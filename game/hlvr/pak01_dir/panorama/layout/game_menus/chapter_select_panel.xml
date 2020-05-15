@@ -1,0 +1,36 @@
+<root>
+	<styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+		<include src="s2r://panorama/styles/language_shared.vcss_c" />
+	</styles>
+
+  <snippets>
+    <snippet name="WorkshopAddonDividerLocal">
+      <Panel class="row AddonMap">
+        <Panel class="options_divider addon_divider AddonMap">
+          <Label text="Local Addons" />
+          <Panel class="horizontal_line" />
+        </Panel>
+      </Panel>
+    </snippet>
+
+    <snippet name="WorkshopAddonDividerDownloaded">
+      <Panel class="row AddonMap">
+        <Panel class="options_divider addon_divider AddonMap">
+          <Label text="Downloaded Addons" />
+          <Panel class="horizontal_line" />
+        </Panel>
+      </Panel>
+    </snippet>
+  </snippets>
+  
+  <Panel>
+    <GameMenuOptionCyclePanel id="mapfilter" convar="hlvr_map_filter" label0="Original Game" label1="Addon Maps"/>
+    <Panel class="row_divider_line_small" />
+  </Panel>
+
+</root>
+
+
+
+
