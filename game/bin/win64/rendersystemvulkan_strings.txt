@@ -220,6 +220,8 @@
  Constituent <id> '
  Constituent <id> count does not match Result Type <id> '
  Constituent count does not match Result Type <id> '
+ D;5-
+ D;=M
  D;SH
  Found result <id> '
  H3E H3E
@@ -575,7 +577,6 @@
 !!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!
 !""""""
-!$61_
 !,X< w
 !1AQaq
 !>6'Y
@@ -616,6 +617,7 @@
 ########################################################################################################################################################################
 #3CScs
 #4o>w
+#=qqr
 #H;L$@u
 #I;G@u
 #Ib?AG
@@ -842,7 +844,6 @@ $undefined
 %4,>S,
 %4,S,>S,,
 %5EUeu
-%5s9_,7
 %@,S,V
 %@,S,V,
 %@,S,V,,
@@ -1956,7 +1957,6 @@ $undefined
 .?AV?$CTier1AppSystem@VIRenderUtils@@$0A@@@
 .?AV?$CTier2AppSystem@VIRenderDeviceMgr@@$0A@@@
 .?AV?$CTier2AppSystem@VIRenderUtils@@$0A@@@
-.?AV?$CVulkanObject@PEAUVkFence_T@@$1?vkDestroyFence@@3P6AXPEAUVkDevice_T@@PEAU1@PEBUVkAllocationCallbacks@@@ZEA@@
 .?AV?$CVulkanObject@PEAUVkImageView_T@@$1?vkDestroyImageView@@3P6AXPEAUVkDevice_T@@PEAU1@PEBUVkAllocationCallbacks@@@ZEA@@
 .?AV?$CVulkanObject@PEAUVkSampler_T@@$1?vkDestroySampler@@3P6AXPEAUVkDevice_T@@PEAU1@PEBUVkAllocationCallbacks@@@ZEA@@
 .?AV?$IStreamBuilderCallback@VCCommandStream@@@@
@@ -2520,6 +2520,7 @@ $undefined
 .?AVCVfxShaderFileRenderShaderBuffer@@
 .?AVCVfxShaderFileVulkan@@
 .?AVCVulkanImage@@
+.?AVCVulkanPooledFenceObject@@
 .?AVCacheLocalScheduleGroup@details@Concurrency@@
 .?AVCacheLocalScheduleGroupSegment@details@Concurrency@@
 .?AVCancellationTokenRegistration_TaskProc@details@Concurrency@@
@@ -2939,10 +2940,9 @@ $undefined
 1H;M`
 1I9p 
 1eaB@
-1l#\]
 1wsHp
 2 Entry points cannot share the same name and ExecutionMode.
-200515052538Z0#
+200519202702Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -2952,7 +2952,6 @@ $undefined
 2DRect
 2L;l$hu"
 2LiE@
-2Pzs(
 2]fQ	?5!
 2http://crl3.digicert.com/DigiCertAssuredIDCA-1.crl08
 2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
@@ -3083,7 +3082,6 @@ $undefined
 91~/E3
 91~lH
 93tLH
-93~.3
 98txH
 98~33
 99C }
@@ -3145,7 +3143,6 @@ $undefined
 9ludH
 9oP~2E3
 9oP~3E3
-9pXu"H
 9q|~2H
 9sHva
 9sLv|
@@ -3257,6 +3254,7 @@ $undefined
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;=\kc
 ;=u~H
 ;A ~W
 ;B$vUH
@@ -3335,6 +3333,7 @@ $undefined
 <EOF>
 <EOR>
 <NULL>
+<]F2I
 <atc<r
 <bad token>
 <deferred>
@@ -3491,7 +3490,6 @@ $undefined
 @80tG
 @80tc
 @81u/H
-@8500i
 @8>vTfff
 @8H9C8
 @8h%uvE
@@ -3810,6 +3808,7 @@ A8v-t
 A8w,@
 A8w-t
 A8~-t
+A9/~UD
 A9>v?
 A9@ }
 A9A u
@@ -4536,7 +4535,7 @@ CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.
 CRenderDeviceVulkan::UpdateDescriptorSetPool
 CRenderDeviceVulkan::m_hDefaultConstantBuffer
 CRenderThreadVulkan::OnReadPixels not supported for MSAA depth.  Requires shader-based MSAA depth resolve to be implemented.
-CRenderThreadVulkan::OnReadPixels(187): Error! NULL texture pointer sent to OnReadPixels()!
+CRenderThreadVulkan::OnReadPixels(193): Error! NULL texture pointer sent to OnReadPixels()!
 CResourceArray
 CResourceString
 CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-defined attribute %d!
@@ -4568,6 +4567,8 @@ CTSQueue<struct QueuedDisplayListItem_t,0>::CTSQueue
 CTSQueue<struct QueuedDisplayListItem_t,0>::Push
 CTSQueue<struct VkCommandBuffer_T *,0>::CTSQueue
 CTSQueue<struct VkCommandBuffer_T *,0>::Push
+CTSQueue<struct VkFence_T *,0>::CTSQueue
+CTSQueue<struct VkFence_T *,0>::Push
 CTextureManagerBase::AllocTextureSlot
 CTextureManagerBase::AsyncHookUpTextureBits
 CTextureManagerBase::MN_BuildRequestedResourcesList
@@ -5696,17 +5697,18 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3DCOLORtoUBYTE4
-D5yzb
+D5ixb
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
+D8-B}h
+D8-]|h
 D82u&H
-D85_a.
-D85xFc
+D85C_.
 D88Ht!
 D88Hte
-D8=cl.
+D8=$k.
 D8A,A
 D8A-t
 D8B,H
@@ -5804,6 +5806,7 @@ D9T$8
 D9X0H
 D9`Xt
 D9`Xt%H
+D9`XteH
 D9aH~
 D9c t
 D9d$(u
@@ -5862,7 +5865,7 @@ D;d$x}<
 D;j0v
 D;l$0ta
 D;l$<ta
-D;l$pu$H
+D;l$hu$H
 D;mXs@
 D;m`u
 D;s8|
@@ -6130,7 +6133,6 @@ E9!uSI
 E9'v8
 E9)unI
 E9,	}3H
-E97~V
 E9J vt
 E9X s
 E;Bl}NE
@@ -7413,8 +7415,6 @@ H98u'
 H99t	M
 H99u{
 H9;v#H
-H9=?5V
-H9=q`(
 H9A(s
 H9A(t
 H9A(u
@@ -7526,8 +7526,6 @@ H9|$8t
 H9|$8t.
 H9|$@
 H9|$@t
-H9|$`t
-H9|$ht
 H9|$pt
 H9}(t	H
 H9}@t	H
@@ -8660,7 +8658,7 @@ L9T$pH
 L9`8tA
 L9a s
 L9d$ t3L
-L9d$8t
+L9d$0t
 L9d$@uNH
 L9d$pt
 L9ePt	H
@@ -8895,7 +8893,6 @@ M H1E
 M#O0I
 M'y>0y
 M+<$I
-M9>t-
 M9J t A
 M9[0u
 M9[8u
@@ -8922,6 +8919,7 @@ MEDIUM_PRECISION
 MLIR SPIR-V Serializer
 MLc3D;s
 MM/dd/yy
+MMc)$q
 MNG features are not allowed in a PNG datastream
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
@@ -11303,7 +11301,6 @@ UVATAUH
 UVATAVAWH
 UVATAVH
 UVAVH
-UVAVI
 UVAWH
 UVEC2
 UVEC3
@@ -11862,7 +11859,6 @@ W!t/H
 W3C WebGPU Group
 W3C WebGPU Group WHLSL Shader Translator
 W8HcH
-W=i1S
 W=vmdlkeys0
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -11988,6 +11984,7 @@ X360_DST16
 X360_DST24
 X360_DST24F
 X5AHx
+X5K/N
 XA]A\^[
 XA^A\_[
 XA^A]A\[
@@ -12153,7 +12150,7 @@ Z~$|7
 \$<A;
 \$@9\$8
 \$@9\$8~I
-\$@@8=}/#
+\$@@8=}.#
 \$@@8o,t
 \$@D9
 \$@D;
@@ -12208,7 +12205,6 @@ Z~$|7
 \$hH;]
 \$hHcZ@H
 \$hI+
-\$hff
 \$pD+
 \$pD;T$d~ Hc
 \$pE3
@@ -13568,6 +13564,7 @@ dxsupport.cfg
 dynamicState
 dynamic_interaction
 e A_A^A]A\]
+e A_A^A]A\_^]
 e D8d$au@H
 e(A_A^A]A\_^[]
 e+000
@@ -13942,6 +13939,7 @@ fD9,Pu
 fD90t
 fD90u
 fD94Fu
+fD95vig
 fD96u
 fD9;u
 fD9<Au
@@ -16829,6 +16827,7 @@ t$xLcs L
 t$xfA
 t$xff
 t%L;B
+t&A8x
 t'B;| 
 t'D8"t"H
 t'fE9
@@ -16931,6 +16930,7 @@ tXEtu
 tXLcQ
 tXTiu
 tXTzu
+tXfff
 tXy[M
 tY@8{XuSH
 tYfff
@@ -16940,7 +16940,7 @@ t\H9X
 t\HcL$`H
 t];Cxr
 t]<-u
-t]D9%
+t]D9%w
 t^D;@
 t_D9s
 t`fff
@@ -17839,10 +17839,7 @@ vkCreateDisplayModeKHR
 vkCreateDisplayPlaneSurfaceKHR
 vkCreateEvent
 vkCreateFence
-vkCreateFence( VulkanDevice(), &fenceCreateInfo, NULL, &m_pWaitForLeftEyeFenceAMD )
 vkCreateFence( VulkanDevice(), &fenceCreateInfo, NULL, &pFence )
-vkCreateFence( VulkanDevice(), &fenceCreateInfo, NULL, &presentFence.m_pFence )
-vkCreateFence( VulkanDevice(), &fenceCreateInfo, NULL, pFence->GetPtr() )
 vkCreateFramebuffer
 vkCreateFramebuffer( m_pDeviceVulkan, &framebufferCreateInfo, NULL, &pFramebuffer )
 vkCreateFramebuffer( m_pDeviceVulkan, &framebufferCreateInfo, NULL, &pFramebufferVulkan )
@@ -18369,7 +18366,6 @@ xA_A^_^][
 xBL;S
 xCL;[
 xFL;[
-xN;U^
 xNL;S
 xRHcQ
 xSH;H

@@ -7,6 +7,7 @@ echo "Processing Half-Life: Alyx..."
 
 ProcessDepot ".dll"
 ProcessVPK
+ProcessToolAssetInfo
 
 while IFS= read -r -d '' file
 do
@@ -20,6 +21,5 @@ done <   <(find "game/hlvr/maps/" -type f -name "*.vpk" -print0)
 FixUCS2
 
 CreateCommit "Update" "$1"
-#CreateCommit "$(grep "^ClientVersion=" game/hlvr/steam.inf | grep -o '[0-9\.]*')" "$1"
 
 echo "HL:A Done"

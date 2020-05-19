@@ -508,21 +508,22 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
+(%(8#
 (%3.3f - %3.3f)
-(%7*#
-(%H8#
 ('8PW
 (*%s*), 
-(-i}"
-(5D*#
-(5S8#
+(-:1$
+(-I}"
+(-tX"
+(5$*#
+(538#
 (8HXhx
 (;QPt
 (;^,|
 (;s,|
-(=	q"
-(=\F#
-(=aF#
+(=<F#
+(=AF#
+(=e{#
 (A^A\_[
 (A^^][
 (A_A]][H
@@ -1152,7 +1153,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 .xJ>Hf
 .xdata
 .xdata$x
-/%Y@!
 /2GG>!B
 /=$!6
 />58d%
@@ -1261,7 +1261,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 1eaB@
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200515052907Z0#
+200519202700Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -1282,7 +1282,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 456789:;<=
 4HfA;
 4HfE;
-4`h=e
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -1508,12 +1507,12 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 <td>IS_DYNAMIC_DECAL</td>
 <td>IS_ENV_MAP</td>
 <td>IS_HAMMER_GEOMETRY</td>
+<td>IS_LIGHT</td>
 <td>IS_LIGHT_VOLUME</td>
 <td>IS_LOADED</td>
 <td>IS_OCCLUDER</td>
 <td>IS_OPAQUE</td>
 <td>IS_SUN_LIGHT</td>
-<td>IS_TRANSLUCENT</td>
 <td>LAYERFLAGS_DEBUGDRAW</td>
 <td>LAYERFLAGS_DEBUG_BREAK_ON_RENDERING</td>
 <td>LAYERFLAGS_DEBUG_BREAK_ON_SUBMISSION</td>
@@ -1605,7 +1604,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ?7{KV
 ?8bunz8
 ?:kP<
-?<td>IS_LIGHT</td>
+?<td>IS_TRANSLUCENT</td>
 ??0CThreadEvent@@QEAA@_N@Z
 ??0CThreadMultiWaitEvent@@QEAA@_N@Z
 ??0CThreadMutex@@QEAA@PEBD@Z
@@ -1671,12 +1670,15 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @ H9A@uHE
 @ I+@
 @(H9AHuWL;
+@+THa
 @.data
 @.reloc
 @.tls
-@8-Z]"
+@8-:]"
 @80u#H
 @81u/H
+@8=`P!
+@8=hO
 @8H9AXu#A
 @8kDt
 @8l$8t
@@ -2238,9 +2240,10 @@ CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (1)
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (2)
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (3)
 CBaseSceneObjectDesc
-CBindlessFastPathPartition::AddMaterial(233): 
+CBindlessFastPathPartition::AddMaterial(236): 
+CBindlessFastPathPartition::EnsureGPUResources - insufficient descriptor set support. CWorldNode::CanUseBindlessDesc() needs to filter before getting here.
 CBindlessFastPathSceneObjectDesc
-CBindlessFastPathSceneObjectDesc::UpdateBoundingBoxToMatchTransform(1343): 
+CBindlessFastPathSceneObjectDesc::UpdateBoundingBoxToMatchTransform(1346): 
 CBlitTextureToBackBufferLayer
 CCharacterDecalRendererDesc
 CD$8@
@@ -2921,43 +2924,44 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D7HE3
-D8%N'#
+D8%.'#
 D8&t!
 D8&t4H
-D8-$f
-D8-&}
-D8-5g
-D8-;h
-D8->a
-D8-@k
-D8-Hi
-D8-Kb
-D8-Kj
-D8-Ml
-D8-Mq
-D8-No
-D8-On
-D8-Pt
-D8-Qp
-D8-Qs
-D8-Sm
-D8-Tc
-D8-Vr
-D8-Yu
-D8-Z|
-D8-_z
-D8-bw
-D8-cv
-D8-dd
-D8-dx
-D8-fy
-D8-l{
-D8-me
-D8-q}
-D8-~f
+D8- k
+D8-(i
+D8-+b
+D8-+j
+D8--l
+D8--q
+D8-.o
+D8-/n
+D8-0t
+D8-1p
+D8-1s
+D8-3m
+D8-4c
+D8-6r
+D8-9u
+D8-:|
+D8-?z
+D8-Bw
+D8-Cv
+D8-Dd
+D8-Dx
+D8-Fy
+D8-L{
+D8-Me
+D8-Q}
+D8-^f
+D8-kg
+D8-vk
+D8-xh
+D8-{a
+D8-{i
+D8-~|
 D82u&H
-D85,r
-D85x0
+D85X0
+D85y1
 D8A%L
 D8KDA
 D8L7@t
@@ -3430,11 +3434,11 @@ H90t%H
 H92u&
 H92u'
 H92u,
-H95Km
+H95+m
 H97t<
 H9;uAA
 H9;v#H
-H9=t4
+H9=T4
 H9A u
 H9Ahs
 H9C s(H
@@ -3900,9 +3904,8 @@ L+H0I
 L+P0H
 L9*u&
 L9+t#fff
-L95|o"
+L95\o"
 L97t!
-L9=8<"
 L9Ahs
 L9B s
 L9J s
@@ -4762,7 +4765,6 @@ T$pH;
 T$pL9v@tKH
 T$tE3
 T$xH;
-T,y|c
 T: %7.3f
 TINTRGBA32
 TINTRGBA8_ENVMAPIDX
@@ -5081,6 +5083,7 @@ VolumetricFogManifest
 VrLightCookieSettings
 W(|9L
 W(|=L
+W=qH!
 W=vmdlkeys0
 W@|:L
 WARNING
@@ -5128,6 +5131,7 @@ X0~zM
 X360_DST16
 X360_DST24
 X360_DST24F
+X5Fg"
 XA]A\^[
 XA^A]A\^][
 XA^A]A\_][
@@ -5142,11 +5146,10 @@ XT$xH
 Xt$ Ic
 Xt$$H
 Xt$TH
-Y%PY"
+Y%0Y"
+Y%bM"
+Y%ie"
 Y0HcR
-Y5)?!
-Y5d6!
-Y=I]"
 Y>kX>M
 YD$@f
 YD$pA
@@ -5209,7 +5212,7 @@ Zod(^?
 \$8A+
 \$8I9HPt
 \$<A;
-\$@9=X2$
+\$@9=82$
 \$@9\$8
 \$@9\$8~I
 \$@@8=
@@ -5263,9 +5266,7 @@ Zod(^?
 ^<V7w
 ^RfN>
 ^fD9+t
-_%k>!
-_-c>!
-_=2?!
+_=hR"
 _BoundTexture%d
 _BoundTextureSrgb%d
 _V_strncat
@@ -5750,7 +5751,7 @@ go_package
 gravity
 group
 h(HcH
-h/8:(
+h/8Z(
 h>1my
 hA\^[]
 hA^A\
@@ -5914,6 +5915,7 @@ leading_comments
 leading_detached_comments
 length
 leveltransition
+liPPdFh
 lightbinner_total_data_%d.vtex
 lightcookie
 lighting_array_fog_RT1.vtex
@@ -6907,7 +6909,7 @@ t7HcG A
 t8Hc/;o
 t8HcA
 t8HcG M
-t9H9=fB
+t9H9=FB
 t9Hc\$pE
 t9IcA
 t:HcA
@@ -7000,7 +7002,7 @@ type.googleapis.com/
 type.googleprod.com/
 u	9~ 
 u	;q\
-u	@8=EX
+u	@8=%X
 u!9p }
 u!fD;
 u$H;|$Hu
@@ -7168,7 +7170,7 @@ x UAVAWH
 x!HcI
 x!HcK
 x";Mp}
-x.82(
+x.8R(
 x/HcA
 x0=433
 x0v0$
@@ -7187,6 +7189,7 @@ x_^][
 xpxxxx
 xuJE3
 xwpwpp
+y!z~--
 y;HcGL
 yLfA;
 y\PD>!
@@ -7194,7 +7197,6 @@ yaw_end
 yaw_start
 z0x0:
 zY;>u:m	
-z~2/kq
 { ATAVAWH
 { AUAVAWH
 { AVH

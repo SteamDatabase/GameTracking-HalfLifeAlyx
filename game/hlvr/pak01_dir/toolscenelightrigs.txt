@@ -44,7 +44,7 @@
 
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_default.vmap"
+			"map" "maps/release/editor/toolscene_default.vmap"
 		}
 	}
 
@@ -69,7 +69,7 @@
 
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_default.vmap"
+			"map" "maps/release/editor/toolscene_default.vmap"
 		}
 	}
 
@@ -77,7 +77,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_dark.vmap"
+			"map" "maps/release/editor/toolscene_lighting_dark.vmap"
 		}
 	}
 
@@ -85,7 +85,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_basic_sunny.vmap"
+			"map" "maps/release/editor/toolscene_lighting_basic_sunny.vmap"
 		}
 	}
 
@@ -93,7 +93,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_basic_overcast.vmap"
+			"map" "maps/release/editor/toolscene_lighting_basic_overcast.vmap"
 		}
 	}
  
@@ -101,7 +101,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_basic_sunset.vmap"
+			"map" "maps/release/editor/toolscene_lighting_basic_sunset.vmap"
 		}
 	}
 
@@ -109,7 +109,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_basic_interior.vmap"
+			"map" "maps/release/editor/toolscene_lighting_basic_interior.vmap"
 		}
 	}
 
@@ -117,7 +117,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_studio.vmap"
+			"map" "maps/release/editor/toolscene_lighting_studio.vmap"
 		}
 	}
 
@@ -125,7 +125,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_basic_interior_factory.vmap"
+			"map" "maps/release/editor/toolscene_lighting_basic_interior_factory.vmap"
 		}
 	}
 
@@ -133,7 +133,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_street_sunny.vmap"
+			"map" "maps/release/editor/toolscene_lighting_street_sunny.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -142,7 +142,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_street_overcast.vmap"
+			"map" "maps/release/editor/toolscene_lighting_street_overcast.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -151,7 +151,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_street_morning.vmap"
+			"map" "maps/release/editor/toolscene_lighting_street_morning.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -160,7 +160,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_street_night.vmap"
+			"map" "maps/release/editor/toolscene_lighting_street_night.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -169,7 +169,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_interior_dark_pit.vmap"
+			"map" "maps/release/editor/toolscene_lighting_interior_dark_pit.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -178,7 +178,7 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_subway.vmap"
+			"map" "maps/release/editor/toolscene_lighting_subway.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
@@ -187,170 +187,8 @@
 	{
 		"VMap"
 		{
-			"map" "maps/editor/toolscene_lighting_subway_2.vmap"
+			"map" "maps/release/editor/toolscene_lighting_subway_2.vmap"
 			"particle_trace_against_map" "1"
 		}
 	}
-
-
-
-//	"Default"
-//	{
-//		Exposure
-//		{
-//			MinEV -6
-//			MaxEV 6
-//		}
-//
-//		Sun
-//		{
-//			Pos "300 0 0"	// Position doesn't matter for the sun but it determines the location for the axis indicator when rotating the light rig
-//			Dir "1 0.2 1"
-//			Color "255 255 255"
-//			Brightness 1.0
-//			Shadows 1
-//			AxisScale 2
-//			LightSourceRadius 0.5
-//			ShadowCascadeDistance0 200.0
-//			ShadowCascadeDistance1 1000.0
-//		}
-//
-//		PointLight
-//		{
-//			RelativePositioning 1
-//			Brightness 0.5
-//			Pos "0 200 0"	// Position is only used in conjunction with lookat to compute light direction
-//			LookAt "0 0 0"
-//			Distance 2		// Because of RelativePositioning this determines the distance of the light source to the center of the bounding sphere.
-//							// The light will be two bounding sphere distances away.
-//			Radius 10000
-//		}
-//
-//		PointLight
-//		{
-//			RelativePositioning 1
-//			Brightness 0.5
-//			Pos "0 0 200"
-//			LookAt "0 0 0"
-//			Distance 2
-//			Radius 10000
-//		}
-//
-//		"VMap"
-//		{
-//			"map" "maps/editor/toolscene_default.vmap"
-//		}
-//	}
-
-//	"Checkerboard"
-//	{
-//		Exposure
-//		{
-//			MinEV -6
-//			MaxEV 6
-//		}
-//
-//		Sun
-//		{
-//			Pos "300 0 0"	// Position doesn't matter for the sun but it determines the location for the axis indicator when rotating the light rig
-//			Dir "1 0.2 1"
-//			Color "255 255 255"
-//			Brightness 1.0
-//			Shadows 1
-//			AxisScale 2
-//			LightSourceRadius 0.5
-//			ShadowCascadeDistance0 200.0
-//			ShadowCascadeDistance1 1000.0
-//		}
-//
-//		PointLight
-//		{
-//			RelativePositioning 1
-//			Brightness 0.5
-//			Pos "0 200 0"	// Position is only used in conjunction with lookat to compute light direction
-//			LookAt "0 0 0"
-//			Distance 2		// Because of RelativePositioning this determines the distance of the light source to the center of the bounding sphere.
-//							// The light will be two bounding sphere distances away.
-//			Radius 10000
-//		}
-//
-//		PointLight
-//		{
-//			RelativePositioning 1
-//			Brightness 0.5
-//			Pos "0 0 200"
-//			LookAt "0 0 0"
-//			Distance 2
-//			Radius 10000
-//		}
-//
-//		"VMap"
-//		{
-//			"map" "maps/editor/toolscene_checkerboard.vmap"
-//		}
-//	}
-//    
-//	"Environment 1"
-//	{
-//		"VMap"
-//		{
-//			"map" "maps/editor/toolscene_environment1.vmap"
-//		}
-//
-//		Sun
-//		{
-//			Pos "300 0 0"	// Position doesn't matter for the sun but it determines the location for the axis indicator when rotating the light rig
-//			Dir "0.5 -0.5 0.3"
-//			Color "255 255 255"
-//			Brightness 0.5
-//			Shadows 1
-//			AxisScale 2
-//			LightSourceRadius 0.5
-//			ShadowCascadeDistance0 200.0
-//			ShadowCascadeDistance1 1000.0
-//		}
-//	}
-//
-//	"Environment 2"
-//	{
-//		"VMap"
-//		{
-//			"map" "maps/editor/toolscene_environment2.vmap"
-//		}
-//
-//		Sun
-//		{
-//			Pos "300 0 0"	// Position doesn't matter for the sun but it determines the location for the axis indicator when rotating the light rig
-//			Dir "0.8 -0.2 0.3"
-//			Color "255 255 255"
-//			Brightness 0.5
-//			Shadows 1
-//			AxisScale 2
-//			LightSourceRadius 0.5
-//			ShadowCascadeDistance0 200.0
-//			ShadowCascadeDistance1 1000.0
-//		}
-//	}
-//
-//	"Environment 3"
-//	{
-//		"VMap"
-//		{
-//			"map" "maps/editor/toolscene_environment3.vmap"
-//		}
-//
-//		Sun
-//		{
-//			Pos "300 0 0"	// Position doesn't matter for the sun but it determines the location for the axis indicator when rotating the light rig
-//			Dir "0.8 -0.2 0.3"
-//			Color "255 255 255"
-//			Brightness 0.5
-//			Shadows 1
-//			AxisScale 2
-//			LightSourceRadius 0.5
-//			ShadowCascadeDistance0 200.0
-//			ShadowCascadeDistance1 1000.0
-//		}
-//	}
-
 }

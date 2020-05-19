@@ -8161,7 +8161,7 @@
 ]
 
 @PointClass base(Targetname, EnableDisable) tags( Info ) iconsprite( "materials/editor/info_visibility_box.vmat" ) centered_box_oriented( box_size ) 
-= info_visibility_box : "A visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O."
+= info_visibility_box : "A dynamic visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O."
 [
 	box_size(vector) : "Box Size" : "128 128 128"
 	cull_mode(choices) : "Mode" : "0" : "Should the box hide objects inside or outside of its bounds. If inside is selected, any objects fully inside the box will be hidden. If outside is selected, all active visibility boxes are considered, and objects not intersecting any visibility boxes will be hidden."=
@@ -8171,7 +8171,8 @@
 	]
 ]
 
-@PointClass tags( Info ) iconsprite( "materials/editor/info_cull_triangles.vmat" ) centered_box_oriented( box_size ) = info_cull_triangles
+@PointClass tags( Info ) iconsprite( "materials/editor/info_cull_triangles.vmat" ) centered_box_oriented( box_size )
+= info_cull_triangles : "A static (compile-time) volume that will delete geometry inside it as part of map compile."
 [
 	box_size(vector) : "Box Size" : "128 128 128"
 	limit_to_world(bool) : "Limit to Prefab" : "0" : "Limit the box to culling triangles objects in the prefab to which it belongs."

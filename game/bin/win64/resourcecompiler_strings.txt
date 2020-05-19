@@ -27,6 +27,7 @@
 	You can install the VWatch service by installing/updating VMPI from \\fileserver\vmpi
 	You can update your VWatch service by updating VMPI from \\fileserver\vmpi
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+	_%;>
 	body_groups = %s
 	checksum %d
 	kE>fvw
@@ -228,8 +229,8 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  D8'tZL
- D;5	fT
- D;=%
+ D;5]eT
+ D;=y
  Done.
  ERROR: 
  Encountered errors:
@@ -604,21 +605,24 @@ $~aA;F
 ("%s")
 ($key_name)
 ($key_value)
-(%'{X
-(%4qX
-(%<Y<
+(%'X<
+(%9Y<
+(%D^X
+(%U`l
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%xhX
+(%wUX
 ('8PW
 (*%s*), 
-(5`PX
+(-AY<
+(5xbX
 (8HXhx
 (;^ |
-(=":Y
+(=6V<
+(=QY<
 (A]A\^]
 (A]A\_[
 (A]A\_^
@@ -1408,7 +1412,6 @@ $~aA;F
 -vwatch_disabled
 -vwatch_locking
 -width
-.%hI`
 .%s%s
 ... Building '%s'
 ..Done.
@@ -2878,8 +2881,6 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
-/%;C&
-/-nZ_
 /....vcd
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
@@ -2897,12 +2898,9 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5KJ+
-/5LB&
 /7w$M
 /84_>
 /=$!6
-/=fnM
 />58d%
 /?O_o
 /D$0v
@@ -3053,7 +3051,7 @@ $~aA;F
 1u1;S
 1usD;C
 1wsHp
-200515054208Z0#
+200519202845Z0#
 211007120000Z0M1
 211110000000Z0b1
 22:40:27
@@ -3111,9 +3109,9 @@ $~aA;F
 6>@G^
 6FaceSkyBox
 6Lc>D;~
+6OG6J
 700PP
 700WP
-78ky;nrR
 7H9u(t	H
 7HcD$P
 7Lcw E3
@@ -3404,6 +3402,7 @@ $~aA;F
 ;9}lHc
 ;9}|H
 ;<	u5H
+;=XLQ
 ;=u~H
 ;A ~W
 ;B$vUH
@@ -3517,6 +3516,7 @@ $~aA;F
 <*t"I
 <*t3I
 <+tu'
+<,FSr
 </%s>
 </font>
 </u1H
@@ -3743,10 +3743,12 @@ $~aA;F
 @80u#H
 @81u/H
 @83t)
-@85(&
+@85"&
+@85:7
 @85l?
 @89tDI
 @8:t|H
+@8=J3
 @8iHt
 @8kut~L
 @8k|t"HcK
@@ -6449,39 +6451,42 @@ D24X8
 D24X8_SHADOW
 D8#t*
 D8$8u
-D8%O3
 D8&t!
 D8&t4H
 D8't(Ic
 D8't)
 D8*u A
-D8-"e
-D8-$o
-D8-,m
-D8-/f
-D8-/n
-D8-1p
-D8-1u
-D8-2s
-D8-3r
-D8-4x
-D8-5t
-D8-5w
-D8-7q
-D8-8g
-D8-:v
-D8-=y
-D8-C~
-D8-F{
-D8-Gz
-D8-Hh
-D8-H|
-D8-J}
-D8-Qi
-D8-bj
-D8-ok
-D8-zo
-D8-|l
+D8-&r
+D8-'u
+D8-(t
+D8-(w
+D8-)n
+D8-)v
+D8-*q
+D8-*x
+D8-,f
+D8-.p
+D8-/s
+D8-5g
+D8-7y
+D8-:z
+D8-<{
+D8-=}
+D8->h
+D8->|
+D8-@~
+D8-Ki
+D8-\j
+D8-ek
+D8-ue
+D8-un
+D8-wo
+D8-yl
+D8-ym
+D8-|r
+D8-}u
+D8-~t
+D8-~w
 D80t.
 D82u&H
 D84;u
@@ -6490,9 +6495,8 @@ D88Hte
 D8:u7H
 D8<;u
 D8=!J
-D8=75
 D8=FH
-D8=`'
+D8=L5
 D8?tnH
 D8D$)t)f
 D8D$9t
@@ -6562,7 +6566,6 @@ D9'u$H
 D9*~;Hc
 D9+~!H
 D9,2H
-D9-tfT
 D9.ue
 D9/~ML
 D90u	9X
@@ -6570,7 +6573,6 @@ D91~YH
 D97tuD
 D98Ht;H
 D98tT
-D9=CgT
 D9A t
 D9A ~
 D9B,t
@@ -6640,8 +6642,8 @@ D9{(u
 D9|$ 
 D9|$x}
 D9|5Lt
-D:- >i
-D:-BAi
+D:-@9i
+D:-b<i
 D;09F0t5A
 D;2u\;
 D;8}aH
@@ -8072,8 +8074,9 @@ H0Hc\$p3
 H3\$HH
 H9(t{A
 H9+uHH
-H9-9O
-H9-^gV
+H9-	N
+H9-<Pl
+H9-NgV
 H97t<
 H98t%H
 H98tPA
@@ -8082,7 +8085,10 @@ H98t|A
 H98u	H
 H99u0H
 H99u{
+H9=Fy
 H9=V!
+H9=Yx
+H9=p/Q
 H9A u
 H9A(s
 H9A(u
@@ -8285,6 +8291,7 @@ Hc+;k
 Hc.;n
 Hc/;o
 Hc3;s
+Hc5_7{
 Hc7;w
 Hc7A+
 Hc;;{
@@ -9046,7 +9053,6 @@ IsValidLocaleName
 ItemFile
 Items
 ItemsFiles
-J/*,)
 J@UE3
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
 JFIF extension marker: JPEG-compressed thumbnail image, length %u
@@ -9401,6 +9407,7 @@ L0hE3
 L1HthD
 L2DHc
 L80Hc3+
+L9%4hx
 L9(uP
 L9*u&
 L91uAH
@@ -9422,6 +9429,8 @@ L9d$pt
 L9d$x
 L9e(t	H
 L9e0t	H
+L9egt
+L9egt	H
 L9ewt	H
 L9g@u=
 L9l$ t
@@ -9432,8 +9441,6 @@ L9m(t	H
 L9m0t	H
 L9mHt	H
 L9mXt	H
-L9mgt
-L9mgt	H
 L9mot	H
 L9mpt	H
 L9o(H
@@ -9625,6 +9632,7 @@ Lcd$
 Lcd$ A
 Lcd$ E
 Lcd$8H
+Lcd$@H
 Lcd$HLct$`A
 Lcd$pH
 Lcd$pL
@@ -9711,7 +9719,6 @@ Lc|$0H
 Lc|$0I
 Lc|$0L
 Lc|$8E
-Lc|$@H
 Lc|$@Hcl$ L
 Lc|$@M
 Lc|$P
@@ -10249,6 +10256,7 @@ O,D9O(vcH
 O0HcQ
 O1FTH
 O8+G$
+O=QLQ
 O@t$A
 O@t(A
 O@t(B
@@ -11465,6 +11473,9 @@ T$xHc
 T$xI9
 T$xL9#t
 T$xLc
+T5q#N
+T=h^g
+T=j#N
 TADIt	
 TADIu
 TADIu.
@@ -12230,16 +12241,16 @@ Visible Map Errors
 VolumetricFog
 Vwatch Retrieval of synchronization handle through app signal pipe failed with error code %d
 W!t/H
-W%4 `
-W%~\`
-W-t}e
+W%.\`
+W-D~e
 W0]7H
 W0]7L
-W5wF`
+W5'F`
 W8HcH
-W=E]`
-W=kY`
-W=tX`
+W=$X`
+W=<_[
+W=Aj`
+W=`H`
 W=vmdlkeys0
 WARNING: Could not fit padded images for "%s" - alpha crop forced on - dual sequences will not work
 WARNING: Could not fit padded images for "%s" - sequence images may experience color bleeding
@@ -12348,14 +12359,29 @@ X E9z
 X HcE
 X UWAVH
 X!t5~
-X%{X<
+X%3O<
+X%7O<
+X%;O<
+X%;fV
+X%=Y<
+X%?O<
+X%AY<
+X%CO<
+X%EY<
+X%GO<
+X%N[V
 X(D9y(
+X-EY<
+X-IY<
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X52ot
-X=_/N
+X5<K<
+X5BfV
+X5KM<
+X5U[V
+X5rqt
 XA;6|
 XA;w@
 XA\^][
@@ -12419,26 +12445,22 @@ X|$8E
 X|$xA
 X|(PH^
 Y$D;R
-Y%-]?
-Y%5g`
-Y%wzH
-Y-.:X
-Y-nDX
-Y-skV
+Y%F]p
+Y%gzH
+Y-d}?
+Y-gqm
+Y-j?X
 Y0t>H
-Y53/H
-Y5BQK
-Y5QJ+
-Y5T5s
-Y5ZJ+
-Y5cNK
-Y5f<=
-Y=!/H
-Y=%Mw
-Y=D$M
-Y=OZ`
-Y=SU`
-Y=gP`
+Y5"+I
+Y5#/H
+Y5DU`
+Y5IPK
+Y5JJK
+Y5WZ`
+Y5sqm
+Y5x_\
+Y=:f`
+Y=vQ`
 Y>kX>M
 Y@D;Z@u
 YCbCrCoefficients
@@ -12702,8 +12724,8 @@ Zpm"U
 \$xff
 \$xu+M
 \$xv.
+\%,E`
 \%lld.vpk
-\%|E`
 \/HcD$0
 \D$8H
 \D$8L
@@ -12750,7 +12772,6 @@ Zpm"U
 ^hHcF`
 ^hHcF`H
 ^oEZ_
-_-)w_
 _8H+_0H
 _8tDH
 _Description
@@ -13767,7 +13788,7 @@ e A_A^A]A\]
 e A_A^A]A\_^]
 e _^]
 e(A_A^A]A\_^[]
-e)u	D:%5Ai
+e)u	D:%U<i
 e+000
 e0A_A^A]A\]
 e0A_A^A]A\_^]
@@ -14521,7 +14542,7 @@ l$(@2
 l$(A)u
 l$(A;
 l$(A^A]A\[
-l$(D:-
+l$(D:-r
 l$(D;
 l$(E3
 l$(Ei
@@ -15659,7 +15680,7 @@ multilevel
 multilevelchannel
 multiplayer_break
 must be either LogLUV or LogL
-mxD:-
+mxD:-l
 n D9e
 n(Hc;L
 n03>Pu
@@ -16599,7 +16620,7 @@ t	IcH I
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=d
+t!@:=4
 t!D93t
 t!D:%
 t!HcC
@@ -16937,7 +16958,7 @@ t%D9s4u
 t%DkD$h,L
 t&=$^
 t&D9ih
-t&D:-,
+t&D:-
 t&H;y
 t'8D$8u
 t'8D$`u
@@ -17055,7 +17076,7 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=vnX
+t9H9=
 t9fff
 t:,!<
 t:D9s
@@ -17281,7 +17302,7 @@ tPD;A(sJI
 tPD;C
 tPD;K`sJL
 tPD;s`sJI
-tPH95=
+tPH95
 tPHc|$,
 tPIcN
 tPfE;
@@ -17628,7 +17649,7 @@ tuA;U
 tuD;AhsoI
 turn_rate
 tvHcE
-tvL9%	1
+tvL9%y1
 tvLcK
 twH;^XtH3
 twistJoints
@@ -17648,12 +17669,14 @@ t~LcL$PE
 u	8Fp
 u	9w$
 u	@8,
-u	@8=m.V
+u	@8=
 u	@:-
+u	@:-q
 u	D:%
-u	D:%'
-u	D:%(gr
-u	D:%v
+u	D:%89i
+u	D:%F
+u	D:%U
+u	D:%lfr
 u	D:-
 u	D:5
 u D8p
@@ -17821,7 +17844,7 @@ usesLaggedValues
 utlstringtoken
 uuHcF
 uvHc_ ;_0u
-ux@85
+ux@85>pP
 uxHcOP
 uzKs@>
 v A9~ w
@@ -18085,7 +18108,7 @@ x$H9-
 x&;+}"H
 x&E;B
 x'D;'}"H
-x'L9=Y
+x'L9=
 x'fff
 x(/u'H
 x)A;M
@@ -18249,7 +18272,7 @@ znear
 |$ utM
 |$ |AH
 |$ ~-H
-|$$;=
+|$$;=^
 |$$D;
 |$$M+
 |$$fE;
