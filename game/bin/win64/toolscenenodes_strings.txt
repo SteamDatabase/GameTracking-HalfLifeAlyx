@@ -257,7 +257,7 @@
 "e?<<<<<<l?
 "id" "elementid" 
 "lineOrder" attribute not found in the header.
-"pA3Q(
+"pA3Qx
 "pixelAspectRatio" attribute not found in the header.
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
@@ -510,20 +510,19 @@ $~aA;F
 ( %1, %2 )
 ( %1, %2, %3, %4% )
 ( 8PX
-(%!s)
+(%<s)
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%ls)
 ('8PW
 (*%s*), 
-(-8s)
-(-rs)
-(5{$ 
+(-Bs)
+(5k$ 
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
+(=rx-
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
 (?setColumnCount@QTableWidget@@QEAAXH@Z
 (?setData@QSortFilterProxyModel@@UEAA_NAEBVQModelIndex@@AEBVQVariant@@H@Z
@@ -2339,6 +2338,7 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
+/-sg-
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2355,9 +2355,6 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5'W/
-/56+,
-/5lz%
 /7w$M
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /=$!6
@@ -2466,7 +2463,6 @@ $~aA;F
 0D;t. |
 0Hc1H
 0Hc3H
-0Hc5|
 0Hc7;w
 0Hc7L
 0Hc9H
@@ -2536,7 +2532,7 @@ $~aA;F
 1setFilterWildcard(QString)
 1tileSubWindows()
 2.?setVisible@QDialog@@UEAAX_N@Z
-200519202721Z0#
+200527200211Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -2586,7 +2582,6 @@ $~aA;F
 3D$L5<
 3H97t 
 3JcD7
-3M!Jf
 3dcameras
 4+IcO
 4-byte data pool
@@ -2670,7 +2665,6 @@ $~aA;F
 8A_A^_]
 8A_A^_^][
 8A__][
-8CDmeChannelsClip CUtlMemoryPool
 8Csinf
 8D$ u+I
 8D$!t
@@ -2690,6 +2684,7 @@ $~aA;F
 8D$qt|I
 8D$utfI
 8D;l$ 
+8DmeSoundClip
 8EIt3f
 8GbthH
 8H9t$@t
@@ -2742,7 +2737,6 @@ $~aA;F
 91~/E3
 91~IH
 92~tH
-95^U*
 98~03
 99C }
 99~-H
@@ -2979,7 +2973,7 @@ $~aA;F
 <DescribeIsUnimplemented>
 <Draw ray tracing environment debug visualization in Hammer
 <DuBfff
-<May 14 2020
+<May 27 2020
 <NONE>
 <NULL>
 <[D9}
@@ -3005,7 +2999,8 @@ $~aA;F
 ======
 =SPB8
 =imb;D
->WIN32
+>5R_	
+>curve_%s_to_curve_%s
 >ff&?
 >ffffff
 >jtm}S
@@ -3591,17 +3586,15 @@ $~aA;F
 @.tls
 @09D$0
 @8,2u
-@8-8LF
-@8-HIF
-@8-dFF
-@8-{KF
+@8-(bF
+@8-D_F
+@8-[dF
+@8-oaF
 @80t9H
 @80u#H
 @81u/H
-@85]Y
-@85v&V
+@85v3V
 @8:t|H
-@8=f:K
 @8kut~L
 @8l$8t
 @8oh~?H
@@ -3641,7 +3634,6 @@ $~aA;F
 @8}ju0H
 @8}ku	H
 @8~h~'Hc
-@:5x4U
 @;k@|
 @>%>b
 @@D;O@|
@@ -4552,6 +4544,7 @@ CDmeBoolLog CUtlMemoryPool
 CDmeBoolLogLayer CUtlMemoryPool
 CDmeCamera CUtlMemoryPool
 CDmeChannel CUtlMemoryPool
+CDmeChannelsClip CUtlMemoryPool
 CDmeClip CUtlMemoryPool
 CDmeColorCurveInfo CUtlMemoryPool
 CDmeColorLog CUtlMemoryPool
@@ -5734,52 +5727,48 @@ D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 D8 u2I
 D8!uNH
-D8%zh,
+D8%Zh,
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-!7
-D8-!@
-D8-#A
-D8-%>
-D8-%?
-D8-(D
-D8-)G
-D8-*F
-D8-*I
-D8-+H
-D8-,C
-D8-.8
-D8-.E
-D8-0B
-D8-3J
-D8-<L
-D8-<O
-D8-=K
-D8->9
-D8->M
-D8-@:
-D8-@N
-D8-IP
-D8-IQ
-D8-T;
-D8-VR
-D8-e<
-D8-k=
-D8-n6
-D8-p@
-D8-x>
-D8-{7
-D8-{?
-D8-}A
-D8-}F
-D8-~D
+D8-$2
+D8-&I
+D8-53
+D8-;4
+D8->-
+D8-@7
+D8-H5
+D8-K.
+D8-K6
+D8-M8
+D8-M=
+D8-N;
+D8-O:
+D8-P@
+D8-Q<
+D8-Q?
+D8-S9
+D8-T/
+D8-V>
+D8-YA
+D8-ZH
+D8-_F
+D8-bC
+D8-cB
+D8-d0
+D8-dD
+D8-fE
+D8-lG
+D8-m1
+D8-qI
+D8-~2
 D80t.
 D82u&H
 D88Ht!
 D88Hte
 D8<;u
+D8==0+
 D8?tnH
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8D$)t)f
@@ -5898,12 +5887,10 @@ D9xpu
 D9{(u
 D9|$ 
 D9|$x}
-D:-=r?
-D:5_4U
+D:-(	=
 D;09F0t5A
 D;8}aH
-D;= K:
-D;=\K:
+D;=xJ:
 D;B s
 D;C }
 D;C`s
@@ -6177,7 +6164,6 @@ DmeSheetSequence
 DmeSheetSequenceFrame
 DmeSingleIndexedComponent
 DmeSound
-DmeSoundClip
 DmeSpotLight
 DmeStringCurveInfo
 DmeStringLog
@@ -6283,6 +6269,7 @@ E;P sSI
 E;|$4sP
 E;~(H
 E>nEA
+E?WIN32
 E@9GXu7Lc
 E@A8_
 E@t	H
@@ -6947,19 +6934,17 @@ H0F08
 H0Hc\$p3
 H3\$HH
 H9,8t
-H9-A	K
-H9-^N+
-H9-aT[
+H9-QR[
+H9-i!K
+H9-q&K
 H9.u?H
-H95p7D
+H95 KD
 H97t<
 H98tPA
 H98tqA
 H98t|A
 H98u	H
 H99u{
-H9=F~S
-H9=nG,
 H9A u
 H9A(s
 H9A@u
@@ -7126,7 +7111,6 @@ Hc7A+
 Hc;;{
 Hc;HcK
 Hc<0H
-Hc=e%W
 Hc>;~
 Hc>Hc
 HcA$H
@@ -8093,12 +8077,11 @@ L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L0hE3
 L1HthD
 L80Hc3+
-L9%H~C
-L9%`'R
 L9*u&
 L93u_
 L93uc
 L9<8u7
+L9=mJD
 L9Ahs
 L9B A
 L9B@A
@@ -8210,6 +8193,7 @@ Lc3Hc
 Lc3HcL8
 Lc3HcL88I
 Lc3HcL8HI
+Lc5;&W
 Lc6D;v
 Lc7D;w
 Lc:E3
@@ -9128,7 +9112,6 @@ RMouseDoubleClick
 RPCRT4.dll
 RSDS	ev
 RST%d
-RW`4z
 R`Ic|$@L
 RadianEuler
 Radius
@@ -9689,7 +9672,6 @@ T$xHc
 T$xI9
 T$xL9#t
 T$xLc
-T5Qo,
 TADIt	
 TADIu
 TADIu.
@@ -10282,6 +10264,7 @@ W!?pos@QWidget@@QEBA?AVQPoint@@XZ
 W!t/H
 W8HcH
 W=ikrig
+W=|	(
 WARNING! You do not have the latest revision of this file. Checking out the file before getting the latest revision means you may have to resolve conflicts before you can submit your changes. <pre> %s </pre> You have revision: %d <br> Latest revision is: %d <br>
 WARNING: Failed to parse class '%s'.
 WARNING: Map %s has more than one nav mesh. Maps can have at most one nav mesh. Look for nodes starting with "nav" and delete them
@@ -10356,14 +10339,15 @@ X E9z
 X HcE
 X UWAVH
 X!t5~
+X%W%	
 X(D9y(
-X-.0	
-X-Hn.
+X-_%	
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X57n,
+X5BM<
+X5u*/
 XA;6|
 XA;w@
 XA\^][
@@ -10419,12 +10403,16 @@ X|$8E
 X|$xA
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
+Y%.mA
+Y%cv/
+Y-*~,
+Y-nx,
 Y0t>H
-Y5&W/
-Y5)W/
+Y5+l>
 Y5FhD
-Y=-'6
-Y=n(.
+Y5q#"
+Y=>-.
+Y=Dc/
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -10643,7 +10631,6 @@ Zpm"U
 \$xu+M
 \$xv.
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
-\%~&B
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
 \/HcD$0
 \D$8H
@@ -11304,7 +11291,6 @@ currentState
 curvature
 curve
 curve info
-curve_%s_to_curve_%s
 curveinfo
 curvetypes
 custom
@@ -11499,7 +11485,7 @@ dynamic_interaction
 e A_A^A]A\]
 e A_A^A]A\_^]
 e(A_A^A]A\_^[]
-e)u	D:%
+e)u	D:%=
 e*?setItem@QTableWidget@@QEAAXHHPEAVQTableWidgetItem@@@Z
 e+000
 e0A_A^A]A\]
@@ -11922,7 +11908,6 @@ hullivr_faceisland_merge_tan
 hullivr_version
 hurt_me
 hurt_them
-hxi/c
 i#?qt_metacast@QTableWidget@@UEAAPEAXPEBD@Z
 iW!]4/
 iconsprite
@@ -12036,6 +12021,7 @@ k ;k0u
 k ?paintEvent@QPushButton@@MEAAXPEAVQPaintEvent@@@Z
 k HcKX;
 k WAVAWH
+k'fbi
 k(H;_
 k,?setRowCount@QTableWidget@@QEAAXH@Z
 k0i0$
@@ -12117,7 +12103,7 @@ l$(@2
 l$(A)u
 l$(A;
 l$(A^A]A\[
-l$(D:-Z
+l$(D:-:
 l$(E3
 l$(Ei
 l$(H;t$htnH
@@ -12125,7 +12111,7 @@ l$(Hc
 l$(HcL
 l$(L+
 l$(LcI
-l$)u	@:-
+l$)u	@:-x
 l$,A9l$
 l$,Lc
 l$0;CP}8H
@@ -12826,12 +12812,12 @@ multilevelchannel
 multiplayer_break
 must be either LogLUV or LogL
 mwLcEgH
-mxD:-$
+mxD:-
 n D9e
 n(Hc;L
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
-nD8-O
+nD8-k
 nExternalToolId
 nIndex
 nLayoffState
@@ -13550,9 +13536,9 @@ t	H9s
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=
+t!@:=L
 t!D93t
-t!D:%
+t!D:%{
 t!HcC
 t!HcL$`
 t!McY
@@ -13937,7 +13923,7 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=v
+t9H9=F
 t9fff
 t:,!<
 t:D9s
@@ -14501,15 +14487,16 @@ t}E;E
 t~LcL$PE
 u	8Fp
 u	9w$
-u	@8=E
-u	@:-
-u	@:-y
+u	@8=
+u	@:-	
+u	@:-*
 u	D:%
-u	D:% rG
-u	D:%=
-u	D:%h
-u	D:-Vs?
-u	D:5]
+u	D:% 	=
+u	D:%H
+u	D:%N
+u	D:%t
+u	D:-
+u	D:5
 u ?paintEvent@QTableView@@MEAAXPEAVQPaintEvent@@@Z
 u IcH
 u f;N
@@ -14854,7 +14841,7 @@ x UAVAWH
 x!HcI
 x!HcK
 x";C }
-x$H9-0T[
+x$H9- R[
 x&;+}"H
 x'D;'}"H
 x'L9=

@@ -51,6 +51,14 @@
 "HLVR_MainMenu_AddonsToolsMode"			"No se puede cargar un mapa con complementos mientras se está en el modo Herramientas."
 "HLVR_MainMenu_StartAddonGame"			"Iniciar la partida con los siguientes complementos:"
 "HLVR_MainMenu_AddonDisabled"			"Complemento asociado deshabilitado"
+"HLVR_MainMenu_AddonNotAvailable"		"El complemento asociado ya no está disponible para este mapa.\nVuelve a suscribirte a este complemento y actívalo para continuar"
+"HLVR_MainMenu_NoAddonsEnabled"			"No hay complementos activados para la partida con complementos"
+"HLVR_MainMenu_AddonToggleInfo"			"Pulsa el botón de la izquierda para activar o desactivar"
+"HLVR_MainMenu_LocalAddon"				"Complemento local"
+"HLVR_MainMenu_MissingAddon"			"Faltan los siguientes complementos. Vuelve a suscribirte para cargar este archivo."
+
+"HLVR_MainMenu_AddonUpVote"				"Votos positivos"
+"HLVR_MainMenu_AddonDownVote"			"Votos negativos"
 
 "HLVR_browse_workshop_label"			"Explorar el Workshop"
 "HLVR_browse_workshop_confirm"			"¿Explorar el Workshop a través de la interfaz de Steam?"
@@ -72,6 +80,8 @@
 "HLVR_MainMenu_Attention_Low_GPU_Memory"						"Se ha detectado que la memoria disponible para la unidad de procesamiento de gráficos (GPU) es baja, cierra los programas abiertos que no sean necesarios para aumentar la disponibilidad de dicha memoria."
 "HLVR_MainMenu_Attention_Low_System_Memory"						"Se ha detectado que la memoria del sistema disponible es baja, cierra los programas abiertos que no sean necesarios para aumentar la disponibilidad de dicha memoria."
 "HLVR_MainMenu_Old_Driver_Version"								"La versión del controlador de tu GPU es inferior a la versión recomendada para Half-Life: Alyx en Vulkan. Instala el controlador más reciente para tu GPU."
+"HLVR_MainMenu_Attention_LoadErrorMap"							"No se ha podido cargar el juego porque no se ha encontrado el mapa solicitado:"
+"HLVR_MainMenu_Attention_LoadErrorAddons"						"Esto puede deberse a uno de los complementos habilitados:"
 
 "HLVR_MainMenu_ModalQuit"						"¿Deseas salir de Half-Life Alyx?"
 "HLVR_MainMenu_ModalMainMenu"					"¿Deseas ir al menú principal?"
@@ -265,7 +275,7 @@
 "HLVR_Options_Eye_Left"							"Izquierdo"
 "HLVR_Options_Eye_Right"						"Derecho"
 
-"HLVR_Options_SpectatorSteamVR_desc"			"Dibuja el HUD en la ventana del StreamVR.\n\nEsto añade un coste de rendimiento."
+"HLVR_Options_SpectatorSteamVR_desc"			"Muestra el HUD en la ventana de SteamVR.\n\nEsto añade un coste de rendimiento."
 "HLVR_Options_SpectatorSteamVR_Base"			"HUD del espectador en SteamVR"
 "HLVR_Options_SpectatorSteamVR_On"				"Activado"
 "HLVR_Options_SpectatorSteamVR_Off"				"Desactivado"

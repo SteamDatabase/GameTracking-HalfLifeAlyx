@@ -8,28 +8,28 @@
     
     <Panel class="col_body">
       <Panel class="header">
-        <Label class="header" text="TODO: Header : Addon Info" />
+        <Label class="header" text="{s:addon_name}" />
       </Panel>
 
       <Panel class="addon_spacer" />
 
       <Panel class="row">
         <Panel class="addon_col_body">
-          <Label class="addon_body_copy" text="PlaceHolder : Addon Description Text here Addon Description Text hereAddon Description Text hereAddon Description Text here" />
+          <Label class="addon_body_copy" text="{s:addon_description}" />
         </Panel>
 
         <Panel class="addon_col_body">
           <Image id="ItemThumbImage" class="addon_screenshot" />
 
-          <Label class="addon_credits" text="Author : Gordon" />
+          <Label class="addon_credits" text="{s:author_heading} : {s:author_name}" />
 
-          <Label class="addon_credits" text="Tags : TEMP" />
+          <Label class="addon_credits" text="{s:tags_desc}" />
 
           <Panel class="addon_spacer" />
           
-          <Label class="addon_credits" text="Subscribers : 9001" />
+          <Label class="addon_credits" text="{s:upvote_heading} : {d:upvote_count}" />
 
-          <Label class="addon_credits" text="Favorites : 777" />
+          <Label class="addon_credits" text="{s:downvote_heading} : {d:downvote_count}" />
           
           <Panel class="row">
             <Button class="addon_vote_button" >

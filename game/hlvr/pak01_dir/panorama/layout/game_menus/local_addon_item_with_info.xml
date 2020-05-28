@@ -1,0 +1,27 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/game_menus/game_menu_main.vcss_c" />
+    <include src="s2r://panorama/styles/language_shared.vcss_c" />
+  </styles>
+
+  <HLVRAddonTogglePanel>
+    <Panel class="row scroll_item" onmouseover="AddonInfoMouseOver()">
+      <Panel class="addon_item addon_toggle_container" onactivate="AddonToggleButton()">
+        <Panel class="switch_image" />
+      </Panel>
+      
+      <!--<Panel class="addon_item addon_row" onactivate="AddonInfoButton()">-->
+      <Panel class="addon_item addon_row" onactivate="AddonToggleButton()">
+        <Label text="{s:addon_name} {s:downloading}"/>
+        <!--<Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />-->
+      </Panel>
+      
+    </Panel>
+    <Panel></Panel>
+  </HLVRAddonTogglePanel>
+
+</root>
+
+
+
+

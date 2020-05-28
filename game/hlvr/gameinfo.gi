@@ -183,6 +183,11 @@
 		"features"					"animgraph;modelconfig"
 	}
 	
+	PostProcessingEditor
+	{
+		"supports_vignette"			"0"
+	}
+	
 	RenderPipelineAliases
 	{
 		"Tools"			"VR"

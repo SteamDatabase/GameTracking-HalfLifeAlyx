@@ -27,9 +27,7 @@
 	You can install the VWatch service by installing/updating VMPI from \\fileserver\vmpi
 	You can update your VWatch service by updating VMPI from \\fileserver\vmpi
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-	_%;>
 	body_groups = %s
-	checksum %d
 	kE>fvw
 	material_group = "%s"
 	tools_no_extraction %d
@@ -229,8 +227,7 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  D8'tZL
- D;5]eT
- D;=y
+ D;=9
  Done.
  ERROR: 
  Encountered errors:
@@ -587,6 +584,7 @@ $~aA;F
 &YA1H
 &YA1I
 &YA1L
+' 8|f
 '":|;
 '%s' is not a valid variable type
 ', type<
@@ -605,24 +603,19 @@ $~aA;F
 ("%s")
 ($key_name)
 ($key_value)
-(%'X<
-(%9Y<
-(%D^X
-(%U`l
+(%7jX
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%wUX
 ('8PW
 (*%s*), 
-(-AY<
-(5xbX
+(58SQ
+(58wX
 (8HXhx
 (;^ |
-(=6V<
-(=QY<
+(=bNY
 (A]A\^]
 (A]A\_[
 (A]A\_^
@@ -1285,6 +1278,7 @@ $~aA;F
 ,Q9bH
 ,t0D9J0v*L
 ,|%)v
+,}v(|f
 --  Increase the size of the resource stream   --
 --  Need %d bytes, but only have %d bytes
 ---- dmxconvert cmdline ----
@@ -1412,6 +1406,7 @@ $~aA;F
 -vwatch_disabled
 -vwatch_locking
 -width
+.%(R`
 .%s%s
 ... Building '%s'
 ..Done.
@@ -1881,7 +1876,6 @@ $~aA;F
 .?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@VCExternalToolInfo@@V?$CUtlMemory@VCExternalToolInfo@@H@@@@VCExternalToolInfo@@@@
 .?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@VCUtlString@@V?$CUtlMemory@VCUtlString@@H@@@@VCUtlString@@@@
 .?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@VVector2D@@V?$CUtlMemory@VVector2D@@H@@@@VVector2D@@@@
-.?AV?$CSchemaUtlVectorManipulator@V?$CUtlVector@_NV?$CUtlMemory@_NH@@@@_N@@
 .?AV?$CScriptAccessorT@VCDefScriptAccessorBase@@$00@@
 .?AV?$CScriptScopeT@VCDefScriptAccessorBase@@$00@@
 .?AV?$CSelectionSet@PEAVCMapNode@@@@
@@ -2521,7 +2515,6 @@ $~aA;F
 .?AVCPolygonMesh@@
 .?AVCPostConnectCallback@@
 .?AVCPostProcessData@@
-.?AVCPostProcessLayerSelection@@
 .?AVCResourceAssetTypeInfo@@
 .?AVCResourceCompilerAnimgraph@@
 .?AVCResourceCompilerChoreoSceneFileData@@
@@ -2881,6 +2874,7 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
+/%KR&
 /....vcd
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
@@ -2898,9 +2892,13 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
+/5,S&
+/5[Y+
+/5\Q&
 /7w$M
 /84_>
 /=$!6
+/=F|M
 />58d%
 /?O_o
 /D$0v
@@ -3036,6 +3034,7 @@ $~aA;F
 123456789
 1280x720
 131022120000Z
+13:12:37
 141022000000Z
 16-byte data pool
 181004000000Z
@@ -3051,10 +3050,9 @@ $~aA;F
 1u1;S
 1usD;C
 1wsHp
-200519202845Z0#
+200527201407Z0#
 211007120000Z0M1
 211110000000Z0b1
-22:40:27
 241022000000Z0G1
 255 255 255 255
 281022120000Z0r1
@@ -3105,11 +3103,11 @@ $~aA;F
 5@8|$"t.9|
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
+5tptf
 64 283 0
-6>@G^
+6>@7^
 6FaceSkyBox
 6Lc>D;~
-6OG6J
 700PP
 700WP
 7H9u(t	H
@@ -3156,7 +3154,6 @@ $~aA;F
 8A_A^_]
 8A_A^_^][
 8A__][
-8CDmeUnpackVMatrixOperator CUtlMemoryPool
 8Csinf
 8D$ u+I
 8D$!t
@@ -3252,6 +3249,7 @@ $~aA;F
 9;~<ff
 9;~oH
 9;~qH
+9>8Oe
 9C |K
 9Cdt#H
 9D$ u
@@ -3402,7 +3400,6 @@ $~aA;F
 ;9}lHc
 ;9}|H
 ;<	u5H
-;=XLQ
 ;=u~H
 ;A ~W
 ;B$vUH
@@ -3516,7 +3513,6 @@ $~aA;F
 <*t"I
 <*t3I
 <+tu'
-<,FSr
 </%s>
 </font>
 </u1H
@@ -3735,7 +3731,6 @@ $~aA;F
 @8(t7H
 @8(tPH
 @8,2u
-@8-^!
 @80t#H
 @80t9H
 @80tG
@@ -3743,12 +3738,11 @@ $~aA;F
 @80u#H
 @81u/H
 @83t)
-@85"&
-@85:7
-@85l?
+@858&
+@85z0
 @89tDI
 @8:t|H
-@8=J3
+@8=*B
 @8iHt
 @8kut~L
 @8k|t"HcK
@@ -3768,7 +3762,7 @@ $~aA;F
 @8x u
 @8x|H
 @8y:t
-@8{Xt
+@8{Tt
 @8{Xu
 @8{Yt
 @8{Yu
@@ -3909,6 +3903,7 @@ $~aA;F
 @SVWATAUAVAWH
 @SVWATAVH
 @SVWATH
+@SVWAUAVH
 @SVWAUAWH
 @SVWAUH
 @SVWAVAWH
@@ -5066,6 +5061,7 @@ CDmeUint8LogLayer CUtlMemoryPool
 CDmeUnpackColorOperator CUtlMemoryPool
 CDmeUnpackQAngleOperator CUtlMemoryPool
 CDmeUnpackQuaternionOperator CUtlMemoryPool
+CDmeUnpackVMatrixOperator CUtlMemoryPool
 CDmeUnpackVector2Operator CUtlMemoryPool
 CDmeUnpackVector3Operator CUtlMemoryPool
 CDmeUnpackVector4Operator CUtlMemoryPool
@@ -5294,7 +5290,6 @@ CPolygonMeshRenderData::BuildVertexAndIndexBuffers(1133):
 CPolygonMeshRenderData::BuildVertexAndIndexBuffersForFaces(346): 
 CPolygonMeshRenderData_Model
 CPostProcessData
-CPostProcessLayerSelection
 CRC = %x
 CRC error
 CRenderBufferBinding
@@ -6456,37 +6451,32 @@ D8&t4H
 D8't(Ic
 D8't)
 D8*u A
-D8-&r
-D8-'u
-D8-(t
-D8-(w
-D8-)n
-D8-)v
-D8-*q
-D8-*x
-D8-,f
-D8-.p
-D8-/s
-D8-5g
-D8-7y
-D8-:z
-D8-<{
-D8-=}
-D8->h
-D8->|
-D8-@~
-D8-Ki
-D8-\j
-D8-ek
-D8-ue
-D8-un
-D8-wo
-D8-yl
-D8-ym
-D8-|r
-D8-}u
-D8-~t
-D8-~w
+D8-)k
+D8-/l
+D8-2e
+D8-4o
+D8-<m
+D8-?f
+D8-?n
+D8-Ap
+D8-Au
+D8-Bs
+D8-Cr
+D8-Dx
+D8-Et
+D8-Ew
+D8-Gq
+D8-Hg
+D8-Jv
+D8-My
+D8-S~
+D8-V{
+D8-Wz
+D8-Xh
+D8-X|
+D8-Z}
+D8-ai
+D8-rj
 D80t.
 D82u&H
 D84;u
@@ -6494,16 +6484,14 @@ D88Ht!
 D88Hte
 D8:u7H
 D8<;u
-D8=!J
-D8=FH
-D8=L5
+D8=l5
+D8=p'
 D8?tnH
 D8D$)t)f
 D8D$9t
 D8D$Q
 D8D$Qt
 D8D)(u
-D8FZH
 D8H4u
 D8I$t
 D8I4t'L
@@ -6542,7 +6530,6 @@ D8l$x
 D8m!u0H
 D8m"u	H
 D8m(u-Lc3D;s
-D8n\H
 D8sAt
 D8s`A
 D8s`D
@@ -6567,12 +6554,14 @@ D9*~;Hc
 D9+~!H
 D9,2H
 D9.ue
+D9.~XI
 D9/~ML
 D90u	9X
 D91~YH
 D97tuD
 D98Ht;H
 D98tT
+D9=SmT
 D9A t
 D9A ~
 D9B,t
@@ -6642,8 +6631,6 @@ D9{(u
 D9|$ 
 D9|$x}
 D9|5Lt
-D:-@9i
-D:-b<i
 D;09F0t5A
 D;2u\;
 D;8}aH
@@ -7098,10 +7085,12 @@ E0HcH
 E0Lcx
 E49F4t
 E8A8_
+E8FUH
 E8X@t8A
 E8g(tD
 E8gnu
 E8l$ ueI
+E8nWH
 E9$1~!E
 E9&t+A
 E9.~>I
@@ -8054,6 +8043,7 @@ H!u H
 H#L$8H
 H#t$0tB
 H$E+H,toA
+H'0|f
 H(uMH
 H)_(H
 H*0"ZOW
@@ -8074,9 +8064,9 @@ H0Hc\$p3
 H3\$HH
 H9(t{A
 H9+uHH
-H9-	N
-H9-<Pl
-H9-NgV
+H9-'#s
+H9-9Y
+H9-NkV
 H97t<
 H98t%H
 H98tPA
@@ -8085,10 +8075,6 @@ H98t|A
 H98u	H
 H99u0H
 H99u{
-H9=Fy
-H9=V!
-H9=Yx
-H9=p/Q
 H9A u
 H9A(s
 H9A(u
@@ -8291,7 +8277,6 @@ Hc+;k
 Hc.;n
 Hc/;o
 Hc3;s
-Hc5_7{
 Hc7;w
 Hc7A+
 Hc;;{
@@ -8600,7 +8585,6 @@ Hcl$pH
 Hcl$xH
 Hcn(H
 Hcn83
-Hcn8L
 Hco H
 Hco(H
 Hco,H
@@ -8731,6 +8715,7 @@ I HcH
 I L;I
 I could not work out what I was expecting, like so many of us these days!
 I(D9I
+I*`TP<5)
 I0Ic]
 I96t4H
 I9@Pt~H
@@ -8814,6 +8799,7 @@ Ic_8H
 Icn HcL
 IcuHI
 IcuhH
+Icv8L
 Icw H
 Ic|$`+
 Ic~ H
@@ -9407,9 +9393,10 @@ L0hE3
 L1HthD
 L2DHc
 L80Hc3+
-L9%4hx
 L9(uP
 L9*u&
+L9-TC
+L9-qH
 L91uAH
 L93u_
 L93uc
@@ -9941,7 +9928,7 @@ MaxPolicyElementKey
 MaxSampleValue
 Maximum Size Scale
 Maximum supported image dimension is %u pixels
-May 14 2020
+May 27 2020
 Mbp?333333
 Mc$$A
 Mc&E;f
@@ -10256,7 +10243,6 @@ O,D9O(vcH
 O0HcQ
 O1FTH
 O8+G$
-O=QLQ
 O@t$A
 O@t(A
 O@t(B
@@ -10357,6 +10343,7 @@ P(fD!d$ZH
 P(fD!|
 P0A9u
 P0D9;tT
+P3Gd2_
 P8H=vmatt
 P8HcC
 P8HcO
@@ -11187,6 +11174,7 @@ Simple Cubic
 Simulated %i objects, %i sleeping.
 Single Convex Hull
 Size mismatch determining size of signed data block (%d vs %d)
+Sk/!Cg
 Skipping file in read-only search path: "%s"
 Skipping file:
 Sky Box
@@ -11473,9 +11461,8 @@ T$xHc
 T$xI9
 T$xL9#t
 T$xLc
-T5q#N
-T=h^g
-T=j#N
+T5q2N
+T=j2N
 TADIt	
 TADIu
 TADIu.
@@ -12241,16 +12228,16 @@ Visible Map Errors
 VolumetricFog
 Vwatch Retrieval of synchronization handle through app signal pipe failed with error code %d
 W!t/H
-W%.\`
-W-D~e
+W%>e`
 W0]7H
 W0]7L
-W5'F`
+W57O`
 W8HcH
-W=$X`
-W=<_[
-W=Aj`
-W=`H`
+W=+b`
+W=4a`
+W=Qs`
+W=\t[
+W=pQ`
 W=vmdlkeys0
 WARNING: Could not fit padded images for "%s" - alpha crop forced on - dual sequences will not work
 WARNING: Could not fit padded images for "%s" - sequence images may experience color bleeding
@@ -12359,29 +12346,14 @@ X E9z
 X HcE
 X UWAVH
 X!t5~
-X%3O<
-X%7O<
-X%;O<
-X%;fV
-X%=Y<
-X%?O<
-X%AY<
-X%CO<
-X%EY<
-X%GO<
-X%N[V
+X%+W<
 X(D9y(
-X-EY<
-X-IY<
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5<K<
-X5BfV
-X5KM<
-X5U[V
-X5rqt
+X5*Y+
+X=CW<
 XA;6|
 XA;w@
 XA\^][
@@ -12443,24 +12415,27 @@ Xt$dE
 X|$ A
 X|$8E
 X|$xA
-X|(PH^
+X|(P8^
 Y$D;R
-Y%F]p
-Y%gzH
-Y-d}?
-Y-gqm
-Y-j?X
+Y-*TX
+Y-Z^X
+Y-nNX
 Y0t>H
-Y5"+I
-Y5#/H
-Y5DU`
-Y5IPK
-Y5JJK
-Y5WZ`
-Y5sqm
-Y5x_\
-Y=:f`
-Y=vQ`
+Y5'zH
+Y5B]K
+Y5Hu\
+Y5S/H
+Y5T^`
+Y5aY+
+Y5cZK
+Y5gc`
+Y5jY+
+Y5r+I
+Y='Y`
+Y=A/H
+Y=D2M
+Y=Jo`
+Y=m(+
 Y>kX>M
 Y@D;Z@u
 YCbCrCoefficients
@@ -12639,7 +12614,7 @@ Zpm"U
 \$@9\$8~I
 \$@;B
 \$@@2
-\$@@8=
+\$@@8=q
 \$@A_A^A]A\
 \$@E3
 \$@H+
@@ -12724,7 +12699,7 @@ Zpm"U
 \$xff
 \$xu+M
 \$xv.
-\%,E`
+\%<N`
 \%lld.vpk
 \/HcD$0
 \D$8H
@@ -13594,7 +13569,7 @@ d$(A;
 d$(E3
 d$(Hc
 d$(fI
-d$)u	D:%
+d$)u	D:%)
 d$,H9D$P
 d$0A+
 d$0E3
@@ -13788,7 +13763,7 @@ e A_A^A]A\]
 e A_A^A]A\_^]
 e _^]
 e(A_A^A]A\_^[]
-e)u	D:%U<i
+e)u	D:%
 e+000
 e0A_A^A]A\]
 e0A_A^A]A\_^]
@@ -13900,6 +13875,7 @@ eventindex
 events
 ewLcm
 ewh/?y
+ex@|f
 exA_A^A]A\_^[]
 exclude
 executable format error
@@ -14542,7 +14518,7 @@ l$(@2
 l$(A)u
 l$(A;
 l$(A^A]A\[
-l$(D:-r
+l$(D:-
 l$(D;
 l$(E3
 l$(Ei
@@ -14551,7 +14527,7 @@ l$(Hc
 l$(HcL
 l$(L+
 l$(LcI
-l$)u	@:-
+l$)u	@:-p
 l$,A9l$
 l$,Lc
 l$09s
@@ -14691,6 +14667,7 @@ l$xD;
 l$xE3
 l$xHc
 l6qnk
+l=!x|f
 ladder
 lame_enc.dll
 large
@@ -14952,7 +14929,6 @@ m_bIsOccluder
 m_bIsPrimaryTool
 m_bIsSecondaryTool
 m_bIsTextEditor
-m_bLayerMaskEnabled
 m_bLocalSpace
 m_bMarkedForRemoval
 m_bNeedsBBoxUpdate
@@ -15370,7 +15346,6 @@ m_renderableModel
 m_sceneObjectLayerIndices
 m_sceneObjects
 m_scriptClassName
-m_selectionFlags
 m_shaderName
 m_skin
 m_skyVisibilityCluster
@@ -15393,7 +15368,6 @@ m_textureParams
 m_texture_index
 m_toneMapParams
 m_transform
-m_type
 m_typeString
 m_uint
 m_uint64
@@ -15680,7 +15654,7 @@ multilevel
 multilevelchannel
 multiplayer_break
 must be either LogLUV or LogL
-mxD:-l
+mxD:-
 n D9e
 n(Hc;L
 n03>Pu
@@ -16285,7 +16259,7 @@ sPLT chunk too long
 sYHpu
 s]D9(tXI
 s_EntComponentInfo
-s`"DH
+s`"DH gd
 sampler1D
 sampler1DARRAY
 sampler2D
@@ -16620,9 +16594,9 @@ t	IcH I
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=4
+t!@:=
 t!D93t
-t!D:%
+t!D:%S
 t!HcC
 t!HcL$`
 t!LcO
@@ -17076,7 +17050,7 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=
+t9H9=F
 t9fff
 t:,!<
 t:D9s
@@ -17302,7 +17276,7 @@ tPD;A(sJI
 tPD;C
 tPD;K`sJL
 tPD;s`sJI
-tPH95
+tPH95M
 tPHc|$,
 tPIcN
 tPfE;
@@ -17649,7 +17623,7 @@ tuA;U
 tuD;AhsoI
 turn_rate
 tvHcE
-tvL9%y1
+tvL9%);
 tvLcK
 twH;^XtH3
 twistJoints
@@ -17671,13 +17645,11 @@ u	9w$
 u	@8,
 u	@8=
 u	@:-
-u	@:-q
+u	@:-"
 u	D:%
-u	D:%89i
+u	D:% 
 u	D:%F
-u	D:%U
-u	D:%lfr
-u	D:-
+u	D:-.
 u	D:5
 u D8p
 u IcH
@@ -17844,7 +17816,7 @@ usesLaggedValues
 utlstringtoken
 uuHcF
 uvHc_ ;_0u
-ux@85>pP
+ux@85nxP
 uxHcOP
 uzKs@>
 v A9~ w
@@ -18272,7 +18244,7 @@ znear
 |$ utM
 |$ |AH
 |$ ~-H
-|$$;=^
+|$$;=
 |$$D;
 |$$M+
 |$$fE;
@@ -18560,6 +18532,7 @@ znear
 ~$fff
 ~%LcE
 ~&fff
+~' |f
 ~'fff
 ~(8u4
 ~(HcNDI

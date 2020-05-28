@@ -86,6 +86,7 @@
  ?parentWidget@QWidget@@QEBAPEAV1@XZ
  ?pathFromIndex@QCompleter@@UEBA?AVQString@@AEBVQModelIndex@@@Z
  ?pixel@QImage@@QEBAIHH@Z
+ @ wF
  @SUATAUAWH
  @SUH
  A]A\[
@@ -633,21 +634,20 @@ $~aA;F
 ( %1, %2, %3, %4% )
 ( 8PX
 (#%d)
-(%TC%
+(%<>%
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%qC%
 ('8PW
 (*%s*), 
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-mC%
+(-B>%
 (0?staticMetaObject@QColorDialog@@2UQMetaObject@@B
-(5MH"
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (;s |
 (;~ |
+(="n+
 (?setColor@QPen@@QEAAXAEBVQColor@@@Z
 (?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
@@ -3085,7 +3085,7 @@ $~aA;F
 2"?qt_metacall@QComboBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200519202820Z0#
+200527201201Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -3235,7 +3235,7 @@ $~aA;F
 5@8|$"t.9|
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
-5t(jD
+5t8jD
 63?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
 64 283 0
 7%?reset@QAbstractItemView@@UEAAXXZ
@@ -3320,7 +3320,7 @@ $~aA;F
 8Csinf
 8D$ u+I
 8D$XuDD
-8DmElementDeletedListenerInfo_t CUtlMemoryPool
+8DmAttributeRemovedListenerInfo_t CUtlMemoryPool
 8GbthH
 8H9}Xtp
 8HcsP;s`u
@@ -3336,7 +3336,6 @@ $~aA;F
 8fF9|
 8ke?;
 8vmatt
-8xxjD
 9"tCeH
 9#tCeH
 9$tCeH
@@ -3580,7 +3579,7 @@ $~aA;F
 <}wWH
 =*?setIconSize@QToolBar@@QEAAXAEBVQSize@@@Z
 =,?setRedF@QColor@@QEAAXN@Z
-=333?333?333?333?p
+=333?333?333?333?
 =33s?VRenderingSiblingWidget
 ======
 =AuthPhys
@@ -3862,6 +3861,7 @@ $~aA;F
 ?@En[vP
 ?AppendFormat@CBufferString@@QEAAHPEBDZZ
 ?AppendFormatV@CBufferString@@QEAAHPEBDPEAD@Z
+?CDmeMaterialGroup CUtlMemoryPool
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
 ?ConColorMsg@@YAXAEBVColor@@PEBDZZ
 ?ConMsg@@YAXPEBDZZ
@@ -4692,9 +4692,8 @@ $~aA;F
 @80t9H
 @80u#H
 @81u/H
-@85 u'
-@85v(>
-@8=969
+@85@p'
+@85\.>
 @8kut~L
 @8l$8t
 @8l$Pt-L
@@ -5631,7 +5630,6 @@ CDmeJointAnimatedFriction CUtlMemoryPool
 CDmeJointConstrain CUtlMemoryPool
 CDmeLog: interpolable type %s doesn't have an interpolation function!
 CDmeMaterial CUtlMemoryPool
-CDmeMaterialGroup CUtlMemoryPool
 CDmeMaterialGroupList CUtlMemoryPool
 CDmeMesh CUtlMemoryPool
 CDmeMeshGroup CUtlMemoryPool
@@ -6659,7 +6657,6 @@ D$RfD
 D$TA;
 D$THcC`H
 D$VIc
-D$X(@
 D$X;u
 D$XA+
 D$XD8p
@@ -6698,6 +6695,7 @@ D$`xxx
 D$dD;s
 D$dE3
 D$dfff
+D$h093
 D$hA+
 D$hA;
 D$hD;
@@ -6708,7 +6706,6 @@ D$hHc
 D$hIc
 D$hff
 D$hu4D
-D$l093
 D$lE3
 D$p 69
 D$p<L{
@@ -6753,41 +6750,33 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
-D8%e5.
+D8%e;.
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-	j>
-D8-0m>
-D8-9n>
-D8-Ih>
-D8-Iq>
-D8-Kr>
-D8-Mo>
-D8-Mp>
-D8-N!$
-D8-Pu>
-D8-Qx>
-D8-Rw>
-D8-Rz>
-D8-Sy>
-D8-Tt>
-D8-Vi>
-D8-Vv>
-D8-Xs>
-D8-[{>
-D8-d}>
-D8-e|>
-D8-fj>
-D8-f~>
-D8-hk>
-D8-|l>
+D8-#t>
+D8-.x>
+D8-0u>
+D8-3n>
+D8-3v>
+D8-:{>
+D8-;~>
+D8-<}>
+D8-=w>
+D8->z>
+D8-@o>
+D8-By>
+D8-C|>
+D8-Ip>
+D8-Rq>
+D8-_r>
+D8-ps>
+D8-yt>
 D82u&H
 D88Ht!
 D88Hte
-D8=T)>
-D8=UE*
+D8=EM*
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8D$Q
 D8D)(u
@@ -7014,9 +7003,9 @@ Dm Unserialize: Attempted to read an attribute ("%s") of an inappropriate type!
 DmAttributeAddedListenerInfo_t CUtlMemoryPool
 DmAttributeChangedListenerInfo_t CUtlMemoryPool
 DmAttributeList_t CUtlMemoryPool
-DmAttributeRemovedListenerInfo_t CUtlMemoryPool
 DmElement
 DmElementChangedListenerInfo_t CUtlMemoryPool
+DmElementDeletedListenerInfo_t CUtlMemoryPool
 DmSerializers needs the file system to function
 DmeAmalgamatedTexture
 DmeAmbientLight
@@ -7773,10 +7762,10 @@ H+\$hIc<$H
 H+|$@H
 H0F08
 H0Hc\$p3
-H3=61 
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
+H9-8J"
 H9.u?H
 H97t<
 H97u	D8
@@ -8603,7 +8592,7 @@ L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L1HthD
 L9	u4H
 L9*u&
-L9-mX'
+L9->L'
 L93u_
 L93uc
 L9Ahs
@@ -8632,7 +8621,6 @@ L9t$`t
 L9u`t	H
 L9ugt	H
 L9w t#H
-L9|$@t
 L9}8t	H
 L9}@t	H
 L9~ t
@@ -8973,6 +8961,7 @@ MultiplySetBy(double)
 MwB+L
 N	?hasColor@QMimeData@@QEBA_NXZ
 N ?paintEngine@QPixmap@@UEBAPEAVQPaintEngine@@XZ
+N haN
 N u_I;
 N&B:H
 N'?setAlphaF@QColor@@QEAAXN@Z
@@ -10217,7 +10206,8 @@ T$xD;s
 T$xH;
 T$xHc
 T$xLc
-T%*p*
+T%ju*
+T%zv*
 TADIt	
 TADIu
 TADIu.
@@ -10794,7 +10784,8 @@ X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X=/]'
+X5&q8
+X=cA*
 XA;w@
 XA]A\^[
 XA^A\_[
@@ -10827,14 +10818,17 @@ X|$8E
 X|$XH
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
+Y%%@)
+Y%ko*
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
-Y-#1.
-Y-lZ)
 Y0t>H
-Y5"9A
-Y5Ap*
-Y5wZ	
-Y=vy*
+Y5&$"
+Y52u*
+Y=3-0
+Y=5r"
+Y=7(0
+Y=nv*
+Y=|2.
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -10958,7 +10952,7 @@ Zpm"U
 \$<A;
 \$@9\$8
 \$@9\$8~I
-\$@@8=M
+\$@@8=
 \$@H+
 \$@H;
 \$@Hc
@@ -11033,7 +11027,9 @@ Zpm"U
 ])6M>&
 ],?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
 ].?setWidth@QPen@@QEAAXH@Z
+]5"7$
 ]8fff
+]=	4$
 ]>)2X
 ]@fff
 ]HE9F
@@ -12129,7 +12125,6 @@ hurt_them
 i ?paintEvent@QPlainTextEdit@@MEAAXPEAVQPaintEvent@@@Z
 i#?qt_metacast@QTableWidget@@UEAAPEAXPEBD@Z
 i%?resizeEvent@QComboBox@@MEAAXPEAVQResizeEvent@@@Z
-iCo<F
 iNewValueIn
 iSetSizeIn
 iValueChanged(int)
@@ -12234,7 +12229,6 @@ j>>A?1
 j?V()
 j?{$*
 jHc3H
-jY@hVU
 jitteriterations
 jitterscale
 jitterscale_vector
@@ -12938,6 +12932,7 @@ n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
 nAlpha
+nD8-3
 nFrame
 nIndex
 nIndex,newColorIn
@@ -13930,7 +13925,7 @@ t+Hc/;o
 t+IcA
 t+Lc@
 t+Lcs
-t,@8=
+t,@8=J
 t-D8P
 t-Hc+;k
 t-Lc6D;v
@@ -13965,7 +13960,7 @@ t5LcF
 t6Hc.D
 t8?width@QFontMetrics@@QEBAHAEBVQString@@H@Z
 t8H9^ t2H
-t9H9=Fb(
+t9H9=
 t:D9s
 t:Ic~0I
 t:LcM
@@ -13975,7 +13970,7 @@ t=+O$H
 t>Hc+;k
 t?fff
 t@HcF
-tB@8=%
+tB@8=
 tBHc/
 tCHcP
 tCfff
@@ -14288,7 +14283,7 @@ tzLcK<L
 tzfff
 t{;Q`svI
 u	9w$
-u	@8=-
+u	@8=
 u ?paintEvent@QTableView@@MEAAXPEAVQPaintEvent@@@Z
 u Hc^
 u f;N
@@ -14635,7 +14630,7 @@ x!HcI
 x!HcK
 x";C }
 x#?qt_metacast@QToolButton@@UEAAPEAXPEBD@Z
-x$H9-
+x$H9-8
 x$fff
 x%E;n
 x.;^x})L

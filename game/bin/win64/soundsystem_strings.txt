@@ -3,7 +3,6 @@
 		Instrument: %s
 	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
 	 x: %4f y: %4f z: %4f
-	>|u}=!Uz
 	DSP: %f
 	LVL: %f
 	MUTE: %f
@@ -139,7 +138,6 @@ $A;\$
 %s_random_min
 %s_random_variance
 %s_seek_speed_filter
-&:RhH0
 &<~my
 &YA1D
 &YA1E2
@@ -364,7 +362,6 @@ $A;\$
 ,B(fA
 ,B,fA
 ,|%)v
-,}vt\
 ---empty---
 ---invalid event---
 -altgameroot
@@ -760,7 +757,7 @@ $A;\$
 181004000000Z
 1DBlend
 1e<w 
-200519202647Z0#
+200527195845Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -784,6 +781,7 @@ $A;\$
 5%YA1H
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 7HcD$P
+7T|C!
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8 uCH
 8A]A\
@@ -929,7 +927,6 @@ $A;\$
 <unknown>
 >EJtM
 >calc_occlusion_src1
->math_lerp_speakers
 >q`uA
 ? u/A
 ?!AfJ+
@@ -984,7 +981,7 @@ $A;\$
 ?amN2
 ?fff?fff?fff?fff?
 ?l@GC
-?math_perlin_noise
+?math_randomize_float
 ?s,DT
 ?vmdlkeys0
 ?vmix_vsnd_start
@@ -994,11 +991,12 @@ $A;\$
 @.data
 @.tls
 @81u/H
-@85T+
-@8=$n
-@8=6S
-@8=\R
-@8=en
+@857l
+@85t+
+@8=5Q
+@8=Dn
+@8=VS
+@8=|R
 @8L;@(v
 @8yjt1
 @8yjt5L
@@ -1006,7 +1004,7 @@ $A;\$
 @8}(t!
 @8}xt
 @?soundevent_param
-@@util_interval_timer
+@@soundevent_limiter
 @A]A\^
 @A^A]A\
 @A^A]A\][
@@ -1031,6 +1029,7 @@ $A;\$
 @HcA83
 @Lc:E3
 @LcIPI
+@Q3U	
 @SATAVH
 @SATH
 @SAVAWH
@@ -1115,7 +1114,7 @@ $A;\$
 @fE9|
 @hHcL
 @math_filter_float
-@math_float
+@math_func_float
 @public.%s
 A 2B $
 A D9A
@@ -1387,12 +1386,11 @@ Base: %s
 BaseIKRig
 BasePhysicsShape
 BaseStack
-Bcalc_distant_dsp
-Bcalc_falloff_vr
 Bellevue1
 BenchmarkService001
 BentNormalData
 Bff0Bgf0B
+Bgame_entity_world_aabb
 Bhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0
 BinaryProperties_GetValue
 Bits/Sample:	%d
@@ -1654,7 +1652,6 @@ Cannot allocate abstract class
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
 Cannot save KV3 text to a non-text buffer!
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
-Ccalc_falloff_curve
 Channels:	%d
 ChfD9
 Cleaning up leaked audio stream!
@@ -1683,7 +1680,7 @@ Couldn't parse the input.
 Cp9sttaH
 CreateInterface
 CreateSimpleThread
-Csoundevent_limiter
+Csoundevent_stop_all
 CurTime: %f
 Currently gets info for a single operator field
 Currently sets a single float operator field
@@ -1830,58 +1827,57 @@ D+L$8E
 D+|$XH
 D1,9E
 D8$)u
+D8%-D
 D8)t5H
 D8*u A
-D8- l
-D8-!V
-D8-%n
-D8-*R
-D8-2W
-D8-7!
-D8-?X
-D8-J\
-D8-LY
-D8-OR
-D8-OZ
-D8-Rm
-D8-V_
-D8-Wb
-D8-Xa
-D8-Xd
-D8-Y[
-D8-Yc
-D8-Z^
-D8-Ze
-D8-\S
-D8-^]
-D8-_`
-D8-eT
-D8-gf
-D8-in
-D8-jg
-D8-lh
-D8-mj
-D8-nU
-D8-ni
-D8-pk
-D8-zl
-D8-{V
-D85	I
-D85:]
-D85SJ
-D85^\
-D85`_
-D85wI
+D8-#h
+D8-&e
+D8-'d
+D8-(R
+D8-(f
+D8-*[
+D8-*g
+D8-+Z
+D8-0i
+D8-1S
+D8-5k
+D8-BT
+D8-JR
+D8-OU
+D8-W!
+D8-ZY
+D8-\V
+D8-_O
+D8-_W
+D8-bj
+D8-f\
+D8-g_
+D8-h^
+D8-ha
+D8-iX
+D8-i`
+D8-j[
+D8-jb
+D8-lP
+D8-nZ
+D8-o]
+D8-uQ
+D8-wc
+D8-yk
+D8-zd
+D8-|e
+D8-}g
+D8-~R
+D8-~f
+D85'e
+D85)I
+D856^
+D85Z]
+D85sJ
+D85~\
 D87t:H
 D87t^I
 D88t;
-D8=f7
-D8=h6
-D8=j5
-D8=l4
-D8=n3
-D8=p2
-D8=r1
 D8@@t
 D8`(t
 D8h(t
@@ -2225,7 +2221,6 @@ H+\$hIc<$H
 H0F08
 H1D$0
 H8;T9
-H95ht
 H97t<
 H9\$(t
 H9\$0t
@@ -2848,6 +2843,7 @@ Quaternion
 QueryPerformanceCounter
 Queued: elapsed time: %f, next sync time: %f, length: %f
 QueuedLoaderVersion001
+R*.\|
 RESOURCE_TYPE_SOUND
 RESOURCE_TYPE_SOUNDEVENTSCRIPT
 RESOURCE_TYPE_SOUNDSTACKSCRIPT
@@ -3147,7 +3143,6 @@ T$pE3
 T$pE;
 T$pfD
 T$xH;
-T>1Z^}
 THc/A
 TUNNEL Detected 
 TVESA
@@ -3497,6 +3492,7 @@ YD$ A
 YD$0A
 YL$(D
 YL$0A
+Z[f9D
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -5719,6 +5715,7 @@ zxuvA
 |/HcP
 |N@8s0tHH
 } D9}
+}"(=I-
 }#fE;B&w
 }%;Q$
 }%fff

@@ -1926,7 +1926,7 @@ HLVRAddonTogglePanel Label
 .show_chapter_container_01 #chapter_list,
 .show_chapter_container_02 #chapter_list_02,
 .show_saved_slots_container #save_slot_list,
-.show_override_slots_container #override_save_slot_list
+.show_override_slots_container #override_save_slot_list 
 {
     visibility: visible;
 }
@@ -2049,6 +2049,12 @@ HLVRAddonTogglePanel Label
 .modal_ok_only .modal_cancel
 {
     visibility: collapse;
+}
+
+.attention_max_height 
+{
+    overflow: scroll;
+    max-height: 450px;
 }
 
 /* = CTA Visibility =============================================== */

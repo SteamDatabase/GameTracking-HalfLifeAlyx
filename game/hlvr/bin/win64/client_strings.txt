@@ -645,8 +645,8 @@
  C_PhysPropClientside::Spawn: SetupPhysicsAsModel() failed for %s.
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;5A
- D;=a
+ D;5]
+ D;=y
  E;wX
  E;}X
  Failed to pack %s
@@ -820,6 +820,7 @@
 !FieldRequiresSpecialHandling( td )
 !ITestScriptMgr
 !LcK@
+!NETWORK_DISCONNECT_CLIENT_NO_MAP
 !NETWORK_DISCONNECT_HLTVRESTRICTED
 !NETWORK_DISCONNECT_INTERNAL_ERROR
 !NETWORK_DISCONNECT_LOOPDEACTIVATE
@@ -1052,6 +1053,8 @@
 #HLVR_MainMenu_AddonsToolsMode
 #HLVR_MainMenu_Attention_Above_Recommended
 #HLVR_MainMenu_Attention_Graphics_Reset
+#HLVR_MainMenu_Attention_LoadErrorAddons
+#HLVR_MainMenu_Attention_LoadErrorMap
 #HLVR_MainMenu_Attention_LowDiskSpaceForSwapfile
 #HLVR_MainMenu_Attention_Low_GPU_Memory
 #HLVR_MainMenu_Attention_Low_System_Memory
@@ -1065,7 +1068,9 @@
 #HLVR_MainMenu_GameSlotConfirm
 #HLVR_MainMenu_Hrs
 #HLVR_MainMenu_LoadSlot
+#HLVR_MainMenu_LocalAddon
 #HLVR_MainMenu_ManageAddons
+#HLVR_MainMenu_MissingAddon
 #HLVR_MainMenu_ModalLoadGame
 #HLVR_MainMenu_ModalMainMenu
 #HLVR_MainMenu_ModalNewGame
@@ -1796,8 +1801,10 @@ $z(u&
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
+(%$ER
 (%0.2f): %s
-(%4UR
+(%8y$
+(%T<R
 (%d %d %d %d)
 (%d) Name: %s (%s)
 (%d/%d)%s %s
@@ -1805,7 +1812,7 @@ $z(u&
 (%g %g %g)
 (%g %g)
 (%s,%s)
-(%tLR
+(%t_R
 ('8PW
 ((https?|ftp|file)://|www\.)([^<]*)
 (*%s*), 
@@ -1818,6 +1825,7 @@ $z(u&
 (.CPlayer_SetCommunityPreferences_Request
 (.CPlayer_SetPerFriendPreferences_Request
 (0x%08X)'??'
+(56|o
 (8HXhx
 (9Q@u
 (;^,|
@@ -1828,6 +1836,7 @@ $z(u&
 (;{ |
 (;{H|
 (;~ |
+(=lto
 (?R or (?[+-]digits must be followed by )
 (?VideoPlayerInitAudio
 (@8*t
@@ -1924,6 +1933,7 @@ $z(u&
 (D;v,}e
 (DigiCert SHA2 Assured ID Code Signing CA
 (DigiCert SHA2 Assured ID Code Signing CA0
+(E8oEu
 (F E3
 (Fade Removed: [%d,%d,%d,%d])
 (HLVR_CM_HoloHackPuzzleInteractionStarted
@@ -2437,6 +2447,7 @@ $z(u&
 )t$`I
 )t$`Ic
 )t$`L
+)t$`M
 )t$`f
 )t$`f9
 )t$`tkH
@@ -2509,6 +2520,8 @@ $z(u&
 *#GameUI_Disconnect_LocalProblem_ManyRelays
 ** @9
 ** ERROR!!! BONE TRANSFORM DATA WITH NO MODEL**!!!!
+*** No startup map specified in dev / tools mode ***
+*** Use console command 'map startup if a starting map is desired
 *.COAuthToken_ImplicitGrantNoPrompt_Request
 *.CPublishedFile_RefreshVotingQueue_Request
 *.hl?
@@ -2607,7 +2620,7 @@ $z(u&
 +camyawright
 +duck
 +f)>0'
-+fD9-
++fD9-gLk
 +forward
 +grenade1
 +grenade2
@@ -2674,6 +2687,7 @@ $z(u&
 , [%s] 
 , from: 
 , not just within "
+, with mounted addons: 
 ,#GameUI_Disconnect_Splitpacket_Send_Overflow
 ,(Optional) Visibility of the published file.
 ,+<:w
@@ -2902,12 +2916,10 @@ $z(u&
 .00cfg
 .3333
 .3ugH
-.55Nz
-.55Tw
-.5LpH
-.5lOj
+.5A{H
+.5J}/
+.5O%F
 .<2uL
-.=(~z
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -2997,7 +3009,6 @@ $z(u&
 .?AV?$CAnimTagListenerHelper@VIPostGraphIKTag@@@@
 .?AV?$CAnimTagListenerHelper@VISequenceFinishedAnimTag@@@@
 .?AV?$CBaseAppSystem@VIClientUI@@@@
-.?AV?$CBaseAppSystem@VIEngineService@@@@
 .?AV?$CBaseAppSystem@VIGameClientExports@@@@
 .?AV?$CBaseAppSystem@VIGameConfiguration@@@@
 .?AV?$CBaseAppSystem@VIPanoramaUIClient@@@@
@@ -3007,7 +3018,6 @@ $z(u&
 .?AV?$CBaseCmdKeyValues@VCClientMsg_CustomGameEventBounce@@@@
 .?AV?$CBaseCmdKeyValues@VCSVCMsg_GameSessionConfiguration@@@@
 .?AV?$CBaseCmdKeyValues@VCUserMsg_CustomGameEvent@@@@
-.?AV?$CBaseEngineService@VIEngineService@@@@
 .?AV?$CCallResult@VCAsyncWriteInProgress@@URemoteStorageFileWriteAsyncComplete_t@@@@
 .?AV?$CCallResult@VCHLVRAddonManager@@UGetAppDependenciesResult_t@@@@
 .?AV?$CCallResult@VCHLVRAddonManager@@USteamUGCQueryCompleted_t@@@@
@@ -3660,34 +3670,29 @@ $z(u&
 .?AV?$CSurfacePropReloadableDataTable@VCImpactEffectElement@@@@
 .?AV?$CTextInputSuggestRadixTree@VCPickledRadixTrie@@@panorama@@
 .?AV?$CTier0AppSystem@VIClientUI@@@@
-.?AV?$CTier0AppSystem@VIEngineService@@@@
 .?AV?$CTier0AppSystem@VIGameClientExports@@@@
 .?AV?$CTier0AppSystem@VIGameConfiguration@@@@
 .?AV?$CTier0AppSystem@VIPanoramaUIClient@@@@
 .?AV?$CTier0AppSystem@VIPrediction@@@@
 .?AV?$CTier0AppSystem@VISource2Client@@@@
 .?AV?$CTier1AppSystem@VIClientUI@@$0A@@@
-.?AV?$CTier1AppSystem@VIEngineService@@$0A@@@
 .?AV?$CTier1AppSystem@VIGameClientExports@@$0A@@@
 .?AV?$CTier1AppSystem@VIGameConfiguration@@$0A@@@
 .?AV?$CTier1AppSystem@VIPanoramaUIClient@@$0A@@@
 .?AV?$CTier1AppSystem@VIPrediction@@$0A@@@
 .?AV?$CTier1AppSystem@VISource2Client@@$0A@@@
 .?AV?$CTier2AppSystem@VIClientUI@@$0A@@@
-.?AV?$CTier2AppSystem@VIEngineService@@$0A@@@
 .?AV?$CTier2AppSystem@VIGameClientExports@@$0A@@@
 .?AV?$CTier2AppSystem@VIGameConfiguration@@$0A@@@
 .?AV?$CTier2AppSystem@VIPanoramaUIClient@@$0A@@@
 .?AV?$CTier2AppSystem@VIPrediction@@$0A@@@
 .?AV?$CTier2AppSystem@VISource2Client@@$0A@@@
 .?AV?$CTier3AppSystem@VIClientUI@@$0A@@@
-.?AV?$CTier3AppSystem@VIEngineService@@$0A@@@
 .?AV?$CTier3AppSystem@VIGameClientExports@@$0A@@@
 .?AV?$CTier3AppSystem@VIGameConfiguration@@$0A@@@
 .?AV?$CTier3AppSystem@VIPanoramaUIClient@@$0A@@@
 .?AV?$CTier3AppSystem@VIPrediction@@$0A@@@
 .?AV?$CTier3AppSystem@VISource2Client@@$0A@@@
-.?AV?$CTier4AppSystem@VIEngineService@@$0A@@@
 .?AV?$CTier4AppSystem@VIGameConfiguration@@$0A@@@
 .?AV?$CTier4AppSystem@VIPrediction@@$0A@@@
 .?AV?$CToolObjectFactory@VCBaseCubemap@@@@
@@ -4383,7 +4388,6 @@ $z(u&
 .?AVCHLVRMainMenuPanel@@
 .?AVCHLVRMenuBaseContainer@@
 .?AVCHLVRMenuMessageDisplay@@
-.?AVCHLVRMenuStartupMapLoadService@@
 .?AVCHLVRPhotoMode@@
 .?AVCHLVRPhotoModeMenu@@
 .?AVCHLVRPhotoModePicture@@
@@ -5735,7 +5739,6 @@ $z(u&
 .?AVIDebugVisualizer@@
 .?AVIDecalEmitterSystem@@
 .?AVIEnginePerfTools@@
-.?AVIEngineService@@
 .?AVIEntity2SaveRestore@@
 .?AVIEntityDataInstantiator@@
 .?AVIEntityFindFilter@@
@@ -6297,7 +6300,7 @@ $z(u&
 .data
 .data$r
 .dummy
-.eBlabelled_debug_helper_show_text
+.eBlabelled_debug_helper_skeleton_show_bone_names
 .eRollType
 .edata
 .ffffff
@@ -6362,9 +6365,10 @@ $z(u&
 .{0u;
 .|70t#
 .|;4u
+/%SOr
+/%\Bu
+/%^>r
 /*.sav
-/-\pi
-/-fji
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
 // Perfect circular or elliptical panel (circular if box was square)
@@ -6373,13 +6377,13 @@ $z(u&
 // the top left corner of the image is placed 10px to the right of, 40px below the top left corner of the panel
 /2GG>!B
 /43sGLc'D;g
-/5(qN
-/5l4e
-/5qpN
-/5}9A
+/51b"
+/5OLV
+/5Z9A
+/5svV
 /9s2H
 /=$!6
-/=ARs
+/=,Cn
 />58d%
 /?O_o
 /@Ps'H
@@ -6406,6 +6410,7 @@ $z(u&
 /D$0v
 /D$4s
 /D$4v
+/D$8L
 /D$8s
 /D$8v
 /D$@s
@@ -6441,7 +6446,7 @@ $z(u&
 /G<rG
 /HTvHH
 /HTvs
-/HTw@H
+/HTw6H
 /Hc.;n
 /N0sU
 /OTw%
@@ -6665,6 +6670,7 @@ $z(u&
 0A__^H
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
 0CPlayer_UpdateSteamAnnouncementLastRead_Response*
+0D9=5O
 0D;Bl
 0D;ul|
 0D;w4L
@@ -6712,7 +6718,6 @@ $z(u&
 1.75f
 1.CPlayer_UpdateSteamAnnouncementLastRead_Response"4
 10.0f
-10.5f
 100.0
 100.0f
 1000 frames: %5.1f fps, avg time:%5.2fms, total frames: %u
@@ -6734,6 +6739,7 @@ $z(u&
 141022000000Z
 15 0 0
 15.0f
+15.5f
 150.0
 1500.0
 16.0f
@@ -6836,7 +6842,7 @@ $z(u&
 20.CUserMsg_ParticleManager.UpdateParticleFallback
 200 200 200 196
 200000
-200519203043Z0#
+200527220627Z0#
 2048.0f
 20971520
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -6906,6 +6912,7 @@ $z(u&
 3 - bottom-right
 3 - down & right
 3(Optional) Preview filename for the published file." 
+3*)FAqr
 3+5<t
 3,,)I
 3.CHelpRequestLogs_UploadUserApplicationLog_Response"#
@@ -6969,7 +6976,7 @@ $z(u&
 500.0f
 560.0
 5?Missing file '%s'
-5@850
+5@85p
 5@8|$"t.9|
 5Retrieves information about a set of published files.
 5YHe/
@@ -7085,6 +7092,7 @@ $z(u&
 8du0H
 8fF9|
 8ke?;
+8u9fJ
 8w>Hc
 9	t	H
 9	tGH
@@ -7108,6 +7116,7 @@ $z(u&
 91~gH
 92u	9j
 95*P>
+95r~R
 98N*>
 98~+H
 99C }
@@ -7131,7 +7140,7 @@ $z(u&
 9A$t+H
 9A$t4H
 9A$t7H
-9A$t8H9-n~g
+9A$t8H9-
 9A$t<H
 9A$t>H
 9A$tIH
@@ -7216,9 +7225,9 @@ $z(u&
 9K$tSH
 9L$8t
 9L$HH
-9M,t;H95:ik
+9M,t;H95jvk
 9M,t~H
-9M4t-H95
+9M4t-H95-uk
 9M4t_
 9O$uu;
 9P ~(H
@@ -7229,7 +7238,7 @@ $z(u&
 9S\t+
 9Tu&E3
 9Tu)E3
-9V0~D
+9V0~L
 9V8t"H
 9WP~GM
 9WP~HM
@@ -7275,7 +7284,7 @@ $z(u&
 9^0~.H
 9^0~2H
 9^@~N
-9^H~"H
+9^H~+H
 9^H~@H
 9^H~BH
 9^h~63
@@ -7329,7 +7338,7 @@ $z(u&
 9pXt3
 9pXt7I
 9pXt;D
-9pXtA@85`t
+9pXtA@85
 9pXtID
 9pXtOD
 9pXu	
@@ -7392,7 +7401,7 @@ $z(u&
 9}h~5H
 9~(~,H
 9~0~qL
-9~H~"H
+9~H~+H
 :    %i/%i no world, skip to %i restore from slot %i
 :    %i/%i optimize2, skip to %i restore from slot %i
 :    %s
@@ -7440,7 +7449,6 @@ $z(u&
 ;:uLH
 ;;D$ ~0H
 ;;D$x~,H
-;=9V^
 ;A ~W
 ;A(rlH
 ;A(t 
@@ -7716,6 +7724,7 @@ $z(u&
 >!@A+r
 >()09,)G>r
 >-ufH
+>0123456789ABCDEF
 >9K!0>N
 >= [%s] 
 >CBaseAchievement
@@ -7894,7 +7903,6 @@ $z(u&
 ?IsObject@Value@v8@@QEBA_NXZ
 ?JV8f
 ?Ji@9
-?LightDesc_t
 ?Lock@CThreadFastMutex@@AECAXPEBDHII@Z
 ?Lock@CThreadMutex@@QEAAXPEBDH@Z
 ?LockForRead@CThreadSpinRWLock@@QEAAXPEBDH@Z
@@ -7903,6 +7911,7 @@ $z(u&
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@VColor@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
+?Look At
 ?LrA/<,M?+
 ?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?N%E\
@@ -7915,7 +7924,6 @@ $z(u&
 ?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z
 ?NewFromUtf8@String@v8@@SA?AV?$Local@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@12@H@Z
 ?NumberValue@Value@v8@@QEBANXZ
-?Permit Responses
 ?Purge@CBufferString@@QEAAXH@Z
 ?QY^&
 ?R0I?
@@ -8089,8 +8097,10 @@ $z(u&
 @49C4t
 @6W!?
 @8(tNH
-@8-^MZ
-@8-t/Z
+@8-"d
+@8-N Z
+@8-]>Z
+@8-s	
 @8/N|
 @8/tjH
 @80t,
@@ -8098,13 +8108,14 @@ $z(u&
 @81u/H
 @83t)
 @84:u
-@85'%
-@852O
-@85:Z
-@85C!X
-@85W6]
-@85Z4
-@85pYZ
+@85%'
+@85:q\
+@85G&]
+@85QrX
+@85\JZ
+@85u<
+@85y%
+@85|J
 @87tGH
 @88t*M
 @88t+M
@@ -8113,10 +8124,13 @@ $z(u&
 @89pXu0H
 @89t8@
 @8:t#H
-@8=	c
-@8=!F
-@8=0$s
-@8=QH
+@8=!Np
+@8=!Q
+@8=10
+@8=8fs
+@8=QDp
+@8=a$p
+@8=pNs
 @8D9pXu0H
 @8i*tLH
 @8iht
@@ -8215,6 +8229,7 @@ $z(u&
 @A^A\^
 @A^A\_
 @A^A\_][
+@A^A\_^[
 @A^A\_^]
 @A^A]A\
 @A^A]A\^]
@@ -8285,6 +8300,7 @@ $z(u&
 @Lc:E3
 @PH+X(
 @PL+@(
+@PanelNeedsRepaint
 @Pf;BP
 @Pf;CPr
 @SATAUAWH
@@ -8321,7 +8337,6 @@ $z(u&
 @SUVAWH
 @SUVH
 @SUVWATAUAVAWH
-@SUVWATAUAWH
 @SUVWATAVAW
 @SUVWATAVAWH
 @SUVWATAWH
@@ -8349,6 +8364,7 @@ $z(u&
 @SVAWH
 @SVWATAUAVAWH
 @SVWATAUH
+@SVWATAVH
 @SVWATAWH
 @SVWATH
 @SVWAUAVAWH
@@ -8369,7 +8385,6 @@ $z(u&
 @SWAVH
 @SWAWH
 @TD;BTI
-@Toggle whether a panel has the given CSS class.
 @UATAUAVAW
 @UATAUAVAWH
 @UATAUAVH
@@ -8437,7 +8452,6 @@ $z(u&
 @UVATH
 @UVAUAVAWH
 @UVAUAWH
-@UVAVAWH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
@@ -10507,7 +10521,6 @@ A_A]A\_]
 A_A]A\_^
 A_A]A\_^[]
 A_A]A\_^]
-A_A]A\_^][H
 A_A][
 A_A][]
 A_A]]
@@ -10542,6 +10555,7 @@ A_A^A]A\^[]
 A_A^A]A\^]
 A_A^A]A\^][
 A_A^A]A\_
+A_A^A]A\_H
 A_A^A]A\_[]
 A_A^A]A\_^[
 A_A^A]A\_^[]
@@ -10563,10 +10577,8 @@ A_A^]
 A_A^]H
 A_A^^
 A_A^^[]
-A_A^^]
 A_A^^][
 A_A^_
-A_A^_H
 A_A^_[]
 A_A^_]
 A_A^_^
@@ -10685,6 +10697,7 @@ Addon '%s' unrecognized
 AddonCheckStatus
 AddonDownVoteButton
 AddonInfoButton
+AddonInfoMouseOver
 AddonMap
 AddonMapMouseOver
 AddonMapSelected
@@ -11032,7 +11045,6 @@ B H9A t
 B!8B"t
 B!?vtI
 B"8B#t
-B"~+!
 B$9A$t
 B$9A$u
 B$9A$ua
@@ -11395,20 +11407,18 @@ C 9G uN
 C 9G }
 C 9~ ~7H
 C @8-
-C @8-+
-C @8-1
-C @8-?MZ
-C @8-P/Z
+C @8-Zd
+C @8-]
+C @8-n
 C @85
-C @85%6]
-C @85(4
-C @855
-C @85;
-C @85>YZ
-C @85u!X
+C @85%
+C @85,K
+C @85-
+C @85W'
+C @85l
+C @85lq\
 C A9F }
 C D85
-C D85Os
 C H+C
 C HcG
 C HcH
@@ -11442,7 +11452,7 @@ C49G4u(
 C4;C8}
 C4A;@4u
 C4D+@ H
-C4f!59
+C4f!5
 C5R?	
 C8,.u
 C847u
@@ -12049,6 +12059,7 @@ CHLMachineGun
 CHLPropVRHand
 CHLSelectFireMachineGun
 CHLVRAddonManager::GetItemStateAndDownloadIfRequested
+CHLVRClientMenuSystem::NotifyClientDisconnected
 CHLVRClientMsg_BarnacleDefeated
 CHLVRClientMsg_BarnacleDefeated_t
 CHLVRClientMsg_CombineConsoleCompleted_t
@@ -14561,7 +14572,6 @@ D$@Hc
 D$@HcQ
 D$@I;
 D$@Ic
-D$@L+
 D$@L;D$Hu
 D$@M;
 D$@X7
@@ -14700,7 +14710,6 @@ D$`A+
 D$`D+
 D$`D80u
 D$`D9pXH
-D$`D;A0
 D$`D;Kh}M
 D$`E#
 D$`E3
@@ -14761,7 +14770,7 @@ D$pH;GHu
 D$pHK8
 D$pHc
 D$pIc
-D$pL9==
+D$pL9=}
 D$pL;
 D$pM;
 D$pMc
@@ -14779,6 +14788,7 @@ D$x;D$h
 D$x;G
 D$x;^
 D$x;_
+D$xD;e
 D$xE+
 D$xE3
 D$xH+
@@ -14836,19 +14846,24 @@ D8(t[H
 D8)tFI
 D8*u A
 D8,2u
+D8-Ba
+D8-L=
+D8-pJ
 D8.tnH
 D80t{H
 D82u&H
 D83t	H
 D84;u
-D85 4\
-D85@=
-D85H r
-D85Tv
+D85	C
+D85-#
+D858Kr
+D85=H
+D85sGr
+D85{$\
 D88tT3
 D89uWI
 D8<8u
-D8=d(r
+D8=TSr
 D8>tQL
 D8CDu
 D8D$ u
@@ -14951,6 +14966,7 @@ D9+~?M
 D9,7t
 D91~HH
 D93~"I
+D95nt
 D9:~FH
 D9@ }
 D9@p}
@@ -14988,7 +15004,6 @@ D9d$ ~QI
 D9d$(u
 D9d$0
 D9d$@
-D9d$P~
 D9eX~rH
 D9ewA
 D9f0~iI
@@ -15009,6 +15024,8 @@ D9iXH
 D9k@H
 D9l$@uC
 D9l$@~
+D9l$P
+D9l$P~
 D9n ~EI
 D9n ~HI
 D9n ~uI
@@ -15027,7 +15044,6 @@ D9qD~aH
 D9qD~qH
 D9qH~NH
 D9qH~^H
-D9qH~pH
 D9q`~uH
 D9sPt7Hc>;~
 D9t$ 
@@ -15056,7 +15072,10 @@ D9{H~VI
 D9|$ 
 D9|$ ~?M
 D9|$ ~LM
+D9|$@
 D9}dt
+D:5<pf
+D;=AN
 D;@XH
 D;@X|	H
 D;A |
@@ -15363,6 +15382,7 @@ Destroys all client-side ragdolls
 Destructing
 Detach from its parent
 DetachFromParent
+Detected bad save game %s, renaming to %s
 Detected one or more errors parsing %s
 Detected video config level %d
 Determines if specified # of teammates belong to same clan w/local player
@@ -15682,7 +15702,6 @@ E9n|~CA
 E9~(t
 E9~X~cI
 E9~X~vA
-E:l6Itx
 E;4$}
 E;B0}
 E;Bl}NE
@@ -16310,7 +16329,7 @@ FX_RicochetSound.Ricochet
 FZ*o7
 F_K@a
 F`9^`~VH
-F`9~`~YH
+F`9~`~QH
 Facial Expression
 FadeInEnd
 FadeInStart
@@ -16337,6 +16356,7 @@ Failed to include script "%s"
 Failed to load
 Failed to load %s - KV3 error: %s
 Failed to load expected config file "%s"
+Failed to load map: %s
 Failed to load opacity mask for panel '%s'
 Failed to open file
 Failed to parse and set new panel event for %s="%s"
@@ -16347,6 +16367,7 @@ Failed to read %d bytes
 Failed to read %s
 Failed to register webui!
 Failed to run entity framework script
+Failed to save AnimGraph Recording to %s
 Failed to save Personal settings config to '%s'
 Failed to spawn physics group:%s, lump:%s
 Failed to spawn physics world:%s <%s>
@@ -16646,6 +16667,7 @@ FuncMonitorIntermediateTexture.vtex
 FuncMonitorTexture.vtex
 Function              %10s %10s %10s %10s
 Functor
+Fxr	A
 FxurA
 G 9C }
 G 9F |
@@ -16763,7 +16785,7 @@ GL$xL
 GL8CLt
 GL;CLt
 GM8CMt
-GMHI;
+GMHH;
 GP8CPt
 GPH+H(
 GPH+x(H
@@ -17257,7 +17279,7 @@ H 2B!$?A0@!A
 H 2J 
 H 8YK
 H 8YKt
-H AWH
+H ATH
 H D8iKt
 H D8qKt
 H HcA
@@ -17269,6 +17291,8 @@ H UATAUAWH
 H UATAWH
 H UAVAWH
 H UVAUAVH
+H UVH
+H WATAUAVH
 H WATAUAWH
 H!D$ E
 H!G(H
@@ -17333,8 +17357,11 @@ H99u{
 H9:u`H
 H9;uAA
 H9;v#H
-H9=:&W
-H9=ok
+H9='V
+H9=0F
+H9=F]
+H9=W/
+H9=_j
 H9A u
 H9A(s
 H9A(u	H9A0
@@ -17432,13 +17459,11 @@ H9q@t
 H9s@u
 H9spt
 H9t$0t
-H9t$@
 H9t$@t
 H9t$Ht
 H9t$Pt
 H9t$Xt
 H9t$`t
-H9t$ht
 H9t$pt
 H9t$xt
 H9u t	H
@@ -17473,9 +17498,12 @@ H9~(u
 H:Ly?
 H:Q	t
 H;0u7
-H;5Hy
-H;5xy
+H;5(M
 H;9tEH
+H;=0j
+H;=Bi
+H;=Pm
+H;=bl
 H;@0u
 H;@Xu
 H;C u
@@ -17541,7 +17569,6 @@ HA^A]A\]
 HA^^][
 HA^_[]
 HA^_[]H
-HA^_^[
 HA^_^]
 HA_A\
 HA_A\_]
@@ -17571,6 +17598,7 @@ HDUUUUUUUUUUUUUUUU
 HEADSET
 HFont
 HH:mm:ss
+HH@~Lr
 HHcD$0L
 HHcF(HcL
 HHcG(HcL
@@ -17626,7 +17654,6 @@ HLVRLoadingScreen
 HLVRLoadingScreenStartup
 HLVRMainMenu
 HLVRMainMenuCarouselPanel
-HLVRMenuStartupMapLoadService
 HLVRPhotoMode
 HLVRPhotoModeResourceManifest
 HLVRPlayerHUD
@@ -17816,6 +17843,7 @@ Hc0D;
 Hc2;r
 Hc3;s
 Hc3Hc
+Hc55~
 Hc7;w
 Hc7A+
 Hc8;x
@@ -19021,6 +19049,7 @@ L$@H;O
 L$@H=
 L$@Hc
 L$@L#
+L$@L+
 L$@Lc
 L$@LcD$0K
 L$@Mc
@@ -19186,8 +19215,6 @@ L9&u'H
 L9&us
 L9'uYK
 L9*u&
-L9-yG
-L9-{[
 L90t"
 L92t,H
 L93t)H
@@ -19195,7 +19222,6 @@ L96u4H
 L97taH
 L9:t?
 L9;uv
-L9=o2{
 L9>te
 L9B s
 L9HtzE
@@ -19222,6 +19248,7 @@ L9d$xt
 L9e@t	H
 L9eHutH
 L9eXt	H
+L9egt	H
 L9eot	H
 L9ept	H
 L9g@u=
@@ -19248,7 +19275,10 @@ L9mot	H
 L9ohtrH
 L9q@u
 L9t$ t
+L9t$(t
 L9t$0t
+L9t$8t
+L9t$@
 L9t$@t
 L9t$Pt
 L9t$Xt
@@ -19285,8 +19315,6 @@ L9|$Pt
 L9|$Xt
 L9|$`t
 L9|$pt
-L9}(t	H
-L9}@t	H
 L9}_t	H
 L9~ t
 L9~ u
@@ -19534,6 +19562,7 @@ Level Performance Tools
 Level: %s
 LevelInit
 LifeState_t
+LightDesc_t
 LightProbeTexture
 LightProbeVolumeDebugColors
 LightQueryGameSystem
@@ -19648,7 +19677,6 @@ LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 Logical#
-Look At
 Looks at the target player's center, instead of his eye position, in chase came mode
 Lookup dynamic time-of-day float value
 Lookup dynamic time-of-day vector value
@@ -20639,7 +20667,6 @@ P(fD!}
 P0HcC(H
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
-P8D9d$P
 P8H=vmdl
 P8H=vpcft
 P;{@|
@@ -20860,7 +20887,6 @@ PanelListPanel
 PanelListPanelVScroll
 PanelLoaded
 PanelMoved
-PanelNeedsRepaint
 PanelPtr
 PanelRequestedSecondaryLayout
 PanelStart
@@ -20948,6 +20974,7 @@ Perform the additional 'stuck' traces on the client side during prediction.
 PerformanceMode
 PerformanceMode_t
 PerformanceTool
+Permit Responses
 PersonaName
 PersonaNameReplacementToken
 PfB;D
@@ -21291,7 +21318,6 @@ QR8QSt
 QReturns the Steam Level of a user, the Badge level for the game, and if it's foil
 QT8QRt
 QTA9PT~5O
-QWEcm
 QX8QTt
 QjN?#
 Ql8QWt
@@ -21612,6 +21638,7 @@ Retrieve the public script-side data associated with an entity
 Retrieve, creating if necessary, the private per-instance script-side data associated with an entity
 Retrieve, creating if necessary, the public script-side data associated with an entity
 ReturnJobManualEventToPool
+Returning to main menu.
 Returns a sequence id given a name
 Returns the active sequence
 Returns the currently active spawn group handle
@@ -23163,15 +23190,12 @@ T$xE3
 T$xH+
 T$xH;
 T$xHc
-T%Kxu
-T%jc%
-T%zd%
-T5sxy
+T%}:%
+T53Ny
 T7 ;T7$t
 T9Tu*H
 T9du*H
 T:V@]
-T=)Ek
 TChinese
 TD_OFFSET_NORMAL
 TD_OFFSET_PACKED
@@ -23468,6 +23492,7 @@ Toggle
 Toggle Using a shader on the Ui Hands
 Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond physically to damage but never break. Green maps health in the range of 100 down to 1.
 Toggle the in-game script debug features
+Toggle whether a panel has the given CSS class.
 Toggle whether this panel is :selected.
 ToggleButton
 ToggleButton.SelectedTextColor
@@ -23781,7 +23806,6 @@ UVATAUAVH
 UVATAUAWH
 UVATAUH
 UVATAVAWH
-UVATAVH
 UVATAWH
 UVATH
 UVATI
@@ -24261,7 +24285,7 @@ VerticalScrollBar
 VerticalScrollForwarding
 VerticalScrollThumb
 VerticalSplitter
-VfD9%Hxf
+VfD9%(qf
 VguiScreen
 Vh{O@n
 VideoBIKMaterial%i
@@ -24314,20 +24338,17 @@ VolumeSliderValueChanged
 VoteData
 VrForward
 Vulkan
-W%#iN
 W%8O&t
+W%DoN
+W%aJr
 W(|9L
 W(|=L
 W,t6H
 W3|Uxa
-W5!sr
-W5rqr
-W5t&G
-W5}3p
+W5BGr
 W8HcH
 W8KcD
-W=PpN
-W=s8K
+W=3GK
 W=vmdlkeys0
 W?,|C
 W@|:L
@@ -24549,24 +24570,25 @@ X VWAVH
 X WAVAWH
 X!s"H
 X!t5~
-X%PON
+X%Dpm
 X(D9y(
 X(Optional) If true, only return the published file ids of files that satisfy this query.
+X-|x.
 X0Hcx(H
 X360_DST16
 X360_DST24
 X360_DST24F
-X5	>N
-X5#(N
-X5,jz
-X5-Jj
-X52ze
-X54Z:
-X5C G
-X5C$G
-X5}oe
+X5++G
+X5E j
+X5Uy.
+X5elN
+X5hxt
+X5o|H
+X5qyt
+X5udN
+X5{/G
+X5{3G
 X=2v?
-X=W8i
 XA;w@
 XA\^H
 XA]A\
@@ -24618,45 +24640,48 @@ Xl$`A
 Xt$@8]wtE8^Lt@
 Xt$DA
 Xt$XD
+Xt$pL
 Xt$xH
 X|$ A
 X|$8E
 X|$Hs
 X|$xA
 Y D9Y
+Y#a``$
 Y$D;R
-Y%&qz
-Y%?hN
-Y%n|M
+Y%Jgw
+Y%Opm
+Y%PyM
+Y%gwM
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-GJ'
-Y-j*R
+Y-VGA
+Y-vUM
 Y0HcR
 Y0t>H
-Y5!%K
-Y5!6I
-Y52Bw
-Y57ez
-Y5:@"
-Y5= G
-Y5H|N
-Y5U#K
-Y5Y&G
-Y5[}U
-Y5`?e
-Y5n>"
-Y5pnz
-Y5uEU
-Y5wnw
-Y5xI"
-Y5z|N
-Y=$TA
-Y=0!G
-Y=W4H
-Y=_~N
-Y=cxN
-Y=cyN
-Y={pe
+Y5&7p
+Y5(Dz
+Y5+<e
+Y5.]x
+Y59Ez
+Y5?'K
+Y5HAz
+Y5I@K
+Y5LaN
+Y5SDw
+Y5WhM
+Y5X G
+Y5X6:
+Y5^;r
+Y5_&K
+Y5_2z
+Y5sY"
+Y5y/G
+Y=/#K
+Y=3=H
+Y=[<B
+Y=c!K
+Y=h0G
+Y=m,K
 Y>kX>M
 Y@TD9
 YD$$A
@@ -24668,7 +24693,7 @@ YD$@f
 YD$`A
 YD8gEu
 YL$ A
-YL$@f
+YL$Pf
 YL$XIc
 YL$`A
 YOffset
@@ -24893,7 +24918,7 @@ Z~Xff
 \$8uIH
 \$<A;
 \$@9u ~UH
-\$@@8=
+\$@@8=!
 \$@A+
 \$@A9
 \$@A_A^_^]
@@ -24913,6 +24938,7 @@ Z~Xff
 \$@~?H
 \$AE3
 \$DD9_
+\$DLc
 \$H@8
 \$HE3
 \$HH9_Pu
@@ -24926,6 +24952,7 @@ Z~Xff
 \$HtlH
 \$LE3
 \$P5<
+\$P9XX
 \$P@8
 \$PA;
 \$PD;
@@ -24943,7 +24970,6 @@ Z~Xff
 \$Pu!H
 \$Pu,H
 \$Pu4H
-\$XD;
 \$XE2
 \$XHcC
 \$XHc\$`
@@ -24996,9 +25022,7 @@ Z~Xff
 \$xE3
 \$xHc
 \$xff
-\% gN
-\%>mz
-\%Z~.
+\-<y.
 \C not allowed in lookbehind assertion
 \D$(H
 \D$8H
@@ -25026,6 +25050,7 @@ Z~Xff
 \P{Xsp}
 \P{Xwd}
 \T$4I
+\T$DI
 \T$HH
 \T$XA
 \T$pL
@@ -25067,9 +25092,8 @@ Z~Xff
 ] is an invalid data character in JavaScript compatibility mode
 ])6M>&
 ]-?Z8
-]5,Ew
-]5,lr
-]5xo~
+]5+-G
+]5aNb
 ]>)2X
 ]@Mcj(H
 ]HL9#t
@@ -25221,6 +25245,7 @@ _xtOD
 `A_A^A\][
 `A_A^A\^]
 `A_A^A\_^
+`A_A^A]A\[
 `A_A^A]A\]
 `A_A^A]A\_[]
 `A_A^A]A\_^]
@@ -25235,7 +25260,7 @@ _xtOD
 `A__]
 `A__^
 `A__^][
-`D:5J$J
+`D:5B
 `E;t$
 `Hc>;~
 `HcY 3
@@ -25593,6 +25618,7 @@ attack2
 attempting to create unknown particle system %s
 attention_accept
 attention_confirm_visible
+attention_content
 attention_panel
 attenuation
 attenuation0
@@ -25638,6 +25664,7 @@ bAllow
 bBlock
 bClampEyeAngles
 bClip3DSkyBoxNearToWorldFar
+bD8%?
 bDampenEyePosition
 bDh%)
 bEnableIK_Index
@@ -26108,7 +26135,7 @@ c:\buildslave\hlvr_rel_win64\build\src\panorama\layout\panel2dfactory.cpp
 c:\buildslave\hlvr_rel_win64\build\src\panorama\layout\stylepropertyfactory.cpp
 c:\buildslave\hlvr_rel_win64\build\src\particleslib\particle_property.cpp
 c:\buildslave\hlvr_rel_win64\build\src\physicslib\physaggregatedata.cpp
-c:\buildslave\hlvr_rel_win64\build\src\public\closedcaptions.cpp
+c:\buildslave\hlvr_rel_win64\build\src\public\closedcaption\closedcaptions.cpp
 c:\buildslave\hlvr_rel_win64\build\src\public\entity2\concreteentitylist.h
 c:\buildslave\hlvr_rel_win64\build\src\public\entity2\entitycomponent.h
 c:\buildslave\hlvr_rel_win64\build\src\public\gcsdk\gcsteamdefines.h
@@ -27021,7 +27048,6 @@ d$4Hc
 d$8E3
 d$8H+
 d$8I;
-d$8fff
 d$@9>~fL
 d$@E3
 d$@L9d$Ht
@@ -27042,13 +27068,13 @@ d$PHc5
 d$PfD
 d$PtR
 d$Pu	D;
-d$TD9
 d$X@8
 d$XD;
 d$XE3
 d$XH91u 
 d$XLcB
 d$XfD
+d$\E3
 d$`;^
 d$`E3
 d$dE+
@@ -27619,6 +27645,7 @@ eyelid_up_down
 eyes_follow
 eyes_rightleft
 eyes_updown
+e}<[H
 f!C"3
 f!CXH
 f!D$*L
@@ -27633,9 +27660,10 @@ f!GXH
 f93t,
 f94Au
 f94Gu
-f95E1k
-f95Z2k
-f95^0k
+f95);k
+f9599k
+f95m9k
+f95q;k
 f9<Au
 f9<Xu
 f9<pu
@@ -27722,17 +27750,20 @@ fD!|;
 fD9 u
 fD9$Au
 fD9$xu
-fD9%$yf
+fD9%lqf
 fD9(u
 fD9,Cu
 fD9,Ku
 fD9,Pu
-fD9-*Ak
-fD9-VBk
-fD9-~Dk
+fD9-	Kk
+fD9- Nk
+fD9--Mk
+fD9-WJk
+fD9-`Nk
 fD90t
 fD94Fu
 fD94pu
+fD95IFf
 fD96u
 fD98@
 fD98u
@@ -27840,6 +27871,7 @@ file too large
 file://
 file://{images}/browser/browser_mousepan.png
 file://{images}/chapters/chapter%d.png
+file://{images}/chapters/chapter0.png
 file://{resources}/browser/webkit.css
 file://{resources}/layout/base_hud.xml
 file://{resources}/layout/base_world_panel.xml
@@ -27876,7 +27908,7 @@ file://{resources}/layout/game_menus/game_options_slider_item.xml
 file://{resources}/layout/game_menus/game_options_toggle_item.xml
 file://{resources}/layout/game_menus/load_save_item.xml
 file://{resources}/layout/game_menus/local_addon_info_panel.xml
-file://{resources}/layout/game_menus/local_addon_item.xml
+file://{resources}/layout/game_menus/local_addon_item_with_info.xml
 file://{resources}/layout/game_menus/local_addon_map_item.xml
 file://{resources}/layout/game_menus/local_addon_panel.xml
 file://{resources}/layout/game_menus/main_menu_root.xml
@@ -28412,7 +28444,6 @@ hA\_H
 hA]A\][
 hA]_][
 hA^A\
-hA^A\^]
 hA^_^[
 hA^_^]
 hA_A]
@@ -28425,7 +28456,6 @@ hA_A^A]A\_^[]
 hA_A^A]A\_^][
 hA_A^_^[]
 hA_A^_^][
-hA__^]
 hActivator
 hAttacker
 hCaller
@@ -28700,6 +28730,7 @@ hlvr_main_menu_activate_enter_vignette
 hlvr_main_menu_activate_exit_vignette
 hlvr_main_menu_delay
 hlvr_main_menu_delay_with_intro
+hlvr_main_menu_delay_with_intro_and_saves
 hlvr_main_menu_max_save_slots
 hlvr_main_menu_render_play_area
 hlvr_main_menu_set_test_level
@@ -28989,6 +29020,7 @@ illegal byte sequence
 image
 imageAlignment
 imageSelected
+image_desc
 image_height
 image_width
 imagecolor
@@ -29765,7 +29797,7 @@ labelled_debug_helper_arc_segments
 labelled_debug_helper_enabled
 labelled_debug_helper_scale
 labelled_debug_helper_show_position
-labelled_debug_helper_skeleton_show_bone_names
+labelled_debug_helper_show_text
 labeltext
 ladder
 landmark
@@ -29989,7 +30021,6 @@ m ]lZ
 m0k0$
 m8L9c
 m@HcG
-mKU?<
 m_16ByteOrLessStack out of space, falling through after %d entries, consider upping NETWORKFIELDSCRATCHDATA_16BYTE_COUNT
 m_ActiveBullets
 m_ActiveClusters
@@ -31845,6 +31876,7 @@ m_flStartDrawDistance
 m_flStartDrawDistanceTime
 m_flStartFrame
 m_flStartGameTime
+m_flStartInjectTime
 m_flStartScale
 m_flStartScatterTime
 m_flStartScattering
@@ -34462,7 +34494,7 @@ next_weapon_timer
 next_zipline
 nextfadetime
 nexttoken
-nfD9-BDk
+nfD9-
 ng_yP
 nickname
 nmonqnmomnmomomno
@@ -34574,9 +34606,10 @@ numericpassword
 numperpage
 numsegments
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
-o%DL=
+o%DF=
 o*Ral
 o0H9o
+o0HcG(H
 oD$ H
 oD$ f
 oG8-x
@@ -34799,7 +34832,6 @@ pA_A^A\_^
 pA_A^A\_^[]
 pA_A^A\_^][
 pA_A^A]
-pA_A^A]A\[
 pA_A^A]A\_^[
 pA_A^A]A\_^]
 pA_A^]
@@ -35586,7 +35618,7 @@ pxADj
 py_generic_services
 q$Hcy
 q(9YD~tE3
-q(@85A
+q(@85
 q0@80u
 q;4,F
 q@Hcs ;s0u
@@ -36038,9 +36070,9 @@ s2@8s
 s2r://
 s4+sP+
 s4@85
-s4@85p
-s4@8=u-
-s4Hc-%E
+s4@85u
+s4@8=E
+s4Hc-
 s69F~
 s6HcFH
 s6HcFd
@@ -37049,7 +37081,7 @@ t	;F@~
 t	@8+
 t	@80
 t	@88
-t	@8=B	
+t	@8=
 t	@8>t
 t	D8+t
 t	D8;t
@@ -37131,7 +37163,7 @@ t$ I;
 t$ Ic
 t$ L+
 t$ L;
-t$ Lc5b
+t$ Lc5z
 t$ Mc
 t$ UATAUAVAWH
 t$ UAVAWH
@@ -37203,6 +37235,7 @@ t$0Hk
 t$0I9HPt
 t$0Ic
 t$0L9t$8t
+t$0L9t$Pt
 t$0M;
 t$0f9{*t
 t$0fA
@@ -37341,6 +37374,8 @@ t$PHcq ;q0u	H
 t$PHc{
 t$PIc
 t$PL+
+t$PL9
+t$PL9t$@t
 t$PL9t$Xt
 t$PLc
 t$PLcCL3
@@ -37486,7 +37521,7 @@ t,+CHx';B
 t,9O0~'I
 t,<\u
 t,@80t'H
-t,D88t'H
+t,@88t'H
 t,HcV ;
 t,HcV8;
 t,HcwP;w`u
@@ -37508,7 +37543,7 @@ t.@8:t)
 t.@8>t)
 t.E9H
 t.H90t)H
-t.L9%`b_
+t.L9% Z_
 t/@8}
 t/A8]
 t/D8+t*
@@ -37530,7 +37565,7 @@ t0D9u
 t0H9Bxt
 t0HcT
 t0HcT(
-t0f9=`Nf
+t0f9= Hf
 t1D9A
 t1H9uxt
 t1HcG 
@@ -37582,8 +37617,8 @@ t7HcG(
 t7HcW0L
 t7L93t)H
 t7fff
-t8D8%0
-t8Hc=[
+t8D8%
+t8Hc=
 t8HcA
 t8HcA 
 t8HcA H
@@ -37604,8 +37639,8 @@ t8HcV
 t8N9<
 t9D80t4H
 t9D9F
-t9H95
-t9H9=
+t9H95B
+t9H9=v[_
 t9HcC(A
 t9HcG$
 t9HcG$H
@@ -37614,7 +37649,7 @@ t9HcG0
 t9HcT(
 t9Ic@ 
 t9IcA
-t9L9%<
+t9L9%
 t:@8.t5H
 t:@8/t5H
 t:HcA
@@ -37646,6 +37681,7 @@ t:LcM
 t;@83t6f
 t;A9;
 t;H9=
+t;H9=+
 t;HcG0H
 t;Hc_
 t;Ic@,H
@@ -37668,6 +37704,7 @@ t=HcA$A
 t=HcG(H
 t=HcG0H
 t>A9P
+t>D88t9H
 t>Hc.3
 t>HcA
 t>HcA H
@@ -37705,7 +37742,7 @@ tBHcA M
 tBHcA(M
 tBHcL$`L
 tBL98t=H
-tCE8&t>
+tCE8.t>
 tCHcC
 tCHcP
 tDD9V
@@ -37734,7 +37771,7 @@ tKD9K
 tKHcE
 tLD9I
 tLL9vpu
-tM@8-09
+tM@8-
 tM@8~
 tND8%
 tND9C
@@ -37744,12 +37781,12 @@ tNIc/A
 tNfff
 tOA9H
 tOD9C
-tOH9=C
+tOH9=S
 tOHc;;{
 tOfff
 tP@8|$!u4@8|$"t-
 tPD9A
-tPH95=~R
+tPH95MtR
 tQH9]
 tR@80tMH
 tR@80tML
@@ -37790,7 +37827,7 @@ tYD88tTH
 tYD9I
 tYfff
 tZD9=
-tZD9={E
+tZD9=;O
 tZIcI(E3
 t[Lc3E
 t\@83tWH
@@ -37838,7 +37875,7 @@ targetid
 targetposition
 taunt
 tax_usd
-tbD9=
+tbD9=q6
 tbD9R
 tbHcn(3
 tc9iHtyLcq(H
@@ -37940,7 +37977,7 @@ texturescale
 texturewidth
 textwindow_temp.html
 tfD8cTt@H
-tfD9=
+tfD9=y
 tfD9O
 tfHcB
 tfKcD
@@ -38206,7 +38243,6 @@ u	D8%
 u	D8%x
 u	H91
 u	L9!
-u	L99
 u D9o
 u axis
 u u%H
@@ -38228,7 +38264,7 @@ u&;_(u
 u&@:=
 u'L;v
 u(@8t$ u!@8
-u(@:=B$J
+u(@:=:
 u(Hc} ;}0u
 u(Jc|6
 u)!t$(H
@@ -38236,7 +38272,7 @@ u+9F0u&
 u+9_(~
 u+Hc7;w
 u+LcJHH
-u,@:=
+u,@:=4pf
 u,HcG
 u-Hc+;k
 u-Lcu
@@ -38265,7 +38301,7 @@ u<Hc_
 u<fD;
 u=@85
 u=Hc{p;
-u=L9582
+u=L95
 u=L;k
 u=fD;
 u>Hcn03
@@ -38277,14 +38313,14 @@ uCD8n
 uDfD;
 uEH9:t@
 uEfD;
-uF@85R~
+uF@85
 uFM9/tA
 uFfD;
 uG8G`
 uGHcA ;B u>
 uGfD;
 uGrants an implicit OAuth token (grant type 'token') for the specified client ID on behalf of a user without prompting
-uH8CXuCf95
+uH8CXuCf95Q:k
 uIHc7;w
 uIHc;;{
 uJfff
@@ -39511,7 +39547,6 @@ w(H;C
 w(Hc<
 w3fA;
 w4@85
-w4@85Ld
 w4Hc;;{
 w7fA;
 w8Lc7A;
@@ -39712,7 +39747,6 @@ xA_A^A]A\_^][
 xA_A^A]]
 xA_A^_^][
 xBL;S
-xG;sH}BH
 xHA;\$
 xHHcG0H;
 xHcwhA
@@ -39720,6 +39754,7 @@ xIHcG0H;
 xJHcQ
 xL9-C
 xLHcK
+xM;sH}HH
 xMHcQ
 xPHcQ
 xRHcF0H;
@@ -40049,7 +40084,7 @@ zoom_sensitivity_ratio
 |$PE3
 |$PH+
 |$PHc
-|$PHc=t
+|$PHc=
 |$PHcH
 |$PHcP
 |$PHcy@
@@ -40076,7 +40111,6 @@ zoom_sensitivity_ratio
 |$XA;
 |$XD;d$h~	D
 |$XE3
-|$XH+
 |$XH;
 |$XHc
 |$XHcU
@@ -40144,7 +40178,7 @@ zoom_sensitivity_ratio
 |(tFM
 |/D9l
 |=D;-
-|=D;-c~
+|=D;-CO
 |?5^:+
 |Ifff
 |`E+J<3
@@ -40162,7 +40196,6 @@ zoom_sensitivity_ratio
 }.fD;
 }/;{<w*;
 }0E!4
-}0HcE(H
 }0fA;Q
 }2'@+P
 }3;{\
@@ -40198,7 +40231,6 @@ zoom_sensitivity_ratio
 }`D+}
 }`HcE
 }afA;
-}b?xY
 }bfA;
 }c;^D
 }d)H"j

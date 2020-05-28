@@ -516,7 +516,7 @@ Note that playback speed is inherited: if a node tells its child to play at half
 		"Attribute.CTwoBoneIKAnimNode.m_bMatchTargetOrientation"		"Match Target Orientation"
 		"Attribute.CTwoBoneIKAnimNode.m_bMatchTargetOrientation:help"		"When true, the end effector bone in the IK chain will be rotated to match the orientation of the target Attachment"
 		"Attribute.CBoneMaskAnimNode.m_timingBehavior"		"Timing Control"
-		"Attribute.CBoneMaskAnimNode.m_timingBehavior:help"		"Choose how the node handles interprets and manages the playback of its children, and how its presents it own timing to its parent.    
+		"Attribute.CBoneMaskAnimNode.m_timingBehavior:help"		"Choose how the node its presents its  timing to its parent node.    
 
 <UL>
 <LI> <B>Use Child1:</B> Use the cycle and duration of Child1 as the cycle and duration of this node.  The child nodes are not synchronized.   
@@ -1280,7 +1280,8 @@ A value of 0.5 is an equal balance between pose and goal metrics.  Values closer
 		"Attribute.CFootLockAnimNode.m_flExtensionScale:help"		"Blends between the animation's current leg extension and its fully extended pose when calculating how far the leg can reach when solving IK.  Smaller values favor the animation, and will tend to leave some bend in the knee"
 		"Attribute.CFollowPathAnimNode.m_bScaleSpeed"		"Enable Speed Scaling"
 		"Attribute.CFollowPathAnimNode.m_bScaleSpeed:help"		"Turns on Speed Scaling
-
+<BR>
+<BR>
 Speed scaling reduces the speed of the root motion if it is not going in the same direction as the path.  This can sometimes help prevent foot locking from trying to step farther than looks natural"
 		"Attribute.CFootLockAnimNode.m_flTraceAngleBlend"		"Angle Traces with Slope"
 		"Attribute.CFootLockAnimNode.m_flTraceAngleBlend:help"		"Controls the angle that the traces against the ground are cast.  
@@ -1492,5 +1493,119 @@ The values are a scale applied to  Distance.  So for example if Distance is 100,
 		"Element.CRagdollAnimTag:help"		"Triggers ragdoll physics with specific settings"
 		"Element.CFootstepLandedAnimTag"		"Footstep Landed Tag"
 		"Element.CFootstepLandedAnimTag:help"		"Tag that works with the Strider system to automatically emit footstep sounds when the feet hit the ground"
+		"Attribute.CFootLockItem.m_ikChainName"		"IK Chain"
+		"Attribute.CFootLockItem.m_ikChainName:help"		"Name of the chain of bones to modify to move the foot to the calculated position.  IK Chains are defined on the model in ModelDoc"
+		"Attribute.CFootLockItem.m_flMaxRotationLeft"		"Max Left Rotation"
+		"Attribute.CFootLockItem.m_flMaxRotationLeft:help"		"The maximum angle (in degress) that this foot can be rotated to the left, relative to the character's forward direction.  Beyond this angle the foot will rotate about the ball of the foot.  "
+		"Attribute.CFootLockItem.m_flMaxRotationRight"		"Max Right Rotation"
+		"Attribute.CFootLockItem.m_flMaxRotationRight:help"		"The maximum angle (in degress) that this foot can be rotated to the right, relative to the character's forward direction.  Beyond this angle the foot will rotate about the ball of the foot.  "
+		"Attribute.CFootLockItem.m_footstepLandedTag"		"Footstep Landed Tag"
+		"Attribute.CFootLockItem.m_footstepLandedTag:help"		"Tag to emit when the foot hits the ground.  Used for triggering footstep sounds"
+		"Attribute.CFootLockAnimNode.m_ikSolverType"		"IK Solver Type"
+		"Attribute.CFootLockAnimNode.m_ikSolverType:help"		"The IK solver to use to solve the IK chain defined for each foot.  Use Two Bone unless you have a good reason not to.  "
+		"Attribute.CFootLockAnimNode.m_bAlwaysUseFallbackHinge"		"Always use fallback hinge"
+		"Attribute.CFootLockAnimNode.m_bAlwaysUseFallbackHinge:help"		"Force the IK solver to always use the axis of rotation for the knee that is defined as part of the IK Chain in Modeldoc.  When not enabled, the IK solver will try to deduce the axis of rotation based on how the animation has rotated the joints, and only used the fallback hinge when the joints are perfectly straight.  This is useful in case some of the animation data hasn't been cleaned and the knees hyperextend"
+		"Attribute.CFootLockAnimNode.m_bEnableVerticalCurvedPaths"		"Enable Vertical Curved Paths"
+		"Attribute.CFootLockAnimNode.m_bEnableVerticalCurvedPaths:help"		"Experimental: use with caution
+<BR>
+<BR>
+Arcs the path of the foot vertically based on the difference in height and surface normal of the previous and next foot positions.  "
+		"Attribute.CFootLockAnimNode.m_bEnableHipShift"		"Enable Hip Shift"
+		"Attribute.CFootLockAnimNode.m_bEnableHipShift:help"		"When enabled, if the positions of the feet are different than they were in the original animation then the hips will get moved by the same amount to attempt to keep the center of mass of the character in the right place"
+		"Attribute.CFootLockAnimNode.m_flHipShiftScale"		"Hip Shift Scale"
+		"Attribute.CFootLockAnimNode.m_flHipShiftScale:help"		"Controls how much of the hip shift to apply"
+		"Attribute.CFootLockAnimNode.m_hipShiftDamping"		"Damping"
+		"Attribute.CFootLockAnimNode.m_hipShiftDamping:help"		"Provides controls to smooth out changes in the hip shift"
+		"Attribute.CFootLockAnimNode.m_bEnableLockBreaking"		"Enable Lock Breaking"
+		"Attribute.CFootLockAnimNode.m_bEnableLockBreaking:help"		"When enabled, the system will disable the IK on a foot if its IK target is farther than it can reach, and will re-enable it when the IK target is within range again.  "
+		"Attribute.CFootLockAnimNode.m_flLockBreakTolerance"		"Tolerance"
+		"Attribute.CFootLockAnimNode.m_flLockBreakTolerance:help"		"The IK target must be more than this amount beyond the reach of the leg before the lock is broken.  Prevents the lock break engaging too frequently when the source animations start with the legs close to fully straightened.  "
+		"Attribute.CFootLockAnimNode.m_flLockBreakBlendTime"		"Blend Time"
+		"Attribute.CFootLockAnimNode.m_flLockBreakBlendTime:help"		"The amount of time to blend from the IK'd position to the animated position and back when the lock is broken or re-engaged.  "
+		"Attribute.CFootLockAnimNode.m_bEnableStretching"		"Enable Stretching"
+		"Attribute.CFootLockAnimNode.m_bEnableStretching:help"		"When enabled this will translate the root of the IK chain towards the IK target if the chain is not long enough to reach it on its own.  This usually means translating the hip bone; small amounts of translation are not noticable by users but it can great help to prevent the knees from locking out.  "
+		"Attribute.CFootLockAnimNode.m_flMaxStretchAmount"		"Max Stretch Amount"
+		"Attribute.CFootLockAnimNode.m_flMaxStretchAmount:help"		"The max distance that the root of the IK chain can be translated"
+		"Attribute.CFootLockAnimNode.m_flStretchExtensionScale"		"Extension Scale"
+		"Attribute.CFootLockAnimNode.m_flStretchExtensionScale:help"		"Scales the effective length of the leg use for this effect, so that there is still some bend in the knee after it is applied.
+
+Set this to less than 1 to have the Stretch activate before the leg is fully straight.  "
+		"Attribute.CFootLockAnimNode.m_bEnableRootHeightDamping"		"Enable Root Height Damping"
+		"Attribute.CFootLockAnimNode.m_bEnableRootHeightDamping:help"		"The bounding box of the entity snaps to the height of the ground the entity is standing on, which can cause the height of the character to pop suddenly when going up and down stairs.  This option dampens the effective position of the character within the bounding box to smooth out these sudden changes in height.  "
+		"Attribute.CFootLockAnimNode.m_rootHeightDamping"		"Damping Settings"
+		"Attribute.CFootLockAnimNode.m_flMaxRootHeightOffset"		"Max Offset"
+		"Attribute.CFootLockAnimNode.m_flMaxRootHeightOffset:help"		"The limit on the distance that the character can be moved upwards relative to its bounding box"
+		"Attribute.CFootLockAnimNode.m_flMinRootHeightOffset"		"Min Offset"
+		"Attribute.CFootLockAnimNode.m_flMinRootHeightOffset:help"		"The limit on the distance that the character can be moved downward relative to its bounding box"
+		"Attribute.CBoneMaskAnimNode.m_footMotionTiming"		"Foot Motion Timing"
+		"Attribute.CBoneMaskAnimNode.m_footMotionTiming:help"		"Choose how the node its presents its  foot motion timing to its parent node.    
+
+<UL>
+<LI> <B>Child1:</B> The foot motion from the first child is used  
+<LI> <B>Child2:</B> The foot motion from the second child is used  
+</UL>"
+		"Attribute.CAddAnimNode.m_footMotionTiming"		"Foot Motion Timing"
+		"Attribute.CAddAnimNode.m_footMotionTiming:help"		"Choose how the node its presents its  foot motion timing to its parent node.    
+
+<UL>
+<LI> <B>Child1:</B> The foot motion from the first child is used  
+<LI> <B>Child2:</B> The foot motion from the second child is used  
+</UL>"
+		"Attribute.CFollowPathAnimNode.m_bStopFeetAtGoal"		"Stop Feet at Goal"
+		"Attribute.CFollowPathAnimNode.m_bStopFeetAtGoal:help"		"When enable, this node will adjust the predicted positions of the feet so that they do not go past where they would be if the character was standing at the goal.  "
+		"Attribute.CFollowPathAnimNode.m_flScale"		"Scale"
+		"Attribute.CFollowPathAnimNode.m_flScale:help"		"The maximum amount that the speed can be reduced by.  "
+		"Attribute.CFollowPathAnimNode.m_flMinAngle"		"Min Angle"
+		"Attribute.CFollowPathAnimNode.m_flMinAngle:help"		"Below this angle no speed scaling is applied"
+		"Attribute.CFollowPathAnimNode.m_flMaxAngle"		"Max Angle"
+		"Attribute.CFollowPathAnimNode.m_flMaxAngle:help"		"When the difference between the animation's original direction and the direction of the path is this amount or greater, then the full amount of scaling is applied to the speed"
+		"Attribute.CFollowPathAnimNode.m_flSpeedScaleBlending"		"Blend Time"
+		"Attribute.CFollowPathAnimNode.m_flSpeedScaleBlending:help"		"Controls how long it takes the speed scaling to ramp in and out"
+		"Attribute.CFollowPathAnimNode.m_bTurnToFace"		"Enable Turn to Face"
+		"Attribute.CFollowPathAnimNode.m_bTurnToFace:help"		"When enabled this node will procedurally generate root motion to turn the character to face a given direction"
+		"Element.CSetFacingAnimNode"		"Set Facing Node"
+		"Element.CSetFacingAnimNode:help"		"Sets the logic for how the character's facing direction is calculated.  "
+		"Attribute.CSetFacingAnimNode.m_facingMode"		"Facing Mode"
+		"Attribute.CSetFacingAnimNode.m_facingMode:help"		"Defines which mode the facing logic is set to:
+
+<UL>
+<LI> <B>Manual:</B> Use the value passed in from game code
+<LI> <B>Path:</B> Use the direction along the path, no matter where along the path you are.  
+<LI> <B>Look Target:</B> Face the direction to the look target
+</UL>"
+		"Attribute.CSetFacingAnimNode.m_bResetChild"		"Reset Child"
+		"Attribute.CSetFacingAnimNode.m_bResetChild:help"		"When enabled, this node will reset its child when it gets reset"
+		"Attribute.CSetFacingAnimNode.m_networkMode"		"Network Mode"
+		"Attribute.CSetFacingAnimNode.m_networkMode:help"		"Defines where the logic for this graph node is evaluated:
+
+<UL>
+<LI> <b>Server Authoritative: </b> The logic for this node runs on the server, and the results are networked down to the client
+<LI> <b>Client Simulate: </b> The logic for this node runs on the client, and its state is not networked
+</UL>
+
+<p/>
+
+<em>Note: When a node is set to <b>Client Simulate</b> all of its children are forced to also be Client Simulate, regardless of what their Network Mode setting is </em>"
+		"Attribute.CDirectPlaybackAnimNode.m_bResetOnFinish"		"Reset Child On Finish"
+		"Attribute.CDirectPlaybackAnimNode.m_bResetOnFinish:help"		"When enabled this node will reset its child node when it finishes playing an animation"
+		"Attribute.CLookAtAnimNode.m_bLockWhenWaning"		"Lock Blend When Waning"
+		"Attribute.CLookAtAnimNode.m_bLockWhenWaning:help"		"Don't change the look direction if this node is blending out"
+		"Attribute.CSubtractAnimNode.m_footMotionTiming"		"Foot Motion Timing"
+		"Attribute.CSubtractAnimNode.m_footMotionTiming:help"		"Choose how the node its presents its  foot motion timing to its parent node.    
+
+<UL>
+<LI> <B>Child1:</B> The foot motion from the first child is used  
+<LI> <B>Child2:</B> The foot motion from the second child is used  
+</UL>"
+		"Element.CSingleFrameAnimNode"		"Single Frame Node"
+		"Element.CSingleFrameAnimNode:help"		"Always returns a single frame of an animation.  Provides a performance improvement over Animation Clip nodes"
+		"Attribute.CSingleFrameAnimNode.m_sName"		"Name"
+		"Attribute.CSingleFrameAnimNode.m_sName:help"		"The name of the anim graph node.  Shown in the header bar of the node in the graph editor.  If no name is set, or the name is \"Unnamed\", then the graph editor will show the type of the node as its name.  "
+		"Attribute.CSingleFrameAnimNode.m_sequenceName"		"Sequence"
+		"Attribute.CSingleFrameAnimNode.m_sequenceName:help"		"The name of the animation sequence"
+		"Attribute.CSingleFrameAnimNode.m_nFrameIndex"		"Frame"
+		"Attribute.CSingleFrameAnimNode.m_nFrameIndex:help"		"The frame of the animation sequence"
+		"Attribute.CSingleFrameAnimNode.m_networkMode"		"Network Mode"
+		"Attribute.CSingleFrameAnimNode.m_networkMode:help"		"Note used by this node"
 	}
 }

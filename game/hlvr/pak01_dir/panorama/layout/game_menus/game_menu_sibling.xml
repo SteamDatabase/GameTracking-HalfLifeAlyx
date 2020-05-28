@@ -127,10 +127,13 @@
         <Panel id="chapter_item_container_01" class="base_info_panel_collapse">
           <Panel class="header_info_panel" />
           <Panel class="empty_row" />
-          <Panel class="row">
-            <Panel class="col_body_sibling">
-              <Panel class="info_body">
+          <Panel class="info_body">
+            <Panel class="row">
+              <Panel class="col_body_sibling">
                 <Image id="ChapterImage" class="ScreenshotThumb" />
+                <Panel class="label">
+                  <Label class="body_copy" text="{s:image_desc}"/>
+                </Panel>               
               </Panel>
             </Panel>
           </Panel>

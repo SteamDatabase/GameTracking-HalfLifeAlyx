@@ -75,7 +75,6 @@
  C>TQ
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;=9
  E;wX
  E;}X
  H3E H3E
@@ -235,7 +234,7 @@ $~aA;F
 &YA1H
 &YA1I
 &YA1L
-' ,l&
+' Tn&
 '7GWgw
 '?SetSwapUV@FbxTexture@fbxsdk@@QEAAX_N@Z
 '?SetTRS@FbxAMatrix@fbxsdk@@QEAAXAEBVFbxVector4@2@00@Z
@@ -550,7 +549,6 @@ $~aA;F
 *** line error: 'rgb+a' packing cannot pack image '%s' belonging to sequences %d and %d!
 *** line error: incompatible packmode change when %d sequences already defined!
 *** line error: invalid sequence type '%s', packing 'flat' allows only 'sequence-rgba'!
-*/$w{
 *:JZjz
 *LcD$0A
 *StO9>T
@@ -586,7 +584,7 @@ $~aA;F
 ,I<%w
 ,t0D9J0v*L
 ,|%)v
-,}v4l&
+,}v\n&
 ---- dmxconvert cmdline ----
 ---- dmxconvert output ----
 ---------------------------
@@ -1678,7 +1676,7 @@ $~aA;F
 1sAL"
 1wsHp
 2%?SetBoolProp@FbxIOSettings@fbxsdk@@QEAAXPEBD_N@Z
-200519202802Z0#
+200527200832Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1705,7 +1703,7 @@ $~aA;F
 5@8|$"t.9|
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 5sfm_v8
-5t8	)
+5tP	)
 64 283 0
 700WP
 7I97u
@@ -1727,7 +1725,6 @@ $~aA;F
 8A_A^_[
 8A_A^_]
 8A__][
-8CDmeUnpackVMatrixOperator CUtlMemoryPool
 8D$ u+I
 8D),$
 8D)l$
@@ -1741,7 +1738,7 @@ $~aA;F
 8b  16-May-2010
 8fF9|
 8ke?;
-8xH	)
+8x`	)
 9"tCeH
 9#tCeH
 9$tCeH
@@ -1968,6 +1965,7 @@ $~aA;F
 ?Bind@FbxPathUtils@fbxsdk@@SA?AVFbxString@2@PEBD0_N@Z
 ?Buffer@FbxString@fbxsdk@@QEAAPEADXZ
 ?Buffer@FbxString@fbxsdk@@QEBAPEBDXZ
+?C<n&
 ?ChangeExtension@FbxPathUtils@fbxsdk@@SA?AVFbxString@2@PEBD0@Z
 ?ClassId@FbxFileTexture@fbxsdk@@2VFbxClassId@2@A
 ?ComposeFileName@CBufferString@@QEAAPEBDPEBD0D@Z
@@ -2089,6 +2087,7 @@ $~aA;F
 ?ati_compress_wrapper.dll
 ?f`Y4
 ?kxG2)
+?physics
 ?sqrtf
 ?{Q}<
 @ Lc4
@@ -2101,6 +2100,7 @@ $~aA;F
 @80t9H
 @80u#H
 @81u/H
+@8=j9)
 @8t$x
 @8y:t
 @8|$Pt
@@ -2816,6 +2816,7 @@ CDmeUint8LogLayer CUtlMemoryPool
 CDmeUnpackColorOperator CUtlMemoryPool
 CDmeUnpackQAngleOperator CUtlMemoryPool
 CDmeUnpackQuaternionOperator CUtlMemoryPool
+CDmeUnpackVMatrixOperator CUtlMemoryPool
 CDmeUnpackVector2Operator CUtlMemoryPool
 CDmeUnpackVector3Operator CUtlMemoryPool
 CDmeUnpackVector4Operator CUtlMemoryPool
@@ -3356,40 +3357,41 @@ D24S8
 D24X4S4
 D24X8
 D24X8_SHADOW
-D8-!1
-D8-#C
-D8-%K
-D8-&D
-D8-(E
-D8-)G
-D8-*2
-D8-*F
-D8-,H
-D8-6I
-D8-73
-D8-H4
-D8-Q5
-D8-RJ
-D8-a/
-D8-a8
-D8-c9
-D8-e6
-D8-e7
-D8-h<
-D8-i?
-D8-j>
-D8-jA
-D8-k@
-D8-l;
-D8-n0
-D8-n=
-D8-p:
-D8-sB
-D8-|D
-D8-|G
-D8-}C
-D8-~1
-D8-~E
+D8- B
+D8-!>
+D8-!A
+D8-#;
+D8-$1
+D8-&@
+D8-)C
+D8-*J
+D8-/H
+D8-2E
+D8-3D
+D8-42
+D8-4F
+D8-6G
+D8-<I
+D8-=3
+D8-AK
+D8-N4
+D8-[5
+D8-f9
+D8-h6
+D8-k/
+D8-k7
+D8-nJ
+D8-r<
+D8-s?
+D8-t>
+D8-tA
+D8-u8
+D8-u@
+D8-v;
+D8-vB
+D8-x0
+D8-z:
+D8-{=
 D82u&H
 D8?tRf
 D8?tnH
@@ -3732,6 +3734,7 @@ E;Bl}NE
 E;F$w
 E;~(H
 E>nEA
+E?WIN32
 E@9GXu7Lc
 E@A9v
 EMItD
@@ -4017,14 +4020,12 @@ H+\$h+
 H+\$hIc<$H
 H0F08
 H0Hc\$p3
-H3=z7
 H3\$HH
 H97t<
 H98tPA
 H98u	H
 H99t	M
 H99u{
-H9=y)
 H9A u
 H9A(s
 H9BhuTH
@@ -5534,7 +5535,6 @@ WAUAWH
 WAVAWH
 WD8l$@t
 WHcs 
-WIN32
 WINDOWS
 WINXP
 WaNd?
@@ -5675,7 +5675,7 @@ Zpm"U
 \$8fff
 \$<A;
 \$@9n<
-\$@@8=
+\$@@8=]g
 \$@D;
 \$@H+
 \$@H;
@@ -5715,12 +5715,14 @@ Zpm"U
 \T$Hf
 \ffff
 ])6M>&
+]5d;$
 ]8fff
 ]>)2X
 ]@fff
 ]HE9F
 ]HcD$ I
 ^<V7w
+^L{Z'F+
 ^RfN>
 ^dA)^`A
 ^oEZ_
@@ -6223,10 +6225,10 @@ event_keys
 eventindex
 ewh/?y
 exA_A^A]A\_^[]
-exDl&
 executable format error
 exit_anim
 exit_sequence
+exln&
 explosion_behavior
 explosion_buildup
 explosion_delay
@@ -6442,7 +6444,6 @@ k<9{@~:L
 k<9{@~EL
 k<9{@~FL
 k@_aH
-kKd(7
 kN`8H
 keysInTime_0
 keysInTime_1
@@ -7035,7 +7036,6 @@ permission denied
 pfmscale
 phonememap
 physgun_interactions
-physics
 physicsSimplificationError
 physicsSimplificationOverride
 physicsmode
@@ -7608,7 +7608,7 @@ txHcu
 tzLcK<L
 tzfff
 u	9w$
-u	@8=
+u	@8=}
 u	HcB
 u!!D$(H
 u%!D$@H
@@ -7676,7 +7676,6 @@ v&?SetLinkMode@FbxCluster@fbxsdk@@QEAAXW4ELinkMode@12@@Z
 v0t08
 v2!L.2
 vQO+t
-v_'Wt
 v`D;}\|
 value
 value too large
@@ -8012,8 +8011,8 @@ zstream not in use (internal error)
 ~ fff
 ~!A;~
 ~"fff
-~'<l&
 ~'Hc>;~
+~'dn&
 ~(HcNDI
 ~*9q0
 ~*9qP

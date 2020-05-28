@@ -5,15 +5,13 @@
   </styles>
 
   <HLVRAddonTogglePanel>
-    <Panel class="row scroll_item">
-      <Panel class="addon_item addon_toggle_container" onactivate="AddonToggleButton()">
+    <Panel class="row scroll_item" onactivate="AddonToggleButton()" onmouseover="GameMenu_OptionMouseOver( '#HLVR_MainMenu_AddonToggleInfo' )">
+      <Panel class="addon_item addon_toggle_container">
         <Panel class="switch_image" />
       </Panel>
       
-      <!--<Panel class="addon_item addon_row" onactivate="AddonInfoButton()">-->
-      <Panel class="addon_item addon_row" onmouseover="GameMenu_OptionMouseOver( 'Item Info Coming Soon.  Press Toggle on Left to Enable and Disable' )">
+      <Panel class="addon_item addon_row" >
         <Label text="{s:addon_name} {s:downloading}"/>
-        <Image class="button_bullet" src="s2r://panorama/images/game_menu_ui/btn_bullet_child_page_png.vtex" />
       </Panel>
       
     </Panel>

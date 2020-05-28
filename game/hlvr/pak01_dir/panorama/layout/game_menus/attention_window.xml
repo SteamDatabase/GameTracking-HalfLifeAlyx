@@ -20,8 +20,8 @@
         <Panel class="row">
           <Panel class="col_body_sibling">
             <Panel class="info_body">
-              <Panel class="row">
-                <Panel class="col_body_sibling">
+              <Panel id="attention_content" class="row attention_max_height">
+                <Panel class="col_body_sibling ">
                   <Panel class="label">
                     <Label class="body_copy" text="#HLVR_MainMenu_Attention"/>
                   </Panel>
@@ -32,10 +32,7 @@
               </Panel>
 
               <Panel class="row_divider">
-                <Panel class="button_label">
-                  <Panel class="row_divider_line" />
-                </Panel>
-                <Panel class="button_bullet" />
+                <Panel class="row_divider_line" />
               </Panel>
               
               <Panel id="attention_button" class="button_container_left">

@@ -6,6 +6,7 @@
 	%s = %s out of range, valid range [0.0, 1.0]
 	Error
 	L9}(
+	NsA#
 	Syntax: %s
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 	t#Ic
@@ -72,7 +73,6 @@
  E;}X
  Hc1H
  Hc2L
- Hc5;
  Hc9H
  Hc:H
  HcyH3
@@ -255,7 +255,6 @@ $A;\$
 (A_A\_^][
 (A_A]_[
 (A_A^
-(A_A^A]A\
 (A_A^A]^][
 (A_A^_[
 (A_A^_^][
@@ -299,8 +298,7 @@ $A;\$
 (L$PA
 (L$PD
 (L$PH
-(L$PH+
-(L$Pt`
+(L$PL
 (L$`A
 (L$`D
 (L$`H
@@ -311,6 +309,7 @@ $A;\$
 (L$pE
 (L$pH
 (L$pL
+(L$pt_
 (None)
 (T$ D
 (T$ H
@@ -334,6 +333,7 @@ $A;\$
 (\$@3
 (\$@A
 (\$@D
+(\$@H
 (\$@L
 (\$PD
 (\$PH
@@ -348,6 +348,7 @@ $A;\$
 (d$@D
 (d$@L
 (d$PD
+(d$PHc
 (d$PI
 (d$PL
 (d$`D
@@ -359,6 +360,7 @@ $A;\$
 (l$ L
 (l$0D
 (l$@E
+(l$@H
 (l$PA
 (l$PD
 (l$PE
@@ -413,11 +415,11 @@ $A;\$
 (|$@D
 (|$@H
 (|$@I
-(|$@L
 (|$PD
 (|$PE
 (|$PH
 (|$PI
+(|$PL
 (|$`@8
 (|$`A
 (|$`D
@@ -427,7 +429,6 @@ $A;\$
 (|$p3
 (|$pD
 (|$pH
-(|$pI
 (|$pL
 )4$H;
 )D$ A
@@ -440,6 +441,7 @@ $A;\$
 )D$0D
 )D$0H
 )D$0L
+)D$0M
 )D$0u
 )D$@A
 )D$@A;@
@@ -447,17 +449,19 @@ $A;\$
 )D$@D;@
 )D$@H
 )D$@f
+)D$PA;@
 )D$PD
 )D$PE
 )D$PH
 )D$Pf
+)D$`;A
+)D$`A
 )D$`D
-)D$`H
 )D$`I
 )D$p@
 )D$pA
+)D$pA9~
 )D$pD
-)D$pD9w
 )D$pE
 )D$pH
 )D$pI
@@ -472,6 +476,7 @@ $A;\$
 )L$0H
 )L$0r
 )L$0th
+)L$@A;@
 )L$@D
 )L$@E
 )L$@H
@@ -490,11 +495,9 @@ $A;\$
 )L7PH
 )M E8
 )M Hc
-)M@fff
 )T$ I
 )T$0;H
 )T$0D
-)T$@B
 )T$@D
 )T$P3
 )T$PD
@@ -506,6 +509,7 @@ $A;\$
 )T$pA
 )T$pD
 )T$pM
+)T$pf
 )T7PD
 )\$ E
 )\$ H
@@ -513,6 +517,7 @@ $A;\$
 )\$0H
 )\$0L
 )\$@A
+)\$@E
 )\$@H
 )\$@f
 )\$PD
@@ -526,6 +531,7 @@ $A;\$
 )\$pH
 )\7@A
 )d$@D
+)d$PE
 )d$`A
 )d$`D
 )d$pD
@@ -533,7 +539,7 @@ $A;\$
 )l$0D
 )l$0E
 )l$0fD
-)l$P98t.Hc
+)l$@D
 )l$PD
 )l$PF
 )l$`D
@@ -559,9 +565,7 @@ $A;\$
 )t$0f
 )t$@%
 )t$@3
-)t$@90t/Hc
 )t$@98t0Hc
-)t$@;A
 )t$@;HPs
 )t$@A
 )t$@A;@
@@ -577,10 +581,10 @@ $A;\$
 )t$PA
 )t$PA;H
 )t$PD
+)t$PE3
 )t$PH
 )t$PI
 )t$PL
-)t$`3
 )t$`D
 )t$`E
 )t$`E3
@@ -590,7 +594,6 @@ $A;\$
 )t$`fD
 )t$p3
 )t$pA
-)t$pA;@
 )t$pD
 )t$pE
 )t$pH
@@ -607,8 +610,8 @@ $A;\$
 )|$ I
 )|$ Mc
 )|$ f
-)|$ v:
 )|$03
+)|$0;A
 )|$0D
 )|$0D;@
 )|$0H
@@ -620,24 +623,21 @@ $A;\$
 )|$@E3
 )|$@H
 )|$@L
-)|$@M
 )|$PA
 )|$PD
 )|$PH
 )|$PL+
 )|$Pf
 )|$Pv
+)|$Pv9
 )|$`;J
-)|$`;P
-)|$`A;@
 )|$`D
 )|$`H
 )|$`I
 )|$`L
-)|$pA
 )|$pD
 )|$pE
-)|$pH
+)|$pI
 *Cm_EndEffectorFixedOffsetAttachment
 +A$Hc
 +B$Hc
@@ -652,9 +652,7 @@ $A;\$
 +y(Hcq
 +{(Hcs
 ,0<	w
-,A8~ t&
 ,|%)v
-,}vl\
 - Scripted Sequence: 
 -1 1000
 -180 180
@@ -1554,7 +1552,7 @@ $A;\$
 .CRT$XTZ
 .D$4z
 .D$8z
-.F0tDH
+.F0tEH
 .K tK
 .P0tX
 .data
@@ -1586,6 +1584,8 @@ $A;\$
 .xdata
 .xdata$x
 /=$!6
+/A(w#9
+/A(w/
 /C,s3H
 /EPv#A8]7t!I
 /G4vI
@@ -1648,7 +1648,7 @@ $A;\$
 181004000000Z
 1DBlend
 1L9|$Xt
-200519202817Z0#
+200527200939Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -1681,25 +1681,26 @@ $A;\$
 8A_A]^]
 8A_A^
 8HcCh
-8J"t3
+8J.t3
 8LcAd3
 8Xet:9_
-8Y tR
-8Y"t.
-8Y#t-H
-8Y#tVA9Z
-8Y#tW8]\tRH
-8Y#tfH
+8Y,tR
 8Y,te
-8Z!tEHc
+8Y.t.
+8Y/t-H
+8Y/tVA9Z
+8Y/tW8]\tRH
+8Y/tfH
+8Z-tEHc
+8Z/tKH
 8]9t98]:t
-8^Cty
 8_Rtl
 9)~vH
 9)~{H
-98t/Hc
+90t>Hc
 98t0Hc
 98t:Hc
+98tAHc
 99C }
 99~-H
 99~2H
@@ -1728,6 +1729,7 @@ $A;\$
 9nPtJ
 9ox~^3
 9p(~bD
+9q$~PH
 9u ~lH
 9uPtJ
 9xX~}H
@@ -1762,6 +1764,7 @@ $A;\$
 ;HPs	D
 ;L$0u
 ;SL|0
+;Y"y^
 ;\$ |
 ;\$0|
 ;\$8|
@@ -1829,7 +1832,7 @@ $A;\$
 ?V_SplitString@@YAXPEBD0AEAV?$CUtlVector@PEADV?$CUtlMemory@PEADH@@@@@Z
 ?V_stristr_fast@@YAPEBDPEBD0@Z
 ?ffffff
-?labelled_debug_helper_show_text
+?labelled_debug_helper_skeleton_show_bone_names
 ?vmdlkeys0
 @ A;@
 @ A;A
@@ -1848,19 +1851,23 @@ $A;\$
 @4A;@
 @6W!?
 @81u/H
+@85$K
+@85~K
 @8:t<
-@8=J1
-@8=Pc
-@8=|$
+@8=j<
+@8=l0
+@8=zH
 @8s2t(H
 @8sPt!H
 @8t$0
 @8uHtDH
+@8x/tYH
 @8xxt
-@8y#tNI
+@8zQuz@8zPt
 @8{<t
 @8|$0
 @8~ trA9
+@8~\t
 @A\^[
 @A\_^][
 @A]A\]
@@ -1872,7 +1879,6 @@ $A;\$
 @A^^]
 @A^_]
 @A^_^
-@A_A]A\_^][
 @A_A][
 @A_A^A\
 @A_A^A\_^
@@ -1904,7 +1910,6 @@ $A;\$
 @SUAVH
 @SUVAUAWH
 @SUVH
-@SUVWATAUAWH
 @SUVWATAVAW
 @SUVWATAVAWH
 @SUVWH
@@ -1926,6 +1931,7 @@ $A;\$
 @SWAVH
 @UATAUAVAWH
 @UATAUAVH
+@UATAUAWH
 @UATAUH
 @UATAVH
 @UATAWH
@@ -1944,6 +1950,7 @@ $A;\$
 @USVWATAVAWH
 @USVWATAVH
 @USVWAUAVAWH
+@USVWAUH
 @USVWAVH
 @USVWAWH
 @USVWH
@@ -1954,18 +1961,19 @@ $A;\$
 @UVATAVAWH
 @UVAUAWH
 @UVAUH
+@UVAVAWH
 @UVAVH
 @UVAWH
 @UVWATAUAVAWH
 @UVWATAUH
-@UVWATAVAWH
 @UVWATAWH
 @UVWAUAVAWH
+@UVWAUAVH
 @UVWH
 @UWATAUAVAWH
 @UWATAUH
+@UWATAVAWH
 @UWATH
-@UWAVAWH
 @UWAVH
 @UWAWH
 @VATAUH
@@ -2012,29 +2020,29 @@ A0I;E
 A2N$A
 A4A;A
 A8H	P(
-A8H"t
-A8I"t
-A8Y"t
+A8H.t
+A8I.t
+A8Y.t
 A8Zxt
 A8^Ut
 A8}RtNA
 A8~4t 
-A8~\tGH
 A9G |	I
 A9_H~4H
 A9nX~rH
+A9vPtD
+A;@(}
 A;@Ps
 A;@X}
 A;@`}
-A;A(}
 A;APs
 A;A`}
 A;BX}
 A;F s
 A;L$ |
-A;N,u
 A;Q`}
 A;RX}
+A;V,u
 A;]P}
 A;^0}
 A;^@|
@@ -2042,6 +2050,7 @@ A;_ u
 A;_H|
 A;m(|
 A;nX|
+A;u$|
 A;v(|
 A;v`|
 A;w0|
@@ -2182,7 +2191,6 @@ ANIMPARAM_BUTTON_X
 ANIMPARAM_BUTTON_Y
 ANIMt6
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-ATAUAVAWH
 ATAUAVH
 ATAVAWH
 ATAVH
@@ -2201,8 +2209,10 @@ A]A\^][
 A]A\_
 A]A\_^[]
 A]A\_^]
+A]A\_^][
 A]_^[]
 A^A\[]
+A^A\]
 A^A\_
 A^A\_^[]
 A^A\_^]
@@ -2212,6 +2222,7 @@ A^A]A\^]
 A^A]A\_]
 A^A]A\_^[]
 A^A]A\_^]
+A^A][]
 A^A]^
 A^A]^]
 A^A]_
@@ -2235,7 +2246,6 @@ A_A]A\_^
 A_A]A\_^[]
 A_A]A\_^]
 A_A]^]
-A_A]_]
 A_A]_][
 A_A]_^[
 A_A]_^[]
@@ -2260,6 +2270,7 @@ A_A^A]A\_^]
 A_A^A]A\_^][
 A_A^A]^]
 A_A^A]_]
+A_A^A]_^
 A_A^A]_^[]
 A_A^A]_^]
 A_A^A]_^][
@@ -2267,6 +2278,7 @@ A_A^[
 A_A^]
 A_A^^
 A_A^^[
+A_A^^]
 A_A^_
 A_A^_[]
 A_A^_]
@@ -2556,6 +2568,7 @@ BreakCommand
 BreakPieceEmbedded
 BreakPieceExternal
 C ;APs
+C A;A
 C HcH
 C$;APs
 C$D8c
@@ -2859,6 +2872,7 @@ CPostGraphIKChainBlendTag
 CPostGraphIKTag
 CRagdollAnimTag
 CRootAnimNode
+CRootMotion
 CRootUpdateNode
 CSchemaClassInfo::ReportClassError
 CSchemaRegistration::RegisterAllModuleData
@@ -3246,6 +3260,7 @@ D$ xL
 D$ y=TVH
 D$ y=TVL
 D$ |R
+D$$E3
 D$(;H
 D$(@8;t
 D$(A;
@@ -3279,8 +3294,10 @@ D$4A;
 D$4E3
 D$4H+
 D$4McL$
+D$4fff
 D$5H;
 D$8+C$H
+D$8@8~\
 D$8A;
 D$8B	<
 D$8E3
@@ -3291,6 +3308,7 @@ D$8Xu
 D$8r|
 D$<9T$0wE9T$4w?9T$8w9;
 D$<A;
+D$<Hi
 D$@;D$8
 D$@A+
 D$@A97
@@ -3367,6 +3385,7 @@ D$pL;
 D$t;APs
 D$t;B
 D$x*>
+D$x;A
 D$x;APs
 D$xE3
 D$xL;
@@ -3375,10 +3394,9 @@ D$|v5
 D+u(Lc}
 D7(Hc
 D8*u A
-D8-.}
-D8-;~
-D8A"t
-D8I"t
+D8=\L
+D8A.t
+D8I.t
 D8J<t
 D8T$ A
 D8cHtmL
@@ -3388,17 +3406,17 @@ D8d75t
 D8d76
 D8mgt
 D8o(t 
-D8r"t
+D8r.t
 D8u_ue
-D8x"t
-D8x"t	
-D8x"u
-D8x"u+
 D8x$u$H
+D8x.t
+D8x.t	
+D8x.u
+D8x.u+
 D8xxt
-D8y"t
-D8y"uh
-D8y#A
+D8y.t
+D8y.uh
+D8y/A
 D8y9t
 D8z$uff
 D8|8(u
@@ -3407,7 +3425,6 @@ D8|8)tfH
 D9,2H
 D97~A
 D98t>Hc
-D9I$~
 D9IL}sL
 D9d$ ~7Lc
 D9d$0~7Hc
@@ -3433,7 +3450,6 @@ D;D$0u
 D;D;`|
 D;F(|
 D;G0}
-D;I$|
 D;L$`~!Hc
 D;L$d~
 D;L$l~
@@ -3451,6 +3467,7 @@ D;|$l
 D;} u%H
 DATAI
 DATAL
+DEFAULT_WRITE_PATH
 DINAL
 Damped Path Motor
 DampedPathAnimMotorInstance
@@ -3557,6 +3574,7 @@ EINAtP
 EL;APs
 EQD9~8
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
+EVA^J
 EXPORTSYSTEM_INTERFACE_VERSION_001
 E`@O/
 EaseIn
@@ -3636,6 +3654,7 @@ ExtraSeqFlags
 Extrapolate Movement
 F ;APs
 F HcH
+F$8]Cty
 F(A;@
 F(D98~b
 F,u2H
@@ -3948,7 +3967,6 @@ H+\$hIc<$H
 H0F08
 H1D$0
 H97t<
-H9=qo
 H9D$PuWM
 H9\$8t
 H9\$@t
@@ -4040,6 +4058,7 @@ HcF 3
 HcF(Hk
 HcF(L
 HcF8Hi
+HcFTH
 HcG H
 HcG(L
 HcGDH
@@ -4058,6 +4077,7 @@ HcL$PL
 HcL$`
 HcL$dH
 HcL;,Hi
+HcM H
 HcN(L
 HcN,H
 HcNhHc}X;
@@ -4067,6 +4087,7 @@ HcS@H
 HcT$0H
 HcVHL
 HcVLL
+HcW H
 HcW<H
 HcX@H
 HcX`H
@@ -4093,7 +4114,6 @@ Hco$%
 Hco,H
 Hco8%
 Hco<%
-Hco@H
 Hcs ;s0u
 Hcs ;s0u	H
 Hct$$I;
@@ -4134,13 +4154,16 @@ Hit Strength
 Hit Strength Parameter
 HitReact:m_hitCount
 HitReact:m_resetCount
-Hi|$x
 Horizontal Axis
 HostStateMgr001
 Ht4<Xu[
 Hysteresis
 I A+I
 I HcI 
+I$A;@
+I$A;B
+I(A;@
+I(A;B
 I(A;I
 I;^(t2H
 I;^0t6H
@@ -4244,9 +4267,9 @@ IVSSequence
 Ic4$A;t$
 Ic@(H
 IcAXM
+IcE L
 IcEDH
 IcEDL
-IcF$I
 IcG I
 IcGDI
 IcGX@
@@ -4256,7 +4279,6 @@ IcL$P;
 IcM8H
 IcNP;
 IcN`D
-IcO I
 IcO(Hc
 IcO@H
 IcOpH
@@ -4384,8 +4406,6 @@ L$(Ic
 L$(fH
 L$(fI
 L$,9_
-L$,A8xQuqA8xPt
-L$,Hc
 L$0E+
 L$0E3
 L$0E;
@@ -4395,7 +4415,7 @@ L$0Ic
 L$0L+
 L$0fI
 L$0u2
-L$4@8~\
+L$4@8~!
 L$8D9A
 L$8D;@Ps	E
 L$8E3
@@ -4420,7 +4440,7 @@ L$XA;U
 L$XE3
 L$XHc
 L$XIcE
-L$XLc:
+L$XLc:E
 L$Xfff
 L$\Hc
 L$`;L$H
@@ -4444,8 +4464,6 @@ L$xfff
 L' Lc
 L8(E9
 L9#t1L
-L9=0w
-L9={w
 L9d$ t
 L9d$@t
 L9d$Pt
@@ -4491,7 +4509,6 @@ Lc@TE
 LcA(L
 LcA<E3
 LcA`H
-LcC8D
 LcCLC
 LcCPH
 LcD$0H
@@ -4511,6 +4528,7 @@ Lcsp%
 Lct$$I;
 Lcu@D;
 Lcu@D;sx}XK
+Lcv@M
 LcvX%
 LcvlH
 LcvxD;
@@ -4637,6 +4655,7 @@ MbP?fff?w
 Mc4$H
 Mc4$M
 Mc>Hc
+Mc@8D
 McF(Ik
 McS@3
 McV@H
@@ -4943,7 +4962,6 @@ Procedural Hit Reacts
 Propagation Scale
 PropertyEditorSystem_001
 Pu*;w
-Q E;Q
 Q(Lci
 Q@Lcv
 QAngle
@@ -5072,6 +5090,7 @@ RtlPcToFileHeader
 RtlUnwindEx
 S09V4s	H
 S89SD|
+S@8~ tM
 SEQ_POSE_SETTING_CONSTANT
 SEQ_POSE_SETTING_POSITION
 SEQ_POSE_SETTING_ROTATION
@@ -5094,6 +5113,7 @@ SUAUAVH
 SUVATAUH
 SUVAWH
 SUVWATAUAVAWH
+SUVWATAUH
 SUVWATAWH
 SUVWATH
 SUVWAUAVAWH
@@ -5117,7 +5137,6 @@ SWATAWH
 SWATH
 SWAUAVH
 SWAUH
-SWAVH
 SWAWH
 SameCycleAsSource
 Sample Rate
@@ -5164,6 +5183,7 @@ Selector does not have a valid enum set
 Selector: 
 Selector:m_currentIndex
 Selector:m_currentIndexStartTime
+Selector:m_resetCount
 SelectorInstanceData_t
 SelectorNode
 SelectorPropertiesEditor
@@ -5316,6 +5336,7 @@ Steps Remaining
 Steps Remaining Metric
 Stiffness
 Stop At Goal
+Stop Feet at Goal
 Stop on Tag End
 Stopping Distance
 Stopping Min Speed Scale
@@ -5323,7 +5344,7 @@ Stopping Radius
 Strafe Speed
 StrafeSpeed
 Stretch
-Strider
+Stride Retargeting
 Subtract
 Subtract node is missing a child.  Will use t-pose by default
 Sync Cycles
@@ -5331,6 +5352,7 @@ SyncChildren
 Synchronize Children
 T$ +G$D
 T$ A;
+T$ A;@
 T$ E3
 T$ Ic
 T$ Lc
@@ -5374,9 +5396,7 @@ T$pE3
 T$pE;
 T$pHc
 T$pJc
-T$x;H
 T$x;P
-T$|;P
 T:V@]
 TILT_IK
 TILT_MovementManagerSlope
@@ -5460,6 +5480,7 @@ U8A;L$
 UATAUAVAWH
 UATAUAVH
 UATAUH
+UATAVH
 UATAWH
 UAUAWH
 UAVAWH
@@ -5467,6 +5488,7 @@ UD8d74t
 USATAUAVAWH
 USATAUAWH
 USATAVH
+USAUAVH
 USAUH
 USAVAWH
 USAVH
@@ -5498,7 +5520,6 @@ UVATAUAVH
 UVATAUAWH
 UVATAUH
 UVATAUI
-UVATH
 UVAUAVAWH
 UVAUAWH
 UVAUH
@@ -5508,6 +5529,7 @@ UVAWH
 UVWATAUAVAWH
 UVWATAUAVH
 UVWATAUAWH
+UVWATAVAWH
 UVWATAVH
 UVWAUAVH
 UVWAUAWH
@@ -5517,7 +5539,6 @@ UWATAUAVH
 UWATAUAWH
 UWATAVAWH
 UWAUAVAWH
-UWAUAWH
 UWAVAWH
 UWAVH
 UWAWH
@@ -5721,11 +5742,11 @@ XGLE3
 XHcCh
 XHcY@L
 XL$\H
+XZ$;A
 X_^][
 Xt$ D
-X|( H
 Y D9Y
-Y0Qgl
+Y(A;@
 YD$ A
 YD$@A
 YD$@H
@@ -5796,9 +5817,12 @@ Yt$`H
 \$@u	
 \$HHc
 \$Hta
+\$P;B
 \$PA+
+\$PA9
+\$PA;
+\$PA;G,u|IcW
 \$PE8uI
-\$PE;g,uqIcO
 \$PHc
 \$Pfff
 \$Ptz
@@ -5822,6 +5846,7 @@ Yt$`H
 \D$8H
 \L$$s
 \T$ D
+\t$0E
 \t$t3
 \v@Ic
 ](HcE Hi
@@ -5853,7 +5878,6 @@ _test_conversion_counter
 `A_A^A]A\_^]
 `A_A^[
 `A_A^^
-`A_A^_
 `A_A^_^]
 `A_^]
 `Hcu@M
@@ -5885,6 +5909,7 @@ animgraph1
 animgraph_footlock_calculate_tilt
 animgraph_footlock_debug_foot_index
 animgraph_footlock_debug_type
+animgraph_footlock_draw_footbase
 animgraph_footlock_enabled
 animgraph_footlock_ground_roll
 animgraph_footlock_hip_offset_enable
@@ -6171,8 +6196,8 @@ d$@D;e
 d$@E3
 d$@HcD
 d$@Lc
-d$@v,
 d$HE3
+d$Hv+
 d$P+A$t
 d$PD;
 d$PtjI
@@ -6398,10 +6423,8 @@ l$ VH
 l$ VWATAVAWH
 l$ VWATH
 l$ VWAVH
-l$ VWAWH
 l$ WATAWH
 l$ WAUAWH
-l$ WAVAWH
 l$ WH
 l$(E3
 l$(Hc
@@ -6433,7 +6456,6 @@ l$HD;8
 l$HHc
 l$HfA
 l$HfA;
-l$P;H
 l$PA_A^A]A\_^
 l$PE3
 l$PH+
@@ -6451,7 +6473,7 @@ labelled_debug_helper_arc_segments
 labelled_debug_helper_enabled
 labelled_debug_helper_scale
 labelled_debug_helper_show_position
-labelled_debug_helper_skeleton_show_bone_names
+labelled_debug_helper_show_text
 last_sniff
 layersaffectingmovementandduration
 length
@@ -6707,6 +6729,7 @@ m_bSequenceFinished
 m_bShouldCalculateSlope
 m_bSnap
 m_bSpline
+m_bStopFeetAtGoal
 m_bStopUpdatingWaypointPos
 m_bStopWhenTagEnds
 m_bStopping
@@ -6798,6 +6821,7 @@ m_decodedAnims
 m_decoderArray
 m_defaultValue
 m_definition
+m_deltaTransform
 m_destState
 m_directHSeqGroup
 m_directHSeqGroup_Handle
@@ -7228,6 +7252,7 @@ m_poseParams
 m_poseRecipeInstanceData
 m_poseSettingArray
 m_position
+m_prevStateIndex
 m_previewButton
 m_previewModels
 m_previousChoice
@@ -7344,9 +7369,11 @@ m_vStancePositionMS
 m_vTargetPosition
 m_vTipOffset
 m_vToStrideStartPos
+m_vTransitionVelocityDeltaWS
 m_vUpLS
 m_vValue
 m_vVelocity
+m_vVelocityWS
 m_vWaypointPosWS
 m_vWsCenter
 m_vWsEnd
@@ -7444,7 +7471,6 @@ origin_max_delta
 origin_relative
 p AVH
 p UWAVH
-p WAVAWH
 p0n05
 p1f3q>
 p@;1tb
@@ -7455,7 +7481,7 @@ pA^^]
 pA^_^
 pA_A]A\_^
 pA_A]]
-pA_A^A]
+pA_A^A\_]
 pA_^]
 pA__[
 pXt7H
@@ -7512,7 +7538,6 @@ s2@8s
 s8fff
 s;fff
 s@F!<
-sHcFTH
 sIIcF
 sJHcF
 s\HcD$xH
@@ -7693,7 +7718,7 @@ t(Lc7D;w
 t)HcQ(H
 t)fff
 t*D8#t
-t*IcO
+t*HcO
 t+HcE(H
 t+HcT
 t,9O0~'I
@@ -7889,7 +7914,6 @@ xA^A]][
 xA_A^[]
 xH;Kh}C
 xKA;B
-xKE;w
 xNA;B
 xQA;B
 xRHcQ
@@ -7901,8 +7925,8 @@ x^D;A
 x_^][
 xc;QH}^Hc
 xcD;	}^H
+xcD;A
 xfade
-xrY 8
 xuJE3
 xxD;A
 xyA;C
@@ -7914,7 +7938,6 @@ z(yLH
 z0x0:
 z:KCAuthPhysBody
 zero dir
-{ AVH
 {89{(~
 {X9{H~#H
 {YIN?
@@ -8031,7 +8054,7 @@ zero dir
 |$xHc_XD
 |$xfD
 |${H+
-|g!)d
+}"HcV
 }#HcQ
 }&HcQ
 }(;^Tv
@@ -8053,11 +8076,11 @@ zero dir
 }PIcP
 }QfA;
 }RMcD$
-}]HcF
 }_t!H
 }iHcG
 }jHcF
 }mfff
+}oHcF
 }sIcS
 }wH;}
 ~ 9w 
@@ -8080,4 +8103,5 @@ zero dir
 ~XIcj
 ~\Ic^
 ~\fff
+~n_{2,F
 ~pH;_
