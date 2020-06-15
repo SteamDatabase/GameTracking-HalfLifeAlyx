@@ -80,6 +80,7 @@ $A;\$
 %*sName: %s
 %*sNameSpace: %s
 %*sOperator Stack: %s
+%*sOperator: %s
 %*sSize: %i
 %*sSoundEvent Hash: %d
 %*smixgroup: %s
@@ -349,6 +350,7 @@ $A;\$
 )|$pD
 )|$pE
 )|$pM
+*D9=o
 +A$Hc
 +B$Hc
 +C$Hc
@@ -757,7 +759,7 @@ $A;\$
 181004000000Z
 1DBlend
 1e<w 
-200527195845Z0#
+200613003657Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -781,7 +783,6 @@ $A;\$
 5%YA1H
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
 7HcD$P
-7T|C!
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8 uCH
 8A]A\
@@ -795,6 +796,7 @@ $A;\$
 8A_A^
 8A_A^A]]
 8C5uf
+8Rg[Pv
 9)~GH
 9)~oH
 9)~vH
@@ -926,7 +928,6 @@ $A;\$
 <unconnected>
 <unknown>
 >EJtM
->calc_occlusion_src1
 >q`uA
 ? u/A
 ?!AfJ+
@@ -984,35 +985,34 @@ $A;\$
 ?math_randomize_float
 ?s,DT
 ?vmdlkeys0
-?vmix_vsnd_start
 ?wr^a
 @$McH
 @%s.output
 @.data
 @.tls
 @81u/H
-@857l
-@85t+
-@8=5Q
-@8=Dn
-@8=VS
-@8=|R
+@85'e
+@85d$
+@8=&R
+@8=LQ
+@8=rP
+@8=tu	
 @8L;@(v
 @8yjt1
 @8yjt5L
 @8}(t
 @8}(t!
 @8}xt
-@?soundevent_param
+@?calc_spatialize_speakers
 @@soundevent_limiter
 @A]A\^
+@A^A\_
 @A^A]A\
 @A^A]A\][
 @A^A]A\^]
 @A^A]A\_^
 @A^_]
 @A^_^
-@A_A\_
 @A_A^A\
 @A_A^A\H
 @A_A^A\_]
@@ -1029,7 +1029,6 @@ $A;\$
 @HcA83
 @Lc:E3
 @LcIPI
-@Q3U	
 @SATAVH
 @SATH
 @SAVAWH
@@ -1113,11 +1112,9 @@ $A;\$
 @fA;\
 @fE9|
 @hHcL
-@math_filter_float
 @math_func_float
 @public.%s
 A 2B $
-A D9A
 A(I;E
 A+F$D
 A+G$E
@@ -1386,6 +1383,7 @@ Base: %s
 BaseIKRig
 BasePhysicsShape
 BaseStack
+Bcalc_occlusion_src1
 Bellevue1
 BenchmarkService001
 BentNormalData
@@ -1827,57 +1825,53 @@ D+L$8E
 D+|$XH
 D1,9E
 D8$)u
-D8%-D
 D8)t5H
 D8*u A
-D8-#h
-D8-&e
-D8-'d
-D8-(R
-D8-(f
-D8-*[
-D8-*g
-D8-+Z
-D8-0i
+D8-"H
+D8-$R
+D8-,P
+D8-/I
+D8-/Q
 D8-1S
-D8-5k
-D8-BT
-D8-JR
-D8-OU
-D8-W!
-D8-ZY
-D8-\V
-D8-_O
-D8-_W
-D8-bj
-D8-f\
-D8-g_
-D8-h^
-D8-ha
-D8-iX
-D8-i`
-D8-j[
-D8-jb
-D8-lP
-D8-nZ
-D8-o]
-D8-uQ
-D8-wc
-D8-yk
-D8-zd
-D8-|e
-D8-}g
-D8-~R
-D8-~f
-D85'e
-D85)I
-D856^
-D85Z]
-D85sJ
-D85~\
+D8-1X
+D8-2V
+D8-3U
+D8-4[
+D8-5W
+D8-5Z
+D8-7T
+D8-8J
+D8-:K
+D8-:Y
+D8-=\
+D8->c
+D8-Ca
+D8-F^
+D8-G]
+D8-HK
+D8-H_
+D8-J`
+D8-Pb
+D8-QL
+D8-Ud
+D8-bM
+D8-oN
+D8-zR
+D8-|O
+D85*\
+D85CI
+D85N[
+D85P^
+D85gH
+D85t]
 D87t:H
 D87t^I
 D88t;
+D8=v0
+D8=x/
+D8=z.
+D8=|-
+D8=~,
 D8@@t
 D8`(t
 D8h(t
@@ -2303,6 +2297,7 @@ HcGX;
 HcGp;
 HcH<H
 HcHXH
+HcIP3
 HcJ8E3
 HcK ;
 HcKpL
@@ -2521,7 +2516,7 @@ L;D$8L
 L?fff?
 LFO Type
 LINUX
-LK$H95
+LK$H954
 LOG Fade in
 LOG fade out
 LOG_GENERAL
@@ -2697,8 +2692,8 @@ OutputPosToVmix
 P LcV
 P(Hc^
 P(L9|$ t
-P(LcF
 P(LcG
+P(LcGH
 P09l$x|
 P0t:H
 P0tAH
@@ -2810,10 +2805,12 @@ PreviewPreset
 PreviewPresetList
 Prewview VMIX voice on the game graph, preview will be different!
 Print the data associated with the specified soundevent.
+Print the default public properties of a specified soundevent. Values do not reflect values set on the soundevent. For that see "snd_print_soundevent"
 Prints a list of currently available operators
 Prints a list of currently available stacks
 Prints a list of currently cached strings
 Prints a master list of currently exposed variables
+Prints an operator from a stack
 Prints the current stack execution list
 Prints the current state of the groups system
 Prints the current state of tool properties.
@@ -2839,11 +2836,11 @@ QL$hA
 QL$pA
 QP9Q@~,L
 QPA8Q
+QX9QH~
 Quaternion
 QueryPerformanceCounter
 Queued: elapsed time: %f, next sync time: %f, length: %f
 QueuedLoaderVersion001
-R*.\|
 RESOURCE_TYPE_SOUND
 RESOURCE_TYPE_SOUNDEVENTSCRIPT
 RESOURCE_TYPE_SOUNDSTACKSCRIPT
@@ -3064,7 +3061,6 @@ Stack Execution List:
 Stack Shutdown: Stack: %s : Operator: %s
 Stack depth limit hit (%d)
 Stack execution list overflow!
-Stack: %s
 Start Sound Event: %s
 StartLoop
 StartTime: %f
@@ -3200,6 +3196,7 @@ Truncated data
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 Type Name: %s
+Type: %s
 UATAUAVAWH
 UATAVH
 UATAWH
@@ -3276,10 +3273,12 @@ Update SoundEvent: %s
 Usage:  playdelay delay_in_msec (negative to skip ahead) soundname
 Usage:  snd_compare_soundevents soundevent1 soundevent2
 Usage:  snd_print_soundevent <soundeventname>
+Usage:  snd_print_soundevent_default_public_properties <soundeventname>
 Usage:  snd_remove_soundevent <soundeventname>
 Usage:  snd_sos_get_operator_field <stackname> <operator> <field>
 Usage:  snd_sos_print_exec_list
 Usage:  snd_sos_print_operator_stack <stackname>
+Usage:  snd_sos_print_operator_stack <stackname> <operator>
 Usage:  snd_sos_resolve_execute_operator <stackname> <operator>
 Usage:  snd_sos_set_operator_field <stackname> <operator> <field> <index> <float>
 Usage:  snd_sos_start_soundevent <eventname> <ent id) 
@@ -3492,7 +3491,6 @@ YD$ A
 YD$0A
 YL$(D
 YL$0A
-Z[f9D
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 [ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 [%f,%f,%f,%f,%f,%f]
@@ -3567,6 +3565,7 @@ Z[f9D
 ]PHc~
 ]PLcN
 ^<IUr&
+^ibO~
 _0HcO@;
 _HIcO@H
 _V_DefaultExtension
@@ -4266,7 +4265,7 @@ l$ VWATAUAWH
 l$ VWATH
 l$ VWAVH
 l$ VWAWH
-l$ WATAWH
+l$ WATAVH
 l$ WH
 l$ tLHc
 l$(A;
@@ -4862,6 +4861,8 @@ pA]_^[]
 pA_A^[
 pA_A^_[]
 pA__]
+pAmath_float3
+pD;%(?
 parallel filters
 paramName
 parameter
@@ -4918,6 +4919,7 @@ public.sync_bpm_beats
 public.volume
 public_field_name
 purecall
+pxPBP
 qIcC8M
 qN8gu
 qWindows Audio
@@ -5030,6 +5032,7 @@ snd_print_samplers
 snd_print_sequences
 snd_print_soundevent
 snd_print_soundevent %s
+snd_print_soundevent_default_public_properties
 snd_rear_headphone_position
 snd_rear_stereo_speaker_position
 snd_rear_surround_speaker_position
@@ -5066,6 +5069,7 @@ snd_sos_print_field_references
 snd_sos_print_full_field_info
 snd_sos_print_groups
 snd_sos_print_operator_stack
+snd_sos_print_operator_stack_opeator
 snd_sos_print_operator_stacks
 snd_sos_print_operators
 snd_sos_print_stack_exec_list
@@ -5254,7 +5258,6 @@ t$0Hc
 t$0Hc1D
 t$0Hc2
 t$0HcK
-t$0Hcs ;s0u	H
 t$0Hi
 t$0Hk
 t$0M;
@@ -5358,7 +5361,7 @@ t4D8(t/H
 t5~'H
 t7@8(t/@8
 t8D;A0}2L
-t9H9=
+t9H9=6
 t:fA;
 t;D;I0}5L
 t?;P@u:H
@@ -5409,6 +5412,7 @@ turn_rate
 tz@88tuL
 u	@8=
 u HcS
+u%Hcs ;s0u	H
 u'Hc/;o
 u.fE;
 u0HcOXI
@@ -5431,9 +5435,9 @@ uR8KTt
 uT<0uP
 uTL91tO
 ugfD;
-uiHcK 3
 uint32
 uint64
+ujHcK 3
 uniform_burst
 updateVoice
 update_stack
@@ -5545,6 +5549,7 @@ vsndevtsH
 vsndstckI
 vstdlib.dll
 w(9+~K
+w0HcWHA
 wDfA;
 wPD;w@u
 wT@:x
@@ -5712,10 +5717,10 @@ zxuvA
 |$pt,H
 |$xHi
 |${H+
+|% sK
 |/HcP
 |N@8s0tHH
 } D9}
-}"(=I-
 }#fE;B&w
 }%;Q$
 }%fff
@@ -5740,7 +5745,7 @@ zxuvA
 ~28\$0t
 ~>fff
 ~CSosOperatorSystem: Deleting orphaned CSosOperatorStack pointer for %s via shutdown
-~Csos_import_stack
+~Csoundevent_control
 ~MHc;;{
 ~XHco(;o8u	H
 ~wfff

@@ -74,6 +74,7 @@
                 <GameMenuOptionCyclePanel id="pref05" convar="hlvr_adjust_turn_option" refresh_all="true" label0="#HLVR_Options_Turn_Off" label1="#HLVR_Options_Turn_Snap" label2="#HLVR_Options_Turn_Continuous" desc0="#HLVR_Options_Turn_Off_Desc" desc1="#HLVR_Options_Turn_Snap_desc" desc2="#HLVR_Options_Turn_Continuous_desc"/>
                 <GameMenuOptionCyclePanel id="pref06" stateful_visible="true" convar="vr_teleport_quick_turn_angle" descBase="#HLVR_Options_QuickTurn_Angle_desc" baseLabel="#HLVR_Options_QuickTurn_Angle_Base" label0="15" value0="15" label1="30" value1="30" label2="45" value2="45" label3="60" value3="60" label4="75" value4="75" label5="90" value5="90"/>
                 <HLVR_SettingsSlider id="pref07" stateful_visible="true" convar="vr_quick_turn_continuous_speed" percentage="true" text="#HLVR_Options_ContinuousTurn_Speed_Base" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_ContinuousTurn_Speed_desc' )" min="30" max="350"/>
+                <GameMenuOptionTogglePanel id="pref08" stateful_visible="true" convar="vr_weapon_force_dlc_off" onmouseover="GameMenu_OptionMouseOver( '#HLVR_Options_DLC_Skins_desc' )" label0="#HLVR_Options_DLC_Skins" on="#HLVR_Options_On" off="#HLVR_Options_Off" value0="1" value1="0" />
               </Panel>
             </Panel>
 

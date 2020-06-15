@@ -288,7 +288,6 @@
  Class Hierarchy Descriptor'
  Colors:
  Complete Object Locator'
- D;=)R-
  D;e`
  D;t$h
  DOUBLE_CLICK
@@ -623,7 +622,7 @@
 "host_computationtime_std_deviation
 "id" "elementid" 
 "lineOrder" attribute not found in the header.
-"pA3Q
+"pA3Q8
 "pixelAspectRatio" attribute not found in the header.
 "screenWindowCenter" attribute not found in the header.
 "screenWindowWidth" attribute not found in the header.
@@ -697,6 +696,7 @@
 #Valve_Reject_Background_Map
 #Valve_Reject_Hidden_Game
 #Valve_Reject_Single_Player
+#^O+YxM
 #base
 #base is NULL 
 #include
@@ -1233,6 +1233,7 @@ $~aA;F
 &YA1I
 &YA1L
 &percent
+' dLk
 '":|;
 '"?qt_metacall@QActionGroup@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 '#?qt_metacast@QLabel@@UEAAPEAXPEBD@Z
@@ -1297,33 +1298,37 @@ $~aA;F
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%1%) - Status: Total %2 shots - Done: %3 In Progress: %4 - Estimated days: %5 Worked on: %6 Remaining work: %7
-(%1]"
-(%C)3
-(%TD2
+(%Hr2
+(%RQ3
 (%d animationsets skipped due to having locked transform controls)
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%m*3
-(%nk3
-(%y=3
-(%|]"
+(%hS3
+(%tz"
+(%~T3
 (&?saveState@QHeaderView@@QEBA?AVQByteArray@@XZ
 ('8PW
 (*%s*), 
 (*?setHtml@QTextEdit@@QEAAXAEBVQString@@@Z
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-	&3
-(-,)3
-(--]"
-(-H]"
+(-*i3
+(-/Q3
+(-QS3
+(-iQ3
+(-uT3
 (0?staticMetaObject@QColorDialog@@2UQMetaObject@@B
 (0x)?[0-9a-fA-F]+
+(5+85
+(5:S3
+(5FQ3
+(5OQ3
+(5lT3
+(5uT3
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (;^,|
 (;s,|
-(=rlg
 (?=.*
 (?Transpose@FbxMatrix@fbxsdk@@QEBA?AV12@XZ
 (?setColor@QPalette@@QEAAXW4ColorRole@1@AEBVQColor@@@Z
@@ -2121,6 +2126,7 @@ $~aA;F
 ,t0D9J0v*L
 ,u*Ic>A;~
 ,|%)v
+,}vlLk
 - Add Active Code: %s
 - Remove Active Code: %s
 -"?qt_metacall@QCheckBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
@@ -2389,6 +2395,7 @@ $~aA;F
 .?AV?$CDmElementFactory@VCDmeAttachment@@@@
 .?AV?$CDmElementFactory@VCDmeAttributeReference@@@@
 .?AV?$CDmElementFactory@VCDmeAxisSystem@@@@
+.?AV?$CDmElementFactory@VCDmeBaseGameLight@@@@
 .?AV?$CDmElementFactory@VCDmeBookmark@@@@
 .?AV?$CDmElementFactory@VCDmeBookmarkSet@@@@
 .?AV?$CDmElementFactory@VCDmeCamera@@@@
@@ -2428,10 +2435,14 @@ $~aA;F
 .?AV?$CDmElementFactory@VCDmeFlexRulePassThrough@@@@
 .?AV?$CDmElementFactory@VCDmeFlexRules@@@@
 .?AV?$CDmElementFactory@VCDmeGameCommand@@@@
+.?AV?$CDmElementFactory@VCDmeGameDirectionalLight@@@@
 .?AV?$CDmElementFactory@VCDmeGameLight@@@@
 .?AV?$CDmElementFactory@VCDmeGameModel@@@@
+.?AV?$CDmElementFactory@VCDmeGameOrthoLight@@@@
 .?AV?$CDmElementFactory@VCDmeGameParticleSystem@@@@
+.?AV?$CDmElementFactory@VCDmeGamePointLight@@@@
 .?AV?$CDmElementFactory@VCDmeGameSound@@@@
+.?AV?$CDmElementFactory@VCDmeGameSpotLight@@@@
 .?AV?$CDmElementFactory@VCDmeGlobalFlexControllerOperator@@@@
 .?AV?$CDmElementFactory@VCDmeGraphEditorCurve@@@@
 .?AV?$CDmElementFactory@VCDmeGraphEditorState@@@@
@@ -2626,7 +2637,7 @@ $~aA;F
 .?AV?$CMemberFunctor1@PEAVCMovieDoc@@P81@EAAXPEAVCDmeDag@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCMovieDoc@@P81@EAAXPEAVCDmeTrack@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCMovieDoc@@P81@EAAX_N@Z_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
-.?AV?$CMemberFunctor1@PEAVCQAnimationSetControlTree@@P81@EAAXAEBV?$CUtlVector@PEAVCDmeProjectedLight@@V?$CUtlMemory@PEAVCDmeProjectedLight@@H@@@@@ZV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
+.?AV?$CMemberFunctor1@PEAVCQAnimationSetControlTree@@P81@EAAXAEBV?$CUtlVector@PEAVCDmeLight@@V?$CUtlMemory@PEAVCDmeLight@@H@@@@@ZV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetControlTree@@P81@EAAXPEAVCDmeProjectedLight@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetControlTree@@P81@EAAXPEAVCDmeSkyBox@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetControlTree@@P81@EAAXPEAVCDmeTexturePlane@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -2636,6 +2647,7 @@ $~aA;F
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAXPEAVCDmeDag@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAXPEAVCDmeGameModel@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAXVDmeTime_t@@@ZV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
+.?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAXW4LightType_t@@@ZW42@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAX_K@Z_KV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQAnimationSetEditorController@@P81@EAAX_N@Z_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAVCQBookmarkManager@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -2669,6 +2681,7 @@ $~aA;F
 .?AV?$CMemberFunctor2@PEAVCIFMTool@@P81@EAAXHH@ZHHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCMovieDoc@@P81@EAAXW4GameRenderFlags_t@@_N@ZW42@_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCMovieDoc@@P81@EAAXW4ToolRenderFlags_t@@_N@ZW42@_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
+.?AV?$CMemberFunctor2@PEAVCQAnimationSetControlTree@@P81@EAAXPEAVCDmeBaseGameLight@@PEBD@ZPEAV2@PEBDV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCQAnimationSetEditorController@@P81@EAAXPEAVCDmeAnimationSet@@PEAVCDmeGameModel@@@ZPEAV2@PEAV3@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCQAnimationSetEditorController@@P81@EAAXPEAVCDmeAnimationSet@@PEAVCDmeRigBaseConstraintOperator@@@ZPEAV2@PEAV3@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCQAnimationSetEditorController@@P81@EAAXPEAVCDmeAnimationSet@@_N@ZPEAV2@_NV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -3049,6 +3062,7 @@ $~aA;F
 .?AVCDmeAttachment@@
 .?AVCDmeAttributeReference@@
 .?AVCDmeAxisSystem@@
+.?AVCDmeBaseGameLight@@
 .?AVCDmeBaseImporter@@
 .?AVCDmeBookmark@@
 .?AVCDmeBookmarkSet@@
@@ -3091,10 +3105,14 @@ $~aA;F
 .?AVCDmeFlexRulePassThrough@@
 .?AVCDmeFlexRules@@
 .?AVCDmeGameCommand@@
+.?AVCDmeGameDirectionalLight@@
 .?AVCDmeGameLight@@
 .?AVCDmeGameModel@@
+.?AVCDmeGameOrthoLight@@
 .?AVCDmeGameParticleSystem@@
+.?AVCDmeGamePointLight@@
 .?AVCDmeGameSound@@
+.?AVCDmeGameSpotLight@@
 .?AVCDmeGlobalFlexControllerOperator@@
 .?AVCDmeGraphEditorCurve@@
 .?AVCDmeGraphEditorState@@
@@ -4049,7 +4067,7 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
-/%:2Y
+/%JvY
 /'?setActiveWindow@QApplication@@SAXPEAVQWidget@@@Z
 /.?setVisible@QAction@@QEAAX_N@Z
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
@@ -4069,12 +4087,13 @@ $~aA;F
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
 /4+sLLc'D;g
-/5Zbh
+/5?&)
+/5|)u
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
+/8Z1-{1
 /<9w-
 /= %f
 /=$!6
-/=<=Y
 />58d%
 /?O_o
 /?showText@QToolTip@@SAXAEBVQPoint@@AEBVQString@@PEAVQWidget@@@Z
@@ -4265,7 +4284,6 @@ $~aA;F
 0Hc1E3
 0Hc2M
 0Hc3H
-0Hc5L
 0Hc7L
 0Hc9H
 0HcD$xH
@@ -4919,7 +4937,7 @@ $~aA;F
 2.39:1 (Anamorphic)
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200527200422Z0#
+200614220955Z0#
 2048 x 1536
 2048 x 2048
 2048 x 858 (2K)
@@ -5212,7 +5230,6 @@ $~aA;F
 5m8>8=t
 5sfm_v8
 6 fps
-6(3bq
 6.?setVisible@QInputDialog@@UEAAX_N@Z
 63?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
 64 (override)
@@ -5568,6 +5585,7 @@ $~aA;F
 9t$ ~&H
 9t$@~7H
 9t$P~58
+9t$`tb
 9w0~MH
 9w@~IH
 9w@~QH
@@ -5715,6 +5733,7 @@ $~aA;F
 ;p u	H
 ;pN=KY
 ;s(u	H
+;s0u	H
 ;t$0u
 ;t$8u"
 ;t$H|
@@ -5871,7 +5890,7 @@ $~aA;F
 =+?setMovable@QTabBar@@QEAAX_N@Z
 =,?setRedF@QColor@@QEAAXN@Z
 =-enable_2gb_morphs
-=333?333?333?333?(8{
+=333?333?333?333?
 =9>*:r
 =;pN<
 ======
@@ -6434,6 +6453,7 @@ $~aA;F
 ?Bind@FbxPathUtils@fbxsdk@@SA?AVFbxString@2@PEBD0_N@Z
 ?Buffer@FbxString@fbxsdk@@QEAAPEADXZ
 ?Buffer@FbxString@fbxsdk@@QEBAPEBDXZ
+?CLLk
 ?ClassId@FbxAnimLayer@fbxsdk@@2VFbxClassId@2@A
 ?ClassId@FbxAnimStack@fbxsdk@@2VFbxClassId@2@A
 ?ClassId@FbxBlendShape@fbxsdk@@2VFbxClassId@2@A
@@ -7915,19 +7935,15 @@ $~aA;F
 @80u#H
 @81u/H
 @83t)
-@85Nmo
+@85 -4
+@85KP&
+@85]X'
+@85mW
 @88t7H
-@8=.59
-@8=139
-@8=449
-@8=@19
-@8=U19
-@8=X29
-@8=j59
-@8=m39
-@8=p49
-@8=x29
-@8=z59
+@8=>|9
+@8=A}9
+@8=D~9
+@8=|~9
 @8hqt
 @8kut~L
 @8l$8t
@@ -8150,14 +8166,15 @@ $~aA;F
 @UAVAWH
 @UAVH
 @UAWH
+@USATAUAWH
 @USATAUH
 @USATAVH
-@USATAWH
 @USATH
 @USAUH
 @USAVAWH
 @USAVH
 @USAWH
+@USVATAUAVAWH
 @USVATH
 @USVAUAVAWH
 @USVAUAVH
@@ -8205,6 +8222,7 @@ $~aA;F
 @UVAWH
 @UVWATAUAVAWH
 @UVWATAUH
+@UVWAUAVH
 @UVWAVAWH
 @UVWAVH
 @UVWH
@@ -8496,6 +8514,7 @@ A]^[]
 A]^][
 A]_[]
 A]_][
+A]_^[
 A]_^[]
 A]_^]
 A^A\[]
@@ -9263,6 +9282,7 @@ CDmeAnimationSet CUtlMemoryPool
 CDmeAttachment CUtlMemoryPool
 CDmeAttributeReference CUtlMemoryPool
 CDmeAxisSystem CUtlMemoryPool
+CDmeBaseGameLight CUtlMemoryPool
 CDmeBookmark CUtlMemoryPool
 CDmeBookmarkSet CUtlMemoryPool
 CDmeBoolCurveInfo CUtlMemoryPool
@@ -9313,8 +9333,10 @@ CDmeFloatCurveInfo CUtlMemoryPool
 CDmeFloatLog CUtlMemoryPool
 CDmeFloatLogLayer CUtlMemoryPool
 CDmeGameCommand CUtlMemoryPool
+CDmeGameDirectionalLight CUtlMemoryPool
 CDmeGameLight CUtlMemoryPool
 CDmeGameModel CUtlMemoryPool
+CDmeGameOrthoLight CUtlMemoryPool
 CDmeGameParticleSystem CUtlMemoryPool
 CDmeGameParticleSystem::CreateParticleCollection
 CDmeGameParticleSystem::IsEmittingAtTime
@@ -9322,7 +9344,9 @@ CDmeGameParticleSystem::OnAttributeChanged
 CDmeGameParticleSystem::Resolve
 CDmeGameParticleSystem::Simulate
 CDmeGameParticleSystem::SimulateStep
+CDmeGamePointLight CUtlMemoryPool
 CDmeGameSound CUtlMemoryPool
+CDmeGameSpotLight CUtlMemoryPool
 CDmeGlobalFlexControllerOperator CUtlMemoryPool
 CDmeGraphEditorCurve CUtlMemoryPool
 CDmeGraphEditorCurve::BuildKeysFromLog
@@ -10323,7 +10347,7 @@ CUtlRBTree<struct CUtlMap<char const *,struct CSFMSoundSampleCache::Samples_t,in
 CUtlRBTree<struct CUtlMap<char const *,struct EventGroup,int,bool (__cdecl*)(char const * const &,char const * const &)>::Node_t,int,class CUtlMap<char const *,struct EventGroup,int,bool (__cdecl*)(char const * const &,char const * const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<char const *,struct EventGroup,int,bool (__cdecl*)(char const * const &,char const * const &)>::Node_t,int>,int> >::NewNode
 CUtlRBTree<struct CUtlMap<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,class CUtlMemory<struct CurveKeyReference_t,int> > *,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::Node_t,unsigned short,class CUtlMap<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,class CUtlMemory<struct CurveKeyReference_t,int> > *,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeGraphEditorCurve *,class CUtlVector<struct CurveKeyReference_t,class CUtlMemory<struct CurveKeyReference_t,int> > *,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<class CDmeGraphEditorCurve *,int,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::Node_t,unsigned short,class CUtlMap<class CDmeGraphEditorCurve *,int,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeGraphEditorCurve *,int,unsigned short,bool (__cdecl*)(class CDmeGraphEditorCurve * const &,class CDmeGraphEditorCurve * const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
-CUtlRBTree<struct CUtlMap<class CDmeHandle<class CDmeGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameLight,0> const &,class CDmeHandle<class CDmeGameLight,0> const &)>::Node_t,short,class CUtlMap<class CDmeHandle<class CDmeGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameLight,0> const &,class CDmeHandle<class CDmeGameLight,0> const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeHandle<class CDmeGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameLight,0> const &,class CDmeHandle<class CDmeGameLight,0> const &)>::Node_t,short>,short> >::NewNode
+CUtlRBTree<struct CUtlMap<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeBaseGameLight,0> const &,class CDmeHandle<class CDmeBaseGameLight,0> const &)>::Node_t,short,class CUtlMap<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeBaseGameLight,0> const &,class CDmeHandle<class CDmeBaseGameLight,0> const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeHandle<class CDmeBaseGameLight,0>,class CSceneLightObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeBaseGameLight,0> const &,class CDmeHandle<class CDmeBaseGameLight,0> const &)>::Node_t,short>,short> >::NewNode
 CUtlRBTree<struct CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CAmbientOcclusionProxySceneObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::Node_t,short,class CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CAmbientOcclusionProxySceneObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CAmbientOcclusionProxySceneObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::Node_t,short>,short> >::NewNode
 CUtlRBTree<struct CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CSceneAnimatableObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::Node_t,short,class CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CSceneAnimatableObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeHandle<class CDmeGameModel,0>,class CSceneAnimatableObject *,short,bool (__cdecl*)(class CDmeHandle<class CDmeGameModel,0> const &,class CDmeHandle<class CDmeGameModel,0> const &)>::Node_t,short>,short> >::NewNode
 CUtlRBTree<struct CUtlMap<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,short,bool (__cdecl*)(class CDmeHandle<class CDmeProjectedLight,0> const &,class CDmeHandle<class CDmeProjectedLight,0> const &)>::Node_t,short,class CUtlMap<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,short,bool (__cdecl*)(class CDmeHandle<class CDmeProjectedLight,0> const &,class CDmeHandle<class CDmeProjectedLight,0> const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<class CDmeHandle<class CDmeProjectedLight,0>,struct SFMLightStruct_t,short,bool (__cdecl*)(class CDmeHandle<class CDmeProjectedLight,0> const &,class CDmeHandle<class CDmeProjectedLight,0> const &)>::Node_t,short>,short> >::NewNode
@@ -10637,8 +10661,7 @@ Clear Decals At Start Of Layoff
 Clear Drawn As Bones Override
 Clear History
 Clear Key Selection
-Clear Light Gobo Texture
-Clear Light Texture
+Clear Light Cookie
 Clear Recent
 Clear Selection
 Clear Session Map
@@ -10825,19 +10848,25 @@ Create Animation Set
 Create Animation Set Dag Parent
 Create Animation Set For New Camera
 Create Animation Set For New Character
+Create Animation Set For New Directional Light
 Create Animation Set For New Light
 Create Animation Set For New Model
+Create Animation Set For New Orthographic Light
 Create Animation Set For New Particle System
+Create Animation Set For New Point Light
+Create Animation Set For New Projected Light
 Create Animation Set For New Skybox
+Create Animation Set For New Spot Light
 Create Animation Set For New Texture Plane
 Create Animation Set for Camera
 Create Animation Set(s) For Existing Element(s)
 Create AnimationSet
 Create AnimationSet And ParticleSystem
+Create AnimationSet For New %s Light
 Create AnimationSet For New Camera
 Create AnimationSet For New Character
-Create AnimationSet For New Light
 Create AnimationSet For New Model
+Create AnimationSet For New Projected Light
 Create AnimationSet For New Skybox
 Create AnimationSet For New Texture Plane
 Create AnimationSet for Element
@@ -10869,8 +10898,6 @@ CreateAnimationSet
 CreateAnimationSetForCamera
 CreateAnimationSetForExistingElement
 CreateAnimationSetForNewCamera
-CreateAnimationSetForNewLight
-CreateAnimationSetForNewModel
 CreateAnimationSetForNewParticleSystem
 CreateAnimationSetsForPickedDags()
 CreateBookmarkAtHead
@@ -11176,6 +11203,7 @@ D$@csm
 D$@f;
 D$@fA
 D$@fD
+D$@ff
 D$@fff
 D$@mp
 D$@r|
@@ -11196,6 +11224,7 @@ D$DHc
 D$Dff
 D$FE3
 D$H+D$@
+D$H9X
 D$H9p
 D$H;D$`
 D$H;u
@@ -11391,7 +11420,6 @@ D$pD9
 D$pD9D$,D
 D$pD9p
 D$pD;
-D$pD;} u
 D$pE3
 D$pH+
 D$pH;
@@ -11457,17 +11485,33 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
-D8%e\?
-D8%pZ'
 D8&t!
 D8&t4H
 D8't(Ic
 D8(u	L
 D8*u A
+D8-	,Q
+D8-2/Q
+D8-H!Q
+D8-I$Q
+D8-J#Q
+D8-J&Q
+D8-K%Q
+D8-L Q
+D8-N"Q
+D8-S'Q
+D8-\)Q
+D8-\,Q
+D8-](Q
+D8-^*Q
+D8-`+Q
+D8-i-Q
+D8-i.Q
+D8-v/Q
 D81tBD8q!t<H
 D82u&H
-D85S<P
-D85xAP
+D856Go
+D85Oh
 D88Ht!
 D88Hte
 D8<;u
@@ -11549,14 +11593,13 @@ D9	~sE
 D9	~uE
 D9&t\I
 D9,2H
-D9-x4-
+D9-8a-
 D90u	9X
 D96} 
 D96}(fff
 D96~l3
 D98Ht;H
 D98tT
-D9=G5-
 D9@ t
 D9@ }
 D9A }
@@ -11590,7 +11633,6 @@ D9g`t!H
 D9gpt
 D9gputD
 D9i0~YA
-D9iXH
 D9m`u*Ic
 D9m`|
 D9md|
@@ -11617,6 +11659,7 @@ D9wXt0H
 D9wXt]H
 D9x(uiE
 D9xXL
+D9yXH
 D9{(u
 D9|$ 
 D9|$t
@@ -11624,7 +11667,6 @@ D9~`t!H
 D:yjt%D
 D:yjt&D
 D;8}aH
-D;=LZ?
 D;AP|
 D;B }
 D;BDI
@@ -11715,6 +11757,7 @@ D;|$xu
 D;} u
 D;} }PIc
 D;}(u
+D;}Hu
 D;}PI
 D;}P|
 D<P0I
@@ -11865,6 +11908,7 @@ DigiCert Inc1
 DigiCert Timestamp Responder0
 DigiCert1%0#
 Direct Offset
+Directional
 Directory:
 DirectoryEntries
 Disable Receiving Ambient Occlusion Proxies
@@ -11901,6 +11945,7 @@ DmeAttachment
 DmeAttributeReference
 DmeAxisSystem
 DmeBalanceToStereoCalculatorOperator
+DmeBaseGameLight
 DmeBookmark
 DmeBookmarkSet
 DmeBoolCurveInfo
@@ -11953,10 +11998,14 @@ DmeFloatCurveInfo
 DmeFloatLog
 DmeFloatLogLayer
 DmeGameCommand
+DmeGameDirectionalLight
 DmeGameLight
 DmeGameModel
+DmeGameOrthoLight
 DmeGameParticleSystem
+DmeGamePointLight
 DmeGameSound
+DmeGameSpotLight
 DmeGlobalFlexControllerOperator
 DmeGraphEditorCurve
 DmeGraphEditorState
@@ -12257,6 +12306,7 @@ EPH+h(H
 EPHc@
 EPHcU@H
 ERROR
+ERROR %s
 ERROR! LoadFromJPG( %s ) failed!
 ERROR! LoadFromPNG( %s ) failed!
 ERROR! TiffReadFile( %s ) failed!
@@ -12292,6 +12342,7 @@ EXEC-HELD: %s
 EXEC-INVALID-END: %s
 EXEC-REMOVE-END: %s
 EXECUTABLE_PATH
+EXECUTE %s %s
 EXHcH
 EXIFIFDOffset
 EXPORTSYSTEM_INTERFACE_VERSION_001
@@ -13065,7 +13116,6 @@ G\$8I
 G\$8L
 G\$HH
 G\$XH
-G\$XL
 G\$hA
 G\$hH
 G\$xE
@@ -13240,6 +13290,7 @@ Group3Options
 Group4Options
 Groups Clips
 Groups are not supported in proto3 syntax.
+Gt$(A
 Gt$8H
 Gt$8I
 Gt$8f
@@ -13314,18 +13365,18 @@ H0F08
 H0Hc\$p3
 H0Jc<!H
 H0Lc$1H
+H3=F,*
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
-H9-|%-
 H9.u?H
 H90tu
 H91toH;
 H92u&
 H92u'
 H92u,
-H95Or3
-H95T^1
+H95e)o
+H95k11
 H97t<
 H97uxH
 H98tPA
@@ -13334,7 +13385,7 @@ H99t	M
 H99tP
 H99u{
 H9;uAA
-H9='?j
+H9=8D*
 H9A u
 H9A(s
 H9A@u
@@ -13346,7 +13397,6 @@ H9CPt
 H9CPu H
 H9D$ 
 H9D$PuCI
-H9D$`u
 H9Fpt
 H9G(t
 H9GPu
@@ -13434,6 +13484,7 @@ H;C(u
 H;D$8t^H
 H;D$Pu
 H;D$`
+H;D10
 H;G@u
 H;H s
 H;P A
@@ -13569,16 +13620,12 @@ Hc+;k
 Hc.;n
 Hc/;o
 Hc3;s
-Hc5nOq
-Hc5wmy
 Hc7;w
 Hc7A+
 Hc9;y
 Hc;;{
 Hc;HcK
 Hc<0H
-Hc=iUq
-Hc=yeo
 Hc>;~
 HcA E3
 HcA$H
@@ -14021,6 +14068,7 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 IKeyboardModifiersChangedListener
+IL9={
 IMovieDocumentChangedListener
 IND)ind)
 INITY
@@ -14641,7 +14689,6 @@ L$8D;}`
 L$8E3
 L$8H+
 L$8H3
-L$8H;L$h
 L$8H=
 L$8Hc
 L$8HcA
@@ -14673,6 +14720,7 @@ L$@H+L$8H
 L$@H3
 L$@H;
 L$@H;L$`
+L$@H;L$x
 L$@H=
 L$@HcA
 L$@HcB
@@ -14754,6 +14802,7 @@ L$XHcA
 L$XHcB
 L$XL+
 L$XLcm
+L$XfA
 L$XfD
 L$\E3
 L$`)K
@@ -14811,7 +14860,6 @@ L$hI;
 L$hIc@
 L$hL+
 L$hM;
-L$hfA
 L$hfD
 L$hfI
 L$lE3
@@ -14864,16 +14912,14 @@ L5?Qk
 L7?unpolish@QWindowsXPStyle@@UEAAXPEAVQApplication@@@Z
 L9	u)H
 L9	u4H
-L9%$Wg
 L9*u&
 L9+t#fff
-L9-hk
+L9-Pkr
 L93u_
 L93uc
-L95{@g
+L954y~
+L95Qvx
 L9;uv
-L9=JJ
-L9=Xkj
 L9?tfH
 L9Ahs
 L9B s
@@ -15037,7 +15083,6 @@ Lc&D;f
 Lc'E+
 Lc/Ic6A
 Lc3D;s
-Lc58Zp
 Lc6E3
 Lc7D;w
 Lc?Ai
@@ -15175,7 +15220,6 @@ Lifetime from Time to Impact
 Lifetime:
 LifetimeFraction
 Light
-Light Overflow
 LightDesc_t
 LightSourceRadius
 LightSourceShape_t
@@ -15825,6 +15869,7 @@ OF>;^
 OH+WP
 OHcs 
 OKandClose()
+OUTPUT %s
 OX9JXt
 OX9KXu
 OXLcW
@@ -16156,11 +16201,12 @@ One: Blend each control towards 1.0
 Oneof must have at least one field.
 OneofDescriptorProto
 OneofOptions
-Only %d lights are supported - disabling extra lights.
-Only %d shadowed lights are supported - disabling shadows on extra lights.
+Only 16 shadowed projected lights are supported!
+Only 32 projected lights are supported!
 Only DXT1/DXT5 online texture compression supported.
 Only clear facial logs within each selected clip
 Only export the animation active during the shot
+Only one shadowed directional light is supported!
 Op9Kx
 Op;wP
 Open %s In Explorer
@@ -16210,6 +16256,7 @@ Orient Rotation to 2D Direction
 Orientation
 OriginalRawFileData
 OriginalRawFileName
+Orthographic
 Oscillate Scalar
 Oscillate Vector
 Other
@@ -17305,6 +17352,7 @@ SVWATAVAWH
 SVWATAWH
 SVWATH
 SVWAUAVAWH
+SVWAUH
 SVWAVAWH
 SVWAVH
 SVWAWH
@@ -17508,9 +17556,8 @@ Set Falloff Interpolation Ease In
 Set Falloff Interpolation Ease InOut
 Set Falloff Interpolation Ease Out
 Set Falloff Interpolation Linear
+Set Game Light Cookie
 Set Keys
-Set Light Gobo Texture
-Set Light Texture
 Set MAX
 Set MIN
 Set Map For All Shots
@@ -17525,6 +17572,7 @@ Set Name for Layout
 Set New Camera
 Set Particle System Start Time(s)
 Set Particle System Start Times To Current Time
+Set Projected Light Cookie
 Set Receive Ambient Occlusion Proxy Shadows
 Set Recording State
 Set Scene Camera
@@ -18304,7 +18352,6 @@ T$xHcA
 T$xHcH
 T$xIc
 T$xLc
-T=8[]
 TADIt	
 TADIu
 TADIu.
@@ -19247,21 +19294,22 @@ Visit Developer Help URL
 Visit Steam Community
 VisitSteamCommunity
 Vp+S$H
+VrLightCookieSettings
 W ?paintEvent@QComboBox@@MEAAXPEAVQPaintEvent@@@Z
 W!?pos@QWidget@@QEBA?AVQPoint@@XZ
 W!t/H
 W#?qt_metacast@QSpinBox@@UEAAPEAXPEBD@Z
+W%t[:
 W(|9L
 W(|=L
 W*?=,4
 W.?setWidget@QScrollArea@@QEAAXPEAVQWidget@@@Z
 W/?sizeHint@QScrollArea@@UEBA?AVQSize@@XZ
-W57>:
+W5+q`
+W5w,u
 W8HcH
-W=2V:
-W=af:
-W=p@:
-W=uU:
+W=',)
+W=<D)
 W=vmdlkeys0
 W@|:L
 WARNING
@@ -19382,20 +19430,18 @@ X UVWAVAWH
 X UVWH
 X!t5~
 X#?RemoveBadPolygonsFromMeshes@FbxGeometryConverter@fbxsdk@@QEAAXPEAVFbxScene@2@PEAV?$FbxArray@PEAVFbxNode@fbxsdk@@@2@@Z
-X%_';
-X%t%:
+X%?m;
+X%Tk:
 X'?setArrowType@QToolButton@@QEAAXW4ArrowType@Qt@@@Z
 X(?setCurrentIndex@QAbstractItemView@@QEAAXAEBVQModelIndex@@@Z
 X(D9y(
 X)?setFixedHeight@QWidget@@QEAAXH@Z
-X-g';
+X-Gm;
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X51m/
-X5os/
-X=7-e
+X5%U_
 XA;w@
 XA]A\
 XA]A\H
@@ -19429,7 +19475,6 @@ XA_A^^]
 XA_A^_[
 XA_A^_]
 XA_A^_^[]
-XA_^[]
 XA__^[
 XClipPathUnits
 XD$(Hc{H
@@ -19439,6 +19484,8 @@ XL$4H
 XL$tD
 XL$tH
 XL$tL
+XL=8E
+XL=lE
 XLc)L
 XMLPacket
 XPosition
@@ -19457,40 +19504,29 @@ X|$8E
 X|$XH
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%#S:
-Y%vVY
-Y%{j/
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
-Y-	QY
-Y-$);
-Y-lE/
+Y-4;/
 Y0HcR
 Y0t>H
 Y2?tabInserted@QTabBar@@MEAAXH@Z
-Y5%J6
-Y5,p,
-Y52M:
-Y55&"
-Y59m/
-Y5?l/
-Y5J<Y
-Y5Sc:
-Y5Tog
-Y5V'Y
-Y5Ws/
-Y5aI:
-Y5f$c
-Y5m^6
-Y5ueh
-Y=-$c
-Y=1/)
-Y=>I:
-Y=Ra:
-Y=_P:
-Y=cK:
-Y=dJ 
-Y=g4Y
-Y=wXb
+Y5&qc
+Y504a
+Y50J^
+Y5:=d
+Y5Q;c
+Y5W!)
+Y5XG^
+Y5_R[
+Y5cC_
+Y5fkY
+Y5jDc
+Y5je0
+Y=>T0
+Y=Xe0
+Y=au)
+Y=kC_
+Y=ti 
+Y=wxY
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -19798,12 +19834,11 @@ Zt?_)
 \$xv.
 \$|E9}
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
-\%L<:
 \)?setFixedWidth@QWidget@@QEAAXH@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
 \2?tabLayoutChange@QTabBar@@MEAAXXZ
-\5$zg
-\5_w)
+\5Fx/
+\=(]w
 \D$8H
 \D$8L
 \D$Hf
@@ -19835,10 +19870,8 @@ Zt?_)
 ].?setWidth@QPen@@QEAAXH@Z
 ]/?sizeHint@QSplitterHandle@@UEBA?AVQSize@@XZ
 ]0?staticMetaObject@QHeaderView@@2UQMetaObject@@B
-]5ieh
+]5.=:
 ]8fff
-]=Mm%
-]=M}/
 ]>)2X
 ]@fff
 ]HE9F
@@ -20177,6 +20210,7 @@ attach_point
 attachment
 attachment_offset
 attachment_type
+attenuation
 attenuation0
 attenuation1
 attenuation2
@@ -20792,6 +20826,7 @@ dimension1
 direction
 directional_light
 directory not empty
+dirlight
 disableOverride
 disableSetInversion()
 disabled
@@ -21013,6 +21048,7 @@ externalFileAttribs
 extraFieldLength
 extractButton
 extreme cHRM chunk cannot be converted to tristimulus values
+ex|Lk
 eyeOffset
 eye_convergence_channel
 eye_convergence_rescale
@@ -21242,6 +21278,7 @@ friction
 fromAttribute
 fromElement
 fromIndex
+fullConeAngle
 fullMoviePath
 fullscreen
 fullyCloakedRefractFactor
@@ -21309,7 +21346,6 @@ giveColorBack()
 globalFlexControllers
 globalLightShadowEnabled
 globalTime
-gn#{[
 go_package
 grainSize
 graphCurve
@@ -21356,6 +21392,7 @@ hA_A]^[
 hA_A]_]
 hA_A]_^
 hA_A^
+hA_A^A\^
 hA_A^A\^][
 hA_A^A\_^[
 hA_A^A\_^]
@@ -21511,6 +21548,7 @@ initialize()
 initializeColor(QColor)
 inity
 innerConeAngle
+innerConeRatio
 innerconeangle
 input
 input_type
@@ -21800,7 +21838,7 @@ l$HD;
 l$HD;d$,
 l$HE3
 l$HH;
-l$HHc-
+l$HHc-(}r
 l$HHcJ
 l$HHci
 l$HIc.H
@@ -21936,7 +21974,7 @@ libpng warning: %s
 lifespan_decay
 lifetime_random
 light
-light%d
+lightCookie
 lightCookieHash
 lightType
 light_
@@ -22349,6 +22387,7 @@ materials/dev/gray_50.vmat
 materials/dev/primary_white.vmat
 materials/dev/sfm_volumetrics_frustum.vmat
 materials/dev/tools_2d_generic.vmat
+materials/effects/lightcookies.txt
 materials/tools/fill_vertex_color.vmat
 materials/tools/fill_vertex_color_noz.vmat
 materials/tools/handle_circle.vmat
@@ -22533,7 +22572,6 @@ n D9e
 n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
-n5lGx
 nAlpha
 nBalance
 nBlendIndex,flCycle
@@ -22549,6 +22587,7 @@ nD$`L
 nD$xf
 nD$|H
 nD$|fD
+nD8-O
 nExternalToolId
 nIndex
 nIndex,newColorIn
@@ -22557,6 +22596,7 @@ nL$@I
 nL$XH
 nL$\E3
 nL$tH
+nL$xH
 nLayoffState
 nMode
 nModelIndex
@@ -22791,6 +22831,7 @@ origin_relative
 orthoLightHeight
 orthoLightWidth
 ortho_light
+ortholight
 oscillate_scalar
 oscillate_vector
 ot$ H
@@ -22993,6 +23034,7 @@ point_hint_ui
 point_light
 point_template
 pointentityclass
+pointlight
 pointsample
 poleVector
 pose_control
@@ -23043,6 +23085,8 @@ procedural_particle_snapshot
 processors
 progressTextColor
 progressiveRefinementGroupBox
+projlight
+projlight%d
 promise already satisfied
 prop_animating_breakable
 prop_animinteractable
@@ -23527,6 +23571,7 @@ shadowFilterSize
 shadowNear
 shadowSlopeScaleDepthBias
 shadowTextureHeight
+shadowTextureSize
 shadowTextureWidth
 shadow_color_day
 shadow_color_night
@@ -23983,6 +24028,7 @@ t$PL9cXt	H
 t$PLk
 t$Pff
 t$Pt!
+t$Pt-
 t$Pu1H
 t$Puw
 t$P~U
@@ -24105,7 +24151,7 @@ t+Lc@
 t+Lcs
 t+McH
 t+fff
-t,@8=j19
+t,@8=
 t,Ic<
 t,Mc2E;r
 t-D8P
@@ -24190,7 +24236,7 @@ t@D8uHu
 t@HcF
 t@IcN
 tAHcAHA
-tB@8=
+tB@8=5{9
 tBH;H
 tBHc/
 tBHc3;s
@@ -24225,7 +24271,7 @@ tNHc3;s
 tNfff
 tOO : high back rounded vowel
 tP@8|$!u4@8|$"t-
-tPH955
+tPH95
 tPfE;
 tQLc@lH
 tQfD9 tK
@@ -24470,7 +24516,7 @@ tools:images/sfm/icon_cp_prevframe.png
 tools:images/sfm/icon_cp_prevframe_activated.png
 tools:images/sfm/icon_cp_record.png
 tools:images/sfm/icon_cp_record_activated.png
-tools:images/sfm/icon_game_light_item.png
+tools:images/sfm/icon_dir_light_item.png
 tools:images/sfm/icon_gear.png
 tools:images/sfm/icon_gear_activated.png
 tools:images/sfm/icon_gear_disabled.png
@@ -24512,7 +24558,6 @@ tools:images/sfm/icon_item_selectable_partial.png
 tools:images/sfm/icon_item_visible_off.png
 tools:images/sfm/icon_item_visible_on.png
 tools:images/sfm/icon_item_visible_partial.png
-tools:images/sfm/icon_light_item.png
 tools:images/sfm/icon_manipulator_move.png
 tools:images/sfm/icon_manipulator_move_activated.png
 tools:images/sfm/icon_manipulator_move_global.png
@@ -24546,12 +24591,16 @@ tools:images/sfm/icon_nav_home_disabled.png
 tools:images/sfm/icon_nav_up.png
 tools:images/sfm/icon_nav_up_activated.png
 tools:images/sfm/icon_nav_up_disabled.png
+tools:images/sfm/icon_ortho_light_item.png
 tools:images/sfm/icon_particle_item.png
+tools:images/sfm/icon_point_light_item.png
+tools:images/sfm/icon_projected_light_item.png
 tools:images/sfm/icon_skybox_item.png
 tools:images/sfm/icon_snap.png
 tools:images/sfm/icon_snap_activated.png
 tools:images/sfm/icon_snap_frame.png
 tools:images/sfm/icon_snap_frame_activated.png
+tools:images/sfm/icon_spot_light_item.png
 tools:images/sfm/icon_texture_item.png
 tools:images/sfm/icon_timeline_head.png
 tools:images/sfm/icon_timeline_head_activated.png
@@ -24676,7 +24725,7 @@ u*@8u
 u*D8uwt$E
 u*Hc_ ;_0u
 u+?setOpacity@QPainter@@QEAAXN@Z
-u-@85
+u-@852
 u-HcE
 u-Hc}P;}`u
 u-Lcu
@@ -25167,7 +25216,7 @@ x/HcI
 x0=433
 x0v0$
 x1D;5
-x1D;5l
+x1D;5\lq
 x7?updateEditorGeometries@QAbstractItemView@@MEAAXXZ
 x8}0	9
 x9H;H
@@ -25194,7 +25243,7 @@ xA_A^[]
 xA_A^^]
 xA_A^_^
 xA_A^_^][
-xCD;=
+xCD;=vnq
 xJHcQ
 xLHcK
 xMHcM
@@ -25228,6 +25277,7 @@ xen_hearing_flower
 xf;Qx}aHc
 xlA;>}g
 xnHcG
+xo;-(
 xpxxxx
 xtHcG
 xuJE3
@@ -25452,6 +25502,7 @@ znear
 |$@uKH
 |$DD;~
 |$DL+
+|$DLc
 |$H	u H
 |$HA#
 |$HA;
@@ -25478,7 +25529,6 @@ znear
 |$P@2
 |$PA;^ u
 |$PD8
-|$PD86u
 |$PE3
 |$PE;
 |$PH+
@@ -25638,6 +25688,7 @@ znear
 ~%?resizeEvent@QTabWidget@@MEAAXPEAVQResizeEvent@@@Z
 ~&A;~
 ~'fff
+~'tLk
 ~( ub
 ~(HcNDI
 ~(fff
@@ -25699,7 +25750,6 @@ znear
 ~nfff
 ~qHc|$8
 ~tfff
-~uYYk
 ~wfff
 ~xfff
 ~{>HP

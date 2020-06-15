@@ -301,6 +301,7 @@
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
+#?%A!$
 #Bidirectional_Messages_LowFrequency
 #GameUI_ClientConsistencyFail
 #GameUI_ClientDifferentMap
@@ -1109,7 +1110,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 2#.CSVCMsg_GameEventList.descriptor_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2,.CSVCMsg_PacketEntities.command_queue_info_t
-200527195134Z0#
+200613003258Z0#
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 211007120000Z0M1
 211110000000Z0b1
@@ -1162,6 +1163,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 8M9,$t
 8NETWORK_DISCONNECT_LOCALPROBLEM_HOSTEDSERVERPRIMARYRELAY
 8O0u]A
+8VJC"
 8Y*t'D
 8\$@t
 8\$pt
@@ -4387,7 +4389,6 @@ WriteFields
 WriteFile
 Writing %d bits for path %s of serializer %s entity %d, this will fail to parse
 Wu4E3
-X@op3b
 XA]A\
 XA]A\_]
 XA^A]A\^][

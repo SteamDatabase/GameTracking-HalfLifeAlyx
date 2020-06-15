@@ -122,6 +122,7 @@
  ?parentWidget@QWidget@@QEBAPEAV1@XZ
  ?pen@QPainter@@QEBAAEBVQPen@@XZ
  ?pixel@QImage@@QEBAIHH@Z
+ @8"O
  @SUATAUAWH
  @SUH
  A]A\[
@@ -750,6 +751,7 @@ $~aA;F
 &?scrollTo@QListView@@UEAAXAEBVQModelIndex@@W4ScrollHint@QAbstractItemView@@@Z
 &?scrollTo@QTableView@@UEAAXAEBVQModelIndex@@W4ScrollHint@QAbstractItemView@@@Z
 &?scrollTo@QTreeView@@UEAAXAEBVQModelIndex@@W4ScrollHint@QAbstractItemView@@@Z
+&?scrollToItem@QTreeWidget@@QEAAXPEBVQTreeWidgetItem@@W4ScrollHint@QAbstractItemView@@@Z
 &?scrollToTop@QAbstractItemView@@QEAAXXZ
 &?selectAll@QAbstractItemView@@UEAAXXZ
 &?selectAll@QLineEdit@@QEAAXXZ
@@ -904,19 +906,20 @@ $~aA;F
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
-(%XI 
+(%$d 
+(%Tb$
+(%h[ 
+(%mqF
 ('8PW
 ()?setExtension@QGraphicsEllipseItem@@MEAAXW4Extension@QGraphicsItem@@AEBVQVariant@@@Z
 (*%s*), 
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-t}E
-(5XV 
-(5h1 
+(5hh 
+(5xC 
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (;^,|
 (;s,|
-(=q}E
 (?setColor@QPen@@QEAAXAEBVQColor@@@Z
 (?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
@@ -1485,6 +1488,7 @@ $~aA;F
 ,?setSceneRect@QGraphicsScene@@QEAAXAEBVQRectF@@@Z
 ,?setSceneRect@QGraphicsScene@@QEAAXNNNN@Z
 ,?setSelected@QGraphicsItem@@QEAAX_N@Z
+,?setSelected@QTreeWidgetItem@@QEAAX_N@Z
 ,?setSelection@QLineEdit@@QEAAXHH@Z
 ,?setSelection@QListView@@MEAAXAEBVQRect@@V?$QFlags@W4SelectionFlag@QItemSelectionModel@@@@@Z
 ,?setSelection@QTableView@@MEAAXAEBVQRect@@V?$QFlags@W4SelectionFlag@QItemSelectionModel@@@@@Z
@@ -2174,7 +2178,7 @@ $~aA;F
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQAnimTagTimelineWidget@@P83@EAAXAEBUCAttributeModifiedEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQAnimTagTimelineWidget@@P83@EAAXAEBUCPlaybackUpdateEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQClipGroupListWidget@@P83@EAAXAEBUCAttributeModifiedEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
-.?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQClipGroupListWidget@@P83@EAAXAEBUCGraphChangedEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
+.?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQClipGroupListWidget@@P83@EAAXAEBUCPlaybackUpdateEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQClipGroupListWidget@@P83@EAAXAEBUCPreviewModeEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQItemListDockWidget@@P83@EAAXAEBUCAttributeModifiedEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
 .?AV?$CUnregisterReceipt2@V?$CSmartPtr@VCBroadCaster@@VCRefCountAccessor@@@@P8CBroadCaster@@EAAXPEAVCQItemListDockWidget@@P83@EAAXAEBUCGraphChangedEvent@@@Z@ZPEAV3@P83@EAAX1@Z@@
@@ -3077,8 +3081,6 @@ $~aA;F
 /&?scale@QGraphicsView@@QEAAXNN@Z
 /2GG>!B
 /4+sLLc'D;g
-/5-21
-/5p^4
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /<9w-
 /=$!6
@@ -3177,6 +3179,7 @@ $~aA;F
 0A_A^A]A\_
 0A_A^A]A\_^[
 0A_A^A]A\_^]
+0A_A^A]H
 0A_A^A]_[
 0A_A^A]_^
 0A_A^A]_^][
@@ -3199,7 +3202,6 @@ $~aA;F
 0E;gl
 0Hc2M
 0Hc3H
-0Hc5l
 0Hc7L
 0Hc9H
 0Lc9L
@@ -3532,6 +3534,7 @@ $~aA;F
 1SetValueLeft()
 1SetValueRight()
 1SetWrapEnabled(bool)
+1ShowActiveAnimations( bool )
 1ShowGroundPlane( bool )
 1ShowJointAxes( bool )
 1ShowJointNames( bool )
@@ -3544,6 +3547,7 @@ $~aA;F
 1TakeFocus()
 1ToggleSettingsPopup()
 1ToggleTabbedMode()
+1UpdateActiveAnimations()
 1UpdateBoneTransforms()
 1UpdateCaretBlink()
 1UpdateCloseButton( const QString& )
@@ -3584,7 +3588,7 @@ $~aA;F
 2-?setStretchFactor@QSplitter@@QEAAXHH@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200527201523Z0#
+200614221124Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -3754,9 +3758,9 @@ $~aA;F
 456789:;<=
 4;t	H
 4@HcD)
+4C`^a
 4HA;x
 4ND;{
-4^2dq
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -3917,7 +3921,6 @@ $~aA;F
 91~IH
 92~tH
 93?timerEvent@QAbstractSpinBox@@MEAAXPEAVQTimerEvent@@@Z
-95VC:
 98~+H
 99C }
 99~-H
@@ -4050,6 +4053,7 @@ $~aA;F
 9{t~93
 9{|~;3
 9|$@H
+9|$@~iH
 9}@~HH
 9~@~3
 9~@~7
@@ -4196,6 +4200,7 @@ $~aA;F
 <Unknown Tag Type>
 <Unknown Type>
 <Unknown>
+<^oI[
 <atc<r
 <br>%1<pre>"%2"</pre>is outside of the directory required for game content:<pre>"%3"	</pre>
 <br>The file:<pre>"%1"</pre>has unsaved changes. Save them?
@@ -4218,7 +4223,7 @@ $~aA;F
 =(?setContextMenuPolicy@QWidget@@QEAAXW4ContextMenuPolicy@Qt@@@Z
 =*?setIconSize@QToolBar@@QEAAXAEBVQSize@@@Z
 =,?setRedF@QColor@@QEAAXN@Z
-=333?333?333?333?fff?fff?fff?fff?`DO
+=333?333?333?333?fff?fff?fff?fff?
 ======
 =AuthPhys
 =KP*;Q>.
@@ -5282,6 +5287,7 @@ $~aA;F
 ?isObscuredBy@QGraphicsPixmapItem@@UEBA_NPEBVQGraphicsItem@@@Z
 ?isObscuredBy@QGraphicsTextItem@@UEBA_NPEBVQGraphicsItem@@@Z
 ?isSelected@QGraphicsItem@@QEBA_NXZ
+?isSelected@QTreeWidgetItem@@QEBA_NXZ
 ?isValid@QColor@@QEBA_NXZ
 ?isValid@QTime@@QEBA_NXZ
 ?isVisible@QGraphicsItem@@QEBA_NXZ
@@ -5705,7 +5711,9 @@ $~aA;F
 @8,2u
 @80u#H
 @81u/H
-@85x#F
+@85(0F
+@85Eg<
+@85Q%D
 @8kut~L
 @8l$8t
 @8qItnH
@@ -5925,7 +5933,6 @@ $~aA;F
 @VATAVAWH
 @VATAVH
 @VAUAVH
-@VAVAWH
 @VAVH
 @VAWH
 @VWATAUAVH
@@ -6431,6 +6438,7 @@ AuFHc
 August
 AuthE
 AutoLayer
+Automatically select the current clip
 Autosaved %i
 Autosaves Enabled
 AxisScale
@@ -6655,6 +6663,7 @@ CD$pH
 CD$xH
 CD+B$f
 CD+B$fA
+CD8-8
 CDataModel:  %i elements left in memory!!!
 CDataModel: Invalid DMX encoding hint '%s' for file %s
 CDataModel: Unable to determine DMX encoding for file %s
@@ -7937,45 +7946,33 @@ D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 D8 u2I
 D8!uNH
-D8%kaD
+D8%KlD
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-"cF
-D8-$mF
-D8-,kF
-D8-/dF
-D8-/lF
-D8-1nF
-D8-1sF
-D8-2qF
-D8-3pF
-D8-4vF
-D8-5rF
-D8-5uF
-D8-7oF
-D8-8eF
-D8-:tF
-D8-=wF
-D8->~F
-D8-C|F
-D8-FyF
-D8-GxF
-D8-HfF
-D8-HzF
-D8-J{F
-D8-P}F
-D8-QgF
-D8-bhF
-D8-oiF
-D8-zmF
-D8-|jF
+D8-	yF
+D8-+tF
+D8-<uF
+D8-EvF
+D8-UpF
+D8-UyF
+D8-WzF
+D8-YwF
+D8-YxF
+D8-\}F
+D8-`|F
+D8-bqF
+D8-b~F
+D8-d{F
+D8-rrF
+D8-tsF
 D82u&H
 D88Ht!
 D88Hte
 D8<;u
-D8=1f;
+D8=As;
+D8=`1F
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8M@t
 D8M@t^
@@ -8022,13 +8019,11 @@ D9	~uE
 D9&t\I
 D9&vr
 D9,2H
-D9-do#
 D90u	9X
 D96~kH
 D96~mI
 D98Ht;H
 D98tT
-D9=3p#
 D9@ }
 D9A }
 D9AP~!E
@@ -8065,8 +8060,6 @@ D9xXL
 D9{(u
 D9|$ 
 D9|$@
-D;=Hj#
-D;=pj#
 D;AP|
 D;Ah|
 D;B }
@@ -8558,6 +8551,7 @@ EoHcH
 EoHcHh
 EofA;
 Ep<fu
+Epf9D$`u
 Error
 Error fetching data for field "%s"
 Error fetching directory count
@@ -8874,7 +8868,6 @@ G$;G,
 G'?setAlpha@QColor@@QEAAXH@Z
 G(9G0|
 G(?t	3
-G(D8hIt#H
 G(D8xIt
 G(E8`It
 G(H9G u H
@@ -9104,6 +9097,7 @@ H0Lc$1H
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
+H9-Qz!
 H9.u?H
 H92u&
 H92u'
@@ -9113,7 +9107,8 @@ H98tPA
 H98u	H
 H99u{
 H9;uAA
-H9=.><
+H9=RK<
+H9=_-I
 H9A u
 H9A(s
 H9A@u
@@ -9502,7 +9497,6 @@ Hc}h;}xu
 Hc}pH
 Hc}wMc
 Hc~@;~Pu	H
-Hc~pM
 Heading
 HelpSystem_001
 Helvetica [Cronyx]
@@ -9581,7 +9575,6 @@ Ic<$E3
 Ic>A;~
 Ic?A;
 IcA(H
-IcD$pH
 IcE8A
 IcE<H
 IcExH
@@ -10315,7 +10308,6 @@ Lch M
 Lcl$ A
 Lcl$xfff
 LcnHH
-LcnpH
 Lcs H
 Lcs M
 LcsHH
@@ -11855,10 +11847,12 @@ Show FPS
 Show Grid
 Show Ground Plane
 Show Info
+Show Info Overlay
 Show Key Bindings
 Show Skybox
 Show SpinButtons
 Show Warnings
+ShowActiveAnimations(bool)
 ShowAllCommandsPopup
 ShowConsole
 ShowFullHelpForBindableCommandUnderMouse
@@ -12075,7 +12069,6 @@ T$xHc
 T$xHcH
 T$xIcM
 T$xLc
-T%2d$
 T.?setWidget@QGraphicsProxyWidget@@QEAAXPEAVQWidget@@@Z
 T:V@]
 TADIt	
@@ -12136,6 +12129,7 @@ TargetOversubscriptionFactor
 TargetPrinter
 Temp Path Text
 TerminateProcess
+Test Text
 TestFormatA
 TestFormatB
 TestFormatC
@@ -12464,6 +12458,7 @@ Unsupported: type mismatch
 UokOP
 UpShiftPressTimer()
 Update ID
+UpdateActiveAnimations()
 UpdateAssetMenu()
 UpdateBoneTransforms()
 UpdateButtonStatusFromAction()
@@ -12671,16 +12666,16 @@ W ?paintEvent@QComboBox@@MEAAXPEAVQPaintEvent@@@Z
 W!?pos@QWidget@@QEBA?AVQPoint@@XZ
 W!t/H
 W#?qt_metacast@QSpinBox@@UEAAPEAXPEBD@Z
-W%Sb7
 W(|9L
 W(|=L
+W-!VT
 W.?setWidget@QScrollArea@@QEAAXPEAVQWidget@@@Z
 W/?sizeHint@QScrollArea@@UEBA?AVQSize@@XZ
 W0?staticMetaObject@QGraphicsView@@2UQMetaObject@@B
-W56q5
-W5ntF
+W5+T"
+W5L}F
 W8HcH
-W=\k4
+W=7i4
 W@IcO8H
 W@|:L
 WARNING
@@ -12753,17 +12748,13 @@ X UVWAVAWH
 X UVWH
 X!t5~
 X"?qt_metacall@QGraphicsScene@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
-X%FR"
+X%Z	%
+X%vR"
 X(D9y(
 X)?setFixedHeight@QWidget@@QEAAXH@Z
-X-	1%
-X-9#%
-X-F&%
-X-S/%
-X-^R"
-X-g.%
-X-|&%
-X-}e$
+X->"%
+X-S.%
+X-f"%
 X/?sizeHint@QScrollBar@@UEBA?AVQSize@@XZ
 X0?staticMetaObject@QGraphicsWidget@@2UQMetaObject@@B
 X0D9{0u
@@ -12772,7 +12763,12 @@ X0Hcx(H
 X360_DST16
 X360_DST24
 X360_DST24F
-X5%<H
+X5%TH
+X5>u:
+X5G["
+X5f^H
+X5xT-
+X=N^H
 XA]A\^[
 XA^A\_[
 XA^A]A\^][
@@ -12808,27 +12804,27 @@ X|$XH
 Y D9Y
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%3nF
-Y%8VF
+Y%,9"
+Y%.&2
+Y%Wa$
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
-Y-*+ 
-Y-,KE
-Y-4R"
-Y-M]F
-Y-pr7
-Y-py.
-Y-ue$
-Y-~% 
+Y-3%1
+Y-:= 
+Y-@v.
+Y-]b$
+Y-dR"
 Y0HcR
 Y0t>H
-Y54Q4
-Y5I:E
-Y5Yy.
-Y5x3'
-Y5ysF
-Y=$KE
-Y=tt7
-Y=u/2
+Y5#a4
+Y5):E
+Y5)v.
+Y5.S4
+Y5I5"
+Y5LmK
+Y5[-'
+Y5_:E
+Y5nf4
+Y=DmK
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -12969,11 +12965,12 @@ Zpm"U
 \$?question@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 \$@9\$8
 \$@9\$8~I
-\$@@8=
+\$@@8=i
 \$@E3
 \$@H+
 \$@H;
 \$@Hc
+\$@HcA
 \$@HcJ
 \$@Ic
 \$@f;
@@ -13020,6 +13017,7 @@ Zpm"U
 \$pH#
 \$pI+
 \$pM;
+\$pf;
 \$pff
 \$pu A
 \$pu+H
@@ -13031,10 +13029,8 @@ Zpm"U
 \.?setWidth@QPainterPathStroker@@QEAAXN@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
 \0?staticMetaObject@QHBoxLayout@@2UQMetaObject@@B
-\5_J1
-\5s@H
-\='	1
-\=dI1
+\53,I
+\5_H1
 \D$8H
 \D$8L
 \D$Hf
@@ -13054,10 +13050,7 @@ Zpm"U
 ],?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
 ].?setWidth@QPen@@QEAAXH@Z
 ]0HcH
-]5;.0
-]5y\&
 ]8fff
-]=9>H
 ]>)2X
 ]@fff
 ]HE9F
@@ -13124,7 +13117,6 @@ _oD>Kg
 _pHc_`Hc
 _test_conversion_counter
 _toolsautosave
-_xHcGpI
 ` UAVAWH
 `*?setItalic@QFont@@QEAAX_N@Z
 `+!]?
@@ -13761,6 +13753,7 @@ f9,Ju
 f9,~u
 f9<Au
 f9<Bu
+f9D$b
 f9G`u1H
 f9G`uCH
 f9PpI
@@ -14754,7 +14747,7 @@ n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
 nAlpha
-nD8-{
+nD8-S
 nExternalToolId
 nF@fD
 nFrame
@@ -14847,6 +14840,7 @@ ntelE
 num_server_players
 number
 numsegments
+o%>c$
 o%?resizeEvent@QGraphicsWidget@@MEAAXPEAVQGraphicsSceneResizeEvent@@@Z
 o.?setWindowIcon@QWidget@@QEAAXAEBVQIcon@@@Z
 oD$ H
@@ -15774,6 +15768,8 @@ toolimages:/propertyeditor/clear_filter.png
 toolimages:/valve_base/arrow_left.png
 toolimages:animgraph_editor/add_folder.png
 toolimages:animgraph_editor/add_motionclip.png
+toolimages:animgraph_editor/animgraph_follow_selected_clip.png
+toolimages:animgraph_editor/animgraph_selected_clip.png
 toolimages:animgraph_editor/animgraph_waypoint_mode.png
 toolimages:animgraph_editor/appicon.ico
 toolimages:animgraph_editor/easeincurve.png
@@ -15885,7 +15881,6 @@ twistJoints
 tx<	u#
 txHc;;{
 txLcA
-tyHcApH
 tyfD9 tsH
 type or int32).
 type.googleapis.com/

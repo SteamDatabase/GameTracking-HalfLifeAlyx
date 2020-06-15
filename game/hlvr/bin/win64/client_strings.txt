@@ -645,8 +645,6 @@
  C_PhysPropClientside::Spawn: SetupPhysicsAsModel() failed for %s.
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;5]
- D;=y
  E;wX
  E;}X
  Failed to pack %s
@@ -949,7 +947,7 @@
 "host_computationtime_std_deviation
 "k_EMsgGCToClientPollConvarResponse
 "origin"	"%.1f, %.1f, %.1f"
-"pA3Q
+"pA3Q06
 ################################################################################
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
@@ -1801,31 +1799,31 @@ $z(u&
 (#GameUI_Disconnect_LoopLevelLoadActivate
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
-(%$ER
 (%0.2f): %s
-(%8y$
-(%T<R
 (%d %d %d %d)
 (%d) Name: %s (%s)
 (%d/%d)%s %s
 (%g %g %g %g)
 (%g %g %g)
 (%g %g)
+(%r^y
 (%s,%s)
-(%t_R
 ('8PW
 ((https?|ftp|file)://|www\.)([^<]*)
 (*%s*), 
 (*MARK) must have an argument
 (*VERB) not recognized
 (,$t6E
+(-\Ty
+(-i^y
 (.CPlayer_GetCommunityPreferences_Request
 (.CPlayer_GetFriendsGameplayInfo_Response"K
 (.CPlayer_GetPerFriendPreferences_Request
 (.CPlayer_SetCommunityPreferences_Request
 (.CPlayer_SetPerFriendPreferences_Request
 (0x%08X)'??'
-(56|o
+(5C[y
+(5STy
 (8HXhx
 (9Q@u
 (;^,|
@@ -1836,7 +1834,6 @@ $z(u&
 (;{ |
 (;{H|
 (;~ |
-(=lto
 (?R or (?[+-]digits must be followed by )
 (?VideoPlayerInitAudio
 (@8*t
@@ -2620,7 +2617,7 @@ $z(u&
 +camyawright
 +duck
 +f)>0'
-+fD9-gLk
++fD9-'
 +forward
 +grenade1
 +grenade2
@@ -2916,10 +2913,13 @@ $z(u&
 .00cfg
 .3333
 .3ugH
-.5A{H
-.5J}/
-.5O%F
+.5=bj
+.5WaF
+.5]`z
+.5mfw
+.5p?G
 .<2uL
+.='@G
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -3162,6 +3162,7 @@ $z(u&
 .?AV?$CEntitySpawner@VCPointOffScreenIndicatorUi@@@@
 .?AV?$CEntitySpawner@VCProp_HLVR_Weapon_Base_Clip@@@@
 .?AV?$CEntitySpawner@VCProp_HLVR_Weapon_EnergyGun_Clip@@@@
+.?AV?$CEntitySpawner@VCProp_HLVR_Weapon_Generic_Pistol_Clip@@@@
 .?AV?$CEntitySpawner@VCProp_HLVR_Weapon_Shotgun_Clip@@@@
 .?AV?$CEntitySpawner@VCViewAngleAnimation@@@@
 .?AV?$CEntitySpawner@VC_BaseAnimating@@@@
@@ -3199,6 +3200,7 @@ $z(u&
 .?AV?$CEntitySpawnerBase@VCPointOffScreenIndicatorUi@@@@
 .?AV?$CEntitySpawnerBase@VCProp_HLVR_Weapon_Base_Clip@@@@
 .?AV?$CEntitySpawnerBase@VCProp_HLVR_Weapon_EnergyGun_Clip@@@@
+.?AV?$CEntitySpawnerBase@VCProp_HLVR_Weapon_Generic_Pistol_Clip@@@@
 .?AV?$CEntitySpawnerBase@VCProp_HLVR_Weapon_Shotgun_Clip@@@@
 .?AV?$CEntitySpawnerBase@VCViewAngleAnimation@@@@
 .?AV?$CEntitySpawnerBase@VC_BaseAnimating@@@@
@@ -4443,6 +4445,8 @@ $z(u&
 .?AVCHLVR_Weapon_EnergyGun@@
 .?AVCHLVR_Weapon_EnergyGun_Hopper_Upgrade@@
 .?AVCHLVR_Weapon_EnergyGun_Slide_Interactable@@
+.?AVCHLVR_Weapon_Generic_Pistol@@
+.?AVCHLVR_Weapon_Generic_Pistol_Slide_Interactable@@
 .?AVCHLVR_Weapon_Radio@@
 .?AVCHLVR_Weapon_Rapidfire@@
 .?AVCHLVR_Weapon_Rapidfire_Ammo_Capsule@@
@@ -4867,6 +4871,8 @@ $z(u&
 .?AVCProp_HLVR_Weapon_Base_ClipAlias_item_hlvr_clip_base@@
 .?AVCProp_HLVR_Weapon_EnergyGun_Clip@@
 .?AVCProp_HLVR_Weapon_EnergyGun_Clip_Multiple@@
+.?AVCProp_HLVR_Weapon_Generic_Pistol_Clip@@
+.?AVCProp_HLVR_Weapon_Generic_Pistol_Clip_Multiple@@
 .?AVCProp_HLVR_Weapon_Rapidfire_Clip@@
 .?AVCProp_HLVR_Weapon_Shotgun_Clip@@
 .?AVCProp_HLVR_Weapon_Shotgun_Shell_Pair@@
@@ -6365,9 +6371,6 @@ $z(u&
 .{0u;
 .|70t#
 .|;4u
-/%SOr
-/%\Bu
-/%^>r
 /*.sav
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
@@ -6377,13 +6380,14 @@ $z(u&
 // the top left corner of the image is placed 10px to the right of, 40px below the top left corner of the panel
 /2GG>!B
 /43sGLc'D;g
-/51b"
-/5OLV
-/5Z9A
-/5svV
+/5'fR
+/56&m
+/5M'I
+/5ykA
 /9s2H
+/=	.A
 /=$!6
-/=,Cn
+/=Z1A
 />58d%
 /?O_o
 /@Ps'H
@@ -6670,7 +6674,7 @@ $z(u&
 0A__^H
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
 0CPlayer_UpdateSteamAnnouncementLastRead_Response*
-0D9=5O
+0D9=U
 0D;Bl
 0D;ul|
 0D;w4L
@@ -6842,7 +6846,7 @@ $z(u&
 20.CUserMsg_ParticleManager.UpdateParticleFallback
 200 200 200 196
 200000
-200527220627Z0#
+200613004839Z0#
 2048.0f
 20971520
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -6912,7 +6916,6 @@ $z(u&
 3 - bottom-right
 3 - down & right
 3(Optional) Preview filename for the published file." 
-3*)FAqr
 3+5<t
 3,,)I
 3.CHelpRequestLogs_UploadUserApplicationLog_Response"#
@@ -6976,7 +6979,7 @@ $z(u&
 500.0f
 560.0
 5?Missing file '%s'
-5@85p
+5@85@
 5@8|$"t.9|
 5Retrieves information about a set of published files.
 5YHe/
@@ -6995,6 +6998,7 @@ $z(u&
 700PP
 700WP
 7?t$7?
+7D8%V
 7HcD$P
 7I97u
 7If true, return key value tags in the returned details.
@@ -7092,7 +7096,6 @@ $z(u&
 8du0H
 8fF9|
 8ke?;
-8u9fJ
 8w>Hc
 9	t	H
 9	tGH
@@ -7116,7 +7119,6 @@ $z(u&
 91~gH
 92u	9j
 95*P>
-95r~R
 98N*>
 98~+H
 99C }
@@ -7225,9 +7227,9 @@ $z(u&
 9K$tSH
 9L$8t
 9L$HH
-9M,t;H95jvk
+9M,t;H95
 9M,t~H
-9M4t-H95-uk
+9M4t-H95
 9M4t_
 9O$uu;
 9P ~(H
@@ -7338,7 +7340,7 @@ $z(u&
 9pXt3
 9pXt7I
 9pXt;D
-9pXtA@85
+9pXtA@85 
 9pXtID
 9pXtOD
 9pXu	
@@ -7911,7 +7913,6 @@ $z(u&
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@PEBULoggingMetaData_t@@VColor@@PEBDZZ
 ?LoggingSystem_Log@@YA?AW4LoggingResponse_t@@HW4LoggingSeverity_t@@VColor@@PEBDZZ
-?Look At
 ?LrA/<,M?+
 ?MakeAbsolutePath@CBufferString@@QEAAPEBDPEBD0@Z
 ?N%E\
@@ -8007,6 +8008,7 @@ $z(u&
 ?e;:	
 ?eH_R
 ?expf
+?expression
 ?fAr|
 ?fCH'\
 ?f`Y4
@@ -8097,10 +8099,11 @@ $z(u&
 @49C4t
 @6W!?
 @8(tNH
-@8-"d
-@8-N Z
-@8-]>Z
-@8-s	
+@8-!~
+@8-%/
+@8-5t
+@8-h}
+@8-yo
 @8/N|
 @8/tjH
 @80t,
@@ -8108,14 +8111,12 @@ $z(u&
 @81u/H
 @83t)
 @84:u
-@85%'
-@85:q\
-@85G&]
-@85QrX
-@85\JZ
-@85u<
-@85y%
-@85|J
+@85$e
+@85?*]
+@85H 
+@85Ou
+@85hR
+@85{+]
 @87tGH
 @88t*M
 @88t+M
@@ -8124,13 +8125,8 @@ $z(u&
 @89pXu0H
 @89t8@
 @8:t#H
-@8=!Np
-@8=!Q
-@8=10
-@8=8fs
-@8=QDp
-@8=a$p
-@8=pNs
+@8=D&6
+@8=Y'
 @8D9pXu0H
 @8i*tLH
 @8iht
@@ -8485,6 +8481,7 @@ $z(u&
 @VATAWH
 @VATH
 @VAUAVAWH
+@VAUH
 @VAVAWH
 @VAVH
 @VAWH
@@ -10474,6 +10471,7 @@ A^A]A\[]
 A^A]A\]
 A^A]A\][
 A^A]A\^[
+A^A]A\^[]
 A^A]A\^]
 A^A]A\_
 A^A]A\_[]
@@ -11407,16 +11405,14 @@ C 9G uN
 C 9G }
 C 9~ ~7H
 C @8-
-C @8-Zd
-C @8-]
-C @8-n
+C @8-6
+C @8-6}
+C @8-Go
 C @85
-C @85%
-C @85,K
-C @85-
-C @85W'
-C @85l
-C @85lq\
+C @857
+C @85Dd
+C @85L
+C @85U
 C A9F }
 C D85
 C H+C
@@ -11818,6 +11814,7 @@ CEntitySpawner<class CModelPanelModel>::Spawn
 CEntitySpawner<class CPointOffScreenIndicatorUi>::Spawn
 CEntitySpawner<class CProp_HLVR_Weapon_Base_Clip>::Spawn
 CEntitySpawner<class CProp_HLVR_Weapon_EnergyGun_Clip>::Spawn
+CEntitySpawner<class CProp_HLVR_Weapon_Generic_Pistol_Clip>::Spawn
 CEntitySpawner<class CProp_HLVR_Weapon_Shotgun_Clip>::Spawn
 CEntitySpawner<class CViewAngleAnimation>::Spawn
 CEntitySpawner<class C_BaseAnimating>::Spawn
@@ -12059,6 +12056,7 @@ CHLMachineGun
 CHLPropVRHand
 CHLSelectFireMachineGun
 CHLVRAddonManager::GetItemStateAndDownloadIfRequested
+CHLVRAddonManager::OnAddonListChanged
 CHLVRClientMenuSystem::NotifyClientDisconnected
 CHLVRClientMsg_BarnacleDefeated
 CHLVRClientMsg_BarnacleDefeated_t
@@ -12169,6 +12167,8 @@ CHLVR_Weapon_EnergyGun::FinishUpgrading Called with Invalid ID : %d
 CHLVR_Weapon_EnergyGun::FinishUpgrading Called with Upgrade already active : %d
 CHLVR_Weapon_EnergyGun_Hopper_Upgrade
 CHLVR_Weapon_EnergyGun_Slide_Interactable
+CHLVR_Weapon_Generic_Pistol
+CHLVR_Weapon_Generic_Pistol_Slide_Interactable
 CHLVR_Weapon_Radio
 CHLVR_Weapon_Rapidfire
 CHLVR_Weapon_Rapidfire_Ammo_Capsule
@@ -12224,6 +12224,8 @@ CHandle< CHLVR_ReflexSights>
 CHandle< CHLVR_Weapon_Base>
 CHandle< CHLVR_Weapon_EnergyGun>
 CHandle< CHLVR_Weapon_EnergyGun_Slide_Interactable>
+CHandle< CHLVR_Weapon_Generic_Pistol>
+CHandle< CHLVR_Weapon_Generic_Pistol_Slide_Interactable>
 CHandle< CHLVR_Weapon_Rapidfire_Ammo_Capsule>
 CHandle< CHLVR_Weapon_Rapidfire_Bullets_Manager>
 CHandle< CHLVR_Weapon_Rapidfire_Extended_Magazine>
@@ -12242,6 +12244,7 @@ CHandle< CPropVRHand>
 CHandle< CPropZipline >
 CHandle< CProp_HLVR_Weapon_Base_Clip>
 CHandle< CProp_HLVR_Weapon_EnergyGun_Clip>
+CHandle< CProp_HLVR_Weapon_Generic_Pistol_Clip>
 CHandle< C_BaseCombatWeapon >
 CHandle< C_BaseCombatWeapon>
 CHandle< C_BaseEntity>
@@ -12805,6 +12808,8 @@ CProp_HLVR_Weapon_Base_Clip
 CProp_HLVR_Weapon_Base_ClipAlias_item_hlvr_clip_base
 CProp_HLVR_Weapon_EnergyGun_Clip
 CProp_HLVR_Weapon_EnergyGun_Clip_Multiple
+CProp_HLVR_Weapon_Generic_Pistol_Clip
+CProp_HLVR_Weapon_Generic_Pistol_Clip_Multiple
 CProp_HLVR_Weapon_Rapidfire_Clip
 CProp_HLVR_Weapon_Shotgun_Clip
 CProp_HLVR_Weapon_Shotgun_Shell_Pair
@@ -12909,6 +12914,7 @@ CSVCMsg_UpdateStringTable
 CSVCMsg_UserMessage
 CSVCMsg_VoiceData
 CSVCMsg_VoiceInit
+CSave::BufferData
 CSaveMemory
 CSaveRestoreBuffer::TokenHash() is COMPLETELY FULL!
 CSaveRestoreShared::Log
@@ -14609,6 +14615,7 @@ D$HHcK
 D$HIc
 D$HL+
 D$HL;
+D$HLc
 D$HfA;
 D$Ht6
 D$HtKH
@@ -14770,7 +14777,7 @@ D$pH;GHu
 D$pHK8
 D$pHc
 D$pIc
-D$pL9=}
+D$pL9=
 D$pL;
 D$pM;
 D$pMc
@@ -14821,6 +14828,7 @@ D+M0D
 D+M8D
 D+w<D
 D+|$lD9s
+D,/LD
 D08@t	
 D0gPad
 D15S1
@@ -14838,6 +14846,7 @@ D8#t&fA
 D8#uGD8#
 D8$8u
 D8$>u
+D8%[3
 D8&t!
 D8&t.H
 D8&t4H
@@ -14846,24 +14855,53 @@ D8(t[H
 D8)tFI
 D8*u A
 D8,2u
-D8-Ba
-D8-L=
-D8-pJ
+D8-&Ks
+D8-'5s
+D8-7n
+D8-86s
+D8-A7s
+D8-BLs
+D8-C^
+D8-Q1s
+D8-Q:s
+D8-Q~
+D8-S;s
+D8-U8s
+D8-U9s
+D8-X>s
+D8-YAs
+D8-Z@s
+D8-ZCs
+D8-[Bs
+D8-\=s
+D8-\I
+D8-^2s
+D8-^?s
+D8-`<s
+D8-cDs
+D8-fH
+D8-lFs
+D8-lIs
+D8-mEs
+D8-n3s
+D8-nGs
+D8-p4s
+D8-pHs
+D8-yJs
+D8-yKs
 D8.tnH
 D80t{H
 D82u&H
 D83t	H
 D84;u
-D85	C
-D85-#
-D858Kr
-D85=H
-D85sGr
-D85{$\
+D85='v
+D85k"U
+D85nF
+D85s"U
+D85{Q
 D88tT3
 D89uWI
 D8<8u
-D8=TSr
 D8>tQL
 D8CDu
 D8D$ u
@@ -14966,7 +15004,6 @@ D9+~?M
 D9,7t
 D91~HH
 D93~"I
-D95nt
 D9:~FH
 D9@ }
 D9@p}
@@ -15074,8 +15111,6 @@ D9|$ ~?M
 D9|$ ~LM
 D9|$@
 D9}dt
-D:5<pf
-D;=AN
 D;@XH
 D;@X|	H
 D;A |
@@ -15720,6 +15755,7 @@ E;~hL
 E<LcO
 E>nEA
 E@)R?
+E@85}:V
 E@A9D$h
 E@A9v
 E@D	<
@@ -16703,6 +16739,7 @@ G8Hc@
 G<+G4;
 G<8F<
 G<9C<t
+G@85!s
 G@9C@t
 G@A9G0u
 G@HcO8H
@@ -17211,6 +17248,7 @@ Glows: Blur Y
 Glows: Render Objects Solid Color
 Glows: Render Objects into Stencil
 Glows: Stencil To Screen
+GnY	Q
 GoOffline
 GoOnline
 Got a NaN origin on %s
@@ -17357,11 +17395,6 @@ H99u{
 H9:u`H
 H9;uAA
 H9;v#H
-H9='V
-H9=0F
-H9=F]
-H9=W/
-H9=_j
 H9A u
 H9A(s
 H9A(u	H9A0
@@ -17498,12 +17531,9 @@ H9~(u
 H:Ly?
 H:Q	t
 H;0u7
-H;5(M
+H;5L4
 H;9tEH
-H;=0j
-H;=Bi
-H;=Pm
-H;=bl
+H;==T
 H;@0u
 H;@Xu
 H;C u
@@ -17598,7 +17628,6 @@ HDUUUUUUUUUUUUUUUU
 HEADSET
 HFont
 HH:mm:ss
-HH@~Lr
 HHcD$0L
 HHcF(HcL
 HHcG(HcL
@@ -17843,7 +17872,6 @@ Hc0D;
 Hc2;r
 Hc3;s
 Hc3Hc
-Hc55~
 Hc7;w
 Hc7A+
 Hc8;x
@@ -18369,6 +18397,7 @@ INSTANCE_TYPE
 INTEGER1
 INTEGER2
 INTERACTION_CLIP_TO_ENERGYGUN
+INTERACTION_CLIP_TO_GENERIC_PISTOL
 INTERACTION_CLIP_TO_SHOTGUN
 INTERACTION_MULTICLIP_TO_SHOTGUN
 INTERACTION_NONE
@@ -19215,9 +19244,14 @@ L9&u'H
 L9&us
 L9'uYK
 L9*u&
+L9-)y
+L9-Yc
+L9-t/
+L9-zm
 L90t"
 L92t,H
 L93t)H
+L95tNv
 L96u4H
 L97taH
 L9:t?
@@ -19677,6 +19711,7 @@ LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
 LoggingSystem_RegisterLoggingChannel
 Logical#
+Look At
 Looks at the target player's center, instead of his eye position, in chase came mode
 Lookup dynamic time-of-day float value
 Lookup dynamic time-of-day vector value
@@ -21292,7 +21327,7 @@ Pushes an identifier used to group overlays. Deletes all existing overlays using
 Pushes an identifier used to group overlays. Overlays marked with this identifier can be deleted in a big batch.
 Put all physics in all the worlds to sleep
 PuzzleType
-Px@8-
+Px@8-*
 PxLc~
 Q LcI
 Q(9Q0A
@@ -21915,6 +21950,7 @@ SWAUH
 SWAVH
 SWAWH
 S^>#/
+S_y+1
 Samaritan
 Saturday
 Saurashtra
@@ -23190,8 +23226,6 @@ T$xE3
 T$xH+
 T$xH;
 T$xHc
-T%}:%
-T53Ny
 T7 ;T7$t
 T9Tu*H
 T9du*H
@@ -23751,6 +23785,7 @@ USE_ROTATION_EXPANDED_BOUNDS
 USE_ROTATION_EXPANDED_SEQUENCE_BOUNDS
 USE_SPECIFIED_BOUNDS
 USVATAUAVAWH
+USVATAUAVH
 USVATAUAWH
 USVATAUH
 USVATAUI
@@ -24285,7 +24320,7 @@ VerticalScrollBar
 VerticalScrollForwarding
 VerticalScrollThumb
 VerticalSplitter
-VfD9%(qf
+VfD9%
 VguiScreen
 Vh{O@n
 VideoBIKMaterial%i
@@ -24339,16 +24374,16 @@ VoteData
 VrForward
 Vulkan
 W%8O&t
-W%DoN
-W%aJr
 W(|9L
 W(|=L
 W,t6H
+W-LuN
 W3|Uxa
-W5BGr
+W5dhG
+W5mEp
 W8HcH
 W8KcD
-W=3GK
+W=srK
 W=vmdlkeys0
 W?,|C
 W@|:L
@@ -24570,25 +24605,18 @@ X VWAVH
 X WAVAWH
 X!s"H
 X!t5~
-X%Dpm
 X(D9y(
 X(Optional) If true, only return the published file ids of files that satisfy this query.
-X-|x.
 X0Hcx(H
 X360_DST16
 X360_DST24
 X360_DST24F
-X5++G
-X5E j
-X5Uy.
-X5elN
-X5hxt
-X5o|H
-X5qyt
-X5udN
-X5{/G
-X5{3G
+X5+bG
+X5+fG
+X5/Af
+X5T|z
 X=2v?
+X=n#O
 XA;w@
 XA\^H
 XA]A\
@@ -24647,41 +24675,45 @@ X|$8E
 X|$Hs
 X|$xA
 Y D9Y
-Y#a``$
 Y$D;R
-Y%Jgw
-Y%Opm
-Y%PyM
-Y%gwM
+Y%P&q
+Y%tye
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-VGA
-Y-vUM
+Y-7{'
+Y-ZhR
 Y0HcR
 Y0t>H
-Y5&7p
-Y5(Dz
-Y5+<e
-Y5.]x
-Y59Ez
-Y5?'K
-Y5HAz
-Y5I@K
-Y5LaN
-Y5SDw
-Y5WhM
-Y5X G
-Y5X6:
-Y5^;r
-Y5_&K
-Y5_2z
-Y5sY"
-Y5y/G
-Y=/#K
-Y=3=H
-Y=[<B
-Y=c!K
-Y=h0G
-Y=m,K
+Y5%$f
+Y5'yz
+Y5)_K
+Y5)bG
+Y5*F"
+Y5+*N
+Y5.=G
+Y51Fl
+Y56>G
+Y5=GA
+Y5?DA
+Y5DFA
+Y5EhG
+Y5NDi
+Y5ZTK
+Y5\(s
+Y5\8A
+Y5]]K
+Y5^D"
+Y5_wz
+Y5hO"
+Y5jTw
+Y5m<e
+Y5t$A
+Y5|Le
+Y=$TN
+Y=-$f
+Y=2DG
+Y=oNK
+Y=oTs
+Y=srH
 Y>kX>M
 Y@TD9
 YD$$A
@@ -24918,7 +24950,7 @@ Z~Xff
 \$8uIH
 \$<A;
 \$@9u ~UH
-\$@@8=!
+\$@@8=q)C
 \$@A+
 \$@A9
 \$@A_A^_^]
@@ -25022,7 +25054,10 @@ Z~Xff
 \$xE3
 \$xHc
 \$xff
-\-<y.
+\%]~p
+\-Y~p
+\5,~p
+\5<#s
 \C not allowed in lookbehind assertion
 \D$(H
 \D$8H
@@ -25090,17 +25125,21 @@ Z~Xff
 ] D8{Tt
 ] L9m8t	H
 ] is an invalid data character in JavaScript compatibility mode
+]! -G
+]%l'q
 ])6M>&
 ]-?Z8
-]5+-G
-]5aNb
+]5dWw
+]5t(I
+]=/ws
+]=7`G
 ]>)2X
 ]@Mcj(H
 ]HL9#t
 ]J8]zt(H
-]PHcC@
 ]PHc|
 ]Q8uh
+]XHcC@
 ]oHc|
 ]u9n5;> )"
 ^ Hc+
@@ -25260,7 +25299,6 @@ _xtOD
 `A__]
 `A__^
 `A__^][
-`D:5B
 `E;t$
 `Hc>;~
 `HcY 3
@@ -25481,6 +25519,7 @@ ammo2
 ammo_display_clips
 ammo_display_loaded_ammo
 ammo_id
+ammo_per_clip
 ammo_proto1
 ammoclipcount_1
 ammoclipcount_10
@@ -25664,7 +25703,6 @@ bAllow
 bBlock
 bClampEyeAngles
 bClip3DSkyBoxNearToWorldFar
-bD8%?
 bDampenEyePosition
 bDh%)
 bEnableIK_Index
@@ -25756,6 +25794,7 @@ barnacle_vr_x
 barnacle_vr_y
 barnacle_vr_z
 barnacle_vr_z_offset
+barrel_smoke_effect
 base-position
 base-position-variance
 baseAccel
@@ -25883,6 +25922,9 @@ bot_interactions
 bot_mimic
 bot_mimic_spec_buttons
 bottom
+bottom_grip_disengage_dist
+bottom_grip_max_dist
+bottom_grip_min_dist
 bottom_point
 bottombarblank
 bottomright
@@ -25964,6 +26006,7 @@ build mode flags
 buildcubemaps
 bulletPenetrationDamageModifier
 bulletPenetrationDistanceModifier
+bullet_count_anim_rate
 bullet_index
 bullet_start
 burlywood
@@ -26702,6 +26745,7 @@ cli_ent_hitbox
 cli_ent_pivot
 cli_ent_skeleton
 cli_ent_vcollide_wireframe
+clib_grab_distance
 client
 client.dll
 clientSideAnimCycleReset
@@ -26740,6 +26784,11 @@ clip_3D_skybox_near_to_world_far
 clip_3D_skybox_near_to_world_far_offset
 clip_counter_01
 clip_counter_02
+clip_glow_effect
+clip_insert_sound
+clip_model_left_handed
+clip_model_right_handed
+clip_release_sound
 clip_size
 close
 closecaption
@@ -27424,6 +27473,8 @@ effortblocks = %d
 eg: First, Easy, Medium, Hard, VeryHard. Leave blank to not override.
 eh 0x%p
 ehandle
+eject_shell_model
+eject_shell_smoke_effect
 electrical
 elems
 ellipsis
@@ -27622,7 +27673,6 @@ exponential_decay
 exposurecompensation
 exposurespeeddown
 exposurespeedup
-expression
 expressions
 expressions/%s.vfe
 extend .$0 {
@@ -27660,10 +27710,7 @@ f!GXH
 f93t,
 f94Au
 f94Gu
-f95);k
-f9599k
-f95m9k
-f95q;k
+f95ob
 f9<Au
 f9<Xu
 f9<pu
@@ -27750,20 +27797,18 @@ fD!|;
 fD9 u
 fD9$Au
 fD9$xu
-fD9%lqf
+fD9%D
 fD9(u
 fD9,Cu
 fD9,Ku
 fD9,Pu
-fD9-	Kk
-fD9- Nk
-fD9--Mk
-fD9-WJk
-fD9-`Nk
+fD9- 
+fD9-Z
 fD90t
 fD94Fu
 fD94pu
-fD95IFf
+fD95;
+fD95\
 fD96u
 fD98@
 fD98u
@@ -27969,6 +28014,7 @@ fire_interactions
 firebrick
 firetrigger
 fireworks
+firing_interval
 first_playtime
 firstperson
 fish_debug
@@ -28386,6 +28432,7 @@ glowDepth
 glowHelper
 glow_attach
 glow_attachment
+glow_effect
 glow_use_tolerance
 glowbackfacemult
 glowcolor
@@ -28690,6 +28737,7 @@ hlvr_energygun_grant_upgrade
 hlvr_fade_to_steamvr
 hlvr_flashlight_attachment
 hlvr_flashlight_hologram_attachment
+hlvr_generic_pistol_slide_interactable
 hlvr_give_flashlight
 hlvr_global_opvars
 hlvr_glow_behind
@@ -28841,6 +28889,7 @@ hlvr_weapon_base
 hlvr_weapon_crowbar
 hlvr_weapon_crowbar_physics
 hlvr_weapon_energygun
+hlvr_weapon_generic_pistol
 hlvr_weapon_module
 hlvr_weapon_pistol
 hlvr_weapon_radio
@@ -29182,6 +29231,8 @@ invalid/negative time base %f
 invalid_bone
 invalid_hitbox
 invalid_parameter
+inventory_model
+inventory_position
 invert
 invert_orientation
 invertminscalecalc
@@ -29278,6 +29329,8 @@ item_healthvial_DEPRECATED
 item_hlvr_clip_base
 item_hlvr_clip_energygun
 item_hlvr_clip_energygun_multiple
+item_hlvr_clip_generic_pistol
+item_hlvr_clip_generic_pistol_multiple
 item_hlvr_clip_rapidfire
 item_hlvr_clip_shotgun_multiple
 item_hlvr_clip_shotgun_shellgroup
@@ -29784,6 +29837,7 @@ l$xE3
 l$xI;
 l$xt5H
 l4d2_upsell
+l=!TH
 l=C8f9
 label
 label0
@@ -29815,6 +29869,7 @@ last_cmd_number
 last_played
 last_playtime
 last_playtimes
+last_shot_chambered_sound
 last_sniff
 last_update_time
 lastactivate
@@ -31250,6 +31305,7 @@ m_flAnimationStartTime
 m_flAnisotropy
 m_flArrivalTime
 m_flAspectRatio
+m_flAttackInterval
 m_flAttenuation0
 m_flAttenuation1
 m_flAttenuation2
@@ -31281,6 +31337,9 @@ m_flBlendWeightCurrent
 m_flBlinkAmount
 m_flBlueEndFadeTime
 m_flBlur
+m_flBottomGripDisengageDist
+m_flBottomGripMaxDist
+m_flBottomGripMinDist
 m_flBounceBrightness
 m_flBoxGap
 m_flBrightness
@@ -31288,6 +31347,7 @@ m_flBrightnessDuration
 m_flBrightnessMult
 m_flBrightnessScale
 m_flBrightnessTimeStart
+m_flBulletCountAnimRate
 m_flCPValueA
 m_flCPValueB
 m_flCPValueC
@@ -31307,6 +31367,7 @@ m_flCircle2Radius
 m_flClientCorrectionLerp
 m_flClientTransformLerp
 m_flClipChangeStartTime
+m_flClipGrabDist
 m_flClipPerc
 m_flCloseCaptionDuration
 m_flClothScale
@@ -31845,6 +31906,8 @@ m_flSizeMin
 m_flSkyIntensity
 m_flSkyboxScale
 m_flSlack
+m_flSlideInteractMaxDist
+m_flSlideInteractMinDist
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flSmallBoxSize
@@ -32608,6 +32671,7 @@ m_nActivity
 m_nAddDecal
 m_nAlpha
 m_nAmbientEffect
+m_nAmmoPerClip
 m_nAnimGraphNetVarCreationCommandNumber
 m_nAnimationParity
 m_nAnimationType
@@ -32692,6 +32756,7 @@ m_nCurrentMovingPoint
 m_nCurrentSide
 m_nCurrentTick
 m_nCurrentTickThisFrame
+m_nDamage
 m_nDamageTaken
 m_nDamageType
 m_nDecalMaterialIndex
@@ -32801,6 +32866,7 @@ m_nInteractsWith
 m_nInterpType
 m_nInterpolationLatchDirtyFlags
 m_nInvalidPointCount
+m_nInventoryPosition
 m_nJumpTimeMsecs
 m_nJustifyHorizontal
 m_nJustifyVertical
@@ -33276,9 +33342,33 @@ m_soundOrigin
 m_spawnflags
 m_speaktime
 m_spline
+m_strBarrelSmokeEffect
 m_strBatteryAttachName
+m_strClipGlowEffect
+m_strClipInsertSound
+m_strClipModelLeftHanded
+m_strClipModelRightHanded
+m_strClipReleaseSound
+m_strEjectShellModel
+m_strEjectShellSmokeEffect
 m_strFollowOnAnimName
+m_strGlowEffect
 m_strHackDifficultyName
+m_strInventoryModel
+m_strLastShotChamberedSound
+m_strModel
+m_strModelLeftHanded
+m_strModelRightHanded
+m_strMuzzleFlashEffect
+m_strNoAmmoSound
+m_strShootSound
+m_strSingleBulletModel
+m_strSlideCloseSound
+m_strSlideLockSound
+m_strSlideModelLeftHanded
+m_strSlideModelRightHanded
+m_strSlidebackSound
+m_strTracerEffect
 m_strUpgradeWeaponName
 m_strWeaponHoloModelName
 m_stringReplaceKey
@@ -34042,8 +34132,10 @@ model_default_preview_sequence_name
 model_dump_convert_info
 model_folder
 model_index
+model_left_handed
 model_name
 model_panel_model
+model_right_handed
 modeldoc0
 modeldoc1
 modeldoc10
@@ -34373,6 +34465,7 @@ multitouchzoomscale
 muted
 mutual_friend_account_ids
 muzzle
+muzzle_flash_effect
 muzzle_flash_enable
 muzzleflash_357_player
 muzzleflash_combine_player
@@ -34404,6 +34497,7 @@ nD$pA
 nD$pL
 nD$x3
 nD$xD
+nD8-s8W
 nDamageTaken
 nID%d
 nL	(A
@@ -34494,7 +34588,7 @@ next_weapon_timer
 next_zipline
 nextfadetime
 nexttoken
-nfD9-
+nfD9-r
 ng_yP
 nickname
 nmonqnmomnmomomno
@@ -34521,6 +34615,7 @@ no such process
 no usable entity found
 no-repeat
 no_addons_enabled
+no_ammo_sound
 no_reflection_fog
 no_standard_descriptor_accessor
 no_stats
@@ -34606,7 +34701,7 @@ numericpassword
 numperpage
 numsegments
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
-o%DF=
+o%Y!g
 o*Ral
 o0H9o
 o0HcG(H
@@ -35931,6 +36026,7 @@ resource/subtitles/closecaption_%s.txt
 resource_type
 resourcecompiler -nop4 -i %s.vtex
 resourcehandle
+resourcemanifests/%s_addon_resources.vrman
 respawn
 respeakdelay
 responses
@@ -36070,8 +36166,7 @@ s2@8s
 s2r://
 s4+sP+
 s4@85
-s4@85u
-s4@8=E
+s4@8=
 s4Hc-
 s69F~
 s6HcFH
@@ -36396,6 +36491,7 @@ shell_0%d
 shift:%04d
 shifted_time
 shoot_attach
+shoot_sound
 short
 short 
 short (%i)
@@ -36483,6 +36579,7 @@ simple_cubic
 simplified
 simulation
 simulationTimeSerializer
+single_bullet_model
 single_controller
 single_controller_off
 single_controller_on
@@ -36593,6 +36690,13 @@ slack
 slateblue
 slategray
 slategrey
+slide_back_sound
+slide_close_sound
+slide_interact_max_dist
+slide_interact_min_dist
+slide_lock_sound
+slide_model_left_handed
+slide_model_right_handed
 slideshow_display_screen
 slime_splash_01.vpcf
 slime_splash_02.vpcf
@@ -37163,7 +37267,7 @@ t$ I;
 t$ Ic
 t$ L+
 t$ L;
-t$ Lc5z
+t$ Lc5
 t$ Mc
 t$ UATAUAVAWH
 t$ UAVAWH
@@ -37543,7 +37647,7 @@ t.@8:t)
 t.@8>t)
 t.E9H
 t.H90t)H
-t.L9% Z_
+t.L9%
 t/@8}
 t/A8]
 t/D8+t*
@@ -37565,7 +37669,7 @@ t0D9u
 t0H9Bxt
 t0HcT
 t0HcT(
-t0f9= Hf
+t0f9=
 t1D9A
 t1H9uxt
 t1HcG 
@@ -37617,7 +37721,7 @@ t7HcG(
 t7HcW0L
 t7L93t)H
 t7fff
-t8D8%
+t8D8%Pn
 t8Hc=
 t8HcA
 t8HcA 
@@ -37639,8 +37743,8 @@ t8HcV
 t8N9<
 t9D80t4H
 t9D9F
-t9H95B
-t9H9=v[_
+t9H952
+t9H9=
 t9HcC(A
 t9HcG$
 t9HcG$H
@@ -37649,7 +37753,7 @@ t9HcG0
 t9HcT(
 t9Ic@ 
 t9IcA
-t9L9%
+t9L9%\}h
 t:@8.t5H
 t:@8/t5H
 t:HcA
@@ -37681,7 +37785,6 @@ t:LcM
 t;@83t6f
 t;A9;
 t;H9=
-t;H9=+
 t;HcG0H
 t;Hc_
 t;Ic@,H
@@ -37771,7 +37874,7 @@ tKD9K
 tKHcE
 tLD9I
 tLL9vpu
-tM@8-
+tM@8-Pu
 tM@8~
 tND8%
 tND9C
@@ -37781,12 +37884,12 @@ tNIc/A
 tNfff
 tOA9H
 tOD9C
-tOH9=S
+tOH9=
 tOHc;;{
 tOfff
 tP@8|$!u4@8|$"t-
 tPD9A
-tPH95MtR
+tPH95
 tQH9]
 tR@80tMH
 tR@80tML
@@ -37800,7 +37903,7 @@ tSD9A
 tSH;X
 tSK;D
 tSKcD0
-tT@8-
+tT@8-*
 tT@8wD
 tTHcA
 tUD88t6H
@@ -37809,7 +37912,7 @@ tUH9t$Ht
 tUIcu
 tVHc3
 tVHc;;{
-tW@8=
+tW@8=(
 tWD9B
 tWHcD$xH
 tWIc@
@@ -37827,7 +37930,6 @@ tYD88tTH
 tYD9I
 tYfff
 tZD9=
-tZD9=;O
 tZIcI(E3
 t[Lc3E
 t\@83tWH
@@ -37840,7 +37942,6 @@ t]fff
 t^<\u%A8G
 t^Hc>
 t^~JA
-t_D9A
 t_D9B
 ta9{(u\H9
 taD9A
@@ -37875,7 +37976,7 @@ targetid
 targetposition
 taunt
 tax_usd
-tbD9=q6
+tbD9=!
 tbD9R
 tbHcn(3
 tc9iHtyLcq(H
@@ -37886,6 +37987,7 @@ td9.t`
 tdD9C
 tdHcX
 te.proto
+teD9F
 te_large_funnel
 team is
 team_behavior
@@ -37977,7 +38079,7 @@ texturescale
 texturewidth
 textwindow_temp.html
 tfD8cTt@H
-tfD9=y
+tfD9=
 tfD9O
 tfHcB
 tfKcD
@@ -38060,6 +38162,7 @@ tl+CHxg;B
 tl@80tgH
 tlA9X
 tlD80tgH
+tlD9F
 tlLcA
 tlMcH
 tm@8.thH
@@ -38116,6 +38219,7 @@ tpHc]
 tq@88tlH
 trD8(tmH
 trLcJ
+tracer_effect
 tracer_particle
 tracer_player.vpcf
 tracked object %d: pos = %f %f %f clientpos = %f %f %f
@@ -38240,7 +38344,7 @@ t~D9A
 u	9w$
 u	@8=
 u	D8%
-u	D8%x
+u	D8%t
 u	H91
 u	L9!
 u D9o
@@ -38264,7 +38368,7 @@ u&;_(u
 u&@:=
 u'L;v
 u(@8t$ u!@8
-u(@:=:
+u(@:=
 u(Hc} ;}0u
 u(Jc|6
 u)!t$(H
@@ -38272,7 +38376,7 @@ u+9F0u&
 u+9_(~
 u+Hc7;w
 u+LcJHH
-u,@:=4pf
+u,@:=
 u,HcG
 u-Hc+;k
 u-Lcu
@@ -38301,7 +38405,7 @@ u<Hc_
 u<fD;
 u=@85
 u=Hc{p;
-u=L95
+u=L95H
 u=L;k
 u=fD;
 u>Hcn03
@@ -38320,7 +38424,7 @@ uG8G`
 uGHcA ;B u>
 uGfD;
 uGrants an implicit OAuth token (grant type 'token') for the specified client ID on behalf of a user without prompting
-uH8CXuCf95Q:k
+uH8CXuCf95
 uIHc7;w
 uIHc;;{
 uJfff
@@ -38498,6 +38602,7 @@ utlstringtoken
 uu9F0up
 uu9XX
 uuHcF
+uwtFH
 uxD8n
 uxHcOP
 uyHcC
@@ -40177,8 +40282,8 @@ zoom_sensitivity_ratio
 |(Optional) Get extended details back on the files found. Defaults to only returned the app Id and UGC Id of the files found.
 |(tFM
 |/D9l
-|=D;-
-|=D;-CO
+|=D;-3
+|=D;-c
 |?5^:+
 |Ifff
 |`E+J<3
@@ -40294,7 +40399,7 @@ zoom_sensitivity_ratio
 ~7fff
 ~:;C0|5
 ~:LcM
-~@D85
+~@D85E
 ~@D9v<u
 ~Afff
 ~BLcK0E3

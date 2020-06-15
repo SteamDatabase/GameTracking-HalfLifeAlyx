@@ -87,8 +87,8 @@
  H9n@u
  H;G@u
  Hc)L
- Hc2L
  Hc9H
+ Hc:A
  HcA H
  Hcl$p3
  Hct$p3
@@ -103,7 +103,6 @@
  Tokenizer::ParseFloat() passed text that could not have been tokenized as a float: 
  Tokenizer::ParseStringAppend() passed text that could not have been tokenized as a string: 
  Type Descriptor'
- YN01
  [$0]
  [default = $0
  a protocol 
@@ -578,6 +577,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 ,NETWORK_DISCONNECT_STEAM_DENY_BAD_ANTI_CHEAT
 ,NETWORK_DISCONNECT_STEAM_LOGGED_IN_ELSEWHERE
 ,|%)v
+,}vT+
 -#GameUI_Disconnect_LocalProblem_NetworkConfig
 -<	u#
 -BH>t
@@ -839,7 +839,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 1I9p 
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-200527201420Z0#
+200613004404Z0#
 211007120000Z0M1
 211110000000Z0b1
 2333333
@@ -860,7 +860,6 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
-6fJ4~
 700WP
 7HcD$P
 7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
@@ -1051,7 +1050,7 @@ $NETWORK_DISCONNECT_STEAM_VACBANSTATE
 @.reloc
 @.tls
 @81u/H
-@8=Ll
+@8=\t
 @8t$p@
 @8xAuAA
 @8|$9t
@@ -1290,7 +1289,6 @@ A_A^A\_^[]
 A_A^A\_^][
 A_A^A]
 A_A^A]A\]
-A_A^A]A\^[]
 A_A^A]A\_
 A_A^A]A\_^[]
 A_A^A]A\_^]
@@ -1573,6 +1571,7 @@ CThreadedJob
 CTransform
 CType
 CUtlBlockMemory overflow!
+CUtlBlockMemory<class CVectorPair,int>::ChangeSize
 CUtlBlockMemory<class Vector2D,int>::ChangeSize
 CUtlBlockMemory<struct CacheOptimizedTriangle_t,int>::ChangeSize
 CUtlBuffer::VaPrintf
@@ -1877,32 +1876,44 @@ D08@t
 D18 t
 D7\A9|3
 D8*u A
-D8-	/
-D8-!7
-D8-. 
-D8-;!
-D8-F%
-D8-H"
-D8-K#
-D8-N6
-D8-R(
-D8-S+
-D8-T*
-D8-T-
-D8-U$
-D8-U,
-D8-V'
-D8-V.
-D8-Z&
-D8-[)
-D8-c/
-D8-e7
-D8-f0
-D8-h1
-D8-i3
-D8-j2
-D8-l4
-D8-v5
+D8-"6
+D8-#9
+D8-$8
+D8-$;
+D8-%2
+D8-%:
+D8-&5
+D8-&<
+D8-(*
+D8-*4
+D8-+7
+D8-1+
+D8-3=
+D8-5E
+D8-6>
+D8-8?
+D8-9A
+D8-:,
+D8-:@
+D8-<B
+D8-FC
+D8-G-
+D8-X.
+D8-a/
+D8-bD
+D8-q)
+D8-q2
+D8-s3
+D8-u0
+D8-u1
+D8-x6
+D8-y9
+D8-z8
+D8-z;
+D8-{:
+D8-|5
+D8-~*
+D8-~7
 D82u&H
 D8d$H
 D8d$Ht
@@ -1944,6 +1955,7 @@ D;L$t~ZH
 D;O`r
 D;S`u
 D;c u
+D;c(u
 D;d$P
 D;o(u
 D;s u
@@ -1991,6 +2003,7 @@ E+BHI
 E.E;fx
 E0C07
 E0HcH
+E0Ic}0Lc
 E0Lcx
 E0f!H
 E8,$t
@@ -2266,8 +2279,6 @@ H0Lc$1H
 H92u&
 H92u'
 H92u,
-H95Kq
-H95oq
 H97t<
 H9;uAA
 H9C s(H
@@ -2438,7 +2449,6 @@ IcM I
 IcM8I
 Ic]PA
 Ic]x3
-Ic|$0Ic
 IdempotencyLevel
 IkLockLocal
 Il?333333c?
@@ -2656,7 +2666,6 @@ L9w(u
 L; u8
 L; u9H
 L;!u8
-L;54r
 L;9u;
 L;@ s
 L;D$8L
@@ -2720,6 +2729,7 @@ MLc3D;s
 MM/dd/yy
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
+Map has %s (%s max) lines of sight
 MapBuilder
 MapKey::GetBoolValue
 MapKey::GetInt32Value
@@ -2784,7 +2794,6 @@ N t&H
 N&B:H
 N0+V8
 N0Hci
-N2XQmu
 N3`d?
 N>O=I9
 NAN(IND)
@@ -2884,7 +2893,7 @@ Options could not be fully parsed using the proto descriptors compiled into this
 Ordered constructor wrapped type has no default constructor.
 Outside detection took %.2f seconds
 P>q_Y~
-PARALLEL_PROCESS CVisibilitySampler::FastMergeClustersUntil(), c:\buildslave\hlvr_rel_win64\build\src\utils\visbuilder\vis2.cpp:2139
+PARALLEL_PROCESS CVisibilitySampler::FastMergeClustersUntil(), c:\buildslave\hlvr_rel_win64\build\src\utils\visbuilder\vis2.cpp:2140
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
 PARTICLE_SET_REPLACE_VALUE
@@ -2963,13 +2972,11 @@ Q0HcAP
 Q5rHg,>
 QAngle
 QDA9PD}5O
-QL$xH
 Quaternion
 QueryPerformanceCounter
 Queue drained to %d!!! %d completed %d processed %ums (%d were queued)
 QueuedLoaderVersion001
 R0fff
-R=4^#
 RadianEuler
 RaiseException
 RandomFloat
@@ -3236,6 +3243,7 @@ Traced %s rays in %.3f seconds [%s rays per second]
 Trailing Data
 Tried to merge messages of different types 
 Truncated data
+Truncating debug lines of sight!, this will affect debug tools.
 TryAcquireSRWLockExclusive
 Tuesday
 Two Bone
@@ -3252,7 +3260,6 @@ UNKNOWN_ENUM_VALUE_%s_%d
 UPDATE_STRING_TOKEN_DATABASE
 USATAWH
 USAUH
-USVATAUAVAWH
 USVAUH
 USVWATAUAVAWH
 USVWATAVAWH
@@ -3503,7 +3510,7 @@ Zod(^?
 \$<A;
 \$@9\$8
 \$@9\$8~I
-\$@@8=]
+\$@@8=}
 \$@H;
 \$@Hc
 \$D;\$H
@@ -3529,8 +3536,8 @@ Zod(^?
 \$tD;
 \$xE3
 \D$PD
-\T$DA
 \U%08x
+\\$PI
 \d$pA
 \t$`E
 \|$`D
@@ -3963,6 +3970,7 @@ l$0ff
 l$8Hc.H
 l$8t+H
 l$8t6
+l$@A9>~-Hcs0;s@u
 l$@H9^
 l$@Hc
 l$@L+q0I
@@ -4691,7 +4699,7 @@ t7HcA$H
 t7HcG A
 t8HcA
 t8HcG M
-t9H9=
+t9H9=V
 t9IcA
 t:HcA
 t:HcG(
@@ -4751,7 +4759,7 @@ type or int32).
 type.googleapis.com/
 type.googleprod.com/
 t}HcBD;B(stH
-u	@8=
+u	@8=eh
 u!9p }
 u$H;|$Hu
 u%H99u

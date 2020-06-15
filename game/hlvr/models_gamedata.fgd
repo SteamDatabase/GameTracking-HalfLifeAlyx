@@ -14,55 +14,60 @@
 ]
 
 @ModelBreakCommand base(base_break_force)
-= break_uniform_burst : "Applies a radial burst to break pieces outwards from the influence point (default is the origin of the model)"
+= break_uniform_burst : "Applies a radial burst to breakpieces outwards from the influence point (default is the origin of the model)"
 [
 	burst_scale(float) [ min="0", max="500" ]		: "Burst Scale"					: 0		: "Velocity added to each piece (radially away from the influence point)"
 	burst_randomize(float) [ min="0", max="500" ]	: "Burst Randomize"				: 0		: "Magnitude of random vector that will be added to the burst velocity"
 ]
 
 @ModelBreakCommand base(base_break_force)
-= break_flip_pieces : "Applies an angular 'flip' to break pieces (like objects tipping over from an explosion or flower petals opening) causing them to tip outwards from the influence point (default is the origin of the model)"
+= break_flip_pieces : "Applies an angular 'flip' to breakpieces (like objects tipping over from an explosion or flower petals opening) causing them to tip outwards from the influence point (default is the origin of the model)"
 [
 	burst_scale(float) [ min="-500", max="500" ]	: "Flip Scale"					: 0		: "Angular velocity added to each piece (Positive value will cause pieces to flip 'head-first' away from the influence point, negative is 'feet-first')"
 	burst_randomize(float) [ min="0", max="500" ]	: "Flip Randomize"				: 0		: "Largest possible value that will be randomly added/removed to Flip Scale for each piece"
 ]
 
 @ModelBreakCommand base(base_break_force)
-= break_twist_pieces : "Applies an angular 'twist' to break pieces, causing them to roll around the radial axis outward from the influence point (default is the origin of the model)"
+= break_twist_pieces : "Applies an angular 'twist' to breakpieces, causing them to roll around the radial axis outward from the influence point (default is the origin of the model)"
 [
 	burst_scale(float) [ min="-500", max="500" ]	: "Twist Scale"					: 0		: "Angular velocity added to each piece"
 	burst_randomize(float) [ min="0", max="500" ]	: "Twist Randomize"				: 0		: "Largest possible value that will be randomly added/removed to Twist Scale for each piece"
 ]
 
-@ModelBreakCommand = break_change_material_group
+@ModelBreakCommand
+= break_change_material_group : "Overrides the materialgroup on spawned breakpieces. (By default the active material group of the parent model is propagated to the breakpieces.)"
 [
-	material_group_name(materialgroup) : "Material Group" : ""
-	limit_to_piece(model_breakpiece) : "Limit to piece" : ""
-	limit_to_material_group(materialgroup) : "Limit to instances using material group" : ""
+	material_group_name(materialgroup) : "Material Group" : "Material group name to switch to"
+	limit_to_piece(model_breakpiece) : "Limit to piece" : "If set, only apply this command to a particular piece"
+	limit_to_material_group(materialgroup) : "Limit to instances using material group" : "If set, only apply this command if the parent model had a particular materialgroup active"
 ]
 
-@ModelBreakCommand = break_create_particle
+@ModelBreakCommand
+= break_create_particle : "Spawn a particle system when this model breaks"
 [
 	name(resource:particle)			: "Particle"
-	cp0_model(resource:model)		: "CP 0 Model"
-	cp0_snapshot(resource:snapshot)	: "CP 0 Snapshot"
-	skin_cp(int)					: "CP To Set To Skin" : 1
-	damage_position_cp(int)			: "CP To Set To Damage Position" : 2
-	damage_direction_cp(int)		: "CP To Set To Damage Direction" : 3
+	cp0_model(resource:model)		: "CP 0 Model" 						: "" 	: "(Optional) Set the particle control point #0 to the specified model"
+	cp0_snapshot(resource:snapshot)	: "CP 0 Snapshot" 					: "" 	: "(Optional) Set the particle control point #0 to the specified snapshot"
+	skin_cp(int)					: "CP To Set To Skin" 				: 1 	: "(Optional) Set this control point to the parent model's active materialgroup name"
+	damage_position_cp(int)			: "CP To Set To Damage Position" 	: 2 	: "(Optional) Set this control point the position of the break damage"
+	damage_direction_cp(int)		: "CP To Set To Damage Direction"	: 3 	: "(Optional) Set this control point the direction of the break damage"
 ]
 
-@ModelBreakCommand = break_damage_nested_break_pieces
+@ModelBreakCommand
+= break_damage_nested_break_pieces : "After breaking, further damage the spawned pieces (creates more dynamic breaks for multi-tier breakables)"
 [
 ]
 
-@ModelBreakCommand = break_fade_emissive
+@ModelBreakCommand
+= break_fade_emissive : "Triggers an emissive fadeout on the breakpiece(s) (NOTE: Only works on ragdoll breakpieces.)"
 [
-	limit_to_piece(model_breakpiece) : "Limit to piece" : ""
+	limit_to_piece(model_breakpiece) : "Limit to piece" : "If set, only apply this command to a particular piece"
 ]
 
-@ModelBreakCommand = break_disable_impact_damage
+@ModelBreakCommand
+= break_disable_impact_damage : "Disables impact (physics) damage on spawned breakpiece(s)"
 [
-	limit_to_piece(model_breakpiece) : "Limit to piece" : ""
+	limit_to_piece(model_breakpiece) : "Limit to piece" : "If set, only apply this command to a particular piece"
 ]
 
 @ModelBreakCommand
@@ -85,7 +90,7 @@
 		min_angle = "min_angle"
 		max_angle = "max_angle"
 	}
-= break_create_joint_revolute
+= break_create_joint_revolute : "Creates a revolute (hinge) joint between two spawned breakpieces"
 [
 	parent_piece(model_breakpiece)	: "Parent Piece" : ""
 	child_piece(model_breakpiece)	: "Child Piece" : ""

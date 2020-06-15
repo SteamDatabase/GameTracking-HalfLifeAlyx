@@ -307,7 +307,8 @@
  CServerSideClientBase::SendSignonData
  Class Hierarchy Descriptor'
  Complete Object Locator'
- D;5}
+ D;55
+ D;=I
  Driver %s (vendorid %x, deviceid %x DXSupport Level %d)
  File log saved to %s
  H3E H3E
@@ -540,7 +541,6 @@
 ##GameUI_Disconnect_ReliableOverflow
 ##GameUI_Disconnect_SnapshotOverflow
 #3CScs
-#@H;I
 #AppFramework_InvalidLocalFiles
 #AppFramework_OutOfMemory
 #Bidirectional_Messages_LowFrequency
@@ -948,7 +948,6 @@ $tI(knN
 &Apply
 &D;j0u
 &Exit
-&L9d$@t
 &L9eht	H
 &NETWORK_DISCONNECT_BAD_SERVER_PASSWORD
 &NETWORK_DISCONNECT_MESSAGE_PARSE_ERROR
@@ -994,8 +993,6 @@ $tI(knN
 (*%s*), 
 (*MARK) must have an argument
 (*VERB) not recognized
-(-Bc	
-(-Xc	
 (8HXhx
 (9{ |
 (;^ |
@@ -2771,6 +2768,7 @@ $tI(knN
 .ENetworkDisconnectionReason"
 .ESplitScreenMessageType
 .Hc_P;_`u
+.L9l$@t
 .NETWORK_DISCONNECT_REQUEST_HOSTSTATE_HLTVRELAY
 .PLACEHOLDER_VALUE
 .PrefetchType"5
@@ -2822,10 +2820,11 @@ $tI(knN
 .xdata
 .xdata$x
 /2GG>!B
+/5T9	
+/5ZE	
 /=$!6
-/=NF	
-/=jU	
-/=lU	
+/=*T	
+/=,T	
 />58d%
 /?O_o
 /@Hv	
@@ -2964,6 +2963,7 @@ $tI(knN
 1I9p 
 1eaB@
 1sAL"
+1wAe_
 1wsHp
 2 - bottom-left
 2 - resize down
@@ -2977,7 +2977,7 @@ $tI(knN
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 2,.CSVCMsg_PacketEntities.command_queue_info_t
 200000
-200527202249Z0#
+200614221353Z0#
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 211007120000Z0M1
 211110000000Z0b1
@@ -3102,7 +3102,8 @@ $tI(knN
 9:u)H
 9:u.H
 9;~1f
-9=1|C
+9=/{C
+9=w|C
 9>powf
 9A9G0u!D;
 9AHvmD8a<
@@ -3233,6 +3234,7 @@ $tI(knN
 ;)u:A
 ;1}*H
 ;1}kH
+;5XoC
 ;7}JH
 ;8u-3
 ;:u"H
@@ -3360,6 +3362,7 @@ $tI(knN
 <no inputsystem>
 <none>
 <null>
+<q=`o
 <qu(H
 <slot:userid:"name">
 <unbound>
@@ -3542,19 +3545,17 @@ $tI(knN
 @09D$0
 @8(tNH
 @8(uX@8kTt/H
-@8-M< 
 @80t>
 @80u#H
 @81t)@8q
 @81u/H
 @84:u
+@85+0"
 @85+w
-@850^
-@852h)
-@85S4
-@85jx
-@85o/"
-@8=tG"
+@85Ju
+@85T3
+@85o\
+@85rg)
 @8iht
 @8kKt
 @8kLt\H
@@ -4412,9 +4413,12 @@ C 9~ ~7H
 C @8-
 C @8-w
 C @85
-C @85=/"
-C @85Y
-C @85s
+C @85$
+C @853
+C @8553
+C @85]0"
+C @85x
+C @85|u
 C H+C
 C L9s0u
 C$u	H
@@ -5947,22 +5951,28 @@ D24X8
 D24X8_SHADOW
 D8 t{H
 D8$8u
+D8%r~B
+D8%w~B
 D8&t!
 D8&t4H
 D8't)
 D8*u A
 D8,3u
 D8,8u
+D8-~mD
 D82u&H
 D83t	E3
 D83t	H
 D840u
 D849u
 D84;u
-D85G")
-D85l')
+D85)u"
+D853#)
+D85Qx"
 D88Ht!
 D88Hte
+D8=7.)
+D8=Ph)
 D8?tRf
 D8?tnH
 D8C0I
@@ -6153,6 +6163,7 @@ DEM_StringTables
 DEM_SyncTick
 DEM_UserCmd
 DEV_BUILD
+DEs=3z
 DGKbH
 DIALOG_ASKCONNECT
 DIALOG_ENTRY
@@ -6357,6 +6368,7 @@ E0Lcx
 E0ZZZ
 E0fA;
 E0t H
+E5qcI
 E8,$t
 E8X@t8A
 E8f u~I
@@ -6920,14 +6932,12 @@ G fE;
 G t/J
 G$;G,
 G$A+G 
-G%	mF
-G%	nF
-G%ImF
+G%)lF
+G%ilF
 G(?t	3
 G0Hc	H
 G49E`uwE3
-G5j'F
-G5zEF
+G5zeE
 G8Hc@
 G<HcG
 G@9E(t
@@ -6979,7 +6989,6 @@ G\$(H
 G\$8A
 G\$8D
 G\$8H
-G\$HH
 G\$XH
 G\$hH
 Game Engine
@@ -7230,17 +7239,12 @@ H92u&
 H92u'
 H92u,
 H93tEH
-H95$5?
-H95&AJ
 H97t<
 H98u	H
 H99u{
 H9;uAA
-H9=&s@
-H9=1e
-H9=3~C
-H9=Ws@
-H9=XC
+H9=J)
+H9=jQC
 H9A u
 H9A(s
 H9A0u
@@ -8134,7 +8138,7 @@ L93t)H
 L93u_
 L93uc
 L9;uv
-L9=KcL
+L9=+cL
 L9B s
 L9J s
 L9Spt
@@ -8261,11 +8265,11 @@ LayeredGameRoot
 LayeredOnMod
 LayoutFileChanged
 Lc	E3
+Lc-~2J
 Lc3D;s
 Lc7D;w
 Lc:G9
 Lc;D;{
-Lc=83C
 Lc=]BP
 LcA<E3
 LcB(L
@@ -10409,7 +10413,8 @@ T$xA+
 T$xE3
 T$xH;
 T$xHc
-T%X9	
+T%t/	
+T=QE	
 TACPH
 TADIH
 TATPL
@@ -11102,6 +11107,7 @@ VrWarpRightEye
 W(|9L
 W(|=L
 W0~2H
+W5nr7
 W8HcH
 W8iS(
 W=vmdlkeys0
@@ -11268,16 +11274,17 @@ X UWATAUAWH
 X UWAWH
 X VWAVH
 X!t5~
-X%]%	
-X%r.	
+X%2-	
+X%r+	
 X(D9y(
-X-\y	
-X-yw	
+X-9v	
+X-Se	
+X-z?	
+X-zI	
 X360_DST16
 X360_DST24
 X360_DST24F
-X5R`?
-X5w>0
+X5w=0
 XA\^H
 XA]A\
 XA]A\^[
@@ -11297,16 +11304,10 @@ XboxSystemInterface001
 X|$ A
 X|$8E
 Y$D;R
-Y%Y%	
-Y-HH	
-Y-^>	
-Y-}H	
+Y-=G	
 Y0HcR
 Y0LcQ\M
 Y0t>H
-Y5I[E
-Y5`9>
-Y=s9>
 Y>kX>M
 Y@fA;
 YD$@f
@@ -11459,12 +11460,12 @@ Zpm"U
 \$@9\$P|LH
 \$@9n<
 \$@;HX~EH
-\$@@8=eb
+\$@@8=%a
 \$@A+
 \$@D;
 \$@E3
 \$@H+
-\$@H954
+\$@H95$
 \$@H;
 \$@Hc
 \$@Hc^H
@@ -11513,9 +11514,9 @@ Zpm"U
 \$xfE+
 \$xu#H
 \$|Ic
+\%:?	
+\%:I	
 \%lld.vpk
-\%z@	
-\%zJ	
 \C not allowed in lookbehind assertion
 \P{Ll}
 \P{Lu}
@@ -12266,7 +12267,6 @@ d$pI;
 d$xM;
 d$xuiH
 d$x~NH
-d4Apu
 d?000000`?
 damage
 data error
@@ -12489,9 +12489,11 @@ extra interior spaces removed from keyword
 e}<[H
 f!C"3
 f9*u	H
-f9-`}<
+f9- |<
 f93t,
+f95YQ
 f9<Au
+f9D$8t@H
 f9D$`
 f9l$0trH
 f9s t
@@ -12550,7 +12552,6 @@ fF9$Cu
 fF9<`u
 fG9,wu
 fJBGo
-fM%^M
 faceMergeAngle
 fadein
 fadeout
@@ -13990,7 +13991,6 @@ quality software.  Thanks.  Julian Seward, 30 December 2001.
 quaternion
 queuing %s for async execution
 quick
-q}AB"
 r	D;@(}
 r	Vr.>T
 r	uOD;d$(uH
@@ -14345,6 +14345,7 @@ show/hide vgui panel by name.
 showScrollBar
 showconsole
 showmainmenu
+si RM
 signedPayload
 signon
 signon_state
@@ -14635,6 +14636,7 @@ t	HcH0H
 t	IcH I
 t	L9c
 t	L9g
+t #~G
 t 9u#
 t D8c
 t D;C
@@ -14884,6 +14886,7 @@ t,HcwP;w`u
 t,Icv8A;vHu
 t,fff
 t-<\u
+t-A<w
 t-H9Bxt
 t.8\$P
 t.@80t)
@@ -14944,7 +14947,7 @@ t8HcG,
 t8HcL$8H
 t9D80t4H
 t9D89t4H
-t9H9=
+t9H9=&
 t9HcC(A
 t9HcD$@H
 t9HcG0
@@ -15016,7 +15019,7 @@ tRD80tML
 tRLcx|3
 tSK;D
 tTHcA
-tUD8%\fA
+tUD8%
 tUD88t6H
 tUD;F
 tWIc@
@@ -15051,7 +15054,7 @@ tbH9\$Xt[L
 tbH9t$8t[L
 tbHcG
 tbxKA
-tcH9=a
+tcH9=Q
 tcfff
 tefff
 temp/%s.wav
@@ -15209,7 +15212,7 @@ type.googleapis.com/
 type.googleprod.com/
 t}E9&txL
 u	9w$
-u	@8=58$
+u	@8=
 u	HcB
 u!!D$(H
 u!9p }
@@ -15239,6 +15242,7 @@ u9B8D7
 u9fff
 u=Hc{p;
 u=L;k
+u?2eD*
 u@Hc}
 uBHc;;{
 uCHcwP3
@@ -15604,7 +15608,7 @@ xMHcQ
 xMSAA
 xPHcQ
 xQHcK
-xQwt"
+xQwt$
 xRHcQ
 xSH;H
 xTIcH
@@ -15662,6 +15666,7 @@ zstream not in use (internal error)
 {%s}cfg/%s
 {(H9n
 {,L;KPs
+{/(vE
 {09{ }iH
 {4+{0
 {8HcCP
@@ -15889,7 +15894,6 @@ zstream not in use (internal error)
 |,HcWt
 |4HcPtH
 |7fff
-|Bp*I
 |b=})>
 |l;K(tgA
 } Dispatched EventAppShutdown_t
