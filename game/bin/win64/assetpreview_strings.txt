@@ -634,20 +634,20 @@ $~aA;F
 ( %1, %2, %3, %4% )
 ( 8PX
 (#%d)
-(%<>%
+(%T:%
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
+(%q:%
 ('8PW
 (*%s*), 
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-B>%
+(-m:%
 (0?staticMetaObject@QColorDialog@@2UQMetaObject@@B
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (;s |
 (;~ |
-(="n+
 (?setColor@QPen@@QEAAXAEBVQColor@@@Z
 (?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
@@ -2598,9 +2598,11 @@ $~aA;F
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
 /4+sLLc'D;g
+/5S "
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /<9w-
 /=$!6
+/={n"
 />58d%
 /?O_o
 /?showText@QToolTip@@SAXAEBVQPoint@@AEBVQString@@PEAVQWidget@@@Z
@@ -2704,6 +2706,7 @@ $~aA;F
 0Hc1H
 0Hc2M
 0Hc3H
+0Hc5<?%
 0Hc7L
 0Hc9H
 0HcA M
@@ -3085,7 +3088,7 @@ $~aA;F
 2"?qt_metacall@QComboBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200614221109Z0#
+200616201508Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -3142,7 +3145,6 @@ $~aA;F
 2OnColorPicked(FatColor_t)
 2OnDownPressed()
 2OnValueChanged(QString)
-2PV>!
 2PickCancelled()
 2PlaybackSpeedChanged( float )
 2RequestAccept()
@@ -3227,7 +3229,6 @@ $~aA;F
 4@HcD)
 4HA;x
 4ND;{
-4RU0o
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
 4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
@@ -3275,7 +3276,6 @@ $~aA;F
 80?staticMetaObject@QDoubleSpinBox@@2UQMetaObject@@B
 80tWD
 83?timerEvent@QAbstractSlider@@MEAAXPEAVQTimerEvent@@@Z
-89w8t
 8;o |
 8?viewOptions@QAbstractItemView@@MEBA?AVQStyleOptionViewItem@@XZ
 8?viewOptions@QListView@@MEBA?AVQStyleOptionViewItem@@XZ
@@ -4694,8 +4694,10 @@ $~aA;F
 @80t9H
 @80u#H
 @81u/H
-@85@p'
-@85\.>
+@85f+>
+@85iP$
+@85su(
+@8=I99
 @8kut~L
 @8l$8t
 @8l$Pt-L
@@ -5522,6 +5524,7 @@ CCITT RLE/W
 CD$XD
 CD+B$f
 CD+B$fA
+CD8-4?"
 CDataModel:  %i elements left in memory!!!
 CDataModel: Invalid DMX encoding hint '%s' for file %s
 CDataModel: Unable to determine DMX encoding for file %s
@@ -6752,33 +6755,37 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
-D8%e;.
+D8%c6.
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-#t>
-D8-.x>
-D8-0u>
-D8-3n>
-D8-3v>
-D8-:{>
-D8-;~>
-D8-<}>
-D8-=w>
-D8->z>
-D8-@o>
-D8-By>
+D8- p>
+D8-)q>
+D8-9k>
+D8-9t>
+D8-;u>
+D8-=r>
+D8-=s>
+D8-@x>
+D8-A{>
+D8-Bz>
+D8-B}>
 D8-C|>
-D8-Ip>
-D8-Rq>
-D8-_r>
-D8-ps>
-D8-yt>
+D8-Dw>
+D8-Fl>
+D8-Fy>
+D8-Hv>
+D8-K~>
+D8-Vm>
+D8-Xn>
+D8-lo>
+D8-}p>
 D82u&H
 D88Ht!
 D88Hte
-D8=EM*
+D8=D,>
+D8=EJ*
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8D$Q
 D8D)(u
@@ -6795,7 +6802,6 @@ D8d$8t
 D8d$H
 D8d$Ht
 D8d$ht
-D8g6u
 D8gMt$H
 D8itt
 D8kDu
@@ -6826,7 +6832,7 @@ D9,2H
 D90u	9X
 D98Ht;H
 D98tT
-D9AP~!E
+D9AP~$E
 D9B,t
 D9G$s5
 D9IL}sL
@@ -6839,7 +6845,6 @@ D9c t
 D9d$ ~-I
 D9d$(u
 D9f@~0Hc
-D9g8u,H
 D9gpt
 D9gputD
 D9i ~NA
@@ -7000,7 +7005,6 @@ Distance
 Distance Between Control Points Scale
 Distance to Control Points Scale
 DivideSetBy(double)
-Dl>n8|
 Dm Memory usage: type				count	totalsize	wastage %%	outer		inner		datamodel	refs		tree		atts		data	(att count)
 Dm Unserialize: Attempted to read an attribute ("%s") of an inappropriate type!
 DmAttributeAddedListenerInfo_t CUtlMemoryPool
@@ -7765,10 +7769,10 @@ H+\$hIc<$H
 H+|$@H
 H0F08
 H0Hc\$p3
+H3=n) 
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
-H9-8J"
 H9.u?H
 H97t<
 H97u	D8
@@ -8595,7 +8599,7 @@ L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L1HthD
 L9	u4H
 L9*u&
-L9->L'
+L9-]O'
 L93u_
 L93uc
 L9Ahs
@@ -10208,8 +10212,7 @@ T$xD;s
 T$xH;
 T$xHc
 T$xLc
-T%ju*
-T%zv*
+T%*s*
 TADIt	
 TADIu
 TADIu.
@@ -10786,8 +10789,7 @@ X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5&q8
-X=cA*
+X=/`'
 XA;w@
 XA]A\^[
 XA^A\_[
@@ -10820,17 +10822,13 @@ X|$8E
 X|$XH
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%%@)
-Y%ko*
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
+Y-l])
 Y0t>H
-Y5&$"
-Y52u*
-Y=3-0
-Y=5r"
-Y=7(0
-Y=nv*
-Y=|2.
+Y57W	
+Y5As*
+Y=l2.
+Y=v|*
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -11029,13 +11027,13 @@ Zpm"U
 ])6M>&
 ],?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
 ].?setWidth@QPen@@QEAAXH@Z
-]5"7$
+]5e5$
 ]8fff
-]=	4$
 ]>)2X
 ]@fff
 ]HE9F
 ]HcD$ I
+]hG@9
 ]oHc8;x
 ^"?qt_metacall@QGridLayout@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ^,?setRootIndex@QTableView@@UEAAXAEBVQModelIndex@@@Z
@@ -12016,7 +12014,6 @@ future
 future already retrieved
 g ?paintEvent@QMenu@@MEAAXPEAVQPaintEvent@@@Z
 g#?qt_metacast@QTabWidget@@UEAAPEAXPEBD@Z
-g%O#|
 g_Mathlib_GammaToLinearByteTable
 g_Tier1_CRC32Table
 g_Tier1_CRC64Table
@@ -12232,7 +12229,6 @@ j>>A?1
 j?V()
 j?{$*
 jHc3H
-jL\Ux0
 jitteriterations
 jitterscale
 jitterscale_vector
@@ -12342,7 +12338,7 @@ l$0Lc
 l$0ff
 l$0v=fA
 l$0~8H
-l$0~K3
+l$0~T3
 l$4Hc
 l$8;{
 l$8@8
@@ -12936,7 +12932,6 @@ n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
 nAlpha
-nD8-3
 nFrame
 nIndex
 nIndex,newColorIn
@@ -13929,7 +13924,7 @@ t+Hc/;o
 t+IcA
 t+Lc@
 t+Lcs
-t,@8=J
+t,@8=z
 t-D8P
 t-Hc+;k
 t-Lc6D;v
