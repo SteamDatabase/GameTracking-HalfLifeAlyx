@@ -134,6 +134,8 @@
  Class Hierarchy Descriptor'
  Complete Object Locator'
  D8'tZL
+ D;5-
+ D;=M
  DOUBLE_CLICK
  Encountered errors:
  Failed to add face %i: %s
@@ -213,7 +215,6 @@
 !!!!!!!!!!!!!!!!!!!!!!!
 !,X< w
 !1AQaq
-!1z%y
 !>6'Y
 !LcK@
 !T$(H!T$ 
@@ -511,18 +512,15 @@ $~aA;F
 ( %1, %2 )
 ( %1, %2, %3, %4% )
 ( 8PX
-(%1k)
 (%d) %s
 (%d)pin: %s
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%|k)
+(%dj)
 ('8PW
 (*%s*), 
-(--k)
-(-Hk)
-(5{$ 
+(-}j)
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
 (?setColumnCount@QStandardItemModel@@QEAAXH@Z
@@ -2340,6 +2338,7 @@ $~aA;F
 .xJ>Hf
 .xdata
 .xdata$x
+/%SZ-
 // 						"BA_INT_AMBUSH"		someone please define this - I have no idea what it does
 // 						"BA_INT_COMBAT"		break out of this anim if combat occurs in my line of sight (bullet hits, grenades, etc), -OR- the max time is reached
 // 						"BA_INT_DANGER"		break out of this anim only if threatened
@@ -2356,8 +2355,9 @@ $~aA;F
 // 	"min_time"			"Minimum time to spend in this busy anim"
 // "act busy name"		This is the name that a mapmaker must specify in the hint node.
 /2GG>!B
-/5$_-
-/5GR/
+/54[-
+/5dY-
+/5|u%
 /7w$M
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /=$!6
@@ -2466,6 +2466,7 @@ $~aA;F
 0D;t. |
 0Hc1H
 0Hc3H
+0Hc5L|)
 0Hc7;w
 0Hc7L
 0Hc9H
@@ -2535,7 +2536,7 @@ $~aA;F
 1setFilterWildcard(QString)
 1tileSubWindows()
 2.?setVisible@QDialog@@UEAAX_N@Z
-200616201440Z0#
+200929173117Z0#
 211007120000Z0M1
 211110000000Z0b1
 241022000000Z0G1
@@ -3588,16 +3589,16 @@ $~aA;F
 @.tls
 @09D$0
 @8,2u
-@8-"KF
-@8-.HF
-@8-FEF
-@8-eJF
-@8-qGF
+@8-(MF
+@8-8JF
+@8-TGF
+@8-kLF
 @80t9H
 @80u#H
 @81u/H
+@854&L
 @8:t|H
-@8=1v=
+@8=1s=
 @8kut~L
 @8l$8t
 @8oh~?H
@@ -3637,7 +3638,6 @@ $~aA;F
 @8}ju0H
 @8}ku	H
 @8~h~'Hc
-@:='8U
 @;k@|
 @>%>b
 @@D;O@|
@@ -5735,46 +5735,48 @@ D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-!-
-D8-#?
-D8-%G
-D8-&@
-D8-(A
-D8-)C
-D8-*.
-D8-*B
-D8-,D
-D8-6E
-D8-7/
-D8-H0
-D8-Q1
-D8-RF
-D8-a+
-D8-a4
-D8-c5
-D8-e2
+D8-!.
+D8-!7
+D8-#8
+D8-%5
+D8-%6
+D8-(;
+D8-)>
+D8-*=
+D8-*@
+D8-+?
+D8-,:
+D8-./
+D8-.<
+D8-09
+D8-3A
+D8-<C
+D8-<F
+D8-=B
+D8->0
+D8->D
+D8-@1
+D8-@E
+D8-IG
+D8-IH
+D8-T2
+D8-VI
 D8-e3
-D8-h8
-D8-i;
-D8-j:
-D8-j=
-D8-k<
-D8-l7
-D8-n,
-D8-n9
-D8-p6
-D8-s>
-D8-|@
-D8-|C
-D8-}?
-D8-~-
-D8-~A
+D8-k4
+D8-n-
+D8-p7
+D8-x5
+D8-{.
+D8-{6
+D8-}8
+D8-}=
+D8-~;
 D80t.
 D82u&H
 D88Ht!
 D88Hte
 D8<;u
-D8==E
+D8=})+
 D8?tnH
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
 D8D$)t)f
@@ -5895,7 +5897,7 @@ D9|$
 D9|$x}
 D;09F0t5A
 D;8}aH
-D;=<I:
+D;=LF:
 D;B s
 D;C }
 D;C`s
@@ -6939,7 +6941,8 @@ H0F08
 H0Hc\$p3
 H3\$HH
 H9,8t
-H9-~F+
+H9-.E+
+H9-qP[
 H9.u?H
 H97t<
 H98tPA
@@ -6947,8 +6950,6 @@ H98tqA
 H98t|A
 H98u	H
 H99u{
-H9=>=,
-H9=FzS
 H9A u
 H9A(s
 H9A@u
@@ -7110,7 +7111,6 @@ Hc+;k
 Hc.;n
 Hc/;o
 Hc3;s
-Hc5/aS
 Hc7;w
 Hc7A+
 Hc;;{
@@ -8082,12 +8082,10 @@ L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L0hE3
 L1HthD
 L80Hc3+
-L9%8yC
 L9*u&
 L93u_
 L93uc
 L9<8u7
-L9=M1D
 L9Ahs
 L9B A
 L9B@A
@@ -8199,7 +8197,6 @@ Lc3Hc
 Lc3HcL8
 Lc3HcL88I
 Lc3HcL8HI
-Lc5K(W
 Lc6D;v
 Lc7D;w
 Lc:E3
@@ -10268,7 +10265,9 @@ Visit Developer Help URL
 VolumetricFog
 W!?pos@QWidget@@QEBA?AVQPoint@@XZ
 W!t/H
+W-n-=
 W8HcH
+W=1	-
 W=ikrig
 WARNING! You do not have the latest revision of this file. Checking out the file before getting the latest revision means you may have to resolve conflicts before you can submit your changes. <pre> %s </pre> You have revision: %d <br> Latest revision is: %d <br>
 WARNING: Failed to parse class '%s'.
@@ -10344,15 +10343,16 @@ X E9z
 X HcE
 X UWAVH
 X!t5~
-X%V$	
+X% &,
 X(D9y(
-X-n$	
-X-xi.
+X-.'	
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5:PD
+X5VL/
+X5b><
+X5gb,
 XA;6|
 XA;w@
 XA\^][
@@ -10408,17 +10408,10 @@ X|$8E
 X|$xA
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%>oA
-Y%I$.
+Y%f!,
 Y0t>H
-Y5FR/
-Y5IR/
-Y5Kf>
-Y5Lw.
-Y5Tv.
-Y5_|.
-Y=$J/
-Y=-g-
+Y5Y3"
+Y=ma-
 Y>kX>M
 YCbCrCoefficients
 YCbCrPositioning
@@ -10567,7 +10560,7 @@ Zpm"U
 \$@9\$8
 \$@9\$8~I
 \$@@2
-\$@@8=	I%
+\$@@8=
 \$@E3
 \$@H+
 \$@H;
@@ -10636,7 +10629,7 @@ Zpm"U
 \$xHc]
 \$xu+M
 \$xv.
-\%.)B
+\%4c.
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
 \/HcD$0
@@ -10663,7 +10656,7 @@ Zpm"U
 ],?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
 ]09]@|EH
 ]0;S s[I
-]55#%
+]5"(;
 ]8A;u8~
 ]8fff
 ]>)2X
@@ -11828,6 +11821,7 @@ groupColor
 h UAVAWH
 h VWAWH
 h#?qt_metacast@QTableView@@UEAAPEAXPEBD@Z
+h$j6.
 h*?setItemData@QStandardItemModel@@UEAA_NAEBVQModelIndex@@AEBV?$QMap@HVQVariant@@@@@Z
 h8?widgetAt@QApplication@@SAPEAVQWidget@@AEBVQPoint@@@Z
 h>1my
@@ -12117,7 +12111,7 @@ l$(Hc
 l$(HcL
 l$(L+
 l$(LcI
-l$)u	@:-(
+l$)u	@:-X
 l$,A9l$
 l$,Lc
 l$0;CP}8H
@@ -13162,6 +13156,7 @@ q(HcZ
 q/?sizeHintForRow@QTableView@@MEBAHH@Z
 q0?staticMetaObject@QMainWindow@@2UQMetaObject@@B
 q0@80u
+qB6,na
 qHH+q@H
 qS>g?h3
 qangle
@@ -13541,7 +13536,7 @@ t	H9s
 t	L9c
 t H9X8tN
 t!+S$L
-t!@:=
+t!@:=,
 t!D93t
 t!D:%
 t!HcC
@@ -13928,7 +13923,7 @@ t8HcD$ H
 t9A;Q
 t9D;C`s3H
 t9D;F
-t9H9=
+t9H9=V
 t9fff
 t:,!<
 t:D9s
@@ -14495,10 +14490,11 @@ u	9w$
 u	@8=
 u	@:-
 u	D:%
-u	D:%G
-u	D:%poG
-u	D:-&F?
-u	D:5}
+u	D:%`oG
+u	D:%g
+u	D:%}
+u	D:-&??
+u	D:5=
 u ?paintEvent@QTableView@@MEAAXPEAVQPaintEvent@@@Z
 u IcH
 u f;N
@@ -14843,7 +14839,7 @@ x UAVAWH
 x!HcI
 x!HcK
 x";C }
-x$H9-pQ[
+x$H9-@P[
 x&;+}"H
 x'D;'}"H
 x'L9=

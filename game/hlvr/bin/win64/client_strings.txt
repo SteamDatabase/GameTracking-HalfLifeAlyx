@@ -947,7 +947,7 @@
 "host_computationtime_std_deviation
 "k_EMsgGCToClientPollConvarResponse
 "origin"	"%.1f, %.1f, %.1f"
-"pA3Q06
+"pA3Q`V
 ################################################################################
 ##GameUI_Disconnect_BadRelayPassword
 ##GameUI_Disconnect_ReliableOverflow
@@ -1366,7 +1366,6 @@ $z(u&
 %d : %d : 'null'
 %d : %s
 %d Hand Attachments:
-%d \ %d
 %d elements
 %d ents in group %s%u/%s%s
 %d hooked %s
@@ -1800,7 +1799,7 @@ $z(u&
 (#GameUI_Disconnect_RemoteProblem_BadCert
 (#GameUI_Disconnect_RemoteProblem_Timeout
 (%0.2f): %s
-(%R]y
+(%Uhb
 (%d %d %d %d)
 (%d) Name: %s (%s)
 (%d/%d)%s %s
@@ -1814,17 +1813,12 @@ $z(u&
 (*MARK) must have an argument
 (*VERB) not recognized
 (,$t6E
-(-<Sy
-(-I]y
-(-scy
 (.CPlayer_GetCommunityPreferences_Request
 (.CPlayer_GetFriendsGameplayInfo_Response"K
 (.CPlayer_GetPerFriendPreferences_Request
 (.CPlayer_SetCommunityPreferences_Request
 (.CPlayer_SetPerFriendPreferences_Request
 (0x%08X)'??'
-(5#Zy
-(53Sy
 (8HXhx
 (9Q@u
 (;^,|
@@ -1835,7 +1829,7 @@ $z(u&
 (;{ |
 (;{H|
 (;~ |
-(=@!g
+(=)#j
 (?R or (?[+-]digits must be followed by )
 (?VideoPlayerInitAudio
 (@8*t
@@ -2532,6 +2526,7 @@ $z(u&
 *COAuthToken_ImplicitGrantNoPrompt_Response
 *CPublishedFile_RefreshVotingQueue_Response2
 *CWorkshop_PopulateItemDescriptions_Request
+*E9yXu
 *GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD
 *Gets the last-played times for the account
 *H+H0H
@@ -2549,6 +2544,7 @@ $z(u&
 *SH	,
 *StO9>T
 *`LDI
+*jJ$6o
 +(Optional) Filename for the published file.
 +(Optional) User's YouTube account username.
 +++ %-64.64s:  %s (was %s)
@@ -2558,7 +2554,6 @@ $z(u&
 +2: 	
 +999 %s
 +;K[k{
-+>{>s/
 +@;^7[/
 +A$Hc
 +A,+A
@@ -2620,7 +2615,7 @@ $z(u&
 +camyawright
 +duck
 +f)>0'
-+fD9-w
++fD9-
 +forward
 +grenade1
 +grenade2
@@ -2728,6 +2723,7 @@ $z(u&
 ,t0D9J0v*L
 ,y=35
 ,|%)v
+,}v,i
 - "%s" = "%.2f"
 - "%s" = "%i"
 - "%s" = "%llu"
@@ -2783,7 +2779,6 @@ $z(u&
 -NETWORK_DISCONNECT_REJECT_INVALIDSTEAMCERTLEN
 -RAPIDFIRE_BULLET_MANAGER_EVENT_CREATE_CLUSTER
 -Unsubscribes the user from the published file
--a>nw
 -all_languages
 -allents
 -alt1
@@ -2917,10 +2912,12 @@ $z(u&
 .00cfg
 .3333
 .3ugH
-.5-ew
-.57fF
-.5`>G
+.55ej
+.5Epz
+.5Ukw
+.5YSG
 .<2uL
+.="TG
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -3187,16 +3184,19 @@ $z(u&
 .?AV?$CEntitySpawner@VC_SceneEntity@@@@
 .?AV?$CEntitySpawner@VC_SphericalVignette@@@@
 .?AV?$CEntitySpawnerAsync@VCPointHLVRCommentaryHUD@@@@
+.?AV?$CEntitySpawnerAsync@VCPointHLVRCommentaryNodeUI@@@@
 .?AV?$CEntitySpawnerAsync@VCPointHLVRWristHUD@@@@
 .?AV?$CEntitySpawnerAsync@VC_BaseEntity@@@@
 .?AV?$CEntitySpawnerAsync@VC_DynamicPropClientside@@@@
 .?AV?$CEntitySpawnerAsyncBase@VCPointHLVRCommentaryHUD@@@@
+.?AV?$CEntitySpawnerAsyncBase@VCPointHLVRCommentaryNodeUI@@@@
 .?AV?$CEntitySpawnerAsyncBase@VCPointHLVRWristHUD@@@@
 .?AV?$CEntitySpawnerAsyncBase@VC_BaseEntity@@@@
 .?AV?$CEntitySpawnerAsyncBase@VC_DynamicPropClientside@@@@
 .?AV?$CEntitySpawnerBase@VCHLVRPhotoModePicture@@@@
 .?AV?$CEntitySpawnerBase@VCModelPanelModel@@@@
 .?AV?$CEntitySpawnerBase@VCPointHLVRCommentaryHUD@@@@
+.?AV?$CEntitySpawnerBase@VCPointHLVRCommentaryNodeUI@@@@
 .?AV?$CEntitySpawnerBase@VCPointHLVRWristHUD@@@@
 .?AV?$CEntitySpawnerBase@VCPointOffScreenIndicatorUi@@@@
 .?AV?$CEntitySpawnerBase@VCProp_HLVR_Weapon_Base_Clip@@@@
@@ -3473,6 +3473,7 @@ $z(u&
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@URenderWorkItem_t@CRenderMicroBenchmark@@V?$CMemberFuncJobItemProcessor@URenderWorkItem_t@CRenderMicroBenchmark@@V2@V2@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@V?$CParallelProcessor@UWorkItem_t@IWrappedInterpolatedVar@@V?$CFuncJobItemProcessor@UWorkItem_t@IWrappedInterpolatedVar@@@@$00@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor1@PEAV?$CParallelProcessorAbstract@VCRestoreLastSimulationValuesForInterpolationList_ParallelProcessingController@@@@P81@EAAXH@ZHV?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
+.?AV?$CMemberFunctor1@PEAVCPointHLVRCommentaryHUD@@P81@EAAXPEAVIGameEvent@@@ZPEAV2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCEntity2SaveRestore@@P81@EAAXPEBD0@ZV?$CUtlEnvelope@PEBD@@V2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor2@PEAVCEntity2SaveRestore@@P81@EBAXPEAVCCallQueue@@PEBD@ZPEAV2@V?$CUtlEnvelope@PEBD@@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
 .?AV?$CMemberFunctor6@PEAVCSOAContainer@@P81@EAAXHHHHHT__m128@@@ZHHHHHT2@V?$CRefCounted1@VCFunctor@@V?$CRefCountServiceBase@$00VCRefMT@@@@@@VCFuncMemPolicyNone@@@@
@@ -4848,6 +4849,7 @@ $z(u&
 .?AVCPointClientUIWorldMoviePanel@@
 .?AVCPointClientUIWorldTextPanelPreviewer@@
 .?AVCPointHLVRCommentaryHUD@@
+.?AVCPointHLVRCommentaryNodeUI@@
 .?AVCPointHLVRWristHUD@@
 .?AVCPointHLVRWristHUDInside@@
 .?AVCPointOffScreenIndicatorUi@@
@@ -5821,6 +5823,7 @@ $z(u&
 .?AVIPhysicsCollisionData@@
 .?AVIPhysicsWorldEventListener@@
 .?AVIPlayerTeleportListener@@
+.?AVIPointCommentaryNodeAutoList@@
 .?AVIPointHintUIHighlightModelAutoList@@
 .?AVIPointHintUiAutoList@@
 .?AVIPoseAccessor@@
@@ -6372,7 +6375,6 @@ $z(u&
 .{0u;
 .|70t#
 .|;4u
-/%x0|
 /*.sav
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 // All corners fully specified 
@@ -6382,14 +6384,12 @@ $z(u&
 // the top left corner of the image is placed 10px to the right of, 40px below the top left corner of the panel
 /2GG>!B
 /43sGLc'D;g
-/57a"
-/5jzA
-/5r`G
-/5vNG
+/5Qe"
+/5YuA
 /9s2H
 /=$!6
-/=mbs
-/=|}n
+/=B;A
+/=E+J
 />58d%
 /?O_o
 /@Ps'H
@@ -6443,6 +6443,7 @@ $z(u&
 /D$xs
 /D$|s
 /D9w@t)H
+/D:5-
 /E_w32
 /F(vHH
 /F,v	H
@@ -6594,8 +6595,6 @@ $z(u&
 0: Off, 1: Toggle Crouch, 2: Toggle Stand, 3: Short Press Toggles Crouch and Long Press Toggles Stand
 0: Oriented to the VR Hand, 1: Oriented to the HMD, 2: Combo of HMD, Hand and world orientation
 0: custom accelaration disabled
-0;=2s
-0;=Lb
 0;np|
 0;|$X|
 0;~(|
@@ -6678,7 +6677,6 @@ $z(u&
 0A__^H
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
 0CPlayer_UpdateSteamAnnouncementLastRead_Response*
-0D9=u
 0D;Bl
 0D;ul|
 0D;w4L
@@ -6689,7 +6687,6 @@ $z(u&
 0Hc9H
 0HcA H
 0HcA M
-0HcyPH
 0L9ept	H
 0L9}_t	H
 0L;l$x
@@ -6850,7 +6847,7 @@ $z(u&
 20.CUserMsg_ParticleManager.UpdateParticleFallback
 200 200 200 196
 200000
-200616212103Z0#
+201110184521Z0#
 2048.0f
 20971520
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -7001,7 +6998,6 @@ $z(u&
 700PP
 700WP
 7?t$7?
-7D8%&
 7HcD$P
 7I97u
 7If true, return key value tags in the returned details.
@@ -7144,7 +7140,7 @@ $z(u&
 9A$t+H
 9A$t4H
 9A$t7H
-9A$t8H9-
+9A$t8H9-n
 9A$t<H
 9A$t>H
 9A$tIH
@@ -7229,9 +7225,9 @@ $z(u&
 9K$tSH
 9L$8t
 9L$HH
-9M,t;H95j
+9M,t;H95z
 9M,t~H
-9M4t-H95-
+9M4t-H95=
 9M4t_
 9O$uu;
 9P ~(H
@@ -7255,6 +7251,7 @@ $z(u&
 9XXtk9]
 9XXtsH
 9XXum
+9XXu|H
 9XX~AH
 9XX~OH
 9Y ~9
@@ -7263,6 +7260,7 @@ $z(u&
 9Y0~pH
 9YD~/3
 9YP~YH
+9YXu`H
 9YX~8H
 9YX~Q
 9YX~V
@@ -7316,7 +7314,6 @@ $z(u&
 9hHt9H
 9hXt3
 9hXt[H
-9hXt`
 9hXt{E
 9i ~I
 9i0~<H
@@ -7453,6 +7450,7 @@ $z(u&
 ;:uLH
 ;;D$ ~0H
 ;;D$x~,H
+;=DdS
 ;A ~W
 ;A(rlH
 ;A(t 
@@ -7670,6 +7668,7 @@ $z(u&
 <`t'!U
 <a href="\1\3">\1\3</a>
 <classptr>
+<cr>I
 <custom>
 <deferred>
 <document version="1.5.0">
@@ -7713,6 +7712,7 @@ $z(u&
 <}\vH
 <}t(<-t
 <}u4H9
+=()  
 =.f?y
 == %d Entities Dumped
 == [%s] 
@@ -8101,13 +8101,7 @@ $z(u&
 @49C4t
 @6W!?
 @8(tNH
-@8-&	]
-@8-5s
-@8-Cq
-@8-E.
-@8-`{
-@8-hs
-@8-om
+@8-%A
 @8/N|
 @8/tjH
 @80t,
@@ -8115,11 +8109,14 @@ $z(u&
 @81u/H
 @83t)
 @84:u
-@858P
-@85<1
-@85GI
-@85O-]
-@85pb
+@85+2
+@85+B
+@8555
+@85??]
+@85e-
+@85f*Y
+@85lt
+@85{@]
 @87tGH
 @88t*M
 @88t+M
@@ -8128,14 +8125,11 @@ $z(u&
 @89pXu0H
 @89t8@
 @8:t#H
-@8=I%
-@8=JJh
-@8=SX
-@8=XY
-@8=c\
-@8=hu
-@8=m:
-@8=~I
+@8=!E
+@8=*Wh
+@8==P
+@8=Nn
+@8=d$6
 @8D9pXu0H
 @8i*tLH
 @8iht
@@ -8146,7 +8140,6 @@ $z(u&
 @8l$0t>H
 @8l$8t
 @8l$X
-@8o8u
 @8oDu
 @8oLH
 @8oLt
@@ -10466,6 +10459,7 @@ A^A\[]
 A^A\]
 A^A\^
 A^A\^[]
+A^A\^]
 A^A\^][
 A^A\_
 A^A\_[
@@ -11414,19 +11408,21 @@ C 9G uN
 C 9G }
 C 9~ ~7H
 C @8-
-C @8-.{
-C @8-=m
+C @8-O
+C @8-_
+C @8-w
 C @85
-C @853
+C @85#
+C @85$
 C @855
-C @85>b
-C @85W
-C @85a
-C @85|
-C @85~
+C @859
+C @85G*Y
+C @85Q
+C @85\
+C @85l
 C A9F }
 C D85
-C D85o
+C D85_
 C H+C
 C HcG
 C HcH
@@ -11436,7 +11432,7 @@ C uTH
 C$+CX;C,
 C$8G$u
 C$L9l$pt
-C$f!5P3g
+C$f!5
 C$u	H
 C&opy
 C(9C u&
@@ -12775,6 +12771,7 @@ CPointCommentaryNode
 CPointEntity
 CPointEntityFader
 CPointHLVRCommentaryHUD
+CPointHLVRCommentaryNodeUI
 CPointHLVRWristHUD
 CPointHLVRWristHUDInside
 CPointHMDAnchor
@@ -13293,7 +13290,6 @@ CUtlRBTree<struct CUtlMap<class panorama::CStyleSymbol,class panorama::CLabel *,
 CUtlRBTree<struct CUtlMap<enum ECameraType,class ICamera * (__cdecl*)(class ICameraManager const *),unsigned short,bool (__cdecl*)(enum ECameraType const &,enum ECameraType const &)>::Node_t,unsigned short,class CUtlMap<enum ECameraType,class ICamera * (__cdecl*)(class ICameraManager const *),unsigned short,bool (__cdecl*)(enum ECameraType const &,enum ECameraType const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<enum ECameraType,class ICamera * (__cdecl*)(class ICameraManager const *),unsigned short,bool (__cdecl*)(enum ECameraType const &,enum ECameraType const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<enum WeaponSound_t,class CUtlString,unsigned short,bool (__cdecl*)(enum WeaponSound_t const &,enum WeaponSound_t const &)>::Node_t,unsigned short,class CUtlMap<enum WeaponSound_t,class CUtlString,unsigned short,bool (__cdecl*)(enum WeaponSound_t const &,enum WeaponSound_t const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<enum WeaponSound_t,class CUtlString,unsigned short,bool (__cdecl*)(enum WeaponSound_t const &,enum WeaponSound_t const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<float,class CBaseWorldPanel *,int,class CDefLess<float> >::Node_t,int,class CUtlMap<float,class CBaseWorldPanel *,int,class CDefLess<float> >::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<float,class CBaseWorldPanel *,int,class CDefLess<float> >::Node_t,int>,int> >::NewNode
-CUtlRBTree<struct CUtlMap<int,class CHudRenderGroup *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short,class CUtlMap<int,class CHudRenderGroup *,unsigned short,bool (__cdecl*)(int const &,int const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<int,class CHudRenderGroup *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<int,class CUtlVector<struct CEntityDebugGameSystem::DebugScrollingMessage_t,class CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short,class CUtlMap<int,class CUtlVector<struct CEntityDebugGameSystem::DebugScrollingMessage_t,class CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<int,class CUtlVector<struct CEntityDebugGameSystem::DebugScrollingMessage_t,class CUtlMemory<struct CEntityDebugGameSystem::DebugScrollingMessage_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<int,class CUtlVector<struct CVScriptGameEventListener::GameEventFunc_t,class CUtlMemory<struct CVScriptGameEventListener::GameEventFunc_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short,class CUtlMap<int,class CUtlVector<struct CVScriptGameEventListener::GameEventFunc_t,class CUtlMemory<struct CVScriptGameEventListener::GameEventFunc_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<int,class CUtlVector<struct CVScriptGameEventListener::GameEventFunc_t,class CUtlMemory<struct CVScriptGameEventListener::GameEventFunc_t,int> > *,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
 CUtlRBTree<struct CUtlMap<int,class GCSDK::CSOIDNameInfo,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short,class CUtlMap<int,class GCSDK::CSOIDNameInfo,unsigned short,bool (__cdecl*)(int const &,int const &)>::CKeyLess,class CUtlMemory<struct UtlRBTreeNode_t<struct CUtlMap<int,class GCSDK::CSOIDNameInfo,unsigned short,bool (__cdecl*)(int const &,int const &)>::Node_t,unsigned short>,unsigned short> >::NewNode
@@ -14789,7 +14785,7 @@ D$pH;GHu
 D$pHK8
 D$pHc
 D$pIc
-D$pL9=M
+D$pL9=
 D$pL;
 D$pM;
 D$pMc
@@ -14857,7 +14853,6 @@ D8#t&fA
 D8#uGD8#
 D8$8u
 D8$>u
-D8%em
 D8&t!
 D8&t.H
 D8&t4H
@@ -14866,44 +14861,50 @@ D8(t[H
 D8)tFI
 D8*u A
 D8,2u
-D8-$7s
-D8-&Ns
-D8-58s
-D8-;9s
-D8->2s
-D8-@<s
-D8-H:s
-D8-K3s
-D8-K;s
-D8-M=s
-D8-MBs
-D8-N@s
-D8-O?s
-D8-PEs
-D8-QAs
-D8-QDs
-D8-S>s
-D8-T4s
-D8-VCs
-D8-YFs
-D8-ZMs
-D8-_Ks
-D8-bHs
-D8-cGs
-D8-d5s
-D8-dIs
-D8-f6W
-D8-fJs
-D8-lLs
-D8-m6s
-D8-qNs
-D8-~7s
+D8- \s
+D8-!Xs
+D8-![s
+D8-#Us
+D8-$Ks
+D8-&Zs
+D8-)]s
+D8-*ds
+D8-/bs
+D8-2_s
+D8-3^s
+D8-4Ls
+D8-4`s
+D8-6as
+D8-<cs
+D8-=Ms
+D8-Aes
+D8-NNs
+D8-T'
+D8-[Os
+D8-fSs
+D8-hPs
+D8-kIs
+D8-kQs
+D8-nds
+D8-rVs
+D8-sYs
+D8-tXs
+D8-t[s
+D8-uRs
+D8-uZs
+D8-vUs
+D8-v\s
+D8-xJs
+D8-zTs
+D8-{Ws
 D8.tnH
 D80t{H
 D82u&H
 D83t	H
 D84;u
-D85+P
+D85+7U
+D8537U
+D85;S
 D88tT3
 D89uWI
 D8<8u
@@ -15006,10 +15007,10 @@ D9!~lA
 D9&t\I
 D9+~?M
 D9,7t
+D9-</W
 D91~HH
 D93~"I
 D9:~FH
-D9=Sz
 D9@ }
 D9@p}
 D9A }
@@ -15099,6 +15100,7 @@ D9xXt'M
 D9xXt1H
 D9xXt3
 D9xXt^H
+D9xXt`
 D9xXu
 D9xXu!H
 D9xXu.H
@@ -15115,7 +15117,7 @@ D9|$ ~?M
 D9|$ ~LM
 D9|$@
 D9}dt
-D;%27W
+D;%fNW
 D;@XH
 D;@X|	H
 D;A |
@@ -15760,7 +15762,6 @@ E;~hL
 E<LcO
 E>nEA
 E@)R?
-E@85M9V
 E@A9D$h
 E@A9v
 E@D	<
@@ -16744,6 +16745,7 @@ G8Hc@
 G<+G4;
 G<8F<
 G<9C<t
+G@85q
 G@9C@t
 G@A9G0u
 G@HcO8H
@@ -17333,6 +17335,7 @@ H UATAWH
 H UAVAWH
 H UVAUAVH
 H UVH
+H UWAVH
 H WATAUAVH
 H WATAUAWH
 H!D$ E
@@ -17389,6 +17392,8 @@ H91u"
 H92u&
 H92u'
 H92u,
+H95,-|
+H95n1
 H97t<
 H98t;H
 H98t?
@@ -17398,6 +17403,7 @@ H99u{
 H9:u`H
 H9;uAA
 H9;v#H
+H9=yqv
 H9A u
 H9A(s
 H9A(u	H9A0
@@ -17530,12 +17536,13 @@ H9|$Pt
 H9|$pt
 H9|$xt
 H9} H
+H9}0t
+H9}Xt	H
 H9~(u
 H:Ly?
 H:Q	t
 H;0u7
-H;5*R
-H;5l3
+H;5:v
 H;9tEH
 H;@0u
 H;@Xu
@@ -18292,7 +18299,6 @@ HudChat.Message
 HudChatFilterPanel
 HudChatHistory
 HudCloseCaption
-HudCommentaryManifest
 HudCredits
 HudCrosshair
 HudDamageIndicator
@@ -18967,13 +18973,12 @@ L$ USVWATAUAVAWH
 L$ USWATAUAVAWH
 L$ USWAVAWH
 L$ UVATAUAVH
-L$ UVAUH
+L$ UVAVH
 L$ UVWATAUAVAWH
 L$ UVWATAUH
 L$ UVWAVH
 L$ UVWH
 L$ UWAVAWH
-L$ UWAVH
 L$ VATAUH
 L$ VAUAVH
 L$ VH
@@ -19245,15 +19250,12 @@ L1HthD
 L9	u)H
 L9!u	
 L9!uWH
-L9%u^
+L9%uw
 L9&u'H
 L9&us
 L9'uYK
 L9*u&
-L9-	b
-L9-)x
-L9-:l
-L9-D.
+L9-Iy
 L90t"
 L92t,H
 L93t)H
@@ -19650,6 +19652,7 @@ ListViewItem
 ListViewItemSelected
 ListViewPanel
 ListenToGameEvent
+Listened
 Listing %d secondary scene worlds:
 Lists all active physics objects
 Lists all entities
@@ -20318,6 +20321,7 @@ New Control menu - creates a new panel in the upper left corner.
 New map...
 New seq: %i - old seq: %i - reset: %s - m_flCycle %f - Model Name: %s - (time %.3f)
 NewControls
+NewNode
 New_Tai_Lue
 Newline in string literal
 NextBreakStage
@@ -20386,6 +20390,8 @@ NoWeaponSelect
 Noclip speeds less than this will be clamped to zero.
 NodeAuthor
 NodeCount
+NodeCountMax
+NodeTitle
 Non-entity Aggregate: %s
 Non-primitive types can't be packed.
 Non-repeated Any specified multiple times.
@@ -20440,6 +20446,7 @@ O0HcQ
 O0HcY
 O8+G$
 O8t	H
+O==dS
 O?0 ,	f
 OAuth Token, granted on success
 OAuthToken
@@ -20707,6 +20714,7 @@ P(fD!}
 P0HcC(H
 P2P ping to "%s". Timed out after %.2fms
 P2P_Messages
+P89G u!
 P8H=vmdl
 P8H=vpcft
 P;{@|
@@ -21984,6 +21992,7 @@ Saves all active animgraph recordings to disk
 Saving game to %s...
 ScalableImagePanel
 Scale down the main viewport (to reduce GPU impact on CPU profiling)
+Scale nodes up to this multiple at distance.
 Scale the viewport back up
 Scale time for physics
 ScaleChanged
@@ -23230,10 +23239,13 @@ T$xE3
 T$xH+
 T$xH;
 T$xHc
+T%OO%
 T7 ;T7$t
 T9Tu*H
 T9du*H
 T:V@]
+T=BfG
+T=yZk
 TChinese
 TD_OFFSET_NORMAL
 TD_OFFSET_PACKED
@@ -23606,6 +23618,7 @@ Trailing Data
 TransferBullet
 TransferCluster
 Transition_DataDriven
+TransitionedToThisLevel
 TransitioningLayer_t
 Translucent Decal VB Slots Used: %d out of %d
 Tree view
@@ -23845,6 +23858,7 @@ UVATAUAVH
 UVATAUAWH
 UVATAUH
 UVATAVAWH
+UVATAVH
 UVATAWH
 UVATH
 UVATI
@@ -24324,7 +24338,7 @@ VerticalScrollBar
 VerticalScrollForwarding
 VerticalScrollThumb
 VerticalSplitter
-VfD9%
+VfD9%8
 VguiScreen
 Vh{O@n
 VideoBIKMaterial%i
@@ -24364,7 +24378,6 @@ Visualizes +use logic for the given range. Green cross=trace success, Red cross=
 Visualizes +use logic. Green cross=trace success, Red cross=trace too far, Green box=radius success
 Visualizes all entity input/output activity.
 ViveController
-Vk.N A
 Voice
 Voice chat uses a vox-style always on
 Voice icons are this many inches over player eye positions
@@ -24379,19 +24392,15 @@ VoteData
 VrForward
 Vulkan
 W%8O&t
-W%n>A
+W%StN
 W(|9L
 W(|=L
 W,t6H
-W-<wN
-W-VMi
 W3|Uxa
-W5-Dp
-W5KzK
-W5TgG
 W8HcH
 W8KcD
-W=b%t
+W=@tG
+W=A	O
 W=vmdlkeys0
 W?,|C
 W@|:L
@@ -24619,11 +24628,12 @@ X0Hcx(H
 X360_DST16
 X360_DST24
 X360_DST24F
-X5J!A
-X5_Yj
-X5|_G
+X56qG
+X5MJi
+X5ciG
+X5gGf
 X=2v?
-X=^%O
+X=6-O
 XA;w@
 XA\^H
 XA]A\
@@ -24683,39 +24693,37 @@ X|$Hs
 X|$xA
 Y D9Y
 Y$D;R
-Y%4xe
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
-Y-*uR
-Y-zoR
+Y-jwR
 Y0HcR
 Y0t>H
-Y5 LA
-Y5#Y"
-Y5&=G
-Y5'&A
-Y5'YK
-Y5(u:
-Y5*Sw
-Y5-;e
-Y52HA
-Y55gG
-Y57MK
-Y5<Ke
-Y5Q's
-Y5QFl
-Y5Y+|
-Y5^MA
-Y5sSA
-Y5vqp
-Y5x|z
-Y5yfK
-Y5{ve
-Y5|LG
-Y5}=G
-Y="CG
-Y=+}B
-Y=/Ss
-Y=XaK
+Y5!QA
+Y5#NA
+Y5(PA
+Y5.O"
+Y50;e
+Y57fK
+Y58Z"
+Y5@BA
+Y5D-s
+Y5P&A
+Y5RYw
+Y5TIi
+Y5VRe
+Y5X.A
+Y5YKl
+Y5Z~p
+Y5]*f
+Y5ofK
+Y5uOA
+Y5y-s
+Y5z	U
+Y=;aK
+Y=ElK
+Y=OPG
+Y=WYs
+Y=e*f
+Y=k%t
 Y>kX>M
 Y@TD9
 YD$$A
@@ -24787,6 +24795,7 @@ Z~Xff
 [C:%u:%u]
 [CC Log %s]: d: %f, ls: %f, %s
 [CC]:  %d - Bad Entity Pointer - %s
+[CC]:  %s Exceeds max caption length of %d bytes
 [CC]:  %s: %s
 [CC]:  %s: No Caption Found
 [Calculates and returns what to display for UI that renders new steam announcement available
@@ -24952,7 +24961,7 @@ Z~Xff
 \$8uIH
 \$<A;
 \$@9u ~UH
-\$@@8=Q'C
+\$@@8=
 \$@A+
 \$@A9
 \$@A_A^_^]
@@ -24980,7 +24989,6 @@ Z~Xff
 \$HHcD$@H
 \$HLc
 \$Hff
-\$Hrp
 \$Ht	
 \$Hta
 \$HtlH
@@ -25035,6 +25043,7 @@ Z~Xff
 \$gm?
 \$hH9
 \$hu0H
+\$hu4I
 \$jfff
 \$lA;
 \$p<)
@@ -25056,7 +25065,7 @@ Z~Xff
 \$xE3
 \$xHc
 \$xff
-\%*~z
+\5$(s
 \C not allowed in lookbehind assertion
 \D$(H
 \D$8H
@@ -25124,16 +25133,11 @@ Z~Xff
 ] D8{Tt
 ] L9m8t	H
 ] is an invalid data character in JavaScript compatibility mode
-]%,&q
 ])6M>&
 ]-?Z8
-]5$Vw
-]57$A
-]5D:I
-]5D|r
-]5]Gp
-]5sMI
-]='_G
+]5ETp
+]5L\w
+]5ckG
 ]>)2X
 ]@Mcj(H
 ]HL9#t
@@ -25167,7 +25171,6 @@ _ Hc+
 _ Hc3
 _ t(H
 _ t4H
-_=c}n
 _BaseEntity
 _HHcG@3
 _HfA;
@@ -25240,6 +25243,7 @@ _client
 _dir.vpk
 _flt.vpk
 _gamestats.dat
+_lzN>
 _minmode
 _oD>Kg
 _octree.dat
@@ -25705,6 +25709,7 @@ bAllow
 bBlock
 bClampEyeAngles
 bClip3DSkyBoxNearToWorldFar
+bD8%/
 bDampenEyePosition
 bDh%)
 bEnableIK_Index
@@ -26052,7 +26057,6 @@ c:\buildslave\hlvr_rel_win64\build\src\game\client\c_gameinstructor.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_impact_effects.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_peer2peer.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_playerresource.cpp
-c:\buildslave\hlvr_rel_win64\build\src\game\client\c_point_commentary_node.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_rope.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_servervoice.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\c_smoke_trail.cpp
@@ -26100,6 +26104,7 @@ c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\c_hl_vr_video_config.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\hl_vr_client_menu_system.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\hlvr.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\hlvr_addon.cpp
+c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\point_hl_vr_commentary_hud.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hlvr\vr_damageindicator.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hud.cpp
 c:\buildslave\hlvr_rel_win64\build\src\game\client\hud_element_helper.cpp
@@ -26861,6 +26866,9 @@ commands_queued
 commentary
 commentary_finishnode
 commentary_modelviewer
+commentary_node_distscale
+commentary_node_use_viewfacing
+commentary_nodeui_origin
 commentary_showmodelviewer
 commentary_started
 commentary_stopped
@@ -27115,7 +27123,7 @@ d$PE3
 d$PE9~0~QE3
 d$PH;
 d$PHc
-d$PHc5q
+d$PHc5
 d$PfD
 d$PtR
 d$Pu	D;
@@ -27289,6 +27297,8 @@ destroy_particle
 destroy_particle_involving
 detach_from_owner
 details
+dev/panorama_world_panel_commentary_hud.vmat
+dev/panorama_world_panel_commentary_node.vmat
 dev/panorama_world_panel_default.vmat
 dev/panorama_world_panel_hint_ui.vmat
 dev/panorama_world_panel_lit_default.vmat
@@ -27798,21 +27808,18 @@ fD!|;
 fD9 u
 fD9$Au
 fD9$xu
-fD9%t
+fD9%|
 fD9(u
 fD9,Cu
 fD9,Ku
 fD9,Pu
-fD9-!
-fD9-0
-fD9-=
-fD9-g
-fD9-p
+fD9-F
+fD9-n
+fD9-v
 fD90t
 fD94Fu
 fD94pu
-fD95;
-fD95\
+fD95i
 fD96u
 fD98@
 fD98u
@@ -27926,6 +27933,7 @@ file://{resources}/layout/base_hud.xml
 file://{resources}/layout/base_world_panel.xml
 file://{resources}/layout/carousel_nav.xml
 file://{resources}/layout/commentary_hud.xml
+file://{resources}/layout/commentary_nodeui.xml
 file://{resources}/layout/contextmenu.xml
 file://{resources}/layout/credits_hlvr.xml
 file://{resources}/layout/debugger.xml
@@ -28813,6 +28821,7 @@ hlvr_move_edge_dist
 hlvr_move_ladder_bloat
 hlvr_move_ladder_continuous
 hlvr_move_ladder_continuous_skip_timer
+hlvr_move_ladder_must_reach_top
 hlvr_move_ladder_search_dist
 hlvr_move_ladder_search_dist2
 hlvr_move_mantle_dist
@@ -29036,6 +29045,7 @@ idle_hacking
 ids_only
 if camera moves this much from last anchor update anchor
 if camera orientation changes this much update orientation
+if95B
 if_split_screen_active
 if_split_screen_horizontal
 if_split_screen_left
@@ -29843,7 +29853,6 @@ l$xE3
 l$xI;
 l$xt5H
 l4d2_upsell
-l=!TH
 l=C8f9
 label
 label0
@@ -30543,7 +30552,6 @@ m_bClientSidePredicted
 m_bClientSideRagdoll
 m_bClientSpawnGroup
 m_bClipTested
-m_bCommentaryPlaying
 m_bCompleted
 m_bConformFingers
 m_bConformToCollisionBounds
@@ -30857,6 +30865,7 @@ m_bLightOn
 m_bLightOnlyTarget
 m_bLightWorld
 m_bLinkedToServerEnt
+m_bListenedTo
 m_bLit
 m_bLocalHMDPoseValid
 m_bLocalSpace
@@ -31108,6 +31117,7 @@ m_bTipTransformInitialized
 m_bTonerPuzzleInRange
 m_bTouchResponse
 m_bTrailBias
+m_bTransitioned
 m_bTriggerOnce
 m_bTriggerPressed
 m_bTurnOffRange
@@ -31951,6 +31961,7 @@ m_flStartScatterTime
 m_flStartScattering
 m_flStartT
 m_flStartTime
+m_flStartTimeInCommentary
 m_flStartTimeMax
 m_flStartValue
 m_flStartWeight
@@ -32132,6 +32143,7 @@ m_hCloseCaption
 m_hClosestNPC
 m_hColorCorrectionCtrl
 m_hCommentaryHUD
+m_hCommentaryNodeUI
 m_hConsole
 m_hConsoleBatteryHolder
 m_hConsoleFingers
@@ -32146,6 +32158,7 @@ m_hCtrl
 m_hCubemapTexture
 m_hCurrLayerSequence
 m_hCurrentFlashlightTexture
+m_hCurrentNode
 m_hDepthmapTexture
 m_hEffect
 m_hEffectEntity
@@ -32603,6 +32616,7 @@ m_iszSoundScriptName
 m_iszSpeakers
 m_iszSpriteName
 m_iszStackName
+m_iszTitle
 m_iszWarnSound
 m_iv_AnimOpHistory
 m_iv_AnimOverlay
@@ -32986,6 +33000,7 @@ m_nPlatWindowHeight
 m_nPlatWindowWidth
 m_nPlayerIndex
 m_nPlayersTouching
+m_nPlayingNode
 m_nPowerPropagationVisits
 m_nPreDataChangedModelIndex
 m_nPrecipType
@@ -33995,7 +34010,6 @@ materials/vgui/hud/icon_arrow_left.vmat
 materials/vgui/hud/icon_arrow_plain.vmat
 materials/vgui/hud/icon_arrow_right.vmat
 materials/vgui/hud/icon_arrow_up.vmat
-materials/vgui/hud/icon_commentary.vmat
 materials/vgui/hud/xbox_reticle.vmat
 materialsystem2
 materialtype
@@ -34492,7 +34506,6 @@ nD$0H
 nD$@E
 nD$HH
 nD$HL
-nD$PE
 nD$PH
 nD$PL
 nD$Tf
@@ -34503,6 +34516,7 @@ nD$pA
 nD$pL
 nD$x3
 nD$xD
+nD8-SMW
 nDamageTaken
 nID%d
 nL	(A
@@ -34593,7 +34607,7 @@ next_weapon_timer
 next_zipline
 nextfadetime
 nexttoken
-nfD9-
+nfD9-2
 ng_yP
 nickname
 nmonqnmomnmomomno
@@ -34707,6 +34721,7 @@ numperpage
 numsegments
 o"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""pqqqqqqqqqqqqqqqqrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr^^stuvwwxyz{|}~
 o*Ral
+o-)'g
 o0H9o
 o0HcG(H
 oD$ H
@@ -35532,6 +35547,7 @@ point_hint_ui_large_height
 point_hint_ui_large_width
 point_hint_ui_width
 point_hlvr_commentary_hud
+point_hlvr_commentary_nodeui
 point_hlvr_wristhud
 point_hlvr_wristhud_inside
 point_hmd_anchor
@@ -35592,6 +35608,7 @@ precomputeup
 preentitypacket:ack %d cmds
 preentitypacketrec:exec %d->%d [ack %d]
 preferences
+preferences_list
 preferred_carryangles
 preferred_catch_angles
 preferred_catch_origin
@@ -36170,9 +36187,8 @@ s2@8s
 s2r://
 s4+sP+
 s4@85
-s4@85pK
-s4@8=5i
-s4Hc-%~
+s4@8=et
+s4Hc-5
 s69F~
 s6HcFH
 s6HcFd
@@ -37190,7 +37206,7 @@ t	;F@~
 t	@8+
 t	@80
 t	@88
-t	@8=2=
+t	@8="`
 t	@8>t
 t	D8+t
 t	D8;t
@@ -37347,6 +37363,7 @@ t$0L9t$8t
 t$0L9t$Pt
 t$0M;
 t$0f9{*t
+t$0f;
 t$0fA
 t$0fD
 t$0fD;
@@ -37373,7 +37390,7 @@ t$8E3
 t$8E;
 t$8H+
 t$8H;
-t$8H;5c?
+t$8H;5sc
 t$8Hc
 t$8Hc3;s
 t$8Hc7;w
@@ -37651,7 +37668,7 @@ t.@8:t)
 t.@8>t)
 t.E9H
 t.H90t)H
-t.L9%`
+t.L9%
 t/@8}
 t/A8]
 t/D8+t*
@@ -37673,7 +37690,7 @@ t0D9u
 t0H9Bxt
 t0HcT
 t0HcT(
-t0f9=
+t0f9=@
 t1D9A
 t1H9uxt
 t1HcG 
@@ -37710,7 +37727,6 @@ t6<&u%
 t6<,uEH
 t6D8egt0H
 t6H95
-t6H95y
 t6H98t1H
 t6HcO8
 t6L90t1H
@@ -37727,7 +37743,7 @@ t7HcW0L
 t7L93t)H
 t7fff
 t8D8%
-t8Hc=[
+t8Hc=;
 t8HcA
 t8HcA 
 t8HcA H
@@ -37748,8 +37764,8 @@ t8HcV
 t8N9<
 t9D80t4H
 t9D9F
-t9H95"
-t9H9=
+t9H95
+t9H9=V
 t9HcC(A
 t9HcG$
 t9HcG$H
@@ -37758,7 +37774,7 @@ t9HcG0
 t9HcT(
 t9Ic@ 
 t9IcA
-t9L9%
+t9L9%l
 t:@8.t5H
 t:@8/t5H
 t:HcA
@@ -37790,7 +37806,7 @@ t:LcM
 t;@83t6f
 t;A9;
 t;H9=
-t;H9=[
+t;H9=/
 t;HcG0H
 t;Hc_
 t;Ic@,H
@@ -37895,7 +37911,8 @@ tOHc;;{
 tOfff
 tP@8|$!u4@8|$"t-
 tPD9A
-tPH95
+tPD9B
+tPH95-
 tQH9]
 tR@80tMH
 tR@80tML
@@ -37909,7 +37926,7 @@ tSD9A
 tSH;X
 tSK;D
 tSKcD0
-tT@8-
+tT@8-:"
 tT@8wD
 tTHcA
 tUD88t6H
@@ -37918,7 +37935,7 @@ tUH9t$Ht
 tUIcu
 tVHc3
 tVHc;;{
-tW@8=
+tW@8=x
 tWD9B
 tWHcD$xH
 tWIc@
@@ -37933,10 +37950,11 @@ tXLcQ
 tY@8p
 tYA9P
 tYD88tTH
+tYD9B
 tYD9I
 tYfff
 tZD9=
-tZD9=+
+tZD9=;C
 tZIcI(E3
 t[Lc3E
 t\@83tWH
@@ -37983,7 +38001,7 @@ targetid
 targetposition
 taunt
 tax_usd
-tbD9=a
+tbD9=q*
 tbD9R
 tbHcn(3
 tc9iHtyLcq(H
@@ -38086,7 +38104,7 @@ texturescale
 texturewidth
 textwindow_temp.html
 tfD8cTt@H
-tfD9=
+tfD9=)
 tfD9O
 tfHcB
 tfKcD
@@ -38253,6 +38271,7 @@ transition-property
 transition-timing-function
 transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );</pre>
 transition-timing-function: ease-in-out, linear;
+transitioned
 transitioning
 translate3d(
 translate3d( 
@@ -38351,7 +38370,6 @@ t~D9A
 u	9w$
 u	@8=
 u	D8%
-u	D8%l
 u	H91
 u	L9!
 u D9o
@@ -38372,7 +38390,7 @@ u%!D$@H
 u%H99u
 u%McA
 u&;_(u
-u&@:=
+u&@:=%
 u'L;v
 u(@8t$ u!@8
 u(@:=
@@ -38407,12 +38425,13 @@ u98D$`u;H
 u9A8vMu3H
 u9B8D7
 u9fff
+u:fD9
 u;A8D$
 u<Hc_
 u<fD;
-u=@85
+u=@85j8
 u=Hc{p;
-u=L95X
+u=L95x3
 u=L;k
 u=fD;
 u>Hcn03
@@ -38424,14 +38443,14 @@ uCD8n
 uDfD;
 uEH9:t@
 uEfD;
-uF@85"
+uF@85
 uFM9/tA
 uFfD;
 uG8G`
 uGHcA ;B u>
 uGfD;
 uGrants an implicit OAuth token (grant type 'token') for the specified client ID on behalf of a user without prompting
-uH8CXuCf95a
+uH8CXuCf95
 uIHc7;w
 uIHc;;{
 uJfff
@@ -38453,7 +38472,7 @@ uT<0uP
 uTH91tO
 uY<0uU
 uYD:g
-uYH95+
+uYH95;T
 uYLl>
 u[HcI
 u]8Ge
@@ -39659,7 +39678,6 @@ w(H;C
 w(Hc<
 w3fA;
 w4@85
-w4@85<
 w4Hc;;{
 w7fA;
 w8Lc7A;
@@ -39940,6 +39958,7 @@ yD;Y<
 y\PD>!
 yaw_end
 yaw_start
+ycK1_
 yellow
 yellowgreen
 yielding_jobs
@@ -40136,7 +40155,7 @@ zoom_sensitivity_ratio
 |$@	u
 |$@-D
 |$@-H
-|$@9-
+|$@9-E
 |$@9sH~6L
 |$@@"
 |$@A;
@@ -40197,7 +40216,7 @@ zoom_sensitivity_ratio
 |$PE3
 |$PH+
 |$PHc
-|$PHc=d
+|$PHc=
 |$PHcH
 |$PHcP
 |$PHcy@
@@ -40291,7 +40310,6 @@ zoom_sensitivity_ratio
 |(tFM
 |/D9l
 |=D;-
-|=D;-S
 |?5^:+
 |Ifff
 |`E+J<3
@@ -40407,7 +40425,7 @@ zoom_sensitivity_ratio
 ~7fff
 ~:;C0|5
 ~:LcM
-~@D85
+~@D85E0
 ~@D9v<u
 ~Afff
 ~BLcK0E3

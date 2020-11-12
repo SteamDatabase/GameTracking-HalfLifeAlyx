@@ -8248,3 +8248,50 @@
 	input OnHandEvent(void) : "Trigger the relay with an input that has the player as activator and HandID as value"
 ]
 
+//==================================================================================================
+// Commentary entities.
+
+@PointClass base( Targetname ) tags( Logic ) iconsprite("editor/commentary_auto.vmat") = commentary_auto : "Fires outputs when a map spawns in commentary mode."
+[
+	// Outputs
+	output OnCommentaryNewGame(void) : "Fired when the map was loaded in commentary mode."
+	output OnCommentaryMidGame(void) : "Fired when commentary mode was turned on mid-way through a map."
+	// output OnCommentaryMultiplayerSpawn(void) : "Fired when a player joins the map in multiplayer."
+]
+
+@PointClass base(Targetname, Parentname) model() = point_commentary_node :
+	"Defines the position and data of a commentary node."
+[
+	model(studio) : "Model" : "models/props/commentary_node.vmdl" : "Model to use."
+	commentaryfile(sound) [report] : "Commentary Audio" : "" : "Name of the sound event that contains the commentary audio for this node."
+	title(string) : "Title" : "" : "Title of this commentary node."
+	speakers(string) : "Speaker(s) Names" : "" : "Name(s) of the speaker(s) in the commentary audio for this node."
+	node_id(integer) : "Node ID" : 0 : "The unique number of this node in the current level. If left at 0, the first unused Node ID will be calculated at runtime."
+	precommands(string) : "Pre Commands" : "" : "A set of console commands, separated by semi-colon, that should be issued when this node starts playing."
+	postcommands(string) : "Post Commands" : "" : "A set of console commands, separated by semi-colon, that should be issued when this node stops playing (due to completion or interruption)."
+	viewtarget(target_destination) : "View Target Entity" : "" : "Optional name of an entity that the player's view will be forced to look at when listening to this node."
+	viewposition(target_destination) : "View Origin Entity" : "" : "Optional name of an entity that the player's view should move to when listening to this node."
+	teleport_origin(world_point) : "Teleport Target" : "" : "Teleport position associated with this node. If players use Mouse2 to jump to the next node, they'll be moved to that node's corresponding teleport position."
+	prevent_movement(choices) : "Prevent Movement?" : 0 : "If set, the player will be unable to move while this node is playing." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	start_disabled(choices) : "Start Disabled?" : 0 : "If set, this node will be disabled on startup, and will require the Enable input to be fired before it will be visible to the player." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	// Inputs
+	input StartCommentary(string) : "Forces a node to start playing."
+	input StartUnstoppableCommentary(string) : "Forces a node to start playing, and prevents the player from stopping the playback until it has completed."
+	input Enable(void) : "Enable this node, making it visible to the player."
+	input Disable(void) : "Disable this node, making it invisible to the player."
+	input SetNewOrigin(target_destination) : "Set a new origin for this commentary node. If it's not in use, it'll teleport to this location immediately. If it's currently being listened to, it'll return to this location when it finishes playing."
+	
+	output OnCommentaryStarted(void) : "Fired when this node starts playback."
+	output OnCommentaryStopped(void) : "Fired when this node stops playback."
+]
+
+//==================================================================================================
