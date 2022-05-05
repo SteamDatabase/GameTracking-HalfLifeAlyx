@@ -77,6 +77,7 @@
 		weightlist = "%s",
 		{ "%s", %g }
 	!?pixmap@QLabel@@QEBAPEBVQPixmap@@XZ
+	!s99
 	"%s",
 	"m_inputTextureArray" "element_array" 
 	"m_outputFormat" "string" "DXT5"
@@ -123,6 +124,7 @@
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ %41g
  &Color
  &Colors
  'L>[
@@ -151,7 +153,6 @@
  -of 
  -testmode
  0@P`p
- 9(X`
  9D$pu/L
  ;_h|
  ?palette@QWidget@@QEBAAEBVQPalette@@XZ
@@ -231,6 +232,7 @@
  Colors:
  Complete Object Locator'
  Count: 
+ D;5u
  D;e`
  DOUBLE_CLICK
  Goal - HDR comp: 
@@ -314,6 +316,7 @@
 !?primaryScreen@QDesktopWidget@@QEBAHXZ
 !LcK@
 !T$(H!T$ 
+!hn7!
 "	FileID: 
 " -ie 
 " -oe 
@@ -746,19 +749,98 @@
 #Workshop_Publish_Visibility_Hidden
 #Workshop_Publish_Visibility_Public
 #Workshop_Publish_WindowTitle
+#Workshop_Tag_AddonType
+#Workshop_Tag_AddonType_DevResources
+#Workshop_Tag_AddonType_Maps
+#Workshop_Tag_AddonType_Mods
+#Workshop_Tag_AddonType_Other
+#Workshop_Tag_Difficulty
+#Workshop_Tag_Difficulty_Beginner
+#Workshop_Tag_Difficulty_Hardcore
+#Workshop_Tag_Difficulty_NoCombat
+#Workshop_Tag_Enemies
+#Workshop_Tag_Enemies_Antlions
+#Workshop_Tag_Enemies_Combine
+#Workshop_Tag_Enemies_Friendlies
+#Workshop_Tag_Enemies_Headcrabs
+#Workshop_Tag_Enemies_Jeff
+#Workshop_Tag_Enemies_Other
+#Workshop_Tag_Enemies_Zombies
+#Workshop_Tag_Environment
+#Workshop_Tag_Environment_Combine
+#Workshop_Tag_Environment_Exotic
+#Workshop_Tag_Environment_Industrial
+#Workshop_Tag_Environment_Nature
+#Workshop_Tag_Environment_Other
+#Workshop_Tag_Environment_Rural
+#Workshop_Tag_Environment_Snow
+#Workshop_Tag_Environment_Underground
+#Workshop_Tag_Environment_Urban
+#Workshop_Tag_Environment_Water
+#Workshop_Tag_Environment_Xenfestation
+#Workshop_Tag_GameContent
+#Workshop_Tag_GameContent_AssetPacks
+#Workshop_Tag_GameContent_CustomMechanics
+#Workshop_Tag_GameContent_Misc
+#Workshop_Tag_GameContent_Models
+#Workshop_Tag_GameContent_NPCs
+#Workshop_Tag_GameContent_Particles
+#Workshop_Tag_GameContent_Prefabs
+#Workshop_Tag_GameContent_QualityOfLife
+#Workshop_Tag_GameContent_ScriptsAndAI
+#Workshop_Tag_GameContent_Sounds
+#Workshop_Tag_GameContent_Textures
+#Workshop_Tag_GameContent_Weapons
+#Workshop_Tag_GameplayGenre
+#Workshop_Tag_GameplayGenre_Action
+#Workshop_Tag_GameplayGenre_Adventure
+#Workshop_Tag_GameplayGenre_Arcade
+#Workshop_Tag_GameplayGenre_HLALike
+#Workshop_Tag_GameplayGenre_Other
+#Workshop_Tag_GameplayGenre_Platforming
+#Workshop_Tag_GameplayGenre_Puzzle
+#Workshop_Tag_GameplayGenre_RPG
+#Workshop_Tag_GameplayGenre_Sandbox
+#Workshop_Tag_GameplayGenre_Showcase
+#Workshop_Tag_GameplayGenre_Stealth
+#Workshop_Tag_Length
+#Workshop_Tag_Length_Campaign
+#Workshop_Tag_Length_Infinite
+#Workshop_Tag_Length_Long
+#Workshop_Tag_Length_Short
+#Workshop_Tag_Section
+#Workshop_Tag_Theme
 #Workshop_Tag_Theme_Abstract
 #Workshop_Tag_Theme_Architecture
 #Workshop_Tag_Theme_Art
 #Workshop_Tag_Theme_BigThings
 #Workshop_Tag_Theme_City
+#Workshop_Tag_Theme_Comedy
+#Workshop_Tag_Theme_Crime
+#Workshop_Tag_Theme_Defense
 #Workshop_Tag_Theme_Derelict
+#Workshop_Tag_Theme_Educational
+#Workshop_Tag_Theme_Fantasy
 #Workshop_Tag_Theme_Game
+#Workshop_Tag_Theme_Historical
+#Workshop_Tag_Theme_Horror
 #Workshop_Tag_Theme_Imaginary
+#Workshop_Tag_Theme_Musical
 #Workshop_Tag_Theme_Nature
+#Workshop_Tag_Theme_OpenWorld
+#Workshop_Tag_Theme_Other
+#Workshop_Tag_Theme_PopCulture
+#Workshop_Tag_Theme_Ports
 #Workshop_Tag_Theme_Real
+#Workshop_Tag_Theme_Recreations
+#Workshop_Tag_Theme_SciFi
+#Workshop_Tag_Theme_Seasonal
 #Workshop_Tag_Theme_SmallThings
 #Workshop_Tag_Theme_Space
 #Workshop_Tag_Theme_Tech
+#Workshop_Tag_Theme_Training
+#Workshop_Tag_Theme_Valve
+#Workshop_Tag_Theme_Vehicle
 #Workshop_Theme_Tags
 #Workshop_UploadProgress_CommittingChanges
 #Workshop_UploadProgress_PreparingConfig
@@ -1123,6 +1205,7 @@ $~aA;F
 '#?qt_metacast@QLabel@@UEAAPEAXPEBD@Z
 '%1' Template Error: Models must have unique values for model_name_suffix: '%1'
 '+?setModel@QTreeView@@UEAAXPEAVQAbstractItemModel@@@Z
+',=?k
 '-?setStatusTip@QWidget@@QEAAXAEBVQString@@@Z
 '... (x
 '7GWgw
@@ -1150,12 +1233,11 @@ $~aA;F
 ( %1, %2 )
 ( %1, %2, %3, %4% )
 ( 8PX
-(%(24
-(%(W4
+(%H?4
+(%Hd4
 (%d,%d
 (%d,%d,%d
 (%d,%d,%d,%d
-(%dM4
 ('8PW
 (*%s*), 
 (*.bmp)
@@ -1169,12 +1251,11 @@ $~aA;F
 (*.zip)
 (*?setHtml@QTextEdit@@QEAAXAEBVQString@@@Z
 (+?setModel@QTreeWidget@@EEAAXPEAVQAbstractItemModel@@@Z
-(-S3%
 (0?staticMetaObject@QColorDialog@@2UQMetaObject@@B
-(5(&@
-(5(?4
+(5HL4
 (8?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
 (8HXhx
+(9=?39
 (?setColor@QPalette@@QEAAXW4ColorRole@1@AEBVQColor@@@Z
 (?setColor@QPen@@QEAAXAEBVQColor@@@Z
 (?setColorAt@QGradient@@QEAAXNAEBVQColor@@@Z
@@ -1245,8 +1326,6 @@ $~aA;F
 (D$pD
 (D$pH
 (D$pL
-(DigiCert SHA2 Assured ID Code Signing CA
-(DigiCert SHA2 Assured ID Code Signing CA0
 (Edit w/ Spinbox)
 (Hc/;o
 (L$ D
@@ -1310,6 +1389,7 @@ $~aA;F
 (d$pD
 (d$pH
 (d$pL
+(f*^[0
 (l$ D
 (l$ H
 (l$0D
@@ -1324,7 +1404,6 @@ $~aA;F
 (m0Hc3
 (m0Lc3
 (null)
-(o:R	
 (t$ 2
 (t$ D
 (t$ H
@@ -1631,6 +1710,7 @@ $~aA;F
 **?setIcon@QAbstractButton@@QEAAXAEBVQIcon@@@Z
 *0?staticMetaObject@QComboBox@@2UQMetaObject@@B
 *8?visualRect@QTableView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
+*9Z9N
 *9sP~
 *:JZjz
 *?setHidden@QWidget@@QEAAX_N@Z
@@ -1713,8 +1793,10 @@ $~aA;F
 +Single-Bone Options
 +T$4E
 +T$hH
++Xt@(
 +f)>0'
 +h->|
++o'q)}
 +|$PH
 +|$XD
 , HDRmultiplier: 
@@ -1764,9 +1846,9 @@ $~aA;F
 ,I<%w
 ,Ic|$
 ,LcD$HH
+,W5y+
 ,t0D9J0v*L
 ,u*Ic>A;~
-,|%)v
 - Add Active Code: %s
 - Add the template to scripts/workshop_import_templates/templates.txt
 - Remove Active Code: %s
@@ -1825,7 +1907,6 @@ $~aA;F
 -uNI;
 -vsync
 -workshop_items
-.%4G0
 .*?setIcon@QMessageBox@@QEAAXW4Icon@1@@Z
 ..om?
 .00cfg
@@ -3203,7 +3284,6 @@ $~aA;F
 .ffffff
 .gfids$x
 .gfids$y
-.http://www.digicert.com/ssl-cps-repository.htm0
 .i?0@I
 .idata$2
 .idata$3
@@ -3257,7 +3337,6 @@ $~aA;F
 /4+sLLc'D;g
 /8?visualRegionForSelection@QTableView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 /<9w-
-/=$!6
 />58d%
 /?O_o
 /?showText@QToolTip@@SAXAEBVQPoint@@AEBVQString@@PEAVQWidget@@@Z
@@ -3291,8 +3370,6 @@ $~aA;F
 /content
 /content/
 /game/
-/http://crl3.digicert.com/sha2-assured-cs-g1.crl05
-/http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 /select,
 /w$r5
 0 0 -1
@@ -3311,7 +3388,6 @@ $~aA;F
 00003333
 0123456789ABCDEFundefined
 0123456789abcdefghijklmnopqrstuvwxyz
-061110000000Z
 08?visualRegionForSelection@QTreeView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
 0><[cZUg^>
 0?staticMetaObject@QAction@@2UQMetaObject@@B
@@ -3378,6 +3454,7 @@ $~aA;F
 0H9+t
 0Hc2M
 0Hc3H
+0Hc5,
 0Hc7L
 0Hc9H
 0Lc9L
@@ -3385,11 +3462,12 @@ $~aA;F
 0^][H
 0_^[H
 0iN>/
-0v0b1
+0w0c1
 0x%016llX
 0x%08x
 0x%llx
 0x%p = %s '%s'
+0}0i1
 1#IND
 1#INF
 1#QNAN
@@ -3403,10 +3481,8 @@ $~aA;F
 1/?sizeHint@QAbstractScrollArea@@UEBA?AVQSize@@XZ
 123 168 168
 123456789
-131022120000Z
-141022000000Z
+130801120000Z
 16-byte data pool
-181004000000Z
 1<.	/>:
 1?statusBar@QMainWindow@@QEBAPEAVQStatusBar@@XZ
 1?statusTip@QAction@@QEBA?AVQString@@XZ
@@ -3864,14 +3940,15 @@ $~aA;F
 2#?qt_metacast@QMessageBox@@UEAAPEAXPEBD@Z
 2.?setVisible@QDialog@@UEAAX_N@Z
 2/?sizeHint@QAbstractSpinBox@@UEBA?AVQSize@@XZ
-200715183931Z0#
-211007120000Z0M1
-211110000000Z0b1
-241022000000Z0G1
+210429000000Z
+211007000000Z
+220323000000Z
+220329000000Z
+220428171049Z0/
+241009235959Z0a1
 243 237 230
 251 74 84
 255 255 255
-281022120000Z0r1
 2?suffix@QDoubleSpinBox@@QEBA?AVQString@@XZ
 2?supportedDropActions@QListWidget@@MEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
 2?supportedDropActions@QSortFilterProxyModel@@UEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
@@ -3914,6 +3991,8 @@ $~aA;F
 2ComponentSetHSVValueChanged(QVector<double>)
 2ComponentSetRedChanged(QVector<double>)
 2CurrentFrameChanged( int )
+2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
+2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2EditingCancelled()
 2EditingFinished()
 2EditingStarted()
@@ -3974,9 +4053,10 @@ $~aA;F
 2editingTextFinished()
 2finished( int )
 2focusChanged( QWidget *, QWidget * )
-2http://crl3.digicert.com/DigiCertAssuredIDCA-1.crl08
-2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 2iValueChanged(int)
+2l(2t
 2makeMeYourColor()
 2mapped( const QString & )
 2mapped(const QString & )
@@ -4010,6 +4090,7 @@ $~aA;F
 2valueChanged( int )
 2valueChanged(double)
 2valueChanged(int)
+2xJK7*L
 2~VHc:;z
 3*?setIconPixmap@QMessageBox@@QEAAXAEBVQPixmap@@@Z
 3+5<t
@@ -4017,9 +4098,12 @@ $~aA;F
 3-?setStretchLastSection@QHeaderView@@QEAAX_N@Z
 3/?sizeHint@QBoxLayout@@UEBA?AVQSize@@XZ
 30?staticMetaObject@QDialog@@2UQMetaObject@@B
-311110000000Z0e1
+330314235959Z0L1
 333333
 33333333H+
+360428235959Z0i1
+370322235959Z0c1
+380115120000Z0b1
 38?warning@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
 3;D$@wpA
 3;D$DwuA
@@ -4031,6 +4115,7 @@ $~aA;F
 3?top@QItemSelectionRange@@QEBAHXZ
 3A8A#
 3L9t$Pt
+3mq+<
 4$IcD$
 4$Mct$
 4,?setReadOnly@QTextEdit@@QEAAX_N@Z
@@ -4040,25 +4125,25 @@ $~aA;F
 4@HcD)
 4HA;x
 4ND;{
-4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
-4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
-4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
-4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 5"?qt_metacall@QCompleter@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 5/?sizeHint@QCheckBox@@UEBA?AVQSize@@XZ
 5?tr@QTextEdit@@SA?AVQString@@PEBD0@Z
 5@8|$"t.9|
-5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
+5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5sfm_v8
+6*f(_
 63?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
 64 283 0
 68?warning@QMessageBox@@SAHPEAVQWidget@@AEBVQString@@1W4StandardButton@1@2@Z
+6I]Dc
+6OB,n_
 7%?reset@QAbstractItemView@@UEAAXXZ
 7)?setFamily@QFont@@QEAAXAEBVQString@@@Z
 7*?setIconSize@QAbstractButton@@QEAAXAEBVQSize@@@Z
 7/?sizeHint@QComboBox@@UEBA?AVQSize@@XZ
 700PP
 700WP
+70503
 78?wasCanceled@QProgressDialog@@QEBA_NXZ
 7?type@QStandardItem@@UEBAHXZ
 7?updateGeometries@QListView@@MEAAXXZ
@@ -4084,7 +4169,6 @@ $~aA;F
 7?verticalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
 7HcD$P
 7h>?8
-7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8'?setAlignment@QLabel@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
 8(?setContentsMargins@QLayout@@QEAAXHHHH@Z
 8-byte data pool
@@ -4125,7 +4209,6 @@ $~aA;F
 8A_A]_^][
 8A_A^
 8A_A^A\[
-8A_A^A\_][
 8A_A^A]A\^]
 8A_A^A]A\_^[]
 8A_A^A]A\_^][
@@ -4142,6 +4225,8 @@ $~aA;F
 8ClipBoard
 8Csinf
 8D$ u+I
+8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8GbthH
 8H9l$@t
 8H9}Xtp
@@ -4182,7 +4267,7 @@ $~aA;F
 91~YH
 92~tH
 93?timerEvent@QAbstractSpinBox@@MEAAXPEAVQTimerEvent@@@Z
-93~rf
+93~lH
 98~03
 99C }
 99~-H
@@ -4302,6 +4387,7 @@ $~aA;F
 :>t6k'
 :Hc{h;{xu
 :Lc.D;n
+:sp?'fx
 ;"?qt_metacall@QDialog@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 ;&?scaled@QImage@@QEBA?AV1@AEBVQSize@@W4AspectRatioMode@Qt@@W4TransformationMode@4@@Z
 ;'?setAlignment@QLayoutItem@@QEAAXV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
@@ -4395,6 +4481,7 @@ $~aA;F
 <,?setRed@QColor@@QEAAXH@Z
 <-?setStyle@QFont@@QEAAXW4Style@1@@Z
 </font>
+<0:08
 <0|C<9
 <2t	<3u	A
 <3?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
@@ -4429,18 +4516,20 @@ $~aA;F
 =*?setIconSize@QToolBar@@QEAAXAEBVQSize@@@Z
 =,?setRedF@QColor@@QEAAXN@Z
 =/7oH
-=333?333?333?333?
+=333?333?333?333?HqR
 ======
 ==> '%s'
 =Player
 =SPB8
 =SPB8t
 =imb;D
+=rIQU
 =w6Hc
 >	?grow@QVectorData@@SAHHHH_N@Z
 >%lld
 >/?sizeHint@QFormLayout@@UEBA?AVQSize@@XZ
 >D8gp
+>Mp$d
 >Node
 >fff?
 >ffffff
@@ -4459,7 +4548,6 @@ $~aA;F
 ?333333
 ?3?timerEvent@QMenu@@MEAAXPEAVQTimerEvent@@@Z
 ?49HoKC
-?5zlO
 ?7zQ6$
 ?7{KV
 ?8UUUUU
@@ -4863,6 +4951,7 @@ $~aA;F
 ?addStretch@QBoxLayout@@QEAAXH@Z
 ?addToolBar@QMainWindow@@QEAAPEAVQToolBar@@AEBVQString@@@Z
 ?addWidget@QBoxLayout@@QEAAXPEAVQWidget@@HV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
+?addWidget@QGridLayout@@QEAAXPEAVQWidget@@@Z
 ?addWidget@QGridLayout@@QEAAXPEAVQWidget@@HHHHV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
 ?addWidget@QGridLayout@@QEAAXPEAVQWidget@@HHV?$QFlags@W4AlignmentFlag@Qt@@@@@Z
 ?addWidget@QLayout@@QEAAXPEAVQWidget@@@Z
@@ -5764,8 +5853,8 @@ $~aA;F
 @81t)@8q
 @81u/H
 @81uA
-@85a09
 @88u!A9
+@8=mP$
 @8>u2H
 @8kut~L
 @8l$8t
@@ -5895,7 +5984,6 @@ $~aA;F
 @SUVWAVH
 @SUVWAWH
 @SUVWH
-@SUWATAVAWH
 @SUWAUAWH
 @SUWAVAWH
 @SUWAVH
@@ -6338,6 +6426,7 @@ Access violation - no RTTI data!
 AcquireSRWLockExclusive
 ActBusy Script File
 ActBusyList
+Action
 ActivateArithmaticMode()
 ActivateTypeInput()
 ActivateTypeInput(bool)
@@ -6374,8 +6463,10 @@ Adjust Animation
 Adjust Skeleton From Bone Flags
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 AdobeDeflate
+Adventure
 Ahd=<c]^7if1Rjg
 AimOffset
+AjEB#AZ
 AjfD;
 Align
 Align Animation
@@ -6449,12 +6540,14 @@ AnimationSystemUtils_001
 AnimationSystem_001
 Animations
 AntiAliasStrength
+Antlions
 Any files (*)
 Append
 Application built with libpng-
 Application transferred too few scanlines
 Application transferred too many scanlines
 April
+Arcade & Minigames
 Architecture
 Are you sure you want to cancel VPK creation
 Are you sure you want to change "workshop_revenue_share" target from %llu to %llu?
@@ -6469,6 +6562,7 @@ AsShotWhiteXY
 AssertMsg_ConditionFailed
 Asset &Browser
 Asset Pack
+Asset Packs
 AssetBrowse( actlist )
 AssetBrowse( attach )
 AssetBrowse( boneflags )
@@ -6626,13 +6720,13 @@ BaselineSharpness
 BayerGreenSplit
 Before the template is active, you must:
 Begin mouse capture [%i]: %s
+Beginner
 Bellevue1
 BenchmarkService001
 BentNormal
 BentNormalData
 BestQualityScale
 Bezier
-Bhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0
 Big Things
 Binary
 Binary (deterministic sequential ids)
@@ -6719,7 +6813,6 @@ C(I;A
 C(YYY
 C,9C$u
 C,;C(~6H
-C-yh/
 C09A(
 C09C u
 C0@u3H
@@ -6736,7 +6829,9 @@ C8<(u
 C8D9(
 C8H!o
 C940t%G
+C9NX'
 C9|)$u?C
+C:J%f
 C;D.Pu
 C<+C@f
 C@D+B 
@@ -7634,6 +7729,7 @@ CameraCalibration1
 CameraCalibration2
 CameraLookAtSelection
 CameraSerialNumber
+Campaign (2 hours or more)
 Can not read scanlines from a tiled image
 Can't set both read_data_fn and write_data_fn in the same structure
 Can't write binary data to a text buffer.
@@ -7740,6 +7836,9 @@ ColorSetRequested()
 ColorSetSizeChanged(int)
 ColoredVertexLayout
 Colormap
+Combine Soldiers
+Combine Structures
+Comedy
 Command Filter
 Command Name
 Command.%s.%s
@@ -7844,6 +7943,7 @@ CreateVertexListObject
 Created %s.
 Created new template:
 Creating VPK file
+Crime
 Crossbar Model
 CtrlAltV
 Cull Random
@@ -7855,6 +7955,7 @@ Cursor Pack
 Custom Color
 Custom Colors
 Custom Game
+Custom Mechanics
 Custom games not supported.
 CustomGameFolderChanged(int)
 Cx+G 
@@ -8219,18 +8320,39 @@ D24X8_SHADOW
 D3?timerEvent@QTableView@@MEAAXPEAVQTimerEvent@@@Z
 D8$8u
 D8$9u
-D8%Cf9
+D8%91
+D8%E|9
 D8&t!
 D8&t4H
 D8't(Ic
 D8*u A
-D8-\	K
+D8-!"K
+D8-" K
+D8-$%K
+D8-%!K
+D8-%$K
+D8-*#K
+D8--&K
+D8-.-K
+D8-3+K
+D8-6(K
+D8-7'K
+D8-8)K
+D8-:*K
+D8-@,K
+D8-A-
+D8-E.K
+D8-i.
+D8-r-K
+D8-w"K
+D8-x!K
+D8-x$K
+D8-y#K
+D8-z%K
 D82u&H
-D85<|J
-D85wxJ
 D88Ht!
 D88Hte
-D8=1^
+D8=al
 D8?tRf
 D8?tnH
 D8?wheelEvent@QAbstractScrollArea@@MEAAXPEAVQWheelEvent@@@Z
@@ -8281,7 +8403,6 @@ D8{&t
 D8|$Pt
 D8}ht
 D9 u&H
-D9#~5fff
 D9&t\I
 D9,2H
 D90u	9X
@@ -8322,7 +8443,6 @@ D9|$
 D;	}#N
 D;	}-N
 D;)}	L
-D;-r~(
 D;8}aH
 D;@ t	D
 D;@(t	D
@@ -8463,6 +8583,7 @@ DefaultCropSize
 DefaultPreviewCamera
 DefaultScale
 Default_Keys
+Defense & Arenas
 Define Arithmetic Table 0x%02x: 0x%02x
 Define Huffman Table 0x%02x
 Define Quantization Table %d  precision %d
@@ -8488,14 +8609,15 @@ Destination
 Destination Frame
 DestroyThreadPool
 DevMsg
+Developer Resources
 Did you forget to surround the vector with "s?
 Didn't expect more than one scan
-DigiCert Assured ID CA-1
-DigiCert Assured ID CA-10
-DigiCert Assured ID Root CA0
 DigiCert Inc1
-DigiCert Timestamp Responder0
-DigiCert1%0#
+DigiCert Timestamp 2022 - 20
+DigiCert Trusted Root G40
+DigiCert, Inc.1$0"
+DigiCert, Inc.1;09
+DigiCert, Inc.1A0?
 Direct Offset
 DirectoryEntries
 Disable
@@ -8727,7 +8849,6 @@ E(HcH
 E+BHI
 E+H(A
 E-?setStyleSheet@QWidget@@QEAAXAEBVQString@@@Z
-E0C07
 E0HcH
 E0Lcx
 E49F4t
@@ -8854,6 +8975,7 @@ EditingCancelled()
 EditingFinished()
 EditingStarted()
 EditorDynamicConfig
+Educational
 EffigyBaseOffset
 EffigyCameraOffset
 EffigyGroundOffset
@@ -8956,6 +9078,7 @@ Exit the VPK manager
 Exit the workshop manager
 ExitProcess
 ExitSlot()
+Exotic
 Expand All
 Expanding
 Expands all the nodes in the tree view
@@ -9093,6 +9216,7 @@ Failed to update portrait keys.
 Failed to update wearable keys.
 Failed to write file
 Fallback Envelope Radius
+Fantasy
 Favor higher density in mesh UV density calculation
 Fax3Decode1D
 Fax3Decode2D
@@ -9198,6 +9322,7 @@ FreeOffsets
 Freed EMS handle %u
 Freed XMS handle %u
 Friday
+Friendly Companions
 Frostivus 2017
 Frostivus 2017 Hero Items
 Fsfm_v3
@@ -9255,6 +9380,7 @@ G\$xE
 G\$xH
 G^r	A
 Game Interactions
+Game Modifications & Replacements
 GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameStartup
@@ -9402,21 +9528,20 @@ H+\$h+
 H+\$hIc<$H
 H+|$@H
 H,?setResizeMode@QHeaderView@@QEAAXHW4ResizeMode@1@@Z
-H0F08
 H0Hc\$p3
-H3=6t)
 H3?timerEvent@QTreeView@@MEAAXPEAVQTimerEvent@@@Z
 H3\$HH
 H9,8t
-H9-%2
-H9-~2
+H9->Y
+H9-X8
 H9.u?H
 H97t<
 H98t%H
 H98tPA
 H98u	H
 H99u{
-H9=9T
+H9=)b
+H9=FzY
 H9A u
 H9A(s
 H9A@u
@@ -9532,6 +9657,7 @@ HH:mm:ss
 HHc;;{
 HHcY0H
 HIGHDPI
+HL:A Campaign-like
 HL;l$Ht
 HSLA	
 HSLHDR
@@ -9562,6 +9688,7 @@ Hammer temp export
 HammerMapLoader001
 HangWatchdogInternal_BeginScope
 HangWatchdogInternal_EndScope
+Hardcore
 Hardware Sounds
 Has Door Options
 Hc+;k
@@ -9803,6 +9930,7 @@ Hc~<H
 Hc~@;~Pu
 Hc~DH
 Hc~LH
+Headcrabs
 Health
 HelpSystem_001
 Hero ID %d %s missing from %s!
@@ -9812,6 +9940,7 @@ HeroViewer
 Hidden
 HideInWorkshopTools
 Hint - MeshSimplify Max Tolerable Error
+Historical
 Hit Box Set List References
 Hitbox Sets
 Hitbox sets offset vector
@@ -9819,6 +9948,7 @@ Hitbox sets to offset
 Hitboxes
 Horizontal differencing "Predictor" not supported with %d-bit samples
 HorizontalStrafeCamera
+Horror
 HostComputer
 HostStateMgr001
 Ht)I;
@@ -9930,6 +10060,7 @@ Ignoring incorrect gAMA value @1 when sRGB is also present
 Ignoring invalid time value
 Ignoring nonzero compression type in iCCP chunk
 Ignoring request to write a PLTE chunk in grayscale PNG
+Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 Ik Rules
 IkLockLocal
 Il?333333c?
@@ -9978,7 +10109,9 @@ Incorrect tIME chunk length
 Incorrect tRNS chunk length
 Index      Address       References   String
 Indices
+Industrial
 Inertia Scale
+Infinite / Looped
 Infinite recursion in patch file?
 Influence Name
 Influences
@@ -10183,6 +10316,7 @@ ItemsGameFile
 J E+J
 J"?qt_metacall@QFrame@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 J)?setFilterKeyColumn@QSortFilterProxyModel@@QEAAXH@Z
+J>@G_
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
 JFIF extension marker: JPEG-compressed thumbnail image, length %u
 JFIF extension marker: RGB thumbnail image, length %u
@@ -10210,6 +10344,7 @@ K/?sizeHint@QLabel@@UEBA?AVQSize@@XZ
 K0u,H
 K4A+H 
 K8+C$
+KC'y~
 KERNEL32.dll
 KEYFRAMED
 KP9sP
@@ -10240,6 +10375,7 @@ Keywords
 Kochanek-Bartels
 Kochanek-Bartels Early
 Kochanek-Bartels Late
+K}*n:	
 K~Je#>!
 L!|$(L!
 L#?qt_metacast@QRadioButton@@UEAAPEAXPEBD@Z
@@ -10445,10 +10581,11 @@ L-?setSuffix@QDoubleSpinBox@@QEAAXAEBVQString@@@Z
 L/?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
 L0hE3
 L9	u4H
+L9%1G-
 L9*u&
 L93u_
 L93uc
-L951"
+L95l2
 L9?t_H
 L9Ahs
 L9`8tA
@@ -10459,7 +10596,6 @@ L9d$Xt
 L9d$`
 L9d$`t
 L9d$ht
-L9d$pt
 L9e(t	H
 L9e@t	H
 L9egt	H
@@ -10531,6 +10667,7 @@ L;|$@
 L;|$@}
 L;|$P
 L?UUUUUUU?
+L?n(Zy&
 LACpH
 LACpu
 LACsI
@@ -10658,6 +10795,7 @@ LeftFingers
 Length
 LensInfo
 Level: 
+Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 Lifespan Decay
 Lifespan from distance to world
 Lifetime Pre-Age Noise
@@ -10728,6 +10866,7 @@ LoggingSystem_PushLoggingState
 LoggingSystem_RegisterLoggingChannel
 LoggingSystem_RegisterLoggingListener
 LoggingSystem_SetLoggingResponsePolicy
+Long (an hour)
 LookAt
 Loop Restart
 Looping
@@ -10747,6 +10886,7 @@ M;L$Hu9I
 M;L$Hu:I
 MATCHFRAMEWORK_001
 MAX_ALLOC_CHUNK is wrong, please fix
+MB(iVR
 MClassHasCustomAlignedNewDelete
 MDefaultString
 MLc3D;s
@@ -10872,6 +11012,8 @@ MeshUtils001
 Meshes
 MessageBoxA
 MessageBoxW
+Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
 MinConcurrency
 MinEV
 MinSampleValue
@@ -10879,6 +11021,7 @@ MinSize
 MinSizeHint
 Minimum
 MinimumExpanding
+Miscellaneous Content
 Miscellaneous marker 0x%02x, length %u
 Missing Huffman code table entry
 Missing IHDR before IDAT
@@ -10955,6 +11098,7 @@ Multi-Bone Skinning
 MultiByteToWideChar
 Multiple selected
 MultiplySetBy(double)
+Musical
 MwB+L
 N	?hasColor@QMimeData@@QEBA_NXZ
 N ?paintEngine@QPixmap@@UEBAPEAVQPaintEngine@@XZ
@@ -11007,6 +11151,7 @@ NewValueAccepted(QString)
 Newline in string literal
 No Active Window
 No Buffer
+No Combat
 No Damage
 No Focus Widget
 No Hardware
@@ -11252,6 +11397,7 @@ OnWardTypeChange()
 One of the client procedures is NULL pointer.
 Only DXT1/DXT5 online texture compression supported.
 Open an existing VPK file
+Open-World
 OpenClipboard
 OpenSlot()
 Opened temporary file %s
@@ -11270,6 +11416,11 @@ OriginalRawFileName
 Oscillate Scalar
 Oscillate Vector
 Other
+Other Addon Type
+Other Enemies
+Other Environment
+Other Genre
+Other Theme
 Other payment type
 Out of Memory
 Out of memory allocating %d byte temp buffer.
@@ -11351,6 +11502,7 @@ PA_A^_^]
 PA_^]
 PA__]
 PA__^][
+PAq=?Mp#
 PCCiD
 PCCiu
 PD9AHM
@@ -11374,6 +11526,7 @@ POSIX
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 P_[]H
+Pa`3]J
 PackBits
 PackBitsDecode: Not enough data for scanline %ld
 PackBitsDecode: discarding %ld bytes to avoid buffer overrun
@@ -11396,6 +11549,7 @@ Particle Simulation
 Particle Snapshot List
 Particle SnapshotList
 ParticleSystemMgr003
+Particles
 ParticlesLib
 Partner Rule
 Partner Share
@@ -11419,6 +11573,7 @@ Photometric tag is missing, assuming data is YCbCr
 Photometric tag value assumed incorrect, assuming data is YCbCr instead of RGB
 PhotometricInterpretation
 Photoshop
+Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Physgun Interactions
 Physics Debug Draw
 Physics List
@@ -11473,17 +11628,20 @@ Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
 Plat_UUIDToString
+Platforming & Climb
 PlaybackSpeedChanged(float)
 Player Branding
 PlayerPickup
 Please enter a name for the VPK file.
 Please select at least 1 file to add to the VPK.
 PointLight
+Pop Culture
 Pop Out...
 PopUpAndActivate()
 PopUpClose()
 PopUpScrollerCleanUpAfterDestroy()
 PopUpScrollerOffsetUpdate(double)
+Ported Content
 PortraitAmbientColor
 PortraitAmbientDirection
 PortraitAmbientOrigin
@@ -11549,6 +11707,7 @@ PredictorEncodeTile
 PredictorSetup
 Prefab
 Prefab:
+Prefabs
 Preferred
 Prefix element cannot contain element or element_array attributes. ('%s')
 PreloadDirectoryEntries
@@ -11591,6 +11750,8 @@ PublishedFileBrowserContextMenu(QPoint)
 PublishedFileDoubleClickedSlot(QModelIndex)
 PublishedFileSelectionChangedSlot(QItemSelection,QItemSelection)
 Pushbar
+Puzzle
+Pz}b!
 Q,A3P
 Q2XXR
 Q5rHg,>
@@ -11600,6 +11761,7 @@ QAngle
 QC Scale
 QColor
 QFlags(
+QGroupBox#theBox {border:0;}
 QIcon
 QL$pA
 QLineEdit { background-color: rgba( 247, 236, 215, 100%) }
@@ -11623,6 +11785,7 @@ Qkkbal
 Ql;QD
 QtCore4.dll
 QtGui4.dll
+Quality Of Life
 Quality:
 Quantization table 0x%02x was not defined
 Quantizing to %d = %d*%d*%d colors
@@ -11716,6 +11879,7 @@ Reading loading screen: %s
 Ready
 ReadyStatusChanged()
 ReadyToSubmit(PreparedWorkshopSubmission_t*)
+Recreations & Remakes
 RecursiveLoadFromBuffer:  got EOF instead of keyname
 RecursiveLoadFromBuffer:  got NULL key
 RecursiveLoadFromBuffer:  got conditional between key and value
@@ -11830,12 +11994,14 @@ RtlPcToFileHeader
 RtlUnwindEx
 RtlVirtualUnwind
 Running '%s'
+Rural
 S ?paintEngine@QWidget@@UEBAPEAVQPaintEngine@@XZ
 S!?pos@QMouseEvent@@QEBAAEBVQPoint@@XZ
 S*?setInsertPolicy@QComboBox@@QEAAXW4InsertPolicy@1@@Z
 S,, <Zw
 S,?setRgb@QColor@@QEAAXHHHH@Z
 S,fA+
+S0Q0O
 S89S4
 S89SD|
 S;\$0tH
@@ -11847,6 +12013,7 @@ SAUAVAWH
 SAUAVH
 SAUAWH
 SAVAWH
+SA|X=G
 SDL2.dll
 SDL_CreateRGBSurface
 SDL_FreeSurface
@@ -11968,6 +12135,7 @@ SamplesPerPixel
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 1
 SamplesPerPixel tag is missing, assuming correct SamplesPerPixel value is 3
 Sampling factors too large for interleaved scan
+Sandbox
 SaturationValue
 Saturday
 Save As
@@ -11995,13 +12163,16 @@ Schema description file
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+Sci-fi
 ScrLk
 ScrToggle
 Scripts
+Scripts & AI
 Scroller
 Search Material
 Search for files within the VPK
 SearchSlot()
+Seasonal
 Seek error at scanline %lu
 Seek failed on temporary file
 Select All
@@ -12261,6 +12432,7 @@ Shape Type
 Shapes
 SharedToolCommands
 Shift
+Short (less than 20m)
 Should we straighten face island if the displacement is this much? (inches)
 Should we try to straighten an island of faces deviating from their average normal (tangent)?
 Should we try to straighten two faces connected to this edge? (tangent)
@@ -12279,6 +12451,7 @@ ShowFullHelpForBindableCommandUnderMouse
 ShowInExplorerSlot()
 ShowInputDebugger
 ShowPublishDialog()
+Showcase & Scenic
 SignalObjectAndWait
 Simple Cubic
 Single Item
@@ -12330,6 +12503,7 @@ SoundOpSystem001
 SoundOpSystemEdit001
 SoundService_001
 SoundSystem001
+Sounds
 Source 1 MDL
 Source Animation
 Source Frame
@@ -12365,6 +12539,7 @@ Static
 Static prop
 StaticTemplatePicked(int)
 StatsService_001
+Stealth
 Steam Workshop Manager
 SteamAPI_GetHSteamUser
 SteamAPI_Init
@@ -12518,7 +12693,6 @@ T$pD;
 T$pE3
 T$pE;
 T$pH;
-T$pHc
 T$pM+
 T$pfD
 T$xD;s
@@ -12526,7 +12700,6 @@ T$xE3
 T$xH;
 T$xHc
 T$xLc
-T%+U/
 T/?sizeHint@QProgressDialog@@UEBA?AVQSize@@XZ
 TADIH
 TADIt	
@@ -12603,6 +12776,7 @@ TextureTintByBaseMask
 TextureTranslucency
 TextureWidth
 TextureWrapModes
+Textures
 The item you are updating was just deleted from the items database:  %u
 This action cannot be undone!
 This app allows you to publish and manage submissions to the Steam Workshop.
@@ -12684,6 +12858,7 @@ Totals
 TraceEvent
 Trail Length Random
 Trailing Data
+Training
 TransferFunction
 Translation
 TreeSelectionChangedSlot(QItemSelection,QItemSelection)
@@ -12829,6 +13004,7 @@ Unable to set packing mode.
 Unable to set type unless you're creating untyped elements!
 Unable to write file to disc!
 Unabled to parse frame images.
+Underground
 Unexpected EOF in quoted string
 Unexpected end of file
 Unexpected marker 0x%02x
@@ -12912,6 +13088,7 @@ UpdateProcThreadAttribute
 UpdateSliderFromEdit()
 UpdateValidity()
 Upload a new version of an existing entry
+Urban
 Use Exact Geometry
 Use Expensive Tangents
 Use High Precision Texcoords
@@ -13068,6 +13245,7 @@ V_vsnprintf
 V_vsnprintfSize
 V_wcstod
 V_wcstoi64
+V_~]	,
 V`;Ct~bH
 Valid palette required for paletted images
 Value
@@ -13082,8 +13260,11 @@ ValueType_t
 ValueXChangedFF(double)
 ValueYChangedFF(double)
 Valve
+Valve Corp.0
+Valve Corp.1
 Valve Created
 Valve Floater
+Valve Games
 Valve Make Sheet File
 Valve Map File
 Valve Material File
@@ -13092,13 +13273,12 @@ Valve Pop-Up
 Valve Pop-Up w/ buttons
 Valve Share
 Valve Texture Configuration File
-Valve0
-Valve1
 VeaFOfb
 Vector
 Vector2D
 Vector4D
 VectorAligned
+Vehicle
 Velocity Inherit from Control Point
 Velocity Noise
 Velocity Random
@@ -13132,12 +13312,14 @@ Vp+S$H
 W ?paintEvent@QComboBox@@MEAAXPEAVQPaintEvent@@@Z
 W!?pos@QWidget@@QEBA?AVQPoint@@XZ
 W!t/H
+W%Ct/
+W%tV/
 W.?setWidget@QScrollArea@@QEAAXPEAVQWidget@@@Z
 W/?sizeHint@QScrollArea@@UEBA?AVQSize@@XZ
-W5+p1
-W5iy/
+W5Iy/
 W8HcH
-W=0{/
+W=jp6
+W=tp6
 W=vmdlkeys0
 WARNING: This item has unresolved errors - are you sure you want to create an item?
 WARNING: Trying to create a CRenderContextPtr without a valid context.
@@ -13168,7 +13350,10 @@ Warning:  %s = '%s' is infinite, clamping value.
 Warning: Loaded element '%s' not used by template
 Warning: thumbnail image size does not match data length %u
 Warning: unknown JFIF revision number %d.%02d
+Washington1
+Water
 Weapon Collision
+Weapons
 Wearable
 WearableType_
 Wednesday
@@ -13220,21 +13405,21 @@ Wrong JPEG library version: library is %d, caller expects %d
 Wrote palette index exceeding num_palette
 Wrote symbol stats to file: %s
 Wu4E3
+W}BbF
 X E9z
 X UVWH
 X WAVAWH
 X!t5~
-X%TQ:
-X%Vq1
+X%6q1
 X(?setCurrentIndex@QAbstractItemView@@QEAAXAEBVQModelIndex@@@Z
 X(D9y(
 X)?setFixedHeight@QWidget@@QEAAXH@Z
-X-nq1
+X-Nq1
 X0HcE
 X360_DST16
 X360_DST24
 X360_DST24F
-X5q|2
+X5Q|2
 XA\_^[
 XA]A\^[
 XA]_^[
@@ -13265,28 +13450,23 @@ XRxHc
 XYZ, Luv
 XZP%c %d
 X_^][
+Xenfestation
 X|$ A
 X|$8E
 X|$XH
 Y HcA
 Y#?qt_metacast@QSplitter@@UEAAPEAXPEBD@Z
 Y$D;R
-Y%&e:
-Y%0>3
 Y(?setCurrentIndex@QComboBox@@QEAAXH@Z
-Y-z&4
+Y-|T2
 Y0t>H
-Y5?E7
-Y5F 9
-Y5i&1
-Y5o{2
-Y5y'3
+Y5O{2
+Y5Y'3
+Y5o=3
 Y8HcA0H
-Y='v:
-Y=+q:
-Y=,E7
-Y=OU2
-Y=V'3
+Y9"SD
+Y=/U2
+Y=6'3
 Y>kX>M
 Y@Hc;;{
 YCbCrCoefficients
@@ -13330,6 +13510,7 @@ Z\>z8
 Zero length keyword
 Zero length tRNS chunk
 Zod(^?
+Zombies
 ZoomAllCamerasIn
 ZoomAllCamerasOut
 ZoomCameraIn
@@ -13360,6 +13541,7 @@ Zpm"U
 [Hc;;{
 [I:%u:%u]
 [Inactive]
+[K]taM?
 [L:%u:%u]
 [M:%u:%u:%u]
 [NoWidget]
@@ -13452,7 +13634,7 @@ Zpm"U
 \$@9\$8~I
 \$@9n<
 \$@;\$`
-\$@@8=y
+\$@@8=1%%
 \$@A+
 \$@E3
 \$@H+
@@ -13511,7 +13693,6 @@ Zpm"U
 \$xE3
 \$xu7M
 \$xv.
-\%$|/
 \%?resize@QWidget@@QEAAXAEBVQSize@@@Z
 \)?setFixedWidth@QWidget@@QEAAXH@Z
 \/?sizeHint@QSplitter@@UEBA?AVQSize@@XZ
@@ -13535,6 +13716,7 @@ Zpm"U
 ]@fff
 ]HE9F
 ]HcD$ I
+]J<0"0i3
 ]XHcl
 ]`Hc;;{
 ]`IcEXH
@@ -13598,6 +13780,7 @@ _diffusemask
 _empty
 _extra%d
 _flying
+_gUT^
 _hidden
 _hypot
 _light
@@ -13962,6 +14145,7 @@ bookmarksZ
 bool log
 bool_array
 boolean
+border:0;
 borrow
 bouncecolor
 bouncescale
@@ -14393,8 +14577,10 @@ dynamic_recipe
 e A_A^A]A\]
 e A_A^A]A\_^]
 e(A_A^A]A\_^[]
+e)?setFlat@QGroupBox@@QEAAX_N@Z
 e*?setItem@QTableWidget@@QEAAXHHPEAVQTableWidgetItem@@@Z
 e+000
+e,>~^
 e0A_A^A]A\]
 e0A_A^A]A\_^]
 e0A_A^]
@@ -14823,9 +15009,9 @@ hscript_lightbinding
 http://%1.steamcommunity.com/sharedfiles/filedetails/?id=%2
 http://%s.steamcommunity.com/sharedfiles/filedetails/?id=%llu
 http://ocsp.digicert.com0A
-http://ocsp.digicert.com0C
-http://ocsp.digicert.com0N
-https://www.digicert.com/CPS0
+http://ocsp.digicert.com0X
+http://ocsp.digicert.com0\
+http://www.digicert.com/CPS0
 hud_skin
 hullivr_edge_merge_tan
 hullivr_faceisland_merge_disp
@@ -14841,7 +15027,6 @@ iSetSizeIn
 iValueChanged(int)
 iValueIn
 iValueIn,userEdit
-iW!]4/
 identifier removed
 ikdata
 ikrig
@@ -14978,6 +15163,7 @@ jHc3H
 jitteriterations
 jitterscale
 jitterscale_vector
+jj@0HK4
 jointCount
 jointIndices
 jointIndicesIndices
@@ -15256,7 +15442,6 @@ lycan_ult
 m$?read@QImageReader@@QEAA?AVQImage@@XZ
 m,?setRowHeight@QTableView@@QEAAXHH@Z
 m/?sizeHintForColumn@QTableView@@MEBAHH@Z
-m0k0$
 m8L9c
 mPHc@H
 m_Activities
@@ -16301,13 +16486,13 @@ music_pack
 must be either LogLUV or LogL
 mwLcEgH
 n D9e
+n%(N.
 n/?sizeHintForColumn@QTreeView@@MEBAHH@Z
 n03>Pu
 n0?staticMetaObject@QLineEdit@@2UQMetaObject@@B
 nAlpha
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
-nD8-k
 nExitCode
 nFrame
 nIndex
@@ -16514,8 +16699,6 @@ p(?setCurrentWidget@QStackedLayout@@QEAAXPEAVQWidget@@@Z
 p)?setFocus@QWidget@@QEAAXW4FocusReason@Qt@@@Z
 p/?sizeHintForRow@QAbstractItemView@@UEBAHH@Z
 p0D9p
-p0n05
-p1f3q>
 p?ati_compress_wrapper.dll
 p@0123456789ABCDEF
 p@D9p
@@ -17466,7 +17649,7 @@ t+Hc/;o
 t+IcA
 t+Lc@
 t+Lcs
-t,@8=*
+t,@8=
 t-D8P
 t-L9m
 t-LcIP3
@@ -17504,7 +17687,7 @@ t5LcF
 t7HcF
 t8?width@QFontMetrics@@QEBAHAEBVQString@@H@Z
 t8H9^ t2H
-t9H9=v\5
+t9H9=
 t:D9s
 t:Hc;;{
 t:Ic~0I
@@ -17515,7 +17698,7 @@ t=+O$H
 t>D8g4u8D9g$t2D9g(t,H
 t?fff
 t@HcF
-tB@8=u
+tB@8=U
 tBHc/
 tCHcP
 tCfff
@@ -17823,8 +18006,9 @@ tzLcK<L
 tzfff
 t}D8(txH
 t}HcE
+t~D9+~-H
 u	9w$
-u	@8=
+u	@8=%
 u	L9uP
 u ?paintEvent@QTableView@@MEAAXPEAVQPaintEvent@@@Z
 u Hc^
@@ -17898,6 +18082,7 @@ uGA9l$
 uGfD;
 uHfA;
 uI9|$0u
+uIHc;;{
 uLE9n
 uMHcE
 uMfA9h uFfA9h0u?fA9h@u8fA9hPu1fA9h`u*fA9hpu#A
@@ -17991,8 +18176,8 @@ v%?resizeEvent@QPlainTextEdit@@MEAAXPEAVQResizeEvent@@@Z
 v'?setBackground@QPainter@@QEAAXAEBVQBrush@@@Z
 v,?setRowStretch@QGridLayout@@QEAAXHH@Z
 v.?setWindowModality@QWidget@@QEAAXW4WindowModality@Qt@@@Z
-v0t08
 v2!L.2
+v=Y]Bv
 vColorSetIn
 vColorSetOut
 vMulSetOut
@@ -18208,8 +18393,6 @@ wrinkleScales
 writeAtlas
 wrong protocol type
 www.digicert.com1!0
-www.digicert.com1$0"
-www.digicert.com110/
 x	HcG
 x	HcM
 x	HcQ
@@ -18231,14 +18414,13 @@ x!HcI
 x!HcK
 x";C }
 x#?qt_metacast@QToolButton@@UEAAPEAXPEBD@Z
-x$H9-0
+x$H9-
 x%fff
 x&E;B
 x);XP}$H
 x.;^x})L
 x.?setWindowOpacity@QWidget@@QEAAXN@Z
 x.HcAhL;
-x0v0$
 x7?updateEditorGeometries@QAbstractItemView@@MEAAXXZ
 x9H;H
 x9HcGhH;
@@ -18272,6 +18454,7 @@ xSH;H
 xZ;_x}UH
 xZH;A
 xZH;Q
+x]~\6
 x^j=|
 x_^[]
 x_^][
@@ -18303,7 +18486,6 @@ z%?resizeEvent@QSplitter@@MEAAXPEAVQResizeEvent@@@Z
 z+?setOpenExternalLinks@QLabel@@QEAAX_N@Z
 z/u-A
 z/u-E
-z0x0:
 z:KCAuthPhysBody
 zY;>u:m	
 zero length keyword
@@ -18338,6 +18520,7 @@ zstream not in use (internal error)
 {PD9sH|AH
 {Q@8{Pt
 {YIN?
+{un'%
 {w8&-
 {}[]()=&, 	
 {}[]=, 	
@@ -18533,11 +18716,11 @@ zstream not in use (internal error)
 |(tFM
 |2?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z
 |L9t$@t
+|Lu?c
 |_A;^
 |aA;^
 |auK;
 |b=})>
-|k&d"$
 } Hcu`H
 } Lcg0E
 } fE;A
@@ -18562,6 +18745,7 @@ zstream not in use (internal error)
 }IfA;
 }JfA;
 }LfA;
+}LuHO
 }OL;e
 }OfA;
 }QfA;
@@ -18625,4 +18809,5 @@ zstream not in use (internal error)
 ~jLcM
 ~nfff
 ~qHc|$8
+~t&LN
 ~tfff

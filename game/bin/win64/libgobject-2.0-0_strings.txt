@@ -901,11 +901,6 @@ g_cclosure_marshal_BOOLEAN__FLAGS
 g_cclosure_marshal_BOOLEAN__FLAGSv
 g_cclosure_marshal_STRING__OBJECT_POINTER
 g_cclosure_marshal_STRING__OBJECT_POINTERv
-g_cclosure_marshal_VOID(int0_t)
-g_cclosure_marshal_VOID(int0_t, void)
-g_cclosure_marshal_VOID(int13_t &&) volatile
-g_cclosure_marshal_VOID(unsigned int0_t)
-g_cclosure_marshal_VOID(unsigned int0_t, void)
 g_cclosure_marshal_VOID__BOOLEAN
 g_cclosure_marshal_VOID__BOOLEANv
 g_cclosure_marshal_VOID__BOXED
@@ -920,6 +915,8 @@ g_cclosure_marshal_VOID__FLAGS
 g_cclosure_marshal_VOID__FLAGSv
 g_cclosure_marshal_VOID__FLOAT
 g_cclosure_marshal_VOID__FLOATv
+g_cclosure_marshal_VOID__INT
+g_cclosure_marshal_VOID__INTv
 g_cclosure_marshal_VOID__LONG
 g_cclosure_marshal_VOID__LONGv
 g_cclosure_marshal_VOID__OBJECT
@@ -932,12 +929,16 @@ g_cclosure_marshal_VOID__STRING
 g_cclosure_marshal_VOID__STRINGv
 g_cclosure_marshal_VOID__UCHAR
 g_cclosure_marshal_VOID__UCHARv
+g_cclosure_marshal_VOID__UINT
 g_cclosure_marshal_VOID__UINT_POINTER
 g_cclosure_marshal_VOID__UINT_POINTERv
+g_cclosure_marshal_VOID__UINTv
 g_cclosure_marshal_VOID__ULONG
 g_cclosure_marshal_VOID__ULONGv
 g_cclosure_marshal_VOID__VARIANT
 g_cclosure_marshal_VOID__VARIANTv
+g_cclosure_marshal_VOID__VOID
+g_cclosure_marshal_VOID__VOIDv
 g_cclosure_marshal_generic
 g_cclosure_marshal_generic_va
 g_cclosure_new
@@ -1649,7 +1650,7 @@ sizeof_closure >= sizeof (GClosure)
 source
 source != NULL
 source-property
-source_closure_marshal_BOOLEAN(int13_t &&) volatile
+source_closure_marshal_BOOLEAN__VOID
 source_property != NULL
 spec_types == spec_types_bound
 specified class size for type '%s' is smaller than 'GTypeClass' size

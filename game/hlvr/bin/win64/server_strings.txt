@@ -547,6 +547,7 @@
 	 5: Player Teleport
 	 6: Blind Zombie Sounds
 	 7: Player Continuous
+	!s99
 	"%s" "%.2f"
 	"%s" "%i"
 	"%s" "%llu"
@@ -971,6 +972,7 @@
  $8\$Pu
  %%%d.%ds 
  %%-%d.%ds 
+ %41g
  %[^=, ] = %[^=, ] , %[^=, ] , %[^=, ] , %[^=, ] 
  %d: [%d] %s
  '%s'
@@ -1000,7 +1002,6 @@
  -> %s (again)
  ... }
  0@P`p
- 9(X`
  ;\$0|
  = { <proto text format> }". To set fields within it, use syntax like "
  A8~Eu
@@ -1113,10 +1114,9 @@
  HcyH3
  Hcyp3
  HczpH
- Lc%#
  Lc)E3
  Lc1L
- Lc5k
+ Lc5s
  Lc9L
  LcA 3
  Lct$p3
@@ -1254,6 +1254,7 @@
 !eQueryCvarValueStatus_ValueIntact
 !enemy
 !friend
+!hn7!
 !host_framestarttime_std_deviation
 !m_bNeedsSort
 !nearestfriend
@@ -2068,6 +2069,7 @@ $~qE3
 '#GameUI_Disconnect_DifferentClassTables
 '#GameUI_ServerRejectInvalidSteamCertLen
 '%s' = %d
+',=?k
 '7GWgw
 '8P;Wo
 '=qs~?
@@ -2220,8 +2222,6 @@ $~qE3
 (D8{Eu
 (D;s |
 (D;v,}e
-(DigiCert SHA2 Assured ID Code Signing CA
-(DigiCert SHA2 Assured ID Code Signing CA0
 (E8l$p
 (E8oEu
 (F E3
@@ -2321,6 +2321,7 @@ $~qE3
 (d$pH
 (d$pL
 (d$pv
+(f*^[0
 (hInflictor, hAttacker, flDamage) - Allocate a damageinfo object, used as an argument to TakeDamage(). Call DestroyDamageInfo( hInfo ) to free the object.
 (inactive)
 (int iIndex, int iPoint, Vector vecForward ) - Set the forward direction for a control on a particle effect
@@ -2354,7 +2355,6 @@ $~qE3
 (no conditions)
 (no enemy)
 (null)
-(o:R	
 (quaternion,quaternion,float) very basic interpolation of v0 to v1 over t on [0,1]
 (quaternion,vector,float) rotates a quaternion by the specified angle around the specified vector axis
 (t$ 2
@@ -2776,7 +2776,7 @@ $~qE3
 )t$ 3
 )t$ 8
 )t$ 9
-)t$ 9=R
+)t$ 9=
 )t$ @2
 )t$ A
 )t$ D
@@ -2867,7 +2867,7 @@ $~qE3
 )t$Pu
 )t$Pv
 )t$`3
-)t$`9=x
+)t$`9=8"
 )t$`A
 )t$`D
 )t$`E
@@ -3006,6 +3006,7 @@ $~qE3
 **Zombie: No Physics Object for held object ent!
 **Zombie: No Physics Object for physics Ent!
 *.hl?
+*9Z9N
 *:JZjz
 *?333?
 *D8xEu
@@ -3065,8 +3066,10 @@ $~qE3
 +O$Hc
 +Q ;Q
 +XXxY
++Xt@(
 +f)>0'
 +h->|
++o'q)}
 , <^waH
 , from: 
 , not just within "
@@ -3100,8 +3103,9 @@ $~qE3
 ,NETWORK_DISCONNECT_STEAM_DENY_BAD_ANTI_CHEAT
 ,NETWORK_DISCONNECT_STEAM_LOGGED_IN_ELSEWHERE
 ,RAPIDFIRE_BULLET_MANAGER_EVENT_CREATE_BULLET
+,W5y+
 ,y=35
-,|%)v
+,}vl	
 - "%s" = "%.2f"
 - "%s" = "%i"
 - "%s" = "%llu"
@@ -3212,7 +3216,6 @@ $~qE3
 ..om?
 .00cfg
 .3tSH
-.5@$k
 .>()09
 .>N^n~
 .>PJ;I:qE>
@@ -3427,6 +3430,7 @@ $~qE3
 .?AV?$CEntitySpawner@VCBlindZombiePlayerTouchTrigger@@@@
 .?AV?$CEntitySpawner@VCBombDropSensor@@@@
 .?AV?$CEntitySpawner@VCBreakableProp@@@@
+.?AV?$CEntitySpawner@VCChangeLevel@@@@
 .?AV?$CEntitySpawner@VCCombineTankTrigger@@@@
 .?AV?$CEntitySpawner@VCCrossbowBolt@@@@
 .?AV?$CEntitySpawner@VCDebugHistory@@@@
@@ -3518,6 +3522,7 @@ $~qE3
 .?AV?$CEntitySpawner@VCPlayerBackpack@@@@
 .?AV?$CEntitySpawner@VCPointClientUIWorldMoviePanel@@@@
 .?AV?$CEntitySpawner@VCPointClientUIWorldPanel@@@@
+.?AV?$CEntitySpawner@VCPointEntity@@@@
 .?AV?$CEntitySpawner@VCPointHMDAnchor@@@@
 .?AV?$CEntitySpawner@VCPropHMDAvatar@@@@
 .?AV?$CEntitySpawner@VCPropVRHand@@@@
@@ -3606,6 +3611,7 @@ $~qE3
 .?AV?$CEntitySpawnerBase@VCBlindZombiePlayerTouchTrigger@@@@
 .?AV?$CEntitySpawnerBase@VCBombDropSensor@@@@
 .?AV?$CEntitySpawnerBase@VCBreakableProp@@@@
+.?AV?$CEntitySpawnerBase@VCChangeLevel@@@@
 .?AV?$CEntitySpawnerBase@VCCombineTankTrigger@@@@
 .?AV?$CEntitySpawnerBase@VCCrossbowBolt@@@@
 .?AV?$CEntitySpawnerBase@VCDebugHistory@@@@
@@ -3701,6 +3707,7 @@ $~qE3
 .?AV?$CEntitySpawnerBase@VCPlayerBackpack@@@@
 .?AV?$CEntitySpawnerBase@VCPointClientUIWorldMoviePanel@@@@
 .?AV?$CEntitySpawnerBase@VCPointClientUIWorldPanel@@@@
+.?AV?$CEntitySpawnerBase@VCPointEntity@@@@
 .?AV?$CEntitySpawnerBase@VCPointHMDAnchor@@@@
 .?AV?$CEntitySpawnerBase@VCPropHMDAvatar@@@@
 .?AV?$CEntitySpawnerBase@VCPropVRHand@@@@
@@ -6652,7 +6659,6 @@ $~qE3
 .gfids
 .gfids$x
 .gfids$y
-.http://www.digicert.com/ssl-cps-repository.htm0
 .i?0@I
 .idata$2
 .idata$3
@@ -6707,15 +6713,17 @@ $~qE3
 .|$Pz
 .|$pz
 .|$tz
-/-?rK
-/-f\a
+/%J!L
+/%_wK
+/-?sK
 /2GG>!B
-/5 KH
-/50sK
-/5cvp
-/5k"v
-/=$!6
-/=6wu
+/5)aK
+/5@xK
+/5PNH
+/5aPR
+/5pvK
+/5t1|
+/=!{|
 />58d%
 /?O_o
 /@ s&H
@@ -6899,8 +6907,6 @@ $~qE3
 /cDv0H
 /cn?z
 /graphs
-/http://crl3.digicert.com/sha2-assured-cs-g1.crl05
-/http://crl4.digicert.com/sha2-assured-cs-g1.crl0L
 /p(rHH
 /p,s(H
 /pTs!
@@ -6994,7 +7000,6 @@ $~qE3
 0123456789ABCDEF
 0123456789abcdef
 0123456789abcdefghijklmnopqrstuvwxyz
-061110000000Z
 0: Close menu on select, 1: Close menu on button release or moving outside the menu
 0: Draw nothing at waypoints; 1: Draw a tick mark at waypoints; 2: Draw a box around waypoints.
 0: Off, 1: Toggle Crouch, 2: Toggle Stand, 3: Short Press Toggles Crouch and Long Press Toggles Stand
@@ -7097,10 +7102,10 @@ $~qE3
 0X8b?~
 0_^[H
 0iN>/
-0uZ,v
-0v0b1
+0w0c1
 0x%016llX
 0|DLI
+0}0i1
 1 : Grenade Launcher
 1 : Reflex Sight
 1 : Tag Dart (UNUSED)
@@ -7137,9 +7142,8 @@ $~qE3
 1296.0
 130.0
 130.0f
-131022120000Z
+130801120000Z
 135.0f
-141022000000Z
 15.0f
 150.0
 150.0f
@@ -7150,7 +7154,6 @@ $~qE3
 18.0f
 180.0
 180_recovery
-181004000000Z
 192.0
 1: Constantly draw lines from NPCs to the actbusy nodes they've chosen to actbusy at.
 1<.	/>:
@@ -7214,21 +7217,23 @@ $~qE3
 2000.0f
 20000.0
 200000
-201118222243Z0#
 2048.0
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 21.CUserMessageRapidfireBulletManager.CreateCluster
 21.CUserMsg_ParticleManager.SetControlPointSnapshot
 21.CUserMsg_ParticleManager.UpdateParticleSetFrozen
 210.0
-211007120000Z0M1
-211110000000Z0b1
+210429000000Z
+211007000000Z
 22.CUserMessageRapidfireBulletManager.ActivateBullet
 22.CUserMessageRapidfireBulletManager.ExplodeCluster
 22.CUserMessageRapidfireBulletManager.TransferBullet
 22.CUserMsg_ParticleManager.DestroyParticleInvolving
 22.CUserMsg_ParticleManager.SetParticleFoWProperties
 22.CUserMsg_ParticleManager.UpdateParticleShouldDraw
+220323000000Z
+220329000000Z
+220428171229Z0/
 23.CUserMessageCameraTransition.Transition_DataDriven
 23.CUserMessageRapidfireBulletManager.ActivateCluster
 23.CUserMessageRapidfireBulletManager.TransferCluster
@@ -7238,7 +7243,7 @@ $~qE3
 24.0f
 24.CUserMessageRapidfireBulletManager.DeactivateBullet
 24.CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
-241022000000Z0G1
+241009235959Z0a1
 25.0f
 25.CUserMessageRapidfireBulletManager.DeactivateCluster
 2500.0
@@ -7247,18 +7252,20 @@ $~qE3
 26.CUserMessageRapidfireBulletManager.AddBulletToCluster
 26.CUserMsg_ParticleManager.ChangeControlPointAttachment
 275.0
-281022120000Z0r1
 2: Whenever an NPC makes a decision to use an actbusy, show which actbusy they've chosen.
 2;.CUserMessageRapidfireBulletManager.RemoveBulletFromCluster
 2>333>
 2B $ 2
 2D8sEu
+2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA
+2DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA0
 2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 2Hcs0;s@u	H
 2Ic<$H
-2http://crl3.digicert.com/DigiCertAssuredIDCA-1.crl08
-2http://crl4.digicert.com/DigiCertAssuredIDCA-1.crl0w
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
 2tGZE
+2xJK7*L
 2}FHc
 3 3 8
 3 : Burst Fire
@@ -7270,9 +7277,9 @@ $~qE3
 300.0
 30000.0
 300000
-311110000000Z0e1
 32 -10 54
 32.0f
+330314235959Z0L1
 333333
 3333333
 3333333333333333
@@ -7290,7 +7297,10 @@ $~qE3
 36 -4 34
 36.0f
 360.0
+360428235959Z0i1
+370322235959Z0c1
 38 -10 42
+380115120000Z0b1
 39.20 -2.54 178.41
 3: Selected NPCs (with npc_select) will report why they're not choosing actbusy nodes.
 3;D$@wpA
@@ -7302,6 +7312,7 @@ $~qE3
 3EgA#
 3GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL
 3\.,I
+3mq+<
 4 8 10
 4 : Reflex Sight
 40 -10 25
@@ -7323,10 +7334,6 @@ $~qE3
 4HcsX;shu
 4JHcJDf
 4RAPIDFIRE_BULLET_MANAGER_EVENT_ADD_BULLET_TO_CLUSTER
-4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0:
-4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0O
-4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0
-4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
 4pD9w
 4w>Mw
 5 -3 -10
@@ -7342,9 +7349,10 @@ $~qE3
 5D8gEu
 5D8{Eu
 5YHe/
-5http://cacerts.digicert.com/DigiCertAssuredIDCA-1.crt0
+5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
 5modellib
 6 : Extended Magazine
+6*f(_
 60.0f
 600.0
 64.0f
@@ -7355,14 +7363,16 @@ $~qE3
 6GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT
 6HcNpH
 6I;4$
+6I]Dc
+6OB,n_
 70.0f
 700WP
+70503
 768.0
 7HcD$P
 7L4HA
 7Ze&<o
 7`ZKV?e
-7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
 8 5 2
 8 8 10
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
@@ -7397,6 +7407,8 @@ $~qE3
 8A_A^_^][
 8A__^[
 8Csinf
+8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+8DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA10
 8E t4
 8Ght	H
 8L9 u
@@ -7452,6 +7464,7 @@ $~qE3
 9;~"H
 9;~)H
 9;~6L
+9=#Y1
 9>powf
 9>~"H
 9>~(H
@@ -7612,8 +7625,8 @@ $~qE3
 9t$Pt8H
 9u(|EH
 9v	H;
-9x@u	H9=
-9xXt#H9=
+9x@u	H9=Q
+9xXt#H9=$
 9xXtIH
 9xXtN
 9xXtP
@@ -7674,13 +7687,11 @@ $~qE3
 ; @t{Ic
 ;*@'6
 ;+%@H
+;-,d.
 ;2HcG
 ;8u-3
 ;8urM
 ;9}VH
-;=ZB1
-;=db;
-;=qV6
 ;@t3H
 ;@}xH
 ;A ~W
@@ -7800,6 +7811,7 @@ $~qE3
 <*tq</tm<
 <-uQA
 <-uSA
+<0:08
 <1+=Mg'
 <1uHH
 <1uvD8j
@@ -7865,6 +7877,7 @@ $~qE3
 =bvcdt
 =fff>
 =imb;D
+=rIQU
 >!@A+r
 >()09,)G>r
 >-ufH
@@ -7877,6 +7890,7 @@ $~qE3
 >Hc{H;{Xu	H
 >L9|$ht
 >M.F9
+>Mp$d
 >QL^9
 >f;D$@u)H
 >ffffff
@@ -7939,7 +7953,6 @@ $~qE3
 ?4I,)w
 ?4iSu
 ?5r'"
-?5zlO
 ?6g3=
 ?7QKs+
 ?7[/<
@@ -8161,15 +8174,10 @@ $~qE3
 @83t)
 @84:u
 @84;u
-@85"4
-@85#.E
-@85<-E
-@85F"
-@85J-
-@85W?
-@85nQ
-@85pn
-@85qU
+@85-B
+@85.e
+@85Pq
+@85rD
 @87tGH
 @88t	H
 @89A8
@@ -8179,12 +8187,13 @@ $~qE3
 @89C8
 @89G8
 @8:t#H
-@8=G?
-@8=LL
-@8=Lt
-@8=Y&6
-@8=i$6
-@8=yN
+@8=)P6
+@8=D_
+@8=M"
+@8=hf
+@8=m4
+@8=oO
+@8=y7
 @8H9t
 @8L9x
 @8hDu
@@ -8603,7 +8612,7 @@ $~qE3
 @t:HcG<
 @t:HcG`
 @t:Ic@0
-@taD95
+@taD95g=
 @u[D9f
 @vf'(
 A	@8M
@@ -11254,6 +11263,7 @@ AirboatGunHeavyTracer
 AirboatGunImpact
 AirboatGunTracer
 AirboatMuzzleFlash
+AjEB#AZ
 Alert
 Align
 AllocGroundLink: failed to allocate groundlink_t.!!!
@@ -11733,7 +11743,6 @@ BenchmarkService001
 BentNormalData
 BestEnemy() {
 Bh9Aht
-Bhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0
 Bi-passes all AI logic routines and puts all NPCs into their idle animations.  Can be used to get NPCs out of your way and to test effect of AI logic routines on frame rate
 BiA8Gi
 Bidirectional_Messages
@@ -11876,7 +11885,7 @@ C HcH
 C HcS(H
 C$L9l$pt
 C$LcC$H
-C$f!5P
+C$f!5
 C(9C0I
 C(:Ah}
 C(H9u
@@ -11887,7 +11896,6 @@ C(L9e
 C(kV hI
 C,Lcs0
 C-side of entity framework
-C-yh/
 C0D9C ~
 C0H;C@u
 C0Hc,
@@ -12462,6 +12470,7 @@ CEntitySpawner<class CBlackHeadcrab>::Spawn
 CEntitySpawner<class CBlindZombiePlayerTouchTrigger>::Spawn
 CEntitySpawner<class CBombDropSensor>::Spawn
 CEntitySpawner<class CBreakableProp>::Spawn
+CEntitySpawner<class CChangeLevel>::Spawn
 CEntitySpawner<class CCombineTankTrigger>::Spawn
 CEntitySpawner<class CCrossbowBolt>::Spawn
 CEntitySpawner<class CDebugHistory>::Spawn
@@ -12553,6 +12562,7 @@ CEntitySpawner<class CPlasma>::Spawn
 CEntitySpawner<class CPlayerBackpack>::Spawn
 CEntitySpawner<class CPointClientUIWorldMoviePanel>::Spawn
 CEntitySpawner<class CPointClientUIWorldPanel>::Spawn
+CEntitySpawner<class CPointEntity>::Spawn
 CEntitySpawner<class CPointHMDAnchor>::Spawn
 CEntitySpawner<class CPropHMDAvatar>::Spawn
 CEntitySpawner<class CPropVRHand>::Spawn
@@ -15839,27 +15849,25 @@ D78A8
 D8"t	H
 D8$0u
 D8$8u
-D8%rK
-D8%{&
+D8%6I
 D8)tFI
 D8*u A
 D8,0tbH
-D8-CT
-D8-DR
+D8-3X?
+D8-<j"
+D8-lb
 D80t*L
 D80t{H
 D82u&H
 D84+u
-D85;l
-D85?*
-D85vR
+D85#`
+D85W]
+D85k-
 D88u4A
 D8;tmI
-D8= 6
-D8=$M:
-D8=BP:
-D8=J}
-D8=fs
+D8="a0
+D8=o8
+D8=t]:
 D8CDu
 D8D$`A
 D8Ght<H
@@ -15975,10 +15983,12 @@ D9	~uE
 D9 ~.M
 D9&~(I
 D9,2H
+D9-)y
 D96t-A
 D98~HM
 D9;tGH
 D9;~/A
+D9=IG
 D9@ }
 D9@H~)E3
 D9@XA
@@ -16083,7 +16093,7 @@ D9pXt3
 D9pXt<I
 D9pXtAfD;
 D9pXtD
-D9pXtID85H
+D9pXtID85
 D9pXtY
 D9pXt^H
 D9pXte
@@ -16141,7 +16151,10 @@ D9|$Pu
 D9|$`
 D9|$p
 D9|$p|SH
+D;%ee
+D;5#=
 D;8}=H
+D;=2O
 D;@H|
 D;A |
 D;A(|
@@ -16453,12 +16466,12 @@ Didnt supply startpos, endpos, min, and max to Script TraceHull call, failing, s
 DieThink
 Difference in Z increases toward the middle of the slack ladder.
 Difficulty: %s
-DigiCert Assured ID CA-1
-DigiCert Assured ID CA-10
-DigiCert Assured ID Root CA0
 DigiCert Inc1
-DigiCert Timestamp Responder0
-DigiCert1%0#
+DigiCert Timestamp 2022 - 20
+DigiCert Trusted Root G40
+DigiCert, Inc.1$0"
+DigiCert, Inc.1;09
+DigiCert, Inc.1A0?
 Dir ent: %s
 Direction: %s
 Directional
@@ -16810,12 +16823,12 @@ E H;C
 E Lc<
 E LcO
 E$LcO
+E%kh3
 E'HcC
 E(Hc+L
 E(LcO
 E+BHI
 E0@8}8upH
-E0C07
 E0D	<
 E0HcH
 E0HcM
@@ -18736,7 +18749,6 @@ H+x8H
 H+x@H
 H+xhH
 H+xpH
-H0F08
 H0Jc<!H
 H0Lc$1H
 H0tOL
@@ -18752,7 +18764,8 @@ H9*u>
 H9+t4H
 H9+uBH
 H9+uHH
-H9-QC
+H9-QS
+H9-\(
 H9.u%H
 H91t=
 H91u:H
@@ -18765,8 +18778,7 @@ H92u&
 H92u'
 H92u,
 H93tZH
-H95'rz
-H95Krz
+H95;wz
 H97t<
 H98t H
 H98t6A
@@ -18926,9 +18938,10 @@ H9}gt	H
 H9}ht
 H9}ht	H
 H:Ly?
-H;-3e
 H;0u7
+H;5hA
 H;9tEH
+H;=xS
 H;A t
 H;C E
 H;D$0u
@@ -19210,7 +19223,6 @@ Hc/;o
 Hc0;p
 Hc3;s
 Hc3Hc
-Hc5]4
 Hc7;w
 Hc7A+
 Hc8;x
@@ -19854,6 +19866,7 @@ Ignoring LOS
 Ignoring PickupObject() call, CHandUseController is already holding an object!
 Ignoring TASK_SET_ACTIVITY for activity %s on %s (%d) in schedule %s.
 Ignoring player blocking train!
+Ihttp://crl3.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crl0
 IkLockLocal
 Il?333333c?
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
@@ -21232,6 +21245,7 @@ ItemVelocity
 J H+J
 J#A2H#
 J&fA;
+J>@G_
 J@HcJDfD
 J@T	K
 J@UE3
@@ -21311,6 +21325,7 @@ Kinematic
 KneeB
 KneeL
 KneeR
+K}*n:	
 K~Je#>!
 L!|$(L!
 L#Q0L
@@ -21599,11 +21614,11 @@ L9!t|D
 L9!u	
 L9(t$H
 L9(tXH
-L9-Hd
+L9-*/
 L9.tRH
 L91u?H
 L92t,H
-L95	i
+L95Yy
 L96u4H
 L99tz
 L99uKE3
@@ -21724,6 +21739,7 @@ L;t$P
 L;|$0
 L?)\O?
 L?UUUUUUU?
+L?n(Zy&
 LABEL_OPTIONAL
 LABEL_REPEATED
 LABEL_REQUIRED
@@ -21823,12 +21839,12 @@ Launches an energy ball from where the player is looking
 LayoutPositionType_e
 Lc#D;c
 Lc'D;g
-Lc-UX
 Lc3D;s
 Lc6D;v
 Lc7D;w
 Lc:E3
 Lc;D;{
+Lc=B	
 Lc?D;
 Lc@XL
 Lc@hE
@@ -21918,6 +21934,7 @@ LessonPanelLayoutFileTypes_t
 LetGo
 Level: %s
 LevelInitWorld failed!
+Lhttp://cacerts.digicert.com/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.crt0
 LifeState_t
 LifetimeMax
 LifetimeMin
@@ -22075,6 +22092,7 @@ MATERIAL_MODIFY_MODE_FLOAT_LERP
 MATERIAL_MODIFY_MODE_NONE
 MATERIAL_MODIFY_MODE_SETVAR
 MAX_PATTACH_TYPES
+MB(iVR
 MEDIUM_HULL
 MEDIUM_TALL_HULL
 METROPOLICE_ACTIVATE_BATON
@@ -22391,6 +22409,8 @@ Metal.Small
 MethodDescriptorProto
 MethodOptions
 Mg8Yh
+Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0>
 Min distance to TP before any footstep sounds
 MinAnimTime
 MinConcurrency
@@ -24013,6 +24033,7 @@ PA_^]
 PA__[
 PA__]
 PA__^
+PAq=?Mp#
 PD9AHM
 PD9IHL
 PE;t$
@@ -24141,6 +24162,7 @@ PerformanceMode
 PerformanceMode_t
 Permit Responses
 PhLcO
+Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
 Phys.GlassBreakLg
 Phys.GlassBreakMd
 Phys.GlassBreakSm
@@ -24560,6 +24582,7 @@ PuzzleType
 PuzzleType: %s
 PxHc3;s
 PxLcF
+Pz}b!
 Q LcI
 Q&A: '%s' answered the Hello from '%s'
 Q&A: '%s' answered the Question from '%s'
@@ -25091,11 +25114,13 @@ RunScriptCode
 RunScriptFile
 RunTimeOfDayCommand
 R~~C@
+S	{NW
 S t	L
 S%@ D2
 S(IcH
 S,, <Zw
 S0HcC
+S0Q0O
 S2SVH
 S2SVt:
 S89SD|
@@ -25114,6 +25139,7 @@ SAVAWH
 SAVED_POSITION
 SAVE\animgraph
 SAVE_HEADER
+SA|X=G
 SCAFFOLD
 SCANNER_FLY_ATTACK
 SCANNER_FLY_CHASE
@@ -27884,10 +27910,11 @@ T$pfI
 T$xE3
 T$xH;
 T$xfI
-T%=PB
-T-HKB
-T-YNB
+T%-UB
+T-8PB
+T-ISB
 T3(E3
+T5Rda
 T7HHc
 T8(E3
 T:V@]
@@ -29782,6 +29809,7 @@ V_vsnprintf
 V_vsnprintfSize
 V_wcstod
 V_wcstoi64
+V_~]	,
 Valid Arm: %s %s
 Valid hint types:
 Validate navmesh structures.
@@ -29811,8 +29839,8 @@ ValueRemapperInputType_t
 ValueRemapperMomentumType_t
 ValueRemapperOutputType_t
 ValueRemapperRatchetType_t
-Valve0
-Valve1
+Valve Corp.0
+Valve Corp.1
 ValveBiped.Bip01_Head1
 ValveBiped.Weapon_bone
 ValveBiped.head
@@ -29887,19 +29915,19 @@ VortMagic.ThrowNoHit
 Vortigaunt
 VortigauntHealState_t
 Vulkan
-W%.}K
-W%_Ea
-W%d0K
-W%pEa
+W%SdK
+W%b,K
 W(|9L
 W(|=L
 W3|Uxa
-W54Xh
-W5YfK
+W5GiK
+W5`'|
+W5v'|
 W8KcD
-W= hK
-W=$yK
-W={fa
+W=3i}
+W=Kka
+W=_=Q
+W={}K
 W?,|C
 W@|:L
 WAITING FOR VSCRIPT DEBUGGER CONNECTION -- '-vscriptdebug' was provided on the command line.
@@ -30017,6 +30045,7 @@ Warning: post graph IK chain blend tag was set to 'fire' versus having discrete 
 Warning: post graph IK tag was set to 'fire' versus having discrete start/stop: this results in a no-op!
 WarningBlinkerThink
 Warps the player to the marked area.
+Washington1
 Watch NetworkStateChanged info for this entity index.
 WaterSurfaceExplosion
 Waypoint #%d
@@ -30148,21 +30177,15 @@ X UWATH
 X VWATAUAWH
 X VWAVH
 X!t5~
-X5*$s
-X5/wd
-X5CUc
-X5YoG
-X5[\t
-X5]sz
-X5b9d
-X5h=v
-X5o9d
-X5pEh
-X5s`u
+X53Xy
+X5BPy
+X5]Mf
+X5eng
+X5gA|
+X5yxz
 X89X(~(H
+X=)Pf
 X=2v?
-X=5Zc
-X=yKf
 XA;w@
 XA]A\][
 XA]A\^[
@@ -30257,33 +30280,30 @@ X|$tA
 X|$xA
 Y D9Y
 Y HcQ
-Y%'~}
-Y%CxK
-Y%J|G
-Y%TEJ
-Y%Vy_
-Y%^JJ
-Y%kCJ
-Y%l0p
-Y%vUK
-Y--qK
+Y%/wK
+Y%J@`
+Y%_z}
+Y-8Fa
+Y-mtK
 Y0HcR
-Y5#3e
-Y5EI`
-Y5G_u
-Y5K{{
-Y5X0e
-Y5XF!
-Y5ZlK
-Y5a9|
-Y5e9Q
-Y5g9!
-Y5|t_
-Y=3sK
-Y=43e
-Y=Ne|
-Y=n2L
-Y=tt_
+Y5(V!
+Y5,y_
+Y5-yk
+Y57I!
+Y5U>Q
+Y5h@|
+Y5sH`
+Y9"SD
+Y=$y_
+Y=%$s
+Y='oK
+Y=+jK
+Y=2{K
+Y=TH`
+Y=mg|
+Y=o\}
+Y=svK
+Y={O`
 Y>kX>M
 YAxis
 YD$ 2
@@ -30410,6 +30430,7 @@ Z}uU
 [DIFFERS]
 [GAMEEVENT] Event '%s' (index %d) added %s listener %p
 [GS %s - %7.2f] %s
+[K]taM?
 [NPCState::%s]
 [Nav] %s
 [PR#]
@@ -30664,8 +30685,8 @@ Z}uU
 \$xI;
 \$xff
 \$xu!
-\%T[K
-\%n@B
+\%>EB
+\5G,f
 \CpD8stt
 \D$(H
 \D$0E3
@@ -30753,12 +30774,17 @@ Z}uU
 ] 9xX
 ] @8u
 ] L9m8t	H
-]%(2p
+]%FGa
 ](D9u
 ])6M>&
+]5C)v
+]5fDa
 ]7u%H
+]=3vG
+]=V3}
 ]>)2X
 ]Gu'H
+]J<0"0i3
 ]L9l$pt
 ]Q8uh
 ]T$(H
@@ -30769,6 +30795,7 @@ Z}uU
 ]u9n5;> )"
 ]yD;w
 ^-wf"
+^5ZI!
 ^8Hcv0H
 ^8Hcv8;s
 ^<H)t$PH+
@@ -30782,10 +30809,8 @@ Z}uU
 ^RfN>
 ^Sy^H
 _09_4t
-_2WNl
 _2~CE
 _49_8t
-_5$+|
 _DisableUpdateTarget
 _EnableUpdateTarget
 _HH9k
@@ -30837,6 +30862,7 @@ _cone
 _dummyBaseFireClass
 _female
 _firesmoke
+_gUT^
 _gamestats.dat
 _inner_cone
 _l$4H
@@ -30956,6 +30982,7 @@ a trigger_changelevel doesn't have a map
 a world layer in a dota map
 a1_intro_world
 a1_intro_world_2
+a1_intro_world_to_a1_intro_world_2
 a2U0*
 a2U0*	
 a2_drainage
@@ -32512,6 +32539,7 @@ combine_wpnretract_speed
 combine_wpnunretract_speed
 combo
 command
+command_change_level
 command_number
 command_queue_desired_size
 command_queue_info
@@ -32729,7 +32757,7 @@ d$PE9~0~QE3
 d$PE;
 d$PH;
 d$PHc
-d$PHc5qZ
+d$PHc51j
 d$PfD
 d$Pt2
 d$XE3
@@ -33025,6 +33053,7 @@ e A_A^A]A\_^]
 e A_A^]
 e _^]
 e+000
+e,>~^
 e0A_A^A]A\]
 e0F$J
 e8A_A^A]A\_^[]
@@ -34459,6 +34488,7 @@ gunshotsplash
 gustdirchange
 gustduration
 gxXM|Z
+h 95}P
 h ATAVAWH
 h AVH
 h UAVAWH
@@ -35186,9 +35216,9 @@ how long between throwing healthkits
 hscript
 hscript_lightbinding
 http://ocsp.digicert.com0A
-http://ocsp.digicert.com0C
-http://ocsp.digicert.com0N
-https://www.digicert.com/CPS0
+http://ocsp.digicert.com0X
+http://ocsp.digicert.com0\
+http://www.digicert.com/CPS0
 hud_jeephint_numentries
 hudtextparms_t
 hull index %d
@@ -35271,7 +35301,6 @@ iTeamNum
 iTriggerMethod
 iUnlockedSentence
 iValue
-iW!]4/
 i_Hit_Bone
 ice_falling_damage_scale
 ice_sphere
@@ -35691,6 +35720,7 @@ java_string_check_utf8
 jaw_clencher
 jaw_drop
 jiggle
+jj@0HK4
 jklmnopqrstuvwxyzyxwvutsrqponmlkj
 job warning: Resuming job '%s (id: %lld)' due to timeout while paused for %s
 joint67
@@ -36233,7 +36263,6 @@ lservercfgfile
 ltime
 lu9% 
 m ]lZ
-m0k0$
 m0~{H
 m8L9c
 m_16ByteOrLessStack out of space, falling through after %d entries, consider upping NETWORKFIELDSCRATCHDATA_16BYTE_COUNT
@@ -45253,6 +45282,7 @@ muzzle_flash_enable
 muzzleflash_particle
 mwheel_down
 mwheel_up
+n#9-JS
 n03>Pu
 n9pXt
 n>#,w>
@@ -45998,6 +46028,7 @@ numjoining:%d
 numsegments
 numselected:%d,useradio:%d%s
 nxXE3
+o*5"l
 o*Ral
 o0H9o
 o8D8-
@@ -46126,9 +46157,8 @@ p WATAVH
 p WATAWH
 p WAVAWH
 p(|@L
+p*rj`
 p0D9p
-p0n05
-p1f3q>
 p4 revert -a "%s"
 p;4,F
 p=CNavVolume
@@ -48990,7 +49020,7 @@ t$ I;
 t$ L+
 t$ L;
 t$ Lc3
-t$ Lc5R*'
+t$ Lc5
 t$ Mc
 t$ UAVAWH
 t$ UH
@@ -49571,7 +49601,7 @@ t9D9C
 t9D9F
 t9D9I
 t9D9Q
-t9H9=6*}
+t9H9=
 t9HcC(A
 t9HcG$H
 t9HcG(
@@ -49579,7 +49609,7 @@ t9HcG0
 t9HcT(
 t9Ic6Lk
 t9IcA
-t:95i
+t:95)
 t:A8>t5
 t:A;S
 t:D9A
@@ -49614,7 +49644,7 @@ t;HcG0H
 t;Hc_
 t;fff
 t<A9P
-t<D9%_
+t<D9%
 t<D9A
 t<H99u&H
 t<HcG(H
@@ -49657,7 +49687,7 @@ t@HcA H
 t@HcH
 t@fff
 tAA9Z
-tAD8='O
+tAD8=
 tAD9J
 tAHcA
 tAHcA A
@@ -49697,7 +49727,7 @@ tFA9@
 tFA9P
 tFD9B
 tFH9\$0u?L
-tFL9-h
+tFL9-
 tGA9H
 tGA9I
 tGA9P
@@ -49780,7 +49810,7 @@ tSD9J
 tSKcD0
 tTA9H
 tTA9Q
-tTD8%
+tTD8%3d
 tTD9B
 tTD9C
 tTHcA
@@ -49802,7 +49832,6 @@ tWD9A
 tWD9K
 tWIc@ 
 tWL9s8H
-tX95Q
 tXA9@
 tXA9H
 tXD98tSI
@@ -49988,7 +50017,7 @@ tfD8cTt@H
 tfD9A
 tfD9B
 tfD9I
-tfD;=
+tfD;=k
 tfKcD
 tf_escort_score_rate
 tgA9P
@@ -50299,7 +50328,7 @@ u	9o8
 u	9w8
 u	@80u
 u	@88u
-u	@8=
+u	@8=]
 u	D;5Q
 u	H9*
 u	H91
@@ -50588,12 +50617,12 @@ uz9GxV
 uzKs@>
 u|H9)twH
 u}I98tx
-v0t08
 v2!L.2
 v8array
 v8callback
 v8object
 v8value
+v=Y]Bv
 v>zlK9T
 v@Hc+;k
 v@Hc3;s
@@ -51695,10 +51724,7 @@ wrong submessage type
 wsprintfA
 wwH9{
 www.digicert.com1!0
-www.digicert.com1$0"
-www.digicert.com110/
 wx@8sxt7H
-wz^'G
 x	;3}
 x	A;?}
 x	HcG
@@ -51714,7 +51740,7 @@ x AV3
 x AVH
 x AVHcA
 x AWH
-x D;=05:
+x D;=
 x D;E
 x UATAUAVAWH
 x UATAVH
@@ -51735,13 +51761,11 @@ x'HcK
 x)HcK
 x*;XZ
 x*D;AH}$Ic
-x+;=d
 x-HcI
 x.Hck
 x0=433
 x0D;B0}*H
 x0E;A
-x0v0$
 x3HcF
 x9H;H
 x:D;Ap}4H
@@ -51786,12 +51810,12 @@ xZH;A
 xZH;Q
 xZH;^
 xZIcI
-x\;=qp.
 x\A;@
 x\D;7}WH
 x]/(@
 x]H;Q
 x]HcG
+x]~\6
 x^HcG
 x_^][
 x`H;^
@@ -51884,14 +51908,12 @@ yes - via input
 yfriction
 you_hear_them
 z	?0e`9
-z"6jp
 z"u H
 z$u"H
 z&u$H
 z'u%H
 z)u'H
 z0u.H
-z0x0:
 z:KCAuthPhysBody
 z>_class
 zBu@D8u(u:H
@@ -51951,6 +51973,7 @@ zxuvHcJ
 {luDH
 {p@8{Wt
 {pHcChH
+{un'%
 {uyfn?z
 {}()':
 {}[]()=&, 	
@@ -52041,7 +52064,7 @@ zxuvHcJ
 |$0Hc
 |$0Hc:
 |$0Hc;;{
-|$0Hc='
+|$0Hc=w
 |$0Hcy
 |$0Hc{
 |$0Hi
@@ -52264,10 +52287,10 @@ zxuvHcJ
 |$xt%H
 |${H+
 |(tFM
-|2;5\t
 |9HcC
 |?5^:+
 |HLcQ
+|Lu?c
 |b=})>
 |l;K(tgA
 |uD95
@@ -52296,13 +52319,13 @@ zxuvHcJ
 }Af;{nw;f;
 }Bf;_nw<f;
 }DH9-
-}DH9-5M
 }Df;sFw>f;
 }Gfff
 }IfA;
 }JfA;
 }JfD;CnwCfE;
 }LfA;
+}LuHO
 }OfA;
 }PfA;
 }QfA;
@@ -52344,7 +52367,7 @@ zxuvHcJ
 ~*fff
 ~+fff
 ~.A9p0
-~0L;=pM
+~0L;=
 ~0fff
 ~28\$0t
 ~31]H
@@ -52364,8 +52387,9 @@ zxuvHcJ
 ~fLcU
 ~lSUWH
 ~p>u,
+~t&LN
 ~tHc|
-~vH95
+~vH956
 ~vfff
 ~xfff
 ~{9Cx|vH
